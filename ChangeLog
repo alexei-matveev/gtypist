@@ -1,7 +1,16 @@
+2002-04-16  Michael Opdenacker <michaelo@gnu.org>
+
+	* po/: new Makevars file as recommended by gettextize.
+	* acconfig.h: removed because deprecated.
+	  Replaced by the use of `-D' in AM_CPPFLAGS (see below).
+	* configure.in: only kept AM_GNU_GETTEXT for i18n.
+	  --nointl and --with-nointl options are no longer available,
+	 but --disable-nls in still available.
+	* Other changes: to be documented very soon!
+ 
 2002-04-08  Felix Natter  <fnatter@gmx.net>
 
 	* gtypist.c (do_keybind): omit "%d%s"
-
 
 2002-04-07  Michael Opdenacker <michaelo@gnu.org>
 
