@@ -5,7 +5,7 @@ AM_INIT_AUTOMAKE(gtypist, "`./version.sh`")
 AC_CONFIG_SRCDIR(src/gtypist.c)
 AM_CONFIG_HEADER(config.h)
 
-# Checks for prograns
+# Checks for programs
 
 AC_PROG_AWK
 AC_PROG_CC
@@ -24,21 +24,35 @@ ALL_LINGUAS="de cs es fi fr ru zh_TW"
 
 AC_CHECK_LIB(curses, wbkgdset,
 	       [AC_DEFINE(HAVE_LIBCURSES, 1, [Is curses available])
-	         HAVE_LIBCURSES=yes
-		   LIBS="-lcurses $LIBS"])
+	         HAVE_LIBCURSES=yes])
 
 # Check for ncurses if curses is not found:
 # i.e. on SuSE there are no ncurses* -> curses* links
 
-if test -z $HAVE_LIBCURSES;
-then
-    AC_CHECK_LIB(ncurses, wbkgdset, LIBS="-lncurses $LIBS", echo "*** The curses or ncurses library is required!";exit 1)
-fi
+AC_CHECK_LIB(ncurses, wbkgdset,
+	[AC_DEFINE(HAVE_LIBNCURSES, 1, [Is curses available])
+	         HAVE_LIBNCURSES=yes]
+		 )
 
 # Checks for header files.
 
 AC_HEADER_STDC
 AC_CHECK_HEADERS([unistd.h alloca.h argz.h errno.h fcntl.h langinfo.h libintl.h limits.h locale.h malloc.h stddef.h stdlib.h string.h strings.h sys/param.h unistd.h])
+
+AC_CHECK_HEADER(curses.h, HAVE_CURSES_H=1)
+AC_CHECK_HEADER(ncurses/curses.h, HAVE_NCURSES_H=1)
+
+# We prefer ncurses to curses if both are found.
+if test -n "$HAVE_NCURSES_H" -a -n "$HAVE_LIBNCURSES";  then
+   LIBS="-lcurses $LIBS"
+elif test -n "$HAVE_CURSES_H" -a -n "$HAVE_LIBCURSES"; then
+   LIBS="-lncurses $LIBS"
+else
+   echo -e "Error:  both library and header files for either curses or ncurses"\
+   	"library\nis required to build this package.  See INSTALL file for"\
+	"further information."
+   exit 1;
+fi
 
 # Checks for typedefs, structures, and compiler characteristics.
 
