@@ -8,7 +8,7 @@
 	  --nointl and --with-nointl options are no longer available,
 	  but --disable-nls in still available.
 	* Makefile.am: added a new AUTOMAKE_OPTIONS variable
-	  set to '1.6 dist-bzip check-news' (see automake manual).
+	  set to '1.6 dist-bzip2 check-news' (see automake manual).
 	* Other changes: to be documented very soon!
 	* gtypist.c: Replaced PACKAGE_LOCALE_DIR by LOCALE_DIR:
           more standard: found in gettext doc and used by several packages. 
