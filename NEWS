@@ -4,6 +4,9 @@
 	See the `ChangeLog' (top-level and in some subdirectories) and
 	`THANKS' files for details about changes and contributors.
 
+Version 2.6.2 - August/2002
+	- Now installs lessons (bug only in version 2.6.1).
+
 Version 2.6.1 - August/2002
 	- findwords.sh: new script to help with creating lessons.
 	See the manual for details.
