@@ -1,3 +1,11 @@
+2001-07-26  Felix Natter  <f.natter@ndh.net>
+
+	* node Supplied Lessons: mention kt*.typ
+	* node How to contribute new lessons: remove "not yet there" notice,
+	tell user about ktouch-files and ktouch2typ.pl
+	* node Emacs mode for editing gtypist-lessons: improve English
+	* generate gtypist.info
+
 2001-07-21  Felix Natter  <f.natter@ndh.net>
 
 	* node Emacs mode for editing gtypist-lessons:
