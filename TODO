@@ -4,7 +4,6 @@ THINGS TO DO for GNU Typist
 See our latest TODO file on 
 http://savannah.gnu.org/cgi-bin/viewcvs/~checkout~/gtypist/TODO !
 
-Latest update: Sep 30, 2001, Michael Opdenacker <michaelo@gnu.org>
 -------------------------------------------------------------------------
 
 If you are interested in helping for some of the below items,
@@ -13,13 +12,13 @@ we will be glad to have you in the development team!
 You can contact us by writing to bug-gtypist@gnu.org.
 Your suggestions are welcome too!
 
-CLOSE FUTURE
+SHORT TERM
 
  * Improve the French translation of "lesson file", which
    includes both Drills (translated by "Exercice") and
    Speed tests ("Tests de vitesse").
 
- * Standardize lesson files, using standards for languages and
+ * Standardize lesson file names, using standards for languages and
    keyboard types.
 
  * Make a separate package for lessons, so that lessons
@@ -35,25 +34,6 @@ CLOSE FUTURE
    in which the `.' character is replaced by `,'. Useful for some
    european keyboards.
 
- * 'D' is only used once in all the lessons. Is it still necessary?
-   (Suggested by Felix Natter, f.natter@ndh.net)
-
- * Call the `fortune' program and let people practise on
-   its outputs (Suggested by Felix Natter, f.natter@ndh.net):
-   - that would be fun, especially for people who want
-     to practice but have exhausted the existing typing tutorials
-   - Even if no tutorial is available (yet) for a given keyboard
-     and language, people can still practice on their own language,
-     because the `fortune' program is more likely to be 
-     available for their language! 
-   - The author of the quote would be used as the title
-     of the corresponding drill (displayed on the top banner).
-
- * Detail current plans on the home page (publish the answers
-   to Georg C.F. Greve's Standard Question form, and this
-   TODO file). This way, we can get feedback and people know
-   what contributions are needed. 
-
  * Port the interface to GTK. 
    Should Gnome be supported too? This shouldn't be
    mandatory (configure option)... in particular for Win32
@@ -62,9 +42,7 @@ CLOSE FUTURE
 
    The benefits we can expect from a GTK interface are:
 
-   - Much easier to use that the `ncurses' interface. In particular, the
-     use of menus will make it possible to easily go from a lesson to
-     another (without having to start with the first lesson in a series).
+   - Much attractive than the `ncurses' interface. 
    - Not using `ncurses' should avoid problems supporting different
      terminal types.
    - We could have a graphical control panel, to change settings that
@@ -72,10 +50,9 @@ CLOSE FUTURE
      silent mode...)
    - Easy access to help and manual
    - Could still be compiled on Win32 on which GTK has been ported.
-   - Easy to create and modify through the `glade' interface builder.
 
 
-QUITE CLOSE FUTURE
+MEDIUM TERM
 
  * Update Native Language Support according to the messages
    in the new interface. Support other languages 
@@ -100,7 +77,7 @@ QUITE CLOSE FUTURE
    graphical bars, using color to indicate areas that need work).
    A measure of typing rhythm would also be useful.
 
-DISTANT FUTURE
+LONG TERM
 
  * While typing, graphically show the finger that is supposed to be used.
 
