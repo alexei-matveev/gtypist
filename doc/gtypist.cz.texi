@@ -904,10 +904,13 @@ lekcí z jiných tutoriálù, vylep¹ením pomocných utilit,
 nových mo¾ností tutoriálù a módem pro Emacs.
 @end itemize
 
-@node Kopírování tohoto manuálu, , Historie, Top
-@appendix Kopírování tohoto manuálu: GNU Free Documentation License
-@include fdl.texi
+@node Kopírování tohoto manuálu
+@appendix Kopírování tohoto manuálu
+@menu
+* GNU Free Documentation License:: Kopírování tohoto manuálu
+@end menu
 
+@include fdl.texi
 @bye
 
 @c  LocalWords:  xref QWERTY kt
