@@ -76,6 +76,8 @@
 ;; if drill-type=P:
 ;; Wed Jul 18 19:21:28 2001: don't accept lowercase commands
 ;; Wed Jul 18 19:31:24 2001: (gtypist-mode-new-banner): use insert-char
+;; Sun Jul 29 18:49:15 2001: rename gtypist-mode-new-banner to
+;; gtypist-mode-insert-banner
 
 ;; TODO:
 ;; - gtypist-mode-goto-label-history, gtypist-mode-lesson-name-history ?
@@ -179,7 +181,7 @@ available). Use C-u prefix to get P:, and C-u C-u to get D:."
     ;; check whether last line is an "author-line"
     (if (string-match "^[\t ]*-- \\(.+\\)[ \t]*" (car (last fortune-lines)))
 	(progn ;; add banner...
-	  (gtypist-mode-new-banner (match-string 1 (car (last fortune-lines))))
+	  (gtypist-mode-insert-banner (match-string 1 (car (last fortune-lines))))
 	  ;; ... and remove "author-line"
 	  (setcdr (last fortune-lines 2) nil)))
     ;; emit warning if fortune is too long
