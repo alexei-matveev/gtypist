@@ -1,3 +1,9 @@
+2003-09-26  Michael Opdenacker <michaelo@gnu.org>
+
+        * cursmenu.c, error.c, gtypist.c:
+          Added #define _(String) gettext (String)
+          so that we don't have to hack gettext.h and make it non standard.
+
 2003-08-28  Rob Leslie  <rob@mars.org>
 
 	* gtypist.c: Added support to resync with the typist after an
