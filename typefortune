@@ -105,6 +105,7 @@ open(TYPFILE, ">$typfilename") ||
 
 # note: $#lines is the index of the last line (and not the length of @lines)
 print TYPFILE "# temporary file created by typefortune\n";
+print TYPFILE "K:12:END\n";
 for ($i = 0; $i < $count; $i++)
 {
     do {
@@ -139,6 +140,7 @@ print TYPFILE getBanner("Practice complete");
 print TYPFILE "T:\n :\n :\n : Congratulations: " .
     "you successfully completed the $count " .
     "fortune lessons !\n";
+print TYPFILE "*:END\nX:\n";
     
 close(TYPFILE) || die "Couldn't close $typfilename: $!";
 
