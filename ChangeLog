@@ -1,3 +1,8 @@
+2002-12-10  Michael Opdenacker <michaelo@gnu.org>
+
+	* typefortune: several fixes from Stefan Troeger <stefan@troeger.st>:
+	  improved 'fortune' detection and temporary file deletion.
+
 2002-11-26  Michael Opdenacker <michaelo@gnu.org>
 
 	* po/nl.po: new Dutch interface from J.M. Cogels <jcogels@chello.nl>
