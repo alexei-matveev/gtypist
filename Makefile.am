@@ -1,5 +1,7 @@
 ## Process this file with automake to produce Makefile.in
 
+AUTOMAKE_OPTIONS = 1.6 dist-bzip check-new
+
 SUBDIRS= m4 po lessons tools doc intl
 
 EXTRA_DIST= typefortune gtypist.1 typefortune.1 \
@@ -11,7 +13,10 @@ bin_SCRIPTS = typefortune
 gtypist_SOURCES = gtypist.c getopt.h getopt.c getopt1.c
 gtypist_LDADD = @LIBINTL@
 man_MANS = gtypist.1 typefortune.1
-INCLUDES = -I./intl -DPACKAGE_DATA_DIR=\"$(pkgdatadir)\" 
+
+AM_CPPFLAGS = -I./intl \
+  -DPACKAGE_DATA_DIR=\"$(pkgdatadir)\" \
+  -DLOCALEDIR=\"$(datadir)/locale\"
 
 # GEN_MAN is a shell command that generates the man page
 GEN_MAN=@GEN_MAN@
