@@ -3,7 +3,7 @@
 	* gtypist.texi: Added French to the list of interface languages.
 	Recommended to use a wider terminal for languages such as French.
 
-2001-11-03  Felix Natter  <f.natter@ndh.net>
+2001-11-03  Felix Natter  <fnatter@gmx.net>
 
 	* gtypist.texi (many nodes): changed the node-names to be shorter
 	and add descriptions in the menus
@@ -15,7 +15,7 @@
 	* gtypist.texi (Distribution): use @asis instead of @emph because
 	@emph results in "_Primary distribution site_"
 
-2001-10-20  Felix Natter  <f.natter@ndh.net>
+2001-10-20  Felix Natter  <fnatter@gmx.net>
 
 	* gtypist.texi: fix some TODO's
 	* gtypist.texi: rename node "Emacs mode for editing gtypist lessons" to
@@ -23,12 +23,12 @@
 	* gtypist.texi (VIM Syntax highlighting for gtypist scripts):
 	new node which explains how to install tools/gtypist.vim
 
-2001-09-17  Felix Natter  <f.natter@ndh.net>
+2001-09-17  Felix Natter  <fnatter@gmx.net>
 
 	* gtypist.texi: new node "Design-patterns for lessons"
 	which has hints about all kinds of things for writing lessons
 
-2001-08-22  Felix Natter  <f.natter@ndh.net>
+2001-08-22  Felix Natter  <fnatter@gmx.net>
 
 	* gtypist.texi (Introduction): as Kevin Gallagher <kevingal@onramp.net>
 	(and Eli Zaretskii <eliz@is.elta.co.il>) suggested, do not mention
@@ -39,7 +39,7 @@
 
 	* Renamed manual sources to `gtypist.texi' (more standard).
  
-2001-08-15  Felix Natter  <f.natter@ndh.net>
+2001-08-15  Felix Natter  <fnatter@gmx.net>
 
 	* node Introduction: start of rewrite
 	* some spelling fixes
@@ -50,7 +50,7 @@
 	copied from GNU hello. Renamed manual sources to
 	`gtypist.texi' (more standard).
  
-2001-08-12  Felix Natter  <f.natter@ndh.net>
+2001-08-12  Felix Natter  <fnatter@gmx.net>
 
         * node Emacs mode for editing gtypist-lessons: add info
 	about gtypist-mode-help and change the informatin about
@@ -60,18 +60,18 @@
 	* many nodes: rename "Script files and commands" to
 	"Script-file commands"
 
-2001-07-28  Felix Natter  <f.natter@ndh.net>
+2001-07-28  Felix Natter  <fnatter@gmx.net>
 
 	* node Emacs mode for editing gtypist-lessons: mention that
 	"make install" puts gtypist-mode.el in load-path
 
-2001-07-27  Felix Natter  <f.natter@ndh.net>
+2001-07-27  Felix Natter  <fnatter@gmx.net>
 
 	* node How to contribute new lessons: add menu with nodes
 	"Ktouch-lessons" and "Create drills from fortune".
 	* node Ktouch-lessons: add example of .ktouch-lesson
 
-2001-07-26  Felix Natter  <f.natter@ndh.net>
+2001-07-26  Felix Natter  <fnatter@gmx.net>
 
 	* node Supplied Lessons: mention kt*.typ
 	* node How to contribute new lessons: remove "not yet there" notice,
@@ -79,7 +79,7 @@
 	* node Emacs mode for editing gtypist-lessons: improve English
 	* generate gtypist.info
 
-2001-07-21  Felix Natter  <f.natter@ndh.net>
+2001-07-21  Felix Natter  <fnatter@gmx.net>
 
 	* node Emacs mode for editing gtypist-lessons:
 	use @strong for and + add note that people should submit
@@ -89,14 +89,14 @@
 	* node Script files and commands: mention that trailing whitespace
 	is ignored in labels
 
-2001-07-20  Felix Natter  <f.natter@ndh.net>
+2001-07-20  Felix Natter  <fnatter@gmx.net>
 
 	* node Introduction: some English fixes
 	* node Invoking: mention $LANG
 	* node Environment Variables: an English fix
 	* generate gtypist.info
 
-2001-07-19  Felix Natter <f.natter@ndh.net>
+2001-07-19  Felix Natter <fnatter@gmx.net>
 
 	* node Script files and commands: correct a few errors
 	* node Environment Variables: use LANG=LL_CC

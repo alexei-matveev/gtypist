@@ -9,7 +9,7 @@
        * fr.po, es.po, fi.po: fixed alignment problems with raw speed,
 	adjusted speed and error rate display.
 
-2001-12-10  Felix Natter  <f.natter@ndh.net>
+2001-12-10  Felix Natter  <fnatter@gmx.net>
 
 	* change CONFIRM_EXIT_MSG to include "[Y/N]"
 	* do_query_repeat: add 2nd parameter which indicates whether
@@ -20,11 +20,11 @@
 	* rename CONFIRM_EXIT_MSG to CONFIRM_EXIT_LESSON_MSG
 	because it isn't used to exit the program
 
-2001-12-09  Felix Natter  <f.natter@ndh.net>
+2001-12-09  Felix Natter  <fnatter@gmx.net>
 
 	* main: change REPEAT_NEXT_EXIT_MSG (longer)
 
-2001-12-08  Felix Natter  <f.natter@ndh.net>
+2001-12-08  Felix Natter  <fnatter@gmx.net>
 
 	* do_query_repeat: call do_query_simple(CONFIRM_EXIT_MSG) to let the
 	user confirm (E)xit
@@ -61,7 +61,7 @@
 	* Added configur.bat.in, autogen.sh, INSTALL.in
 	and TODO to EXTRA_DIST
 
-2001-09-18  Felix Natter  <f.natter@ndh.net>
+2001-09-18  Felix Natter  <fnatter@gmx.net>
 
 	* gtypist.c (do_speedtest): fix problem: give up via ESC wasn't
 	possible in speed-tests. I fixed this by inserting
@@ -70,12 +70,12 @@
 	this fixes the problem but do_drill and do_speedtest need to be
 	rethought some day.
 
-2001-09-13  Felix Natter  <f.natter@ndh.net>
+2001-09-13  Felix Natter  <fnatter@gmx.net>
 
 	* configure.in (ALL_LINGUAS): add fi.po (finnish by
 	kusti@iki.fi (Kimmo K. I. Surakka))
 
-2001-09-07  Felix Natter  <f.natter@ndh.net>
+2001-09-07  Felix Natter  <fnatter@gmx.net>
 
 	* gtypist.c: add macro ASCII_ENTER which is used in wait_user
 	(necessary because pdcurs-2.4 returns 0x0D for Enter if raw() is used)
@@ -83,37 +83,37 @@
 	to ASCII_NL
 	(necessary because pdcurs-2.4 returns 0x0D for Enter if raw() is used)
 
-2001-09-05  Felix Natter  <f.natter@ndh.net>
+2001-09-05  Felix Natter  <fnatter@gmx.net>
 
 	* gtypist.c (do_speedtest): add unsigned char cast to avoid
 	a blinking character if an 8bit-character is mistyped
 
-2001-08-31  Felix Natter  <f.natter@ndh.net>
+2001-08-31  Felix Natter  <fnatter@gmx.net>
 
 	* Makefile.am: add version.sh to EXTRA_DIST
 
-2001-08-30  Felix Natter  <f.natter@ndh.net>
+2001-08-30  Felix Natter  <fnatter@gmx.net>
 
 	* configure.in: now configure.in gets the version-number from
 	version.sh (as suggested by Michael)
 
-2001-08-23  Felix Natter  <f.natter@ndh.net>
+2001-08-23  Felix Natter  <fnatter@gmx.net>
 
 	* gtypist.c (main): change "skip back" to "go back" in
 	SKIPBACK_VIA_F_MSG
 
-2001-08-20  Felix Natter  <f.natter@ndh.net>
+2001-08-20  Felix Natter  <fnatter@gmx.net>
 
 	* gtypist.c (main, do_query): rename _("YN") to _("Y/N")
 
-2001-08-16  Felix Natter  <f.natter@ndh.net>
+2001-08-16  Felix Natter  <fnatter@gmx.net>
 
 	* NEWS: write the list of new/changed features for 2.4
 	* gtypist.c (do_on_failure_label_set): allow special value "NULL"
 	* gtypist.c (do_speedtest): set errors to 0 in the loop (I forgot
 	to do this when I changed do_speedtest to use a repeat-loop)
 
-2001-08-13  Felix Natter  <f.natter@ndh.net>
+2001-08-13  Felix Natter  <fnatter@gmx.net>
 
 	* gtypist.c (main, do_query): add new translatable string `YN'
 	which is used to translate the keys in Y/N-queries (but Y/N are
@@ -126,7 +126,7 @@
 	mention that it can be overridden in the script-file (but that
 	is still mentioned in the manual)
 
-2001-08-12  Felix Natter  <f.natter@ndh.net>
+2001-08-12  Felix Natter  <fnatter@gmx.net>
 
 	* gtypist.c (do_error_max_set): if --error-max is specified
 	(*not* if the default value is used), then an E:-command will
@@ -159,12 +159,12 @@
 	* gtypist.c (do_drill, do_speedtest): allow "give up" via ESC
 	(repeat lesson)
 
-2001-07-26  Felix Natter  <f.natter@ndh.net>
+2001-07-26  Felix Natter  <fnatter@gmx.net>
 
 	* configure.in: add AM_PATH_LISPDIR which is needed for
 	lisp_LISP = gtypist-mode.el
 
-2001-07-24  Felix Natter  <f.natter@ndh.net>
+2001-07-24  Felix Natter  <fnatter@gmx.net>
 
 	* gtypist.c (cl_wpmode): should be disabled by default
 	* gtypist.c replace all occurrences of addch by ADDCH

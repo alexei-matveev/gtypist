@@ -3,7 +3,7 @@
 	* esp.typ: added missing `K' on line 109,
 	as suggested by José Pelegrín <josepl@acm.org>.
 
-2001-12-01  Felix Natter  <f.natter@ndh.net>
+2001-12-01  Felix Natter  <fnatter@gmx.net>
 
 	* d.typ, r.typ, v.typ, esp.typ: remove more occurrences of "Q:
 	Press Y to continue, ..."  following an exercise (because this is
@@ -19,7 +19,7 @@ I:Juvenile zest for excitement whetted interest in parking by the quay.
 	D:.
 	* esp.typ: fix a typo (reported by José Pelegrín <josepl@acm.org>)
 
-2001-09-02  Felix Natter  <f.natter@ndh.net>
+2001-09-02  Felix Natter  <fnatter@gmx.net>
 
 	* ?.typ: adapt lessons to new 2.4 syntax
 	* demo.typ: rewrite for 2.4
