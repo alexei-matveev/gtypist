@@ -660,6 +660,10 @@ G:__SERIESMENU
 
 #------------------------------------------------------------------------------
 # Series R
+#
+# Thanks to Richard Susta <r@susta.cz> for these lessons (series R)
+# (exported from his program Psaci stroj (Typewriter)).
+#
 #------------------------------------------------------------------------------
 G:_R_MENU
 *:_R_NO_MENU
