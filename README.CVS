@@ -1,5 +1,6 @@
 Notes on how to build it from CVS 
 =================================
+
 (UNIX only)
 
 
@@ -9,12 +10,12 @@ REQUIREMENTS
 First, make sure you ever want to do it.  Remember, there are stable releases,
 and they work nicely.
 
-If you do, then check if you have automake-1.7.3 and autoconf 2.57 properly
+If you do, then check if you have automake-1.7.7 and autoconf 2.57 properly
 installed on your system (check 'autoconf --version' and 'automake --version').
 You may try it with different versions, but we don't know if they work.
 
 Other requirements include:
-	* GCC (any reasonable version, 3.3 is recommended) and libc headers
+	* GCC (any reasonable version, 3.3.x is recommended) and libc headers
 	  (of course they must match the libc);
 	* GNU make (any reasonable version, 3.80 will do);
 	* ncurses 5.3.2 (or any reasonable version) library and headers
@@ -32,7 +33,7 @@ this script before with 'aclocal; automake --add-missing; autoconf'.  Just don't
 bother about it, most of the people use standard settings.
 Also set $CC, $CFLAGS and $LDFLAGS to desired values, if you wish.
 
-If you are going to install it not system-wide, supply `--perfix=[DIR]' to the
+If you are going to install it not system-wide, supply `--prefix=[DIR]' to the
 `autogen.sh', where [DIR] is directory where you are going to install the
 gtypist (e.g. if you have no root, you may want to use `--prefix=$HOME').
 
