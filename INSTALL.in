@@ -75,6 +75,8 @@ You must have:
 	do
 		recode latin1..ibmpc $i
 	done
+  Furthermore, I've had trouble with infozip: zip 2.0.1 does not work,
+  but 2.3 (or above) seem to work
 	
 * To use it go to the directory where you installed it and run gtypist.exe
 	cd GTypist
