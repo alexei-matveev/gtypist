@@ -456,15 +456,17 @@ and waits for the user to correctly type the exact same text in the
 intermediate lines.  Typing errors are indicated with an inverse `^',
 or `>' if the character is a newline and at the end of the exercise it
 calculates the real and effective rate in WPM.  If there were too many
-errors, it will re-run the drill.  <Backspace> and <delete> are not
-permitted in drills.
+errors, it will re-run the drill.
+
+   Backward deleting of previously typed characters to correct errors is
+not allowed.
 
    In a speed test, gtypist displays text on the screen, and waits for
 the user to correctly over-type the exact same text. It indicates typing
 errors, and at the end of the test it calculates the real and effective
 rate in WPM.  If there were too many errors, it will re-run the
-speed-test.  <Backspace> and <delete> are recognised, but errors still
-accumulate.
+speed-test.  Backward deleting of previously typed characters to
+correct errors is      permitted, but errors still accumulate.
 
    If you already made too many mistakes, then you can use <ESC> to
 give up and start again. Once you complete a lesson, you will be asked
@@ -1083,16 +1085,16 @@ Node: Top220
 Node: Distribution899
 Node: Copying1788
 Node: Introduction20955
-Node: Invoking23583
-Node: Script-file commands27215
-Node: Supplied lessons34158
-Node: How to contribute new lessons35638
-Node: Ktouch-lessons35965
-Node: Create drills from fortune38324
-Node: Emacs mode for editing gtypist-lessons39036
-Node: Technical Information41502
-Node: Environment Variables41733
-Node: Errors and omissions43838
-Node: History44555
+Node: Invoking23660
+Node: Script-file commands27292
+Node: Supplied lessons34235
+Node: How to contribute new lessons35715
+Node: Ktouch-lessons36042
+Node: Create drills from fortune38401
+Node: Emacs mode for editing gtypist-lessons39113
+Node: Technical Information41579
+Node: Environment Variables41810
+Node: Errors and omissions43915
+Node: History44632
 
 End Tag Table

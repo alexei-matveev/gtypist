@@ -15,7 +15,9 @@
 
 makeinfo -Idoc doc/gtypist.texi -o doc/gtypist.info
 
-for file in configure.in configur.bat INSTALL
+# TODO: check whether someone has modified $file and if so
+# write a meaningful message that this file is generated from $file.in
+for file in configur.bat INSTALL
 do
   sed "s/@VERSION/$VERSION/g" ${file}.in > $file 
 done

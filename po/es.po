@@ -4,7 +4,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: typist 2.3.1\n"
-"POT-Creation-Date: 2001-08-17 16:55+0200\n"
+"POT-Creation-Date: 2001-08-23 20:06+0200\n"
 "PO-Revision-Date: 2000-12-08 14:17+01:00\n"
 "Last-Translator: Vladimir Támara Patiño <vtamara@gnu.org>\n"
 "Language-Team:\n"
@@ -295,11 +295,11 @@ msgstr ""
 
 #: gtypist.c:1843
 #, c-format
-msgid "You failed this test, so you need to skip back to %s."
+msgid "You failed this test, so you need to go back to %s."
 msgstr ""
 
 #. this is used for queries. you can translate the keys as well
-#. (if you translate msgid "YN" accordingly)
+#. (if you translate msgid "Y/N" accordingly)
 #: gtypist.c:1846
 msgid "Press Y to continue, N to repeat or Fkey12 to exit"
 msgstr ""
@@ -334,7 +334,7 @@ msgstr "            con %3.0f%% errores "
 #. this is used to translate the keys for Y/N-queries. Must be two uppercase
 #. letters. Y/N will still be accepted as well
 #: gtypist.c:1864
-msgid "YN"
+msgid "Y/N"
 msgstr ""
 
 #: gtypist.c:1911
