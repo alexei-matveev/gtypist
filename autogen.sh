@@ -117,10 +117,11 @@ make
 cd doc
 echo "creating doc/gtypist.info..."
 makeinfo -Idoc gtypist.texi -o gtypist.info
-echo "creating doc/gtypist.html..."
 # Bug: '--html --no-header' doesn't work without '--no-split'
 # Reported to texinfo developers.
+echo "creating doc/gtypist.html..."
 makeinfo --html --no-header --no-split gtypist.texi -o gtypist.html 
+echo "creating doc/gtypist.cs.html..."
 makeinfo --html --no-header --no-split gtypist.cs.texi -o gtypist.cs.html 
 cd ..
 
