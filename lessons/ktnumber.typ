@@ -1,7 +1,11 @@
 # created by ktouch2typ.pl from /mnt/src/ktouch-1.0/ktouch/number.ktouch
-# on Don Jul 26 19:17:12 CEST 2001
+# on Son Jul 29 18:55:31 CEST 2001
 # ktouch2typ.pl is part of gtypist (http://www.gnu.org/software/gtypist/)
 # ktouch can be found at http://ktouch.sourceforge.net
+# If you have suggestions about these lessons,
+# please send mail to haavard@users.sourceforge.net
+# (or whoever is the current ktouch-maintainer), with
+# cc to bug-gtypist@gnu.org
 
 G:MENU
 
@@ -19,6 +23,8 @@ N:LESSON1_D1
 *:LESSON1_D2
 I:(2)
 O:55445555445545545455
+Q: Press Y to continue, N to repeat, or Fkey 12 to exit
+N:LESSON1_D2
 G:E_LESSON1
 
 *:S_LESSON2
@@ -35,6 +41,8 @@ N:LESSON2_D1
 I:(2)
 O:06546006406405065065460
  :6054406540650456600460
+Q: Press Y to continue, N to repeat, or Fkey 12 to exit
+N:LESSON2_D2
 G:E_LESSON2
 
 *:S_LESSON3
@@ -50,6 +58,8 @@ N:LESSON3_D1
 *:LESSON3_D2
 I:(2)
 O:50455901609564019
+Q: Press Y to continue, N to repeat, or Fkey 12 to exit
+N:LESSON3_D2
 G:E_LESSON3
 
 *:S_LESSON4
@@ -65,6 +75,8 @@ N:LESSON4_D1
 *:LESSON4_D2
 I:(2)
 O:51305497133464377
+Q: Press Y to continue, N to repeat, or Fkey 12 to exit
+N:LESSON4_D2
 G:E_LESSON4
 
 *:S_LESSON5
@@ -77,6 +89,8 @@ O:268292164372156428283802
  :5284208083549398328
 Q: Press Y to continue, N to repeat, or Fkey 12 to exit
 N:LESSON5_D1
+Q: Press Y to continue, N to repeat, or Fkey 12 to exit
+N:LESSON5_D2
 G:E_LESSON5
 
 *:S_LESSON6
@@ -85,6 +99,8 @@ B:                            Lesson 6: +
 I:(1)
 O:1+424+414+5+8+5+685+54
  :54+454+87+85+4547+548+54
+Q: Press Y to continue, N to repeat, or Fkey 12 to exit
+N:LESSON6_D1
 G:E_LESSON6
 
 *:S_LESSON7
@@ -94,6 +110,8 @@ I:(1)
 O:5.445+5.5+5665.66+6564.64
  :465.4+0.4+0.005+465.56+54
  :46.4+4654.4
+Q: Press Y to continue, N to repeat, or Fkey 12 to exit
+N:LESSON7_D1
 G:E_LESSON7
 
 *:S_LESSON8
@@ -103,6 +121,8 @@ I:(1)
 O:4/5+6.0/7
  :5/6
  :6/8.6+5
+Q: Press Y to continue, N to repeat, or Fkey 12 to exit
+N:LESSON8_D1
 G:E_LESSON8
 
 *:S_LESSON9
@@ -112,6 +132,8 @@ I:(1)
 O:4*3*3
  :-4*5
  :-7+5*5*4*0.6
+Q: Press Y to continue, N to repeat, or Fkey 12 to exit
+N:LESSON9_D1
 G:E_LESSON9
 
 *:S_LESSON10
@@ -128,6 +150,8 @@ N:LESSON10_D1
 I:(2)
 O:9.5-6.4
  :-
+Q: Press Y to continue, N to repeat, or Fkey 12 to exit
+N:LESSON10_D2
 G:E_LESSON10
 
 
@@ -200,6 +224,7 @@ T:this file contains the following 10 lessons:
  :        Fkey 8 - /
  :        Fkey 9 - *
  :        Fkey 10 - -
+ :
  :
  :        Fkey 12 - Quit program
 

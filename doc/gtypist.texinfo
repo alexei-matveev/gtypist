@@ -781,6 +781,10 @@ gtypist's file format using @file{tools/ktouch2typ.pl}.
 They are called ktde.typ (german.ktouch), kten.typ (english.ktouch),
 ktfr.typ (french.ktouch), ktlecten.typ (lecture_en.ktouch), ktno.typ
 (norwegian.ktouch) and ktnumber.typ (number.ktouch).
+@item ttde.typ
+This is the German lesson of tipptrainer
+(@url{http://www.pingos.schulnetz.org/tipptrainer}), which have been
+converted using @file{tools/tt2typ.pl}.
 @end table
 
 @noindent

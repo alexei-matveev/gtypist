@@ -1,7 +1,11 @@
 # created by ktouch2typ.pl from /mnt/src/ktouch-1.0/ktouch/english.ktouch
-# on Don Jul 26 19:17:12 CEST 2001
+# on Son Jul 29 18:55:31 CEST 2001
 # ktouch2typ.pl is part of gtypist (http://www.gnu.org/software/gtypist/)
 # ktouch can be found at http://ktouch.sourceforge.net
+# If you have suggestions about these lessons,
+# please send mail to haavard@users.sourceforge.net
+# (or whoever is the current ktouch-maintainer), with
+# cc to bug-gtypist@gnu.org
 
 G:MENU
 
@@ -72,6 +76,8 @@ N:LESSON1_D7
 I:(8)
 O:f jf jf j jj j fj fj ff jj jj jj j fj f fj
  :ff fj fj fj jf jf jj jj jj f f f jj j fj jj
+Q: Press Y to continue, N to repeat, or Fkey 12 to exit
+N:LESSON1_D8
 G:E_LESSON1
 
 # Level 2
@@ -137,6 +143,8 @@ N:LESSON2_D7
 I:(8)
 O:kd kd dk d k dd dk d kk kk kd kd kd k dk d
  :dd kd dd kk kd kd k k k dk k d kk kd kd k
+Q: Press Y to continue, N to repeat, or Fkey 12 to exit
+N:LESSON2_D8
 G:E_LESSON2
 
 # Level 3
@@ -202,6 +210,8 @@ N:LESSON3_D7
 I:(8)
 O:s ss l s ll ls ss ll sl sl sl sl s ss ss s
  :ls sl l s ll ss sl ls sl sl sl ss l l ls s
+Q: Press Y to continue, N to repeat, or Fkey 12 to exit
+N:LESSON3_D8
 G:E_LESSON3
 
 # Level 4
@@ -267,6 +277,8 @@ N:LESSON4_D7
 I:(8)
 O:aa add add ai ii as is ask ia add aa i ii
  :as all ails ai i a if add all aid ask ii a
+Q: Press Y to continue, N to repeat, or Fkey 12 to exit
+N:LESSON4_D8
 G:E_LESSON4
 
 # Level 5
@@ -332,6 +344,8 @@ N:LESSON5_D7
 I:(8)
 O:ellen else n end nn else nine n ends need
  :end need nails ee ekal e ends ekal nn nn else
+Q: Press Y to continue, N to repeat, or Fkey 12 to exit
+N:LESSON5_D8
 G:E_LESSON5
 
 # Level 6
@@ -397,6 +411,8 @@ N:LESSON6_D7
 I:(8)
 O:vile vein vessel vessel veil vessels undefined
  :unused uses useful uv usual veil use us used
+Q: Press Y to continue, N to repeat, or Fkey 12 to exit
+N:LESSON6_D8
 G:E_LESSON6
 
 # Level 7
@@ -462,6 +478,8 @@ N:LESSON7_D7
 I:(8)
 O:injure reader ruffian idle rules red revives
  :revivified resided ii rudeness individuals
+Q: Press Y to continue, N to repeat, or Fkey 12 to exit
+N:LESSON7_D8
 G:E_LESSON7
 
 # Level 8
@@ -527,6 +545,8 @@ N:LESSON8_D7
 I:(8)
 O:concussion converse colours officers confusion
  :offended orders consciousness coincidence
+Q: Press Y to continue, N to repeat, or Fkey 12 to exit
+N:LESSON8_D8
 G:E_LESSON8
 
 # Level 9
@@ -592,6 +612,8 @@ N:LESSON9_D7
 I:(8)
 O:pass proceed proffer prefer proceeds propped
  :professional pronounced quarrelled prefer
+Q: Press Y to continue, N to repeat, or Fkey 12 to exit
+N:LESSON9_D8
 G:E_LESSON9
 
 # Level 10
@@ -657,6 +679,8 @@ N:LESSON10_D7
 I:(8)
 O:millions mound mournful wounded mourn macdonald
  :meadow melodious modern wan main measure would
+Q: Press Y to continue, N to repeat, or Fkey 12 to exit
+N:LESSON10_D8
 G:E_LESSON10
 
 # Level 11
@@ -722,6 +746,8 @@ N:LESSON11_D7
 I:(8)
 O:persuaded breed pervaded borne boundless boards
  :praise blame pink pursue pride parlour bereaved
+Q: Press Y to continue, N to repeat, or Fkey 12 to exit
+N:LESSON11_D8
 G:E_LESSON11
 
 # Level 12
@@ -787,6 +813,8 @@ N:LESSON12_D7
 I:(8)
 O:two told terms temporarily tops taller transcendent
  :toe transaction tap taunts twinkle trespassers
+Q: Press Y to continue, N to repeat, or Fkey 12 to exit
+N:LESSON12_D8
 G:E_LESSON12
 
 # Level 13
@@ -852,6 +880,8 @@ N:LESSON13_D7
 I:(8)
 O:zealously zz zip xz zeal zealously xz z zz
  :xz z xz xx zx zz zz zx zealous zx x z zz zx
+Q: Press Y to continue, N to repeat, or Fkey 12 to exit
+N:LESSON13_D8
 G:E_LESSON13
 
 
@@ -936,6 +966,7 @@ T:this file contains the following 13 lessons:
  :        Fkey 8 - oc
  :        Fkey 9 - pq
  :        Fkey 10 - wm
+ :
  :        Fkey 11 - Next menu page...
  :        Fkey 12 - Quit program
 
@@ -959,6 +990,7 @@ T:this file contains the following 13 lessons:
  :        Fkey 1 - bp
  :        Fkey 2 - ty
  :        Fkey 3 - zx
+ :
  :
  :
  :

@@ -1,7 +1,11 @@
 # created by ktouch2typ.pl from /mnt/src/ktouch-1.0/ktouch/german.ktouch
-# on Don Jul 26 19:17:12 CEST 2001
+# on Son Jul 29 18:55:31 CEST 2001
 # ktouch2typ.pl is part of gtypist (http://www.gnu.org/software/gtypist/)
 # ktouch can be found at http://ktouch.sourceforge.net
+# If you have suggestions about these lessons,
+# please send mail to haavard@users.sourceforge.net
+# (or whoever is the current ktouch-maintainer), with
+# cc to bug-gtypist@gnu.org
 
 G:MENU
 
@@ -39,6 +43,8 @@ I:(4)
 O:aaa ööö ddd kkk fff jjj aaa ööö ddd kkk fff jjj aaa ööö ddd aöaöa
  :adf ökj adf ökj adf ökj adf ökj adf ökj adf ökj adf ökj adf ökjök
  :fda jkö fda jkö fda jkö fda jkö fda jkö fda jkö fda jkö fda jköjk
+Q: Press Y to continue, N to repeat, or Fkey 12 to exit
+N:LESSON1_D4
 G:E_LESSON1
 
 *:S_LESSON2
@@ -88,6 +94,8 @@ I:(6)
 O:da das da das da das las ja las ja las ja öd ja las das fad ja öd
  :ja lös ja lös ja lös lös da fad da fad da öd öd fad lös dad öd ja
  :öd fad öd fad öd fad das ja das ja das ja da da lös fad lös ja öd
+Q: Press Y to continue, N to repeat, or Fkey 12 to exit
+N:LESSON2_D6
 G:E_LESSON2
 
 #Zwei wichtige Vokale: e und i
@@ -153,6 +161,8 @@ N:LESSON3_D7
 I:(8)
 O:las lasse das dass las lasse das dass las lasse das dass las dass
  :jede jede ödes ödes dass dass jede jede ödes ödes dass dass lasse
+Q: Press Y to continue, N to repeat, or Fkey 12 to exit
+N:LESSON3_D8
 G:E_LESSON3
 
 #Komma
@@ -211,6 +221,8 @@ I:(7)
 O:löse es, löse das, löse alles, löse das, löse es, löse das, löse,
  :lies alles, lies das alles, sei leise, sie las leise, ideal, lies
  :jede las leise, jede las das alles leise, es sei ideal, als, jede
+Q: Press Y to continue, N to repeat, or Fkey 12 to exit
+N:LESSON4_D7
 G:E_LESSON4
 
 #Zwei häufige Buchstaben: r und u
@@ -276,6 +288,8 @@ N:LESSON5_D7
 I:(8)
 O:rufe das aus, rufe dies aus, rufe dies alles aus, rufe aus, alles
  :erlasse es, erlasse dies, erlasse dieses, leider dies alles leer,
+Q: Press Y to continue, N to repeat, or Fkey 12 to exit
+N:LESSON5_D8
 G:E_LESSON5
 
 #Die ersten Spreizgriffe: g und h
@@ -341,6 +355,8 @@ N:LESSON6_D7
 I:(8)
 O:sie las eifrig, sie las das alles sehr eifrig, er las das eifrig,
  :das sei grell, dies sei greller, da lag es, er griff es hier auf,
+Q: Press Y to continue, N to repeat, or Fkey 12 to exit
+N:LESSON6_D8
 G:E_LESSON6
 
 #Zwei wichtige Konsonanten: t und z
@@ -406,6 +422,8 @@ N:LESSON7_D7
 I:(8)
 O:sie sagte es klar, sie sagte das alles sehr klar, er hört darauf,
  :er hat gezahlt, er hat jetzt gezahlt, sie hat es jetzt ausgezahlt
+Q: Press Y to continue, N to repeat, or Fkey 12 to exit
+N:LESSON7_D8
 G:E_LESSON7
 
 #Die Zeigefinger in der Unterreihe: v und m
@@ -471,6 +489,8 @@ N:LESSON8_D7
 I:(8)
 O:sie vermittelt es, sie vermittelte es mehrmals, merke dir das gut
  :er merkt alles, er vermerkte das meiste, sie verlieh heute alles,
+Q: Press Y to continue, N to repeat, or Fkey 12 to exit
+N:LESSON8_D8
 G:E_LESSON8
 
 #Spreizgriffe in die Unterreihe: b und n
@@ -536,6 +556,8 @@ N:LESSON9_D7
 I:(8)
 O:er behandelt es, sie behandelt es, alle behandeln es jetzt eilig,
  :er lernt eifrig, sie lernt eifrig, alle lernen jetzt aber eifrig,
+Q: Press Y to continue, N to repeat, or Fkey 12 to exit
+N:LESSON9_D8
 G:E_LESSON9
 
 #Punkt
@@ -602,6 +624,8 @@ I:(8)
 O:dies ist ganz klar festgelegt. es ist jetzt aber klar festgelegt.
  :er kann hierzu aber beitragen. alle könnten heute dazu beitragen.
  :sie könnte besser diskutieren. nun diskutiert sie aber sehr viel.
+Q: Press Y to continue, N to repeat, or Fkey 12 to exit
+N:LESSON10_D8
 G:E_LESSON10
 
 
@@ -674,6 +698,7 @@ T:this file contains the following 10 lessons:
  :        Fkey 8 - v und m
  :        Fkey 9 - b und n
  :        Fkey 10 - Punkt
+ :
  :
  :        Fkey 12 - Quit program
 

@@ -1,7 +1,11 @@
 # created by ktouch2typ.pl from /mnt/src/ktouch-1.0/ktouch/norwegian.ktouch
-# on Don Jul 26 19:17:12 CEST 2001
+# on Son Jul 29 18:55:31 CEST 2001
 # ktouch2typ.pl is part of gtypist (http://www.gnu.org/software/gtypist/)
 # ktouch can be found at http://ktouch.sourceforge.net
+# If you have suggestions about these lessons,
+# please send mail to haavard@users.sourceforge.net
+# (or whoever is the current ktouch-maintainer), with
+# cc to bug-gtypist@gnu.org
 
 G:MENU
 
@@ -72,6 +76,8 @@ N:LESSON1_D7
 I:(8)
 O:j j jf jf ff ff j f jf ff j f j ff f jf jf
  :j f j f jf ff j f j j f jf f j f ff j f f
+Q: Press Y to continue, N to repeat, or Fkey 12 to exit
+N:LESSON1_D8
 G:E_LESSON1
 
 # Level 2
@@ -137,6 +143,8 @@ N:LESSON2_D7
 I:(8)
 O:k k d k k d k k d d k d k d k d d d k d k
  :d k k k d d k d d k d k k k k d d k d d k
+Q: Press Y to continue, N to repeat, or Fkey 12 to exit
+N:LESSON2_D8
 G:E_LESSON2
 
 # Level 3
@@ -202,6 +210,8 @@ N:LESSON3_D7
 I:(8)
 O:s s s s s l l l s s l l l l s l l l s l l
  :l l l l l l l l l l l l l s s l l s l s l
+Q: Press Y to continue, N to repeat, or Fkey 12 to exit
+N:LESSON3_D8
 G:E_LESSON3
 
 # Level 4
@@ -267,6 +277,8 @@ N:LESSON4_D7
 I:(8)
 O:all asks åk adla åa akk adj adla ål åk å ål
  :a ask akka akka aska akka åla als al å ask
+Q: Press Y to continue, N to repeat, or Fkey 12 to exit
+N:LESSON4_D8
 G:E_LESSON4
 
 # Level 5
@@ -332,6 +344,8 @@ N:LESSON5_D7
 I:(8)
 O:isøksa ilja øksa øksa ilska øksa iss iss øs
  :isj ifall øksa ilja is issa ø ilk isøks ila
+Q: Press Y to continue, N to repeat, or Fkey 12 to exit
+N:LESSON5_D8
 G:E_LESSON5
 
 # Level 6
@@ -397,6 +411,8 @@ N:LESSON6_D7
 I:(8)
 O:nedside nål neslene nedsnødd nask nifs endeladd
  :nasene nåda nø elende eikens ennå edene endelsens
+Q: Press Y to continue, N to repeat, or Fkey 12 to exit
+N:LESSON6_D8
 G:E_LESSON6
 
 # Level 7
@@ -462,6 +478,8 @@ N:LESSON7_D7
 I:(8)
 O:undas uskjønn vinflasken vasallens vedskien
  :ukelønna våndens vedøks vides visens venninnene
+Q: Press Y to continue, N to repeat, or Fkey 12 to exit
+N:LESSON7_D8
 G:E_LESSON7
 
 # Level 8
@@ -527,6 +545,8 @@ N:LESSON8_D7
 I:(8)
 O:ridd innskrenkede revansjens innløses innsjøens
  :rillene irer indeksverdiens innfridde resursløse
+Q: Press Y to continue, N to repeat, or Fkey 12 to exit
+N:LESSON8_D8
 G:E_LESSON8
 
 # Level 9
@@ -592,6 +612,8 @@ N:LESSON9_D7
 I:(8)
 O:overså ovns onkler overveiende osean oversjøiske
  :overveielser overlever okulerer overfalla
+Q: Press Y to continue, N to repeat, or Fkey 12 to exit
+N:LESSON9_D8
 G:E_LESSON9
 
 # Level 10
@@ -657,6 +679,8 @@ N:LESSON10_D7
 I:(8)
 O:malskuff maskinsjefs malierens moderasjoner
  :markører massenes malmenes mandolinens morderen
+Q: Press Y to continue, N to repeat, or Fkey 12 to exit
+N:LESSON10_D8
 G:E_LESSON10
 
 # Level 11
@@ -722,6 +746,8 @@ N:LESSON11_D7
 I:(8)
 O:pols pinslene praksislærernes papirkapsel
  :paranoikerens pussefiskene presseseminar pikeskolene
+Q: Press Y to continue, N to repeat, or Fkey 12 to exit
+N:LESSON11_D8
 G:E_LESSON11
 
 # Level 12
@@ -787,6 +813,8 @@ N:LESSON12_D7
 I:(8)
 O:tapre treiv treindustrien toliteres tilrane
  :teltliv treffetida tekoindustriens tilskuerplassen
+Q: Press Y to continue, N to repeat, or Fkey 12 to exit
+N:LESSON12_D8
 G:E_LESSON12
 
 # Level 13
@@ -852,6 +880,8 @@ N:LESSON13_D7
 I:(8)
 O:påskrifter passasjerens partielt plantearten
  :bunkerspriser brukerapplikasjon blanketten
+Q: Press Y to continue, N to repeat, or Fkey 12 to exit
+N:LESSON13_D8
 G:E_LESSON13
 
 # Level 14
@@ -917,6 +947,8 @@ N:LESSON14_D7
 I:(8)
 O:ypsilonen yrkeskompetansen ytterpunkt ytere
  :ystet yppalt yrkespraktiske yrkesteoriprøvens
+Q: Press Y to continue, N to repeat, or Fkey 12 to exit
+N:LESSON14_D8
 G:E_LESSON14
 
 # Level 15
@@ -982,6 +1014,8 @@ N:LESSON15_D7
 I:(8)
 O:zambieren zoofytt zoomlinse zambiernes zoomen
  :zeppeliner zero zulukaffernes zoomlinsa zweckens
+Q: Press Y to continue, N to repeat, or Fkey 12 to exit
+N:LESSON15_D8
 G:E_LESSON15
 
 
@@ -1074,6 +1108,7 @@ T:this file contains the following 15 lessons:
  :        Fkey 8 - ir
  :        Fkey 9 - oæ
  :        Fkey 10 - cm
+ :
  :        Fkey 11 - Next menu page...
  :        Fkey 12 - Quit program
 
@@ -1099,6 +1134,7 @@ T:this file contains the following 15 lessons:
  :        Fkey 3 - bp
  :        Fkey 4 - yx
  :        Fkey 5 - z
+ :
  :
  :
  :

@@ -1,7 +1,11 @@
 # created by ktouch2typ.pl from /mnt/src/ktouch-1.0/ktouch/french.ktouch
-# on Don Jul 26 19:17:12 CEST 2001
+# on Son Jul 29 18:55:31 CEST 2001
 # ktouch2typ.pl is part of gtypist (http://www.gnu.org/software/gtypist/)
 # ktouch can be found at http://ktouch.sourceforge.net
+# If you have suggestions about these lessons,
+# please send mail to haavard@users.sourceforge.net
+# (or whoever is the current ktouch-maintainer), with
+# cc to bug-gtypist@gnu.org
 
 G:MENU
 
@@ -72,6 +76,8 @@ N:LESSON1_D7
 I:(8)
 O:jf fj fj fj fj jf jf fj fj jf jf jf jf fj
  :fj jf fj fj jf jf jf jf fj jf fj fj jf fj
+Q: Press Y to continue, N to repeat, or Fkey 12 to exit
+N:LESSON1_D8
 G:E_LESSON1
 
 # Level 2
@@ -137,6 +143,8 @@ N:LESSON2_D7
 I:(8)
 O:dk kj dk dk df kd df df kd df kd kj kj df
  :kj kd kj dk kd kj kd kd df dk dk kj kj kd
+Q: Press Y to continue, N to repeat, or Fkey 12 to exit
+N:LESSON2_D8
 G:E_LESSON2
 
 # Level 3
@@ -202,6 +210,8 @@ N:LESSON3_D7
 I:(8)
 O:sl sl ls ls sl sl sl ls ls ls ls ls sl sl
  :ls sl sl sl sl sl ls sl ls ls sl sl ls ls
+Q: Press Y to continue, N to repeat, or Fkey 12 to exit
+N:LESSON3_D8
 G:E_LESSON3
 
 # Level 4
@@ -267,6 +277,8 @@ N:LESSON4_D7
 I:(8)
 O:qù qù qs qù qù qù ùq qs qù ùq qs qù ùq qs
  :qs qù qù qs qù qs qs qs qù qù qs qs qs qù
+Q: Press Y to continue, N to repeat, or Fkey 12 to exit
+N:LESSON4_D8
 G:E_LESSON4
 
 # Level 5
@@ -332,6 +344,8 @@ N:LESSON5_D7
 I:(8)
 O:qs qù qù qù sl qù qs qs qù sl sl qù sl qù
  :qs sl qs sl qù qù qs sl sl sl sl sl qù qs
+Q: Press Y to continue, N to repeat, or Fkey 12 to exit
+N:LESSON5_D8
 G:E_LESSON5
 
 # Level 6
@@ -397,6 +411,8 @@ N:LESSON6_D7
 I:(8)
 O:ms mm ml ls mm ls ml ml mm ml ml ml mm mm
  :mm ms ms ms ls ms ls ml ls ls ml ml ls ls
+Q: Press Y to continue, N to repeat, or Fkey 12 to exit
+N:LESSON6_D8
 G:E_LESSON6
 
 # Level 7
@@ -462,6 +478,8 @@ N:LESSON7_D7
 I:(8)
 O:fj dl dl fj dl dm dk dk dl dk dk df df fj
  :dm dl df dl dl dk dl fj dl dl dk dl df dk
+Q: Press Y to continue, N to repeat, or Fkey 12 to exit
+N:LESSON7_D8
 G:E_LESSON7
 
 # Level 8
@@ -527,6 +545,8 @@ N:LESSON8_D7
 I:(8)
 O:km kd jf jf km km km jf kj jf km kj jf kj
  :kj kd km kj kd km kj km km km kj kj jf km
+Q: Press Y to continue, N to repeat, or Fkey 12 to exit
+N:LESSON8_D8
 G:E_LESSON8
 
 # Level 9
@@ -592,6 +612,8 @@ N:LESSON9_D7
 I:(8)
 O:hl hl hl hg gh gh hg gh gh hl gh gh hl gh
  :hl hl gh hg gh hg gh hl gh hl hl hl gh hl
+Q: Press Y to continue, N to repeat, or Fkey 12 to exit
+N:LESSON9_D8
 G:E_LESSON9
 
 # Level 10
@@ -657,6 +679,8 @@ N:LESSON10_D7
 I:(8)
 O:amalgamas alfa amassa amas az amalgamas al
  :ah az amassa affama amassas as affamas affama
+Q: Press Y to continue, N to repeat, or Fkey 12 to exit
+N:LESSON10_D8
 G:E_LESSON10
 
 # Level 11
@@ -722,6 +746,8 @@ N:LESSON11_D7
 I:(8)
 O:passas opposa polos papal plasma pompas pals
  :passas ohm posa opposas palpas pampas polkas
+Q: Press Y to continue, N to repeat, or Fkey 12 to exit
+N:LESSON11_D8
 G:E_LESSON11
 
 # Level 12
@@ -787,6 +813,8 @@ N:LESSON12_D7
 I:(8)
 O:emparasses effaras empresseras reformas referme
  :remodeler ramassas roderez essora essorages
+Q: Press Y to continue, N to repeat, or Fkey 12 to exit
+N:LESSON12_D8
 G:E_LESSON12
 
 # Level 13
@@ -852,6 +880,8 @@ N:LESSON13_D7
 I:(8)
 O:imploreras usurperais immigre il impulsai
  :isola imposasses isolasses imagerie immigra
+Q: Press Y to continue, N to repeat, or Fkey 12 to exit
+N:LESSON13_D8
 G:E_LESSON13
 
 # Level 14
@@ -917,6 +947,8 @@ N:LESSON14_D7
 I:(8)
 O:tissa terrassiers tiares tarisse tresserait
  :torts tassassiez tortues triturasses truquage
+Q: Press Y to continue, N to repeat, or Fkey 12 to exit
+N:LESSON14_D8
 G:E_LESSON14
 
 # Level 15
@@ -982,6 +1014,8 @@ N:LESSON15_D7
 I:(8)
 O:wx watt watts watt watt whisky wx watt watts
  :watts waters wx wx whiskies waters watts waters
+Q: Press Y to continue, N to repeat, or Fkey 12 to exit
+N:LESSON15_D8
 G:E_LESSON15
 
 # Level 16
@@ -1047,6 +1081,8 @@ N:LESSON16_D7
 I:(8)
 O:vichy chuchoterait vaqua coiffassiez vitreries
  :cirrhoses chaos castratrices chirurgie charioter
+Q: Press Y to continue, N to repeat, or Fkey 12 to exit
+N:LESSON16_D8
 G:E_LESSON16
 
 # Level 17
@@ -1112,6 +1148,8 @@ N:LESSON17_D7
 I:(8)
 O:bonifie briderait badigeonnant bourrai brutalisiez
  :navigante naturaliserez blizzards butent bouleversent
+Q: Press Y to continue, N to repeat, or Fkey 12 to exit
+N:LESSON17_D8
 G:E_LESSON17
 
 # Level 18
@@ -1177,6 +1215,8 @@ N:LESSON18_D7
 I:(8)
 O:ébattus égueulais épamprassions égorgeassent
  :éclairciraient éventrent étiquettes échalasseraient
+Q: Press Y to continue, N to repeat, or Fkey 12 to exit
+N:LESSON18_D8
 G:E_LESSON18
 
 # Level 19
@@ -1242,6 +1282,8 @@ N:LESSON19_D7
 I:(8)
 O:ça ça çè ça ères ères ère ès ère ères ès çè
  :ème ères çè ème çè ère çè çè çè ça çè ès çè
+Q: Press Y to continue, N to repeat, or Fkey 12 to exit
+N:LESSON19_D8
 G:E_LESSON19
 
 
@@ -1350,6 +1392,7 @@ T:this file contains the following 19 lessons:
  :        Fkey 8 - kj
  :        Fkey 9 - gh
  :        Fkey 10 - az
+ :
  :        Fkey 11 - Next menu page...
  :        Fkey 12 - Quit program
 
@@ -1379,6 +1422,7 @@ T:this file contains the following 19 lessons:
  :        Fkey 7 - bn
  :        Fkey 8 - éà
  :        Fkey 9 - çè
+ :
  :
  :        Fkey 11 - Previous menu page...
  :        Fkey 12 - Quit program

@@ -1,7 +1,11 @@
 # created by ktouch2typ.pl from /mnt/src/ktouch-1.0/ktouch/lecture_en.ktouch
-# on Don Jul 26 19:17:12 CEST 2001
+# on Son Jul 29 18:55:31 CEST 2001
 # ktouch2typ.pl is part of gtypist (http://www.gnu.org/software/gtypist/)
 # ktouch can be found at http://ktouch.sourceforge.net
+# If you have suggestions about these lessons,
+# please send mail to haavard@users.sourceforge.net
+# (or whoever is the current ktouch-maintainer), with
+# cc to bug-gtypist@gnu.org
 
 G:MENU
 
@@ -27,6 +31,8 @@ O:jfj jf j fj fj fj f jfjf jf jffj jff fjjf jf jj f
  :jfjf jf j f ff jj jf jf jjf fjf jffj jf jf jf j
 Q: Press Y to continue, N to repeat, or Fkey 12 to exit
 N:LESSON1_D2
+Q: Press Y to continue, N to repeat, or Fkey 12 to exit
+N:LESSON1_D3
 G:E_LESSON1
 
 # dk -->jfdk
@@ -59,6 +65,8 @@ N:LESSON2_D3
 *:LESSON2_D4
 I:(4)
 O:kjf dkj jdf jd kdj kjdfkjdf kjdf kjd kfk df kjd kfj
+Q: Press Y to continue, N to repeat, or Fkey 12 to exit
+N:LESSON2_D4
 G:E_LESSON2
 
 # ls -->jfdkls
@@ -92,6 +100,8 @@ N:LESSON3_D3
 I:(4)
 O:kf d ls lks dj dk djs lk ljl f lf dk ls lfj lkdjsl
  :fls ljkdl sjdfl ksj lkf jsfl jsld fjlsj df lds lsd l
+Q: Press Y to continue, N to repeat, or Fkey 12 to exit
+N:LESSON3_D4
 G:E_LESSON3
 
 # a -->jfdklsa
@@ -125,6 +135,8 @@ N:LESSON4_D3
 I:(4)
 O:dka klsd fald fjldka skjdflal sdfla lfa sa klf s
  :slkaj kdjfl kssd ls ls l sd slkdfls ls lfjfjks s
+Q: Press Y to continue, N to repeat, or Fkey 12 to exit
+N:LESSON4_D4
 G:E_LESSON4
 
 # ei -->jfdklsaei
@@ -151,6 +163,8 @@ I:(3)
 O:asd laij klie dfja seidf aesd ifsfi laesd ifj sk ida
  :dsl sai ei lai klass slei jfdk eisa sai dei leid k
  :dei diljskje ei eise jslejfie fjles jflsk dkei ei
+Q: Press Y to continue, N to repeat, or Fkey 12 to exit
+N:LESSON5_D3
 G:E_LESSON5
 
 # mv -->jfdklsaeimv
@@ -176,6 +190,8 @@ N:LESSON6_D2
 I:(3)
 O:jei mei vfik edf mjij saj mjf eimv vem kei
  :mai les  vm ie dk kj mkl viim vi vim sea kla si ja dem
+Q: Press Y to continue, N to repeat, or Fkey 12 to exit
+N:LESSON6_D3
 G:E_LESSON6
 
 # gh -->jfdklsaeimvgh
@@ -201,6 +217,8 @@ N:LESSON7_D2
 I:(3)
 O:give me aham vi give live high fligh sam sea les
  :jeg is a digg hi emv  ham vi give livejia kei gh hg hi ieh
+Q: Press Y to continue, N to repeat, or Fkey 12 to exit
+N:LESSON7_D3
 G:E_LESSON7
 
 # ow -->jfdklsaeimvghow
@@ -226,6 +244,8 @@ N:LESSON8_D2
 I:(3)
 O:how is move how is life am i move wow is am fligh owe
  :jem  move how isfalse move how is love kow
+Q: Press Y to continue, N to repeat, or Fkey 12 to exit
+N:LESSON8_D3
 G:E_LESSON8
 
 # ru -->jfdklsaeimvghowru
@@ -250,6 +270,8 @@ N:LESSON9_D2
 *:LESSON9_D3
 I:(3)
 O:russ flush seal leas rise miss ruslle rime
+Q: Press Y to continue, N to repeat, or Fkey 12 to exit
+N:LESSON9_D3
 G:E_LESSON9
 
 #tn -->jfdklsaeimvghowrutn
@@ -263,6 +285,8 @@ O:tnt is dangerous stuff to use in the living room
  :i think this is a tiny little test
 Q: Press Y to continue, N to repeat, or Fkey 12 to exit
 N:LESSON10_D1
+Q: Press Y to continue, N to repeat, or Fkey 12 to exit
+N:LESSON10_D2
 G:E_LESSON10
 
 #by -->jfdklsaeimvghowrutnby
@@ -279,6 +303,8 @@ N:LESSON11_D1
 *:LESSON11_D2
 I:(2)
 O:by the fire it is hot on your toes
+Q: Press Y to continue, N to repeat, or Fkey 12 to exit
+N:LESSON11_D2
 G:E_LESSON11
 
 #cp -->jfdklsaeimvghowrutnbycp
@@ -296,6 +322,8 @@ N:LESSON12_D1
 I:(2)
 O:dishes come point from troops passed paid
  :catch population overcome post population
+Q: Press Y to continue, N to repeat, or Fkey 12 to exit
+N:LESSON12_D2
 G:E_LESSON12
 
 #xz -->jfdklsaeimvghowrutnbycpxz
@@ -306,6 +334,8 @@ I:(1)
 O:now we just have to practise
  :if you practise every day you wil be good
  :hope you are having fun using ktouch
+Q: Press Y to continue, N to repeat, or Fkey 12 to exit
+N:LESSON13_D1
 G:E_LESSON13
 
 #All the normal characters are finished starting with big and small letters
@@ -319,6 +349,8 @@ O:We are happy
  :Can I take a nap
 Q: Press Y to continue, N to repeat, or Fkey 12 to exit
 N:LESSON14_D1
+Q: Press Y to continue, N to repeat, or Fkey 12 to exit
+N:LESSON14_D2
 G:E_LESSON14
 
 #Start to learn . and ,
@@ -337,6 +369,8 @@ I:(2)
 O:Quantas is an airline company.
  :Kari is from Norway, which is in Scandinavia.
  :Did you like KTouch?
+Q: Press Y to continue, N to repeat, or Fkey 12 to exit
+N:LESSON15_D2
 G:E_LESSON15
 
 
@@ -429,6 +463,7 @@ T:this file contains the following 15 lessons:
  :        Fkey 8 - whow howdy joddle glove wall wisdom omega sidd
  :        Fkey 9 - how rude is life jail is a dull movie romours
  :        Fkey 10 - tonight josh will grove to the sound
+ :
  :        Fkey 11 - Next menu page...
  :        Fkey 12 - Quit program
 
@@ -454,6 +489,7 @@ T:this file contains the following 15 lessons:
  :        Fkey 3 - we have now learn all the characters
  :        Fkey 4 - Now it is time for BIG letters
  :        Fkey 5 - This is a big test.
+ :
  :
  :
  :

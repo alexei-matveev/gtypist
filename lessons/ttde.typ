@@ -1,0 +1,2513 @@
+# created by tt2typ.pl from /mnt/src/tipptrainer-0.3.3/data/german
+# on Son Jul 29 19:09:45 CEST 2001
+# tt2typ.pl is part of gtypist (http://www.gnu.org/software/gtypist/)
+# tipptrainer can be found at http://www.pingos.schulnetz.org/tipptrainer
+# If you have suggestions about these lessons, write to
+# tipptrainer@reith.8m.com, with cc to bug-gtypist@gnu.org.
+# Note: lesson 36 had to be removed because it doesn't fit on a curses
+# screen (80 cols)
+
+G:MENU
+
+*:S_LESSON1
+B:           Lesson 1: Die Grundreihe a s d f - - j k l ö
+T:
+ : Schau noch einmal die Stellung der Finger an. Nimm die
+ : Grundstellung ein. Überprüfe ob "g" und "h" frei sind! Die
+ : Return Taste betätigst du mit dem kleinen Finger der Rechten
+ : Hand. Sprich laut mit! Schau nicht auf die Tasten! Die Daumen
+ : betätigen wahlweise rechts oder links (nicht beide) die
+ : Leertaste.
+*:LESSON1_D1
+I:(1)
+O:ff jj ff jj ff jj ff jj ff jj ff jj ff jj ff jj ff jj ff jj
+ :fj jf fj jf fj jf fj fj jf fj jf jf fj jf fj jf jf jf jf fj
+ :ffj ffj ffj ffj ffj ffj ffj ffj ffj ffj ffj ffj ffj ffj ffj
+ :jjf jjf jjf jjf jjf jjf jjf jjf jjf jjf jjf jjf jjf jjf jjf
+Q: Press Y to continue, N to repeat, or Fkey 12 to exit
+N:LESSON1_D1
+*:LESSON1_D2
+I:(2)
+O:jfj jfj fjf jfj fjf jfj fjf jfj fjf fjf fjf fjf fjf fjf fjf
+ :fff jjj fff jjj fff jjj fff jjj fff jjj fff jjj fff jjj fff
+ :fjf jfj jfj jfj fjf fjf jfj fjf jfj fjf jfj jfj jfj fjf fjf
+ :dd kk dd kk dd kk dd kk dd kk dd kk dd kk dd kk dd kk dd kk
+Q: Press Y to continue, N to repeat, or Fkey 12 to exit
+N:LESSON1_D2
+*:LESSON1_D3
+I:(3)
+O:dk dk dk kd kd kd kd dk dk dk dk kd kd kd kd dk dk kd kd dk
+ :ddd kkk ddd kkk ddd kkk ddd kkk ddd kkk ddd kkk ddd kkk ddd
+ :ddk ddk kkd ddk kkd ddk ddk kkd kkd ddk ddk ddk ddk kkd kkd
+ :dkd kdk dkd dkd kdk dkd kdk dkd dkd kdk dkd dkd kdk kdk dkd
+Q: Press Y to continue, N to repeat, or Fkey 12 to exit
+N:LESSON1_D3
+*:LESSON1_D4
+I:(4)
+O:dkk kkd dkd dkk kkd dkd kkd dkd kkd dkd kdk kdk dkd kdk dkd
+ :ddd kkk dkd kdk dkk kdd ddd ddd kkk dkd kdk kdk dkd kkk ddd
+ :ss ll ss ll ss ll ss ll ss ll ss ll ss ll ss ll ss ll ss ll
+ :ls sl ls sl sl ls sl ls sl sl sl sl ls ls sl ls sl ls sl ls
+Q: Press Y to continue, N to repeat, or Fkey 12 to exit
+N:LESSON1_D4
+*:LESSON1_D5
+I:(5)
+O:ssl ssl lss lss lss lss lss lss lss lss lss ssl ssl ssl ssl
+ :lsl sls lsl lsl ssl sls lsl sls sls lss lsl sls sls lsl sls
+ :ssl lsl lsl sls lss lls lll sls lsl sls lsl sls sls sls sls
+ :lsl sls lsl lls lsl ssl sls lls lls lsl lls lsl sls lsl lls
+Q: Press Y to continue, N to repeat, or Fkey 12 to exit
+N:LESSON1_D5
+*:LESSON1_D6
+I:(6)
+O:lll sss lsl lll lsl sss lsl ssl ssl lsl lls lll sss lsl ssl
+ :aö öa aö aö öa aö öa öa aö aö aö öa öa öa aö aö öa öa aö aö
+ :öa aa öö aö öö aa öö öö aa öa öa öa öa aö aö öö aa öö aö öa
+ :aöa öaö aöa aöa öaö aöa aaö aaö aaö ööa aaö öaa öaö ööa aöa
+Q: Press Y to continue, N to repeat, or Fkey 12 to exit
+N:LESSON1_D6
+*:LESSON1_D7
+I:(7)
+O:ööö aaa aöa ööö aöa aaa öaö aöa aöa öaö aöa aöa öaö aöa öaö
+ :aöa ööö aaa aöa aöa aöa öaö aöa aöa aöa öaö aöa aöa ööö aöa
+ :aaö aaö aaö öaö aöa ööö aöa ööö ööö ööa ööa aaö öaö aöa ööa
+ :aöa aaa öaö aöö ööa aöö ööa aaö öaa aöö öaa aöa öaö aaö öaa
+Q: Press Y to continue, N to repeat, or Fkey 12 to exit
+N:LESSON1_D7
+*:LESSON1_D8
+I:(8)
+O:asdf jklö asdf jklö asdf jklö ölkj fdsa ölkj fdsa asdf jklö
+ :asdf ölkj asdf ölkj asdf ölkj asdf ölkj asdf ölkj asdf jklö
+ :askj asjk askj askj asjk asjk asjk asjk asjk askj askj asjk
+ :lsöa lsöa lsöa aösl aösl aösl aösl aösl aösl aösl aösl aösl
+Q: Press Y to continue, N to repeat, or Fkey 12 to exit
+N:LESSON1_D8
+*:LESSON1_D9
+I:(9)
+O:alsö aösl lsöa löls löss skök lsöa slöa löal ölsö slaö söal
+ :aösk alsk aöls aöls aöld aösl aösk asök öska alök asld öskö
+ :dask klsa klsd dlsa öldk dkls ölsa klsa klas lkas slak skal
+ :fksk dksl jfjf skdj dsaj jafj jsdj fjdk jfkd fjdk fjdk fjdk
+Q: Press Y to continue, N to repeat, or Fkey 12 to exit
+N:LESSON1_D9
+*:LESSON1_D10
+I:(10)
+O:fkds kldj jkld fdsa fdsa fdsa fdsa jkls sakd dsaö jkdk djfk
+ :slaö aljs sdkf dkls kkls llsk söak dlsd sldl dlsl dsld dlsl
+ :dlld ldld sösl alsö dlfk fldk fkld kfal fals lssa lass lass
+ :lsls ldfj kalf klas lkas jdks lsak kdfj alsj lkdf kjja jaja
+Q: Press Y to continue, N to repeat, or Fkey 12 to exit
+N:LESSON1_D10
+*:LESSON1_D11
+I:(11)
+O:falk lfds fall lfds jfks fall falk fall fals slak dlsa lsdf
+ :jkak kaks lkak ksda kdls lsdf dsaj kjlj lökd fksl slkd jkls
+ :ffkd kdkk dkks saak sask ssas dsas klöl dsas lkkl lkjk lkjl
+ :aösl ssas llkö kkök ölkj lkjl ölkö ölöa ölks öklj jlkk lkds
+Q: Press Y to continue, N to repeat, or Fkey 12 to exit
+N:LESSON1_D11
+Q: Press Y to continue, N to repeat, or Fkey 12 to exit
+N:LESSON1_D12
+*:S_LESSON2
+B:         Lesson 2: Erste Wortbildungen mit der Grundreihe
+T:
+ : Lies laut mit! Überprüfe noch einmal die Hand- 
+ : und Fingerhaltung.
+ : 
+*:LESSON2_D1
+I:(1)
+O:sla las laa aal sla lsa las sas lsa laa las all als ass als
+ :all als las all als las all als las all als las all als las
+ :sla sal sla sla saa sas asa lal ala als sss lsa sla sll sla
+ :las als all las als all las als las als all als all las als
+Q: Press Y to continue, N to repeat, or Fkey 12 to exit
+N:LESSON2_D1
+*:LESSON2_D2
+I:(2)
+O:sls lsl lal sas lls ala lal las asl las sal las als all sla
+ :als all las als all las als all las all all als als las las
+ :fad das sad lös las lad lad aal fas kal sal fas dsa dks fda
+ :fall lass kalk lass klas salö salk laös llsa llsa ölsa lsaö
+Q: Press Y to continue, N to repeat, or Fkey 12 to exit
+N:LESSON2_D2
+*:LESSON2_D3
+I:(3)
+O:ösal löss ösks öskl öslk lsal löas klsa löls löls klsa klös
+ :kalk kalk fall fall falk lass lssa lass kalk falk fass sass
+ :safd safd klöa aölk lsal lsas slas lsls fjdl alsa jaja jdld
+ :jldd kjsk klas kalk saal lass fakl sall lall ladd ladd dsal
+Q: Press Y to continue, N to repeat, or Fkey 12 to exit
+N:LESSON2_D3
+*:LESSON2_D4
+I:(4)
+O:falk kalk falk kalk saal kalk falk saal kalk fall saal fall
+ :falk fall fals kall kalk saal falk lass kalk löss lass fall
+ :falk kalk fall löss kalk fall saal fall löss saal fall falk
+ :lass fall lass falk kalk saal fall löss kalk kalk saal fall
+Q: Press Y to continue, N to repeat, or Fkey 12 to exit
+N:LESSON2_D4
+*:LESSON2_D5
+I:(5)
+O:falls kafka kajak kajak falls falls kafka kajak kajaj kafka
+ :kafka falls kajak falls kafka falls kajak kafka falls kajak
+ :falls als falk kalk kafka das all das lass das las als kalk
+ :öl als löss kafka kajak öl als all falk löss lass las kajak
+Q: Press Y to continue, N to repeat, or Fkey 12 to exit
+N:LESSON2_D5
+*:LESSON2_D6
+I:(6)
+O:all das öd all dass das öl kafka lass das ja kalk öl ja las
+ :all das saal falk kalk kajak kafka saal falls das dass lass
+ :als all das öl falls all das öl ja als all das öl kafka las
+ :falls falk all das las das öl als all kalk fall saal las ja
+Q: Press Y to continue, N to repeat, or Fkey 12 to exit
+N:LESSON2_D6
+*:LESSON2_D7
+I:(7)
+O:ja ja sass da als all das öl kafka las falk sass da als all
+ :das öl lass das all kafka las all falls all das öl as ja da
+ :da das alls kafka las kalk fall saal falls all das öl ja ja 
+Q: Press Y to continue, N to repeat, or Fkey 12 to exit
+N:LESSON2_D7
+*:S_LESSON3
+B:               Lesson 3: Die Buchstaben "e" und "i"
+T:
+ : Taste die neuen Zeichen ein paar mal vor, bevor Du die Lektion beginnst. 
+ : Die beiden Mittelfinger sind für "e" und "i" zuständig. Sieh dabei 
+ : nicht auf die Tastatur!
+*:LESSON3_D1
+I:(1)
+O:de ki de ki de ki de ki de ki de ki di ke di ke di ke di ke
+ :dak dik dak dek dak dik kid kid dik eki ede kde dek dei die
+ :sei sie lie ise asi esi ase las lie fie kis eis ise ike eki
+ :jie jei eij eej jee jii sii ees iis ais iis ssi sse sie ies
+Q: Press Y to continue, N to repeat, or Fkey 12 to exit
+N:LESSON3_D1
+*:LESSON3_D2
+I:(2)
+O:kei iek kii kee eke ike adi ida ede ese see ise isa sai sae
+ :lee lei lie lle ill eel sea eas ase lea kea jea sik aik eik
+ :kade lade jade lade kiss lies like daks jade jedi kadi sadi
+ :kess lass löss lies siel alle fell fiel fail siel fiel feil
+Q: Press Y to continue, N to repeat, or Fkey 12 to exit
+N:LESSON3_D2
+*:LESSON3_D3
+I:(3)
+O:seil lies keil like feil fiel jail dail das is fis ais lief
+ :fiel fall feil dies seil jade keks siek jedi fade sade lade
+ :file seil siel fiel jail lade like jedi kadi eile alle eile
+ :siele lalle falle kalle seile feile leise keile lalle falle
+Q: Press Y to continue, N to repeat, or Fkey 12 to exit
+N:LESSON3_D3
+*:LESSON3_D4
+I:(4)
+O:alles kalles elle felle fiele öse seile keile fiele die eis
+ :lasse fasse kasse sasse löse sie lasse fasse kasse asse die
+ :isa kies alias salsa else fels als je ja sass iss kiss esse
+ :lasse kasse kaffee affe safe lief ilse kleie eise seile sie
+Q: Press Y to continue, N to repeat, or Fkey 12 to exit
+N:LESSON3_D4
+*:LESSON3_D5
+I:(5)
+O:ade alle lies alias alles falle felle kalle kill keil kille
+ :elle alle delle seile eile keile kiel fiel siel adidas lies
+ :ja das alles dies lies sie alle eile leise feile delle asse
+ :kasse lasse diese dieses dies lies fiese lade sade fade eis
+Q: Press Y to continue, N to repeat, or Fkey 12 to exit
+N:LESSON3_D5
+*:LESSON3_D6
+I:(6)
+O:jail file alias kiss sed deal seal lease fade ill fill feel
+ :kaffee fiel alles eile kalle feile sie seil seile kasse eis
+ :ja sei da fallada kafka saal öle öse als alles fiel siel es
+ :lade es fade saal es das fass es ja fiese liese lies dallas
+Q: Press Y to continue, N to repeat, or Fkey 12 to exit
+N:LESSON3_D6
+*:LESSON3_D7
+I:(7)
+O:das da die sei jede jedes diese sei seife eides filiale eis
+ :dies des seide dieses fidel lief des alles lies das kleides
+Q: Press Y to continue, N to repeat, or Fkey 12 to exit
+N:LESSON3_D7
+*:S_LESSON4
+B:               Lesson 4: Die Buchstaben "g" und "h"
+T:
+ : Taste ein paar mal nach den neuen Tasten, bevor Du die Lektion beginnst. 
+ : Achte auf einen gleichmäßigen Anschlag. Schreibmaschienen brauchen das, 
+ : um die Typenhebel richtig niederschlagen zu lassen, am Computer kommt es 
+ : bei ungleichmäßigem Anschlag schnell zu Zeichenvertauschungen, wie z.B. 
+ : "ie" statt "ei". 
+ : Sieh beim Schreiben nicht auf die Tastatur! Sprich die Lektion laut mit, 
+ : für die Leertaste sprich:"leer".
+*:LESSON4_D1
+I:(1)
+O:fgf fgf jhj jhj fgf jhj jhj fgf jhj fgf jhj fgf jhj fgf jhj
+ :fggf jhhj fgjh fgjh fgjh fghj jhgf fghj fgjh fghj gfhj fgjh
+ :fgf gfg jhj hjh gfh jhg fgj jhg fgh jhg hgf ghf hgf ghf fjh
+ :fga agf gfa fga fag fga fga afg fag fag fag gaf gfa gag gfa
+Q: Press Y to continue, N to repeat, or Fkey 12 to exit
+N:LESSON4_D1
+*:LESSON4_D2
+I:(2)
+O:jag ajg jag ajg ajg gaj jag jga jga gja fgj gjf ajf agj ajg
+ :öjh hjö hjö öjh jöh jöh hjö jhö öjh öjh jöh jöh jhö ögö öhö
+ :afg öhj agh öhg agj öhj gaj höj gaj hög hag ögh öhg ahg öhh
+ :haag haff haag haff haag haff fahl half fahl half hasl lasa
+Q: Press Y to continue, N to repeat, or Fkey 12 to exit
+N:LESSON4_D2
+*:LESSON4_D3
+I:(3)
+O:kahl lags slag glas alga gala agfa haff haag glas lags gasa
+ :gesa sage hage jage fehl fahl hege gehe hege gehe sehe hase
+ :hass fahl kahl kehl kiel geil lieg heil hies dega gade jage
+ :jagd jögh hals gels gisa löse geis sieg igel lieg lage gala
+Q: Press Y to continue, N to repeat, or Fkey 12 to exit
+N:LESSON4_D3
+*:LESSON4_D4
+I:(4)
+O:egel flegel fahles kahles sage es kegel segel jagd laage he
+ :hegel flegel kegel fahle ihle ahle alge felge selige heilig
+ :heilige eilig seele gelee heel heals hall he his heise leis
+ :geisel feige fehle helfe half fege diggi daggi jiggi jag is
+Q: Press Y to continue, N to repeat, or Fkey 12 to exit
+N:LESSON4_D4
+*:LESSON4_D5
+I:(5)
+O:geige feige liege fliege siege diehle fiele galle falle heg
+ :hilfe heile half fall gehe giga glas flies dies see eisiges
+ :die eisige see die alge das fass das glas das glas seidiges
+ :gaffe haff kaff die alge  die felge siege sage gehe sehe es
+Q: Press Y to continue, N to repeat, or Fkey 12 to exit
+N:LESSON4_D5
+*:LESSON4_D6
+I:(6)
+O:she is his he is she lies es gase gas hass fass lass kahles
+ :gisela höhle sah diese höhle geöle hase jade jage lage heil
+ :hadi sage lass das fass dies seidige kleid gehe hege gelege
+ :geklage gelage sage die sage gejage klage felge helge leide
+Q: Press Y to continue, N to repeat, or Fkey 12 to exit
+N:LESSON4_D6
+Q: Press Y to continue, N to repeat, or Fkey 12 to exit
+N:LESSON4_D7
+*:S_LESSON5
+B:               Lesson 5: Die Buchstaben "w" und "o"
+T:
+ : Die Tasten "w" und "o" werden mit den Ringfingern gegriffen. 
+ : Ertaste sie erst ein paar Mal, bevor Du beginnst. Nicht auf 
+ : die Tasten schauen! Lies laut mit!
+*:LESSON5_D1
+I:(1)
+O:sws lol sws lol sws lol sws lol was los was los was los was
+ :was sws los lol sws lol was los wag weg wog log los weh wie
+ :log los was wow lol sws wow sow saw osw aso oso los kos jas
+ :kdw dwk jdw wdj okw wok wie aol das los leo loe lei wei wie
+Q: Press Y to continue, N to repeat, or Fkey 12 to exit
+N:LESSON5_D1
+*:LESSON5_D2
+I:(2)
+O:gold geld soll will kilo lose kose wald jagd wage lage lego
+ :hose hase lode ewig soda dose wild will soll wald feil woll 
+ :weise leise heise hose lose wiese waffel wieso weil was wie
+ :wiege weise will logo leise wiese wiese wieso wald was wohl
+Q: Press Y to continue, N to repeat, or Fkey 12 to exit
+N:LESSON5_D2
+*:LESSON5_D3
+I:(3)
+O:waage wiege agil wog was wieso wald waldig wilde kilo wieso
+ :jage wildes wild wald was sah sie wie log sie was wieso log
+ :isa die wiese lag weg wie weil sie wo sowieso lolö öle ölig 
+ :loewe leise lose gosse gasse hose dose diese woge loge wade
+Q: Press Y to continue, N to repeat, or Fkey 12 to exit
+N:LESSON5_D3
+*:LESSON5_D4
+I:(4)
+O:wash fish who is who was whose fool while whole who goes he
+ :goes she goes goal she saw dow kill as file off while whole 
+ :false welsh wise whis joda jedi fish flash dog ale while we
+ :wie weise wieso kafka was las als da was fiel die hose lose
+Q: Press Y to continue, N to repeat, or Fkey 12 to exit
+N:LESSON5_D4
+*:LESSON5_D5
+I:(5)
+O:die gosse sie wog je dose kaffee das was sie sah die kladde
+ :sie fiel da die wade kafka fade das die lade los es wog was 
+ :kafka las die kladde als was fiel was wog das löss wege weg
+ :öle die waage das wog kafka las wie las kafka die kladde da
+Q: Press Y to continue, N to repeat, or Fkey 12 to exit
+N:LESSON5_D5
+*:LESSON5_D6
+I:(6)
+O:wieso lass sie wog diese kasse affe wog die waage log sowas
+ :die wiege die waage das segel flog die woge die jagd so wie
+ :das wild floh es goss waldig eisig als die wiese wie willig
+Q: Press Y to continue, N to repeat, or Fkey 12 to exit
+N:LESSON5_D6
+*:S_LESSON6
+B:               Lesson 6: Die Buchstaben "r" und "u"
+T:
+ : Jetzt noch einmal ein paar Wortübungen! Diese Wortkombinationen 
+ : ergeben noch immer keinen Sinn, aber es sind hin und wieder 
+ : doppelte L
+*:LESSON6_D1
+I:(1)
+O:frf frf juj juj juj frf fuj juf uuj uuj fuf uuf ruu uru ufr
+ :fra aua fau fra fru jau jar dau dar sau sua sar sra öuö rör
+ :ded kik juj ded frf ase ras juk kuj fuj ruf dei ser usl öre
+ :war wor rio rus ras ral rel ril rol ole oli koi oki dok rod
+Q: Press Y to continue, N to repeat, or Fkey 12 to exit
+N:LESSON6_D1
+*:LESSON6_D2
+I:(2)
+O:eul eur edu sui seu weu leu keu heu geu feu deu aeu are dar
+ :frau ursl fahr wahr wehr wors wurs juss juhu uhus guss fuss
+ :raus haus laus daus wars waru daru karu saru laru jaru ufos
+ :gard hars kars lars jare jarr jeuh jerr kerr herr gerr gurr
+Q: Press Y to continue, N to repeat, or Fkey 12 to exit
+N:LESSON6_D2
+*:LESSON6_D3
+I:(3)
+O:darauf klaus uwes rufe jeder rief alles rief sehr ruf werke
+ :darauf  dass klaus das rief wolle rolle solle kuddel suddel
+ :alles was das haus so liege der wille der frau der herr aus
+ :rief das alles was die seele jaja ferkel hase wolf uhu eule
+Q: Press Y to continue, N to repeat, or Fkey 12 to exit
+N:LESSON6_D3
+*:LESSON6_D4
+I:(4)
+O:rehe jage wild gewehr erlege kugel wars kugel flog reh floh
+ :hase lief wolf rief war es der wolf der da so rief der hase
+ :luise las das auf was fiel so fiel der herr das war wohl so
+ :wer lief der rief regel gewehr soll der hase wohl war es da
+Q: Press Y to continue, N to repeat, or Fkey 12 to exit
+N:LESSON6_D4
+*:LESSON6_D5
+I:(5)
+O:hallo wer war diese halli hallo hallöle hallali hirse hafer
+ :rede lies sage wage rufe lusiese sie war es kuss fred gelle
+ :wars ulli sage es liese war es dieses haus klaus rede ruhig
+ :ruhe wer da rief das lief so weil das haus ruhig lag es war
+Q: Press Y to continue, N to repeat, or Fkey 12 to exit
+N:LESSON6_D5
+*:LESSON6_D6
+I:(6)
+O:wage es war dusselig es war eisig weil luise da war egal du
+ :will es kalle oder ole hose aus wolle kleid seidig haus aus 
+ :löss fiel kafka was er rede ruhig lies es ruhig aller regel
+ :das regal das fiel der saal war leer wars fred wars ole was
+Q: Press Y to continue, N to repeat, or Fkey 12 to exit
+N:LESSON6_D6
+*:LESSON6_D7
+I:(7)
+O:war luise wer ulli wer dario alles lief  als das regal fiel
+Q: Press Y to continue, N to repeat, or Fkey 12 to exit
+N:LESSON6_D7
+*:S_LESSON7
+B:              Lesson 7: Wortübungen mit dem Bekannten
+T:
+ : Jetzt noch einmal ein paar Wortübungen! Diese Wortkombinationen 
+ : ergeben noch immer keinen Sinn, aber es sind hin und wieder 
+ : doppelte Leerzeichen im Text, damit können wir das später 
+ : hinzukommende Komma ersetzen. Achte in diesem Text darauf, 
+ : dass nicht mehr jede Zeile 60 Zeichen lang ist. 
+*:LESSON7_D1
+I:(1)
+O:aufs dies jura soda hier ufer haus erde frau juda judo joda
+ :ruhe rase glas gras fass fuss ewig jahr rede klar aula fuhr
+ :lauf lief rauf rief dorf darf half hilf hole sole rose lose
+ :hose ferse hirse kriese kreise leise heise weise aus garaus
+Q: Press Y to continue, N to repeat, or Fkey 12 to exit
+N:LESSON7_D1
+*:LESSON7_D2
+I:(2)
+O:weise welle welse ferse wohlig wasserglas wasserfass wildes
+ :frage gelage heraus wieso darf fasse wasser lasse oswald wo
+ :war da was  wieso war der das eilig wohlig ruhig eisig hals
+ :hilfe kalle saal solle wolle wille wild wilde wildes waldig
+Q: Press Y to continue, N to repeat, or Fkey 12 to exit
+N:LESSON7_D2
+*:LESSON7_D3
+I:(3)
+O:wollo kohle sohle dohle gejohle logo sog flog woge jod hose
+ :jagd gewehr eule geheule keule kuhle soul klaue wohlig hole
+ :war er das  war sie das  wer war das wohl  wieso war es so 
+ :weise leise reise heise kriese wiese ferse hirse garaus was
+Q: Press Y to continue, N to repeat, or Fkey 12 to exit
+N:LESSON7_D3
+*:LESSON7_D4
+I:(4)
+O:also was soll das  weil das so sei  klar das war so ja das
+ :was so war  was soll er was will er wer will es wer soll es 
+ :er soll was sie soll was sah er was so sah es aus was wohl
+ :sie wolle was so er sah wer will das da wer soll wer ursel
+Q: Press Y to continue, N to repeat, or Fkey 12 to exit
+N:LESSON7_D4
+*:LESSON7_D5
+I:(5)
+O:alles war da was fiel das war gerade gefiel er jodele wolle
+ :walle walle falle gefiel gefahr gewehr wars wurde gulli 
+ :woge flog sog sauge lauge klaue dau gerade gelage woge woge
+ :wage sage frage frau herr hausfrau hausherr heraus goldig
+Q: Press Y to continue, N to repeat, or Fkey 12 to exit
+N:LESSON7_D5
+*:LESSON7_D6
+I:(6)
+O:falke eule uhu juhu also falls das so war  war es so klar
+Q: Press Y to continue, N to repeat, or Fkey 12 to exit
+N:LESSON7_D6
+*:S_LESSON8
+B:               Lesson 8: Die Buchstaben "t" und "z"
+T:
+ : Die Buchstaben "t" und "z" werden mit den Zeigefingern gegriffen.
+ : Taste wieder einmal erst vor, bevor Du mit der Lektion beginnst! 
+ : Sprich laut mit!
+*:LESSON8_D1
+I:(1)
+O:ft ft ft ft ft ft jz jz jz jz jz jz ft jz ft jz ft jz ft jz
+ :ftf jzj ftf jzj ftz jzt ftz jtz fzt jtz ftz fjt fjz fjt fjz
+ :dzd fzf dzf dzd dzd szs aza ata sts sts ktk tlt ltl ötö özi
+ :zög zöge zog log lok teig teil tide tage tag zarge zag zuse
+Q: Press Y to continue, N to repeat, or Fkey 12 to exit
+N:LESSON8_D1
+*:LESSON8_D2
+I:(2)
+O:ast last hast fast hatz fatz latz katz katze satz satz jazz
+ :zu zur zeit ziel zahl ziel zeit teil teile heil feile zeile
+ :ziele ketzer satz heile zeile ziele teile tief tage lage zu
+ :dutze kartzer kratze kratzer latz garz jetzt kerze kurz zur
+Q: Press Y to continue, N to repeat, or Fkey 12 to exit
+N:LESSON8_D2
+*:LESSON8_D3
+I:(3)
+O:zeit seit der zeit zeisig ziele zahl zahle dutze kratze tue
+ :zarge zulu taz fratz jazz katze kurzer kurz letzte lust las
+ :zog er gefasst lasst trage frage trug zur hetze falz fetter
+ :herr fette öle zola ritze der herr zog das heraus gezielter
+Q: Press Y to continue, N to repeat, or Fkey 12 to exit
+N:LESSON8_D3
+*:LESSON8_D4
+I:(4)
+O:welt erde orte worte warte zarte witze werte harte karte zu
+ :der zug zog er flog sie lief es geht halt das  halt auf zoo
+ :wetter wettere watte lagert wagt es gelegt gelege fegt dies
+ :löss fiel saugt es auf fegt es auf liest er was  er las das
+Q: Press Y to continue, N to repeat, or Fkey 12 to exit
+N:LESSON8_D4
+*:LESSON8_D5
+I:(5)
+O:wieso liest er das wer sagt etwas gesagt getagt gewagt erze
+ :löst es auf gelöst geht er wer wagt geht wer zaudert steht 
+ :fast gewagt ist gesagt tag tue eis taut auf zahl das eis da
+ :kafka liest der titel ist das tier war da weil dies tier da
+Q: Press Y to continue, N to repeat, or Fkey 12 to exit
+N:LESSON8_D5
+*:LESSON8_D6
+I:(6)
+O:war  fiel der krug alles lief  half  saugte sagte rief geht
+ :also daher wer geht geht jetzt er liest die kladde wer hört
+ :da zu er hör sie hört kafka liest zola elise fragt fritz da
+ :der was hörte wartete kafka sagt zu elise geht jetzt frau
+Q: Press Y to continue, N to repeat, or Fkey 12 to exit
+N:LESSON8_D6
+*:LESSON8_D7
+I:(7)
+O:es stört wer da fragt die woge erstarrt alles stille 
+ :elise geht es war kafkas wille sie geht als der krug grade
+ :fiel der saft lief der autor rief alles eilte dazu jetzt 
+ :war ruh 
+Q: Press Y to continue, N to repeat, or Fkey 12 to exit
+N:LESSON8_D7
+Q: Press Y to continue, N to repeat, or Fkey 12 to exit
+N:LESSON8_D8
+*:S_LESSON9
+B:          Lesson 9: Häufigkeitswörter - Schnelltippübung
+T:
+ : Häufigkeitswörter: Übe diese Lektion mehrfach! 
+ : Die Anschlaggeschwindigkeit in der Lektionsauswertung 
+ : solltest sich langsam erhöhen. Versuche diese Lektion 
+ : mit Null Fehlern durchzuschreiben! 
+*:LESSON9_D1
+I:(1)
+O:der die das wer wie was wo der die das wer wie was wo da so
+ :sehr steil sehr stark her klar sogar das der das die daraus
+ :dass das dass das es was klar sogar das dies wie es ist sag
+ :sah sehe sieh daraus woraus des dies dar wer wo was weg war
+Q: Press Y to continue, N to repeat, or Fkey 12 to exit
+N:LESSON9_D1
+*:LESSON9_D2
+I:(2)
+O:der die das des dies diese dieser dar daraus der der dieses
+ :wer wieso war was wo woraus wort worte wolle wollte soll es
+ :sollte hole holte hals halt halte falte kalte altere walter
+ :walte wer will wer soll wer ist wer hat er hatte sie hat du
+Q: Press Y to continue, N to repeat, or Fkey 12 to exit
+N:LESSON9_D2
+*:LESSON9_D3
+I:(3)
+O:du hast du sollst du willst du holst du sagst du sagtest es
+ :was sagt er da was hat er da was soll das da was will er da
+ :wer will das wer soll das wer hat das wer sagt das was sagt
+ :sie sie sagt was er hat er sagt dass du das sagtest was sie
+Q: Press Y to continue, N to repeat, or Fkey 12 to exit
+N:LESSON9_D3
+*:LESSON9_D4
+I:(4)
+O:gesagt hat er sagte dass sie es ja gesagt hat gesagt hat er
+ :heute dass sie es gesagt hat sie tat wieso sie das tat weil
+ :sie das tat was er sagte ja er sagte was sie tat es tat weh
+ :heute hat er heu geharkt das gras war heu heutzutage hat er
+Q: Press Y to continue, N to repeat, or Fkey 12 to exit
+N:LESSON9_D4
+*:LESSON9_D5
+I:(5)
+O:alles was er will jeder hat was er will jeder ist wer wieso
+ :er das ist was er ist ist klar weil er isst was er ist weil
+ :es so gut ist dass er es isst wo er es sieht dazu sagte sie
+ :dass er heute isst was sie will lege die karte auf die erde
+Q: Press Y to continue, N to repeat, or Fkey 12 to exit
+N:LESSON9_D5
+*:LESSON9_D6
+I:(6)
+O:wo geht es zur see wie geht es heute geht es gut es geht so
+ :so wie das geht geht es gut gut gesagt der fluss das wasser
+ :löse das seil jetzt ist es so weit auf dieser welt sagt sie
+ :alles was sie weiss was weiss sie alles wer wusste das
+Q: Press Y to continue, N to repeat, or Fkey 12 to exit
+N:LESSON9_D6
+Q: Press Y to continue, N to repeat, or Fkey 12 to exit
+N:LESSON9_D7
+*:S_LESSON10
+B:               Lesson 10: Die Buchstaben "q" und "p"
+T:
+ : Übe, wie gehabt, vor Beginn der Lektion die Erreichbarkeit
+ : der Tasten. Da diese beiden Tasten vom kleinen Finger
+ : übernommen werden, ist dabei schon etwas mehr Übung
+ : erforderlich.Sprich wieder laut mit!
+*:LESSON10_D1
+I:(1)
+O:qp pq qp pq qp pq qp qp pq qp qp pq pq qp pq qp qp qp pq pq
+ :qu qu qu qu qu qu qu qu qu qu qu qu qu qu qu qu qu qu qu qu
+ :pr pr pr pr pr pr pr pr pr pr pr pr pr pr pr pr pr pr pr pr
+ :op op op op op op op op op op op op op op op op op op op op 
+Q: Press Y to continue, N to repeat, or Fkey 12 to exit
+N:LESSON10_D1
+*:LESSON10_D2
+I:(2)
+O:qua quo qua quo qua qua quo que que qua quo que qui qui quo
+ :pra pra pro pro pro pro pre pri pre pra pro pra pre pri pru
+ :pod qua pas pes pis pid pad ped pre pfa pfe pfi pfo pal ple
+ :pli ple pla pek pik pak pok pei peu pou pol puk pfu pfr pfu
+Q: Press Y to continue, N to repeat, or Fkey 12 to exit
+N:LESSON10_D2
+*:LESSON10_D3
+I:(3)
+O:faq fap dap kap lap laq leq geq seq que hap kap sap paw wap
+ :quer quar quap quir quet quel qual quod quen quer quar quas
+ :pros pras pris prid prod prad prol pril pral peil pfei pfah
+ :pfla pflo plat plas plea plig plik plag pleg plus plei plie
+Q: Press Y to continue, N to repeat, or Fkey 12 to exit
+N:LESSON10_D3
+*:LESSON10_D4
+I:(4)
+O:quil quik quas wapp weap wipp lipp dipp sipp hipp kipp ripp
+ :qual real praktik praktiker pelle pille palle qualle quelle
+ :prall aufprall spiel gefiel progress proto prater prall pro
+ :prof prokura prokurist predator presse erpresser protze opa
+Q: Press Y to continue, N to repeat, or Fkey 12 to exit
+N:LESSON10_D4
+*:LESSON10_D5
+I:(5)
+O:oper opera portal portiert apropos quelle portierte plagiat
+ :plage pflug egge quast quest top hopper plaque platz pfeile
+ :quoll geplagt gesagt gefragt preis preise leise quassele op
+ :oper rap rippe rappe ertappt getappt getippt tip wippe pril
+Q: Press Y to continue, N to repeat, or Fkey 12 to exit
+N:LESSON10_D5
+*:LESSON10_D6
+I:(6)
+O:prasse presse klappe klappere geklappert depp stupid steppe
+ :stop stoppt alle er ist gestoppt sie isst er stopft tropfte
+ :das wasser tropft der wasserfall gefoppt poppig pope papier
+ :pappe lappe radikal gerappt gerafft das wasser quillt leise
+Q: Press Y to continue, N to repeat, or Fkey 12 to exit
+N:LESSON10_D6
+*:LESSON10_D7
+I:(7)
+O:heraus aqua aquarell artist produkt palette preise pflaster
+ :paragraph perl protokoll sparpreis kapitalgruppe post paare
+ :quadrat quadrate quadratur des kreises philosoph pause quiz
+ :porto partie partei plato padua parkplatz professor pariser
+Q: Press Y to continue, N to repeat, or Fkey 12 to exit
+N:LESSON10_D7
+*:LESSON10_D8
+I:(8)
+O:reprise die quelle des flusses die weserquelle europapokale
+Q: Press Y to continue, N to repeat, or Fkey 12 to exit
+N:LESSON10_D8
+*:S_LESSON11
+B:               Lesson 11: Die Buchstaben "v" und "m"
+T:
+ : Bevor diese Lektion beginnt, sind ein paar
+ : Dehnungsübungen für die Finger angebracht.
+ : Ab jetzt geht es in die untere Reihe. Die Tasten 
+ : "v" und "m" werden mit dem Zeigefinger gegriffen.
+*:LESSON11_D1
+I:(1)
+O:vm mv vm mv fv jm mj vf fm vj jv mf vf gv jm hm mj mh mg vh
+ :vi va ve vr vg vi vu vo av ev iv uv ov uv me ma mo mi me mu
+ :vim vam mer mar mir mei mol mal mie mig mag mog meh muh mau
+ :vau vei vie vor vol val jav jov jev jam mai maj mer wem vim
+Q: Press Y to continue, N to repeat, or Fkey 12 to exit
+N:LESSON11_D1
+*:LESSON11_D2
+I:(2)
+O:viel vase vers mehr maar mit voll pomm luv rom reim warm am
+ :vom wem dem ihm rum mull male maus mais mies muss kaum moos
+ :viel oval volk vater immer mehr immer mehr meister viele im
+ :vieles muss meise mehr mus meer viele klammer wieviel warum
+Q: Press Y to continue, N to repeat, or Fkey 12 to exit
+N:LESSON11_D2
+*:LESSON11_D3
+I:(3)
+O:mitte mittel matte matt platt platte watte quaddel mast mus
+ :vertrag kaum verzug vermerk zuvor zuviel jemals vorteil ihm
+ :vorgemerkt vorgesagt vor dem saal im stall muster kohlmeise
+ :makulatur mogelei malerei verse ferse merke markiert markus
+Q: Press Y to continue, N to repeat, or Fkey 12 to exit
+N:LESSON11_D3
+*:LESSON11_D4
+I:(4)
+O:mimik hervor herum vertreter wurde mehrere verkauf verglast
+ :fremde vögel vogel des vogels vögel klaus kommt aus amerika
+ :es stimmt die stimme der stummel verlade gestammelt stummer
+ :kummer fummel hummel summe summt krumm kram er kramt lahmer
+Q: Press Y to continue, N to repeat, or Fkey 12 to exit
+N:LESSON11_D4
+*:LESSON11_D5
+I:(5)
+O:verkehr verkehrt herum umfahre marktplatz wer mag apfelmus 
+ :lava magma mutter vater gemerkt vermerkt vermarktet versagt
+ :vermisst vermiest verklagt verzagt er verzog werktags werft
+ :er vertrat klaus vertrat fred vera vertritt maria uta reimt
+Q: Press Y to continue, N to repeat, or Fkey 12 to exit
+N:LESSON11_D5
+*:LESSON11_D6
+I:(6)
+O:verse paul liest verse vom autor kafka goethes verse las er
+ :am mittag wer liest zolas werke daheim liest sie heim jedem
+ :etwas mit viel gehalt die werte qualle im meer klammtal die
+ :quasselstrippe warum streift der kater herum es ist so kalt
+Q: Press Y to continue, N to repeat, or Fkey 12 to exit
+N:LESSON11_D6
+*:LESSON11_D7
+I:(7)
+O:die katze sitzt im haus herum sie miaut zu laut verwahre es
+Q: Press Y to continue, N to repeat, or Fkey 12 to exit
+N:LESSON11_D7
+*:S_LESSON12
+B:               Lesson 12: Die Buchstaben "b" und "n"
+T:
+ : Weitere Arbeit für die Zeigefinger!
+ : Auch die Tasten "b" und "n" gehören zu seinem 
+ : Wirkungskreis. Achte darauf, dass Du nach Anschlagen
+ : der Tasten in der unteren Reihe wieder in die 
+ : Grundstellung zurückkehrst.
+*:LESSON12_D1
+I:(1)
+O:bn nb bn nb nb bn bn nb nb bn nb bn gn gn gb hb bh jb fn bf
+ :gn fn gb bg fb hb bh jb bj kb bk db bd sb bs ab ba lb bl bö
+ :öb bo bu bi no nu ni ne be br bw kb bk bt tb zb bz ln nl vn
+ :jnj jnj njn fbf bfb fbf bfb jnj njn bfj njf gbt bgt nju njh
+Q: Press Y to continue, N to repeat, or Fkey 12 to exit
+N:LESSON12_D1
+*:LESSON12_D2
+I:(2)
+O:hun han kan fan bus und ohn pon ihn ein nie nun neu nah den
+ :din win pin uin ein nau bau bew beo boh bog bag big gib gab
+ :geb fab dab sab kab lab lan dan san wan han zen ren wen tun
+ :nein wein kein bein bier kein tier aber ober bald bild blei
+Q: Press Y to continue, N to repeat, or Fkey 12 to exit
+N:LESSON12_D2
+*:LESSON12_D3
+I:(3)
+O:blau blue baff biff bahn sein wein wohn wien sinn fein kein
+ :neid pein rein eine leim fein huhn hahn nuss bann kann wann
+ :dann mann nein bett bass biss boss blau wald bald halt salz
+ :beginn gewinn allein negation blamage bagage tonnage gebete
+Q: Press Y to continue, N to repeat, or Fkey 12 to exit
+N:LESSON12_D3
+*:LESSON12_D4
+I:(4)
+O:gebeten sagen fragen plagen nagen neige trinken singen sang
+ :klang fang den ball alle singen den song alles nur sinnlose
+ :singerei er hat viel zu tun die tante kommt zu ihm umziehen
+ :der umzug kostet viel geld seine einnahmen waren angemessen
+Q: Press Y to continue, N to repeat, or Fkey 12 to exit
+N:LESSON12_D4
+*:LESSON12_D5
+I:(5)
+O:zu lies das manual sagt man rtm die informationen findet er
+ :dort zuerst wer liest lernt er sie liest viel uta lernt was
+ :man tun muss um arbeiten zu können könnte sein dass er nein
+ :sagt aber fragen ist besser als warten wen interessiert das
+Q: Press Y to continue, N to repeat, or Fkey 12 to exit
+N:LESSON12_D5
+*:LESSON12_D6
+I:(6)
+O:alles was man lesen kann hilft beim lernen fahrt ski in den
+ :bergen beine festhalten er will reinen wein wann wird er es
+ :lesen kafka soll seine verse lesen alle wollen ihn hören da
+ :er so eine tiefe stimme hat eva strittmatter liest viel aus
+Q: Press Y to continue, N to repeat, or Fkey 12 to exit
+N:LESSON12_D6
+*:LESSON12_D7
+I:(7)
+O:erbe ihres mannes aber die eigenen verse sind ebenso gut zu
+ :lesen  ist heine vergessen  keine ahnung  ist heine bekannt
+Q: Press Y to continue, N to repeat, or Fkey 12 to exit
+N:LESSON12_D7
+*:S_LESSON13
+B:                 Lesson 13: Das "c" und das Komma
+T:
+ : Die Tasten "c" und das Komma werden vom Mittelfinger
+ : gegriffen. Das erfordert etwas Übung, vor allem in 
+ : der linken Hand, weil dort eine Abwärtsbewegung
+ : von links nach rechts vollzogen werden muss.
+ : Übe dies bevor Du mit der Lektion beginnst.
+*:LESSON13_D1
+I:(1)
+O:c, c, ,c dc cd k, ,k k, ,k cd dc ck kc d, ,d ck k, c, d, k,
+ :, , , , , , , , , , , , , , , , , , , , , , , , , , , , , ,
+ :ck ck ck ck ck ck ck ck ck ck ck ck ck ck ck ck ck ck ck ck
+ :cd, cd, cd, cd, cd, cd, cd, cd, cd, cd, cd, cd, cd, cd, cd,
+Q: Press Y to continue, N to repeat, or Fkey 12 to exit
+N:LESSON13_D1
+*:LESSON13_D2
+I:(2)
+O:dcd k,k dcd k,k dcd k,k dcd k,k dcd k,k dcd k,k dcd k,k dcd
+ :sch sch sch sch sch sch sch sch sch sch sch sch sch sch sch
+ :sch, sch, sch, ch, ch, ch, ch, ch, ch, ch, ch, ch, ch, sch,
+ :ddcc dcdc dccd cddc dcdc cddc dccd cddc cdcd ddcc ddcc dccd
+Q: Press Y to continue, N to repeat, or Fkey 12 to exit
+N:LESSON13_D2
+*:LESSON13_D3
+I:(3)
+O:k,,k k,k, ,,kk k,k, kk,, k,k, k,k, ,k, k k,k, k,k, ,k,k ,kk
+ :ac ac ca ca acdc dcca ac acdc acdc ak,k ak,k ak,k k,ak k,,k
+ :fc cf fccf fccf fcf fcf cfc fcf fcf fccf cffc cffc cfcf cfc
+ :lcl lcl clc llcc clc clc lcl lcl cllc lach lach wache mache
+Q: Press Y to continue, N to repeat, or Fkey 12 to exit
+N:LESSON13_D3
+*:LESSON13_D4
+I:(4)
+O:ach auch doch dach ich mich sich nicht euch ich welch solch
+ :solche molche welche jene, welche der, die, auch, wenn nun,
+ :da sobald, wenn, dann gerade, als je mehr, desto besser, so
+ :wie du,  na dann,  ich bin, glaube ich  wer glaubt, der ist
+Q: Press Y to continue, N to repeat, or Fkey 12 to exit
+N:LESSON13_D4
+*:LESSON13_D5
+I:(5)
+O:dick lack leck auch dich doch deck lech dach loch doch noch
+ :buch fluch such versuch betrug falsch pflicht verzicht auch
+ :versuchung besuch tuch tauche seuche verflucht gedichte chi
+ :eva liest gedichte die ich schon lange kenne, doch schön
+Q: Press Y to continue, N to repeat, or Fkey 12 to exit
+N:LESSON13_D5
+*:LESSON13_D6
+I:(6)
+O:sind sie doch  auch, wenn der saal nicht voll ist, wird er
+ :seine verse lesen kommt das komma da hin, oder da hin  ich
+ :will gerne kommes setzen, doch ich mache das sicher immer
+ :falsch  na schön, wenn es sein muss, dann auch mit kommata
+Q: Press Y to continue, N to repeat, or Fkey 12 to exit
+N:LESSON13_D6
+*:LESSON13_D7
+I:(7)
+O:schick, schlank, schnick, schnack, schön, schade, schwer,
+ :schlank, schön, schöner, schneller, zu schnell, schriftlich
+ :hilfreich ist, wenn man die regeln zur kommasetzung kennt
+ :auch wenn der rechner streikt, musst du die ruhe bewahren
+Q: Press Y to continue, N to repeat, or Fkey 12 to exit
+N:LESSON13_D7
+Q: Press Y to continue, N to repeat, or Fkey 12 to exit
+N:LESSON13_D8
+*:S_LESSON14
+B:                Lesson 14: Zum "x"ten Mal und Punkt
+T:
+ : Die Tasten "x" und der Punkt werden vom Ringfinger
+ : gegriffen. Sprich die einzelnen Buschtagen und Zeichen
+ : mit. Über vor beginn der Lektion vor allem das 
+ : Untersetzen der Ringfinger auf die neuen Tasten.
+*:LESSON14_D1
+I:(1)
+O:x. x. x. x. x. x. x. x. x. x. x. x. x. x. x. x. x. x. x. x.
+ :x.x x.x x.x x.x x.x x.x x.x x.x x.x x.x x.x x.x x.x x.x x.x
+ :xx.. xx.. xx.. xx.. xx.. xx.. x.. xx.. xx.. xx.. xx.. xx..
+ :axa ö.ö axa ö.ö axa ö.ö axa ö.ö axa ö.ö axa ö.ö axa ö.ö axa
+Q: Press Y to continue, N to repeat, or Fkey 12 to exit
+N:LESSON14_D1
+*:LESSON14_D2
+I:(2)
+O:axt exe axt exe ol. ol. mol. mal. mel. en. en. en. ein. en.
+ :fax max axt axt. fax. max. a..a s..s d..d f..f j..j k..k xx
+ :exe exa ex dax sax fax nux lux mux  tux exakt lexikon lexik
+ :tux. taxi text textur taxen taxator taxameter saxophon lexx   
+Q: Press Y to continue, N to repeat, or Fkey 12 to exit
+N:LESSON14_D2
+*:LESSON14_D3
+I:(3)
+O:tux. tex. exakt. explosion. exorbitant. mexiko. exempel. ex
+ :tux luxemburg. fix. fax. fixum. fixieren. extrakt. extra. 
+ :tux nixe verflixt fixen ein problem fixen. fix. max. lol l.
+ :tux. den text revidieren. xerxes, der perserkönig war nicht
+Q: Press Y to continue, N to repeat, or Fkey 12 to exit
+N:LESSON14_D3
+*:LESSON14_D4
+I:(4)
+O:in luxemburg, sagt er. felix lebt nicht am existenzminimum.
+ :linux linux linux linux linux linux linux linux linux linux
+ :tux tux tux tux tux tux tux tux tux tux tux tux tux tux tux
+ :taxi fahren ist toll. linus begann mit linux als student.
+Q: Press Y to continue, N to repeat, or Fkey 12 to exit
+N:LESSON14_D4
+*:LESSON14_D5
+I:(5)
+O:auch heute arbeiten viele studenten an der entwicklung von
+ :software, die unter linux laufen soll. exakt nach dem start
+ :blieb der wagen stehen. der fahrer schloss erstmal alle
+ :fenster. er war programmierer, doch er kannte linux nicht.
+Q: Press Y to continue, N to repeat, or Fkey 12 to exit
+N:LESSON14_D5
+*:LESSON14_D6
+I:(6)
+O:nach der explosion war der saal leer. kafka las erstmal die
+ :verse nicht mehr weiter, bis sich die aufregung legte. text
+ :der text aus dem lexikon ist nicht ausreichend. deshalb las
+ :sie auch noch die entschrechenden seiten im internet. ende.
+Q: Press Y to continue, N to repeat, or Fkey 12 to exit
+N:LESSON14_D6
+Q: Press Y to continue, N to repeat, or Fkey 12 to exit
+N:LESSON14_D7
+*:S_LESSON15
+B:             Lesson 15: ASCII-ART -etwas Auflockerung
+T:
+ : Entspannung ist angesagt. Hier geht es nicht um
+ : Geschwindigkeit. Diese Lektion soll einfach
+ : demonstrieren, dass die Buchstaben mehr können,
+ : als nur Worte zu bilden. Viel Spaß!
+*:LESSON15_D1
+I:(1)
+O:x. x. x. x. x. x. x. x. x. x. x. x. x. x. x. x. x. x. x. x.
+ :                 xxxxx
+ :                x xxx x
+ :                x o o x
+Q: Press Y to continue, N to repeat, or Fkey 12 to exit
+N:LESSON15_D1
+*:LESSON15_D2
+I:(2)
+O:x x             x  ö  x
+ :x  x             xxxxx
+ :x  x              xxx
+ : x   x        xxxxxxxxxxx
+Q: Press Y to continue, N to repeat, or Fkey 12 to exit
+N:LESSON15_D2
+*:LESSON15_D3
+I:(3)
+O:   x   xx  xxxxxxxxxxxxxxxxxx
+ :      x   xx    x   x   x   x
+ :       x   x     x x    x   x
+ :          xx      x     x   x
+Q: Press Y to continue, N to repeat, or Fkey 12 to exit
+N:LESSON15_D3
+*:LESSON15_D4
+I:(4)
+O:           x   o  l  o  x   x
+ :           x   o  l  o  xx  x
+ :           x   o  l  o  xx  x
+ :           x   o  l  o  x x x
+Q: Press Y to continue, N to repeat, or Fkey 12 to exit
+N:LESSON15_D4
+*:LESSON15_D5
+I:(5)
+O:           x      l     x xxx
+ :            gggggggggggg
+ :           g            g
+ :           g            g
+Q: Press Y to continue, N to repeat, or Fkey 12 to exit
+N:LESSON15_D5
+*:LESSON15_D6
+I:(6)
+O:           g     xxx    g
+ :           g     l l    g
+ :           g     l l    g
+ :           g    l   l   g
+Q: Press Y to continue, N to repeat, or Fkey 12 to exit
+N:LESSON15_D6
+*:LESSON15_D7
+I:(7)
+O:          g    l     l   g
+ :           g   l     l  g
+ :            g  l     l  g
+ :            g  l     l  g
+Q: Press Y to continue, N to repeat, or Fkey 12 to exit
+N:LESSON15_D7
+*:LESSON15_D8
+I:(8)
+O:            g  l     l  g
+ :         sss   s     s  sss
+ :       sssssssss     ssssssss
+ :dieser klassische zweireiher besticht durch seine
+Q: Press Y to continue, N to repeat, or Fkey 12 to exit
+N:LESSON15_D8
+*:LESSON15_D9
+I:(9)
+O:formschöne linie. die hosen im karrottenschnitt
+ :vollenden den gesamteindruck. achten sie auf den
+ :strahlenden blick unseres models. ein seemann wie er im
+ :buche steht.
+Q: Press Y to continue, N to repeat, or Fkey 12 to exit
+N:LESSON15_D9
+*:LESSON15_D10
+I:(10)
+O:x.x x.x x.x x.x x.x x.x x.x x.x x.x x.x x.x x.x x.x x.x x.x
+Q: Press Y to continue, N to repeat, or Fkey 12 to exit
+N:LESSON15_D10
+*:S_LESSON16
+B:         Lesson 16: Der Buchstabe "y" und der Mittelstrich
+T:
+ : Das "y" und der Mittelstrich werden mit den kleinen
+ : Fingern gegriffen. Der Mittelstrich kann als Trenn-
+ : strich für die Silbentrennung, als Ergänzungsbindestrich,
+ : als Gedankenstrich, als Mittelstrich oder Zeichen 
+ : für "gegen" oder für "bis" und als Subtraktionszeichen
+ : benutzt werden.
+*:LESSON16_D1
+I:(1)
+O:y- y- y- y- y- y- y- y- y- y- y- y- y- y- y- y- y- y- y- y-
+ :y- y- y- y- y- y- y- -y -y -y -y -y -y -y -y -y -y -y -y -y
+ :ö-ö ö-ö ö-ö ö-ö -ö- ö-ö -ö- ö-ö -ö- ö-ö -ö- ö-ö -ö- ö-ö -ö-
+ :aya yay aya yay aya aya yay yay aya yay yay aya yay yay aya
+Q: Press Y to continue, N to repeat, or Fkey 12 to exit
+N:LESSON16_D1
+*:LESSON16_D2
+I:(2)
+O:fsdaya jklö-ö fsdaya jklö-ö fsdaya jklö-ö fsadya jkl-ö-ö a-
+ :sys l-l sys l-l sys l-l sys l-l sys l-l sys l-l sys l-l sys
+ :dyn k-m dyn k-n dyn k-n syd ky- syf k-d syg k-h syn jn- hay
+ :asyl asyl sylt sylt type type asyl sylt sys- teme syn- oden
+Q: Press Y to continue, N to repeat, or Fkey 12 to exit
+N:LESSON16_D2
+*:LESSON16_D3
+I:(3)
+O:bay- ern ana- lyse hygiene dynamo gymnastik lyzeum ly- zeum
+ :bayern analyse hy- giene dy- namo gym- nastik synode system
+ :yeti - yak - synthetisches - synergetisch - sylt asyl typen
+ :yast - yet another setup tool 
+Q: Press Y to continue, N to repeat, or Fkey 12 to exit
+N:LESSON16_D3
+*:LESSON16_D4
+I:(4)
+O:sympathisch sympathie hypothek lyon 
+ :als der pc noch nicht das standard-schreibmittel war, und
+ :förmliche texte in die schreibmaschiene gehackt wurden,
+ :stellte man mittels bindestrich sicher, dass der rechte
+Q: Press Y to continue, N to repeat, or Fkey 12 to exit
+N:LESSON16_D4
+*:LESSON16_D5
+I:(5)
+O:rand relativ einheitlich wurde. die wörter wurden nach sil-
+ :ben getrennt. der bindestrich kann aber auch zwischen zwei
+ :hauptwörtern stehen, um diese zu verbinden, wie in
+ :kaffee-ersatz. wer sich mit sport auskennt, orientiert sich
+Q: Press Y to continue, N to repeat, or Fkey 12 to exit
+N:LESSON16_D5
+*:LESSON16_D6
+I:(6)
+O:an den punktetabellen, wenn er die ergebnisse verschiedener
+ :mannschaften vergleichen will. dort wird der bindestrich
+ :verwendet, um zu zeigen, wer gegen wen spielt.
+ :    herta bsc - fortuna köln
+Q: Press Y to continue, N to repeat, or Fkey 12 to exit
+N:LESSON16_D6
+*:LESSON16_D7
+I:(7)
+O:in verbindungen wie gertrud-meier-platz oder 
+ :nord-ostsee-kanal wird der mittelstrich ohne leerzeichen
+ :verwendet. als gedankestrich taucht er auf, wenn man ein
+ :paar stichworte logisch voneinander absetzen möchte.
+Q: Press Y to continue, N to repeat, or Fkey 12 to exit
+N:LESSON16_D7
+Q: Press Y to continue, N to repeat, or Fkey 12 to exit
+N:LESSON16_D8
+*:S_LESSON17
+B:               Lesson 17: Die Buchstaben "ä" und "ü"
+T:
+ : Die Buchstaben "ä" und "ü" werden mit dem kleinen rechten
+ : Finger gegriffen. Spreize den kleiner Finger über die Tasten,
+ : verschiebe dabei aber nicht die Hand.
+ : Denke daran: Zuerst die neuen Schritte mehrmals ertasten!
+*:LESSON17_D1
+I:(1)
+O:öüä öüä öüä öäü öäü üäö äüö öäü öüä äöü üöä äüö öäü öäü üöä
+ :öüö öüö öüö öüö öüö öüö öüö üöü üöü üöü üöü öüö üöü öüö üöü
+ :öäö öäö äöä äöä äöä öäö öäö öäö äöä öäö öäö öäö öäö äöä äöä
+ :äüä äüä äüä äüö äüä üäü üäü öüö öäü üäü üäü öäü öäü üöä äüö
+Q: Press Y to continue, N to repeat, or Fkey 12 to exit
+N:LESSON17_D1
+*:LESSON17_D2
+I:(2)
+O:möhre mähre fähre führe würde könnte müsste hätte täte gäbe
+ :wäre sähe läge säge wäge mägen lägen lügen rügen trügen übt
+ :geübt gepflügt - übt bemüht, berühmt, gerühmt, gesühnt über
+ :flögen die vögel über die meere
+Q: Press Y to continue, N to repeat, or Fkey 12 to exit
+N:LESSON17_D2
+*:LESSON17_D3
+I:(3)
+O:und sähen die mähre, 
+ :gefolgt von dem bären,
+ :dann würden sie stürzen hinab auf den bösen,
+ :zum töten bereiten, verfressenen räuber,
+Q: Press Y to continue, N to repeat, or Fkey 12 to exit
+N:LESSON17_D3
+*:LESSON17_D4
+I:(4)
+O:ihn zausen und hacken, 
+ :mit schnäbeln zwacken,
+ :ihn stechen und jagen 
+ :bis er zög von dannen
+Q: Press Y to continue, N to repeat, or Fkey 12 to exit
+N:LESSON17_D4
+*:LESSON17_D5
+I:(5)
+O:mit hungrigem magen...
+ :gesöff, krüge, züge, betrügen, gähnen, erwähnen, gröhlen,
+ :gesänge, gelänge, begänne, zöliakie, zünglein, zündhölzer,
+ :gezündet, verzückt, glücklich, verrückt, bedrückt, rücken,
+Q: Press Y to continue, N to repeat, or Fkey 12 to exit
+N:LESSON17_D5
+*:LESSON17_D6
+I:(6)
+O:genügend, berühren, verführen, verfahren, für wen, wofür,
+ :dafür, die tür, das gebälk, etwas gebäck, äpfel, überlegen
+ :übermütig, gäbelchen, geflügel, gebügelt, verbrüht, bäume,
+ :verprügelt, die äste, das geäst, die jäger, flöhe fliehen,
+Q: Press Y to continue, N to repeat, or Fkey 12 to exit
+N:LESSON17_D6
+*:LESSON17_D7
+I:(7)
+O:konfitüre, marmelade, breitmaulfrösche ängstigen sich vor
+ :störchen, die lärche, die lerche, schübe, zöge, träge, er-
+ :träglich, nachgeäfft, geschäft, kräftig, beschäftigt, über
+ :von früh bis spät, qualitätsartikel zur verfügung stellen.
+Q: Press Y to continue, N to repeat, or Fkey 12 to exit
+N:LESSON17_D7
+*:LESSON17_D8
+I:(8)
+O:die fläche der europäischen gemeinschaft beträgt...
+ :vorwärts und rückwärts gelesen ergäbe der text dieser lek-
+ :tion keinen sinn.  
+ :...ach so, vögel ärgern keine bären.
+Q: Press Y to continue, N to repeat, or Fkey 12 to exit
+N:LESSON17_D8
+Q: Press Y to continue, N to repeat, or Fkey 12 to exit
+N:LESSON17_D9
+*:S_LESSON18
+B:              Lesson 18: Das "ß" (sprich: "Ess-zet")
+T:
+ : Das "ß" ist noch nicht von der Tastatur verbannt.
+ : Es wir ebenfalls vom rechten kleinen Finger gegriffen.
+ : Da wir hierbei in die Zahlenreihe greifen müssen,
+ : ist Vorsicht geboten. Nimm die restlichen Finger der
+ : Hand nicht aus der Grundstellung, sonst kann es leicht
+ : zur Verschiebung in die darüberliegende Reihe kommen.
+*:LESSON18_D1
+I:(1)
+O:äß äß äß öß üß öß üß öß üß äß üß öß üß üß äß öß üß äß öß üß
+ :ßt ßt ßt ße ßt ße ßa ßt ße ßd ßt üß ßt üß ßt üßt üßt äße aß
+ :öpüß ßpüo ßopä ö-ßp ßpä- öäüß -ö-ß ß--ü öäüß ßüäö ßäöß äßüö
+ :müssen büßt füße süße küssen rüssel schüssel grüßt müßig aß
+Q: Press Y to continue, N to repeat, or Fkey 12 to exit
+N:LESSON18_D1
+*:LESSON18_D2
+I:(2)
+O:er aß es, sie saß, er vergaß ganz, sie besaß alles, straßen
+ :gießen, begießen, genießen, zerfließen, zerfloss, schießend
+ :saß der jäger auf seinem gesäß, das gefäß, das fass, größer
+ :achtung - achtung - achtung -
+Q: Press Y to continue, N to repeat, or Fkey 12 to exit
+N:LESSON18_D2
+*:LESSON18_D3
+I:(3)
+O:nach der neuen rechtschreibregel gilt gerade das ß als kri-
+ :tisch. schrieb man bisher wörter, deren infinitiv ein ss
+ :enthielt in der gebeugten form mit ß, so muss man nun acht
+ :geben. es heißt weiterhin füße, während es neuerdings fasst
+Q: Press Y to continue, N to repeat, or Fkey 12 to exit
+N:LESSON18_D3
+*:LESSON18_D4
+I:(4)
+O:heißt. die regel ist nicht sehr schwer. klingt der vokal
+ :vor dem s-laut lang, schreibt man ein ß, klingt er kurz,
+ :dann benutzt man ss. also fassen, fasst, das fass, gefasst,
+ :müssen, muss, schluss, kuss - aber - fuß, füße, süß, groß,
+Q: Press Y to continue, N to repeat, or Fkey 12 to exit
+N:LESSON18_D4
+*:LESSON18_D5
+I:(5)
+O:gemäß. auch bei den doppelvokalen tritt das ß in auf. also
+ :heiß, weiß, äußerst, außen, genießen, fließen, fleißig.
+ :viel spaß und weiterhin genüssliches üben.
+ :er maß ab, das maß aller dinge,
+Q: Press Y to continue, N to repeat, or Fkey 12 to exit
+N:LESSON18_D5
+*:LESSON18_D6
+I:(6)
+O:hass, muss, misslingen, essbar, größer, schößlinge, mäßig,
+ :gleichmäßig, das postschließfach, expressgüter, man stößt,
+ :planmäßig, regelmäßig, gemäß, das gefäß, stöße, die größte
+Q: Press Y to continue, N to repeat, or Fkey 12 to exit
+N:LESSON18_D6
+*:S_LESSON19
+B:                    Lesson 19: GROSSSCHREIBUNG
+T:
+ : Die Großschreibung: Mittels der Hochstelltasten werden die
+ : Buchstabentasten in die Zweitbelegung versetzt. Diese ist in
+ : der Regel mit den Großbuchstaben besetzt. Es gibt dabei zwei
+ : Möglichkeiten. Mit der linken oberen Taste "Pfeil nach unten"
+ : wird die Tastatur bis zum erneuten Betätigen dieser
+ : "CAPSLOCK"-Taste  in die Zweitbelegung versetzt. Man schreibt
+ : dann ganz normal weiter erhält aber Großbuchstaben. Die beiden
+ : anderen "SHIFT"-Tasten links und rechts in der untersten
+ : Tastenreihe müssen beim tippten des Buchstaben gehalten
+ : werden. Das geht am besten wechselseitig.
+*:LESSON19_D1
+I:(1)
+O:ALLES WAS HIER STEHT IST, MIT FESTGESTELLTER UMSCHALTTASTE
+ :LINKS GESCHRIEBEN. DABEI BLEIBEN AUCH PUNKT UND KOMMA, SO-
+ :WIE BINDESTRICHE ERHALTEN. IM FOLGENDEN BENUTZEN WIR DIESE
+ :TASTE NICHT MEHR, DA DAMIT NICHT DER ÜBLICHE SCHREIBALLTAG
+Q: Press Y to continue, N to repeat, or Fkey 12 to exit
+N:LESSON19_D1
+*:LESSON19_D2
+I:(2)
+O:BEWÄLTIGT WIRD. DIE BEIDEN ANDEREN UMSCHALTTASTEN WERDEN
+ :JEWEILS VON DEM KLEINEN FINGER DER HAND BENUTZT, DIE EINEN
+ :KÜRZEREN WEG HAT. DAS IST IN DER REGEL DIE HAND, DIE FÜR
+ :DEN FOLGENDEN BUCHSTABEN NICHT BENÖTIGT WIRD. DAMIT IST ES
+Q: Press Y to continue, N to repeat, or Fkey 12 to exit
+N:LESSON19_D2
+*:LESSON19_D3
+I:(3)
+O:DANN AUCH MÖGLICH, ALLE ZEICHEN DER ZWEITBELEGUNG ZU TIP-
+ :PEN, ALSO AUCH DAS FRAGEZEICHEN.
+ :DIE ERSTE ÜBUNG WIRD FÜR DIE UMSCHALTTASTE LINKS, DIE ZWEI-
+ :TE FÜR DIE UMSCHALTTASTE RECHTS SEIN. DANACH WIRD GEMISCHT.
+Q: Press Y to continue, N to repeat, or Fkey 12 to exit
+N:LESSON19_D3
+*:LESSON19_D4
+I:(4)
+O:ACHTUNG, DIE FESTSTELLTASTE MUSS NUN NOCH EINMAL BETÄTIGT
+ :WERDEN. jetzt sollte das capslock-lämpchen aus sein.
+ :erste übung - links
+ :Ja Ja Ja Ja Ja Ja Ja Ja Ka Ka Ka Ka Ka Ka Ka Ka La La La La
+Q: Press Y to continue, N to repeat, or Fkey 12 to exit
+N:LESSON19_D4
+*:LESSON19_D5
+I:(5)
+O:Ma Ma Ma Ma Ma Ma Za Za Za Za Ha Ja Ja Ha Ha Za Ha Ha Ha Ha
+ :zweite Übung -rechts
+ :Fö Fö Fö Fö Fö Fö Fö Fö Fö Fö Gö Gö Gö Gö Gö Bö Bö Bö Bö Bö
+ :Wö Wö Wö Wö Rä Rä Rä Rö Rö Gä Gä Fä Dä Sä Vä Vä Vö Sö Dä Dä
+Q: Press Y to continue, N to repeat, or Fkey 12 to exit
+N:LESSON19_D5
+*:LESSON19_D6
+I:(6)
+O:gemischt -
+ :Kalk Kalk Wald Wald Rand Sand Hand Land Verstand Klang Tank
+ :Wort, Ort, Hort, Gehrung, Nahrung, Klarheit, Vergangenheit,
+ :Art, Hahn, Mahnung, Lohn, Sohn, Hohn, Keim, Krönung, Krone,
+Q: Press Y to continue, N to repeat, or Fkey 12 to exit
+N:LESSON19_D6
+*:LESSON19_D7
+I:(7)
+O:Leine, Leim, Heim, Geheimnis, Verbannung, Bekanntmachungen,
+ :Training, die Träne, der Trost, trostlos, das Los, Losungen
+ :Die folgenden vier Lektionen werden aus ganz normalen Text-
+ :übungen bestehen, danach geht es mit den Sonder- und Zahl-
+Q: Press Y to continue, N to repeat, or Fkey 12 to exit
+N:LESSON19_D7
+*:LESSON19_D8
+I:(8)
+O:zeichen weiter.
+Q: Press Y to continue, N to repeat, or Fkey 12 to exit
+N:LESSON19_D8
+*:S_LESSON20
+B:                  Lesson 20: Linux - meine Freude
+T:
+ : Linux meine Freude:
+ : ein kleiner Bericht über den Umstieg auf Linux.
+ : Erste Textübung. Achte am Ende der Zeilen auf
+ : den rechtzeitigen Umbruch.
+*:LESSON20_D1
+I:(1)
+O:Linux - meine Freude
+ :Es war ein ganz normaler Tag. Alles war wie immer. Ich kam
+ :aus der Schule und setzte mich an den PC. Homepage verwal-
+ :ten, Schülerdaten aktualisieren, Unterricht vorbereiten,
+Q: Press Y to continue, N to repeat, or Fkey 12 to exit
+N:LESSON20_D1
+*:LESSON20_D2
+I:(2)
+O:nebenbei ein paar MIDI-Files bearbeiten und E-Mail lesen.
+ :Mein Windows-PC ist eben gut ausgestattet. Doch dann ging
+ :es wieder los. Das Abholen der E-Mail dauerte satte drei
+ :Minuten. Als ich dann im Postfach sah, dass da genau eine
+Q: Press Y to continue, N to repeat, or Fkey 12 to exit
+N:LESSON20_D2
+*:LESSON20_D3
+I:(3)
+O:nicht einmal sehr lange Mail reingekommen war, stand für
+ :mich der Umstieg fest. Linux musste her. Ich wusste nicht,
+ :was da auf mich zukommen würde, doch das war mir egal. Es
+ :konnte nur noch besser werden. Kostenlose Software, gute
+Q: Press Y to continue, N to repeat, or Fkey 12 to exit
+N:LESSON20_D3
+*:LESSON20_D4
+I:(4)
+O:Internetanbindung, arbeiten auf verschiedenen Konsolen,
+ :es klang vielversprechend. Dann ging es los. Erwartungs-
+ :voll packte ich meine SuSE 6.1 aus und begann sofort mit
+ :der Installation. Innerhalb eines Tages hatte ich alles
+Q: Press Y to continue, N to repeat, or Fkey 12 to exit
+N:LESSON20_D4
+*:LESSON20_D5
+I:(5)
+O:wichtige, also auch die ISDN-Konfiguration, fertig.
+ :Einiges an meiner Hardware war problematisch, z.B. bekam
+ :ich die Soundkarte nicht gleich voll einsatzfähig, aber da
+ :ich nun sowieso erstmal mehrere Gigabyte an Software zu
+Q: Press Y to continue, N to repeat, or Fkey 12 to exit
+N:LESSON20_D5
+*:LESSON20_D6
+I:(6)
+O:erkunden hatte, störte mich das weniger.
+ :Eine vernünftige Mailkonfiguration habe ich erst Wochen
+ :später eingerichtet, doch für den Anfang tat es Netscape.
+ :Inzwischen arbeite ich seit 10 Monaten mit Linux, und ich
+Q: Press Y to continue, N to repeat, or Fkey 12 to exit
+N:LESSON20_D6
+*:LESSON20_D7
+I:(7)
+O:habe keinen Tag davon bereut. Ich habe wieder angefangen,
+ :Bücher zu lesen, und meine Fähigkeit, mich auf ein Problem
+ :zu konzentrieren, statt einfach drauf los zu arbeiten, ist
+ :irgendwie auch besser geworden. Dennoch gibt es noch sehr
+Q: Press Y to continue, N to repeat, or Fkey 12 to exit
+N:LESSON20_D7
+*:LESSON20_D8
+I:(8)
+O:viel zu lernen.
+Q: Press Y to continue, N to repeat, or Fkey 12 to exit
+N:LESSON20_D8
+*:S_LESSON21
+B:                      Lesson 21: Das Internet
+T:
+ : Das Internet - kurze Einführung. Ganz frei nach
+ : Paul Albitz und Cricket Liu in "DNS und BIND".
+ : (Erschienen im O'Reilly-Verlag.)
+ : Achtung, der Text ist etwas lang. Deshalb eignet
+ : er sich zum üben von Schreibgeschwindigkeit eben-
+ : so, wie zum reinen Training der kleinen Finger
+ : (Shift-Taste, Bindestrich, Umlaute).
+*:LESSON21_D1
+I:(1)
+O:Das Internet
+ :Das Internet ist in aller Munde. Alle wollen daran teil-
+ :haben, viele wollen daran verdienen. Selbst Boris ist, wie
+ :jeder weiß, inzwischen drin. Wie aber alles ganz genau be-
+Q: Press Y to continue, N to repeat, or Fkey 12 to exit
+N:LESSON21_D1
+*:LESSON21_D2
+I:(2)
+O:gann, wissen die wenigsten. 
+ :In den späten sechziger Jahren begann die Advanced Research
+ :Projects Agency des amerikanischen Verteidigungsministeri-
+ :ums, kurz ARPA genannt, mit der Finanzierung ein experimen-
+Q: Press Y to continue, N to repeat, or Fkey 12 to exit
+N:LESSON21_D2
+*:LESSON21_D3
+I:(3)
+O:tellen Wide Area Network, kurz WAN, um damit wichtige For-
+ :schungsorganisationen in den Vereinigten Staaten von Ameri-
+ :ka zu verbinden. Dieses Computernetz wurde ARPAnet genannt.
+ :Das ursprüngliche Ziel bestand in der Freigabe teuerer und 
+Q: Press Y to continue, N to repeat, or Fkey 12 to exit
+N:LESSON21_D3
+*:LESSON21_D4
+I:(4)
+O:knapper Rechnerressourcen an Auftragnehmern der Regierung.
+ :Von Anfang an wurde das Netzwerk von den Benutzern aber auch
+ :für die Zusammenarbeit, also der gemeinsamen Nutzung von Da-
+ :teien und Software, dem Austausch von E-Mail und der gemein-
+Q: Press Y to continue, N to repeat, or Fkey 12 to exit
+N:LESSON21_D4
+*:LESSON21_D5
+I:(5)
+O:samen Entwicklung und Forschung über gemeinsam genutzte ent-
+ :fernte Computer, verwendet.
+ :In den frühen achtziger Jahren wurde über eine Protokoll-
+ :Suite nachgedacht. Es entstand das Transmission Control Pro-
+Q: Press Y to continue, N to repeat, or Fkey 12 to exit
+N:LESSON21_D5
+*:LESSON21_D6
+I:(6)
+O:tocol, Internet Protocol. Diese wurde im ARPAnet schnell 
+ :Standard. Mit der Aufnahme dieses Protokolls in das populäre
+ :BSD Unix-Betriebssystem, der University of California at 
+ :Berkeley begann die Demokratisierung von Netzwerken. Es wur-
+Q: Press Y to continue, N to repeat, or Fkey 12 to exit
+N:LESSON21_D6
+*:LESSON21_D7
+I:(7)
+O:den zunächst Universitäten verbunden, doch es dauerte nicht
+ :lange, bis die in ein lokales Netzwerk eingebundenen Compu-
+ :ter über das ARPAnat kommunizieren konnten. Das Netzwerk
+ :wuchs und wuchs. Warens es anfangs noch eine Handvoll Hosts,
+Q: Press Y to continue, N to repeat, or Fkey 12 to exit
+N:LESSON21_D7
+*:LESSON21_D8
+I:(8)
+O:so wurde es schnell ein Netz von Zehntausenden von Hosts.
+ :Das ursprüngliche ARPAnet wurde zum Backbone des Internet.
+Q: Press Y to continue, N to repeat, or Fkey 12 to exit
+N:LESSON21_D8
+*:S_LESSON22
+B:                         Lesson 22: Lesung
+T:
+ : Lesung: ein Text, der frei erfunden ist, aber vielleicht
+ : ein wenig über die Textfragmente in den Anfangslektionen
+ : aufklärt, und gern fortgesetzt werden kann, z.B. mit ei-
+ : nem ganz normalen Texteditor. Versuchs doch mal!
+ : Die schönsten Geschichten könnten wir auf der 
+ : PingoS-Homepage veröffentlichen.
+*:LESSON22_D1
+I:(1)
+O:Lesung                                          A. Kalbitz
+ :Samstagabend, Feierabend. Beine hochlegen, abschlaffen,
+ :das miese Fernsehprogramm über sich ergehen lassen, schla-
+ :fen. Ein Leben lang berieselt von den Impressionen irgend-
+Q: Press Y to continue, N to repeat, or Fkey 12 to exit
+N:LESSON22_D1
+*:LESSON22_D2
+I:(2)
+O:welcher Fernsehredakteure, Krankenhausserien - Ein Muss,
+ :zumindest, seit Dr. Brinkmann in der Schwarzwaldklinik zu
+ :Weltruhm vor der Ärzteschaft der Fernsehwelt gelangte.
+ :Aber da war doch noch was. Da gab es noch andere Möglich-
+Q: Press Y to continue, N to repeat, or Fkey 12 to exit
+N:LESSON22_D2
+*:LESSON22_D3
+I:(3)
+O:keiten der Freizeitgestaltung. Beruhigt lehne ich mich zu-
+ :rück und merke kaum, wie mir die Augen zu fielen.
+ :Es ist höchste Zeit. Gleich beginnt die Lesung, und unser-
+ :eins sitzt noch im Taxi und sucht die Eintrittskarten.
+Q: Press Y to continue, N to repeat, or Fkey 12 to exit
+N:LESSON22_D3
+*:LESSON22_D4
+I:(4)
+O:Ich bin absolut kein Kafka-Freund, aber es ist mal was an-
+ :deres.
+ :Endlich - wir betreten den Saal und erwischen schnell noch
+ :einen Platz in der letzten Reihe. Es wird dunkel. Nur vorn
+Q: Press Y to continue, N to repeat, or Fkey 12 to exit
+N:LESSON22_D4
+*:LESSON22_D5
+I:(5)
+O:auf der Bühne strahlt ein greller Scheinwerfer auf das et-
+ :was zu kleine Lesepult. Applaus. Von der Seite tritt ein
+ :Mann herein, den ich nicht kenne, der aber als Autor vor-
+ :gestellt wird, und der sein neuestes Werk auszugweise vor-
+Q: Press Y to continue, N to repeat, or Fkey 12 to exit
+N:LESSON22_D5
+*:LESSON22_D6
+I:(6)
+O:lesen soll. Er setzt sich, räuspert sich noch einmal und
+ :blättert bedächtig in seinem Buch. Bei einem Lesezeichen
+ :hält er inne, überfliegt die Seite, wirft noch einen Blick
+ :in den Saal, als wolle er sagen - Achtung, es geht gleich
+Q: Press Y to continue, N to repeat, or Fkey 12 to exit
+N:LESSON22_D6
+*:LESSON22_D7
+I:(7)
+O:los - und atmet tief ein, um zu lesen, als plötzlich ein
+ :lautes Krachen den Saal erfüllt. Das war kein Schuss, 
+ :dachte ich gleich. Derartige Geräusche kennt man ja aus
+ :den Aktionfilmen im Fernsehen. Der Stuhl eines Gastes kann
+Q: Press Y to continue, N to repeat, or Fkey 12 to exit
+N:LESSON22_D7
+*:LESSON22_D8
+I:(8)
+O:auch nicht zusammengebrochen sein. Dafür war das Geräusch
+ :zu laut...
+Q: Press Y to continue, N to repeat, or Fkey 12 to exit
+N:LESSON22_D8
+*:S_LESSON23
+B:                        Lesson 23: Gedicht
+T:
+ : Gedichte haben recht unterschiedliche Strukturen.
+ : Manchmal halten sie sich an keine Grammatik- oder
+ : Rechtschreibregeln. Das nennt man dann 
+ : dichterische Freiheit.
+*:LESSON23_D1
+I:(1)
+O:Was hat...                            A. Kalbitz
+ :Was hat uns so verblendet,
+ :dass alles was wir schaffen,
+ :gemessen wird an anderem,
+Q: Press Y to continue, N to repeat, or Fkey 12 to exit
+N:LESSON23_D1
+*:LESSON23_D2
+I:(2)
+O:verglichen wird, getaxt, bewertet
+ :und am Ende nicht verwendet.
+ :Was hat uns nur so abgestumpft,
+ :dass wir nicht erstmal sehen,
+Q: Press Y to continue, N to repeat, or Fkey 12 to exit
+N:LESSON23_D2
+*:LESSON23_D3
+I:(3)
+O:warum da einer etwas tut,
+ :ob er es schafft, noch Hilfe braucht,
+ :am Ende wirds gemeinsam gehen.
+ :Was hat die Menschen kalt gemacht,
+Q: Press Y to continue, N to repeat, or Fkey 12 to exit
+N:LESSON23_D3
+*:LESSON23_D4
+I:(4)
+O:dass mancher gleich darüber lacht,
+ :wenn einem mal ein Missgeschick
+ :die Röte auf die Wangen malt, er sich blamiert,
+ :verletzt dann einfach resigniert.
+Q: Press Y to continue, N to repeat, or Fkey 12 to exit
+N:LESSON23_D4
+*:LESSON23_D5
+I:(5)
+O:Was hat verdammt noch mal
+ :der Autor sich dabei gedacht,
+ :uns unser Dasein zu vermiesen,
+ :mit dummen Texten, Meinungen und ungeschickt
+Q: Press Y to continue, N to repeat, or Fkey 12 to exit
+N:LESSON23_D5
+*:LESSON23_D6
+I:(6)
+O:gebastelten Gedichten, wie diesem.
+Q: Press Y to continue, N to repeat, or Fkey 12 to exit
+N:LESSON23_D6
+*:S_LESSON24
+B:                Lesson 24: Die Zeichen "<" und ">"
+T:
+ : Die Taste "kleiner als" und "größer als"
+ : um das Zeichen "<" (kleienr als) zu benutzen
+ : betätige die Taste einfach mit dem linken kleinen
+ : Finger. 
+ : Das Zeichen ">" (größer als) erhälst Du, wenn Du
+ : mit dem rechten kleinen Finger die <shift>-Taste hälst
+ : und mit dem rechten kleinen FInger die "<"-Taste betätigst.
+*:LESSON24_D1
+I:(1)
+O:<><><><><><><><><><><><><><><><><><><><><><><><><><><><><>
+ :< > < > < > < > < > < > < >  < > < > < > < > < > < > < >
+ :>< >< >< >< >< >< >< >< >< >< >< >< >< >< >< >< >< >< ><
+ :<< >> << >> << >> << >> << >> << >> << >> << >> << >> <<
+Q: Press Y to continue, N to repeat, or Fkey 12 to exit
+N:LESSON24_D1
+*:LESSON24_D2
+I:(2)
+O:Die Zeichen < und > werden als Operatoren benutzt.
+ :< ist der Eingabeoperator und > ist der Ausgabeoperator.
+ :Mit ls > dateiname kann ich unter Linux eine Dateiliste
+ :mit allen Dateien des akuellen Verzeichnisses anlegen.
+Q: Press Y to continue, N to repeat, or Fkey 12 to exit
+N:LESSON24_D2
+*:LESSON24_D3
+I:(3)
+O:Will dich eine Datei nicht überschreiben sondern Daten
+ :anhängen, benutze ich >> als Operator. 
+ :In HTML-Quellen spielen die Zeichen < und > eine wesent-
+ :liche Rolle. Alle Tags, gesprochen: Tägs, werden zwischen
+Q: Press Y to continue, N to repeat, or Fkey 12 to exit
+N:LESSON24_D3
+*:LESSON24_D4
+I:(4)
+O:< und > eingeschlossen.
+ :Beispiele: <html> <head> <body> <a href... <img src...
+ :<table> <hr> <br> <p> <li> <ol> <ul>
+ :Auch in der XML-Syntax werden diese Zeichen verwendet um 
+Q: Press Y to continue, N to repeat, or Fkey 12 to exit
+N:LESSON24_D4
+*:LESSON24_D5
+I:(5)
+O:die Tags von den normalen Texten abzugrenzen.
+ :Häufig werden die Zeichen auch verwendet, um Unterschiede
+ :darzustellen. Daher stammen auch die Bezeichnungen:
+ :ist größer als - für > und ist kleiner als - für <.
+Q: Press Y to continue, N to repeat, or Fkey 12 to exit
+N:LESSON24_D5
+*:LESSON24_D6
+I:(6)
+O:In ASCII-ART-Manier lassen die Zeichen sich ebenfalls gut
+ :verwenden. Beispiele dazu wird es in einer der Abschluss-
+ :lektionen geben.
+ :<-><-<>-><<-->>-<<-->>-<<-->>-<<->>-<<--->>-->>-<<->>-<<>>
+Q: Press Y to continue, N to repeat, or Fkey 12 to exit
+N:LESSON24_D6
+Q: Press Y to continue, N to repeat, or Fkey 12 to exit
+N:LESSON24_D7
+*:S_LESSON25
+B:                 Lesson 25: Die 1, das ! und das ?
+T:
+ : Die Tasten 1 ! und ? werden mit den kleien Fingern
+ : betätigt. Dabei ist für das Fragezeichen die linke
+ : <Shift>-Taste und für das Ausrufezeichen die rechte
+ : <Shift>-Taste gedrückt zu halten.
+*:LESSON25_D1
+I:(1)
+O:1! ß? 1! ß? 1! ß? 1ß!? ?1?ß !1?! 1ß!? ??!!1ßß1 !ß!ß1??!ß!1
+ :.!? sind Interpunktionszeichen, die im Deutschen dazu ver-
+ :wendet werden, um zu signalisieren, dass es sich bei einem
+ :Satz um eine normale Aussage, einen Ausruf oder eine Frage
+Q: Press Y to continue, N to repeat, or Fkey 12 to exit
+N:LESSON25_D1
+*:LESSON25_D2
+I:(2)
+O:handelt. Wer war das? Wieso machst Du das? Wo kommst Du
+ :denn her? Das alles sind typische Fragen, bei denen der
+ :Leser sofort weiß, wie er sie betonen muss.
+ :Komm her! Sei leise! Hallo! Achtung! Das wiederum sind, so
+Q: Press Y to continue, N to repeat, or Fkey 12 to exit
+N:LESSON25_D2
+*:LESSON25_D3
+I:(3)
+O:sagt das Interpunktionszeichen, Ausrufesätze. Sie werden
+ :vom Leser ebenfalls deutlich anders gesprochen, als Frage-
+ :sätze oder normale Sätze, die mit dem Punkt abgeschlossen
+ :werden.
+Q: Press Y to continue, N to repeat, or Fkey 12 to exit
+N:LESSON25_D3
+*:LESSON25_D4
+I:(4)
+O:Auf der Tastatur werden !?.<> als Sonderzeichen betrachtet,
+ :was eigentlich nur bedeuten soll, dass sie von den normalen
+ :Buchstaben unterscheiden werden müssen. Ebenfalls unter-
+ :schieden werden die Zahlzeichen, wie z.B. die 1. Aus Zahl-
+Q: Press Y to continue, N to repeat, or Fkey 12 to exit
+N:LESSON25_D4
+*:LESSON25_D5
+I:(5)
+O:zeichen werden Zahlen gebildet:
+ :1 steht für eins, 11 für elf, 111 für einhundertundelf.
+ :Verwendet man das Wort ein in Texten, wird es für gewöhn-
+ :lich als unbestimmter Artikel verwendet. Das läßt sich
+Q: Press Y to continue, N to repeat, or Fkey 12 to exit
+N:LESSON25_D5
+*:LESSON25_D6
+I:(6)
+O:aber manchmal auch anders interpretieren: Werden kleine
+ :Mengen in Texten verwendet, schreibt man dafür häufig die
+ :Zahlwörter ein, zwei oder drei. In Aufzählungen oder bei
+ :der Festlegung von Reihenfolgen hingegen benutzt man gern
+Q: Press Y to continue, N to repeat, or Fkey 12 to exit
+N:LESSON25_D6
+*:LESSON25_D7
+I:(7)
+O:die Zahlzeichen: 1.; 1. Platz; 1. Durchlauf; 1. Datensatz.
+ :In HTML wird das Ausrufezeichen übrigens verwendet, um
+ :Kommentare in die Quellen einzugügen, die dann später in
+ :der Internetseite nicht zu sehen sind.
+Q: Press Y to continue, N to repeat, or Fkey 12 to exit
+N:LESSON25_D7
+*:LESSON25_D8
+I:(8)
+O:<!-- Dies ist ein Kommentar in einem HTML-Quelltext -->
+ :Willst Du noch mehr über die Bedeutung von ! und ? wissen?
+Q: Press Y to continue, N to repeat, or Fkey 12 to exit
+N:LESSON25_D8
+*:S_LESSON26
+B:         Lesson 26: 5 8 - Prozent "%" und Klammer auf "("
+T:
+ : Die 5 und die 8 werden mit den Zeigefingern
+ : betätigt. Für das %-Zeichen ist beim Betätigen
+ : der 5 die rechte <Shift>-Taste gedrückt zu halten.
+ : Das "Klammer-auf"-Zeichen kommt erst so richtig
+ : zum Einsatz, wenn die schließende Klammer einge-
+ : führt wird, dennoch: drücke beim Tippen dieses
+ : Zeichens die linke <Shift>-Taste herunter.
+*:LESSON26_D1
+I:(1)
+O:((((((((((((((((((((((((((((((((((((((((((((((((((((((((((
+ :58% liest man als achtundfünfzig Prozent. Prozent bedeutet
+ :von Hundert.
+ :Berechne:
+Q: Press Y to continue, N to repeat, or Fkey 12 to exit
+N:LESSON26_D1
+*:LESSON26_D2
+I:(2)
+O:58% von 1111 DM.
+ :88% von 888 kg Mehl.
+ :%-Werte werden benötigt, um den Anteil an einen bestimmten
+ :Grundwert zu berechnen.
+Q: Press Y to continue, N to repeat, or Fkey 12 to exit
+N:LESSON26_D2
+*:LESSON26_D3
+I:(3)
+O:In Perl wird das %-Zeichen benutzt, um einen Hash festzu-
+ :legen. %namen wird dann eine z.B. zweispaltige Liste mit
+ :Vor- und Nachnamen zugeordnet, die dann in dem Program
+ :ausgelesen werden kann.
+Q: Press Y to continue, N to repeat, or Fkey 12 to exit
+N:LESSON26_D3
+*:LESSON26_D4
+I:(4)
+O:In der Bash ist % ein Operator für Modulus-Operationen.
+ :Das entspricht dem Rest bei einer ganzzahligen Division.
+ :((((((((((((((((((((((((((((((((((((((((((((((((((((((((((
+Q: Press Y to continue, N to repeat, or Fkey 12 to exit
+N:LESSON26_D4
+*:S_LESSON27
+B:         Lesson 27: 6 7 - Kaufmanns-und "&" und Slash "/"
+T:
+ : Die Zeichen 6 7 & und / werden mit den Zeigefingern
+ : betätigt. Drücke analog zu den vorangegangenen
+ : Lektionen für die Zeichen & und / die <Shift>-Tasten
+ : mit den kleinen Finger der jeweils anderen Hand.
+*:LESSON27_D1
+I:(1)
+O:1 5 8 6 7 7 6 5 8 1 67 76 58 85 158 178 167 187 585 151 58
+ :6 7 & / 16/8 7/5 1/7 6/8 5/8 6/5 8/8 5/5 7/7 6/7 1/7 1/6 &
+ :Internet & Co.; Max Meier & Söhne; Grunewald & Co. KG
+ :Das Kaufmanns-und & begegnet uns bewußt oder unbewußt recht
+Q: Press Y to continue, N to repeat, or Fkey 12 to exit
+N:LESSON27_D1
+*:LESSON27_D2
+I:(2)
+O:häufig. Aber es wird nicht nur in Firmenbezeichnungen ver-
+ :wendet. 
+ :In der Bash dient das Kaufmanns-und als Operator.
+ :Ein & bedeutet bitweises UND und 
+Q: Press Y to continue, N to repeat, or Fkey 12 to exit
+N:LESSON27_D2
+*:LESSON27_D3
+I:(3)
+O:ein && bedeutet logisches UND.
+ :In 1>&2 wird die Standardausgabe eines Befehls auf die
+ :Standardfehlerausgabe umgeleitet.
+ :Der Slash / wird häufig als Zeichen für die Division ver-
+Q: Press Y to continue, N to repeat, or Fkey 12 to exit
+N:LESSON27_D3
+*:LESSON27_D4
+I:(4)
+O:wendet. Unter LINUX ist es ein wesentliches Zeichen für
+ :die Organisation der Verzeichnisstruktur. So ist / (root)
+ :das Wurzelverzeichnis, von dem aus in Unterverseichnisse
+ :verzweigt wird. /boot, /root, /opt, /usr, /var, /tmp,
+Q: Press Y to continue, N to repeat, or Fkey 12 to exit
+N:LESSON27_D4
+*:LESSON27_D5
+I:(5)
+O:/etc, /bin sind Standardverzeichnisse in dieser Struktur.
+ :In HTML wird der Slash benutzt, um TAGs zu schließen.
+ :<html>
+ :<head><title> Homepagetitel </title></head>
+Q: Press Y to continue, N to repeat, or Fkey 12 to exit
+N:LESSON27_D5
+*:LESSON27_D6
+I:(6)
+O:<body>
+ :Seitentext inclusive weiterer HTML-Befehle.
+ :</body>
+ :</html>
+Q: Press Y to continue, N to repeat, or Fkey 12 to exit
+N:LESSON27_D6
+*:LESSON27_D7
+I:(7)
+O:Dies ist eine gültige Grundstruktur einer HTML-Seite mit
+ :sehr wenig Inhalt.
+Q: Press Y to continue, N to repeat, or Fkey 12 to exit
+N:LESSON27_D7
+*:S_LESSON28
+B:       Lesson 28: 4 9 - Dollarzeichen "$" und Klammer zu ")"
+T:
+ : Noch nicht fertig
+*:LESSON28_D1
+I:(1)
+O:(49$) (49$) (48$) (57$) (56$) (78$) (89$) (18$) ($81) (51$)
+ :Das $-Zeichen steht für Dollar. Jedem ist klar, dass dieses
+ :Zeichen für eine Währung steht, die den Weltmarkt beherrst.
+ :Dies soll jetzt kein Text über Umrechnungskurse werden. Die
+Q: Press Y to continue, N to repeat, or Fkey 12 to exit
+N:LESSON28_D1
+*:LESSON28_D2
+I:(2)
+O:wechseln ja doch regelmäßig. Stattdessen wollen wir auch
+ :für dieses $-Zeichen nach weiteren Bedeutungen fahnden.
+ :Zunächst die Bash:
+ :$ steht für Variablen- oder Befehlssubstitution.
+Q: Press Y to continue, N to repeat, or Fkey 12 to exit
+N:LESSON28_D2
+*:LESSON28_D3
+I:(3)
+O:Beispiel für Befehlssubstitution: Befehl1 $(Befehl2) 
+ :Beispiele für Variablensubstitution können hier leider noch
+ :nicht geschrieben werden, da dabei die geschweifte Klammer
+ :verwendet wird.
+Q: Press Y to continue, N to repeat, or Fkey 12 to exit
+N:LESSON28_D3
+*:LESSON28_D4
+I:(4)
+O:Und nun Perl:
+ :In Perl lassen sich mit dem $-Zeichen ganz einfach Variablen
+ :festlegen.
+ :Dabei kann direkt von der Tastatur <STDIN> gelesen und damit
+Q: Press Y to continue, N to repeat, or Fkey 12 to exit
+N:LESSON28_D4
+*:LESSON28_D5
+I:(5)
+O:die Variable gefüllt werden: 
+ :$eingabe = <STDIN>;
+ :mit
+ :chomp($eingabe);
+Q: Press Y to continue, N to repeat, or Fkey 12 to exit
+N:LESSON28_D5
+*:LESSON28_D6
+I:(6)
+O:wird das Newline-Zeichen am Ende der Eingabe entfernt.
+ :Dabei wird der Inhalt der Variablen $eingabe bereits ausge-
+ :lesen und verarbeitet.
+Q: Press Y to continue, N to repeat, or Fkey 12 to exit
+N:LESSON28_D6
+*:S_LESSON29
+B:     Lesson 29: 3 0 - Paragraph "§" und Gleichheitszeichen "="
+T:
+ : Ab jetzt kann geklammert werden. Die Tasten
+ : mit den Zeichen 4 9 $ und ) werden mit den
+ : Mittelfingern betätigt. FÜr die Zweitbelegung
+ : wird wiederum die <Shift>-Taste benutzt.
+ : Achte nach wie vor darauf, die Tasten einige
+ : Male vorzutasten, bevor Du die Lektion beginnst.
+*:LESSON29_D1
+I:(1)
+O:§30=§30=§30=§30=§30=§30=§30=§30=§30=§30=§30=§30=§30=§30=§30 
+ :134567890 098765431 !§$%&/()= =)(/&%$§! 890 60 470 160 3140
+ :===========================================================
+ :§ - Paragraph
+Q: Press Y to continue, N to repeat, or Fkey 12 to exit
+N:LESSON29_D1
+*:LESSON29_D2
+I:(2)
+O:Dieses Zeichen steht für Recht und Ordnung auf der ganzen
+ :Welt. Sie kennen das:
+ :§1 Jeder macht seins.
+ :§2 Wenn keine anderen Paragraphen entgegenstehen, gilt §1!
+Q: Press Y to continue, N to repeat, or Fkey 12 to exit
+N:LESSON29_D2
+*:LESSON29_D3
+I:(3)
+O:===========================================================
+ :Selbst das Wort Paragraphenreiter kommt nicht von ungefähr.
+ :Schließlich sieht § aus wie ein Seepferdchen.
+ :===========================================================
+Q: Press Y to continue, N to repeat, or Fkey 12 to exit
+N:LESSON29_D3
+*:LESSON29_D4
+I:(4)
+O:Das = (in Worten: ist gleich) steht ebenfalls für Gerech-
+ :tigkeit. Eine Gleichung ist nur dann eine wahre Aussage,
+ :wenn die Kräfte (Terme?, Werte?) auf beiden Seiten gerecht
+ :verteilt sind.
+Q: Press Y to continue, N to repeat, or Fkey 12 to exit
+N:LESSON29_D4
+*:LESSON29_D5
+I:(5)
+O: 1+1=2
+ : 2+2=4
+ : 34567+56780=91347
+ : f(x)=3*x+7
+Q: Press Y to continue, N to repeat, or Fkey 12 to exit
+N:LESSON29_D5
+*:LESSON29_D6
+I:(6)
+O:In der Programmierung nimmt man mit = oder == eine Zuwei-
+ :sung vor.
+ :Schlimmstenfalls läßt sich das = aber schön als Trennzei-
+ :chen für Textabsätze verwenden.
+Q: Press Y to continue, N to repeat, or Fkey 12 to exit
+N:LESSON29_D6
+*:LESSON29_D7
+I:(7)
+O:===========================================================
+Q: Press Y to continue, N to repeat, or Fkey 12 to exit
+N:LESSON29_D7
+*:S_LESSON30
+B:       Lesson 30: 2 und Anführungsstriche "" (=Gänsefüßchen)
+T:
+ : Die 2 und die "Gänsefüßchen" werden mit dem 
+ : Ringfinger der linken Hand gegriffen.
+ : Achte darauf, hier die rechte <shift>-Taste
+ : zu benutzen.
+*:LESSON30_D1
+I:(1)
+O:ALLES WAS HIER STEHT IST, MIT FESTGESTELLTER UMSCHALTTASTE
+ :1234567890 0987654321 20 21 22 23 24 25 26 27 28 29 2222 2
+ :"Dies ist eine Aussage!"
+ :Die "Gänsefüßchen" werden in der Schriftsprache verwendet,
+Q: Press Y to continue, N to repeat, or Fkey 12 to exit
+N:LESSON30_D1
+*:LESSON30_D2
+I:(2)
+O:um wörtliche Rede deutlich zu machen. So kann man zum Bei-
+ :spiel ab sofort nicht nur sagen, dass Kafka darüber etwas
+ :las, wie man etwas sagt, sondern man kann nun auch schrei-
+ :ben Kafka las:"Ich sage ihnen mal wie man das sagt!"
+Q: Press Y to continue, N to repeat, or Fkey 12 to exit
+N:LESSON30_D2
+*:LESSON30_D3
+I:(3)
+O:Darauf antwortete das Publikum:"Nee, lass mal!"
+ :Wie in "Gänsefüßchen" werden die "Gänsefüßchen" manchmal
+ :auch dazu verwendet, um eine nicht ganz korrekte aber ge-
+ :läufige Bezeichnung zu verwenden. Schließlich sehen es
+Q: Press Y to continue, N to repeat, or Fkey 12 to exit
+N:LESSON30_D3
+*:LESSON30_D4
+I:(4)
+O:die Gänse nicht gern, wenn man ihre Füße mit einfachen An-
+ :führungsstrichen vergleicht.
+ :Eine Aussage im Computerbereich ist ähnlich einer Aussage
+ :im literarischen Bereich häufig in Anführungsstriche zu
+Q: Press Y to continue, N to repeat, or Fkey 12 to exit
+N:LESSON30_D4
+*:LESSON30_D5
+I:(5)
+O:setzen. echo "Dies ist ein Text!" bringt in der Bash
+ :Dies ist ein Text!
+ :zum Vorschein. Eingebaut als Warnungen in Scripte in der
+ :Form 
+Q: Press Y to continue, N to repeat, or Fkey 12 to exit
+N:LESSON30_D5
+*:LESSON30_D6
+I:(6)
+O:echo "Konnte den User nicht anlegen!"
+ :Führt das zu sinnvollen Ausgaben, die zur rechten Zeit
+ :das richtige sagen.
+Q: Press Y to continue, N to repeat, or Fkey 12 to exit
+N:LESSON30_D6
+*:S_LESSON31
+B:             Lesson 31: Sonderzeichen ^ und ° ´ und `
+T:
+ : ^ und ° ´ und ` werden mit den kleinen Fingern
+ : gegriffen. Dabei ist wieder auf die wechselseitige
+ : Benutzung der <Shift>-Taste zu achten.
+*:LESSON31_D1
+I:(1)
+O:^ ^ ^ ^ ^ ^ ^ ^ ^ ^ ^ ^ ^ ^ ^ ^ ^ ^ ^ ^ ^ ^ ^ ^ ^ ^ ^ ^ ^
+ :° ° ° ° ° ° ° ° ° ° ° ° ° ° ° ° ° ° ° ° ° ° ° ° ° ° ° ° ° 
+ :´ ´ ´ ´ ´ ´ ´ ´ ´ ´ ´ ´ ´ ´ ´ ´ ´ ´ ´ ´ ´ ´ ´ ´ ´ ´ ´ ´ ´
+ :` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` `
+Q: Press Y to continue, N to repeat, or Fkey 12 to exit
+N:LESSON31_D1
+*:LESSON31_D2
+I:(2)
+O:Heute werden Tageshöchsttemperaturen von 21°C erwartet.
+ :Bei 0°C liegt der Gefrierpunkt des Wassers.
+ :Wasser siedet bei 100 °C.
+ :Das ^ ist ein Sonderzeichen, das z.B. beim Programmieren
+Q: Press Y to continue, N to repeat, or Fkey 12 to exit
+N:LESSON31_D2
+*:LESSON31_D3
+I:(3)
+O:in C++ das Bit-Exclusive-ODER XOR repräsentiert.
+ :^ ist dort also ein Operator.
+ :` (Backquotes) werden in Perl wie in einer Shell dazu
+ :verwendet, Ausgaben eines Programms als Daten zu über-
+Q: Press Y to continue, N to repeat, or Fkey 12 to exit
+N:LESSON31_D3
+*:LESSON31_D4
+I:(4)
+O:nehmen.
+ :$jetzt = "Die aktuelle Uhrzeit ist ".`date`
+ :foreach $_ (`who`) ...
+ : ´´´´´
+Q: Press Y to continue, N to repeat, or Fkey 12 to exit
+N:LESSON31_D4
+*:LESSON31_D5
+I:(5)
+O:  ° ° 
+ :   >
+ :   `
+Q: Press Y to continue, N to repeat, or Fkey 12 to exit
+N:LESSON31_D5
+*:S_LESSON32
+B:                 Lesson 32: Sonderzeichen + * # '
+T:
+ : + * # und ' sind mit dem kleinen Finger der rechten
+ : Hand zu betätigen. Achte beim * und ' auf die 
+ : Benutzung der linken <Shift>-Taste!
+*:LESSON32_D1
+I:(1)
+O:+*#' +*#' +'*# #*#' *#' #+'+ +##+ '++' ++'#*# #+#+#+#+* #*
+ :	3+3=6
+ :	3*3=9
+ :#include <gtk.h>
+Q: Press Y to continue, N to repeat, or Fkey 12 to exit
+N:LESSON32_D1
+*:LESSON32_D2
+I:(2)
+O:# dies ist ein Kommentar
+ :## dies auch
+ :c++ ist eine objektorientierte Programmiersprache.
+ :g++ ist nichts anderes.
+Q: Press Y to continue, N to repeat, or Fkey 12 to exit
+N:LESSON32_D2
+*:LESSON32_D3
+I:(3)
+O:Berechne!
+ :	3+3+3+3=
+ :	3*3*3*3=
+ :	9*9*9*9=
+Q: Press Y to continue, N to repeat, or Fkey 12 to exit
+N:LESSON32_D3
+*:LESSON32_D4
+I:(4)
+O:	9+9+9+9=
+ :Rechenoperationen in der Mathematik:
+ :	+ ist das Zeichen für die Addition.
+ :	* ist das Zeichen für Multiplikation.
+Q: Press Y to continue, N to repeat, or Fkey 12 to exit
+N:LESSON32_D4
+*:LESSON32_D5
+I:(5)
+O:'Hier steht etwas drin!'
+ :In literarischen Texten wird das Zeichen ' häufig dafür
+ :verwendet, um eine wörtliche Rede: ("Du hast doch gesagt,
+ :dass ich den Film noch zuende sehen darf.") von Gedanken,
+Q: Press Y to continue, N to repeat, or Fkey 12 to exit
+N:LESSON32_D5
+*:LESSON32_D6
+I:(6)
+O:die nicht ausgesprochen werden ('Immer muss ich um acht
+ :ins Bett! Das ist echt unfair!') zu unterscheiden.
+ :So kann man sehr sinnreiche Texte formulieren, in denen
+ :man genau darauf achten muss, was gesagt und was nur ge-
+Q: Press Y to continue, N to repeat, or Fkey 12 to exit
+N:LESSON32_D6
+*:LESSON32_D7
+I:(7)
+O:dacht wurde.
+ :"Ein schönes Kleid haben sie heute wiede an, Frau Meier!"
+ :'Den Fummel haben sie wohl aus dem Schlussverkauf, oder?'
+Q: Press Y to continue, N to repeat, or Fkey 12 to exit
+N:LESSON32_D7
+*:S_LESSON33
+B:      Lesson 33: Sitzung (ein Übungstext mit "Gänsefüßchen")
+T:
+ : Übungstext: 
+ : Versuche diesen Text möglichst fehlerfrei zu tippen.
+ : Steigere Dein Tempo erst, wenn Du Dich absolut 
+ : sicher fühlst.
+*:LESSON33_D1
+I:(1)
+O:Sitzung                  frei erschwindelt von: A. Kalbitz
+ :==========================================================
+ :"Hast du dir das auch gut überlegt?" Rainer schaute zwei-
+ :felnd auf Felix und man sah seinen Augen an, dass da nicht
+Q: Press Y to continue, N to repeat, or Fkey 12 to exit
+N:LESSON33_D1
+*:LESSON33_D2
+I:(2)
+O:nur Zweifel, sondern auch besseres Wissen in dieser Frage
+ :lag. "Äh, ich dachte, ja,", kam Felix zögerlich mit der
+ :Sprache raus, "wenn ich schon Linux auf dem Schulnetz fah-
+ :re, dann sollen auch die Schüler die Möglichkeit haben,
+Q: Press Y to continue, N to repeat, or Fkey 12 to exit
+N:LESSON33_D2
+*:LESSON33_D3
+I:(3)
+O:mit Linux zu arbeiten." Rainer sah immer noch skeptisch
+ :aus. "Dann bist Du aber erst einmal der Einzige, der das
+ :benutzen und den Schülern verständlich machen kann."
+ :"Das ist schon klar, aber ich bin guter Hoffnung, das
+Q: Press Y to continue, N to repeat, or Fkey 12 to exit
+N:LESSON33_D3
+*:LESSON33_D4
+I:(4)
+O:das System so nach und nach überzeugt!" - 
+ :"Und die Kollegen?" - "Bekommen eine Schulung, wenn der
+ :Bedarf da ist." - "Na gut, wenn Du glaubst, dass das so
+ :machbar ist, dann gehen wir es an, ich bezweifle nur,
+Q: Press Y to continue, N to repeat, or Fkey 12 to exit
+N:LESSON33_D4
+*:LESSON33_D5
+I:(5)
+O:dass du damit viele erreichen wirst." Felix grinste nun
+ :breit übers ganze Gesicht: "Warten wir es doch ab."
+ :Nun sah er aus, als hätte er ein As aus dem Ärmel gezogen.
+ :"Wir haben bisher niemanden dazu überredet, sich einen
+Q: Press Y to continue, N to repeat, or Fkey 12 to exit
+N:LESSON33_D5
+*:LESSON33_D6
+I:(6)
+O:Computer "anzutun", und selbst unter den älteren Kollegen
+ :wird die Zahl derjenigen, die diese Technik akzeptieren
+ :nun doch immer größer, warum soll sich dass denn mit dem
+ :interessantesten System, das die Branche zu bieten hat
+Q: Press Y to continue, N to repeat, or Fkey 12 to exit
+N:LESSON33_D6
+*:LESSON33_D7
+I:(7)
+O:nicht bald ähnlich einstellen. Letztendlich setzt sich die
+ :Neugierde doch durch." Nun grinste auch Rainer, "Na gut,
+ :ich kaufe mir schon mal für meinen privaten Rechner eine
+ :neue Festplatte, damit ich dann mitreden kann, wenn es 
+Q: Press Y to continue, N to repeat, or Fkey 12 to exit
+N:LESSON33_D7
+*:LESSON33_D8
+I:(8)
+O:losgeht." - "Siehste! Es wirkt schon!" ;-)
+Q: Press Y to continue, N to repeat, or Fkey 12 to exit
+N:LESSON33_D8
+*:S_LESSON34
+B:                 Lesson 34: <Tab> und <Backspace>
+T:
+ : <Tab> und <Backspace>:
+ : Das ist nicht ganz richtig. Die <BACKSPACE>-Taste
+ : funktioniert in unserem Programm nicht.
+ : Sie dient dem Löschen von Zeichen, also der
+ : Fehlerkorrektur. Das widerspricht dem Ziel dieses
+ : Programms, möglichst fehlerfrei zu schreiben.
+ : Diese Tasten werden mit den kleinen Fingern betätigt. 
+*:LESSON34_D1
+I:(1)
+O:ALLES WAS HIER STEHT IST, MIT FESTGESTELLTER UMSCHALTTASTE
+ :Die <TAB>-Taste wird verwendet, um Text in Spalten zu sor-
+ :tieren, oder Textstellen einzurücken. Damit verleiht man
+ :dem Text ein übersichtlicheres Aussehen. 
+Q: Press Y to continue, N to repeat, or Fkey 12 to exit
+N:LESSON34_D1
+*:LESSON34_D2
+I:(2)
+O:Die <BACKSPACE>-Taste kann hier leider nicht geübt werden,
+ :was allerdings auch nciht vonnöten ist, da sie lediglich
+ :zur Fehlerkorrektur dient. Du wirst sie also nach erfolg-
+ :reicher Absolvierung dieses Trainings selten brauchen.
+Q: Press Y to continue, N to repeat, or Fkey 12 to exit
+N:LESSON34_D2
+*:LESSON34_D3
+I:(3)
+O:Regeln zur Anfertigung einer Tabelle:
+ :	1. Überprüfe die maximale Anzahl an Zeichen je
+ :	Feld.
+ :	2. Schreibe den Tabellenkopf und separiere die
+Q: Press Y to continue, N to repeat, or Fkey 12 to exit
+N:LESSON34_D3
+*:LESSON34_D4
+I:(4)
+O:	Felder mit der Tab-Taste (notfalls durch mehr-
+ :	maliges Betätigen dieser Taste.
+ :	3. Bewege Dich beim Eintragen der Datenzeilen
+ :	ebenfalls mit der Tab-Taste durch die Felder.
+Q: Press Y to continue, N to repeat, or Fkey 12 to exit
+N:LESSON34_D4
+*:LESSON34_D5
+I:(5)
+O:Name		Vorname		Ort		Telefon
+ :=======================================================
+ :Müller		Sergej		Mühle		9877899
+ :Muster		Moritz		Modigow		9876532
+Q: Press Y to continue, N to repeat, or Fkey 12 to exit
+N:LESSON34_D5
+*:LESSON34_D6
+I:(6)
+O:Flax		Felix		Fulda		1112233
+ :Ratzefax	Rosalinde	Rothenburg	3245632
+ :Schmidt		Genevieve	Hoheneichen	2345232
+ :Schulz		Severine	Sadenbeck	333333
+Q: Press Y to continue, N to repeat, or Fkey 12 to exit
+N:LESSON34_D6
+*:LESSON34_D7
+I:(7)
+O:Bär		Belinda		Waldburg	32456
+ :=======================================================
+Q: Press Y to continue, N to repeat, or Fkey 12 to exit
+N:LESSON34_D7
+*:S_LESSON35
+B:             Lesson 35: Die Drittbelegung: |@²³{[]}\~
+T:
+ : Die Drittbelegung: |@²³{[]}\~
+ : Die Tasten der Drittbelegung gehören nicht zum
+ : Standard Zehn-Finger-System.
+ : Unser Vorschlag: Betätige mit dem Zeigefinger
+ : oder Daumen der rechten Hand die <Alt Gr>-Taste
+ : und tippe zusätzlich die zugehörige Taste.
+ : Über vor allem das Spreizen bzw. die Drehung
+ : der rechten Hand bei \ und ~.
+*:LESSON35_D1
+I:(1)
+O:Drittbelegung: Das sind die Zeichen ² ³ { [ ] } \ @ ~ |
+ :"Quadrat"-Zeichen="Hoch zwei":
+ :	f(x)=2x²+2x+2
+ :	mm², cm², dm², m², km²
+Q: Press Y to continue, N to repeat, or Fkey 12 to exit
+N:LESSON35_D1
+*:LESSON35_D2
+I:(2)
+O:	f(x)=sin²(x)+cos²(x)
+ :"Kubik"-Zeichen="Hoch drei":
+ :	f(x)=x³+2x²+x+1
+ :	mm³, cm³, m³, km³
+Q: Press Y to continue, N to repeat, or Fkey 12 to exit
+N:LESSON35_D2
+*:LESSON35_D3
+I:(3)
+O:	1l=1dm³
+ :"geschweifte" und "eckige" Klammern:
+ :	{} []
+ :	y={3x*[2x-1]-4}
+Q: Press Y to continue, N to repeat, or Fkey 12 to exit
+N:LESSON35_D3
+*:LESSON35_D4
+I:(4)
+O:	if test "${!arg_num}" = "-v"; then 
+ :		verbose on
+ :"Backslash":
+ :	\ wir verwendet, um eine Befehlszeile in einem
+Q: Press Y to continue, N to repeat, or Fkey 12 to exit
+N:LESSON35_D4
+*:LESSON35_D5
+I:(5)
+O:	Script auf der foldenden Zeile weiterzuführen. 
+ :"Klammeraffe":
+ :	@ kommt in E-Mailadressen vor.
+ :	moritz@musterdomain.de
+Q: Press Y to continue, N to repeat, or Fkey 12 to exit
+N:LESSON35_D5
+*:LESSON35_D6
+I:(6)
+O:	user@localhost
+ :	@ Wird z.B. in Perl für zur Festlegung von 
+ :	Arrays oder als Feldplatzhalter verwendet.
+ :	@nonsens("Quatsch","Witz","Blödsinn")
+Q: Press Y to continue, N to repeat, or Fkey 12 to exit
+N:LESSON35_D6
+*:LESSON35_D7
+I:(7)
+O:	@<<<<<<<
+ :"Tilde":
+ :	~ dient z.B. standardmäßig als Kennzeichnung für
+ :	Sicherheitskopien, die von ln angelegt werden. 
+Q: Press Y to continue, N to repeat, or Fkey 12 to exit
+N:LESSON35_D7
+*:LESSON35_D8
+I:(8)
+O:"Pipe":
+ :	| wird als arithmetischer Ausdruck für bitweises
+ :	ODER z.B. in der bash verwendet.
+ :	|| hingegen kennzeichnet ein logisches ODER
+Q: Press Y to continue, N to repeat, or Fkey 12 to exit
+N:LESSON35_D8
+*:LESSON35_D9
+I:(9)
+O:	|= ist ein ODER mit anschließender Zuweisung
+ :	Mit | lassen sich Ausgaben eines Befehls in
+ :	andere Anwendungen umleiten.
+ :	ls *.jpg | less listet alle Dateien des aktuellen
+Q: Press Y to continue, N to repeat, or Fkey 12 to exit
+N:LESSON35_D9
+*:LESSON35_D10
+I:(10)
+O:	Verzeichnisses in less auf.
+ :Die Zeichen der Drittbelegung haben mit der Einführung des
+ :Computers in das Leben der Schreibenden Einzug gehalten.
+ :Aus diesem Grund haben wir sie in den Kurs aufgenommen.
+Q: Press Y to continue, N to repeat, or Fkey 12 to exit
+N:LESSON35_D10
+*:LESSON35_D11
+I:(11)
+O:Im ursprünglichen Zehnfinger-System gibt es keine 
+ :Entsprechung, da auf alten Schreibmaschinen die <Alt Gr>-
+ :Taste nicht existiert.
+ :{²²²} || {³³³} || [²²²] || [³³³] || \\\ || @@@ || ~~~ ||
+Q: Press Y to continue, N to repeat, or Fkey 12 to exit
+N:LESSON35_D11
+Q: Press Y to continue, N to repeat, or Fkey 12 to exit
+N:LESSON35_D12
+
+# jump-table
+*:E_LESSON1
+Q: Do you want to continue to lesson 2 [Y/N] ?
+N:MENU
+G:S_LESSON2
+*:E_LESSON2
+Q: Do you want to continue to lesson 3 [Y/N] ?
+N:MENU
+G:S_LESSON3
+*:E_LESSON3
+Q: Do you want to continue to lesson 4 [Y/N] ?
+N:MENU
+G:S_LESSON4
+*:E_LESSON4
+Q: Do you want to continue to lesson 5 [Y/N] ?
+N:MENU
+G:S_LESSON5
+*:E_LESSON5
+Q: Do you want to continue to lesson 6 [Y/N] ?
+N:MENU
+G:S_LESSON6
+*:E_LESSON6
+Q: Do you want to continue to lesson 7 [Y/N] ?
+N:MENU
+G:S_LESSON7
+*:E_LESSON7
+Q: Do you want to continue to lesson 8 [Y/N] ?
+N:MENU
+G:S_LESSON8
+*:E_LESSON8
+Q: Do you want to continue to lesson 9 [Y/N] ?
+N:MENU
+G:S_LESSON9
+*:E_LESSON9
+Q: Do you want to continue to lesson 10 [Y/N] ?
+N:MENU
+G:S_LESSON10
+*:E_LESSON10
+Q: Do you want to continue to lesson 11 [Y/N] ?
+N:MENU
+G:S_LESSON11
+*:E_LESSON11
+Q: Do you want to continue to lesson 12 [Y/N] ?
+N:MENU
+G:S_LESSON12
+*:E_LESSON12
+Q: Do you want to continue to lesson 13 [Y/N] ?
+N:MENU
+G:S_LESSON13
+*:E_LESSON13
+Q: Do you want to continue to lesson 14 [Y/N] ?
+N:MENU
+G:S_LESSON14
+*:E_LESSON14
+Q: Do you want to continue to lesson 15 [Y/N] ?
+N:MENU
+G:S_LESSON15
+*:E_LESSON15
+Q: Do you want to continue to lesson 16 [Y/N] ?
+N:MENU
+G:S_LESSON16
+*:E_LESSON16
+Q: Do you want to continue to lesson 17 [Y/N] ?
+N:MENU
+G:S_LESSON17
+*:E_LESSON17
+Q: Do you want to continue to lesson 18 [Y/N] ?
+N:MENU
+G:S_LESSON18
+*:E_LESSON18
+Q: Do you want to continue to lesson 19 [Y/N] ?
+N:MENU
+G:S_LESSON19
+*:E_LESSON19
+Q: Do you want to continue to lesson 20 [Y/N] ?
+N:MENU
+G:S_LESSON20
+*:E_LESSON20
+Q: Do you want to continue to lesson 21 [Y/N] ?
+N:MENU
+G:S_LESSON21
+*:E_LESSON21
+Q: Do you want to continue to lesson 22 [Y/N] ?
+N:MENU
+G:S_LESSON22
+*:E_LESSON22
+Q: Do you want to continue to lesson 23 [Y/N] ?
+N:MENU
+G:S_LESSON23
+*:E_LESSON23
+Q: Do you want to continue to lesson 24 [Y/N] ?
+N:MENU
+G:S_LESSON24
+*:E_LESSON24
+Q: Do you want to continue to lesson 25 [Y/N] ?
+N:MENU
+G:S_LESSON25
+*:E_LESSON25
+Q: Do you want to continue to lesson 26 [Y/N] ?
+N:MENU
+G:S_LESSON26
+*:E_LESSON26
+Q: Do you want to continue to lesson 27 [Y/N] ?
+N:MENU
+G:S_LESSON27
+*:E_LESSON27
+Q: Do you want to continue to lesson 28 [Y/N] ?
+N:MENU
+G:S_LESSON28
+*:E_LESSON28
+Q: Do you want to continue to lesson 29 [Y/N] ?
+N:MENU
+G:S_LESSON29
+*:E_LESSON29
+Q: Do you want to continue to lesson 30 [Y/N] ?
+N:MENU
+G:S_LESSON30
+*:E_LESSON30
+Q: Do you want to continue to lesson 31 [Y/N] ?
+N:MENU
+G:S_LESSON31
+*:E_LESSON31
+Q: Do you want to continue to lesson 32 [Y/N] ?
+N:MENU
+G:S_LESSON32
+*:E_LESSON32
+Q: Do you want to continue to lesson 33 [Y/N] ?
+N:MENU
+G:S_LESSON33
+*:E_LESSON33
+Q: Do you want to continue to lesson 34 [Y/N] ?
+N:MENU
+G:S_LESSON34
+*:E_LESSON34
+Q: Do you want to continue to lesson 35 [Y/N] ?
+N:MENU
+G:S_LESSON35
+*:E_LESSON35
+G:MENU
+
+
+*:MENU
+*:MENU_P1
+K:1:S_LESSON1
+K:2:S_LESSON2
+K:3:S_LESSON3
+K:4:S_LESSON4
+K:5:S_LESSON5
+K:6:S_LESSON6
+K:7:S_LESSON7
+K:8:S_LESSON8
+K:9:S_LESSON9
+K:10:S_LESSON10
+K:11:MENU_P2
+K:12:EXIT
+
+B:               Lesson selection menu - [page 1 of 4]
+T:this file contains the following 35 lessons:
+ :
+ :        Fkey 1 - Lesson 1: Die Grundreihe a s d f - - j k l ö
+ :        Fkey 2 - Lesson 2: Erste Wortbildungen mit der Grundreihe
+ :        Fkey 3 - Lesson 3: Die Buchstaben "e" und "i"
+ :        Fkey 4 - Lesson 4: Die Buchstaben "g" und "h"
+ :        Fkey 5 - Lesson 5: Die Buchstaben "w" und "o"
+ :        Fkey 6 - Lesson 6: Die Buchstaben "r" und "u"
+ :        Fkey 7 - Lesson 7: Wortübungen mit dem Bekannten 
+ :        Fkey 8 - Lesson 8: Die Buchstaben "t" und "z"
+ :        Fkey 9 - Lesson 9: Häufigkeitswörter - Schnelltippübung
+ :        Fkey 10 - Lesson 10: Die Buchstaben "q" und "p"
+ :
+ :        Fkey 11 - Next menu page...
+ :        Fkey 12 - Quit program
+
+*:MENU_P2
+K:1:S_LESSON11
+K:2:S_LESSON12
+K:3:S_LESSON13
+K:4:S_LESSON14
+K:5:S_LESSON15
+K:6:S_LESSON16
+K:7:S_LESSON17
+K:8:S_LESSON18
+K:9:S_LESSON19
+K:10:MENU_P1
+K:11:MENU_P3
+K:12:EXIT
+
+B:               Lesson selection menu - [page 2 of 4]
+T:this file contains the following 35 lessons:
+ :
+ :        Fkey 1 - Lesson 11: Die Buchstaben "v" und "m"
+ :        Fkey 2 - Lesson 12: Die Buchstaben "b" und "n" 
+ :        Fkey 3 - Lesson 13: Das "c" und das Komma
+ :        Fkey 4 - Lesson 14: Zum "x"ten Mal und Punkt
+ :        Fkey 5 - Lesson 15: ASCII-ART -etwas Auflockerung
+ :        Fkey 6 - Lesson 16: Der Buchstabe "y" und der Mittelstrich
+ :        Fkey 7 - Lesson 17: Die Buchstaben "ä" und "ü"
+ :        Fkey 8 - Lesson 18: Das "ß" (sprich: "Ess-zet")
+ :        Fkey 9 - Lesson 19: GROSSSCHREIBUNG
+ :
+ :        Fkey 10 - Previous menu page...
+ :        Fkey 11 - Next menu page...
+ :        Fkey 12 - Quit program
+
+*:MENU_P3
+K:1:S_LESSON20
+K:2:S_LESSON21
+K:3:S_LESSON22
+K:4:S_LESSON23
+K:5:S_LESSON24
+K:6:S_LESSON25
+K:7:S_LESSON26
+K:8:S_LESSON27
+K:9:S_LESSON28
+K:10:MENU_P2
+K:11:MENU_P4
+K:12:EXIT
+
+B:               Lesson selection menu - [page 3 of 4]
+T:this file contains the following 35 lessons:
+ :
+ :        Fkey 1 - Lesson 20: Linux - meine Freude
+ :        Fkey 2 - Lesson 21: Das Internet
+ :        Fkey 3 - Lesson 22: Lesung
+ :        Fkey 4 - Lesson 23: Gedicht
+ :        Fkey 5 - Lesson 24: Die Zeichen "<" und ">"
+ :        Fkey 6 - Lesson 25: Die 1, das ! und das ?
+ :        Fkey 7 - Lesson 26: 5 8 - Prozent "%" und Klammer auf "("
+ :        Fkey 8 - Lesson 27: 6 7 - Kaufmanns-und "&" und Slash "/" 
+ :        Fkey 9 - Lesson 28: 4 9 - Dollarzeichen "$" und Klammer zu ")"
+ :
+ :        Fkey 10 - Previous menu page...
+ :        Fkey 11 - Next menu page...
+ :        Fkey 12 - Quit program
+
+*:MENU_P4
+K:1:S_LESSON29
+K:2:S_LESSON30
+K:3:S_LESSON31
+K:4:S_LESSON32
+K:5:S_LESSON33
+K:6:S_LESSON34
+K:7:S_LESSON35
+K:8:NULL
+K:9:NULL
+K:10:NULL
+K:11:MENU_P3
+K:12:EXIT
+
+B:               Lesson selection menu - [page 4 of 4]
+T:this file contains the following 35 lessons:
+ :
+ :        Fkey 1 - Lesson 29: 3 0 - Paragraph "§" und Gleichheitszeichen "="
+ :        Fkey 2 - Lesson 30: 2 und Anführungsstriche "" (=Gänsefüßchen)
+ :        Fkey 3 - Lesson 31: Sonderzeichen ^ und ° ´ und `
+ :        Fkey 4 - Lesson 32: Sonderzeichen + * # '
+ :        Fkey 5 - Lesson 33: Sitzung (ein Übungstext mit "Gänsefüßchen")
+ :        Fkey 6 - Lesson 34: <Tab> und <Backspace>
+ :        Fkey 7 - Lesson 35: Die Drittbelegung: |@²³{[]}\~
+ :
+ :
+ :
+ :
+ :        Fkey 11 - Previous menu page...
+ :        Fkey 12 - Quit program
+
+*:EXIT
+X:
