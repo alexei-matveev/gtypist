@@ -1,12 +1,33 @@
 -------------------------------------------------------------------------
-THINGS TO DO
+THINGS TO DO for GNU Typist
 
-Latest update: May 9, 2001, Michael Opdenacker (michaelo@linux-azur.org)
+
+Latest update: Sep 30, 2001, Michael Opdenacker <michaelo@gnu.org>
 -------------------------------------------------------------------------
 
-Send your suggestions to bug-gtypist@gnu.org!
+If you are interested in helping for some of the below items,
+we will be glad to have you in the development team!
+
+You can contact us by writing to ibug-gtypist@gnu.org.
+Your suggestions are welcome too!
 
 CLOSE FUTURE
+
+ * Standardize lesson files, using standards for languages and
+   keyboard types.
+
+ * Make a separate package for lessons, so that lessons
+   compatible with a given gtypist version can be released
+   without having to release the tool again.
+   This is already done by other packages: gimp plug-ins or
+   TeTeX fonts are released separately. 
+
+   This is definitely need for this tool, for which tutorial
+   files are at least as valuable as the raw program itself.
+
+ * Provide a variant of the `n.typ' calculator keypad lesson,
+   in which the `.' character is replaced by `,'. Useful for some
+   european keyboards.
 
  * 'D' is only used once in all the lessons. Is it still necessary?
    (Suggested by Felix Natter, f.natter@ndh.net)
