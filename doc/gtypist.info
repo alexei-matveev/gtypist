@@ -1,5 +1,5 @@
-Dies ist gtypist.info, hergestellt von Makeinfo Version 4.0 aus
-gtypist.texi.
+Dies ist doc/gtypist.info, hergestellt von Makeinfo Version 4.0 aus
+doc/gtypist.texi.
 
 INFO-DIR-SECTION Education
 START-INFO-DIR-ENTRY
@@ -1080,20 +1080,20 @@ History of GNU Typist
 
 
 Tag Table:
-Node: Top212
-Node: Distribution891
-Node: Copying1780
-Node: Introduction20947
-Node: Invoking23652
-Node: Script-file commands27284
-Node: Supplied lessons34169
-Node: How to contribute new lessons35649
-Node: Ktouch-lessons35976
-Node: Create drills from fortune38335
-Node: Emacs mode for editing gtypist-lessons39047
-Node: Technical Information41513
-Node: Environment Variables41744
-Node: Errors and omissions43849
-Node: History44566
+Node: Top220
+Node: Distribution899
+Node: Copying1788
+Node: Introduction20955
+Node: Invoking23660
+Node: Script-file commands27292
+Node: Supplied lessons34177
+Node: How to contribute new lessons35657
+Node: Ktouch-lessons35984
+Node: Create drills from fortune38343
+Node: Emacs mode for editing gtypist-lessons39055
+Node: Technical Information41521
+Node: Environment Variables41752
+Node: Errors and omissions43857
+Node: History44574
 
 End Tag Table

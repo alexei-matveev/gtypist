@@ -78,8 +78,9 @@ Configuration with Native Language Support under Unix:
 	* If your Unix doesn't have Native Language Support, the sources
 	  of gtypist come with a limited version, to use it configure with:
 		./configure --with-included-gettext
-	  And before running gtypist set the environment variable LC_ALL
-	  to your language (in accordance to the ISO 639 languages). 
+	  And before running gtypist set the environment variable LC_ALL/LANG
+	  to your language and country codes (LL_CC, as described in the
+	  manual, node "Environment Variables"). 
 	  This version of gtypist has support for English (en),
 	  Spanish (es) and German (de). Using this option it was possible
 	  to compile and run gtypist under AIX
