@@ -1,20 +1,82 @@
-TASKS TO DO
+-------------------------------------------------------------------------
+THINGS TO DO
 
- * Add Native Language Support  for other languages (see ABOUT_NLS and
-   directory po of sources distributions)
+Latest update: May 9, 2001, Michael Opdenacker (michaelo@linux-azur.org)
+-------------------------------------------------------------------------
 
- * Translate or create lessons in other languages
+Send your suggestions to bug-gtypist@gnu.org!
 
- * Online help. 
+CLOSE FUTURE
+
+ * Detail current plans on the home page (publish the answers
+   to Georg C.F. Greve's Standard Question form, and this
+   TODO file). This way, we can get feedback and people know
+   what contributions are needed. 
+
+ * Port the interface to GTK. 
+   Should Gnome be supported too? This shouldn't be
+   mandatory (configure option)... in particular for Win32
+   support, for Unix computers on which Gnome has not been
+   installed, as well as to keep CPU and RAM usage low.
+
+   The benefits we can expect from a GTK interface are:
+
+   - Much easier to use that the `ncurses' interface. In particular, the
+     use of menus will make it possible to easily go from a lesson to
+     another (without having to start with the first lesson in a series).
+   - Not using `ncurses' should avoid problems supporting different
+     terminal types.
+   - We could have a graphical control panel, to change settings that
+     are so far only available in the command line (keyboard type,
+     silent mode...)
+   - Easy access to help and manual
+   - Could still be compiled on Win32 on which GTK has been ported.
+   - Easy to create and modify through the `glade' interface builder.
 
 
-WISHES
+QUITE CLOSE FUTURE
 
- * Improve user interface:  Pick-and-point interface (with arrows) in 
-   addition to F-keys.  Possibility to exit with the ESC key in prompts.
+ * Update Native Language Support according to the messages
+   in the new interface. Support other languages 
+   (better do that after the new interface is available)
 
- * More user freedom in selecting lessons.
+ * Improve the documentation of course files
+
+ * Broaden our lesson database:
+
+   - Create new lessons for other languages and keyboard types. 
+   - Translate lessons in other languages (for languages
+     that share the same keyboard, you can reuse instructions
+     and drills) 
+   - We can also look for teachers who are ready to contribute
+     lessons or let us reuse theirs...
+   - Reuse lessons from old typing teaching books which
+     copyrights have expired (how much time does it take?).
 
  * Better typing statistics.  Speed and accuracy for individual keys, 
-   and individual fingers. Measure of typing rhythm.
+   and individual fingers. This helps to indicate where extra practice
+   may be useful to the user (see Jtypist which displays this as
+   graphical bars, using color to indicate areas that need work).
+   A measure of typing rhythm would also be useful.
+
+DISTANT FUTURE
+
+ * While typing, graphically show the finger that is supposed to be used.
+
+ * Read lessons in the file formats of other free typing tutors
+   (such as Jtypist).
+
+ * Emulate other keyboard types.  For example, Jtypist can pretend that
+   you have a French, German, or Dvorak keyboard on the system even
+   if you don't.  It will translate keypresses between keyboard types
+   before checking them for correctness, and registering timings.
+   This work requires that the program should have keyboard layout
+   maps available to it, and arises as a result of maintaining typing
+   statistics by key and by finger (the program needs to know what
+   key is operated by which finger).
+
+ * Support audio typing exercises. Users would type from a text
+   read by a speaker. Several audio files would be need, according to
+   the language and the targeted typing speeded. That would be useful
+   for people like secretaries and journalists.
 
