@@ -61,9 +61,9 @@ if ($opts{d}) { $exercise_type = "D:"; }
 my $max_lines = 22;
 if ($exercise_type eq "D:" || $exercise_type eq "d:") { $max_lines = 11; }
 if ($opts{s} && $opts{l}) { die "-s and -l cannot be used together"; }
-my $fortune_command = "";
-if ($opts{s}) { $fortune_command .= " -s"; }
-if ($opts{l}) { $fortune_command .= " -l"; }
+my $fortune_options = "";
+if ($opts{s}) { $fortune_options .= " -s"; }
+if ($opts{l}) { $fortune_options .= " -l"; }
 my $count = 1;
 if (defined ($opts{n})) { $count = $opts{n}; }
 
@@ -116,7 +116,7 @@ for ($i = 0; $i < $count; $i++)
     {
         local $^W = 0;
         do {
-            @lines = split (/\n/, `fortune`);
+            @lines = split (/\n/, `fortune$fortune_options`);
             die "Couldn't find fortune" unless $? == 0;
         } while ($#lines >= $max_lines);
     }
