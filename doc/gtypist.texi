@@ -106,7 +106,10 @@ Typing errors are indicated with an inverse @code{^}, or @code{>} if
 the character is a newline and at the end of the
 exercise it calculates the real and effective rate in WPM.
 If there were too many errors, it will re-run the drill.
-@key{Backspace} and @key{delete} are not permitted in drills.
+
+@c TODO: make this less formal
+Backward deleting of previously typed characters to correct errors is
+not allowed.
 
 In a speed test, gtypist displays text on the screen, and waits for the
 user to correctly over-type the exact same text. It indicates typing
@@ -114,7 +117,8 @@ errors, and at the end of the test it calculates the real and effective
 rate in WPM. 
 @c TODO: what is it used for ?
 If there were too many errors, it will re-run the speed-test.
-@key{Backspace} and @key{delete} are recognised, but errors still accumulate.
+Backward deleting of previously typed characters to correct errors is
+     permitted, but errors still accumulate.
 
 If you already made too many mistakes, then you can use @key{ESC} to
 give up and start again. Once you complete a lesson, you will be asked
