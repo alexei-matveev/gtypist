@@ -165,7 +165,6 @@ static void do_drill( FILE *script, char *line );
 static void do_speedtest( FILE *script, char *line );
 static void do_clear( FILE *script, char *line );
 static void do_goto( FILE *script, char *line, bool flag );
-static void do_exit( FILE *script );
 static char do_query_repeat( FILE *script, bool allow_next );
 static bool do_query_simple( char *text );
 static bool do_query( FILE *script, char *line );
@@ -998,23 +997,6 @@ do_goto( FILE *script, char *line, bool flag )
       seek_label( script, SCR_DATA( line ), line );
     }
   get_script_line( script, line );
-}
-
-
-/*
-  exit from the program (implied on eof)
-*/
-static void 
-do_exit( FILE *script ) 
-{
-  
-  /* close up all files, reset the screen stuff, and exit */
-  fclose( script );
-  if ( cl_colour && has_colors() )
-    wbkgdset( stdscr, 0 );
-  clear(); refresh(); endwin();
-  printf( "\n" );
-  exit( 0 );
 }
 
 

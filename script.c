@@ -66,7 +66,7 @@ get_script_line( FILE *script, char *line ) {
 }
 
 /*
-  buffer up the complete data from a command; used for D and P
+  buffer up the complete data from a command; used for [Dd], [Pp] and M
 */
 char *buffer_command( FILE *script, char *line ) {
   int	total_chars = 0;		/* character counter */
@@ -137,4 +137,20 @@ seek_label( FILE *script, char *label, char *ref_line ) {
   if ( fseek( script, check_label->offset, SEEK_SET ) == -1 )
     fatal_error( _("internal error: fseek"), ref_line );
   global_line_counter = check_label->line_count;
+}
+
+/*
+  exit from the program (implied on eof)
+*/
+void 
+do_exit( FILE *script ) 
+{
+  
+  /* close up all files, reset the screen stuff, and exit */
+  fclose( script );
+  /* if ( cl_colour && has_colors() )*/
+  wbkgdset( stdscr, 0 );
+  clear(); refresh(); endwin();
+  printf( "\n" );
+  exit( 0 );
 }

@@ -30,21 +30,35 @@ char *do_menu (FILE *script, char *line)
    LESSON_2 "Lesson 2: some more keys"
    ' */
 
-  /* data has a trailing '\n' => num_items = num_newlines - 1 */
+  /* data has a trailing '\n' => num_items = num_newlines - 1 
+     (plus one item for UP or EXIT) */
   i = 0; j = 0;
   while (data[i] != '\0')
   {
     if (data[i++] == '\n')
       j++;
   }
-  num_items = j - 1;
+  num_items = j;
 
-  /* get UP-label if present*/
-  up = NULL;
-  
+  i = 0;
+  /* get UP-label if present */
+  up = NULL; /* up=NULL means top-level menu (exit-option in menu) */
+  while (isspace(data[i]))
+    i++;
+  if (strncmp (data + i, "up=", 3) == 0 ||
+      strncmp (data + i, "UP=", 3) == 0)
+  { /* I expect to see <up=LABEL> */
+    i += 3; /* start of up-label */
+    up = data + i;
+    while (data[i] != ' ')
+      i++;
+    data[i] = 0;
+    if (strcmp (up, "_exit") == 0 ||
+	strcmp (up, "_EXIT") == 0)
+      up = NULL;
+  }
 
   /* get title */
-  i = 0;
   while (data[i] != '"') /* find opening " */
     i++;
   i++;
@@ -60,7 +74,8 @@ char *do_menu (FILE *script, char *line)
   /* get menu-items */
   labels = (char**)malloc (sizeof (char*) * num_items);
   descriptions = (char**)malloc (sizeof (char*) * num_items);
-  for (k = 0; k < num_items; k++)
+  /* iterate through [0;num_items - 2] (the last item is for up/exit) */
+  for (k = 0; k < num_items - 1; k++)
   {
     while (data[i] != '\n')
       i++;
@@ -87,6 +102,16 @@ char *do_menu (FILE *script, char *line)
     while (data[i] != '"') 
       i--;
     data[i] = 0; /* terminate description */
+  }
+  if (up == NULL)
+  {
+    labels[k] = NULL;
+    descriptions[k] = _("Exit"); 
+  }
+  else
+  {
+    labels[k] = up;
+    descriptions[k] = _("Up");
   }
       
   /* get the longest description */
@@ -201,9 +226,13 @@ char *do_menu (FILE *script, char *line)
     } while (ch != '\n');
 
   wattroff (stdscr, A_REVERSE);
- 
-  seek_label (script, labels[cur_choice], line);
-  get_script_line( script, line );
+  if (labels[cur_choice] != NULL)
+  {
+    seek_label (script, labels[cur_choice], line);
+    get_script_line( script, line );
+  }
+  else
+    do_exit (script);
   free (labels);
   free (descriptions);
   free (data);

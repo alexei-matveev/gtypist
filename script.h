@@ -67,6 +67,7 @@ extern void get_script_line( FILE *script, char *line );
 extern char *buffer_command( FILE *script, char *line );
 extern void seek_label( FILE *script, char *label, char *ref_line );
 extern int hash_label( char *label );
+extern void do_exit( FILE *script );
 
 
 #endif /* !SCRIPT_H */
