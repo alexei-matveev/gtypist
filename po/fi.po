@@ -148,7 +148,7 @@ msgid ""
 "respectively)"
 msgstr ""
 "aseta yl‰tunnisteen v‰rit (tausta, edusta, pakkaus ja versio t‰ss‰ "
-j‰rjestyksess‰)"
+"j‰rjestyksess‰)"
 
 #: gtypist.c:1638
 msgid ""
@@ -239,7 +239,7 @@ msgstr "%s: virheelinen v‰rim‰‰ritysparametrin arvo\n"
 #: gtypist.c:1741
 #, c-format
 msgid "%s:  argument format is incorrect\n"
-msgstr "%s: argumentin muoto on virheellinen"
+msgstr "%s: argumentin muoto on virheellinen\n"
 
 #: gtypist.c:1751
 #, fuzzy, c-format
@@ -274,7 +274,7 @@ msgstr ""
 "l‰hdekoodin mukana toimitetussa tiedostossa 'COPYING'.\n"
 "T‰m‰ ohjelma on vapaa, ja sit‰ saa levitt‰‰ edelleen tiettyjen ehtojen\n"
 "mukaisesti; yksityiskohdat ovat em. tiedostossa 'COPYING'.\n"
-"T‰m‰ ohjelma on julkaistu GNU Yleisen julkisen lisenssin (GPL) alaisena.\n"
+"T‰m‰ ohjelma on julkaistu GNU Yleisen julkisen lisenssin (GPL) alaisena."
 
 #: gtypist.c:1847
 msgid " Tutorial "
