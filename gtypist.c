@@ -37,18 +37,10 @@
 #include <getopt.h>
 #include <assert.h>
 
-/* Internationalization */
-
-#ifndef ENABLE_NLS
-
-#define _(String) (String)
-
-#else /* not ENABLE_NLS */
-
-#include <libintl.h>
-#define _(String) gettext (String)
-
-#endif /* not ENABLE_NLS */
+#include "cursmenu.h"
+#include "script.h"
+#include "error.h"
+#include "gettext.h"
 
 /* VERSION and PACKAGE defined in config.h */
 
@@ -56,11 +48,6 @@ char *COPYRIGHT;
 
 /* a definition of a boolean type */
 #define bool			int
-
-/* limits on line lengths from the script file and screen */
-#define	MAX_SCR_LINE		1024
-#define	MIN_SCR_LINE		2
-#define	MAX_WIN_LINE		128
 
 /* some screen postions */
 #define	MESSAGE_LINE		(LINES - 1)
@@ -70,30 +57,6 @@ char *COPYRIGHT;
 #define DP_TOP_LINE		(I_TOP_LINE + 2)
 #define	SPEED_LINE		(LINES - 5)
 
-/* things to help parse the input file */
-#define	SCR_COMMAND(X)		(X[0])
-#define	SCR_SEP(X)		(X[1])
-#define	SCR_DATA(X)		(&X[2])
-#define	C_COMMENT		'#'
-#define	C_ALT_COMMENT		'!'
-#define	C_SEP			':'
-#define	C_CONT			' '
-#define	C_LABEL			'*'
-#define	C_TUTORIAL		'T'
-#define	C_INSTRUCTION		'I'
-#define	C_CLEAR			'B'
-#define	C_GOTO			'G'
-#define	C_EXIT			'X'
-#define	C_QUERY			'Q'
-#define	C_YGOTO			'Y'
-#define	C_NGOTO			'N'
-#define	C_DRILL			'D'
-#define C_DRILL_PRACTICE_ONLY   'd'
-#define	C_SPEEDTEST		'S'
-#define	C_SPEEDTEST_PRACTICE_ONLY 's'
-#define	C_KEYBIND		'K'
-#define C_ERROR_MAX_SET         'E'
-#define C_ON_FAILURE_SET        'F'
 
 /* mode indicator strings */
 char *MODE_TUTORIAL;
@@ -109,21 +72,6 @@ char *MODE_SPEEDTEST;
 /* this is needed in wait_user
    DJGPP defines '\n' as 0x0A, but pdcurses 2.4 returns 0x0D (because
    raw() is called) */
-#ifndef DJGPP
-#define ASCII_ENTER             '\n'
-#else
-#define ASCII_ENTER             0x0D
-#endif
-#define	ASCII_NL		'\n'
-#define	ASCII_NULL		'\0'
-#define	ASCII_ESC		27
-#define	ASCII_BELL		7
-#define	ASCII_SPACE		' '
-#define	ASCII_DASH		'-'
-#define	ASCII_TAB		'\t'
-#define	ASCII_BS		8
-#define	ASCII_DEL		127
-#define	STRING_NL		"\n"
 char *WAIT_MESSAGE;
 char *ERROR_TOO_HIGH_MSG;
 char *SKIPBACK_VIA_F_MSG;
@@ -177,9 +125,7 @@ static bool     cl_no_skip = FALSE;             /* forbid the user to */
 static bool	cl_rev_video_errors = FALSE;    /* reverse video for errors */
 
 /* a few global variables */
-static char	*argv0 = NULL;
 static bool	global_resp_flag = TRUE;
-static int	global_line_counter = 0;
 static char	global_prior_command = C_CONT;
 
 static float    global_error_max = -1.0;
@@ -187,17 +133,6 @@ static bool     global_error_max_persistent = FALSE;
 
 static struct label_entry *global_on_failure_label = NULL;
 static bool     global_on_failure_label_persistent = FALSE;
-
-/* a global area for label indexing - singly linked lists, hashed */
-#define	NLHASH			32		/* num hash lists */
-struct label_entry {
-  char		*label;			/* label string */
-  long		offset;			/* offset into file */
-  int		line_count;		/* line number in script */
-  struct label_entry	*next;		/* pointer to next element */
-};
-static struct label_entry	*global_label_list[NLHASH];
-/* list head */
 
 /* a global area for associating function keys with labels */
 #define NFKEYS			12		/* num of function keys */
@@ -218,17 +153,12 @@ static	char	pfkeys[ NFKEYS ] =
 /* prototypes */
 
 static int getch_fl( char cursor_char );
-static void fatal_error( char *message, char *line );
-static void get_script_line( FILE *script, char *line );
-static int hash_label( char *label );
 static void index_labels( FILE *script );
-static void seek_label( FILE *script, char *label, char *ref_line );
 static void wait_user( char *message, char *mode );
 static void display_speed( int total_chars, long elapsed_time, int errcount );
 static void do_keybind( FILE *script, char *line );
 static void do_tutorial( FILE *script, char *line );
 static void do_instruction( FILE *script, char *line );
-static char *buffer_command( FILE *script, char *line );
 static void do_drill( FILE *script, char *line );
 static void do_speedtest( FILE *script, char *line );
 static void do_clear( FILE *script, char *line );
@@ -317,85 +247,6 @@ getch_fl( char cursor_char )
   return ( return_char );
 }
 
-
-/*
-  handle fatal errors (pretty much any error) by dropping out
-  of curses etc, and printing a complaint
-  message that is already translated to the appropriate language 
-*/
-static void 
-fatal_error( char *message, char *line ) {
-
-  /* stop curses */
-  if ( cl_colour && has_colors() )
-    wbkgdset( stdscr, 0 );
-  clear(); refresh(); endwin();
-  
-  /* print out the error message and stop */
-  fprintf( stderr, "%s: %s %d: %s", argv0, _("line"), global_line_counter,
-	   message );
-  if ( line != NULL )
-    fprintf( stderr, ":\n%s\n", line );
-  else
-    fprintf( stderr, "\n" );
-  exit( 1 );
-}
-
-
-/*
-  get the next non-comment, non-blank line from the script file
-  and check its basic format
-*/
-static void 
-get_script_line( FILE *script, char *line ) {
-
-  /* get lines until not empty/comment, or eof found */
-  fgets(line, MAX_SCR_LINE, script);
-  global_line_counter++;
-  while ( ! feof( script ) && 
-	  ( strcmp( line, "\n" ) == 0 ||
-	    SCR_COMMAND( line ) == C_COMMENT ||
-	    SCR_COMMAND( line ) == C_ALT_COMMENT )) 
-    {
-      fgets(line, MAX_SCR_LINE, script);
-      global_line_counter++;
-    }
-
-  /* if a line was read then check it */
-  if ( ! feof( script )) 
-    {
-      if ( line[strlen( line ) - 1] == ASCII_NL )
-	line[strlen( line ) - 1] = ASCII_NULL;
-      if ( strlen( line ) < MIN_SCR_LINE )
-	fatal_error( _("data shortage"), line );
-      if ( SCR_SEP( line ) != C_SEP )
-	fatal_error( _("missing ':'"), line );
-      if ( SCR_COMMAND( line ) != C_LABEL 
-	   && SCR_COMMAND( line ) != C_GOTO 
-	   && SCR_COMMAND( line ) != C_YGOTO
-	   && SCR_COMMAND( line ) != C_NGOTO
-	   && strlen( SCR_DATA( line )) > COLS )
-	fatal_error( _("line too long for screen"), line );
-    }
-}
-
-
-/*
-  label hashing function - returns an index for the lists
-*/
-static int 
-hash_label( char *label ) {
-  char	*p;				/* pointer through string */
-  int	csum = 0;			/* sum of characters */
-  
-  /* hash by summing the characters and taking modulo of the
-     number of hash lists defined */
-  for ( p = label; *p != ASCII_NULL; p++ )
-    csum += *p;
-  return ( csum % NLHASH );
-}
-
-
 /*
   go through the file and index all the labels we can find
 */
@@ -478,44 +329,6 @@ static void index_labels( FILE *script ) {
       get_script_line( script, line );
     }
 }
-
-
-/*
-  search out a label from the file, and set the file pointer to
-  that location
-*/
-static void 
-seek_label( FILE *script, char *label, char *ref_line ) {
-  struct label_entry	*check_label;	/* pointer through list */
-  int	hash;				/* hash index */
-  char	err[MAX_SCR_LINE];		/* error message string */
-  
-  /* find the right hash list for the label */
-  hash = hash_label( label );
-  
-  /* search the linked list for the label */
-  for ( check_label = global_label_list[ hash ]; check_label != NULL;
-	check_label = check_label->next ) 
-    {
-      
-      /* see if this is our label */
-      if ( strcmp( check_label->label, label ) == 0 )
-	break;
-    }
-
-  /* see if the label was not found in the file */
-  if ( check_label == NULL ) 
-    {
-      sprintf( err, _("label '%s' not found"), label );
-      fatal_error( err, ref_line );
-    }
-
-  /* move to the label position in the file */
-  if ( fseek( script, check_label->offset, SEEK_SET ) == -1 )
-    fatal_error( _("internal error: fseek"), ref_line );
-  global_line_counter = check_label->line_count;
-}
-
 
 /*
   wait for a nod from the user before continuing
@@ -671,46 +484,6 @@ do_instruction( FILE *script, char *line ) {
     fatal_error( _("instructions are limited to two lines"), line );
   global_prior_command = C_INSTRUCTION;
 }
-
-
-/*
-  buffer up the complete data from a command; used for D and P
-*/
-static char *buffer_command( FILE *script, char *line ) {
-  int	total_chars = 0;		/* character counter */
-  char	*data = NULL;			/* data string */
-
-  /* get the complete exercise into a single string */
-  do 
-    {
-      
-      /* allocate space for the extra data */
-      if ( total_chars == 0 )
-	data = (char*)malloc( strlen(SCR_DATA( line )) +
-			      strlen(STRING_NL) + 1 );
-      else
-	data = (char*)realloc( data, strlen( data ) +
-			       strlen(SCR_DATA( line )) +
-			       strlen(STRING_NL) + 1 );
-      if ( data == NULL )
-	fatal_error( _("internal error: malloc"), line );
-      
-      /* store the data in the allocated area */
-      if ( total_chars == 0 )
-	strcpy( data, "" );
-      strcat( data, SCR_DATA( line ) );
-      strcat( data, STRING_NL );
-      total_chars = strlen( data );
-      
-      /* and get the next script line */
-      get_script_line( script, line );
-    } 
-  while ( SCR_COMMAND( line ) == C_CONT && ! feof( script ));
-
-  /* return our (malloced) data */
-  return( data );
-}
-
 
 /*
   execute a typing drill

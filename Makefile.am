@@ -10,7 +10,8 @@ INSTALL.in TODO
 
 bin_PROGRAMS = gtypist
 bin_SCRIPTS = typefortune
-gtypist_SOURCES = gtypist.c getopt.h getopt.c getopt1.c
+gtypist_SOURCES = gtypist.c getopt.h getopt.c getopt1.c gettext.h \
+	cursmenu.h cursmenu.c script.h script.c error.h error.c
 gtypist_LDADD = @LIBINTL@
 man_MANS = gtypist.1 typefortune.1
 
