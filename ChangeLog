@@ -1,6 +1,6 @@
 2003-09-26  Michael Opdenacker <michaelo@gnu.org>
 
-        * cursmenu.c, error.c, gtypist.c:
+        * cursmenu.c, error.c, gtypist.c, script.c:
           Added #define _(String) gettext (String)
           so that we don't have to hack gettext.h and make it non standard.
 
