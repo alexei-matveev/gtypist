@@ -32,7 +32,7 @@
 (help2man --version) < /dev/null > /dev/null 2>&1 || {
     echo
     echo "**Error**: You must have \`help2man' installed."
-    echo "Get ftp://ftp.gnu.org/gnu/help2man/help2man-1.27.tar.gz"
+    echo "Get ftp://ftp.gnu.org/gnu/help2man/help2man_1.33.1.tar.gz"
     echo "(or a newer version if it is available)"
     exit 1
 }
