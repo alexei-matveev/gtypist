@@ -1,3 +1,7 @@
+2003-08-31  Rob Leslie  <rob@mars.org>
+
+	* cs.typ, m.typ: Fixed a few small typos.
+
 2003-08-28  Michael Opdenacker <michaelo@gnu.org>
 
 	* d.typ: Fixed 2 small typos, reported by Rob Leslie <rob@mars.org>
