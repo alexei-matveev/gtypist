@@ -1195,7 +1195,7 @@ I:(6)
 #                                                             ../orig/r.typ:624
 D:In his speech on "Can a Business Man Be Honest?" he proved:
  :
- :(1) There are may ways, some hardly honest, to make money.
+ :(1) There are many ways, some hardly honest, to make money.
  :(2) It may pay to treat fairly a business rival or employee.
  :(3) Saving time and material often leads to a large profit.
  :(4) The most desirable kinds of success are gained honestly.
