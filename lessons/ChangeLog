@@ -1,6 +1,12 @@
+2002-08-09  Michael Opdenacker <michaelo@gnu.org>
+
+        * lessons/Makefile.am: replaced $(wildcard *.typ) by real
+          file names (supported by any variant of `make').
+
 2002-04-07  Michael Opdenacker <michaelo@gnu.org>
 
-        * cz.typ: new Czech lesson from Hynek Hanke <hanke@volny.cz>.
+        * cz.typ: includes a new Czech lesson
+	from Hynek Hanke <hanke@volny.cz>.
 	* Makefile.am: pkgdata_DATA = $(wildcard *.typ)
 	This is simpler and doesn't have to change with new lessons.
 

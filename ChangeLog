@@ -1,9 +1,3 @@
-
-2002-08-09  Michael Opdenacker <michaelo@gnu.org>
-
-	* lessons/Makefile.am: replaced $(wildcard *.typ) by real
-	  file names (supported by any variant of `make').
-
 2002-06-28  Hynek Hanke  <hanke@volny.cz>
 
 	* findwords.sh: New script to help with creating lessons.
