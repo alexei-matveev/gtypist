@@ -14,6 +14,23 @@ Your suggestions are welcome too!
 
 SHORT TERM
 
+ * Fix ktouch2typ.pl script issues with the latest
+   files from KTouch.
+
+ * Update all the kt* lesson files from the latest
+   version of KTouch.
+
+ * Another idea is to generate our lessons files
+   directly in our format from spelling dictionaries,
+   as they do in KTouch.
+
+ * Reuse lessons from dvorak7min and possibly other
+   typing tutors.
+
+ * Put all the program sources in the src/ directory
+
+ * Replace 'getopt' by 'GNU gengetopt'
+
  * Improve the French translation of "lesson file", which
    includes both Drills (translated by "Exercice") and
    Speed tests ("Tests de vitesse").
@@ -34,24 +51,41 @@ SHORT TERM
    in which the `.' character is replaced by `,'. Useful for some
    european keyboards.
 
- * Port the interface to GTK. 
-   Should Gnome be supported too? This shouldn't be
-   mandatory (configure option)... in particular for Win32
-   support, for Unix computers on which Gnome has not been
-   installed, as well as to keep CPU and RAM usage low.
+ * Improve the interface by adding 2 interfaces:
 
-   The benefits we can expect from a GTK interface are:
+   * Graphical interface (Probably GTK)
 
-   - Much attractive than the `ncurses' interface. 
-   - Not using `ncurses' should avoid problems supporting different
-     terminal types.
-   - We could have a graphical control panel, to change settings that
-     are so far only available in the command line (keyboard type,
-     silent mode...)
-   - Easy access to help and manual
-   - Could still be compiled on Win32 on which GTK has been ported.
+     The benefits we can expect from a GTK interface are:
 
+     - Much attractive than the `ncurses' interface. 
+     - Not using `ncurses' should avoid problems supporting different
+       terminal types.
+     - We could have a graphical control panel, to change settings that
+       are so far only available in the command line (keyboard type,
+       silent mode...)
+     - Easy access to help and manual
+     - Could still be compiled on Win32 on which GTK has been ported.
+  
+   * Audio interface
 
+     Could use a system like Speech Dispatcher to read the
+     lessons for visually impaired people or people living
+     in very dense fog. 
+
+     We could also support audio typing exercises.
+     Users would type from a text read by a speaker.
+     Several audio files would be need, according to
+     the language and the targeted typing speeded.
+     That would be useful for people like secretaries and journalists.
+
+   All this could be implemented in a clean way by implementing
+   an event based mechanism. The core application could send
+   interface messages to a generic interface manager, which could
+   according to user settings, ask the graphical, text or audio
+   interface to send it to the user.
+
+   Specifications are on going. 
+   
 MEDIUM TERM
 
  * Update Native Language Support according to the messages
@@ -92,9 +126,4 @@ LONG TERM
    maps available to it, and arises as a result of maintaining typing
    statistics by key and by finger (the program needs to know what
    key is operated by which finger).
-
- * Support audio typing exercises. Users would type from a text
-   read by a speaker. Several audio files would be need, according to
-   the language and the targeted typing speeded. That would be useful
-   for people like secretaries and journalists.
 
