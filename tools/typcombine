@@ -146,6 +146,8 @@ END	{
   printf(" :You can access gtypist's manual either by running\n");
   printf(" :\"info gtypist\" (or \"info '(gtypist)'\" if that doesn't work),\n");
   printf(" :or by loading \"gtypist.htm\" in your browser (DOS).\n");
+  printf(" :\n");
+  printf(" : If you have comments, suggestions or bug-reports, please write to bug-gtypist@gnu.org.\n");
   printf("G:__SERIESMENU\n");
 
 # TODO: find sth like "abort"
