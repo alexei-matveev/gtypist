@@ -104,7 +104,7 @@ I:(1) Try this:
 D:asdf ;lkj asdf ;lkj asdf ;lkj asdf ;lkj asdf ;lkj asdf ;lkj
 
 #                                                              ../orig/q.typ:66
-I:Now this:
+I:Now this (use 'k' finger for 'i' and 'd' finger for 'e'):
 *:_Q_R_L4
 #                                                              ../orig/q.typ:67
 D:asdef ;lkij asdef ;lkij asdef ;lkij asdef ;lkij asdef ;lkij
@@ -119,12 +119,13 @@ D:as al ad ak af aj fa ka da la sa ja sl sd sk sf ls ds ks fs
 
 #                                                              ../orig/q.typ:72
 I:(3) Hang in there; let's do some sentences...
+ :To get capitals use your ';' finger on [right-SHIFT]
 *:_Q_R_L6
 #                                                              ../orig/q.typ:73
 D:Dad adds a salad  A lad asks  Salad falls as a lad asks Dad
 
 #                                                              ../orig/q.typ:74
-I:(4)
+I:(4) Now try [left-SHIFT] usage (for 'L') and [right-SHIFT]!
 *:_Q_R_L7
 #                                                              ../orig/q.typ:76
 D:Lease a desk  Add a safe deal  Ask less fees  Add a lease
@@ -176,7 +177,9 @@ T:
  :
  :In this lesson you learn six new letters (H, G, O, U, N, T) and the period. (.).
  :Be sure that the F-finger does not linger on the G-key  or the J-finger on the
- :H-key.
+ :H-key.  Also be sure to use your fingers as follows:
+ :
+ : 'f' for 't' and 'g', 'j' for 'h', 'u' and 'n', finally use 'l' for 'o' and '.'
  :
  :Note that you always follow a period with two spaces.
 
@@ -259,7 +262,9 @@ T:
  :One space always follows a comma.  Don't forget there are two spaces between
  :sentences, no matter what punctuation mark closes the sentence.
  :
- :The colon (:) introduces a list and is followed by two spaces.
+ :The colon (:) introduces a list and is followed by two spaces.  Finger usage:
+ :
+ : 'j' for 'y', 'f' for 'r', 'k' for ',', 'd' for 'c', ';' for '?', 'p' and ':'
 
 #                                                             ../orig/q.typ:148
 I:(1) Rhythm Drill
@@ -359,6 +364,9 @@ T:
  :letters of the alphabet.
  :
  :The semicolon (;), like the comma, is followed by one space in a sentence.
+ :
+ :Fingers:  'j' for 'm', 's' for 'w' and 'x', 'f' for 'v' and 'b',
+ :';' for ' and '-', 'a' for 'z' and 'q'
 
 #                                                             ../orig/q.typ:197
 I:(1) Rhythm Drill

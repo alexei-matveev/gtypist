@@ -1,3 +1,8 @@
+2004-07-31	Dmitry Rutsky	<rutsky@school.ioffe.rssi.ru>
+
+	* q.typ:  some missing key fingering directions were added by
+	  Iain Cunningham <iain.cunningham@ntlworld.com>.
+
 2004-05-07	Dmitry Rutsky	<rutsky@school.ioffe.rssi.ru>
 
 	* ru.typ: corrected unlearned-key bug in IF_Ib lesson last exercise.
