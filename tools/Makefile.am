@@ -1,3 +1,8 @@
 ## Process this file with automake to produce Makefile.in
 
-EXTRA_DIST=typcombine typv1tov2 gtypist-mode.el ktouch2typ.pl
+lisp_LISP = gtypist-mode.el
+# TODO: can we make things work with more than one type of emacs ?
+#ELCFILES=
+
+EXTRA_DIST=typcombine typv1tov2 ktouch2typ.pl
+

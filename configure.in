@@ -7,7 +7,6 @@ AM_CONFIG_HEADER(config.h)
 dnl Checks for progrdnl Set of available languages.
 ALL_LINGUAS="es de"
 
-
 AC_PROG_CC
 AC_ISC_POSIX
 AC_PROG_INSTALL
@@ -51,6 +50,9 @@ else
   GEN_MAN="help2man ./gtypist -o gtypist.1"
 }
 fi;
+
+dnl this is necessary for tools/gtypist-mode.el
+AM_PATH_LISPDIR
 
 AC_SUBST(GEN_MAN)
 

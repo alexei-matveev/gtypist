@@ -134,9 +134,9 @@
 
    ;; this is better than coloring via syntax-table, because it
 ;; doesn't color comments which don't start at the beginning of the line
-   (cons "^#.*" 'font-lock-comment-face)
+   (cons "^[#!].*" 'font-lock-comment-face)
 
-   (list "^\\([X]\\):" 1 'font-lock-warning-face)
+   (list "^\\(X\\):" 1 'font-lock-warning-face)
    (cons "^\\([A-Z]\\):" 1)
    ;;   (cons "^[A-Z\\*]:" 'font-lock-keyword-face)
    
@@ -330,7 +330,7 @@ available). Use C-u prefix to get P:, and C-u C-u to get D:."
       (setq match-data (match-data))
       ;; gtypist-mode-in-drill-text-p changes the match data
       (if (or (gtypist-mode-in-drill-text-p (point))
- 	      (null result))
+			  (null result))
 		  (setq done t))
       (set-match-data match-data)
       )

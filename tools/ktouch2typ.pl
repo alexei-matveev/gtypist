@@ -22,8 +22,9 @@ use Cwd; # Cwd::getcwd
 
 
 # configurable variables
-my $lines_per_drill = 4; # 1-11 for O:
+my $lines_per_drill = 4; # 1-11 for O: and D:, 1-22 for P:
 my $drill_type = "O:";
+
 
 my $ktouchfilename = undef;
 my $typfilename = undef;
@@ -53,21 +54,23 @@ if ($drill_type eq "O:" || $drill_type eq "D:") {
 while(defined($ktouchfilename = shift(@ARGV)))
 {
     if (substr($ktouchfilename, rindex($ktouchfilename, ".")) ne ".ktouch" ||
-		! (-f $ktouchfilename)) { 
-		print "Skipping $ktouchfilename.\n";
-		next;
+	! (-f $ktouchfilename)) { 
+	print "Skipping $ktouchfilename.\n";
+	next;
     }
     $typfilename = $ktouchfilename;
     substr($typfilename, rindex($typfilename, ".")) = ".typ";
     print "Converting $ktouchfilename to $typfilename...\n";
 
     open(KTOUCHFILE, "$ktouchfilename") ||
-		die "Couldn't open $ktouchfilename for reading: $!";
+	die "Couldn't open $ktouchfilename for reading: $!";
     open(TYPFILE, ">$typfilename") ||
-		die "Couldn't open $typfilename for writing: $!";
+	die "Couldn't open $typfilename for writing: $!";
 
     print TYPFILE "# created by ktouch2typ.pl from " . 
-		getAbsoluteFilename($ktouchfilename) . "\n# on " . `date` . "\n";
+	getAbsoluteFilename($ktouchfilename) . "\n# on " . `date`;
+    print TYPFILE "# ktouch2typ.pl is part of gtypist (http://www.gnu.org/software/gtypist/)\n";
+    print TYPFILE "# ktouch can be found at http://ktouch.sourceforge.net\n\n";
     print TYPFILE "G:MENU\n\n";
 
     my $line = undef;
@@ -76,28 +79,28 @@ while(defined($ktouchfilename = shift(@ARGV)))
     my @lesson_names = (); # this is needed for the menu
     while (!$done)
     {
-		while (defined($line = <KTOUCHFILE>) && isBlankorComment($line)) { 
-			if (isComment($line)) {
-				print TYPFILE $line;
-			}
-		}
-		if (!defined($line)) { $done = 1; next;	}
-		
-		print TYPFILE "*:S_LESSON$lesson_counter\n";
-		# $line contains the first non-blank, non-comment line (which is the
-		# name of the lesson)
-		chomp($line);
-		$lesson_names[$lesson_counter] = $line;
-		print TYPFILE getBanner("Lesson $lesson_counter: " . $line);
+	while (defined($line = <KTOUCHFILE>) && isBlankorComment($line)) { 
+	    if (isComment($line)) {
+		print TYPFILE $line;
+	    }
+	}
+	if (!defined($line)) { $done = 1; next;	}
+	
+	print TYPFILE "*:S_LESSON$lesson_counter\n";
+	# $line contains the first non-blank, non-comment line (which is the
+	# name of the lesson)
+	chomp($line);
+	$lesson_names[$lesson_counter] = $line;
+	print TYPFILE getBanner("Lesson $lesson_counter: " . $line);
 
-		convert_lesson();
+	convert_lesson($lesson_counter);
 
-		print TYPFILE "G:E_LESSON$lesson_counter\n\n";
-		
-		if (!defined($line)) {
-			$done = 1;
-		}
-		++$lesson_counter;
+	print TYPFILE "G:E_LESSON$lesson_counter\n\n";
+	
+	if (!defined($line)) {
+	    $done = 1;
+	}
+	++$lesson_counter;
     }
 
     --$lesson_counter;
@@ -107,30 +110,30 @@ while(defined($ktouchfilename = shift(@ARGV)))
     $i = 1;
     while ($i <= $lesson_counter)
     {
-		print TYPFILE "*:E_LESSON$i\n";
-		if ($i < $lesson_counter) {
-			print TYPFILE "Q: Do you want to continue to lesson " . ($i + 1) .
-				" [Y/N] ?\n";
-			print TYPFILE "N:MENU\nG:S_LESSON" . ($i + 1) . "\n";
-		} else {
-			print TYPFILE "G:MENU\n";
-		}
-		++$i;
+	print TYPFILE "*:E_LESSON$i\n";
+	if ($i < $lesson_counter) {
+	    print TYPFILE "Q: Do you want to continue to lesson " . ($i + 1) .
+		" [Y/N] ?\n";
+	    print TYPFILE "N:MENU\nG:S_LESSON" . ($i + 1) . "\n";
+	} else {
+	    print TYPFILE "G:MENU\n";
+	}
+	++$i;
     }
 
     # calculate the total # of pages
     my $total_n_pages = 0;
     $i = $lesson_counter;
     while ($i > 0) {
-		# how many lessons fit on this page ($j) ?
-		$j = 11; # one key is always reserved for "exit"
-		# do we need to reserve a key for "previous page" ?
-		if ($total_n_pages > 0) { --$j; }
-		# do we need to reserve a key for "next page" ?
-		if ($i > $j) { --$j; }
-		
-		$i -= ($j > $i) ? $i : $j;
-		++$total_n_pages;
+	# how many lessons fit on this page ($j) ?
+	$j = 11; # one key is always reserved for "exit"
+	# do we need to reserve a key for "previous page" ?
+	if ($total_n_pages > 0) { --$j; }
+	# do we need to reserve a key for "next page" ?
+	if ($i > $j) { --$j; }
+	
+	$i -= ($j > $i) ? $i : $j;
+	++$total_n_pages;
     }
 
     my $page_counter = 1;
@@ -145,84 +148,93 @@ while(defined($ktouchfilename = shift(@ARGV)))
     print TYPFILE "\n\n*:MENU";
     while ($cur_lesson <= $lesson_counter)
     {
-		print TYPFILE "\n*:MENU_P$page_counter\n";
+	print TYPFILE "\n*:MENU_P$page_counter\n";
 
-		# find out how many lessons fit on this menu-page
-		$n_lessons_this_page = 11; # Fkey 12 is reserved for "exit"
-		if ($page_counter > 1) { --$n_lessons_this_page; } # "prev"
-		if ($page_counter < $total_n_pages) { --$n_lessons_this_page; } #"next"
+	# find out how many lessons fit on this menu-page
+	$n_lessons_this_page = 11; # Fkey 12 is reserved for "exit"
+	if ($page_counter > 1) { --$n_lessons_this_page; } # "prev"
+	if ($page_counter < $total_n_pages) { --$n_lessons_this_page; } #"next"
 
-		# bind function keys
-		$i = $cur_lesson;
-		while ($i <= $lesson_counter && $i<$cur_lesson + $n_lessons_this_page)
-		{
-			print TYPFILE "K:" . ($i - $cur_lesson + 1) . ":S_LESSON$i\n";
-			++$i;
-		}
-		if ($i == $lesson_counter + 1) {
-			# this is the last page, so bind unused keys to "NULL"
-			# i=lesson_counter+1 => fkey=lesson_counter-cur_lesson+2
-			$i = $lesson_counter - $cur_lesson + 2; 
-			while ($i <= $n_lessons_this_page) {
-				print TYPFILE "K:$i:NULL\n"; ++$i;
-			}
-		}
-		
-		# find the indices of the "Next page" and "Previous page" menu-items
-		if ($page_counter > 1) { 
-			$prev_page_idx = $n_lessons_this_page + 1;
-		} else {
-			$prev_page_idx = undef;
-		}
-		if ($page_counter < $total_n_pages) {
-			if ($page_counter > 1) {
-				$next_page_idx = $n_lessons_this_page + 2;
-			} else {
-				$next_page_idx = $n_lessons_this_page + 1;
-			}
-		} else {
-			$next_page_idx = undef;
-		}
+	# bind function keys
+	$i = $cur_lesson;
+	while ($i <= $lesson_counter && $i<$cur_lesson + $n_lessons_this_page)
+	{
+	    print TYPFILE "K:" . ($i - $cur_lesson + 1) . ":S_LESSON$i\n";
+	    ++$i;
+	}
+	if ($i == $lesson_counter + 1) {
+	    # this is the last page, so bind unused keys to "NULL"
+	    # i=lesson_counter+1 => fkey=lesson_counter-cur_lesson+2
+	    $i = $lesson_counter - $cur_lesson + 2; 
+	    while ($i <= $n_lessons_this_page) {
+		print TYPFILE "K:$i:NULL\n"; ++$i;
+	    }
+	}
+	
+	# find the indices of the "Next page" and "Previous page" menu-items
+	if ($page_counter > 1) { 
+	    $prev_page_idx = $n_lessons_this_page + 1;
+	} else {
+	    $prev_page_idx = undef;
+	}
+	if ($page_counter < $total_n_pages) {
+	    if ($page_counter > 1) {
+		$next_page_idx = $n_lessons_this_page + 2;
+	    } else {
+		$next_page_idx = $n_lessons_this_page + 1;
+	    }
+	} else {
+	    $next_page_idx = undef;
+	}
 
-		# add "previous page" binding
-		if (defined($prev_page_idx)) {
-			print TYPFILE "K:$prev_page_idx:MENU_P" . ($page_counter - 1)."\n";
-		}
-		# add "next page" binding
-		if (defined($next_page_idx)) {
-			print TYPFILE "K:$next_page_idx:MENU_P" . ($page_counter + 1)."\n";
-		}
-		# add "exit" binding
-		print TYPFILE "K:12:EXIT\n\n";
+	# add "previous page" binding
+	if (defined($prev_page_idx)) {
+	    print TYPFILE "K:$prev_page_idx:MENU_P" . ($page_counter - 1)."\n";
+	}
+	# add "next page" binding
+	if (defined($next_page_idx)) {
+	    print TYPFILE "K:$next_page_idx:MENU_P" . ($page_counter + 1)."\n";
+	}
+	# add "exit" binding
+	print TYPFILE "K:12:EXIT\n\n";
 
-		# generate T: command:
-		print TYPFILE getBanner("Lesson selection menu - " . 
-								"[page $page_counter of $total_n_pages]");
-		print TYPFILE "T:this file contains the following $lesson_counter " .
-			"lessons:\n :\n";
-		$i = $cur_lesson;
-		while ($i <= $lesson_counter && $i < $cur_lesson + $n_lessons_this_page)
-		{
-			print TYPFILE " :        Fkey " . ($i - $cur_lesson + 1) .
-				" - $lesson_names[$i]\n";
-			++$i;
-		}
-		# print help for "prev"
-		if (defined($prev_page_idx)) {
-			print TYPFILE " :        Fkey $prev_page_idx - " .
-				"Previous menu page...\n";
-		}
-		# print help for "next"
-		if (defined($next_page_idx)) {
-			print TYPFILE " :        Fkey $next_page_idx - " .
-				"Next menu page...\n";
-		}
-		# print help for "exit"
-		print TYPFILE " :        Fkey 12 - Quit program\n";
+	# generate T: command:
+	print TYPFILE getBanner("Lesson selection menu - " . 
+				"[page $page_counter of $total_n_pages]");
+	print TYPFILE "T:this file contains the following $lesson_counter " .
+	    "lessons:\n :\n";
+	$i = $cur_lesson;
+	while ($i <= $lesson_counter && $i < $cur_lesson + $n_lessons_this_page)
+	{
+	    print TYPFILE " :        Fkey " . ($i - $cur_lesson + 1) .
+		" - $lesson_names[$i]\n";
+	    ++$i;
+	}
+	if ($i == $lesson_counter + 1) {
+	    # this is the last page, so insert blank continuation-lines
+	    # i=lesson_counter+1 => fkey=lesson_counter-cur_lesson+2
+	    $i = $lesson_counter - $cur_lesson + 2; 
+	    while ($i <= $n_lessons_this_page) {
+		print TYPFILE " :\n"; ++$i;
+	    }
+	}
+	# print help for "prev"
+	if (defined($prev_page_idx)) {
+	    print TYPFILE " :        Fkey $prev_page_idx - " .
+		"Previous menu page...\n";
+	}
+	# print help for "next"
+	if (defined($next_page_idx)) {
+	    print TYPFILE " :        Fkey $next_page_idx - " .
+		"Next menu page...\n";
+	}
+	# print help for "exit"
+	print TYPFILE " :        Fkey 12 - Quit program\n";
 
-		#print TYPFILE "Q: Please select a lesson";
-		$cur_lesson += $n_lessons_this_page;
-		++$page_counter;
+	# TODO: should there be a Q: to avoid the "Press Enter to cont."-msg ?
+	#print TYPFILE "Q: Please select a lesson";
+	$cur_lesson += $n_lessons_this_page;
+	++$page_counter;
     }
 
     print TYPFILE "\n*:EXIT\nX:\n";
@@ -234,9 +246,9 @@ while(defined($ktouchfilename = shift(@ARGV)))
 sub getAbsoluteFilename
 {
     if ($_[0] =~ /^\/.*/) {
-		return $_[0];
+	return $_[0];
     } else {
-		return Cwd::getcwd() . "/" .  $_[0];
+	return Cwd::getcwd() . "/" .  $_[0];
     }
 }
 
@@ -262,21 +274,26 @@ sub convert_lesson
     my $line = undef;
     my $line_counter = 0;
     my $drill_counter = 1;
+    my $lesson_counter = $_[0];
 
     while (defined($line = <KTOUCHFILE>) && !isBlankorComment($line))
     {
-		chomp($line);
-		if ($line_counter == 0) {
-			print TYPFILE "I: ($drill_counter)\n";
-			print TYPFILE "${drill_type}$line\n";
-		} else {
-			print TYPFILE " :$line\n";
-		}
+	chomp($line);
+	if ($line_counter == 0) {
+	    print TYPFILE "*:LESSON${lesson_counter}_D$drill_counter\n";
+	    print TYPFILE "I:($drill_counter)\n";
+	    print TYPFILE "${drill_type}$line\n";
+	} else {
+	    print TYPFILE " :$line\n";
+	}
 
-		++$line_counter;
-		if ($line_counter == $lines_per_drill) {
-			$line_counter = 0; ++$drill_counter;
-		}
+	++$line_counter;
+	if ($line_counter == $lines_per_drill) {
+	    print TYPFILE
+		"Q: Press Y to continue, N to repeat, or Fkey 12 to exit\n";
+	    print TYPFILE "N:LESSON${lesson_counter}_D$drill_counter\n";
+	    $line_counter = 0; ++$drill_counter;
+	}
     }
 }
 
