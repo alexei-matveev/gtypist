@@ -458,7 +458,29 @@ Tento pøíkaz zobrazí struèné instrukce k drilovému èi rychlostnímu
 testu. Je dovoleno pou¾ít pouze dvou øádek. Narozdíl od pøíkazu @code{T} 
 se pøed pokraèováním neèeká na stisk klávesy. Znaèka by tedy
 mìla být v¾dy následována cvièením. Ma¾e plochu obrazovky
-pro cvièení, v tomto ohledu se chová jako dvouøádkové T.
+pro cvièení, v tomto ohledu se chová jako dvouøádkové @code{T}.
+
+@item M
+Tento pøíkaz je nový zpùsob, jak vytváøet menu (od gtypistu 2.7)
+Zde je jeho syntax:
+@example
+M: [UP=(LABEL|_EXIT)] "název"
+ :LABEL1 "popis1"
+ :LABEL2 "popis2"
+ ...
+@end example
+
+UP-label oznaèuje návìstí otcovského uzlu, které definuje
+poslední polo¾ku menu (pokud je to _EXIT, pak ,,Konec'',
+jinak bude poslední polo¾ka v menu ,,Zpìt'' skákat
+na zadaný uzel). Tento argument je volitelný. Pokud
+není pøítomen, pou¾ije se defaultní _EXIT.
+
+Název, stejnì jako ostatní popis, musí být v uvozovkách ("").
+Navíc musí mezi UP=XXX a "název" èi mezi návìstími
+a jejich popisem být alespoò jedna mezera.
+
+Pøíklady hledejte v existujících lekcích.
 
 @c TODO: more information about ``should be used for''...
 @item D,d
@@ -508,8 +530,9 @@ pokraèováním èeká na klávesu @key{Y} nebo @key{N}.
 Ostatní znaky jsou ignorovány.
 
 Jako vedlej¹í efekt mù¾ete také stisknout F-klávesu,
-pokud je potøeba (proto je tento pøíkaz pou¾íván pro promt
-v nabídkách).
+pokud je potøeba (nyní by ji¾ nemìl být tento pøíkaz
+pou¾íván pro vytváøení promptu pro menu -- pou¾ijte
+radìji pøíkaz M).
 
 @item Y
 Y Je podobné @code{G}, s výjimkou toho, ¾e pøíkaz skoku
@@ -522,6 +545,7 @@ je vyvolán pouze pokud odpovìï na pøedchozí otázku @code{Q}
 byla @key{N}.
 
 @item K
+@emph{Tento pøíkaz by ji¾ nemìl být pou¾íván, pou¾ijte M}
 Vá¾e funkèní klávesu na návìstí. Formát dat následujících
 tento pøíkaz musí být @code{Fklávesa:návìstí}, kde
 @code{Fklávesa} je èíslo funkèní klávesy mezi 1 a 12
