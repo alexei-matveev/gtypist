@@ -1,4 +1,4 @@
-		GNU Typist 2.3.3 Installation instructions
+		GNU Typist @VERSION Installation instructions
 
 This program can be compiled under Unix and under Windows/DOS.
 
@@ -9,10 +9,10 @@ In order to compile this program, you must have:
 - The 'ncurses' or the 'curses' library
 
 * Uncompress the sources distribution:
-	tar xvfz gtypist-2.3.3.tar.gz
+	tar xvfz gtypist-@VERSION.tar.gz
 
 * Change to the sources directory
-	cd gtypist-2.3.3
+	cd gtypist-@VERSION
 
 * Configure the package. By default the program will be installed at
 /usr/local/bin and the lessons and international support in
@@ -48,7 +48,7 @@ You must have:
 
 * Decompress the sources distribution 
 * Open a DOS session, change to the sources directory
-	cd gtypist-2.3.3
+	cd gtypist-@VERSION
 
 * Configure the package
 	configur
