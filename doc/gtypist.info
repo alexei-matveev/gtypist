@@ -14,9 +14,9 @@ GNU Typist - Typing Tutor
 
    GNU Typist is an interactive typing tutor that can help you to type
 correctly. It has several lessons for different keyboards layouts and in
-different languages. The lessons for gtypist are described in a easy
-scripting language that the user can use to modify the exising lessons
-or create new ones.
+different languages. The lessons for gtypist are described in a
+easy-to-learn scripting language that the user can use to modify the
+exising lessons or create new ones.
 
 * Menu:
 
@@ -435,9 +435,9 @@ tests. It is intended to be used on raw terminals without graphics --it
 has been compiled and used in GNU/Linux and Unix (Aix, Solaris) and
 also in DOS/Windows (DOS 6.22, Windows 98, Windows NT).
 
-   The program reads lessons written in a very easy scripting language.
-It is distributed with several complete and good lessons, you can use
-them, modify them or create new lessons (*note Script files and
+   The program reads lessons written in an easy-to-learn scripting
+language. It is distributed with several complete and good lessons, you
+can use them, modify them or create new lessons (*note Script files and
 commands::).
 
    There are two types of drills - one-time and ordinary. In an ordinary
@@ -746,6 +746,11 @@ Supplied lessons
      (<http://ktouch.sourceforge.net>), which have been converted to
      gtypist's file format using `tools/ktouch2typ.pl'.
 
+     They are called ktde.typ (german.ktouch), kten.typ
+     (english.ktouch), ktfr.typ (french.ktouch), ktlecten.typ
+     (lecture_en.ktouch), ktno.typ (norwegian.ktouch) and ktnumber.typ
+     (number.ktouch).
+
 If you find errors in these lessons, if you modify any of them or if you
 write a new lesson, please release it with a free license and tell us
 about it, by writing an email to <bug-gtypist@gnu.org>.
@@ -1015,19 +1020,19 @@ History of GNU Typist
 
 Tag Table:
 Node: Top215
-Node: Distribution889
-Node: Copying1778
-Node: Introduction20933
-Node: Invoking23189
-Node: Script files and commands26878
-Node: Supplied lessons32420
-Node: How to contribute new lessons33525
-Node: Ktouch-lessons33852
-Node: Create drills from fortune36104
-Node: Emacs mode for editing gtypist-lessons36816
-Node: Technical Information39081
-Node: Environment Variables39312
-Node: Errors and omissions41417
-Node: History42134
+Node: Distribution898
+Node: Copying1787
+Node: Introduction20942
+Node: Invoking23203
+Node: Script files and commands26892
+Node: Supplied lessons32434
+Node: How to contribute new lessons33751
+Node: Ktouch-lessons34078
+Node: Create drills from fortune36330
+Node: Emacs mode for editing gtypist-lessons37042
+Node: Technical Information39307
+Node: Environment Variables39538
+Node: Errors and omissions41643
+Node: History42360
 
 End Tag Table

@@ -777,6 +777,10 @@ QWERTY course in Spanish
 These lessons are the standard lessons from Ktouch 1.0
 (@url{http://ktouch.sourceforge.net}), which have been converted to
 gtypist's file format using @file{tools/ktouch2typ.pl}.
+
+They are called ktde.typ (german.ktouch), kten.typ (english.ktouch),
+ktfr.typ (french.ktouch), ktlecten.typ (lecture_en.ktouch), ktno.typ
+(norwegian.ktouch) and ktnumber.typ (number.ktouch).
 @end table
 
 @noindent
