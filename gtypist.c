@@ -1,6 +1,9 @@
 /*
  * GNU Typist  - interactive typing tutor program for UNIX systems
- * Copyright (C) 1998, 1999, 2000, 2001, 2002, 2003  Simon Baldwin (simonb@sco.com)
+ * 
+ * Copyright (C) 1998, 1999, 2000, 2001, 2002, 2003  
+ * 					Simon Baldwin (simonb@sco.com)
+ * Copyright (C) 2003  GNU Typist Development Team <gtypist-bug@gnu.org>
  *
  * This program is free software; you can redistribute it and/or
  * modify it under the terms of the GNU General Public License
@@ -15,7 +18,6 @@
  * You should have received a copy of the GNU General Public License
  * along with this program; if not, write to the Free Software
  * Foundation, Inc., 59 Temple Place - Suite 330, Boston, MA 02111-1307, USA.
- *
  */
 
 #include "config.h"
@@ -1110,8 +1112,7 @@ do_query_repeat ( FILE *script, bool allow_next )
 	break;
       }
       if (toupper ((char)resp) == 'E' || toupper ((char)resp) == RNE [4]) {
-	if (fkey_bindings [11] != NULL &&
-	    do_query_simple (CONFIRM_EXIT_LESSON_MSG))
+	if (do_query_simple (CONFIRM_EXIT_LESSON_MSG))
 	  {
 	    seek_label (script, fkey_bindings [11], NULL);
 	    resp = 'E';

@@ -1,5 +1,10 @@
 # Process this file with autoconf to produce a configure script.
 
+#
+#	NOTE:  this file will probably be changed by gettextize, so don't commit
+#	changed version to CVS.
+#
+
 AC_INIT(gtypist.c)
 AM_INIT_AUTOMAKE(gtypist, "`cat version.sh|grep '^VERSION'|awk -F= '{print $2}'`")
 AM_CONFIG_HEADER(config.h)
@@ -57,6 +62,4 @@ AM_PATH_LISPDIR
 
 AC_SUBST(GEN_MAN)
 
-AC_OUTPUT(lessons/Makefile tools/Makefile doc/Makefile Makefile intl/Makefile \
-	po/Makefile.in m4/Makefile) 
-
+AC_OUTPUT(lessons/Makefile tools/Makefile doc/Makefile Makefile) 

@@ -1,3 +1,18 @@
+2003-07-19	Dmitry Rutsky	<rutsky@school.ioffe.rssi.ru>
+
+	* configure.in:  removed Makefiles automagically added there by
+	  gettextize (yes, that was my mistake in 2003-07-01).  Added note
+	  that this file will be changed by gettextize.
+	* autogen.sh:  don't run gettextize if the sources were gettextized
+	  already.
+	* Makefile.am:  added headers to gtypist_SOURCES back (yes, that was
+	  my mistake too), removed some duplicates of what gettextize
+	  added there.  Added note regarding gettextize.
+	* cursmenu.c:  'q' now works as ESCAPE in the menus.
+	* *.[ch] except getopt*.[ch]:  added/corrected legal attributes.
+	* gtypist.c, script.c:  exit in case user got to particular excersize
+	  with -l and tried to exit using `E'.
+
 2003-07-04	Dmitry Rutsky	<rutsky@school.ioffe.rssi.ru>
 
 	* cursmenu.c:  "Up/Exit" label code was commented out,
