@@ -312,7 +312,7 @@ Calculator keypad in English
 Compendium of all previous lessons in English
 @item esp.typ
 QWERTY course in Spanish
-@item cz.typ
+@item cs.typ
 Lessons in Czech
 @item kt*.typ
 These lessons are the standard lessons from
