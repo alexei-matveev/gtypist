@@ -32,6 +32,8 @@ or create new ones.
 * Invoking::
 * Script files and commands::
 * Supplied lessons::
+* How to contribute new lessons::
+* Emacs mode for editing gtypist-lessons::
 * Technical Information::
 * History::
 @end menu
@@ -561,13 +563,12 @@ option to silence the beep.
 Same as -s, --silent.
 
 @item -w, --wpmode
-By default, gtypist will try to mimic a word processor in certain ways
+With this option, gtypist will try to mimic a word processor in certain ways
 when executing an exercise. It will treat space at the end of a line as
 a correctly typed character, and word wrap. It will treat return at
 the end of a line as a signal to move to the start of the next paragraph
 if applicable. It will compress multiple spaces into a single
-space. And it will skip over hyphens found at the end of a line. This
-option will turn off these word processor-like actions.
+space. And it will skip over hyphens found at the end of a line.
 
 @item -l, --start_label
 Specifies the label in the script_file at which gtypist begins executing
@@ -619,9 +620,9 @@ command. If @code{command_char} is a space character, this indicates that the
 line is a continuation of the preceding non-space command. The ':'
 separator must be in column two of the line.
 
-Comment lines are lines beginning with a '!' character, and are
+Comment lines are lines beginning with a '#' character, and are
 ignored, as are blank lines. Comment lines may have any format provided
-that they begin with '!'; other lines must have the above format.
+that they begin with '#'; other lines must have the above format.
 
 The following is a list of valid @code{command_char} values:
 
@@ -721,7 +722,7 @@ Here is a tiny example script to demonstrate the available commands
 (@file{tinydemo.typ} lesson file):
 
 @example
-! Minimal demonstration 
+# Minimal demonstration 
 B: Typing tutor demonstration 
 *:LOOP
 K:1:QDONE
@@ -738,7 +739,7 @@ N:LOOP
 X:
 @end example
 
-@node Supplied lessons, Technical Information, Script files and commands, Top
+@node Supplied lessons, How to contribute new lessons, Script files and commands, Top
 @chapter Supplied lessons
 
 The following lessons are supplied with GNU Typist :
@@ -772,14 +773,83 @@ If you find errors in these lessons, if you modify any of them or if you
 write a new lesson, please release it with a free license and tell us
 about it, by writing an email to @email{bug-gtypist@@gnu.org}.
 
-@node How to contribute new lessons, Technical Information, Supplied lessons, Top
+@node How to contribute new lessons, Emacs mode for editing gtypist-lessons, Supplied lessons, Top
 @chapter How to contribute new lessons
 
 This chapter has not been written yet. It will give guidelines
 for supporting a new keyboard and/or language, though all the
 needed technical details are already given in this manual. 
 
-@node Technical Information, History, How to contribute new lessons, Top
+@node Emacs mode for editing gtypist-lessons, Technical Information, How to contribute new lessons, Top
+@chapter Emacs mode for editing gtypist-lessons
+
+gtypist now comes with an Emacs major-mode which does
+syntax-highlighting, indentation and has some convenience commands for
+things like counting labels as well as a goto-label-command, and
+inserting properly centered banners, special comments and a bit more.
+
+Copy this file from @file{tools/gtypist-mode.el}
+(or @file{/usr/share/doc/gtypist} if you are using the debian package) to
+wherever you put your local elisp-files (e.g. @file{~/elisp}) and put
+this in your @file{~/.emacs} (adapt path!):
+@lisp
+(autoload 'gtypist-mode "~/elisp/gtypist-mode")
+@end lisp
+or put it in @code{load-path} and use this instead:
+@lisp
+(autoload 'gtypist-mode "gtypist-mode")
+@end lisp
+@emph{and} add this to your @file{~/.emacs}:
+@lisp
+(setq auto-mode-alist       
+      (cons '("\\.typ\\'" . gtypist-mode) auto-mode-alist))
+@end lisp
+If you want to, you can then byte-compile the file using
+@kbd{M-x byte-compile-file}.
+
+All this is also mentioned in the README-section in
+@file{tools/gtypist-mode.el}.
+
+@table @kbd
+
+@item C-c C-g, M-x gtypist-mode-goto-label
+Query for a label to go to (with completion).
+
+@item C-c C-l, M-x gtypist-mode-next-label
+This command inserts the next label in a numbered sequence of labels.
+For example, if you insert
+@example
+*:SERIES1_L1
+@end example
+and hit @kbd{C-c C-l} then gtypist-mode will insert
+@example
+*:SERIES1_L2
+@end example
+
+@item C-c C-b, M-x gtypist-mode-insert-banner
+This command inserts a centered @code{B:} command. It's centered on
+66 columns because ``gtypist <version>'' is in the right corner.
+
+@item C-c C-r, M-x gtypist-mode-insert-hrule
+Inserts a horizontal rule (comment) consisting of dashes.
+
+@item C-c C-n, M-x gtypist-mode-new-lesson
+Insert the comments (header) and a label to start a new lesson
+(prompts for name).
+
+@item C-c C-f, M-x gtypist-mode-fortune-to-drill
+Insert a drill (@code{O:}) with text from @command{fortune} (or
+@command{yow} if @command{fortune} isn't available). Use @kbd{C-u}
+prefix to get @code{P:}, and @kbd{C-u C-u} to get @code{D:}.
+
+@end table
+
+Run @kbd{C-h m} for a complete list of commands and their keybindings.
+
+If you have bug-reports or suggestions about this, please write to
+@email{bug-gtypist@@gnu.org}.
+
+@node Technical Information, History, Emacs mode for editing gtypist-lessons, Top
 @chapter Technical Information
 
 @menu
@@ -795,13 +865,16 @@ GNU Typist uses the following environment variables:
 
 @item LANG
 
-Typist offers Native Language Support (NLS) with support of the gettext
-library, this means that if your system supports it, the language of the
-messages shown by gtypist can be chosen. By now gtypist is distributed
-with messages in English, Spanish and German. To use a particular NLS
-use the environment variable LANG and set it to the appropriate ISO 639
-two-letter code (i.e. 'es' or 'de'). In some systems it will be also
-necessary to set the environment variable LANGUAGE to the same value.
+Typist offers Native Language Support (NLS) with support of the
+gettext library, this means that if your system supports it, the
+language of the messages shown by gtypist can be chosen. By now
+gtypist is distributed with messages in English, Spanish and
+German. To use a particular NLS use the environment variable LANG and
+set it to the appropriate 'LL_CC' combination where 'LL' is an ISO 639
+two-letter language code and 'CC' is an ISO 3166 two-letter country
+code (i.e. 'es_ES' for Spain and 'de_DE' for Germany). In some systems
+it will be also necessary to set the environment variable LANGUAGE to
+the same value.
 
 If you want to translate messages to a different language (or if you
 want to correct one message), please communicate it to
@@ -863,7 +936,7 @@ Simon Baldwin @email{simonb@@sco.com} rewrote the version of D. Jason Penney,
 his innovations are described in the NEWS file (versions 2.2 to 2.2b).
 He is the holder of the copyright for GNU Typist (that is distributed
 under the GPL).
-Simon also wrote a version of typist in Java that initially he called
+Simon also wrote a version of Typist in Java that initially he called
 JTypist but that now is called Typist:
 
  @url{http://www.ocston.org/~simonb/typist/}

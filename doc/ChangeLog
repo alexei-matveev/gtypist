@@ -1,8 +1,12 @@
-2000-06-26  Michael Opdenacker  <michaelo@gnu.org> 
+2001-07-19  Felix Natter <f.natter@ndh.net>
+
+	* Documentation for new Emacs mode and several fixes
+
+2001-06-26  Michael Opdenacker  <michaelo@gnu.org> 
 
 	* Fixed errors and improved the manual.
 
-2000-05-24  Michael Opdenacker  <michaelo@gnu.org>
+2001-05-24  Michael Opdenacker  <michaelo@gnu.org>
 
 	* Replaced `typist' by `gtypist' in the documentation
 	  (the `typist' executable is no longer built in 2.3.2)
