@@ -1,11 +1,9 @@
 # created by tt2typ.pl from /mnt/src/tipptrainer-0.3.3/data/german
-# on Son Jul 29 19:09:45 CEST 2001
+# on Son Jul 29 19:46:06 CEST 2001
 # tt2typ.pl is part of gtypist (http://www.gnu.org/software/gtypist/)
 # tipptrainer can be found at http://www.pingos.schulnetz.org/tipptrainer
 # If you have suggestions about these lessons, write to
 # tipptrainer@reith.8m.com, with cc to bug-gtypist@gnu.org.
-# Note: lesson 36 had to be removed because it doesn't fit on a curses
-# screen (80 cols)
 
 G:MENU
 
@@ -108,6 +106,8 @@ Q: Press Y to continue, N to repeat, or Fkey 12 to exit
 N:LESSON1_D11
 Q: Press Y to continue, N to repeat, or Fkey 12 to exit
 N:LESSON1_D12
+G:E_LESSON1
+
 *:S_LESSON2
 B:         Lesson 2: Erste Wortbildungen mit der Grundreihe
 T:
@@ -169,6 +169,8 @@ O:ja ja sass da als all das öl kafka las falk sass da als all
  :da das alls kafka las kalk fall saal falls all das öl ja ja 
 Q: Press Y to continue, N to repeat, or Fkey 12 to exit
 N:LESSON2_D7
+G:E_LESSON2
+
 *:S_LESSON3
 B:               Lesson 3: Die Buchstaben "e" und "i"
 T:
@@ -229,6 +231,8 @@ O:das da die sei jede jedes diese sei seife eides filiale eis
  :dies des seide dieses fidel lief des alles lies das kleides
 Q: Press Y to continue, N to repeat, or Fkey 12 to exit
 N:LESSON3_D7
+G:E_LESSON3
+
 *:S_LESSON4
 B:               Lesson 4: Die Buchstaben "g" und "h"
 T:
@@ -289,6 +293,8 @@ Q: Press Y to continue, N to repeat, or Fkey 12 to exit
 N:LESSON4_D6
 Q: Press Y to continue, N to repeat, or Fkey 12 to exit
 N:LESSON4_D7
+G:E_LESSON4
+
 *:S_LESSON5
 B:               Lesson 5: Die Buchstaben "w" und "o"
 T:
@@ -342,6 +348,8 @@ O:wieso lass sie wog diese kasse affe wog die waage log sowas
  :das wild floh es goss waldig eisig als die wiese wie willig
 Q: Press Y to continue, N to repeat, or Fkey 12 to exit
 N:LESSON5_D6
+G:E_LESSON5
+
 *:S_LESSON6
 B:               Lesson 6: Die Buchstaben "r" und "u"
 T:
@@ -401,6 +409,8 @@ I:(7)
 O:war luise wer ulli wer dario alles lief  als das regal fiel
 Q: Press Y to continue, N to repeat, or Fkey 12 to exit
 N:LESSON6_D7
+G:E_LESSON6
+
 *:S_LESSON7
 B:              Lesson 7: Wortübungen mit dem Bekannten
 T:
@@ -454,6 +464,8 @@ I:(6)
 O:falke eule uhu juhu also falls das so war  war es so klar
 Q: Press Y to continue, N to repeat, or Fkey 12 to exit
 N:LESSON7_D6
+G:E_LESSON7
+
 *:S_LESSON8
 B:               Lesson 8: Die Buchstaben "t" und "z"
 T:
@@ -518,6 +530,8 @@ Q: Press Y to continue, N to repeat, or Fkey 12 to exit
 N:LESSON8_D7
 Q: Press Y to continue, N to repeat, or Fkey 12 to exit
 N:LESSON8_D8
+G:E_LESSON8
+
 *:S_LESSON9
 B:          Lesson 9: Häufigkeitswörter - Schnelltippübung
 T:
@@ -575,6 +589,8 @@ Q: Press Y to continue, N to repeat, or Fkey 12 to exit
 N:LESSON9_D6
 Q: Press Y to continue, N to repeat, or Fkey 12 to exit
 N:LESSON9_D7
+G:E_LESSON9
+
 *:S_LESSON10
 B:               Lesson 10: Die Buchstaben "q" und "p"
 T:
@@ -643,6 +659,8 @@ I:(8)
 O:reprise die quelle des flusses die weserquelle europapokale
 Q: Press Y to continue, N to repeat, or Fkey 12 to exit
 N:LESSON10_D8
+G:E_LESSON10
+
 *:S_LESSON11
 B:               Lesson 11: Die Buchstaben "v" und "m"
 T:
@@ -703,6 +721,8 @@ I:(7)
 O:die katze sitzt im haus herum sie miaut zu laut verwahre es
 Q: Press Y to continue, N to repeat, or Fkey 12 to exit
 N:LESSON11_D7
+G:E_LESSON11
+
 *:S_LESSON12
 B:               Lesson 12: Die Buchstaben "b" und "n"
 T:
@@ -765,6 +785,8 @@ O:erbe ihres mannes aber die eigenen verse sind ebenso gut zu
  :lesen  ist heine vergessen  keine ahnung  ist heine bekannt
 Q: Press Y to continue, N to repeat, or Fkey 12 to exit
 N:LESSON12_D7
+G:E_LESSON12
+
 *:S_LESSON13
 B:                 Lesson 13: Das "c" und das Komma
 T:
@@ -831,6 +853,8 @@ Q: Press Y to continue, N to repeat, or Fkey 12 to exit
 N:LESSON13_D7
 Q: Press Y to continue, N to repeat, or Fkey 12 to exit
 N:LESSON13_D8
+G:E_LESSON13
+
 *:S_LESSON14
 B:                Lesson 14: Zum "x"ten Mal und Punkt
 T:
@@ -888,6 +912,8 @@ Q: Press Y to continue, N to repeat, or Fkey 12 to exit
 N:LESSON14_D6
 Q: Press Y to continue, N to repeat, or Fkey 12 to exit
 N:LESSON14_D7
+G:E_LESSON14
+
 *:S_LESSON15
 B:             Lesson 15: ASCII-ART -etwas Auflockerung
 T:
@@ -972,6 +998,8 @@ I:(10)
 O:x.x x.x x.x x.x x.x x.x x.x x.x x.x x.x x.x x.x x.x x.x x.x
 Q: Press Y to continue, N to repeat, or Fkey 12 to exit
 N:LESSON15_D10
+G:E_LESSON15
+
 *:S_LESSON16
 B:         Lesson 16: Der Buchstabe "y" und der Mittelstrich
 T:
@@ -1039,6 +1067,8 @@ Q: Press Y to continue, N to repeat, or Fkey 12 to exit
 N:LESSON16_D7
 Q: Press Y to continue, N to repeat, or Fkey 12 to exit
 N:LESSON16_D8
+G:E_LESSON16
+
 *:S_LESSON17
 B:               Lesson 17: Die Buchstaben "ä" und "ü"
 T:
@@ -1112,6 +1142,8 @@ Q: Press Y to continue, N to repeat, or Fkey 12 to exit
 N:LESSON17_D8
 Q: Press Y to continue, N to repeat, or Fkey 12 to exit
 N:LESSON17_D9
+G:E_LESSON17
+
 *:S_LESSON18
 B:              Lesson 18: Das "ß" (sprich: "Ess-zet")
 T:
@@ -1168,6 +1200,8 @@ O:hass, muss, misslingen, essbar, größer, schößlinge, mäßig,
  :planmäßig, regelmäßig, gemäß, das gefäß, stöße, die größte
 Q: Press Y to continue, N to repeat, or Fkey 12 to exit
 N:LESSON18_D6
+G:E_LESSON18
+
 *:S_LESSON19
 B:                    Lesson 19: GROSSSCHREIBUNG
 T:
@@ -1242,6 +1276,8 @@ I:(8)
 O:zeichen weiter.
 Q: Press Y to continue, N to repeat, or Fkey 12 to exit
 N:LESSON19_D8
+G:E_LESSON19
+
 *:S_LESSON20
 B:                  Lesson 20: Linux - meine Freude
 T:
@@ -1310,6 +1346,8 @@ I:(8)
 O:viel zu lernen.
 Q: Press Y to continue, N to repeat, or Fkey 12 to exit
 N:LESSON20_D8
+G:E_LESSON20
+
 *:S_LESSON21
 B:                      Lesson 21: Das Internet
 T:
@@ -1382,6 +1420,8 @@ O:so wurde es schnell ein Netz von Zehntausenden von Hosts.
  :Das ursprüngliche ARPAnet wurde zum Backbone des Internet.
 Q: Press Y to continue, N to repeat, or Fkey 12 to exit
 N:LESSON21_D8
+G:E_LESSON21
+
 *:S_LESSON22
 B:                         Lesson 22: Lesung
 T:
@@ -1453,6 +1493,8 @@ O:auch nicht zusammengebrochen sein. Dafür war das Geräusch
  :zu laut...
 Q: Press Y to continue, N to repeat, or Fkey 12 to exit
 N:LESSON22_D8
+G:E_LESSON22
+
 *:S_LESSON23
 B:                        Lesson 23: Gedicht
 T:
@@ -1505,6 +1547,8 @@ I:(6)
 O:gebastelten Gedichten, wie diesem.
 Q: Press Y to continue, N to repeat, or Fkey 12 to exit
 N:LESSON23_D6
+G:E_LESSON23
+
 *:S_LESSON24
 B:                Lesson 24: Die Zeichen "<" und ">"
 T:
@@ -1565,6 +1609,8 @@ Q: Press Y to continue, N to repeat, or Fkey 12 to exit
 N:LESSON24_D6
 Q: Press Y to continue, N to repeat, or Fkey 12 to exit
 N:LESSON24_D7
+G:E_LESSON24
+
 *:S_LESSON25
 B:                 Lesson 25: Die 1, das ! und das ?
 T:
@@ -1634,6 +1680,8 @@ O:<!-- Dies ist ein Kommentar in einem HTML-Quelltext -->
  :Willst Du noch mehr über die Bedeutung von ! und ? wissen?
 Q: Press Y to continue, N to repeat, or Fkey 12 to exit
 N:LESSON25_D8
+G:E_LESSON25
+
 *:S_LESSON26
 B:         Lesson 26: 5 8 - Prozent "%" und Klammer auf "("
 T:
@@ -1675,6 +1723,8 @@ O:In der Bash ist % ein Operator für Modulus-Operationen.
  :((((((((((((((((((((((((((((((((((((((((((((((((((((((((((
 Q: Press Y to continue, N to repeat, or Fkey 12 to exit
 N:LESSON26_D4
+G:E_LESSON26
+
 *:S_LESSON27
 B:         Lesson 27: 6 7 - Kaufmanns-und "&" und Slash "/"
 T:
@@ -1736,6 +1786,8 @@ O:Dies ist eine gültige Grundstruktur einer HTML-Seite mit
  :sehr wenig Inhalt.
 Q: Press Y to continue, N to repeat, or Fkey 12 to exit
 N:LESSON27_D7
+G:E_LESSON27
+
 *:S_LESSON28
 B:       Lesson 28: 4 9 - Dollarzeichen "$" und Klammer zu ")"
 T:
@@ -1787,6 +1839,8 @@ O:wird das Newline-Zeichen am Ende der Eingabe entfernt.
  :lesen und verarbeitet.
 Q: Press Y to continue, N to repeat, or Fkey 12 to exit
 N:LESSON28_D6
+G:E_LESSON28
+
 *:S_LESSON29
 B:     Lesson 29: 3 0 - Paragraph "§" und Gleichheitszeichen "="
 T:
@@ -1849,6 +1903,8 @@ I:(7)
 O:===========================================================
 Q: Press Y to continue, N to repeat, or Fkey 12 to exit
 N:LESSON29_D7
+G:E_LESSON29
+
 *:S_LESSON30
 B:       Lesson 30: 2 und Anführungsstriche "" (=Gänsefüßchen)
 T:
@@ -1903,6 +1959,8 @@ O:echo "Konnte den User nicht anlegen!"
  :das richtige sagen.
 Q: Press Y to continue, N to repeat, or Fkey 12 to exit
 N:LESSON30_D6
+G:E_LESSON30
+
 *:S_LESSON31
 B:             Lesson 31: Sonderzeichen ^ und ° ´ und `
 T:
@@ -1948,6 +2006,8 @@ O:  ° °
  :   `
 Q: Press Y to continue, N to repeat, or Fkey 12 to exit
 N:LESSON31_D5
+G:E_LESSON31
+
 *:S_LESSON32
 B:                 Lesson 32: Sonderzeichen + * # '
 T:
@@ -2009,6 +2069,8 @@ O:dacht wurde.
  :'Den Fummel haben sie wohl aus dem Schlussverkauf, oder?'
 Q: Press Y to continue, N to repeat, or Fkey 12 to exit
 N:LESSON32_D7
+G:E_LESSON32
+
 *:S_LESSON33
 B:      Lesson 33: Sitzung (ein Übungstext mit "Gänsefüßchen")
 T:
@@ -2077,6 +2139,8 @@ I:(8)
 O:losgeht." - "Siehste! Es wirkt schon!" ;-)
 Q: Press Y to continue, N to repeat, or Fkey 12 to exit
 N:LESSON33_D8
+G:E_LESSON33
+
 *:S_LESSON34
 B:                 Lesson 34: <Tab> und <Backspace>
 T:
@@ -2141,6 +2205,8 @@ O:Bär		Belinda		Waldburg	32456
  :=======================================================
 Q: Press Y to continue, N to repeat, or Fkey 12 to exit
 N:LESSON34_D7
+G:E_LESSON34
+
 *:S_LESSON35
 B:             Lesson 35: Die Drittbelegung: |@²³{[]}\~
 T:
@@ -2242,6 +2308,8 @@ Q: Press Y to continue, N to repeat, or Fkey 12 to exit
 N:LESSON35_D11
 Q: Press Y to continue, N to repeat, or Fkey 12 to exit
 N:LESSON35_D12
+G:E_LESSON35
+
 
 # jump-table
 *:E_LESSON1

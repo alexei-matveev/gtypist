@@ -82,10 +82,9 @@ my $TTFILE = undef;
 my $line = undef;
 while (-f "$datadir/lektion.$lesson_counter")
 {
-    print TYPFILE "*:S_LESSON$lesson_counter\n";
-
     open(TTFILE, "$datadir/lektion.a$lesson_counter") ||
 	die "Couldn't open $datadir/lektion.a$lesson_counter for reading: $!";
+    print TYPFILE "*:S_LESSON$lesson_counter\n";
     print TYPFILE getBanner($lesson_names[$lesson_counter]);
     print TYPFILE "T:\n";
     while (defined($line = <TTFILE>))
@@ -98,6 +97,7 @@ while (-f "$datadir/lektion.$lesson_counter")
 
     convert_lesson($lesson_counter, "$datadir/lektion.$lesson_counter",
 		   \*TYPFILE);
+    print TYPFILE "G:E_LESSON$lesson_counter\n\n";
 
     ++$lesson_counter;
 }
