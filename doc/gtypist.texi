@@ -258,6 +258,12 @@ Prohibit the user from skipping lessons or exiting from lessons via
 You also have to set the environment variable @env{LANG} if you
 want to run gtypist in your native language. @xref{Environment Variables}.
 
+@noindent
+In some languages like French, some interface messages are longer than
+in English. Therefore, you may need to make your terminal larger
+before invoking the tool. Otherwise, the text on the lower left
+may overlap with the string on the lower right.
+
 @strong{Examples:}
 
 @noindent
@@ -723,8 +729,9 @@ GNU Typist uses the following environment variables:
 GNU Typist offers Native Language Support (NLS) with support of the
 gettext library, this means that if your system supports it, the
 language of the messages shown by gtypist can be chosen. By now
-gtypist is distributed with messages in English, Spanish, German and
-Finnish. To use a particular NLS use the environment variable LANG and
+gtypist is distributed with messages in English, Finnish, French,
+German and Spanish.
+To use a particular NLS use the environment variable LANG and
 set it to the appropriate 'LL_CC' combination where 'LL' is an ISO 639
 two-letter language code and 'CC' is an ISO 3166 two-letter country
 code (e.g. 'es_ES' for Spain and 'de_DE' for Germany). In some systems

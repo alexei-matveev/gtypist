@@ -1,3 +1,8 @@
+2002-01-19  Michael Opdenacker <michaelo@gnu.org>
+
+	* gtypist.texi: Added French to the list of interface languages.
+	Recommended to use a wider terminal for languages such as French.
+
 2001-11-03  Felix Natter  <f.natter@ndh.net>
 
 	* gtypist.texi (many nodes): changed the node-names to be shorter
