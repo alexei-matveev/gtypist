@@ -1,14 +1,14 @@
-# SOME DESCRIPTIVE TITLE.
-# Copyright (C) YEAR Free Software Foundation, Inc.
+# Translation of gtypist.c (GNU Typist)
+# Copyright (C) 2001, 2002 Free Software Foundation, Inc.
 # Hynek Hanke <hanke@volny.cz>, 2001.
 #
 msgid ""
 msgstr ""
-"Project-Id-Version: gtypist 2.4.1POT-Creation-Date: 2001-09-18 21:37+0200\n"
-"POT-Creation-Date: 2002-04-08 14:02+0200\n"
-"PO-Revision-Date: 2001-11-17 12:32+0100\n"
-"Last-Translator: Hynek 0A4h Hanke <hanke@volny.cz>\n"
-"Language-Team: \n"
+"Project-Id-Version: gtypist 2.5\n"
+"POT-Creation-Date: 2002-09-18 21:37+0200\n"
+"PO-Revision-Date: 2001-04-11 23:15+0100\n"
+"Last-Translator: Hynek "0A4h" Hanke <hanke@volny.cz>\n"
+"Language-Team: Czech\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=iso-8859-2\n"
 "Content-Transfer-Encoding: 8bit\n"
@@ -75,7 +75,7 @@ msgstr "chybí '%'"
 #: gtypist.c:1476
 #, no-c-format
 msgid "'%' must immediately follow value"
-msgstr "po hodnotì musí následovat '%'"
+msgstr "po hodnotì musí okam¾itì následovat '%'"
 
 #: gtypist.c:1485
 msgid "overflow in do_error_max_set"
@@ -94,7 +94,7 @@ msgid ""
 "default maximum error percentage (default 3.0); valid values are between 0.0 "
 "and 100.0"
 msgstr ""
-"defaultní maximální poèet chyb (standardnì 3.0); platnéhodnoty jsou mezi 0.0 "
+"defaultní maximální poèet chyb (standardnì 3.0); platné hodnoty jsou mezi 0.0 "
 "a 100.0"
 
 #: gtypist.c:1731
@@ -110,7 +110,7 @@ msgid ""
 "cursor flash period P*.1 sec (default 10); valid  values are between 0 and "
 "512; this is ignored if -t is specified"
 msgstr ""
-"perioda blikání kurzoru P*0,1 sekund (defaultnì 10); platné hodnotyjso mezi "
+"perioda blikání kurzoru P*0,1 sekund (defaultnì 10); platné hodnoty jsou mezi "
 "0 a 512; parametr je ignorován, pokud bylo zadáno -t."
 
 #: gtypist.c:1734
@@ -127,7 +127,7 @@ msgstr "to samé jako -s a --silent"
 
 #: gtypist.c:1737
 msgid "start the lesson at label 'L'"
-msgstr "spus» lekci na návìstí L"
+msgstr "spus» lekci na návìstí 'L'"
 
 #: gtypist.c:1738
 msgid "try to mimic word processors"
@@ -135,7 +135,7 @@ msgstr "emuluj textový procesor"
 
 #: gtypist.c:1739
 msgid "forbid the user to skip exercises"
-msgstr ""
+msgstr "zaka¾ u¾ivateli pøeskakovat cvièení"
 
 #: gtypist.c:1740
 msgid "print this message"
@@ -143,7 +143,7 @@ msgstr "vytiskni tuto zprávu"
 
 #: gtypist.c:1741
 msgid "output version information and exit"
-msgstr "vytisknout informace o verzi a skoncit"
+msgstr "vytisknout informace o verzi a skonèit"
 
 #: gtypist.c:1745
 msgid ""
@@ -190,7 +190,7 @@ msgstr "Pøíklady"
 
 #: gtypist.c:1761
 msgid "To run the default lesson in english `gtypist.typ'"
-msgstr "Spustit defaultní lekci v èe¹tinì gtypist.typ"
+msgstr "Ke spu¹tìní defaultní lekce v angliètinì gtypist.typ"
 
 #: gtypist.c:1763
 msgid "To run the lesson in spanish"
@@ -199,13 +199,16 @@ msgstr "Spustit lekci ve ¹panìl¹tinì"
 #: gtypist.c:1765
 msgid ""
 "To instruct gtypist to look for lesson `bar.typ' in a non standard directory"
-msgstr "Prohledává pro bar.typ nestandardní adresáø"
+msgstr ""
+"Prohledává pro bar.typ nestandardní adresáø"
 
 #: gtypist.c:1767
 msgid ""
 "To run the lesson in the file `test.typ' of directory `temp', starting at "
 "label `TEST1', using the terminal's cursor, and run silently"
 msgstr ""
+"Spustí lekcii `test.typ' z adresáøe `temp', zaène na návìstí `TEST1',"
+"pou¾ij terminálový kurzor a pracuj v tichém módu"
 
 #: gtypist.c:1768
 msgid "Report bugs to bug-gtypist@gnu.org"
@@ -214,12 +217,12 @@ msgstr "Oznamte chyby na bug-gtypist@gnu.org."
 #: gtypist.c:1807
 #, c-format
 msgid "%s: invalid error-max value\n"
-msgstr ""
+msgstr "%s: neplatná hodnota error-max\n"
 
 #: gtypist.c:1823
 #, c-format
 msgid "%s: invalid curs-flash value\n"
-msgstr ""
+msgstr "%s: neplatná hodnota curs-flash\n"
 
 #: gtypist.c:1834
 #, c-format
@@ -229,11 +232,11 @@ msgstr "%s: neplatné èíslo barvy\n"
 #: gtypist.c:1847
 #, c-format
 msgid "%s: internal error: malloc\n"
-msgstr ""
+msgstr "%s: interní chyba: malloc\n"
 
 #: gtypist.c:1865
 msgid "Written by Simon Baldwin"
-msgstr "Napsáno Simonem Baldwinem. Èeský tutoriál Hynek Hanke."
+msgstr "Napsáno Simonem Baldwinem."
 
 #: gtypist.c:1871 gtypist.c:1878
 #, c-format
@@ -283,20 +286,20 @@ msgstr "Nepro¹el jste tímto testem. Musíte se vrátit na %s."
 #: gtypist.c:1942
 #, fuzzy
 msgid "Press R to repeat, N for next exercise or E to exit"
-msgstr "Stisknutím Y mù¾ete pokraèovat, nebo N pro opakování. F12 -- konec."
+msgstr "Stisknìte O pro opakování, D pro dal¹í cvièení èi K pro konec."
 
 #: gtypist.c:1946
 #, fuzzy
 msgid "Press R to repeat or E to exit"
-msgstr "Stisknutím Y mù¾ete pokraèovat, nebo N pro opakování. F12 -- konec."
+msgstr "Stisknìte O pro opakování nebo K pro konec"
 
 #: gtypist.c:1949
 msgid "Are you sure you want to exit this lesson? [Y/N]"
-msgstr ""
+msgstr "Jste si jist/a, ¾e chcete opustit tuto lekci? [A/N]"
 
 #: gtypist.c:1953
 msgid "Sorry, gtypist is configured to forbid skipping exercises."
-msgstr ""
+msgstr "Omlouvám se, ale jsem konfigurován, abych nedovolil pøeskakovat."
 
 #: gtypist.c:1958
 #, c-format
@@ -318,8 +321,8 @@ msgid "Y/N"
 msgstr "A/N"
 
 #: gtypist.c:1983
-msgid "R/N/E"
-msgstr ""
+msgid  "R/N/E"
+msgstr "O/D/K"
 
 #: gtypist.c:2034
 msgid "can't find or open file"
