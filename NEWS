@@ -7,6 +7,7 @@
 Version 2.7 - September 2003
 	- New menu-based ncurses interface, replacing function keys.
 	  Much more reliable and user friendly!
+	- Make a few changes in the lesson file syntax to support menus.
 	- Built with automake-1.7.7, texinfo-4.6 and gettext-0.12.1
 	- New Traditional Chinese interface from OLS3 <ols3@www.tnc.edu.tw>
 	- New Dutch interface from J.M. Cogels <jcogels@chello.nl>
