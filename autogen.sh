@@ -26,7 +26,3 @@ autoheader
 automake --add-missing
 autoconf
 
-# Build documentation files
-
-cd doc
-makeinfo gtypist.texi -o gtypist.info
