@@ -1,3 +1,9 @@
+2002-04-05  Felix Natter  <fnatter@gmx.net>
+
+	* gtypist.c: add /* xgettext: no-c-format */ comments so that
+	xgettext does not thing that '%' is part of a format-string
+	(suggested by Bruno Haible)
+
 2002-03-31  Felix Natter  <fnatter@gmx.net>
 
 	* Makefile.am: add typefortune.1

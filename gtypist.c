@@ -1460,13 +1460,17 @@ do_error_max_set( FILE *script, char *line )
 	    --data;
 	  }
 	if (*data == '%')
+	  /* xgettext: no-c-format */
 	  fatal_error( _("'*' must immediately follow '%'"), copy_of_line );
 	else
+	  /* xgettext: no-c-format */
 	  fatal_error( _("missing '%'"), copy_of_line );
       } else
+	/* xgettext: no-c-format */
 	fatal_error( _("missing '%'"), copy_of_line );
     }
     if (isspace( *(data - 1) ))
+      /* xgettext: no-c-format */
       fatal_error( _("'%' must immediately follow value"), copy_of_line );
     /* remove '%' */
     *data = '\0';

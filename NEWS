@@ -8,6 +8,9 @@ Version 2.6 - April/2002
 	- new `typefortune' (perl-)script which creates lessons from `fortune'
 	(see the new section "Using typefortune" in the manual)
 
+	TODO: commit these !
+	- new lesson for Czec + Czec translation
+
 Version 2.5.1 - February/2002
 	- fix a bug in --help output
 	- small documentation fixes
