@@ -1,5 +1,7 @@
 2003-04-06  Felix Natter  <fnatter@gmx.net>
 
+	* configur.bat: include the new modules
+
 	* tools/typcombine: adapt to M:
 
 2003-03-31  Felix Natter  <fnatter@gmx.net>
