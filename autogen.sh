@@ -24,7 +24,7 @@
 (gettext --version) < /dev/null > /dev/null 2>&1 || {
     echo
     echo "**Error**: You must have \`gettext' installed."
-    echo "Get ftp://ftp.gnu.org/gnu/gettext/gettext-0.11.5.tar.gz"
+    echo "Get ftp://ftp.gnu.org/gnu/gettext/gettext-0.12.1.tar.gz"
     echo "(or a newer version if it is available)"
     exit 1
 }
