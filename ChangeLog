@@ -4,9 +4,8 @@
 	fix a bug in configure.in: AC_CHECK_LIB doesn't call
 	AC_DEFINE so now we do it explicitly:
 	AC_CHECK_LIB(curses, wbkgdset,
-	  [AC_DEFINE(HAVE_LIBCURSES)
+	  [AC_DEFINE(HAVE_LIBCURSES, 1, [Is curses available])
 	    LIBS="-lcurses $LIBS"])
-	* add #undef HAVE_LIBCURSES to acconfig.h
 
 
 2002-06-28  Hynek Hanke  <hanke@volny.cz>
