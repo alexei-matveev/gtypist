@@ -16,9 +16,6 @@
 #define max(x,y) (((x)>(y)) ? (x) : (y))
 #define min(x,y) (((x)<(y)) ? (x) : (y))
 
-// This is from gtypist.c.
-extern char *fkey_bindings [12];
-
 // This history list is needed in order to get the entire menu navigation
 // working
 typedef struct _MenuNode
@@ -139,15 +136,8 @@ char *do_menu (FILE *script, char *line)
 
   append_menu_history (__last_label);
   
-  // Bind our former F12 key to the current menu.
-  if (fkey_bindings [11])
-     free (fkey_bindings [11]);
-  fkey_bindings [11] = strdup (__last_label);
-  if (! fkey_bindings [11])
-  {
-     perror ("strdup");
-     fatal_error (_("internal error in strdup"), line);
-  }
+  // Bind our former F12 key to the current menu
+  bind_F12 (__last_label);
 
 	data = buffer_command (script, line);
   /* e.g.:
@@ -294,7 +284,7 @@ char *do_menu (FILE *script, char *line)
   mvwaddstr (stdscr, LINES - 1, 0,
 		_(
 "Use arrowed keys to move around, "
-"SPACE or ENTER to select and ESCAPE to go back")
+"SPACE or RETURN to select and ESCAPE to go back")
 		);
   
   do
@@ -368,6 +358,9 @@ char *do_menu (FILE *script, char *line)
 	  break;
 
 	case '\n':
+#ifdef DJGPP
+	case '\x0D':
+#endif
 	case ASCII_SPACE:
 	  ch = KEY_ENTER;
 	case KEY_ENTER:

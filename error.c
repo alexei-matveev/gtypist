@@ -17,9 +17,8 @@ char *argv0 = NULL;
   of curses etc, and printing a complaint
   message that is already translated to the appropriate language 
 */
-void 
-fatal_error( char *message, char *line ) {
-
+void fatal_error (const char *message, const char *line)
+{
   /* stop curses */
   /* if ( cl_colour && has_colors() ) */
   wbkgdset( stdscr, 0 );

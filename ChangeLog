@@ -1,3 +1,13 @@
+2003-07-03	Dmitry Rutsky	<rutsky@school.ioffe.rssi.ru>
+
+	* error.[ch], gtypist.c, cursmenu.c:  some cleanups.
+	* gtypist.c:  new option `--always-sure' was added to suppress stupid
+	  confirmations.  Bottom-line messages was tweaked a little to improve
+	  appearance (spaces at the edges), "Press Return..." now works as
+	  "Press RETURN or SPACE to continue, ESC to return to the menu".
+	* cursmenu.c:  add '\x0A' for working RETURN key in DOS build.
+	  
+
 2003-07-02	Dmitry Rutsky	<rutsky@school.ioffe.rssi.ru>
 
 	* curmenu.c: Now we do not erase the banner, 

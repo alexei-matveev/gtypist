@@ -138,7 +138,7 @@ static bool     global_on_failure_label_persistent = FALSE;
 
 /* a global area for associating function keys with labels */
 #define NFKEYS			12		/* num of function keys */
-char	*fkey_bindings[ NFKEYS ] =
+static char	*fkey_bindings[ NFKEYS ] =
   { NULL, NULL, NULL, NULL, NULL, NULL,
     NULL, NULL, NULL, NULL, NULL, NULL };
 /* table of pseudo-function keys, to allow ^Q to double as Fkey1, etc */
@@ -151,11 +151,14 @@ static	char	pfkeys[ NFKEYS ] =
 
 #define MAX(A,B) ((A)<(B)?(B):(A))
 
+
+static bool user_is_always_sure = FALSE;
+
 /* prototypes */
 
 static int getch_fl( char cursor_char );
 static void index_labels( FILE *script );
-static void wait_user( char *message, char *mode );
+static void wait_user (FILE *script, char *message, char *mode );
 static void display_speed( int total_chars, long elapsed_time, int errcount );
 static void do_keybind( FILE *script, char *line );
 static void do_tutorial( FILE *script, char *line );
@@ -177,6 +180,25 @@ static void print_usage_item( char *op, char *lop, char *help,
 static void print_help();
 static void parse_cmdline( int argc, char **argv );
 static void catcher( int signal );
+
+void bind_F12 (const char *label)
+{
+  if (fkey_bindings [11])
+     free (fkey_bindings [11]);
+  fkey_bindings [11] = strdup (label);
+  if (! fkey_bindings [11])
+  {
+       perror ("strdup");
+       fatal_error (_("internal error in strdup"), label);
+  }
+}
+
+// Return to the last F12-binded location
+static inline void escape (FILE *script)
+{
+   if (fkey_bindings [11])
+      seek_label (script, fkey_bindings [11], NULL); 
+}
 
 /*
   getch() that does a flashing cursor; some xterms seem to be
@@ -333,8 +355,7 @@ static void index_labels( FILE *script ) {
 /*
   wait for a nod from the user before continuing
 */
-static void
-wait_user( char *message, char *mode )
+static void wait_user (FILE *script, char *message, char *mode)
 {
   int	resp;			/* response character */
 
@@ -346,8 +367,13 @@ wait_user( char *message, char *mode )
   ADDSTR_REV( message );
 
   do {
-    resp = getch_fl( ASCII_NULL );
-  } while (resp != ASCII_ENTER);
+    resp = getch_fl (ASCII_NULL);
+    if (resp == ASCII_ESC)
+    {
+       escape (script);
+       break;
+    }
+  } while (resp != ASCII_ENTER && resp != ASCII_SPACE);
 
   /* clear the message line */
   move( MESSAGE_LINE, 0 ); clrtoeol();
@@ -455,7 +481,7 @@ do_tutorial( FILE *script, char *line ) {
   /* wait for a return, unless the next command is a query,
      when we can skip it to save the user keystrokes */
   if ( SCR_COMMAND( line ) != C_QUERY )
-    wait_user( WAIT_MESSAGE, MODE_TUTORIAL );
+    wait_user (script, WAIT_MESSAGE, MODE_TUTORIAL);
   global_prior_command = C_TUTORIAL;
 }
 
@@ -555,8 +581,10 @@ do_drill( FILE *script, char *line ) {
 	  c = (char)rc;
 	  /* this is necessary for DOS: when using raw(), pdcurses 2.4's
 	     getch() returns 0x0D on DOS/Windows  */
+#ifdef DJGPP
 	  if ( c == 0x0D )
 	    rc = c = 0x0A;
+#endif
 
 	  while ( rc == KEY_BACKSPACE
 		  || c == ASCII_BS || c == ASCII_DEL ) 
@@ -664,7 +692,7 @@ do_drill( FILE *script, char *line ) {
 	      (float)errors/(float)chars_typed > global_error_max/100.0) 
 	    {
 	      sprintf( message, ERROR_TOO_HIGH_MSG, global_error_max );
-	      wait_user( message, MODE_DRILL );
+	      wait_user (script, message, MODE_DRILL);
 
 	      /* check for F-command */
 	      if (global_on_failure_label != NULL)
@@ -679,7 +707,7 @@ do_drill( FILE *script, char *line ) {
 		  /* reset value unless persistent */
 		  if (!global_on_failure_label_persistent)
 		    global_on_failure_label = NULL;
-		  wait_user( message, MODE_DRILL );
+		  wait_user (script, message, MODE_DRILL);
 		  seek_done = TRUE;
 		  break;
 		}
@@ -889,7 +917,7 @@ do_speedtest( FILE *script, char *line ) {
 	      (float)errors/(float)chars_typed > global_error_max/100.0) 
 	    {
 	      sprintf( message, ERROR_TOO_HIGH_MSG, global_error_max );
-	      wait_user( message, MODE_SPEEDTEST );
+	      wait_user (script, message, MODE_SPEEDTEST);
 
 	      /* check for F-command */
 	      if (global_on_failure_label != NULL)
@@ -904,7 +932,7 @@ do_speedtest( FILE *script, char *line ) {
 		  /* reset value unless persistent */
 		  if (!global_on_failure_label_persistent)
 		    global_on_failure_label = NULL;
-		  wait_user( message, MODE_SPEEDTEST );
+		  wait_user (script, message, MODE_SPEEDTEST);
 		  seek_done = TRUE;
 		  break;
 		}
@@ -1071,6 +1099,9 @@ do_query_simple ( char *text )
 {
   char resp;
 
+  if (user_is_always_sure)
+     return TRUE;
+  
   /* display the prompt */
   move( MESSAGE_LINE, 0 ); clrtoeol();
   move( MESSAGE_LINE, COLS - strlen( MODE_QUERY ) - 2 );
@@ -1475,7 +1506,8 @@ print_help()
       "-k",
       "-i",
       "-h",
-      "-v" };
+      "-v",
+      "-S"};
   char *lop[]= 
     { "--max-error=%",
       "--notimer",
@@ -1489,7 +1521,8 @@ print_help()
       "--no-skip",
       "--show-errors",
       "--help",
-      "--version" };
+      "--version",
+      "--always-sure"};
   char *help[] = 
     { 
       _("default maximum error percentage (default 3.0); valid values are between 0.0 and 100.0"),
@@ -1504,7 +1537,8 @@ print_help()
       _("forbid the user to skip exercises"),
       _("highlight errors with reverse video"),
       _("print this message"),
-      _("output version information and exit") };
+      _("output version information and exit"),
+      _("do not ask confirmation questions")};
   
   int loop;
   
@@ -1557,10 +1591,11 @@ parse_cmdline( int argc, char **argv ) {
     { "show-errors",    no_argument, 0, 'i' },
     { "help",		no_argument, 0, 'h' },
     { "version",	no_argument, 0, 'v' },
+    { "always-sure",	no_argument, 0, 'S' },
     { 0, 0, 0, 0 }};
 
   /* process every option */
-  while ( (c=getopt_long( argc, argv, "e:ntf:c:sql:wkihv",
+  while ( (c=getopt_long( argc, argv, "e:ntf:c:sql:wkihvS",
 			  long_options, &option_index )) != -1 ) 
     {
       switch (c)
@@ -1635,6 +1670,9 @@ parse_cmdline( int argc, char **argv ) {
 	  printf( "%s\n", _("Written by Simon Baldwin"));
 	  exit( 0 );
 	  break;
+	case 'S':
+	  user_is_always_sure = TRUE;
+	  break;
 	case '?':
 	default:
 	  fprintf( stderr,
@@ -1698,29 +1736,30 @@ This program is released under the GNU General Public License.");
   MODE_DRILL=_("  Drill   ");
   /* this string is displayed in the mode-line when running a speedtest */
   MODE_SPEEDTEST=_("Speed test");
-  WAIT_MESSAGE=_(" Press Return to continue... ");
+  WAIT_MESSAGE=
+	  _(" Press RETURN or SPACE to continue, ESC to return to the menu ");
   /* this message is displayed when the user has failed in a [DS]: drill */
   ERROR_TOO_HIGH_MSG=
-    _("Your error-rate is too high. You have to achieve %.1f%%.");
+    _(" Your error-rate is too high. You have to achieve %.1f%%. ");
   /* this message is displayed when the user has failed in a [DS]: drill,
      and an F:<LABEL> ("on failure label") is in effect */
   SKIPBACK_VIA_F_MSG=
-    _("You failed this test, so you need to go back to %s.");
+    _(" You failed this test, so you need to go back to %s. ");
   /* this is used for repeat-queries. you can translate the keys as well
      (if you translate msgid "R/N/E" accordingly) */
   REPEAT_NEXT_EXIT_MSG= 
-	_("Press R to repeat, N for next exercise or E to exit");
+	_(" Press R to repeat, N for next exercise or E to exit ");
   /* this is used for repeat-queries with --no-skip. you can translate
      the keys as well (if you translate msgid "R/N/E" accordingly) */
   REPEAT_EXIT_MSG= 
-	_("Press R to repeat or E to exit");
+	_(" Press R to repeat or E to exit ");
   /* This is used make the user confirm (E)xit in REPEAT_NEXT_EXIT_MSG */
   CONFIRM_EXIT_LESSON_MSG=
-    _("Are you sure you want to exit this lesson? [Y/N]");
+    _(" Are you sure you want to exit this lesson? [Y/N] ");
   /* This message is displayed if the user tries to skip a lesson
      (ESC ESC) and --no-skip is specified */
   NO_SKIP_MSG= 
-    _("Sorry, gtypist is configured to forbid skipping exercises.");
+    _(" Sorry, gtypist is configured to forbid skipping exercises. ");
   /* this must be adjusted to the right with one space at the end.
      Leading whitespace is important because it is displayed in reverse
      video because it must be aligned with the next two messages 
@@ -1819,9 +1858,9 @@ This program is released under the GNU General Public License.");
 
   // Quick hack to get rid of the escape delays
 #ifdef __NCURSES_H 
-  ESCDELAY = 0;
+  ESCDELAY = 1;
 #endif
-  
+
   /* set up colour pairs if possible */
   if ( cl_colour && has_colors() ) 
     {
@@ -1852,3 +1891,4 @@ This program is released under the GNU General Public License.");
   /* for lint... */
   return( 0 );
 }
+
