@@ -4,8 +4,9 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: GNU Typist 2.6\n"
-"POT-Creation-Date: 2003-08-28 23:25+0000\n"
-"PO-Revision-Date: 2003-09-23 10:10+0300\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2003-09-23 15:40+0000\n"
+"PO-Revision-Date: 2003-09-24 13:25+0300\n"
 "Last-Translator: Kimmo Surakka <kusti@iki.fi>\n"
 "Language-Team: Finnish <fi@li.org>\n"
 "MIME-Version: 1.0\n"
@@ -13,7 +14,6 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 
 #: gtypist.c:249
-#, fuzzy
 msgid "internal error in strdup"
 msgstr "sis‰inen virhe strdup:ssa"
 
@@ -82,8 +82,8 @@ msgid ""
 "default maximum error percentage (default 3.0); valid values are between 0.0 "
 "and 100.0"
 msgstr ""
-"virheiden enimm‰ism‰‰r‰n oletusarvo prosentteina (oletuksena 3.0); "
-"lailliset arvot ovat 0.0:n ja 100.0:n v‰liss‰"
+"virheiden enimm‰ism‰‰r‰n oletusarvo prosentteina (oletuksena 3.0); lailliset "
+"arvot ovat 0.0:n ja 100.0:n v‰liss‰"
 
 #: gtypist.c:1620
 msgid "turn off WPM timer in drills"
@@ -242,9 +242,9 @@ msgid "%s:  argument format is incorrect\n"
 msgstr "%s: argumentin muoto on virheellinen\n"
 
 #: gtypist.c:1751
-#, fuzzy, c-format
+#, c-format
 msgid "%s:  incorrect colour values\n"
-msgstr "%s: virheelinen v‰rim‰‰ritysparametrin arvo\n"
+msgstr "%s: virheellinen v‰rim‰‰ritysparametrin arvo\n"
 
 #: gtypist.c:1765
 #, c-format
@@ -297,22 +297,20 @@ msgid " Press RETURN or SPACE to continue, ESC to return to the menu "
 msgstr " Paina Return tai v‰lilyˆnti jatkaaksesi, Esc palataksesi valikkoon "
 
 #: gtypist.c:1858
-#, fuzzy, c-format
+#, c-format
 msgid " Your error-rate is too high. You have to achieve %.1f%%. "
-msgstr "Virhetiheytesi on liian suuri. Virheit‰ saa olla enint‰‰n %1f%%."
+msgstr " Virhetiheytesi on liian suuri. Virheit‰ saa olla enint‰‰n %.1f%%. "
 
 #: gtypist.c:1862
-#, fuzzy, c-format
+#, c-format
 msgid " You failed this test, so you need to go back to %s. "
 msgstr " Et l‰p‰issyt koetta, sinun on palattava kohtaan %s. "
 
 #: gtypist.c:1866
-#, fuzzy
 msgid " Press R to repeat, N for next exercise or E to exit "
 msgstr " Paina T toistaaksesi, J jatkaaksesi tai L lopettaaksesi "
 
 #: gtypist.c:1870
-#, fuzzy
 msgid " Press R to repeat or E to exit "
 msgstr " Paina T toistaaksesi tai L lopettaaksesi "
 
@@ -368,7 +366,6 @@ msgid "line"
 msgstr "rivi"
 
 #: script.c:50
-#, fuzzy
 msgid "internal error: strdup"
 msgstr "sis‰inen virhe: strdup"
 
@@ -394,4 +391,3 @@ msgstr ""
 
 #~ msgid " Press Return to continue... "
 #~ msgstr " Paina Return jatkaaksesi... "
-
