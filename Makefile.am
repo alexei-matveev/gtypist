@@ -11,7 +11,7 @@ SUBDIRS= po lessons tools doc
 
 EXTRA_DIST = typefortune gtypist.1 typefortune.1 \
 	configur.bat version.sh configur.bat.in autogen.sh \
-	INSTALL.in TODO 
+	INSTALL.in TODO QUESTIONS
 
 bin_PROGRAMS = gtypist
 bin_SCRIPTS = typefortune

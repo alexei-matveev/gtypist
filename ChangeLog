@@ -7,6 +7,8 @@
 	* gettext.h: removed from CVS
 	* configure.in: Should now work when both ncurses and curses
           are installed, on GNU/Solaris for example.
+	* QUESTIONS: renaming of the StandardQuestions file. Now
+	  distributed in the source package.
 
 2003-08-28  Rob Leslie  <rob@mars.org>
 
