@@ -64,7 +64,7 @@ N:_D_R_L1
 I:(1) Home Row Exercises
 *:_D_R_L2
 #                                                              ../orig/d.typ:28
-O:aoeu ueoa aoeui snth htns snthd uihd uihd
+D:aoeu ueoa aoeui snth htns snthd uihd uihd
  :asonetuhid asonetuhid dihutenosa dihutenosa
 Q: Press Y to continue, N to repeat, or Fkey12 to exit 
 N:_D_R_L2
@@ -73,7 +73,7 @@ N:_D_R_L2
 I:(2)
 *:_D_R_L3
 #                                                              ../orig/d.typ:30
-O:a s o n e t u h i d  a s o n e t u h i d
+D:a s o n e t u h i d  a s o n e t u h i d
 Q: Press Y to continue, N to repeat, or Fkey12 to exit 
 N:_D_R_L3
 
@@ -81,7 +81,7 @@ N:_D_R_L3
 I:(3)
 *:_D_R_L4
 #                                                              ../orig/d.typ:32
-O:d i h u t e n o s a  d i h u t e n o s a
+D:d i h u t e n o s a  d i h u t e n o s a
 Q: Press Y to continue, N to repeat, or Fkey12 to exit 
 N:_D_R_L4
 
@@ -89,7 +89,7 @@ N:_D_R_L4
 I:(4)
 *:_D_R_L5
 #                                                              ../orig/d.typ:35
-O:as an at ah ad aa ao ae au ai os on ot oh od oi ou oe oo oa
+D:as an at ah ad aa ao ae au ai os on ot oh od oi ou oe oo oa
  :es en et eh ed ea eo ee eu ei us un ut uh ud ui uu ue uo ua
 Q: Press Y to continue, N to repeat, or Fkey12 to exit 
 N:_D_R_L5
@@ -98,7 +98,7 @@ N:_D_R_L5
 I:(5)
 *:_D_R_L6
 #                                                              ../orig/d.typ:38
-O:his hat is an aid in the hot sun
+D:his hat is an aid in the hot sun
  :in his sad sod hut he sat on his hen
 Q: Press Y to continue, N to repeat, or Fkey12 to exit 
 N:_D_R_L6
@@ -107,7 +107,7 @@ N:_D_R_L6
 I:(6)
 *:_D_R_L7
 #                                                              ../orig/d.typ:41
-O:sue did not use his hoe and tin hat
+D:sue did not use his hoe and tin hat
  :dan did not see the dot on his tie as he hid his tan hat
 Q: Press Y to continue, N to repeat, or Fkey12 to exit 
 N:_D_R_L7
@@ -116,7 +116,7 @@ N:_D_R_L7
 I:(7)
 *:_D_R_L8
 #                                                              ../orig/d.typ:46
-O:ada add ado aha aid ann dad dan dee den did die din don dot dud
+D:ada add ado aha aid ann dad dan dee den did die din don dot dud
  :due dun duo eda end had has hat hen hid his hit hod hoe hot hue
  :hut ian ida inn ion its nat ned net nod not nun nut odd ode out
  :sat sit sod son sot sun tan tat tee ten tho tit toe ton too tot
@@ -127,7 +127,7 @@ N:_D_R_L8
 I:(8)
 *:_D_R_L9
 #                                                              ../orig/d.typ:48
-O:i do as i do and the end is not as sad as the one sid had
+D:i do as i do and the end is not as sad as the one sid had
 Q: Press Y to continue, N to repeat, or Fkey12 to exit 
 N:_D_R_L9
 
@@ -151,7 +151,7 @@ N:_D_R_L10
 I:(1) Review
 *:_D_R_L11
 #                                                              ../orig/d.typ:57
-O:een ent est ett hin hou ith ion oth sen tha thi tio tte thu
+D:een ent est ett hin hou ith ion oth sen tha thi tio tte thu
 Q: Press Y to continue, N to repeat, or Fkey12 to exit 
 N:_D_R_L11
 
@@ -159,7 +159,7 @@ N:_D_R_L11
 I:(2)
 *:_D_R_L12
 #                                                              ../orig/d.typ:60
-O:Ada An Ana Ann Dad Dan Dee Ed Eta
+D:Ada An Ana Ann Dad Dan Dee Ed Eta
  :Dan Nan Nat Ned Sid Sue Tad Ted Tod
 Q: Press Y to continue, N to repeat, or Fkey12 to exit 
 N:_D_R_L12
@@ -168,7 +168,7 @@ N:_D_R_L12
 I:(3)
 *:_D_R_L13
 #                                                              ../orig/d.typ:63
-O:The sad tots sat on a tan seat in his neat tent and ate ten nuts
+D:The sad tots sat on a tan seat in his neat tent and ate ten nuts
  :On his date Otis had a thin suit and no tint on his shoes
 Q: Press Y to continue, N to repeat, or Fkey12 to exit 
 N:_D_R_L13
@@ -177,7 +177,7 @@ N:_D_R_L13
 I:(4)
 *:_D_R_L14
 #                                                              ../orig/d.typ:66
-O:Enos eats a thin hash diet in a hued dish as he sits on an odd seat
+D:Enos eats a thin hash diet in a hued dish as he sits on an odd seat
  :Dad does not eat suet   He had seen Sue dent his auto
 Q: Press Y to continue, N to repeat, or Fkey12 to exit 
 N:_D_R_L14
@@ -186,7 +186,7 @@ N:_D_R_L14
 I:(5)
 *:_D_R_L15
 #                                                              ../orig/d.typ:70
-O:ad an de di ed en es ie in ne un ate dis ess eat ied ine
+D:ad an de di ed en es ie in ne un ate dis ess eat ied ine
  :ist ite nee nes non nus ses tes tis usi ante anti ates
  :eous eats ines ions ious ists itas itis ness sion tion
 Q: Press Y to continue, N to repeat, or Fkey12 to exit 
@@ -196,7 +196,7 @@ N:_D_R_L15
 I:(6)
 *:_D_R_L16
 #                                                              ../orig/d.typ:73
-O:Adna Anna Anne Dana Dead Edie Edna Enid Etta Heda
+D:Adna Anna Anne Dana Dead Edie Edna Enid Etta Heda
  :Nate Nina Neta Nona Odie Ohio Otto Stan Tess Thad Theo
 Q: Press Y to continue, N to repeat, or Fkey12 to exit 
 N:_D_R_L16
@@ -205,7 +205,7 @@ N:_D_R_L16
 I:(7)
 *:_D_R_L17
 #                                                              ../orig/d.typ:79
-O:adds aids ante ants aunt dead deed dens died dies dine dins dodo
+D:adds aids ante ants aunt dead deed dens died dies dine dins dodo
  :heed hens hied hind hint hiss hist hits hods hoed hoes hone hood
  :none noon noun nuns oats odds odes ones sane sash sate seas seed
  :sees sent sets shad shed shin shot side sine sins sons sued suns
@@ -230,7 +230,7 @@ Q: Press Y to continue, or Fkey12 to exit
 I:(1)
 *:_D_R_L18
 #                                                              ../orig/d.typ:91
-O:e.  e.  e.  e.  a.  s.  o.  n.  e.  t.  u.  h.  i.  d.  a.  a.
+D:e.  e.  e.  e.  a.  s.  o.  n.  e.  t.  u.  h.  i.  d.  a.  a.
  :h.  u.  a.  i.  o.  n.  s.  d.  t.  e.  h.  o.  u.  i.  s.  a.
 Q: Press Y to continue, N to repeat, or Fkey12 to exit 
 N:_D_R_L18
@@ -239,7 +239,7 @@ N:_D_R_L18
 I:(2)
 *:_D_R_L19
 #                                                              ../orig/d.typ:96
-O:anno athe atio atte ause diti enon esen enti este
+D:anno athe atio atte ause diti enon esen enti este
  :ethe esti ette hese hous hout iate iend ines inst
  :ith itio into ndin ness nnot noth ntio onth osed
  :thei thes tion tten nest nude unti usin tand tate
@@ -250,7 +250,7 @@ N:_D_R_L19
 I:(3)
 *:_D_R_L20
 #                                                             ../orig/d.typ:100
-O:Adana Andie Annie Aonia Audie Denis Diana Dinah
+D:Adana Andie Annie Aonia Audie Denis Diana Dinah
  :Donna Duane Edith Ethan India Susan Susie Thane
  :Adana.  Andie.  Annie.  Aonia.  Audie.  Denis.  Diana.  Dinah.
 Q: Press Y to continue, N to repeat, or Fkey12 to exit 
@@ -260,7 +260,7 @@ N:_D_R_L20
 I:(4)
 *:_D_R_L21
 #                                                             ../orig/d.typ:105
-O:In the house Adana dined in haste on toast and dates.
+D:In the house Adana dined in haste on toast and dates.
  :Sated as she had eaten she noted the sheen on the dunes
  :asd the shade in the sheds.  She hates to see an idiot
  :stand and shoot his tenth doe in the dense heath.
@@ -271,7 +271,7 @@ N:_D_R_L21
 I:(5)
 *:_D_R_L22
 #                                                             ../orig/d.typ:108
-O:An onion heats and stuns stout noses and sends hands
+D:An onion heats and stuns stout noses and sends hands
  :to douse teeth and hoist suede hoods onto heads.
 Q: Press Y to continue, N to repeat, or Fkey12 to exit 
 N:_D_R_L22
@@ -280,7 +280,7 @@ N:_D_R_L22
 I:(6)
 *:_D_R_L23
 #                                                             ../orig/d.typ:111
-O:eates eousness eousnesses esses iates iests iness inesses
+D:eates eousness eousnesses esses iates iests iness inesses
  :iousness iousnesses iohness iohnesses itions nesses ousness
 Q: Press Y to continue, N to repeat, or Fkey12 to exit 
 N:_D_R_L23
@@ -301,7 +301,7 @@ N:_D_R_L24
 I:(1)
 *:_D_R_L25
 #                                                             ../orig/d.typ:119
-O:tctc upup hghg o,o, nrnr a/a/ slsl a?a? s-s- s--- s---- ----
+D:tctc upup hghg o,o, nrnr a/a/ slsl a?a? s-s- s--- s---- ----
  :tctc upup hghg, hfhf uyuy, nrnr, slsl, s---, s-s-, a/a/-
 Q: Press Y to continue, N to repeat, or Fkey12 to exit 
 N:_D_R_L25
@@ -310,7 +310,7 @@ N:_D_R_L25
 I:(2)
 *:_D_R_L26
 #                                                             ../orig/d.typ:122
-O:tctc/ upup/ hghg/ uyuy/ hfhf/ nrnr/ slsl/ tctc/ hfhf/ hghg/
+D:tctc/ upup/ hghg/ uyuy/ hfhf/ nrnr/ slsl/ tctc/ hfhf/ hghg/
  :tctc? upup? hghg? uyuy? nrnr? slsl? hfhf? upup- hghg- tctc-
 Q: Press Y to continue, N to repeat, or Fkey12 to exit 
 N:_D_R_L26
@@ -319,7 +319,7 @@ N:_D_R_L26
 I:(3)
 *:_D_R_L27
 #                                                             ../orig/d.typ:125
-O:Al el if of or up Al el if of or up
+D:Al el if of or up Al el if of or up
  :go la lo pa pi ye go la lo pa pi ye
 Q: Press Y to continue, N to repeat, or Fkey12 to exit 
 N:_D_R_L27
@@ -328,7 +328,7 @@ N:_D_R_L27
 I:(4)
 *:_D_R_L28
 #                                                             ../orig/d.typ:130
-O:Can pa go aft and lie on our old cot?
+D:Can pa go aft and lie on our old cot?
  :The shy ape put on a red hat and ran off the lot.
  :For a top fee, her act is to hop in, lie on the rug, pat her
  :pet cat, fit a fur on her ear, get her fan, and run off.
@@ -339,7 +339,7 @@ N:_D_R_L28
 I:(5)
 *:_D_R_L29
 #                                                             ../orig/d.typ:134
-O:ago ail ale all apt arc are art cur cut dig dip dop
+D:ago ail ale all apt arc are art cur cut dig dip dop
  :dry dug eel egg ego fag fig fin fir fly fog for fro
  :fry gag gap gas gay gin gip God goo gun hag hay hep
 Q: Press Y to continue, N to repeat, or Fkey12 to exit 
@@ -355,7 +355,7 @@ G:_D_E_D4
 I:(1) Review
 *:_D_R_L30
 #                                                             ../orig/d.typ:140
-O:The left road can lead the lads and lady to good lots near
+D:The left road can lead the lads and lady to good lots near
  :your land.  The sale of pure gold is held at your door.
 Q: Press Y to continue, N to repeat, or Fkey12 to exit 
 N:_D_R_L30
@@ -364,7 +364,7 @@ N:_D_R_L30
 I:(2)
 *:_D_R_L31
 #                                                             ../orig/d.typ:144
-O:You held no fear of loss for a year.  On each trip to your
+D:You held no fear of loss for a year.  On each trip to your
  :shop he paid in cash for the caps, fish, cups, pans, fuel,
  :logs, peas, ales, rice and fats you sold.
 Q: Press Y to continue, N to repeat, or Fkey12 to exit 
@@ -374,7 +374,7 @@ N:_D_R_L31
 I:(3)
 *:_D_R_L32
 #                                                             ../orig/d.typ:147
-O:It is a fact that a slap on the face can hurt.  The poor
+D:It is a fact that a slap on the face can hurt.  The poor
  :apes feel free to find a sure sort of life in the dale.
 Q: Press Y to continue, N to repeat, or Fkey12 to exit 
 N:_D_R_L32
@@ -383,7 +383,7 @@ N:_D_R_L32
 I:(4)
 *:_D_R_L33
 #                                                             ../orig/d.typ:152
-O:aces acts ages ails airs also arcs call caps card cold cops
+D:aces acts ages ails airs also arcs call caps card cold cops
  :else errs eyes face fair fall fare fate feat feel feet fell
  :gate gets gift gigs glad goat goes gone gosh gray grey gull
  :hole hope hops huff hull ills ires last late lest lets lies
@@ -394,7 +394,7 @@ N:_D_R_L33
 I:(5)
 *:_D_R_L34
 #                                                             ../orig/d.typ:157
-O:pear pert pest pets pits plop pops post pots puns puts rate real
+D:pear pert pest pets pits plop pops post pots puns puts rate real
  :ride rids ripe rips rope rote rues ruff runs runt rush rust ruts
  :span spat spin spit spot spun step stop tags tall tape taps tars
  :ugly upon ruge user yard year yeas yell yelp yips yoga yule your
@@ -417,7 +417,7 @@ N:_D_R_L35
 I:(1)
 *:_D_R_L36
 #                                                             ../orig/d.typ:164
-O:a'sz oqnv ukhm uxhb a"o- oqnv ejtw a'sz uxhb ukkk ukhm a's-
+D:a'sz oqnv ukhm uxhb a"o- oqnv ejtw a'sz uxhb ukkk ukhm a's-
 Q: Press Y to continue, N to repeat, or Fkey12 to exit 
 N:_D_R_L36
 
@@ -425,7 +425,7 @@ N:_D_R_L36
 I:(2)
 *:_D_R_L37
 #                                                             ../orig/d.typ:166
-O:uk sz-a' tw nv ej hm uk a" hb oq uk a' nv hm a" oq sz tw ej
+D:uk sz-a' tw nv ej hm uk a" hb oq uk a' nv hm a" oq sz tw ej
 Q: Press Y to continue, N to repeat, or Fkey12 to exit 
 N:_D_R_L37
 
@@ -433,7 +433,7 @@ N:_D_R_L37
 I:(3)
 *:_D_R_L38
 #                                                             ../orig/d.typ:170
-O:ale any are ary augh aught ave ay aye ec ece eco el er ere ery ex
+D:ale any are ary augh aught ave ay aye ec ece eco el er ere ery ex
  :exa exe far fer fir for ify igh ight il ile ill ily ire aze ize
  :la lly ly my ny ome or ore ough ought ould our re rec sive tive
 Q: Press Y to continue, N to repeat, or Fkey12 to exit 
@@ -443,7 +443,7 @@ N:_D_R_L38
 I:(4)
 *:_D_R_L39
 #                                                             ../orig/d.typ:174
-O:I owe him a bun, a ham, ink, a bed and a job.
+D:I owe him a bun, a ham, ink, a bed and a job.
  :Sam was mad at his own new ox in the bin.
  :At the zoo, the wee, bad boa in a box bit Tom, Bob and me.
 Q: Press Y to continue, N to repeat, or Fkey12 to exit 
@@ -453,7 +453,7 @@ N:_D_R_L39
 I:(5)
 *:_D_R_L40
 #                                                             ../orig/d.typ:179
-O:am ax be ma me ox oz we adz awe ban but eke eve haw hem
+D:am ax be ma me ox oz we adz awe ban but eke eve haw hem
  :hub jab jam jaw jet jib job Joe jot jut kid kin kit man
  :mat Max nab new nub now own quo saw sox sum van vex vie
  :vow wan who win won yen you zax
@@ -470,7 +470,7 @@ G:_D_E_D6
 I:(1)
 *:_D_R_L41
 #                                                             ../orig/d.typ:184
-O:In a daze the band hums the same new tune as they zoom down the exit.
+D:In a daze the band hums the same new tune as they zoom down the exit.
 Q: Press Y to continue, N to repeat, or Fkey12 to exit 
 N:_D_R_L41
 
@@ -478,7 +478,7 @@ N:_D_R_L41
 I:(2)
 *:_D_R_L42
 #                                                             ../orig/d.typ:187
-O:Next time, I must have a town home, with a book and a vast tome,
+D:Next time, I must have a town home, with a book and a vast tome,
  :bees, oxen, hams in the oven, rows of beans, the wind and a view.
 Q: Press Y to continue, N to repeat, or Fkey12 to exit 
 N:_D_R_L42
@@ -487,7 +487,7 @@ N:_D_R_L42
 I:(3)
 *:_D_R_L43
 #                                                             ../orig/d.typ:190
-O:I know six men wait to put down their axes.  They want to quit
+D:I know six men wait to put down their axes.  They want to quit
  :their jobs when the job zone size is too wide.
 Q: Press Y to continue, N to repeat, or Fkey12 to exit 
 N:_D_R_L43
@@ -496,7 +496,7 @@ N:_D_R_L43
 I:(4)
 *:_D_R_L44
 #                                                             ../orig/d.typ:194
-O:ahem aims ajax akin asks atom axis bans bath beak beck been
+D:ahem aims ajax akin asks atom axis bans bath beak beck been
  :hoax husk inks item jabs jade jamb Java jazz Jean jest jinx
  :knot Knox made maid mail mate mean meet mend mess mind mine
 Q: Press Y to continue, N to repeat, or Fkey12 to exit 
@@ -506,7 +506,7 @@ N:_D_R_L44
 I:(5)
 *:_D_R_L45
 #                                                             ../orig/d.typ:199
-O:miss mist most musk must nabs news next nibs numb owed owes
+D:miss mist most musk must nabs news next nibs numb owed owes
  :quiz save saws seem sews skat skew skid skin some sums take
  :vend vent vest veto vise void vote wand weed week wend wins
  :whet whit whiz whom wish wont zebu zest zinc Zion zone zulu
@@ -523,7 +523,7 @@ G:_D_E_D7
 I:(1)
 *:_D_R_L46
 #                                                             ../orig/d.typ:204
-O:He asked about those zebra waits in his beans.
+D:He asked about those zebra waits in his beans.
 Q: Press Y to continue, N to repeat, or Fkey12 to exit 
 N:_D_R_L46
 
@@ -531,7 +531,7 @@ N:_D_R_L46
 I:(2)
 *:_D_R_L47
 #                                                             ../orig/d.typ:206
-O:It seems that in a month taxes on homes have taken all we saved.
+D:It seems that in a month taxes on homes have taken all we saved.
 Q: Press Y to continue, N to repeat, or Fkey12 to exit 
 N:_D_R_L47
 
@@ -539,7 +539,7 @@ N:_D_R_L47
 I:(3)
 *:_D_R_L48
 #                                                             ../orig/d.typ:209
-O:John Smith makes a quiet visit to the bases in the winds and
+D:John Smith makes a quiet visit to the bases in the winds and
  :weeds on the mound.
 Q: Press Y to continue, N to repeat, or Fkey12 to exit 
 N:_D_R_L48
@@ -548,7 +548,7 @@ N:_D_R_L48
 I:(4)
 *:_D_R_L49
 #                                                             ../orig/d.typ:214
-O:ovals ovoid oxide quake queen quest quite quits quote saves seams
+D:ovals ovoid oxide quake queen quest quite quits quote saves seams
  :skein skink skunk sweat takes taken taxed teams teems thank think
  :thumb times towns ukase vaunt vests vises visit vista vivid vixen
  :waits wands wants wends whine white whose zebus zoned zones zulus
@@ -565,7 +565,7 @@ G:_D_E_D8
 I:(1)
 *:_D_R_L50
 #                                                             ../orig/d.typ:219
-O:hghm hbfb upxp uxyx twcw ej.j nvrv oq,q szlz a'?' a"/"
+D:hghm hbfb upxp uxyx twcw ej.j nvrv oq,q szlz a'?' a"/"
 Q: Press Y to continue, N to repeat, or Fkey12 to exit 
 N:_D_R_L50
 
@@ -573,7 +573,7 @@ N:_D_R_L50
 I:Again...
 *:_D_R_L51
 #                                                             ../orig/d.typ:221
-O:hghm hbfb upxp uxyx twcw ej.j nvrv oq,q szlz a'?' a"/"
+D:hghm hbfb upxp uxyx twcw ej.j nvrv oq,q szlz a'?' a"/"
 Q: Press Y to continue, N to repeat, or Fkey12 to exit 
 N:_D_R_L51
 
@@ -581,7 +581,7 @@ N:_D_R_L51
 I:(2)
 *:_D_R_L52
 #                                                             ../orig/d.typ:223
-O:gm mg fb bf pk kp yx xy cw wc .j j. rv vr ,q q, lz zl
+D:gm mg fb bf pk kp yx xy cw wc .j j. rv vr ,q q, lz zl
 Q: Press Y to continue, N to repeat, or Fkey12 to exit 
 N:_D_R_L52
 
@@ -589,7 +589,7 @@ N:_D_R_L52
 I:(3)
 *:_D_R_L53
 #                                                             ../orig/d.typ:225
-O:My big boy may buy a gem at the labs by the bay.
+D:My big boy may buy a gem at the labs by the bay.
 Q: Press Y to continue, N to repeat, or Fkey12 to exit 
 N:_D_R_L53
 
@@ -597,7 +597,7 @@ N:_D_R_L53
 I:(4)
 *:_D_R_L54
 #                                                             ../orig/d.typ:228
-O:Mort awes boys with the way he can ward off a blow, kill
+D:Mort awes boys with the way he can ward off a blow, kill
  :elks and game, row a yawl, or ram awls into bars.
 Q: Press Y to continue, N to repeat, or Fkey12 to exit 
 N:_D_R_L54
@@ -606,7 +606,7 @@ N:_D_R_L54
 I:(5)
 *:_D_R_L55
 #                                                             ../orig/d.typ:232
-O:ah Al am an as at ax ba be do ed eh el go
+D:ah Al am an as at ax ba be do ed eh el go
  :ha he hi ho if in is it Jo la no ma me no
  :of oh on or ox pa pi Si so to up us we ye
 Q: Press Y to continue, N to repeat, or Fkey12 to exit 
@@ -622,7 +622,7 @@ G:_D_E_D9
 I:(1)
 *:_D_R_L56
 #                                                             ../orig/d.typ:238
-O:In barns on farms chicks, boars, veals, bucks and stock might
+D:In barns on farms chicks, boars, veals, bucks and stock might
  :enjoy and value an extra quart of water daily.
 Q: Press Y to continue, N to repeat, or Fkey12 to exit 
 N:_D_R_L56
@@ -631,7 +631,7 @@ N:_D_R_L56
 I:(2)
 *:_D_R_L57
 #                                                             ../orig/d.typ:241
-O:Do zebras roam the miles of bleak velds which cover parts of the
+D:Do zebras roam the miles of bleak velds which cover parts of the
  :world while packs of brown bears and wart hogs prowl in the woods?
 Q: Press Y to continue, N to repeat, or Fkey12 to exit 
 N:_D_R_L57
@@ -640,7 +640,7 @@ N:_D_R_L57
 I:(3)
 *:_D_R_L58
 #                                                             ../orig/d.typ:246
-O:Some folks claim to favor poems and rhyme, others can wring equal
+D:Some folks claim to favor poems and rhyme, others can wring equal
  :cheer and worth from words and quest and seize all books.  Still
  :others amply quell their needs with vocal music and seek all
  :works on voice.
@@ -651,7 +651,7 @@ N:_D_R_L58
 I:(4)
 *:_D_R_L59
 #                                                             ../orig/d.typ:250
-O:To begin to use wrong verbs among boors and bores may be
+D:To begin to use wrong verbs among boors and bores may be
  :a severe error even if the whole group seems to think
  :that exact terms mean less than is normal for them.
 Q: Press Y to continue, N to repeat, or Fkey12 to exit 
@@ -661,7 +661,7 @@ N:_D_R_L59
 I:(5)
 *:_D_R_L60
 #                                                             ../orig/d.typ:255
-O:allow among avail awful Aztec azure backs balls began being belie
+D:allow among avail awful Aztec azure backs balls began being belie
  :bells bills black blank bored borne bring can't chalk champ charm
  :check cheek chick chink comes Czech every evict exalt excel exert
  :exile expel exult Felix folks gable gauze gives glaze gleam globe
@@ -672,7 +672,7 @@ N:_D_R_L60
 I:(6)
 *:_D_R_L61
 #                                                             ../orig/d.typ:260
-O:verge verse verve vetch vigil vigor viola virus vital vogue voile
+D:verge verse verve vetch vigil vigor viola virus vital vogue voile
  :vouch vowel vying walks walls wards warts whack whale wharf wheat
  :wheel whelp where which whiff while whirl whole wired wires words
  :world worth would write wrong wrote yards yokes yoks zippy zombie
@@ -689,7 +689,7 @@ G:_D_E_D10
 I:(1)
 *:_D_R_L62
 #                                                             ../orig/d.typ:266
-O:For a meal we lack a room, milk in mugs, warm pork, veal
+D:For a meal we lack a room, milk in mugs, warm pork, veal
  :in the oven and cake.
 Q: Press Y to continue, N to repeat, or Fkey12 to exit 
 N:_D_R_L62
@@ -698,7 +698,7 @@ N:_D_R_L62
 I:(2)
 *:_D_R_L63
 #                                                             ../orig/d.typ:269
-O:Mike and Milt were grim, not calm, when Mort came to warn them that
+D:Mike and Milt were grim, not calm, when Mort came to warn them that
  :the well worn ramp over to the mill was too wet for our mile walk.
 Q: Press Y to continue, N to repeat, or Fkey12 to exit 
 N:_D_R_L63
@@ -707,7 +707,7 @@ N:_D_R_L63
 I:(3)
 *:_D_R_L64
 #                                                             ../orig/d.typ:272
-O:Walt may quip and quote with zeal about too much work, but I
+D:Walt may quip and quote with zeal about too much work, but I
  :saw him melt and mourn about his love for his lost wife.
 Q: Press Y to continue, N to repeat, or Fkey12 to exit 
 N:_D_R_L64
@@ -716,7 +716,7 @@ N:_D_R_L64
 I:(4)
 *:_D_R_L65
 #                                                             ../orig/d.typ:274
-O:The pick of wool from rams can make very soft warm garb.
+D:The pick of wool from rams can make very soft warm garb.
 Q: Press Y to continue, N to repeat, or Fkey12 to exit 
 N:_D_R_L65
 
@@ -724,7 +724,7 @@ N:_D_R_L65
 I:(5)
 *:_D_R_L66
 #                                                             ../orig/d.typ:277
-O:For his meal the busy bird will use his bill or beak in many
+D:For his meal the busy bird will use his bill or beak in many
  :ways to peck at or ably to pick up a worm.
 Q: Press Y to continue, N to repeat, or Fkey12 to exit 
 N:_D_R_L66
@@ -733,7 +733,7 @@ N:_D_R_L66
 I:(6)
 *:_D_R_L67
 #                                                             ../orig/d.typ:280
-O:Owls on the wing may move away with limp easy grace or they
+D:Owls on the wing may move away with limp easy grace or they
  :may sit on a wire and look ever so wise.
 Q: Press Y to continue, N to repeat, or Fkey12 to exit 
 N:_D_R_L67
@@ -742,7 +742,7 @@ N:_D_R_L67
 I:(7)
 *:_D_R_L68
 #                                                             ../orig/d.typ:283
-O:The word or term--prop, mall, king, mark, romp, lock or link--
+D:The word or term--prop, mall, king, mark, romp, lock or link--
  :can vary in what it may mean.
 Q: Press Y to continue, N to repeat, or Fkey12 to exit 
 N:_D_R_L68
@@ -751,7 +751,7 @@ N:_D_R_L68
 I:(8)
 *:_D_R_L69
 #                                                             ../orig/d.typ:288
-O:helm herb hock holy jeep jeer jell jerk John jolt jump jury
+D:helm herb hock holy jeep jeer jell jerk John jolt jump jury
  :kale keel kelp kilt lack laws leak leek levy lick like lime
  :limp link live love luck lump lynx mail many mill more much
  :okra oval pack peak peck peek phew puck ramp rime skip talk
@@ -762,7 +762,7 @@ N:_D_R_L69
 I:(9)
 *:_D_R_L70
 #                                                             ../orig/d.typ:292
-O:puck ramp rime skip talk vail vale vary veal veer veld verb vial vice
+D:puck ramp rime skip talk vail vale vary veal veer veld verb vial vice
  :volk walk ware warm warp wars wart ways weal wear well will tilt wire
  :whey whim whip whir wore work worm worn yawn yolk zany zero zinc zing
 Q: Press Y to continue, N to repeat, or Fkey12 to exit 
@@ -778,7 +778,7 @@ G:_D_E_D11
 I:(1)
 *:_D_R_L71
 #                                                             ../orig/d.typ:298
-O:In barns on farms chicks, bears, veals, bucks and stock might
+D:In barns on farms chicks, bears, veals, bucks and stock might
  :enjoy and value an extra quart of water daily.
 Q: Press Y to continue, N to repeat, or Fkey12 to exit 
 N:_D_R_L71
@@ -787,7 +787,7 @@ N:_D_R_L71
 I:(2)
 *:_D_R_L72
 #                                                             ../orig/d.typ:301
-O:Quick quips, awful quotes and queer talks never quite solve
+D:Quick quips, awful quotes and queer talks never quite solve
  :the wants of a very small child.
 Q: Press Y to continue, N to repeat, or Fkey12 to exit 
 N:_D_R_L72
@@ -796,7 +796,7 @@ N:_D_R_L72
 I:(3)
 *:_D_R_L73
 #                                                             ../orig/d.typ:304
-O:Do zebras roam the miles of bleak velds which cover parts of the
+D:Do zebras roam the miles of bleak velds which cover parts of the
  :world while packs of brown bears and wart hogs prowl in the woods?
 Q: Press Y to continue, N to repeat, or Fkey12 to exit 
 N:_D_R_L73
@@ -805,7 +805,7 @@ N:_D_R_L73
 I:(4)
 *:_D_R_L74
 #                                                             ../orig/d.typ:309
-O:Some folks claim to favor poems and rhyme, others can wring equal
+D:Some folks claim to favor poems and rhyme, others can wring equal
  :cheer and worth from words and quest and seize all books.  Still
  :others amply quell their needs with vocal music and seek all
  :works on voice.
@@ -816,7 +816,7 @@ N:_D_R_L74
 I:(5)
 *:_D_R_L75
 #                                                             ../orig/d.typ:312
-O:The queen was given a query for which an ample reply would
+D:The queen was given a query for which an ample reply would
  :take a quire of paper.
 Q: Press Y to continue, N to repeat, or Fkey12 to exit 
 N:_D_R_L75
@@ -825,7 +825,7 @@ N:_D_R_L75
 I:(6)
 *:_D_R_L76
 #                                                             ../orig/d.typ:315
-O:Six husky cooks boiled clam broth, shrmp and prawns and broiled
+D:Six husky cooks boiled clam broth, shrmp and prawns and broiled
  :liver for seven lucky elves, then made their hasty exits.
 Q: Press Y to continue, N to repeat, or Fkey12 to exit 
 N:_D_R_L76
@@ -834,7 +834,7 @@ N:_D_R_L76
 I:(7)
 *:_D_R_L77
 #                                                             ../orig/d.typ:319
-O:At the games, Mark was so very badly hurt with many broken bones,
+D:At the games, Mark was so very badly hurt with many broken bones,
  :lumps on his jaws, and some glands burst.  Blood oozed from a crack
  :in his wart where it had oozed for weeks.  He was lucky to have lived.
 Q: Press Y to continue, N to repeat, or Fkey12 to exit 
@@ -844,7 +844,7 @@ N:_D_R_L77
 I:(8)
 *:_D_R_L78
 #                                                             ../orig/d.typ:322
-O:To check pomp and pride, sever from all overt vices, belay all
+D:To check pomp and pride, sever from all overt vices, belay all
  :forms of muck raking, and limit all hazards, will bring prime joy.
 Q: Press Y to continue, N to repeat, or Fkey12 to exit 
 N:_D_R_L78
@@ -853,7 +853,7 @@ N:_D_R_L78
 I:(9)
 *:_D_R_L79
 #                                                             ../orig/d.typ:326
-O:To begin to use wrong verbs among boors and bores may be
+D:To begin to use wrong verbs among boors and bores may be
  :a severe error even if the whole group seems to think
  :that exact terms mean less than is normal for them.
 Q: Press Y to continue, N to repeat, or Fkey12 to exit 
@@ -863,7 +863,7 @@ N:_D_R_L79
 I:(10)
 *:_D_R_L80
 #                                                             ../orig/d.typ:331
-O:allow among avail awful Aztec azure backs balls began being belie
+D:allow among avail awful Aztec azure backs balls began being belie
  :bells bills black blank bored borne bring can't chalk champ charm
  :check cheek chick chink comes Czech every evict exalt excel exert
  :exile expel exult Felix folks gable gauze gives glaze gleam globe
@@ -874,7 +874,7 @@ N:_D_R_L80
 I:(11)
 *:_D_R_L81
 #                                                             ../orig/d.typ:336
-O:grams grave graze havoc hazel helix hobby jazzy jelly jerky jewel
+D:grams grave graze havoc hazel helix hobby jazzy jelly jerky jewel
  :joker jolly jolts jowls judge junco kapok kayak keels keeps kitty
  :knack kneel knelt knock knurl kopek kraal Krupp leave liver money
  :never Ozark pawns peaks pecks peeks phlox pirks power proms prove
@@ -885,7 +885,7 @@ N:_D_R_L81
 I:(12)
 *:_D_R_L82
 #                                                             ../orig/d.typ:341
-O:quack quaff quail qualm quays quell quill quilt ramps romps rooms
+D:quack quaff quail qualm quays quell quill quilt ramps romps rooms
  :rumps salve serve shack shark shawl shirk shock shrew shuck sieve
  :seize skiff skill skimp skirt skulk small spank speak spoke stick
  :stuck threw throw thyme vague valid value valve vapid vault venal
@@ -896,7 +896,7 @@ N:_D_R_L82
 I:(13)
 *:_D_R_L83
 #                                                             ../orig/d.typ:346
-O:verge verse verve vetch vigil vigor viola virus vital vogue voile
+D:verge verse verve vetch vigil vigor viola virus vital vogue voile
  :vouch vowel vying walks walls wards warts whack whale wharf wheat
  :wheel whelp where which whiff while whirl whole wired wires words
  :world worth would write wrong wrote yards yokes yolks zippy zombi
@@ -920,7 +920,7 @@ N:_D_R_L84
 
 *:_D_R_L85
 #                                                             ../orig/d.typ:358
-O:a about after all also an and another any are as at back be because
+D:a about after all also an and another any are as at back be because
  :been before being between both but by can could day did do down each
  :even first for from get good had has have he her here him his how I
  :if in into is it its just know last life like little long made make
@@ -930,7 +930,7 @@ N:_D_R_L85
 
 *:_D_R_L86
 #                                                             ../orig/d.typ:363
-O:of or on one only or other our out over own people said same see she
+D:of or on one only or other our out over own people said same see she
  :should so some state still such than that the their them then there
  :these they this those through time to too two under up very was way
  :we well were what when where which while who will with work would
@@ -948,7 +948,7 @@ N:_D_R_L87
 I:(1)
 *:_D_R_L88
 #                                                             ../orig/d.typ:367
-O:The duteous dietitian hesitated at the intense nauseousness inside
+D:The duteous dietitian hesitated at the intense nauseousness inside
  :the dishonest institution.
 Q: Press Y to continue, N to repeat, or Fkey12 to exit 
 N:_D_R_L88
@@ -957,7 +957,7 @@ N:_D_R_L88
 I:(2)
 *:_D_R_L89
 #                                                             ../orig/d.typ:370
-O:In addition, the unastute assassin had another unsound idea.  He
+D:In addition, the unastute assassin had another unsound idea.  He
  :intended to assassinate the dishonest attendant at the institute.
 Q: Press Y to continue, N to repeat, or Fkey12 to exit 
 N:_D_R_L89
@@ -966,7 +966,7 @@ N:_D_R_L89
 I:(3)
 *:_D_R_L90
 #                                                             ../orig/d.typ:376
-O:The unintentioned noisiness and untidiness in the hostess house
+D:The unintentioned noisiness and untidiness in the hostess house
  :astonished, astounded and nauseated Antonietta.  Undaunted and
  :unassisted, she did not hesitate to initiate a statute at the state
  :house.  The statute stated that no attendant in an untenanted haunted
@@ -991,7 +991,7 @@ N:_D_R_L91
 I:(1)
 *:_D_R_L92
 #                                                             ../orig/d.typ:383
-O:Sixty-five quizzical sheep kept their jaws dry in a farm bungalow.
+D:Sixty-five quizzical sheep kept their jaws dry in a farm bungalow.
 Q: Press Y to continue, N to repeat, or Fkey12 to exit 
 N:_D_R_L92
 
@@ -999,7 +999,7 @@ N:_D_R_L92
 I:(2)
 *:_D_R_L93
 #                                                             ../orig/d.typ:385
-O:Balky Zulus find they can hoax weary men with quavery jumping.
+D:Balky Zulus find they can hoax weary men with quavery jumping.
 Q: Press Y to continue, N to repeat, or Fkey12 to exit 
 N:_D_R_L93
 
@@ -1007,7 +1007,7 @@ N:_D_R_L93
 I:(3)
 *:_D_R_L94
 #                                                             ../orig/d.typ:387
-O:Jerome quickly began to be vexed by the powerful blizzards.
+D:Jerome quickly began to be vexed by the powerful blizzards.
 Q: Press Y to continue, N to repeat, or Fkey12 to exit 
 N:_D_R_L94
 
@@ -1015,7 +1015,7 @@ N:_D_R_L94
 I:(4)
 *:_D_R_L95
 #                                                             ../orig/d.typ:389
-O:Squawking gorillas could vex the brazen nymphs in a jiffy.
+D:Squawking gorillas could vex the brazen nymphs in a jiffy.
 Q: Press Y to continue, N to repeat, or Fkey12 to exit 
 N:_D_R_L95
 
@@ -1023,7 +1023,7 @@ N:_D_R_L95
 I:(5)
 *:_D_R_L96
 #                                                             ../orig/d.typ:391
-O:Can Jerry's equipment file saws, ax, hoe, knives and grind adz?
+D:Can Jerry's equipment file saws, ax, hoe, knives and grind adz?
 Q: Press Y to continue, N to repeat, or Fkey12 to exit 
 N:_D_R_L96
 
@@ -1031,7 +1031,7 @@ N:_D_R_L96
 I:(6)
 *:_D_R_L97
 #                                                             ../orig/d.typ:393
-O:Ben works at squeezing very juicy plums with flexed thumbs.
+D:Ben works at squeezing very juicy plums with flexed thumbs.
 Q: Press Y to continue, N to repeat, or Fkey12 to exit 
 N:_D_R_L97
 
@@ -1039,7 +1039,7 @@ N:_D_R_L97
 I:(7)
 *:_D_R_L98
 #                                                             ../orig/d.typ:395
-O:The black wizard quipping jovially flexed his muscles.
+D:The black wizard quipping jovially flexed his muscles.
 Q: Press Y to continue, N to repeat, or Fkey12 to exit 
 N:_D_R_L98
 
@@ -1047,7 +1047,7 @@ N:_D_R_L98
 I:(8)
 *:_D_R_L99
 #                                                             ../orig/d.typ:397
-O:Will you pack my jugs of liquid veneer in five dozen boxes?
+D:Will you pack my jugs of liquid veneer in five dozen boxes?
 Q: Press Y to continue, N to repeat, or Fkey12 to exit 
 N:_D_R_L99
 
@@ -1055,7 +1055,7 @@ N:_D_R_L99
 I:(9)
 *:_D_R_L100
 #                                                             ../orig/d.typ:399
-O:Could the wizard jinx quivering folks by magic yelps?
+D:Could the wizard jinx quivering folks by magic yelps?
 Q: Press Y to continue, N to repeat, or Fkey12 to exit 
 N:_D_R_L100
 
@@ -1063,7 +1063,7 @@ N:_D_R_L100
 I:(10)
 *:_D_R_L101
 #                                                             ../orig/d.typ:401
-O:Brazen gazelles quickly examined the forward jeep.
+D:Brazen gazelles quickly examined the forward jeep.
 Q: Press Y to continue, N to repeat, or Fkey12 to exit 
 N:_D_R_L101
 
@@ -1071,7 +1071,7 @@ N:_D_R_L101
 I:(11)
 *:_D_R_L102
 #                                                             ../orig/d.typ:403
-O:The brown dog quickly jumped over the lazy fox.
+D:The brown dog quickly jumped over the lazy fox.
 Q: Press Y to continue, N to repeat, or Fkey12 to exit 
 N:_D_R_L102
 
@@ -1079,7 +1079,7 @@ N:_D_R_L102
 I:(12)
 *:_D_R_L103
 #                                                             ../orig/d.typ:405
-O:Will the kind judge squelch the five or six brazen nymphs?
+D:Will the kind judge squelch the five or six brazen nymphs?
 Q: Press Y to continue, N to repeat, or Fkey12 to exit 
 N:_D_R_L103
 
@@ -1087,7 +1087,7 @@ N:_D_R_L103
 I:(13)
 *:_D_R_L104
 #                                                             ../orig/d.typ:407
-O:Mix zippy Kadota figs with quivering cranberry jelly.
+D:Mix zippy Kadota figs with quivering cranberry jelly.
 Q: Press Y to continue, N to repeat, or Fkey12 to exit 
 N:_D_R_L104
 
@@ -1095,7 +1095,7 @@ N:_D_R_L104
 I:(14)
 *:_D_R_L105
 #                                                             ../orig/d.typ:409
-O:The wives quickly jerked extra big pizzas from the stand.
+D:The wives quickly jerked extra big pizzas from the stand.
 Q: Press Y to continue, N to repeat, or Fkey12 to exit 
 N:_D_R_L105
 
@@ -1103,7 +1103,7 @@ N:_D_R_L105
 I:(15)
 *:_D_R_L106
 #                                                             ../orig/d.typ:411
-O:Lisa quickly mixed the very big jar of new soap.
+D:Lisa quickly mixed the very big jar of new soap.
 Q: Press Y to continue, N to repeat, or Fkey12 to exit 
 N:_D_R_L106
 
@@ -1111,7 +1111,7 @@ N:_D_R_L106
 I:(16)
 *:_D_R_L107
 #                                                             ../orig/d.typ:413
-O:The major will fix a quiet cozy nook for the vexed, bad Gypsy.
+D:The major will fix a quiet cozy nook for the vexed, bad Gypsy.
 Q: Press Y to continue, N to repeat, or Fkey12 to exit 
 N:_D_R_L107
 
@@ -1119,7 +1119,7 @@ N:_D_R_L107
 I:(17)
 *:_D_R_L108
 #                                                             ../orig/d.typ:415
-O:Pairs of lazy knowing oxen came by quietly evading the jam.
+D:Pairs of lazy knowing oxen came by quietly evading the jam.
 Q: Press Y to continue, N to repeat, or Fkey12 to exit 
 N:_D_R_L108
 
@@ -1131,7 +1131,7 @@ I:Juvenile zest for excitement whetted interest in parking by the quay.
 I:(19)
 *:_D_R_L109
 #                                                             ../orig/d.typ:419
-O:Put your big ax, shovel and quartz where Mike's fence joins ours.
+D:Put your big ax, shovel and quartz where Mike's fence joins ours.
 Q: Press Y to continue, N to repeat, or Fkey12 to exit 
 N:_D_R_L109
 
@@ -1139,7 +1139,7 @@ N:_D_R_L109
 I:(20)
 *:_D_R_L110
 #                                                             ../orig/d.typ:421
-O:The brawny jaguar held fast till the quaking Zouave victim expired.
+D:The brawny jaguar held fast till the quaking Zouave victim expired.
 Q: Press Y to continue, N to repeat, or Fkey12 to exit 
 N:_D_R_L110
 

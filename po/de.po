@@ -3,11 +3,11 @@
 #
 msgid ""
 msgstr ""
-"Project-Id-Version: typist 2.3.1\n"
-"POT-Creation-Date: 2001-08-23 20:06+0200\n"
+"Project-Id-Version: typist 2.4.0beta1\n"
+"POT-Creation-Date: 2001-09-02 22:11+0200\n"
 "PO-Revision-Date: 2000-12-08 14:17+01:00\n"
-"Last-Translator: Kester Habermann <kester@linuxtag.de>\n"
-"Language-Team:\n"
+"Last-Translator: Felix Natter <fnatter@gmx.net>\n"
+"Language-Team: German <de@li.org>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=ISO-8859-1\n"
 "Content-Transfer-Encoding: 8bit\n"
@@ -335,10 +335,9 @@ msgstr "                         mit %.1f%% Fehlern "
 #. this is used to translate the keys for Y/N-queries. Must be two uppercase
 #. letters. Y/N will still be accepted as well
 #: gtypist.c:1864
-#, fuzzy
 msgid "Y/N"
-msgstr "JN"
+msgstr "J/N"
 
-#: gtypist.c:1911
+#: gtypist.c:1912
 msgid "can't find or open file"
 msgstr "Datei nicht vorhanden oder nicht lesbar"

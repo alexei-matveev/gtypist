@@ -1,5 +1,5 @@
-Dies ist doc/gtypist.info, hergestellt von Makeinfo Version 4.0 aus
-doc/gtypist.texi.
+Dies ist gtypist.info, hergestellt von Makeinfo Version 4.0 aus
+gtypist.texi.
 
 INFO-DIR-SECTION Education
 START-INFO-DIR-ENTRY
@@ -702,8 +702,9 @@ basics: *Note Introduction::.
      programs (for example by a window manager).
 
 `E'
-     This command is used to set the error-max value.  This is the
-     highest error-rate permitted.
+     This command is used to set the highest error-rate permitted for
+     the next drill (E:<value>%) or for all following drills until the
+     next E: (E:<value>%*).
 
      If `--error-max/-e' is specified then this command will only have
      an effect if it is _stricter_ than the value specified on the
@@ -714,16 +715,14 @@ basics: *Note Introduction::.
      readable).  A special value of `default' or `Default' sets the
      error-max value back to the default.
 
-     Usually, this command only applies to the next drill, but you can
-     make it persistent by putting a '*' at the end of `command_data'.
-
 `F'
      This command ("set on-failure label") is used to set the label (in
-     `command_data') where the user will skip to if he/she fails a
-     drill.
+     `command_data') where the user will have to go to if he/she fails
+     an exercise.
 
-     Usually, this command only applies to the next drill, but you can
-     make it persistent by putting a '*' at the end of `command_data'.
+     Usually, this command only applies to the next exercise, but you
+     can make it persistent by putting a '*' at the end of
+     `command_data'.
 
      If label is NULL then this resets the label.
 
@@ -1081,20 +1080,20 @@ History of GNU Typist
 
 
 Tag Table:
-Node: Top220
-Node: Distribution899
-Node: Copying1788
-Node: Introduction20955
-Node: Invoking23660
-Node: Script-file commands27292
-Node: Supplied lessons34235
-Node: How to contribute new lessons35715
-Node: Ktouch-lessons36042
-Node: Create drills from fortune38401
-Node: Emacs mode for editing gtypist-lessons39113
-Node: Technical Information41579
-Node: Environment Variables41810
-Node: Errors and omissions43915
-Node: History44632
+Node: Top212
+Node: Distribution891
+Node: Copying1780
+Node: Introduction20947
+Node: Invoking23652
+Node: Script-file commands27284
+Node: Supplied lessons34169
+Node: How to contribute new lessons35649
+Node: Ktouch-lessons35976
+Node: Create drills from fortune38335
+Node: Emacs mode for editing gtypist-lessons39047
+Node: Technical Information41513
+Node: Environment Variables41744
+Node: Errors and omissions43849
+Node: History44566
 
 End Tag Table

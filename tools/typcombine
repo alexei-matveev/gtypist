@@ -22,6 +22,29 @@
 # modified by Felix Natter <fnatter@gmx.net> on Thu Aug 30 20:49:26 2001:
 # - add two menu-items: "more lessons" (Fkey10) and "help"/"manual" (Fkey 11)
 # - add ';' after each command to make emacs indentation work
+# - add the "function-key help" and series descriptions
+# TODO: get more of this in there:
+# T:
+#  :                      Function key help screen
+#  :
+#  :Use the function keys on the keyboard to navigate through the lesson
+#  :series and lesson selection menus.  In a lesson series, pressing the
+#  :function key Fkey12 will return you to the series menu; when already at
+#  :the series menu, it will take you to the main program menu.  At the
+#  :main program menu, Fkey12 exits the program.
+#  :
+#  :If a lesson series has more than one menu page of lessons, use Fkey11 to
+#  :go to the additional pages.
+#  :
+#  :When in an exercise, you can use the Esc key to abort the drill or test.
+#  :
+#  :If you do not have function keys available on your terminal, or if they
+#  :do not work for some reason (for example, they are intercepted by
+#  :another program), you can use the keys 1 to 9 for F1 to F9, 0 for F10,
+#  :A for F11 and S for F12.  Some combinations with the Ctrl key will work also.
+#  :Ctrl-Q to Ctrl-P are alternatives for Fkey1 to Fkey10, and Ctrl-A and Ctrl-S 
+#  :for Fkey11 and Fkey12.
+
 
 BEGIN 	{
 # some initializations
@@ -109,7 +132,7 @@ END	{
     printf( "\n" );
   }
 
-# build the T: commands for the "more lessons" and "manual" menu items
+# build the T: commands for the "more lessons" and "help"/"manual" menu items
   printf("*:__MORE_LESSONS\n");
   printf("T:... there are more lessons which can be accessed by starting\n");
   printf(" : gtypist with an argument, the name of the file:\n");
@@ -121,37 +144,29 @@ END	{
   printf(" : ktfr.typ - French lesson from ktouch\n");
   printf(" : kten.typ - English lesson from ktouch\n");
   printf(" : ktnumber.typ - Ktouch-lesson for the numeric keypad\n");
-  printf(" : ktlecten.typ - \n");
+  printf(" : ktlecten.typ - Another English lesson from ktouch\n");
   printf(" :\n");
   printf(" : See the comments at the top of each .typ-file for more information\n");
   printf("G:__SERIESMENU\n");
 
   printf("*:__HELP\n");
-  # TODO: get this in there somehow:
-# T:
-#  :                      Function key help screen
-#  :
-#  :Use the function keys on the keyboard to navigate through the lesson
-#  :series and lesson selection menus.  In a lesson series, pressing the
-#  :function key Fkey12 will return you to the series menu; when already at
-#  :the series menu, it will take you to the main program menu.  At the
-#  :main program menu, Fkey12 exits the program.
-#  :
-#  :If a lesson series has more than one menu page of lessons, use Fkey11 to
-#  :go to the additional pages.
-#  :
-#  :When in an exercise, you can use the Esc key to abort the drill or test.
-#  :
-#  :If you do not have function keys available on your terminal, or if they
-#  :do not work for some reason (for example, they are intercepted by
-#  :another program), you can use the keys 1 to 9 for F1 to F9, 0 for F10,
-#  :A for F11 and S for F12.  Some combinations with the Ctrl key will work also.
-#  :Ctrl-Q to Ctrl-P are alternatives for Fkey1 to Fkey10, and Ctrl-A and Ctrl-S 
-#  :for Fkey11 and Fkey12.
-
-  printf(" :\n : You can access gtypist's manual either by running\n");
-  printf(" : \"info gtypist\" (or \"info '(gtypist)'\" if that doesn't work)");
-  printf(",\n : or by loading \"gtypist.htm\" in your browser (DOS)\n");
+  printf("T:                      Help screen\n");
+  printf(" :Use the function keys on the keyboard to navigate through the lesson\n");
+  printf(" :series and lesson selection menus.  In a lesson series, pressing the\n");
+  printf(" :function key Fkey12 will return you to the series menu; when already at\n");
+  printf(" :the series menu, it will take you to the main program menu.  At the\n");
+  printf(" :main program menu, Fkey12 exits the program.\n");
+  printf(" :\n");
+  printf(" :If you do not have function keys available on your terminal, or if they\n");
+  printf(" :do not work for some reason (for example, they are intercepted by\n");
+  printf(" :another program), you can use the keys 1 to 9 for F1 to F9, 0 for F10,\n");
+  printf(" :A for F11 and S for F12.  Some combinations with the Ctrl key will work also.\n");
+  printf(" :Ctrl-Q to Ctrl-P are alternatives for Fkey1 to Fkey10, and Ctrl-A and Ctrl-S\n");
+  printf(" :for Fkey11 and Fkey12.\n");
+  printf(" :\n");
+  printf(" :You can access gtypist's manual either by running\n");
+  printf(" :\"info gtypist\" (or \"info '(gtypist)'\" if that doesn't work),\n");
+  printf(" :or by loading \"gtypist.htm\" in your browser (DOS)\n");
   printf("G:__SERIESMENU\n");
 
 # TODO: find sth like "abort"
@@ -159,8 +174,7 @@ END	{
     exit 1;
 
 # now build a selection menu to get to each series
-# (notice how this can't cope with more than 10 lesson series;
-# this is because there are only 9 and I don't see more coming!)
+# (notice how this can't cope with more than 9 lesson series)
   if ( scount > 0 ) {
     printf( "#" );
     for ( i = 0; i < 78; i++ )
@@ -174,8 +188,10 @@ END	{
 # output a complete series of function key mappings
     for ( i = 1; i <= scount; i++ )
       printf( "K:%d:__S_%s_SERIES\n", i, series[i] );
-    for ( ; i <= 11; i++ )
+    for ( ; i <= 9; i++ )
       printf( "K:%d:NULL\n", i );
+    printf( "K:10:__MORE_LESSONS\n" );
+    printf( "K:11:__HELP\n" );
     printf( "K:12:__SERIESQEXIT\n" );
     printf( "*:__SERIESMENU_DISP\n" );
 
@@ -192,12 +208,37 @@ END	{
       printf( "is" );
     printf( " available:\n" );
     printf( " :\n" );
-    for ( i = 1; i <= scount; i++ )
-      printf( " :        Fkey%2d - Series %s\n", i, series[i] );
-    for ( ;i <= 10; i++ )
+    for ( i = 1; i <= scount; i++ ) {
+      if (series[i] == "Q")
+	series_description = "Quick QWERTY course (Q1 - Q5)";
+      else if (series[i] == "R")
+	series_description = "Long QWERTY course  (R1 - R14)";
+      else if (series[i] == "T")
+	series_description = "QWERTY touch typing (T1 - T16)";
+      else if (series[i] == "V")
+	series_description = "Yet Another QWERTY  (V1 - V19)";
+      else if (series[i] == "U")
+	series_description = "QWERTY Review       (U1 - U13)";
+      else if (series[i] == "D")
+	series_description = "Dvorak touch typing (D1 - D14)";
+      else if (series[i] == "M")
+	series_description = "Typing drills       (M1 - M11)";
+      else if (series[i] == "S")
+	series_description = "Speed drills        (S1 - S4)";
+      else if (series[i] == "N")
+	series_description = "Calculator keypad   (N1 - N3)";
+      else # TODO: find sth like "abort"
+	exit 1;
+      printf( " :        Fkey%2d - Series %s     %s\n", i,
+	      series[i], series_description );
+    }
+    for ( ;i <= 9; i++ )
       printf( " :\n" );
     printf( " :\n" );
-    printf( " :\n :        Fkey12 - Exit the program\n" );
+    printf( " :        Fkey10 - More lessons...\n" );
+    printf( " :        Fkey11 - Help...\n" );
+    printf( " :\n" );
+    printf( " :        Fkey12 - Exit the program\n" );
 
     printf( "Q: Please select a series, or Fkey12 to exit \n" );
     printf( "G:__SERIESMENU_DISP\n" );
@@ -219,3 +260,8 @@ END	{
     printf( "=" );
   printf( "\n" );
 }
+
+# Local Variables:
+# compile-command: "(cd ../lessons && ../tools/typcombine ?.typ > gtypist.typ)"
+# truncate-lines: t
+# End:

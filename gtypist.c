@@ -1864,7 +1864,8 @@ This program is released under the GNU General Public License.");
   YN = _("Y/N");
   if (strlen(YN) != 3 || YN[1] != '/' || !isupper(YN[0]) || !isupper(YN[2]))
     {
-      fprintf( stderr, "%s: i18n problem: invalid value for msgid \"Y/N\": %s",
+      fprintf( stderr,
+	       "%s: i18n problem: invalid value for msgid \"Y/N\": %s\n",
 	       argv0, YN );
       exit( 1 );
     }

@@ -48,8 +48,6 @@ T:			Welcome to lesson T1.
  :
  :If you can already touch type, you should be able to go through these lessons
  :fairly quickly.  Or, you may want to go directly to the S series.
-Q: Press Y to continue, or Fkey12 to exit 
-N:_T_R_L0
 
 *:_T_R_L1
 #                                                              ../orig/t.typ:42
@@ -74,8 +72,6 @@ T:
  :Learn these positions well.  Whenever you are about to type a line, look at your
  :fingers and make sure they are in the HOME position.  Then don't look at them
  :again.
-Q: Press Y to continue, or Fkey12 to exit 
-N:_T_R_L1
 
 *:_T_R_L2
 #                                                              ../orig/t.typ:63
@@ -100,24 +96,18 @@ T:
  :you did make a mistake, I will beep at you and make you do the line again.  If
  :on the second try you made more than two mistakes, I will beep again and make
  :you try again, etc.  Don't forget to use your right thumb for the SPACE bar.
-Q: Press Y to continue, or Fkey12 to exit 
-N:_T_R_L2
 
 #                                                              ../orig/t.typ:64
 I:Hit the F-key four times with the first finger of your left hand.
 *:_T_R_L3
 #                                                              ../orig/t.typ:65
-O:ffff
-Q: Press Y to continue, N to repeat, or Fkey12 to exit 
-N:_T_R_L3
+D:ffff
 
 #                                                              ../orig/t.typ:66
 I:Alternately, hit the F-key and the SPACE bar.
 *:_T_R_L4
 #                                                              ../orig/t.typ:67
-O:fff fff fff ff ff ff f f f
-Q: Press Y to continue, N to repeat, or Fkey12 to exit 
-N:_T_R_L4
+D:fff fff fff ff ff ff f f f
 
 #                                                              ../orig/t.typ:68
 I:Don't look at your hands!
@@ -125,121 +115,91 @@ I:Don't look at your hands!
  :Hit the J-key with the first finger of your right hand.
 *:_T_R_L5
 #                                                              ../orig/t.typ:70
-O:jjj jjj jjj jj jj jj j j j
-Q: Press Y to continue, N to repeat, or Fkey12 to exit 
-N:_T_R_L5
+D:jjj jjj jjj jj jj jj j j j
 
 #                                                              ../orig/t.typ:71
 I:Use the left hand for the F and the right hand for the J.
 *:_T_R_L6
 #                                                              ../orig/t.typ:72
-O:fff jjj fff jj ff jj f j f j
-Q: Press Y to continue, N to repeat, or Fkey12 to exit 
-N:_T_R_L6
+D:fff jjj fff jj ff jj f j f j
 
 #                                                              ../orig/t.typ:73
 I:Now intermix them.
 *:_T_R_L7
 #                                                              ../orig/t.typ:74
-O:ffjj jjff fjf fjf jfj jfj
-Q: Press Y to continue, N to repeat, or Fkey12 to exit 
-N:_T_R_L7
+D:ffjj jjff fjf fjf jfj jfj
 
 #                                                              ../orig/t.typ:75
 I:Use the second finger of the left hand for the D-key.
 *:_T_R_L8
 #                                                              ../orig/t.typ:76
-O:ddd ddd ddd dd dd dd d d d
-Q: Press Y to continue, N to repeat, or Fkey12 to exit 
-N:_T_R_L8
+D:ddd ddd ddd dd dd dd d d d
 
 #                                                              ../orig/t.typ:77
 I:Use the second finger of the right hand for the K-key.
 *:_T_R_L9
 #                                                              ../orig/t.typ:78
-O:kkk kkk kkk kk kk kk k k k
-Q: Press Y to continue, N to repeat, or Fkey12 to exit 
-N:_T_R_L9
+D:kkk kkk kkk kk kk kk k k k
 
 #                                                              ../orig/t.typ:80
 I:Now both.
 *:_T_R_L10
 #                                                              ../orig/t.typ:81
-O:ddd kkk dd kk dkd kdk ddd kkk
-Q: Press Y to continue, N to repeat, or Fkey12 to exit 
-N:_T_R_L10
+D:ddd kkk dd kk dkd kdk ddd kkk
 
 #                                                              ../orig/t.typ:82
 I:Use the third fingers of the each hand for the S and L-keys.
 *:_T_R_L11
 #                                                              ../orig/t.typ:83
-O:sss lll sss lll sss ss ll ss ll s l
-Q: Press Y to continue, N to repeat, or Fkey12 to exit 
-N:_T_R_L11
+D:sss lll sss lll sss ss ll ss ll s l
 
 #                                                              ../orig/t.typ:84
 I:Use the fourth fingers for the A and ;-keys.
 *:_T_R_L12
 #                                                              ../orig/t.typ:85
-O:aaa ;;; aaa ;;; aa ;; aa ;; a ;
-Q: Press Y to continue, N to repeat, or Fkey12 to exit 
-N:_T_R_L12
+D:aaa ;;; aaa ;;; aa ;; aa ;; a ;
 
 #                                                              ../orig/t.typ:86
 I:That's enough keys for today.  Let's review them.
 *:_T_R_L13
 #                                                              ../orig/t.typ:87
-O:fff jjj ddd kkk sss lll aaa ;;;
-Q: Press Y to continue, N to repeat, or Fkey12 to exit 
-N:_T_R_L13
+D:fff jjj ddd kkk sss lll aaa ;;;
 
 #                                                              ../orig/t.typ:88
 I:Again.
 *:_T_R_L14
 #                                                              ../orig/t.typ:89
-O:fff jjj ddd kkk sss lll aaa ;;;
-Q: Press Y to continue, N to repeat, or Fkey12 to exit 
-N:_T_R_L14
+D:fff jjj ddd kkk sss lll aaa ;;;
 
 #                                                              ../orig/t.typ:90
 I:Try mixing them together.
 *:_T_R_L15
 #                                                              ../orig/t.typ:91
-O:asdf jkl; asdf jkl; asdf jkl;
-Q: Press Y to continue, N to repeat, or Fkey12 to exit 
-N:_T_R_L15
+D:asdf jkl; asdf jkl; asdf jkl;
 
 #                                                              ../orig/t.typ:92
 I:And still more.
 *:_T_R_L16
 #                                                              ../orig/t.typ:93
-O:fjf kdk sls ;a;
-Q: Press Y to continue, N to repeat, or Fkey12 to exit 
-N:_T_R_L16
+D:fjf kdk sls ;a;
 
 #                                                              ../orig/t.typ:94
 I:Before, we finish, let's try some words.
 *:_T_R_L17
 #                                                              ../orig/t.typ:95
-O:sad add all; alas flask fad
-Q: Press Y to continue, N to repeat, or Fkey12 to exit 
-N:_T_R_L17
+D:sad add all; alas flask fad
 
 #                                                              ../orig/t.typ:96
 I:How about a sentence.
 *:_T_R_L18
 #                                                              ../orig/t.typ:97
-O:ask a sad lad
-Q: Press Y to continue, N to repeat, or Fkey12 to exit 
-N:_T_R_L18
+D:ask a sad lad
 
 #                                                              ../orig/t.typ:98
 I:Sentences are kind of limited with only one vowel!
 *:_T_R_L19
 #                                                              ../orig/t.typ:99
-O:dad asks a lad; a lass falls
-Q: Press Y to continue, N to repeat, or Fkey12 to exit 
-N:_T_R_L19
+D:dad asks a lad; a lass falls
 
 G:_T_E_T1
 #------------------------------------------------------------------------------
@@ -259,101 +219,75 @@ T:
  :bring your finger back over the J.
  :
  :If you lose track of where your fingers are guess.  Don't look!
-Q: Press Y to continue, or Fkey12 to exit 
-N:_T_R_L20
 
 #                                                             ../orig/t.typ:115
 I:First let's review
 *:_T_R_L21
 #                                                             ../orig/t.typ:116
-O:fff jjj ddd kkk sss lll aaa ;;;
-Q: Press Y to continue, N to repeat, or Fkey12 to exit 
-N:_T_R_L21
+D:fff jjj ddd kkk sss lll aaa ;;;
 
 *:_T_R_L22
 #                                                             ../orig/t.typ:120
-O:asdf jkl; fdsa ;lkj
+D:asdf jkl; fdsa ;lkj
  :fjf jfj dkd kdk sls lsl a;a ;a;
  :jkj jlj j;j fdf fsf faf
  :a sad lass; ask dad;
-Q: Press Y to continue, N to repeat, or Fkey12 to exit 
-N:_T_R_L22
 
 #                                                             ../orig/t.typ:121
 I:Use your J-finger for the H key.
 *:_T_R_L23
 #                                                             ../orig/t.typ:122
-O:jjj jhj jjj jhj jjj jhj
-Q: Press Y to continue, N to repeat, or Fkey12 to exit 
-N:_T_R_L23
+D:jjj jhj jjj jhj jjj jhj
 
 *:_T_R_L24
 #                                                             ../orig/t.typ:125
-O:jjj hhh jjj hhh jj hh j h j h
+D:jjj hhh jjj hhh jj hh j h j h
  :jjj had jjj ash jjj has jjj
  :jjj sash jjj hash jjj hall jjj
-Q: Press Y to continue, N to repeat, or Fkey12 to exit 
-N:_T_R_L24
 
 #                                                             ../orig/t.typ:126
 I:Use your F-finger for the G-key.
 *:_T_R_L25
 #                                                             ../orig/t.typ:127
-O:fff fgf fff fgf fff fgf
-Q: Press Y to continue, N to repeat, or Fkey12 to exit 
-N:_T_R_L25
+D:fff fgf fff fgf fff fgf
 
 *:_T_R_L26
 #                                                             ../orig/t.typ:130
-O:fff ggg fff ggg fff ggg
+D:fff ggg fff ggg fff ggg
  :fff gag fff lag fff flag fff
  :fff sag fff slag fff hag fff
-Q: Press Y to continue, N to repeat, or Fkey12 to exit 
-N:_T_R_L26
 
 #                                                             ../orig/t.typ:131
 I:Use your D-finger for the E-key
 *:_T_R_L27
 #                                                             ../orig/t.typ:132
-O:ddd ded ddd ded ddd ded ddd
-Q: Press Y to continue, N to repeat, or Fkey12 to exit 
-N:_T_R_L27
+D:ddd ded ddd ded ddd ded ddd
 
 *:_T_R_L28
 #                                                             ../orig/t.typ:135
-O:ddd eee ddd eee dd ee dd ee d e
+D:ddd eee ddd eee dd ee dd ee d e
  :ddd fee ddd see ddd elf ddd
  :lake asked fake gale egg
-Q: Press Y to continue, N to repeat, or Fkey12 to exit 
-N:_T_R_L28
 
 #                                                             ../orig/t.typ:136
 I:Use your K-finger for the comma.
 *:_T_R_L29
 #                                                             ../orig/t.typ:137
-O:kkk k,k kkk k,k kkk k,k
-Q: Press Y to continue, N to repeat, or Fkey12 to exit 
-N:_T_R_L29
+D:kkk k,k kkk k,k kkk k,k
 
 *:_T_R_L30
 #                                                             ../orig/t.typ:138
-O:kkk ,,, kkk ,,, kkk ,,, kkk
-Q: Press Y to continue, N to repeat, or Fkey12 to exit 
-N:_T_R_L30
+D:kkk ,,, kkk ,,, kkk ,,, kkk
 
 #                                                             ../orig/t.typ:139
 I:Let's finish with some sentences.
 *:_T_R_L31
 #                                                             ../orig/t.typ:140
-O:a lad had a flask, dad had a keg
-Q: Press Y to continue, N to repeat, or Fkey12 to exit 
-N:_T_R_L31
+D:a lad had a flask, dad had a keg
 
 *:_T_R_L32
 #                                                             ../orig/t.typ:141
-O:she had a fake egg, he had a salad
-Q: Press Y to continue, N to repeat, or Fkey12 to exit 
-N:_T_R_L32
+D:she had a fake egg, he had a salad
 
 G:_T_E_T2
 #------------------------------------------------------------------------------
@@ -365,77 +299,57 @@ G:_T_E_T2
 I:Let's review first.
 *:_T_R_L33
 #                                                             ../orig/t.typ:146
-O:fff jjj ddd kkk sss lll aaa ;;;
-Q: Press Y to continue, N to repeat, or Fkey12 to exit 
-N:_T_R_L33
+D:fff jjj ddd kkk sss lll aaa ;;;
 
 *:_T_R_L34
 #                                                             ../orig/t.typ:147
-O:fgf jhj ded k,k fgf jhj ded k,k
-Q: Press Y to continue, N to repeat, or Fkey12 to exit 
-N:_T_R_L34
+D:fgf jhj ded k,k fgf jhj ded k,k
 
 #                                                             ../orig/t.typ:149
 I:Use your K-finger for the I key.
 *:_T_R_L35
 #                                                             ../orig/t.typ:150
-O:kkk kik kkk kik kkk iii kkk
-Q: Press Y to continue, N to repeat, or Fkey12 to exit 
-N:_T_R_L35
+D:kkk kik kkk kik kkk iii kkk
 
 *:_T_R_L36
 #                                                             ../orig/t.typ:154
-O:kkk iii kkk iii kk ii kk ii
+D:kkk iii kkk iii kk ii kk ii
  :kkk lid kkk hill kkk did kkk
  :kkk kill kkk kid kkk like kkk
  :kkk kiss kkk hide kkk fill kkk
-Q: Press Y to continue, N to repeat, or Fkey12 to exit 
-N:_T_R_L36
 
 #                                                             ../orig/t.typ:155
 I:Use your F-finger for the R key.
 *:_T_R_L37
 #                                                             ../orig/t.typ:156
-O:fff frf fff frf fff frf
-Q: Press Y to continue, N to repeat, or Fkey12 to exit 
-N:_T_R_L37
+D:fff frf fff frf fff frf
 
 *:_T_R_L38
 #                                                             ../orig/t.typ:160
-O:fff rrr fff rrr ff rr ff rr
+D:fff rrr fff rrr ff rr ff rr
  :fff rake fff rag fff her fff
  :fff red fff read fff rage fff
  :fff far fff red fff jar fff
-Q: Press Y to continue, N to repeat, or Fkey12 to exit 
-N:_T_R_L38
 
 *:_T_R_L39
 #                                                             ../orig/t.typ:161
-O:fff fare fff rare fff rake fff
-Q: Press Y to continue, N to repeat, or Fkey12 to exit 
-N:_T_R_L39
+D:fff fare fff rare fff rake fff
 
 *:_T_R_L40
 #                                                             ../orig/t.typ:162
-O:fff rid fff ire fff fair fff
-Q: Press Y to continue, N to repeat, or Fkey12 to exit 
-N:_T_R_L40
+D:fff rid fff ire fff fair fff
 
 #                                                             ../orig/t.typ:163
 I:Use your L-finger for the period.
 *:_T_R_L41
 #                                                             ../orig/t.typ:164
-O:lll l.l lll l.l lll l.l lll
-Q: Press Y to continue, N to repeat, or Fkey12 to exit 
-N:_T_R_L41
+D:lll l.l lll l.l lll l.l lll
 
 *:_T_R_L42
 #                                                             ../orig/t.typ:167
-O:lll ... lll ... ll .. ll .. l .
+D:lll ... lll ... ll .. ll .. l .
  :lll adj. lll id. lll
  :lll eg. lll i.e. lll
-Q: Press Y to continue, N to repeat, or Fkey12 to exit 
-N:_T_R_L42
 
 *:_T_R_L43
 #                                                             ../orig/t.typ:179
@@ -451,67 +365,49 @@ T:The next key we are going to practice is the right shift key.
  :	b.)  Strike the key that you want to type with your left hand.
  :
  :	c.)  Immediately bring your fourth finger back to the ;-key.
-Q: Press Y to continue, or Fkey12 to exit 
-N:_T_R_L43
 
 #                                                             ../orig/t.typ:180
 I:Don't look at your fingers!
 *:_T_R_L44
 #                                                             ../orig/t.typ:181
-O:;;; ;A; ;;; ;F; ;;; ;D; ;;; ;S;
-Q: Press Y to continue, N to repeat, or Fkey12 to exit 
-N:_T_R_L44
+D:;;; ;A; ;;; ;F; ;;; ;D; ;;; ;S;
 
 *:_T_R_L45
 #                                                             ../orig/t.typ:182
-O:;;; Dear ;;; Sir ;;;
-Q: Press Y to continue, N to repeat, or Fkey12 to exit 
-N:_T_R_L45
+D:;;; Dear ;;; Sir ;;;
 
 *:_T_R_L46
 #                                                             ../orig/t.typ:183
-O:;;; Fred ;;; Gail ;;; Alf ;;; Dale ;;;
-Q: Press Y to continue, N to repeat, or Fkey12 to exit 
-N:_T_R_L46
+D:;;; Fred ;;; Gail ;;; Alf ;;; Dale ;;;
 
 *:_T_R_L47
 #                                                             ../orig/t.typ:185
-O:;;; Ada ;;; Al ;;; Greg ;;;
+D:;;; Ada ;;; Al ;;; Greg ;;;
  :jjj Dr. jjj Sr. jjj Fr. jjj
-Q: Press Y to continue, N to repeat, or Fkey12 to exit 
-N:_T_R_L47
 
 #                                                             ../orig/t.typ:186
 I:Let's try some (strange) sentences.
 *:_T_R_L48
 #                                                             ../orig/t.typ:187
-O:Sir, idle disks seek flags.
-Q: Press Y to continue, N to repeat, or Fkey12 to exit 
-N:_T_R_L48
+D:Sir, idle disks seek flags.
 
 *:_T_R_L49
 #                                                             ../orig/t.typ:191
-O:She sells seashells.
+D:She sells seashells.
  :Sailfish sail idle seas.
  :She seeks a fig leaf.
  :Red hair is like a fire.
-Q: Press Y to continue, N to repeat, or Fkey12 to exit 
-N:_T_R_L49
 
 #                                                             ../orig/t.typ:192
 I:Always double space after a period.
 *:_T_R_L50
 #                                                             ../orig/t.typ:193
-O:A free red jade is fake.  Girls like silk.
-Q: Press Y to continue, N to repeat, or Fkey12 to exit 
-N:_T_R_L50
+D:A free red jade is fake.  Girls like silk.
 
 *:_T_R_L51
 #                                                             ../orig/t.typ:195
-O:She seeks a safe reef, if she sails.  A gale is rare.
+D:She seeks a safe reef, if she sails.  A gale is rare.
  :Alf fed her egg salad.  Gail likes hash.
-Q: Press Y to continue, N to repeat, or Fkey12 to exit 
-N:_T_R_L51
 
 G:_T_E_T3
 #------------------------------------------------------------------------------
@@ -523,40 +419,30 @@ G:_T_E_T3
 I:First a quick review:
 *:_T_R_L52
 #                                                             ../orig/t.typ:200
-O:jkl; fdsa ded fgf jhj k,k kik frf l.l
-Q: Press Y to continue, N to repeat, or Fkey12 to exit 
-N:_T_R_L52
+D:jkl; fdsa ded fgf jhj k,k kik frf l.l
 
 #                                                             ../orig/t.typ:202
 I:Use your L-finger for the O-key.
 *:_T_R_L53
 #                                                             ../orig/t.typ:203
-O:lll lol lll ooo lll lol
-Q: Press Y to continue, N to repeat, or Fkey12 to exit 
-N:_T_R_L53
+D:lll lol lll ooo lll lol
 
 *:_T_R_L53A
 #                                                             ../orig/t.typ:206
-O:lll log lll rod lll for lll
+D:lll log lll rod lll for lll
  :lll load lll roll lll oleo lll
-Q: Press Y to continue, N to repeat, or Fkey12 to exit 
-N:_T_R_L53A
 
 #
 I:Use your ;-finger for the P-key.
 *:_T_R_L54
 #                                                             ../orig/t.typ:207
-O:;;; ;p; ;;; ppp ;;; ;p; ;;;
-Q: Press Y to continue, N to repeat, or Fkey12 to exit 
-N:_T_R_L54
+D:;;; ;p; ;;; ppp ;;; ;p; ;;;
 
 *:_T_R_L55
 #                                                             ../orig/t.typ:210
-O:;;; pad ;;; peg ;;; ape ;;;
+D:;;; pad ;;; peg ;;; ape ;;;
  :;;; poke ;;; pear ;;; peek ;;;
  :;;; opera ;;; hope ;;; drape ;;;
-Q: Press Y to continue, N to repeat, or Fkey12 to exit 
-N:_T_R_L55
 
 *:_T_R_L56
 #                                                             ../orig/t.typ:219
@@ -569,67 +455,49 @@ T:			The Left-Shift key.
  :	2.)  Strike the key that you want to capitalize with your right hand.
  :
  :	3.)  Immediately swing your A-finger back to its home position.
-Q: Press Y to continue, or Fkey12 to exit 
-N:_T_R_L56
 
 *:_T_R_L57
 #                                                             ../orig/t.typ:220
-O:aaa Pi aaa Lord aaa Jill aaa
-Q: Press Y to continue, N to repeat, or Fkey12 to exit 
-N:_T_R_L57
+D:aaa Pi aaa Lord aaa Jill aaa
 
 #                                                             ../orig/t.typ:221
 I:Try capitalizing each of the keys on the right-side:
 *:_T_R_L58
 #                                                             ../orig/t.typ:222
-O:Joe Kip Leif Peg Olaf Ira Heidi
-Q: Press Y to continue, N to repeat, or Fkey12 to exit 
-N:_T_R_L58
+D:Joe Kip Leif Peg Olaf Ira Heidi
 
 #                                                             ../orig/t.typ:223
 I:Don't forget to use your right-shift key for letters on the left side:
 *:_T_R_L59
 #                                                             ../orig/t.typ:224
-O:a;a P.S. a;a I.R.S. a;a
-Q: Press Y to continue, N to repeat, or Fkey12 to exit 
-N:_T_R_L59
+D:a;a P.S. a;a I.R.S. a;a
 
 #                                                             ../orig/t.typ:225
 I:Use your ;-finger for the ?-key.
 *:_T_R_L60
 #                                                             ../orig/t.typ:226
-O:;;; ;?; ;;; ??? ;;; ;?; ;;;
-Q: Press Y to continue, N to repeat, or Fkey12 to exit 
-N:_T_R_L60
+D:;;; ;?; ;;; ??? ;;; ;?; ;;;
 
 *:_T_R_L61
 #                                                             ../orig/t.typ:227
-O:;;; He? ;;; She? ;;; I? ;;;
-Q: Press Y to continue, N to repeat, or Fkey12 to exit 
-N:_T_R_L61
+D:;;; He? ;;; She? ;;; I? ;;;
 
 #                                                             ../orig/t.typ:228
 I:Let's try some sentences.
 *:_T_R_L62
 #                                                             ../orig/t.typ:229
-O:Dad fell off a ladder.  Is he safe?
-Q: Press Y to continue, N to repeat, or Fkey12 to exit 
-N:_T_R_L62
+D:Dad fell off a ladder.  Is he safe?
 
 #                                                             ../orig/t.typ:230
 I:Always double space after a question mark.
 *:_T_R_L63
 #                                                             ../orig/t.typ:231
-O:Is he here?  Sal said he fell hard.
-Q: Press Y to continue, N to repeat, or Fkey12 to exit 
-N:_T_R_L63
+D:Is he here?  Sal said he fell hard.
 
 *:_T_R_L64
 #                                                             ../orig/t.typ:233
-O:Did she see his fall?  Jake heard he is OK.
+D:Did she see his fall?  Jake heard he is OK.
  :I hope people keep off high ladders.
-Q: Press Y to continue, N to repeat, or Fkey12 to exit 
-N:_T_R_L64
 
 G:_T_E_T4
 #------------------------------------------------------------------------------
@@ -641,81 +509,59 @@ G:_T_E_T4
 I:As always, let's start with a review:
 *:_T_R_L65
 #                                                             ../orig/t.typ:238
-O:ade fgh ijk lop rs; ?.,
-Q: Press Y to continue, N to repeat, or Fkey12 to exit 
-N:_T_R_L65
+D:ade fgh ijk lop rs; ?.,
 
 #                                                             ../orig/t.typ:239
 I:Again.
 *:_T_R_L66
 #                                                             ../orig/t.typ:240
-O:ade fgh ijk lop rs; ?.,
-Q: Press Y to continue, N to repeat, or Fkey12 to exit 
-N:_T_R_L66
+D:ade fgh ijk lop rs; ?.,
 
 #                                                             ../orig/t.typ:242
 I:Use your F-finger for the T-key.
 *:_T_R_L67
 #                                                             ../orig/t.typ:243
-O:fff ftf fff ttt fff ftf fff
-Q: Press Y to continue, N to repeat, or Fkey12 to exit 
-N:_T_R_L67
+D:fff ftf fff ttt fff ftf fff
 
 *:_T_R_L68
 #                                                             ../orig/t.typ:244
-O:ftf the ftf top ftf ate ftf
-Q: Press Y to continue, N to repeat, or Fkey12 to exit 
-N:_T_R_L68
+D:ftf the ftf top ftf ate ftf
 
 *:_T_R_L69
 #                                                             ../orig/t.typ:245
-O:ftf three ftf often ftf there
-Q: Press Y to continue, N to repeat, or Fkey12 to exit 
-N:_T_R_L69
+D:ftf three ftf often ftf there
 
 *:_T_R_L70
 #                                                             ../orig/t.typ:246
-O:The talk is that those three are threatening her.
-Q: Press Y to continue, N to repeat, or Fkey12 to exit 
-N:_T_R_L70
+D:The talk is that those three are threatening her.
 
 #                                                             ../orig/t.typ:247
 I:Use your J-finger for the N-key.
 *:_T_R_L71
 #                                                             ../orig/t.typ:248
-O:jjj jnj jjj nnn jjj jnj jjj
-Q: Press Y to continue, N to repeat, or Fkey12 to exit 
-N:_T_R_L71
+D:jjj jnj jjj nnn jjj jnj jjj
 
 *:_T_R_L72
 #                                                             ../orig/t.typ:251
-O:jnj not jnj ton jnj one jnj
+D:jnj not jnj ton jnj one jnj
  :jnj neither jnj opening jnj kneeling jnj
  :No one has an interest in it.
-Q: Press Y to continue, N to repeat, or Fkey12 to exit 
-N:_T_R_L72
 
 #                                                             ../orig/t.typ:252
 I:Use your ;-finger for the :-key.
 *:_T_R_L73
 #                                                             ../orig/t.typ:253
-O:;;; ;:; ;;; ::: ;;; ;:; ;;;
-Q: Press Y to continue, N to repeat, or Fkey12 to exit 
-N:_T_R_L73
+D:;;; ;:; ;;; ::: ;;; ;:; ;;;
 
 #                                                             ../orig/t.typ:254
 I:Always double space after a colon.
 *:_T_R_L74
 #                                                             ../orig/t.typ:255
-O:Dear Sirs:  Dear John:  Dear Alfred:
-Q: Press Y to continue, N to repeat, or Fkey12 to exit 
-N:_T_R_L74
+D:Dear Sirs:  Dear John:  Dear Alfred:
 
 *:_T_R_L75
 #                                                             ../orig/t.typ:256
-O:Dear Dr. Stone:  To Heathkit:
-Q: Press Y to continue, N to repeat, or Fkey12 to exit 
-N:_T_R_L75
+D:Dear Dr. Stone:  To Heathkit:
 
 *:_T_R_L76
 #                                                             ../orig/t.typ:271
@@ -734,24 +580,18 @@ T:			SPEED EXERCISES
  :If you make a mistake, I will beep at you and light up the letter that you
  :should have typed in inverse video (a black letter on a white background).
  :Just keep going and try to make as few errors as possible.
-Q: Press Y to continue, or Fkey12 to exit 
-N:_T_R_L76
 
 #                                                             ../orig/t.typ:272
 I:Try this sentence:
 *:_T_R_L77
 #                                                             ../orig/t.typ:273
 P:Sarah has liked knitting all her life.
-Q: Press Y to continue, N to repeat, or Fkey12 to exit 
-N:_T_R_L77
 
 #                                                             ../orig/t.typ:274
 I:Try a little longer sentence.
 *:_T_R_L78
 #                                                             ../orig/t.typ:275
 P:She looked past her garden to the fields and longed to see the other side.
-Q: Press Y to continue, N to repeat, or Fkey12 to exit 
-N:_T_R_L78
 
 #                                                             ../orig/t.typ:277
 I:When you type a multi-line paragraph, you will have to hit the RETURN-key at
@@ -761,8 +601,6 @@ I:When you type a multi-line paragraph, you will have to hit the RETURN-key at
 P:All the sane people in this area sold their gold
  :right at the start.  The insane ones held their
  :gold and later it paid off.
-Q: Press Y to continue, N to repeat, or Fkey12 to exit 
-N:_T_R_L79
 
 *:_T_R_L80
 #                                                             ../orig/t.typ:285
@@ -771,8 +609,6 @@ P:One fine afternoon the king had an idea.  He
  :his land.  He asked for a great feast.  His
  :people prepared roasts.  His jester did a jig.
  :All the people left hoping to do it again.
-Q: Press Y to continue, N to repeat, or Fkey12 to exit 
-N:_T_R_L80
 
 G:_T_E_T5
 #------------------------------------------------------------------------------
@@ -784,73 +620,55 @@ G:_T_E_T5
 I:Let's review the letters we've already learned.
 *:_T_R_L81
 #                                                             ../orig/t.typ:290
-O:jkj fdf jlj fsf j;j faf kik ded frf
-Q: Press Y to continue, N to repeat, or Fkey12 to exit 
-N:_T_R_L81
+D:jkj fdf jlj fsf j;j faf kik ded frf
 
 *:_T_R_L82
 #                                                             ../orig/t.typ:293
-O:fgf jhj k,k l.l A;A F;F E;E
+D:fgf jhj k,k l.l A;A F;F E;E
  :lol ;p; JaJ :a: ftf jnj ;:;
  :jug ton knot poison the neither often
-Q: Press Y to continue, N to repeat, or Fkey12 to exit 
-N:_T_R_L82
 
 #                                                             ../orig/t.typ:295
 I:Use your F-finger for the B-key.
 *:_T_R_L83
 #                                                             ../orig/t.typ:296
-O:fff fbf fff bbb fff fbf fff
-Q: Press Y to continue, N to repeat, or Fkey12 to exit 
-N:_T_R_L83
+D:fff fbf fff bbb fff fbf fff
 
 #                                                             ../orig/t.typ:297
 I:The B-key is the longest reach we've seen so far.  Let's try it again.
 *:_T_R_L84
 #                                                             ../orig/t.typ:298
-O:fff fbf fff bbb fff fbf fff
-Q: Press Y to continue, N to repeat, or Fkey12 to exit 
-N:_T_R_L84
+D:fff fbf fff bbb fff fbf fff
 
 *:_T_R_L84A
 #                                                             ../orig/t.typ:301
-O:frf bar frf rib frf pub frf
+D:frf bar frf rib frf pub frf
  :frf bring frf abort frf brother frf
-Q: Press Y to continue, N to repeat, or Fkey12 to exit 
-N:_T_R_L84A
 
 #
 I:Use your J-finger for the U-key.
 *:_T_R_L85
 #                                                             ../orig/t.typ:302
-O:jjj juj jjj uuu jjj juj jjj
-Q: Press Y to continue, N to repeat, or Fkey12 to exit 
-N:_T_R_L85
+D:jjj juj jjj uuu jjj juj jjj
 
 *:_T_R_L86
 #                                                             ../orig/t.typ:305
-O:juj jug juj use juj hug juj
+D:juj jug juj use juj hug juj
  :juj tulip juj turn juj under juj
  :Please pass the butter and salt, but not the pepper.
-Q: Press Y to continue, N to repeat, or Fkey12 to exit 
-N:_T_R_L86
 
 #                                                             ../orig/t.typ:306
 I:Use your ;-finger for the /-key.
 *:_T_R_L87
 #                                                             ../orig/t.typ:307
-O:;;; ;/; ;;; /// ;;; ;/; ;;;
-Q: Press Y to continue, N to repeat, or Fkey12 to exit 
-N:_T_R_L87
+D:;;; ;/; ;;; /// ;;; ;/; ;;;
 
 *:_T_R_L88
 #                                                             ../orig/t.typ:311
-O:;/; n/a ;/; and/or ;/; left/right
+D:;/; n/a ;/; and/or ;/; left/right
  :In this era of E.R.A., I hope he/she likes his/her job.
  :He/she should bring his/her spouse at about noon or just before.
  :Should I be here alone?  Is Bernie and/or Julie going to be here, too?
-Q: Press Y to continue, N to repeat, or Fkey12 to exit 
-N:_T_R_L88
 
 #                                                             ../orig/t.typ:312
 I:Try your speed on some paragraphs:
@@ -859,8 +677,6 @@ I:Try your speed on some paragraphs:
 P:All bills are to be paid in full.  If
  :there is no fee to be paid, return the
  :bill and put n/a in the total due part.
-Q: Press Y to continue, N to repeat, or Fkey12 to exit 
-N:_T_R_L89
 
 #                                                             ../orig/t.typ:316
 I:You should be aiming for 15 WPM.  (If you did better, work on accuracy.)
@@ -869,8 +685,6 @@ I:You should be aiming for 15 WPM.  (If you did better, work on accuracy.)
 P:In baseball, bunting is a kind of hit.  But, bunting also
  :refers to a kind of bird and the stuff that is used in
  :flags.  English sure is a strange language.
-Q: Press Y to continue, N to repeat, or Fkey12 to exit 
-N:_T_R_L90
 
 G:_T_E_T6
 #------------------------------------------------------------------------------
@@ -882,108 +696,79 @@ G:_T_E_T6
 I:First a review of the letters we've learned before:
 *:_T_R_L91
 #                                                             ../orig/t.typ:324
-O:juj ded kik frf lol fgf ;p; jhj
-Q: Press Y to continue, N to repeat, or Fkey12 to exit 
-N:_T_R_L91
+D:juj ded kik frf lol fgf ;p; jhj
 
 *:_T_R_L92
 #                                                             ../orig/t.typ:325
-O:ftf jnj ftf jnj fbf juj ;?; l.l k,k
-Q: Press Y to continue, N to repeat, or Fkey12 to exit 
-N:_T_R_L92
+D:ftf jnj ftf jnj fbf juj ;?; l.l k,k
 
 #                                                             ../orig/t.typ:327
 I:Use your D-finger for the C-key.
 *:_T_R_L93
 #                                                             ../orig/t.typ:328
-O:ddd dcd ddd ccc ddd dcd
-Q: Press Y to continue, N to repeat, or Fkey12 to exit 
-N:_T_R_L93
+D:ddd dcd ddd ccc ddd dcd
 
 *:_T_R_L94
 #                                                             ../orig/t.typ:331
-O:ddd cat ddd cup ddd can
+D:ddd cat ddd cup ddd can
  :dcd duck dcd card dcd pack dcd
  :dcd crate dcd scrap dcd trick dcd
-Q: Press Y to continue, N to repeat, or Fkey12 to exit 
-N:_T_R_L94
 
 #                                                             ../orig/t.typ:332
 I:Use your J-finger for the M-key
 *:_T_R_L95
 #                                                             ../orig/t.typ:333
-O:jjj jmj jjj mmm jjj jmj jjj
-Q: Press Y to continue, N to repeat, or Fkey12 to exit 
-N:_T_R_L95
+D:jjj jmj jjj mmm jjj jmj jjj
 
 *:_T_R_L96
 #                                                             ../orig/t.typ:337
-O:jjj met jjj rim jjj map jjj
+D:jjj met jjj rim jjj map jjj
  :jmj man jmj men jmj ham jjj
  :jmj Mr. jmj Mrs. jmj Ms. jmj
  :jmj number jmj stream jmj mankind jmj
-Q: Press Y to continue, N to repeat, or Fkey12 to exit 
-N:_T_R_L96
 
 #                                                             ../orig/t.typ:338
 I:Use your ;-finger for the hyphen.
 *:_T_R_L97
 #                                                             ../orig/t.typ:339
-O:;;; ;-; ;;; --- ;;; ;-; ;;; ;-;
-Q: Press Y to continue, N to repeat, or Fkey12 to exit 
-N:_T_R_L97
+D:;;; ;-; ;;; --- ;;; ;-; ;;; ;-;
 
 *:_T_R_L98
 #                                                             ../orig/t.typ:341
-O:;;; one-third ;;; one-half ;;; three-fifths ;;;
+D:;;; one-third ;;; one-half ;;; three-fifths ;;;
  :;;; part-time ;;; self-made ;;; all-American ;;;
-Q: Press Y to continue, N to repeat, or Fkey12 to exit 
-N:_T_R_L98
 
 #                                                             ../orig/t.typ:342
 I:Let's try some sentences:
 *:_T_R_L99
 #                                                             ../orig/t.typ:343
-O:Peter Piper picked a peck of pickled peppers.
-Q: Press Y to continue, N to repeat, or Fkey12 to exit 
-N:_T_R_L99
+D:Peter Piper picked a peck of pickled peppers.
 
 *:_T_R_L100
 #                                                             ../orig/t.typ:344
-O:Motion pictures often depict macabre scenes.
-Q: Press Y to continue, N to repeat, or Fkey12 to exit 
-N:_T_R_L100
+D:Motion pictures often depict macabre scenes.
 
 *:_T_R_L101
 #                                                             ../orig/t.typ:345
-O:Once upon a time, marriages lasted longer than mortgages.
-Q: Press Y to continue, N to repeat, or Fkey12 to exit 
-N:_T_R_L101
-
+D:Once upon a time, marriages lasted longer than mortgages.
 #                                                             ../orig/t.typ:346
 I:There are three uses of the hyphen.  It can be used to combine two words:
 *:_T_R_L102
 #                                                             ../orig/t.typ:347
-O:She had on a bluish-green dress.  But, no one noticed.
-Q: Press Y to continue, N to repeat, or Fkey12 to exit 
-N:_T_R_L102
+D:She had on a bluish-green dress.  But, no one noticed.
 
 #                                                             ../orig/t.typ:348
 I:To divide a word:
 *:_T_R_L103
 #                                                             ../orig/t.typ:350
-O:At macrame class last night, I made a hanging basket for the philo-
+D:At macrame class last night, I made a hanging basket for the philo-
  :dendron in our dining room.
-Q: Press Y to continue, N to repeat, or Fkey12 to exit 
-N:_T_R_L103
 
 #                                                             ../orig/t.typ:351
 I:Or, to form a dash:
 *:_T_R_L104
 #                                                             ../orig/t.typ:352
-O:Fifteen dollars a month--measured in current dollars--is a good rate.
-Q: Press Y to continue, N to repeat, or Fkey12 to exit 
-N:_T_R_L104
+D:Fifteen dollars a month--measured in current dollars--is a good rate.
 
 #                                                             ../orig/t.typ:353
 I:Let's try a speed drill on these sentences:
@@ -991,8 +776,6 @@ I:Let's try a speed drill on these sentences:
 #                                                             ../orig/t.typ:355
 P:The clock ran out, signaling the end of
  :the second-half.  The game had been lost.
-Q: Press Y to continue, N to repeat, or Fkey12 to exit 
-N:_T_R_L105
 
 *:_T_R_L106
 #                                                             ../orig/t.typ:364
@@ -1005,8 +788,6 @@ P:The paper just made an announce-
  :consumes crude oil.  The talk is
  :that it is being patented for use
  :on oil spills at sea.
-Q: Press Y to continue, N to repeat, or Fkey12 to exit 
-N:_T_R_L106
 
 #                                                             ../orig/t.typ:365
 I:Hit the return key twice for blank lines:
@@ -1021,8 +802,6 @@ P:Dear Mr. Mandrake:
  :Thanks,
  :
  :Mrs. Carmichael
-Q: Press Y to continue, N to repeat, or Fkey12 to exit 
-N:_T_R_L107
 
 G:_T_E_T7
 #------------------------------------------------------------------------------
@@ -1034,38 +813,28 @@ G:_T_E_T7
 I:As always, we will start with a quick review
 *:_T_R_L108
 #                                                             ../orig/t.typ:379
-O:jfj dkd lsl a;a dcd jmj ;-; fbf juj
-Q: Press Y to continue, N to repeat, or Fkey12 to exit 
-N:_T_R_L108
+D:jfj dkd lsl a;a dcd jmj ;-; fbf juj
 
 #                                                             ../orig/t.typ:381
 I:Let's try some long words.
 *:_T_R_L109
 #                                                             ../orig/t.typ:382
-O:meteorology camera bituminous chimera phosphates
-Q: Press Y to continue, N to repeat, or Fkey12 to exit 
-N:_T_R_L109
+D:meteorology camera bituminous chimera phosphates
 
 #                                                             ../orig/t.typ:383
 I:Use your S-finger for the W-key.
 *:_T_R_L110
 #                                                             ../orig/t.typ:384
-O:sss sws sss www sss sws sss
-Q: Press Y to continue, N to repeat, or Fkey12 to exit 
-N:_T_R_L110
+D:sss sws sss www sss sws sss
 
 *:_T_R_L111
 #                                                             ../orig/t.typ:385
-O:sss wet sss who sss was sss
-Q: Press Y to continue, N to repeat, or Fkey12 to exit 
-N:_T_R_L111
+D:sss wet sss who sss was sss
 
 *:_T_R_L112
 #                                                             ../orig/t.typ:387
-O:sws who sws what sws when sws where sws
+D:sws who sws what sws when sws where sws
  :knowledge whatever Wimbledon know-it-all
-Q: Press Y to continue, N to repeat, or Fkey12 to exit 
-N:_T_R_L112
 
 *:_T_R_L113
 #                                                             ../orig/t.typ:391
@@ -1073,60 +842,44 @@ P:How much wood could a woodchuck chuck if a
  :woodchuck could chuck wood?  A woodchuck
  :would chuck all the wood that a woodchuck
  :could chuck, if a woodchuck could chuck wood.
-Q: Press Y to continue, N to repeat, or Fkey12 to exit 
-N:_T_R_L113
 
 #                                                             ../orig/t.typ:392
 I:Use your J-finger for the Y-key.
 *:_T_R_L114
 #                                                             ../orig/t.typ:393
-O:jjj jyj jjj yyy jjj jyj jjj
-Q: Press Y to continue, N to repeat, or Fkey12 to exit 
-N:_T_R_L114
+D:jjj jyj jjj yyy jjj jyj jjj
 
 *:_T_R_L115
 #                                                             ../orig/t.typ:396
-O:jjj why jjj you jjj try jjj rye jjj
+D:jjj why jjj you jjj try jjj rye jjj
  :jjj year jjj July jjj your jjj jury jjj
  :Were your yard sales much better last year?
-Q: Press Y to continue, N to repeat, or Fkey12 to exit 
-N:_T_R_L115
 
 #                                                             ../orig/t.typ:397
 I:Try your speed on this sentence:
 *:_T_R_L116
 #                                                             ../orig/t.typ:398
 P:Why are you typing so slowly?
-Q: Press Y to continue, N to repeat, or Fkey12 to exit 
-N:_T_R_L116
 
 #                                                             ../orig/t.typ:399
 I:Use your F-finger for the V-key.
 *:_T_R_L117
 #                                                             ../orig/t.typ:400
-O:fff fvf fff vvv fff fvf fff
-Q: Press Y to continue, N to repeat, or Fkey12 to exit 
-N:_T_R_L117
+D:fff fvf fff vvv fff fvf fff
 
 *:_T_R_L118
 #                                                             ../orig/t.typ:401
-O:fff vat fff eve fff vow fff
-Q: Press Y to continue, N to repeat, or Fkey12 to exit 
-N:_T_R_L118
+D:fff vat fff eve fff vow fff
 
 *:_T_R_L119
 #                                                             ../orig/t.typ:402
-O:fvf vine fvf dove fvf ever fvf very fvf
-Q: Press Y to continue, N to repeat, or Fkey12 to exit 
-N:_T_R_L119
+D:fvf vine fvf dove fvf ever fvf very fvf
 
 *:_T_R_L120
 #                                                             ../orig/t.typ:405
-O:driven vertical advent ventrical
+D:driven vertical advent ventrical
  :What a fine vineyard you have.
  :Do you intend to play adventure every night?
-Q: Press Y to continue, N to repeat, or Fkey12 to exit 
-N:_T_R_L120
 
 *:_T_R_L121
 #                                                             ../orig/t.typ:419
@@ -1144,8 +897,6 @@ T:			THE BACKSPACE
  :
  :If you do chose to use the DELETE or BACKSPACE keys, hit the key with your
  :;-finger and immediately return your fingers to the home position.
-Q: Press Y to continue, or Fkey12 to exit 
-N:_T_R_L121
 
 #                                                             ../orig/t.typ:420
 I:Let's try our speed on some nursery rhymes!
@@ -1155,15 +906,11 @@ P:Mary had a little lamb
  :Its fleece was white as snow
  :And every where that Mary went
  :The lamb was sure to go.
-Q: Press Y to continue, N to repeat, or Fkey12 to exit 
-N:_T_R_L122
 
 *:_T_R_L123
 #                                                             ../orig/t.typ:426
 P:Jack and Jill went up a hill to fetch a pail of water.
  :Jack fell down and broke his crown and Jill came tumbling after.
-Q: Press Y to continue, N to repeat, or Fkey12 to exit 
-N:_T_R_L123
 
 *:_T_R_L124
 #                                                             ../orig/t.typ:431
@@ -1172,8 +919,6 @@ P:Little Miss Muffet sat on a tuffet
  :Along came a spider
  :Who sat down beside her
  :And frightened Miss Muffet away.
-Q: Press Y to continue, N to repeat, or Fkey12 to exit 
-N:_T_R_L124
 
 *:_T_R_L125
 #                                                             ../orig/t.typ:436
@@ -1182,8 +927,6 @@ P:Hey, diddle diddle--
  :The cow jumped over the moon.
  :The little dog laughed to see such sport,
  :And the dish ran away with the spoon.
-Q: Press Y to continue, N to repeat, or Fkey12 to exit 
-N:_T_R_L125
 
 G:_T_E_T8
 #------------------------------------------------------------------------------
@@ -1195,144 +938,106 @@ G:_T_E_T8
 I:First, a review.
 *:_T_R_L126
 #                                                             ../orig/t.typ:441
-O:a;a sls dkd fjf sws jyj fvf dcd jmj ;-;
-Q: Press Y to continue, N to repeat, or Fkey12 to exit 
-N:_T_R_L126
+D:a;a sls dkd fjf sws jyj fvf dcd jmj ;-;
 
 #                                                             ../orig/t.typ:443
 I:Notice that the only letters left to go are the Q, X, and Z!
 *:_T_R_L127
 #                                                             ../orig/t.typ:444
-O:abcdefghijklmnoprstuvwy
-Q: Press Y to continue, N to repeat, or Fkey12 to exit 
-N:_T_R_L127
+D:abcdefghijklmnoprstuvwy
 
 #                                                             ../orig/t.typ:445
 I:Use your A-finger for the Q-key.
 *:_T_R_L128
 #                                                             ../orig/t.typ:446
-O:aaa aqa aaa qqq aaa aqa aaa
-Q: Press Y to continue, N to repeat, or Fkey12 to exit 
-N:_T_R_L128
+D:aaa aqa aaa qqq aaa aqa aaa
 
 *:_T_R_L128A
 #                                                             ../orig/t.typ:450
-O:aaa quit aaa quad aaa quip aaa
+D:aaa quit aaa quad aaa quip aaa
  :lacquer inquiry squirt quart
  :quail quiver inquest marquis
-Q: Press Y to continue, N to repeat, or Fkey12 to exit 
-N:_T_R_L128A
 
 #
 I:Use your S-finger for the X-key.
 *:_T_R_L129
 #                                                             ../orig/t.typ:451
-O:sss sxs sss xxx sss sxs sss
-Q: Press Y to continue, N to repeat, or Fkey12 to exit 
-N:_T_R_L129
+D:sss sxs sss xxx sss sxs sss
 
 *:_T_R_L129A
 #                                                             ../orig/t.typ:455
-O:sss ax sss ox sss vex sss wax xxx
+D:sss ax sss ox sss vex sss wax xxx
  :examine ex-wife excellent boxer sixteen
  :exactly sphinx oxygen except thorax
-Q: Press Y to continue, N to repeat, or Fkey12 to exit 
-N:_T_R_L129A
 
 #
 I:Use your A-finger for the Z-key.
 *:_T_R_L130
 #                                                             ../orig/t.typ:456
-O:aaa aza aaa zzz aaa aza aaa
-Q: Press Y to continue, N to repeat, or Fkey12 to exit 
-N:_T_R_L130
+D:aaa aza aaa zzz aaa aza aaa
 
 *:_T_R_L131
 #                                                             ../orig/t.typ:459
-O:aaa adz aaa azo aaa coz aaa
+D:aaa adz aaa azo aaa coz aaa
  :quiz jazz quartz zinc dozen
  :oxidize squeeze azimuth zoology
-Q: Press Y to continue, N to repeat, or Fkey12 to exit 
-N:_T_R_L131
 
 #                                                             ../orig/t.typ:460
 I:The big event!!!!!!!!!!!!!!!!!!
 *:_T_R_L132
 #                                                             ../orig/t.typ:461
-O:abcdefghijklmnopqrstuvwxyz
-Q: Press Y to continue, N to repeat, or Fkey12 to exit 
-N:_T_R_L132
+D:abcdefghijklmnopqrstuvwxyz
 
 *:_T_R_L132A
 #                                                             ../orig/t.typ:463
-O:zyxwvutsrqponmlkjihgfedcba
-Q: Press Y to continue, N to repeat, or Fkey12 to exit 
-N:_T_R_L132A
+D:zyxwvutsrqponmlkjihgfedcba
 
 #
 I:Let's try some sentences:
 *:_T_R_L133
 #                                                             ../orig/t.typ:464
-O:A dozen zebras were grazing quietly nearby.
-Q: Press Y to continue, N to repeat, or Fkey12 to exit 
-N:_T_R_L133
+D:A dozen zebras were grazing quietly nearby.
 
 *:_T_R_L134
 #                                                             ../orig/t.typ:465
-O:The zeppelin zigzagged quickly from the horizon up to the zenith.
-Q: Press Y to continue, N to repeat, or Fkey12 to exit 
-N:_T_R_L134
+D:The zeppelin zigzagged quickly from the horizon up to the zenith.
 
 *:_T_R_L135
 #                                                             ../orig/t.typ:466
-O:Never trust a quack doctor who cannot distinguish oxygen from nitrogen.
-Q: Press Y to continue, N to repeat, or Fkey12 to exit 
-N:_T_R_L135
+D:Never trust a quack doctor who cannot distinguish oxygen from nitrogen.
 
 *:_T_R_L136
 #                                                             ../orig/t.typ:467
-O:Imagine having a sextet of sexagenarian sextons?
-Q: Press Y to continue, N to repeat, or Fkey12 to exit 
-N:_T_R_L136
+D:Imagine having a sextet of sexagenarian sextons?
 
 *:_T_R_L137
 #                                                             ../orig/t.typ:469
-O:Remember when queer used to mean zany?
+D:Remember when queer used to mean zany?
  :Quartz crystal watches were at one time extremely expensive.
-Q: Press Y to continue, N to repeat, or Fkey12 to exit 
-N:_T_R_L137
 
 #                                                             ../orig/t.typ:470
 I:Let's try a sentence that contains every letter of the alphabet.
 *:_T_R_L138
 #                                                             ../orig/t.typ:471
-O:A quick brown fox jumped over the lazy dogs.
-Q: Press Y to continue, N to repeat, or Fkey12 to exit 
-N:_T_R_L138
+D:A quick brown fox jumped over the lazy dogs.
 
 #                                                             ../orig/t.typ:472
 I:Again,
 *:_T_R_L139
 #                                                             ../orig/t.typ:473
-O:A quick brown fox jumped over the lazy dogs.
-Q: Press Y to continue, N to repeat, or Fkey12 to exit 
-N:_T_R_L139
+D:A quick brown fox jumped over the lazy dogs.
 
 #                                                             ../orig/t.typ:474
 I:See how fast you can type it this time:
 *:_T_R_L140
 #                                                             ../orig/t.typ:475
 P:A quick brown fox jumped over the lazy dogs.
-Q: Press Y to continue, N to repeat, or Fkey12 to exit 
-N:_T_R_L140
 
 #                                                             ../orig/t.typ:476
 I:Again,
 *:_T_R_L141
 #                                                             ../orig/t.typ:477
 P:A quick brown fox jumped over the lazy dogs.
-Q: Press Y to continue, N to repeat, or Fkey12 to exit 
-N:_T_R_L141
 
 G:_T_E_T9
 #------------------------------------------------------------------------------
@@ -1344,33 +1049,25 @@ G:_T_E_T9
 I:Let's review the entire alphabet before starting the number keys.
 *:_T_R_L142
 #                                                             ../orig/t.typ:482
-O:abcd efg hijk lmnop qrs tuv wx yz
-Q: Press Y to continue, N to repeat, or Fkey12 to exit 
-N:_T_R_L142
+D:abcd efg hijk lmnop qrs tuv wx yz
 
 #                                                             ../orig/t.typ:484
 I:Once more
 *:_T_R_L143
 #                                                             ../orig/t.typ:485
-O:abcdefghijklmnopqrstuvwxyz
-Q: Press Y to continue, N to repeat, or Fkey12 to exit 
-N:_T_R_L143
+D:abcdefghijklmnopqrstuvwxyz
 
 #                                                             ../orig/t.typ:486
 I:Use the shift key for each letter (Do not use the CAPS LOCK key)
 *:_T_R_L144
 #                                                             ../orig/t.typ:487
-O:ABCDEFGHIJKLMNOPQRSTUVWXYZ
-Q: Press Y to continue, N to repeat, or Fkey12 to exit 
-N:_T_R_L144
+D:ABCDEFGHIJKLMNOPQRSTUVWXYZ
 
 #                                                             ../orig/t.typ:488
 I:Now, review the punctuations that you've had.
 *:_T_R_L145
 #                                                             ../orig/t.typ:489
-O:l;l l:l k,k l.l ;/; ;?; :?: ;-;
-Q: Press Y to continue, N to repeat, or Fkey12 to exit 
-N:_T_R_L145
+D:l;l l:l k,k l.l ;/; ;?; :?: ;-;
 
 *:_T_R_L146
 #                                                             ../orig/t.typ:509
@@ -1394,98 +1091,74 @@ T:
  :Even if a typewriter or terminal has the standard 2 through 0 keys, it may not
  :have a 1 key.  If it does, the 1 will always be next to the 2.  If it does not,
  :you will have to use the L-key.
-Q: Press Y to continue, or Fkey12 to exit 
-N:_T_R_L146
 
 #                                                             ../orig/t.typ:510
 I:Let's start by using the 1-key, since we have one.  (Use your A-finger.)
 *:_T_R_L147
 #                                                             ../orig/t.typ:511
-O:aaa a1a aaa 111 aaa a1a
-Q: Press Y to continue, N to repeat, or Fkey12 to exit 
-N:_T_R_L147
+D:aaa a1a aaa 111 aaa a1a
 
 *:_T_R_L148
 #                                                             ../orig/t.typ:514
-O:a1q qa1 qz1 az1 aq1 a1z
+D:a1q qa1 qz1 az1 aq1 a1z
  :111 and 111 ate 111 any 111
  :If 11 men each catch 11 fish in 11 days, how many fish were caught?
-Q: Press Y to continue, N to repeat, or Fkey12 to exit 
-N:_T_R_L148
 
 #                                                             ../orig/t.typ:515
 I:Use your S-finger for the 2-key.
 *:_T_R_L149
 #                                                             ../orig/t.typ:516
-O:sss s2s sss s2s sss s2s
-Q: Press Y to continue, N to repeat, or Fkey12 to exit 
-N:_T_R_L149
+D:sss s2s sss s2s sss s2s
 
 *:_T_R_L149A
 #                                                             ../orig/t.typ:520
-O:sss s2w sss 2xw sss w2x sss
+D:sss s2w sss 2xw sss w2x sss
  :222 saw 222 was 222 wet 222
  :The 2 men were 2 late 2 catch the 2 PM train.
-Q: Press Y to continue, N to repeat, or Fkey12 to exit 
-N:_T_R_L149A
 
 #
 I:Use your D-finger for the 3-key.
 *:_T_R_L150
 #                                                             ../orig/t.typ:521
-O:ddd d3d ddd d3d ddd d3d ddd
-Q: Press Y to continue, N to repeat, or Fkey12 to exit 
-N:_T_R_L150
+D:ddd d3d ddd d3d ddd d3d ddd
 
 *:_T_R_L151
 #                                                             ../orig/t.typ:524
-O:ddd d3e ddd d3c ddd e3c ddd
+D:ddd d3e ddd d3c ddd e3c ddd
  :333 did 333 cat 333 eat 333
  :1 plus 2 is 3.  11 plus 22 is 33.  111 plus 222 is 333.
-Q: Press Y to continue, N to repeat, or Fkey12 to exit 
-N:_T_R_L151
 
 #                                                             ../orig/t.typ:525
 I:The last number we will practice today is the 4-key.  (Use your F-finger.)
 *:_T_R_L152
 #                                                             ../orig/t.typ:526
-O:fff f4f fff f4f fff f4f
-Q: Press Y to continue, N to repeat, or Fkey12 to exit 
-N:_T_R_L152
+D:fff f4f fff f4f fff f4f
 
 *:_T_R_L153
 #                                                             ../orig/t.typ:531
-O:fff f4r fff 4vr fff 4vr fff
+D:fff f4r fff 4vr fff 4vr fff
  :444 for fff rat 444 vet 444
  :Flight 423 leaves from gate 42 at 4:24.
  :As the 3 musketeers say: 1 4 all, and all 4 1.
  :If 1/4 plus 2/3 is 11/12, what is 1/2 plus 1/3?
-Q: Press Y to continue, N to repeat, or Fkey12 to exit 
-N:_T_R_L153
 
 #                                                             ../orig/t.typ:532
 I:Try your speed on this line:
 *:_T_R_L154
 #                                                             ../orig/t.typ:533
 P:Our team won 1st, 2nd, and 3rd place at the 12th annual outing.
-Q: Press Y to continue, N to repeat, or Fkey12 to exit 
-N:_T_R_L154
 
 #                                                             ../orig/t.typ:535
 I:As we stated earlier, many typewriters do not have a 1 key.  Let's practice
  :using the L-key as a 1, so you can use any kind of typewriter.
 *:_T_R_L155
 #                                                             ../orig/t.typ:536
-O:One dozen is l2.  A gross is l2 dozen or l44.
-Q: Press Y to continue, N to repeat, or Fkey12 to exit 
-N:_T_R_L155
+D:One dozen is l2.  A gross is l2 dozen or l44.
 
 *:_T_R_L156
 #                                                             ../orig/t.typ:538
-O:In both octal and decimal, ll times ll is l2l.  And, 3 minus 4 is -l.
+D:In both octal and decimal, ll times ll is l2l.  And, 3 minus 4 is -l.
  :But in octal, l2 is not divisible by 3.
-Q: Press Y to continue, N to repeat, or Fkey12 to exit 
-N:_T_R_L156
 
 G:_T_E_T10
 #------------------------------------------------------------------------------
@@ -1497,84 +1170,64 @@ G:_T_E_T10
 I:Let's review the numbers that you have already learned.
 *:_T_R_L157
 #                                                             ../orig/t.typ:543
-O:a1a s2s d3d f4f 234 413
-Q: Press Y to continue, N to repeat, or Fkey12 to exit 
-N:_T_R_L157
+D:a1a s2s d3d f4f 234 413
 
 *:_T_R_L158
 #                                                             ../orig/t.typ:544
-O:f4r d3e s2w a1q az1 sx2 dc3 fv4
-Q: Press Y to continue, N to repeat, or Fkey12 to exit 
-N:_T_R_L158
+D:f4r d3e s2w a1q az1 sx2 dc3 fv4
 
 #                                                             ../orig/t.typ:546
 I:Use your J-finger for the 7-key
 *:_T_R_L159
 #                                                             ../orig/t.typ:547
-O:jjj j7j jjj j7j jjj j7j jjj
-Q: Press Y to continue, N to repeat, or Fkey12 to exit 
-N:_T_R_L159
+D:jjj j7j jjj j7j jjj j7j jjj
 
 *:_T_R_L160
 #                                                             ../orig/t.typ:551
-O:jjj j7u jjj 7um jjj u7m jjj
+D:jjj j7u jjj 7um jjj u7m jjj
  :777 map 777 jug 777 rum 777
  :Is flight number 377 for Florida a 707, a 727 or a 747?
  :It is a 727 with 4 stops.  With all those stops it takes almost 7 hours.
-Q: Press Y to continue, N to repeat, or Fkey12 to exit 
-N:_T_R_L160
 
 #                                                             ../orig/t.typ:552
 I:Use your K-finger for the 8-key.
 *:_T_R_L161
 #                                                             ../orig/t.typ:553
-O:kkk k8k kkk k8k kkk k8k kkk
-Q: Press Y to continue, N to repeat, or Fkey12 to exit 
-N:_T_R_L161
+D:kkk k8k kkk k8k kkk k8k kkk
 
 *:_T_R_L162
 #                                                             ../orig/t.typ:557
-O:kkk k8i kkk 8,i kkk ,i8 kkk
+D:kkk k8i kkk 8,i kkk ,i8 kkk
  :888 kick 888 sink 888 keep 888
  :Agent 88 was supposed to check in at 8:14.  She is 38 minutes late.
  :Her team was assigned to zone 8 of quadrant 828.  Send 8 more agents.
-Q: Press Y to continue, N to repeat, or Fkey12 to exit 
-N:_T_R_L162
 
 #                                                             ../orig/t.typ:558
 I:Use your L-finger for the 9-key.
 *:_T_R_L163
 #                                                             ../orig/t.typ:559
-O:lll l9l lll l9l lll l9l lll
-Q: Press Y to continue, N to repeat, or Fkey12 to exit 
-N:_T_R_L163
+D:lll l9l lll l9l lll l9l lll
 
 *:_T_R_L164
 #                                                             ../orig/t.typ:563
-O:lll 9.o lll o9. lll l9. lll
+D:lll 9.o lll o9. lll l9. lll
  :999 Jr. 999 log 999 old 999
  :Oh, 99 bottles of beer on the wall, 99 bottles of beer.
  :If 9 of us take 9 each, there will still be 18 left for the song.
-Q: Press Y to continue, N to repeat, or Fkey12 to exit 
-N:_T_R_L164
 
 #                                                             ../orig/t.typ:564
 I:Use your ;-finger for the 0-key.
 *:_T_R_L165
 #                                                             ../orig/t.typ:565
-O:;;; ;0; ;;; ;0; ;;; ;0; ;;;
-Q: Press Y to continue, N to repeat, or Fkey12 to exit 
-N:_T_R_L165
+D:;;; ;0; ;;; ;0; ;;; ;0; ;;;
 
 *:_T_R_L166
 #                                                             ../orig/t.typ:570
-O:;;; ;0p ;;; /0p ;;; 0/p ;;;
+D:;;; ;0p ;;; /0p ;;; 0/p ;;;
  :000 a/c 000 pup 000 me? 000
  :Dear Sirs:  The 10:00 meeting on March 10 has been postponed until 10:30.
  :The 10:30 meeting was moved to 11:00 in Room 302.
  :But, Room 302 can only hold 10 people.  We will need Conference Room 10.
-Q: Press Y to continue, N to repeat, or Fkey12 to exit 
-N:_T_R_L166
 
 #                                                             ../orig/t.typ:571
 I:Let's try some paragraphs.
@@ -1589,8 +1242,6 @@ P:Zip codes are arranged so that the first 3 digits
  :There are notable exceptions to this rule,
  :however.  The Virgin Islands are south of
  :Florida, but their Zip Codes start with 00.
-Q: Press Y to continue, N to repeat, or Fkey12 to exit 
-N:_T_R_L167
 
 *:_T_R_L168
 #                                                             ../orig/t.typ:587
@@ -1601,8 +1252,6 @@ P:The new nine digit zip codes have upset quite a
  :the companies whose mailing list programs were
  :poorly designed.  Those unstructured programs
  :will be very difficult to change.
-Q: Press Y to continue, N to repeat, or Fkey12 to exit 
-N:_T_R_L168
 
 G:_T_E_T11
 #------------------------------------------------------------------------------
@@ -1614,106 +1263,75 @@ G:_T_E_T11
 I:Let's review the numbers that you have learned so far.
 *:_T_R_L169
 #                                                             ../orig/t.typ:592
-O:j7j f4f k8k d3d l9l s2s ;0; a1a
-Q: Press Y to continue, N to repeat, or Fkey12 to exit 
-N:_T_R_L169
+D:j7j f4f k8k d3d l9l s2s ;0; a1a
 
 *:_T_R_L170
 #                                                             ../orig/t.typ:593
-O:4f4 7j7 3d3 8k8 2s2 9l9 1a1 0;0
-Q: Press Y to continue, N to repeat, or Fkey12 to exit 
-N:_T_R_L170
+D:4f4 7j7 3d3 8k8 2s2 9l9 1a1 0;0
 
 #                                                             ../orig/t.typ:595
 I:Use your F-finger for the 5-key.
 *:_T_R_L171
 #                                                             ../orig/t.typ:596
-O:fff f5f fff 555 fff f5f fff
-Q: Press Y to continue, N to repeat, or Fkey12 to exit 
-N:_T_R_L171
+D:fff f5f fff 555 fff f5f fff
 
 *:_T_R_L172
 #                                                             ../orig/t.typ:599
-O:f5f f54 f5f t5g f5f t5r f5f
+D:f5f f54 f5f t5g f5f t5r f5f
  :f5f five f5f two f5f four f5f
  :f5f 453 f5f 585 f5f 475 f5f
-Q: Press Y to continue, N to repeat, or Fkey12 to exit 
-N:_T_R_L172
 
 *:_T_R_L173
 #                                                             ../orig/t.typ:600
 P:The 5 of us each carried 50 pound packs all 45 miles of the trip.
-Q: Press Y to continue, N to repeat, or Fkey12 to exit 
-N:_T_R_L173
 
 #                                                             ../orig/t.typ:601
 I:And now, the longest reach of all!  Use your J-finger for the 6-key.
 *:_T_R_L174
 #                                                             ../orig/t.typ:602
-O:jjj j6j jjj 666 jjj j6j jjj
-Q: Press Y to continue, N to repeat, or Fkey12 to exit 
-N:_T_R_L174
+D:jjj j6j jjj 666 jjj j6j jjj
 
 *:_T_R_L175
 #                                                             ../orig/t.typ:605
-O:j6j June j6j much j6j hum j6j
+D:j6j June j6j much j6j hum j6j
  :j6j y6n j6j u6m j6j h76 j6j
  :j6j 4567 j6j 7654 j6j 6754 j6j
-Q: Press Y to continue, N to repeat, or Fkey12 to exit 
-N:_T_R_L175
 
 #                                                             ../orig/t.typ:606
 I:The open parenthesis is the shift of the 9-key.  (Use your L-finger).
 *:_T_R_L176
 #                                                             ../orig/t.typ:607
-O:lll l(l lll ((( lll l(l lll
-Q: Press Y to continue, N to repeat, or Fkey12 to exit 
-N:_T_R_L176
 
 *:_T_R_L177
 #                                                             ../orig/t.typ:608
-O:l(l (.l l(l 9(9 l(l
-Q: Press Y to continue, N to repeat, or Fkey12 to exit 
-N:_T_R_L177
+D:l(l (.l l(l 9(9 l(l
 
 *:_T_R_L178
 #                                                             ../orig/t.typ:609
-O:l(l loop l(l oil l(l only l(l
-Q: Press Y to continue, N to repeat, or Fkey12 to exit 
-N:_T_R_L178
+D:l(l loop l(l oil l(l only l(l
 
 #                                                             ../orig/t.typ:610
 I:The close parenthesis is the shift of the 0-key.  (Use your ;-finger).
 *:_T_R_L179
 #                                                             ../orig/t.typ:611
-O:;;; ;); ;;; ;); ;;; ;);
-Q: Press Y to continue, N to repeat, or Fkey12 to exit 
-N:_T_R_L179
+D:;;; ;); ;;; ;); ;;; ;);
 
 *:_T_R_L180
 #                                                             ../orig/t.typ:613
-O:;;; (.) ;;; (.) ;;; (,) ;;;
+D:;;; (.) ;;; (.) ;;; (,) ;;;
  :;); pole ;); loop ;); pile ;);
-Q: Press Y to continue, N to repeat, or Fkey12 to exit 
-N:_T_R_L180
 
 *:_T_R_L181
 #                                                             ../orig/t.typ:614
-O:You (the buyer) should ask him (the seller) for the price (of the goods).
-Q: Press Y to continue, N to repeat, or Fkey12 to exit 
-N:_T_R_L181
+D:You (the buyer) should ask him (the seller) for the price (of the goods).
 
 *:_T_R_L182
 #                                                             ../orig/t.typ:615
-O:If (X-5) / (X-6) is 56, then what is (X/5) - (X/6)?
-Q: Press Y to continue, N to repeat, or Fkey12 to exit 
-N:_T_R_L182
+D:If (X-5) / (X-6) is 56, then what is (X/5) - (X/6)?
 
 *:_T_R_L183
 #                                                             ../orig/t.typ:616
-O:1 2 3 4 5 6 7 8 9 10
-Q: Press Y to continue, N to repeat, or Fkey12 to exit 
-N:_T_R_L183
+D:1 2 3 4 5 6 7 8 9 10
 
 #                                                             ../orig/t.typ:617
 I:Try your speed on this song.
@@ -1723,8 +1341,6 @@ P:1 little, 2 little, 3 little Indians,
  :4 little, 5 little, 6 little Indians,
  :7 little, 8 little, 9 little Indians,
  :10 little Indian boys.
-Q: Press Y to continue, N to repeat, or Fkey12 to exit 
-N:_T_R_L184
 
 *:_T_R_L185
 #                                                             ../orig/t.typ:625
@@ -1732,8 +1348,6 @@ P:If we want to catch the 6:15 flight to Phoenix (which is the
  :non-stop), we will have to leave by 5:00 at the latest (in
  :case we run into traffic).  Otherwise, we will have to take
  :the 6:45 flight (which makes 5 stops).
-Q: Press Y to continue, N to repeat, or Fkey12 to exit 
-N:_T_R_L185
 
 #                                                             ../orig/t.typ:626
 I:Use the main keyboard keys.  Don't cheat and use the auxilliary keypad!
@@ -1741,29 +1355,21 @@ I:Use the main keyboard keys.  Don't cheat and use the auxilliary keypad!
  :Try entering straight numbers: 
 *:_T_R_L186
 #                                                             ../orig/t.typ:628
-O:423 475 925 235 295 175 650
-Q: Press Y to continue, N to repeat, or Fkey12 to exit 
-N:_T_R_L186
+D:423 475 925 235 295 175 650
 
 *:_T_R_L187
 #                                                             ../orig/t.typ:630
-O:598 693 602 672 315 604 587 307
-Q: Press Y to continue, N to repeat, or Fkey12 to exit 
-N:_T_R_L187
+D:598 693 602 672 315 604 587 307
 
 *:_T_R_L188
 #                                                             ../orig/t.typ:631
-O:12.00 67.50 99.95 38.75 19.99
-Q: Press Y to continue, N to repeat, or Fkey12 to exit 
-N:_T_R_L188
+D:12.00 67.50 99.95 38.75 19.99
 
 #                                                             ../orig/t.typ:632
 I:Now let's try for some speed.
 *:_T_R_L189
 #                                                             ../orig/t.typ:633
 P:353 648 604 592 468 501 296
-Q: Press Y to continue, N to repeat, or Fkey12 to exit 
-N:_T_R_L189
 
 *:_T_R_L190
 #                                                             ../orig/t.typ:641
@@ -1775,8 +1381,6 @@ P:3574
  :9003
  :7283
  :6745
-Q: Press Y to continue, N to repeat, or Fkey12 to exit 
-N:_T_R_L190
 
 G:_T_E_T12
 #------------------------------------------------------------------------------
@@ -1799,8 +1403,6 @@ T:
  :
  :We will practice touch typing on the keyboard layout for the remaining
  :lessons.
-Q: Press Y to continue, or Fkey12 to exit 
-N:_T_R_L191
 
 G:_T_E_T13
 #------------------------------------------------------------------------------
@@ -1812,68 +1414,50 @@ G:_T_E_T13
 I:Use your ;-finger for the apostrophe.
 *:_T_R_L192
 #                                                             ../orig/t.typ:662
-O:;;; ;'; ;;; ''' ;;; ;'; ;;;
-Q: Press Y to continue, N to repeat, or Fkey12 to exit 
-N:_T_R_L192
+D:;;; ;'; ;;; ''' ;;; ;'; ;;;
 
 *:_T_R_L193
 #                                                             ../orig/t.typ:664
-O:;'; it's ;'; 'till ;'; won't ;';
-Q: Press Y to continue, N to repeat, or Fkey12 to exit 
-N:_T_R_L193
+D:;'; it's ;'; 'till ;'; won't ;';
 
 *:_T_R_L194
 #                                                             ../orig/t.typ:667
-O:;'; 'tis ;'; isn't ;'; 'tis too ;';
+D:;'; 'tis ;'; isn't ;'; 'tis too ;';
  :What's this I've got?  Isn't this yesterday's paper?  Where's today's?
  :Can't you find anything?  It's right next to Dad's chair.
-Q: Press Y to continue, N to repeat, or Fkey12 to exit 
-N:_T_R_L194
 
 #                                                             ../orig/t.typ:668
 I:Shift the apostrophe for the quote key.
 *:_T_R_L195
 #                                                             ../orig/t.typ:669
-O:;;; ;"; ;;; """ ;;; ;"; ;;;
-Q: Press Y to continue, N to repeat, or Fkey12 to exit 
-N:_T_R_L195
+D:;;; ;"; ;;; """ ;;; ;"; ;;;
 
 *:_T_R_L196
 #                                                             ../orig/t.typ:673
-O:;"; "." ;"; ":" ;"; "," ;";
+D:;"; "." ;"; ":" ;"; "," ;";
  :"What was that I saw you take from the teacher desk?" asked Tom.
  :"It's the answers to tomorrow's quiz", answered Suzy.
  :"If you promise not to tell," she continued, "I'll give you a copy."
-Q: Press Y to continue, N to repeat, or Fkey12 to exit 
-N:_T_R_L196
 
 #                                                             ../orig/t.typ:674
 I:Use your A-finger for the exclamation point.
 *:_T_R_L197
 #                                                             ../orig/t.typ:675
-O:aaa a!a aaa !!! aaa a!a aaa
-Q: Press Y to continue, N to repeat, or Fkey12 to exit 
-N:_T_R_L197
+D:aaa a!a aaa !!! aaa a!a aaa
 
 *:_T_R_L198
 #                                                             ../orig/t.typ:676
-O:a!a Ah! a!a What! a!a Oh! a!a
-Q: Press Y to continue, N to repeat, or Fkey12 to exit 
-N:_T_R_L198
+D:a!a Ah! a!a What! a!a Oh! a!a
 
 #                                                             ../orig/t.typ:677
 I:Always double space after an exclamation point.
 *:_T_R_L199
 #                                                             ../orig/t.typ:678
-O:Tomorrow's quiz!  What if we get caught?  We'll be expelled!
-Q: Press Y to continue, N to repeat, or Fkey12 to exit 
-N:_T_R_L199
+D:Tomorrow's quiz!  What if we get caught?  We'll be expelled!
 
 *:_T_R_L200
 #                                                             ../orig/t.typ:679
-O:He'll never suspect a thing!  We'll get some answers wrong to fool him.
-Q: Press Y to continue, N to repeat, or Fkey12 to exit 
-N:_T_R_L200
+D:He'll never suspect a thing!  We'll get some answers wrong to fool him.
 
 G:_T_E_T14
 #------------------------------------------------------------------------------
@@ -1889,98 +1473,72 @@ T:
  :for BASIC or other programming languages.  I won't give you too much practice
  :with these symbols right now.  (You should be able to get plenty of exercise by
  :simply typing in programs.)
-Q: Press Y to continue, or Fkey12 to exit 
-N:_T_R_L201
 
 #                                                             ../orig/t.typ:690
 I:Use your ;-finger for the equals key.
 *:_T_R_L202
 #                                                             ../orig/t.typ:691
-O:;;; ;=; ;;; ;=; ;;; ;=; ;;;
-Q: Press Y to continue, N to repeat, or Fkey12 to exit 
-N:_T_R_L202
+D:;;; ;=; ;;; ;=; ;;; ;=; ;;;
 
 *:_T_R_L203
 #                                                             ../orig/t.typ:693
-O:;=; -=- ;=; '=' ;=; :=: ;=;
+D:;=; -=- ;=; '=' ;=; :=: ;=;
  :;=; X=2 ;=; Y=3 ;=; Z=0 ;=;
-Q: Press Y to continue, N to repeat, or Fkey12 to exit 
-N:_T_R_L203
 
 #                                                             ../orig/t.typ:694
 I:Use your K-finger for the asterisk key.
 *:_T_R_L204
 #                                                             ../orig/t.typ:695
-O:kkk k*k kkk k*k kkk k*k kkk
-Q: Press Y to continue, N to repeat, or Fkey12 to exit 
-N:_T_R_L204
+D:kkk k*k kkk k*k kkk k*k kkk
 
 *:_T_R_L205
 #                                                             ../orig/t.typ:697
-O:k*k 3*2 k*k 5*6 k*k 9*7 k*k
+D:k*k 3*2 k*k 5*6 k*k 9*7 k*k
  :k*k i*i k*k *,* k*k 8*8 k*k
-Q: Press Y to continue, N to repeat, or Fkey12 to exit 
-N:_T_R_L205
 
 #                                                             ../orig/t.typ:698
 I:Use your ;-finger for the plus sign.
 *:_T_R_L206
 #                                                             ../orig/t.typ:699
-O:;;; ;+; ;;; ;+; ;;; ;+; ;;;
-Q: Press Y to continue, N to repeat, or Fkey12 to exit 
-N:_T_R_L206
+D:;;; ;+; ;;; ;+; ;;; ;+; ;;;
 
 *:_T_R_L207
 #                                                             ../orig/t.typ:701
-O:;+; 2+4 ;+; 7+5 ;+; 8+0 ;+;
+D:;+; 2+4 ;+; 7+5 ;+; 8+0 ;+;
  :;+; +=+ ;+; -+- ;+; /+/ ;+;
-Q: Press Y to continue, N to repeat, or Fkey12 to exit 
-N:_T_R_L207
 
 #                                                             ../orig/t.typ:702
 I:Use your L-finger for the greater-than key.
 *:_T_R_L208
 #                                                             ../orig/t.typ:703
-O:lll l>l lll l>l lll l>l lll
-Q: Press Y to continue, N to repeat, or Fkey12 to exit 
-N:_T_R_L208
+D:lll l>l lll l>l lll l>l lll
 
 *:_T_R_L209
 #                                                             ../orig/t.typ:705
-O:l>l X>3 l>l Y>7 l>l Z>0 l>l
+D:l>l X>3 l>l Y>7 l>l Z>0 l>l
  :l>l >>> l>l 9>9 l>l .>. l>l
-Q: Press Y to continue, N to repeat, or Fkey12 to exit 
-N:_T_R_L209
 
 #                                                             ../orig/t.typ:706
 I:Use your K-finger for the less-than key.
 *:_T_R_L210
 #                                                             ../orig/t.typ:707
-O:kkk k<k kkk k<k kkk k<k kkk
-Q: Press Y to continue, N to repeat, or Fkey12 to exit 
-N:_T_R_L210
+D:kkk k<k kkk k<k kkk k<k kkk
 
 *:_T_R_L211
 #                                                             ../orig/t.typ:709
-O:k<k X<0 k<k Y<2 k<k Z<8 k<k
+D:k<k X<0 k<k Y<2 k<k Z<8 k<k
  :k<k <.> k<k >.< k<k <<< k<k
-Q: Press Y to continue, N to repeat, or Fkey12 to exit 
-N:_T_R_L211
 
 #                                                             ../orig/t.typ:710
 I:Use your J-finger for the up-arrow key.
 *:_T_R_L212
 #                                                             ../orig/t.typ:711
-O:jjj j^j jjj ^^^ jjj j^j jjj
-Q: Press Y to continue, N to repeat, or Fkey12 to exit 
-N:_T_R_L212
+D:jjj j^j jjj ^^^ jjj j^j jjj
 
 *:_T_R_L213
 #                                                             ../orig/t.typ:713
-O:j^j X^2 j^j Y^3 j^j Z^4 j^j
+D:j^j X^2 j^j Y^3 j^j Z^4 j^j
  :j^j <^> j^j .^. j^j "^" j^j
-Q: Press Y to continue, N to repeat, or Fkey12 to exit 
-N:_T_R_L213
 
 #                                                             ../orig/t.typ:714
 I:Try entering this BASIC program:
@@ -1991,8 +1549,6 @@ P:10 LET x=10
  :30 PRINT x+y/3
  :40 PRINT y/x*5
  :50 STOP
-Q: Press Y to continue, N to repeat, or Fkey12 to exit 
-N:_T_R_L214
 
 #                                                             ../orig/t.typ:720
 I:And another:
@@ -2006,8 +1562,6 @@ P:10 REM Program to find square roots with using ^.5 feature
  :60 IF ABS(x^2 - s) > s/1000 THEN 40
  :70 PRINT "The square root of ";s;" is ";x
  :80 STOP
-Q: Press Y to continue, N to repeat, or Fkey12 to exit 
-N:_T_R_L215
 
 #                                                             ../orig/t.typ:729
 I:Press down the CAPS LOCK key to simplify typing in this BASIC program:
@@ -2028,8 +1582,6 @@ P:100 REM PROGRAM TO SOLVE QUADRATIC EQUATION
  :425 GOTO 100
  :500 PRINT "COMPLEX ROOTS.  TRY AGAIN."
  :525 GOTO 125
-Q: Press Y to continue, N to repeat, or Fkey12 to exit 
-N:_T_R_L216
 
 G:_T_E_T15
 #------------------------------------------------------------------------------
@@ -2051,91 +1603,67 @@ T:
  :learn where it is without looking.)  Since these keys are used infrequently and
  :are in different places on most other keyboards or are totally missing, speed
  :is not important.
-Q: Press Y to continue, or Fkey12 to exit 
-N:_T_R_L217
 
 #                                                             ../orig/t.typ:761
 I:Use your S-finger for the at-sign.
 *:_T_R_L218
 #                                                             ../orig/t.typ:762
-O:sss s@s sss s@s sss s@s sss
-Q: Press Y to continue, N to repeat, or Fkey12 to exit 
-N:_T_R_L218
+D:sss s@s sss s@s sss s@s sss
 
 *:_T_R_L219
 #                                                             ../orig/t.typ:764
-O:s@s at@ s@s w@x s@s S@w s@s
+D:s@s at@ s@s w@x s@s S@w s@s
  :s@s wax s@s mix s@s @we s@s
-Q: Press Y to continue, N to repeat, or Fkey12 to exit 
-N:_T_R_L219
 
 #                                                             ../orig/t.typ:765
 I:Use your D-finger for the pound-sign (also called the number-sign).
 *:_T_R_L220
 #                                                             ../orig/t.typ:766
-O:ddd d#d ddd d#d ddd d#d ddd
-Q: Press Y to continue, N to repeat, or Fkey12 to exit 
-N:_T_R_L220
+D:ddd d#d ddd d#d ddd d#d ddd
 
 *:_T_R_L221
 #                                                             ../orig/t.typ:768
-O:d#d d#e d#d 3#c d#d #c# d#d
+D:d#d d#e d#d 3#c d#d #c# d#d
  :d#d cat d#d dog d#d eat d#d
-Q: Press Y to continue, N to repeat, or Fkey12 to exit 
-N:_T_R_L221
 
 #                                                             ../orig/t.typ:769
 I:Use your F-finger for the dollar-sign.
 *:_T_R_L222
 #                                                             ../orig/t.typ:770
-O:fff f$f fff f$f fff f$f fff
-Q: Press Y to continue, N to repeat, or Fkey12 to exit 
-N:_T_R_L222
+D:fff f$f fff f$f fff f$f fff
 
 *:_T_R_L223
 #                                                             ../orig/t.typ:773
-O:f$f r$v f$f v$4 f$f 4$r f$f
+D:f$f r$v f$f v$4 f$f 4$r f$f
  :f$f rave f$f fare f$f $10.00 f$f
  :Joe keeps cryptic inventory bills like:  4# @ $5.00/# or 6# @ $4.50/#.
-Q: Press Y to continue, N to repeat, or Fkey12 to exit 
-N:_T_R_L223
 
 #                                                             ../orig/t.typ:774
 I:Use your F-finger for the percent sign as well.
 *:_T_R_L224
 #                                                             ../orig/t.typ:775
-O:fff f%f fff f%f fff f%f fff
-Q: Press Y to continue, N to repeat, or Fkey12 to exit 
-N:_T_R_L224
+D:fff f%f fff f%f fff f%f fff
 
 *:_T_R_L225
 #                                                             ../orig/t.typ:779
-O:f%f 12% f%f 10% f%f 20% f%f
+D:f%f 12% f%f 10% f%f 20% f%f
  :f%f two f%f ran f%f bug f%f
  :If a $25.00 item is sold at a 10% discount, it will cost $22.50.
  :But, a 10% markup on a item selling for $22.50 is only $24.75!  How come?
-Q: Press Y to continue, N to repeat, or Fkey12 to exit 
-N:_T_R_L225
 
 #                                                             ../orig/t.typ:780
 I:Use your J-finger for the ampersand.
 *:_T_R_L226
 #                                                             ../orig/t.typ:781
-O:jjj j&j jjj j&j jjj j&j jjj
-Q: Press Y to continue, N to repeat, or Fkey12 to exit 
-N:_T_R_L226
+D:jjj j&j jjj j&j jjj j&j jjj
 
 *:_T_R_L227
 #                                                             ../orig/t.typ:782
-O:j&j 2&4 j&j 9&5 j&j 7&7 j&j
-Q: Press Y to continue, N to repeat, or Fkey12 to exit 
-N:_T_R_L227
+D:j&j 2&4 j&j 9&5 j&j 7&7 j&j
 
 *:_T_R_L228
 #                                                             ../orig/t.typ:783
-O:j&j you&me j&j he&she j&j M&M j&j
-Q: Press Y to continue, N to repeat, or Fkey12 to exit 
-N:_T_R_L228
+D:j&j you&me j&j he&she j&j M&M j&j
 
 *:_T_R_L229
 #                                                             ../orig/t.typ:801
@@ -2157,8 +1685,6 @@ T:				THE END
  :Many people simply hold the CONTROL-key down with their A-finger and then hit
  :the other key with whatever finger is convenient (usually the F-finger in this
  :case).
-Q: Press Y to continue, or Fkey12 to exit 
-N:_T_R_L229
 
 G:_T_E_T16
 #------------------------------------------------------------------------------

@@ -30,89 +30,73 @@ G:_M_MENU
 I:(1) Warming-Up Drill
 *:_M_R_L0
 #                                                               ../orig/m.typ:4
-O:If you can do so, will you kindly let us know by return mail.
-Q: Press Y to continue, N to repeat, or Fkey12 to exit 
-N:_M_R_L0
+D:If you can do so, will you kindly let us know by return mail.
 
 #                                                               ../orig/m.typ:5
 I:(2) Continuous Copy
 *:_M_R_L1
 #                                                               ../orig/m.typ:6
-O:My totals were:  $2,309, $5,687, $3,498, $2,408, and $3,697.
-Q: Press Y to continue, N to repeat, or Fkey12 to exit 
-N:_M_R_L1
+D:My totals were:  $2,309, $5,687, $3,498, $2,408, and $3,697.
 
 #                                                               ../orig/m.typ:7
 I:(3)
 *:_M_R_L2
 #                                                               ../orig/m.typ:9
-O:A student may type 1 word per minute faster for each added
+D:A student may type 1 word per minute faster for each added
  :year of age: i.e., 13 to 14, to 15, to 16, to 17, to 18.
-Q: Press Y to continue, N to repeat, or Fkey12 to exit 
-N:_M_R_L2
 
 #                                                              ../orig/m.typ:10
 I:(4)
 *:_M_R_L3
 #                                                              ../orig/m.typ:13
-O:Often 25% of first-year students never do 25 words a minute.
+D:Often 25% of first-year students never do 25 words a minute.
  :Many second-year students can type about 45 words a minute.
  :More than 50% do not equal the practical rate of 50 words.
-Q: Press Y to continue, N to repeat, or Fkey12 to exit 
-N:_M_R_L3
 
 #                                                              ../orig/m.typ:14
 I:(5)
 *:_M_R_L4
 #                                                              ../orig/m.typ:18
-O:Why do we all thrill over sports?  Maybe it is the tireless
+D:Why do we all thrill over sports?  Maybe it is the tireless
  :skill of the winner that we feel.  Ask the players.  They
  :may agree (Rice,* famous as a sports writer, said the cham-
  :pions all agreed) that skill is only part (50%) of it.
-Q: Press Y to continue, N to repeat, or Fkey12 to exit 
-N:_M_R_L4
 
 #                                                              ../orig/m.typ:19
 I:(6)
 *:_M_R_L5
 #                                                              ../orig/m.typ:24
-O:"When you step on the first tee," says the four-time gold
+D:"When you step on the first tee," says the four-time gold
  :champion, Bobby Jones, "you know you can't afford to make
  :one careless slip."  A tired Bobby Jones (this was the way
  :Bobby told it to Rice) has stood on the 16th tee, leading
  :Smith by 18 strokes.
-Q: Press Y to continue, N to repeat, or Fkey12 to exit 
-N:_M_R_L5
 
 #                                                              ../orig/m.typ:25
 I:(7)
 *:_M_R_L6
 #                                                              ../orig/m.typ:29
-O:"Up to this point," says Bobby, "I had played 33 holes in 11
+D:"Up to this point," says Bobby, "I had played 33 holes in 11
  :under par.  I believe it was the best golf I ever played in
  :my life.  But after easing up on the mental side I played
  :the last three holes in 5 over par."
-Q: Press Y to continue, N to repeat, or Fkey12 to exit 
-N:_M_R_L6
 
 #                                                              ../orig/m.typ:30
 I:(8)
 *:_M_R_L7
 #                                                              ../orig/m.typ:36
-O:In 1919 Babe Ruth shot into the records with 29 home runs.
+D:In 1919 Babe Ruth shot into the records with 29 home runs.
  :Yet few know that the Babe worked five years in big games
  :before this start that led past Home Run #600.  You may
  :have cheered Jimmy Foxx and many another.  Yet you can still
  :picture the Babe after two strikes, smashing to the very
  :spot he had "called" a famous home run.
-Q: Press Y to continue, N to repeat, or Fkey12 to exit 
-N:_M_R_L7
 
 #                                                              ../orig/m.typ:37
 I:(9)
 *:_M_R_L8
 #                                                              ../orig/m.typ:45
-O:It is the effort against odds that thrills.  We feel these
+D:It is the effort against odds that thrills.  We feel these
  :drives that never let down.  We feel (this was the way Rice
  :put it) the champion forces himself into the winning frame of
  :mind.  Can the fast typist afford to do less?  A typist has
@@ -120,30 +104,24 @@ O:It is the effort against odds that thrills.  We feel these
  :to force himself along.  He need not punish his machine.  He
  :must pull himself together (100%) to type his steady, smooth
  :way over all upsets.
-Q: Press Y to continue, N to repeat, or Fkey12 to exit 
-N:_M_R_L8
 
 #                                                              ../orig/m.typ:46
 I:(9A) Pointed Paragraph (m b)
 *:_M_R_L9
 #                                                              ../orig/m.typ:53
-P:     Men are bound to believe that business is bad in winter
+S:     Men are bound to believe that business is bad in winter
  :months.  Maybe Mr. Smith remembers that most building became
  :better in September but both November and December seemed to
  :be much behind.  Monday morning my mail box became blocked
  :by urgent requests of many families that small-sized homes
  :be built.  Some jobs may begin to come now from the Chamber
  :of Commerce members.
-Q: Press Y to continue, N to repeat, or Fkey12 to exit 
-N:_M_R_L9
 
 #                                                              ../orig/m.typ:54
 I:(10) Rhythmic Review
 *:_M_R_L10
 #                                                              ../orig/m.typ:55
-O:I said, "Never promise to take much money to such places."
-Q: Press Y to continue, N to repeat, or Fkey12 to exit 
-N:_M_R_L10
+D:I said, "Never promise to take much money to such places."
 
 G:_M_E_M1
 #------------------------------------------------------------------------------
@@ -155,24 +133,20 @@ G:_M_E_M1
 I:(1) Warming-Up Drill
 *:_M_R_L11
 #                                                              ../orig/m.typ:60
-O:How do I lose if I read a book that doesn't have much in it?
-Q: Press Y to continue, N to repeat, or Fkey12 to exit 
-N:_M_R_L11
+D:How do I lose if I read a book that doesn't have much in it?
 
 #                                                              ../orig/m.typ:61
 I:(2) Balanced Keyboard Drill
 *:_M_R_L12
 #                                                              ../orig/m.typ:63
-O:non ana dis dia cle pan ard pur ern eer off age suf ame amb
+D:non ana dis dia cle pan ard pur ern eer off age suf ame amb
  :ess ean ist ian cel apo col ary tra neo sur ity sub ele mis
-Q: Press Y to continue, N to repeat, or Fkey12 to exit 
-N:_M_R_L12
 
 #                                                              ../orig/m.typ:64
 I:(3) Four-letter words (a to d)
 *:_M_R_L13
 #                                                              ../orig/m.typ:81
-P:Dear Dan,
+S:Dear Dan,
  :
  :     Yes, I came out of the corn, back to the city, both to
  :draw and to do copy on the new cars.  To date I am able to
@@ -189,14 +163,12 @@ P:Dear Dan,
  :     Come, call on me at the club.
  :
  :Yours sincerely,
-Q: Press Y to continue, N to repeat, or Fkey12 to exit 
-N:_M_R_L13
 
 #                                                              ../orig/m.typ:82
 I:(4) Four-letter words (e to g)
 *:_M_R_L14
 #                                                              ../orig/m.typ:97
-P:Dear Bea,
+S:Dear Bea,
  :
  :     I am glad you feel so for the farm in the East.  Even
  :as a girl of four or five I was ever so glad to find the
@@ -211,14 +183,12 @@ P:Dear Bea,
  :my full life, etc.  The game goes on.
  :
  :Yours sincerely,
-Q: Press Y to continue, N to repeat, or Fkey12 to exit 
-N:_M_R_L14
 
 #                                                              ../orig/m.typ:98
 I:(5) Four-letter words (h to l)
 *:_M_R_L15
 #                                                             ../orig/m.typ:119
-P:Dear Hal,
+S:Dear Hal,
  :
  :     Just a line to say I am lost if I cannot fly.  I
  :have to keep on here.  I knew it was but a hope last May.
@@ -239,8 +209,6 @@ P:Dear Hal,
  :love to fly.
  :
  :Yours sincerely,
-Q: Press Y to continue, N to repeat, or Fkey12 to exit 
-N:_M_R_L15
 
 G:_M_E_M2
 #------------------------------------------------------------------------------
@@ -252,24 +220,20 @@ G:_M_E_M2
 I:(1) Warming-Up Drill
 *:_M_R_L16
 #                                                             ../orig/m.typ:124
-O:He says he hasn't been very blue once in his two weeks here.
-Q: Press Y to continue, N to repeat, or Fkey12 to exit 
-N:_M_R_L16
+D:He says he hasn't been very blue once in his two weeks here.
 
 #                                                             ../orig/m.typ:125
 I:(2) Balanced Keyboard Drill
 *:_M_R_L17
 #                                                             ../orig/m.typ:127
-O:sus ase sis uni suc epi cor ory tri acy fic ify dom isk ism
+D:sus ase sis uni suc epi cor ory tri acy fic ify dom isk ism
  :ante than ance ling para less plea lent leas post rece cata
-Q: Press Y to continue, N to repeat, or Fkey12 to exit 
-N:_M_R_L17
 
 #                                                             ../orig/m.typ:128
 I:(3) Four-letter words (m to p)
 *:_M_R_L18
 #                                                             ../orig/m.typ:145
-P:Dear "Pie,"
+S:Dear "Pie,"
  :
  :     I open most of my mail and meet the news.  I note that
  :you say Mrs. Page is a mere name but you met the Miss Page.
@@ -286,14 +250,12 @@ P:Dear "Pie,"
  :this note or I may miss the post.
  :
  :Yours sincerely,
-Q: Press Y to continue, N to repeat, or Fkey12 to exit 
-N:_M_R_L18
 
 #                                                             ../orig/m.typ:146
 I:(4) Four-letter words (r to s)
 *:_M_R_L19
 #                                                             ../orig/m.typ:166
-P:Dear Ross,
+S:Dear Ross,
  :
  :     It is a real rain.  The road is so soft my car can but
  :roll, stop, and roll on.  Are you on the ship?  If I get as
@@ -313,27 +275,23 @@ P:Dear Ross,
  :you ring me in my room at the shop?
  :
  :Yours sincerely,
-Q: Press Y to continue, N to repeat, or Fkey12 to exit 
-N:_M_R_L19
 
 #                                                             ../orig/m.typ:167
 I:(5) Pointed Paragraph (i u)
 *:_M_R_L20
 #                                                             ../orig/m.typ:173
-P:     The public is quite unfair about airing quibbles over
+S:     The public is quite unfair about airing quibbles over
  :house furniture and fruit juices for the university crew.
  :The alumni inquiry into the failure of equipment figures in
  :the issue.  The alumni attitude is useful but continues to
  :put a premium on a victorious crew.  Only genius can guide
  :this outfit uphill and build a suitable crew that won't quit.
-Q: Press Y to continue, N to repeat, or Fkey12 to exit 
-N:_M_R_L20
 
 #                                                             ../orig/m.typ:174
 I:(6) Pointed Paragraph (d s -)
 *:_M_R_L21
 #                                                             ../orig/m.typ:182
-P:     Students should be assisted in studying seated at their
+S:     Students should be assisted in studying seated at their
  :desks; cross-questioned as to their needs and desires; ad-
  :vised to use up-to-date leads based on studies of standards.
  :By-products of student days, well-bred friends, kindness,
@@ -341,8 +299,6 @@ P:     Students should be assisted in studying seated at their
  :sighted aids.  In Dad's old-fashioned address to his co-
  :workers, he said sadly that ideas are missed less than first-
  :class friends and good-natured wishers.
-Q: Press Y to continue, N to repeat, or Fkey12 to exit 
-N:_M_R_L21
 
 G:_M_E_M3
 #------------------------------------------------------------------------------
@@ -354,24 +310,20 @@ G:_M_E_M3
 I:(1) Warming-Up Drill
 *:_M_R_L22
 #                                                             ../orig/m.typ:187
-O:Get any piece, since I can't guess the color he always used.
-Q: Press Y to continue, N to repeat, or Fkey12 to exit 
-N:_M_R_L22
+D:Get any piece, since I can't guess the color he always used.
 
 #                                                             ../orig/m.typ:188
 I:(2) Balanced Keyboard Drill
 *:_M_R_L23
 #                                                             ../orig/m.typ:190
-O:anti thin atic fast hypo ness your ther fore ship cial ible
+D:anti thin atic fast hypo ness your ther fore ship cial ible
  :ette hter here mber ough over eive with ived just ever mono
-Q: Press Y to continue, N to repeat, or Fkey12 to exit 
-N:_M_R_L23
 
 #                                                             ../orig/m.typ:191
 I:(3) Four-letter words (t to z)
 *:_M_R_L24
 #                                                             ../orig/m.typ:208
-P:Dear Tris,
+S:Dear Tris,
  :
  :     It is so very warm at this time of year, I told my wife
  :that you and I wish to go west for a week or two.  Did I
@@ -388,14 +340,12 @@ P:Dear Tris,
  :yes if you will take this trip.
  :
  :Yours sincerely,
-Q: Press Y to continue, N to repeat, or Fkey12 to exit 
-N:_M_R_L24
 
 #                                                             ../orig/m.typ:209
 I:(4) Five-letter words (a to c)
 *:_M_R_L25
 #                                                             ../orig/m.typ:227
-P:Dear "Cab,"
+S:Dear "Cab,"
  :
  :     Could you apply to the court to allow my claim as agent
  :for Mr. Blank?  I could bring in his books and see about his
@@ -413,14 +363,12 @@ P:Dear "Cab,"
  :now carry along to court, and begin again.
  :
  :Sincerely yours,
-Q: Press Y to continue, N to repeat, or Fkey12 to exit 
-N:_M_R_L25
 
 #                                                             ../orig/m.typ:228
 I:(5) Pointed Paragraph (r t)
 *:_M_R_L26
 #                                                             ../orig/m.typ:236
-P:     In our motor party on the return trip an attractive
+S:     In our motor party on the return trip an attractive
  :quartet first tried to tell thirty or forty short travel
  :stories.  By turns they transferred to the theater, to art
  :matters, to court trial stories.  In the latter a certain
@@ -428,8 +376,6 @@ P:     In our motor party on the return trip an attractive
  :and three contractors are thrown to the street.  The girl's
  :strong brother has been hurt.  Further, there are arrests
  :and the sort of extra details that enter into true stories.
-Q: Press Y to continue, N to repeat, or Fkey12 to exit 
-N:_M_R_L26
 
 G:_M_E_M4
 #------------------------------------------------------------------------------
@@ -441,24 +387,20 @@ G:_M_E_M4
 I:(1) Warming-Up Drill
 *:_M_R_L27
 #                                                             ../orig/m.typ:241
-O:Some women who could write her won't raise a hand to help.
-Q: Press Y to continue, N to repeat, or Fkey12 to exit 
-N:_M_R_L27
+D:Some women who could write her won't raise a hand to help.
 
 #                                                             ../orig/m.typ:242
 I:(2) Balanced Keyboard Drill
 *:_M_R_L28
 #                                                             ../orig/m.typ:244
-O:teen arch acle ward ence ency ease ster tele trix wise some
+D:teen arch acle ward ence ency ease ster tele trix wise some
  :atte tter tion fold ount ancy auto ttle cule mony cion come
-Q: Press Y to continue, N to repeat, or Fkey12 to exit 
-N:_M_R_L28
 
 #                                                             ../orig/m.typ:245
 I:(3) Five-letter words (d to h)
 *:_M_R_L29
 #                                                             ../orig/m.typ:262
-P:Dear Fred,
+S:Dear Fred,
  :
  :     I have dared to ask you for an extra favor on the first.
  :If you are not dated, I am to draft you to drive me by horse
@@ -475,14 +417,12 @@ P:Dear Fred,
  :never heavy.  Can you doubt that you are going?
  :
  :Sincerely yours,
-Q: Press Y to continue, N to repeat, or Fkey12 to exit 
-N:_M_R_L29
 
 #                                                             ../orig/m.typ:263
 I:(4) Five-letter words (i to p)
 *:_M_R_L30
 #                                                             ../orig/m.typ:283
-P:Dear Madam,
+S:Dear Madam,
  :
  :     I have your two later notes of March 1.  Maybe it is a
  :large order for you to leave for the north in the month of
@@ -502,14 +442,12 @@ P:Dear Madam,
  :we might not seem so far away.
  :
  :Yours sincerely,
-Q: Press Y to continue, N to repeat, or Fkey12 to exit 
-N:_M_R_L30
 
 #                                                             ../orig/m.typ:284
 I:(5) Pointed Paragraph (u y)
 *:_M_R_L31
 #                                                             ../orig/m.typ:297
-P:     If truly quoted, you and Guy, mere youths, fly a con-
+S:     If truly quoted, you and Guy, mere youths, fly a con-
  :tinuous journey of thousands of miles yearly in your study
  :of numerous flying routes.  You say you were south in July
  :in the dry country conspicuous for yucca, but now you are
@@ -522,8 +460,6 @@ P:     If truly quoted, you and Guy, mere youths, fly a con-
  :If you lucky boys are victorious over any unusually furious,
  :dangerous, or anxious double duty on this survey, write a
  :quotable account yourself for the Journal.
-Q: Press Y to continue, N to repeat, or Fkey12 to exit 
-N:_M_R_L31
 
 G:_M_E_M5
 #------------------------------------------------------------------------------
@@ -535,24 +471,20 @@ G:_M_E_M5
 I:(1) Warming-Up Drill
 *:_M_R_L32
 #                                                             ../orig/m.typ:302
-O:They were often too tired to be certain they heard the hour.
-Q: Press Y to continue, N to repeat, or Fkey12 to exit 
-N:_M_R_L32
+D:They were often too tired to be certain they heard the hour.
 
 #                                                             ../orig/m.typ:303
 I:(2) Balanced Keyboard Drill
 *:_M_R_L33
 #                                                             ../orig/m.typ:305
-O:hood ight sion full ould able like ment ical tial ambi semi
+D:hood ight sion full ould able like ment ical tial ambi semi
  :hand part king itio hing tory ding enti ting thou ving very
-Q: Press Y to continue, N to repeat, or Fkey12 to exit 
-N:_M_R_L33
 
 #                                                             ../orig/m.typ:306
 I:(3) Five-letter words (q to s)
 *:_M_R_L34
 #                                                             ../orig/m.typ:326
-P:Dear Alice,
+S:Dear Alice,
  :
  :     I shall start my river story since you have shown you like
  :my style.
@@ -572,14 +504,12 @@ P:Dear Alice,
  :way, which will stamp the story as real.
  :
  :Yours sincerely,
-Q: Press Y to continue, N to repeat, or Fkey12 to exit 
-N:_M_R_L34
 
 #                                                             ../orig/m.typ:327
 I:(4) Five-letter words (t to z)
 *:_M_R_L35
 #                                                             ../orig/m.typ:348
-P:Dear Mrs. White,
+S:Dear Mrs. White,
  :
  :     I wish to thank you for the words you wrote three weeks ago,
  :and I trust you will write again on the wrong and waste of war.
@@ -600,14 +530,12 @@ P:Dear Mrs. White,
  :teach us these things?
  :
  :Yours sincerely,
-Q: Press Y to continue, N to repeat, or Fkey12 to exit 
-N:_M_R_L35
 
 #                                                             ../orig/m.typ:349
 I:(5) Pointed Paragraph (n m)
 *:_M_R_L36
 #                                                             ../orig/m.typ:357
-P:     Important dinner company in our small apartment was
+S:     Important dinner company in our small apartment was
  :not common, and November ninth mamma was solemn in manner.
  :The moment nine American gentlemen were announced, fun and
  :argument began.  I remember one ancient gentleman, manager
@@ -615,8 +543,6 @@ P:     Important dinner company in our small apartment was
  :ined, but funny and human, even if normal demand, planned
  :movements of modern machines to Canada, long term payments,
  :and columns of numbers meant much more to him than to me.
-Q: Press Y to continue, N to repeat, or Fkey12 to exit 
-N:_M_R_L36
 
 G:_M_E_M6
 #------------------------------------------------------------------------------
@@ -628,23 +554,19 @@ G:_M_E_M6
 I:(1) Warming-Up Drill
 *:_M_R_L37
 #                                                             ../orig/m.typ:362
-O:Though I don't seem to hear the doctor, I know he is early.
-Q: Press Y to continue, N to repeat, or Fkey12 to exit 
-N:_M_R_L37
+D:Though I don't seem to hear the doctor, I know he is early.
 
 #                                                             ../orig/m.typ:363
 I:(2) Balanced Keyboard Drill
 *:_M_R_L38
 #                                                             ../orig/m.typ:364
-O:stat each ning ieve ring side nder emen turn embe llow ours
-Q: Press Y to continue, N to repeat, or Fkey12 to exit 
-N:_M_R_L38
+D:stat each ning ieve ring side nder emen turn embe llow ours
 
 #                                                             ../orig/m.typ:365
 I:(3) Continuous Copy
 *:_M_R_L39
 #                                                             ../orig/m.typ:381
-P:Dear Mr. and Mrs. Blank,
+S:Dear Mr. and Mrs. Blank,
  :
  :     Your son has not called on me.  If he is to become almost an
  :annual charge upon the county, the church will answer with action.
@@ -660,14 +582,12 @@ P:Dear Mr. and Mrs. Blank,
  :at a change for the better.
  :
  :Sincerely yours,
-Q: Press Y to continue, N to repeat, or Fkey12 to exit 
-N:_M_R_L39
 
 #                                                             ../orig/m.typ:382
 I:(4) Six-letter words (d to k)
 *:_M_R_L40
 #                                                             ../orig/m.typ:400
-P:Dear Dick
+S:Dear Dick
  :
  :     I have a dollar.  I expect you to follow me and take dinner.
  :Friday I didn't have cash, but a friend of the family had enough
@@ -685,22 +605,18 @@ P:Dear Dick
  :plan.  Don't forget.
  :
  :Yours sincerely,
-Q: Press Y to continue, N to repeat, or Fkey12 to exit 
-N:_M_R_L40
 
 #                                                             ../orig/m.typ:401
 I:(5) Pointed Paragraph (q z)
 *:_M_R_L41
 #                                                             ../orig/m.typ:408
-P:     I quit the quiz when I saw the quantity of queer hazy
+S:     I quit the quiz when I saw the quantity of queer hazy
  :questions.  To seize lesser prizes required answers to a
  :dozen queries.  Only a quarter of the quotas qualified with
  :zest.  Many had zero when the quiz asked:  In what zones are
  :Brazil, Switzerland, Arizona, or Texas?  Zebras in our zoos
  :grow to what sizes?  Analyze and quote one great citizen's
  :query as to zeppelins.  Criticize the quality of jazz music.
-Q: Press Y to continue, N to repeat, or Fkey12 to exit 
-N:_M_R_L41
 
 G:_M_E_M7
 #------------------------------------------------------------------------------
@@ -712,23 +628,19 @@ G:_M_E_M7
 I:(1) Warming-Up Drill
 *:_M_R_L42
 #                                                             ../orig/m.typ:413
-O:At the last minute he wrote that he knew it was done again.
-Q: Press Y to continue, N to repeat, or Fkey12 to exit 
-N:_M_R_L42
+D:At the last minute he wrote that he knew it was done again.
 
 #                                                             ../orig/m.typ:414
 I:(2) Balanced Keyboard Drill
 *:_M_R_L43
 #                                                             ../orig/m.typ:415
-O:trans ition there lease craft hyper etter esque ceive where
-Q: Press Y to continue, N to repeat, or Fkey12 to exit 
-N:_M_R_L43
+D:trans ition there lease craft hyper etter esque ceive where
 
 #                                                             ../orig/m.typ:416
 I:(3) Six-letter words (l to r)
 *:_M_R_L44
 #                                                             ../orig/m.typ:437
-P:Dear Rollin,
+S:Dear Rollin,
  :
  :     I did notice a number of the pretty places I passed in
  :the air nearly two months ago, and I can at length locate
@@ -749,14 +661,12 @@ P:Dear Rollin,
  :shall go.
  :
  :Yours sincerely,
-Q: Press Y to continue, N to repeat, or Fkey12 to exit 
-N:_M_R_L44
 
 #                                                             ../orig/m.typ:438
 I:(4) Six-letter words (s to z)
 *:_M_R_L45
 #                                                             ../orig/m.typ:458
-P:Dear Sylvia,
+S:Dear Sylvia,
  :
  :     I wonder if my sister talked to you on Sunday of the
  :thirty things we wanted to do this summer?  We were trying
@@ -776,14 +686,12 @@ P:Dear Sylvia,
  :suitable for the writer?
  :
  :Sincerely yours,
-Q: Press Y to continue, N to repeat, or Fkey12 to exit 
-N:_M_R_L45
 
 #                                                             ../orig/m.typ:470
 I:(5) Pointed Paragraph (a q)
 *:_M_R_L45A
 #
-P:     I acquired a bequest from a quizzical Quaker.  How
+S:     I acquired a bequest from a quizzical Quaker.  How
  :to apply it was a quandary.  As a quasi artist, I began in
  :Albuquerque to make a quantity of plaques of chance Indian
  :acquaintances.  My masquerade as an artist of quality in
@@ -792,8 +700,6 @@ P:     I acquired a bequest from a quizzical Quaker.  How
  :quarters, I began quickly and without qualms to qualify as
  :an artist.  After quarrels and questions over my queer tech-
  :niques, I acquired my quota of opaque plaques.
-Q: Press Y to continue, N to repeat, or Shft+Fkey10 to exit 
-N:_M_R_L45A
 
 G:_M_E_M8
 #------------------------------------------------------------------------------
@@ -805,23 +711,19 @@ G:_M_E_M8
 I:(1) Warming-Up Drill
 *:_M_R_L46
 #                                                             ../orig/m.typ:472
-O:Instead of having us tonight he is making ready for Tuesday.
-Q: Press Y to continue, N to repeat, or Fkey12 to exit 
-N:_M_R_L46
+D:Instead of having us tonight he is making ready for Tuesday.
 
 #                                                             ../orig/m.typ:473
 I:(2) Balanced Keyboard Drill
 *:_M_R_L47
 #                                                             ../orig/m.typ:474
-O:stead ation retro geous contr ourse ultra super ntion under
-Q: Press Y to continue, N to repeat, or Fkey12 to exit 
-N:_M_R_L47
+D:stead ation retro geous contr ourse ultra super ntion under
 
 #                                                             ../orig/m.typ:475
 I:(3) Continuous Copy; Seven-letter words (a-f)
 *:_M_R_L48
 #                                                             ../orig/m.typ:498
-P:Dear Annabel,
+S:Dear Annabel,
  :
  :     My brother and his college friends in the factory decided to arrange an
  :evening exactly as in the old days.  After calling us, they arrived and we
@@ -842,14 +744,12 @@ P:Dear Annabel,
  :now ran, because we did.  What follows?  Today's paper doesn't have a line.
  :
  :Yours sincerely,
-Q: Press Y to continue, N to repeat, or Fkey12 to exit 
-N:_M_R_L48
 
 #                                                             ../orig/m.typ:499
 I:(4) Seven-letter words (g to o)
 *:_M_R_L49
 #                                                             ../orig/m.typ:518
-P:Dear Mrs. White,
+S:Dear Mrs. White,
  :
  :     I have been holding on, but this January I am getting out.
  :My wife herself may have told you of our opening.  However, I go
@@ -868,14 +768,12 @@ P:Dear Mrs. White,
  :and we shall be looking for you at our new home.
  :
  :Yours sincerely,
-Q: Press Y to continue, N to repeat, or Fkey12 to exit 
-N:_M_R_L49
 
 #                                                             ../orig/m.typ:519
 I:(4) Seven-letter words (p to z)
 *:_M_R_L50
 #                                                             ../orig/m.typ:539
-P:Dear Patrick,
+S:Dear Patrick,
  :
  :     I realize that this letter I am sending may subject you to some trouble.
  :I am writing tonight without waiting to go through various reports on our
@@ -895,8 +793,6 @@ P:Dear Patrick,
  :weather.  Success is your teacher.
  :
  :With my best regards,
-Q: Press Y to continue, N to repeat, or Fkey12 to exit 
-N:_M_R_L50
 
 G:_M_E_M9
 #------------------------------------------------------------------------------
@@ -910,23 +806,19 @@ B:				Lesson M10
 I:(1) Warming-Up Drill
 *:_M_R_L51
 #                                                             ../orig/m.typ:544
-O:He would separate the whole business and buy out their half.
-Q: Press Y to continue, N to repeat, or Fkey12 to exit 
-N:_M_R_L51
+D:He would separate the whole business and buy out their half.
 
 #                                                             ../orig/m.typ:545
 I:(2) Balanced Keyboard Drill
 *:_M_R_L52
 #                                                             ../orig/m.typ:546
-O:inter itude circu gious right cious after extra micro sible
-Q: Press Y to continue, N to repeat, or Fkey12 to exit 
-N:_M_R_L52
+D:inter itude circu gious right cious after extra micro sible
 
 #                                                             ../orig/m.typ:547
 I:(3) Continuous Copy; Eight-letter words(a to m)
 *:_M_R_L53
 #                                                             ../orig/m.typ:566
-P:Dear Thomas,
+S:Dear Thomas,
  :
  :     First, I consider of definite interest anything from
  :the business of as good a customer as you.  As director of
@@ -945,14 +837,12 @@ P:Dear Thomas,
  :mountain to which all your children seem so attached.
  :
  :Sincerely yours,
-Q: Press Y to continue, N to repeat, or Fkey12 to exit 
-N:_M_R_L53
 
 #
 I:(4) Eight-letter words (n to z)
 *:_M_R_L54
 #                                                             ../orig/m.typ:587
-P:Dear Nathan,
+S:Dear Nathan,
  :
  :     My last shipment has probably been received, for the purchase was made
  :Thursday.  Tomorrow is Saturday, a pleasant day, for I go on my vacation.
@@ -972,14 +862,12 @@ P:Dear Nathan,
  :make you one of the officers of the shipping business.
  :
  :Your sincerely,
-Q: Press Y to continue, N to repeat, or Fkey12 to exit 
-N:_M_R_L54
 
 #                                                             ../orig/m.typ:588
 I:(5) Nine-letter words (a to i)
 *:_M_R_L55
 #                                                             ../orig/m.typ:605
-P:Dear Son,
+S:Dear Son,
  :
  :     I am beginning this afternoon to give my immediate attention
  :to a Christmas that should be beautiful.  I have addressed, to be
@@ -996,8 +884,6 @@ P:Dear Son,
  :a few lines.
  :
  :Yours sincerely,
-Q: Press Y to continue, N to repeat, or Fkey12 to exit 
-N:_M_R_L55
 
 G:_M_E_M10
 #------------------------------------------------------------------------------
@@ -1011,23 +897,19 @@ B:				Lesson M11
 I:(1) Warming-Up Drill
 *:_M_R_L56
 #                                                             ../orig/m.typ:610
-O:My country friend is beginning to believe trouble is coming.
-Q: Press Y to continue, N to repeat, or Fkey12 to exit 
-N:_M_R_L56
+D:My country friend is beginning to believe trouble is coming.
 
 #                                                             ../orig/m.typ:611
 I:(2) Balanced Keyboard Drill
 *:_M_R_L57
 #                                                             ../orig/m.typ:612
-O:thing pleas ought quest ember count ditio state recei ction
-Q: Press Y to continue, N to repeat, or Fkey12 to exit 
-N:_M_R_L57
+D:thing pleas ought quest ember count ditio state recei ction
 
 #                                                             ../orig/m.typ:613
 I:(3) Nine-letter words (j to z)
 *:_M_R_L58
 #                                                             ../orig/m.typ:633
-P:Dear Gertrude,
+S:Dear Gertrude,
  :
  :     This letter has no reference to shipments which you have
  :so kindly purchased from me in the past.  Rather, as you are
@@ -1047,14 +929,12 @@ P:Dear Gertrude,
  :call upon you later.
  :
  :Yours sincerely,
-Q: Press Y to continue, N to repeat, or Fkey12 to exit 
-N:_M_R_L58
 
 #                                                             ../orig/m.typ:634
 I:(4) Ten-letter words (a to z)
 *:_M_R_L59
 #                                                             ../orig/m.typ:655
-P:Dear Alex,
+S:Dear Alex,
  :
  :     We are especially interested in the settlement run by a
  :new department at the University.  We appreciate the importance
@@ -1075,14 +955,12 @@ P:Dear Alex,
  :to all.
  :
  :Sincerely yours,
-Q: Press Y to continue, N to repeat, or Fkey12 to exit 
-N:_M_R_L59
 
 #                                                             ../orig/m.typ:656
 I:(5) Eleven- to fourteen-letter words (a to z)
 *:_M_R_L60
 #                                                             ../orig/m.typ:673
-P:Dear Sir,
+S:Dear Sir,
  :
  :     I wish to acknowledge the recent interesting correspondence
  :from your office on the very considerable requirements of the new
@@ -1099,14 +977,12 @@ P:Dear Sir,
  :will be satisfactory in every way.
  :
  :Yours respectfully,
-Q: Press Y to continue, N to repeat, or Fkey12 to exit 
-N:_M_R_L60
 
 #                                                             ../orig/m.typ:674
 I:(6) Pointed Paragraph (l r z)
 *:_M_R_L61
 #                                                             ../orig/m.typ:687
-P:     The JOURNAL learned that the relatives on their arrival in
+S:     The JOURNAL learned that the relatives on their arrival in
  :April had already referred the trouble to lawyers.  Their early re-
  :turn surprises me.  As to the children themselves, the older girls
  :are personally agreeable, slender, and certainly full of zest.  They
@@ -1119,8 +995,6 @@ P:     The JOURNAL learned that the relatives on their arrival in
  :really amazes me that even persons like ourselves promptly seize
  :upon some hostile relative's version of an earlier will, which
  :should be recognized easily as false.
-Q: Press Y to continue, N to repeat, or Fkey12 to exit 
-N:_M_R_L61
 
 G:_M_E_M11
 #------------------------------------------------------------------------------

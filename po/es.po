@@ -4,7 +4,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: typist 2.3.1\n"
-"POT-Creation-Date: 2001-08-23 20:06+0200\n"
+"POT-Creation-Date: 2001-09-02 22:11+0200\n"
 "PO-Revision-Date: 2000-12-08 14:17+01:00\n"
 "Last-Translator: Vladimir Támara Patiño <vtamara@gnu.org>\n"
 "Language-Team:\n"
@@ -337,7 +337,7 @@ msgstr "            con %3.0f%% errores "
 msgid "Y/N"
 msgstr ""
 
-#: gtypist.c:1911
+#: gtypist.c:1912
 msgid "can't find or open file"
 msgstr "no se pudo encontrar o abrir archivo"
 

@@ -48,38 +48,30 @@ T:
  :After entering each line, hit the ENTER key with the 6-finger (the third finger
  :of your right hand).  Immediately return your finger to the 6 key.  It is very
  :important that you bring the finger back without looking.
-Q: Press Y to continue, or Fkey12 to exit 
-N:_N_R_L0
 
 #                                                              ../orig/n.typ:22
 I:Use your third finger only.
 *:_N_R_L1
 #                                                              ../orig/n.typ:23
-O:666666
-Q: Press Y to continue, N to repeat, or Fkey12 to exit 
-N:_N_R_L1
+D:666666
 
 #                                                              ../orig/n.typ:24
 I:Use your second finger for the 5.
 *:_N_R_L2
 #                                                              ../orig/n.typ:25
-O:6565656
-Q: Press Y to continue, N to repeat, or Fkey12 to exit 
-N:_N_R_L2
+D:6565656
 
 #                                                              ../orig/n.typ:26
 I:Use your first finger for the 4.
 *:_N_R_L3
 #                                                              ../orig/n.typ:27
-O:666444555444666
-Q: Press Y to continue, N to repeat, or Fkey12 to exit 
-N:_N_R_L3
+D:666444555444666
 
 #                                                              ../orig/n.typ:28
 I:Now let's try several lines.
 *:_N_R_L4
 #                                                              ../orig/n.typ:36
-P:666444666
+S:666444666
  :444555666
  :555444555
  :666444666
@@ -87,66 +79,52 @@ P:666444666
  :656565656
  :445566555
  :456456456
-Q: Press Y to continue, N to repeat, or Fkey12 to exit 
-N:_N_R_L4
 
 #                                                              ../orig/n.typ:37
 I:Use your second finger for the period.
 *:_N_R_L5
 #                                                              ../orig/n.typ:38
-O:555...555
-Q: Press Y to continue, N to repeat, or Fkey12 to exit 
-N:_N_R_L5
+D:555...555
 
 *:_N_R_L6
 #                                                              ../orig/n.typ:43
-P:5.54.45.56.6
+S:5.54.45.56.6
  :444.555
  :45.56.6
  :64.65.4
  :54.65.4
-Q: Press Y to continue, N to repeat, or Fkey12 to exit 
-N:_N_R_L6
 
 *:_N_R_L7
 #                                                              ../orig/n.typ:48
-P:445566.654
+S:445566.654
  :654456.546
  :546546.564
  :554466.645
  :555444.666
-Q: Press Y to continue, N to repeat, or Fkey12 to exit 
-N:_N_R_L7
 
 #                                                              ../orig/n.typ:49
 I:Use your first finger for the 1-key.
 *:_N_R_L8
 #                                                              ../orig/n.typ:50
-O:444111444.444111444
-Q: Press Y to continue, N to repeat, or Fkey12 to exit 
-N:_N_R_L8
+D:444111444.444111444
 
 *:_N_R_L9
 #                                                              ../orig/n.typ:55
-P:111.444
+S:111.444
  :414.141
  :456.546
  :415.164
  :541.146
-Q: Press Y to continue, N to repeat, or Fkey12 to exit 
-N:_N_R_L9
 
 #                                                              ../orig/n.typ:56
 I:Now, let's review the keys we've learned.
 *:_N_R_L10
 #                                                              ../orig/n.typ:57
-O:444555666111...555444666111
-Q: Press Y to continue, N to repeat, or Fkey12 to exit 
-N:_N_R_L10
+D:444555666111...555444666111
 
 *:_N_R_L11
 #                                                              ../orig/n.typ:66
-P:414.564
+S:414.564
  :546.145
  :546.145
  :644.146
@@ -155,8 +133,6 @@ P:414.564
  :546.164
  :111.555
  :514.651
-Q: Press Y to continue, N to repeat, or Fkey12 to exit 
-N:_N_R_L11
 
 G:_N_E_N1
 #------------------------------------------------------------------------------
@@ -168,53 +144,43 @@ G:_N_E_N1
 I:First, let's review the keys from lesson 1.
 *:_N_R_L12
 #                                                              ../orig/n.typ:70
-O:444.555.666.111.6541.6541
-Q: Press Y to continue, N to repeat, or Fkey12 to exit 
-N:_N_R_L12
+D:444.555.666.111.6541.6541
 
 #                                                              ../orig/n.typ:71
 I:Use your 5-finger for the 2 key.
 *:_N_R_L13
 #                                                              ../orig/n.typ:72
-O:555222555.525.525.525
-Q: Press Y to continue, N to repeat, or Fkey12 to exit 
-N:_N_R_L13
+D:555222555.525.525.525
 
 *:_N_R_L14
 #                                                              ../orig/n.typ:79
-P:45.25
+S:45.25
  :52.52
  :62.62
  :22.22
  :51.12
  :12.52
  :24.42
-Q: Press Y to continue, N to repeat, or Fkey12 to exit 
-N:_N_R_L14
 
 #                                                              ../orig/n.typ:80
 I:Use your 6-finger for the 3 key.
 *:_N_R_L15
 #                                                              ../orig/n.typ:81
-O:666333666.636.636
-Q: Press Y to continue, N to repeat, or Fkey12 to exit 
-N:_N_R_L15
+D:666333666.636.636
 
 *:_N_R_L16
 #                                                              ../orig/n.typ:88
-P:456.123
+S:456.123
  :321.654
  :666.333
  :323.353
  :343.313
  :353.363
  :313.434
-Q: Press Y to continue, N to repeat, or Fkey12 to exit 
-N:_N_R_L16
 
 *:_N_R_L17
 #                                                              ../orig/n.typ:97
-P:12.33
+S:12.33
  :45.33
  :65.35
  :12.35
@@ -223,76 +189,58 @@ P:12.33
  :43.53
  :13.36
  :34.31
-Q: Press Y to continue, N to repeat, or Fkey12 to exit 
-N:_N_R_L17
 
 #                                                              ../orig/n.typ:98
 I:Use your 4-finger for the zero.
 *:_N_R_L18
 #                                                              ../orig/n.typ:99
-O:444000444.401.410
-Q: Press Y to continue, N to repeat, or Fkey12 to exit 
-N:_N_R_L18
+D:444000444.401.410
 
 *:_N_R_L19
 #                                                             ../orig/n.typ:100
-O:410.020.030.040.060.104
-Q: Press Y to continue, N to repeat, or Fkey12 to exit 
-N:_N_R_L19
+D:410.020.030.040.060.104
 
 *:_N_R_L20
 #                                                             ../orig/n.typ:106
-P:12.00
+S:12.00
  :23.00
  :51.50
  :46.25
  :54.00
  :13.04
-Q: Press Y to continue, N to repeat, or Fkey12 to exit 
-N:_N_R_L20
 
 #                                                             ../orig/n.typ:107
 I:Use your 5-finger for the 8-key.
 *:_N_R_L21
 #                                                             ../orig/n.typ:108
-O:555888555.852.258
-Q: Press Y to continue, N to repeat, or Fkey12 to exit 
-N:_N_R_L21
+D:555888555.852.258
 
 *:_N_R_L22
 #                                                             ../orig/n.typ:109
-O:585.080.808.818.282
-Q: Press Y to continue, N to repeat, or Fkey12 to exit 
-N:_N_R_L22
+D:585.080.808.818.282
 
 *:_N_R_L23
 #                                                             ../orig/n.typ:115
-P:81.05
+S:81.05
  :84.80
  :88.88
  :58.28
  :80.18
  :28.38
-Q: Press Y to continue, N to repeat, or Fkey12 to exit 
-N:_N_R_L23
 
 #                                                             ../orig/n.typ:116
 I:Use your 6-finger for the 9-key.
 *:_N_R_L24
 #                                                             ../orig/n.typ:117
-O:666999666.393.696
-Q: Press Y to continue, N to repeat, or Fkey12 to exit 
-N:_N_R_L24
+D:666999666.393.696
 
 *:_N_R_L25
 #                                                             ../orig/n.typ:118
-O:595.989.696.393.295
-Q: Press Y to continue, N to repeat, or Fkey12 to exit 
-N:_N_R_L25
+D:595.989.696.393.295
 
 *:_N_R_L26
 #                                                             ../orig/n.typ:126
-P:.91
+S:.91
  :.90
  :.94
  :.95
@@ -300,32 +248,24 @@ P:.91
  :.93
  :.90
  :.95
-Q: Press Y to continue, N to repeat, or Fkey12 to exit 
-N:_N_R_L26
 
 #                                                             ../orig/n.typ:127
 I:And, the last number is 7. (Use your 4-finger for it.)
 *:_N_R_L27
 #                                                             ../orig/n.typ:128
-O:444777444.0147.7410
-Q: Press Y to continue, N to repeat, or Fkey12 to exit 
-N:_N_R_L27
+D:444777444.0147.7410
 
 *:_N_R_L28
 #                                                             ../orig/n.typ:129
-O:767.737.797.727.707.717
-Q: Press Y to continue, N to repeat, or Fkey12 to exit 
-N:_N_R_L28
+D:767.737.797.727.707.717
 
 *:_N_R_L29
 #                                                             ../orig/n.typ:130
-O:1234567890.1234567890
-Q: Press Y to continue, N to repeat, or Fkey12 to exit 
-N:_N_R_L29
+D:1234567890.1234567890
 
 *:_N_R_L30
 #                                                             ../orig/n.typ:140
-P:17.19
+S:17.19
  :71.70
  :19.37
  :57.07
@@ -335,12 +275,10 @@ P:17.19
  :76.67
  :45.17
  :70.07
-Q: Press Y to continue, N to repeat, or Fkey12 to exit 
-N:_N_R_L30
 
 *:_N_R_L31
 #                                                             ../orig/n.typ:149
-P:75856
+S:75856
  :87237
  :21570
  :24870
@@ -349,8 +287,6 @@ P:75856
  :21573
  :21584
  :35827
-Q: Press Y to continue, N to repeat, or Fkey12 to exit 
-N:_N_R_L31
 
 G:_N_E_N2
 #------------------------------------------------------------------------------
@@ -362,19 +298,15 @@ G:_N_E_N2
 I:First, let's review all the numbers.
 *:_N_R_L32
 #                                                             ../orig/n.typ:153
-O:1234567890.0987654321
-Q: Press Y to continue, N to repeat, or Fkey12 to exit 
-N:_N_R_L32
+D:1234567890.0987654321
 
 *:_N_R_L33
 #                                                             ../orig/n.typ:154
-O:12.34.56.78.90.10.29.38.47.57
-Q: Press Y to continue, N to repeat, or Fkey12 to exit 
-N:_N_R_L33
+D:12.34.56.78.90.10.29.38.47.57
 
 *:_N_R_L34
 #                                                             ../orig/n.typ:165
-P:123.654
+S:123.654
  :212.658
  :908.000
  :285.080
@@ -385,12 +317,10 @@ P:123.654
  :684.028
  :354.459
  :321.840
-Q: Press Y to continue, N to repeat, or Fkey12 to exit 
-N:_N_R_L34
 
 *:_N_R_L35
 #                                                             ../orig/n.typ:178
-P:12345
+S:12345
  :35840
  :25874
  :93682
@@ -403,12 +333,10 @@ P:12345
  :28460
  :52846
  :28469
-Q: Press Y to continue, N to repeat, or Fkey12 to exit 
-N:_N_R_L35
 
 *:_N_R_L36
 #                                                             ../orig/n.typ:187
-P:1.00
+S:1.00
  :2.05
  :3.50
  :4.52
@@ -417,12 +345,10 @@ P:1.00
  :7.00
  :8.45
  :9.50
-Q: Press Y to continue, N to repeat, or Fkey12 to exit 
-N:_N_R_L36
 
 *:_N_R_L37
 #                                                             ../orig/n.typ:195
-P:879.359
+S:879.359
  :286.498
  :357.159
  :654.852
@@ -430,12 +356,10 @@ P:879.359
  :571.392
  :284.293
  :231.879
-Q: Press Y to continue, N to repeat, or Fkey12 to exit 
-N:_N_R_L37
 
 *:_N_R_L38
 #                                                             ../orig/n.typ:203
-P:100.200
+S:100.200
  :258.246
  :369.741
  :123.987
@@ -443,31 +367,25 @@ P:100.200
  :239.900
  :273.194
  :372.973
-Q: Press Y to continue, N to repeat, or Fkey12 to exit 
-N:_N_R_L38
 
 #                                                             ../orig/n.typ:204
 I:Use any finger of your left hand for the SPACE bar.
 *:_N_R_L39
 #                                                             ../orig/n.typ:205
-O:111 222 333 444 555 666 777 888 999 000
-Q: Press Y to continue, N to repeat, or Fkey12 to exit 
-N:_N_R_L39
+D:111 222 333 444 555 666 777 888 999 000
 
 *:_N_R_L40
 #                                                             ../orig/n.typ:211
-P:123 654 879 264
+S:123 654 879 264
  :128 364 928 187
  :987 234 681 287
  :357 159 671 077
  :350 950 137 940
  :320 487 364 197
-Q: Press Y to continue, N to repeat, or Fkey12 to exit 
-N:_N_R_L40
 
 *:_N_R_L41
 #                                                             ../orig/n.typ:220
-P:82.01 35
+S:82.01 35
  :28.50 12
  :50.00 79
  :40.25 37
@@ -476,8 +394,6 @@ P:82.01 35
  :12.95 87
  :40.00 55
  :64.50 99
-Q: Press Y to continue, N to repeat, or Fkey12 to exit 
-N:_N_R_L41
 
 G:_N_E_N3
 #------------------------------------------------------------------------------

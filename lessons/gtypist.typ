@@ -1,3 +1,11 @@
+#==============================================================================
+# Combined series file
+#==============================================================================
+G:__SERIESMENU
+*:__NO_SERIESMENU
+#==============================================================================
+*:__S_D_SERIES
+# Start of file d.typ
 # Typist v2.2 - improved typing tutor program for UNIX systems
 # Copyright (C) 1998  Simon Baldwin (simonb@sco.com)
 #
@@ -16,14 +24,3192 @@
 # Foundation, Inc., 59 Temple Place - Suite 330, Boston, MA 02111-1307, USA.
 #
 
-#==============================================================================
-# Combined series file
-#==============================================================================
+#------------------------------------------------------------------------------
+# Series D
+#------------------------------------------------------------------------------
+G:_D_MENU
+*:_D_NO_MENU
+#------------------------------------------------------------------------------
+# Lesson D1
+#------------------------------------------------------------------------------
+*:D1
+*:_D_S_D1
+*:_D_R_L0
+#                                                              ../orig/d.typ:20
+T:			Welcome to the Dvorak Course
+ :
+ :This course has been planned for beginners as well as experienced typists.
+ :If you are a beginner learning to type on the American Simplified Keyboard
+ :(the Dvorak keyboard), you will find this keyboard easier to learn than
+ :the QWERTY (Sholes) keyboard.
+ :
+ :This is because the ASK has been scientifically designed to minimize cumulative
+ :finger motion while typing English.  The ten letters on the Home Row
+ :(A, O, E, U, I, D, H, T, N, and S) make up about 70% of all keystrokes.
+ :These ten letters alone can form over 3000 words.  Needless to say, having
+ :these keys in the home row facilitates both speed and accuracy.
+ :
+ :If you are already an experienced typist on the Sholes keyboard, don't despair:
+ :you won't have to unlearn everything you know.  Your basic typing dexterity
+ :remains with you, regardless of the keyboard layout.  Learning the Dvorak
+ :keyboard is like learning to "play on a new surface", as a tennis player must
+ :learn to adjust to grass court or hard court when she has been accustomed to
+ :playing on a clay court.
+Q: Press Y to continue, or Fkey12 to exit 
+N:_D_R_L0
+
+*:_D_R_L1
+#                                                              ../orig/d.typ:25
+T:			General Instructions
+ :
+ :The fingers of the left hand should be placed over the A-key, the O-key,
+ :the E-key, and the U-key.  Similarly, the fingers of the right hand should be
+ :placed over the H-key, the T-key, the N-key, and the S-key.
+Q: Press Y to continue, or Fkey12 to exit 
+N:_D_R_L1
+
+#                                                              ../orig/d.typ:26
+I:(1) Home Row Exercises
+*:_D_R_L2
+#                                                              ../orig/d.typ:28
+O:aoeu ueoa aoeui snth htns snthd uihd uihd
+ :asonetuhid asonetuhid dihutenosa dihutenosa
+Q: Press Y to continue, N to repeat, or Fkey12 to exit 
+N:_D_R_L2
+
+#                                                              ../orig/d.typ:29
+I:(2)
+*:_D_R_L3
+#                                                              ../orig/d.typ:30
+O:a s o n e t u h i d  a s o n e t u h i d
+Q: Press Y to continue, N to repeat, or Fkey12 to exit 
+N:_D_R_L3
+
+#                                                              ../orig/d.typ:31
+I:(3)
+*:_D_R_L4
+#                                                              ../orig/d.typ:32
+O:d i h u t e n o s a  d i h u t e n o s a
+Q: Press Y to continue, N to repeat, or Fkey12 to exit 
+N:_D_R_L4
+
+#                                                              ../orig/d.typ:33
+I:(4)
+*:_D_R_L5
+#                                                              ../orig/d.typ:35
+O:as an at ah ad aa ao ae au ai os on ot oh od oi ou oe oo oa
+ :es en et eh ed ea eo ee eu ei us un ut uh ud ui uu ue uo ua
+Q: Press Y to continue, N to repeat, or Fkey12 to exit 
+N:_D_R_L5
+
+#                                                              ../orig/d.typ:36
+I:(5)
+*:_D_R_L6
+#                                                              ../orig/d.typ:38
+O:his hat is an aid in the hot sun
+ :in his sad sod hut he sat on his hen
+Q: Press Y to continue, N to repeat, or Fkey12 to exit 
+N:_D_R_L6
+
+#                                                              ../orig/d.typ:39
+I:(6)
+*:_D_R_L7
+#                                                              ../orig/d.typ:41
+O:sue did not use his hoe and tin hat
+ :dan did not see the dot on his tie as he hid his tan hat
+Q: Press Y to continue, N to repeat, or Fkey12 to exit 
+N:_D_R_L7
+
+#                                                              ../orig/d.typ:42
+I:(7)
+*:_D_R_L8
+#                                                              ../orig/d.typ:46
+O:ada add ado aha aid ann dad dan dee den did die din don dot dud
+ :due dun duo eda end had has hat hen hid his hit hod hoe hot hue
+ :hut ian ida inn ion its nat ned net nod not nun nut odd ode out
+ :sat sit sod son sot sun tan tat tee ten tho tit toe ton too tot
+Q: Press Y to continue, N to repeat, or Fkey12 to exit 
+N:_D_R_L8
+
+#                                                              ../orig/d.typ:47
+I:(8)
+*:_D_R_L9
+#                                                              ../orig/d.typ:48
+O:i do as i do and the end is not as sad as the one sid had
+Q: Press Y to continue, N to repeat, or Fkey12 to exit 
+N:_D_R_L9
+
+G:_D_E_D1
+#------------------------------------------------------------------------------
+# Lesson D2
+#------------------------------------------------------------------------------
+*:D2
+*:_D_S_D2
+*:_D_R_L10
+#                                                              ../orig/d.typ:55
+T:                    Learning the Shift Key
+ :
+ :To integrate the shift key rhythmically in your practice, a capital letter
+ :should take three beats: 1--press the shift key opposite the hand to press
+ :the letter; 2--press the letter; 3--release the shift key.
+Q: Press Y to continue, or Fkey12 to exit 
+N:_D_R_L10
+
+#                                                              ../orig/d.typ:56
+I:(1) Review
+*:_D_R_L11
+#                                                              ../orig/d.typ:57
+O:een ent est ett hin hou ith ion oth sen tha thi tio tte thu
+Q: Press Y to continue, N to repeat, or Fkey12 to exit 
+N:_D_R_L11
+
+#                                                              ../orig/d.typ:58
+I:(2)
+*:_D_R_L12
+#                                                              ../orig/d.typ:60
+O:Ada An Ana Ann Dad Dan Dee Ed Eta
+ :Dan Nan Nat Ned Sid Sue Tad Ted Tod
+Q: Press Y to continue, N to repeat, or Fkey12 to exit 
+N:_D_R_L12
+
+#                                                              ../orig/d.typ:61
+I:(3)
+*:_D_R_L13
+#                                                              ../orig/d.typ:63
+O:The sad tots sat on a tan seat in his neat tent and ate ten nuts
+ :On his date Otis had a thin suit and no tint on his shoes
+Q: Press Y to continue, N to repeat, or Fkey12 to exit 
+N:_D_R_L13
+
+#                                                              ../orig/d.typ:64
+I:(4)
+*:_D_R_L14
+#                                                              ../orig/d.typ:66
+O:Enos eats a thin hash diet in a hued dish as he sits on an odd seat
+ :Dad does not eat suet   He had seen Sue dent his auto
+Q: Press Y to continue, N to repeat, or Fkey12 to exit 
+N:_D_R_L14
+
+#                                                              ../orig/d.typ:67
+I:(5)
+*:_D_R_L15
+#                                                              ../orig/d.typ:70
+O:ad an de di ed en es ie in ne un ate dis ess eat ied ine
+ :ist ite nee nes non nus ses tes tis usi ante anti ates
+ :eous eats ines ions ious ists itas itis ness sion tion
+Q: Press Y to continue, N to repeat, or Fkey12 to exit 
+N:_D_R_L15
+
+#                                                              ../orig/d.typ:71
+I:(6)
+*:_D_R_L16
+#                                                              ../orig/d.typ:73
+O:Adna Anna Anne Dana Dead Edie Edna Enid Etta Heda
+ :Nate Nina Neta Nona Odie Ohio Otto Stan Tess Thad Theo
+Q: Press Y to continue, N to repeat, or Fkey12 to exit 
+N:_D_R_L16
+
+#                                                              ../orig/d.typ:74
+I:(7)
+*:_D_R_L17
+#                                                              ../orig/d.typ:79
+O:adds aids ante ants aunt dead deed dens died dies dine dins dodo
+ :heed hens hied hind hint hiss hist hits hods hoed hoes hone hood
+ :none noon noun nuns oats odds odes ones sane sash sate seas seed
+ :sees sent sets shad shed shin shot side sine sins sons sued suns
+ :tide tine tins toad tone toss tote tout tune undo unit used uses
+Q: Press Y to continue, N to repeat, or Fkey12 to exit 
+N:_D_R_L17
+
+G:_D_E_D2
+#------------------------------------------------------------------------------
+# Lesson D3
+#------------------------------------------------------------------------------
+*:D3
+*:_D_S_D3
+#                                                              ../orig/d.typ:89
+T:                    Home Row and the Period
+ :
+ :The period is above the E-finger.  Note that the end of a sentence is
+ :always followed by two spaces; in abbreviations, it is followed by one
+ :space.
+Q: Press Y to continue, or Fkey12 to exit 
+#
+I:(1)
+*:_D_R_L18
+#                                                              ../orig/d.typ:91
+O:e.  e.  e.  e.  a.  s.  o.  n.  e.  t.  u.  h.  i.  d.  a.  a.
+ :h.  u.  a.  i.  o.  n.  s.  d.  t.  e.  h.  o.  u.  i.  s.  a.
+Q: Press Y to continue, N to repeat, or Fkey12 to exit 
+N:_D_R_L18
+
+#                                                              ../orig/d.typ:92
+I:(2)
+*:_D_R_L19
+#                                                              ../orig/d.typ:96
+O:anno athe atio atte ause diti enon esen enti este
+ :ethe esti ette hese hous hout iate iend ines inst
+ :ith itio into ndin ness nnot noth ntio onth osed
+ :thei thes tion tten nest nude unti usin tand tate
+Q: Press Y to continue, N to repeat, or Fkey12 to exit 
+N:_D_R_L19
+
+#                                                              ../orig/d.typ:97
+I:(3)
+*:_D_R_L20
+#                                                             ../orig/d.typ:100
+O:Adana Andie Annie Aonia Audie Denis Diana Dinah
+ :Donna Duane Edith Ethan India Susan Susie Thane
+ :Adana.  Andie.  Annie.  Aonia.  Audie.  Denis.  Diana.  Dinah.
+Q: Press Y to continue, N to repeat, or Fkey12 to exit 
+N:_D_R_L20
+
+#                                                             ../orig/d.typ:101
+I:(4)
+*:_D_R_L21
+#                                                             ../orig/d.typ:105
+O:In the house Adana dined in haste on toast and dates.
+ :Sated as she had eaten she noted the sheen on the dunes
+ :asd the shade in the sheds.  She hates to see an idiot
+ :stand and shoot his tenth doe in the dense heath.
+Q: Press Y to continue, N to repeat, or Fkey12 to exit 
+N:_D_R_L21
+
+#                                                             ../orig/d.typ:106
+I:(5)
+*:_D_R_L22
+#                                                             ../orig/d.typ:108
+O:An onion heats and stuns stout noses and sends hands
+ :to douse teeth and hoist suede hoods onto heads.
+Q: Press Y to continue, N to repeat, or Fkey12 to exit 
+N:_D_R_L22
+
+#                                                             ../orig/d.typ:109
+I:(6)
+*:_D_R_L23
+#                                                             ../orig/d.typ:111
+O:eates eousness eousnesses esses iates iests iness inesses
+ :iousness iousnesses iohness iohnesses itions nesses ousness
+Q: Press Y to continue, N to repeat, or Fkey12 to exit 
+N:_D_R_L23
+
+G:_D_E_D3
+#------------------------------------------------------------------------------
+# Lesson D4
+#------------------------------------------------------------------------------
+*:D4
+*:_D_S_D4
+*:_D_R_L24
+#                                                             ../orig/d.typ:116
+T:                    Upper Row and Essential Punctuation
+Q: Press Y to continue, or Fkey12 to exit 
+N:_D_R_L24
+
+#                                                             ../orig/d.typ:117
+I:(1)
+*:_D_R_L25
+#                                                             ../orig/d.typ:119
+O:tctc upup hghg o,o, nrnr a/a/ slsl a?a? s-s- s--- s---- ----
+ :tctc upup hghg, hfhf uyuy, nrnr, slsl, s---, s-s-, a/a/-
+Q: Press Y to continue, N to repeat, or Fkey12 to exit 
+N:_D_R_L25
+
+#                                                             ../orig/d.typ:120
+I:(2)
+*:_D_R_L26
+#                                                             ../orig/d.typ:122
+O:tctc/ upup/ hghg/ uyuy/ hfhf/ nrnr/ slsl/ tctc/ hfhf/ hghg/
+ :tctc? upup? hghg? uyuy? nrnr? slsl? hfhf? upup- hghg- tctc-
+Q: Press Y to continue, N to repeat, or Fkey12 to exit 
+N:_D_R_L26
+
+#                                                             ../orig/d.typ:123
+I:(3)
+*:_D_R_L27
+#                                                             ../orig/d.typ:125
+O:Al el if of or up Al el if of or up
+ :go la lo pa pi ye go la lo pa pi ye
+Q: Press Y to continue, N to repeat, or Fkey12 to exit 
+N:_D_R_L27
+
+#                                                             ../orig/d.typ:126
+I:(4)
+*:_D_R_L28
+#                                                             ../orig/d.typ:130
+O:Can pa go aft and lie on our old cot?
+ :The shy ape put on a red hat and ran off the lot.
+ :For a top fee, her act is to hop in, lie on the rug, pat her
+ :pet cat, fit a fur on her ear, get her fan, and run off.
+Q: Press Y to continue, N to repeat, or Fkey12 to exit 
+N:_D_R_L28
+
+#                                                             ../orig/d.typ:131
+I:(5)
+*:_D_R_L29
+#                                                             ../orig/d.typ:134
+O:ago ail ale all apt arc are art cur cut dig dip dop
+ :dry dug eel egg ego fag fig fin fir fly fog for fro
+ :fry gag gap gas gay gin gip God goo gun hag hay hep
+Q: Press Y to continue, N to repeat, or Fkey12 to exit 
+N:_D_R_L29
+
+G:_D_E_D4
+#------------------------------------------------------------------------------
+# Lesson D5
+#------------------------------------------------------------------------------
+*:D5
+*:_D_S_D5
+#                                                             ../orig/d.typ:138
+I:(1) Review
+*:_D_R_L30
+#                                                             ../orig/d.typ:140
+O:The left road can lead the lads and lady to good lots near
+ :your land.  The sale of pure gold is held at your door.
+Q: Press Y to continue, N to repeat, or Fkey12 to exit 
+N:_D_R_L30
+
+#                                                             ../orig/d.typ:141
+I:(2)
+*:_D_R_L31
+#                                                             ../orig/d.typ:144
+O:You held no fear of loss for a year.  On each trip to your
+ :shop he paid in cash for the caps, fish, cups, pans, fuel,
+ :logs, peas, ales, rice and fats you sold.
+Q: Press Y to continue, N to repeat, or Fkey12 to exit 
+N:_D_R_L31
+
+#                                                             ../orig/d.typ:145
+I:(3)
+*:_D_R_L32
+#                                                             ../orig/d.typ:147
+O:It is a fact that a slap on the face can hurt.  The poor
+ :apes feel free to find a sure sort of life in the dale.
+Q: Press Y to continue, N to repeat, or Fkey12 to exit 
+N:_D_R_L32
+
+#                                                             ../orig/d.typ:148
+I:(4)
+*:_D_R_L33
+#                                                             ../orig/d.typ:152
+O:aces acts ages ails airs also arcs call caps card cold cops
+ :else errs eyes face fair fall fare fate feat feel feet fell
+ :gate gets gift gigs glad goat goes gone gosh gray grey gull
+ :hole hope hops huff hull ills ires last late lest lets lies
+Q: Press Y to continue, N to repeat, or Fkey12 to exit 
+N:_D_R_L33
+
+#                                                             ../orig/d.typ:153
+I:(5)
+*:_D_R_L34
+#                                                             ../orig/d.typ:157
+O:pear pert pest pets pits plop pops post pots puns puts rate real
+ :ride rids ripe rips rope rote rues ruff runs runt rush rust ruts
+ :span spat spin spit spot spun step stop tags tall tape taps tars
+ :ugly upon ruge user yard year yeas yell yelp yips yoga yule your
+Q: Press Y to continue, N to repeat, or Fkey12 to exit 
+N:_D_R_L34
+
+G:_D_E_D5
+#------------------------------------------------------------------------------
+# Lesson D6
+#------------------------------------------------------------------------------
+*:D6
+*:_D_S_D6
+*:_D_R_L35
+#                                                             ../orig/d.typ:162
+T:		Learning the Lower Row
+Q: Press Y to continue, or Fkey12 to exit 
+N:_D_R_L35
+
+#                                                             ../orig/d.typ:163
+I:(1)
+*:_D_R_L36
+#                                                             ../orig/d.typ:164
+O:a'sz oqnv ukhm uxhb a"o- oqnv ejtw a'sz uxhb ukkk ukhm a's-
+Q: Press Y to continue, N to repeat, or Fkey12 to exit 
+N:_D_R_L36
+
+#                                                             ../orig/d.typ:165
+I:(2)
+*:_D_R_L37
+#                                                             ../orig/d.typ:166
+O:uk sz-a' tw nv ej hm uk a" hb oq uk a' nv hm a" oq sz tw ej
+Q: Press Y to continue, N to repeat, or Fkey12 to exit 
+N:_D_R_L37
+
+#                                                             ../orig/d.typ:167
+I:(3)
+*:_D_R_L38
+#                                                             ../orig/d.typ:170
+O:ale any are ary augh aught ave ay aye ec ece eco el er ere ery ex
+ :exa exe far fer fir for ify igh ight il ile ill ily ire aze ize
+ :la lly ly my ny ome or ore ough ought ould our re rec sive tive
+Q: Press Y to continue, N to repeat, or Fkey12 to exit 
+N:_D_R_L38
+
+#                                                             ../orig/d.typ:171
+I:(4)
+*:_D_R_L39
+#                                                             ../orig/d.typ:174
+O:I owe him a bun, a ham, ink, a bed and a job.
+ :Sam was mad at his own new ox in the bin.
+ :At the zoo, the wee, bad boa in a box bit Tom, Bob and me.
+Q: Press Y to continue, N to repeat, or Fkey12 to exit 
+N:_D_R_L39
+
+#                                                             ../orig/d.typ:175
+I:(5)
+*:_D_R_L40
+#                                                             ../orig/d.typ:179
+O:am ax be ma me ox oz we adz awe ban but eke eve haw hem
+ :hub jab jam jaw jet jib job Joe jot jut kid kin kit man
+ :mat Max nab new nub now own quo saw sox sum van vex vie
+ :vow wan who win won yen you zax
+Q: Press Y to continue, N to repeat, or Fkey12 to exit 
+N:_D_R_L40
+
+G:_D_E_D6
+#------------------------------------------------------------------------------
+# Lesson D7
+#------------------------------------------------------------------------------
+*:D7
+*:_D_S_D7
+#                                                             ../orig/d.typ:183
+I:(1)
+*:_D_R_L41
+#                                                             ../orig/d.typ:184
+O:In a daze the band hums the same new tune as they zoom down the exit.
+Q: Press Y to continue, N to repeat, or Fkey12 to exit 
+N:_D_R_L41
+
+#                                                             ../orig/d.typ:185
+I:(2)
+*:_D_R_L42
+#                                                             ../orig/d.typ:187
+O:Next time, I must have a town home, with a book and a vast tome,
+ :bees, oxen, hams in the oven, rows of beans, the wind and a view.
+Q: Press Y to continue, N to repeat, or Fkey12 to exit 
+N:_D_R_L42
+
+#                                                             ../orig/d.typ:188
+I:(3)
+*:_D_R_L43
+#                                                             ../orig/d.typ:190
+O:I know six men wait to put down their axes.  They want to quit
+ :their jobs when the job zone size is too wide.
+Q: Press Y to continue, N to repeat, or Fkey12 to exit 
+N:_D_R_L43
+
+#                                                             ../orig/d.typ:191
+I:(4)
+*:_D_R_L44
+#                                                             ../orig/d.typ:194
+O:ahem aims ajax akin asks atom axis bans bath beak beck been
+ :hoax husk inks item jabs jade jamb Java jazz Jean jest jinx
+ :knot Knox made maid mail mate mean meet mend mess mind mine
+Q: Press Y to continue, N to repeat, or Fkey12 to exit 
+N:_D_R_L44
+
+#                                                             ../orig/d.typ:195
+I:(5)
+*:_D_R_L45
+#                                                             ../orig/d.typ:199
+O:miss mist most musk must nabs news next nibs numb owed owes
+ :quiz save saws seem sews skat skew skid skin some sums take
+ :vend vent vest veto vise void vote wand weed week wend wins
+ :whet whit whiz whom wish wont zebu zest zinc Zion zone zulu
+Q: Press Y to continue, N to repeat, or Fkey12 to exit 
+N:_D_R_L45
+
+G:_D_E_D7
+#------------------------------------------------------------------------------
+# Lesson D8
+#------------------------------------------------------------------------------
+*:D8
+*:_D_S_D8
+#                                                             ../orig/d.typ:203
+I:(1)
+*:_D_R_L46
+#                                                             ../orig/d.typ:204
+O:He asked about those zebra waits in his beans.
+Q: Press Y to continue, N to repeat, or Fkey12 to exit 
+N:_D_R_L46
+
+#                                                             ../orig/d.typ:205
+I:(2)
+*:_D_R_L47
+#                                                             ../orig/d.typ:206
+O:It seems that in a month taxes on homes have taken all we saved.
+Q: Press Y to continue, N to repeat, or Fkey12 to exit 
+N:_D_R_L47
+
+#                                                             ../orig/d.typ:207
+I:(3)
+*:_D_R_L48
+#                                                             ../orig/d.typ:209
+O:John Smith makes a quiet visit to the bases in the winds and
+ :weeds on the mound.
+Q: Press Y to continue, N to repeat, or Fkey12 to exit 
+N:_D_R_L48
+
+#                                                             ../orig/d.typ:210
+I:(4)
+*:_D_R_L49
+#                                                             ../orig/d.typ:214
+O:ovals ovoid oxide quake queen quest quite quits quote saves seams
+ :skein skink skunk sweat takes taken taxed teams teems thank think
+ :thumb times towns ukase vaunt vests vises visit vista vivid vixen
+ :waits wands wants wends whine white whose zebus zoned zones zulus
+Q: Press Y to continue, N to repeat, or Fkey12 to exit 
+N:_D_R_L49
+
+G:_D_E_D8
+#------------------------------------------------------------------------------
+# Lesson D9
+#------------------------------------------------------------------------------
+*:D9
+*:_D_S_D9
+#                                                             ../orig/d.typ:218
+I:(1)
+*:_D_R_L50
+#                                                             ../orig/d.typ:219
+O:hghm hbfb upxp uxyx twcw ej.j nvrv oq,q szlz a'?' a"/"
+Q: Press Y to continue, N to repeat, or Fkey12 to exit 
+N:_D_R_L50
+
+#                                                             ../orig/d.typ:220
+I:Again...
+*:_D_R_L51
+#                                                             ../orig/d.typ:221
+O:hghm hbfb upxp uxyx twcw ej.j nvrv oq,q szlz a'?' a"/"
+Q: Press Y to continue, N to repeat, or Fkey12 to exit 
+N:_D_R_L51
+
+#                                                             ../orig/d.typ:222
+I:(2)
+*:_D_R_L52
+#                                                             ../orig/d.typ:223
+O:gm mg fb bf pk kp yx xy cw wc .j j. rv vr ,q q, lz zl
+Q: Press Y to continue, N to repeat, or Fkey12 to exit 
+N:_D_R_L52
+
+#                                                             ../orig/d.typ:224
+I:(3)
+*:_D_R_L53
+#                                                             ../orig/d.typ:225
+O:My big boy may buy a gem at the labs by the bay.
+Q: Press Y to continue, N to repeat, or Fkey12 to exit 
+N:_D_R_L53
+
+#                                                             ../orig/d.typ:226
+I:(4)
+*:_D_R_L54
+#                                                             ../orig/d.typ:228
+O:Mort awes boys with the way he can ward off a blow, kill
+ :elks and game, row a yawl, or ram awls into bars.
+Q: Press Y to continue, N to repeat, or Fkey12 to exit 
+N:_D_R_L54
+
+#                                                             ../orig/d.typ:229
+I:(5)
+*:_D_R_L55
+#                                                             ../orig/d.typ:232
+O:ah Al am an as at ax ba be do ed eh el go
+ :ha he hi ho if in is it Jo la no ma me no
+ :of oh on or ox pa pi Si so to up us we ye
+Q: Press Y to continue, N to repeat, or Fkey12 to exit 
+N:_D_R_L55
+
+G:_D_E_D9
+#------------------------------------------------------------------------------
+# Lesson D10
+#------------------------------------------------------------------------------
+*:D10
+*:_D_S_D10
+#                                                             ../orig/d.typ:236
+I:(1)
+*:_D_R_L56
+#                                                             ../orig/d.typ:238
+O:In barns on farms chicks, boars, veals, bucks and stock might
+ :enjoy and value an extra quart of water daily.
+Q: Press Y to continue, N to repeat, or Fkey12 to exit 
+N:_D_R_L56
+
+#                                                             ../orig/d.typ:239
+I:(2)
+*:_D_R_L57
+#                                                             ../orig/d.typ:241
+O:Do zebras roam the miles of bleak velds which cover parts of the
+ :world while packs of brown bears and wart hogs prowl in the woods?
+Q: Press Y to continue, N to repeat, or Fkey12 to exit 
+N:_D_R_L57
+
+#                                                             ../orig/d.typ:242
+I:(3)
+*:_D_R_L58
+#                                                             ../orig/d.typ:246
+O:Some folks claim to favor poems and rhyme, others can wring equal
+ :cheer and worth from words and quest and seize all books.  Still
+ :others amply quell their needs with vocal music and seek all
+ :works on voice.
+Q: Press Y to continue, N to repeat, or Fkey12 to exit 
+N:_D_R_L58
+
+#                                                             ../orig/d.typ:247
+I:(4)
+*:_D_R_L59
+#                                                             ../orig/d.typ:250
+O:To begin to use wrong verbs among boors and bores may be
+ :a severe error even if the whole group seems to think
+ :that exact terms mean less than is normal for them.
+Q: Press Y to continue, N to repeat, or Fkey12 to exit 
+N:_D_R_L59
+
+#                                                             ../orig/d.typ:251
+I:(5)
+*:_D_R_L60
+#                                                             ../orig/d.typ:255
+O:allow among avail awful Aztec azure backs balls began being belie
+ :bells bills black blank bored borne bring can't chalk champ charm
+ :check cheek chick chink comes Czech every evict exalt excel exert
+ :exile expel exult Felix folks gable gauze gives glaze gleam globe
+Q: Press Y to continue, N to repeat, or Fkey12 to exit 
+N:_D_R_L60
+
+#                                                             ../orig/d.typ:256
+I:(6)
+*:_D_R_L61
+#                                                             ../orig/d.typ:260
+O:verge verse verve vetch vigil vigor viola virus vital vogue voile
+ :vouch vowel vying walks walls wards warts whack whale wharf wheat
+ :wheel whelp where which whiff while whirl whole wired wires words
+ :world worth would write wrong wrote yards yokes yoks zippy zombie
+Q: Press Y to continue, N to repeat, or Fkey12 to exit 
+N:_D_R_L61
+
+G:_D_E_D10
+#------------------------------------------------------------------------------
+# Lesson D11
+#------------------------------------------------------------------------------
+*:D11
+*:_D_S_D11
+#                                                             ../orig/d.typ:264
+I:(1)
+*:_D_R_L62
+#                                                             ../orig/d.typ:266
+O:For a meal we lack a room, milk in mugs, warm pork, veal
+ :in the oven and cake.
+Q: Press Y to continue, N to repeat, or Fkey12 to exit 
+N:_D_R_L62
+
+#                                                             ../orig/d.typ:267
+I:(2)
+*:_D_R_L63
+#                                                             ../orig/d.typ:269
+O:Mike and Milt were grim, not calm, when Mort came to warn them that
+ :the well worn ramp over to the mill was too wet for our mile walk.
+Q: Press Y to continue, N to repeat, or Fkey12 to exit 
+N:_D_R_L63
+
+#                                                             ../orig/d.typ:270
+I:(3)
+*:_D_R_L64
+#                                                             ../orig/d.typ:272
+O:Walt may quip and quote with zeal about too much work, but I
+ :saw him melt and mourn about his love for his lost wife.
+Q: Press Y to continue, N to repeat, or Fkey12 to exit 
+N:_D_R_L64
+
+#                                                             ../orig/d.typ:273
+I:(4)
+*:_D_R_L65
+#                                                             ../orig/d.typ:274
+O:The pick of wool from rams can make very soft warm garb.
+Q: Press Y to continue, N to repeat, or Fkey12 to exit 
+N:_D_R_L65
+
+#                                                             ../orig/d.typ:275
+I:(5)
+*:_D_R_L66
+#                                                             ../orig/d.typ:277
+O:For his meal the busy bird will use his bill or beak in many
+ :ways to peck at or ably to pick up a worm.
+Q: Press Y to continue, N to repeat, or Fkey12 to exit 
+N:_D_R_L66
+
+#                                                             ../orig/d.typ:278
+I:(6)
+*:_D_R_L67
+#                                                             ../orig/d.typ:280
+O:Owls on the wing may move away with limp easy grace or they
+ :may sit on a wire and look ever so wise.
+Q: Press Y to continue, N to repeat, or Fkey12 to exit 
+N:_D_R_L67
+
+#                                                             ../orig/d.typ:281
+I:(7)
+*:_D_R_L68
+#                                                             ../orig/d.typ:283
+O:The word or term--prop, mall, king, mark, romp, lock or link--
+ :can vary in what it may mean.
+Q: Press Y to continue, N to repeat, or Fkey12 to exit 
+N:_D_R_L68
+
+#                                                             ../orig/d.typ:284
+I:(8)
+*:_D_R_L69
+#                                                             ../orig/d.typ:288
+O:helm herb hock holy jeep jeer jell jerk John jolt jump jury
+ :kale keel kelp kilt lack laws leak leek levy lick like lime
+ :limp link live love luck lump lynx mail many mill more much
+ :okra oval pack peak peck peek phew puck ramp rime skip talk
+Q: Press Y to continue, N to repeat, or Fkey12 to exit 
+N:_D_R_L69
+
+#                                                             ../orig/d.typ:289
+I:(9)
+*:_D_R_L70
+#                                                             ../orig/d.typ:292
+O:puck ramp rime skip talk vail vale vary veal veer veld verb vial vice
+ :volk walk ware warm warp wars wart ways weal wear well will tilt wire
+ :whey whim whip whir wore work worm worn yawn yolk zany zero zinc zing
+Q: Press Y to continue, N to repeat, or Fkey12 to exit 
+N:_D_R_L70
+
+G:_D_E_D11
+#------------------------------------------------------------------------------
+# Lesson D12
+#------------------------------------------------------------------------------
+*:D12
+*:_D_S_D12
+#                                                             ../orig/d.typ:296
+I:(1)
+*:_D_R_L71
+#                                                             ../orig/d.typ:298
+O:In barns on farms chicks, bears, veals, bucks and stock might
+ :enjoy and value an extra quart of water daily.
+Q: Press Y to continue, N to repeat, or Fkey12 to exit 
+N:_D_R_L71
+
+#                                                             ../orig/d.typ:299
+I:(2)
+*:_D_R_L72
+#                                                             ../orig/d.typ:301
+O:Quick quips, awful quotes and queer talks never quite solve
+ :the wants of a very small child.
+Q: Press Y to continue, N to repeat, or Fkey12 to exit 
+N:_D_R_L72
+
+#                                                             ../orig/d.typ:302
+I:(3)
+*:_D_R_L73
+#                                                             ../orig/d.typ:304
+O:Do zebras roam the miles of bleak velds which cover parts of the
+ :world while packs of brown bears and wart hogs prowl in the woods?
+Q: Press Y to continue, N to repeat, or Fkey12 to exit 
+N:_D_R_L73
+
+#                                                             ../orig/d.typ:305
+I:(4)
+*:_D_R_L74
+#                                                             ../orig/d.typ:309
+O:Some folks claim to favor poems and rhyme, others can wring equal
+ :cheer and worth from words and quest and seize all books.  Still
+ :others amply quell their needs with vocal music and seek all
+ :works on voice.
+Q: Press Y to continue, N to repeat, or Fkey12 to exit 
+N:_D_R_L74
+
+#                                                             ../orig/d.typ:310
+I:(5)
+*:_D_R_L75
+#                                                             ../orig/d.typ:312
+O:The queen was given a query for which an ample reply would
+ :take a quire of paper.
+Q: Press Y to continue, N to repeat, or Fkey12 to exit 
+N:_D_R_L75
+
+#                                                             ../orig/d.typ:313
+I:(6)
+*:_D_R_L76
+#                                                             ../orig/d.typ:315
+O:Six husky cooks boiled clam broth, shrmp and prawns and broiled
+ :liver for seven lucky elves, then made their hasty exits.
+Q: Press Y to continue, N to repeat, or Fkey12 to exit 
+N:_D_R_L76
+
+#                                                             ../orig/d.typ:316
+I:(7)
+*:_D_R_L77
+#                                                             ../orig/d.typ:319
+O:At the games, Mark was so very badly hurt with many broken bones,
+ :lumps on his jaws, and some glands burst.  Blood oozed from a crack
+ :in his wart where it had oozed for weeks.  He was lucky to have lived.
+Q: Press Y to continue, N to repeat, or Fkey12 to exit 
+N:_D_R_L77
+
+#                                                             ../orig/d.typ:320
+I:(8)
+*:_D_R_L78
+#                                                             ../orig/d.typ:322
+O:To check pomp and pride, sever from all overt vices, belay all
+ :forms of muck raking, and limit all hazards, will bring prime joy.
+Q: Press Y to continue, N to repeat, or Fkey12 to exit 
+N:_D_R_L78
+
+#                                                             ../orig/d.typ:323
+I:(9)
+*:_D_R_L79
+#                                                             ../orig/d.typ:326
+O:To begin to use wrong verbs among boors and bores may be
+ :a severe error even if the whole group seems to think
+ :that exact terms mean less than is normal for them.
+Q: Press Y to continue, N to repeat, or Fkey12 to exit 
+N:_D_R_L79
+
+#                                                             ../orig/d.typ:327
+I:(10)
+*:_D_R_L80
+#                                                             ../orig/d.typ:331
+O:allow among avail awful Aztec azure backs balls began being belie
+ :bells bills black blank bored borne bring can't chalk champ charm
+ :check cheek chick chink comes Czech every evict exalt excel exert
+ :exile expel exult Felix folks gable gauze gives glaze gleam globe
+Q: Press Y to continue, N to repeat, or Fkey12 to exit 
+N:_D_R_L80
+
+#                                                             ../orig/d.typ:332
+I:(11)
+*:_D_R_L81
+#                                                             ../orig/d.typ:336
+O:grams grave graze havoc hazel helix hobby jazzy jelly jerky jewel
+ :joker jolly jolts jowls judge junco kapok kayak keels keeps kitty
+ :knack kneel knelt knock knurl kopek kraal Krupp leave liver money
+ :never Ozark pawns peaks pecks peeks phlox pirks power proms prove
+Q: Press Y to continue, N to repeat, or Fkey12 to exit 
+N:_D_R_L81
+
+#                                                             ../orig/d.typ:337
+I:(12)
+*:_D_R_L82
+#                                                             ../orig/d.typ:341
+O:quack quaff quail qualm quays quell quill quilt ramps romps rooms
+ :rumps salve serve shack shark shawl shirk shock shrew shuck sieve
+ :seize skiff skill skimp skirt skulk small spank speak spoke stick
+ :stuck threw throw thyme vague valid value valve vapid vault venal
+Q: Press Y to continue, N to repeat, or Fkey12 to exit 
+N:_D_R_L82
+
+#                                                             ../orig/d.typ:342
+I:(13)
+*:_D_R_L83
+#                                                             ../orig/d.typ:346
+O:verge verse verve vetch vigil vigor viola virus vital vogue voile
+ :vouch vowel vying walks walls wards warts whack whale wharf wheat
+ :wheel whelp where which whiff while whirl whole wired wires words
+ :world worth would write wrong wrote yards yokes yolks zippy zombi
+Q: Press Y to continue, N to repeat, or Fkey12 to exit 
+N:_D_R_L83
+
+G:_D_E_D12
+#------------------------------------------------------------------------------
+# Lesson D13
+#------------------------------------------------------------------------------
+*:D13
+*:_D_S_D13
+*:_D_R_L84
+#                                                             ../orig/d.typ:353
+T:
+ :The following 135 words are so frequently used that they comprise 50%
+ :of all words normally typed.  If you can type the next two exercises without
+ :errors, half of your typed words will be correct!
+Q: Press Y to continue, or Fkey12 to exit 
+N:_D_R_L84
+
+*:_D_R_L85
+#                                                             ../orig/d.typ:358
+O:a about after all also an and another any are as at back be because
+ :been before being between both but by can could day did do down each
+ :even first for from get good had has have he her here him his how I
+ :if in into is it its just know last life like little long made make
+ :many may me men more most Mr.  Ms.  much must my never new no not now
+Q: Press Y to continue, N to repeat, or Fkey12 to exit 
+N:_D_R_L85
+
+*:_D_R_L86
+#                                                             ../orig/d.typ:363
+O:of or on one only or other our out over own people said same see she
+ :should so some state still such than that the their them then there
+ :these they this those through time to too two under up very was way
+ :we well were what when where which while who will with work would
+ :years you your
+Q: Press Y to continue, N to repeat, or Fkey12 to exit 
+N:_D_R_L86
+
+*:_D_R_L87
+#                                                             ../orig/d.typ:364
+T:We now concentrate on home row words.
+Q: Press Y to continue, or Fkey12 to exit 
+N:_D_R_L87
+
+#                                                             ../orig/d.typ:365
+I:(1)
+*:_D_R_L88
+#                                                             ../orig/d.typ:367
+O:The duteous dietitian hesitated at the intense nauseousness inside
+ :the dishonest institution.
+Q: Press Y to continue, N to repeat, or Fkey12 to exit 
+N:_D_R_L88
+
+#                                                             ../orig/d.typ:368
+I:(2)
+*:_D_R_L89
+#                                                             ../orig/d.typ:370
+O:In addition, the unastute assassin had another unsound idea.  He
+ :intended to assassinate the dishonest attendant at the institute.
+Q: Press Y to continue, N to repeat, or Fkey12 to exit 
+N:_D_R_L89
+
+#                                                             ../orig/d.typ:371
+I:(3)
+*:_D_R_L90
+#                                                             ../orig/d.typ:376
+O:The unintentioned noisiness and untidiness in the hostess house
+ :astonished, astounded and nauseated Antonietta.  Undaunted and
+ :unassisted, she did not hesitate to initiate a statute at the state
+ :house.  The statute stated that no attendant in an untenanted haunted
+ :hostess house is to attain hostess status.
+Q: Press Y to continue, N to repeat, or Fkey12 to exit 
+N:_D_R_L90
+
+G:_D_E_D13
+#------------------------------------------------------------------------------
+# Lesson D14
+#------------------------------------------------------------------------------
+*:D14
+*:_D_S_D14
+*:_D_R_L91
+#                                                             ../orig/d.typ:381
+T:
+ :In this lesson we practice alphabetic sentences.
+Q: Press Y to continue, or Fkey12 to exit 
+N:_D_R_L91
+
+#                                                             ../orig/d.typ:382
+I:(1)
+*:_D_R_L92
+#                                                             ../orig/d.typ:383
+O:Sixty-five quizzical sheep kept their jaws dry in a farm bungalow.
+Q: Press Y to continue, N to repeat, or Fkey12 to exit 
+N:_D_R_L92
+
+#                                                             ../orig/d.typ:384
+I:(2)
+*:_D_R_L93
+#                                                             ../orig/d.typ:385
+O:Balky Zulus find they can hoax weary men with quavery jumping.
+Q: Press Y to continue, N to repeat, or Fkey12 to exit 
+N:_D_R_L93
+
+#                                                             ../orig/d.typ:386
+I:(3)
+*:_D_R_L94
+#                                                             ../orig/d.typ:387
+O:Jerome quickly began to be vexed by the powerful blizzards.
+Q: Press Y to continue, N to repeat, or Fkey12 to exit 
+N:_D_R_L94
+
+#                                                             ../orig/d.typ:388
+I:(4)
+*:_D_R_L95
+#                                                             ../orig/d.typ:389
+O:Squawking gorillas could vex the brazen nymphs in a jiffy.
+Q: Press Y to continue, N to repeat, or Fkey12 to exit 
+N:_D_R_L95
+
+#                                                             ../orig/d.typ:390
+I:(5)
+*:_D_R_L96
+#                                                             ../orig/d.typ:391
+O:Can Jerry's equipment file saws, ax, hoe, knives and grind adz?
+Q: Press Y to continue, N to repeat, or Fkey12 to exit 
+N:_D_R_L96
+
+#                                                             ../orig/d.typ:392
+I:(6)
+*:_D_R_L97
+#                                                             ../orig/d.typ:393
+O:Ben works at squeezing very juicy plums with flexed thumbs.
+Q: Press Y to continue, N to repeat, or Fkey12 to exit 
+N:_D_R_L97
+
+#                                                             ../orig/d.typ:394
+I:(7)
+*:_D_R_L98
+#                                                             ../orig/d.typ:395
+O:The black wizard quipping jovially flexed his muscles.
+Q: Press Y to continue, N to repeat, or Fkey12 to exit 
+N:_D_R_L98
+
+#                                                             ../orig/d.typ:396
+I:(8)
+*:_D_R_L99
+#                                                             ../orig/d.typ:397
+O:Will you pack my jugs of liquid veneer in five dozen boxes?
+Q: Press Y to continue, N to repeat, or Fkey12 to exit 
+N:_D_R_L99
+
+#                                                             ../orig/d.typ:398
+I:(9)
+*:_D_R_L100
+#                                                             ../orig/d.typ:399
+O:Could the wizard jinx quivering folks by magic yelps?
+Q: Press Y to continue, N to repeat, or Fkey12 to exit 
+N:_D_R_L100
+
+#                                                             ../orig/d.typ:400
+I:(10)
+*:_D_R_L101
+#                                                             ../orig/d.typ:401
+O:Brazen gazelles quickly examined the forward jeep.
+Q: Press Y to continue, N to repeat, or Fkey12 to exit 
+N:_D_R_L101
+
+#                                                             ../orig/d.typ:402
+I:(11)
+*:_D_R_L102
+#                                                             ../orig/d.typ:403
+O:The brown dog quickly jumped over the lazy fox.
+Q: Press Y to continue, N to repeat, or Fkey12 to exit 
+N:_D_R_L102
+
+#                                                             ../orig/d.typ:404
+I:(12)
+*:_D_R_L103
+#                                                             ../orig/d.typ:405
+O:Will the kind judge squelch the five or six brazen nymphs?
+Q: Press Y to continue, N to repeat, or Fkey12 to exit 
+N:_D_R_L103
+
+#                                                             ../orig/d.typ:406
+I:(13)
+*:_D_R_L104
+#                                                             ../orig/d.typ:407
+O:Mix zippy Kadota figs with quivering cranberry jelly.
+Q: Press Y to continue, N to repeat, or Fkey12 to exit 
+N:_D_R_L104
+
+#                                                             ../orig/d.typ:408
+I:(14)
+*:_D_R_L105
+#                                                             ../orig/d.typ:409
+O:The wives quickly jerked extra big pizzas from the stand.
+Q: Press Y to continue, N to repeat, or Fkey12 to exit 
+N:_D_R_L105
+
+#                                                             ../orig/d.typ:410
+I:(15)
+*:_D_R_L106
+#                                                             ../orig/d.typ:411
+O:Lisa quickly mixed the very big jar of new soap.
+Q: Press Y to continue, N to repeat, or Fkey12 to exit 
+N:_D_R_L106
+
+#                                                             ../orig/d.typ:412
+I:(16)
+*:_D_R_L107
+#                                                             ../orig/d.typ:413
+O:The major will fix a quiet cozy nook for the vexed, bad Gypsy.
+Q: Press Y to continue, N to repeat, or Fkey12 to exit 
+N:_D_R_L107
+
+#                                                             ../orig/d.typ:414
+I:(17)
+*:_D_R_L108
+#                                                             ../orig/d.typ:415
+O:Pairs of lazy knowing oxen came by quietly evading the jam.
+Q: Press Y to continue, N to repeat, or Fkey12 to exit 
+N:_D_R_L108
+
+#                                                             ../orig/d.typ:416
+I:(18)
+#                                                             ../orig/d.typ:417
+I:Juvenile zest for excitement whetted interest in parking by the quay.
+#                                                             ../orig/d.typ:418
+I:(19)
+*:_D_R_L109
+#                                                             ../orig/d.typ:419
+O:Put your big ax, shovel and quartz where Mike's fence joins ours.
+Q: Press Y to continue, N to repeat, or Fkey12 to exit 
+N:_D_R_L109
+
+#                                                             ../orig/d.typ:420
+I:(20)
+*:_D_R_L110
+#                                                             ../orig/d.typ:421
+O:The brawny jaguar held fast till the quaking Zouave victim expired.
+Q: Press Y to continue, N to repeat, or Fkey12 to exit 
+N:_D_R_L110
+
+G:_D_E_D14
+#------------------------------------------------------------------------------
+# Lesson series D jump tables
+#------------------------------------------------------------------------------
+*:_D_E_D1
+Q: Do you want to continue to lesson D2 [Y/N] ? 
+N:_D_MENU
+G:_D_M_D2
+*:_D_E_D2
+Q: Do you want to continue to lesson D3 [Y/N] ? 
+N:_D_MENU
+G:_D_M_D3
+*:_D_E_D3
+Q: Do you want to continue to lesson D4 [Y/N] ? 
+N:_D_MENU
+G:_D_M_D4
+*:_D_E_D4
+Q: Do you want to continue to lesson D5 [Y/N] ? 
+N:_D_MENU
+G:_D_M_D5
+*:_D_E_D5
+Q: Do you want to continue to lesson D6 [Y/N] ? 
+N:_D_MENU
+G:_D_M_D6
+*:_D_E_D6
+Q: Do you want to continue to lesson D7 [Y/N] ? 
+N:_D_MENU
+G:_D_M_D7
+*:_D_E_D7
+Q: Do you want to continue to lesson D8 [Y/N] ? 
+N:_D_MENU
+G:_D_M_D8
+*:_D_E_D8
+Q: Do you want to continue to lesson D9 [Y/N] ? 
+N:_D_MENU
+G:_D_M_D9
+*:_D_E_D9
+Q: Do you want to continue to lesson D10 [Y/N] ? 
+N:_D_MENU
+G:_D_M_D10
+*:_D_E_D10
+Q: Do you want to continue to lesson D11 [Y/N] ? 
+N:_D_MENU
+G:_D_M_D11
+*:_D_E_D11
+Q: Do you want to continue to lesson D12 [Y/N] ? 
+N:_D_MENU
+G:_D_M_D12
+*:_D_E_D12
+Q: Do you want to continue to lesson D13 [Y/N] ? 
+N:_D_MENU
+G:_D_M_D13
+*:_D_E_D13
+Q: Do you want to continue to lesson D14 [Y/N] ? 
+N:_D_MENU
+G:_D_M_D14
+*:_D_E_D14
+G:_D_MENU
+
+*:_D_M_D1
+B:                             Lesson D1
+K:12:_D_MENU
+G:_D_S_D1
+*:_D_M_D2
+B:                             Lesson D2
+K:12:_D_MENU
+G:_D_S_D2
+*:_D_M_D3
+B:                             Lesson D3
+K:12:_D_MENU
+G:_D_S_D3
+*:_D_M_D4
+B:                             Lesson D4
+K:12:_D_MENU
+G:_D_S_D4
+*:_D_M_D5
+B:                             Lesson D5
+K:12:_D_MENU
+G:_D_S_D5
+*:_D_M_D6
+B:                             Lesson D6
+K:12:_D_MENU
+G:_D_S_D6
+*:_D_M_D7
+B:                             Lesson D7
+K:12:_D_MENU
+G:_D_S_D7
+*:_D_M_D8
+B:                             Lesson D8
+K:12:_D_MENU
+G:_D_S_D8
+*:_D_M_D9
+B:                             Lesson D9
+K:12:_D_MENU
+G:_D_S_D9
+*:_D_M_D10
+B:                            Lesson D10
+K:12:_D_MENU
+G:_D_S_D10
+*:_D_M_D11
+B:                            Lesson D11
+K:12:_D_MENU
+G:_D_S_D11
+*:_D_M_D12
+B:                            Lesson D12
+K:12:_D_MENU
+G:_D_S_D12
+*:_D_M_D13
+B:                            Lesson D13
+K:12:_D_MENU
+G:_D_S_D13
+*:_D_M_D14
+B:                            Lesson D14
+K:12:_D_MENU
+G:_D_S_D14
+#------------------------------------------------------------------------------
+# Lesson series D menu
+#------------------------------------------------------------------------------
+*:_D_MENU
+*:_D_MENU_PAGE0
+B:                 Lesson selection menu - series D [page 1 of 2]
+K:1:_D_M_D1
+K:2:_D_M_D2
+K:3:_D_M_D3
+K:4:_D_M_D4
+K:5:_D_M_D5
+K:6:_D_M_D6
+K:7:_D_M_D7
+K:8:_D_M_D8
+K:9:_D_M_D9
+K:10:_D_M_D10
+K:11:_D_MENU_PAGE1
+K:12:_D_QEXIT
+T:The D series contains the following 14 lessons:
+ :
+ :        Fkey 1 - Lesson D1     The home row
+ :        Fkey 2 - Lesson D2     Learning the Shift Key
+ :        Fkey 3 - Lesson D3     Home Row and the Period
+ :        Fkey 4 - Lesson D4     Upper Row and Essential Punctuation
+ :        Fkey 5 - Lesson D5     Review
+ :        Fkey 6 - Lesson D6     Learning the Lower Row
+ :        Fkey 7 - Lesson D7     Practise
+ :        Fkey 8 - Lesson D8     Practise
+ :        Fkey 9 - Lesson D9     Practise
+ :        Fkey10 - Lesson D10    Practise
+ :
+ :        Fkey11 - Next menu page...
+ :        Fkey12 - Leave this lesson series
+Q: Please select a lesson, or Fkey12 to exit 
+G:_D_MENU_PAGE0
+*:_D_MENU_PAGE1
+B:                 Lesson selection menu - series D [page 2 of 2]
+K:1:_D_M_D11
+K:2:_D_M_D12
+K:3:_D_M_D13
+K:4:_D_M_D14
+K:5:NULL
+K:6:NULL
+K:7:NULL
+K:8:NULL
+K:9:NULL
+K:10:NULL
+K:11:_D_MENU_PAGE0
+K:12:_D_QEXIT
+T:The D series contains the following 14 lessons:
+ :
+ :        Fkey 1 - Lesson D11    Practise
+ :        Fkey 2 - Lesson D12    Practise
+ :        Fkey 3 - Lesson D13    Frequent words
+ :        Fkey 4 - Lesson D14    Alphabetic sentences
+ :
+ :
+ :
+ :
+ :
+ :
+ :
+ :        Fkey11 - First menu page...
+ :        Fkey12 - Leave this lesson series
+Q: Please select a lesson, or Fkey12 to exit 
+G:_D_MENU_PAGE1
+*:_D_QEXIT
+Q: Do you want to leave this lesson series? [Y/N] ? 
+N:_D_MENU
+G:_D_EXIT
+*:_D_EXIT
+#------------------------------------------------------------------------------
+# End of file d.typ
 G:__SERIESMENU
-*:__NO_SERIESMENU
+#==============================================================================
+#==============================================================================
+*:__S_M_SERIES
+# Start of file m.typ
+# Typist v2.2 - improved typing tutor program for UNIX systems
+# Copyright (C) 1998  Simon Baldwin (simonb@sco.com)
+#
+# This program is free software; you can redistribute it and/or
+# modify it under the terms of the GNU General Public License
+# as published by the Free Software Foundation; either version 2
+# of the License, or (at your option) any later version.
+#
+# This program is distributed in the hope that it will be useful,
+# but WITHOUT ANY WARRANTY; without even the implied warranty of
+# MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+# GNU General Public License for more details.
+#
+# You should have received a copy of the GNU General Public License
+# along with this program; if not, write to the Free Software
+# Foundation, Inc., 59 Temple Place - Suite 330, Boston, MA 02111-1307, USA.
+#
+
+#------------------------------------------------------------------------------
+# Series M
+#------------------------------------------------------------------------------
+G:_M_MENU
+*:_M_NO_MENU
+#------------------------------------------------------------------------------
+# Lesson M1
+#------------------------------------------------------------------------------
+*:M1
+*:_M_S_M1
+#                                                               ../orig/m.typ:3
+I:(1) Warming-Up Drill
+*:_M_R_L0
+#                                                               ../orig/m.typ:4
+O:If you can do so, will you kindly let us know by return mail.
+Q: Press Y to continue, N to repeat, or Fkey12 to exit 
+N:_M_R_L0
+
+#                                                               ../orig/m.typ:5
+I:(2) Continuous Copy
+*:_M_R_L1
+#                                                               ../orig/m.typ:6
+O:My totals were:  $2,309, $5,687, $3,498, $2,408, and $3,697.
+Q: Press Y to continue, N to repeat, or Fkey12 to exit 
+N:_M_R_L1
+
+#                                                               ../orig/m.typ:7
+I:(3)
+*:_M_R_L2
+#                                                               ../orig/m.typ:9
+O:A student may type 1 word per minute faster for each added
+ :year of age: i.e., 13 to 14, to 15, to 16, to 17, to 18.
+Q: Press Y to continue, N to repeat, or Fkey12 to exit 
+N:_M_R_L2
+
+#                                                              ../orig/m.typ:10
+I:(4)
+*:_M_R_L3
+#                                                              ../orig/m.typ:13
+O:Often 25% of first-year students never do 25 words a minute.
+ :Many second-year students can type about 45 words a minute.
+ :More than 50% do not equal the practical rate of 50 words.
+Q: Press Y to continue, N to repeat, or Fkey12 to exit 
+N:_M_R_L3
+
+#                                                              ../orig/m.typ:14
+I:(5)
+*:_M_R_L4
+#                                                              ../orig/m.typ:18
+O:Why do we all thrill over sports?  Maybe it is the tireless
+ :skill of the winner that we feel.  Ask the players.  They
+ :may agree (Rice,* famous as a sports writer, said the cham-
+ :pions all agreed) that skill is only part (50%) of it.
+Q: Press Y to continue, N to repeat, or Fkey12 to exit 
+N:_M_R_L4
+
+#                                                              ../orig/m.typ:19
+I:(6)
+*:_M_R_L5
+#                                                              ../orig/m.typ:24
+O:"When you step on the first tee," says the four-time gold
+ :champion, Bobby Jones, "you know you can't afford to make
+ :one careless slip."  A tired Bobby Jones (this was the way
+ :Bobby told it to Rice) has stood on the 16th tee, leading
+ :Smith by 18 strokes.
+Q: Press Y to continue, N to repeat, or Fkey12 to exit 
+N:_M_R_L5
+
+#                                                              ../orig/m.typ:25
+I:(7)
+*:_M_R_L6
+#                                                              ../orig/m.typ:29
+O:"Up to this point," says Bobby, "I had played 33 holes in 11
+ :under par.  I believe it was the best golf I ever played in
+ :my life.  But after easing up on the mental side I played
+ :the last three holes in 5 over par."
+Q: Press Y to continue, N to repeat, or Fkey12 to exit 
+N:_M_R_L6
+
+#                                                              ../orig/m.typ:30
+I:(8)
+*:_M_R_L7
+#                                                              ../orig/m.typ:36
+O:In 1919 Babe Ruth shot into the records with 29 home runs.
+ :Yet few know that the Babe worked five years in big games
+ :before this start that led past Home Run #600.  You may
+ :have cheered Jimmy Foxx and many another.  Yet you can still
+ :picture the Babe after two strikes, smashing to the very
+ :spot he had "called" a famous home run.
+Q: Press Y to continue, N to repeat, or Fkey12 to exit 
+N:_M_R_L7
+
+#                                                              ../orig/m.typ:37
+I:(9)
+*:_M_R_L8
+#                                                              ../orig/m.typ:45
+O:It is the effort against odds that thrills.  We feel these
+ :drives that never let down.  We feel (this was the way Rice
+ :put it) the champion forces himself into the winning frame of
+ :mind.  Can the fast typist afford to do less?  A typist has
+ :to face such days of "mental torture" too.  Some days he has
+ :to force himself along.  He need not punish his machine.  He
+ :must pull himself together (100%) to type his steady, smooth
+ :way over all upsets.
+Q: Press Y to continue, N to repeat, or Fkey12 to exit 
+N:_M_R_L8
+
+#                                                              ../orig/m.typ:46
+I:(9A) Pointed Paragraph (m b)
+*:_M_R_L9
+#                                                              ../orig/m.typ:53
+P:     Men are bound to believe that business is bad in winter
+ :months.  Maybe Mr. Smith remembers that most building became
+ :better in September but both November and December seemed to
+ :be much behind.  Monday morning my mail box became blocked
+ :by urgent requests of many families that small-sized homes
+ :be built.  Some jobs may begin to come now from the Chamber
+ :of Commerce members.
+Q: Press Y to continue, N to repeat, or Fkey12 to exit 
+N:_M_R_L9
+
+#                                                              ../orig/m.typ:54
+I:(10) Rhythmic Review
+*:_M_R_L10
+#                                                              ../orig/m.typ:55
+O:I said, "Never promise to take much money to such places."
+Q: Press Y to continue, N to repeat, or Fkey12 to exit 
+N:_M_R_L10
+
+G:_M_E_M1
+#------------------------------------------------------------------------------
+# Lesson M2
+#------------------------------------------------------------------------------
+*:M2
+*:_M_S_M2
+#                                                              ../orig/m.typ:59
+I:(1) Warming-Up Drill
+*:_M_R_L11
+#                                                              ../orig/m.typ:60
+O:How do I lose if I read a book that doesn't have much in it?
+Q: Press Y to continue, N to repeat, or Fkey12 to exit 
+N:_M_R_L11
+
+#                                                              ../orig/m.typ:61
+I:(2) Balanced Keyboard Drill
+*:_M_R_L12
+#                                                              ../orig/m.typ:63
+O:non ana dis dia cle pan ard pur ern eer off age suf ame amb
+ :ess ean ist ian cel apo col ary tra neo sur ity sub ele mis
+Q: Press Y to continue, N to repeat, or Fkey12 to exit 
+N:_M_R_L12
+
+#                                                              ../orig/m.typ:64
+I:(3) Four-letter words (a to d)
+*:_M_R_L13
+#                                                              ../orig/m.typ:81
+P:Dear Dan,
+ :
+ :     Yes, I came out of the corn, back to the city, both to
+ :draw and to do copy on the new cars.  To date I am able to
+ :put cash in the bank and bear a bill or two.  The new deed
+ :has done it.
+ :
+ :     The city has been busy but cold for two days.  Dear baby
+ :has been to see her best aunt.  A band came by the door.
+ :Baby let the bird cage drop down with a blow.  The bird died.
+ :Boys put its dead body deep in a dark card case.  Baby also
+ :has a ball and blue book to drop.  I put the boat away.  Its
+ :deck did burn, but I care not as it does not cost a cent.
+ :
+ :     Come, call on me at the club.
+ :
+ :Yours sincerely,
+Q: Press Y to continue, N to repeat, or Fkey12 to exit 
+N:_M_R_L13
+
+#                                                              ../orig/m.typ:82
+I:(4) Four-letter words (e to g)
+*:_M_R_L14
+#                                                              ../orig/m.typ:97
+P:Dear Bea,
+ :
+ :     I am glad you feel so for the farm in the East.  Even
+ :as a girl of four or five I was ever so glad to find the
+ :farm.  In my eyes it was all as good as gold.  Even my feet
+ :felt good.  A girl can gain and grow fast on farm food and
+ :the fine free air.  Why else did face and form grow full
+ :and fair so fast?
+ :
+ :     On each foot of my farm I felt free from fear.  It
+ :gave me my fill of fun.  I felt no fear of any fire in the
+ :fall.  Now the fire is a fact and my farm is gone.  Give me
+ :my full life, etc.  The game goes on.
+ :
+ :Yours sincerely,
+Q: Press Y to continue, N to repeat, or Fkey12 to exit 
+N:_M_R_L14
+
+#                                                              ../orig/m.typ:98
+I:(5) Four-letter words (h to l)
+*:_M_R_L15
+#                                                             ../orig/m.typ:119
+P:Dear Hal,
+ :
+ :     Just a line to say I am lost if I cannot fly.  I
+ :have to keep on here.  I knew it was but a hope last May.
+ :It was just my last idea in June.  Yet I held my head high
+ :and did not lose hope.
+ :
+ :     Why not fly up in the air a half hour or less and
+ :look at my lake and our home on the hill?  I left it late
+ :last July with one item on my list.  Bill gave me half an
+ :hour of help.  Like the lady of the lake I met the king.
+ :Bill was a kind king, too.
+ :
+ :     To lead off into the air and see all our lake so
+ :long and lots of land so low, was to live a high hour.  I
+ :kept my hand at my ear so as to help hear.  In the air my
+ :hair was a loss.  It did not kill me.  I have to fly to know
+ :life can be less hard.  I like to hold on and help Bill.  I
+ :love to fly.
+ :
+ :Yours sincerely,
+Q: Press Y to continue, N to repeat, or Fkey12 to exit 
+N:_M_R_L15
+
+G:_M_E_M2
+#------------------------------------------------------------------------------
+# Lesson M3
+#------------------------------------------------------------------------------
+*:M3
+*:_M_S_M3
+#                                                             ../orig/m.typ:123
+I:(1) Warming-Up Drill
+*:_M_R_L16
+#                                                             ../orig/m.typ:124
+O:He says he hasn't been very blue once in his two weeks here.
+Q: Press Y to continue, N to repeat, or Fkey12 to exit 
+N:_M_R_L16
+
+#                                                             ../orig/m.typ:125
+I:(2) Balanced Keyboard Drill
+*:_M_R_L17
+#                                                             ../orig/m.typ:127
+O:sus ase sis uni suc epi cor ory tri acy fic ify dom isk ism
+ :ante than ance ling para less plea lent leas post rece cata
+Q: Press Y to continue, N to repeat, or Fkey12 to exit 
+N:_M_R_L17
+
+#                                                             ../orig/m.typ:128
+I:(3) Four-letter words (m to p)
+*:_M_R_L18
+#                                                             ../orig/m.typ:145
+P:Dear "Pie,"
+ :
+ :     I open most of my mail and meet the news.  I note that
+ :you say Mrs. Page is a mere name but you met the Miss Page.
+ :
+ :     You must need the car.  Once the pass is open I can move
+ :the car over to you.  Do you mind if I make it part of a nice
+ :plan to meet Miss Page, too?  Mrs. Page was only a mile past
+ :us.  Her son was my age and I made the mile at noon to play a
+ :bit.  She paid us for milk.  She did not mean much to me, but
+ :her son did.
+ :
+ :     Next we had more fun up the pass near the poor old No.
+ :Nine mine.  I can mark many a mile we once ran.  I must mail
+ :this note or I may miss the post.
+ :
+ :Yours sincerely,
+Q: Press Y to continue, N to repeat, or Fkey12 to exit 
+N:_M_R_L18
+
+#                                                             ../orig/m.typ:146
+I:(4) Four-letter words (r to s)
+*:_M_R_L19
+#                                                             ../orig/m.typ:166
+P:Dear Ross,
+ :
+ :     It is a real rain.  The road is so soft my car can but
+ :roll, stop, and roll on.  Are you on the ship?  If I get as
+ :far as the ship, can we sail in such a rain?  If we try to
+ :sail, the ship is sure to rock or ride on one side.  If I get
+ :sick, it is up to you to stay by and show us how to save the
+ :ship.  Ann has some sort of song to sing in the rain.  She
+ :said she sent it to you.
+ :
+ :     Did you read of our sale?  We set out a big sign.  Now
+ :any sort of suit and any size seem to sell.  We are not rich
+ :but we can soon step out or be sold out, if any such rate is
+ :to rule.
+ :
+ :     Ann has not seen the ship as yet.  Rain or no rain, Ann
+ :says to send her out.  All the rest of us say the same.  Can
+ :you ring me in my room at the shop?
+ :
+ :Yours sincerely,
+Q: Press Y to continue, N to repeat, or Fkey12 to exit 
+N:_M_R_L19
+
+#                                                             ../orig/m.typ:167
+I:(5) Pointed Paragraph (i u)
+*:_M_R_L20
+#                                                             ../orig/m.typ:173
+P:     The public is quite unfair about airing quibbles over
+ :house furniture and fruit juices for the university crew.
+ :The alumni inquiry into the failure of equipment figures in
+ :the issue.  The alumni attitude is useful but continues to
+ :put a premium on a victorious crew.  Only genius can guide
+ :this outfit uphill and build a suitable crew that won't quit.
+Q: Press Y to continue, N to repeat, or Fkey12 to exit 
+N:_M_R_L20
+
+#                                                             ../orig/m.typ:174
+I:(6) Pointed Paragraph (d s -)
+*:_M_R_L21
+#                                                             ../orig/m.typ:182
+P:     Students should be assisted in studying seated at their
+ :desks; cross-questioned as to their needs and desires; ad-
+ :vised to use up-to-date leads based on studies of standards.
+ :By-products of student days, well-bred friends, kindness,
+ :self-help, with good grades and degrees, are listed as far-
+ :sighted aids.  In Dad's old-fashioned address to his co-
+ :workers, he said sadly that ideas are missed less than first-
+ :class friends and good-natured wishers.
+Q: Press Y to continue, N to repeat, or Fkey12 to exit 
+N:_M_R_L21
+
+G:_M_E_M3
+#------------------------------------------------------------------------------
+# Lesson M4
+#------------------------------------------------------------------------------
+*:M4
+*:_M_S_M4
+#                                                             ../orig/m.typ:186
+I:(1) Warming-Up Drill
+*:_M_R_L22
+#                                                             ../orig/m.typ:187
+O:Get any piece, since I can't guess the color he always used.
+Q: Press Y to continue, N to repeat, or Fkey12 to exit 
+N:_M_R_L22
+
+#                                                             ../orig/m.typ:188
+I:(2) Balanced Keyboard Drill
+*:_M_R_L23
+#                                                             ../orig/m.typ:190
+O:anti thin atic fast hypo ness your ther fore ship cial ible
+ :ette hter here mber ough over eive with ived just ever mono
+Q: Press Y to continue, N to repeat, or Fkey12 to exit 
+N:_M_R_L23
+
+#                                                             ../orig/m.typ:191
+I:(3) Four-letter words (t to z)
+*:_M_R_L24
+#                                                             ../orig/m.typ:208
+P:Dear Tris,
+ :
+ :     It is so very warm at this time of year, I told my wife
+ :that you and I wish to go west for a week or two.  Did I
+ :tell you what a wind we had?  I went to town to vote for the
+ :one man whom I want.  I took a well-used tire.  When it went
+ :down on a bad turn, in the woods, I had to walk.  Then the
+ :wind more than set in, and I had to wait by a wall.  It got
+ :our old tree.
+ :
+ :     I saw two men and set them to work on the car, till
+ :they told me it was no use.  If I were to turn it in, is it
+ :true that you can take your car?  I want a wide view and I
+ :want to talk with you.  Thus I wait upon your word.  Wire
+ :yes if you will take this trip.
+ :
+ :Yours sincerely,
+Q: Press Y to continue, N to repeat, or Fkey12 to exit 
+N:_M_R_L24
+
+#                                                             ../orig/m.typ:209
+I:(4) Five-letter words (a to c)
+*:_M_R_L25
+#                                                             ../orig/m.typ:227
+P:Dear "Cab,"
+ :
+ :     Could you apply to the court to allow my claim as agent
+ :for Mr. Blank?  I could bring in his books and see about his
+ :bills.  If asked, he can cover the costs by checks on a bank
+ :that did not break.
+ :
+ :     Will you allow your child to come alone to see me?  He
+ :can have every apple he can carry.  By the way, being clean
+ :and above board, you must be above bad cases, but you began
+ :to bring in off-color cases after April.
+ :
+ :     I agree you do not cross the law, but why let men win
+ :in a black cause on any basis?  Why not build up your cases
+ :from among men of our own class?  Close the awful cases you
+ :now carry along to court, and begin again.
+ :
+ :Sincerely yours,
+Q: Press Y to continue, N to repeat, or Fkey12 to exit 
+N:_M_R_L25
+
+#                                                             ../orig/m.typ:228
+I:(5) Pointed Paragraph (r t)
+*:_M_R_L26
+#                                                             ../orig/m.typ:236
+P:     In our motor party on the return trip an attractive
+ :quartet first tried to tell thirty or forty short travel
+ :stories.  By turns they transferred to the theater, to art
+ :matters, to court trial stories.  In the latter a certain
+ :doctor is hurt by a first truck, another truck is struck,
+ :and three contractors are thrown to the street.  The girl's
+ :strong brother has been hurt.  Further, there are arrests
+ :and the sort of extra details that enter into true stories.
+Q: Press Y to continue, N to repeat, or Fkey12 to exit 
+N:_M_R_L26
+
+G:_M_E_M4
+#------------------------------------------------------------------------------
+# Lesson M5
+#------------------------------------------------------------------------------
+*:M5
+*:_M_S_M5
+#                                                             ../orig/m.typ:240
+I:(1) Warming-Up Drill
+*:_M_R_L27
+#                                                             ../orig/m.typ:241
+O:Some women who could write her won't raise a hand to help.
+Q: Press Y to continue, N to repeat, or Fkey12 to exit 
+N:_M_R_L27
+
+#                                                             ../orig/m.typ:242
+I:(2) Balanced Keyboard Drill
+*:_M_R_L28
+#                                                             ../orig/m.typ:244
+O:teen arch acle ward ence ency ease ster tele trix wise some
+ :atte tter tion fold ount ancy auto ttle cule mony cion come
+Q: Press Y to continue, N to repeat, or Fkey12 to exit 
+N:_M_R_L28
+
+#                                                             ../orig/m.typ:245
+I:(3) Five-letter words (d to h)
+*:_M_R_L29
+#                                                             ../orig/m.typ:262
+P:Dear Fred,
+ :
+ :     I have dared to ask you for an extra favor on the first.
+ :If you are not dated, I am to draft you to drive me by horse
+ :or car up the grade to the field house at eight.  I guess you
+ :have not heard fully about the great dance to be given by the
+ :girls on the floor of the field house.
+ :
+ :     My hands have put fresh green goods on the walls.  Every
+ :girl has a green dress, on its front a funny glass heart that
+ :she gives as a favor.  The old folks can drive up early, eat
+ :and drink and enjoy it all.  We will delay the dance till the
+ :girls enter in a dozen files.  It would crush me to death if
+ :an error were found in the plans.  Happy hours on earth are
+ :never heavy.  Can you doubt that you are going?
+ :
+ :Sincerely yours,
+Q: Press Y to continue, N to repeat, or Fkey12 to exit 
+N:_M_R_L29
+
+#                                                             ../orig/m.typ:263
+I:(4) Five-letter words (i to p)
+*:_M_R_L30
+#                                                             ../orig/m.typ:283
+P:Dear Madam,
+ :
+ :     I have your two later notes of March 1.  Maybe it is a
+ :large order for you to leave for the north in the month of
+ :March.
+ :
+ :     Our place is miles away, but the real issue is that mu-
+ :sic means much to us.  A night of music, even one piece of
+ :music, has often meant more to me than my local paper and all
+ :the power I have known.  If I can plant a love of music in all
+ :parts of this place so that all who hear you sing can learn to
+ :love it, it will mean more to me than money.
+ :
+ :     I never laugh at money, but isn't it plain in these
+ :lines that price ought to be the least of all the items?  The
+ :point is that our plans for your party are more important.  If
+ :you read our other offer in the light of our love for music,
+ :we might not seem so far away.
+ :
+ :Yours sincerely,
+Q: Press Y to continue, N to repeat, or Fkey12 to exit 
+N:_M_R_L30
+
+#                                                             ../orig/m.typ:284
+I:(5) Pointed Paragraph (u y)
+*:_M_R_L31
+#                                                             ../orig/m.typ:297
+P:     If truly quoted, you and Guy, mere youths, fly a con-
+ :tinuous journey of thousands of miles yearly in your study
+ :of numerous flying routes.  You say you were south in July
+ :in the dry country conspicuous for yucca, but now you are
+ :busy buying a quota of various useful items to supply your
+ :outfit for the famous Yukon.  Yet I am suspicious when you
+ :say this unusual survey is monotonous rather than glorious.
+ :You should hurry surely to Vancouver for some delicious
+ :yuletide fare.  It seems only yesterday that I was conscious
+ :of being young and vigorous enough to fly my buoyant plane.
+ :If you lucky boys are victorious over any unusually furious,
+ :dangerous, or anxious double duty on this survey, write a
+ :quotable account yourself for the Journal.
+Q: Press Y to continue, N to repeat, or Fkey12 to exit 
+N:_M_R_L31
+
+G:_M_E_M5
+#------------------------------------------------------------------------------
+# Lesson M6
+#------------------------------------------------------------------------------
+*:M6
+*:_M_S_M6
+#                                                             ../orig/m.typ:301
+I:(1) Warming-Up Drill
+*:_M_R_L32
+#                                                             ../orig/m.typ:302
+O:They were often too tired to be certain they heard the hour.
+Q: Press Y to continue, N to repeat, or Fkey12 to exit 
+N:_M_R_L32
+
+#                                                             ../orig/m.typ:303
+I:(2) Balanced Keyboard Drill
+*:_M_R_L33
+#                                                             ../orig/m.typ:305
+O:hood ight sion full ould able like ment ical tial ambi semi
+ :hand part king itio hing tory ding enti ting thou ving very
+Q: Press Y to continue, N to repeat, or Fkey12 to exit 
+N:_M_R_L33
+
+#                                                             ../orig/m.typ:306
+I:(3) Five-letter words (q to s)
+*:_M_R_L34
+#                                                             ../orig/m.typ:326
+P:Dear Alice,
+ :
+ :     I shall start my river story since you have shown you like
+ :my style.
+ :
+ :     The scene is a state in the South.  A sweet girl speaks of
+ :the sound and sight of the river.  Seven men without shame raise
+ :the stock sales and the boy tries to spend too much at the store.
+ :In order to make a quiet and quick slide down the river, the men
+ :seize the boat while the others, who are quite ready to serve the
+ :girl, sleep.
+ :
+ :     It seems the girl has sense, for on a sheet of paper she
+ :writes that her stock of gold is within reach from a round stone
+ :under the small shade tree.  She does not quote the boy, but does
+ :refer to the sorry end of his short study, and in her reply to his
+ :folks she will state how the gold may still be spent in the right
+ :way, which will stamp the story as real.
+ :
+ :Yours sincerely,
+Q: Press Y to continue, N to repeat, or Fkey12 to exit 
+N:_M_R_L34
+
+#                                                             ../orig/m.typ:327
+I:(4) Five-letter words (t to z)
+*:_M_R_L35
+#                                                             ../orig/m.typ:348
+P:Dear Mrs. White,
+ :
+ :     I wish to thank you for the words you wrote three weeks ago,
+ :and I trust you will write again on the wrong and waste of war.
+ :
+ :     As I watch the wheels of events today, I think you value a
+ :thing it has taken me a third of my years to see.  In its total
+ :trade the world is one whole, and each part in touch with the
+ :other at most times.
+ :
+ :     The usual farm woman won't see a trade table or understand
+ :its terms, for she is tired with her efforts to train and teach
+ :her young.  She has tried to throw her value into her home, which
+ :to her is worth so much.  War can not be put under until these
+ :women see there is but one world, which truly is their world.
+ :
+ :     Where will you be while the thick wheat is harvested?  If
+ :not across the water, would you visit us, using your voice to
+ :teach us these things?
+ :
+ :Yours sincerely,
+Q: Press Y to continue, N to repeat, or Fkey12 to exit 
+N:_M_R_L35
+
+#                                                             ../orig/m.typ:349
+I:(5) Pointed Paragraph (n m)
+*:_M_R_L36
+#                                                             ../orig/m.typ:357
+P:     Important dinner company in our small apartment was
+ :not common, and November ninth mamma was solemn in manner.
+ :The moment nine American gentlemen were announced, fun and
+ :argument began.  I remember one ancient gentleman, manager
+ :of much more income than mine, who was not solemn as imag-
+ :ined, but funny and human, even if normal demand, planned
+ :movements of modern machines to Canada, long term payments,
+ :and columns of numbers meant much more to him than to me.
+Q: Press Y to continue, N to repeat, or Fkey12 to exit 
+N:_M_R_L36
+
+G:_M_E_M6
+#------------------------------------------------------------------------------
+# Lesson M7
+#------------------------------------------------------------------------------
+*:M7
+*:_M_S_M7
+#                                                             ../orig/m.typ:361
+I:(1) Warming-Up Drill
+*:_M_R_L37
+#                                                             ../orig/m.typ:362
+O:Though I don't seem to hear the doctor, I know he is early.
+Q: Press Y to continue, N to repeat, or Fkey12 to exit 
+N:_M_R_L37
+
+#                                                             ../orig/m.typ:363
+I:(2) Balanced Keyboard Drill
+*:_M_R_L38
+#                                                             ../orig/m.typ:364
+O:stat each ning ieve ring side nder emen turn embe llow ours
+Q: Press Y to continue, N to repeat, or Fkey12 to exit 
+N:_M_R_L38
+
+#                                                             ../orig/m.typ:365
+I:(3) Continuous Copy
+*:_M_R_L39
+#                                                             ../orig/m.typ:381
+P:Dear Mr. and Mrs. Blank,
+ :
+ :     Your son has not called on me.  If he is to become almost an
+ :annual charge upon the county, the church will answer with action.
+ :Yet, I am afraid his arrest can not assure his coming around and
+ :asking us for advice.  Of course he has to appear before August.
+ :He bought on credit, got behind in cash, and the amount became too
+ :big.  I shall pay it.
+ :
+ :     You are an old couple, and I advise you to accept this.  Any-
+ :way, he is not a common boy and must have a chance.  He always does
+ :appear to anyone as fit.  I run across copies of his art.  I can
+ :advise your son, attend to his credit, and try to help him arrive
+ :at a change for the better.
+ :
+ :Sincerely yours,
+Q: Press Y to continue, N to repeat, or Fkey12 to exit 
+N:_M_R_L39
+
+#                                                             ../orig/m.typ:382
+I:(4) Six-letter words (d to k)
+*:_M_R_L40
+#                                                             ../orig/m.typ:400
+P:Dear Dick
+ :
+ :     I have a dollar.  I expect you to follow me and take dinner.
+ :Friday I didn't have cash, but a friend of the family had enough
+ :for both of us.
+ :
+ :     Father is having all the lot, except the garden, filled in
+ :during the week.  Giving in to his desire, I intend to work the
+ :ground.  Doctor says that my health is hardly an excuse, so I had
+ :better decide to make an effort.  Indeed, I am driven either to
+ :finish the work in the near future or pay to have it done.
+ :
+ :     I am hoping you will happen upon some kindly fellow to whom
+ :a flower garden itself is fun, and inform me.  I shall direct him,
+ :as the entire effect will lie in the way we handle the ground
+ :plan.  Don't forget.
+ :
+ :Yours sincerely,
+Q: Press Y to continue, N to repeat, or Fkey12 to exit 
+N:_M_R_L40
+
+#                                                             ../orig/m.typ:401
+I:(5) Pointed Paragraph (q z)
+*:_M_R_L41
+#                                                             ../orig/m.typ:408
+P:     I quit the quiz when I saw the quantity of queer hazy
+ :questions.  To seize lesser prizes required answers to a
+ :dozen queries.  Only a quarter of the quotas qualified with
+ :zest.  Many had zero when the quiz asked:  In what zones are
+ :Brazil, Switzerland, Arizona, or Texas?  Zebras in our zoos
+ :grow to what sizes?  Analyze and quote one great citizen's
+ :query as to zeppelins.  Criticize the quality of jazz music.
+Q: Press Y to continue, N to repeat, or Fkey12 to exit 
+N:_M_R_L41
+
+G:_M_E_M7
+#------------------------------------------------------------------------------
+# Lesson M8
+#------------------------------------------------------------------------------
+*:M8
+*:_M_S_M8
+#                                                             ../orig/m.typ:412
+I:(1) Warming-Up Drill
+*:_M_R_L42
+#                                                             ../orig/m.typ:413
+O:At the last minute he wrote that he knew it was done again.
+Q: Press Y to continue, N to repeat, or Fkey12 to exit 
+N:_M_R_L42
+
+#                                                             ../orig/m.typ:414
+I:(2) Balanced Keyboard Drill
+*:_M_R_L43
+#                                                             ../orig/m.typ:415
+O:trans ition there lease craft hyper etter esque ceive where
+Q: Press Y to continue, N to repeat, or Fkey12 to exit 
+N:_M_R_L43
+
+#                                                             ../orig/m.typ:416
+I:(3) Six-letter words (l to r)
+*:_M_R_L44
+#                                                             ../orig/m.typ:437
+P:Dear Rollin,
+ :
+ :     I did notice a number of the pretty places I passed in
+ :the air nearly two months ago, and I can at length locate
+ :the best.  If prices remain rather low, I will not return
+ :for any person or be prompt at orders.  I can play a record
+ :or two, and not regret there is no report to be looked at.
+ :I want to be myself and regard nature, not people.
+ :
+ :     To obtain this latter result is the proper reason for
+ :making this quiet trip.  So far from the public, matter in
+ :the papers will be old and market policy of little moment.
+ :It will please me to have you with us longer than the others.
+ :I was really living for the period when I would be placed with
+ :you both.  Your mother has a lovely manner.  I am glad to
+ :oblige so recent a member of our office, too.
+ :
+ :     This letter is being mailed Monday, and in two days we
+ :shall go.
+ :
+ :Yours sincerely,
+Q: Press Y to continue, N to repeat, or Fkey12 to exit 
+N:_M_R_L44
+
+#                                                             ../orig/m.typ:438
+I:(4) Six-letter words (s to z)
+*:_M_R_L45
+#                                                             ../orig/m.typ:458
+P:Dear Sylvia,
+ :
+ :     I wonder if my sister talked to you on Sunday of the
+ :thirty things we wanted to do this summer?  We were trying
+ :all the spring season at school to secure a supply of sim-
+ :ple but strong materials for a camp in the valley.
+ :
+ :     It struck me as we were taking a walk down the street
+ :that we would surely be unable to do as we stated unless you
+ :took a sudden notion to help.  It seemed to me on second
+ :thought we should give thanks to you for giving tongue to our
+ :wishes last winter, for you turned the folks in our favor.
+ :
+ :     My sister was saying that girls from twenty states had
+ :signed our pledge, so we are united.  Though this is off the
+ :subject, I saw a pretty yellow and silver dress within a win-
+ :dow on Main Street toward our corner.  Would you think it
+ :suitable for the writer?
+ :
+ :Sincerely yours,
+Q: Press Y to continue, N to repeat, or Fkey12 to exit 
+N:_M_R_L45
+
+#                                                             ../orig/m.typ:470
+I:(5) Pointed Paragraph (a q)
+*:_M_R_L45A
+#
+P:     I acquired a bequest from a quizzical Quaker.  How
+ :to apply it was a quandary.  As a quasi artist, I began in
+ :Albuquerque to make a quantity of plaques of chance Indian
+ :acquaintances.  My masquerade as an artist of quality in
+ :that quaint land of quite Spanish art and adobe was adequate
+ :and equally unique.  Squeezed in quiet, antiquated adobe
+ :quarters, I began quickly and without qualms to qualify as
+ :an artist.  After quarrels and questions over my queer tech-
+ :niques, I acquired my quota of opaque plaques.
+Q: Press Y to continue, N to repeat, or Shft+Fkey10 to exit 
+N:_M_R_L45A
+
+G:_M_E_M8
+#------------------------------------------------------------------------------
+# Lesson M9
+#------------------------------------------------------------------------------
+*:M9
+*:_M_S_M9
+#                                                             ../orig/m.typ:471
+I:(1) Warming-Up Drill
+*:_M_R_L46
+#                                                             ../orig/m.typ:472
+O:Instead of having us tonight he is making ready for Tuesday.
+Q: Press Y to continue, N to repeat, or Fkey12 to exit 
+N:_M_R_L46
+
+#                                                             ../orig/m.typ:473
+I:(2) Balanced Keyboard Drill
+*:_M_R_L47
+#                                                             ../orig/m.typ:474
+O:stead ation retro geous contr ourse ultra super ntion under
+Q: Press Y to continue, N to repeat, or Fkey12 to exit 
+N:_M_R_L47
+
+#                                                             ../orig/m.typ:475
+I:(3) Continuous Copy; Seven-letter words (a-f)
+*:_M_R_L48
+#                                                             ../orig/m.typ:498
+P:Dear Annabel,
+ :
+ :     My brother and his college friends in the factory decided to arrange an
+ :evening exactly as in the old days.  After calling us, they arrived and we
+ :carried out the idea.  We used an old college catalog and each girl had an
+ :old college dress.
+ :
+ :     Further to advance the evening, my brother advised us of an old address
+ :near the freight yard where certain college boys brought this or that article
+ :and were allowed a few dollars.  As we went in, an old man came a step farther,
+ :fell forward and against me.  Brother charged him.  Will you believe this care-
+ :ful account I enclose?  Between brother and me lay this old man who did seem
+ :dead.  I can't express my feeling.  His head was covered with marks of blows.
+ :
+ :     Already we were anxious to go.  Yet his safe was open, as if to furnish us
+ :the old books with the many expense charges against the college boys.  When I
+ :looked to see who of our company were in them, I read one balance after another
+ :paid from the old country to My Dearest Son.  You are correct if you guess we
+ :now ran, because we did.  What follows?  Today's paper doesn't have a line.
+ :
+ :Yours sincerely,
+Q: Press Y to continue, N to repeat, or Fkey12 to exit 
+N:_M_R_L48
+
+#                                                             ../orig/m.typ:499
+I:(4) Seven-letter words (g to o)
+*:_M_R_L49
+#                                                             ../orig/m.typ:518
+P:Dear Mrs. White,
+ :
+ :     I have been holding on, but this January I am getting out.
+ :My wife herself may have told you of our opening.  However, I go
+ :at ten o'clock this morning, and your husband is still out.  He is
+ :to do my general work himself, and may not imagine there is any
+ :measure of justice in that.  We married men are obliged to do as
+ :ordered.
+ :
+ :     I am leaving a hundred matters.  He has my opinion on each.
+ :Tell him the minutes of the last meeting of the members are on my
+ :table.  Tell him I haven't an invoice, but have instead an October
+ :bill, for our new machine parts.  He may mention this item to the
+ :manager, as he has neither its history nor my letters of inquiry.
+ :
+ :     I find nothing else to include.  We shall miss you greatly,
+ :and we shall be looking for you at our new home.
+ :
+ :Yours sincerely,
+Q: Press Y to continue, N to repeat, or Fkey12 to exit 
+N:_M_R_L49
+
+#                                                             ../orig/m.typ:519
+I:(4) Seven-letter words (p to z)
+*:_M_R_L50
+#                                                             ../orig/m.typ:539
+P:Dear Patrick,
+ :
+ :     I realize that this letter I am sending may subject you to some trouble.
+ :I am writing tonight without waiting to go through various reports on our
+ :present program.  If I had thought that you would be willing to give me an
+ :extra day, perhaps I would have come myself.
+ :
+ :     As soon as this letter has reached you, and you have finished reading the
+ :several items about which I have written, I hope you can give extra working
+ :time to my request for special records. These items will suggest a new plan as
+ :I picture it.  I shall add them to this note.
+ :
+ :     It is my purpose to prepare a fast station-to-station service that should
+ :be in running order soon.  I suppose it could be started next month.  Let me
+ :ask, also, whether we could receipt each payment, as we receive it, on a
+ :regular form similar to those in the package shipped you Tuesday.  I am pleased
+ :with your showing.  You have been like a soldier on duty in any and all
+ :weather.  Success is your teacher.
+ :
+ :With my best regards,
+Q: Press Y to continue, N to repeat, or Fkey12 to exit 
+N:_M_R_L50
+
+G:_M_E_M9
+#------------------------------------------------------------------------------
+# Lesson M10
+#------------------------------------------------------------------------------
+*:M10
+*:_M_S_M10
+#                                                             ../orig/m.typ:542
+B:				Lesson M10
+#                                                             ../orig/m.typ:543
+I:(1) Warming-Up Drill
+*:_M_R_L51
+#                                                             ../orig/m.typ:544
+O:He would separate the whole business and buy out their half.
+Q: Press Y to continue, N to repeat, or Fkey12 to exit 
+N:_M_R_L51
+
+#                                                             ../orig/m.typ:545
+I:(2) Balanced Keyboard Drill
+*:_M_R_L52
+#                                                             ../orig/m.typ:546
+O:inter itude circu gious right cious after extra micro sible
+Q: Press Y to continue, N to repeat, or Fkey12 to exit 
+N:_M_R_L52
+
+#                                                             ../orig/m.typ:547
+I:(3) Continuous Copy; Eight-letter words(a to m)
+*:_M_R_L53
+#                                                             ../orig/m.typ:566
+P:Dear Thomas,
+ :
+ :     First, I consider of definite interest anything from
+ :the business of as good a customer as you.  As director of
+ :our division, I am to continue handling building material.
+ :My judgment on all the evidence, which I send herewith
+ :enclosed in a second envelope, is one of complete approval.
+ :Let me have a contract covering the earliest delivery date.
+ :Are you advising me what increase in your discount is to be
+ :expected?
+ :
+ :     Second, this forenoon I saw your son and he told me of
+ :his marriage in February.  Although you had not entirely
+ :finished the addition to your lake house by last December,
+ :couldn't you exchange it, as it is, for my mountain home?
+ :Your son said that his young wife wants to live on this
+ :mountain to which all your children seem so attached.
+ :
+ :Sincerely yours,
+Q: Press Y to continue, N to repeat, or Fkey12 to exit 
+N:_M_R_L53
+
+#
+I:(4) Eight-letter words (n to z)
+*:_M_R_L54
+#                                                             ../orig/m.typ:587
+P:Dear Nathan,
+ :
+ :     My last shipment has probably been received, for the purchase was made
+ :Thursday.  Tomorrow is Saturday, a pleasant day, for I go on my vacation.
+ :
+ :     Do you remember an original idea you proposed last November relative
+ :to planning for some shipping from my property?  My neighbor recently
+ :called it a plan in a thousand, and we must get together so that I can
+ :thank you properly.  This is a national as well as personal question,
+ :and I am trusting that you will be thinking that it is possible for you to
+ :help put it into practice.
+ :
+ :     If you can possibly separate yourself from teachers and your
+ :teaching position sometime soon, plan to get a standard car and
+ :whatever else is required for the trip.  The car would also be a
+ :pleasure after you return to New York.  May I persuade you in re-
+ :plying to state that you are planning to come promptly?  We will
+ :make you one of the officers of the shipping business.
+ :
+ :Your sincerely,
+Q: Press Y to continue, N to repeat, or Fkey12 to exit 
+N:_M_R_L54
+
+#                                                             ../orig/m.typ:588
+I:(5) Nine-letter words (a to i)
+*:_M_R_L55
+#                                                             ../orig/m.typ:605
+P:Dear Son,
+ :
+ :     I am beginning this afternoon to give my immediate attention
+ :to a Christmas that should be beautiful.  I have addressed, to be
+ :forwarded and delivered in good condition, some new equipment
+ :according to your wish.  I note, too, that your committee met.
+ :What these gentlemen said is important and may be a sort of in-
+ :surance that your plan does not fail.  I certainly would not want
+ :to duplicate for you the kind of education given me.
+ :
+ :     Be different by following more than one new idea, including
+ :some of your own.  If you can carefully take fair advantage of
+ :every available condition, everybody should accept you cordially,
+ :as answering to the character of a gentleman.  Mother is enclosing
+ :a few lines.
+ :
+ :Yours sincerely,
+Q: Press Y to continue, N to repeat, or Fkey12 to exit 
+N:_M_R_L55
+
+G:_M_E_M10
+#------------------------------------------------------------------------------
+# Lesson M11
+#------------------------------------------------------------------------------
+*:M11
+*:_M_S_M11
+#                                                             ../orig/m.typ:608
+B:				Lesson M11
+#                                                             ../orig/m.typ:609
+I:(1) Warming-Up Drill
+*:_M_R_L56
+#                                                             ../orig/m.typ:610
+O:My country friend is beginning to believe trouble is coming.
+Q: Press Y to continue, N to repeat, or Fkey12 to exit 
+N:_M_R_L56
+
+#                                                             ../orig/m.typ:611
+I:(2) Balanced Keyboard Drill
+*:_M_R_L57
+#                                                             ../orig/m.typ:612
+O:thing pleas ought quest ember count ditio state recei ction
+Q: Press Y to continue, N to repeat, or Fkey12 to exit 
+N:_M_R_L57
+
+#                                                             ../orig/m.typ:613
+I:(3) Nine-letter words (j to z)
+*:_M_R_L58
+#                                                             ../orig/m.typ:633
+P:Dear Gertrude,
+ :
+ :     This letter has no reference to shipments which you have
+ :so kindly purchased from me in the past.  Rather, as you are
+ :returning to this territory by September, our president has re-
+ :quested me as secretary to ask that you make a statement before
+ :our club the first Wednesday.
+ :
+ :     Let me say something of the questions we have been receiving
+ :for the year.  Recently I read that the old principle today still
+ :applies.  It is wonderful what our new knowledge has surprised us
+ :into regarding as necessary for ourselves--sometimes things not
+ :even mentioned yesterday.
+ :
+ :     Will you therefore represent this new deal and present the
+ :situation to us in principle, sincerely, as you see it?  Other-
+ :wise, if you cannot make this provision now, I shall be glad to
+ :call upon you later.
+ :
+ :Yours sincerely,
+Q: Press Y to continue, N to repeat, or Fkey12 to exit 
+N:_M_R_L58
+
+#                                                             ../orig/m.typ:634
+I:(4) Ten-letter words (a to z)
+*:_M_R_L59
+#                                                             ../orig/m.typ:655
+P:Dear Alex,
+ :
+ :     We are especially interested in the settlement run by a
+ :new department at the University.  We appreciate the importance
+ :of its additional study to understand impossible conditions in
+ :the poor parts of our city, and its use for adjustment of some
+ :particular boy or girl.  Have you read our memorandum in this
+ :connection?
+ :
+ :     Our city is absolutely too big.  With the automobile we can
+ :distribute every person to his home along a line, our wide road,
+ :run far out from the city.  The difference between country and
+ :city grows less and less, in accordance with such use of the auto-
+ :mobile.
+ :
+ :     Concerning our collection of any remittance from you, this
+ :would serve to form a Conference which would develop everything
+ :that can make city governments bring full and rich experience
+ :to all.
+ :
+ :Sincerely yours,
+Q: Press Y to continue, N to repeat, or Fkey12 to exit 
+N:_M_R_L59
+
+#                                                             ../orig/m.typ:656
+I:(5) Eleven- to fourteen-letter words (a to z)
+*:_M_R_L60
+#                                                             ../orig/m.typ:673
+P:Dear Sir,
+ :
+ :     I wish to acknowledge the recent interesting correspondence
+ :from your office on the very considerable requirements of the new
+ :law that have to do with any unfortunate advertising that might
+ :appear in my papers.
+ :
+ :     Our association also has appreciated both your instructions
+ :and the opportunity for prompt examination and understanding of
+ :the new arrangement, particularly its application to all informa-
+ :tion given the public about merchandise for sale.  This has been
+ :a real convenience in our consideration of the entire proposition.
+ :
+ :     I want to assure you that our co-operation under the new law
+ :will be satisfactory in every way.
+ :
+ :Yours respectfully,
+Q: Press Y to continue, N to repeat, or Fkey12 to exit 
+N:_M_R_L60
+
+#                                                             ../orig/m.typ:674
+I:(6) Pointed Paragraph (l r z)
+*:_M_R_L61
+#                                                             ../orig/m.typ:687
+P:     The JOURNAL learned that the relatives on their arrival in
+ :April had already referred the trouble to lawyers.  Their early re-
+ :turn surprises me.  As to the children themselves, the older girls
+ :are personally agreeable, slender, and certainly full of zest.  They
+ :travel yearly and already are familiar with the world.  Their father
+ :was a quizzical old man who fairly idolized them.  His will leaves
+ :them very nearly a half-million dollars.  Only the earlier, first
+ :will is very irregular.  I've already quizzed them about the real
+ :hazards of quarrels over legal prizes of similar size.  From their
+ :replies I've realized slowly that the girls are all right.  It
+ :really amazes me that even persons like ourselves promptly seize
+ :upon some hostile relative's version of an earlier will, which
+ :should be recognized easily as false.
+Q: Press Y to continue, N to repeat, or Fkey12 to exit 
+N:_M_R_L61
+
+G:_M_E_M11
+#------------------------------------------------------------------------------
+# Lesson series M jump tables
+#------------------------------------------------------------------------------
+*:_M_E_M1
+Q: Do you want to continue to lesson M2 [Y/N] ? 
+N:_M_MENU
+G:_M_M_M2
+*:_M_E_M2
+Q: Do you want to continue to lesson M3 [Y/N] ? 
+N:_M_MENU
+G:_M_M_M3
+*:_M_E_M3
+Q: Do you want to continue to lesson M4 [Y/N] ? 
+N:_M_MENU
+G:_M_M_M4
+*:_M_E_M4
+Q: Do you want to continue to lesson M5 [Y/N] ? 
+N:_M_MENU
+G:_M_M_M5
+*:_M_E_M5
+Q: Do you want to continue to lesson M6 [Y/N] ? 
+N:_M_MENU
+G:_M_M_M6
+*:_M_E_M6
+Q: Do you want to continue to lesson M7 [Y/N] ? 
+N:_M_MENU
+G:_M_M_M7
+*:_M_E_M7
+Q: Do you want to continue to lesson M8 [Y/N] ? 
+N:_M_MENU
+G:_M_M_M8
+*:_M_E_M8
+Q: Do you want to continue to lesson M9 [Y/N] ? 
+N:_M_MENU
+G:_M_M_M9
+*:_M_E_M9
+Q: Do you want to continue to lesson M10 [Y/N] ? 
+N:_M_MENU
+G:_M_M_M10
+*:_M_E_M10
+Q: Do you want to continue to lesson M11 [Y/N] ? 
+N:_M_MENU
+G:_M_M_M11
+*:_M_E_M11
+G:_M_MENU
+
+*:_M_M_M1
+B:                             Lesson M1
+K:12:_M_MENU
+G:_M_S_M1
+*:_M_M_M2
+B:                             Lesson M2
+K:12:_M_MENU
+G:_M_S_M2
+*:_M_M_M3
+B:                             Lesson M3
+K:12:_M_MENU
+G:_M_S_M3
+*:_M_M_M4
+B:                             Lesson M4
+K:12:_M_MENU
+G:_M_S_M4
+*:_M_M_M5
+B:                             Lesson M5
+K:12:_M_MENU
+G:_M_S_M5
+*:_M_M_M6
+B:                             Lesson M6
+K:12:_M_MENU
+G:_M_S_M6
+*:_M_M_M7
+B:                             Lesson M7
+K:12:_M_MENU
+G:_M_S_M7
+*:_M_M_M8
+B:                             Lesson M8
+K:12:_M_MENU
+G:_M_S_M8
+*:_M_M_M9
+B:                             Lesson M9
+K:12:_M_MENU
+G:_M_S_M9
+*:_M_M_M10
+B:                            Lesson M10
+K:12:_M_MENU
+G:_M_S_M10
+*:_M_M_M11
+B:                            Lesson M11
+K:12:_M_MENU
+G:_M_S_M11
+#------------------------------------------------------------------------------
+# Lesson series M menu
+#------------------------------------------------------------------------------
+*:_M_MENU
+*:_M_MENU_PAGE0
+B:                 Lesson selection menu - series M [page 1 of 2]
+K:1:_M_M_M1
+K:2:_M_M_M2
+K:3:_M_M_M3
+K:4:_M_M_M4
+K:5:_M_M_M5
+K:6:_M_M_M6
+K:7:_M_M_M7
+K:8:_M_M_M8
+K:9:_M_M_M9
+K:10:_M_M_M10
+K:11:_M_MENU_PAGE1
+K:12:_M_QEXIT
+T:The M series contains the following 11 lessons:
+ :
+ :        Fkey 1 - Lesson M1     Practise
+ :        Fkey 2 - Lesson M2     Practise
+ :        Fkey 3 - Lesson M3     Practise
+ :        Fkey 4 - Lesson M4     Practise
+ :        Fkey 5 - Lesson M5     Practise
+ :        Fkey 6 - Lesson M6     Practise
+ :        Fkey 7 - Lesson M7     Practise
+ :        Fkey 8 - Lesson M8     Practise
+ :        Fkey 9 - Lesson M9     Practise
+ :        Fkey10 - Lesson M10    Practise
+ :
+ :        Fkey11 - Next menu page...
+ :        Fkey12 - Leave this lesson series
+Q: Please select a lesson, or Fkey12 to exit 
+G:_M_MENU_PAGE0
+*:_M_MENU_PAGE1
+B:                 Lesson selection menu - series M [page 2 of 2]
+K:1:_M_M_M11
+K:2:NULL
+K:3:NULL
+K:4:NULL
+K:5:NULL
+K:6:NULL
+K:7:NULL
+K:8:NULL
+K:9:NULL
+K:10:NULL
+K:11:_M_MENU_PAGE0
+K:12:_M_QEXIT
+T:The M series contains the following 11 lessons:
+ :
+ :        Fkey 1 - Lesson M11    Practise
+ :
+ :
+ :
+ :
+ :
+ :
+ :
+ :
+ :
+ :
+ :        Fkey11 - First menu page...
+ :        Fkey12 - Leave this lesson series
+Q: Please select a lesson, or Fkey12 to exit 
+G:_M_MENU_PAGE1
+*:_M_QEXIT
+Q: Do you want to leave this lesson series? [Y/N] ? 
+N:_M_MENU
+G:_M_EXIT
+*:_M_EXIT
+#------------------------------------------------------------------------------
+# End of file m.typ
+G:__SERIESMENU
+#==============================================================================
+#==============================================================================
+*:__S_N_SERIES
+# Start of file n.typ
+# Typist v2.2 - improved typing tutor program for UNIX systems
+# Copyright (C) 1998  Simon Baldwin (simonb@sco.com)
+#
+# This program is free software; you can redistribute it and/or
+# modify it under the terms of the GNU General Public License
+# as published by the Free Software Foundation; either version 2
+# of the License, or (at your option) any later version.
+#
+# This program is distributed in the hope that it will be useful,
+# but WITHOUT ANY WARRANTY; without even the implied warranty of
+# MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+# GNU General Public License for more details.
+#
+# You should have received a copy of the GNU General Public License
+# along with this program; if not, write to the Free Software
+# Foundation, Inc., 59 Temple Place - Suite 330, Boston, MA 02111-1307, USA.
+#
+
+#------------------------------------------------------------------------------
+# Series N
+#------------------------------------------------------------------------------
+G:_N_MENU
+*:_N_NO_MENU
+#------------------------------------------------------------------------------
+# Lesson N1
+#------------------------------------------------------------------------------
+*:N1
+*:_N_S_N1
+*:_N_R_L0
+#                                                              ../orig/n.typ:21
+T:
+ :			Numeric Keypad Lessons
+ :
+ :The N series lessons are provided for practice with the numeric keys available
+ :on the H89/H19 terminal.  You do not need to know how to touch type on the
+ :standard keyboard in order to learn touch typing on a calculator keypad.  So,
+ :you can begin this series right away.
+ :
+ :When entering numeric values, accuracy is usually more important than speed.
+ :Take these lessons very slowly.  Speed will come naturally later.
+ :
+ :As with the standard keypad, you must start in the HOME position.  Place the
+ :first three fingers of your right hand over the 4, 5, and 6 keys of the keypad.
+ :(Your thumb and fifth finger are not used.)  Your fingers should be poised just
+ :over the keys gently brushing them.  Use the thumb or any finger of your left
+ :hand for other keys, such as the SPACE bar.
+ :
+ :After entering each line, hit the ENTER key with the 6-finger (the third finger
+ :of your right hand).  Immediately return your finger to the 6 key.  It is very
+ :important that you bring the finger back without looking.
+Q: Press Y to continue, or Fkey12 to exit 
+N:_N_R_L0
+
+#                                                              ../orig/n.typ:22
+I:Use your third finger only.
+*:_N_R_L1
+#                                                              ../orig/n.typ:23
+O:666666
+Q: Press Y to continue, N to repeat, or Fkey12 to exit 
+N:_N_R_L1
+
+#                                                              ../orig/n.typ:24
+I:Use your second finger for the 5.
+*:_N_R_L2
+#                                                              ../orig/n.typ:25
+O:6565656
+Q: Press Y to continue, N to repeat, or Fkey12 to exit 
+N:_N_R_L2
+
+#                                                              ../orig/n.typ:26
+I:Use your first finger for the 4.
+*:_N_R_L3
+#                                                              ../orig/n.typ:27
+O:666444555444666
+Q: Press Y to continue, N to repeat, or Fkey12 to exit 
+N:_N_R_L3
+
+#                                                              ../orig/n.typ:28
+I:Now let's try several lines.
+*:_N_R_L4
+#                                                              ../orig/n.typ:36
+P:666444666
+ :444555666
+ :555444555
+ :666444666
+ :646464646
+ :656565656
+ :445566555
+ :456456456
+Q: Press Y to continue, N to repeat, or Fkey12 to exit 
+N:_N_R_L4
+
+#                                                              ../orig/n.typ:37
+I:Use your second finger for the period.
+*:_N_R_L5
+#                                                              ../orig/n.typ:38
+O:555...555
+Q: Press Y to continue, N to repeat, or Fkey12 to exit 
+N:_N_R_L5
+
+*:_N_R_L6
+#                                                              ../orig/n.typ:43
+P:5.54.45.56.6
+ :444.555
+ :45.56.6
+ :64.65.4
+ :54.65.4
+Q: Press Y to continue, N to repeat, or Fkey12 to exit 
+N:_N_R_L6
+
+*:_N_R_L7
+#                                                              ../orig/n.typ:48
+P:445566.654
+ :654456.546
+ :546546.564
+ :554466.645
+ :555444.666
+Q: Press Y to continue, N to repeat, or Fkey12 to exit 
+N:_N_R_L7
+
+#                                                              ../orig/n.typ:49
+I:Use your first finger for the 1-key.
+*:_N_R_L8
+#                                                              ../orig/n.typ:50
+O:444111444.444111444
+Q: Press Y to continue, N to repeat, or Fkey12 to exit 
+N:_N_R_L8
+
+*:_N_R_L9
+#                                                              ../orig/n.typ:55
+P:111.444
+ :414.141
+ :456.546
+ :415.164
+ :541.146
+Q: Press Y to continue, N to repeat, or Fkey12 to exit 
+N:_N_R_L9
+
+#                                                              ../orig/n.typ:56
+I:Now, let's review the keys we've learned.
+*:_N_R_L10
+#                                                              ../orig/n.typ:57
+O:444555666111...555444666111
+Q: Press Y to continue, N to repeat, or Fkey12 to exit 
+N:_N_R_L10
+
+*:_N_R_L11
+#                                                              ../orig/n.typ:66
+P:414.564
+ :546.145
+ :546.145
+ :644.146
+ :615.645
+ :564.145
+ :546.164
+ :111.555
+ :514.651
+Q: Press Y to continue, N to repeat, or Fkey12 to exit 
+N:_N_R_L11
+
+G:_N_E_N1
+#------------------------------------------------------------------------------
+# Lesson N2
+#------------------------------------------------------------------------------
+*:N2
+*:_N_S_N2
+#                                                              ../orig/n.typ:69
+I:First, let's review the keys from lesson 1.
+*:_N_R_L12
+#                                                              ../orig/n.typ:70
+O:444.555.666.111.6541.6541
+Q: Press Y to continue, N to repeat, or Fkey12 to exit 
+N:_N_R_L12
+
+#                                                              ../orig/n.typ:71
+I:Use your 5-finger for the 2 key.
+*:_N_R_L13
+#                                                              ../orig/n.typ:72
+O:555222555.525.525.525
+Q: Press Y to continue, N to repeat, or Fkey12 to exit 
+N:_N_R_L13
+
+*:_N_R_L14
+#                                                              ../orig/n.typ:79
+P:45.25
+ :52.52
+ :62.62
+ :22.22
+ :51.12
+ :12.52
+ :24.42
+Q: Press Y to continue, N to repeat, or Fkey12 to exit 
+N:_N_R_L14
+
+#                                                              ../orig/n.typ:80
+I:Use your 6-finger for the 3 key.
+*:_N_R_L15
+#                                                              ../orig/n.typ:81
+O:666333666.636.636
+Q: Press Y to continue, N to repeat, or Fkey12 to exit 
+N:_N_R_L15
+
+*:_N_R_L16
+#                                                              ../orig/n.typ:88
+P:456.123
+ :321.654
+ :666.333
+ :323.353
+ :343.313
+ :353.363
+ :313.434
+Q: Press Y to continue, N to repeat, or Fkey12 to exit 
+N:_N_R_L16
+
+*:_N_R_L17
+#                                                              ../orig/n.typ:97
+P:12.33
+ :45.33
+ :65.35
+ :12.35
+ :65.25
+ :25.63
+ :43.53
+ :13.36
+ :34.31
+Q: Press Y to continue, N to repeat, or Fkey12 to exit 
+N:_N_R_L17
+
+#                                                              ../orig/n.typ:98
+I:Use your 4-finger for the zero.
+*:_N_R_L18
+#                                                              ../orig/n.typ:99
+O:444000444.401.410
+Q: Press Y to continue, N to repeat, or Fkey12 to exit 
+N:_N_R_L18
+
+*:_N_R_L19
+#                                                             ../orig/n.typ:100
+O:410.020.030.040.060.104
+Q: Press Y to continue, N to repeat, or Fkey12 to exit 
+N:_N_R_L19
+
+*:_N_R_L20
+#                                                             ../orig/n.typ:106
+P:12.00
+ :23.00
+ :51.50
+ :46.25
+ :54.00
+ :13.04
+Q: Press Y to continue, N to repeat, or Fkey12 to exit 
+N:_N_R_L20
+
+#                                                             ../orig/n.typ:107
+I:Use your 5-finger for the 8-key.
+*:_N_R_L21
+#                                                             ../orig/n.typ:108
+O:555888555.852.258
+Q: Press Y to continue, N to repeat, or Fkey12 to exit 
+N:_N_R_L21
+
+*:_N_R_L22
+#                                                             ../orig/n.typ:109
+O:585.080.808.818.282
+Q: Press Y to continue, N to repeat, or Fkey12 to exit 
+N:_N_R_L22
+
+*:_N_R_L23
+#                                                             ../orig/n.typ:115
+P:81.05
+ :84.80
+ :88.88
+ :58.28
+ :80.18
+ :28.38
+Q: Press Y to continue, N to repeat, or Fkey12 to exit 
+N:_N_R_L23
+
+#                                                             ../orig/n.typ:116
+I:Use your 6-finger for the 9-key.
+*:_N_R_L24
+#                                                             ../orig/n.typ:117
+O:666999666.393.696
+Q: Press Y to continue, N to repeat, or Fkey12 to exit 
+N:_N_R_L24
+
+*:_N_R_L25
+#                                                             ../orig/n.typ:118
+O:595.989.696.393.295
+Q: Press Y to continue, N to repeat, or Fkey12 to exit 
+N:_N_R_L25
+
+*:_N_R_L26
+#                                                             ../orig/n.typ:126
+P:.91
+ :.90
+ :.94
+ :.95
+ :.96
+ :.93
+ :.90
+ :.95
+Q: Press Y to continue, N to repeat, or Fkey12 to exit 
+N:_N_R_L26
+
+#                                                             ../orig/n.typ:127
+I:And, the last number is 7. (Use your 4-finger for it.)
+*:_N_R_L27
+#                                                             ../orig/n.typ:128
+O:444777444.0147.7410
+Q: Press Y to continue, N to repeat, or Fkey12 to exit 
+N:_N_R_L27
+
+*:_N_R_L28
+#                                                             ../orig/n.typ:129
+O:767.737.797.727.707.717
+Q: Press Y to continue, N to repeat, or Fkey12 to exit 
+N:_N_R_L28
+
+*:_N_R_L29
+#                                                             ../orig/n.typ:130
+O:1234567890.1234567890
+Q: Press Y to continue, N to repeat, or Fkey12 to exit 
+N:_N_R_L29
+
+*:_N_R_L30
+#                                                             ../orig/n.typ:140
+P:17.19
+ :71.70
+ :19.37
+ :57.07
+ :71.37
+ :27.72
+ :37.73
+ :76.67
+ :45.17
+ :70.07
+Q: Press Y to continue, N to repeat, or Fkey12 to exit 
+N:_N_R_L30
+
+*:_N_R_L31
+#                                                             ../orig/n.typ:149
+P:75856
+ :87237
+ :21570
+ :24870
+ :47258
+ :21573
+ :21573
+ :21584
+ :35827
+Q: Press Y to continue, N to repeat, or Fkey12 to exit 
+N:_N_R_L31
+
+G:_N_E_N2
+#------------------------------------------------------------------------------
+# Lesson N3
+#------------------------------------------------------------------------------
+*:N3
+*:_N_S_N3
+#                                                             ../orig/n.typ:152
+I:First, let's review all the numbers.
+*:_N_R_L32
+#                                                             ../orig/n.typ:153
+O:1234567890.0987654321
+Q: Press Y to continue, N to repeat, or Fkey12 to exit 
+N:_N_R_L32
+
+*:_N_R_L33
+#                                                             ../orig/n.typ:154
+O:12.34.56.78.90.10.29.38.47.57
+Q: Press Y to continue, N to repeat, or Fkey12 to exit 
+N:_N_R_L33
+
+*:_N_R_L34
+#                                                             ../orig/n.typ:165
+P:123.654
+ :212.658
+ :908.000
+ :285.080
+ :288.381
+ :398.813
+ :286.187
+ :924.156
+ :684.028
+ :354.459
+ :321.840
+Q: Press Y to continue, N to repeat, or Fkey12 to exit 
+N:_N_R_L34
+
+*:_N_R_L35
+#                                                             ../orig/n.typ:178
+P:12345
+ :35840
+ :25874
+ :93682
+ :71489
+ :31265
+ :97824
+ :28617
+ :39715
+ :17935
+ :28460
+ :52846
+ :28469
+Q: Press Y to continue, N to repeat, or Fkey12 to exit 
+N:_N_R_L35
+
+*:_N_R_L36
+#                                                             ../orig/n.typ:187
+P:1.00
+ :2.05
+ :3.50
+ :4.52
+ :5.81
+ :6.95
+ :7.00
+ :8.45
+ :9.50
+Q: Press Y to continue, N to repeat, or Fkey12 to exit 
+N:_N_R_L36
+
+*:_N_R_L37
+#                                                             ../orig/n.typ:195
+P:879.359
+ :286.498
+ :357.159
+ :654.852
+ :159.357
+ :571.392
+ :284.293
+ :231.879
+Q: Press Y to continue, N to repeat, or Fkey12 to exit 
+N:_N_R_L37
+
+*:_N_R_L38
+#                                                             ../orig/n.typ:203
+P:100.200
+ :258.246
+ :369.741
+ :123.987
+ :582.714
+ :239.900
+ :273.194
+ :372.973
+Q: Press Y to continue, N to repeat, or Fkey12 to exit 
+N:_N_R_L38
+
+#                                                             ../orig/n.typ:204
+I:Use any finger of your left hand for the SPACE bar.
+*:_N_R_L39
+#                                                             ../orig/n.typ:205
+O:111 222 333 444 555 666 777 888 999 000
+Q: Press Y to continue, N to repeat, or Fkey12 to exit 
+N:_N_R_L39
+
+*:_N_R_L40
+#                                                             ../orig/n.typ:211
+P:123 654 879 264
+ :128 364 928 187
+ :987 234 681 287
+ :357 159 671 077
+ :350 950 137 940
+ :320 487 364 197
+Q: Press Y to continue, N to repeat, or Fkey12 to exit 
+N:_N_R_L40
+
+*:_N_R_L41
+#                                                             ../orig/n.typ:220
+P:82.01 35
+ :28.50 12
+ :50.00 79
+ :40.25 37
+ :82.50 19
+ :99.95 61
+ :12.95 87
+ :40.00 55
+ :64.50 99
+Q: Press Y to continue, N to repeat, or Fkey12 to exit 
+N:_N_R_L41
+
+G:_N_E_N3
+#------------------------------------------------------------------------------
+# Lesson series N jump tables
+#------------------------------------------------------------------------------
+*:_N_E_N1
+Q: Do you want to continue to lesson N2 [Y/N] ? 
+N:_N_MENU
+G:_N_M_N2
+*:_N_E_N2
+Q: Do you want to continue to lesson N3 [Y/N] ? 
+N:_N_MENU
+G:_N_M_N3
+*:_N_E_N3
+G:_N_MENU
+
+*:_N_M_N1
+B:                             Lesson N1
+K:12:_N_MENU
+G:_N_S_N1
+*:_N_M_N2
+B:                             Lesson N2
+K:12:_N_MENU
+G:_N_S_N2
+*:_N_M_N3
+B:                             Lesson N3
+K:12:_N_MENU
+G:_N_S_N3
+#------------------------------------------------------------------------------
+# Lesson series N menu
+#------------------------------------------------------------------------------
+*:_N_MENU
+*:_N_MENU_PAGE0
+B:                 Lesson selection menu - series N
+K:1:_N_M_N1
+K:2:_N_M_N2
+K:3:_N_M_N3
+K:4:NULL
+K:5:NULL
+K:6:NULL
+K:7:NULL
+K:8:NULL
+K:9:NULL
+K:10:NULL
+K:11:NULL
+K:12:_N_QEXIT
+T:The N series contains the following 3 lessons:
+ :
+ :        Fkey 1 - Lesson N1     4 5 . 6 1
+ :        Fkey 2 - Lesson N2     2 3 0 8 9 7
+ :        Fkey 3 - Lesson N3     Practise
+ :
+ :
+ :
+ :
+ :
+ :
+ :
+ :
+ :
+ :        Fkey12 - Leave this lesson series
+Q: Please select a lesson, or Fkey12 to exit 
+G:_N_MENU_PAGE0
+*:_N_QEXIT
+Q: Do you want to leave this lesson series? [Y/N] ? 
+N:_N_MENU
+G:_N_EXIT
+*:_N_EXIT
+#------------------------------------------------------------------------------
+# End of file n.typ
+G:__SERIESMENU
+#==============================================================================
 #==============================================================================
 *:__S_Q_SERIES
 # Start of file q.typ
+# Typist v2.2 - improved typing tutor program for UNIX systems
+# Copyright (C) 1998  Simon Baldwin (simonb@sco.com)
+#
+# This program is free software; you can redistribute it and/or
+# modify it under the terms of the GNU General Public License
+# as published by the Free Software Foundation; either version 2
+# of the License, or (at your option) any later version.
+#
+# This program is distributed in the hope that it will be useful,
+# but WITHOUT ANY WARRANTY; without even the implied warranty of
+# MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+# GNU General Public License for more details.
+#
+# You should have received a copy of the GNU General Public License
+# along with this program; if not, write to the Free Software
+# Foundation, Inc., 59 Temple Place - Suite 330, Boston, MA 02111-1307, USA.
+#
+
 #------------------------------------------------------------------------------
 # Series Q
 #------------------------------------------------------------------------------
@@ -730,6 +3916,24 @@ G:__SERIESMENU
 #==============================================================================
 *:__S_R_SERIES
 # Start of file r.typ
+# Typist v2.2 - improved typing tutor program for UNIX systems
+# Copyright (C) 1998  Simon Baldwin (simonb@sco.com)
+#
+# This program is free software; you can redistribute it and/or
+# modify it under the terms of the GNU General Public License
+# as published by the Free Software Foundation; either version 2
+# of the License, or (at your option) any later version.
+#
+# This program is distributed in the hope that it will be useful,
+# but WITHOUT ANY WARRANTY; without even the implied warranty of
+# MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+# GNU General Public License for more details.
+#
+# You should have received a copy of the GNU General Public License
+# along with this program; if not, write to the Free Software
+# Foundation, Inc., 59 Temple Place - Suite 330, Boston, MA 02111-1307, USA.
+#
+
 #------------------------------------------------------------------------------
 # Series R
 #------------------------------------------------------------------------------
@@ -2526,8 +5730,657 @@ G:_R_EXIT
 G:__SERIESMENU
 #==============================================================================
 #==============================================================================
+*:__S_S_SERIES
+# Start of file s.typ
+# Typist v2.2 - improved typing tutor program for UNIX systems
+# Copyright (C) 1998  Simon Baldwin (simonb@sco.com)
+#
+# This program is free software; you can redistribute it and/or
+# modify it under the terms of the GNU General Public License
+# as published by the Free Software Foundation; either version 2
+# of the License, or (at your option) any later version.
+#
+# This program is distributed in the hope that it will be useful,
+# but WITHOUT ANY WARRANTY; without even the implied warranty of
+# MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+# GNU General Public License for more details.
+#
+# You should have received a copy of the GNU General Public License
+# along with this program; if not, write to the Free Software
+# Foundation, Inc., 59 Temple Place - Suite 330, Boston, MA 02111-1307, USA.
+#
+
+#------------------------------------------------------------------------------
+# Series S
+#------------------------------------------------------------------------------
+G:_S_MENU
+*:_S_NO_MENU
+#------------------------------------------------------------------------------
+# Lesson S1
+#------------------------------------------------------------------------------
+*:S1
+*:_S_S_S1
+*:_S_R_L0
+#                                                              ../orig/s.typ:14
+T:			SPEED PRACTICE SERIES
+ :
+ :The S series of lessons is designed to help you improve your typing speed
+ :and accuracy.  It is assumed that you have already learned how to touch
+ :type either from a previous course in touch typing or from the T series of
+ :these lessons.
+ :
+ :You can use this series even if you do not know how to touch type.  But, it is
+ :recommended that you at least learn to touch type most of the letters of the
+ :alphabet before starting this series.  When you encounter a letter or symbol
+ :which you have not learned, you will have to look.  This is a very bad habit to
+ :get into and is hard to break.  (You needn't worry if you only need to glance
+ :down for unusual keys, like the dollar sign.)
+Q: Press Y to continue, or Fkey12 to exit 
+N:_S_R_L0
+
+*:_S_R_L1
+#                                                              ../orig/s.typ:30
+T:			   RULES OF THE GAME
+ :
+ :I will display a paragraph on the screen.  You should then type the entire
+ :paragraph as quickly and as accurately as possible.   As you type each
+ :character, I will immediately check it for accuracy.  If it was right, I won't
+ :do anything.  But, if you made a mistake, I will beep and write that letter in
+ :inverse video (a black character on a white background).  You can ignore the
+ :error and continue going; or, you can backup and correct it with the DELETE
+ :or BACKSPACE keys.  (I will still count it as an error though.)
+ :
+ :I will also be timing you.  From the time you type the first character until
+ :you hit the final carriage return, my stop watch will be going.  At the
+ :end of the paragraph, I will tell you your rating (in words-per-minute).
+ :
+ :If you made too many mistakes, try the next paragraph slower.  If you made no
+ :mistakes or only one or two, try the next one faster.
+Q: Press Y to continue, or Fkey12 to exit 
+N:_S_R_L1
+
+#                                                              ../orig/s.typ:31
+I:First, a quick warm-up.
+*:_S_R_L2
+#                                                              ../orig/s.typ:32
+P:The quick brown fox jumped over the lazy dogs.
+Q: Press Y to continue, N to repeat, or Fkey12 to exit 
+N:_S_R_L2
+
+#                                                              ../orig/s.typ:33
+I:Once more:
+*:_S_R_L3
+#                                                              ../orig/s.typ:34
+P:The quick brown fox jumped over the lazy dogs.
+Q: Press Y to continue, N to repeat, or Fkey12 to exit 
+N:_S_R_L3
+
+#                                                              ../orig/s.typ:35
+I:If the cursor is on a blank line, type return to skip it
+*:_S_R_L4
+#                                                              ../orig/s.typ:48
+P:Dear Sirs:
+ :
+ :I have just purchased a Heathkit H89 computer system and would
+ :like to order two boxes of diskettes for it.  This system uses
+ :5 1/4 inch, hard-sectored, ten-sector, single-sided, single-
+ :density diskettes.
+ :
+ :Enclosed is my check for $45.00.  Please rush this order, as I
+ :can not use my system before they arrive.
+ :
+ :Sincerely,
+ :
+ :Mr. Smith
+Q: Press Y to continue, N to repeat, or Fkey12 to exit 
+N:_S_R_L4
+
+*:_S_R_L5
+#                                                              ../orig/s.typ:61
+P:Dear Sirs:
+ :
+ :Thank you for sending the diskettes so promptly.  How-
+ :ever, the diskettes which you sent are for soft-sectored
+ :drives.  As I stated in my original letter my system
+ :accepts only ten-sector, hard-sectored diskettes.
+ :
+ :I will return these two boxes as soon as I receive the
+ :correct ones.
+ :
+ :Sincerely,
+ :
+ :Mr. Smith
+Q: Press Y to continue, N to repeat, or Fkey12 to exit 
+N:_S_R_L5
+
+*:_S_R_L6
+#                                                              ../orig/s.typ:76
+P:Dear Mr. Smith:
+ :
+ :Thank you for informing us that the diskettes which you pur-
+ :chased from us are not satisfactory.  We are sorry for the
+ :inconvenience you have been caused in this transaction.
+ :
+ :We shall be glad to replace the diskettes you now have or to
+ :allow you to select a different brand.  If you will let us know
+ :your wishes we shall be glad to give the matter our immediate
+ :attention.
+ :
+ :We hope you will give us the opportunity to prove to you that
+ :this incident is most unusual and that we do strive to render
+ :to our customers an efficient and courteous service at all
+ :times.
+Q: Press Y to continue, N to repeat, or Fkey12 to exit 
+N:_S_R_L6
+
+G:_S_E_S1
+#------------------------------------------------------------------------------
+# Lesson S2
+#------------------------------------------------------------------------------
+*:S2
+*:_S_S_S2
+*:_S_R_L7
+#                                                              ../orig/s.typ:83
+T:
+ :In this lesson we will practice some quotes by some famous (and not
+ :so famous) people.
+Q: Press Y to continue, or Fkey12 to exit 
+N:_S_R_L7
+
+#                                                              ../orig/s.typ:84
+I:Marcus Aurelius
+*:_S_R_L8
+#                                                              ../orig/s.typ:85
+P:A man can live well even in a palace.
+Q: Press Y to continue, N to repeat, or Fkey12 to exit 
+N:_S_R_L8
+
+#                                                              ../orig/s.typ:86
+I:Ralph Waldo Emerson
+*:_S_R_L9
+#                                                              ../orig/s.typ:87
+P:My chief want in life is someone who shall make me do what I can.
+Q: Press Y to continue, N to repeat, or Fkey12 to exit 
+N:_S_R_L9
+
+#                                                              ../orig/s.typ:88
+I:Elizabeth Barrett Browning
+*:_S_R_L10
+#                                                              ../orig/s.typ:90
+P:No man can be called friendless when he has God and the
+ :companionship of good books.
+Q: Press Y to continue, N to repeat, or Fkey12 to exit 
+N:_S_R_L10
+
+#                                                              ../orig/s.typ:91
+I:Ralph Waldo Emerson
+*:_S_R_L11
+#                                                              ../orig/s.typ:92
+P:I like the silent church before the service begins better than any preaching.
+Q: Press Y to continue, N to repeat, or Fkey12 to exit 
+N:_S_R_L11
+
+#                                                              ../orig/s.typ:93
+I:George Washington
+*:_S_R_L12
+#                                                              ../orig/s.typ:94
+P:True friendship is a plant of slow growth.
+Q: Press Y to continue, N to repeat, or Fkey12 to exit 
+N:_S_R_L12
+
+#                                                              ../orig/s.typ:95
+I:Aristotle
+*:_S_R_L13
+#                                                              ../orig/s.typ:96
+P:There is a foolish corner in the brain of the wisest men.
+Q: Press Y to continue, N to repeat, or Fkey12 to exit 
+N:_S_R_L13
+
+#                                                              ../orig/s.typ:97
+I:Goethe
+*:_S_R_L14
+#                                                              ../orig/s.typ:98
+P:Tell me what you are busy about, and I will tell you what you are.
+Q: Press Y to continue, N to repeat, or Fkey12 to exit 
+N:_S_R_L14
+
+#                                                              ../orig/s.typ:99
+I:Gelett Burgess
+*:_S_R_L15
+#                                                             ../orig/s.typ:101
+P:If in the last few years you haven't discarded a major opinion or
+ :acquired a new one, check your pulse.  You may be dead.
+Q: Press Y to continue, N to repeat, or Fkey12 to exit 
+N:_S_R_L15
+
+#                                                             ../orig/s.typ:102
+I:James B. Conant
+*:_S_R_L16
+#                                                             ../orig/s.typ:104
+P:Democracy is a small hard core of common agreement, surrounded
+ :by a rich variety of individual differences.
+Q: Press Y to continue, N to repeat, or Fkey12 to exit 
+N:_S_R_L16
+
+#                                                             ../orig/s.typ:105
+I:Albert Einstein
+*:_S_R_L17
+#                                                             ../orig/s.typ:106
+P:I never think of the future.  It comes soon enough.
+Q: Press Y to continue, N to repeat, or Fkey12 to exit 
+N:_S_R_L17
+
+#                                                             ../orig/s.typ:107
+I:Harry S. Truman
+*:_S_R_L18
+#                                                             ../orig/s.typ:109
+P:Men often mistake notoriety for fame, and would rather be
+ :remarked for their vices than not be noticed at all.
+Q: Press Y to continue, N to repeat, or Fkey12 to exit 
+N:_S_R_L18
+
+#                                                             ../orig/s.typ:110
+I:Will Rogers
+*:_S_R_L19
+#                                                             ../orig/s.typ:112
+P:I could study all my life and not think up half the amount
+ :of funny things they can think of in one session of Congress.
+Q: Press Y to continue, N to repeat, or Fkey12 to exit 
+N:_S_R_L19
+
+#                                                             ../orig/s.typ:113
+I:Ralph Waldo Emerson
+*:_S_R_L20
+#                                                             ../orig/s.typ:114
+P:Hospitality consists in a little fire, a little food and an immense quiet.
+Q: Press Y to continue, N to repeat, or Fkey12 to exit 
+N:_S_R_L20
+
+#                                                             ../orig/s.typ:115
+I:H. L. Mencken
+*:_S_R_L21
+#                                                             ../orig/s.typ:116
+P:Puritanism is the haunting fear that someone, somewhere, may be happy.
+Q: Press Y to continue, N to repeat, or Fkey12 to exit 
+N:_S_R_L21
+
+#                                                             ../orig/s.typ:117
+I:William James
+*:_S_R_L22
+#                                                             ../orig/s.typ:118
+P:When you have to make a choice and don't make it, that is in itself a choice.
+Q: Press Y to continue, N to repeat, or Fkey12 to exit 
+N:_S_R_L22
+
+#                                                             ../orig/s.typ:119
+I:James Holt McGravran.
+*:_S_R_L23
+#                                                             ../orig/s.typ:121
+P:There is a way of transferring funds that is even faster
+ :than electronic banking.  It is called marriage.
+Q: Press Y to continue, N to repeat, or Fkey12 to exit 
+N:_S_R_L23
+
+#                                                             ../orig/s.typ:122
+I:Woody Allen
+*:_S_R_L24
+#                                                             ../orig/s.typ:123
+P:Showing up is 80 percent of life.
+Q: Press Y to continue, N to repeat, or Fkey12 to exit 
+N:_S_R_L24
+
+#                                                             ../orig/s.typ:124
+I:Robert Frost
+*:_S_R_L25
+#                                                             ../orig/s.typ:125
+P:A poem begins in delight and ends in wisdom.
+Q: Press Y to continue, N to repeat, or Fkey12 to exit 
+N:_S_R_L25
+
+#                                                             ../orig/s.typ:126
+I:Louis Pasteur
+*:_S_R_L26
+#                                                             ../orig/s.typ:128
+P:When I approach a child, he inspires in me two sentiments:  tenderness
+ :for what he is, and respect for what he may become.
+Q: Press Y to continue, N to repeat, or Fkey12 to exit 
+N:_S_R_L26
+
+G:_S_E_S2
+#------------------------------------------------------------------------------
+# Lesson S3
+#------------------------------------------------------------------------------
+*:S3
+*:_S_S_S3
+*:_S_R_L27
+#                                                             ../orig/s.typ:134
+T:
+ :In this lesson you will be given several excerpts from the classics.
+ :Take your time and type them carefully.
+Q: Press Y to continue, or Fkey12 to exit 
+N:_S_R_L27
+
+#                                                             ../orig/s.typ:135
+I:A Christmas Carol, Stave One, Marley's Ghost
+*:_S_R_L28
+#                                                             ../orig/s.typ:151
+P:Now, it is a fact, that there was nothing at all par-
+ :ticular about the knocker on the door, except that it
+ :was very large.  It is also a fact, that Scrooge had
+ :seen it, night and morning, during his whole residence
+ :in that place; also that Scrooge has as little of what
+ :is called fancy about him as any man in the city of
+ :London, even including--which is a bold word--the
+ :corporation, aldermen, and livery.  Let it also be
+ :borne in mind that Scrooge had not bestowed one
+ :thought on Marley, since his last mention of his
+ :seven year's dead partner that afternoon.  And then
+ :let any man explain to me, if he can, how it happened
+ :that Scrooge, having his key in the lock of the door,
+ :saw in the knocker, without its undergoing any inter-
+ :mediate process of change--not a knocker, but Mar-
+ :ley's face.
+Q: Press Y to continue, N to repeat, or Fkey12 to exit 
+N:_S_R_L28
+
+#                                                             ../orig/s.typ:152
+I:Gulliver's Travels, Chapter One, A Voyage to Lilliput
+*:_S_R_L29
+#                                                             ../orig/s.typ:167
+P:When I awaked it was just daylight.  I attempted to rise, but I
+ :found my arms and legs were strongly fastened on each side to
+ :the ground; and my hair, which was long and thick, tied to the
+ :ground in the same manner.  I likewise felt several slender
+ :ligatures across my body, from my armpits to my thighs.  I
+ :could only look upward; the sun began to grow hot, and the
+ :light offended my eyes.  I heard a confused noise about me;
+ :but in the posture I lay could see nothing except the sky.  In a
+ :little time I felt something alive moving on my left leg,
+ :which, advancing gently forward over my breast, came almost up
+ :to my chin; when bending my eyes downward as much as I could, I
+ :perceived it to be a human creature not six inches high, with a
+ :bow and arrow in his hands, and a quiver at his back.  In the
+ :mean time I felt at least forty more of the same kind (as I
+ :conjectured) following the first.
+Q: Press Y to continue, N to repeat, or Fkey12 to exit 
+N:_S_R_L29
+
+#                                                             ../orig/s.typ:168
+I:Treasure Island, Chapter IV, "The Sea Chest", by Stevenson.
+*:_S_R_L30
+#                                                             ../orig/s.typ:182
+P:I lost no time, of course, in telling my mother all that
+ :I knew, and perhaps should have told her long before,
+ :and we saw ourselves at once in a difficult and dangerous
+ :position.  Some of the man's money--if he had any--was
+ :certainly due to us; but it was not likely that our
+ :captain's shipmates, above all the two specimens seen by
+ :me, Black Dog and the blind beggar, would be inclined to
+ :give up their booty in payment of the dead man's debts.
+ :The captain's order to mount at once and ride for Dr.
+ :Livesey would have left my mother alone and unprotected,
+ :which was not to be thought of.  Indeed, it seemed
+ :impossible for either of us to remain much longer in the
+ :house:  the fall of coals in the kitchen grate, the very
+ :ticking of the clock, filled us with alarms.
+Q: Press Y to continue, N to repeat, or Fkey12 to exit 
+N:_S_R_L30
+
+#                                                             ../orig/s.typ:183
+I:Treasure Island, Chapter IV, "The Sea Chest", by Stevenson.
+*:_S_R_L31
+#                                                             ../orig/s.typ:194
+P:The neighborhood, to our ears, seemed haunted by
+ :approaching footsteps; and what between the dead
+ :body of the captain on the parlor floor, and the thought
+ :of that detestable blind beggar hovering near at hand,
+ :and ready to return, there were moments when, as the
+ :saying goes, I jumped in my skin for terror.  Something
+ :must speedily be resolved upon; and it occurred to us at
+ :last to go forth together and seek help in the neighbor-
+ :ing hamlet.  No sooner said than done.  Bareheaded as we
+ :were, we ran out at once in the gathering evening and
+ :the frosty fog.
+Q: Press Y to continue, N to repeat, or Fkey12 to exit 
+N:_S_R_L31
+
+G:_S_E_S3
+#------------------------------------------------------------------------------
+# Lesson S4
+#------------------------------------------------------------------------------
+*:S4
+*:_S_S_S4
+*:_S_R_L32
+#                                                             ../orig/s.typ:202
+T:
+ :In this lesson you will be given several soliloquies from
+ :Shakespeare's plays.  The spelling and punctuation are
+ :quite hard.  Take your time and type them carefully.
+Q: Press Y to continue, or Fkey12 to exit 
+N:_S_R_L32
+
+#                                                             ../orig/s.typ:203
+I:Romeo and Juliet, Act II, Scene II (Capulet's Garden).
+*:_S_R_L33
+#                                                             ../orig/s.typ:216
+P:But, soft! what light through yonder window breaks?
+ :It is the east, and Juliet is the sun!--
+ :Arise, fair sun, and kill the envious moon,
+ :Who is already sick and pale with grief,
+ :That thou her maid art far more fair than she:
+ :Be not her maid, since she is envious;
+ :Her vestal livery is but sick and green,
+ :And none but fools do wear it; cast it off.--
+ :It is my lady; O, it is my love!
+ :O, that she knew she were!--
+ :She speaks, yet she says nothing:  what of that?
+ :Her eye discourses, I will answer it.--
+ :I am too bold, 'tis not to me she speaks:
+Q: Press Y to continue, N to repeat, or Fkey12 to exit 
+N:_S_R_L33
+
+*:_S_R_L34
+#                                                             ../orig/s.typ:227
+P:Two of the fairest stars in all the heaven,
+ :Having some business, do entreat her eyes
+ :To twinkle in their spheres till they return.
+ :What if her eyes were there, they in her head?
+ :The brightness of her cheek would shame those stars,
+ :As daylight doth a lamp; her eyes in heaven
+ :Would through the airy region stream so bright
+ :That birds would sing, and think it were not night.--
+ :See how she leans her cheek upon her hand!
+ :O, that I were a glove upon that hand,
+ :That I might touch that cheek!
+Q: Press Y to continue, N to repeat, or Fkey12 to exit 
+N:_S_R_L34
+
+#                                                             ../orig/s.typ:228
+I:Julius Caesar, Act III, Scene II (The Forum).
+*:_S_R_L35
+#                                                             ../orig/s.typ:243
+P:Friends, Romans, countrymen, lend me your ears;
+ :I come to bury Caesar, not to praise him.
+ :The evil that men do lives after them;
+ :The good is oft interred with their bones;
+ :So let it be with Caesar:  The noble Brutus
+ :Hath told you Caesar was ambitious:
+ :If it were so, it was a grievous fault;
+ :And grievously hath Caesar answer'd it.
+ :Here, under leave of Brutus and the rest,--
+ :For Brutus is an honourable man;
+ :So are they all, all honourable men,--
+ :Come I to speak in Caesar's funeral.
+ :He was my friend, faithful and just to me;
+ :But Brutus says he was ambitious;
+ :And Brutus is an honourable man.
+Q: Press Y to continue, N to repeat, or Fkey12 to exit 
+N:_S_R_L35
+
+*:_S_R_L36
+#                                                             ../orig/s.typ:255
+P:He hath brought many captives home to Rome.
+ :Whose ransoms did the general coffers fill:
+ :Did this in Caesar seem ambitious?
+ :When that the poor have cried, Caesar hath wept:
+ :Ambition should be made of sterner stuff:
+ :Yet Brutus says he was ambitious;
+ :And Brutus is an honourable man.
+ :You all did see that on the Lupercal
+ :I thrice presented him a kingly crown,
+ :Which he did thrice refuse:  was this ambition?
+ :Yet Brutus says he was ambitious;
+ :And, sure, he is an honourable man.
+Q: Press Y to continue, N to repeat, or Fkey12 to exit 
+N:_S_R_L36
+
+*:_S_R_L37
+#                                                             ../orig/s.typ:263
+P:I speak not to disprove what Brutus spoke,
+ :But here I am to speak what I do know.
+ :You all did love him once,--not without cause:
+ :What cause withholds you, then, to mourn for him?
+ :O judgement, thou art fled to brutish beasts,
+ :And men have lost their reason!--Bear with me;
+ :My heart is in the coffin there with Caesar,
+ :And I must pause till it come back to me.
+Q: Press Y to continue, N to repeat, or Fkey12 to exit 
+N:_S_R_L37
+
+#                                                             ../orig/s.typ:264
+I:The Merchant of Venice, Act IV, Scene I (A Court of Justice).
+*:_S_R_L38
+#                                                             ../orig/s.typ:273
+P:The quality of mercy is not strain'd;
+ :It droppeth as the gentle rain from heaven
+ :Upon the place beneath: it is twice bless'd;
+ :It blesseth him that gives and him that takes:
+ :'Tis mightiest in the mightiest; it becomes
+ :The throned monarch better than his crown;
+ :His sceptre shows the force of temporal power,
+ :The attribute to awe and majesty,
+ :Wherein doth sit the dread and fear of kings;
+Q: Press Y to continue, N to repeat, or Fkey12 to exit 
+N:_S_R_L38
+
+*:_S_R_L39
+#                                                             ../orig/s.typ:286
+P:But mercy is above this scepter'd sway,--
+ :It is enthroned in the heart of kings,
+ :It is an attribute to God himself;
+ :And earthly power doth then show likest God's
+ :When mercy seasons justice.  Therefore, Jew,
+ :Though justice be thy plea consider this--
+ :That in the course of justice none of us
+ :Should see salvation: we do pray for mercy;
+ :And that same prayer doth teach us all to render
+ :The deeds of mercy.  I have spoke thus much
+ :To mitigate the justice of thy plea;
+ :Which if thou follow, this strict court of Venice
+ :Must needs give sentence 'gainst the merchant there.
+Q: Press Y to continue, N to repeat, or Fkey12 to exit 
+N:_S_R_L39
+
+G:_S_E_S4
+#------------------------------------------------------------------------------
+# Lesson series S jump tables
+#------------------------------------------------------------------------------
+*:_S_E_S1
+Q: Do you want to continue to lesson S2 [Y/N] ? 
+N:_S_MENU
+G:_S_M_S2
+*:_S_E_S2
+Q: Do you want to continue to lesson S3 [Y/N] ? 
+N:_S_MENU
+G:_S_M_S3
+*:_S_E_S3
+Q: Do you want to continue to lesson S4 [Y/N] ? 
+N:_S_MENU
+G:_S_M_S4
+*:_S_E_S4
+G:_S_MENU
+
+*:_S_M_S1
+B:                             Lesson S1
+K:12:_S_MENU
+G:_S_S_S1
+*:_S_M_S2
+B:                             Lesson S2
+K:12:_S_MENU
+G:_S_S_S2
+*:_S_M_S3
+B:                             Lesson S3
+K:12:_S_MENU
+G:_S_S_S3
+*:_S_M_S4
+B:                             Lesson S4
+K:12:_S_MENU
+G:_S_S_S4
+#------------------------------------------------------------------------------
+# Lesson series S menu
+#------------------------------------------------------------------------------
+*:_S_MENU
+*:_S_MENU_PAGE0
+B:                 Lesson selection menu - series S
+K:1:_S_M_S1
+K:2:_S_M_S2
+K:3:_S_M_S3
+K:4:_S_M_S4
+K:5:NULL
+K:6:NULL
+K:7:NULL
+K:8:NULL
+K:9:NULL
+K:10:NULL
+K:11:NULL
+K:12:_S_QEXIT
+T:The S series contains the following 4 lessons:
+ :
+ :        Fkey 1 - Lesson S1     Speed tests
+ :        Fkey 2 - Lesson S2     Speed tests
+ :        Fkey 3 - Lesson S3     Speed tests
+ :        Fkey 4 - Lesson S4     Speed tests
+ :
+ :
+ :
+ :
+ :
+ :
+ :
+ :
+ :        Fkey12 - Leave this lesson series
+Q: Please select a lesson, or Fkey12 to exit 
+G:_S_MENU_PAGE0
+*:_S_QEXIT
+Q: Do you want to leave this lesson series? [Y/N] ? 
+N:_S_MENU
+G:_S_EXIT
+*:_S_EXIT
+#------------------------------------------------------------------------------
+# End of file s.typ
+G:__SERIESMENU
+#==============================================================================
+#==============================================================================
 *:__S_T_SERIES
 # Start of file t.typ
+# Typist v2.2 - improved typing tutor program for UNIX systems
+# Copyright (C) 1998  Simon Baldwin (simonb@sco.com)
+#
+# This program is free software; you can redistribute it and/or
+# modify it under the terms of the GNU General Public License
+# as published by the Free Software Foundation; either version 2
+# of the License, or (at your option) any later version.
+#
+# This program is distributed in the hope that it will be useful,
+# but WITHOUT ANY WARRANTY; without even the implied warranty of
+# MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+# GNU General Public License for more details.
+#
+# You should have received a copy of the GNU General Public License
+# along with this program; if not, write to the Free Software
+# Foundation, Inc., 59 Temple Place - Suite 330, Boston, MA 02111-1307, USA.
+#
+
 #------------------------------------------------------------------------------
 # Series T
 #------------------------------------------------------------------------------
@@ -4879,8 +8732,998 @@ G:_T_EXIT
 G:__SERIESMENU
 #==============================================================================
 #==============================================================================
+*:__S_U_SERIES
+# Start of file u.typ
+# Typist v2.2 - improved typing tutor program for UNIX systems
+# Copyright (C) 1998  Simon Baldwin (simonb@sco.com)
+#
+# This program is free software; you can redistribute it and/or
+# modify it under the terms of the GNU General Public License
+# as published by the Free Software Foundation; either version 2
+# of the License, or (at your option) any later version.
+#
+# This program is distributed in the hope that it will be useful,
+# but WITHOUT ANY WARRANTY; without even the implied warranty of
+# MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+# GNU General Public License for more details.
+#
+# You should have received a copy of the GNU General Public License
+# along with this program; if not, write to the Free Software
+# Foundation, Inc., 59 Temple Place - Suite 330, Boston, MA 02111-1307, USA.
+#
+
+#------------------------------------------------------------------------------
+# Series U
+#------------------------------------------------------------------------------
+G:_U_MENU
+*:_U_NO_MENU
+#------------------------------------------------------------------------------
+# Lesson U1
+#------------------------------------------------------------------------------
+*:U1
+*:_U_S_U1
+*:_U_R_L0
+#                                                               ../orig/u.typ:5
+T:			Welcome to lesson U1
+ :
+ :Still don't know how to touch-type?  Let's start from the beginning and
+ :drill you starting with the home row.
+Q: Press Y to continue, or Fkey12 to exit 
+N:_U_R_L0
+
+#                                                               ../orig/u.typ:6
+I:(1) Try this:
+*:_U_R_L1
+#                                                               ../orig/u.typ:8
+O:has half hag gad gash glass sash ash slash shall flash
+ :had hall gas gaff gall glad dash ask slag shad ah
+Q: Press Y to continue, N to repeat, or Fkey12 to exit 
+N:_U_R_L1
+
+G:_U_E_U1
+#------------------------------------------------------------------------------
+# Lesson U2
+#------------------------------------------------------------------------------
+*:U2
+*:_U_S_U2
+
+#                                                              ../orig/u.typ:13
+I:(1) Familiarize yourself with the top row and between the index fingers:
+*:_U_R_L3
+#                                                              ../orig/u.typ:15
+O:juj kik lol ;p; jyj
+ :frf ded sws aqa ftf
+Q: Press Y to continue, N to repeat, or Fkey12 to exit 
+N:_U_R_L3
+
+#                                                              ../orig/u.typ:16
+I:(2) Some words:
+*:_U_R_L4
+#                                                              ../orig/u.typ:20
+O:jug part ye aqua their hearty dry great why whose youth
+ :kit free use type last lower drug light wheat proper your
+ :lot dear its rear were pretty grip quiet where proud yellow
+ :hear sweep old easy writer fresh group equip who please yes
+Q: Press Y to continue, N to repeat, or Fkey12 to exit 
+N:_U_R_L4
+
+#                                                              ../orig/u.typ:21
+I:(3) Now for the bottom row:
+*:_U_R_L5
+#                                                              ../orig/u.typ:23
+O:jmj k,k l.l ;/; jnj
+ :fvf dcd sxs aza fbf
+Q: Press Y to continue, N to repeat, or Fkey12 to exit 
+N:_U_R_L5
+
+#                                                              ../orig/u.typ:24
+I:(4) Some words:
+*:_U_R_L6
+#                                                              ../orig/u.typ:28
+O:man come body vacant many tax ribbon lining believing
+ :name can beam make examine none native baby commission
+ :vain sex not cancel even mention woman brick quicken
+ :become zero cave lazy benzine opening very branch textile
+Q: Press Y to continue, N to repeat, or Fkey12 to exit 
+N:_U_R_L6
+
+G:_U_E_U2
+#------------------------------------------------------------------------------
+# Lesson U3
+#------------------------------------------------------------------------------
+*:U3
+*:_U_S_U3
+
+#                                                              ../orig/u.typ:32
+I:(1)
+*:_U_R_L8
+#                                                              ../orig/u.typ:33
+O:Do you live in Scranton, Pennsylvania?
+Q: Press Y to continue, N to repeat, or Fkey12 to exit 
+N:_U_R_L8
+
+#                                                              ../orig/u.typ:34
+I:(2)
+*:_U_R_L9
+#                                                              ../orig/u.typ:35
+O:Mary Brown and Nancy Smith are in New York City.
+Q: Press Y to continue, N to repeat, or Fkey12 to exit 
+N:_U_R_L9
+
+#                                                              ../orig/u.typ:36
+I:(3)
+*:_U_R_L10
+#                                                              ../orig/u.typ:37
+O:Violet, Helen, Dora, Jennie, and Elsie are staying at the Hotel Commodore.
+Q: Press Y to continue, N to repeat, or Fkey12 to exit 
+N:_U_R_L10
+
+#                                                              ../orig/u.typ:38
+I:(4)
+*:_U_R_L11
+#                                                              ../orig/u.typ:40
+O:I have lived in Los Angeles, San Francisco, Portland, Chicago, St. Louis, and
+ :Denver; Robert has lived in Boston, Philadelphia, Jersey City, and Utica.
+Q: Press Y to continue, N to repeat, or Fkey12 to exit 
+N:_U_R_L11
+
+#                                                              ../orig/u.typ:41
+I:(5)
+*:_U_R_L12
+#                                                              ../orig/u.typ:43
+O:j7j k8k l9l ;0; j6j
+ :f4f d3d s2s a1a f4f
+Q: Press Y to continue, N to repeat, or Fkey12 to exit 
+N:_U_R_L12
+
+#                                                              ../orig/u.typ:44
+I:(6)
+*:_U_R_L13
+#                                                              ../orig/u.typ:46
+O:j&j k*k l(l ;); j^j
+ :f$f d#d s@s a!a f%f
+Q: Press Y to continue, N to repeat, or Fkey12 to exit 
+N:_U_R_L13
+
+#                                                              ../orig/u.typ:47
+I:(7)
+*:_U_R_L14
+#                                                              ../orig/u.typ:52
+P:Please send me the book "Facts & Figures."
+ :Send us the items (3 dozen coats) right away.
+ :The amount of the bill is $17,563.49; the discount is 2% 10 days, net 30 days.
+ :The cards should be made up in the following sizes: 4 5/16 x 8 3/16 and
+ :3 5/8 x 6 7/8.
+Q: Press Y to continue, N to repeat, or Fkey12 to exit 
+N:_U_R_L14
+
+#                                                              ../orig/u.typ:53
+I:(8)
+*:_U_R_L15
+#                                                              ../orig/u.typ:55
+O:2's 3's 4's 5's
+ :#' #2 #3 #4 #5
+Q: Press Y to continue, N to repeat, or Fkey12 to exit 
+N:_U_R_L15
+
+G:_U_E_U3
+#------------------------------------------------------------------------------
+# Lesson U4
+#------------------------------------------------------------------------------
+*:U4
+*:_U_S_U4
+
+#                                                              ../orig/u.typ:59
+I:(1)
+*:_U_R_L15A
+#                                                              ../orig/u.typ:60
+O:;'; ;"; ;/; ;?; ;[; ;{; ;-; ;_;
+Q: Press Y to continue, N to repeat, or Fkey12 to exit 
+N:_U_R_L15A
+
+#                                                              ../orig/u.typ:61
+I:(2)
+*:_U_R_L17
+#                                                              ../orig/u.typ:62
+O:The quick brown fox jumps over the lazy dog.
+Q: Press Y to continue, N to repeat, or Fkey12 to exit 
+N:_U_R_L17
+
+#                                                              ../orig/u.typ:63
+I:(3)
+*:_U_R_L18
+#                                                              ../orig/u.typ:64
+O:This is a specimen of the work done on this machine.
+Q: Press Y to continue, N to repeat, or Fkey12 to exit 
+N:_U_R_L18
+
+#                                                              ../orig/u.typ:65
+I:(4)
+*:_U_R_L19
+#                                                              ../orig/u.typ:66
+O:Now is the time for all good men to come to the aid of their party.
+Q: Press Y to continue, N to repeat, or Fkey12 to exit 
+N:_U_R_L19
+
+#                                                              ../orig/u.typ:67
+I:(5)
+*:_U_R_L20
+#                                                              ../orig/u.typ:69
+O:1$ 2$ 3$ 4$ 5$ 6$ 7$ 8$ 9$ 10$
+ :2 coats @ $20.00 5 hats @ $4.00
+Q: Press Y to continue, N to repeat, or Fkey12 to exit 
+N:_U_R_L20
+
+G:_U_E_U4
+#------------------------------------------------------------------------------
+# Lesson U5
+#------------------------------------------------------------------------------
+*:U5
+*:_U_S_U5
+*:_U_R_L21
+#                                                              ../orig/u.typ:74
+T:
+ :		   (Drill on S Combinations)
+Q: Press Y to continue, or Fkey12 to exit 
+N:_U_R_L21
+
+#                                                              ../orig/u.typ:75
+I:(1)
+*:_U_R_L22
+#                                                              ../orig/u.typ:76
+O:sas ses sis sos sus sc scr sh sk sl sm sn sp spl spr st str sw
+Q: Press Y to continue, N to repeat, or Fkey12 to exit 
+N:_U_R_L22
+
+#                                                              ../orig/u.typ:77
+I:(2)
+*:_U_R_L23
+#                                                              ../orig/u.typ:80
+O:says sides springs slips snows shops sweets streets
+ :sees souls spreads schools smiles shoots swings strikes
+ :sues speaks splashes screams skates sheets stones stresses
+Q: Press Y to continue, N to repeat, or Fkey12 to exit 
+N:_U_R_L23
+
+#                                                              ../orig/u.typ:81
+I:(3)
+*:_U_R_L24
+#                                                              ../orig/u.typ:86
+P:She wishes to show us some samples.
+ :The sisters wear the same size dresses.
+ :She says she speaks to Sally in school.
+ :The shipment was shipped by fast express.
+ :Simplicity and sincerity are social assets.
+Q: Press Y to continue, N to repeat, or Fkey12 to exit 
+N:_U_R_L24
+
+#                                                              ../orig/u.typ:87
+I:(4)
+*:_U_R_L25
+#                                                              ../orig/u.typ:91
+P:     Safety first.  This slogan is well known.  Yet many care-
+ :less people disregard it and so we have accidents.  It is pos-
+ :sible to avoid many types of accidents by a little forethought.
+ :Don't be careless.  Do your share to avoid mishaps.
+Q: Press Y to continue, N to repeat, or Fkey12 to exit 
+N:_U_R_L25
+
+G:_U_E_U5
+#------------------------------------------------------------------------------
+# Lesson U6
+#------------------------------------------------------------------------------
+*:U6
+*:_U_S_U6
+*:_U_R_L26
+#                                                              ../orig/u.typ:96
+T:
+ :		(Drill on R Combinations)
+Q: Press Y to continue, or Fkey12 to exit 
+N:_U_R_L26
+
+#                                                              ../orig/u.typ:97
+I:(1)
+*:_U_R_L27
+#                                                              ../orig/u.typ:98
+O:rar rer rir ror rur br cr dr fr gr pr shr tr thr
+Q: Press Y to continue, N to repeat, or Fkey12 to exit 
+N:_U_R_L27
+
+#                                                              ../orig/u.typ:99
+I:(2)
+*:_U_R_L28
+#                                                             ../orig/u.typ:102
+O:rare rural proper trader drier freer cracker
+ :rear broker prefer trapper dresser fresher grammar
+ :roar brewer prepare thrower shrewder creamer greater
+Q: Press Y to continue, N to repeat, or Fkey12 to exit 
+N:_U_R_L28
+
+#                                                             ../orig/u.typ:103
+I:(3)
+*:_U_R_L29
+#                                                             ../orig/u.typ:108
+P:Every promise made should be observed.
+ :The price of the property is really $2,500.
+ :Try to remember to bring your grammar with you.
+ :Proof of your brokerage experience will be required.
+ :The orange grower must have favorable weather conditions.
+Q: Press Y to continue, N to repeat, or Fkey12 to exit 
+N:_U_R_L29
+
+#                                                             ../orig/u.typ:109
+I:(4)
+*:_U_R_L30
+#                                                             ../orig/u.typ:114
+P:     Some people break promises as readily as they make them.
+ :As a result, they acquire a reputation for unreliability.  It
+ :is particularly important to be reliable in the business world.
+ :A person or firm that comes to be regarded as unreliable has a
+ :poor chance of success.
+Q: Press Y to continue, N to repeat, or Fkey12 to exit 
+N:_U_R_L30
+
+G:_U_E_U6
+#------------------------------------------------------------------------------
+# Lesson U7
+#------------------------------------------------------------------------------
+*:U7
+*:_U_S_U7
+*:_U_R_L31
+#                                                             ../orig/u.typ:119
+T:
+ :		(Drill on L Combinations)
+Q: Press Y to continue, or Fkey12 to exit 
+N:_U_R_L31
+
+#                                                             ../orig/u.typ:120
+I:(1)
+*:_U_R_L32
+#                                                             ../orig/u.typ:121
+O:lal lel lil lol lul ly bl cl fl gl pl sl
+Q: Press Y to continue, N to repeat, or Fkey12 to exit 
+N:_U_R_L32
+
+#                                                             ../orig/u.typ:122
+I:(2)
+*:_U_R_L33
+#                                                             ../orig/u.typ:125
+O:loll play blow clear glass flesh slow fully
+ :lisle plow blue class globe fleet sleep silly
+ :label please blood claim gleam flail slight really
+Q: Press Y to continue, N to repeat, or Fkey12 to exit 
+N:_U_R_L33
+
+#                                                             ../orig/u.typ:126
+I:(3)
+*:_U_R_L34
+#                                                             ../orig/u.typ:131
+P:The mill will close in April.
+ :It is clear to all who will listen.
+ :The clerk sells cloth of fine value.
+ :You will rely on them to supply you.
+ :He held the floor until a relatively late hour.
+Q: Press Y to continue, N to repeat, or Fkey12 to exit 
+N:_U_R_L34
+
+#                                                             ../orig/u.typ:132
+I:(4)
+*:_U_R_L35
+#                                                             ../orig/u.typ:138
+P:     Play is most important to a child.  All of us must play
+ :a little.  All work and no play makes Jack a dull boy, the
+ :old saying goes.  Play affords relaxation.  Some people claim
+ :their work is so enthralling that they do not need to play.
+ :Psychologists say that the stress of modern life demands that
+ :all adults have some hobby away from their daily pursuit.
+Q: Press Y to continue, N to repeat, or Fkey12 to exit 
+N:_U_R_L35
+
+G:_U_E_U7
+#------------------------------------------------------------------------------
+# Lesson U8
+#------------------------------------------------------------------------------
+*:U8
+*:_U_S_U8
+*:_U_R_L36
+#                                                             ../orig/u.typ:143
+T:
+ :		(Drill on D-T Combinations)
+Q: Press Y to continue, or Fkey12 to exit 
+N:_U_R_L36
+
+#                                                             ../orig/u.typ:144
+I:(1)
+*:_U_R_L37
+#                                                             ../orig/u.typ:146
+O:dad ded did dod dud dr ld nd rd
+ :tat tet tit tot tut th tr ct ft lt nt pt st
+Q: Press Y to continue, N to repeat, or Fkey12 to exit 
+N:_U_R_L37
+
+#                                                             ../orig/u.typ:147
+I:(2)
+*:_U_R_L38
+#                                                             ../orig/u.typ:151
+O:did bend tot total that last rented mended
+ :deed lend toot tutor this kept melted handed
+ :dude bold tight taught them chest drafted founded
+ :dodo board trait treats there first directed doubted
+Q: Press Y to continue, N to repeat, or Fkey12 to exit 
+N:_U_R_L38
+
+#                                                             ../orig/u.typ:152
+I:(3)
+*:_U_R_L39
+#                                                             ../orig/u.typ:157
+P:The first shall be last.
+ :Credit the cost to the estate.
+ :Record your thoughts from time to time.
+ :An effort should be made to settle the estate.
+ :Rest assured you will succeed if you try hard.
+Q: Press Y to continue, N to repeat, or Fkey12 to exit 
+N:_U_R_L39
+
+#                                                             ../orig/u.typ:158
+I:(4)
+*:_U_R_L40
+#                                                             ../orig/u.typ:164
+O:     To learn to typewrite is not difficult.  The keyboard
+ :of the typewriter may be mastered in a few hours, but to
+ :get speed in typewriting calls for a good deal of practice.
+ :One of the best methods of getting up speed is to write a
+ :selection over and over again until it can be written easily
+ :and accurately.
+Q: Press Y to continue, N to repeat, or Fkey12 to exit 
+N:_U_R_L40
+
+G:_U_E_U8
+#------------------------------------------------------------------------------
+# Lesson U9
+#------------------------------------------------------------------------------
+*:U9
+*:_U_S_U9
+*:_U_R_L41
+#                                                             ../orig/u.typ:169
+T:
+ :		(Drill on M-N Combinations)
+Q: Press Y to continue, or Fkey12 to exit 
+N:_U_R_L41
+
+#                                                             ../orig/u.typ:170
+I:(1)
+*:_U_R_L42
+#                                                             ../orig/u.typ:172
+O:am em im om um mb mp ment
+ :an en in on un ng nk
+Q: Press Y to continue, N to repeat, or Fkey12 to exit 
+N:_U_R_L42
+
+#                                                             ../orig/u.typ:173
+I:(2)
+*:_U_R_L43
+#                                                             ../orig/u.typ:178
+O:amount damper only singing payment moment
+ :emblem camper enter ringing enrollment judgment
+ :immense hamper under longing engagement excitement
+ :omnibus lumber income banking appointment settlement
+ :umbrella bomber answer thinking entertainment employment
+Q: Press Y to continue, N to repeat, or Fkey12 to exit 
+N:_U_R_L43
+
+#                                                             ../orig/u.typ:179
+I:(3)
+*:_U_R_L44
+#                                                             ../orig/u.typ:184
+P:We are informed that an increase in anticipated.
+ :Please inform us if you are interested in an engine.
+ :Banks will extend financial aid to the business man.
+ :Unless your invoice is paid, no shipment can be made.
+ :The amount of your investment in common stocks is $800.
+Q: Press Y to continue, N to repeat, or Fkey12 to exit 
+N:_U_R_L44
+
+#                                                             ../orig/u.typ:185
+I:(8)
+*:_U_R_L45
+#                                                             ../orig/u.typ:190
+P:     The employer must consider any increase in cost that
+ :enters into the manufacture of his product.  Unless he includes
+ :such cost in his selling price, he is unlikely to show a profit.
+ :The installation of a cost system that enables the employer
+ :to break down his costs to a unit basis is a prime necessity.
+Q: Press Y to continue, N to repeat, or Fkey12 to exit 
+N:_U_R_L45
+
+G:_U_E_U9
+#------------------------------------------------------------------------------
+# Lesson U10
+#------------------------------------------------------------------------------
+*:U10
+*:_U_S_U10
+*:_U_R_L46
+#                                                             ../orig/u.typ:195
+T:
+ :		(Drill on com-con Combinations)
+Q: Press Y to continue, or Fkey12 to exit 
+N:_U_R_L46
+
+#                                                             ../orig/u.typ:196
+I:(1)
+*:_U_R_L47
+#                                                             ../orig/u.typ:198
+O:com recom decom discom incom uncom
+ :con recon decon discon incon uncon
+Q: Press Y to continue, N to repeat, or Fkey12 to exit 
+N:_U_R_L47
+
+#                                                             ../orig/u.typ:199
+I:(2)
+*:_U_R_L48
+#                                                             ../orig/u.typ:204
+O:common commit decompose conduct consign incomplete
+ :comply comment discomfort connect confuse unconvinced
+ :combine compose disconnect consist contrast uncontrolled
+ :commerce compare discontinue control contrary incomparable
+ :commence complete inconvenient contract convince uncomfortable
+Q: Press Y to continue, N to repeat, or Fkey12 to exit 
+N:_U_R_L48
+
+#                                                             ../orig/u.typ:205
+I:(3)
+*:_U_R_L49
+#                                                             ../orig/u.typ:210
+P:The lawyer consulted the complainant.
+ :Please continue to comply with all recommendations.
+ :Their income is derived from common stock commitments.
+ :The concern communicated its conclusions convincingly.
+ :Under the circumstances, the company will command control.
+Q: Press Y to continue, N to repeat, or Fkey12 to exit 
+N:_U_R_L49
+
+#                                                             ../orig/u.typ:211
+I:(4)
+*:_U_R_L50
+#                                                             ../orig/u.typ:216
+P:     Character shows itself in a man's conduct.  Deeds speak
+ :louder than words.  Words sometimes confuse as issue where
+ :deeds clarify it.  The test of a man's sincerity is not what
+ :he says but what he does.  Consider this well and you will
+ :never be confused in estimating a man's worth.
+Q: Press Y to continue, N to repeat, or Fkey12 to exit 
+N:_U_R_L50
+
+G:_U_E_U10
+#------------------------------------------------------------------------------
+# Lesson U11
+#------------------------------------------------------------------------------
+*:U11
+*:_U_S_U11
+*:_U_R_L51
+#                                                             ../orig/u.typ:221
+T:
+ :		(Drill on sion-tion Combinations)
+Q: Press Y to continue, or Fkey12 to exit 
+N:_U_R_L51
+
+#                                                             ../orig/u.typ:222
+I:(1)
+*:_U_R_L52
+#                                                             ../orig/u.typ:224
+O:asion esion ision osion usion
+ :ation etion ition otion ution
+Q: Press Y to continue, N to repeat, or Fkey12 to exit 
+N:_U_R_L52
+
+#                                                             ../orig/u.typ:225
+I:(2)
+*:_U_R_L53
+#                                                             ../orig/u.typ:229
+O:action motion quotation session caution ambition
+ :nation ration invention division exhibition attention
+ :portion station intention possession connection situation
+ :location creation condition impression completion commission
+Q: Press Y to continue, N to repeat, or Fkey12 to exit 
+N:_U_R_L53
+
+#                                                             ../orig/u.typ:230
+I:(3)
+*:_U_R_L54
+#                                                             ../orig/u.typ:235
+P:Information on the invention has been sent you.
+ :The cancellation of the exhibition was announced.
+ :Your communication of February 16 has been received.
+ :Students are taught addition, subtraction, and division.
+ :Your attention is called to the action of the Commission.
+Q: Press Y to continue, N to repeat, or Fkey12 to exit 
+N:_U_R_L54
+
+#                                                             ../orig/u.typ:236
+I:(4)
+*:_U_R_L55
+#                                                             ../orig/u.typ:241
+P:     Concentration is a valuable faculty.  The ability to direct
+ :one's attention exclusively along certain lines accounts for
+ :the success of some people.  Diffusion of effort is considered
+ :an enemy of success.  We are told that this is an age of
+ :specialization, and specialization demands concentration.
+Q: Press Y to continue, N to repeat, or Fkey12 to exit 
+N:_U_R_L55
+
+G:_U_E_U11
+#------------------------------------------------------------------------------
+# Lesson U12
+#------------------------------------------------------------------------------
+*:U12
+*:_U_S_U12
+*:_U_R_L56
+#                                                             ../orig/u.typ:246
+T:
+ :	(Drill on ter, ther, tor, ture, ster, der Combinations)
+Q: Press Y to continue, or Fkey12 to exit 
+N:_U_R_L56
+
+#                                                             ../orig/u.typ:247
+I:(1)
+*:_U_R_L57
+#                                                             ../orig/u.typ:250
+O:ater oter etor utor ider ather other eture uture ister
+ :eter uter itor ader oder ether uther iture aster oster
+ :iter ator otor eder uder ither ature oture ester uster
+Q: Press Y to continue, N to repeat, or Fkey12 to exit 
+N:_U_R_L57
+
+#                                                             ../orig/u.typ:251
+I:(2)
+*:_U_R_L58
+#                                                             ../orig/u.typ:255
+O:water later actor order father future faster
+ :alter matter motor wider mother nature poster
+ :voter better factor reader rather feature master
+ :writer letter doctor modern either fixture register
+Q: Press Y to continue, N to repeat, or Fkey12 to exit 
+N:_U_R_L58
+
+#                                                             ../orig/u.typ:256
+I:(3)
+*:_U_R_L59
+#                                                             ../orig/u.typ:261
+P:The voter was required to register.
+ :The reader made a study of the literature.
+ :The actor was better in the theatre than in pictures.
+ :The writer wrote a letter to his future sister-in-law.
+ :The minister received a letter from his father and mother.
+Q: Press Y to continue, N to repeat, or Fkey12 to exit 
+N:_U_R_L59
+
+#                                                             ../orig/u.typ:262
+I:(4)
+*:_U_R_L60
+#                                                             ../orig/u.typ:267
+P:     The best letter writers express themselves simply.  They
+ :avoid long words where shorter words will do.  They have some-
+ :thing to say and they say it interestingly and to the point.
+ :A business letter should not be a literary masterpiece, but
+ :that is not to say that it should not have style.
+Q: Press Y to continue, N to repeat, or Fkey12 to exit 
+N:_U_R_L60
+
+G:_U_E_U12
+#------------------------------------------------------------------------------
+# Lesson U13
+#------------------------------------------------------------------------------
+*:U13
+*:_U_S_U13
+*:_U_R_L61
+#                                                             ../orig/u.typ:274
+T:
+ :	(Drill on qu, ch, wh, dw, sw, tw Combinations)
+ :	(Drill on de, des, dis, ex, self, tran)
+ :	(Drill on cial, cious, ology, ship, tive)
+Q: Press Y to continue, or Fkey12 to exit 
+N:_U_R_L61
+
+#                                                             ../orig/u.typ:275
+I:(1)
+*:_U_R_L62
+#                                                             ../orig/u.typ:279
+O:quick each white sweet dwell exist desire transfer
+ :quest touch where swell dwarf expose desert transact
+ :quiet cheap whole twist expect degree dislike transmit
+ :queen child wheat twenty express deprive dismiss translate
+Q: Press Y to continue, N to repeat, or Fkey12 to exit 
+N:_U_R_L62
+
+#                                                             ../orig/u.typ:280
+I:(2)
+*:_U_R_L63
+#                                                             ../orig/u.typ:283
+O:special gracious active biology worship self-regard
+ :official conscious native geology hardship self-respect
+ :financial delicious positive pathology steamship self-defense
+Q: Press Y to continue, N to repeat, or Fkey12 to exit 
+N:_U_R_L63
+
+#                                                             ../orig/u.typ:284
+I:(3)
+*:_U_R_L64
+#                                                             ../orig/u.typ:289
+P:The squadron marched quickly and quietly.
+ :When will the twenty cars of wheat go forward?
+ :The study of psychology is a "must" in college.
+ :We desire to dispose of our financial interests.
+ :A selfish person has his own self-interest at heart.
+Q: Press Y to continue, N to repeat, or Fkey12 to exit 
+N:_U_R_L64
+
+#                                                             ../orig/u.typ:290
+I:(4)
+*:_U_R_L65
+#                                                             ../orig/u.typ:305
+P:Raymond Investment Co.
+ :120 Wall Street
+ :Ney York, NY 10005
+ :
+ :Gentlemen:
+ :
+ :     For many years our medium has been the leading adver-
+ :tising paper used by responsible investment firms who desire
+ :to obtain new accounts.
+ :
+ :     Our records show that you are not now making use of the
+ :Adviser, and we ask that you consider its use in connection
+ :with your new promotion effort.
+ :
+ :Yours truly,
+Q: Press Y to continue, N to repeat, or Fkey12 to exit 
+N:_U_R_L65
+
+#                                                             ../orig/u.typ:306
+I:(5)
+*:_U_R_L66
+#                                                             ../orig/u.typ:323
+P:Mr. Z. Dexter
+ :250 Madison Avenue
+ :New York, NY 10016
+ :
+ :Dear Mr. Dexter:
+ :
+ :I am enclosing herewith the annual report of our corporation
+ :for the year just ended; also table showing Profit and Loss
+ :Account for the past ten years.
+ :
+ :I am placing your name on our mailing list for all future
+ :reports sent out by the company, and if at any time you have
+ :any questions regarding the report or the company, if you
+ :will advise me, I shall be happy to give you any additional
+ :information that I may have.
+ :
+ :Very truly yours,
+Q: Press Y to continue, N to repeat, or Fkey12 to exit 
+N:_U_R_L66
+
+#                                                             ../orig/u.typ:325
+I:(6)
+*:_U_R_L67
+#                                                             ../orig/u.typ:337
+P:Strive for typing accuracy.  Speed without accuracy is of little value.
+ :Rhythm is the secret of typing skill.  Don't write one part of a word
+ :faster than another.  Slow down so that you can maintain a regular rhythm.
+ :
+ :Think of the letters before you strike them.  Strike the keys evenly, so
+ :that the printing impression does not vary.  At the same time, try to
+ :develop your stroking speed and make it a habit to release the keys quickly.
+ :To get up speed, type each exercise three or four times.
+ :
+ :To do your best, it is necessary that you be relaxed.  You may be trying so
+ :hard that you are all tied up in knots.  Relax consciously.  If you have a
+ :feeling of tenseness and hurry, you are not properly relaxed.
+Q: Press Y to continue, N to repeat, or Fkey12 to exit 
+N:_U_R_L67
+
+G:_U_E_U13
+#------------------------------------------------------------------------------
+# Lesson series U jump tables
+#------------------------------------------------------------------------------
+*:_U_E_U1
+Q: Do you want to continue to lesson U2 [Y/N] ? 
+N:_U_MENU
+G:_U_M_U2
+*:_U_E_U2
+Q: Do you want to continue to lesson U3 [Y/N] ? 
+N:_U_MENU
+G:_U_M_U3
+*:_U_E_U3
+Q: Do you want to continue to lesson U4 [Y/N] ? 
+N:_U_MENU
+G:_U_M_U4
+*:_U_E_U4
+Q: Do you want to continue to lesson U5 [Y/N] ? 
+N:_U_MENU
+G:_U_M_U5
+*:_U_E_U5
+Q: Do you want to continue to lesson U6 [Y/N] ? 
+N:_U_MENU
+G:_U_M_U6
+*:_U_E_U6
+Q: Do you want to continue to lesson U7 [Y/N] ? 
+N:_U_MENU
+G:_U_M_U7
+*:_U_E_U7
+Q: Do you want to continue to lesson U8 [Y/N] ? 
+N:_U_MENU
+G:_U_M_U8
+*:_U_E_U8
+Q: Do you want to continue to lesson U9 [Y/N] ? 
+N:_U_MENU
+G:_U_M_U9
+*:_U_E_U9
+Q: Do you want to continue to lesson U10 [Y/N] ? 
+N:_U_MENU
+G:_U_M_U10
+*:_U_E_U10
+Q: Do you want to continue to lesson U11 [Y/N] ? 
+N:_U_MENU
+G:_U_M_U11
+*:_U_E_U11
+Q: Do you want to continue to lesson U12 [Y/N] ? 
+N:_U_MENU
+G:_U_M_U12
+*:_U_E_U12
+Q: Do you want to continue to lesson U13 [Y/N] ? 
+N:_U_MENU
+G:_U_M_U13
+*:_U_E_U13
+G:_U_MENU
+
+*:_U_M_U1
+B:                             Lesson U1
+K:12:_U_MENU
+G:_U_S_U1
+*:_U_M_U2
+B:                             Lesson U2
+K:12:_U_MENU
+G:_U_S_U2
+*:_U_M_U3
+B:                             Lesson U3
+K:12:_U_MENU
+G:_U_S_U3
+*:_U_M_U4
+B:                             Lesson U4
+K:12:_U_MENU
+G:_U_S_U4
+*:_U_M_U5
+B:                             Lesson U5
+K:12:_U_MENU
+G:_U_S_U5
+*:_U_M_U6
+B:                             Lesson U6
+K:12:_U_MENU
+G:_U_S_U6
+*:_U_M_U7
+B:                             Lesson U7
+K:12:_U_MENU
+G:_U_S_U7
+*:_U_M_U8
+B:                             Lesson U8
+K:12:_U_MENU
+G:_U_S_U8
+*:_U_M_U9
+B:                             Lesson U9
+K:12:_U_MENU
+G:_U_S_U9
+*:_U_M_U10
+B:                            Lesson U10
+K:12:_U_MENU
+G:_U_S_U10
+*:_U_M_U11
+B:                            Lesson U11
+K:12:_U_MENU
+G:_U_S_U11
+*:_U_M_U12
+B:                            Lesson U12
+K:12:_U_MENU
+G:_U_S_U12
+*:_U_M_U13
+B:                            Lesson U13
+K:12:_U_MENU
+G:_U_S_U13
+#------------------------------------------------------------------------------
+# Lesson series U menu
+#------------------------------------------------------------------------------
+*:_U_MENU
+*:_U_MENU_PAGE0
+B:                 Lesson selection menu - series U [page 1 of 2]
+K:1:_U_M_U1
+K:2:_U_M_U2
+K:3:_U_M_U3
+K:4:_U_M_U4
+K:5:_U_M_U5
+K:6:_U_M_U6
+K:7:_U_M_U7
+K:8:_U_M_U8
+K:9:_U_M_U9
+K:10:_U_M_U10
+K:11:_U_MENU_PAGE1
+K:12:_U_QEXIT
+T:The U series contains the following 13 lessons:
+ :
+ :        Fkey 1 - Lesson U1     Home row
+ :        Fkey 2 - Lesson U2     Other letters
+ :        Fkey 3 - Lesson U3     Shift numerals figs
+ :        Fkey 4 - Lesson U4     Practise
+ :        Fkey 5 - Lesson U5     Drill on S Combinations
+ :        Fkey 6 - Lesson U6     Drill on R Combinations
+ :        Fkey 7 - Lesson U7     Drill on L Combinations
+ :        Fkey 8 - Lesson U8     Drill on D-T Combinations
+ :        Fkey 9 - Lesson U9     Drill on M-N Combinations
+ :        Fkey10 - Lesson U10    Drill on com-con Combinations
+ :
+ :        Fkey11 - Next menu page...
+ :        Fkey12 - Leave this lesson series
+Q: Please select a lesson, or Fkey12 to exit 
+G:_U_MENU_PAGE0
+*:_U_MENU_PAGE1
+B:                 Lesson selection menu - series U [page 2 of 2]
+K:1:_U_M_U11
+K:2:_U_M_U12
+K:3:_U_M_U13
+K:4:NULL
+K:5:NULL
+K:6:NULL
+K:7:NULL
+K:8:NULL
+K:9:NULL
+K:10:NULL
+K:11:_U_MENU_PAGE0
+K:12:_U_QEXIT
+T:The U series contains the following 13 lessons:
+ :
+ :        Fkey 1 - Lesson U11    Drill on sion-tion Combinations
+ :        Fkey 2 - Lesson U12    Drill on ter, ther, tor, ture, ster, der
+ :        Fkey 3 - Lesson U13    Drill on qu, ch, wh, dw, sw, tw, de, des,
+ :                                 dis, ex, self, tran, cial, cious,
+ :                                 ology, ship, tive
+ :
+ :
+ :
+ :
+ :
+ :
+ :        Fkey11 - First menu page...
+ :        Fkey12 - Leave this lesson series
+Q: Please select a lesson, or Fkey12 to exit 
+G:_U_MENU_PAGE1
+*:_U_QEXIT
+Q: Do you want to leave this lesson series? [Y/N] ? 
+N:_U_MENU
+G:_U_EXIT
+*:_U_EXIT
+#------------------------------------------------------------------------------
+# End of file u.typ
+G:__SERIESMENU
+#==============================================================================
+#==============================================================================
 *:__S_V_SERIES
 # Start of file v.typ
+# Typist v2.2 - improved typing tutor program for UNIX systems
+# Copyright (C) 1998  Simon Baldwin (simonb@sco.com)
+#
+# This program is free software; you can redistribute it and/or
+# modify it under the terms of the GNU General Public License
+# as published by the Free Software Foundation; either version 2
+# of the License, or (at your option) any later version.
+#
+# This program is distributed in the hope that it will be useful,
+# but WITHOUT ANY WARRANTY; without even the implied warranty of
+# MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+# GNU General Public License for more details.
+#
+# You should have received a copy of the GNU General Public License
+# along with this program; if not, write to the Free Software
+# Foundation, Inc., 59 Temple Place - Suite 330, Boston, MA 02111-1307, USA.
+#
+
 #------------------------------------------------------------------------------
 # Series V
 #------------------------------------------------------------------------------
@@ -7136,4764 +11979,76 @@ G:_V_EXIT
 # End of file v.typ
 G:__SERIESMENU
 #==============================================================================
-#==============================================================================
-*:__S_U_SERIES
-# Start of file u.typ
-#------------------------------------------------------------------------------
-# Series U
-#------------------------------------------------------------------------------
-G:_U_MENU
-*:_U_NO_MENU
-#------------------------------------------------------------------------------
-# Lesson U1
-#------------------------------------------------------------------------------
-*:U1
-*:_U_S_U1
-*:_U_R_L0
-#                                                               ../orig/u.typ:5
-T:			Welcome to lesson U1
+*:__MORE_LESSONS
+T:... there are more lessons which can be accessed by starting
+ : gtypist with an argument, the name of the file:
  :
- :Still don't know how to touch-type?  Let's start from the beginning and
- :drill you starting with the home row.
-Q: Press Y to continue, or Fkey12 to exit 
-N:_U_R_L0
-
-#                                                               ../orig/u.typ:6
-I:(1) Try this:
-*:_U_R_L1
-#                                                               ../orig/u.typ:8
-O:has half hag gad gash glass sash ash slash shall flash
- :had hall gas gaff gall glad dash ask slag shad ah
-Q: Press Y to continue, N to repeat, or Fkey12 to exit 
-N:_U_R_L1
-
-G:_U_E_U1
-#------------------------------------------------------------------------------
-# Lesson U2
-#------------------------------------------------------------------------------
-*:U2
-*:_U_S_U2
-
-#                                                              ../orig/u.typ:13
-I:(1) Familiarize yourself with the top row and between the index fingers:
-*:_U_R_L3
-#                                                              ../orig/u.typ:15
-O:juj kik lol ;p; jyj
- :frf ded sws aqa ftf
-Q: Press Y to continue, N to repeat, or Fkey12 to exit 
-N:_U_R_L3
-
-#                                                              ../orig/u.typ:16
-I:(2) Some words:
-*:_U_R_L4
-#                                                              ../orig/u.typ:20
-O:jug part ye aqua their hearty dry great why whose youth
- :kit free use type last lower drug light wheat proper your
- :lot dear its rear were pretty grip quiet where proud yellow
- :hear sweep old easy writer fresh group equip who please yes
-Q: Press Y to continue, N to repeat, or Fkey12 to exit 
-N:_U_R_L4
-
-#                                                              ../orig/u.typ:21
-I:(3) Now for the bottom row:
-*:_U_R_L5
-#                                                              ../orig/u.typ:23
-O:jmj k,k l.l ;/; jnj
- :fvf dcd sxs aza fbf
-Q: Press Y to continue, N to repeat, or Fkey12 to exit 
-N:_U_R_L5
-
-#                                                              ../orig/u.typ:24
-I:(4) Some words:
-*:_U_R_L6
-#                                                              ../orig/u.typ:28
-O:man come body vacant many tax ribbon lining believing
- :name can beam make examine none native baby commission
- :vain sex not cancel even mention woman brick quicken
- :become zero cave lazy benzine opening very branch textile
-Q: Press Y to continue, N to repeat, or Fkey12 to exit 
-N:_U_R_L6
-
-G:_U_E_U2
-#------------------------------------------------------------------------------
-# Lesson U3
-#------------------------------------------------------------------------------
-*:U3
-*:_U_S_U3
-
-#                                                              ../orig/u.typ:32
-I:(1)
-*:_U_R_L8
-#                                                              ../orig/u.typ:33
-O:Do you live in Scranton, Pennsylvania?
-Q: Press Y to continue, N to repeat, or Fkey12 to exit 
-N:_U_R_L8
-
-#                                                              ../orig/u.typ:34
-I:(2)
-*:_U_R_L9
-#                                                              ../orig/u.typ:35
-O:Mary Brown and Nancy Smith are in New York City.
-Q: Press Y to continue, N to repeat, or Fkey12 to exit 
-N:_U_R_L9
-
-#                                                              ../orig/u.typ:36
-I:(3)
-*:_U_R_L10
-#                                                              ../orig/u.typ:37
-O:Violet, Helen, Dora, Jennie, and Elsie are staying at the Hotel Commodore.
-Q: Press Y to continue, N to repeat, or Fkey12 to exit 
-N:_U_R_L10
-
-#                                                              ../orig/u.typ:38
-I:(4)
-*:_U_R_L11
-#                                                              ../orig/u.typ:40
-O:I have lived in Los Angeles, San Francisco, Portland, Chicago, St. Louis, and
- :Denver; Robert has lived in Boston, Philadelphia, Jersey City, and Utica.
-Q: Press Y to continue, N to repeat, or Fkey12 to exit 
-N:_U_R_L11
-
-#                                                              ../orig/u.typ:41
-I:(5)
-*:_U_R_L12
-#                                                              ../orig/u.typ:43
-O:j7j k8k l9l ;0; j6j
- :f4f d3d s2s a1a f4f
-Q: Press Y to continue, N to repeat, or Fkey12 to exit 
-N:_U_R_L12
-
-#                                                              ../orig/u.typ:44
-I:(6)
-*:_U_R_L13
-#                                                              ../orig/u.typ:46
-O:j&j k*k l(l ;); j^j
- :f$f d#d s@s a!a f%f
-Q: Press Y to continue, N to repeat, or Fkey12 to exit 
-N:_U_R_L13
-
-#                                                              ../orig/u.typ:47
-I:(7)
-*:_U_R_L14
-#                                                              ../orig/u.typ:52
-P:Please send me the book "Facts & Figures."
- :Send us the items (3 dozen coats) right away.
- :The amount of the bill is $17,563.49; the discount is 2% 10 days, net 30 days.
- :The cards should be made up in the following sizes: 4 5/16 x 8 3/16 and
- :3 5/8 x 6 7/8.
-Q: Press Y to continue, N to repeat, or Fkey12 to exit 
-N:_U_R_L14
-
-#                                                              ../orig/u.typ:53
-I:(8)
-*:_U_R_L15
-#                                                              ../orig/u.typ:55
-O:2's 3's 4's 5's
- :#' #2 #3 #4 #5
-Q: Press Y to continue, N to repeat, or Fkey12 to exit 
-N:_U_R_L15
-
-G:_U_E_U3
-#------------------------------------------------------------------------------
-# Lesson U4
-#------------------------------------------------------------------------------
-*:U4
-*:_U_S_U4
-
-#                                                              ../orig/u.typ:59
-I:(1)
-*:_U_R_L15A
-#                                                              ../orig/u.typ:60
-O:;'; ;"; ;/; ;?; ;[; ;{; ;-; ;_;
-Q: Press Y to continue, N to repeat, or Fkey12 to exit 
-N:_U_R_L15A
-
-#                                                              ../orig/u.typ:61
-I:(2)
-*:_U_R_L17
-#                                                              ../orig/u.typ:62
-O:The quick brown fox jumps over the lazy dog.
-Q: Press Y to continue, N to repeat, or Fkey12 to exit 
-N:_U_R_L17
-
-#                                                              ../orig/u.typ:63
-I:(3)
-*:_U_R_L18
-#                                                              ../orig/u.typ:64
-O:This is a specimen of the work done on this machine.
-Q: Press Y to continue, N to repeat, or Fkey12 to exit 
-N:_U_R_L18
-
-#                                                              ../orig/u.typ:65
-I:(4)
-*:_U_R_L19
-#                                                              ../orig/u.typ:66
-O:Now is the time for all good men to come to the aid of their party.
-Q: Press Y to continue, N to repeat, or Fkey12 to exit 
-N:_U_R_L19
-
-#                                                              ../orig/u.typ:67
-I:(5)
-*:_U_R_L20
-#                                                              ../orig/u.typ:69
-O:1$ 2$ 3$ 4$ 5$ 6$ 7$ 8$ 9$ 10$
- :2 coats @ $20.00 5 hats @ $4.00
-Q: Press Y to continue, N to repeat, or Fkey12 to exit 
-N:_U_R_L20
-
-G:_U_E_U4
-#------------------------------------------------------------------------------
-# Lesson U5
-#------------------------------------------------------------------------------
-*:U5
-*:_U_S_U5
-*:_U_R_L21
-#                                                              ../orig/u.typ:74
-T:
- :		   (Drill on S Combinations)
-Q: Press Y to continue, or Fkey12 to exit 
-N:_U_R_L21
-
-#                                                              ../orig/u.typ:75
-I:(1)
-*:_U_R_L22
-#                                                              ../orig/u.typ:76
-O:sas ses sis sos sus sc scr sh sk sl sm sn sp spl spr st str sw
-Q: Press Y to continue, N to repeat, or Fkey12 to exit 
-N:_U_R_L22
-
-#                                                              ../orig/u.typ:77
-I:(2)
-*:_U_R_L23
-#                                                              ../orig/u.typ:80
-O:says sides springs slips snows shops sweets streets
- :sees souls spreads schools smiles shoots swings strikes
- :sues speaks splashes screams skates sheets stones stresses
-Q: Press Y to continue, N to repeat, or Fkey12 to exit 
-N:_U_R_L23
-
-#                                                              ../orig/u.typ:81
-I:(3)
-*:_U_R_L24
-#                                                              ../orig/u.typ:86
-P:She wishes to show us some samples.
- :The sisters wear the same size dresses.
- :She says she speaks to Sally in school.
- :The shipment was shipped by fast express.
- :Simplicity and sincerity are social assets.
-Q: Press Y to continue, N to repeat, or Fkey12 to exit 
-N:_U_R_L24
-
-#                                                              ../orig/u.typ:87
-I:(4)
-*:_U_R_L25
-#                                                              ../orig/u.typ:91
-P:     Safety first.  This slogan is well known.  Yet many care-
- :less people disregard it and so we have accidents.  It is pos-
- :sible to avoid many types of accidents by a little forethought.
- :Don't be careless.  Do your share to avoid mishaps.
-Q: Press Y to continue, N to repeat, or Fkey12 to exit 
-N:_U_R_L25
-
-G:_U_E_U5
-#------------------------------------------------------------------------------
-# Lesson U6
-#------------------------------------------------------------------------------
-*:U6
-*:_U_S_U6
-*:_U_R_L26
-#                                                              ../orig/u.typ:96
-T:
- :		(Drill on R Combinations)
-Q: Press Y to continue, or Fkey12 to exit 
-N:_U_R_L26
-
-#                                                              ../orig/u.typ:97
-I:(1)
-*:_U_R_L27
-#                                                              ../orig/u.typ:98
-O:rar rer rir ror rur br cr dr fr gr pr shr tr thr
-Q: Press Y to continue, N to repeat, or Fkey12 to exit 
-N:_U_R_L27
-
-#                                                              ../orig/u.typ:99
-I:(2)
-*:_U_R_L28
-#                                                             ../orig/u.typ:102
-O:rare rural proper trader drier freer cracker
- :rear broker prefer trapper dresser fresher grammar
- :roar brewer prepare thrower shrewder creamer greater
-Q: Press Y to continue, N to repeat, or Fkey12 to exit 
-N:_U_R_L28
-
-#                                                             ../orig/u.typ:103
-I:(3)
-*:_U_R_L29
-#                                                             ../orig/u.typ:108
-P:Every promise made should be observed.
- :The price of the property is really $2,500.
- :Try to remember to bring your grammar with you.
- :Proof of your brokerage experience will be required.
- :The orange grower must have favorable weather conditions.
-Q: Press Y to continue, N to repeat, or Fkey12 to exit 
-N:_U_R_L29
-
-#                                                             ../orig/u.typ:109
-I:(4)
-*:_U_R_L30
-#                                                             ../orig/u.typ:114
-P:     Some people break promises as readily as they make them.
- :As a result, they acquire a reputation for unreliability.  It
- :is particularly important to be reliable in the business world.
- :A person or firm that comes to be regarded as unreliable has a
- :poor chance of success.
-Q: Press Y to continue, N to repeat, or Fkey12 to exit 
-N:_U_R_L30
-
-G:_U_E_U6
-#------------------------------------------------------------------------------
-# Lesson U7
-#------------------------------------------------------------------------------
-*:U7
-*:_U_S_U7
-*:_U_R_L31
-#                                                             ../orig/u.typ:119
-T:
- :		(Drill on L Combinations)
-Q: Press Y to continue, or Fkey12 to exit 
-N:_U_R_L31
-
-#                                                             ../orig/u.typ:120
-I:(1)
-*:_U_R_L32
-#                                                             ../orig/u.typ:121
-O:lal lel lil lol lul ly bl cl fl gl pl sl
-Q: Press Y to continue, N to repeat, or Fkey12 to exit 
-N:_U_R_L32
-
-#                                                             ../orig/u.typ:122
-I:(2)
-*:_U_R_L33
-#                                                             ../orig/u.typ:125
-O:loll play blow clear glass flesh slow fully
- :lisle plow blue class globe fleet sleep silly
- :label please blood claim gleam flail slight really
-Q: Press Y to continue, N to repeat, or Fkey12 to exit 
-N:_U_R_L33
-
-#                                                             ../orig/u.typ:126
-I:(3)
-*:_U_R_L34
-#                                                             ../orig/u.typ:131
-P:The mill will close in April.
- :It is clear to all who will listen.
- :The clerk sells cloth of fine value.
- :You will rely on them to supply you.
- :He held the floor until a relatively late hour.
-Q: Press Y to continue, N to repeat, or Fkey12 to exit 
-N:_U_R_L34
-
-#                                                             ../orig/u.typ:132
-I:(4)
-*:_U_R_L35
-#                                                             ../orig/u.typ:138
-P:     Play is most important to a child.  All of us must play
- :a little.  All work and no play makes Jack a dull boy, the
- :old saying goes.  Play affords relaxation.  Some people claim
- :their work is so enthralling that they do not need to play.
- :Psychologists say that the stress of modern life demands that
- :all adults have some hobby away from their daily pursuit.
-Q: Press Y to continue, N to repeat, or Fkey12 to exit 
-N:_U_R_L35
-
-G:_U_E_U7
-#------------------------------------------------------------------------------
-# Lesson U8
-#------------------------------------------------------------------------------
-*:U8
-*:_U_S_U8
-*:_U_R_L36
-#                                                             ../orig/u.typ:143
-T:
- :		(Drill on D-T Combinations)
-Q: Press Y to continue, or Fkey12 to exit 
-N:_U_R_L36
-
-#                                                             ../orig/u.typ:144
-I:(1)
-*:_U_R_L37
-#                                                             ../orig/u.typ:146
-O:dad ded did dod dud dr ld nd rd
- :tat tet tit tot tut th tr ct ft lt nt pt st
-Q: Press Y to continue, N to repeat, or Fkey12 to exit 
-N:_U_R_L37
-
-#                                                             ../orig/u.typ:147
-I:(2)
-*:_U_R_L38
-#                                                             ../orig/u.typ:151
-O:did bend tot total that last rented mended
- :deed lend toot tutor this kept melted handed
- :dude bold tight taught them chest drafted founded
- :dodo board trait treats there first directed doubted
-Q: Press Y to continue, N to repeat, or Fkey12 to exit 
-N:_U_R_L38
-
-#                                                             ../orig/u.typ:152
-I:(3)
-*:_U_R_L39
-#                                                             ../orig/u.typ:157
-P:The first shall be last.
- :Credit the cost to the estate.
- :Record your thoughts from time to time.
- :An effort should be made to settle the estate.
- :Rest assured you will succeed if you try hard.
-Q: Press Y to continue, N to repeat, or Fkey12 to exit 
-N:_U_R_L39
-
-#                                                             ../orig/u.typ:158
-I:(4)
-*:_U_R_L40
-#                                                             ../orig/u.typ:164
-O:     To learn to typewrite is not difficult.  The keyboard
- :of the typewriter may be mastered in a few hours, but to
- :get speed in typewriting calls for a good deal of practice.
- :One of the best methods of getting up speed is to write a
- :selection over and over again until it can be written easily
- :and accurately.
-Q: Press Y to continue, N to repeat, or Fkey12 to exit 
-N:_U_R_L40
-
-G:_U_E_U8
-#------------------------------------------------------------------------------
-# Lesson U9
-#------------------------------------------------------------------------------
-*:U9
-*:_U_S_U9
-*:_U_R_L41
-#                                                             ../orig/u.typ:169
-T:
- :		(Drill on M-N Combinations)
-Q: Press Y to continue, or Fkey12 to exit 
-N:_U_R_L41
-
-#                                                             ../orig/u.typ:170
-I:(1)
-*:_U_R_L42
-#                                                             ../orig/u.typ:172
-O:am em im om um mb mp ment
- :an en in on un ng nk
-Q: Press Y to continue, N to repeat, or Fkey12 to exit 
-N:_U_R_L42
-
-#                                                             ../orig/u.typ:173
-I:(2)
-*:_U_R_L43
-#                                                             ../orig/u.typ:178
-O:amount damper only singing payment moment
- :emblem camper enter ringing enrollment judgment
- :immense hamper under longing engagement excitement
- :omnibus lumber income banking appointment settlement
- :umbrella bomber answer thinking entertainment employment
-Q: Press Y to continue, N to repeat, or Fkey12 to exit 
-N:_U_R_L43
-
-#                                                             ../orig/u.typ:179
-I:(3)
-*:_U_R_L44
-#                                                             ../orig/u.typ:184
-P:We are informed that an increase in anticipated.
- :Please inform us if you are interested in an engine.
- :Banks will extend financial aid to the business man.
- :Unless your invoice is paid, no shipment can be made.
- :The amount of your investment in common stocks is $800.
-Q: Press Y to continue, N to repeat, or Fkey12 to exit 
-N:_U_R_L44
-
-#                                                             ../orig/u.typ:185
-I:(8)
-*:_U_R_L45
-#                                                             ../orig/u.typ:190
-P:     The employer must consider any increase in cost that
- :enters into the manufacture of his product.  Unless he includes
- :such cost in his selling price, he is unlikely to show a profit.
- :The installation of a cost system that enables the employer
- :to break down his costs to a unit basis is a prime necessity.
-Q: Press Y to continue, N to repeat, or Fkey12 to exit 
-N:_U_R_L45
-
-G:_U_E_U9
-#------------------------------------------------------------------------------
-# Lesson U10
-#------------------------------------------------------------------------------
-*:U10
-*:_U_S_U10
-*:_U_R_L46
-#                                                             ../orig/u.typ:195
-T:
- :		(Drill on com-con Combinations)
-Q: Press Y to continue, or Fkey12 to exit 
-N:_U_R_L46
-
-#                                                             ../orig/u.typ:196
-I:(1)
-*:_U_R_L47
-#                                                             ../orig/u.typ:198
-O:com recom decom discom incom uncom
- :con recon decon discon incon uncon
-Q: Press Y to continue, N to repeat, or Fkey12 to exit 
-N:_U_R_L47
-
-#                                                             ../orig/u.typ:199
-I:(2)
-*:_U_R_L48
-#                                                             ../orig/u.typ:204
-O:common commit decompose conduct consign incomplete
- :comply comment discomfort connect confuse unconvinced
- :combine compose disconnect consist contrast uncontrolled
- :commerce compare discontinue control contrary incomparable
- :commence complete inconvenient contract convince uncomfortable
-Q: Press Y to continue, N to repeat, or Fkey12 to exit 
-N:_U_R_L48
-
-#                                                             ../orig/u.typ:205
-I:(3)
-*:_U_R_L49
-#                                                             ../orig/u.typ:210
-P:The lawyer consulted the complainant.
- :Please continue to comply with all recommendations.
- :Their income is derived from common stock commitments.
- :The concern communicated its conclusions convincingly.
- :Under the circumstances, the company will command control.
-Q: Press Y to continue, N to repeat, or Fkey12 to exit 
-N:_U_R_L49
-
-#                                                             ../orig/u.typ:211
-I:(4)
-*:_U_R_L50
-#                                                             ../orig/u.typ:216
-P:     Character shows itself in a man's conduct.  Deeds speak
- :louder than words.  Words sometimes confuse as issue where
- :deeds clarify it.  The test of a man's sincerity is not what
- :he says but what he does.  Consider this well and you will
- :never be confused in estimating a man's worth.
-Q: Press Y to continue, N to repeat, or Fkey12 to exit 
-N:_U_R_L50
-
-G:_U_E_U10
-#------------------------------------------------------------------------------
-# Lesson U11
-#------------------------------------------------------------------------------
-*:U11
-*:_U_S_U11
-*:_U_R_L51
-#                                                             ../orig/u.typ:221
-T:
- :		(Drill on sion-tion Combinations)
-Q: Press Y to continue, or Fkey12 to exit 
-N:_U_R_L51
-
-#                                                             ../orig/u.typ:222
-I:(1)
-*:_U_R_L52
-#                                                             ../orig/u.typ:224
-O:asion esion ision osion usion
- :ation etion ition otion ution
-Q: Press Y to continue, N to repeat, or Fkey12 to exit 
-N:_U_R_L52
-
-#                                                             ../orig/u.typ:225
-I:(2)
-*:_U_R_L53
-#                                                             ../orig/u.typ:229
-O:action motion quotation session caution ambition
- :nation ration invention division exhibition attention
- :portion station intention possession connection situation
- :location creation condition impression completion commission
-Q: Press Y to continue, N to repeat, or Fkey12 to exit 
-N:_U_R_L53
-
-#                                                             ../orig/u.typ:230
-I:(3)
-*:_U_R_L54
-#                                                             ../orig/u.typ:235
-P:Information on the invention has been sent you.
- :The cancellation of the exhibition was announced.
- :Your communication of February 16 has been received.
- :Students are taught addition, subtraction, and division.
- :Your attention is called to the action of the Commission.
-Q: Press Y to continue, N to repeat, or Fkey12 to exit 
-N:_U_R_L54
-
-#                                                             ../orig/u.typ:236
-I:(4)
-*:_U_R_L55
-#                                                             ../orig/u.typ:241
-P:     Concentration is a valuable faculty.  The ability to direct
- :one's attention exclusively along certain lines accounts for
- :the success of some people.  Diffusion of effort is considered
- :an enemy of success.  We are told that this is an age of
- :specialization, and specialization demands concentration.
-Q: Press Y to continue, N to repeat, or Fkey12 to exit 
-N:_U_R_L55
-
-G:_U_E_U11
-#------------------------------------------------------------------------------
-# Lesson U12
-#------------------------------------------------------------------------------
-*:U12
-*:_U_S_U12
-*:_U_R_L56
-#                                                             ../orig/u.typ:246
-T:
- :	(Drill on ter, ther, tor, ture, ster, der Combinations)
-Q: Press Y to continue, or Fkey12 to exit 
-N:_U_R_L56
-
-#                                                             ../orig/u.typ:247
-I:(1)
-*:_U_R_L57
-#                                                             ../orig/u.typ:250
-O:ater oter etor utor ider ather other eture uture ister
- :eter uter itor ader oder ether uther iture aster oster
- :iter ator otor eder uder ither ature oture ester uster
-Q: Press Y to continue, N to repeat, or Fkey12 to exit 
-N:_U_R_L57
-
-#                                                             ../orig/u.typ:251
-I:(2)
-*:_U_R_L58
-#                                                             ../orig/u.typ:255
-O:water later actor order father future faster
- :alter matter motor wider mother nature poster
- :voter better factor reader rather feature master
- :writer letter doctor modern either fixture register
-Q: Press Y to continue, N to repeat, or Fkey12 to exit 
-N:_U_R_L58
-
-#                                                             ../orig/u.typ:256
-I:(3)
-*:_U_R_L59
-#                                                             ../orig/u.typ:261
-P:The voter was required to register.
- :The reader made a study of the literature.
- :The actor was better in the theatre than in pictures.
- :The writer wrote a letter to his future sister-in-law.
- :The minister received a letter from his father and mother.
-Q: Press Y to continue, N to repeat, or Fkey12 to exit 
-N:_U_R_L59
-
-#                                                             ../orig/u.typ:262
-I:(4)
-*:_U_R_L60
-#                                                             ../orig/u.typ:267
-P:     The best letter writers express themselves simply.  They
- :avoid long words where shorter words will do.  They have some-
- :thing to say and they say it interestingly and to the point.
- :A business letter should not be a literary masterpiece, but
- :that is not to say that it should not have style.
-Q: Press Y to continue, N to repeat, or Fkey12 to exit 
-N:_U_R_L60
-
-G:_U_E_U12
-#------------------------------------------------------------------------------
-# Lesson U13
-#------------------------------------------------------------------------------
-*:U13
-*:_U_S_U13
-*:_U_R_L61
-#                                                             ../orig/u.typ:274
-T:
- :	(Drill on qu, ch, wh, dw, sw, tw Combinations)
- :	(Drill on de, des, dis, ex, self, tran)
- :	(Drill on cial, cious, ology, ship, tive)
-Q: Press Y to continue, or Fkey12 to exit 
-N:_U_R_L61
-
-#                                                             ../orig/u.typ:275
-I:(1)
-*:_U_R_L62
-#                                                             ../orig/u.typ:279
-O:quick each white sweet dwell exist desire transfer
- :quest touch where swell dwarf expose desert transact
- :quiet cheap whole twist expect degree dislike transmit
- :queen child wheat twenty express deprive dismiss translate
-Q: Press Y to continue, N to repeat, or Fkey12 to exit 
-N:_U_R_L62
-
-#                                                             ../orig/u.typ:280
-I:(2)
-*:_U_R_L63
-#                                                             ../orig/u.typ:283
-O:special gracious active biology worship self-regard
- :official conscious native geology hardship self-respect
- :financial delicious positive pathology steamship self-defense
-Q: Press Y to continue, N to repeat, or Fkey12 to exit 
-N:_U_R_L63
-
-#                                                             ../orig/u.typ:284
-I:(3)
-*:_U_R_L64
-#                                                             ../orig/u.typ:289
-P:The squadron marched quickly and quietly.
- :When will the twenty cars of wheat go forward?
- :The study of psychology is a "must" in college.
- :We desire to dispose of our financial interests.
- :A selfish person has his own self-interest at heart.
-Q: Press Y to continue, N to repeat, or Fkey12 to exit 
-N:_U_R_L64
-
-#                                                             ../orig/u.typ:290
-I:(4)
-*:_U_R_L65
-#                                                             ../orig/u.typ:305
-P:Raymond Investment Co.
- :120 Wall Street
- :Ney York, NY 10005
+ : esp.typ - Spanish lessons
+ : ttde.typ - German lesson from tipptrainer
+ : ktde.typ - German lesson from ktouch
+ : ktno.typ - Norwegian lesson from ktouch
+ : ktfr.typ - French lesson from ktouch
+ : kten.typ - English lesson from ktouch
+ : ktnumber.typ - Ktouch-lesson for the numeric keypad
+ : ktlecten.typ - Another English lesson from ktouch
  :
- :Gentlemen:
- :
- :     For many years our medium has been the leading adver-
- :tising paper used by responsible investment firms who desire
- :to obtain new accounts.
- :
- :     Our records show that you are not now making use of the
- :Adviser, and we ask that you consider its use in connection
- :with your new promotion effort.
- :
- :Yours truly,
-Q: Press Y to continue, N to repeat, or Fkey12 to exit 
-N:_U_R_L65
-
-#                                                             ../orig/u.typ:306
-I:(5)
-*:_U_R_L66
-#                                                             ../orig/u.typ:323
-P:Mr. Z. Dexter
- :250 Madison Avenue
- :New York, NY 10016
- :
- :Dear Mr. Dexter:
- :
- :I am enclosing herewith the annual report of our corporation
- :for the year just ended; also table showing Profit and Loss
- :Account for the past ten years.
- :
- :I am placing your name on our mailing list for all future
- :reports sent out by the company, and if at any time you have
- :any questions regarding the report or the company, if you
- :will advise me, I shall be happy to give you any additional
- :information that I may have.
- :
- :Very truly yours,
-Q: Press Y to continue, N to repeat, or Fkey12 to exit 
-N:_U_R_L66
-
-#                                                             ../orig/u.typ:325
-I:(6)
-*:_U_R_L67
-#                                                             ../orig/u.typ:337
-P:Strive for typing accuracy.  Speed without accuracy is of little value.
- :Rhythm is the secret of typing skill.  Don't write one part of a word
- :faster than another.  Slow down so that you can maintain a regular rhythm.
- :
- :Think of the letters before you strike them.  Strike the keys evenly, so
- :that the printing impression does not vary.  At the same time, try to
- :develop your stroking speed and make it a habit to release the keys quickly.
- :To get up speed, type each exercise three or four times.
- :
- :To do your best, it is necessary that you be relaxed.  You may be trying so
- :hard that you are all tied up in knots.  Relax consciously.  If you have a
- :feeling of tenseness and hurry, you are not properly relaxed.
-Q: Press Y to continue, N to repeat, or Fkey12 to exit 
-N:_U_R_L67
-
-G:_U_E_U13
-#------------------------------------------------------------------------------
-# Lesson series U jump tables
-#------------------------------------------------------------------------------
-*:_U_E_U1
-Q: Do you want to continue to lesson U2 [Y/N] ? 
-N:_U_MENU
-G:_U_M_U2
-*:_U_E_U2
-Q: Do you want to continue to lesson U3 [Y/N] ? 
-N:_U_MENU
-G:_U_M_U3
-*:_U_E_U3
-Q: Do you want to continue to lesson U4 [Y/N] ? 
-N:_U_MENU
-G:_U_M_U4
-*:_U_E_U4
-Q: Do you want to continue to lesson U5 [Y/N] ? 
-N:_U_MENU
-G:_U_M_U5
-*:_U_E_U5
-Q: Do you want to continue to lesson U6 [Y/N] ? 
-N:_U_MENU
-G:_U_M_U6
-*:_U_E_U6
-Q: Do you want to continue to lesson U7 [Y/N] ? 
-N:_U_MENU
-G:_U_M_U7
-*:_U_E_U7
-Q: Do you want to continue to lesson U8 [Y/N] ? 
-N:_U_MENU
-G:_U_M_U8
-*:_U_E_U8
-Q: Do you want to continue to lesson U9 [Y/N] ? 
-N:_U_MENU
-G:_U_M_U9
-*:_U_E_U9
-Q: Do you want to continue to lesson U10 [Y/N] ? 
-N:_U_MENU
-G:_U_M_U10
-*:_U_E_U10
-Q: Do you want to continue to lesson U11 [Y/N] ? 
-N:_U_MENU
-G:_U_M_U11
-*:_U_E_U11
-Q: Do you want to continue to lesson U12 [Y/N] ? 
-N:_U_MENU
-G:_U_M_U12
-*:_U_E_U12
-Q: Do you want to continue to lesson U13 [Y/N] ? 
-N:_U_MENU
-G:_U_M_U13
-*:_U_E_U13
-G:_U_MENU
-
-*:_U_M_U1
-B:                             Lesson U1
-K:12:_U_MENU
-G:_U_S_U1
-*:_U_M_U2
-B:                             Lesson U2
-K:12:_U_MENU
-G:_U_S_U2
-*:_U_M_U3
-B:                             Lesson U3
-K:12:_U_MENU
-G:_U_S_U3
-*:_U_M_U4
-B:                             Lesson U4
-K:12:_U_MENU
-G:_U_S_U4
-*:_U_M_U5
-B:                             Lesson U5
-K:12:_U_MENU
-G:_U_S_U5
-*:_U_M_U6
-B:                             Lesson U6
-K:12:_U_MENU
-G:_U_S_U6
-*:_U_M_U7
-B:                             Lesson U7
-K:12:_U_MENU
-G:_U_S_U7
-*:_U_M_U8
-B:                             Lesson U8
-K:12:_U_MENU
-G:_U_S_U8
-*:_U_M_U9
-B:                             Lesson U9
-K:12:_U_MENU
-G:_U_S_U9
-*:_U_M_U10
-B:                            Lesson U10
-K:12:_U_MENU
-G:_U_S_U10
-*:_U_M_U11
-B:                            Lesson U11
-K:12:_U_MENU
-G:_U_S_U11
-*:_U_M_U12
-B:                            Lesson U12
-K:12:_U_MENU
-G:_U_S_U12
-*:_U_M_U13
-B:                            Lesson U13
-K:12:_U_MENU
-G:_U_S_U13
-#------------------------------------------------------------------------------
-# Lesson series U menu
-#------------------------------------------------------------------------------
-*:_U_MENU
-*:_U_MENU_PAGE0
-B:                 Lesson selection menu - series U [page 1 of 2]
-K:1:_U_M_U1
-K:2:_U_M_U2
-K:3:_U_M_U3
-K:4:_U_M_U4
-K:5:_U_M_U5
-K:6:_U_M_U6
-K:7:_U_M_U7
-K:8:_U_M_U8
-K:9:_U_M_U9
-K:10:_U_M_U10
-K:11:_U_MENU_PAGE1
-K:12:_U_QEXIT
-T:The U series contains the following 13 lessons:
- :
- :        Fkey 1 - Lesson U1     Home row
- :        Fkey 2 - Lesson U2     Other letters
- :        Fkey 3 - Lesson U3     Shift numerals figs
- :        Fkey 4 - Lesson U4     Practise
- :        Fkey 5 - Lesson U5     Drill on S Combinations
- :        Fkey 6 - Lesson U6     Drill on R Combinations
- :        Fkey 7 - Lesson U7     Drill on L Combinations
- :        Fkey 8 - Lesson U8     Drill on D-T Combinations
- :        Fkey 9 - Lesson U9     Drill on M-N Combinations
- :        Fkey10 - Lesson U10    Drill on com-con Combinations
- :
- :        Fkey11 - Next menu page...
- :        Fkey12 - Leave this lesson series
-Q: Please select a lesson, or Fkey12 to exit 
-G:_U_MENU_PAGE0
-*:_U_MENU_PAGE1
-B:                 Lesson selection menu - series U [page 2 of 2]
-K:1:_U_M_U11
-K:2:_U_M_U12
-K:3:_U_M_U13
-K:4:NULL
-K:5:NULL
-K:6:NULL
-K:7:NULL
-K:8:NULL
-K:9:NULL
-K:10:NULL
-K:11:_U_MENU_PAGE0
-K:12:_U_QEXIT
-T:The U series contains the following 13 lessons:
- :
- :        Fkey 1 - Lesson U11    Drill on sion-tion Combinations
- :        Fkey 2 - Lesson U12    Drill on ter, ther, tor, ture, ster, der
- :        Fkey 3 - Lesson U13    Drill on qu, ch, wh, dw, sw, tw, de, des,
- :                                 dis, ex, self, tran, cial, cious,
- :                                 ology, ship, tive
- :
- :
- :
- :
- :
- :
- :        Fkey11 - First menu page...
- :        Fkey12 - Leave this lesson series
-Q: Please select a lesson, or Fkey12 to exit 
-G:_U_MENU_PAGE1
-*:_U_QEXIT
-Q: Do you want to leave this lesson series? [Y/N] ? 
-N:_U_MENU
-G:_U_EXIT
-*:_U_EXIT
-#------------------------------------------------------------------------------
-# End of file u.typ
+ : See the comments at the top of each .typ-file for more information
 G:__SERIESMENU
-#==============================================================================
-#==============================================================================
-*:__S_D_SERIES
-# Start of file d.typ
-#------------------------------------------------------------------------------
-# Series D
-#------------------------------------------------------------------------------
-G:_D_MENU
-*:_D_NO_MENU
-#------------------------------------------------------------------------------
-# Lesson D1
-#------------------------------------------------------------------------------
-*:D1
-*:_D_S_D1
-*:_D_R_L0
-#                                                              ../orig/d.typ:20
-T:			Welcome to the Dvorak Course
- :
- :This course has been planned for beginners as well as experienced typists.
- :If you are a beginner learning to type on the American Simplified Keyboard
- :(the Dvorak keyboard), you will find this keyboard easier to learn than
- :the QWERTY (Sholes) keyboard.
- :
- :This is because the ASK has been scientifically designed to minimize cumulative
- :finger motion while typing English.  The ten letters on the Home Row
- :(A, O, E, U, I, D, H, T, N, and S) make up about 70% of all keystrokes.
- :These ten letters alone can form over 3000 words.  Needless to say, having
- :these keys in the home row facilitates both speed and accuracy.
- :
- :If you are already an experienced typist on the Sholes keyboard, don't despair:
- :you won't have to unlearn everything you know.  Your basic typing dexterity
- :remains with you, regardless of the keyboard layout.  Learning the Dvorak
- :keyboard is like learning to "play on a new surface", as a tennis player must
- :learn to adjust to grass court or hard court when she has been accustomed to
- :playing on a clay court.
-Q: Press Y to continue, or Fkey12 to exit 
-N:_D_R_L0
-
-*:_D_R_L1
-#                                                              ../orig/d.typ:25
-T:			General Instructions
- :
- :The fingers of the left hand should be placed over the A-key, the O-key,
- :the E-key, and the U-key.  Similarly, the fingers of the right hand should be
- :placed over the H-key, the T-key, the N-key, and the S-key.
-Q: Press Y to continue, or Fkey12 to exit 
-N:_D_R_L1
-
-#                                                              ../orig/d.typ:26
-I:(1) Home Row Exercises
-*:_D_R_L2
-#                                                              ../orig/d.typ:28
-O:aoeu ueoa aoeui snth htns snthd uihd uihd
- :asonetuhid asonetuhid dihutenosa dihutenosa
-Q: Press Y to continue, N to repeat, or Fkey12 to exit 
-N:_D_R_L2
-
-#                                                              ../orig/d.typ:29
-I:(2)
-*:_D_R_L3
-#                                                              ../orig/d.typ:30
-O:a s o n e t u h i d  a s o n e t u h i d
-Q: Press Y to continue, N to repeat, or Fkey12 to exit 
-N:_D_R_L3
-
-#                                                              ../orig/d.typ:31
-I:(3)
-*:_D_R_L4
-#                                                              ../orig/d.typ:32
-O:d i h u t e n o s a  d i h u t e n o s a
-Q: Press Y to continue, N to repeat, or Fkey12 to exit 
-N:_D_R_L4
-
-#                                                              ../orig/d.typ:33
-I:(4)
-*:_D_R_L5
-#                                                              ../orig/d.typ:35
-O:as an at ah ad aa ao ae au ai os on ot oh od oi ou oe oo oa
- :es en et eh ed ea eo ee eu ei us un ut uh ud ui uu ue uo ua
-Q: Press Y to continue, N to repeat, or Fkey12 to exit 
-N:_D_R_L5
-
-#                                                              ../orig/d.typ:36
-I:(5)
-*:_D_R_L6
-#                                                              ../orig/d.typ:38
-O:his hat is an aid in the hot sun
- :in his sad sod hut he sat on his hen
-Q: Press Y to continue, N to repeat, or Fkey12 to exit 
-N:_D_R_L6
-
-#                                                              ../orig/d.typ:39
-I:(6)
-*:_D_R_L7
-#                                                              ../orig/d.typ:41
-O:sue did not use his hoe and tin hat
- :dan did not see the dot on his tie as he hid his tan hat
-Q: Press Y to continue, N to repeat, or Fkey12 to exit 
-N:_D_R_L7
-
-#                                                              ../orig/d.typ:42
-I:(7)
-*:_D_R_L8
-#                                                              ../orig/d.typ:46
-O:ada add ado aha aid ann dad dan dee den did die din don dot dud
- :due dun duo eda end had has hat hen hid his hit hod hoe hot hue
- :hut ian ida inn ion its nat ned net nod not nun nut odd ode out
- :sat sit sod son sot sun tan tat tee ten tho tit toe ton too tot
-Q: Press Y to continue, N to repeat, or Fkey12 to exit 
-N:_D_R_L8
-
-#                                                              ../orig/d.typ:47
-I:(8)
-*:_D_R_L9
-#                                                              ../orig/d.typ:48
-O:i do as i do and the end is not as sad as the one sid had
-Q: Press Y to continue, N to repeat, or Fkey12 to exit 
-N:_D_R_L9
-
-G:_D_E_D1
-#------------------------------------------------------------------------------
-# Lesson D2
-#------------------------------------------------------------------------------
-*:D2
-*:_D_S_D2
-*:_D_R_L10
-#                                                              ../orig/d.typ:55
-T:                    Learning the Shift Key
- :
- :To integrate the shift key rhythmically in your practice, a capital letter
- :should take three beats: 1--press the shift key opposite the hand to press
- :the letter; 2--press the letter; 3--release the shift key.
-Q: Press Y to continue, or Fkey12 to exit 
-N:_D_R_L10
-
-#                                                              ../orig/d.typ:56
-I:(1) Review
-*:_D_R_L11
-#                                                              ../orig/d.typ:57
-O:een ent est ett hin hou ith ion oth sen tha thi tio tte thu
-Q: Press Y to continue, N to repeat, or Fkey12 to exit 
-N:_D_R_L11
-
-#                                                              ../orig/d.typ:58
-I:(2)
-*:_D_R_L12
-#                                                              ../orig/d.typ:60
-O:Ada An Ana Ann Dad Dan Dee Ed Eta
- :Dan Nan Nat Ned Sid Sue Tad Ted Tod
-Q: Press Y to continue, N to repeat, or Fkey12 to exit 
-N:_D_R_L12
-
-#                                                              ../orig/d.typ:61
-I:(3)
-*:_D_R_L13
-#                                                              ../orig/d.typ:63
-O:The sad tots sat on a tan seat in his neat tent and ate ten nuts
- :On his date Otis had a thin suit and no tint on his shoes
-Q: Press Y to continue, N to repeat, or Fkey12 to exit 
-N:_D_R_L13
-
-#                                                              ../orig/d.typ:64
-I:(4)
-*:_D_R_L14
-#                                                              ../orig/d.typ:66
-O:Enos eats a thin hash diet in a hued dish as he sits on an odd seat
- :Dad does not eat suet   He had seen Sue dent his auto
-Q: Press Y to continue, N to repeat, or Fkey12 to exit 
-N:_D_R_L14
-
-#                                                              ../orig/d.typ:67
-I:(5)
-*:_D_R_L15
-#                                                              ../orig/d.typ:70
-O:ad an de di ed en es ie in ne un ate dis ess eat ied ine
- :ist ite nee nes non nus ses tes tis usi ante anti ates
- :eous eats ines ions ious ists itas itis ness sion tion
-Q: Press Y to continue, N to repeat, or Fkey12 to exit 
-N:_D_R_L15
-
-#                                                              ../orig/d.typ:71
-I:(6)
-*:_D_R_L16
-#                                                              ../orig/d.typ:73
-O:Adna Anna Anne Dana Dead Edie Edna Enid Etta Heda
- :Nate Nina Neta Nona Odie Ohio Otto Stan Tess Thad Theo
-Q: Press Y to continue, N to repeat, or Fkey12 to exit 
-N:_D_R_L16
-
-#                                                              ../orig/d.typ:74
-I:(7)
-*:_D_R_L17
-#                                                              ../orig/d.typ:79
-O:adds aids ante ants aunt dead deed dens died dies dine dins dodo
- :heed hens hied hind hint hiss hist hits hods hoed hoes hone hood
- :none noon noun nuns oats odds odes ones sane sash sate seas seed
- :sees sent sets shad shed shin shot side sine sins sons sued suns
- :tide tine tins toad tone toss tote tout tune undo unit used uses
-Q: Press Y to continue, N to repeat, or Fkey12 to exit 
-N:_D_R_L17
-
-G:_D_E_D2
-#------------------------------------------------------------------------------
-# Lesson D3
-#------------------------------------------------------------------------------
-*:D3
-*:_D_S_D3
-#                                                              ../orig/d.typ:89
-T:                    Home Row and the Period
- :
- :The period is above the E-finger.  Note that the end of a sentence is
- :always followed by two spaces; in abbreviations, it is followed by one
- :space.
-Q: Press Y to continue, or Fkey12 to exit 
-#
-I:(1)
-*:_D_R_L18
-#                                                              ../orig/d.typ:91
-O:e.  e.  e.  e.  a.  s.  o.  n.  e.  t.  u.  h.  i.  d.  a.  a.
- :h.  u.  a.  i.  o.  n.  s.  d.  t.  e.  h.  o.  u.  i.  s.  a.
-Q: Press Y to continue, N to repeat, or Fkey12 to exit 
-N:_D_R_L18
-
-#                                                              ../orig/d.typ:92
-I:(2)
-*:_D_R_L19
-#                                                              ../orig/d.typ:96
-O:anno athe atio atte ause diti enon esen enti este
- :ethe esti ette hese hous hout iate iend ines inst
- :ith itio into ndin ness nnot noth ntio onth osed
- :thei thes tion tten nest nude unti usin tand tate
-Q: Press Y to continue, N to repeat, or Fkey12 to exit 
-N:_D_R_L19
-
-#                                                              ../orig/d.typ:97
-I:(3)
-*:_D_R_L20
-#                                                             ../orig/d.typ:100
-O:Adana Andie Annie Aonia Audie Denis Diana Dinah
- :Donna Duane Edith Ethan India Susan Susie Thane
- :Adana.  Andie.  Annie.  Aonia.  Audie.  Denis.  Diana.  Dinah.
-Q: Press Y to continue, N to repeat, or Fkey12 to exit 
-N:_D_R_L20
-
-#                                                             ../orig/d.typ:101
-I:(4)
-*:_D_R_L21
-#                                                             ../orig/d.typ:105
-O:In the house Adana dined in haste on toast and dates.
- :Sated as she had eaten she noted the sheen on the dunes
- :asd the shade in the sheds.  She hates to see an idiot
- :stand and shoot his tenth doe in the dense heath.
-Q: Press Y to continue, N to repeat, or Fkey12 to exit 
-N:_D_R_L21
-
-#                                                             ../orig/d.typ:106
-I:(5)
-*:_D_R_L22
-#                                                             ../orig/d.typ:108
-O:An onion heats and stuns stout noses and sends hands
- :to douse teeth and hoist suede hoods onto heads.
-Q: Press Y to continue, N to repeat, or Fkey12 to exit 
-N:_D_R_L22
-
-#                                                             ../orig/d.typ:109
-I:(6)
-*:_D_R_L23
-#                                                             ../orig/d.typ:111
-O:eates eousness eousnesses esses iates iests iness inesses
- :iousness iousnesses iohness iohnesses itions nesses ousness
-Q: Press Y to continue, N to repeat, or Fkey12 to exit 
-N:_D_R_L23
-
-G:_D_E_D3
-#------------------------------------------------------------------------------
-# Lesson D4
-#------------------------------------------------------------------------------
-*:D4
-*:_D_S_D4
-*:_D_R_L24
-#                                                             ../orig/d.typ:116
-T:                    Upper Row and Essential Punctuation
-Q: Press Y to continue, or Fkey12 to exit 
-N:_D_R_L24
-
-#                                                             ../orig/d.typ:117
-I:(1)
-*:_D_R_L25
-#                                                             ../orig/d.typ:119
-O:tctc upup hghg o,o, nrnr a/a/ slsl a?a? s-s- s--- s---- ----
- :tctc upup hghg, hfhf uyuy, nrnr, slsl, s---, s-s-, a/a/-
-Q: Press Y to continue, N to repeat, or Fkey12 to exit 
-N:_D_R_L25
-
-#                                                             ../orig/d.typ:120
-I:(2)
-*:_D_R_L26
-#                                                             ../orig/d.typ:122
-O:tctc/ upup/ hghg/ uyuy/ hfhf/ nrnr/ slsl/ tctc/ hfhf/ hghg/
- :tctc? upup? hghg? uyuy? nrnr? slsl? hfhf? upup- hghg- tctc-
-Q: Press Y to continue, N to repeat, or Fkey12 to exit 
-N:_D_R_L26
-
-#                                                             ../orig/d.typ:123
-I:(3)
-*:_D_R_L27
-#                                                             ../orig/d.typ:125
-O:Al el if of or up Al el if of or up
- :go la lo pa pi ye go la lo pa pi ye
-Q: Press Y to continue, N to repeat, or Fkey12 to exit 
-N:_D_R_L27
-
-#                                                             ../orig/d.typ:126
-I:(4)
-*:_D_R_L28
-#                                                             ../orig/d.typ:130
-O:Can pa go aft and lie on our old cot?
- :The shy ape put on a red hat and ran off the lot.
- :For a top fee, her act is to hop in, lie on the rug, pat her
- :pet cat, fit a fur on her ear, get her fan, and run off.
-Q: Press Y to continue, N to repeat, or Fkey12 to exit 
-N:_D_R_L28
-
-#                                                             ../orig/d.typ:131
-I:(5)
-*:_D_R_L29
-#                                                             ../orig/d.typ:134
-O:ago ail ale all apt arc are art cur cut dig dip dop
- :dry dug eel egg ego fag fig fin fir fly fog for fro
- :fry gag gap gas gay gin gip God goo gun hag hay hep
-Q: Press Y to continue, N to repeat, or Fkey12 to exit 
-N:_D_R_L29
-
-G:_D_E_D4
-#------------------------------------------------------------------------------
-# Lesson D5
-#------------------------------------------------------------------------------
-*:D5
-*:_D_S_D5
-#                                                             ../orig/d.typ:138
-I:(1) Review
-*:_D_R_L30
-#                                                             ../orig/d.typ:140
-O:The left road can lead the lads and lady to good lots near
- :your land.  The sale of pure gold is held at your door.
-Q: Press Y to continue, N to repeat, or Fkey12 to exit 
-N:_D_R_L30
-
-#                                                             ../orig/d.typ:141
-I:(2)
-*:_D_R_L31
-#                                                             ../orig/d.typ:144
-O:You held no fear of loss for a year.  On each trip to your
- :shop he paid in cash for the caps, fish, cups, pans, fuel,
- :logs, peas, ales, rice and fats you sold.
-Q: Press Y to continue, N to repeat, or Fkey12 to exit 
-N:_D_R_L31
-
-#                                                             ../orig/d.typ:145
-I:(3)
-*:_D_R_L32
-#                                                             ../orig/d.typ:147
-O:It is a fact that a slap on the face can hurt.  The poor
- :apes feel free to find a sure sort of life in the dale.
-Q: Press Y to continue, N to repeat, or Fkey12 to exit 
-N:_D_R_L32
-
-#                                                             ../orig/d.typ:148
-I:(4)
-*:_D_R_L33
-#                                                             ../orig/d.typ:152
-O:aces acts ages ails airs also arcs call caps card cold cops
- :else errs eyes face fair fall fare fate feat feel feet fell
- :gate gets gift gigs glad goat goes gone gosh gray grey gull
- :hole hope hops huff hull ills ires last late lest lets lies
-Q: Press Y to continue, N to repeat, or Fkey12 to exit 
-N:_D_R_L33
-
-#                                                             ../orig/d.typ:153
-I:(5)
-*:_D_R_L34
-#                                                             ../orig/d.typ:157
-O:pear pert pest pets pits plop pops post pots puns puts rate real
- :ride rids ripe rips rope rote rues ruff runs runt rush rust ruts
- :span spat spin spit spot spun step stop tags tall tape taps tars
- :ugly upon ruge user yard year yeas yell yelp yips yoga yule your
-Q: Press Y to continue, N to repeat, or Fkey12 to exit 
-N:_D_R_L34
-
-G:_D_E_D5
-#------------------------------------------------------------------------------
-# Lesson D6
-#------------------------------------------------------------------------------
-*:D6
-*:_D_S_D6
-*:_D_R_L35
-#                                                             ../orig/d.typ:162
-T:		Learning the Lower Row
-Q: Press Y to continue, or Fkey12 to exit 
-N:_D_R_L35
-
-#                                                             ../orig/d.typ:163
-I:(1)
-*:_D_R_L36
-#                                                             ../orig/d.typ:164
-O:a'sz oqnv ukhm uxhb a"o- oqnv ejtw a'sz uxhb ukkk ukhm a's-
-Q: Press Y to continue, N to repeat, or Fkey12 to exit 
-N:_D_R_L36
-
-#                                                             ../orig/d.typ:165
-I:(2)
-*:_D_R_L37
-#                                                             ../orig/d.typ:166
-O:uk sz-a' tw nv ej hm uk a" hb oq uk a' nv hm a" oq sz tw ej
-Q: Press Y to continue, N to repeat, or Fkey12 to exit 
-N:_D_R_L37
-
-#                                                             ../orig/d.typ:167
-I:(3)
-*:_D_R_L38
-#                                                             ../orig/d.typ:170
-O:ale any are ary augh aught ave ay aye ec ece eco el er ere ery ex
- :exa exe far fer fir for ify igh ight il ile ill ily ire aze ize
- :la lly ly my ny ome or ore ough ought ould our re rec sive tive
-Q: Press Y to continue, N to repeat, or Fkey12 to exit 
-N:_D_R_L38
-
-#                                                             ../orig/d.typ:171
-I:(4)
-*:_D_R_L39
-#                                                             ../orig/d.typ:174
-O:I owe him a bun, a ham, ink, a bed and a job.
- :Sam was mad at his own new ox in the bin.
- :At the zoo, the wee, bad boa in a box bit Tom, Bob and me.
-Q: Press Y to continue, N to repeat, or Fkey12 to exit 
-N:_D_R_L39
-
-#                                                             ../orig/d.typ:175
-I:(5)
-*:_D_R_L40
-#                                                             ../orig/d.typ:179
-O:am ax be ma me ox oz we adz awe ban but eke eve haw hem
- :hub jab jam jaw jet jib job Joe jot jut kid kin kit man
- :mat Max nab new nub now own quo saw sox sum van vex vie
- :vow wan who win won yen you zax
-Q: Press Y to continue, N to repeat, or Fkey12 to exit 
-N:_D_R_L40
-
-G:_D_E_D6
-#------------------------------------------------------------------------------
-# Lesson D7
-#------------------------------------------------------------------------------
-*:D7
-*:_D_S_D7
-#                                                             ../orig/d.typ:183
-I:(1)
-*:_D_R_L41
-#                                                             ../orig/d.typ:184
-O:In a daze the band hums the same new tune as they zoom down the exit.
-Q: Press Y to continue, N to repeat, or Fkey12 to exit 
-N:_D_R_L41
-
-#                                                             ../orig/d.typ:185
-I:(2)
-*:_D_R_L42
-#                                                             ../orig/d.typ:187
-O:Next time, I must have a town home, with a book and a vast tome,
- :bees, oxen, hams in the oven, rows of beans, the wind and a view.
-Q: Press Y to continue, N to repeat, or Fkey12 to exit 
-N:_D_R_L42
-
-#                                                             ../orig/d.typ:188
-I:(3)
-*:_D_R_L43
-#                                                             ../orig/d.typ:190
-O:I know six men wait to put down their axes.  They want to quit
- :their jobs when the job zone size is too wide.
-Q: Press Y to continue, N to repeat, or Fkey12 to exit 
-N:_D_R_L43
-
-#                                                             ../orig/d.typ:191
-I:(4)
-*:_D_R_L44
-#                                                             ../orig/d.typ:194
-O:ahem aims ajax akin asks atom axis bans bath beak beck been
- :hoax husk inks item jabs jade jamb Java jazz Jean jest jinx
- :knot Knox made maid mail mate mean meet mend mess mind mine
-Q: Press Y to continue, N to repeat, or Fkey12 to exit 
-N:_D_R_L44
-
-#                                                             ../orig/d.typ:195
-I:(5)
-*:_D_R_L45
-#                                                             ../orig/d.typ:199
-O:miss mist most musk must nabs news next nibs numb owed owes
- :quiz save saws seem sews skat skew skid skin some sums take
- :vend vent vest veto vise void vote wand weed week wend wins
- :whet whit whiz whom wish wont zebu zest zinc Zion zone zulu
-Q: Press Y to continue, N to repeat, or Fkey12 to exit 
-N:_D_R_L45
-
-G:_D_E_D7
-#------------------------------------------------------------------------------
-# Lesson D8
-#------------------------------------------------------------------------------
-*:D8
-*:_D_S_D8
-#                                                             ../orig/d.typ:203
-I:(1)
-*:_D_R_L46
-#                                                             ../orig/d.typ:204
-O:He asked about those zebra waits in his beans.
-Q: Press Y to continue, N to repeat, or Fkey12 to exit 
-N:_D_R_L46
-
-#                                                             ../orig/d.typ:205
-I:(2)
-*:_D_R_L47
-#                                                             ../orig/d.typ:206
-O:It seems that in a month taxes on homes have taken all we saved.
-Q: Press Y to continue, N to repeat, or Fkey12 to exit 
-N:_D_R_L47
-
-#                                                             ../orig/d.typ:207
-I:(3)
-*:_D_R_L48
-#                                                             ../orig/d.typ:209
-O:John Smith makes a quiet visit to the bases in the winds and
- :weeds on the mound.
-Q: Press Y to continue, N to repeat, or Fkey12 to exit 
-N:_D_R_L48
-
-#                                                             ../orig/d.typ:210
-I:(4)
-*:_D_R_L49
-#                                                             ../orig/d.typ:214
-O:ovals ovoid oxide quake queen quest quite quits quote saves seams
- :skein skink skunk sweat takes taken taxed teams teems thank think
- :thumb times towns ukase vaunt vests vises visit vista vivid vixen
- :waits wands wants wends whine white whose zebus zoned zones zulus
-Q: Press Y to continue, N to repeat, or Fkey12 to exit 
-N:_D_R_L49
-
-G:_D_E_D8
-#------------------------------------------------------------------------------
-# Lesson D9
-#------------------------------------------------------------------------------
-*:D9
-*:_D_S_D9
-#                                                             ../orig/d.typ:218
-I:(1)
-*:_D_R_L50
-#                                                             ../orig/d.typ:219
-O:hghm hbfb upxp uxyx twcw ej.j nvrv oq,q szlz a'?' a"/"
-Q: Press Y to continue, N to repeat, or Fkey12 to exit 
-N:_D_R_L50
-
-#                                                             ../orig/d.typ:220
-I:Again...
-*:_D_R_L51
-#                                                             ../orig/d.typ:221
-O:hghm hbfb upxp uxyx twcw ej.j nvrv oq,q szlz a'?' a"/"
-Q: Press Y to continue, N to repeat, or Fkey12 to exit 
-N:_D_R_L51
-
-#                                                             ../orig/d.typ:222
-I:(2)
-*:_D_R_L52
-#                                                             ../orig/d.typ:223
-O:gm mg fb bf pk kp yx xy cw wc .j j. rv vr ,q q, lz zl
-Q: Press Y to continue, N to repeat, or Fkey12 to exit 
-N:_D_R_L52
-
-#                                                             ../orig/d.typ:224
-I:(3)
-*:_D_R_L53
-#                                                             ../orig/d.typ:225
-O:My big boy may buy a gem at the labs by the bay.
-Q: Press Y to continue, N to repeat, or Fkey12 to exit 
-N:_D_R_L53
-
-#                                                             ../orig/d.typ:226
-I:(4)
-*:_D_R_L54
-#                                                             ../orig/d.typ:228
-O:Mort awes boys with the way he can ward off a blow, kill
- :elks and game, row a yawl, or ram awls into bars.
-Q: Press Y to continue, N to repeat, or Fkey12 to exit 
-N:_D_R_L54
-
-#                                                             ../orig/d.typ:229
-I:(5)
-*:_D_R_L55
-#                                                             ../orig/d.typ:232
-O:ah Al am an as at ax ba be do ed eh el go
- :ha he hi ho if in is it Jo la no ma me no
- :of oh on or ox pa pi Si so to up us we ye
-Q: Press Y to continue, N to repeat, or Fkey12 to exit 
-N:_D_R_L55
-
-G:_D_E_D9
-#------------------------------------------------------------------------------
-# Lesson D10
-#------------------------------------------------------------------------------
-*:D10
-*:_D_S_D10
-#                                                             ../orig/d.typ:236
-I:(1)
-*:_D_R_L56
-#                                                             ../orig/d.typ:238
-O:In barns on farms chicks, boars, veals, bucks and stock might
- :enjoy and value an extra quart of water daily.
-Q: Press Y to continue, N to repeat, or Fkey12 to exit 
-N:_D_R_L56
-
-#                                                             ../orig/d.typ:239
-I:(2)
-*:_D_R_L57
-#                                                             ../orig/d.typ:241
-O:Do zebras roam the miles of bleak velds which cover parts of the
- :world while packs of brown bears and wart hogs prowl in the woods?
-Q: Press Y to continue, N to repeat, or Fkey12 to exit 
-N:_D_R_L57
-
-#                                                             ../orig/d.typ:242
-I:(3)
-*:_D_R_L58
-#                                                             ../orig/d.typ:246
-O:Some folks claim to favor poems and rhyme, others can wring equal
- :cheer and worth from words and quest and seize all books.  Still
- :others amply quell their needs with vocal music and seek all
- :works on voice.
-Q: Press Y to continue, N to repeat, or Fkey12 to exit 
-N:_D_R_L58
-
-#                                                             ../orig/d.typ:247
-I:(4)
-*:_D_R_L59
-#                                                             ../orig/d.typ:250
-O:To begin to use wrong verbs among boors and bores may be
- :a severe error even if the whole group seems to think
- :that exact terms mean less than is normal for them.
-Q: Press Y to continue, N to repeat, or Fkey12 to exit 
-N:_D_R_L59
-
-#                                                             ../orig/d.typ:251
-I:(5)
-*:_D_R_L60
-#                                                             ../orig/d.typ:255
-O:allow among avail awful Aztec azure backs balls began being belie
- :bells bills black blank bored borne bring can't chalk champ charm
- :check cheek chick chink comes Czech every evict exalt excel exert
- :exile expel exult Felix folks gable gauze gives glaze gleam globe
-Q: Press Y to continue, N to repeat, or Fkey12 to exit 
-N:_D_R_L60
-
-#                                                             ../orig/d.typ:256
-I:(6)
-*:_D_R_L61
-#                                                             ../orig/d.typ:260
-O:verge verse verve vetch vigil vigor viola virus vital vogue voile
- :vouch vowel vying walks walls wards warts whack whale wharf wheat
- :wheel whelp where which whiff while whirl whole wired wires words
- :world worth would write wrong wrote yards yokes yoks zippy zombie
-Q: Press Y to continue, N to repeat, or Fkey12 to exit 
-N:_D_R_L61
-
-G:_D_E_D10
-#------------------------------------------------------------------------------
-# Lesson D11
-#------------------------------------------------------------------------------
-*:D11
-*:_D_S_D11
-#                                                             ../orig/d.typ:264
-I:(1)
-*:_D_R_L62
-#                                                             ../orig/d.typ:266
-O:For a meal we lack a room, milk in mugs, warm pork, veal
- :in the oven and cake.
-Q: Press Y to continue, N to repeat, or Fkey12 to exit 
-N:_D_R_L62
-
-#                                                             ../orig/d.typ:267
-I:(2)
-*:_D_R_L63
-#                                                             ../orig/d.typ:269
-O:Mike and Milt were grim, not calm, when Mort came to warn them that
- :the well worn ramp over to the mill was too wet for our mile walk.
-Q: Press Y to continue, N to repeat, or Fkey12 to exit 
-N:_D_R_L63
-
-#                                                             ../orig/d.typ:270
-I:(3)
-*:_D_R_L64
-#                                                             ../orig/d.typ:272
-O:Walt may quip and quote with zeal about too much work, but I
- :saw him melt and mourn about his love for his lost wife.
-Q: Press Y to continue, N to repeat, or Fkey12 to exit 
-N:_D_R_L64
-
-#                                                             ../orig/d.typ:273
-I:(4)
-*:_D_R_L65
-#                                                             ../orig/d.typ:274
-O:The pick of wool from rams can make very soft warm garb.
-Q: Press Y to continue, N to repeat, or Fkey12 to exit 
-N:_D_R_L65
-
-#                                                             ../orig/d.typ:275
-I:(5)
-*:_D_R_L66
-#                                                             ../orig/d.typ:277
-O:For his meal the busy bird will use his bill or beak in many
- :ways to peck at or ably to pick up a worm.
-Q: Press Y to continue, N to repeat, or Fkey12 to exit 
-N:_D_R_L66
-
-#                                                             ../orig/d.typ:278
-I:(6)
-*:_D_R_L67
-#                                                             ../orig/d.typ:280
-O:Owls on the wing may move away with limp easy grace or they
- :may sit on a wire and look ever so wise.
-Q: Press Y to continue, N to repeat, or Fkey12 to exit 
-N:_D_R_L67
-
-#                                                             ../orig/d.typ:281
-I:(7)
-*:_D_R_L68
-#                                                             ../orig/d.typ:283
-O:The word or term--prop, mall, king, mark, romp, lock or link--
- :can vary in what it may mean.
-Q: Press Y to continue, N to repeat, or Fkey12 to exit 
-N:_D_R_L68
-
-#                                                             ../orig/d.typ:284
-I:(8)
-*:_D_R_L69
-#                                                             ../orig/d.typ:288
-O:helm herb hock holy jeep jeer jell jerk John jolt jump jury
- :kale keel kelp kilt lack laws leak leek levy lick like lime
- :limp link live love luck lump lynx mail many mill more much
- :okra oval pack peak peck peek phew puck ramp rime skip talk
-Q: Press Y to continue, N to repeat, or Fkey12 to exit 
-N:_D_R_L69
-
-#                                                             ../orig/d.typ:289
-I:(9)
-*:_D_R_L70
-#                                                             ../orig/d.typ:292
-O:puck ramp rime skip talk vail vale vary veal veer veld verb vial vice
- :volk walk ware warm warp wars wart ways weal wear well will tilt wire
- :whey whim whip whir wore work worm worn yawn yolk zany zero zinc zing
-Q: Press Y to continue, N to repeat, or Fkey12 to exit 
-N:_D_R_L70
-
-G:_D_E_D11
-#------------------------------------------------------------------------------
-# Lesson D12
-#------------------------------------------------------------------------------
-*:D12
-*:_D_S_D12
-#                                                             ../orig/d.typ:296
-I:(1)
-*:_D_R_L71
-#                                                             ../orig/d.typ:298
-O:In barns on farms chicks, bears, veals, bucks and stock might
- :enjoy and value an extra quart of water daily.
-Q: Press Y to continue, N to repeat, or Fkey12 to exit 
-N:_D_R_L71
-
-#                                                             ../orig/d.typ:299
-I:(2)
-*:_D_R_L72
-#                                                             ../orig/d.typ:301
-O:Quick quips, awful quotes and queer talks never quite solve
- :the wants of a very small child.
-Q: Press Y to continue, N to repeat, or Fkey12 to exit 
-N:_D_R_L72
-
-#                                                             ../orig/d.typ:302
-I:(3)
-*:_D_R_L73
-#                                                             ../orig/d.typ:304
-O:Do zebras roam the miles of bleak velds which cover parts of the
- :world while packs of brown bears and wart hogs prowl in the woods?
-Q: Press Y to continue, N to repeat, or Fkey12 to exit 
-N:_D_R_L73
-
-#                                                             ../orig/d.typ:305
-I:(4)
-*:_D_R_L74
-#                                                             ../orig/d.typ:309
-O:Some folks claim to favor poems and rhyme, others can wring equal
- :cheer and worth from words and quest and seize all books.  Still
- :others amply quell their needs with vocal music and seek all
- :works on voice.
-Q: Press Y to continue, N to repeat, or Fkey12 to exit 
-N:_D_R_L74
-
-#                                                             ../orig/d.typ:310
-I:(5)
-*:_D_R_L75
-#                                                             ../orig/d.typ:312
-O:The queen was given a query for which an ample reply would
- :take a quire of paper.
-Q: Press Y to continue, N to repeat, or Fkey12 to exit 
-N:_D_R_L75
-
-#                                                             ../orig/d.typ:313
-I:(6)
-*:_D_R_L76
-#                                                             ../orig/d.typ:315
-O:Six husky cooks boiled clam broth, shrmp and prawns and broiled
- :liver for seven lucky elves, then made their hasty exits.
-Q: Press Y to continue, N to repeat, or Fkey12 to exit 
-N:_D_R_L76
-
-#                                                             ../orig/d.typ:316
-I:(7)
-*:_D_R_L77
-#                                                             ../orig/d.typ:319
-O:At the games, Mark was so very badly hurt with many broken bones,
- :lumps on his jaws, and some glands burst.  Blood oozed from a crack
- :in his wart where it had oozed for weeks.  He was lucky to have lived.
-Q: Press Y to continue, N to repeat, or Fkey12 to exit 
-N:_D_R_L77
-
-#                                                             ../orig/d.typ:320
-I:(8)
-*:_D_R_L78
-#                                                             ../orig/d.typ:322
-O:To check pomp and pride, sever from all overt vices, belay all
- :forms of muck raking, and limit all hazards, will bring prime joy.
-Q: Press Y to continue, N to repeat, or Fkey12 to exit 
-N:_D_R_L78
-
-#                                                             ../orig/d.typ:323
-I:(9)
-*:_D_R_L79
-#                                                             ../orig/d.typ:326
-O:To begin to use wrong verbs among boors and bores may be
- :a severe error even if the whole group seems to think
- :that exact terms mean less than is normal for them.
-Q: Press Y to continue, N to repeat, or Fkey12 to exit 
-N:_D_R_L79
-
-#                                                             ../orig/d.typ:327
-I:(10)
-*:_D_R_L80
-#                                                             ../orig/d.typ:331
-O:allow among avail awful Aztec azure backs balls began being belie
- :bells bills black blank bored borne bring can't chalk champ charm
- :check cheek chick chink comes Czech every evict exalt excel exert
- :exile expel exult Felix folks gable gauze gives glaze gleam globe
-Q: Press Y to continue, N to repeat, or Fkey12 to exit 
-N:_D_R_L80
-
-#                                                             ../orig/d.typ:332
-I:(11)
-*:_D_R_L81
-#                                                             ../orig/d.typ:336
-O:grams grave graze havoc hazel helix hobby jazzy jelly jerky jewel
- :joker jolly jolts jowls judge junco kapok kayak keels keeps kitty
- :knack kneel knelt knock knurl kopek kraal Krupp leave liver money
- :never Ozark pawns peaks pecks peeks phlox pirks power proms prove
-Q: Press Y to continue, N to repeat, or Fkey12 to exit 
-N:_D_R_L81
-
-#                                                             ../orig/d.typ:337
-I:(12)
-*:_D_R_L82
-#                                                             ../orig/d.typ:341
-O:quack quaff quail qualm quays quell quill quilt ramps romps rooms
- :rumps salve serve shack shark shawl shirk shock shrew shuck sieve
- :seize skiff skill skimp skirt skulk small spank speak spoke stick
- :stuck threw throw thyme vague valid value valve vapid vault venal
-Q: Press Y to continue, N to repeat, or Fkey12 to exit 
-N:_D_R_L82
-
-#                                                             ../orig/d.typ:342
-I:(13)
-*:_D_R_L83
-#                                                             ../orig/d.typ:346
-O:verge verse verve vetch vigil vigor viola virus vital vogue voile
- :vouch vowel vying walks walls wards warts whack whale wharf wheat
- :wheel whelp where which whiff while whirl whole wired wires words
- :world worth would write wrong wrote yards yokes yolks zippy zombi
-Q: Press Y to continue, N to repeat, or Fkey12 to exit 
-N:_D_R_L83
-
-G:_D_E_D12
-#------------------------------------------------------------------------------
-# Lesson D13
-#------------------------------------------------------------------------------
-*:D13
-*:_D_S_D13
-*:_D_R_L84
-#                                                             ../orig/d.typ:353
-T:
- :The following 135 words are so frequently used that they comprise 50%
- :of all words normally typed.  If you can type the next two exercises without
- :errors, half of your typed words will be correct!
-Q: Press Y to continue, or Fkey12 to exit 
-N:_D_R_L84
-
-*:_D_R_L85
-#                                                             ../orig/d.typ:358
-O:a about after all also an and another any are as at back be because
- :been before being between both but by can could day did do down each
- :even first for from get good had has have he her here him his how I
- :if in into is it its just know last life like little long made make
- :many may me men more most Mr.  Ms.  much must my never new no not now
-Q: Press Y to continue, N to repeat, or Fkey12 to exit 
-N:_D_R_L85
-
-*:_D_R_L86
-#                                                             ../orig/d.typ:363
-O:of or on one only or other our out over own people said same see she
- :should so some state still such than that the their them then there
- :these they this those through time to too two under up very was way
- :we well were what when where which while who will with work would
- :years you your
-Q: Press Y to continue, N to repeat, or Fkey12 to exit 
-N:_D_R_L86
-
-*:_D_R_L87
-#                                                             ../orig/d.typ:364
-T:We now concentrate on home row words.
-Q: Press Y to continue, or Fkey12 to exit 
-N:_D_R_L87
-
-#                                                             ../orig/d.typ:365
-I:(1)
-*:_D_R_L88
-#                                                             ../orig/d.typ:367
-O:The duteous dietitian hesitated at the intense nauseousness inside
- :the dishonest institution.
-Q: Press Y to continue, N to repeat, or Fkey12 to exit 
-N:_D_R_L88
-
-#                                                             ../orig/d.typ:368
-I:(2)
-*:_D_R_L89
-#                                                             ../orig/d.typ:370
-O:In addition, the unastute assassin had another unsound idea.  He
- :intended to assassinate the dishonest attendant at the institute.
-Q: Press Y to continue, N to repeat, or Fkey12 to exit 
-N:_D_R_L89
-
-#                                                             ../orig/d.typ:371
-I:(3)
-*:_D_R_L90
-#                                                             ../orig/d.typ:376
-O:The unintentioned noisiness and untidiness in the hostess house
- :astonished, astounded and nauseated Antonietta.  Undaunted and
- :unassisted, she did not hesitate to initiate a statute at the state
- :house.  The statute stated that no attendant in an untenanted haunted
- :hostess house is to attain hostess status.
-Q: Press Y to continue, N to repeat, or Fkey12 to exit 
-N:_D_R_L90
-
-G:_D_E_D13
-#------------------------------------------------------------------------------
-# Lesson D14
-#------------------------------------------------------------------------------
-*:D14
-*:_D_S_D14
-*:_D_R_L91
-#                                                             ../orig/d.typ:381
-T:
- :In this lesson we practice alphabetic sentences.
-Q: Press Y to continue, or Fkey12 to exit 
-N:_D_R_L91
-
-#                                                             ../orig/d.typ:382
-I:(1)
-*:_D_R_L92
-#                                                             ../orig/d.typ:383
-O:Sixty-five quizzical sheep kept their jaws dry in a farm bungalow.
-Q: Press Y to continue, N to repeat, or Fkey12 to exit 
-N:_D_R_L92
-
-#                                                             ../orig/d.typ:384
-I:(2)
-*:_D_R_L93
-#                                                             ../orig/d.typ:385
-O:Balky Zulus find they can hoax weary men with quavery jumping.
-Q: Press Y to continue, N to repeat, or Fkey12 to exit 
-N:_D_R_L93
-
-#                                                             ../orig/d.typ:386
-I:(3)
-*:_D_R_L94
-#                                                             ../orig/d.typ:387
-O:Jerome quickly began to be vexed by the powerful blizzards.
-Q: Press Y to continue, N to repeat, or Fkey12 to exit 
-N:_D_R_L94
-
-#                                                             ../orig/d.typ:388
-I:(4)
-*:_D_R_L95
-#                                                             ../orig/d.typ:389
-O:Squawking gorillas could vex the brazen nymphs in a jiffy.
-Q: Press Y to continue, N to repeat, or Fkey12 to exit 
-N:_D_R_L95
-
-#                                                             ../orig/d.typ:390
-I:(5)
-*:_D_R_L96
-#                                                             ../orig/d.typ:391
-O:Can Jerry's equipment file saws, ax, hoe, knives and grind adz?
-Q: Press Y to continue, N to repeat, or Fkey12 to exit 
-N:_D_R_L96
-
-#                                                             ../orig/d.typ:392
-I:(6)
-*:_D_R_L97
-#                                                             ../orig/d.typ:393
-O:Ben works at squeezing very juicy plums with flexed thumbs.
-Q: Press Y to continue, N to repeat, or Fkey12 to exit 
-N:_D_R_L97
-
-#                                                             ../orig/d.typ:394
-I:(7)
-*:_D_R_L98
-#                                                             ../orig/d.typ:395
-O:The black wizard quipping jovially flexed his muscles.
-Q: Press Y to continue, N to repeat, or Fkey12 to exit 
-N:_D_R_L98
-
-#                                                             ../orig/d.typ:396
-I:(8)
-*:_D_R_L99
-#                                                             ../orig/d.typ:397
-O:Will you pack my jugs of liquid veneer in five dozen boxes?
-Q: Press Y to continue, N to repeat, or Fkey12 to exit 
-N:_D_R_L99
-
-#                                                             ../orig/d.typ:398
-I:(9)
-*:_D_R_L100
-#                                                             ../orig/d.typ:399
-O:Could the wizard jinx quivering folks by magic yelps?
-Q: Press Y to continue, N to repeat, or Fkey12 to exit 
-N:_D_R_L100
-
-#                                                             ../orig/d.typ:400
-I:(10)
-*:_D_R_L101
-#                                                             ../orig/d.typ:401
-O:Brazen gazelles quickly examined the forward jeep.
-Q: Press Y to continue, N to repeat, or Fkey12 to exit 
-N:_D_R_L101
-
-#                                                             ../orig/d.typ:402
-I:(11)
-*:_D_R_L102
-#                                                             ../orig/d.typ:403
-O:The brown dog quickly jumped over the lazy fox.
-Q: Press Y to continue, N to repeat, or Fkey12 to exit 
-N:_D_R_L102
-
-#                                                             ../orig/d.typ:404
-I:(12)
-*:_D_R_L103
-#                                                             ../orig/d.typ:405
-O:Will the kind judge squelch the five or six brazen nymphs?
-Q: Press Y to continue, N to repeat, or Fkey12 to exit 
-N:_D_R_L103
-
-#                                                             ../orig/d.typ:406
-I:(13)
-*:_D_R_L104
-#                                                             ../orig/d.typ:407
-O:Mix zippy Kadota figs with quivering cranberry jelly.
-Q: Press Y to continue, N to repeat, or Fkey12 to exit 
-N:_D_R_L104
-
-#                                                             ../orig/d.typ:408
-I:(14)
-*:_D_R_L105
-#                                                             ../orig/d.typ:409
-O:The wives quickly jerked extra big pizzas from the stand.
-Q: Press Y to continue, N to repeat, or Fkey12 to exit 
-N:_D_R_L105
-
-#                                                             ../orig/d.typ:410
-I:(15)
-*:_D_R_L106
-#                                                             ../orig/d.typ:411
-O:Lisa quickly mixed the very big jar of new soap.
-Q: Press Y to continue, N to repeat, or Fkey12 to exit 
-N:_D_R_L106
-
-#                                                             ../orig/d.typ:412
-I:(16)
-*:_D_R_L107
-#                                                             ../orig/d.typ:413
-O:The major will fix a quiet cozy nook for the vexed, bad Gypsy.
-Q: Press Y to continue, N to repeat, or Fkey12 to exit 
-N:_D_R_L107
-
-#                                                             ../orig/d.typ:414
-I:(17)
-*:_D_R_L108
-#                                                             ../orig/d.typ:415
-O:Pairs of lazy knowing oxen came by quietly evading the jam.
-Q: Press Y to continue, N to repeat, or Fkey12 to exit 
-N:_D_R_L108
-
-#                                                             ../orig/d.typ:416
-I:(18)
-#                                                             ../orig/d.typ:417
-I:Juvenile zest for excitement whetted interest in parking by the quay.
-#                                                             ../orig/d.typ:418
-I:(19)
-*:_D_R_L109
-#                                                             ../orig/d.typ:419
-O:Put your big ax, shovel and quartz where Mike's fence joins ours.
-Q: Press Y to continue, N to repeat, or Fkey12 to exit 
-N:_D_R_L109
-
-#                                                             ../orig/d.typ:420
-I:(20)
-*:_D_R_L110
-#                                                             ../orig/d.typ:421
-O:The brawny jaguar held fast till the quaking Zouave victim expired.
-Q: Press Y to continue, N to repeat, or Fkey12 to exit 
-N:_D_R_L110
-
-G:_D_E_D14
-#------------------------------------------------------------------------------
-# Lesson series D jump tables
-#------------------------------------------------------------------------------
-*:_D_E_D1
-Q: Do you want to continue to lesson D2 [Y/N] ? 
-N:_D_MENU
-G:_D_M_D2
-*:_D_E_D2
-Q: Do you want to continue to lesson D3 [Y/N] ? 
-N:_D_MENU
-G:_D_M_D3
-*:_D_E_D3
-Q: Do you want to continue to lesson D4 [Y/N] ? 
-N:_D_MENU
-G:_D_M_D4
-*:_D_E_D4
-Q: Do you want to continue to lesson D5 [Y/N] ? 
-N:_D_MENU
-G:_D_M_D5
-*:_D_E_D5
-Q: Do you want to continue to lesson D6 [Y/N] ? 
-N:_D_MENU
-G:_D_M_D6
-*:_D_E_D6
-Q: Do you want to continue to lesson D7 [Y/N] ? 
-N:_D_MENU
-G:_D_M_D7
-*:_D_E_D7
-Q: Do you want to continue to lesson D8 [Y/N] ? 
-N:_D_MENU
-G:_D_M_D8
-*:_D_E_D8
-Q: Do you want to continue to lesson D9 [Y/N] ? 
-N:_D_MENU
-G:_D_M_D9
-*:_D_E_D9
-Q: Do you want to continue to lesson D10 [Y/N] ? 
-N:_D_MENU
-G:_D_M_D10
-*:_D_E_D10
-Q: Do you want to continue to lesson D11 [Y/N] ? 
-N:_D_MENU
-G:_D_M_D11
-*:_D_E_D11
-Q: Do you want to continue to lesson D12 [Y/N] ? 
-N:_D_MENU
-G:_D_M_D12
-*:_D_E_D12
-Q: Do you want to continue to lesson D13 [Y/N] ? 
-N:_D_MENU
-G:_D_M_D13
-*:_D_E_D13
-Q: Do you want to continue to lesson D14 [Y/N] ? 
-N:_D_MENU
-G:_D_M_D14
-*:_D_E_D14
-G:_D_MENU
-
-*:_D_M_D1
-B:                             Lesson D1
-K:12:_D_MENU
-G:_D_S_D1
-*:_D_M_D2
-B:                             Lesson D2
-K:12:_D_MENU
-G:_D_S_D2
-*:_D_M_D3
-B:                             Lesson D3
-K:12:_D_MENU
-G:_D_S_D3
-*:_D_M_D4
-B:                             Lesson D4
-K:12:_D_MENU
-G:_D_S_D4
-*:_D_M_D5
-B:                             Lesson D5
-K:12:_D_MENU
-G:_D_S_D5
-*:_D_M_D6
-B:                             Lesson D6
-K:12:_D_MENU
-G:_D_S_D6
-*:_D_M_D7
-B:                             Lesson D7
-K:12:_D_MENU
-G:_D_S_D7
-*:_D_M_D8
-B:                             Lesson D8
-K:12:_D_MENU
-G:_D_S_D8
-*:_D_M_D9
-B:                             Lesson D9
-K:12:_D_MENU
-G:_D_S_D9
-*:_D_M_D10
-B:                            Lesson D10
-K:12:_D_MENU
-G:_D_S_D10
-*:_D_M_D11
-B:                            Lesson D11
-K:12:_D_MENU
-G:_D_S_D11
-*:_D_M_D12
-B:                            Lesson D12
-K:12:_D_MENU
-G:_D_S_D12
-*:_D_M_D13
-B:                            Lesson D13
-K:12:_D_MENU
-G:_D_S_D13
-*:_D_M_D14
-B:                            Lesson D14
-K:12:_D_MENU
-G:_D_S_D14
-#------------------------------------------------------------------------------
-# Lesson series D menu
-#------------------------------------------------------------------------------
-*:_D_MENU
-*:_D_MENU_PAGE0
-B:                 Lesson selection menu - series D [page 1 of 2]
-K:1:_D_M_D1
-K:2:_D_M_D2
-K:3:_D_M_D3
-K:4:_D_M_D4
-K:5:_D_M_D5
-K:6:_D_M_D6
-K:7:_D_M_D7
-K:8:_D_M_D8
-K:9:_D_M_D9
-K:10:_D_M_D10
-K:11:_D_MENU_PAGE1
-K:12:_D_QEXIT
-T:The D series contains the following 14 lessons:
- :
- :        Fkey 1 - Lesson D1     The home row
- :        Fkey 2 - Lesson D2     Learning the Shift Key
- :        Fkey 3 - Lesson D3     Home Row and the Period
- :        Fkey 4 - Lesson D4     Upper Row and Essential Punctuation
- :        Fkey 5 - Lesson D5     Review
- :        Fkey 6 - Lesson D6     Learning the Lower Row
- :        Fkey 7 - Lesson D7     Practise
- :        Fkey 8 - Lesson D8     Practise
- :        Fkey 9 - Lesson D9     Practise
- :        Fkey10 - Lesson D10    Practise
- :
- :        Fkey11 - Next menu page...
- :        Fkey12 - Leave this lesson series
-Q: Please select a lesson, or Fkey12 to exit 
-G:_D_MENU_PAGE0
-*:_D_MENU_PAGE1
-B:                 Lesson selection menu - series D [page 2 of 2]
-K:1:_D_M_D11
-K:2:_D_M_D12
-K:3:_D_M_D13
-K:4:_D_M_D14
-K:5:NULL
-K:6:NULL
-K:7:NULL
-K:8:NULL
-K:9:NULL
-K:10:NULL
-K:11:_D_MENU_PAGE0
-K:12:_D_QEXIT
-T:The D series contains the following 14 lessons:
- :
- :        Fkey 1 - Lesson D11    Practise
- :        Fkey 2 - Lesson D12    Practise
- :        Fkey 3 - Lesson D13    Frequent words
- :        Fkey 4 - Lesson D14    Alphabetic sentences
- :
- :
- :
- :
- :
- :
- :
- :        Fkey11 - First menu page...
- :        Fkey12 - Leave this lesson series
-Q: Please select a lesson, or Fkey12 to exit 
-G:_D_MENU_PAGE1
-*:_D_QEXIT
-Q: Do you want to leave this lesson series? [Y/N] ? 
-N:_D_MENU
-G:_D_EXIT
-*:_D_EXIT
-#------------------------------------------------------------------------------
-# End of file d.typ
-G:__SERIESMENU
-#==============================================================================
-#==============================================================================
-*:__S_M_SERIES
-# Start of file m.typ
-#------------------------------------------------------------------------------
-# Series M
-#------------------------------------------------------------------------------
-G:_M_MENU
-*:_M_NO_MENU
-#------------------------------------------------------------------------------
-# Lesson M1
-#------------------------------------------------------------------------------
-*:M1
-*:_M_S_M1
-#                                                               ../orig/m.typ:3
-I:(1) Warming-Up Drill
-*:_M_R_L0
-#                                                               ../orig/m.typ:4
-O:If you can do so, will you kindly let us know by return mail.
-Q: Press Y to continue, N to repeat, or Fkey12 to exit 
-N:_M_R_L0
-
-#                                                               ../orig/m.typ:5
-I:(2) Continuous Copy
-*:_M_R_L1
-#                                                               ../orig/m.typ:6
-O:My totals were:  $2,309, $5,687, $3,498, $2,408, and $3,697.
-Q: Press Y to continue, N to repeat, or Fkey12 to exit 
-N:_M_R_L1
-
-#                                                               ../orig/m.typ:7
-I:(3)
-*:_M_R_L2
-#                                                               ../orig/m.typ:9
-O:A student may type 1 word per minute faster for each added
- :year of age: i.e., 13 to 14, to 15, to 16, to 17, to 18.
-Q: Press Y to continue, N to repeat, or Fkey12 to exit 
-N:_M_R_L2
-
-#                                                              ../orig/m.typ:10
-I:(4)
-*:_M_R_L3
-#                                                              ../orig/m.typ:13
-O:Often 25% of first-year students never do 25 words a minute.
- :Many second-year students can type about 45 words a minute.
- :More than 50% do not equal the practical rate of 50 words.
-Q: Press Y to continue, N to repeat, or Fkey12 to exit 
-N:_M_R_L3
-
-#                                                              ../orig/m.typ:14
-I:(5)
-*:_M_R_L4
-#                                                              ../orig/m.typ:18
-O:Why do we all thrill over sports?  Maybe it is the tireless
- :skill of the winner that we feel.  Ask the players.  They
- :may agree (Rice,* famous as a sports writer, said the cham-
- :pions all agreed) that skill is only part (50%) of it.
-Q: Press Y to continue, N to repeat, or Fkey12 to exit 
-N:_M_R_L4
-
-#                                                              ../orig/m.typ:19
-I:(6)
-*:_M_R_L5
-#                                                              ../orig/m.typ:24
-O:"When you step on the first tee," says the four-time gold
- :champion, Bobby Jones, "you know you can't afford to make
- :one careless slip."  A tired Bobby Jones (this was the way
- :Bobby told it to Rice) has stood on the 16th tee, leading
- :Smith by 18 strokes.
-Q: Press Y to continue, N to repeat, or Fkey12 to exit 
-N:_M_R_L5
-
-#                                                              ../orig/m.typ:25
-I:(7)
-*:_M_R_L6
-#                                                              ../orig/m.typ:29
-O:"Up to this point," says Bobby, "I had played 33 holes in 11
- :under par.  I believe it was the best golf I ever played in
- :my life.  But after easing up on the mental side I played
- :the last three holes in 5 over par."
-Q: Press Y to continue, N to repeat, or Fkey12 to exit 
-N:_M_R_L6
-
-#                                                              ../orig/m.typ:30
-I:(8)
-*:_M_R_L7
-#                                                              ../orig/m.typ:36
-O:In 1919 Babe Ruth shot into the records with 29 home runs.
- :Yet few know that the Babe worked five years in big games
- :before this start that led past Home Run #600.  You may
- :have cheered Jimmy Foxx and many another.  Yet you can still
- :picture the Babe after two strikes, smashing to the very
- :spot he had "called" a famous home run.
-Q: Press Y to continue, N to repeat, or Fkey12 to exit 
-N:_M_R_L7
-
-#                                                              ../orig/m.typ:37
-I:(9)
-*:_M_R_L8
-#                                                              ../orig/m.typ:45
-O:It is the effort against odds that thrills.  We feel these
- :drives that never let down.  We feel (this was the way Rice
- :put it) the champion forces himself into the winning frame of
- :mind.  Can the fast typist afford to do less?  A typist has
- :to face such days of "mental torture" too.  Some days he has
- :to force himself along.  He need not punish his machine.  He
- :must pull himself together (100%) to type his steady, smooth
- :way over all upsets.
-Q: Press Y to continue, N to repeat, or Fkey12 to exit 
-N:_M_R_L8
-
-#                                                              ../orig/m.typ:46
-I:(9A) Pointed Paragraph (m b)
-*:_M_R_L9
-#                                                              ../orig/m.typ:53
-P:     Men are bound to believe that business is bad in winter
- :months.  Maybe Mr. Smith remembers that most building became
- :better in September but both November and December seemed to
- :be much behind.  Monday morning my mail box became blocked
- :by urgent requests of many families that small-sized homes
- :be built.  Some jobs may begin to come now from the Chamber
- :of Commerce members.
-Q: Press Y to continue, N to repeat, or Fkey12 to exit 
-N:_M_R_L9
-
-#                                                              ../orig/m.typ:54
-I:(10) Rhythmic Review
-*:_M_R_L10
-#                                                              ../orig/m.typ:55
-O:I said, "Never promise to take much money to such places."
-Q: Press Y to continue, N to repeat, or Fkey12 to exit 
-N:_M_R_L10
-
-G:_M_E_M1
-#------------------------------------------------------------------------------
-# Lesson M2
-#------------------------------------------------------------------------------
-*:M2
-*:_M_S_M2
-#                                                              ../orig/m.typ:59
-I:(1) Warming-Up Drill
-*:_M_R_L11
-#                                                              ../orig/m.typ:60
-O:How do I lose if I read a book that doesn't have much in it?
-Q: Press Y to continue, N to repeat, or Fkey12 to exit 
-N:_M_R_L11
-
-#                                                              ../orig/m.typ:61
-I:(2) Balanced Keyboard Drill
-*:_M_R_L12
-#                                                              ../orig/m.typ:63
-O:non ana dis dia cle pan ard pur ern eer off age suf ame amb
- :ess ean ist ian cel apo col ary tra neo sur ity sub ele mis
-Q: Press Y to continue, N to repeat, or Fkey12 to exit 
-N:_M_R_L12
-
-#                                                              ../orig/m.typ:64
-I:(3) Four-letter words (a to d)
-*:_M_R_L13
-#                                                              ../orig/m.typ:81
-P:Dear Dan,
- :
- :     Yes, I came out of the corn, back to the city, both to
- :draw and to do copy on the new cars.  To date I am able to
- :put cash in the bank and bear a bill or two.  The new deed
- :has done it.
- :
- :     The city has been busy but cold for two days.  Dear baby
- :has been to see her best aunt.  A band came by the door.
- :Baby let the bird cage drop down with a blow.  The bird died.
- :Boys put its dead body deep in a dark card case.  Baby also
- :has a ball and blue book to drop.  I put the boat away.  Its
- :deck did burn, but I care not as it does not cost a cent.
- :
- :     Come, call on me at the club.
- :
- :Yours sincerely,
-Q: Press Y to continue, N to repeat, or Fkey12 to exit 
-N:_M_R_L13
-
-#                                                              ../orig/m.typ:82
-I:(4) Four-letter words (e to g)
-*:_M_R_L14
-#                                                              ../orig/m.typ:97
-P:Dear Bea,
- :
- :     I am glad you feel so for the farm in the East.  Even
- :as a girl of four or five I was ever so glad to find the
- :farm.  In my eyes it was all as good as gold.  Even my feet
- :felt good.  A girl can gain and grow fast on farm food and
- :the fine free air.  Why else did face and form grow full
- :and fair so fast?
- :
- :     On each foot of my farm I felt free from fear.  It
- :gave me my fill of fun.  I felt no fear of any fire in the
- :fall.  Now the fire is a fact and my farm is gone.  Give me
- :my full life, etc.  The game goes on.
- :
- :Yours sincerely,
-Q: Press Y to continue, N to repeat, or Fkey12 to exit 
-N:_M_R_L14
-
-#                                                              ../orig/m.typ:98
-I:(5) Four-letter words (h to l)
-*:_M_R_L15
-#                                                             ../orig/m.typ:119
-P:Dear Hal,
- :
- :     Just a line to say I am lost if I cannot fly.  I
- :have to keep on here.  I knew it was but a hope last May.
- :It was just my last idea in June.  Yet I held my head high
- :and did not lose hope.
- :
- :     Why not fly up in the air a half hour or less and
- :look at my lake and our home on the hill?  I left it late
- :last July with one item on my list.  Bill gave me half an
- :hour of help.  Like the lady of the lake I met the king.
- :Bill was a kind king, too.
- :
- :     To lead off into the air and see all our lake so
- :long and lots of land so low, was to live a high hour.  I
- :kept my hand at my ear so as to help hear.  In the air my
- :hair was a loss.  It did not kill me.  I have to fly to know
- :life can be less hard.  I like to hold on and help Bill.  I
- :love to fly.
- :
- :Yours sincerely,
-Q: Press Y to continue, N to repeat, or Fkey12 to exit 
-N:_M_R_L15
-
-G:_M_E_M2
-#------------------------------------------------------------------------------
-# Lesson M3
-#------------------------------------------------------------------------------
-*:M3
-*:_M_S_M3
-#                                                             ../orig/m.typ:123
-I:(1) Warming-Up Drill
-*:_M_R_L16
-#                                                             ../orig/m.typ:124
-O:He says he hasn't been very blue once in his two weeks here.
-Q: Press Y to continue, N to repeat, or Fkey12 to exit 
-N:_M_R_L16
-
-#                                                             ../orig/m.typ:125
-I:(2) Balanced Keyboard Drill
-*:_M_R_L17
-#                                                             ../orig/m.typ:127
-O:sus ase sis uni suc epi cor ory tri acy fic ify dom isk ism
- :ante than ance ling para less plea lent leas post rece cata
-Q: Press Y to continue, N to repeat, or Fkey12 to exit 
-N:_M_R_L17
-
-#                                                             ../orig/m.typ:128
-I:(3) Four-letter words (m to p)
-*:_M_R_L18
-#                                                             ../orig/m.typ:145
-P:Dear "Pie,"
- :
- :     I open most of my mail and meet the news.  I note that
- :you say Mrs. Page is a mere name but you met the Miss Page.
- :
- :     You must need the car.  Once the pass is open I can move
- :the car over to you.  Do you mind if I make it part of a nice
- :plan to meet Miss Page, too?  Mrs. Page was only a mile past
- :us.  Her son was my age and I made the mile at noon to play a
- :bit.  She paid us for milk.  She did not mean much to me, but
- :her son did.
- :
- :     Next we had more fun up the pass near the poor old No.
- :Nine mine.  I can mark many a mile we once ran.  I must mail
- :this note or I may miss the post.
- :
- :Yours sincerely,
-Q: Press Y to continue, N to repeat, or Fkey12 to exit 
-N:_M_R_L18
-
-#                                                             ../orig/m.typ:146
-I:(4) Four-letter words (r to s)
-*:_M_R_L19
-#                                                             ../orig/m.typ:166
-P:Dear Ross,
- :
- :     It is a real rain.  The road is so soft my car can but
- :roll, stop, and roll on.  Are you on the ship?  If I get as
- :far as the ship, can we sail in such a rain?  If we try to
- :sail, the ship is sure to rock or ride on one side.  If I get
- :sick, it is up to you to stay by and show us how to save the
- :ship.  Ann has some sort of song to sing in the rain.  She
- :said she sent it to you.
- :
- :     Did you read of our sale?  We set out a big sign.  Now
- :any sort of suit and any size seem to sell.  We are not rich
- :but we can soon step out or be sold out, if any such rate is
- :to rule.
- :
- :     Ann has not seen the ship as yet.  Rain or no rain, Ann
- :says to send her out.  All the rest of us say the same.  Can
- :you ring me in my room at the shop?
- :
- :Yours sincerely,
-Q: Press Y to continue, N to repeat, or Fkey12 to exit 
-N:_M_R_L19
-
-#                                                             ../orig/m.typ:167
-I:(5) Pointed Paragraph (i u)
-*:_M_R_L20
-#                                                             ../orig/m.typ:173
-P:     The public is quite unfair about airing quibbles over
- :house furniture and fruit juices for the university crew.
- :The alumni inquiry into the failure of equipment figures in
- :the issue.  The alumni attitude is useful but continues to
- :put a premium on a victorious crew.  Only genius can guide
- :this outfit uphill and build a suitable crew that won't quit.
-Q: Press Y to continue, N to repeat, or Fkey12 to exit 
-N:_M_R_L20
-
-#                                                             ../orig/m.typ:174
-I:(6) Pointed Paragraph (d s -)
-*:_M_R_L21
-#                                                             ../orig/m.typ:182
-P:     Students should be assisted in studying seated at their
- :desks; cross-questioned as to their needs and desires; ad-
- :vised to use up-to-date leads based on studies of standards.
- :By-products of student days, well-bred friends, kindness,
- :self-help, with good grades and degrees, are listed as far-
- :sighted aids.  In Dad's old-fashioned address to his co-
- :workers, he said sadly that ideas are missed less than first-
- :class friends and good-natured wishers.
-Q: Press Y to continue, N to repeat, or Fkey12 to exit 
-N:_M_R_L21
-
-G:_M_E_M3
-#------------------------------------------------------------------------------
-# Lesson M4
-#------------------------------------------------------------------------------
-*:M4
-*:_M_S_M4
-#                                                             ../orig/m.typ:186
-I:(1) Warming-Up Drill
-*:_M_R_L22
-#                                                             ../orig/m.typ:187
-O:Get any piece, since I can't guess the color he always used.
-Q: Press Y to continue, N to repeat, or Fkey12 to exit 
-N:_M_R_L22
-
-#                                                             ../orig/m.typ:188
-I:(2) Balanced Keyboard Drill
-*:_M_R_L23
-#                                                             ../orig/m.typ:190
-O:anti thin atic fast hypo ness your ther fore ship cial ible
- :ette hter here mber ough over eive with ived just ever mono
-Q: Press Y to continue, N to repeat, or Fkey12 to exit 
-N:_M_R_L23
-
-#                                                             ../orig/m.typ:191
-I:(3) Four-letter words (t to z)
-*:_M_R_L24
-#                                                             ../orig/m.typ:208
-P:Dear Tris,
- :
- :     It is so very warm at this time of year, I told my wife
- :that you and I wish to go west for a week or two.  Did I
- :tell you what a wind we had?  I went to town to vote for the
- :one man whom I want.  I took a well-used tire.  When it went
- :down on a bad turn, in the woods, I had to walk.  Then the
- :wind more than set in, and I had to wait by a wall.  It got
- :our old tree.
- :
- :     I saw two men and set them to work on the car, till
- :they told me it was no use.  If I were to turn it in, is it
- :true that you can take your car?  I want a wide view and I
- :want to talk with you.  Thus I wait upon your word.  Wire
- :yes if you will take this trip.
- :
- :Yours sincerely,
-Q: Press Y to continue, N to repeat, or Fkey12 to exit 
-N:_M_R_L24
-
-#                                                             ../orig/m.typ:209
-I:(4) Five-letter words (a to c)
-*:_M_R_L25
-#                                                             ../orig/m.typ:227
-P:Dear "Cab,"
- :
- :     Could you apply to the court to allow my claim as agent
- :for Mr. Blank?  I could bring in his books and see about his
- :bills.  If asked, he can cover the costs by checks on a bank
- :that did not break.
- :
- :     Will you allow your child to come alone to see me?  He
- :can have every apple he can carry.  By the way, being clean
- :and above board, you must be above bad cases, but you began
- :to bring in off-color cases after April.
- :
- :     I agree you do not cross the law, but why let men win
- :in a black cause on any basis?  Why not build up your cases
- :from among men of our own class?  Close the awful cases you
- :now carry along to court, and begin again.
- :
- :Sincerely yours,
-Q: Press Y to continue, N to repeat, or Fkey12 to exit 
-N:_M_R_L25
-
-#                                                             ../orig/m.typ:228
-I:(5) Pointed Paragraph (r t)
-*:_M_R_L26
-#                                                             ../orig/m.typ:236
-P:     In our motor party on the return trip an attractive
- :quartet first tried to tell thirty or forty short travel
- :stories.  By turns they transferred to the theater, to art
- :matters, to court trial stories.  In the latter a certain
- :doctor is hurt by a first truck, another truck is struck,
- :and three contractors are thrown to the street.  The girl's
- :strong brother has been hurt.  Further, there are arrests
- :and the sort of extra details that enter into true stories.
-Q: Press Y to continue, N to repeat, or Fkey12 to exit 
-N:_M_R_L26
-
-G:_M_E_M4
-#------------------------------------------------------------------------------
-# Lesson M5
-#------------------------------------------------------------------------------
-*:M5
-*:_M_S_M5
-#                                                             ../orig/m.typ:240
-I:(1) Warming-Up Drill
-*:_M_R_L27
-#                                                             ../orig/m.typ:241
-O:Some women who could write her won't raise a hand to help.
-Q: Press Y to continue, N to repeat, or Fkey12 to exit 
-N:_M_R_L27
-
-#                                                             ../orig/m.typ:242
-I:(2) Balanced Keyboard Drill
-*:_M_R_L28
-#                                                             ../orig/m.typ:244
-O:teen arch acle ward ence ency ease ster tele trix wise some
- :atte tter tion fold ount ancy auto ttle cule mony cion come
-Q: Press Y to continue, N to repeat, or Fkey12 to exit 
-N:_M_R_L28
-
-#                                                             ../orig/m.typ:245
-I:(3) Five-letter words (d to h)
-*:_M_R_L29
-#                                                             ../orig/m.typ:262
-P:Dear Fred,
- :
- :     I have dared to ask you for an extra favor on the first.
- :If you are not dated, I am to draft you to drive me by horse
- :or car up the grade to the field house at eight.  I guess you
- :have not heard fully about the great dance to be given by the
- :girls on the floor of the field house.
- :
- :     My hands have put fresh green goods on the walls.  Every
- :girl has a green dress, on its front a funny glass heart that
- :she gives as a favor.  The old folks can drive up early, eat
- :and drink and enjoy it all.  We will delay the dance till the
- :girls enter in a dozen files.  It would crush me to death if
- :an error were found in the plans.  Happy hours on earth are
- :never heavy.  Can you doubt that you are going?
- :
- :Sincerely yours,
-Q: Press Y to continue, N to repeat, or Fkey12 to exit 
-N:_M_R_L29
-
-#                                                             ../orig/m.typ:263
-I:(4) Five-letter words (i to p)
-*:_M_R_L30
-#                                                             ../orig/m.typ:283
-P:Dear Madam,
- :
- :     I have your two later notes of March 1.  Maybe it is a
- :large order for you to leave for the north in the month of
- :March.
- :
- :     Our place is miles away, but the real issue is that mu-
- :sic means much to us.  A night of music, even one piece of
- :music, has often meant more to me than my local paper and all
- :the power I have known.  If I can plant a love of music in all
- :parts of this place so that all who hear you sing can learn to
- :love it, it will mean more to me than money.
- :
- :     I never laugh at money, but isn't it plain in these
- :lines that price ought to be the least of all the items?  The
- :point is that our plans for your party are more important.  If
- :you read our other offer in the light of our love for music,
- :we might not seem so far away.
- :
- :Yours sincerely,
-Q: Press Y to continue, N to repeat, or Fkey12 to exit 
-N:_M_R_L30
-
-#                                                             ../orig/m.typ:284
-I:(5) Pointed Paragraph (u y)
-*:_M_R_L31
-#                                                             ../orig/m.typ:297
-P:     If truly quoted, you and Guy, mere youths, fly a con-
- :tinuous journey of thousands of miles yearly in your study
- :of numerous flying routes.  You say you were south in July
- :in the dry country conspicuous for yucca, but now you are
- :busy buying a quota of various useful items to supply your
- :outfit for the famous Yukon.  Yet I am suspicious when you
- :say this unusual survey is monotonous rather than glorious.
- :You should hurry surely to Vancouver for some delicious
- :yuletide fare.  It seems only yesterday that I was conscious
- :of being young and vigorous enough to fly my buoyant plane.
- :If you lucky boys are victorious over any unusually furious,
- :dangerous, or anxious double duty on this survey, write a
- :quotable account yourself for the Journal.
-Q: Press Y to continue, N to repeat, or Fkey12 to exit 
-N:_M_R_L31
-
-G:_M_E_M5
-#------------------------------------------------------------------------------
-# Lesson M6
-#------------------------------------------------------------------------------
-*:M6
-*:_M_S_M6
-#                                                             ../orig/m.typ:301
-I:(1) Warming-Up Drill
-*:_M_R_L32
-#                                                             ../orig/m.typ:302
-O:They were often too tired to be certain they heard the hour.
-Q: Press Y to continue, N to repeat, or Fkey12 to exit 
-N:_M_R_L32
-
-#                                                             ../orig/m.typ:303
-I:(2) Balanced Keyboard Drill
-*:_M_R_L33
-#                                                             ../orig/m.typ:305
-O:hood ight sion full ould able like ment ical tial ambi semi
- :hand part king itio hing tory ding enti ting thou ving very
-Q: Press Y to continue, N to repeat, or Fkey12 to exit 
-N:_M_R_L33
-
-#                                                             ../orig/m.typ:306
-I:(3) Five-letter words (q to s)
-*:_M_R_L34
-#                                                             ../orig/m.typ:326
-P:Dear Alice,
- :
- :     I shall start my river story since you have shown you like
- :my style.
- :
- :     The scene is a state in the South.  A sweet girl speaks of
- :the sound and sight of the river.  Seven men without shame raise
- :the stock sales and the boy tries to spend too much at the store.
- :In order to make a quiet and quick slide down the river, the men
- :seize the boat while the others, who are quite ready to serve the
- :girl, sleep.
- :
- :     It seems the girl has sense, for on a sheet of paper she
- :writes that her stock of gold is within reach from a round stone
- :under the small shade tree.  She does not quote the boy, but does
- :refer to the sorry end of his short study, and in her reply to his
- :folks she will state how the gold may still be spent in the right
- :way, which will stamp the story as real.
- :
- :Yours sincerely,
-Q: Press Y to continue, N to repeat, or Fkey12 to exit 
-N:_M_R_L34
-
-#                                                             ../orig/m.typ:327
-I:(4) Five-letter words (t to z)
-*:_M_R_L35
-#                                                             ../orig/m.typ:348
-P:Dear Mrs. White,
- :
- :     I wish to thank you for the words you wrote three weeks ago,
- :and I trust you will write again on the wrong and waste of war.
- :
- :     As I watch the wheels of events today, I think you value a
- :thing it has taken me a third of my years to see.  In its total
- :trade the world is one whole, and each part in touch with the
- :other at most times.
- :
- :     The usual farm woman won't see a trade table or understand
- :its terms, for she is tired with her efforts to train and teach
- :her young.  She has tried to throw her value into her home, which
- :to her is worth so much.  War can not be put under until these
- :women see there is but one world, which truly is their world.
- :
- :     Where will you be while the thick wheat is harvested?  If
- :not across the water, would you visit us, using your voice to
- :teach us these things?
- :
- :Yours sincerely,
-Q: Press Y to continue, N to repeat, or Fkey12 to exit 
-N:_M_R_L35
-
-#                                                             ../orig/m.typ:349
-I:(5) Pointed Paragraph (n m)
-*:_M_R_L36
-#                                                             ../orig/m.typ:357
-P:     Important dinner company in our small apartment was
- :not common, and November ninth mamma was solemn in manner.
- :The moment nine American gentlemen were announced, fun and
- :argument began.  I remember one ancient gentleman, manager
- :of much more income than mine, who was not solemn as imag-
- :ined, but funny and human, even if normal demand, planned
- :movements of modern machines to Canada, long term payments,
- :and columns of numbers meant much more to him than to me.
-Q: Press Y to continue, N to repeat, or Fkey12 to exit 
-N:_M_R_L36
-
-G:_M_E_M6
-#------------------------------------------------------------------------------
-# Lesson M7
-#------------------------------------------------------------------------------
-*:M7
-*:_M_S_M7
-#                                                             ../orig/m.typ:361
-I:(1) Warming-Up Drill
-*:_M_R_L37
-#                                                             ../orig/m.typ:362
-O:Though I don't seem to hear the doctor, I know he is early.
-Q: Press Y to continue, N to repeat, or Fkey12 to exit 
-N:_M_R_L37
-
-#                                                             ../orig/m.typ:363
-I:(2) Balanced Keyboard Drill
-*:_M_R_L38
-#                                                             ../orig/m.typ:364
-O:stat each ning ieve ring side nder emen turn embe llow ours
-Q: Press Y to continue, N to repeat, or Fkey12 to exit 
-N:_M_R_L38
-
-#                                                             ../orig/m.typ:365
-I:(3) Continuous Copy
-*:_M_R_L39
-#                                                             ../orig/m.typ:381
-P:Dear Mr. and Mrs. Blank,
- :
- :     Your son has not called on me.  If he is to become almost an
- :annual charge upon the county, the church will answer with action.
- :Yet, I am afraid his arrest can not assure his coming around and
- :asking us for advice.  Of course he has to appear before August.
- :He bought on credit, got behind in cash, and the amount became too
- :big.  I shall pay it.
- :
- :     You are an old couple, and I advise you to accept this.  Any-
- :way, he is not a common boy and must have a chance.  He always does
- :appear to anyone as fit.  I run across copies of his art.  I can
- :advise your son, attend to his credit, and try to help him arrive
- :at a change for the better.
- :
- :Sincerely yours,
-Q: Press Y to continue, N to repeat, or Fkey12 to exit 
-N:_M_R_L39
-
-#                                                             ../orig/m.typ:382
-I:(4) Six-letter words (d to k)
-*:_M_R_L40
-#                                                             ../orig/m.typ:400
-P:Dear Dick
- :
- :     I have a dollar.  I expect you to follow me and take dinner.
- :Friday I didn't have cash, but a friend of the family had enough
- :for both of us.
- :
- :     Father is having all the lot, except the garden, filled in
- :during the week.  Giving in to his desire, I intend to work the
- :ground.  Doctor says that my health is hardly an excuse, so I had
- :better decide to make an effort.  Indeed, I am driven either to
- :finish the work in the near future or pay to have it done.
- :
- :     I am hoping you will happen upon some kindly fellow to whom
- :a flower garden itself is fun, and inform me.  I shall direct him,
- :as the entire effect will lie in the way we handle the ground
- :plan.  Don't forget.
- :
- :Yours sincerely,
-Q: Press Y to continue, N to repeat, or Fkey12 to exit 
-N:_M_R_L40
-
-#                                                             ../orig/m.typ:401
-I:(5) Pointed Paragraph (q z)
-*:_M_R_L41
-#                                                             ../orig/m.typ:408
-P:     I quit the quiz when I saw the quantity of queer hazy
- :questions.  To seize lesser prizes required answers to a
- :dozen queries.  Only a quarter of the quotas qualified with
- :zest.  Many had zero when the quiz asked:  In what zones are
- :Brazil, Switzerland, Arizona, or Texas?  Zebras in our zoos
- :grow to what sizes?  Analyze and quote one great citizen's
- :query as to zeppelins.  Criticize the quality of jazz music.
-Q: Press Y to continue, N to repeat, or Fkey12 to exit 
-N:_M_R_L41
-
-G:_M_E_M7
-#------------------------------------------------------------------------------
-# Lesson M8
-#------------------------------------------------------------------------------
-*:M8
-*:_M_S_M8
-#                                                             ../orig/m.typ:412
-I:(1) Warming-Up Drill
-*:_M_R_L42
-#                                                             ../orig/m.typ:413
-O:At the last minute he wrote that he knew it was done again.
-Q: Press Y to continue, N to repeat, or Fkey12 to exit 
-N:_M_R_L42
-
-#                                                             ../orig/m.typ:414
-I:(2) Balanced Keyboard Drill
-*:_M_R_L43
-#                                                             ../orig/m.typ:415
-O:trans ition there lease craft hyper etter esque ceive where
-Q: Press Y to continue, N to repeat, or Fkey12 to exit 
-N:_M_R_L43
-
-#                                                             ../orig/m.typ:416
-I:(3) Six-letter words (l to r)
-*:_M_R_L44
-#                                                             ../orig/m.typ:437
-P:Dear Rollin,
- :
- :     I did notice a number of the pretty places I passed in
- :the air nearly two months ago, and I can at length locate
- :the best.  If prices remain rather low, I will not return
- :for any person or be prompt at orders.  I can play a record
- :or two, and not regret there is no report to be looked at.
- :I want to be myself and regard nature, not people.
- :
- :     To obtain this latter result is the proper reason for
- :making this quiet trip.  So far from the public, matter in
- :the papers will be old and market policy of little moment.
- :It will please me to have you with us longer than the others.
- :I was really living for the period when I would be placed with
- :you both.  Your mother has a lovely manner.  I am glad to
- :oblige so recent a member of our office, too.
- :
- :     This letter is being mailed Monday, and in two days we
- :shall go.
- :
- :Yours sincerely,
-Q: Press Y to continue, N to repeat, or Fkey12 to exit 
-N:_M_R_L44
-
-#                                                             ../orig/m.typ:438
-I:(4) Six-letter words (s to z)
-*:_M_R_L45
-#                                                             ../orig/m.typ:458
-P:Dear Sylvia,
- :
- :     I wonder if my sister talked to you on Sunday of the
- :thirty things we wanted to do this summer?  We were trying
- :all the spring season at school to secure a supply of sim-
- :ple but strong materials for a camp in the valley.
- :
- :     It struck me as we were taking a walk down the street
- :that we would surely be unable to do as we stated unless you
- :took a sudden notion to help.  It seemed to me on second
- :thought we should give thanks to you for giving tongue to our
- :wishes last winter, for you turned the folks in our favor.
- :
- :     My sister was saying that girls from twenty states had
- :signed our pledge, so we are united.  Though this is off the
- :subject, I saw a pretty yellow and silver dress within a win-
- :dow on Main Street toward our corner.  Would you think it
- :suitable for the writer?
- :
- :Sincerely yours,
-Q: Press Y to continue, N to repeat, or Fkey12 to exit 
-N:_M_R_L45
-
-#                                                             ../orig/m.typ:470
-I:(5) Pointed Paragraph (a q)
-*:_M_R_L45A
-#
-P:     I acquired a bequest from a quizzical Quaker.  How
- :to apply it was a quandary.  As a quasi artist, I began in
- :Albuquerque to make a quantity of plaques of chance Indian
- :acquaintances.  My masquerade as an artist of quality in
- :that quaint land of quite Spanish art and adobe was adequate
- :and equally unique.  Squeezed in quiet, antiquated adobe
- :quarters, I began quickly and without qualms to qualify as
- :an artist.  After quarrels and questions over my queer tech-
- :niques, I acquired my quota of opaque plaques.
-Q: Press Y to continue, N to repeat, or Shft+Fkey10 to exit 
-N:_M_R_L45A
-
-G:_M_E_M8
-#------------------------------------------------------------------------------
-# Lesson M9
-#------------------------------------------------------------------------------
-*:M9
-*:_M_S_M9
-#                                                             ../orig/m.typ:471
-I:(1) Warming-Up Drill
-*:_M_R_L46
-#                                                             ../orig/m.typ:472
-O:Instead of having us tonight he is making ready for Tuesday.
-Q: Press Y to continue, N to repeat, or Fkey12 to exit 
-N:_M_R_L46
-
-#                                                             ../orig/m.typ:473
-I:(2) Balanced Keyboard Drill
-*:_M_R_L47
-#                                                             ../orig/m.typ:474
-O:stead ation retro geous contr ourse ultra super ntion under
-Q: Press Y to continue, N to repeat, or Fkey12 to exit 
-N:_M_R_L47
-
-#                                                             ../orig/m.typ:475
-I:(3) Continuous Copy; Seven-letter words (a-f)
-*:_M_R_L48
-#                                                             ../orig/m.typ:498
-P:Dear Annabel,
- :
- :     My brother and his college friends in the factory decided to arrange an
- :evening exactly as in the old days.  After calling us, they arrived and we
- :carried out the idea.  We used an old college catalog and each girl had an
- :old college dress.
- :
- :     Further to advance the evening, my brother advised us of an old address
- :near the freight yard where certain college boys brought this or that article
- :and were allowed a few dollars.  As we went in, an old man came a step farther,
- :fell forward and against me.  Brother charged him.  Will you believe this care-
- :ful account I enclose?  Between brother and me lay this old man who did seem
- :dead.  I can't express my feeling.  His head was covered with marks of blows.
- :
- :     Already we were anxious to go.  Yet his safe was open, as if to furnish us
- :the old books with the many expense charges against the college boys.  When I
- :looked to see who of our company were in them, I read one balance after another
- :paid from the old country to My Dearest Son.  You are correct if you guess we
- :now ran, because we did.  What follows?  Today's paper doesn't have a line.
- :
- :Yours sincerely,
-Q: Press Y to continue, N to repeat, or Fkey12 to exit 
-N:_M_R_L48
-
-#                                                             ../orig/m.typ:499
-I:(4) Seven-letter words (g to o)
-*:_M_R_L49
-#                                                             ../orig/m.typ:518
-P:Dear Mrs. White,
- :
- :     I have been holding on, but this January I am getting out.
- :My wife herself may have told you of our opening.  However, I go
- :at ten o'clock this morning, and your husband is still out.  He is
- :to do my general work himself, and may not imagine there is any
- :measure of justice in that.  We married men are obliged to do as
- :ordered.
- :
- :     I am leaving a hundred matters.  He has my opinion on each.
- :Tell him the minutes of the last meeting of the members are on my
- :table.  Tell him I haven't an invoice, but have instead an October
- :bill, for our new machine parts.  He may mention this item to the
- :manager, as he has neither its history nor my letters of inquiry.
- :
- :     I find nothing else to include.  We shall miss you greatly,
- :and we shall be looking for you at our new home.
- :
- :Yours sincerely,
-Q: Press Y to continue, N to repeat, or Fkey12 to exit 
-N:_M_R_L49
-
-#                                                             ../orig/m.typ:519
-I:(4) Seven-letter words (p to z)
-*:_M_R_L50
-#                                                             ../orig/m.typ:539
-P:Dear Patrick,
- :
- :     I realize that this letter I am sending may subject you to some trouble.
- :I am writing tonight without waiting to go through various reports on our
- :present program.  If I had thought that you would be willing to give me an
- :extra day, perhaps I would have come myself.
- :
- :     As soon as this letter has reached you, and you have finished reading the
- :several items about which I have written, I hope you can give extra working
- :time to my request for special records. These items will suggest a new plan as
- :I picture it.  I shall add them to this note.
- :
- :     It is my purpose to prepare a fast station-to-station service that should
- :be in running order soon.  I suppose it could be started next month.  Let me
- :ask, also, whether we could receipt each payment, as we receive it, on a
- :regular form similar to those in the package shipped you Tuesday.  I am pleased
- :with your showing.  You have been like a soldier on duty in any and all
- :weather.  Success is your teacher.
- :
- :With my best regards,
-Q: Press Y to continue, N to repeat, or Fkey12 to exit 
-N:_M_R_L50
-
-G:_M_E_M9
-#------------------------------------------------------------------------------
-# Lesson M10
-#------------------------------------------------------------------------------
-*:M10
-*:_M_S_M10
-#                                                             ../orig/m.typ:542
-B:				Lesson M10
-#                                                             ../orig/m.typ:543
-I:(1) Warming-Up Drill
-*:_M_R_L51
-#                                                             ../orig/m.typ:544
-O:He would separate the whole business and buy out their half.
-Q: Press Y to continue, N to repeat, or Fkey12 to exit 
-N:_M_R_L51
-
-#                                                             ../orig/m.typ:545
-I:(2) Balanced Keyboard Drill
-*:_M_R_L52
-#                                                             ../orig/m.typ:546
-O:inter itude circu gious right cious after extra micro sible
-Q: Press Y to continue, N to repeat, or Fkey12 to exit 
-N:_M_R_L52
-
-#                                                             ../orig/m.typ:547
-I:(3) Continuous Copy; Eight-letter words(a to m)
-*:_M_R_L53
-#                                                             ../orig/m.typ:566
-P:Dear Thomas,
- :
- :     First, I consider of definite interest anything from
- :the business of as good a customer as you.  As director of
- :our division, I am to continue handling building material.
- :My judgment on all the evidence, which I send herewith
- :enclosed in a second envelope, is one of complete approval.
- :Let me have a contract covering the earliest delivery date.
- :Are you advising me what increase in your discount is to be
- :expected?
- :
- :     Second, this forenoon I saw your son and he told me of
- :his marriage in February.  Although you had not entirely
- :finished the addition to your lake house by last December,
- :couldn't you exchange it, as it is, for my mountain home?
- :Your son said that his young wife wants to live on this
- :mountain to which all your children seem so attached.
- :
- :Sincerely yours,
-Q: Press Y to continue, N to repeat, or Fkey12 to exit 
-N:_M_R_L53
-
-#
-I:(4) Eight-letter words (n to z)
-*:_M_R_L54
-#                                                             ../orig/m.typ:587
-P:Dear Nathan,
- :
- :     My last shipment has probably been received, for the purchase was made
- :Thursday.  Tomorrow is Saturday, a pleasant day, for I go on my vacation.
- :
- :     Do you remember an original idea you proposed last November relative
- :to planning for some shipping from my property?  My neighbor recently
- :called it a plan in a thousand, and we must get together so that I can
- :thank you properly.  This is a national as well as personal question,
- :and I am trusting that you will be thinking that it is possible for you to
- :help put it into practice.
- :
- :     If you can possibly separate yourself from teachers and your
- :teaching position sometime soon, plan to get a standard car and
- :whatever else is required for the trip.  The car would also be a
- :pleasure after you return to New York.  May I persuade you in re-
- :plying to state that you are planning to come promptly?  We will
- :make you one of the officers of the shipping business.
- :
- :Your sincerely,
-Q: Press Y to continue, N to repeat, or Fkey12 to exit 
-N:_M_R_L54
-
-#                                                             ../orig/m.typ:588
-I:(5) Nine-letter words (a to i)
-*:_M_R_L55
-#                                                             ../orig/m.typ:605
-P:Dear Son,
- :
- :     I am beginning this afternoon to give my immediate attention
- :to a Christmas that should be beautiful.  I have addressed, to be
- :forwarded and delivered in good condition, some new equipment
- :according to your wish.  I note, too, that your committee met.
- :What these gentlemen said is important and may be a sort of in-
- :surance that your plan does not fail.  I certainly would not want
- :to duplicate for you the kind of education given me.
- :
- :     Be different by following more than one new idea, including
- :some of your own.  If you can carefully take fair advantage of
- :every available condition, everybody should accept you cordially,
- :as answering to the character of a gentleman.  Mother is enclosing
- :a few lines.
- :
- :Yours sincerely,
-Q: Press Y to continue, N to repeat, or Fkey12 to exit 
-N:_M_R_L55
-
-G:_M_E_M10
-#------------------------------------------------------------------------------
-# Lesson M11
-#------------------------------------------------------------------------------
-*:M11
-*:_M_S_M11
-#                                                             ../orig/m.typ:608
-B:				Lesson M11
-#                                                             ../orig/m.typ:609
-I:(1) Warming-Up Drill
-*:_M_R_L56
-#                                                             ../orig/m.typ:610
-O:My country friend is beginning to believe trouble is coming.
-Q: Press Y to continue, N to repeat, or Fkey12 to exit 
-N:_M_R_L56
-
-#                                                             ../orig/m.typ:611
-I:(2) Balanced Keyboard Drill
-*:_M_R_L57
-#                                                             ../orig/m.typ:612
-O:thing pleas ought quest ember count ditio state recei ction
-Q: Press Y to continue, N to repeat, or Fkey12 to exit 
-N:_M_R_L57
-
-#                                                             ../orig/m.typ:613
-I:(3) Nine-letter words (j to z)
-*:_M_R_L58
-#                                                             ../orig/m.typ:633
-P:Dear Gertrude,
- :
- :     This letter has no reference to shipments which you have
- :so kindly purchased from me in the past.  Rather, as you are
- :returning to this territory by September, our president has re-
- :quested me as secretary to ask that you make a statement before
- :our club the first Wednesday.
- :
- :     Let me say something of the questions we have been receiving
- :for the year.  Recently I read that the old principle today still
- :applies.  It is wonderful what our new knowledge has surprised us
- :into regarding as necessary for ourselves--sometimes things not
- :even mentioned yesterday.
- :
- :     Will you therefore represent this new deal and present the
- :situation to us in principle, sincerely, as you see it?  Other-
- :wise, if you cannot make this provision now, I shall be glad to
- :call upon you later.
- :
- :Yours sincerely,
-Q: Press Y to continue, N to repeat, or Fkey12 to exit 
-N:_M_R_L58
-
-#                                                             ../orig/m.typ:634
-I:(4) Ten-letter words (a to z)
-*:_M_R_L59
-#                                                             ../orig/m.typ:655
-P:Dear Alex,
- :
- :     We are especially interested in the settlement run by a
- :new department at the University.  We appreciate the importance
- :of its additional study to understand impossible conditions in
- :the poor parts of our city, and its use for adjustment of some
- :particular boy or girl.  Have you read our memorandum in this
- :connection?
- :
- :     Our city is absolutely too big.  With the automobile we can
- :distribute every person to his home along a line, our wide road,
- :run far out from the city.  The difference between country and
- :city grows less and less, in accordance with such use of the auto-
- :mobile.
- :
- :     Concerning our collection of any remittance from you, this
- :would serve to form a Conference which would develop everything
- :that can make city governments bring full and rich experience
- :to all.
- :
- :Sincerely yours,
-Q: Press Y to continue, N to repeat, or Fkey12 to exit 
-N:_M_R_L59
-
-#                                                             ../orig/m.typ:656
-I:(5) Eleven- to fourteen-letter words (a to z)
-*:_M_R_L60
-#                                                             ../orig/m.typ:673
-P:Dear Sir,
- :
- :     I wish to acknowledge the recent interesting correspondence
- :from your office on the very considerable requirements of the new
- :law that have to do with any unfortunate advertising that might
- :appear in my papers.
- :
- :     Our association also has appreciated both your instructions
- :and the opportunity for prompt examination and understanding of
- :the new arrangement, particularly its application to all informa-
- :tion given the public about merchandise for sale.  This has been
- :a real convenience in our consideration of the entire proposition.
- :
- :     I want to assure you that our co-operation under the new law
- :will be satisfactory in every way.
- :
- :Yours respectfully,
-Q: Press Y to continue, N to repeat, or Fkey12 to exit 
-N:_M_R_L60
-
-#                                                             ../orig/m.typ:674
-I:(6) Pointed Paragraph (l r z)
-*:_M_R_L61
-#                                                             ../orig/m.typ:687
-P:     The JOURNAL learned that the relatives on their arrival in
- :April had already referred the trouble to lawyers.  Their early re-
- :turn surprises me.  As to the children themselves, the older girls
- :are personally agreeable, slender, and certainly full of zest.  They
- :travel yearly and already are familiar with the world.  Their father
- :was a quizzical old man who fairly idolized them.  His will leaves
- :them very nearly a half-million dollars.  Only the earlier, first
- :will is very irregular.  I've already quizzed them about the real
- :hazards of quarrels over legal prizes of similar size.  From their
- :replies I've realized slowly that the girls are all right.  It
- :really amazes me that even persons like ourselves promptly seize
- :upon some hostile relative's version of an earlier will, which
- :should be recognized easily as false.
-Q: Press Y to continue, N to repeat, or Fkey12 to exit 
-N:_M_R_L61
-
-G:_M_E_M11
-#------------------------------------------------------------------------------
-# Lesson series M jump tables
-#------------------------------------------------------------------------------
-*:_M_E_M1
-Q: Do you want to continue to lesson M2 [Y/N] ? 
-N:_M_MENU
-G:_M_M_M2
-*:_M_E_M2
-Q: Do you want to continue to lesson M3 [Y/N] ? 
-N:_M_MENU
-G:_M_M_M3
-*:_M_E_M3
-Q: Do you want to continue to lesson M4 [Y/N] ? 
-N:_M_MENU
-G:_M_M_M4
-*:_M_E_M4
-Q: Do you want to continue to lesson M5 [Y/N] ? 
-N:_M_MENU
-G:_M_M_M5
-*:_M_E_M5
-Q: Do you want to continue to lesson M6 [Y/N] ? 
-N:_M_MENU
-G:_M_M_M6
-*:_M_E_M6
-Q: Do you want to continue to lesson M7 [Y/N] ? 
-N:_M_MENU
-G:_M_M_M7
-*:_M_E_M7
-Q: Do you want to continue to lesson M8 [Y/N] ? 
-N:_M_MENU
-G:_M_M_M8
-*:_M_E_M8
-Q: Do you want to continue to lesson M9 [Y/N] ? 
-N:_M_MENU
-G:_M_M_M9
-*:_M_E_M9
-Q: Do you want to continue to lesson M10 [Y/N] ? 
-N:_M_MENU
-G:_M_M_M10
-*:_M_E_M10
-Q: Do you want to continue to lesson M11 [Y/N] ? 
-N:_M_MENU
-G:_M_M_M11
-*:_M_E_M11
-G:_M_MENU
-
-*:_M_M_M1
-B:                             Lesson M1
-K:12:_M_MENU
-G:_M_S_M1
-*:_M_M_M2
-B:                             Lesson M2
-K:12:_M_MENU
-G:_M_S_M2
-*:_M_M_M3
-B:                             Lesson M3
-K:12:_M_MENU
-G:_M_S_M3
-*:_M_M_M4
-B:                             Lesson M4
-K:12:_M_MENU
-G:_M_S_M4
-*:_M_M_M5
-B:                             Lesson M5
-K:12:_M_MENU
-G:_M_S_M5
-*:_M_M_M6
-B:                             Lesson M6
-K:12:_M_MENU
-G:_M_S_M6
-*:_M_M_M7
-B:                             Lesson M7
-K:12:_M_MENU
-G:_M_S_M7
-*:_M_M_M8
-B:                             Lesson M8
-K:12:_M_MENU
-G:_M_S_M8
-*:_M_M_M9
-B:                             Lesson M9
-K:12:_M_MENU
-G:_M_S_M9
-*:_M_M_M10
-B:                            Lesson M10
-K:12:_M_MENU
-G:_M_S_M10
-*:_M_M_M11
-B:                            Lesson M11
-K:12:_M_MENU
-G:_M_S_M11
-#------------------------------------------------------------------------------
-# Lesson series M menu
-#------------------------------------------------------------------------------
-*:_M_MENU
-*:_M_MENU_PAGE0
-B:                 Lesson selection menu - series M [page 1 of 2]
-K:1:_M_M_M1
-K:2:_M_M_M2
-K:3:_M_M_M3
-K:4:_M_M_M4
-K:5:_M_M_M5
-K:6:_M_M_M6
-K:7:_M_M_M7
-K:8:_M_M_M8
-K:9:_M_M_M9
-K:10:_M_M_M10
-K:11:_M_MENU_PAGE1
-K:12:_M_QEXIT
-T:The M series contains the following 11 lessons:
- :
- :        Fkey 1 - Lesson M1     Practise
- :        Fkey 2 - Lesson M2     Practise
- :        Fkey 3 - Lesson M3     Practise
- :        Fkey 4 - Lesson M4     Practise
- :        Fkey 5 - Lesson M5     Practise
- :        Fkey 6 - Lesson M6     Practise
- :        Fkey 7 - Lesson M7     Practise
- :        Fkey 8 - Lesson M8     Practise
- :        Fkey 9 - Lesson M9     Practise
- :        Fkey10 - Lesson M10    Practise
- :
- :        Fkey11 - Next menu page...
- :        Fkey12 - Leave this lesson series
-Q: Please select a lesson, or Fkey12 to exit 
-G:_M_MENU_PAGE0
-*:_M_MENU_PAGE1
-B:                 Lesson selection menu - series M [page 2 of 2]
-K:1:_M_M_M11
-K:2:NULL
-K:3:NULL
-K:4:NULL
-K:5:NULL
-K:6:NULL
-K:7:NULL
-K:8:NULL
-K:9:NULL
-K:10:NULL
-K:11:_M_MENU_PAGE0
-K:12:_M_QEXIT
-T:The M series contains the following 11 lessons:
- :
- :        Fkey 1 - Lesson M11    Practise
- :
- :
- :
- :
- :
- :
- :
- :
- :
- :
- :        Fkey11 - First menu page...
- :        Fkey12 - Leave this lesson series
-Q: Please select a lesson, or Fkey12 to exit 
-G:_M_MENU_PAGE1
-*:_M_QEXIT
-Q: Do you want to leave this lesson series? [Y/N] ? 
-N:_M_MENU
-G:_M_EXIT
-*:_M_EXIT
-#------------------------------------------------------------------------------
-# End of file m.typ
-G:__SERIESMENU
-#==============================================================================
-#==============================================================================
-*:__S_S_SERIES
-# Start of file s.typ
-#------------------------------------------------------------------------------
-# Series S
-#------------------------------------------------------------------------------
-G:_S_MENU
-*:_S_NO_MENU
-#------------------------------------------------------------------------------
-# Lesson S1
-#------------------------------------------------------------------------------
-*:S1
-*:_S_S_S1
-*:_S_R_L0
-#                                                              ../orig/s.typ:14
-T:			SPEED PRACTICE SERIES
- :
- :The S series of lessons is designed to help you improve your typing speed
- :and accuracy.  It is assumed that you have already learned how to touch
- :type either from a previous course in touch typing or from the T series of
- :these lessons.
- :
- :You can use this series even if you do not know how to touch type.  But, it is
- :recommended that you at least learn to touch type most of the letters of the
- :alphabet before starting this series.  When you encounter a letter or symbol
- :which you have not learned, you will have to look.  This is a very bad habit to
- :get into and is hard to break.  (You needn't worry if you only need to glance
- :down for unusual keys, like the dollar sign.)
-Q: Press Y to continue, or Fkey12 to exit 
-N:_S_R_L0
-
-*:_S_R_L1
-#                                                              ../orig/s.typ:30
-T:			   RULES OF THE GAME
- :
- :I will display a paragraph on the screen.  You should then type the entire
- :paragraph as quickly and as accurately as possible.   As you type each
- :character, I will immediately check it for accuracy.  If it was right, I won't
- :do anything.  But, if you made a mistake, I will beep and write that letter in
- :inverse video (a black character on a white background).  You can ignore the
- :error and continue going; or, you can backup and correct it with the DELETE
- :or BACKSPACE keys.  (I will still count it as an error though.)
- :
- :I will also be timing you.  From the time you type the first character until
- :you hit the final carriage return, my stop watch will be going.  At the
- :end of the paragraph, I will tell you your rating (in words-per-minute).
- :
- :If you made too many mistakes, try the next paragraph slower.  If you made no
- :mistakes or only one or two, try the next one faster.
-Q: Press Y to continue, or Fkey12 to exit 
-N:_S_R_L1
-
-#                                                              ../orig/s.typ:31
-I:First, a quick warm-up.
-*:_S_R_L2
-#                                                              ../orig/s.typ:32
-P:The quick brown fox jumped over the lazy dogs.
-Q: Press Y to continue, N to repeat, or Fkey12 to exit 
-N:_S_R_L2
-
-#                                                              ../orig/s.typ:33
-I:Once more:
-*:_S_R_L3
-#                                                              ../orig/s.typ:34
-P:The quick brown fox jumped over the lazy dogs.
-Q: Press Y to continue, N to repeat, or Fkey12 to exit 
-N:_S_R_L3
-
-#                                                              ../orig/s.typ:35
-I:If the cursor is on a blank line, type return to skip it
-*:_S_R_L4
-#                                                              ../orig/s.typ:48
-P:Dear Sirs:
- :
- :I have just purchased a Heathkit H89 computer system and would
- :like to order two boxes of diskettes for it.  This system uses
- :5 1/4 inch, hard-sectored, ten-sector, single-sided, single-
- :density diskettes.
- :
- :Enclosed is my check for $45.00.  Please rush this order, as I
- :can not use my system before they arrive.
- :
- :Sincerely,
- :
- :Mr. Smith
-Q: Press Y to continue, N to repeat, or Fkey12 to exit 
-N:_S_R_L4
-
-*:_S_R_L5
-#                                                              ../orig/s.typ:61
-P:Dear Sirs:
- :
- :Thank you for sending the diskettes so promptly.  How-
- :ever, the diskettes which you sent are for soft-sectored
- :drives.  As I stated in my original letter my system
- :accepts only ten-sector, hard-sectored diskettes.
- :
- :I will return these two boxes as soon as I receive the
- :correct ones.
- :
- :Sincerely,
- :
- :Mr. Smith
-Q: Press Y to continue, N to repeat, or Fkey12 to exit 
-N:_S_R_L5
-
-*:_S_R_L6
-#                                                              ../orig/s.typ:76
-P:Dear Mr. Smith:
- :
- :Thank you for informing us that the diskettes which you pur-
- :chased from us are not satisfactory.  We are sorry for the
- :inconvenience you have been caused in this transaction.
- :
- :We shall be glad to replace the diskettes you now have or to
- :allow you to select a different brand.  If you will let us know
- :your wishes we shall be glad to give the matter our immediate
- :attention.
- :
- :We hope you will give us the opportunity to prove to you that
- :this incident is most unusual and that we do strive to render
- :to our customers an efficient and courteous service at all
- :times.
-Q: Press Y to continue, N to repeat, or Fkey12 to exit 
-N:_S_R_L6
-
-G:_S_E_S1
-#------------------------------------------------------------------------------
-# Lesson S2
-#------------------------------------------------------------------------------
-*:S2
-*:_S_S_S2
-*:_S_R_L7
-#                                                              ../orig/s.typ:83
-T:
- :In this lesson we will practice some quotes by some famous (and not
- :so famous) people.
-Q: Press Y to continue, or Fkey12 to exit 
-N:_S_R_L7
-
-#                                                              ../orig/s.typ:84
-I:Marcus Aurelius
-*:_S_R_L8
-#                                                              ../orig/s.typ:85
-P:A man can live well even in a palace.
-Q: Press Y to continue, N to repeat, or Fkey12 to exit 
-N:_S_R_L8
-
-#                                                              ../orig/s.typ:86
-I:Ralph Waldo Emerson
-*:_S_R_L9
-#                                                              ../orig/s.typ:87
-P:My chief want in life is someone who shall make me do what I can.
-Q: Press Y to continue, N to repeat, or Fkey12 to exit 
-N:_S_R_L9
-
-#                                                              ../orig/s.typ:88
-I:Elizabeth Barrett Browning
-*:_S_R_L10
-#                                                              ../orig/s.typ:90
-P:No man can be called friendless when he has God and the
- :companionship of good books.
-Q: Press Y to continue, N to repeat, or Fkey12 to exit 
-N:_S_R_L10
-
-#                                                              ../orig/s.typ:91
-I:Ralph Waldo Emerson
-*:_S_R_L11
-#                                                              ../orig/s.typ:92
-P:I like the silent church before the service begins better than any preaching.
-Q: Press Y to continue, N to repeat, or Fkey12 to exit 
-N:_S_R_L11
-
-#                                                              ../orig/s.typ:93
-I:George Washington
-*:_S_R_L12
-#                                                              ../orig/s.typ:94
-P:True friendship is a plant of slow growth.
-Q: Press Y to continue, N to repeat, or Fkey12 to exit 
-N:_S_R_L12
-
-#                                                              ../orig/s.typ:95
-I:Aristotle
-*:_S_R_L13
-#                                                              ../orig/s.typ:96
-P:There is a foolish corner in the brain of the wisest men.
-Q: Press Y to continue, N to repeat, or Fkey12 to exit 
-N:_S_R_L13
-
-#                                                              ../orig/s.typ:97
-I:Goethe
-*:_S_R_L14
-#                                                              ../orig/s.typ:98
-P:Tell me what you are busy about, and I will tell you what you are.
-Q: Press Y to continue, N to repeat, or Fkey12 to exit 
-N:_S_R_L14
-
-#                                                              ../orig/s.typ:99
-I:Gelett Burgess
-*:_S_R_L15
-#                                                             ../orig/s.typ:101
-P:If in the last few years you haven't discarded a major opinion or
- :acquired a new one, check your pulse.  You may be dead.
-Q: Press Y to continue, N to repeat, or Fkey12 to exit 
-N:_S_R_L15
-
-#                                                             ../orig/s.typ:102
-I:James B. Conant
-*:_S_R_L16
-#                                                             ../orig/s.typ:104
-P:Democracy is a small hard core of common agreement, surrounded
- :by a rich variety of individual differences.
-Q: Press Y to continue, N to repeat, or Fkey12 to exit 
-N:_S_R_L16
-
-#                                                             ../orig/s.typ:105
-I:Albert Einstein
-*:_S_R_L17
-#                                                             ../orig/s.typ:106
-P:I never think of the future.  It comes soon enough.
-Q: Press Y to continue, N to repeat, or Fkey12 to exit 
-N:_S_R_L17
-
-#                                                             ../orig/s.typ:107
-I:Harry S. Truman
-*:_S_R_L18
-#                                                             ../orig/s.typ:109
-P:Men often mistake notoriety for fame, and would rather be
- :remarked for their vices than not be noticed at all.
-Q: Press Y to continue, N to repeat, or Fkey12 to exit 
-N:_S_R_L18
-
-#                                                             ../orig/s.typ:110
-I:Will Rogers
-*:_S_R_L19
-#                                                             ../orig/s.typ:112
-P:I could study all my life and not think up half the amount
- :of funny things they can think of in one session of Congress.
-Q: Press Y to continue, N to repeat, or Fkey12 to exit 
-N:_S_R_L19
-
-#                                                             ../orig/s.typ:113
-I:Ralph Waldo Emerson
-*:_S_R_L20
-#                                                             ../orig/s.typ:114
-P:Hospitality consists in a little fire, a little food and an immense quiet.
-Q: Press Y to continue, N to repeat, or Fkey12 to exit 
-N:_S_R_L20
-
-#                                                             ../orig/s.typ:115
-I:H. L. Mencken
-*:_S_R_L21
-#                                                             ../orig/s.typ:116
-P:Puritanism is the haunting fear that someone, somewhere, may be happy.
-Q: Press Y to continue, N to repeat, or Fkey12 to exit 
-N:_S_R_L21
-
-#                                                             ../orig/s.typ:117
-I:William James
-*:_S_R_L22
-#                                                             ../orig/s.typ:118
-P:When you have to make a choice and don't make it, that is in itself a choice.
-Q: Press Y to continue, N to repeat, or Fkey12 to exit 
-N:_S_R_L22
-
-#                                                             ../orig/s.typ:119
-I:James Holt McGravran.
-*:_S_R_L23
-#                                                             ../orig/s.typ:121
-P:There is a way of transferring funds that is even faster
- :than electronic banking.  It is called marriage.
-Q: Press Y to continue, N to repeat, or Fkey12 to exit 
-N:_S_R_L23
-
-#                                                             ../orig/s.typ:122
-I:Woody Allen
-*:_S_R_L24
-#                                                             ../orig/s.typ:123
-P:Showing up is 80 percent of life.
-Q: Press Y to continue, N to repeat, or Fkey12 to exit 
-N:_S_R_L24
-
-#                                                             ../orig/s.typ:124
-I:Robert Frost
-*:_S_R_L25
-#                                                             ../orig/s.typ:125
-P:A poem begins in delight and ends in wisdom.
-Q: Press Y to continue, N to repeat, or Fkey12 to exit 
-N:_S_R_L25
-
-#                                                             ../orig/s.typ:126
-I:Louis Pasteur
-*:_S_R_L26
-#                                                             ../orig/s.typ:128
-P:When I approach a child, he inspires in me two sentiments:  tenderness
- :for what he is, and respect for what he may become.
-Q: Press Y to continue, N to repeat, or Fkey12 to exit 
-N:_S_R_L26
-
-G:_S_E_S2
-#------------------------------------------------------------------------------
-# Lesson S3
-#------------------------------------------------------------------------------
-*:S3
-*:_S_S_S3
-*:_S_R_L27
-#                                                             ../orig/s.typ:134
-T:
- :In this lesson you will be given several excerpts from the classics.
- :Take your time and type them carefully.
-Q: Press Y to continue, or Fkey12 to exit 
-N:_S_R_L27
-
-#                                                             ../orig/s.typ:135
-I:A Christmas Carol, Stave One, Marley's Ghost
-*:_S_R_L28
-#                                                             ../orig/s.typ:151
-P:Now, it is a fact, that there was nothing at all par-
- :ticular about the knocker on the door, except that it
- :was very large.  It is also a fact, that Scrooge had
- :seen it, night and morning, during his whole residence
- :in that place; also that Scrooge has as little of what
- :is called fancy about him as any man in the city of
- :London, even including--which is a bold word--the
- :corporation, aldermen, and livery.  Let it also be
- :borne in mind that Scrooge had not bestowed one
- :thought on Marley, since his last mention of his
- :seven year's dead partner that afternoon.  And then
- :let any man explain to me, if he can, how it happened
- :that Scrooge, having his key in the lock of the door,
- :saw in the knocker, without its undergoing any inter-
- :mediate process of change--not a knocker, but Mar-
- :ley's face.
-Q: Press Y to continue, N to repeat, or Fkey12 to exit 
-N:_S_R_L28
-
-#                                                             ../orig/s.typ:152
-I:Gulliver's Travels, Chapter One, A Voyage to Lilliput
-*:_S_R_L29
-#                                                             ../orig/s.typ:167
-P:When I awaked it was just daylight.  I attempted to rise, but I
- :found my arms and legs were strongly fastened on each side to
- :the ground; and my hair, which was long and thick, tied to the
- :ground in the same manner.  I likewise felt several slender
- :ligatures across my body, from my armpits to my thighs.  I
- :could only look upward; the sun began to grow hot, and the
- :light offended my eyes.  I heard a confused noise about me;
- :but in the posture I lay could see nothing except the sky.  In a
- :little time I felt something alive moving on my left leg,
- :which, advancing gently forward over my breast, came almost up
- :to my chin; when bending my eyes downward as much as I could, I
- :perceived it to be a human creature not six inches high, with a
- :bow and arrow in his hands, and a quiver at his back.  In the
- :mean time I felt at least forty more of the same kind (as I
- :conjectured) following the first.
-Q: Press Y to continue, N to repeat, or Fkey12 to exit 
-N:_S_R_L29
-
-#                                                             ../orig/s.typ:168
-I:Treasure Island, Chapter IV, "The Sea Chest", by Stevenson.
-*:_S_R_L30
-#                                                             ../orig/s.typ:182
-P:I lost no time, of course, in telling my mother all that
- :I knew, and perhaps should have told her long before,
- :and we saw ourselves at once in a difficult and dangerous
- :position.  Some of the man's money--if he had any--was
- :certainly due to us; but it was not likely that our
- :captain's shipmates, above all the two specimens seen by
- :me, Black Dog and the blind beggar, would be inclined to
- :give up their booty in payment of the dead man's debts.
- :The captain's order to mount at once and ride for Dr.
- :Livesey would have left my mother alone and unprotected,
- :which was not to be thought of.  Indeed, it seemed
- :impossible for either of us to remain much longer in the
- :house:  the fall of coals in the kitchen grate, the very
- :ticking of the clock, filled us with alarms.
-Q: Press Y to continue, N to repeat, or Fkey12 to exit 
-N:_S_R_L30
-
-#                                                             ../orig/s.typ:183
-I:Treasure Island, Chapter IV, "The Sea Chest", by Stevenson.
-*:_S_R_L31
-#                                                             ../orig/s.typ:194
-P:The neighborhood, to our ears, seemed haunted by
- :approaching footsteps; and what between the dead
- :body of the captain on the parlor floor, and the thought
- :of that detestable blind beggar hovering near at hand,
- :and ready to return, there were moments when, as the
- :saying goes, I jumped in my skin for terror.  Something
- :must speedily be resolved upon; and it occurred to us at
- :last to go forth together and seek help in the neighbor-
- :ing hamlet.  No sooner said than done.  Bareheaded as we
- :were, we ran out at once in the gathering evening and
- :the frosty fog.
-Q: Press Y to continue, N to repeat, or Fkey12 to exit 
-N:_S_R_L31
-
-G:_S_E_S3
-#------------------------------------------------------------------------------
-# Lesson S4
-#------------------------------------------------------------------------------
-*:S4
-*:_S_S_S4
-*:_S_R_L32
-#                                                             ../orig/s.typ:202
-T:
- :In this lesson you will be given several soliloquies from
- :Shakespeare's plays.  The spelling and punctuation are
- :quite hard.  Take your time and type them carefully.
-Q: Press Y to continue, or Fkey12 to exit 
-N:_S_R_L32
-
-#                                                             ../orig/s.typ:203
-I:Romeo and Juliet, Act II, Scene II (Capulet's Garden).
-*:_S_R_L33
-#                                                             ../orig/s.typ:216
-P:But, soft! what light through yonder window breaks?
- :It is the east, and Juliet is the sun!--
- :Arise, fair sun, and kill the envious moon,
- :Who is already sick and pale with grief,
- :That thou her maid art far more fair than she:
- :Be not her maid, since she is envious;
- :Her vestal livery is but sick and green,
- :And none but fools do wear it; cast it off.--
- :It is my lady; O, it is my love!
- :O, that she knew she were!--
- :She speaks, yet she says nothing:  what of that?
- :Her eye discourses, I will answer it.--
- :I am too bold, 'tis not to me she speaks:
-Q: Press Y to continue, N to repeat, or Fkey12 to exit 
-N:_S_R_L33
-
-*:_S_R_L34
-#                                                             ../orig/s.typ:227
-P:Two of the fairest stars in all the heaven,
- :Having some business, do entreat her eyes
- :To twinkle in their spheres till they return.
- :What if her eyes were there, they in her head?
- :The brightness of her cheek would shame those stars,
- :As daylight doth a lamp; her eyes in heaven
- :Would through the airy region stream so bright
- :That birds would sing, and think it were not night.--
- :See how she leans her cheek upon her hand!
- :O, that I were a glove upon that hand,
- :That I might touch that cheek!
-Q: Press Y to continue, N to repeat, or Fkey12 to exit 
-N:_S_R_L34
-
-#                                                             ../orig/s.typ:228
-I:Julius Caesar, Act III, Scene II (The Forum).
-*:_S_R_L35
-#                                                             ../orig/s.typ:243
-P:Friends, Romans, countrymen, lend me your ears;
- :I come to bury Caesar, not to praise him.
- :The evil that men do lives after them;
- :The good is oft interred with their bones;
- :So let it be with Caesar:  The noble Brutus
- :Hath told you Caesar was ambitious:
- :If it were so, it was a grievous fault;
- :And grievously hath Caesar answer'd it.
- :Here, under leave of Brutus and the rest,--
- :For Brutus is an honourable man;
- :So are they all, all honourable men,--
- :Come I to speak in Caesar's funeral.
- :He was my friend, faithful and just to me;
- :But Brutus says he was ambitious;
- :And Brutus is an honourable man.
-Q: Press Y to continue, N to repeat, or Fkey12 to exit 
-N:_S_R_L35
-
-*:_S_R_L36
-#                                                             ../orig/s.typ:255
-P:He hath brought many captives home to Rome.
- :Whose ransoms did the general coffers fill:
- :Did this in Caesar seem ambitious?
- :When that the poor have cried, Caesar hath wept:
- :Ambition should be made of sterner stuff:
- :Yet Brutus says he was ambitious;
- :And Brutus is an honourable man.
- :You all did see that on the Lupercal
- :I thrice presented him a kingly crown,
- :Which he did thrice refuse:  was this ambition?
- :Yet Brutus says he was ambitious;
- :And, sure, he is an honourable man.
-Q: Press Y to continue, N to repeat, or Fkey12 to exit 
-N:_S_R_L36
-
-*:_S_R_L37
-#                                                             ../orig/s.typ:263
-P:I speak not to disprove what Brutus spoke,
- :But here I am to speak what I do know.
- :You all did love him once,--not without cause:
- :What cause withholds you, then, to mourn for him?
- :O judgement, thou art fled to brutish beasts,
- :And men have lost their reason!--Bear with me;
- :My heart is in the coffin there with Caesar,
- :And I must pause till it come back to me.
-Q: Press Y to continue, N to repeat, or Fkey12 to exit 
-N:_S_R_L37
-
-#                                                             ../orig/s.typ:264
-I:The Merchant of Venice, Act IV, Scene I (A Court of Justice).
-*:_S_R_L38
-#                                                             ../orig/s.typ:273
-P:The quality of mercy is not strain'd;
- :It droppeth as the gentle rain from heaven
- :Upon the place beneath: it is twice bless'd;
- :It blesseth him that gives and him that takes:
- :'Tis mightiest in the mightiest; it becomes
- :The throned monarch better than his crown;
- :His sceptre shows the force of temporal power,
- :The attribute to awe and majesty,
- :Wherein doth sit the dread and fear of kings;
-Q: Press Y to continue, N to repeat, or Fkey12 to exit 
-N:_S_R_L38
-
-*:_S_R_L39
-#                                                             ../orig/s.typ:286
-P:But mercy is above this scepter'd sway,--
- :It is enthroned in the heart of kings,
- :It is an attribute to God himself;
- :And earthly power doth then show likest God's
- :When mercy seasons justice.  Therefore, Jew,
- :Though justice be thy plea consider this--
- :That in the course of justice none of us
- :Should see salvation: we do pray for mercy;
- :And that same prayer doth teach us all to render
- :The deeds of mercy.  I have spoke thus much
- :To mitigate the justice of thy plea;
- :Which if thou follow, this strict court of Venice
- :Must needs give sentence 'gainst the merchant there.
-Q: Press Y to continue, N to repeat, or Fkey12 to exit 
-N:_S_R_L39
-
-G:_S_E_S4
-#------------------------------------------------------------------------------
-# Lesson series S jump tables
-#------------------------------------------------------------------------------
-*:_S_E_S1
-Q: Do you want to continue to lesson S2 [Y/N] ? 
-N:_S_MENU
-G:_S_M_S2
-*:_S_E_S2
-Q: Do you want to continue to lesson S3 [Y/N] ? 
-N:_S_MENU
-G:_S_M_S3
-*:_S_E_S3
-Q: Do you want to continue to lesson S4 [Y/N] ? 
-N:_S_MENU
-G:_S_M_S4
-*:_S_E_S4
-G:_S_MENU
-
-*:_S_M_S1
-B:                             Lesson S1
-K:12:_S_MENU
-G:_S_S_S1
-*:_S_M_S2
-B:                             Lesson S2
-K:12:_S_MENU
-G:_S_S_S2
-*:_S_M_S3
-B:                             Lesson S3
-K:12:_S_MENU
-G:_S_S_S3
-*:_S_M_S4
-B:                             Lesson S4
-K:12:_S_MENU
-G:_S_S_S4
-#------------------------------------------------------------------------------
-# Lesson series S menu
-#------------------------------------------------------------------------------
-*:_S_MENU
-*:_S_MENU_PAGE0
-B:                 Lesson selection menu - series S
-K:1:_S_M_S1
-K:2:_S_M_S2
-K:3:_S_M_S3
-K:4:_S_M_S4
-K:5:NULL
-K:6:NULL
-K:7:NULL
-K:8:NULL
-K:9:NULL
-K:10:NULL
-K:11:NULL
-K:12:_S_QEXIT
-T:The S series contains the following 4 lessons:
- :
- :        Fkey 1 - Lesson S1     Speed tests
- :        Fkey 2 - Lesson S2     Speed tests
- :        Fkey 3 - Lesson S3     Speed tests
- :        Fkey 4 - Lesson S4     Speed tests
- :
- :
- :
- :
- :
- :
- :
- :
- :        Fkey12 - Leave this lesson series
-Q: Please select a lesson, or Fkey12 to exit 
-G:_S_MENU_PAGE0
-*:_S_QEXIT
-Q: Do you want to leave this lesson series? [Y/N] ? 
-N:_S_MENU
-G:_S_EXIT
-*:_S_EXIT
-#------------------------------------------------------------------------------
-# End of file s.typ
-G:__SERIESMENU
-#==============================================================================
-#==============================================================================
-*:__S_N_SERIES
-# Start of file n.typ
-#------------------------------------------------------------------------------
-# Series N
-#------------------------------------------------------------------------------
-G:_N_MENU
-*:_N_NO_MENU
-#------------------------------------------------------------------------------
-# Lesson N1
-#------------------------------------------------------------------------------
-*:N1
-*:_N_S_N1
-*:_N_R_L0
-#                                                              ../orig/n.typ:21
-T:
- :			Numeric Keypad Lessons
- :
- :The N series lessons are provided for practice with the numeric keys available
- :on the H89/H19 terminal.  You do not need to know how to touch type on the
- :standard keyboard in order to learn touch typing on a calculator keypad.  So,
- :you can begin this series right away.
- :
- :When entering numeric values, accuracy is usually more important than speed.
- :Take these lessons very slowly.  Speed will come naturally later.
- :
- :As with the standard keypad, you must start in the HOME position.  Place the
- :first three fingers of your right hand over the 4, 5, and 6 keys of the keypad.
- :(Your thumb and fifth finger are not used.)  Your fingers should be poised just
- :over the keys gently brushing them.  Use the thumb or any finger of your left
- :hand for other keys, such as the SPACE bar.
- :
- :After entering each line, hit the ENTER key with the 6-finger (the third finger
- :of your right hand).  Immediately return your finger to the 6 key.  It is very
- :important that you bring the finger back without looking.
-Q: Press Y to continue, or Fkey12 to exit 
-N:_N_R_L0
-
-#                                                              ../orig/n.typ:22
-I:Use your third finger only.
-*:_N_R_L1
-#                                                              ../orig/n.typ:23
-O:666666
-Q: Press Y to continue, N to repeat, or Fkey12 to exit 
-N:_N_R_L1
-
-#                                                              ../orig/n.typ:24
-I:Use your second finger for the 5.
-*:_N_R_L2
-#                                                              ../orig/n.typ:25
-O:6565656
-Q: Press Y to continue, N to repeat, or Fkey12 to exit 
-N:_N_R_L2
-
-#                                                              ../orig/n.typ:26
-I:Use your first finger for the 4.
-*:_N_R_L3
-#                                                              ../orig/n.typ:27
-O:666444555444666
-Q: Press Y to continue, N to repeat, or Fkey12 to exit 
-N:_N_R_L3
-
-#                                                              ../orig/n.typ:28
-I:Now let's try several lines.
-*:_N_R_L4
-#                                                              ../orig/n.typ:36
-P:666444666
- :444555666
- :555444555
- :666444666
- :646464646
- :656565656
- :445566555
- :456456456
-Q: Press Y to continue, N to repeat, or Fkey12 to exit 
-N:_N_R_L4
-
-#                                                              ../orig/n.typ:37
-I:Use your second finger for the period.
-*:_N_R_L5
-#                                                              ../orig/n.typ:38
-O:555...555
-Q: Press Y to continue, N to repeat, or Fkey12 to exit 
-N:_N_R_L5
-
-*:_N_R_L6
-#                                                              ../orig/n.typ:43
-P:5.54.45.56.6
- :444.555
- :45.56.6
- :64.65.4
- :54.65.4
-Q: Press Y to continue, N to repeat, or Fkey12 to exit 
-N:_N_R_L6
-
-*:_N_R_L7
-#                                                              ../orig/n.typ:48
-P:445566.654
- :654456.546
- :546546.564
- :554466.645
- :555444.666
-Q: Press Y to continue, N to repeat, or Fkey12 to exit 
-N:_N_R_L7
-
-#                                                              ../orig/n.typ:49
-I:Use your first finger for the 1-key.
-*:_N_R_L8
-#                                                              ../orig/n.typ:50
-O:444111444.444111444
-Q: Press Y to continue, N to repeat, or Fkey12 to exit 
-N:_N_R_L8
-
-*:_N_R_L9
-#                                                              ../orig/n.typ:55
-P:111.444
- :414.141
- :456.546
- :415.164
- :541.146
-Q: Press Y to continue, N to repeat, or Fkey12 to exit 
-N:_N_R_L9
-
-#                                                              ../orig/n.typ:56
-I:Now, let's review the keys we've learned.
-*:_N_R_L10
-#                                                              ../orig/n.typ:57
-O:444555666111...555444666111
-Q: Press Y to continue, N to repeat, or Fkey12 to exit 
-N:_N_R_L10
-
-*:_N_R_L11
-#                                                              ../orig/n.typ:66
-P:414.564
- :546.145
- :546.145
- :644.146
- :615.645
- :564.145
- :546.164
- :111.555
- :514.651
-Q: Press Y to continue, N to repeat, or Fkey12 to exit 
-N:_N_R_L11
-
-G:_N_E_N1
-#------------------------------------------------------------------------------
-# Lesson N2
-#------------------------------------------------------------------------------
-*:N2
-*:_N_S_N2
-#                                                              ../orig/n.typ:69
-I:First, let's review the keys from lesson 1.
-*:_N_R_L12
-#                                                              ../orig/n.typ:70
-O:444.555.666.111.6541.6541
-Q: Press Y to continue, N to repeat, or Fkey12 to exit 
-N:_N_R_L12
-
-#                                                              ../orig/n.typ:71
-I:Use your 5-finger for the 2 key.
-*:_N_R_L13
-#                                                              ../orig/n.typ:72
-O:555222555.525.525.525
-Q: Press Y to continue, N to repeat, or Fkey12 to exit 
-N:_N_R_L13
-
-*:_N_R_L14
-#                                                              ../orig/n.typ:79
-P:45.25
- :52.52
- :62.62
- :22.22
- :51.12
- :12.52
- :24.42
-Q: Press Y to continue, N to repeat, or Fkey12 to exit 
-N:_N_R_L14
-
-#                                                              ../orig/n.typ:80
-I:Use your 6-finger for the 3 key.
-*:_N_R_L15
-#                                                              ../orig/n.typ:81
-O:666333666.636.636
-Q: Press Y to continue, N to repeat, or Fkey12 to exit 
-N:_N_R_L15
-
-*:_N_R_L16
-#                                                              ../orig/n.typ:88
-P:456.123
- :321.654
- :666.333
- :323.353
- :343.313
- :353.363
- :313.434
-Q: Press Y to continue, N to repeat, or Fkey12 to exit 
-N:_N_R_L16
-
-*:_N_R_L17
-#                                                              ../orig/n.typ:97
-P:12.33
- :45.33
- :65.35
- :12.35
- :65.25
- :25.63
- :43.53
- :13.36
- :34.31
-Q: Press Y to continue, N to repeat, or Fkey12 to exit 
-N:_N_R_L17
-
-#                                                              ../orig/n.typ:98
-I:Use your 4-finger for the zero.
-*:_N_R_L18
-#                                                              ../orig/n.typ:99
-O:444000444.401.410
-Q: Press Y to continue, N to repeat, or Fkey12 to exit 
-N:_N_R_L18
-
-*:_N_R_L19
-#                                                             ../orig/n.typ:100
-O:410.020.030.040.060.104
-Q: Press Y to continue, N to repeat, or Fkey12 to exit 
-N:_N_R_L19
-
-*:_N_R_L20
-#                                                             ../orig/n.typ:106
-P:12.00
- :23.00
- :51.50
- :46.25
- :54.00
- :13.04
-Q: Press Y to continue, N to repeat, or Fkey12 to exit 
-N:_N_R_L20
-
-#                                                             ../orig/n.typ:107
-I:Use your 5-finger for the 8-key.
-*:_N_R_L21
-#                                                             ../orig/n.typ:108
-O:555888555.852.258
-Q: Press Y to continue, N to repeat, or Fkey12 to exit 
-N:_N_R_L21
-
-*:_N_R_L22
-#                                                             ../orig/n.typ:109
-O:585.080.808.818.282
-Q: Press Y to continue, N to repeat, or Fkey12 to exit 
-N:_N_R_L22
-
-*:_N_R_L23
-#                                                             ../orig/n.typ:115
-P:81.05
- :84.80
- :88.88
- :58.28
- :80.18
- :28.38
-Q: Press Y to continue, N to repeat, or Fkey12 to exit 
-N:_N_R_L23
-
-#                                                             ../orig/n.typ:116
-I:Use your 6-finger for the 9-key.
-*:_N_R_L24
-#                                                             ../orig/n.typ:117
-O:666999666.393.696
-Q: Press Y to continue, N to repeat, or Fkey12 to exit 
-N:_N_R_L24
-
-*:_N_R_L25
-#                                                             ../orig/n.typ:118
-O:595.989.696.393.295
-Q: Press Y to continue, N to repeat, or Fkey12 to exit 
-N:_N_R_L25
-
-*:_N_R_L26
-#                                                             ../orig/n.typ:126
-P:.91
- :.90
- :.94
- :.95
- :.96
- :.93
- :.90
- :.95
-Q: Press Y to continue, N to repeat, or Fkey12 to exit 
-N:_N_R_L26
-
-#                                                             ../orig/n.typ:127
-I:And, the last number is 7. (Use your 4-finger for it.)
-*:_N_R_L27
-#                                                             ../orig/n.typ:128
-O:444777444.0147.7410
-Q: Press Y to continue, N to repeat, or Fkey12 to exit 
-N:_N_R_L27
-
-*:_N_R_L28
-#                                                             ../orig/n.typ:129
-O:767.737.797.727.707.717
-Q: Press Y to continue, N to repeat, or Fkey12 to exit 
-N:_N_R_L28
-
-*:_N_R_L29
-#                                                             ../orig/n.typ:130
-O:1234567890.1234567890
-Q: Press Y to continue, N to repeat, or Fkey12 to exit 
-N:_N_R_L29
-
-*:_N_R_L30
-#                                                             ../orig/n.typ:140
-P:17.19
- :71.70
- :19.37
- :57.07
- :71.37
- :27.72
- :37.73
- :76.67
- :45.17
- :70.07
-Q: Press Y to continue, N to repeat, or Fkey12 to exit 
-N:_N_R_L30
-
-*:_N_R_L31
-#                                                             ../orig/n.typ:149
-P:75856
- :87237
- :21570
- :24870
- :47258
- :21573
- :21573
- :21584
- :35827
-Q: Press Y to continue, N to repeat, or Fkey12 to exit 
-N:_N_R_L31
-
-G:_N_E_N2
-#------------------------------------------------------------------------------
-# Lesson N3
-#------------------------------------------------------------------------------
-*:N3
-*:_N_S_N3
-#                                                             ../orig/n.typ:152
-I:First, let's review all the numbers.
-*:_N_R_L32
-#                                                             ../orig/n.typ:153
-O:1234567890.0987654321
-Q: Press Y to continue, N to repeat, or Fkey12 to exit 
-N:_N_R_L32
-
-*:_N_R_L33
-#                                                             ../orig/n.typ:154
-O:12.34.56.78.90.10.29.38.47.57
-Q: Press Y to continue, N to repeat, or Fkey12 to exit 
-N:_N_R_L33
-
-*:_N_R_L34
-#                                                             ../orig/n.typ:165
-P:123.654
- :212.658
- :908.000
- :285.080
- :288.381
- :398.813
- :286.187
- :924.156
- :684.028
- :354.459
- :321.840
-Q: Press Y to continue, N to repeat, or Fkey12 to exit 
-N:_N_R_L34
-
-*:_N_R_L35
-#                                                             ../orig/n.typ:178
-P:12345
- :35840
- :25874
- :93682
- :71489
- :31265
- :97824
- :28617
- :39715
- :17935
- :28460
- :52846
- :28469
-Q: Press Y to continue, N to repeat, or Fkey12 to exit 
-N:_N_R_L35
-
-*:_N_R_L36
-#                                                             ../orig/n.typ:187
-P:1.00
- :2.05
- :3.50
- :4.52
- :5.81
- :6.95
- :7.00
- :8.45
- :9.50
-Q: Press Y to continue, N to repeat, or Fkey12 to exit 
-N:_N_R_L36
-
-*:_N_R_L37
-#                                                             ../orig/n.typ:195
-P:879.359
- :286.498
- :357.159
- :654.852
- :159.357
- :571.392
- :284.293
- :231.879
-Q: Press Y to continue, N to repeat, or Fkey12 to exit 
-N:_N_R_L37
-
-*:_N_R_L38
-#                                                             ../orig/n.typ:203
-P:100.200
- :258.246
- :369.741
- :123.987
- :582.714
- :239.900
- :273.194
- :372.973
-Q: Press Y to continue, N to repeat, or Fkey12 to exit 
-N:_N_R_L38
-
-#                                                             ../orig/n.typ:204
-I:Use any finger of your left hand for the SPACE bar.
-*:_N_R_L39
-#                                                             ../orig/n.typ:205
-O:111 222 333 444 555 666 777 888 999 000
-Q: Press Y to continue, N to repeat, or Fkey12 to exit 
-N:_N_R_L39
-
-*:_N_R_L40
-#                                                             ../orig/n.typ:211
-P:123 654 879 264
- :128 364 928 187
- :987 234 681 287
- :357 159 671 077
- :350 950 137 940
- :320 487 364 197
-Q: Press Y to continue, N to repeat, or Fkey12 to exit 
-N:_N_R_L40
-
-*:_N_R_L41
-#                                                             ../orig/n.typ:220
-P:82.01 35
- :28.50 12
- :50.00 79
- :40.25 37
- :82.50 19
- :99.95 61
- :12.95 87
- :40.00 55
- :64.50 99
-Q: Press Y to continue, N to repeat, or Fkey12 to exit 
-N:_N_R_L41
-
-G:_N_E_N3
-#------------------------------------------------------------------------------
-# Lesson series N jump tables
-#------------------------------------------------------------------------------
-*:_N_E_N1
-Q: Do you want to continue to lesson N2 [Y/N] ? 
-N:_N_MENU
-G:_N_M_N2
-*:_N_E_N2
-Q: Do you want to continue to lesson N3 [Y/N] ? 
-N:_N_MENU
-G:_N_M_N3
-*:_N_E_N3
-G:_N_MENU
-
-*:_N_M_N1
-B:                             Lesson N1
-K:12:_N_MENU
-G:_N_S_N1
-*:_N_M_N2
-B:                             Lesson N2
-K:12:_N_MENU
-G:_N_S_N2
-*:_N_M_N3
-B:                             Lesson N3
-K:12:_N_MENU
-G:_N_S_N3
-#------------------------------------------------------------------------------
-# Lesson series N menu
-#------------------------------------------------------------------------------
-*:_N_MENU
-*:_N_MENU_PAGE0
-B:                 Lesson selection menu - series N
-K:1:_N_M_N1
-K:2:_N_M_N2
-K:3:_N_M_N3
-K:4:NULL
-K:5:NULL
-K:6:NULL
-K:7:NULL
-K:8:NULL
-K:9:NULL
-K:10:NULL
-K:11:NULL
-K:12:_N_QEXIT
-T:The N series contains the following 3 lessons:
- :
- :        Fkey 1 - Lesson N1     4 5 . 6 1
- :        Fkey 2 - Lesson N2     2 3 0 8 9 7
- :        Fkey 3 - Lesson N3     Practise
- :
- :
- :
- :
- :
- :
- :
- :
- :
- :        Fkey12 - Leave this lesson series
-Q: Please select a lesson, or Fkey12 to exit 
-G:_N_MENU_PAGE0
-*:_N_QEXIT
-Q: Do you want to leave this lesson series? [Y/N] ? 
-N:_N_MENU
-G:_N_EXIT
-*:_N_EXIT
-#------------------------------------------------------------------------------
-# End of file n.typ
-G:__SERIESMENU
-#==============================================================================
-#==============================================================================
-# Series menu
-#==============================================================================
-*:__SERIESMENU
-K:1:__S_Q_SERIES
-K:2:__S_R_SERIES
-K:3:__S_T_SERIES
-K:4:__S_V_SERIES
-K:5:__S_U_SERIES
-K:6:__S_D_SERIES
-K:7:__S_M_SERIES
-K:8:__S_S_SERIES
-K:9:__S_N_SERIES
-K:10:NULL
-K:11:__MENUHELP
-K:12:__SERIESQEXIT
-*:__SERIESMENU_DISP
-B:                       Series selection menu
-T:The following 9 lesson series are available:
- :
- :        Fkey 1 - Series Q     Quick QWERTY course (Q1 - Q5)
- :        Fkey 2 - Series R     Long QWERTY course  (R1 - R14)
- :        Fkey 3 - Series T     QWERTY touch typing (T1 - T16)
- :        Fkey 4 - Series V     Yet Another QWERTY  (V1 - V19)
- :        Fkey 5 - Series U     QWERTY Review       (U1 - U13)
- :        Fkey 6 - Series D     Dvorak touch typing (D1 - D14)
- :        Fkey 7 - Series M     Typing drills       (M1 - M11)
- :        Fkey 8 - Series S     Speed drills        (S1 - S4)
- :        Fkey 9 - Series N     Calculator keypad   (N1 - N3)
- :
- :
- :        Fkey11 or A or Ctrl-A  - Help on using function keys
- :        Fkey12                 - Exit the program
-Q: Please select a series, or Fkey12 to exit 
-G:__SERIESMENU_DISP
-*:__MENUHELP
-T:
- :                      Function key help screen
- :
+*:__HELP
+T:                      Help screen
  :Use the function keys on the keyboard to navigate through the lesson
  :series and lesson selection menus.  In a lesson series, pressing the
  :function key Fkey12 will return you to the series menu; when already at
  :the series menu, it will take you to the main program menu.  At the
  :main program menu, Fkey12 exits the program.
  :
- :If a lesson series has more than one menu page of lessons, use Fkey11 to
- :go to the additional pages.
- :
- :When in an exercise, you can use the Esc key to abort the drill or test.
- :
  :If you do not have function keys available on your terminal, or if they
  :do not work for some reason (for example, they are intercepted by
  :another program), you can use the keys 1 to 9 for F1 to F9, 0 for F10,
  :A for F11 and S for F12.  Some combinations with the Ctrl key will work also.
- :Ctrl-Q to Ctrl-P are alternatives for Fkey1 to Fkey10, and Ctrl-A and Ctrl-S 
+ :Ctrl-Q to Ctrl-P are alternatives for Fkey1 to Fkey10, and Ctrl-A and Ctrl-S
  :for Fkey11 and Fkey12.
-Q: Press Y to continue, or Fkey12 to exit 
-Y:__SERIESMENU_DISP
-G:__MENUHELP
+ :
+ :You can access gtypist's manual either by running
+ :"info gtypist" (or "info '(gtypist)'" if that doesn't work),
+ :or by loading "gtypist.htm" in your browser (DOS)
+G:__SERIESMENU
+#==============================================================================
+# Series menu
+#==============================================================================
+*:__SERIESMENU
+K:1:__S_D_SERIES
+K:2:__S_M_SERIES
+K:3:__S_N_SERIES
+K:4:__S_Q_SERIES
+K:5:__S_R_SERIES
+K:6:__S_S_SERIES
+K:7:__S_T_SERIES
+K:8:__S_U_SERIES
+K:9:__S_V_SERIES
+K:10:__MORE_LESSONS
+K:11:__HELP
+K:12:__SERIESQEXIT
+*:__SERIESMENU_DISP
+B:                       Series selection menu
+T:The following 9 lesson series are available:
+ :
+ :        Fkey 1 - Series D     Dvorak touch typing (D1 - D14)
+ :        Fkey 2 - Series M     Typing drills       (M1 - M11)
+ :        Fkey 3 - Series N     Calculator keypad   (N1 - N3)
+ :        Fkey 4 - Series Q     Quick QWERTY course (Q1 - Q5)
+ :        Fkey 5 - Series R     Long QWERTY course  (R1 - R14)
+ :        Fkey 6 - Series S     Speed drills        (S1 - S4)
+ :        Fkey 7 - Series T     QWERTY touch typing (T1 - T16)
+ :        Fkey 8 - Series U     QWERTY Review       (U1 - U13)
+ :        Fkey 9 - Series V     Yet Another QWERTY  (V1 - V19)
+ :
+ :        Fkey10 - More lessons...
+ :        Fkey11 - Help...
+ :
+ :        Fkey12 - Exit the program
+Q: Please select a series, or Fkey12 to exit 
+G:__SERIESMENU_DISP
 *:__SERIESQEXIT
 Q: Do you want to exit the program ? [Y/N] ? 
 N:__SERIESMENU

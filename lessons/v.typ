@@ -29,23 +29,19 @@ G:_V_MENU
 *:_V_R_L0
 #                                                               ../orig/v.typ:2
 T:			Lesson	V1
-Q: Press Y to continue, or Fkey12 to exit 
-N:_V_R_L0
 
 #                                                               ../orig/v.typ:3
 I:(1)
 *:_V_R_L1
 #                                                               ../orig/v.typ:5
-O:r r r r frf frf frf u u u u juj juj juj juj
+D:r r r r frf frf frf u u u u juj juj juj juj
  :frf juj frf juj frf juj frf juj frf juj frf juj
-Q: Press Y to continue, N to repeat, or Fkey12 to exit 
-N:_V_R_L1
 
 #                                                               ../orig/v.typ:6
 I:(2)
 *:_V_R_L2
 #                                                              ../orig/v.typ:14
-O:fff jjj fff jjj fff jjj fff jjj fff jjj fff jjj
+D:fff jjj fff jjj fff jjj fff jjj fff jjj fff jjj
  :fff jjj fff jjj fff jjj fff jjj fff jjj fff jjj
  :
  :fru fru fru jur jur jur ruj ruj ruj urf urf urf
@@ -53,8 +49,6 @@ O:fff jjj fff jjj fff jjj fff jjj fff jjj fff jjj
  :
  :urf urf urf juf juf juf fuj fuj fuj fru fru fru
  :fur fur fur ruf ruf ruf urf urf urf jur jur jur
-Q: Press Y to continue, N to repeat, or Fkey12 to exit 
-N:_V_R_L2
 
 G:_V_E_V1
 #------------------------------------------------------------------------------
@@ -66,35 +60,29 @@ G:_V_E_V1
 #                                                              ../orig/v.typ:19
 T:
  :		       (D K E I)
-Q: Press Y to continue, or Fkey12 to exit 
-N:_V_R_L3
 
 #                                                              ../orig/v.typ:20
 I:(1) Warmup
 *:_V_R_L4
 #                                                              ../orig/v.typ:25
-O:fff jjj fff jjj fff jjj fff jjj fff jjj fff jjj
+D:fff jjj fff jjj fff jjj fff jjj fff jjj fff jjj
  :frf juj frf juj frf juj frf juj frf juj frf juj
  :
  :fur fur fur ruf ruf ruf jur jur jur ruj ruj ruj
  :urj urj urj juf juf juf fuj fuj fuj fur fur fur
-Q: Press Y to continue, N to repeat, or Fkey12 to exit 
-N:_V_R_L4
 
 #                                                              ../orig/v.typ:26
 I:(2) New Key Control
 *:_V_R_L5
 #                                                              ../orig/v.typ:28
-O:d d d d ddd ddd ddd ddd k k k k kkk kkk kkk kkk
+D:d d d d ddd ddd ddd ddd k k k k kkk kkk kkk kkk
  :ddd kkk ddd kkk ddd kkk ddd kkk ddd kkk ddd kkk
-Q: Press Y to continue, N to repeat, or Fkey12 to exit 
-N:_V_R_L5
 
 #                                                              ../orig/v.typ:29
 I:(3)
 *:_V_R_L6
 #                                                              ../orig/v.typ:31
-O:e e e e ded ded ded ded ded i i i i kik kik kik
+D:e e e e ded ded ded ded ded i i i i kik kik kik
  :ded kik ded kik ded kik ded kik ded kik ded kik
 Q: Press Y to continue, N to repeat, or Fkey12 to exit 
 N:_V_R_L6
@@ -103,37 +91,31 @@ N:_V_R_L6
 I:(4)
 *:_V_R_L7
 #                                                              ../orig/v.typ:37
-O:did did did ire ire ire rid rid rid eke eke eke
+D:did did did ire ire ire rid rid rid eke eke eke
  :rid rid rid eke eke eke ire ire ire did did did
  :
  :kid kid kid fee fee fee red red red fir fir fir
  :red red red fir fir fir fee fee fee kid kid kid
-Q: Press Y to continue, N to repeat, or Fkey12 to exit 
-N:_V_R_L7
 
 #                                                              ../orig/v.typ:38
 I:(5)
 *:_V_R_L8
 #                                                              ../orig/v.typ:43
-O:free free free juke juke juke fire fire fire juke
+D:free free free juke juke juke fire fire fire juke
  :fire fire fire juke juke juke free free free juke
  :
  :deer deer deer rude rude rude dire dire dire ride
  :rude rude rude dire dire dire deer deer deer ride
-Q: Press Y to continue, N to repeat, or Fkey12 to exit 
-N:_V_R_L8
 
 #                                                              ../orig/v.typ:44
 I:(6)
 *:_V_R_L9
 #                                                              ../orig/v.typ:49
-O:fired fired fired rider rider rider freed freed
+D:fired fired fired rider rider rider freed freed
  :rider rider rider freed freed freed fired fired
  :
  :did red ire fee rid deer rude fire feed juke rider
  :rid fee ire red did juke fire rude juke deed freed
-Q: Press Y to continue, N to repeat, or Fkey12 to exit 
-N:_V_R_L9
 
 G:_V_E_V2
 #------------------------------------------------------------------------------
@@ -145,100 +127,80 @@ G:_V_E_V2
 #                                                              ../orig/v.typ:54
 T:
  :			     (T Y G H)
-Q: Press Y to continue, or Fkey12 to exit 
-N:_V_R_L10
 
 #                                                              ../orig/v.typ:55
 I:(1) Warmup
 *:_V_R_L11
 #                                                              ../orig/v.typ:60
-O:fff jjj ddd kkk frf juj ded kik fff jjj ddd kkk
+D:fff jjj ddd kkk frf juj ded kik fff jjj ddd kkk
  :frf juj ded kik fur fur kid kid red red ire ire
  :
  :kid kid kid juke juke juke dire dire dire fire
  :rid rid rid rude rude rude ride ride ride feed
-Q: Press Y to continue, N to repeat, or Fkey12 to exit 
-N:_V_R_L11
 
 *:_V_R_L12
 #                                                              ../orig/v.typ:63
-O:
+D:
  :did red ire fee rid deer rude fire feed juke rider
  :rid fee ire red did juke fire rude juke deed freed
-Q: Press Y to continue, N to repeat, or Fkey12 to exit 
-N:_V_R_L12
 
 #                                                              ../orig/v.typ:64
 I:(2) T and Y
 *:_V_R_L13
 #                                                              ../orig/v.typ:66
-O:t t t t ftf ftf ftf ftf y y y y jyj jyj jyj jyj
+D:t t t t ftf ftf ftf ftf y y y y jyj jyj jyj jyj
  :ftf jyj ftf jyj ftf jyj ftf jyj ftf jyj ftf jyj
-Q: Press Y to continue, N to repeat, or Fkey12 to exit 
-N:_V_R_L13
 
 #                                                              ../orig/v.typ:67
 I:(3) G and H
 *:_V_R_L14
 #                                                              ../orig/v.typ:69
-O:g g g g fgf fgf fgf fgf h h h h jhj jhj jhj jhj
+D:g g g g fgf fgf fgf fgf h h h h jhj jhj jhj jhj
  :fgf jhj fgf jhj fgf jhj fgf jhj fgf jhj fgf jhj
-Q: Press Y to continue, N to repeat, or Fkey12 to exit 
-N:_V_R_L14
 
 #                                                              ../orig/v.typ:70
 I:(4) Word Drill
 *:_V_R_L15
 #                                                              ../orig/v.typ:72
-O:hit hit hit hit hit hit get get get get get get
+D:hit hit hit hit hit hit get get get get get get
  :yet yet yet yet yet yet try try try try try try
-Q: Press Y to continue, N to repeat, or Fkey12 to exit 
-N:_V_R_L15
 
 #                                                              ../orig/v.typ:73
 I:(5)
 *:_V_R_L16
 #                                                              ../orig/v.typ:78
-O:the the the try try try get get get yet yet yet
+D:the the the try try try get get get yet yet yet
  :try try try the the the yet yet yet get get get
  :
  :key key key jit hit hit tie tie tie kit kit kit
  :tie tie tie kit kit kit key key key hit hit hit
-Q: Press Y to continue, N to repeat, or Fkey12 to exit 
-N:_V_R_L16
 
 #                                                              ../orig/v.typ:79
 I:(6)
 *:_V_R_L17
 #                                                              ../orig/v.typ:84
-O:here here here they they they true true true
+D:here here here they they they true true true
  :they they they true true true here here here
  :
  :there there there fruit fruit fruit right right right
  :fruit fruit fruit right right right there there there
-Q: Press Y to continue, N to repeat, or Fkey12 to exit 
-N:_V_R_L17
 
 #                                                              ../orig/v.typ:85
 I:(7)
 *:_V_R_L18
 #                                                              ../orig/v.typ:90
-O:third third third tired tired tired urged urged urged
+D:third third third tired tired tired urged urged urged
  :tired tired tired urged urged urged third third third
  :
  :truth truth truth their their their dried dried dried
  :their their their dried dried dried truth truth truth
-Q: Press Y to continue, N to repeat, or Fkey12 to exit 
-N:_V_R_L18
 
 #                                                              ../orig/v.typ:91
 I:(8)
 *:_V_R_L19
 #                                                              ../orig/v.typ:93
-O:did they get the right dried fruit there yet
+D:did they get the right dried fruit there yet
  :did they get the right dried fruit there yet
-Q: Press Y to continue, N to repeat, or Fkey12 to exit 
-N:_V_R_L19
 
 G:_V_E_V3
 #------------------------------------------------------------------------------
@@ -250,62 +212,50 @@ G:_V_E_V3
 #                                                              ../orig/v.typ:98
 T:
  :			(S L W O)
-Q: Press Y to continue, or Fkey12 to exit 
-N:_V_R_L20
 
 #                                                              ../orig/v.typ:99
 I:(1) Warmup
 *:_V_R_L21
 #                                                             ../orig/v.typ:101
-O:frf juj ded kik ftf jyj fgf jhj frf juj ded kik
+D:frf juj ded kik ftf jyj fgf jhj frf juj ded kik
  :ded kik ftf jyj fgf jhj frf juj ded kik ftf jyj
-Q: Press Y to continue, N to repeat, or Fkey12 to exit 
-N:_V_R_L21
 
 #                                                             ../orig/v.typ:102
 I:(2) S and L
 *:_V_R_L22
 #                                                             ../orig/v.typ:104
-O:s s s s sss sss sss sss l l l l lll lll lll lll
+D:s s s s sss sss sss sss l l l l lll lll lll lll
  :sss lll sss lll sss lll sss lll sss lll sss lll
-Q: Press Y to continue, N to repeat, or Fkey12 to exit 
-N:_V_R_L22
 
 #                                                             ../orig/v.typ:105
 I:(3) W and O
 *:_V_R_L23
 #                                                             ../orig/v.typ:107
-O:w w w w sws sws sws sws o o o o lol lol lol lol
+D:w w w w sws sws sws sws o o o o lol lol lol lol
  :sws lol sws lol sws lol sws lol sws lol sws lol
-Q: Press Y to continue, N to repeat, or Fkey12 to exit 
-N:_V_R_L23
 
 #                                                             ../orig/v.typ:108
 I:(4) Words Drill
 *:_V_R_L24
 #                                                             ../orig/v.typ:110
-O:sow sow sow sow sow sow low low low low low low
+D:sow sow sow sow sow sow low low low low low low
  :row row row row row row how how how how how how
-Q: Press Y to continue, N to repeat, or Fkey12 to exit 
-N:_V_R_L24
 
 #                                                             ../orig/v.typ:111
 I:(5)
 *:_V_R_L25
 #                                                             ../orig/v.typ:116
-O:is is is so so so of of of do do do go go go to to to
+D:is is is so so so of of of do do do go go go to to to
  :go go go to to to do do do of of of so so so is is is
  :
  :too too too low low low set set set wit wit wit wit
  :sit sit sit lit lit lit wit wit wit low low low low
-Q: Press Y to continue, N to repeat, or Fkey12 to exit 
-N:_V_R_L25
 
 #                                                             ../orig/v.typ:117
 I:(6)
 *:_V_R_L26
 #                                                             ../orig/v.typ:125
-O:wool wool wool suit suit suit full full full wood wood
+D:wool wool wool suit suit suit full full full wood wood
  :hole hole hole wool wool wool suit suit suit good good
  :
  :style style style order order order those those
@@ -313,20 +263,16 @@ O:wool wool wool suit suit suit full full full wood wood
  :
  :desire desire desire rulers rulers rulers worker
  :worker worker worker desire desire desire rulers
-Q: Press Y to continue, N to repeat, or Fkey12 to exit 
-N:_V_R_L26
 
 #                                                             ../orig/v.typ:126
 I:(7)
 *:_V_R_L27
 #                                                             ../orig/v.typ:131
-O:hold your wrists low while you strike the keys
+D:hold your wrists low while you strike the keys
  :we desire the right goods for our wool suits
  :if you will go with us you will see the fleet
  :we will try to fill your order for the wool suits
  :if we get the right goods we will fill your order
-Q: Press Y to continue, N to repeat, or Fkey12 to exit 
-N:_V_R_L27
 
 G:_V_E_V4
 #------------------------------------------------------------------------------
@@ -338,59 +284,47 @@ G:_V_E_V4
 #                                                             ../orig/v.typ:136
 T:
  :		        (A ; Q P)
-Q: Press Y to continue, or Fkey12 to exit 
-N:_V_R_L28
 
 #                                                             ../orig/v.typ:137
 I:(1) Warmup
 *:_V_R_L29
 #                                                             ../orig/v.typ:139
-O:frf juj ded kik ftf jyj fgf jhj frf juj ftf jyj fgf jhj
+D:frf juj ded kik ftf jyj fgf jhj frf juj ftf jyj fgf jhj
  :ded kik sws lol ded kik sws lol frf juj ftf jyj fgf jhj
-Q: Press Y to continue, N to repeat, or Fkey12 to exit 
-N:_V_R_L29
 
 #                                                             ../orig/v.typ:140
 I:(2) A and ;
 *:_V_R_L30
 #                                                             ../orig/v.typ:142
-O:a a a a aaa aaa aaa aaa ; ; ; ; ;;; ;;; ;;; ;;;
+D:a a a a aaa aaa aaa aaa ; ; ; ; ;;; ;;; ;;; ;;;
  :aaa ;;; aaa ;;; aaa ;;; aaa ;;; aaa ;;; aaa ;;;
-Q: Press Y to continue, N to repeat, or Fkey12 to exit 
-N:_V_R_L30
 
 #                                                             ../orig/v.typ:143
 I:(3) Q and P
 *:_V_R_L31
 #                                                             ../orig/v.typ:145
-O:q q q q aqa aqa aqa aqa p p p p ;p; ;p; ;p; ;p;
+D:q q q q aqa aqa aqa aqa p p p p ;p; ;p; ;p; ;p;
  :aqa ;p; aqa ;p; aqa ;p; aqa ;p; aqa ;p; aqa ;p;
-Q: Press Y to continue, N to repeat, or Fkey12 to exit 
-N:_V_R_L31
 
 #                                                             ../orig/v.typ:146
 I:(4) Word Drill
 *:_V_R_L32
 #                                                             ../orig/v.typ:148
-O:pa; pa; pa; pa; pa; pa; up; up; up; up; up; up;
+D:pa; pa; pa; pa; pa; pa; up; up; up; up; up; up;
  :pa; pa; pa; pa; pa; pa; up; up; up; up; up; up;
-Q: Press Y to continue, N to repeat, or Fkey12 to exit 
-N:_V_R_L32
 
 #                                                             ../orig/v.typ:149
 I:(5)
 *:_V_R_L33
 #                                                             ../orig/v.typ:151
-O:quay quay quay quay quay quip quip quip quip quip
+D:quay quay quay quay quay quip quip quip quip quip
  :quay quay quay quay quay quip quip quip quip quip
-Q: Press Y to continue, N to repeat, or Fkey12 to exit 
-N:_V_R_L33
 
 #                                                             ../orig/v.typ:152
 I:(6)
 *:_V_R_L34
 #                                                             ../orig/v.typ:160
-O:apt apt apt; put put put; sip sip sip; hip hip hip;
+D:apt apt apt; put put put; sip sip sip; hip hip hip;
  :sip sip sip; hip hip hip; apt apt apt; put put put;
  :
  :quip quip quip; quit quit quit; aqua aqua aqua;
@@ -398,14 +332,12 @@ O:apt apt apt; put put put; sip sip sip; hip hip hip;
  :
  :paid paid paid; pair pair pair; pass pass pass;
  :pair pair pair; pass pass pass; paid paid paid;
-Q: Press Y to continue, N to repeat, or Fkey12 to exit 
-N:_V_R_L34
 
 #                                                             ../orig/v.typ:161
 I:(7)
 *:_V_R_L35
 #                                                             ../orig/v.typ:169
-O:quote quote quote; paper paper paper; quite quite;
+D:quote quote quote; paper paper paper; quite quite;
  :paper paper paper; quite quite quite; quote quote;
  :
  :prefer prefer prefer; prepay prepay prepay; quires;
@@ -413,19 +345,15 @@ O:quote quote quote; paper paper paper; quite quite;
  :
  :postage postage postage; quarter quarter quarter;
  :poultry poultry poultry; quality quality quality;
-Q: Press Y to continue, N to repeat, or Fkey12 to exit 
-N:_V_R_L35
 
 #                                                             ../orig/v.typ:170
 I:(8)
 *:_V_R_L35A
 #                                                             ../orig/v.typ:179
-O:two quires of high quality paper were shipped today;
+D:two quires of high quality paper were shipped today;
  :we shall pay you well to prepare the reports for us;
  :we quote a low figure for our high quality paper;
  :we prefer to prepay the postage for the two quires;
-Q: Press Y to continue, N to repeat, or Fkey12 to exit 
-N:_V_R_L35A
 
 G:_V_E_V5
 #------------------------------------------------------------------------------
@@ -436,37 +364,31 @@ G:_V_E_V5
 *:_V_R_L36
 T:
  :		    (Shift Keys for Capitalization)
-Q: Press Y to continue, or Fkey12 to exit 
-N:_V_R_L36
 
 #                                                             ../orig/v.typ:180
 I:(1) Warmup
 *:_V_R_L37
 #                                                             ../orig/v.typ:184
-O:frf juj ftf jyj fgf jhj ded kik sws lol aqa ;p;
+D:frf juj ftf jyj fgf jhj ded kik sws lol aqa ;p;
  :aqa ;p; sws lol ded kik frf juj ftf jyj fgf jhj
  :
  :he will pay jed squire for the sugar this week;
-Q: Press Y to continue, N to repeat, or Fkey12 to exit 
-N:_V_R_L37
 
 #                                                             ../orig/v.typ:185
 I:(2) Capital Letter Drill
 *:_V_R_L38
 #                                                             ../orig/v.typ:190
-O:F F F F F F Fa Fa Fa Fa Fa Fa Fay Fay Fay Fay Fay Fay
+D:F F F F F F Fa Fa Fa Fa Fa Fa Fay Fay Fay Fay Fay Fay
  :J J J J J J Ja Ja Ja Ja Ja Ja Jay Jay Jay Jay Jay Jay
  :
  :R R R R R R Ra Ra Ra Ra Ra Ra Ray Ray Ray Ray Ray Ray
  :H H H H H H Ha Ha Ha Ha Ha Ha Hal Hal Hal Hal Hal Hal
-Q: Press Y to continue, N to repeat, or Fkey12 to exit 
-N:_V_R_L38
 
 #                                                             ../orig/v.typ:191
 I:(3)
 *:_V_R_L39
 #                                                             ../orig/v.typ:199
-O:Kay Kay Kay; Joe Joe Joe; Alf Alf Alf; Lou Lou Lou;
+D:Kay Kay Kay; Joe Joe Joe; Alf Alf Alf; Lou Lou Lou;
  :Joe Joe Joe; Kay Kay Kay; Lou Lou Lou; Alf Alf Alf;
  :
  :Dora Dora Dora; Ella Ella Ella; Pete Pete Pete;
@@ -474,14 +396,12 @@ O:Kay Kay Kay; Joe Joe Joe; Alf Alf Alf; Lou Lou Lou;
  :
  :Garry Garry Garry; Harry Harry Harry; Paula Paula;
  :Harry Harry Harry; Taffy Taffy Taffy; Quail Quail;
-Q: Press Y to continue, N to repeat, or Fkey12 to exit 
-N:_V_R_L39
 
 #                                                             ../orig/v.typ:200
 I:(4)
 *:_V_R_L40
 #                                                             ../orig/v.typ:208
-O:Uriah Uriah Uriah; Yetta Yetta Yetta; Ollie Ollie;
+D:Uriah Uriah Uriah; Yetta Yetta Yetta; Ollie Ollie;
  :Yetta Yetta Yetta; Ollie Ollie Ollie; Uriah Uriah;
  :
  :Walter Walter Walter; Esther Esther Esther; Isaiah;
@@ -489,20 +409,16 @@ O:Uriah Uriah Uriah; Yetta Yetta Yetta; Ollie Ollie;
  :
  :Arthur Arthur Arthur; Lester Lester Lester; Quezon;
  :Quezon Quezon Quezon; Arthur Arthur Arthur; Philip;
-Q: Press Y to continue, N to repeat, or Fkey12 to exit 
-N:_V_R_L40
 
 #                                                             ../orig/v.typ:209
 I:(5)
 *:_V_R_L41
 #                                                             ../orig/v.typ:214
-O:Joseph likes to study; Joseph likes to study art;
+D:Joseph likes to study; Joseph likes to study art;
  :Esther will write; Esther will write Larry today;
  :Arthur likes; Arthur likes to play the flute;
  :Kate says; Kate says she will stay till Friday;
  :Paul will take Willa to the Park Sherry Theater;
-Q: Press Y to continue, N to repeat, or Fkey12 to exit 
-N:_V_R_L41
 
 G:_V_E_V6
 #------------------------------------------------------------------------------
@@ -514,83 +430,67 @@ G:_V_E_V6
 #                                                             ../orig/v.typ:219
 T:
  :		(Shift Lock and :)
-Q: Press Y to continue, or Fkey12 to exit 
-N:_V_R_L42
 
 #                                                             ../orig/v.typ:220
 I:(1) Warmup
 *:_V_R_L43
 #                                                             ../orig/v.typ:222
-O:frf juj ftf jyj fgf jhj ded kik sws lol aqa ;p;
+D:frf juj ftf jyj fgf jhj ded kik sws lol aqa ;p;
  :aqa ;p; sws lol ded kik frf juj ftf jyj fgf jhj
-Q: Press Y to continue, N to repeat, or Fkey12 to exit 
-N:_V_R_L43
 
 #                                                             ../orig/v.typ:223
 I:(2) Shift Lock Drill
 *:_V_R_L44
 #                                                             ../orig/v.typ:225
-O:It is GOOD WORK; It is GOOD WORK; It is GOOD WORK;
+D:It is GOOD WORK; It is GOOD WORK; It is GOOD WORK;
  :It is GOOD WORK; It is GOOD WORK; It is GOOD WORK;
-Q: Press Y to continue, N to repeat, or Fkey12 to exit 
-N:_V_R_L44
 
 #                                                             ../orig/v.typ:226
 I:(3)
 *:_V_R_L45
 #                                                             ../orig/v.typ:233
-O:frf juj ftf jyj fgf jhj ded kik sws lol aqa ;p;
+D:frf juj ftf jyj fgf jhj ded kik sws lol aqa ;p;
  :The TITLE of the REPORT is:  HOUSES FOR SALE
  :The TITLE of the REPORT is:  HOUSES FOR SALE
  :
  :aqa ;p; sws lol ded kik frf juj ftf jyj fgf jhj
  :We quote LOW FIGURES for HIGHEST QUALITY paper;
  :We quote LOW FIGURES for HIGHEST QUALITY paper;
-Q: Press Y to continue, N to repeat, or Fkey12 to exit 
-N:_V_R_L45
 
 #                                                             ../orig/v.typ:234
 I:(4)
 *:_V_R_L46
 #                                                             ../orig/v.typ:245
-O:frf juj ftf jyj fgf jhj ded kik sws lol aqa ;p;
+D:frf juj ftf jyj fgf jhj ded kik sws lol aqa ;p;
  :The PARK POSTER reads:  KEEP OFF THE GRASS
  :The PARK POSTER reads:  KEEP OFF THE GRASS
  :
  :aqa ;p; sws lol ded kik frf juj ftf jyj fgf jhj
  :Paul quoted the old adage:  THE THRIFTY ARE WISE
  :Paul quoted the old adage:  THE THRIFTY ARE WISE
-Q: Press Y to continue, N to repeat, or Fkey12 to exit 
-N:_V_R_L46
 
 *:_V_R_L46A
 #
-O:frf juj ftf jyj fgf jhj ded kik sws lol aqa ;p;
+D:frf juj ftf jyj fgf jhj ded kik sws lol aqa ;p;
  :You should STRIKE ALL THE KEYS with EQUAL POWER;
  :You should STRIKE ALL THE KEYS with EQUAL POWER;
-Q: Press Y to continue, N to repeat, or Fkey12 to exit 
-N:_V_R_L46A
 
 #                                                             ../orig/v.typ:246
 I:(5)
 *:_V_R_L47
 #                                                             ../orig/v.typ:257
-O:frf juj ftf jyj fgf jhj ded kik sws lol aqa ;p;
+D:frf juj ftf jyj fgf jhj ded kik sws lol aqa ;p;
  :GOOD WORK will lead to a HAPPY LIFE for you;
  :GOOD WORK will lead to a HAPPY LIFE for you;
  :aqa ;p; sws lol ded kik frf juj ftf jyj fgf jhj
  :The DAILY DRILLS will HELP YOU type with EASE;
  :The DAILY DRILLS will HELP YOU type with EASE;
-Q: Press Y to continue, N to repeat, or Fkey12 to exit 
-N:_V_R_L47
 
 *:_V_R_L47A
 #
-O:frf juj ftf jyj fgf jhj ded kik sws lol aqa ;p;
+D:frf juj ftf jyj fgf jhj ded kik sws lol aqa ;p;
  :GOOD SALARIES are USUALLY PAID to FAST TYPISTS;
  :GOOD SALARIES are USUALLY PAID to FAST TYPISTS;
-Q: Press Y to continue, N to repeat, or Fkey12 to exit 
-N:_V_R_L47A
 
 G:_V_E_V7
 #------------------------------------------------------------------------------
@@ -602,35 +502,29 @@ G:_V_E_V7
 #                                                             ../orig/v.typ:262
 T:
  :		  (Introducing the Period)
-Q: Press Y to continue, or Fkey12 to exit 
-N:_V_R_L48
 
 #                                                             ../orig/v.typ:263
 I:(1) Warmup
 *:_V_R_L49
 #                                                             ../orig/v.typ:267
-O:frf juj ftf jyj fgf jhj ded kik sws lol aqa ;p;
+D:frf juj ftf jyj fgf jhj ded kik sws lol aqa ;p;
  :aqa ;p; sws lol ded kik frf juj ftf jyj fgf jhj
  :
  :He will pay Jed Squire for the sugar this week;
-Q: Press Y to continue, N to repeat, or Fkey12 to exit 
-N:_V_R_L49
 
 #                                                             ../orig/v.typ:268
 I:(2) The Period
 *:_V_R_L50
 #                                                             ../orig/v.typ:271
-O:. . . . . . l.l l.l l.l l.l l.l l.l l.l l.l l.l
+D:. . . . . . l.l l.l l.l l.l l.l l.l l.l l.l l.l
  :Hit it lightly.  Hit it lightly.  Hit it lightly.
  :Hit it lightly.  Hit it lightly.  Hit it lightly.
-Q: Press Y to continue, N to repeat, or Fkey12 to exit 
-N:_V_R_L50
 
 #                                                             ../orig/v.typ:272
 I:(3)
 *:_V_R_L51
 #                                                             ../orig/v.typ:286
-P:Strike all the keys with pep.  Strike the keys
+S:Strike all the keys with pep.  Strike the keys
  :as though they were red hot.  This is just how the
  :fast typist works.
  :
@@ -644,32 +538,26 @@ P:Strike all the keys with pep.  Strike the keys
  :Start your daily work without delay.  Keep at it
  :regularly.  It is steady work that will take you
  :to your goal.
-Q: Press Y to continue, N to repeat, or Fkey12 to exit 
-N:_V_R_L51
 
 #                                                             ../orig/v.typ:287
 I:(4) Keyboard Review
 *:_V_R_L52
 #                                                             ../orig/v.typ:292
-O:for fat few fur foe fit fed fee for fat fir few fro;
+D:for fat few fur foe fit fed fee for fat fir few fro;
  :fro few fir fat for fee fig foe fop fit fur fat fad;
  :
  :jug jig jut jar joy jag jaw jar jet jot jog jug joy;
  :joy jug jog jag jaw jot jig jut jar jig jaw jog jet;
-Q: Press Y to continue, N to repeat, or Fkey12 to exit 
-N:_V_R_L52
 
 #                                                             ../orig/v.typ:293
 I:(5)
 *:_V_R_L53
 #                                                             ../orig/v.typ:298
-O:rye rut row red rip ray rap rug rig rut rye rug rot;
+D:rye rut row red rip ray rap rug rig rut rye rug rot;
  :rot rye rut row red rip rat rap rug rig rut rye rug;
  :
  :up us use uses urge ugly usage upper uproar upright;
  :us up use urge uses urge urges udder utters upstart;
-Q: Press Y to continue, N to repeat, or Fkey12 to exit 
-N:_V_R_L53
 
 G:_V_E_V8
 #------------------------------------------------------------------------------
@@ -681,34 +569,28 @@ G:_V_E_V8
 #                                                             ../orig/v.typ:303
 T:
  :			(V and M)
-Q: Press Y to continue, or Fkey12 to exit 
-N:_V_R_L54
 
 #                                                             ../orig/v.typ:304
 I:(1) Warmup
 *:_V_R_L55
 #                                                             ../orig/v.typ:308
-O:frf juj ftf jyj fgf jhj ded kik sws lol aqa ;p;
+D:frf juj ftf jyj fgf jhj ded kik sws lol aqa ;p;
  :aqa ;p; sws lol ded kik frf juj ftf jyj fgf jhj
  :
  :I will pay Joe Quig for the sugar today.
-Q: Press Y to continue, N to repeat, or Fkey12 to exit 
-N:_V_R_L55
 
 #                                                             ../orig/v.typ:309
 I:(2) New Keys (V, M)
 *:_V_R_L56
 #                                                             ../orig/v.typ:311
-O:v v v v fvf fvf fvf fvf m m m m jmj jmj jmj jmj
+D:v v v v fvf fvf fvf fvf m m m m jmj jmj jmj jmj
  :fvf jmj fvf jmj fvf jmj fvf jmj fvf jmj fvf jmj
-Q: Press Y to continue, N to repeat, or Fkey12 to exit 
-N:_V_R_L56
 
 #                                                             ../orig/v.typ:312
 I:(3)
 *:_V_R_L57
 #                                                             ../orig/v.typ:320
-O:over over over; gave gave gave; have have have;
+D:over over over; gave gave gave; have have have;
  :home home home; seem seem seem; time time time;
  :
  :ever ever ever; more more more; item item item;
@@ -716,14 +598,12 @@ O:over over over; gave gave gave; have have have;
  :
  :You must devote more time to your daily work.
  :You should go over every item with more thought.
-Q: Press Y to continue, N to repeat, or Fkey12 to exit 
-N:_V_R_L57
 
 #                                                             ../orig/v.typ:321
 I:(4) Paragraph Practice
 *:_V_R_L58
 #                                                             ../orig/v.typ:333
-P:You will surely make good if you give more time to
+S:You will surely make good if you give more time to
  :your daily work here.  You must make ever effort
  :to make good.
  :
@@ -735,30 +615,24 @@ P:You will surely make good if you give more time to
  :Skillful typists make very good salaries.  All
  :types of firms require them.  So try your utmost to
  :develop your skill.
-Q: Press Y to continue, N to repeat, or Fkey12 to exit 
-N:_V_R_L58
 
 #                                                             ../orig/v.typ:334
 I:(5) Exercises on G, H, T, and Y
 *:_V_R_L59
 #                                                             ../orig/v.typ:345
-O:go got get gas gag gap gay gig gray greed great;
+D:go got get gas gag gap gay gig gray greed great;
  :go gig gay gap gas gag get gas gray great greed;
  :
  :her has had his hit hot hut hat hay hag had his;
  :his had hag hay hat hut hot hit his had has her;
-Q: Press Y to continue, N to repeat, or Fkey12 to exit 
-N:_V_R_L59
 
 *:_V_R_L59A
 #
-O:to try tip tap two tag too to try tip tap two;
+D:to try tip tap two tag too to try tip tap two;
  :to two tap tip try too try to top tap tag try;
  :
  :you yes yet yap yell year yoke your yowl yore;
  :yap yet yes you yore yowl your yoke year yell;
-Q: Press Y to continue, N to repeat, or Fkey12 to exit 
-N:_V_R_L59A
 
 G:_V_E_V9
 #------------------------------------------------------------------------------
@@ -770,43 +644,35 @@ G:_V_E_V9
 #                                                             ../orig/v.typ:350
 T:
  :			(B and N)
-Q: Press Y to continue, or Fkey12 to exit 
-N:_V_R_L60
 
 #                                                             ../orig/v.typ:351
 I:(1) Warmup
 *:_V_R_L61
 #                                                             ../orig/v.typ:355
-O:frf juj ftf jyj fgf jhj ded kik sws lol aqa ;p;
+D:frf juj ftf jyj fgf jhj ded kik sws lol aqa ;p;
  :fgf jhj fvf jmj fgf jhj fvf jmj fgf jhj fvf jmj
  :
  :Paul Quigs will devote more time to his work.
-Q: Press Y to continue, N to repeat, or Fkey12 to exit 
-N:_V_R_L61
 
 #                                                             ../orig/v.typ:356
 I:(2) New Keys
 *:_V_R_L62
 #                                                             ../orig/v.typ:358
-O:b b b b fbf fbf fbf fbf n n n n jnj jnj jnj jnj
+D:b b b b fbf fbf fbf fbf n n n n jnj jnj jnj jnj
  :fbf jnj fbf jnj fbf jnj fbf jnj fbf jnj fbf jnj
-Q: Press Y to continue, N to repeat, or Fkey12 to exit 
-N:_V_R_L62
 
 #                                                             ../orig/v.typ:359
 I:(3) Word Drill
 *:_V_R_L63
 #                                                             ../orig/v.typ:361
-O:bin bin bin bin bin bin nib nib nib nib nib nib
+D:bin bin bin bin bin bin nib nib nib nib nib nib
  :big big big big big big now now now now now now
-Q: Press Y to continue, N to repeat, or Fkey12 to exit 
-N:_V_R_L63
 
 #                                                             ../orig/v.typ:362
 I:(4)
 *:_V_R_L64
 #                                                             ../orig/v.typ:370
-O:bun bun bun; nip nip nip; fib fib fib; win win win;
+D:bun bun bun; nip nip nip; fib fib fib; win win win;
  :fib fib fib; win win win; bun bun bun; nip nip nip;
  :
  :bent bent bent; nine nine nine; vent vent vent;
@@ -814,14 +680,12 @@ O:bun bun bun; nip nip nip; fib fib fib; win win win;
  :
  :We require more time to turn out a very good job.
  :Be prompt.  Never shirk.  Make promptness a habit.
-Q: Press Y to continue, N to repeat, or Fkey12 to exit 
-N:_V_R_L64
 
 #                                                             ../orig/v.typ:371
 I:(5) Practice Paragraph
 *:_V_R_L65
 #                                                             ../orig/v.typ:384
-P:Never put off until tomorrow any job you should
+S:Never put off until tomorrow any job you should
  :finish today.  Try to be prompt at all times.  No one
  :likes to be kept waiting.
  :
@@ -834,32 +698,26 @@ P:Never put off until tomorrow any job you should
  :learn typing.  All they have to do is to put forth
  :their very best efforts.  This means thinking while
  :training every finger to strike the right key.
-Q: Press Y to continue, N to repeat, or Fkey12 to exit 
-N:_V_R_L65
 
 #                                                             ../orig/v.typ:385
 I:(6) Words with D, E, K, and I
 *:_V_R_L66
 #                                                             ../orig/v.typ:390
-O:do dot due dye day dew dab den dim dog die dig dry dip
+D:do dot due dye day dew dab den dim dog die dig dry dip
  :do dig dry dip die dog dim dab den dew day dye due dot
  :
  :ebb eke err eve end egg ever even edge earn east evil
  :err eke eve end ebb eel evil east earn edge envy easy
-Q: Press Y to continue, N to repeat, or Fkey12 to exit 
-N:_V_R_L66
 
 #                                                             ../orig/v.typ:391
 I:(7)
 *:_V_R_L67
 #                                                             ../orig/v.typ:396
-O:kid kin kit keg key king kind know knee knot knew
+D:kid kin kit keg key king kind know knee knot knew
  :key keg kid kit kin knew knot knee knob king kind
  :
  :it is in if ire ill ink inn imp idle item isle iron
  :if in is it imp inn ill ire ink item idle iron isle
-Q: Press Y to continue, N to repeat, or Fkey12 to exit 
-N:_V_R_L67
 
 G:_V_E_V10
 #------------------------------------------------------------------------------
@@ -871,65 +729,53 @@ G:_V_E_V10
 #                                                             ../orig/v.typ:401
 T:
  :		      (C and Comma)
-Q: Press Y to continue, or Fkey12 to exit 
-N:_V_R_L68
 
 #                                                             ../orig/v.typ:402
 I:(1) Warmup
 *:_V_R_L69
 #                                                             ../orig/v.typ:406
-O:frf juj ftf jyj fgf jhj ded kik sws lol aqa ;p;
+D:frf juj ftf jyj fgf jhj ded kik sws lol aqa ;p;
  :fvf jmj fbf jnj fvf jmj fbf jnj fvf jmj fbf jnj
  :
  :The Ben Mavis firm submitted the lowest quotation.
-Q: Press Y to continue, N to repeat, or Fkey12 to exit 
-N:_V_R_L69
 
 #                                                             ../orig/v.typ:407
 I:(2) New Key Review
 *:_V_R_L70
 #                                                             ../orig/v.typ:409
-O:c c c c dcd dcd dcd dcd , , , , k,k k,k k,k k,k
+D:c c c c dcd dcd dcd dcd , , , , k,k k,k k,k k,k
  :dcd k,k dcd k,k dcd k,k dcd k,k dcd k,k dcd k,k
-Q: Press Y to continue, N to repeat, or Fkey12 to exit 
-N:_V_R_L70
 
 #                                                             ../orig/v.typ:410
 I:(3) Word Drill
 *:_V_R_L71
 #                                                             ../orig/v.typ:412
-O:can, can, can, can, can, cue, cue, cue, cue, cue,
+D:can, can, can, can, can, cue, cue, cue, cue, cue,
  :can, can, can, can, can, cue, cue, cue, cue, cue,
-Q: Press Y to continue, N to repeat, or Fkey12 to exit 
-N:_V_R_L71
 
 #                                                             ../orig/v.typ:413
 I:(4)
 *:_V_R_L72
 #                                                             ../orig/v.typ:418
-O:cash, cash, cash, lack, lack, lack, lace, lace, lace,
+D:cash, cash, cash, lack, lack, lack, lace, lace, lace,
  :lack, lack, lack, lace, lace, lace, cash, cash, cash,
  :
  :could, could, could, clerk, clerk, clerk, camp, camp,
  :clerk, clerk, clerk, could, could, could, cane, cane,
-Q: Press Y to continue, N to repeat, or Fkey12 to exit 
-N:_V_R_L72
 
 #                                                             ../orig/v.typ:419
 I:(5)
 *:_V_R_L73
 #                                                             ../orig/v.typ:422
-O:If you call before five, the bank will cash your check.
+D:If you call before five, the bank will cash your check.
  :Charles Condon, sales manager, was in complete charge.
  :He may, if convenient, have it charged to his account.
-Q: Press Y to continue, N to repeat, or Fkey12 to exit 
-N:_V_R_L73
 
 #                                                             ../orig/v.typ:423
 I:(6)
 *:_V_R_L74
 #                                                             ../orig/v.typ:436
-P:Space once after a comma.  Space once after a
+S:Space once after a comma.  Space once after a
  :semicolon.  Space twice after a period that ends a
  :sentence.  Strike each key with the same force.
  :
@@ -942,32 +788,26 @@ P:Space once after a comma.  Space once after a
  :back to the left margin.  Third, hold the tabulator
  :bar or the tabulator key down until the carriage has
  :stopped.
-Q: Press Y to continue, N to repeat, or Fkey12 to exit 
-N:_V_R_L74
 
 #                                                             ../orig/v.typ:437
 I:(7)
 *:_V_R_L75
 #                                                             ../orig/v.typ:442
-O:sub sum see sun set sit sin sip she ship shall shame
+D:sub sum see sun set sit sin sip she ship shall shame
  :sit sin sip set sub sum see sod sob slip sweep super
  :
  :won win who why wet was weak wear west well what when
  :was wet why who win won what well wear west when what
-Q: Press Y to continue, N to repeat, or Fkey12 to exit 
-N:_V_R_L75
 
 #                                                             ../orig/v.typ:443
 I:(8)
 *:_V_R_L76
 #                                                             ../orig/v.typ:448
-O:lad lid lot let log lie lag lug lip last sate sawn
+D:lad lid lot let log lie lag lug lip last sate sawn
  :lip lag lug lie log let lot lid lad land lane last
  :
  :own out owl old one oak out oil off over oven open
  :off oil out oak one old owl our own open ours over
-Q: Press Y to continue, N to repeat, or Fkey12 to exit 
-N:_V_R_L76
 
 G:_V_E_V11
 #------------------------------------------------------------------------------
@@ -979,61 +819,49 @@ G:_V_E_V11
 #                                                             ../orig/v.typ:453
 T:
  :			(X and .)
-Q: Press Y to continue, or Fkey12 to exit 
-N:_V_R_L77
 
 #                                                             ../orig/v.typ:454
 I:(1) Warmup
 *:_V_R_L78
 #                                                             ../orig/v.typ:456
-O:frf juj ftf jyj fgf jhj fvf jmj fbf jnj fvf jmj
+D:frf juj ftf jyj fgf jhj fvf jmj fbf jnj fvf jmj
  :ded kik sws lol aqa ;p; dcd k,k dcd k,k fvf jmj
-Q: Press Y to continue, N to repeat, or Fkey12 to exit 
-N:_V_R_L78
 
 #                                                             ../orig/v.typ:457
 I:(2)
 *:_V_R_L79
 #                                                             ../orig/v.typ:460
-O:touch...learn...above...typing...talent...
+D:touch...learn...above...typing...talent...
  :average...special...that is...You do......
  :You do not
-Q: Press Y to continue, N to repeat, or Fkey12 to exit 
-N:_V_R_L79
 
 #                                                             ../orig/v.typ:461
 I:(3) Timed Drill:
 *:_V_R_L80
 #                                                             ../orig/v.typ:464
-P:Touch typing is easy to learn.  You do not need
+S:Touch typing is easy to learn.  You do not need
  :a mind that is above the average.  You do not
  :even need a special talent for typing.
-Q: Press Y to continue, N to repeat, or Fkey12 to exit 
-N:_V_R_L80
 
 #                                                             ../orig/v.typ:465
 I:(4) New Key Tryout
 *:_V_R_L81
 #                                                             ../orig/v.typ:467
-O:x x x x sxs sxs sxs sxs . . . . l.l l.l l.l l.l
+D:x x x x sxs sxs sxs sxs . . . . l.l l.l l.l l.l
  :sxs l.l sxs l.l sxs l.l sxs l.l sxs l.l sxs l.l
-Q: Press Y to continue, N to repeat, or Fkey12 to exit 
-N:_V_R_L81
 
 #                                                             ../orig/v.typ:468
 I:(5) Word Drill
 *:_V_R_L82
 #                                                             ../orig/v.typ:470
-O:six six six six six six etc. etc. etc. etc. etc.
+D:six six six six six six etc. etc. etc. etc. etc.
  :six six six six six six etc. etc. etc. etc. etc.
-Q: Press Y to continue, N to repeat, or Fkey12 to exit 
-N:_V_R_L82
 
 #                                                             ../orig/v.typ:471
 I:(6)
 *:_V_R_L83
 #                                                             ../orig/v.typ:479
-O:fixes fixes fixes; mixes mixes mixes; taxes taxes;
+D:fixes fixes fixes; mixes mixes mixes; taxes taxes;
  :mixes mixes mixes; fixes fixes fixes; boxes boxes;
  :
  :expert expert expert; expect expect expect; excels;
@@ -1041,14 +869,12 @@ O:fixes fixes fixes; mixes mixes mixes; taxes taxes;
  :
  :Dr. Lux, tax expert, will examine the tax returns.
  :Mr. Cox examined the mixture with extreme care.
-Q: Press Y to continue, N to repeat, or Fkey12 to exit 
-N:_V_R_L83
 
 #                                                             ../orig/v.typ:480
 I:(7) Practice Paragraph
 *:_V_R_L84
 #                                                             ../orig/v.typ:493
-P:Mr. Roxbury and Mr. Saxton will examine the six
+S:Mr. Roxbury and Mr. Saxton will examine the six
  :boxes of wax with extreme care.  These boxes were
  :returned by Prof. Maxton of Knoxville College.
  :
@@ -1061,14 +887,12 @@ P:Mr. Roxbury and Mr. Saxton will examine the six
  :most extreme care and shipped by Fox Express Company.
  :These explosives are to be used in secret experiments
  :for the U. S. Government.
-Q: Press Y to continue, N to repeat, or Fkey12 to exit 
-N:_V_R_L84
 
 #                                                             ../orig/v.typ:494
 I:(8) Drill on A, Q, ;, P
 *:_V_R_L85
 #                                                             ../orig/v.typ:502
-O:act ant and ask apt any art all age anle acid aged
+D:act ant and ask apt any art all age anle acid aged
  :age all art any ask act add axe ant aged able acid
  :
  :quit quip quote quite queer queen quack quaint quorum
@@ -1076,8 +900,6 @@ O:act ant and ask apt any art all age anle acid aged
  :
  :pin pup put; pull palm pant; pint pile push; punch;
  :put pin pup; pant pull palm; push pick pile; paper;
-Q: Press Y to continue, N to repeat, or Fkey12 to exit 
-N:_V_R_L85
 
 G:_V_E_V12
 #------------------------------------------------------------------------------
@@ -1096,58 +918,48 @@ N:_V_R_L86
 I:(1) Warmup
 *:_V_R_L87
 #                                                             ../orig/v.typ:510
-O:frf juj ftf jyj fgf jhj ded kik sws lol aqa ;p;
+D:frf juj ftf jyj fgf jhj ded kik sws lol aqa ;p;
  :fvf jmj fbf jnj dcd k,k sxs l.l dcd k,k sxs l.l
-Q: Press Y to continue, N to repeat, or Fkey12 to exit 
-N:_V_R_L87
 
 #                                                             ../orig/v.typ:511
 I:(2)
 *:_V_R_L88
 #                                                             ../orig/v.typ:514
-O:touch...learn...above...typing...talent...average
+D:touch...learn...above...typing...talent...average
  :special...lessons...you do...for you...is the
  :do the...of the...in this
-Q: Press Y to continue, N to repeat, or Fkey12 to exit 
-N:_V_R_L88
 
 #                                                             ../orig/v.typ:515
 I:(3)
 *:_V_R_L89
 #                                                             ../orig/v.typ:522
-P:Touch typing is easy to learn.  You do not need a
+S:Touch typing is easy to learn.  You do not need a
  :mind that is above the average.  You do not even
  :need a special talent for typing.
  :
  :All you need is the will to learn.  The lessons in
  :this book do the rest of the job for you; they
  :make touch typing easy for you to learn.
-Q: Press Y to continue, N to repeat, or Fkey12 to exit 
-N:_V_R_L89
 
 #                                                             ../orig/v.typ:523
 I:(4) New Key Tryout
 *:_V_R_L90
 #                                                             ../orig/v.typ:525
-O:z z z z aza aza aza aza / / / / ;/; ;/; ;/; ;/;
+D:z z z z aza aza aza aza / / / / ;/; ;/; ;/; ;/;
  :aza ;/; aza ;/; aza ;/; aza ;/; aza ;/; aza ;/;
-Q: Press Y to continue, N to repeat, or Fkey12 to exit 
-N:_V_R_L90
 
 #                                                             ../orig/v.typ:526
 I:(5) Word Drill
 *:_V_R_L91
 #                                                             ../orig/v.typ:528
-O:zip zip zip zip zip c/o c/o c/o c/o c/o c/o
+D:zip zip zip zip zip c/o c/o c/o c/o c/o c/o
  :zip zip zip zip zip c/o c/o c/o c/o c/o c/o
-Q: Press Y to continue, N to repeat, or Fkey12 to exit 
-N:_V_R_L91
 
 #                                                             ../orig/v.typ:529
 I:(6)
 *:_V_R_L92
 #                                                             ../orig/v.typ:537
-P:zest zest zest; lazy lazy lazy; size size size; zeal;
+S:zest zest zest; lazy lazy lazy; size size size; zeal;
  :zero zero zero; zest zest zest; lazy lazy lazy; zeal;
  :
  :blaze blaze blaze; amaze amaze amaze; zebra zebra;
@@ -1155,14 +967,12 @@ P:zest zest zest; lazy lazy lazy; size size size; zeal;
  :
  :The lazy zebra at the zoo quickly drank the mixture.
  :Ship five dozen boxes of zinc trays by Zale Express.
-Q: Press Y to continue, N to repeat, or Fkey12 to exit 
-N:_V_R_L92
 
 #                                                             ../orig/v.typ:538
 I:(7)
 *:_V_R_L93
 #                                                             ../orig/v.typ:553
-P:The slant is controlled by the semicolon finger.
+S:The slant is controlled by the semicolon finger.
  :It is used in such abbreviations as n/c, which means
  :NO CHARGE; and c/o, which means CARE OF.
  :
@@ -1177,32 +987,26 @@ P:The slant is controlled by the semicolon finger.
  :Every business firm is dependent on the services of
  :competent typists.  You are now equipping yourself with
  :a skill for which there is a constant demand.
-Q: Press Y to continue, N to repeat, or Fkey12 to exit 
-N:_V_R_L93
 
 #                                                             ../orig/v.typ:554
 I:(8)
 *:_V_R_L94
 #                                                             ../orig/v.typ:559
-O:bag big bug bit bud bed bid bun bale bend bank bask
+D:bag big bug bit bud bed bid bun bale bend bank bask
  :but bid bed bun bid big bag bud bask bale band bank
  :
  :not now nut nor note nose none nude noun nine nest
  :now not nor nut nose note nude none nine nest next
-Q: Press Y to continue, N to repeat, or Fkey12 to exit 
-N:_V_R_L94
 
 #                                                             ../orig/v.typ:560
 I:(9)
 *:_V_R_L95
 #                                                             ../orig/v.typ:565
-O:vim vet van vex vet vast vote veto vase vine vial
+D:vim vet van vex vet vast vote veto vase vine vial
  :van vex vet vim vex vial vine vase veto vote vast
  :
  :man mix mat mad made mail main make mark mask mine
  :mad met mix men mask mark made main male made mint
-Q: Press Y to continue, N to repeat, or Fkey12 to exit 
-N:_V_R_L95
 
 G:_V_E_V13
 #------------------------------------------------------------------------------
@@ -1214,37 +1018,31 @@ G:_V_E_V13
 #                                                             ../orig/v.typ:570
 T:
  :		   (The Question Mark)
-Q: Press Y to continue, or Fkey12 to exit 
-N:_V_R_L96
 
 #                                                             ../orig/v.typ:571
 I:(1) Warmup
 *:_V_R_L97
 #                                                             ../orig/v.typ:575
-O:frf juj ftf jyj fgf jhj ded kik sws lol aqa ;p;
+D:frf juj ftf jyj fgf jhj ded kik sws lol aqa ;p;
  :fvf jmj fbf jnj dcd k,k sxs l.l aza ;/; aza ;/;
  :
  :Liza quickly mixed the very big jar of new soap.
-Q: Press Y to continue, N to repeat, or Fkey12 to exit 
-N:_V_R_L97
 
 #                                                             ../orig/v.typ:576
 I:(2)
 *:_V_R_L98
 #                                                             ../orig/v.typ:581
-O:touch...learn...above...aside...typing
+D:touch...learn...above...aside...typing
  :talent...amount...average...special...
  :lessons...definite...is the...of the
  :for you...you do...that is...in this
  :you do not
-Q: Press Y to continue, N to repeat, or Fkey12 to exit 
-N:_V_R_L98
 
 #                                                             ../orig/v.typ:582
 I:(3)
 *:_V_R_L99
 #                                                             ../orig/v.typ:592
-P:Touch typing is easy to learn.  You do not need a mind
+S:Touch typing is easy to learn.  You do not need a mind
  :that is above the average.  You do not even need a
  :special talent for typing.
  :
@@ -1254,23 +1052,19 @@ P:Touch typing is easy to learn.  You do not need a mind
  :
  :Try to set aside each day a definite amount of time for
  :each lesson.
-Q: Press Y to continue, N to repeat, or Fkey12 to exit 
-N:_V_R_L99
 
 #                                                             ../orig/v.typ:593
 I:(4) New Key Tryout
 *:_V_R_L100
 #                                                             ../orig/v.typ:595
-O:? ? ? ? ? ? Who?  Who?  Who?  Who?  Who?  Who?
+D:? ? ? ? ? ? Who?  Who?  Who?  Who?  Who?  Who?
  :? ? ? ? ? ? Why?  Why?  Why?  Why?  Why?  Why?
-Q: Press Y to continue, N to repeat, or Fkey12 to exit 
-N:_V_R_L100
 
 #                                                             ../orig/v.typ:596
 I:(5)
 *:_V_R_L101
 #                                                             ../orig/v.typ:604
-O:How much?  How many?  How soon?  How early?  How fast?
+D:How much?  How many?  How soon?  How early?  How fast?
  :How many?  How much?  How fast?  How large?  How soon?
  :
  :Where is Max?  Where is Mary?  What is Cora sewing?
@@ -1278,26 +1072,22 @@ O:How much?  How many?  How soon?  How early?  How fast?
  :
  :Can Max swim?  Can he dance?  Can he play tennis?
  :Can he dance?  Deos he swim?  Do you like tennis?
-Q: Press Y to continue, N to repeat, or Fkey12 to exit 
-N:_V_R_L101
 
 #                                                             ../orig/v.typ:605
 I:(6)
 *:_V_R_L102
 #                                                             ../orig/v.typ:610
-O:Did you open the mail?  Did you read the note?
+D:Did you open the mail?  Did you read the note?
  :Did you read the note?  Did you open the mail?
  :
  :Can Van do the work?  Will he require aid?  Who knows?
  :Can Jim complete it?  Is he quite capable?  Who knows?
-Q: Press Y to continue, N to repeat, or Fkey12 to exit 
-N:_V_R_L102
 
 #                                                             ../orig/v.typ:611
 I:(7) Practice Paragraph
 *:_V_R_L103
 #                                                             ../orig/v.typ:626
-P:Do you set aside a definite amount of time each
+S:Do you set aside a definite amount of time each
  :day for practice?  Do you start work promptly?  Can
  :you make the various machine adjustments quickly?
  :
@@ -1312,20 +1102,16 @@ P:Do you set aside a definite amount of time each
  :Do you practice the words in which you made errors?  Do you
  :practice them as explained in this book?  Do you follow the
  :instructions exactly as given?
-Q: Press Y to continue, N to repeat, or Fkey12 to exit 
-N:_V_R_L103
 
 #                                                             ../orig/v.typ:627
 I:(8)
 *:_V_R_L104
 #                                                             ../orig/v.typ:632
-O:lax vex six tax fix taxed fixing mixing taxing vexing
+D:lax vex six tax fix taxed fixing mixing taxing vexing
  :fix tax vex lax six fixed vexing taxing fixing mixing
  :
  :zip zoo zest zeal zinc zero lazy zone zoom zinc zealot
  :zoo zip zoom zone lazy zinc zeal zest zero zone zealot
-Q: Press Y to continue, N to repeat, or Fkey12 to exit 
-N:_V_R_L104
 
 G:_V_E_V14
 #------------------------------------------------------------------------------
@@ -1337,46 +1123,38 @@ G:_V_E_V14
 #                                                             ../orig/v.typ:637
 T:
  :			(1, 4, 5, 6, 7)
-Q: Press Y to continue, or Fkey12 to exit 
-N:_V_R_L105
 
 #                                                             ../orig/v.typ:638
 I:(1) Warmup
 *:_V_R_L106
 #                                                             ../orig/v.typ:640
-O:frf juj ftf jyj fgf jhj ded kik sws lol aqa ;p;
+D:frf juj ftf jyj fgf jhj ded kik sws lol aqa ;p;
  :fvf jmj fbf jnj dcd k,k sxs l.l aza ;/; aza ;/;
-Q: Press Y to continue, N to repeat, or Fkey12 to exit 
-N:_V_R_L106
 
 #                                                             ../orig/v.typ:641
 I:(2)
 *:_V_R_L107
 #                                                             ../orig/v.typ:647
-O:touch...learn...above...aside...typing
+D:touch...learn...above...aside...typing
  :talent...amount...follow...easily...become
  :typist...average...special...lessons...definite
  :exactly...quickly...surprised...is the...
  :of the...in the...in this...for you...
  :you will...you will be
-Q: Press Y to continue, N to repeat, or Fkey12 to exit 
-N:_V_R_L107
 
 #                                                             ../orig/v.typ:648
 I:(3)
 *:_V_R_L108
 #                                                             ../orig/v.typ:651
-P:Touch typing is easy to learn.  You do not need a
+S:Touch typing is easy to learn.  You do not need a
  :mind that is above the average.  You do not even need
  :a special talent for typing.
-Q: Press Y to continue, N to repeat, or Fkey12 to exit 
-N:_V_R_L108
 
 #                                                             ../orig/v.typ:652
 I:(4)
 *:_V_R_L109
 #                                                             ../orig/v.typ:664
-P:Touch typing is easy to learn.  You do not need a
+S:Touch typing is easy to learn.  You do not need a
  :mind that is above the average.  You do not even need
  :a special talent for typing.
  :
@@ -1388,38 +1166,32 @@ P:Touch typing is easy to learn.  You do not need a
  :each lesson.  Follow each step in the lesson exactly as
  :given.  You will be surprised how easily and quickly
  :you will become a touch typist.
-Q: Press Y to continue, N to repeat, or Fkey12 to exit 
-N:_V_R_L109
 
 #                                                             ../orig/v.typ:665
 I:(5) 4 and 7
 *:_V_R_L110
 #                                                             ../orig/v.typ:670
-O:f4f f4f f4f f4f f4f f4f j7j j7j j7j j7j j7j j7j
+D:f4f f4f f4f f4f f4f f4f j7j j7j j7j j7j j7j j7j
  :f4f j7j f4f j7j f4f j7j f4f j7j f4f j7j f4f j7j
  :
  :or 4 or 4 or 4 ru 7 ru 7 ru 7 or 4 ru 7 or 4 ru 7
  :or 4 ru 7 or 4 ru 7 or 4 ru 7 or 4 ru 7 or 4 ru 7
-Q: Press Y to continue, N to repeat, or Fkey12 to exit 
-N:_V_R_L110
 
 #                                                             ../orig/v.typ:671
 I:(6)
 *:_V_R_L111
 #                                                             ../orig/v.typ:676
-O:June 1; July 4; April 7; January 4; March 17, 1741
+D:June 1; July 4; April 7; January 4; March 17, 1741
  :July 4; June 1; March 4; October 7; April 14, 1471
  :
  :What is the sum of 11 and 7 and 4 and 1 and 714?
  :What is the sum of 17 and 4 and 7 and 1 and 174?
-Q: Press Y to continue, N to repeat, or Fkey12 to exit 
-N:_V_R_L111
 
 #                                                             ../orig/v.typ:677
 I:(7)
 *:_V_R_L112
 #                                                             ../orig/v.typ:685
-O:Florence is 7 years 14 months and 17 days old today.
+D:Florence is 7 years 14 months and 17 days old today.
  :Veronica is 4 years 11 months and 14 days old today.
  :
  :Your order of November 14 was shipped on December 17.
@@ -1427,14 +1199,12 @@ O:Florence is 7 years 14 months and 17 days old today.
  :
  :Policy No. 141174 will expire on Monday, November 14.
  :Policy No. 471714 will expire on Friday, December 17.
-Q: Press Y to continue, N to repeat, or Fkey12 to exit 
-N:_V_R_L112
 
 #                                                             ../orig/v.typ:686
 I:(8) Practice Paragraph
 *:_V_R_L113
 #                                                             ../orig/v.typ:700
-P:Henry Clay, American statesman and orator, was
+S:Henry Clay, American statesman and orator, was
  :born in Hanover County, Virginia, in 1777.
  :
  :On June 14, 1777, John Paul Jones became commander
@@ -1448,14 +1218,12 @@ P:Henry Clay, American statesman and orator, was
  :flag was adopted by Congress on June 14, 1777.  The
  :house where Betsy Ross, designer of the flag, lived
  :is now preserved as a shrine.
-Q: Press Y to continue, N to repeat, or Fkey12 to exit 
-N:_V_R_L113
 
 #                                                             ../orig/v.typ:701
 I:(9)
 *:_V_R_L114
 #                                                             ../orig/v.typ:713
-P:Do not erase.  Do not cross out.  Do not strike
+S:Do not erase.  Do not cross out.  Do not strike
  :one letter over another.  Let your errors stand.
  :Finish every line you start.
  :
@@ -1467,54 +1235,46 @@ P:Do not erase.  Do not cross out.  Do not strike
  :
  :Try your utmost to turn out attractive work.
  :Take pride in your typing product.
-Q: Press Y to continue, N to repeat, or Fkey12 to exit 
-N:_V_R_L114
 
 #                                                             ../orig/v.typ:714
 I:(10) 5 and 6
 *:_V_R_L115
 #                                                             ../orig/v.typ:719
-O:f5f f5f f5f f5f f5f f5f j6j j6j j6j j6j j6j j6j
+D:f5f f5f f5f f5f f5f f5f j6j j6j j6j j6j j6j j6j
  :f5f j6j f5f j6j f5f j6j f5f j6j f5f j6j f5f j6j
  :
  :if 5 by 6 if 5 by 6 if 6 by 6 if 5 by 6 if 5 by 6
  :if 5 by 6 if 5 by 6 if 6 by 6 if 5 by 6 if 5 by 6
-Q: Press Y to continue, N to repeat, or Fkey12 to exit 
-N:_V_R_L115
 
 #                                                             ../orig/v.typ:720
 I:(11)
 *:_V_R_L116
 #                                                             ../orig/v.typ:727
-O:f4f j7j f5f j6j f4f j7j f5f j6j f4f j7j f5f j6j
+D:f4f j7j f5f j6j f4f j7j f5f j6j f4f j7j f5f j6j
  :15 lbs. coffee; 16 doz. eggs; 56 boxes oranges;
  :65 lbs. coffee; 14 doz. eggs; 75 boxes oranges;
  :
  :or 4 ru 7 it 5 my 6 or 4 ru 7 it 5 my 6 147 156
  :The Barton Market is at 516 West 147th Street.
  :The Baxter Market is at 165 East 165th Street.
-Q: Press Y to continue, N to repeat, or Fkey12 to exit 
-N:_V_R_L116
 
 #                                                             ../orig/v.typ:728
 I:(12)
 *:_V_R_L117
 #                                                             ../orig/v.typ:735
-O:fr4 ju7 ft5 jy6 f4f j7j f5f j6j f4f j7j f5f j6j
+D:fr4 ju7 ft5 jy6 f4f j7j f5f j6j f4f j7j f5f j6j
  :Robert Fulton was born in Pennsylvania in 1765.
  :William Penn, English Quaker, was born in 1644.
  :
  :or 4 ru 7 it 5 by 6 or 4 ru 7 it 5 by 6 174 516
  :The sum of 15 and 51 and 65 and 41 and 475 is 647.
  :The sum of 51 and 15 and 56 and 14 and 475 is 611.
-Q: Press Y to continue, N to repeat, or Fkey12 to exit 
-N:_V_R_L117
 
 #                                                             ../orig/v.typ:736
 I:(13)
 *:_V_R_L118
 #                                                             ../orig/v.typ:749
-P:On June 15, 1775, George Washington was elected
+S:On June 15, 1775, George Washington was elected
  :by Congress the Chief Commander of the American forces.
  :He scored a brilliant victory at Trenton on Christmas
  :night, 1776.
@@ -1527,8 +1287,6 @@ P:On June 15, 1775, George Washington was elected
  :cruisers, 6 aircraft carriers, 17 troopships, six submarines,
  :and 2 Dr. Strangeloves.  Air protection consisted of 14
  :bombers, 175 fighters, 6 helicopters, and 75 paratroop planes.
-Q: Press Y to continue, N to repeat, or Fkey12 to exit 
-N:_V_R_L118
 
 G:_V_E_V15
 #------------------------------------------------------------------------------
@@ -1540,45 +1298,37 @@ G:_V_E_V15
 #                                                             ../orig/v.typ:754
 T:
  :			(3 and 8)
-Q: Press Y to continue, or Fkey12 to exit 
-N:_V_R_L119
 
 #                                                             ../orig/v.typ:755
 I:(1) Warmup
 *:_V_R_L120
 #                                                             ../orig/v.typ:757
-O:f4f j7j f5f j6j f4f j7j f5f j6j f4f j7j f5f j6j
+D:f4f j7j f5f j6j f4f j7j f5f j6j f4f j7j f5f j6j
  :417 147 517 157 617 167 617 171 714 471 651 174
-Q: Press Y to continue, N to repeat, or Fkey12 to exit 
-N:_V_R_L120
 
 #                                                             ../orig/v.typ:758
 I:(2)
 *:_V_R_L121
 #                                                             ../orig/v.typ:763
-O:never...typing...office...become...getting...
+D:never...typing...office...become...getting...
  :acquire...efforts...valuable...personal...
  :possible...business...shorthand...it is...
  :it can...to it...in the...to use...to have
  :if you...from you...why not
-Q: Press Y to continue, N to repeat, or Fkey12 to exit 
-N:_V_R_L121
 
 #                                                             ../orig/v.typ:764
 I:(3)
 *:_V_R_L122
 #                                                             ../orig/v.typ:767
-P:Typing is a very valuable skill to acquire.  It is
+S:Typing is a very valuable skill to acquire.  It is
  :valuable for personal use and as a means of getting
  :an office job.
-Q: Press Y to continue, N to repeat, or Fkey12 to exit 
-N:_V_R_L122
 
 #                                                             ../orig/v.typ:768
 I:(4)
 *:_V_R_L123
 #                                                             ../orig/v.typ:781
-P:Typing is a very valuable skill to acquire.  It is
+S:Typing is a very valuable skill to acquire.  It is
  :valuable for personal use and as a means of getting
  :an office job.  This skill is yours to use; it can
  :never be taken from you.
@@ -1591,54 +1341,46 @@ P:Typing is a very valuable skill to acquire.  It is
  :
  :These two skills will help you get a good start
  :in the business world.
-Q: Press Y to continue, N to repeat, or Fkey12 to exit 
-N:_V_R_L123
 
 #                                                             ../orig/v.typ:782
 I:(5) New Key Tryout
 *:_V_R_L124
 #                                                             ../orig/v.typ:787
-O:d3d k8k d3d k8k d3d k8k d3d k8k d3d k8k d3d k8k
+D:d3d k8k d3d k8k d3d k8k d3d k8k d3d k8k d3d k8k
  :131 313 311 181 818 381 381 381 183 138 318 813
  :
  :bid 3 bid 3 bid 3 bid 3 oak 8 oak 8 oak 8 oak 8
  :bid 3 bid 3 bid 3 bid 3 oak 8 oak 8 oak 8 oak 8
-Q: Press Y to continue, N to repeat, or Fkey12 to exit 
-N:_V_R_L124
 
 #                                                             ../orig/v.typ:788
 I:(6)
 *:_V_R_L125
 #                                                             ../orig/v.typ:795
-O:d3d k8k d3d k8k d3d k8k d3d k8k 318 813 138 813 381
+D:d3d k8k d3d k8k d3d k8k d3d k8k 318 813 138 813 381
  :13 lbs.  lamb roast; 38 lbs. lamb chops; 8 lbs. bananas;
  :31 lbs.  lamb chops; 83 lbs. lamb roast; 3 lbs. peaches;
  :
  :lie 3 dye 3 pie 3 dye 3 Fiji 8 Fiji 8 Fiji 8
  :18 cans grape juice; 138 cans prune juice; 4 lbs. coffee;
  :47 cans prune juice; 143 cans grape juice; 8 lbs. onions;
-Q: Press Y to continue, N to repeat, or Fkey12 to exit 
-N:_V_R_L125
 
 #                                                             ../orig/v.typ:796
 I:(7)
 *:_V_R_L126
 #                                                             ../orig/v.typ:803
-O:d3d k8k d3d k8k d3d k8k 183 381 813 318 138 381
+D:d3d k8k d3d k8k d3d k8k 183 381 813 318 138 381
  :8 lbs. Swiss Cheese; 13 lbs. Kraft Cheese; 4 lbs. pears;
  :5 lbs. Kraft Cheese; 17 lbs. Swiss Cheese; 6 lbs. beans;
  :
  :pie 3 dye 3 pie 3 dye 3 Fiji 8 Fiji 8 Fiji 8 Fiji 8
  :The sum of 13 and 83 and 153 and 75 and 47 is 371.
  :The sum of 47 and 75 and 153 and 83 and 13 is 371.
-Q: Press Y to continue, N to repeat, or Fkey12 to exit 
-N:_V_R_L126
 
 #                                                             ../orig/v.typ:804
 I:(8) Practice Paragraph
 *:_V_R_L127
 #                                                             ../orig/v.typ:824
-P:John Jacob Astor was born in 1763 and died in
+S:John Jacob Astor was born in 1763 and died in
  :1848.  He came to America from England in 1784 and
  :set up a prosperous fur trade.  In 1811 he founded
  :the settlement of Astoria near the mouth of the
@@ -1658,8 +1400,6 @@ P:John Jacob Astor was born in 1763 and died in
  :in Massachusetts on March 8, 1841; graduated from
  :Harvard in 1861; from Harvard Law School in 1866;
  :admitted to the Massachusetts Bar in 1867.
-Q: Press Y to continue, N to repeat, or Fkey12 to exit 
-N:_V_R_L127
 
 G:_V_E_V16
 #------------------------------------------------------------------------------
@@ -1671,56 +1411,46 @@ G:_V_E_V16
 #                                                             ../orig/v.typ:829
 T:
  :			(2 and 9)
-Q: Press Y to continue, or Fkey12 to exit 
-N:_V_R_L128
 
 #                                                             ../orig/v.typ:830
 I:(1) Warmup
 *:_V_R_L129
 #                                                             ../orig/v.typ:834
-O:f4f j7j f5f j6j d3d k8k f4f j7j f5f j6j d3d k8k
+D:f4f j7j f5f j6j d3d k8k f4f j7j f5f j6j d3d k8k
  :or4 ru7 it5 by6 ie3 ok8 or4 ru7 it5 by6 ie3 ok8
  :
  :The sum of 14 and 16 and 53 and 58 and 174 is 315.
-Q: Press Y to continue, N to repeat, or Fkey12 to exit 
-N:_V_R_L129
 
 #                                                             ../orig/v.typ:835
 I:(2)
 *:_V_R_L130
 #                                                             ../orig/v.typ:841
-O:strike...center...finger...spring...though...
+D:strike...center...finger...spring...though...
  :expert...sharply...release...quickly...develop...
  :letting...squarely...practice...familiar...
  :fingertip...important...technique...releasing...
  :instantly...it is...do it...do this...with the...
  :you get.
-Q: Press Y to continue, N to repeat, or Fkey12 to exit 
-N:_V_R_L130
 
 #                                                             ../orig/v.typ:842
 I:(3)
 *:_V_R_L131
 #                                                             ../orig/v.typ:845
-P:Strike each key sharply with the fingertip and squarely
+S:Strike each key sharply with the fingertip and squarely
  :in the center.  Strike the key quickly, letting the
  :finger spring back as though the key were red hot.
-Q: Press Y to continue, N to repeat, or Fkey12 to exit 
-N:_V_R_L131
 
 #                                                             ../orig/v.typ:846
 I:(4)
 *:_V_R_L132
 #                                                             ../orig/v.typ:849
-P:Strike each key sharply with the fingertip and squarely
+S:Strike each key sharply with the fingertip and squarely
  :in the center.  Strike the key quickly, letting the
  :finger spring back as though the key were red hot.
-Q: Press Y to continue, N to repeat, or Fkey12 to exit 
-N:_V_R_L132
 
 *:_V_R_L133
 #                                                             ../orig/v.typ:858
-P:
+S:
  :To type fast, it is just as important to release the
  :key quickly as it is to strike it quickly.  Expert
  :typists do this; you too, can do it, with practice.
@@ -1729,54 +1459,46 @@ P:
  :familiar words and phrases.  Type them over and over
  :again until you get the knack of hitting the keys quickly
  :and releasing the fingers instantly.
-Q: Press Y to continue, N to repeat, or Fkey12 to exit 
-N:_V_R_L133
 
 #                                                             ../orig/v.typ:859
 I:(5) New Key Tryout
 *:_V_R_L134
 #                                                             ../orig/v.typ:864
-O:s2s s2s s2s s2s s2s s2s l9l l9l l9l l9l l9l l9l
+D:s2s s2s s2s s2s s2s s2s l9l l9l l9l l9l l9l l9l
  :s2s l9l s2s l9l s2s l9l s2s l9l s2s l9l s2s l9l
  :
  :bow 2 bow 2 bow 2 bow 2 two 9 two 9 two 9 two 9
  :bow 2 two 9 bow 2 two 9 bow 2 two 9 bow 2 two 9
-Q: Press Y to continue, N to repeat, or Fkey12 to exit 
-N:_V_R_L134
 
 #                                                             ../orig/v.typ:865
 I:(6)
 *:_V_R_L135
 #                                                             ../orig/v.typ:872
-O:s2s l9l s2s l9l s2s l9l s2s l9l s2s l9l s2s l9l s2s l9l
+D:s2s l9l s2s l9l s2s l9l s2s l9l s2s l9l s2s l9l s2s l9l
  :12 lbs. coffee; 19 lbs. Cottage Cheese; 9 lbs. peaches;
  :19 lbs. apples; 29 lbs. Cheddar Cheese; 2 lbs. bananas;
  :
  :low 2 fro 9 low 2 fro 9 low 2 fro 9 low 2 fro 9 29 192;
  :9 lbs. Smoked Tongue; 2 lbs. tomatoes; 9 lbs. avocados;
  :2 lbs. Cooked Tongue; 9 lbs. avocados; 2 lbs. tomatoes;
-Q: Press Y to continue, N to repeat, or Fkey12 to exit 
-N:_V_R_L135
 
 #                                                             ../orig/v.typ:873
 I:(7)
 *:_V_R_L136
 #                                                             ../orig/v.typ:880
-O:s2s l9l s2s l9l 219 921 192 s2s l9l s2s 191 291 129
+D:s2s l9l s2s l9l 219 921 192 s2s l9l s2s 191 291 129
  :The sum of 29 and 86 and 33 and 92 and 52 is 292.
  :The sum of 52 and 92 and 86 and 33 and 29 is 292.
  :
  :ow 2 to 9 ow 2 to 9 we 23 ok 98 we 23 ok 98 s2s l9l
  :George Washington was born on February 22, 1732.
  :Horatio Alger was born in 1834 and died in 1899.
-Q: Press Y to continue, N to repeat, or Fkey12 to exit 
-N:_V_R_L136
 
 #                                                             ../orig/v.typ:881
 I:(8)
 *:_V_R_L137
 #                                                             ../orig/v.typ:898
-P:Christopher Latham Sholes was the inventor of the first practical
+S:Christopher Latham Sholes was the inventor of the first practical
  :typewriter.  He was born in Columbia County, Pennsylvania,
  :February 14, 1819.
  :
@@ -1793,8 +1515,6 @@ P:Christopher Latham Sholes was the inventor of the first practical
  :1872.  In 1829 he went to Europe for three years.  For 12 years he
  :worked on perfecting the electrical telegraph, which was exhibited at New
  :York University in 1837.
-Q: Press Y to continue, N to repeat, or Fkey12 to exit 
-N:_V_R_L137
 
 G:_V_E_V17
 #------------------------------------------------------------------------------
@@ -1806,46 +1526,38 @@ G:_V_E_V17
 #                                                             ../orig/v.typ:903
 T:
  :		    (0 and the Hyphen)
-Q: Press Y to continue, or Fkey12 to exit 
-N:_V_R_L138
 
 #                                                             ../orig/v.typ:904
 I:(1) Warmup
 *:_V_R_L139
 #                                                             ../orig/v.typ:908
-O:f4f j7j f5f j6j d3d k8k s2s l9l f4f j7j f5f j6j
+D:f4f j7j f5f j6j d3d k8k s2s l9l f4f j7j f5f j6j
  :s2s l9l d3d k8k f4f j7j f5f j6j f4f j7j f5f j6j
  :
  :The sum of 47 and 65 and 38 and 92 and 16 equals 258.
-Q: Press Y to continue, N to repeat, or Fkey12 to exit 
-N:_V_R_L139
 
 #                                                             ../orig/v.typ:909
 I:(2)
 *:_V_R_L140
 #                                                             ../orig/v.typ:913
-O:expert...typing...margin...always...before...
+D:expert...typing...margin...always...before...
  :permits...others...reached...equipped...machines...
  :carriage...typewriter...approaching...you are...
  :of the...for the...on the...you may...before the
-Q: Press Y to continue, N to repeat, or Fkey12 to exit 
-N:_V_R_L140
 
 #                                                             ../orig/v.typ:914
 I:(3)
 *:_V_R_L141
 #                                                             ../orig/v.typ:917
-P:Your typewriter is equipped with a bell which
+S:Your typewriter is equipped with a bell which
  :rings to warn you that you are approaching the end
  :of the line
-Q: Press Y to continue, N to repeat, or Fkey12 to exit 
-N:_V_R_L141
 
 #                                                             ../orig/v.typ:918
 I:(4)
 *:_V_R_L142
 #                                                             ../orig/v.typ:934
-P:Your typewriter is equipped with a bell which rings
+S:Your typewriter is equipped with a bell which rings
  :to warn you that you are approaching the end of the
  :line.
  :
@@ -1861,54 +1573,46 @@ P:Your typewriter is equipped with a bell which rings
  :Do not look up to watch for the end of the line; you
  :may lose your place in the copy.  Always keep your
  :eyes on the copy like the expert typist.
-Q: Press Y to continue, N to repeat, or Fkey12 to exit 
-N:_V_R_L142
 
 #                                                             ../orig/v.typ:935
 I:(5) New Key Tryout
 *:_V_R_L143
 #                                                             ../orig/v.typ:941
-O:;0; ;0; ;0; ;0; ;0; ;0; ;-; ;-; ;-; ;-; ;-; ;-;
+D:;0; ;0; ;0; ;0; ;0; ;0; ;-; ;-; ;-; ;-; ;-; ;-;
  :;0; ;-; ;0; ;-; ;0; ;-; ;0; ;-; ;0; ;-; ;0; ;-;
  :
  :10-room; 10-room; 10-room; 10-room; 10-room;
  :20-room; 20-room; 20-room; 20-room; 20-room;
-Q: Press Y to continue, N to repeat, or Fkey12 to exit 
-N:_V_R_L143
 
 #                                                             ../orig/v.typ:942
 I:(6)
 *:_V_R_L144
 #                                                             ../orig/v.typ:949
-O:f4f j7j f5f j6j d3d k8k s2s l9l ;0; ;-; ;0; ;-;
+D:f4f j7j f5f j6j d3d k8k s2s l9l ;0; ;-; ;0; ;-;
  :one-half; one-fourth; one-eighth; three-quarters;
  :one-half; two-thirds; one-fourth; three-sevenths;
  :
  :f4f j7j f5f j6j d3d k8k s2s l9l ;0; ;-; ;0; ;-;
  :20-room house; 30-room house; 40-room house;
  :50-room house; 60-room house; 70-room house;
-Q: Press Y to continue, N to repeat, or Fkey12 to exit 
-N:_V_R_L144
 
 #                                                             ../orig/v.typ:950
 I:(7)
 *:_V_R_L145
 #                                                             ../orig/v.typ:957
-O:f4f j7j f5f j6j d3d k8k s2s l9l ;0; ;-; ;0; ;-;
+D:f4f j7j f5f j6j d3d k8k s2s l9l ;0; ;-; ;0; ;-;
  :One-fourth may be typewritten like this:  1/4.
  :One-eighth may be typewritten like this:  1/8.
  :
  :f4f j7j f5f j6j d3d k8k s2s l9l ;0; ;-; ;0; ;-;
  :Every expert was once a beginner--with ambition.
  :Every expert was once a beginner--with ambition.
-Q: Press Y to continue, N to repeat, or Fkey12 to exit 
-N:_V_R_L145
 
 #                                                             ../orig/v.typ:958
 I:(8)
 *:_V_R_L146
 #                                                             ../orig/v.typ:972
-P:As you have seen in the above sentence practice, the hyphen is used
+S:As you have seen in the above sentence practice, the hyphen is used
  :for typing compound words.  Here are a few more examples:  up-to-date,
  :first-class, by-product.
  :
@@ -1922,20 +1626,16 @@ P:As you have seen in the above sentence practice, the hyphen is used
  :
  :The sum of 10 and 20 and 30 and 40 and 50 and 60 and 70 and 80 and 90
  :and 100 and 105 and 106 and 107 and 108 and 109 and 110 equals 1,195.
-Q: Press Y to continue, N to repeat, or Fkey12 to exit 
-N:_V_R_L146
 
 #                                                             ../orig/v.typ:973
 I:(9)
 *:_V_R_L147
 #                                                             ../orig/v.typ:978
-P:Have you seen the new 7-room house at 175 West
+S:Have you seen the new 7-room house at 175 West
  :239th Street?  It is equipped with every up-to-date,
  :labor-saving device for the home.  You may inspect
  :it free of charge any day except Sunday between
  :10 a.m. and 4 p.m.
-Q: Press Y to continue, N to repeat, or Fkey12 to exit 
-N:_V_R_L147
 
 G:_V_E_V18
 #------------------------------------------------------------------------------
@@ -1948,38 +1648,32 @@ G:_V_E_V18
 I:(1) Warmup
 *:_V_R_L149
 #                                                             ../orig/v.typ:986
-O:f4f j7j f5f j6j d3d k8k s2s l9l ;0; ;-; ;0; ;-;
+D:f4f j7j f5f j6j d3d k8k s2s l9l ;0; ;-; ;0; ;-;
  :s2s l9l ;-; ;=; d3d k8k f4f j7j ;0; ;-; ;0; ;-;
  :
  :Max Zale made a long-distance flight of 2,590 miles.
-Q: Press Y to continue, N to repeat, or Fkey12 to exit 
-N:_V_R_L149
 
 #                                                             ../orig/v.typ:987
 I:(2)
 *:_V_R_L150
 #                                                             ../orig/v.typ:991
-O:called...fourth...typing...letter...always...
+D:called...fourth...typing...letter...always...
  :capital...holding...depress...fingers...release...
  :touching...slightly...position...right-hand...of the
  :for the...all the...with the...you have
-Q: Press Y to continue, N to repeat, or Fkey12 to exit 
-N:_V_R_L150
 
 #                                                             ../orig/v.typ:992
 I:(3)
 *:_V_R_L151
 #                                                             ../orig/v.typ:994
-P:You type capital letters by holding down a key
+S:You type capital letters by holding down a key
  :called the shift key while you strike the letter key.
-Q: Press Y to continue, N to repeat, or Fkey12 to exit 
-N:_V_R_L151
 
 #                                                             ../orig/v.typ:995
 I:(4)
 *:_V_R_L152
 #                                                            ../orig/v.typ:1010
-P:You type capital letters by holding down a key
+S:You type capital letters by holding down a key
  :called the shift key while you strike the letter key.
  :
  :There are two shift keys.  Hold down the left
@@ -1994,14 +1688,12 @@ P:You type capital letters by holding down a key
  :Be sure that you hold the shift key all the way
  :down until you have struck the letter key; then re-
  :lease the shift key and return finger to home base.
-Q: Press Y to continue, N to repeat, or Fkey12 to exit 
-N:_V_R_L152
 
 #                                                            ../orig/v.typ:1011
 I:(5)
 *:_V_R_L153
 #                                                            ../orig/v.typ:1028
-P:Prepare a bill for the following items:  29 lbs. butter
+S:Prepare a bill for the following items:  29 lbs. butter
  :@ $0.895; 36 doz. eggs @ $0.695;  28 doz. oranges
  :@ $0.575; 15 bu. potatoes @ $0.795.
  :
@@ -2018,14 +1710,12 @@ P:Prepare a bill for the following items:  29 lbs. butter
  :ordered the following supplies:  15 Pruning Shears,
  :10-inch, at $.795; 24 Steel Rakes, 14-inch, at $.815;
  :16 Steel Spades, D-Handle, at $.935.
-Q: Press Y to continue, N to repeat, or Fkey12 to exit 
-N:_V_R_L153
 
 #                                                            ../orig/v.typ:1029
 I:(6)
 *:_V_R_L154
 #                                                            ../orig/v.typ:1042
-P:The backspace key is one of the most useful time-
+S:The backspace key is one of the most useful time-
  :saving devices on your typewriter.  You use it to back
  :up a space, to darken a light impression, or to pivot.
  :To pivot means to type a line so that the last letter
@@ -2038,8 +1728,6 @@ P:The backspace key is one of the most useful time-
  :
  :The most important use of the backspace key is in
  :centering words or lines.
-Q: Press Y to continue, N to repeat, or Fkey12 to exit 
-N:_V_R_L154
 
 G:_V_E_V19
 #------------------------------------------------------------------------------

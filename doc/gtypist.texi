@@ -402,8 +402,9 @@ programs (for example by a window manager).
 
 @item E
 @c TODO: better English:
-This command is used to set the error-max value.
-This is the highest error-rate permitted.
+This command is used to set the highest error-rate permitted for
+the next drill (E:<value>%) or for all following drills until the next
+E: (E:<value>%*).
 
 If @option{--error-max/-e} is specified then this command will only
 have an effect if it is @emph{stricter} than the value specified on
@@ -414,15 +415,12 @@ followed by '%' (this is required so that scripts are more readable).
 A special value of @code{default} or @code{Default} sets the error-max
 value back to the default.
 
-Usually, this command only applies to the next drill, but you can make
-it persistent by putting a '*' at the end of @code{command_data}.
-
-@c TODO: better English: skip to ...
 @item F
 This command (``set on-failure label'') is used to set the label (in
-@code{command_data}) where the user will skip to if he/she fails a drill.
+@code{command_data}) where the user will have to go to if he/she fails
+an exercise.
 
-Usually, this command only applies to the next drill, but you can make
+Usually, this command only applies to the next exercise, but you can make
 it persistent by putting a '*' at the end of @code{command_data}.
 
 If label is NULL then this resets the label.

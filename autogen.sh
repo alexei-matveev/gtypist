@@ -13,7 +13,10 @@
 
 . version.sh
 
+echo "running makeinfo..."
 makeinfo -Idoc doc/gtypist.texi -o doc/gtypist.info
+echo "running typcombine..."
+(cd lessons && ../tools/typcombine ?.typ > gtypist.typ)
 
 # TODO: check whether someone has modified $file and if so
 # write a meaningful message that this file is generated from $file.in
@@ -24,6 +27,7 @@ done
 
 # Build configuration files
 
+echo "creating build configuration files..."
 rm -f config.cache
 aclocal
 autoheader

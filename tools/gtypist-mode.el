@@ -82,6 +82,7 @@
 ;; Sat Aug 11 16:39:16 2001: adapt to 2.4.0's drill-types
 ;; Sat Aug 11 18:08:56 2001: color "[Dd]efault" (as in "E: default")
 ;; Tue Aug 14 18:22:34 2001: rename gtypist-mode-help to gtypist-mode-info
+;; Sun Sep  2 16:36:20 2001: put point after ':' in gtypist-mode-indent-line
 
 ;; TODO:
 ;; - gtypist-mode-goto-label-history, gtypist-mode-lesson-name-history ?
@@ -309,7 +310,10 @@ available). Use C-u prefix to get S:, and C-u C-u to get d:."
   "Indent the current line."
   (interactive)
   (if (string-match "^[ \t]*:.*" (thing-at-point 'line))
-      (indent-line-to 1)
+      (progn
+	(indent-line-to 1)
+	;; point must be after ':'; this is more convenient when editing
+	(forward-char))
     (indent-line-to 0)))
 
 (defun gtypist-mode()

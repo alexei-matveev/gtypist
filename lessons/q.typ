@@ -48,8 +48,6 @@ T:			Welcome to lesson Q1.
  :
  :If you can already touch type, you should be able to go through these lessons
  :fairly quickly.  Or, you may want to go directly to the S series.
-Q: Press Y to continue, or Fkey12 to exit 
-N:_Q_R_L0
 
 *:_Q_R_L1
 #                                                              ../orig/q.typ:42
@@ -74,8 +72,6 @@ T:
  :Above the D-key is the E-key.  Above the K-key is the I-key.  Learn these
  :positions well.  Whenever you are about to type a line, look at your fingers and
  :make sure they are in the HOME position.  Then don't look at them again.
-Q: Press Y to continue, or Fkey12 to exit 
-N:_Q_R_L1
 
 *:_Q_R_L2
 #                                                              ../orig/q.typ:63
@@ -100,92 +96,72 @@ T:
  :you did make a mistake, I will beep at you and make you do the line again.  If
  :on the second try you made more than two mistakes, I will beep again and make
  :you try again, etc.  Don't forget to use your right thumb for the SPACE bar.
-Q: Press Y to continue, or Fkey12 to exit 
-N:_Q_R_L2
 
 #                                                              ../orig/q.typ:64
 I:(1) Try this:
 *:_Q_R_L3
 #                                                              ../orig/q.typ:65
-O:asdf ;lkj asdf ;lkj asdf ;lkj asdf ;lkj asdf ;lkj asdf ;lkj
-Q: Press Y to continue, N to repeat, or Fkey12 to exit 
-N:_Q_R_L3
+D:asdf ;lkj asdf ;lkj asdf ;lkj asdf ;lkj asdf ;lkj asdf ;lkj
 
 #                                                              ../orig/q.typ:66
 I:Now this:
 *:_Q_R_L4
 #                                                              ../orig/q.typ:67
-O:asdef ;lkij asdef ;lkij asdef ;lkij asdef ;lkij asdef ;lkij
-Q: Press Y to continue, N to repeat, or Fkey12 to exit 
-N:_Q_R_L4
+D:asdef ;lkij asdef ;lkij asdef ;lkij asdef ;lkij asdef ;lkij
 
 #                                                              ../orig/q.typ:68
 I:(2) Some more:
 *:_Q_R_L5
 #                                                              ../orig/q.typ:71
-O:as al ad ak af aj fa ka da la sa ja sl sd sk sf ls ds ks fs
+D:as al ad ak af aj fa ka da la sa ja sl sd sk sf ls ds ks fs
  :de le ae ke se je fe ed el ea ek es ej ef ed lf dk dl fl kl
  :ki ai li si di ji fi ia il is ik id ij if dd ee ss ff ll ei
-Q: Press Y to continue, N to repeat, or Fkey12 to exit 
-N:_Q_R_L5
 
 #                                                              ../orig/q.typ:72
 I:(3) Hang in there; let's do some sentences...
 *:_Q_R_L6
 #                                                              ../orig/q.typ:73
-O:Dad adds a salad  A lad asks  Salad falls as a lad asks Dad
-Q: Press Y to continue, N to repeat, or Fkey12 to exit 
-N:_Q_R_L6
+D:Dad adds a salad  A lad asks  Salad falls as a lad asks Dad
 
 #                                                              ../orig/q.typ:74
 I:(4)
 *:_Q_R_L7
 #                                                              ../orig/q.typ:76
-O:Lease a desk  Add a safe deal  Ask less fees  Add a lease
+D:Lease a desk  Add a safe deal  Ask less fees  Add a lease
  :Lease a lake  Add lake sales  Add deeds  Flee false deals
-Q: Press Y to continue, N to repeat, or Fkey12 to exit 
-N:_Q_R_L7
 
 #                                                              ../orig/q.typ:77
 I:(5)
 *:_Q_R_L8
 #                                                              ../orig/q.typ:80
-O:Feel a dead faded leaf  Seeds fall as a faded leaf falls
+D:Feel a dead faded leaf  Seeds fall as a faded leaf falls
  :A lad sells seeds  Dad feels a seed  Dad adds a seed deal
  :A deaf lad sells a false jade  Dad sells a deaf lad a sled
-Q: Press Y to continue, N to repeat, or Fkey12 to exit 
-N:_Q_R_L8
 
 #                                                              ../orig/q.typ:81
 I:(6)
 *:_Q_R_L9
 #                                                              ../orig/q.typ:85
-O:Idle Sid seeks a salad  Sis aids Sid  A salad is laid aside
+D:Idle Sid seeks a salad  Sis aids Sid  A salad is laid aside
  :Sid seeks a lake Sis is all silks  Sid likes silks
  :A lad asks if Dad likes lilies  Dad is ill  Dad feels life dies as lilies fade
  :Dad slides all lilies aside  Dad is jaded
-Q: Press Y to continue, N to repeat, or Fkey12 to exit 
-N:_Q_R_L9
 
 #                                                              ../orig/q.typ:86
 I:(7)
 *:_Q_R_L10
 #                                                              ../orig/q.typ:91
-O:Sails fill as Sis sails a safe lake  Skill aids Sis  Dad
+D:Sails fill as Sis sails a safe lake  Skill aids Sis  Dad
  :likes a safe sail  Sis seeks a lee isle  All sail is
  :laid aside  Sis feels life is ideal  Idle fields lead as
  :Sis seeks lilies  Sis falls  Lilies fade as Sis falls
  :Faded sails fill  Idle isles slide aside as Sis sails
-Q: Press Y to continue, N to repeat, or Fkey12 to exit 
-N:_Q_R_L10
 
 #                                                              ../orig/q.typ:92
 I:(8)
 *:_Q_R_L11
 #                                                              ../orig/q.typ:93
-O:Sid adds all sail as Dad sees a safe sea as idle as a lake
-Q: Press Y to continue, N to repeat, or Fkey12 to exit 
-N:_Q_R_L11
+D:Sid adds all sail as Dad sees a safe sea as idle as a lake
 
 G:_Q_E_Q1
 #------------------------------------------------------------------------------
@@ -203,86 +179,68 @@ T:
  :H-key.
  :
  :Note that you always follow a period with two spaces.
-Q: Press Y to continue, or Fkey12 to exit 
-N:_Q_R_L12
 
 #                                                             ../orig/q.typ:105
 I:(1) Rhythm Drill
 *:_Q_R_L13
 #                                                             ../orig/q.typ:108
-O:a;sldkfjgh a;sldkfjgh a;sldkfjgh a;sldkfjgh a;sldkfjgh
+D:a;sldkfjgh a;sldkfjgh a;sldkfjgh a;sldkfjgh a;sldkfjgh
  :asdefghk lokijujhjn asdefgfk lokijujhjn asdefgfk
  :l.  a.  l.  s.  l.  d.  l.  e.  l.  n.  l.  t.  l.  o.
-Q: Press Y to continue, N to repeat, or Fkey12 to exit 
-N:_Q_R_L13
 
 #                                                             ../orig/q.typ:109
 I:(2) Balanced Keyboard Drill
 *:_Q_R_L14
 #                                                             ../orig/q.typ:112
-O:as os es us is an on en un in at ot et ut it ad od ed ud id
+D:as os es us is an on en un in at ot et ut it ad od ed ud id
  :sa so se su si na no ne nu ni ta to te tu ti ha ho he hu hi
  :da do de du di au st oi sh oi ts ht oe nk ou nd ue ns ui th
-Q: Press Y to continue, N to repeat, or Fkey12 to exit 
-N:_Q_R_L14
 
 #                                                             ../orig/q.typ:113
 I:(3) Continuous Copy
 *:_Q_R_L15
 #                                                             ../orig/q.typ:116
-O:Ed had a shed.   His shed had dishes.  He had shade.
+D:Ed had a shed.   His shed had dishes.  He had shade.
  :Ed had his ease.  Sis liked a safe shed.  Sis had shade.
  :His shed is ashes.  Ed hides his head.  He heeds Sis.
-Q: Press Y to continue, N to repeat, or Fkey12 to exit 
-N:_Q_R_L15
 
 #                                                             ../orig/q.typ:117
 I:(4)
 *:_Q_R_L16
 #                                                             ../orig/q.typ:120
-O:Odd ideas are like odd seeds.  Odd seeds die as do odd deeds.
+D:Odd ideas are like odd seeds.  Odd seeds die as do odd deeds.
  :Dad has odd ideas.  Dad sees a soda as a sad dose.  A soda
  :aids Sis.  So I see a soda is added.  Sis does like a soda.
-Q: Press Y to continue, N to repeat, or Fkey12 to exit 
-N:_Q_R_L16
 
 #                                                             ../orig/q.typ:121
 I:(5)
 *:_Q_R_L17
 #                                                             ../orig/q.typ:124
-O:Sid used us.  Sid sued us.  Ada used us as aid.  I did aid.
+D:Sid used us.  Sid sued us.  Ada used us as aid.  I did aid.
  :I added ease.  I issued added deeds.  Ada said adieu.  Ada
  :used dead deeds as issues.  Sid said I used deeds due Ada.
-Q: Press Y to continue, N to repeat, or Fkey12 to exit 
-N:_Q_R_L17
 
 #                                                             ../orig/q.typ:125
 I:(6)
 *:_Q_R_L18
 #                                                             ../orig/q.typ:128
-O:Ed is staid.  Ed uses tested data as assets.  Sis is a
+D:Ed is staid.  Ed uses tested data as assets.  Sis is a
  :tease.  Sis sets a tea date.  As Ed tastes tea I state tea
  :data.  Sis teases Ed at tea.  As Ed eats I state diet data.
-Q: Press Y to continue, N to repeat, or Fkey12 to exit 
-N:_Q_R_L18
 
 #                                                             ../orig/q.typ:129
 I:(7)
 *:_Q_R_L19
 #                                                             ../orig/q.typ:132
-O:Sis said Dean is dense as sand.  Dean needs an idea and Sis
+D:Sis said Dean is dense as sand.  Dean needs an idea and Sis
  :needs a sedan.  Dad sends a sedan.  Dean is indeed sad as
  :he sees Sis and Ed inside.  At nine he sees Sis and Ed dine.
-Q: Press Y to continue, N to repeat, or Fkey12 to exit 
-N:_Q_R_L19
 
 #                                                             ../orig/q.typ:133
 I:(8) Rhythmic Review
 *:_Q_R_L20
 #                                                             ../orig/q.typ:134
-O:He sees that in a test he has to state and use a sane idea.
-Q: Press Y to continue, N to repeat, or Fkey12 to exit 
-N:_Q_R_L20
+D:He sees that in a test he has to state and use a sane idea.
 
 G:_Q_E_Q2
 #------------------------------------------------------------------------------
@@ -302,112 +260,88 @@ T:
  :sentences, no matter what punctuation mark closes the sentence.
  :
  :The colon (:) introduces a list and is followed by two spaces.
-Q: Press Y to continue, or Fkey12 to exit 
-N:_Q_R_L21
 
 #                                                             ../orig/q.typ:148
 I:(1) Rhythm Drill
 *:_Q_R_L22
 #                                                             ../orig/q.typ:150
-O:deki frju dck, dcl. frju ftjy deki frju dck, dcl. frju ftjy
+D:deki frju dck, dcl. frju ftjy deki frju dck, dcl. frju ftjy
  :fgjh ;p;? jujy dedc lol. kik, fgju ;:;: frfk jujy dedc kik,
-Q: Press Y to continue, N to repeat, or Fkey12 to exit 
-N:_Q_R_L22
 
 #                                                             ../orig/q.typ:151
 I:(2) Balanced Keyboard Drill
 *:_Q_R_L23
 #                                                             ../orig/q.typ:157
-O:ag ac ar al ap at ay af ug uc ur ul up ut eg ec er el ep et
+D:ag ac ar al ap at ay af ug uc ur ul up ut eg ec er el ep et
  :ey ef og or ol op ot of ig ic ir il ip if ga ca ra la pa fa
  :gu cu ru lu pu fu ge ce re le pe ye fe go co ro lo po yo fo
  :gi ci ri li fi gn pl gh ld sy rd ty ct ft ch nc dy dr ph ng
  :s?  d?  e?  f?  r?  f?  t?  j?  n?  s:  d:  e:  r:  t:  n:
  :k, i, d, e, f, r, k, u, f, t, k, y, d, c, k, n, k, h, l, o,
-Q: Press Y to continue, N to repeat, or Fkey12 to exit 
-N:_Q_R_L23
 
 #                                                             ../orig/q.typ:158
 I:(3) Continuous Copy
 *:_Q_R_L24
 #                                                             ../orig/q.typ:160
-O:Chance can aid a nice choice.  It can teach one to count his
+D:Chance can aid a nice choice.  It can teach one to count his
  :costs too.  In each such case a chance cause can hit costs.
-Q: Press Y to continue, N to repeat, or Fkey12 to exit 
-N:_Q_R_L24
 
 #                                                             ../orig/q.typ:161
 I:(4)
 *:_Q_R_L25
 #                                                             ../orig/q.typ:163
-O:At his age a good song is the thing as he gets his dog and
+D:At his age a good song is the thing as he gets his dog and
  :gun.  He is going to hunt again.  As night ends he sets out.
-Q: Press Y to continue, N to repeat, or Fkey12 to exit 
-N:_Q_R_L25
 
 #                                                             ../orig/q.typ:164
 I:(5)
 *:_Q_R_L26
 #                                                             ../orig/q.typ:166
-O:As soon as papa is deep in a nap Pat happens to pound in his
+D:As soon as papa is deep in a nap Pat happens to pound in his
  :shop and the phone sounds.  Pat is to paint and pass up noise.
-Q: Press Y to continue, N to repeat, or Fkey12 to exit 
-N:_Q_R_L26
 
 #                                                             ../orig/q.typ:167
 I:(6)
 *:_Q_R_L27
 #                                                             ../orig/q.typ:169
-O:I hear there is an error in her other order.  The store sent
+D:I hear there is an error in her other order.  The store sent
  :her red dress to our door.  She is sure that it is too dear.
-Q: Press Y to continue, N to repeat, or Fkey12 to exit 
-N:_Q_R_L27
 
 #                                                             ../orig/q.typ:170
 I:(7)
 *:_Q_R_L28
 #                                                             ../orig/q.typ:172
-O:I shall hold those ideal hotel lots at least until all land
+D:I shall hold those ideal hotel lots at least until all land
  :is sold.  Late sales still total less than the one old deal.
-Q: Press Y to continue, N to repeat, or Fkey12 to exit 
-N:_Q_R_L28
 
 #                                                             ../orig/q.typ:173
 I:(8)
 *:_Q_R_L29
 #                                                             ../orig/q.typ:175
-O:Sunday is too soon.  It is not easy to stay and study this
+D:Sunday is too soon.  It is not easy to stay and study this
  :dandy day.  I need to study.  It is not easy on the eyes.
-Q: Press Y to continue, N to repeat, or Fkey12 to exit 
-N:_Q_R_L29
 
 #                                                             ../orig/q.typ:176
 I:(9)
 *:_Q_R_L30
 #                                                             ../orig/q.typ:178
-O:One needs to use faith if one fishes often.  It is fun to sit
+D:One needs to use faith if one fishes often.  It is fun to sit
  :on soft sod and fish.  It is fun to feel a fish dash out fast.
-Q: Press Y to continue, N to repeat, or Fkey12 to exit 
-N:_Q_R_L30
 
 #                                                             ../orig/q.typ:179
 I:(9A)
 *:_Q_R_L31
 #                                                             ../orig/q.typ:183
-O:Hello, is this Dan?  Hello, Dan, this is Ann.  No, Ann.  Did
+D:Hello, is this Dan?  Hello, Dan, this is Ann.  No, Ann.  Did
  :you see Ted?  Is Nan at the house?  Then dash to the house.
  :Is he at the house?  Has he his auto?  Did he tie on those
  :odds and ends:  used suits, sun hats, shoes, and side tent?
-Q: Press Y to continue, N to repeat, or Fkey12 to exit 
-N:_Q_R_L31
 
 #                                                             ../orig/q.typ:184
 I:(10) Rhythmic Review
 *:_Q_R_L32
 #                                                             ../orig/q.typ:185
-O:Papa can not plan to get us all there in such a car as this.
-Q: Press Y to continue, N to repeat, or Fkey12 to exit 
-N:_Q_R_L32
+D:Papa can not plan to get us all there in such a car as this.
 
 G:_Q_E_Q3
 #------------------------------------------------------------------------------
@@ -425,117 +359,91 @@ T:
  :letters of the alphabet.
  :
  :The semicolon (;), like the comma, is followed by one space in a sentence.
-Q: Press Y to continue, or Fkey12 to exit 
-N:_Q_R_L33
 
 #                                                             ../orig/q.typ:197
 I:(1) Rhythm Drill
 *:_Q_R_L34
 #                                                             ../orig/q.typ:199
-O:dedc kik, frfv jujm swsx lol. aqaz ;p;p frfv jujm ftfb jyjn
+D:dedc kik, frfv jujm swsx lol. aqaz ;p;p frfv jujm ftfb jyjn
  :aqsw az;p sxl. fvjm fvjn fbjn aqsw az;p sxl. fvjm fvjn fbjn
-Q: Press Y to continue, N to repeat, or Fkey12 to exit 
-N:_Q_R_L34
 
 #                                                             ../orig/q.typ:200
 I:(2) Balanced Keyboard Drill
 *:_Q_R_L35
 #                                                             ../orig/q.typ:204
-O:am aw av az ak ax ab um ub em ew ev ez ek eq ex om ow ov oz
+D:am aw av az ak ax ab um ub em ew ev ez ek eq ex om ow ov oz
  :ok ob im iv iz ix ib ma wa va za ka ja xa ba mu ju qu bu me
  :we ve ze ke je xe be mo wo vo zo ko jo bo mi wi vi zi ki xi
  :bi xt sm sk sw kn ms nk wh tw ks wn dv s; o; n; d; l; e; t;
-Q: Press Y to continue, N to repeat, or Fkey12 to exit 
-N:_Q_R_L35
 
 #                                                             ../orig/q.typ:205
 I:(3) Continuous Copy
 *:_Q_R_L36
 #                                                             ../orig/q.typ:207
-O:Iowa was white with snow when we two went down town and saw
+D:Iowa was white with snow when we two went down town and saw
  :a show.  We wanted to see news and not the widow who was wed.
-Q: Press Y to continue, N to repeat, or Fkey12 to exit 
-N:_Q_R_L36
 
 #                                                             ../orig/q.typ:208
 I:(4)
 *:_Q_R_L37
 #                                                             ../orig/q.typ:210
-O:John has to use a tan and jet auto.  He joined Jane in its
+D:John has to use a tan and jet auto.  He joined Jane in its
  :joint use.  Jane just intends to use it in June on a jaunt.
-Q: Press Y to continue, N to repeat, or Fkey12 to exit 
-N:_Q_R_L37
 
 #                                                             ../orig/q.typ:211
 I:(5)
 *:_Q_R_L38
 #                                                             ../orig/q.typ:213
-O:Smith is his name.  He is on some Maine team.  I am to meet
+D:Smith is his name.  He is on some Maine team.  I am to meet
  :him and Miss Smith.  I must see them some time this month.
-Q: Press Y to continue, N to repeat, or Fkey12 to exit 
-N:_Q_R_L38
 
 #                                                             ../orig/q.typ:214
 I:(6)
 *:_Q_R_L39
 #                                                             ../orig/q.typ:216
-O:Kate uses ink to send a note south to Kansas kin.  She asks
+D:Kate uses ink to send a note south to Kansas kin.  She asks
  :to use a kodak to take along on these keen skates and skis.
-Q: Press Y to continue, N to repeat, or Fkey12 to exit 
-N:_Q_R_L39
 
 #                                                             ../orig/q.typ:217
 I:(7)
 *:_Q_R_L40
 #                                                             ../orig/q.typ:219
-O:I advise Eva in vain to avoid an auto visit in seven states.
+D:I advise Eva in vain to avoid an auto visit in seven states.
  :Nevada is so vivid that Eva votes to have this visit saved.
-Q: Press Y to continue, N to repeat, or Fkey12 to exit 
-N:_Q_R_L40
 
 #                                                             ../orig/q.typ:220
 I:(8)
 *:_Q_R_L41
 #                                                             ../orig/q.typ:222
-O:She has questions and unique ideas to quote us.  So she is
+D:She has questions and unique ideas to quote us.  So she is
  :quite the queen in this quiet set and sets us quaint quotas.
-Q: Press Y to continue, N to repeat, or Fkey12 to exit 
-N:_Q_R_L41
 
 #                                                             ../orig/q.typ:223
 I:(9)
 *:_Q_R_L42
 #                                                             ../orig/q.typ:225
-O:The zoo is shut.  His zest is dashed.  Dan dozes.  One sneeze
+D:The zoo is shut.  His zest is dashed.  Dan dozes.  One sneeze
  :and then a dozen seize Dan.  In a daze he sees the zoo seized.
-Q: Press Y to continue, N to repeat, or Fkey12 to exit 
-N:_Q_R_L42
 
 #                                                             ../orig/q.typ:226
 I:(9A)
 *:_Q_R_L43
 #                                                             ../orig/q.typ:228
-O:The boat has been best to Boston.  On this basis no doubt one
+D:The boat has been best to Boston.  On this basis no doubt one
  :is bound to be a bit behind but boats beat both dust and heat.
-Q: Press Y to continue, N to repeat, or Fkey12 to exit 
-N:_Q_R_L43
 
 #                                                             ../orig/q.typ:229
 I:(9B)
 *:_Q_R_L44
 #                                                             ../orig/q.typ:231
-O:Nan is in Texas.  She is anxious to dine at six.  She sees a
+D:Nan is in Texas.  She is anxious to dine at six.  She sees a
  :taxi stand next to the sixth exit.  Taxis exist to aid one.
-Q: Press Y to continue, N to repeat, or Fkey12 to exit 
-N:_Q_R_L44
 
 #                                                             ../orig/q.typ:232
 I:(10) Rhythmic Review
 *:_Q_R_L45
 #                                                             ../orig/q.typ:233
-O:Ask them to let us have the car if they both go to the show.
-Q: Press Y to continue, N to repeat, or Fkey12 to exit 
-N:_Q_R_L45
+D:Ask them to let us have the car if they both go to the show.
 
 G:_Q_E_Q4
 #------------------------------------------------------------------------------
@@ -548,89 +456,69 @@ G:_Q_E_Q4
 T:
  :Now you know all of the alphabet.  In this lesson we add the hyphen (-) and
  :the apostrophe (').
-Q: Press Y to continue, or Fkey12 to exit 
-N:_Q_R_L46
 
 #                                                             ../orig/q.typ:240
 I:(1) Rhythm Drill
 *:_Q_R_L47
 #                                                             ../orig/q.typ:242
-O:dedc kik, frfv jujm swsx lol. aqaz ;p;p frfv jujm ftfb jyjn
+D:dedc kik, frfv jujm swsx lol. aqaz ;p;p frfv jujm ftfb jyjn
  :frfk fvfb jujy jmjn aqsw azsw azsx ;plo ;p;- kik, ;p;-
-Q: Press Y to continue, N to repeat, or Fkey12 to exit 
-N:_Q_R_L47
 
 #                                                             ../orig/q.typ:243
 I:(2) Balanced Keyboard Drill
 *:_Q_R_L48
 #                                                             ../orig/q.typ:246
-O:ad ar an al am ab ee st ed er en el es em ex om on or un up
+D:ad ar an al am ab ee st ed er en el es em ex om on or un up
  :id ic ir in im se sy le ly re ry ec fy ty de be my by bi di
  :l-t o-d s-c p-t o-d n-y r-o g-d r-h d-g n't t's l's y's I'l
-Q: Press Y to continue, N to repeat, or Fkey12 to exit 
-N:_Q_R_L48
 
 #                                                             ../orig/q.typ:247
 I:(3) Continuous Copy -- Review
 *:_Q_R_L49
 #                                                             ../orig/q.typ:249
-O:It is a good thing papa has gone.  Pat gets up a deep song.
+D:It is a good thing papa has gone.  Pat gets up a deep song.
  :Yet Ann says an easy song any day is a sign to guess again.
-Q: Press Y to continue, N to repeat, or Fkey12 to exit 
-N:_Q_R_L49
 
 #                                                             ../orig/q.typ:250
 I:(4)
 *:_Q_R_L50
 #                                                             ../orig/q.typ:252
-O:They often need funds but don't think it is any fun to study.
+D:They often need funds but don't think it is any fun to study.
  :Ann is keen to ask him to use his kodak at the same time.
-Q: Press Y to continue, N to repeat, or Fkey12 to exit 
-N:_Q_R_L50
 
 #                                                             ../orig/q.typ:253
 I:(5)
 *:_Q_R_L51
 #                                                             ../orig/q.typ:255
-O:Ted notes an odd noise.  Dan is in the seas and needs aid.
+D:Ted notes an odd noise.  Dan is in the seas and needs aid.
  :He sheds his suit and shoes on the sand and is out in haste.
-Q: Press Y to continue, N to repeat, or Fkey12 to exit 
-N:_Q_R_L51
 
 #                                                             ../orig/q.typ:256
 I:(6)
 *:_Q_R_L52
 #                                                             ../orig/q.typ:258
-O:A good visit East is Ann's next quest.  Ann seems to seize
+D:A good visit East is Ann's next quest.  Ann seems to seize
  :on this idea with zest.  She has set seven visits as a quota.
-Q: Press Y to continue, N to repeat, or Fkey12 to exit 
-N:_Q_R_L52
 
 #                                                             ../orig/q.typ:259
 I:(7)
 *:_Q_R_L53
 #                                                             ../orig/q.typ:261
-O:She is to adjust her six visits to have a snow-white Maine
+D:She is to adjust her six visits to have a snow-white Maine
  :Christmas.  An Iowa aunt asks Ann to take in that state, too.
-Q: Press Y to continue, N to repeat, or Fkey12 to exit 
-N:_Q_R_L53
 
 #                                                             ../orig/q.typ:262
 I:(8)
 *:_Q_R_L54
 #                                                             ../orig/q.typ:264
-O:It's a tax on time, but it's quite a new zone to Ann who is
+D:It's a tax on time, but it's quite a new zone to Ann who is
  :in just the mood to end her quota of visits in sixteen weeks.
-Q: Press Y to continue, N to repeat, or Fkey12 to exit 
-N:_Q_R_L54
 
 #                                                             ../orig/q.typ:265
 I:(9) Rhythmic Review
 *:_Q_R_L55
 #                                                             ../orig/q.typ:266
-O:Two of the boys are to do it today and two of them next week.
-Q: Press Y to continue, N to repeat, or Fkey12 to exit 
-N:_Q_R_L55
+D:Two of the boys are to do it today and two of them next week.
 
 G:_Q_E_Q5
 #------------------------------------------------------------------------------

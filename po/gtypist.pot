@@ -6,7 +6,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
-"POT-Creation-Date: 2001-08-23 20:06+0200\n"
+"POT-Creation-Date: 2001-09-02 22:11+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -311,6 +311,6 @@ msgstr ""
 msgid "Y/N"
 msgstr ""
 
-#: gtypist.c:1911
+#: gtypist.c:1912
 msgid "can't find or open file"
 msgstr ""

@@ -41,8 +41,6 @@ T:			SPEED PRACTICE SERIES
  :which you have not learned, you will have to look.  This is a very bad habit to
  :get into and is hard to break.  (You needn't worry if you only need to glance
  :down for unusual keys, like the dollar sign.)
-Q: Press Y to continue, or Fkey12 to exit 
-N:_S_R_L0
 
 *:_S_R_L1
 #                                                              ../orig/s.typ:30
@@ -62,30 +60,24 @@ T:			   RULES OF THE GAME
  :
  :If you made too many mistakes, try the next paragraph slower.  If you made no
  :mistakes or only one or two, try the next one faster.
-Q: Press Y to continue, or Fkey12 to exit 
-N:_S_R_L1
 
 #                                                              ../orig/s.typ:31
 I:First, a quick warm-up.
 *:_S_R_L2
 #                                                              ../orig/s.typ:32
-P:The quick brown fox jumped over the lazy dogs.
-Q: Press Y to continue, N to repeat, or Fkey12 to exit 
-N:_S_R_L2
+S:The quick brown fox jumped over the lazy dogs.
 
 #                                                              ../orig/s.typ:33
 I:Once more:
 *:_S_R_L3
 #                                                              ../orig/s.typ:34
-P:The quick brown fox jumped over the lazy dogs.
-Q: Press Y to continue, N to repeat, or Fkey12 to exit 
-N:_S_R_L3
+S:The quick brown fox jumped over the lazy dogs.
 
 #                                                              ../orig/s.typ:35
 I:If the cursor is on a blank line, type return to skip it
 *:_S_R_L4
 #                                                              ../orig/s.typ:48
-P:Dear Sirs:
+S:Dear Sirs:
  :
  :I have just purchased a Heathkit H89 computer system and would
  :like to order two boxes of diskettes for it.  This system uses
@@ -98,12 +90,10 @@ P:Dear Sirs:
  :Sincerely,
  :
  :Mr. Smith
-Q: Press Y to continue, N to repeat, or Fkey12 to exit 
-N:_S_R_L4
 
 *:_S_R_L5
 #                                                              ../orig/s.typ:61
-P:Dear Sirs:
+S:Dear Sirs:
  :
  :Thank you for sending the diskettes so promptly.  How-
  :ever, the diskettes which you sent are for soft-sectored
@@ -116,12 +106,10 @@ P:Dear Sirs:
  :Sincerely,
  :
  :Mr. Smith
-Q: Press Y to continue, N to repeat, or Fkey12 to exit 
-N:_S_R_L5
 
 *:_S_R_L6
 #                                                              ../orig/s.typ:76
-P:Dear Mr. Smith:
+S:Dear Mr. Smith:
  :
  :Thank you for informing us that the diskettes which you pur-
  :chased from us are not satisfactory.  We are sorry for the
@@ -136,8 +124,6 @@ P:Dear Mr. Smith:
  :this incident is most unusual and that we do strive to render
  :to our customers an efficient and courteous service at all
  :times.
-Q: Press Y to continue, N to repeat, or Fkey12 to exit 
-N:_S_R_L6
 
 G:_S_E_S1
 #------------------------------------------------------------------------------
@@ -150,167 +136,127 @@ G:_S_E_S1
 T:
  :In this lesson we will practice some quotes by some famous (and not
  :so famous) people.
-Q: Press Y to continue, or Fkey12 to exit 
-N:_S_R_L7
 
 #                                                              ../orig/s.typ:84
 I:Marcus Aurelius
 *:_S_R_L8
 #                                                              ../orig/s.typ:85
-P:A man can live well even in a palace.
-Q: Press Y to continue, N to repeat, or Fkey12 to exit 
-N:_S_R_L8
+S:A man can live well even in a palace.
 
 #                                                              ../orig/s.typ:86
 I:Ralph Waldo Emerson
 *:_S_R_L9
 #                                                              ../orig/s.typ:87
-P:My chief want in life is someone who shall make me do what I can.
-Q: Press Y to continue, N to repeat, or Fkey12 to exit 
-N:_S_R_L9
+S:My chief want in life is someone who shall make me do what I can.
 
 #                                                              ../orig/s.typ:88
 I:Elizabeth Barrett Browning
 *:_S_R_L10
 #                                                              ../orig/s.typ:90
-P:No man can be called friendless when he has God and the
+S:No man can be called friendless when he has God and the
  :companionship of good books.
-Q: Press Y to continue, N to repeat, or Fkey12 to exit 
-N:_S_R_L10
 
 #                                                              ../orig/s.typ:91
 I:Ralph Waldo Emerson
 *:_S_R_L11
 #                                                              ../orig/s.typ:92
-P:I like the silent church before the service begins better than any preaching.
-Q: Press Y to continue, N to repeat, or Fkey12 to exit 
-N:_S_R_L11
+S:I like the silent church before the service begins better than any preaching.
 
 #                                                              ../orig/s.typ:93
 I:George Washington
 *:_S_R_L12
 #                                                              ../orig/s.typ:94
-P:True friendship is a plant of slow growth.
-Q: Press Y to continue, N to repeat, or Fkey12 to exit 
-N:_S_R_L12
+S:True friendship is a plant of slow growth.
 
 #                                                              ../orig/s.typ:95
 I:Aristotle
 *:_S_R_L13
 #                                                              ../orig/s.typ:96
-P:There is a foolish corner in the brain of the wisest men.
-Q: Press Y to continue, N to repeat, or Fkey12 to exit 
-N:_S_R_L13
+S:There is a foolish corner in the brain of the wisest men.
 
 #                                                              ../orig/s.typ:97
 I:Goethe
 *:_S_R_L14
 #                                                              ../orig/s.typ:98
-P:Tell me what you are busy about, and I will tell you what you are.
-Q: Press Y to continue, N to repeat, or Fkey12 to exit 
-N:_S_R_L14
+S:Tell me what you are busy about, and I will tell you what you are.
 
 #                                                              ../orig/s.typ:99
 I:Gelett Burgess
 *:_S_R_L15
 #                                                             ../orig/s.typ:101
-P:If in the last few years you haven't discarded a major opinion or
+S:If in the last few years you haven't discarded a major opinion or
  :acquired a new one, check your pulse.  You may be dead.
-Q: Press Y to continue, N to repeat, or Fkey12 to exit 
-N:_S_R_L15
 
 #                                                             ../orig/s.typ:102
 I:James B. Conant
 *:_S_R_L16
 #                                                             ../orig/s.typ:104
-P:Democracy is a small hard core of common agreement, surrounded
+S:Democracy is a small hard core of common agreement, surrounded
  :by a rich variety of individual differences.
-Q: Press Y to continue, N to repeat, or Fkey12 to exit 
-N:_S_R_L16
 
 #                                                             ../orig/s.typ:105
 I:Albert Einstein
 *:_S_R_L17
 #                                                             ../orig/s.typ:106
-P:I never think of the future.  It comes soon enough.
-Q: Press Y to continue, N to repeat, or Fkey12 to exit 
-N:_S_R_L17
+S:I never think of the future.  It comes soon enough.
 
 #                                                             ../orig/s.typ:107
 I:Harry S. Truman
 *:_S_R_L18
 #                                                             ../orig/s.typ:109
-P:Men often mistake notoriety for fame, and would rather be
+S:Men often mistake notoriety for fame, and would rather be
  :remarked for their vices than not be noticed at all.
-Q: Press Y to continue, N to repeat, or Fkey12 to exit 
-N:_S_R_L18
 
 #                                                             ../orig/s.typ:110
 I:Will Rogers
 *:_S_R_L19
 #                                                             ../orig/s.typ:112
-P:I could study all my life and not think up half the amount
+S:I could study all my life and not think up half the amount
  :of funny things they can think of in one session of Congress.
-Q: Press Y to continue, N to repeat, or Fkey12 to exit 
-N:_S_R_L19
 
 #                                                             ../orig/s.typ:113
 I:Ralph Waldo Emerson
 *:_S_R_L20
 #                                                             ../orig/s.typ:114
-P:Hospitality consists in a little fire, a little food and an immense quiet.
-Q: Press Y to continue, N to repeat, or Fkey12 to exit 
-N:_S_R_L20
+S:Hospitality consists in a little fire, a little food and an immense quiet.
 
 #                                                             ../orig/s.typ:115
 I:H. L. Mencken
 *:_S_R_L21
 #                                                             ../orig/s.typ:116
-P:Puritanism is the haunting fear that someone, somewhere, may be happy.
-Q: Press Y to continue, N to repeat, or Fkey12 to exit 
-N:_S_R_L21
+S:Puritanism is the haunting fear that someone, somewhere, may be happy.
 
 #                                                             ../orig/s.typ:117
 I:William James
 *:_S_R_L22
 #                                                             ../orig/s.typ:118
-P:When you have to make a choice and don't make it, that is in itself a choice.
-Q: Press Y to continue, N to repeat, or Fkey12 to exit 
-N:_S_R_L22
+S:When you have to make a choice and don't make it, that is in itself a choice.
 
 #                                                             ../orig/s.typ:119
 I:James Holt McGravran.
 *:_S_R_L23
 #                                                             ../orig/s.typ:121
-P:There is a way of transferring funds that is even faster
+S:There is a way of transferring funds that is even faster
  :than electronic banking.  It is called marriage.
-Q: Press Y to continue, N to repeat, or Fkey12 to exit 
-N:_S_R_L23
 
 #                                                             ../orig/s.typ:122
 I:Woody Allen
 *:_S_R_L24
 #                                                             ../orig/s.typ:123
-P:Showing up is 80 percent of life.
-Q: Press Y to continue, N to repeat, or Fkey12 to exit 
-N:_S_R_L24
+S:Showing up is 80 percent of life.
 
 #                                                             ../orig/s.typ:124
 I:Robert Frost
 *:_S_R_L25
 #                                                             ../orig/s.typ:125
-P:A poem begins in delight and ends in wisdom.
-Q: Press Y to continue, N to repeat, or Fkey12 to exit 
-N:_S_R_L25
+S:A poem begins in delight and ends in wisdom.
 
 #                                                             ../orig/s.typ:126
 I:Louis Pasteur
 *:_S_R_L26
 #                                                             ../orig/s.typ:128
-P:When I approach a child, he inspires in me two sentiments:  tenderness
+S:When I approach a child, he inspires in me two sentiments:  tenderness
  :for what he is, and respect for what he may become.
-Q: Press Y to continue, N to repeat, or Fkey12 to exit 
-N:_S_R_L26
 
 G:_S_E_S2
 #------------------------------------------------------------------------------
@@ -323,14 +269,12 @@ G:_S_E_S2
 T:
  :In this lesson you will be given several excerpts from the classics.
  :Take your time and type them carefully.
-Q: Press Y to continue, or Fkey12 to exit 
-N:_S_R_L27
 
 #                                                             ../orig/s.typ:135
 I:A Christmas Carol, Stave One, Marley's Ghost
 *:_S_R_L28
 #                                                             ../orig/s.typ:151
-P:Now, it is a fact, that there was nothing at all par-
+S:Now, it is a fact, that there was nothing at all par-
  :ticular about the knocker on the door, except that it
  :was very large.  It is also a fact, that Scrooge had
  :seen it, night and morning, during his whole residence
@@ -346,14 +290,12 @@ P:Now, it is a fact, that there was nothing at all par-
  :saw in the knocker, without its undergoing any inter-
  :mediate process of change--not a knocker, but Mar-
  :ley's face.
-Q: Press Y to continue, N to repeat, or Fkey12 to exit 
-N:_S_R_L28
 
 #                                                             ../orig/s.typ:152
 I:Gulliver's Travels, Chapter One, A Voyage to Lilliput
 *:_S_R_L29
 #                                                             ../orig/s.typ:167
-P:When I awaked it was just daylight.  I attempted to rise, but I
+S:When I awaked it was just daylight.  I attempted to rise, but I
  :found my arms and legs were strongly fastened on each side to
  :the ground; and my hair, which was long and thick, tied to the
  :ground in the same manner.  I likewise felt several slender
@@ -368,14 +310,12 @@ P:When I awaked it was just daylight.  I attempted to rise, but I
  :bow and arrow in his hands, and a quiver at his back.  In the
  :mean time I felt at least forty more of the same kind (as I
  :conjectured) following the first.
-Q: Press Y to continue, N to repeat, or Fkey12 to exit 
-N:_S_R_L29
 
 #                                                             ../orig/s.typ:168
 I:Treasure Island, Chapter IV, "The Sea Chest", by Stevenson.
 *:_S_R_L30
 #                                                             ../orig/s.typ:182
-P:I lost no time, of course, in telling my mother all that
+S:I lost no time, of course, in telling my mother all that
  :I knew, and perhaps should have told her long before,
  :and we saw ourselves at once in a difficult and dangerous
  :position.  Some of the man's money--if he had any--was
@@ -389,14 +329,12 @@ P:I lost no time, of course, in telling my mother all that
  :impossible for either of us to remain much longer in the
  :house:  the fall of coals in the kitchen grate, the very
  :ticking of the clock, filled us with alarms.
-Q: Press Y to continue, N to repeat, or Fkey12 to exit 
-N:_S_R_L30
 
 #                                                             ../orig/s.typ:183
 I:Treasure Island, Chapter IV, "The Sea Chest", by Stevenson.
 *:_S_R_L31
 #                                                             ../orig/s.typ:194
-P:The neighborhood, to our ears, seemed haunted by
+S:The neighborhood, to our ears, seemed haunted by
  :approaching footsteps; and what between the dead
  :body of the captain on the parlor floor, and the thought
  :of that detestable blind beggar hovering near at hand,
@@ -407,8 +345,6 @@ P:The neighborhood, to our ears, seemed haunted by
  :ing hamlet.  No sooner said than done.  Bareheaded as we
  :were, we ran out at once in the gathering evening and
  :the frosty fog.
-Q: Press Y to continue, N to repeat, or Fkey12 to exit 
-N:_S_R_L31
 
 G:_S_E_S3
 #------------------------------------------------------------------------------
@@ -422,14 +358,12 @@ T:
  :In this lesson you will be given several soliloquies from
  :Shakespeare's plays.  The spelling and punctuation are
  :quite hard.  Take your time and type them carefully.
-Q: Press Y to continue, or Fkey12 to exit 
-N:_S_R_L32
 
 #                                                             ../orig/s.typ:203
 I:Romeo and Juliet, Act II, Scene II (Capulet's Garden).
 *:_S_R_L33
 #                                                             ../orig/s.typ:216
-P:But, soft! what light through yonder window breaks?
+S:But, soft! what light through yonder window breaks?
  :It is the east, and Juliet is the sun!--
  :Arise, fair sun, and kill the envious moon,
  :Who is already sick and pale with grief,
@@ -442,12 +376,10 @@ P:But, soft! what light through yonder window breaks?
  :She speaks, yet she says nothing:  what of that?
  :Her eye discourses, I will answer it.--
  :I am too bold, 'tis not to me she speaks:
-Q: Press Y to continue, N to repeat, or Fkey12 to exit 
-N:_S_R_L33
 
 *:_S_R_L34
 #                                                             ../orig/s.typ:227
-P:Two of the fairest stars in all the heaven,
+S:Two of the fairest stars in all the heaven,
  :Having some business, do entreat her eyes
  :To twinkle in their spheres till they return.
  :What if her eyes were there, they in her head?
@@ -458,14 +390,12 @@ P:Two of the fairest stars in all the heaven,
  :See how she leans her cheek upon her hand!
  :O, that I were a glove upon that hand,
  :That I might touch that cheek!
-Q: Press Y to continue, N to repeat, or Fkey12 to exit 
-N:_S_R_L34
 
 #                                                             ../orig/s.typ:228
 I:Julius Caesar, Act III, Scene II (The Forum).
 *:_S_R_L35
 #                                                             ../orig/s.typ:243
-P:Friends, Romans, countrymen, lend me your ears;
+S:Friends, Romans, countrymen, lend me your ears;
  :I come to bury Caesar, not to praise him.
  :The evil that men do lives after them;
  :The good is oft interred with their bones;
@@ -480,12 +410,10 @@ P:Friends, Romans, countrymen, lend me your ears;
  :He was my friend, faithful and just to me;
  :But Brutus says he was ambitious;
  :And Brutus is an honourable man.
-Q: Press Y to continue, N to repeat, or Fkey12 to exit 
-N:_S_R_L35
 
 *:_S_R_L36
 #                                                             ../orig/s.typ:255
-P:He hath brought many captives home to Rome.
+S:He hath brought many captives home to Rome.
  :Whose ransoms did the general coffers fill:
  :Did this in Caesar seem ambitious?
  :When that the poor have cried, Caesar hath wept:
@@ -497,12 +425,10 @@ P:He hath brought many captives home to Rome.
  :Which he did thrice refuse:  was this ambition?
  :Yet Brutus says he was ambitious;
  :And, sure, he is an honourable man.
-Q: Press Y to continue, N to repeat, or Fkey12 to exit 
-N:_S_R_L36
 
 *:_S_R_L37
 #                                                             ../orig/s.typ:263
-P:I speak not to disprove what Brutus spoke,
+S:I speak not to disprove what Brutus spoke,
  :But here I am to speak what I do know.
  :You all did love him once,--not without cause:
  :What cause withholds you, then, to mourn for him?
@@ -510,14 +436,12 @@ P:I speak not to disprove what Brutus spoke,
  :And men have lost their reason!--Bear with me;
  :My heart is in the coffin there with Caesar,
  :And I must pause till it come back to me.
-Q: Press Y to continue, N to repeat, or Fkey12 to exit 
-N:_S_R_L37
 
 #                                                             ../orig/s.typ:264
 I:The Merchant of Venice, Act IV, Scene I (A Court of Justice).
 *:_S_R_L38
 #                                                             ../orig/s.typ:273
-P:The quality of mercy is not strain'd;
+S:The quality of mercy is not strain'd;
  :It droppeth as the gentle rain from heaven
  :Upon the place beneath: it is twice bless'd;
  :It blesseth him that gives and him that takes:
@@ -526,12 +450,10 @@ P:The quality of mercy is not strain'd;
  :His sceptre shows the force of temporal power,
  :The attribute to awe and majesty,
  :Wherein doth sit the dread and fear of kings;
-Q: Press Y to continue, N to repeat, or Fkey12 to exit 
-N:_S_R_L38
 
 *:_S_R_L39
 #                                                             ../orig/s.typ:286
-P:But mercy is above this scepter'd sway,--
+S:But mercy is above this scepter'd sway,--
  :It is enthroned in the heart of kings,
  :It is an attribute to God himself;
  :And earthly power doth then show likest God's
@@ -544,8 +466,6 @@ P:But mercy is above this scepter'd sway,--
  :To mitigate the justice of thy plea;
  :Which if thou follow, this strict court of Venice
  :Must needs give sentence 'gainst the merchant there.
-Q: Press Y to continue, N to repeat, or Fkey12 to exit 
-N:_S_R_L39
 
 G:_S_E_S4
 #------------------------------------------------------------------------------

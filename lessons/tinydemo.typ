@@ -8,7 +8,7 @@ T:This is a small example tutor script.  A better
 I:Here is an example of a drill: 
 D:asdf ghjkl;
 I:And here is an example of a speed test: 
-P:qwe rt yu iop
+S:qwe rt yu iop
 *:QDONE
 Q:Seen enough yet? [Y/N] 
 N:LOOP 

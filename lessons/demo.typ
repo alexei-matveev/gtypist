@@ -20,6 +20,7 @@
 # Demonstration of commands and features
 #
 
+
 *:DEMO_0
 B:Demonstration of commands and features - B
 T:This file demonstrates the commands that the program can do.
@@ -53,47 +54,46 @@ T:This is line one of a T command...
 
 
 *:DEMO_2
-B:Demonstration of commands and features - D/O
+B:Demonstration of commands and features - D/d
 T:The D command displays its text on alternate screen lines, and prompts
  :you to type the same text in on the intermediate lines.  Typing errors
- :are indicated with an inverse '^', or '>' if the character is a new
- :line.  The drill completes when it is typed correctly, or after a
- :number of attempts.  Delete and backspace are not recognised.  Escape
- :may be used to exit from the drill before completion.  The O command
- :does the same thing, but does not repeat until typed correctly.
+ :are indicated with an inverse '^', or '>' if the character is a newline.
+ :The drill completes when your error-percentage is less or equal
+ :to the required error percentage.  Delete and backspace are not
+ :recognised.  The d command does the same thing, but does not require a
+ :certain error percentage.
  :
  :Here is an example drill, run on the next screen:
  :
  :	D:type these characters
  :	 :then type these
- :	 :press Escape to bypass this drill!
+ :
 D:type these characters
  :then type these
- :press Escape to bypass this drill!
 
 
 *:DEMO_3
-B:Demonstration of commands and features - P
-T:The P command displays its text on the screen, and prompts you to type
+B:Demonstration of commands and features - S/s
+T:The S command displays its text on the screen, and prompts you to type
  :the text over the top of it.  Typing errors are highlighted in inverse
- :colours.  You get only one chance at this test, but delete and back-
- :space are recognised (errors still accumulate, however).  At the end
- :of the test, the typing speed and accuracy are displayed.
+ :colours.  Delete and backspace are recognised, but errors still
+ :accumulate.  At the end of the test, the typing speed and accuracy are
+ :displayed.  The s command does the same thing, but does not require a
+ :certain error percentage.
  :
  :Here is an example of a speed test.  Type this exactly
  :
- :	P:type this line in and dont escape
-P:type this line in and dont escape
+ :	S:type this line
+S:type this line
 T:Here is another example.  Experiment with delete and backspace:
  :
- :	P:Overtype this paragraph with the same text.
+ :	S:Overtype this paragraph with the same text.
  :	 :Note that capitals and punctuation are important.
  :	 :Experiment with delete and backspace keys.
- :	 :Use Escape to bypass the test!
-P:Overtype this paragraph with the same text.
+ :       
+S:Overtype this paragraph with the same text.
  :Note that capitals and punctuation are important.
  :Experiment with delete and backspace keys.
- :Use Escape to bypass the test!
 
 
 *:DEMO_4
@@ -101,7 +101,7 @@ B:Demonstration of commands and features - I
 T:The I command can display some brief instructions above a drill or
  :speed test.  Only two lines or less are available.  Unlike the T
  :command, it does not wait for any further keypresses before proceeding.
- :So it should really always be followed by either a D or a P.
+ :So it should really always be followed by D, d, S or s.
  :It clears the whole screen drill area, so it's just
  :like a two-line T, though.
  :
@@ -109,18 +109,38 @@ T:The I command can display some brief instructions above a drill or
  :
  :	I:Here is a very short speed test.  You can either type in the
  :	 :whole thing, or just escape out of it:
- :	P:Very, very short test...
-I:Here is a very short speed test.  You can either type in the
- :whole thing, or just escape out of it:
-P:Very, very short test...
+ :	S:Very, very short test...
+I:Here is a very short speed test. If you feel like you already made
+ :too many mistakes then you can give up (start again) by pressing ESC
+S:Very, very short test...
 
 
 *:DEMO_5
+B:Demonstration of commands and features - E
+T:The E command is used to set the maximum error percentage allowed for
+ :the next exercise (E:<value>%) or for all following exercises (E:<value>%*)
+ :If -e is specified then E: only has an effect if it is less (stricter)
+ :than the value specified on the command-line (but this is only true if
+ :the option is explicitly specified, not if the default is used)
+ :Furthermore, if you use E:<value>%*, then you use the special form
+ :E: Default (or E: default) to reset the value to its the default setting.
+ :Warning: Don't follow a E: by a practice-only drill (d: or s:)!
+ : 
+ :      E: 4%
+ :      I:this drill requires 4% errors (at most)
+ :      D:Cheer Up!  Things are getting worse at a slower rate.
+E: 4%
+I:this drill requires 4% errors (at most)
+D:Cheer Up!  Things are getting worse at a slower rate.
+
+
+*:DEMO_6
 B:Demonstration of commands and features - */G
 T:The * places a label into the file.  The G command can then be used to go to
  :that label.  The program really isn't fussy about label strings.  They
  :can be pretty much anything you like, and include spaces if that's what
- :you want.  Labels must be unique within files.
+ :you want (whitespace at the end of labels is ignored).  Labels must be unique
+ :within files.
  :
  :For example:
  :
@@ -134,14 +154,14 @@ T:*** You won't see this, ever
 T:We reached this message with a G command
 
 
-*:DEMO_6
+*:DEMO_7
 B:Demonstration of commands and features - Q/Y/N/K
-T:The Q command prompts its text on the message line, and waits for
+T:The Q command prints its text on the message line, and waits for
  :a 'Y' or an 'N' before proceeding.  Other characters are ignored.
  :
  :The Y command will go to the label on its line if the result of the most
- :recent Q was 'Y'.  And similarly for the N command. K binds a function
- :key to a label.
+ :recent Q was 'Y'.  The N command does the same thing for 'N'.  K binds
+ :a function key to a label.
  :
  :Here's an example.  As you can see, it can be clumsy, but mostly we
  :don't need anything as intricate:
@@ -168,7 +188,43 @@ T:You pressed N
 *:JUMP_OVER
 
 
-*:DEMO_7
+*:DEMO_8
+B:Demonstration of commands and features - F
+T:The F: command sets the "on failure" label. If an F command is in effect
+ :and the user fails in an exercise, he/she will skip to the label specified.
+ :It is used to create a final test, like this:
+ :	
+ :	E: 3.0%*
+ :	*:LESSON1_D1
+ :	I:drill (1)
+ :	d:You have an ability to sense and know higher truth.
+ :	*:LESSON1_D2
+ :	I:drill (2)
+ :	s:You enjoy the company of other people.
+ :	*:LESSON1_FINAL_TEST
+ :	F:LESSON1_D1*
+ :	I:final test
+ :	D:You will receive a legacy which will place you above want.
+ :	# undo the effects of E/F
+ :	E: default
+ :	F:NULL
+E: 3.0%*
+*:LESSON1_D1
+I:drill (1)
+d:You have an ability to sense and know higher truth.
+*:LESSON1_D2
+I:drill (2)
+s:You enjoy the company of other people.
+*:LESSON1_FINAL_TEST
+F:LESSON1_D1*
+I:final test
+D:You will receive a legacy which will place you above want.
+# undo the effects of DEMO_8
+E: default
+F:NULL
+
+
+*:DEMO_9
 B:Demonstration of commands and features - X
 T:The last command to show is the X command.  This causes the program to
  :exit.  The program also exits if the end of the file is found
