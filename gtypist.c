@@ -592,6 +592,7 @@ do_drill( FILE *script, char *line ) {
   char	drill_type;		 /* note of the drill type */
   int	chars_typed;		 /* count of chars typed */
   bool  seek_done = FALSE;       /* was there a seek_label before exit? */
+  int	error_sync;		 /* error resync state */
 
   /* note the drill type to see if we need to make the user repeat */
   drill_type = SCR_COMMAND( line );
@@ -638,7 +639,9 @@ do_drill( FILE *script, char *line ) {
       move( linenum, 0 );
       for ( p = data; *p == ASCII_SPACE && *p != ASCII_NULL; p++ )
 	ADDCH( *p );
-      for ( chars_typed = 0, errors = 0; *p != ASCII_NULL; p++ ) 
+
+      for ( chars_typed = 0, errors = 0, error_sync = 0;
+	    *p != ASCII_NULL; p++ ) 
 	{
 	  rc = getch_fl( *p == ASCII_TAB ?
 			 ASCII_TAB : ASCII_SPACE );
@@ -662,6 +665,7 @@ do_drill( FILE *script, char *line ) {
 	  if ( chars_typed == 0 )
 	    start_time = (long)time( NULL );
 	  chars_typed++;
+	  error_sync--;
 	
 	  /* ignore delete or backspace in drills */
 	  if ( rc == KEY_BACKSPACE ||
@@ -683,6 +687,13 @@ do_drill( FILE *script, char *line ) {
 	    ADDCH( c );
 	  else 
 	    {
+	      /* try to sync with typist behind */
+	      if ( error_sync >= 0 && p > data && c == *(p-1) )
+		{
+		  p--;
+		  continue;
+		}
+
 	      ADDCH_REV( *p == ASCII_NL ? DRILL_NL_ERR :
 			 (*p == ASCII_TAB ?
 			  ASCII_TAB : (cl_rev_video_errors ?
@@ -692,6 +703,14 @@ do_drill( FILE *script, char *line ) {
 		  putchar( ASCII_BELL ); fflush( stdout );
 		}
 	      errors++;
+	      error_sync = 1;
+
+	      /* try to sync with typist ahead */
+	      if ( c == *(p+1) )
+		{
+		  ungetch( c );
+		  error_sync++;
+		}
 	    }
 	
 	  /* move screen location if newline */
@@ -826,6 +845,7 @@ do_speedtest( FILE *script, char *line ) {
   char	drill_type;		 /* note of the drill type */
   int	chars_typed;		 /* count of chars typed */
   bool  seek_done = FALSE;       /* was there a seek_label before exit? */
+  int	error_sync;		 /* error resync state */
 
   /* note the drill type to see if we need to make the user repeat */
   drill_type = SCR_COMMAND( line );
@@ -871,7 +891,9 @@ do_speedtest( FILE *script, char *line ) {
       move( linenum, 0 );
       for ( p = data; *p == ASCII_SPACE && *p != ASCII_NULL; p++ )
 	ADDCH( *p );
-      for ( chars_typed = 0, errors = 0; *p != ASCII_NULL; p++ ) 
+
+      for ( chars_typed = 0, errors = 0, error_sync = 0;
+	    *p != ASCII_NULL; p++ ) 
 	{
 	  rc = getch_fl( (*p != ASCII_NL) ? *p : ASCII_SPACE );
 	  c = (char)rc;
@@ -885,6 +907,7 @@ do_speedtest( FILE *script, char *line ) {
 	  if ( chars_typed == 0 )
 	    start_time = (long)time( NULL );
 	  chars_typed++;
+	  error_sync--;
       
 	  /* check for delete keys if not at line start or
 	     speed test start */
@@ -912,12 +935,27 @@ do_speedtest( FILE *script, char *line ) {
 	    ADDCH( c );
 	  else 
 	    {
+	      /* try to sync with typist behind */
+	      if ( error_sync >= 0 && p > data && c == *(p-1) )
+		{
+		  p--;
+		  continue;
+		}
+
 	      ADDCH_REV( *p == ASCII_NL ?
 			 DRILL_NL_ERR : (unsigned char)*p );
 	      if ( ! cl_silent ) {
 		putchar( ASCII_BELL ); fflush( stdout );
 	      }
 	      errors++;
+	      error_sync = 1;
+
+	      /* try to sync with typist ahead */
+	      if ( c == *(p+1) )
+		{
+		  ungetch( c );
+		  error_sync++;
+		}
 	    }
       
 	  /* move screen location if newline */
