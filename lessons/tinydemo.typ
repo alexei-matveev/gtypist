@@ -1,4 +1,4 @@
-!  Minimal demonstration 
+#  Minimal demonstration 
 B: Typing tutor demonstration 
 *:LOOP
 K:1:QDONE
