@@ -34,6 +34,7 @@ or create new ones.
 * Introduction::            Important concepts you need to know as a user
 * Invoking::                How to invoke gtypist
 * Supplied lessons::        Overview of the lessons in the gtypist distribution
+* Using typefortune::       Practicing with text from `fortune' (requires perl)
 * Script file commands::    Information about the syntax of gtypist lessons
 * Create new lessons::      How to contribute new lessons
 * Emacs mode::              Emacs mode for editing gtypist scripts
@@ -289,7 +290,7 @@ starting at label @code{TEST1}, using the terminal's cursor, and running
 silently:@*
 @code{gtypist -t -q -l TEST1 /tmp/test.typ}
 
-@node Supplied lessons, Script file commands, Invoking, Top
+@node Supplied lessons, Using typefortune, Invoking, Top
 @chapter Supplied lessons
 
 The following lessons are supplied with GNU Typist :
@@ -335,7 +336,33 @@ If you find errors in these lessons, if you modify any of them or if you
 write a new lesson, please release it with a free license and tell us
 about it, by writing an email to @email{bug-gtypist@@gnu.org}.
 
-@node Script file commands, Create new lessons, Supplied lessons, Top
+@node Using typefortune, Script file commands, Supplied lessons, Top
+@chapter Using typefortune
+
+`typefortune' lets you practice with text from `fortune'.
+
+@code{SYNTAX: typefortune [-dslh] [-n count] [-o gtypist_opts]}
+
+@table @code
+
+@item -d
+Use @code{D:} instead of @code{S:}.
+
+@item -s
+Run fortune with @code{-s}.
+
+@item -l
+Run fortune with @code{-l}.
+
+@item -n <count>
+Practice <count> fortunes.
+
+@item -o <gtypist_options>
+Pass options to gtypist:
+
+@end table
+
+@node Script file commands, Create new lessons, Using typefortune, Top
 @chapter Script file commands
 
 GNU Typist reads in the data for its typing lessons from a script file.

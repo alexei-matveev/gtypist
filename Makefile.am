@@ -5,6 +5,7 @@ SUBDIRS=intl po lessons tools doc
 EXTRA_DIST=gtypist.1 configur.bat version.sh configur.bat.in autogen.sh INSTALL.in TODO
 
 bin_PROGRAMS = gtypist
+bin_SCRIPTS = typefortune
 gtypist_SOURCES = gtypist.c getopt.h getopt.c getopt1.c
 gtypist_LDADD = @INTLLIBS@
 man_MANS = gtypist.1

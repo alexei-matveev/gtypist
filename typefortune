@@ -1,0 +1,120 @@
+#!/usr/bin/perl -w
+
+# generate a .typ file and call gtypist to run this file
+# Yuusuke Mita <neiklotrrj@yahoo.com>, Felix Natter <fnatter@gmx.net>
+#
+# This program is free software; you can redistribute it and/or
+# modify it under the terms of the GNU General Public License
+# as published by the Free Software Foundation; either version 2
+# of the License, or (at your option) any later version.
+# 
+# This program is distributed in the hope that it will be useful,
+# but WITHOUT ANY WARRANTY; without even the implied warranty of
+# MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+# GNU General Public License for more details.
+# 
+# You should have received a copy of the GNU General Public License
+# along with this program; if not, write to the Free Software
+# Foundation, Inc., 675 Mass Ave, Cambridge, MA 02139, USA.
+
+use strict qw (subs vars refs);
+use Getopt::Std;
+
+my %opts;
+if (!getopts ("dslhn:o:", \%opts) || $opts{h}) {
+    print "SYNTAX: typefortune [-dslh] [-n count] [-o gtypist_opts]\n";
+    print "-d: use D:\n";
+    print "-s: use fortune -s\n";
+    print "-l: use fortune -l\n";
+    print "-n <count>: practice <count> fortunes\n";
+    print "-o <gtypist_options>: pass options to gtypist\n";
+    exit 1;
+}
+
+my $exercise_type = "S:";
+if ($opts{d}) { $exercise_type = "D:"; }
+my $max_lines = 22;
+if ($exercise_type eq "D:" || $exercise_type eq "d:") { $max_lines = 11; }
+if ($opts{s} && $opts{l}) { die "-s and -l cannot be used together"; }
+my $fortune_command = "";
+if ($opts{s}) { $fortune_command .= " -s"; }
+if ($opts{l}) { $fortune_command .= " -l"; }
+my $count = 1;
+if (defined ($opts{n})) { $count = $opts{n}; }
+if (defined ($opts{o})) { die "-o isn't yet implemented\n"; }
+
+# make sure that fortune is available
+system("fortune > /dev/null 2>&1");
+
+my $typfilename = "/tmp/typefortune.$$";
+my $TYPFILE = undef;
+open(TYPFILE, ">$typfilename") ||
+    die "Couldn't open $typfilename for writing: $!";
+
+my $i;
+my $j;
+my @lines;
+
+# not $#lines is the index of the last line (and not the length of @lines)
+print TYPFILE "# temporary file created by typefortune\n";
+for ($i = 0; $i < $count; $i++)
+{
+    do {
+	@lines = split (/\n/, `fortune`);
+    } while ($#lines >= $max_lines);
+
+    # maybe insert banner
+    if ($#lines > 0 && $lines[$#lines] =~ /^\s*-- (.+)\s*/) {
+	print TYPFILE getBanner($1);
+	pop @lines;
+    } else {
+	# clear any existing banner
+	print TYPFILE "B:\n";
+    }
+
+    print TYPFILE "I:fortune ". ($i + 1) . "/" . $count . "\n";
+ 
+    # print lines
+    for ($j = 0; $j <= $#lines; $j++)
+    {
+	if ($j == 0) { 
+	    print TYPFILE "$exercise_type";
+	} else {
+	    print TYPFILE " :";
+	}
+	print TYPFILE $lines[$j];
+	print TYPFILE "\n";
+    }
+}
+
+print TYPFILE "T:\n :\n :\n : Congratulations: " .
+    "you successfully completed the " .
+    "fortune lessons !\n";
+    
+close(TYPFILE) || die "Couldn't close $typfilename: $!";
+
+
+# create option-list for gtypist
+my $gtypist_options = "";
+# TODO:
+ 
+# call gtypist
+exec ("gtypist $gtypist_options $typfilename");
+
+
+# subroutines
+
+# this creates a B:-command (centered on 66 columns because
+# "gtypist <version>" is in the right corner)
+sub getBanner($)
+{
+    my $banner = $_[0];
+    # remove whitespace at the beginning ...
+    $banner =~ s/^\s*//;
+    # ... and at the end
+    $banner =~ s/\s*$//;
+    return "B:" . " " x (33 - int((length($banner) / 2))) . $banner . "\n";
+}
+
+
+
