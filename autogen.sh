@@ -41,7 +41,7 @@
 (makeinfo --version) < /dev/null > /dev/null 2>&1 || {
     echo
     echo "**Error**: You must have \`texinfo' installed."
-    echo "Get ftp://ftp.gnu.org/gnu/texinfo/texinfo-4.3.tar.gz"
+    echo "Get ftp://ftp.gnu.org/gnu/texinfo/texinfo-4.5.tar.gz"
     echo "(or a newer version if it is available)"
     exit 1
 }
