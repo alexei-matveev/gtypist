@@ -141,22 +141,8 @@ echo
 ./configure "$@"
 
 # Run make
-# Needed to generate the version.texi file
 
 make
-
-# Generate documentation now that version.texi exists
-
-cd doc
-echo "creating doc/gtypist.info..."
-makeinfo -Idoc gtypist.texi -o gtypist.info
-echo "creating doc/gtypist.cs.info..."
-makeinfo -Idoc gtypist.cs.texi -o gtypist.cs.info
-echo "creating doc/gtypist.html..."
-makeinfo --html --no-header --no-split gtypist.texi -o gtypist.html 
-echo "creating doc/gtypist.cs.html..."
-makeinfo --html --no-header --no-split gtypist.cs.texi -o gtypist.cs.html 
-cd ..
 
 # Create the source packages
 
