@@ -126,8 +126,9 @@ Backward deleting of previously typed characters to correct errors is
 permitted, but errors still accumulate.
 
 If you already made too many mistakes, then you can use @key{ESC} to
-give up and start again. Once you complete a lesson, you will be asked
-whether you want to repeat it.
+give up and start again. You can also skip a lesson by pressing
+@key{ESC} twice. Once you complete a lesson, you will be asked whether
+you want to repeat it.
 
 @c TODO: indicate ``practice only'' exercises in modeline ?
 There are also ``practice only'' exercises (of both drills and speed tests)
@@ -375,7 +376,7 @@ execution of the script there. This is a single line command.
 This command command prompts its text on the message line, and waits for
 a @key{Y} or an @key{N} before proceeding. Other characters are ignored.
 
-As a side effect, you can hit an fkey if it is bound (That's why
+As a side effect, you can hit an Fkey if it is bound (That's why
 this is used to set the prompt for menus).
 
 @item Y
@@ -626,18 +627,18 @@ syntax-highlighting, indentation and has some convenient commands for
 counting labels, a goto-label-command, inserting properly centered
 banners, special comments and a bit more.
 
-Copy this file from @file{tools/gtypist-mode.el}
-(or @file{/usr/share/doc/gtypist} if you are using the debian package) to
-wherever you put your local elisp files (e.g. @file{~/elisp}) and put
-this in your @file{~/.emacs} (adapt path!):
+Copy this file from @file{tools/gtypist-mode.el} to wherever you put
+your local elisp files (e.g.  @file{~/elisp}) and put this in your
+@file{~/.emacs} (adapt path!):
 
 @lisp
 (autoload 'gtypist-mode "~/elisp/gtypist-mode")
 @end lisp
 
 or put it in @code{load-path} (@samp{make install} in the
-sources should take care of this for GNU Emacs) and use this
-instead:
+sources should take care of this for GNU Emacs, or if you
+are using the Debian package, it installs it here for you)
+and use this instead:
 
 @lisp
 (autoload 'gtypist-mode "gtypist-mode")

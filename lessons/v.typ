@@ -84,8 +84,6 @@ I:(3)
 #                                                              ../orig/v.typ:31
 D:e e e e ded ded ded ded ded i i i i kik kik kik
  :ded kik ded kik ded kik ded kik ded kik ded kik
-Q: Press Y to continue, N to repeat, or Fkey12 to exit 
-N:_V_R_L6
 
 #                                                              ../orig/v.typ:32
 I:(4)
@@ -911,8 +909,6 @@ G:_V_E_V12
 #                                                             ../orig/v.typ:507
 T:
  :			(Z and /)
-Q: Press Y to continue, or Fkey12 to exit 
-N:_V_R_L86
 
 #                                                             ../orig/v.typ:508
 I:(1) Warmup

@@ -1,3 +1,17 @@
+2001-12-01  Felix Natter  <f.natter@ndh.net>
+
+	* d.typ, r.typ, v.typ, esp.typ: remove more occurrences of "Q:
+	Press Y to continue, ..."  following an exercise (because this is
+	builtin since 2.4)
+	* d.typ, v.typ, r.typ: remove all occurrences of "Q: Press Y to
+	cont..." following T: : It doesn't make sense to repeat a T:, the
+	standard message "Press Enter to continue." is better
+	
+	* d.typ: There was such an I: command:
+I:Juvenile zest for excitement whetted interest in parking by the quay.
+	(and a D: command was missing in the paragraph). changed this to
+	D:.
+
 2001-09-02  Felix Natter  <f.natter@ndh.net>
 
 	* ?.typ: adapt lessons to new 2.4 syntax

@@ -1,3 +1,10 @@
+2001-11-29  Felix Natter  <fnatter@gmx.net>
+
+	* gtypist.c (do_drill, do_speedtest): allow ESC ESC to be used for
+	skipping a lesson (ESC in the middle of an exercise restarts it and
+	ESC at the start of a lesson skips it)
+	(as suggested by Ben Armstrong <synrg@sanctuary.nslug.ns.ca>)
+
 2001-10-08Michael Opdenacker  <michaelo@gnu.org>
 
 	* Added missing checks in configure.in reported by autoscan.

@@ -1,8 +1,21 @@
 	GNU Typist Release Notes
 	------------------------
 
-	See the `ChangeLog' and `THANKS' files for details
-	about changes and contributors.
+	See the `ChangeLog' (top-level and in some subdirectories) and
+	`THANKS' files for details about changes and contributors.
+
+Version 2.4.2 - December/2001
+	
+	- allow the user to skip a lesson by pressing ESC twice (once to
+ 	restart and then again at the beginning of the exercise to skip)
+	- remove more occurrences of "Q: Press Y to continue, ..."  following
+	an exercise (because this is builtin since 2.4) in d.typ, r.typ, v.typ
+	and esp.typ
+	- remove all occurrences of "Q: Press Y to cont..." following T: :
+	It doesn't make sense to repeat a T:, the standard message
+	"Press Enter to continue." is better (d.typ, v.typ, r.typ)
+	- the last two changes make the lesson-files quite a bit simpler
+	- fixed an error in d.typ (see lessons/ChangeLog)
 
 Version 2.4.1 - November/2001
 
@@ -11,7 +24,6 @@ Version 2.4.1 - November/2001
 	and place its children on top-level and small markup changes
 	- gtypist-mode.el now works with XEmacs as well (because of this,
 	gtypist-mode-goto-label is now bound to C-c M-g)
-	- VIM Syntax highlighting: tools/gtypist.vim
  
 Version 2.4 - September/2001
 

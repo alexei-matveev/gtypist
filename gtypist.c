@@ -192,14 +192,14 @@ static struct label_entry	*global_label_list[NLHASH];
 /* a global area for associating function keys with labels */
 #define NFKEYS			12		/* num of function keys */
 static	char	*fkey_bindings[ NFKEYS ] =
-{ NULL, NULL, NULL, NULL, NULL, NULL,
-  NULL, NULL, NULL, NULL, NULL, NULL };
+  { NULL, NULL, NULL, NULL, NULL, NULL,
+    NULL, NULL, NULL, NULL, NULL, NULL };
 /* table of pseudo-function keys, to allow ^Q to double as Fkey1, etc */
 #define	CTRL_OFFSET		0100		/* ctrl keys are 'X' - 0100 */
 static	char	pfkeys[ NFKEYS ] =
-{ 'Q'-CTRL_OFFSET, 'W'-CTRL_OFFSET, 'E'-CTRL_OFFSET, 'R'-CTRL_OFFSET,
-  'T'-CTRL_OFFSET, 'Y'-CTRL_OFFSET, 'U'-CTRL_OFFSET, 'I'-CTRL_OFFSET,
-  'O'-CTRL_OFFSET, 'P'-CTRL_OFFSET, 'A'-CTRL_OFFSET, 'S'-CTRL_OFFSET };
+  { 'Q'-CTRL_OFFSET, 'W'-CTRL_OFFSET, 'E'-CTRL_OFFSET, 'R'-CTRL_OFFSET,
+    'T'-CTRL_OFFSET, 'Y'-CTRL_OFFSET, 'U'-CTRL_OFFSET, 'I'-CTRL_OFFSET,
+    'O'-CTRL_OFFSET, 'P'-CTRL_OFFSET, 'A'-CTRL_OFFSET, 'S'-CTRL_OFFSET };
 
 
 #define MAX(A,B) ((A)<(B)?(B):(A))
@@ -332,7 +332,7 @@ fatal_error( char *message, char *line ) {
 /*
   get the next non-comment, non-blank line from the script file
   and check its basic format
- */
+*/
 static void 
 get_script_line( FILE *script, char *line ) {
 
@@ -369,7 +369,7 @@ get_script_line( FILE *script, char *line ) {
 
 /*
   label hashing function - returns an index for the lists
- */
+*/
 static int 
 hash_label( char *label ) {
   char	*p;				/* pointer through string */
@@ -384,8 +384,8 @@ hash_label( char *label ) {
 
 
 /*
-   go through the file and index all the labels we can find
- */
+  go through the file and index all the labels we can find
+*/
 static void index_labels( FILE *script ) {
   char line[MAX_SCR_LINE];
   char *line_iterator;
@@ -470,7 +470,7 @@ static void index_labels( FILE *script ) {
 /*
   search out a label from the file, and set the file pointer to
   that location
- */
+*/
 static void 
 seek_label( FILE *script, char *label, char *ref_line ) {
   struct label_entry	*check_label;	/* pointer through list */
@@ -508,7 +508,7 @@ seek_label( FILE *script, char *label, char *ref_line ) {
   wait for a nod from the user before continuing -- returns true if
   we just got the expected return, false if exit was by a function
   key
- */
+*/
 static bool 
 wait_user( char *message, char *mode, FILE *script, char *line ) {
   int	resp;			/* response character */
@@ -577,7 +577,7 @@ wait_user( char *message, char *mode, FILE *script, char *line ) {
 
 /*
   display speed and accuracy from a drill or speed test
- */
+*/
 static void display_speed( int total_chars, long elapsed_time, int errcount ) {
   double	test_time;			/* time in minutes */
   double	words;				/* effective words typed */
@@ -616,7 +616,7 @@ static void display_speed( int total_chars, long elapsed_time, int errcount ) {
 
 /*
   bind a function key to a label
- */
+*/
 static void 
 do_keybind( FILE *script, char *line ) {
   int	fkey;				/* function key number */
@@ -652,7 +652,7 @@ do_keybind( FILE *script, char *line ) {
 
 /*
   print the given text onto the screen
- */
+*/
 static void 
 do_tutorial( FILE *script, char *line ) {
   int	linenum;			/* line counter */
@@ -683,7 +683,7 @@ do_tutorial( FILE *script, char *line ) {
 
 /*
   print up a line, at most two, usually followed by a drill or a speed test
- */
+*/
 static void 
 do_instruction( FILE *script, char *line ) {
 
@@ -709,7 +709,7 @@ do_instruction( FILE *script, char *line ) {
 
 /*
   buffer up the complete data from a command; used for D and P
- */
+*/
 static char *buffer_command( FILE *script, char *line ) {
   int	total_chars = 0;		/* character counter */
   char	*data = NULL;			/* data string */
@@ -748,7 +748,7 @@ static char *buffer_command( FILE *script, char *line ) {
 
 /*
   execute a typing drill
- */
+*/
 static void 
 do_drill( FILE *script, char *line ) {
 
@@ -826,7 +826,6 @@ do_drill( FILE *script, char *line ) {
 			     ASCII_TAB : ASCII_SPACE );
 	      c = (char)rc;
 	    }
-	  if ( c == ASCII_ESC ) break;
 	
 	  /* start timer on first char entered */
 	  if ( chars_typed == 0 )
@@ -840,6 +839,11 @@ do_drill( FILE *script, char *line ) {
 	      p--;		/* defeat p++ coming up */
 	      continue;
 	    }
+
+	  /* ESC is "give up"; ESC at beginning of exercise is "skip lesson"
+	     (this is handled outside the for loop) */
+	  if ( c == ASCII_ESC )
+	    break;
 	
 	  /* check that the character was correct */
 	  if ( c == *p
@@ -899,45 +903,55 @@ do_drill( FILE *script, char *line ) {
 		}
 	    }
 	}
-      /* look for escape key to "give up" */
-      if ( c == ASCII_ESC ) continue;
-    
-      /* display timings */
-      end_time = (long)time( NULL );
-      if ( ! cl_notimer ) 
+      
+      /* ESC not at the beginning of the lesson: "give up" */
+      if ( c == ASCII_ESC && chars_typed != 1)
+	continue; /* repeat */
+
+      /* skip timings and don't check error-pct if exit was through ESC */
+      /* (unless prohibited by TODO) */
+      if ( c != ASCII_ESC )
 	{
-	  display_speed( chars_typed, end_time - start_time,
-			 errors );
-	}
+	  /* display timings */
+	  end_time = (long)time( NULL );
+	  if ( ! cl_notimer ) 
+	    {
+	      display_speed( chars_typed, end_time - start_time,
+			     errors );
+	    }
 
-      /* check whether the error-percentage is too high (unless in d:) */
-      if (drill_type != C_DRILL_PRACTICE_ONLY &&
-	  (float)errors/(float)chars_typed > global_error_max/100.0) 
-	{
-	  sprintf( message, ERROR_TOO_HIGH_MSG, global_error_max );
-	  if ( ! wait_user( message, MODE_DRILL, script, line )) {
-	    seek_done = TRUE;
-	    break; /* function key */
-	  }
+	  /* check whether the error-percentage is too high (unless in d:) */
+	  if (drill_type != C_DRILL_PRACTICE_ONLY &&
+	      (float)errors/(float)chars_typed > global_error_max/100.0) 
+	    {
+	      sprintf( message, ERROR_TOO_HIGH_MSG, global_error_max );
+	      if ( ! wait_user( message, MODE_DRILL, script, line )) {
+		seek_done = TRUE;
+		break; /* function key */
+	      }
 
-	  /* check for F-command */
-	  if (global_on_failure_label != NULL) {
-	    /* move to the label position in the file */
-	    if (fseek(script,global_on_failure_label->offset,SEEK_SET ) == -1)
-	      fatal_error( _("internal error: fseek"), NULL );
-	    global_line_counter = global_on_failure_label->line_count;
-	    /* tell the user about the misery :) */
-	    sprintf(message,SKIPBACK_VIA_F_MSG,global_on_failure_label->label);
-	    /* reset value unless persistent */
-	    if (!global_on_failure_label_persistent)
-	      global_on_failure_label = NULL;
-	    /* no need to check for fkey because seek_done is set anyway */
-	    wait_user( message, MODE_DRILL, script, line );
-	    seek_done = TRUE;
-	    break;
-	  }
+	      /* check for F-command */
+	      if (global_on_failure_label != NULL)
+		{
+		  /* move to the label position in the file */
+		  if (fseek(script,global_on_failure_label->offset,SEEK_SET )==-1)
+		    fatal_error( _("internal error: fseek"), NULL );
+		  global_line_counter = global_on_failure_label->line_count;
+		  /* tell the user about the misery :) */
+		  sprintf(message,SKIPBACK_VIA_F_MSG,
+			  global_on_failure_label->label);
+		  /* reset value unless persistent */
+		  if (!global_on_failure_label_persistent)
+		    global_on_failure_label = NULL;
+		  /* no need to check for fkey because seek_done is
+		     set anyway */
+		  wait_user( message, MODE_DRILL, script, line );
+		  seek_done = TRUE;
+		  break;
+		}
 
-	  continue;
+	      continue;
+	    }
 	}
 
       /* ask the user whether he/she wants to repeat */
@@ -947,6 +961,7 @@ do_drill( FILE *script, char *line ) {
       }
       if (global_resp_flag)
 	break; /* user has hit Y */
+
 
     }
   
@@ -968,7 +983,7 @@ do_drill( FILE *script, char *line ) {
 
 /*
   execute a timed speed test
- */
+*/
 static void 
 do_speedtest( FILE *script, char *line ) {
   int	errors = 0;		 /* error count */
@@ -1055,8 +1070,12 @@ do_speedtest( FILE *script, char *line ) {
 	      p--;		/* defeat p++ coming up */
 	      continue;
 	    }
-	  if ( c == ASCII_ESC ) break;
-      
+
+	  /* ESC is "give up"; ESC at beginning of exercise is "skip lesson"
+	     (this is handled outside the for loop) */
+	  if ( c == ASCII_ESC )
+	    break;
+
 	  /* check that the character was correct */
 	  if ( c == *p
 	       || ( cl_wpmode && c == ASCII_SPACE
@@ -1115,42 +1134,52 @@ do_speedtest( FILE *script, char *line ) {
 	    }
 	}
   
-      /* look for escape key to "give up" */
-      if ( c == ASCII_ESC ) continue;
     
-      /* display timings */
-      end_time = (long)time( NULL );
-      display_speed( chars_typed, end_time - start_time,
-		     errors );
-      
-      /* check whether the error-percentage is too high (unless in s:) */
-      if (drill_type != C_SPEEDTEST_PRACTICE_ONLY &&
-	  (float)errors/(float)chars_typed > global_error_max/100.0) 
+      /* ESC not at the beginning of the lesson: "give up" */
+      if ( c == ASCII_ESC && chars_typed != 1)
+	continue; /* repeat */
+
+      /* skip timings and don't check error-pct if exit was through ESC */
+      /* (unless prohibited by TODO) */
+      if ( c != ASCII_ESC )
 	{
-	  sprintf( message, ERROR_TOO_HIGH_MSG, global_error_max );
-	  if ( ! wait_user( message, MODE_SPEEDTEST, script, line )) {
-	    seek_done = TRUE;
-	    break; /* function key */
-	  }
+	  /* display timings */
+	  end_time = (long)time( NULL );
+	  display_speed( chars_typed, end_time - start_time,
+			 errors );
+      
+	  /* check whether the error-percentage is too high (unless in s:) */
+	  if (drill_type != C_SPEEDTEST_PRACTICE_ONLY &&
+	      (float)errors/(float)chars_typed > global_error_max/100.0) 
+	    {
+	      sprintf( message, ERROR_TOO_HIGH_MSG, global_error_max );
+	      if ( ! wait_user( message, MODE_SPEEDTEST, script, line )) {
+		seek_done = TRUE;
+		break; /* function key */
+	      }
 
-	  /* check for F-command */
-	  if (global_on_failure_label != NULL) {
-	    /* move to the label position in the file */
-	    if (fseek(script,global_on_failure_label->offset,SEEK_SET ) == -1)
-	      fatal_error( _("internal error: fseek"), NULL );
-	    global_line_counter = global_on_failure_label->line_count;
-	    /* tell the user about the misery :) */
-	    sprintf(message,SKIPBACK_VIA_F_MSG,global_on_failure_label->label);
-	    /* reset value unless persistent */
-	    if (!global_on_failure_label_persistent)
-	      global_on_failure_label = NULL;
-	    /* no need to check for fkey because seek_done is set anyway */
-	    wait_user( message, MODE_SPEEDTEST, script, line );
-	    seek_done = TRUE;
-	    break;
-	  }
+	      /* check for F-command */
+	      if (global_on_failure_label != NULL)
+		{
+		  /* move to the label position in the file */
+		  if (fseek(script,global_on_failure_label->offset,SEEK_SET )==-1)
+		    fatal_error( _("internal error: fseek"), NULL );
+		  global_line_counter = global_on_failure_label->line_count;
+		  /* tell the user about the misery :) */
+		  sprintf(message,SKIPBACK_VIA_F_MSG,
+			  global_on_failure_label->label);
+		  /* reset value unless persistent */
+		  if (!global_on_failure_label_persistent)
+		    global_on_failure_label = NULL;
+		  /* no need to check for fkey because seek_done is
+		     set anyway */
+		  wait_user( message, MODE_SPEEDTEST, script, line );
+		  seek_done = TRUE;
+		  break;
+		}
 
-	  continue;
+	      continue;
+	    }
 	}
 
       /* ask the user whether he/she wants to repeat */
@@ -1210,7 +1239,7 @@ do_clear( FILE *script, char *line ) {
 
 /*
   go to a label - the flag is used to implement conditional goto's
- */
+*/
 static void 
 do_goto( FILE *script, char *line, bool flag )
 {
@@ -1235,7 +1264,7 @@ do_goto( FILE *script, char *line, bool flag )
 
 /*
   exit from the program (implied on eof)
- */
+*/
 static void 
 do_exit( FILE *script ) 
 {
@@ -1253,7 +1282,7 @@ do_exit( FILE *script )
   This is used to implement "builtin loops" in do_drill and do_speedtest
   returns true if we just got the expected Y/N,
   false if exit was by a function key
- */
+*/
 static bool
 do_query_noscriptfile( FILE *script, const char *prompt )
 {
@@ -1496,7 +1525,7 @@ do_on_failure_label_set( FILE *script, char *line )
 
 /*
   execute the directives in the script file
- */
+*/
 static void 
 parse_file( FILE *script, char *label ) {
 
@@ -1554,9 +1583,9 @@ parse_file( FILE *script, char *label ) {
 }
 
 /**
-  indent to column n
-  @param n is the amount of times to write ' ' (negative or zero means none)
- **/
+   indent to column n
+   @param n is the amount of times to write ' ' (negative or zero means none)
+**/
 static void
 indent_to( int n )
 {
@@ -1566,16 +1595,16 @@ indent_to( int n )
 }
 
 /**
-  Prints one usage option. 
-  The arguments op, lop and help should not have special characters '\n' '\t'
-  @param op is the short option
-  @param lop is the long option
-  @param help is the explanation of the option
-  @param col_op is the column where the short option will be displayed
-  @param col_lop is the column where the long option will be displayed
-  @param col_op is the column where the explanation will be displayed
-  @param last_col is the last column that can be used
- **/
+   Prints one usage option. 
+   The arguments op, lop and help should not have special characters '\n' '\t'
+   @param op is the short option
+   @param lop is the long option
+   @param help is the explanation of the option
+   @param col_op is the column where the short option will be displayed
+   @param col_lop is the column where the long option will be displayed
+   @param col_op is the column where the explanation will be displayed
+   @param last_col is the last column that can be used
+**/
 static void
 print_usage_item( char *op, char *lop, char *help, 
 		  int col_op, int col_lop, int col_help, int last_col ) 
@@ -1623,34 +1652,34 @@ print_usage_item( char *op, char *lop, char *help,
 
 /**
    Prints usage instructions
- **/
+**/
 static void
 print_help()
 {
   char *op[]= 
-  { "-e %",
-    "-n",
-    "-t",
-    "-f P",
-    "-c F,B",
-    "-s",
-    "-q",
-    "-l L",
-    "-w",
-    "-h",
-    "-v" };
+    { "-e %",
+      "-n",
+      "-t",
+      "-f P",
+      "-c F,B",
+      "-s",
+      "-q",
+      "-l L",
+      "-w",
+      "-h",
+      "-v" };
   char *lop[]= 
-  { "--max-error=%",
-    "--notimer",
-    "--term-cursor",
-    "--curs-flash=P",
-    "--colours=F,B",
-    "--silent",
-    "--quiet",
-    "--start-label=L",
-    "--wpmode",
-    "--help",
-    "--version" };
+    { "--max-error=%",
+      "--notimer",
+      "--term-cursor",
+      "--curs-flash=P",
+      "--colours=F,B",
+      "--silent",
+      "--quiet",
+      "--start-label=L",
+      "--wpmode",
+      "--help",
+      "--version" };
   char *help[] = 
     { 
       _("default maximum error percentage (default 3.0); valid values are between 0.0 and 100.0"),
@@ -1696,7 +1725,7 @@ print_help()
 
 /*
   parse command line options for initial values
- */
+*/
 static void 
 parse_cmdline( int argc, char **argv ) {
   int	c;				/* option character */
@@ -1802,9 +1831,9 @@ parse_cmdline( int argc, char **argv ) {
 }
 
 
- /*
-   signal handler to stop curses stuff on intr
- */
+/*
+  signal handler to stop curses stuff on intr
+*/
 static void 
 catcher( int signal ) {
   
@@ -1818,7 +1847,7 @@ catcher( int signal ) {
 
 /*
   main routine
- */
+*/
 int main( int argc, char **argv ) 
 {
   WINDOW	*scr;				/* curses window */

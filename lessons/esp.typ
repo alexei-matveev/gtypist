@@ -1415,9 +1415,6 @@ s:Un hombrecito va por allí caminando fresco, cargando un libro de Mr. Edgar
  :tristeza se le pasa.
  :
  : Andrés Caicedo. Del libro Destinitos Fatales
-Q:Oprima Y para continuar, N para repetir y F12 para salir
-N:PRACTICA_LECCION_14
-G:LECCION_15
 
 *:LECCION_15
 *:MENU_LECCION_15
@@ -1982,8 +1979,6 @@ s:El río Nilo ubicado en Egipto, es considerado el más largo del mundo con
  :tierra? No, el animal más grande que ha existido y que aún existe es la
  :ballena azul que en promedio mide 27 metros y pesa 120 toneladas.
  :   http://www.extremescience.com
-Q:Oprima Y para continuar, N para repetir y F12 para salir
-N:PRACTICA_VELOCIDAD1
 
 *:PRACTICA_VELOCIDAD2
 B:Segunda práctica de velocidad
@@ -2006,8 +2001,6 @@ s:Los organismos vivos se han agrupado en distintos reinos
  :
  :Manuel Elquin Patarroyo desarrolló la vacuna contra la malaria en 1987.
  :   http://www.idrc.ca/books/reports/10patarro.html
-Q:Oprima Y para continuar, N para repetir y F12 para salir
-N:PRACTICA_VELOCIDAD2
 
 *:EVALUACION_VELOCIDAD
 B:Evaluación de Velocidad
@@ -2100,8 +2093,6 @@ s:Fragmento de "CANCIÓN DE LA VIDA PROFUNDA"
  :
  :                 Porfirio Barba-Jacob
  :                 (1883 - 1942)
-Q:Oprima Y para continuar, N para repetir y F12 para salir
-N:PRACTICA_PRECISION1
 
 *:PRACTICA_PRECISION2
 B:Segunda práctica de precisión
@@ -2124,8 +2115,6 @@ s:Fragmento de "NOCHE DE DICIEMBRE"
  :
  :                   Rafael Pombo
  :                  (1833 - 1912)
-Q:Oprima Y para continuar, N para repetir y F12 para salir
-N:PRACTICA_PRECISION2
 
 *:EVALUACION_PRECISION
 B:Evaluación de precisión
@@ -2156,4 +2145,3 @@ G:PRECISION
 
 *:FINAL
 X:
-

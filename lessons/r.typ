@@ -175,8 +175,6 @@ D:In order to raise a poor grade one tries to use good sense.
  :An error is a sure sign not to do the thing that one did.
  :An error seen once does not hurt.  As soon as an error is
  :seen or heard again, note its sort and end it right there.
-Q: Press Y to continue, N to repeat, or Fkey12 to exit 
-N:_R_R_L17
 
 #                                                              ../orig/r.typ:80
 I:(7)
