@@ -14,8 +14,8 @@ pkgdata_DATA =  gtypist.typ \
 		v.typ \
 		ktlecten.typ \
 		ktnumber.typ \
-		ktouchde.typ \
-		ktouchen.typ \
-		ktouchfr.typ \
-		ktouchno.typ
+		ktde.typ \
+		kten.typ \
+		ktfr.typ \
+		ktno.typ
 EXTRA_DIST= $(pkgdata_DATA)
