@@ -1,3 +1,10 @@
+2004-05-07	Dmitry Rutsky	<rutsky@school.ioffe.rssi.ru>
+
+	* ru.typ: corrected unlearned-key bug in IF_Ib lesson last exercise.
+	  Thanks to Renat Sabitov <srr@stacksoft.ru> who has reported this!
+	  He has also reported some spelling error on 18th February, which I've
+	  fixed but somehow this change was lost.
+
 2003-12-28  Michael Opdenacker <michaelo@gnu.org>
 
 	* r.typ: corrected "may" by "many" on line 1198
