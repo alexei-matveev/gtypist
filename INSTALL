@@ -1,24 +1,21 @@
-
-		GNU Typist 2.3.2 Installation instructions
-
+		GNU Typist 2.3.3 Installation instructions
 
 This program can be compiled under Unix and under Windows/DOS.
-
 
 Compilation under Unix 
 ----------------------
 
 In order to compile this program, you must have:
-- The ncurses or the curses library
+- The 'ncurses' or the 'curses' library
 
-* Decompress the sources distribution:
-	tar xvfz gtypist-2.3.2.tar.gz
+* Uncompress the sources distribution:
+	tar xvfz gtypist-2.3.3.tar.gz
 
-* Change to de sources directory
-	cd gtypist-2.3.2
+* Change to the sources directory
+	cd gtypist-2.3.3
 
-* Configure the package.  By default  the program will be installed at
-/usr/local/bin   and  the   lessons  and   international   support  in
+* Configure the package. By default the program will be installed at
+/usr/local/bin and the lessons and international support in
 /usr/local/share/gtypist (you can change with the option --prefix). By 
 default it will install Native Language Support (you can disable this
 with the option --disable-nls)
@@ -37,25 +34,21 @@ with the option --disable-nls)
   or
 	/usr/local/bin/gtypist
 
-
-
-
 Compilation under Windows/DOS
 -----------------------------
 
 You must have:
 
-- DJGPP compiler.   Available at
+- DJGPP compiler. Available at
     http://www.delorie.com/djgpp/zip-picker.html
   You only will need the C compiler.
 
 - Emulation of the curses library pdcurses v2.4. Available at
     ftp://ftp.simtel.net/pub/simtelnet/gnu/djgpp/v2tk/pdcur24b.zip
 
-
 * Decompress the sources distribution 
 * Open a DOS session, change to the sources directory
-	cd gtypist-2.3.1
+	cd gtypist-2.3.3
 
 * Configure the package
 	configur
@@ -63,8 +56,8 @@ You must have:
 * Compile
 	make
 
-* To install it,  you should create a directory  (e.g. c:\GTypist) and
-  copy  into  it  the  lessons  of directory  lessons  and the program
+* To install it, you should create a directory (e.g. c:\GTypist) and
+  copy into it the lessons of directory 'lessons' \ and the program
   gtypist.exe:
 
 	mkdir c:\GTypist
@@ -75,9 +68,6 @@ You must have:
 	cd GTypist
 	gtypist
 
-
-
-
 Problems and their solution
 ---------------------------
 
@@ -86,23 +76,22 @@ Configuration with Native Language Support under Unix:
 	* If you configured first without NLS and now you want NLS, go
 	  to directory intl remove libintl.h and configure again.
 	* If your Unix doesn't have Native Language Support, the sources
-	  of typist come with a limited version, to use it configure with:
+	  of gtypist come with a limited version, to use it configure with:
 		./configure --with-included-gettext
-	  And before running typist set the environment variable LC_ALL
+	  And before running gtypist set the environment variable LC_ALL
 	  to your language (in accordance to the ISO 639 languages). 
-	  This version of typist has support for English (en),
-	  Spanish (es) and German (de).  Using this option it was possible
-	  to compile and run typist under AIX
+	  This version of gtypist has support for English (en),
+	  Spanish (es) and German (de). Using this option it was possible
+	  to compile and run gtypist under AIX
 
+Dvorak Keyboard under GNU/Linux (Ben Armstrong <synrg@sanctuary.nslug.ns.ca>)
 
-Dvorad Keyboard under GNU/Linux (Ben Armstrong <synrg@sanctuary.nslug.ns.ca>)
-
-	To get Dvorak keymaps, run loadkeys on the appropriate keymap
-        file. For example if your keympas are at /usr/share/keymaps
+	To get Dvorak keymaps, run the 'loadkeys' command on the appropriate keymap
+        file. For example if your keymaps are at /usr/share/keymaps
 
 	loadkeys /usr/share/keymaps/i386/dvorak/dvorak.kmap.gz
 
-        To switch  to your default keyboard mappings,  run loadkeys on
+        To switch to your default keyboard mappings, run loadkeys on
         the default keymap file:
 
 	loadkeys /etc/console-tools/default.map.gz
@@ -110,20 +99,19 @@ Dvorad Keyboard under GNU/Linux (Ben Armstrong <synrg@sanctuary.nslug.ns.ca>)
         If you are in X, please visit the Dvorak home page at
         http://www.mwbrooks.com/dvorak/ for more information.
 
-
 Keyboard under DOS/Windows:
 
 	* You could experience some problems with the keyboard under
           DOS/Windows, instead of the [Return] key you should use
-          [Control]+[J].  And instead  of the F1, F2 ..  F11, F12 keys
-          use the keys 1,2 .. 10, A, S respectevely.
-
+          [Control]+[J]. And instead of the F1, F2 .. F11, F12 keys
+          use the keys 1,2 .. 10, A, S respectively.
 
 Compilation under DOS without Long File Name support or in Windows NT
 
-	* It is possible.  You only need to rename the library
-    	  libpdcurses.a in the lib directory of the djgpp distribution
+	* It is possible. You only need to rename the library
+    	  libpdcurses.a in the lib directory of the DJGPP distribution
   	  to something with less than 8 characters for example
-	  libpdc.a.  Then modify the makefile of typist (don't use
+	  libpdc.a. Then modify the makefile of gtypist (don't use
 	  edit since it doesn't preserve TABs) and change pdcurses
-          with pdc.  Finally compile and use it!
+          with pdc. Finally compile and use it!
+
