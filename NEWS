@@ -1,16 +1,23 @@
+	GNU Typist Release Notes
+	------------------------
+
+	See the `ChangeLog' and `THANKS' files for details
+	about changes and contributors.
+ 
 Version 2.4 - September/2001
 
+	- Added Finnish Native Language Support 
 	- Changes to the types of exercises: d,D for drills and s,S
 	for speed-tests
 	- Added commands E: (sets error-max) and F: (sets "on failure" label)
 	(currently only used in demo.typ and esp.typ)
-	- do_drill, do_speedtest: add "builtin repeat loop"
+	- do_drill, do_speedtest: added "builtin repeat loop"
 	- print_help: only break on whitespace in help-strings, use ';'
-	to separate words ..
+	to separate words.
 	- Allowed translation of the "do you want to repeat?" message
 	(which is possible because it is now builtin) and the corresponding
 	keys (Y/N)
-	- fatal_error: make the ouput more logical
+	- fatal_error: made the output more logical
 	- Allowed "give up" (repeat lesson) via ESC (there is no way to
 	skip an exercise in 2.4)
 	- Added (unsigned char) cast in ADDCH, ADDCH_REV to support
