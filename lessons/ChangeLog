@@ -1,3 +1,9 @@
+2002-04-07  Michael Opdenacker <michaelo@gnu.org>
+
+        * cz.typ: new Czech lesson from Hynek Hanke <hanke@volny.cz>.
+	* Makefile.am: pkgdata_DATA = $(wildcard *.typ)
+	This is simpler and doesn't have to change with new lessons.
+
 2001-12-02  Michael Opdenacker <michaelo@gnu.org>
 
 	* esp.typ: added missing `K' on line 109,
