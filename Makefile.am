@@ -7,7 +7,7 @@
 
 AUTOMAKE_OPTIONS = 1.7.7 dist-bzip2
 
-SUBDIRS= m4 po lessons tools doc intl
+SUBDIRS= po lessons tools doc
 
 EXTRA_DIST = typefortune gtypist.1 typefortune.1 \
 	configur.bat version.sh configur.bat.in autogen.sh \
