@@ -46,6 +46,16 @@
     exit 1
 }
 
+# Copy gettext.h from gettext install 
+
+gettext_exe=`which gettext`
+gettext_bin=`dirname $gettext_exe`
+gettext_home=`dirname $gettext_bin`
+gettexth=$gettext_home/share/gettext/gettext.h
+
+echo "Copying gettext.h from $gettexth"
+cp $gettexth .
+
 # Generate lesson menus
 (gawk --version) < /dev/null > /dev/null 2>&1 || {
     echo
