@@ -1,3 +1,16 @@
+2003-07-04	Dmitry Rutsky	<rutsky@school.ioffe.rssi.ru>
+
+	* cursmenu.c:  "Up/Exit" label code was commented out,
+	  since ESCAPE key works, we don't need these items.
+	* gtypist.[ch], cusmenu.c:  support for colors in the top banner.
+	  New gtypist.h header for convenience.  New --banner-colours option to
+	  select the banner colours.
+	* script.c:  now we ignore empty lines with some whitespaces rather than
+	  exit with "data shortage".
+	* gtypist.c, cursmenu.c, script.c:  fixed segfault which occured when
+	  the first thing in the script was not a menu.  There actually was
+	  a bunch of problems, it seems that now they are fixed.
+
 2003-07-03	Dmitry Rutsky	<rutsky@school.ioffe.rssi.ru>
 
 	* error.[ch], gtypist.c, cursmenu.c:  some cleanups.

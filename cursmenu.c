@@ -8,6 +8,7 @@
 #endif
 #include "gettext.h"
 #include "error.h"
+#include "gtypist.h"
 
 #include <stdlib.h>
 #include <string.h>
@@ -52,6 +53,9 @@ static void node_delete (MenuNode *mn)
 // appropriate for this quick and dirty hack.
 static void append_menu_history (const char *label)
 {
+   if (!label)
+      label = "";
+
    // First check if we've already been here
    if (start_node)
    {
@@ -91,7 +95,7 @@ static void append_menu_history (const char *label)
       (last_node -> next) = node_new ();
       last_node = (last_node -> next);
    }
-   
+ 
    (last_node -> label) = strdup (label);
    if (!(last_node -> label))
    {
@@ -107,14 +111,17 @@ static void prepare_to_go_back (FILE *script)
    MenuNode *mn = start_node;
 
    if (!start_node)
-      return;	// No way back
+      do_exit (script);	// No way back
 
    if (!(start_node -> next))
-      return;	// No way back too
+      do_exit (script);	// No way back too
 
    // Get the previous node
    while ((mn -> next) != last_node)
       mn = (mn -> next);
+
+   if (!*(start_node -> next -> label))
+      do_exit (script);
 
    seek_label (script, (mn -> label), (last_node -> label));
    node_delete (last_node);
@@ -139,7 +146,7 @@ char *do_menu (FILE *script, char *line)
   // Bind our former F12 key to the current menu
   bind_F12 (__last_label);
 
-	data = buffer_command (script, line);
+  data = buffer_command (script, line);
   /* e.g.:
    data=' "A course for the beginners"
    LESSON_1 "Lesson 1: home row keys"
@@ -154,7 +161,8 @@ char *do_menu (FILE *script, char *line)
     if (data[i++] == '\n')
       j++;
   }
-  num_items = j;
+//  num_items = j;
+  num_items = j - 1;
 
   i = 0;
   /* get UP-label if present */
@@ -191,7 +199,7 @@ char *do_menu (FILE *script, char *line)
   labels = (char**)malloc (sizeof (char*) * num_items);
   descriptions = (char**)malloc (sizeof (char*) * num_items);
   /* iterate through [0;num_items - 2] (the last item is for up/exit) */
-  for (k = 0; k < num_items - 1; k++)
+  for (k = 0; k < num_items/* - 1*/; k++)
   {
     while (data[i] != '\n')
       i++;
@@ -219,7 +227,7 @@ char *do_menu (FILE *script, char *line)
       i--;
     data[i] = 0; /* terminate description */
   }
-  if (up == NULL)
+/*  if (up == NULL)
   {
     labels[k] = NULL;
     descriptions[k] = _("Exit"); 
@@ -228,7 +236,7 @@ char *do_menu (FILE *script, char *line)
   {
     labels[k] = up;
     descriptions[k] = _("Up");
-  }
+  }*/
       
   /* get the longest description */
   max_width = 0;
@@ -277,7 +285,9 @@ char *do_menu (FILE *script, char *line)
 
   // The menu title
   wattron (stdscr, A_BOLD);
+  attron (COLOR_PAIR (C_MENU_TITLE));
   mvwaddstr (stdscr, 2, (80 - strlen (title)) / 2, title);
+  attron (COLOR_PAIR (C_NORMAL));
   wattroff (stdscr, A_BOLD);
 
   // The prompt at the bottom of the screen

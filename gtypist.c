@@ -1,4 +1,3 @@
-
 /*
  * GNU Typist  - interactive typing tutor program for UNIX systems
  * Copyright (C) 1998, 1999, 2000, 2001, 2002, 2003  Simon Baldwin (simonb@sco.com)
@@ -41,6 +40,7 @@
 #include "script.h"
 #include "error.h"
 #include "gettext.h"
+#include "gtypist.h"
 
 /* VERSION and PACKAGE defined in config.h */
 
@@ -99,7 +99,6 @@ static short	colour_array[] = {
   COLOR_BLACK, COLOR_RED, COLOR_GREEN, COLOR_YELLOW,
   COLOR_BLUE, COLOR_MAGENTA, COLOR_CYAN, COLOR_WHITE };
 #define	NUM_COLOURS		(sizeof( colour_array ) / sizeof( short ))
-#define	C_NORMAL		1		/* normal colour pair */
 
 /* shortcuts for reverse/normal mode strings */
 #define	ADDSTR_REV(X)		do { attron( A_REVERSE ); addstr( X ); \
@@ -120,8 +119,13 @@ static int	cl_curs_flash = 10;		/* cursor flash period */
 static bool	cl_silent = FALSE;		/* no beep on errors */
 static char	*cl_start_label = NULL;		/* initial lesson start point*/
 static bool	cl_colour = FALSE;		/* set if -c given */
-static int	cl_fgcolour = 0;		/* fg colour */
+static int	cl_fgcolour = 7;		/* fg colour */
 static int	cl_bgcolour = 0;		/* bg colour */
+static int	cl_banner_bg_colour = 0;	// since we display them in
+static int	cl_banner_fg_colour = 6;	// inverse video, fg is bg
+static int	cl_prog_name_colour = 5;	// and vice versa.
+static int 	cl_prog_version_colour = 1;
+static int	cl_menu_title_colour = 7;
 static bool	cl_wp_emu = FALSE;		/* do wp-like stuff */
 static bool     cl_no_skip = FALSE;             /* forbid the user to */
 static bool	cl_rev_video_errors = FALSE;    /* reverse video for errors */
@@ -181,8 +185,58 @@ static void print_help();
 static void parse_cmdline( int argc, char **argv );
 static void catcher( int signal );
 
+// Display the top banner with the given text
+void banner (const char *text)
+{
+   int colnum, brand_length, brand_position, text_length, text_position;
+   	
+   // Get rid of spaces at the edges of the text
+   while (isspace (*text))
+      text ++;
+   text_length = strlen (text);
+   if (text_length > 0)
+      while (isspace (text [text_length - 1]))
+      {
+         text_length --;
+	 if (! text_length)
+	    break;
+      }
+
+   brand_length = strlen (PACKAGE) + strlen (VERSION) + 3,
+   brand_position = COLS - brand_length,
+   text_position = ((COLS - brand_length) > text_length) ?
+		(COLS - brand_length - text_length) / 2 : 0;
+	
+// TODO:  much of redundant output here...
+
+   move (B_TOP_LINE , 0);
+   attron (COLOR_PAIR (C_BANNER));
+   for (colnum = 0; colnum < COLS; colnum++)
+      ADDCH_REV (ASCII_SPACE);
+   
+   move (B_TOP_LINE, text_position);
+   {
+      int i;
+      for (i = 0; i < text_length; i ++)
+         ADDCH_REV (text [i]);
+   }
+
+   move (B_TOP_LINE, brand_position);
+   attron (COLOR_PAIR (C_PROG_NAME));
+   ADDCH_REV (' ');
+   ADDSTR_REV (PACKAGE);
+   ADDCH_REV (' ');
+   attron (COLOR_PAIR (C_PROG_VERSION));
+   ADDSTR_REV (VERSION);
+   refresh ();
+   attron (COLOR_PAIR (C_NORMAL));
+}
+
 void bind_F12 (const char *label)
 {
+  if (!label)
+     return;
+  
   if (fkey_bindings [11])
      free (fkey_bindings [11]);
   fkey_bindings [11] = strdup (label);
@@ -197,7 +251,14 @@ void bind_F12 (const char *label)
 static inline void escape (FILE *script)
 {
    if (fkey_bindings [11])
-      seek_label (script, fkey_bindings [11], NULL); 
+   {
+      if (*(fkey_bindings [11]))
+         seek_label (script, fkey_bindings [11], NULL); 
+      else
+	 do_exit (script);
+   }
+   else
+      do_exit (script);
 }
 
 /*
@@ -975,26 +1036,12 @@ do_speedtest( FILE *script, char *line ) {
 /*
  * clear the complete screen, maybe leaving a header behind
  */
-static void 
-do_clear( FILE *script, char *line ) {
-  int	colnum = 0;			/* loop counter */
-
+static void do_clear (FILE *script, char *line)
+{
   /* clear the complete screen */
   move( B_TOP_LINE , 0 ); clrtobot();
 
-  /* create an inverse video banner at the top of the screen */
-  for ( colnum = 0; colnum < COLS; colnum++ )
-    ADDCH_REV( ASCII_SPACE );
-
-  /* add any banner text */
-  move( B_TOP_LINE , 0 );
-  ADDSTR_REV( SCR_DATA( line ));
-
-  /* add the version information at top right */
-  move( B_TOP_LINE, COLS - (strlen(PACKAGE)+strlen( VERSION )+2) );
-  ADDSTR_REV( PACKAGE );
-  ADDSTR_REV( " " );
-  ADDSTR_REV( VERSION );
+  banner (SCR_DATA (line));
 
   /* finally, get the next script command */
   get_script_line( script, line );
@@ -1408,7 +1455,9 @@ parse_file( FILE *script, char *label ) {
 	  do_speedtest( script, line ); break;
 	case C_KEYBIND:	do_keybind( script, line ); break;
 	  
-	case C_LABEL:	get_script_line( script, line ); break;
+	case C_LABEL:
+	   get_script_line (script, line);
+	   break;
 	case C_ERROR_MAX_SET: do_error_max_set( script, line ); break;
 	case C_ON_FAILURE_SET: do_on_failure_label_set( script, line ); break;
 	case C_MENU: do_menu (script, line); break;
@@ -1507,7 +1556,8 @@ print_help()
       "-i",
       "-h",
       "-v",
-      "-S"};
+      "-S",
+      "--banner-colors=F,B,P,V"};
   char *lop[]= 
     { "--max-error=%",
       "--notimer",
@@ -1522,7 +1572,8 @@ print_help()
       "--show-errors",
       "--help",
       "--version",
-      "--always-sure"};
+      "--always-sure",
+      ""};
   char *help[] = 
     { 
       _("default maximum error percentage (default 3.0); valid values are between 0.0 and 100.0"),
@@ -1538,7 +1589,9 @@ print_help()
       _("highlight errors with reverse video"),
       _("print this message"),
       _("output version information and exit"),
-      _("do not ask confirmation questions")};
+      _("do not ask confirmation questions"),
+      _("set top banner colours (background, foreground, package and version "
+		      "respectively)")};
   
   int loop;
   
@@ -1583,6 +1636,8 @@ parse_cmdline( int argc, char **argv ) {
     { "curs-flash",	required_argument, 0, 'f' },
     { "colours",	required_argument, 0, 'c' },
     { "colors",		required_argument, 0, 'c' },
+    { "banner-colours",	required_argument, 0, '\x01' },
+    { "banner-colour",	required_argument, 0, '\x01' },
     { "silent",		no_argument, 0, 's' },
     { "quiet",		no_argument, 0, 'q' },
     { "start-label",	required_argument, 0, 'l' },
@@ -1638,6 +1693,27 @@ parse_cmdline( int argc, char **argv ) {
 	    }
 	  cl_colour = TRUE;
 	  break;
+	case '\x01':
+	  if (sscanf (optarg, "%d,%d,%d,%d",
+			&cl_banner_bg_colour, &cl_banner_fg_colour,
+			&cl_prog_name_colour, &cl_prog_version_colour) != 4)
+	  {
+	     fprintf (stderr, _("%s:  argument format is incorrect\n"), optarg);
+	     exit (1);
+	  }
+
+	  if (cl_banner_bg_colour < 0 || cl_banner_bg_colour >= NUM_COLOURS ||
+		cl_banner_fg_colour < 0 || cl_banner_bg_colour >= NUM_COLOURS ||
+		cl_prog_version_colour < 0 ||
+		cl_prog_version_colour >= NUM_COLOURS ||
+		cl_prog_name_colour < 0 || cl_prog_name_colour >= NUM_COLOURS)
+	  {
+	     fprintf (stderr, _("%s:  incorrect colour values\n"), optarg);
+	     exit (1);
+	  }
+
+	  break;
+		
 	case 's':
 	case 'q':
 	  cl_silent = TRUE;
@@ -1710,7 +1786,6 @@ int main( int argc, char **argv )
 {
   WINDOW	*scr;				/* curses window */
   FILE	*script;			/* script file handle */
-  int	colnum = 0;			/* column counter */
   char	*p, filepath[FILENAME_MAX];	/* file paths */
   char	script_file[FILENAME_MAX];	/* more file paths */
   
@@ -1862,25 +1937,33 @@ This program is released under the GNU General Public License.");
 #endif
 
   /* set up colour pairs if possible */
-  if ( cl_colour && has_colors() ) 
-    {
-      start_color();
-      init_pair( C_NORMAL,
-		 colour_array[ cl_fgcolour ],
-		 colour_array[ cl_bgcolour ] );
-      wbkgdset( stdscr, COLOR_PAIR( C_NORMAL ) );
-    }
+  if (has_colors ()) 
+  {
+     start_color ();
+
+     init_pair (C_NORMAL,
+		 colour_array [cl_fgcolour],
+		 colour_array [cl_bgcolour]);
+     wbkgdset (stdscr, COLOR_PAIR (C_NORMAL));
+
+     init_pair (C_BANNER,
+		     colour_array [cl_banner_fg_colour],
+		     colour_array [cl_banner_bg_colour]);
+     init_pair (C_PROG_NAME,
+		     colour_array [cl_banner_fg_colour],
+		     colour_array [cl_prog_name_colour]);
+     init_pair (C_PROG_VERSION,
+		     colour_array [cl_banner_fg_colour],
+		     colour_array [cl_prog_version_colour]);
+     init_pair (C_MENU_TITLE,
+		     colour_array [cl_menu_title_colour],
+		     colour_array [cl_bgcolour]);
+  }
   
   /* put up the top line banner */
   clear();
-  move( B_TOP_LINE , 0 );;
-  for ( colnum = 0; colnum < COLS; colnum++ )
-    ADDCH_REV( ASCII_SPACE );
-  move( B_TOP_LINE, COLS - strlen(PACKAGE) - strlen(VERSION)+2 );
-  ADDSTR_REV( PACKAGE );
-  ADDSTR_REV( " " );
-  ADDSTR_REV( VERSION );
-  
+  banner (_("Loading the script..."));
+ 
   /* index all the labels in the file */
   index_labels( script );
   

@@ -18,6 +18,18 @@ struct label_entry *global_label_list[NLHASH];
 // Nobody bothers to free this string at exit.
 char *__last_label = NULL;
 
+void __update_last_label (const char *label)
+{
+  if (__last_label)
+     free (__last_label);
+  __last_label = strdup (label);
+  if (!__last_label)
+  {
+     perror ("strdup");
+     fatal_error (_("internal error: strdup"), label);
+  }
+}
+
 /*
   label hashing function - returns an index for the lists
 */
@@ -33,20 +45,32 @@ hash_label( char *label ) {
   return ( csum % NLHASH );
 }
 
+static int line_is_empty (const char *line)
+{
+   while (*line)
+   {
+      if (!isspace (*line))
+         return 0;
+
+      line ++;
+   }
+
+   return 1;
+}
+
 /*
   get the next non-comment, non-blank line from the script file
   and check its basic format
 */
-void 
-get_script_line( FILE *script, char *line ) {
-
+void get_script_line( FILE *script, char *line )
+{
   /* get lines until not empty/comment, or eof found */
   fgets(line, MAX_SCR_LINE, script);
   global_line_counter++;
-  while ( ! feof( script ) && 
-	  ( strcmp( line, "\n" ) == 0 ||
-	    SCR_COMMAND( line ) == C_COMMENT ||
-	    SCR_COMMAND( line ) == C_ALT_COMMENT )) 
+  while (! feof (script) && 
+	   (line_is_empty (line) ||
+	    SCR_COMMAND (line) == C_COMMENT ||
+	    SCR_COMMAND (line) == C_ALT_COMMENT)) 
     {
       fgets(line, MAX_SCR_LINE, script);
       global_line_counter++;
@@ -57,7 +81,7 @@ get_script_line( FILE *script, char *line ) {
     {
       /* Get rid of trailing spaces and newline */
       while( *line && isspace( line[strlen( line )-1] ) )
-        line[strlen( line )-1] = ASCII_NULL;
+        line [strlen (line) - 1] = ASCII_NULL;
 
       if ( strlen( line ) < MIN_SCR_LINE )
 	fatal_error( _("data shortage"), line );
@@ -70,6 +94,9 @@ get_script_line( FILE *script, char *line ) {
 	   && strlen( SCR_DATA( line )) > COLS )
 	fatal_error( _("line too long for screen"), line );
     }
+
+  if (SCR_COMMAND (line) == '*')
+     __update_last_label (SCR_DATA (line));
 }
 
 /*
@@ -114,7 +141,7 @@ char *buffer_command( FILE *script, char *line ) {
   search out a label from the file, and set the file pointer to
   that location
 
-  It also manages __last_label for the returns into menu from lessons.
+  It also updates __last_label for the returns into menu from lessons.
 */
 void 
 seek_label( FILE *script, char *label, char *ref_line ) {
@@ -122,15 +149,7 @@ seek_label( FILE *script, char *label, char *ref_line ) {
   int	hash;				/* hash index */
   char	err[MAX_SCR_LINE];		/* error message string */
   
-  // Update __last_label
-  if (__last_label)
-     free (__last_label);
-  __last_label = strdup (label);
-  if (!__last_label)
-  {
-     perror ("strdup");
-     fatal_error (_("internal error: strdup"), ref_line);
-  }
+  __update_last_label (label);
 		  
   /* find the right hash list for the label */
   hash = hash_label( label );
@@ -164,7 +183,6 @@ seek_label( FILE *script, char *label, char *ref_line ) {
 void 
 do_exit( FILE *script ) 
 {
-  
   /* close up all files, reset the screen stuff, and exit */
   fclose( script );
   /* if ( cl_colour && has_colors() )*/

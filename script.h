@@ -54,6 +54,8 @@ extern int global_line_counter;
 
 extern char *__last_label;
 
+void __update_last_label (const char *);
+
 /* a global area for label indexing - singly linked lists, hashed */
 #define	NLHASH			32		/* num hash lists */
 struct label_entry {
@@ -71,6 +73,8 @@ extern void seek_label( FILE *script, char *label, char *ref_line );
 extern int hash_label( char *label );
 extern void do_exit( FILE *script );
 
+
+extern void bind_F12 (const char *);	// Defined in gtypist.c
 
 #endif /* !SCRIPT_H */
 
