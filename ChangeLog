@@ -1,3 +1,8 @@
+2002-10-28  Michael Opdenacker <michaelo@gnu.org>
+
+	* configure.in: replaced 'dnl' by '#',
+	removed duplicate entries in AC_OUTPUT.
+
 2002-09-21  Felix Natter  <fnatter@gmx.net>
 
 	* autogen.sh: exit if gawk isn't installed
