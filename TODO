@@ -8,6 +8,20 @@ Send your suggestions to bug-gtypist@gnu.org!
 
 CLOSE FUTURE
 
+ * 'D' is only used once in all the lessons. Is it still necessary?
+   (Suggested by Felix Natter, f.natter@ndh.net)
+
+ * Call the `fortune' program and let people practise on
+   its outputs (Suggested by Felix Natter, f.natter@ndh.net):
+   - that would be fun, especially for people who want
+     to practice but have exhausted the existing typing tutorials
+   - Even if no tutorial is available (yet) for a given keyboard
+     and language, people can still practice on their own language,
+     because the `fortune' program is more likely to be 
+     available for their language! 
+   - The author of the quote would be used as the title
+     of the corresponding drill (displayed on the top banner).
+
  * Detail current plans on the home page (publish the answers
    to Georg C.F. Greve's Standard Question form, and this
    TODO file). This way, we can get feedback and people know
