@@ -25,11 +25,19 @@ AC_PROG_YACC
 ALL_LINGUAS="de cs es fi fr ru zh_TW"
 
 # Checks for libraries.
-# Special curses or ncurses checks
 
-AC_CHECK_LIB(ncurses, wbkgdset, [AC_CHECK_HEADERS(ncurses/curses.h)],
-  [AC_CHECK_LIB(curses, wbkgdset, [AC_CHECK_HEADERS(curses.h)],
-               [echo "*** Either the ncurses or the curses library is required!"; exit 1])])
+AC_CHECK_LIB(curses, wbkgdset,
+	       [AC_DEFINE(HAVE_LIBCURSES, 1, [Is curses available])
+	         HAVE_LIBCURSES=yes
+		   LIBS="-lcurses $LIBS"])
+
+# Check for ncurses if curses is not found:
+# i.e. on SuSE there are no ncurses* -> curses* links
+
+if test -z $HAVE_LIBCURSES;
+then
+    AC_CHECK_LIB(ncurses, wbkgdset, LIBS="-lncurses $LIBS", echo "*** The curses or ncurses library is required!";exit 1)
+fi
 
 # Checks for header files.
 

@@ -25,7 +25,7 @@
 #ifdef HAVE_LIBCURSES
 #include <curses.h>
 #else
-#include <ncurses.h>
+#include <ncurses/curses.h>
 #endif
 #include <stdlib.h>
 

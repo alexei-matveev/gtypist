@@ -5,6 +5,8 @@
           so that we don't have to hack gettext.h and make it non standard.
 	* autogen.sh: now copyies gettext.h from its install.
 	* gettext.h: removed from CVS
+	* configure.in: Should now work when both ncurses and curses
+          are installed, on GNU/Solaris for example.
 
 2003-08-28  Rob Leslie  <rob@mars.org>
 
