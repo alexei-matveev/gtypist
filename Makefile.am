@@ -16,7 +16,7 @@ EXTRA_DIST = typefortune gtypist.1 typefortune.1 \
 bin_PROGRAMS = gtypist
 bin_SCRIPTS = typefortune
 gtypist_SOURCES = gtypist.c cursmenu.c script.c error.c getopt.c getopt1.c \
-		cursmenu.h  error.h  getopt.h  gettext.h  gtypist.h  script.h
+		cursmenu.h error.h getopt.h gettext.h gtypist.h script.h
 gtypist_LDADD = @LIBINTL@
 man_MANS = gtypist.1 typefortune.1
 
@@ -25,6 +25,7 @@ AM_CPPFLAGS = -I./intl \
   -DLOCALEDIR=\"$(datadir)/locale\"
 
 # GEN_MAN is a shell command that generates the man page
+
 GEN_MAN=@GEN_MAN@
 
 gtypist.1: gtypist.c gtypist
