@@ -10,7 +10,7 @@ This manual is for GNU Typist (version @value{VERSION}, @value{UPDATED}),
 a program to learn typing in several languages and for different
 keyboard layouts.
 
-Copyright @copyright{} 1998, 1999, 2000, 2001, 2002
+Copyright @copyright{} 1998, 1999, 2000, 2001, 2002, 2003
 Free Software Foundation, Inc.
 
 @quotation
@@ -118,7 +118,7 @@ GNU Typist is an interactive typing tutor program. It uses an input file to
 create a series of typing tutorials, drills, and speed tests. It
 is intended to be used on raw terminals without graphics --it has been
 compiled and used in GNU/Linux and Unix (OpenBSD, AIX, Solaris) and also in
-DOS/Windows (DOS 6.22, Windows 98, Windows NT).
+DOS/Windows (DOS 6.22, Windows 95, 98, NT and XP).
 
 The program reads lessons written in an easy-to-learn scripting language. It
 is distributed with several complete and good lessons. You can use them,
