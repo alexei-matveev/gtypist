@@ -1910,7 +1910,7 @@ int main( int argc, char **argv )
   
 #if defined(ENABLE_NLS) && defined(LC_ALL)
   setlocale (LC_ALL, "");
-  bindtextdomain (PACKAGE, PACKAGE_LOCALE_DIR);
+  bindtextdomain (PACKAGE, LOCALEDIR);
   textdomain (PACKAGE);
 #endif
 
