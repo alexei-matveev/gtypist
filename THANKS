@@ -10,6 +10,9 @@ problems,  suggesting  various   improvements,  or  submitting  actual
 code. Here  is a list  of these people.  Help us keep it  complete and
 exempt of errors.
 
+* Sven Guckes <guckes@math.fu-berlin.de> for helping us in debugging
+  2.5 on Debian GNU/Linux and in GNU/Solaris8.
+
 * José Pelegrín <josepl@acm.org> for updating the Spanish interface
   and reporting errors in lessons.
 
