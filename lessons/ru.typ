@@ -1,6 +1,6 @@
 #! /usr/bin/gtypist
 #
-#	GNU Typist Russian touch typing course, version 0.2.
+#	Russian touch typing course for GNU Typist.
 #	
 #	Copyright (C) 2003  Dmitry Rutsky	<rutsky@school.ioffe.rssi.ru>
 #
@@ -156,7 +156,7 @@ T:
  :необходимую для этого гибкость кисти!
  :
  :    Не забывайте также и про остальные элементы хорошей техники слепой печати.
- :Не смотрите на клавиатуру!  Научитесь использовать максимум возможностей,
+ :Не смотрите на клавиатуру!  Учитесь использовать максимум возможностей,
  :которые у вас есть.
 
 B:`Л'

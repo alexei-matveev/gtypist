@@ -14,6 +14,14 @@ Your suggestions are welcome too!
 
 SHORT TERM
 
+ * In the older courses converted to use menus introduced in 2.7, banners
+   sometimes don't change when you return to upper-level menus from lower-level
+   ones, because corresponding B command does not occur in the right place (with
+   respect to current syntax).  For example, try to select lesson Q1,
+   immediately press ESCAPE, and see that banner is still "Lesson Q1".  This
+   can be fixed manually, but it's perhaps better to wait until a new
+   structurized syntax will come along with smart conversion utility.
+ 
  * Show correct line numbers when nonexistent label was hit in the M command.
 
  * I'd like an option that only enabled wordwrapping.  The -w option does
@@ -27,7 +35,7 @@ SHORT TERM
    1) charsets of the file and terminal must be the same;
    2) they have to have no wide characters
    This already impacts users
-   (reported by Jeff Nelson <jtnelson@el-camino.net>
+   (reported by Jeff Nelson <jtnelson@el-camino.net>)
 
  * Make sure that all source files come with a suitable copyright
    statement (may be different with lessons?)

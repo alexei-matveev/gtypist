@@ -1,3 +1,8 @@
+2003-11-01	Dmitry Rutsky	<rutsky@school.ioffe.rssi.ru>
+
+	* TODO:  documented "unchanging banners" bug.
+	* lessons/ru.typ:  minor improvements.
+
 2003-10-31	Dmitry Rutsky	<rutsky@school.ioffe.rssi.ru>
 
 	* version.sh, autogen.sh, configure.in:  a better handling of version
