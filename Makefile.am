@@ -2,9 +2,9 @@
 
 AUTOMAKE_OPTIONS = 1.6 dist-bzip2 check-news
 
-SUBDIRS= m4 po lessons tools doc intl
+SUBDIRS= m4  m4 po lessons tools doc intl
 
-EXTRA_DIST= typefortune gtypist.1 typefortune.1 \
+EXTRA_DIST= config.rpath  typefortune gtypist.1 typefortune.1 \
 config.rpath configur.bat version.sh configur.bat.in autogen.sh \
 INSTALL.in TODO 
 
@@ -15,7 +15,7 @@ gtypist_LDADD = @LIBINTL@
 man_MANS = gtypist.1 typefortune.1
 
 AM_CPPFLAGS = -I./intl \
-  -DPACKAGE_DATA_DIR=\"$(pkgdatadir)\" \
+  -DDATADIR=\"$(pkgdatadir)\" \
   -DLOCALEDIR=\"$(datadir)/locale\"
 
 # GEN_MAN is a shell command that generates the man page
