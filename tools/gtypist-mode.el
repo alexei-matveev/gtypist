@@ -331,7 +331,7 @@ available). Use C-u prefix to get P:, and C-u C-u to get D:."
       ;; gtypist-mode-in-drill-text-p changes the match data
       (if (or (gtypist-mode-in-drill-text-p (point))
  	      (null result))
- 	  (setq done t))
+		  (setq done t))
       (set-match-data match-data)
       )
     result))

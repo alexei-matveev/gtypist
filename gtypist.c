@@ -133,9 +133,11 @@ static short	colour_array[] = {
 #define	ADDSTR_REV(X)		do { attron( A_REVERSE ); addstr( X ); \
 				attroff( A_REVERSE ); } while ( 0 )
 #define	ADDSTR(X)		addstr( X )	/* for symmetry! */
-#define	ADDCH_REV(X)		do { attron( A_REVERSE ); addch( X ); \
+/* the casts are necessary to handle 8 bit characters correctly */
+#define	ADDCH_REV(X)		do { attron( A_REVERSE ); \
+                                addch( (unsigned char)X ); \
 				attroff( A_REVERSE ); } while ( 0 )
-#define	ADDCH(X)		addch( X )	/* for symmetry! */
+#define	ADDCH(X)		addch( (unsigned char) X ) /* for symmetry! */
 
 /* command line options/values */
 static int	cl_drill_tries = 3;		/* times to loop drills */
@@ -768,7 +770,7 @@ do_drill( FILE *script, char *line ) {
     linenum = DP_TOP_LINE + 1;
     move( linenum, 0 );
     for ( p = data; *p == ASCII_SPACE && *p != ASCII_NULL; p++ )
-      addch( *p );
+      ADDCH( *p );
     for ( chars_typed = 0, errors = 0; *p != ASCII_NULL; p++ ) 
       {
 	rc = getch_fl( *p == ASCII_TAB ?
@@ -828,7 +830,7 @@ do_drill( FILE *script, char *line ) {
 		while ( *(p+1) == ASCII_SPACE
 			&& *(p+1) != ASCII_NULL ) 
 		  {
-		    p++; addch( *p );
+		    p++; ADDCH( *p );
 		  }
 	      }
 	    else if ( c == ASCII_NL ) 
@@ -837,7 +839,7 @@ do_drill( FILE *script, char *line ) {
 			  || *(p+1) == ASCII_NL )
 			&& *(p+1) != ASCII_NULL ) 
 		  {
-		    p++; addch( *p );
+		    p++; ADDCH( *p );
 		    if ( *p == ASCII_NL ) {
 		      linenum++; linenum++;
 		      move( linenum, 0 );
@@ -847,8 +849,8 @@ do_drill( FILE *script, char *line ) {
 	    else if ( isalpha(*p) && *(p+1) == ASCII_DASH
 		      && *(p+2) == ASCII_NL )	
 	      {
-		p++; addch( *p );
-		p++; addch( *p );
+		p++; ADDCH( *p );
+		p++; ADDCH( *p );
 		linenum++; linenum++;
 		move( linenum, 0 );
 	      }
@@ -931,7 +933,7 @@ do_speedtest( FILE *script, char *line ) {
   linenum = DP_TOP_LINE;
   move( linenum, 0 );
   for ( p = data; *p == ASCII_SPACE && *p != ASCII_NULL; p++ )
-    addch( *p );
+    ADDCH( *p );
   for ( chars_typed = 0; *p != ASCII_NULL; p++ ) 
     {
       rc = getch_fl( (*p != ASCII_NL) ? *p : ASCII_SPACE );
@@ -989,7 +991,7 @@ do_speedtest( FILE *script, char *line ) {
 	      while ( *(p+1) == ASCII_SPACE
 		      && *(p+1) != ASCII_NULL ) 
 		{
-		  p++; addch( *p );
+		  p++; ADDCH( *p );
 		}
 	    }
 	  else if ( c == ASCII_NL ) 
@@ -998,7 +1000,7 @@ do_speedtest( FILE *script, char *line ) {
 			|| *(p+1) == ASCII_NL )
 		      && *(p+1) != ASCII_NULL ) 
 		{
-		  p++; addch( *p );
+		  p++; ADDCH( *p );
 		  if ( *p == ASCII_NL ) 
 		    {
 		      linenum++;
@@ -1009,8 +1011,8 @@ do_speedtest( FILE *script, char *line ) {
 	  else if ( isalpha(*p) && *(p+1) == ASCII_DASH
 		    && *(p+2) == ASCII_NL )	
 	    {
-	      p++; addch( *p );
-	      p++; addch( *p );
+	      p++; ADDCH( *p );
+	      p++; ADDCH( *p );
 	      linenum++;
 	      move( linenum, 0 );
 	    }

@@ -1,3 +1,10 @@
+2001-07-24  Felix Natter  <f.natter@ndh.net>
+
+	* gtypist.c replace all occurrences of addch by ADDCH
+	* gtypist.c (ADDCH, ADDCH_REV): add (unsigned char) cast
+	which is necessary to display 8 bit characters correctly
+	(thanks to Thomas E. Dickey" <dickey@herndon4.his.com> for the hint)
+
 2001-07-21  Felix Natter  <fnatter@gmx.net>
 
 	* gtypist.c (parse_cmdline): simplify command-line parsing by using
