@@ -1,3 +1,8 @@
+2002-09-15  Felix Natter  <fnatter@gmx.net>
+
+	* typefortune: allow (E)xit: have to add a *:END label
+	and K:12:END at the beginning
+
 2002-09-14  Felix Natter  <fnatter@gmx.net>
 
 	* configure.in: Christian Weisgerber <naddy@mips.inka.de>:
