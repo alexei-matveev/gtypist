@@ -15,6 +15,9 @@ exempt of errors.
 * Hynek Hanke <hanke@volny.cz> for translating to Czech interface
   messages, lesson files and the user's manual.
 
+* Yuusuke Mita <neiklotrrj@yahoo.com> for suggesting and starting
+  the typefortune script.
+
 * Sven Guckes <guckes@math.fu-berlin.de> for helping us in debugging
   2.5 on Debian GNU/Linux and in GNU/Solaris8.
 
