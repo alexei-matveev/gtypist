@@ -17,6 +17,7 @@ Version 2.7 - September 2003
 	  from Dmitry Rutsky <rutsky@school.ioffe.rssi.ru>
 	- Now ignores trailing spaces in lesson file lines which
 	  were invisible in the interface.
+	- HTML manual (English and Czech) now available in the source package.
 
 Version 2.6.2 - September/2002
 	- Now installs lessons (bug only in version 2.6.1).
