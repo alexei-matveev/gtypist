@@ -81,6 +81,8 @@ while(defined($ktouchfilename = shift(@ARGV)))
     {
 	while (defined($line = <KTOUCHFILE>) && isBlankorComment($line)) { 
 	    if (isComment($line)) {
+		# make sure that '#' is at the beginning of the line
+		$line =~ s/^\s*//;
 		print TYPFILE $line;
 	    }
 	}
