@@ -206,7 +206,7 @@ T:The F: command sets the "on failure" label. If an F command is in effect
  :	I:final test
  :	D:You will receive a legacy which will place you above want.
  :	# undo the effects of E/F
- :	E: default
+ :	E:default
  :	F:NULL
 E: 3.0%*
 *:LESSON1_D1
@@ -219,8 +219,8 @@ s:You enjoy the company of other people.
 F:LESSON1_D1*
 I:final test
 D:You will receive a legacy which will place you above want.
-# undo the effects of DEMO_8
-E: default
+# undo the effects of E/F
+E:default
 F:NULL
 
 

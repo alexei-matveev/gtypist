@@ -1046,7 +1046,7 @@ do_speedtest( FILE *script, char *line ) {
 	  else 
 	    {
 	      ADDCH_REV( *p == ASCII_NL ?
-			 DRILL_NL_ERR : *p );
+			 DRILL_NL_ERR : (unsigned char)*p );
 	      if ( ! cl_silent ) {
 		putchar( ASCII_BELL ); fflush( stdout );
 	      }

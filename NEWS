@@ -1,4 +1,4 @@
-Version 2.4 - ?
+Version 2.4 - September/2001
 
 	- changes to the types of exercises: d,D for drills and s,S
 	for speed-tests
@@ -10,7 +10,8 @@ Version 2.4 - ?
 	(which is possible because it is now builtin) and the corresponding
 	keys (Y/N)
 	- fatal_error: make the ouput more logical
-	- allow "give up" (repeat lesson) via ESC
+	- allow "give up" (repeat lesson) via ESC (there is no way to
+	skip an exercise in 2.4)
 	- add (unsigned char) cast in ADDCH, ADDCH_REV to support
 	8bit-characters in exercises
 	- rewrote command-line parsing + use '-' as word-separator in

@@ -1,3 +1,8 @@
+2001-09-05  Felix Natter  <f.natter@ndh.net>
+
+	* gtypist.c (do_speedtest): add unsigned char cast to avoid
+	a blinking character if an 8bit-character is mistyped
+
 2001-08-31  Felix Natter  <f.natter@ndh.net>
 
 	* Makefile.am: add version.sh to EXTRA_DIST

@@ -226,25 +226,26 @@ T:Los dedos deben estar ubicados sobre las teclas guías; se debe evitar colocar
 
 *:PRACTICA_LECCION_1
 B:Ejercicio de teclas guías
-P:fff ff f jjj jj j fff jj f jjj ff j f j
+s:fff ff f jjj jj j fff jj f jjj ff j f j
  :ddd dd d kkk kk k ddd kk d kkk dd k d k
  :sss ss s lll ll l sss ll s lll ss l s l
  :aaa aa a ñññ ññ ñ aaa ññ a ñññ aa ñ a ñ
 
 B:Ejercicio de aplicación
-P:la asa ala al sal sala da ada dada a las
+s:la asa ala al sal sala da ada dada a las
  :ja aja aja fa afa faja ja aja laja l ala
  :ña aña aña da aña daña la ala daña dañas
 
 B:Comprobación de progreso
-P:la sal las alas al aja faja daña sala la
+s:la sal las alas al aja faja daña sala la
  :da das ada dad la sal laja faja alas dad
 
 *:EVALUACION_LECCION_1
 B:Evaluación Lección 1.
 I:Para pasar a la siguiente lección, en esta evaluación su wpm real debe ser de
  :por lo menos 30 con un porcentaje de errores menor al 5%.
-P:fff ff f jjj jj j fff jj f jjj ff j f j
+E:5%
+S:fff ff f jjj jj j fff jj f jjj ff j f j
  :ddd dd d kkk kk k ddd kk d kkk dd k d k
  :sss ss s lll ll l sss ll s lll ss l s l
  :aaa aa a ñññ ññ ñ aaa ññ a ñññ aa ñ a ñ
@@ -301,7 +302,7 @@ T:La tecla H se pulsa con el dedo índice derecho, esto es, el dedo de la J.
 *:PRACTICA_LECCION_2
 B:Ejercicio de práctica
 I:Práctica de las teclas guías.
-P:a as asd asdf j jk jkl jklñ s sa sal las
+s:a as asd asdf j jk jkl jklñ s sa sal las
  :a as asd asdf j jk jkl jklñ s sa sal las
  :f fa faj faja j ja jal jala j as aja ala
  :f fa faj faja j ja jal jala j as aja ala
@@ -309,12 +310,12 @@ P:a as asd asdf j jk jkl jklñ s sa sal las
  :d da dal dala k jk kal sala s sa sal asa
 
 B:Práctica de nuevas teclas
-P:jh jhj hjh ha has hada ah hal hala ha ah
+s:jh jhj hjh ha has hada ah hal hala ha ah
  :de ded ede de ele leal le lea leal de le
  :lo lol olo ol oso dado do los osos do lo
 
 B:Ejercicio de aplicación
-P:el es de ese de esa de la del oso a ella
+s:el es de ese de esa de la del oso a ella
  :el es de ese de esa de la del oso a ella
  :ha de he dado esos dos de los dos de ese
  :ha de he dado esos dos de los dos de ese
@@ -322,7 +323,7 @@ P:el es de ese de esa de la del oso a ella
  :el de le da le ha dado esos dos de sedas
 
 B:Comprobación de progreso
-P:el oso ha dado es de seda es leal de las
+s:el oso ha dado es de seda es leal de las
  :los dos es de ella el ala es de los osos
  :el sol sale la sal dale los dos es osado
 
@@ -330,7 +331,8 @@ P:el oso ha dado es de seda es leal de las
 B:Evaluación Lección 2.
 I:Para pasar a la siguiente lección, en esta evaluación su wpm real debe ser de
  : por lo menos 31 con un porcentaje de errores inferior al 5%.
-P:a as asd asdf j jk jkl jklñ s sa sal las
+E:5%
+S:a as asd asdf j jk jkl jklñ s sa sal las
  :a as asd asdf j jk jkl jklñ s sa sal las
  :f fa faj faja j ja jal jala j as aja ala
  :f fa faj faja j ja jal jala j as aja ala
@@ -394,7 +396,7 @@ T:La tecla N se pulsa con el dedo índice derecho, esto es, el dedo de la J.
 *:PRACTICA_LECCION_3
 B:Ejercicio de práctica
 I:Práctica de las teclas aprendidas.
-P:j jf jfk jfkl ñ añ aña daña l la las faja
+s:j jf jfk jfkl ñ añ aña daña l la las faja
  :j jf jfk jfkl ñ añ aña daña l la las faja
  :e le lea leal j je eje deje a ja aje ajos
  :e le lea leal j je eje deje a ja aje ajos
@@ -402,19 +404,19 @@ P:j jf jfk jfkl ñ añ aña daña l la las faja
  :a el los ojos e de del dedo h ah has hado
 
 B:Práctica de nuevas teclas
-P:jn jnj nen en ene nene no son nada n nos
+s:jn jnj nen en ene nene no son nada n nos
  :fr frf ere er oro risa re res risa r oro
  :ki iki kik ki kil kilo fi fin fina i fin
 
 
 B:Ejercicio de aplicación
-P:no son nene en don dedo donde ni tin lino
+s:no son nene en don dedo donde ni tin lino
  :re oro rana ir res reir reloj ar aro raro
  :id ida lila si sin idea hijas de dio risa
  :es reo el niño la flor da risa el nene si
 
 B:Comprobación de progreso
-P:la flor es rosa es linda la risa del niño
+s:la flor es rosa es linda la risa del niño
  :esa fresa es de la niña esa doña ese nene
  :el hijo esa flor es de es de oro a el reo
 
@@ -422,7 +424,8 @@ P:la flor es rosa es linda la risa del niño
 B:Evaluación Lección 3.
 I:Para pasar a la siguiente lección, en esta evaluación su wpm real debe ser de
  : por lo menos 32, con un porcentaje de error inferior al 4%.
-P:j jf jfk jfkl ñ añ aña daña l la las faja
+E:4%
+S:j jf jfk jfkl ñ añ aña daña l la las faja
  :j jf jfk jfkl ñ añ aña daña l la las faja
  :e le lea leal j je eje deje a ja aje ajos
  :e le lea leal j je eje deje a ja aje ajos
@@ -471,7 +474,7 @@ G:MUESTRA_MENU_LECCION_4
 *:PRACTICA_LECCION_4_1
 B:Práctica lección 4
 I:Repaso de lo aprendido en lecciones anteriores
-P:fdsa jklñ fdsa jklñ asdf ñlkj fdsa jklñ
+s:fdsa jklñ fdsa jklñ asdf ñlkj fdsa jklñ
  :fdsa jklñ fdsa jklñ asdf ñlkj fdsa jklñ
  :da sa ja la as al ña da sa fa la as ala
  :da sa ja la as al ña da sa fa la as ala
@@ -479,7 +482,7 @@ P:fdsa jklñ fdsa jklñ asdf ñlkj fdsa jklñ
  :das sal asa ala sala daña alas faja las
 B:Práctica Lección 4
 I:Refuerzo de destreza
-P:de el es ded ded ese dedo nene eje dele
+s:de el es ded ded ese dedo nene eje dele
  :de el es ded ded ese dedo nene eje dele
  :lo ol or olo lol sol solo oler oro ojos
  :lo ol or olo lol sol solo oler oro ojos
@@ -487,7 +490,7 @@ P:de el es ded ded ese dedo nene eje dele
  :jn no en son ene fin niño nene sin sino
 B:Práctica Lección 4
 I:Aún más práctica
-P:ki ik si rin nin iri risa hija fin kilo
+s:ki ik si rin nin iri risa hija fin kilo
  :ki ik si rin nin iri risa hija fin kilo
  :ha he hj has hol jhj hola hoja has hija
  :ha he hj has hol jhj hola hoja has hija
@@ -497,7 +500,7 @@ P:ki ik si rin nin iri risa hija fin kilo
 *:PRACTICA_LECCION_4_2
 B:Práctica Lección 4
 I:Técnica de espaciado
-P:a ñ s l d k f j h a ñ s l d k f j h a ñ
+s:a ñ s l d k f j h a ñ s l d k f j h a ñ
  :a ñ s l d k f j h a ñ s l d k f j h a ñ
  :as df jk lñ as df jk lñ jh jn de lo iki
  :as df jk lñ as df jk lñ jh jn de lo iki
@@ -507,7 +510,7 @@ P:a ñ s l d k f j h a ñ s l d k f j h a ñ
  :hola hijo risa niño solo hija dale sino
 B:Práctica Lección 4
 I:Técnica de retorno
-P:de la de las a esa de oro en la
+s:de la de las a esa de oro en la
  :la
  :sala en ese son de la hora
  :al lado
@@ -515,7 +518,7 @@ P:de la de las a esa de oro en la
  :de donde
 B:Práctica Lección 4
 I:Comprobación de progreso
-P:a la sal lisa salir e de eje dele desde
+s:a la sal lisa salir e de eje dele desde
  :o lo sol solo sordo i si fin fina frisa
  :h ha has hijo horno r ir era reir reina
  :n no son nene niños f fe efe faja fresa
@@ -524,7 +527,8 @@ P:a la sal lisa salir e de eje dele desde
 B:Evaluación Lección 4
 I:Para pasar a la siguiente lección, en esta evaluación su wpm real debe ser de
  : por lo menos 33 con un porcentaje de error inferior al 4%.
-P:fdsa jklñ fdsa jklñ asdf ñlkj fdsa jklñ
+E:4%
+S:fdsa jklñ fdsa jklñ asdf ñlkj fdsa jklñ
  :fdsa jklñ fdsa jklñ asdf ñlkj fdsa jklñ
  :da sa ja la as al ña da sa fa la as ala
  :da sa ja la as al ña da sa fa la as ala
@@ -590,19 +594,19 @@ T:La tecla T se pulsa con el dedo índice izquierdo, esto es, el dedo de la F.
 *:PRACTICA_LECCION_5
 B:Práctica Lección 5
 I:Ejercicio de práctica
-P:a la sal sala f fa fas faja e es ese seda
+s:a la sal sala f fa fas faja e es ese seda
  :d de del dedo l lo los solo j je eje ojos
  :ñ ña año daño n no nos niño r re ere reir
 B:Lección 5
 I:Práctica con teclas nuevas
-P:ftf ft t fff ft t ttt ft f tel ta t ata
+s:ftf ft t fff ft t ttt ft f tel ta t ata
  :dcd dc c cdc cd c ccc dc e ced ca c aca
  :AaA Sara Dora Ff Ada El R Roa Ca C Aida
  :ft tal tan te tel tela at ata atar todo
  :Al Ada Ana Ed Esa Elsa Te Ter Tere Seda
 B:Lección 5
 I:Ejercicio de aplicación(Teclas nuevas)
-P:la casa esta cerca de teja en la tarde te
+s:la casa esta cerca de teja en la tarde te
  :Es tarde cerca de  ha de cantar teje en la
  :Ana es casa de calle dos Tere Salas carta
  :t ta tal tela tarde te ten teje tejas tan
@@ -613,7 +617,8 @@ P:la casa esta cerca de teja en la tarde te
 B:Evaluación Lección 5
 I:Para pasar a la siguiente lección, en esta evaluación su wpm real debe ser de
  : por lo menos 34 con un porcentaje de error inferior al 3%.
-P:a la sal sala f fa fas faja e es ese seda
+E:3%
+S:a la sal sala f fa fas faja e es ese seda
  :a la sal sala f fa fas faja e es ese seda
  :d de del dedo l lo los solo j je eje ojos
  :d de del dedo l lo los solo j je eje ojos
@@ -675,7 +680,7 @@ T:La tecla M se pulsa con el dedo índice derecho, esto es, el dedo de la J.
 *:PRACTICA_LECCION_6
 B:Lección 6
 I:Ejercicio de práctica
-P:f fr efe faja fresa fiesta r re reo reir
+s:f fr efe faja fresa fiesta r re reo reir
  :f fr efe faja fresa fiesta r re reo reir
  :j jn eje hijo hiena nietas h ha has hiel
  :j jn eje hijo hiena nietas h ha has hiel
@@ -683,7 +688,7 @@ P:f fr efe faja fresa fiesta r re reo reir
  :A Da Ana Fela Elisa Teresa s Sa Sol Sosa
 B:Lección 6
 I:Práctica con nuevas teclas
-P:jmj mj m mmm jj m mas me m mes mi j eme
+s:jmj mj m mmm jj m mas me m mes mi j eme
  :fgf gg f gfg gf g gas ga g gas go g gol
  :1.1.1. . Dr. Sr. l.l. f. a lll l. l Sra.
  :j jm mas masa mes meses manos maja mente
@@ -691,7 +696,7 @@ P:jmj mj m mmm jj m mas me m mes mi j eme
  :Esa frase es larga.  Ana ha de ir lejos.
 B:Lección 6
 I:Ejercicio de aplicación
-P:m me eme mesa monte mismo mina mos mime
+s:m me eme mesa monte mismo mina mos mime
  :g gr gra gran grana gente gala gas gago
  :Eta desea ir a la gran fiesta de Carla.
  :Flor ha de ir al monte con Carla mañana.
@@ -702,7 +707,8 @@ P:m me eme mesa monte mismo mina mos mime
 B:Evaluación Lección 6
 I:Para pasar a la siguiente lección, en esta evaluación su wpm real debe ser de
  : por lo menos 35 con un porcentaje de error inferior al 3%.
-P:jmj mj m mmm jj m mas me m mes mi j eme
+E:3%
+S:jmj mj m mmm jj m mas me m mes mi j eme
  :jmj mj m mmm jj m mas me m mes mi j eme
  :fgf gg f gfg gf g gas ga g gas go g gol
  :fgf gg f gfg gf g gas ga g gas go g gol
@@ -766,7 +772,7 @@ T:La tecla Q se pulsa con el dedo meñique izquierdo, esto es, el dedo de la A.
 *:PRACTICA_LECCION_7
 B:Lección 7
 I:Ejercicio de práctica
-P:g gr gri gris grasa grande j ja eje laja
+s:g gr gri gris grasa grande j ja eje laja
  :g gr gri gris grasa grande j ja eje laja
  :m mj mas maja meses mentor a al ala sala
  :m mj mas maja meses mentor a al ala sala
@@ -774,7 +780,7 @@ P:g gr gri gris grasa grande j ja eje laja
  :El señor Amador es maestro de Elsa Gala.
 B:Lección 7
 I:Práctica con nuevas teclas
-P:aqa aq q qqq qa aqa qa q aaa qa q aqa
+s:aqa aq q qqq qa aqa qa q aaa qa q aqa
  :juj uj u uuu ju u juj uj u juj ju juj
  :Jaj La L Lola Ll J Juj Juan Jul Julio
  :q qa que quie quien quiere Quito Quique
@@ -782,7 +788,7 @@ P:aqa aq q qqq qa aqa qa q aaa qa q aqa
  :Juan quiere leer el Quijote en su casa.
 B:Lección 7
 I:Ejercicio con nuevas teclas
-P:si tu que quiere con que cuando es en su
+s:si tu que quiere con que cuando es en su
  :dile quien es ella quiere como es que tu
  :Juan quiere su quilate al salir de Quito.
  :A Juana le gusta leer el Quijote en Quito.
@@ -793,7 +799,8 @@ P:si tu que quiere con que cuando es en su
 B:Evaluación Lección 7
 I:Para pasar a la siguiente lección, en esta evaluación su wpm real debe ser de
  : por lo menos 36 con un porcentaje de error inferior al 3%.
-P:aqa aq q qqq qa aqa qa q aaa qa q aqa
+E:3%
+S:aqa aq q qqq qa aqa qa q aaa qa q aqa
  :juj uj u uuu ju u juj uj u juj ju juj
  :Jaj La L Lola Ll J Juj Juan Jul Julio
  :q qa que quie quien quiere Quito Quique
@@ -843,7 +850,7 @@ G:MUESTRA_MENU_LECCION_8
 
 *:PRACTICA_LECCION_8_1
 B:Repaso de lo aprendido en lecciones anteriores
-P:a q s d e c f r t g h j u n m k i l o ñ
+s:a q s d e c f r t g h j u n m k i l o ñ
  :a q s d e c f r t g h j u n m k i l o ñ
  :asd dec frg frt jhn jum kil lo. año uña
  :asd dec frg frt jhn jum kil lo. año uña
@@ -853,7 +860,7 @@ P:a q s d e c f r t g h j u n m k i l o ñ
  :ta tala te tela ti tilo to toro tu tute
 B:Lección 8 Parte 1
 I:Refuerzo
-P:ca cada ce cede ci cine co codo cu cuan
+s:ca cada ce cede ci cine co codo cu cuan
  :ca cada ce cede ci cine co codo cu cuan
  :ma malo me memo mi miel mo moda mu mula
  :ma malo me memo mi miel mo moda mu mula
@@ -861,7 +868,7 @@ P:ca cada ce cede ci cine co codo cu cuan
  :ga gato ge gema gi giro go gota gu gula
 B:Lección 8 Parte 1
 I:Más práctica
-P:El hilo no sale.
+s:El hilo no sale.
  :El kilo de queso es de Rosa.
  :Esa gema es de Linda y de Lina.
  :El hijo de Luis se queda con ella.
@@ -869,7 +876,7 @@ P:El hilo no sale.
 *:PRACTICA_LECCION_8_2
 B:Lección 8 Parte 2
 I:Mayúsculas y retorno
-P:Su niña es Gina. Juan lo deja ir tarde.
+s:Su niña es Gina. Juan lo deja ir tarde.
  :Su niña es Gina. Juan lo deja ir tarde.
  :Su niña es Gina. Juan lo deja ir tarde.
  :El quiso leer su memo. No quiere ceder.
@@ -877,7 +884,7 @@ P:Su niña es Gina. Juan lo deja ir tarde.
  :El quiso leer su memo. No quiere ceder.
 B:Lección 8 parte 2
 I:Más práctica con Mayúsculas
-P:Nina es la nieta menor de Luis C. Itier.
+s:Nina es la nieta menor de Luis C. Itier.
  :Nina es la nieta menor de Luis C. Itier.
  :Nina es la nieta menor de Luis C. Itier.
  :Noelia quiso una gema de la tienda Real.
@@ -888,7 +895,8 @@ P:Nina es la nieta menor de Luis C. Itier.
 B:Evaluación Lección 8
 I:Para pasar a la siguiente lección, en esta evaluación su wpm real debe ser de
  : por lo menos 37 con un porcentaje de error inferior al 3%.
-P:a q s d e c f r t g h j u n m k i l o ñ
+E:3%
+S:a q s d e c f r t g h j u n m k i l o ñ
  :asd dec frg frt jhn jum kil lo. año uña
  :Un kilo de queso. Nin te trae su tarea.
  :ta tala te tela ti tilo to toro tu tute
@@ -955,21 +963,21 @@ T:La tecla W se pulsa con el dedo anular izquierdo, esto es, el dedo de la S.
 *:PRACTICA_LECCION_9
 B:Lección 9
 I:Ejercicio de práctica
-P:aq uj ed ik ol fr jh ft l. dc jn fg jm ñ
+s:aq uj ed ik ol fr jh ft l. dc jn fg jm ñ
  :aq uj ed ik ol fr jh ft l. dc jn fg jm ñ
  :o te efe jota a ce eñe ache u ka ene ere
  :o te efe jota a ce eñe ache u ka ene ere
  :Elsa no quiere que se le queme el queso.
 B:Lección 9
 I:Nuevas teclas
-P:sws ss sw w www sws sws ws w sal ws w
+s:sws ss sw w www sws sws ws w sal ws w
  :ñ sé sí é ése dé í tía él ' ñ'ñ tío
  :fvf vv f fvf fv f vvv fv v fff fv ver
  :fvf ve venir vu vulgo vi visa va valijas
  :ñ'ñ dé decía sé serán sí freí té tendrás
 B:Lección 9
 I:Práctica con las nuevas teclas
-P:sws wa Wanda we Welch wo Wolf Wi William
+s:sws wa Wanda we Welch wo Wolf Wi William
  :ñ'ñ dé decía sé serán sí freí té tendrá
  :fvf ve venir vu vulgo vi visa va valijas
  :sws wa Wanda we Welch wo Wolf Wi William
@@ -978,7 +986,8 @@ P:sws wa Wanda we Welch wo Wolf Wi William
 B:Evaluación Lección 9
 I:Para pasar a la siguiente lección, en esta evaluación su wpm real debe ser de
  : por lo menos 38 con un porcentaje de error inferior al 3%.
-P:sws ss sw w www sws sws ws w sal ws w
+E:3%
+S:sws ss sw w www sws sws ws w sal ws w
  :ñ sé sí é ése dé í tía él ' ñ'ñ tío
  :fvf vv f fvf fv f vvv fv v fff fv ver
  :sws wa Wanda we Welch wo Wolf Wi William
@@ -1040,7 +1049,7 @@ T:La tecla P se pulsa con el dedo meñique derecho, esto es, el dedo de la Ñ.
 *:PRACTICA_LECCION_10
 B:Práctica 10
 I:Ejercicio de práctica
-P:pñ pa pan pe pero pi pila po poa por op
+s:pñ pa pan pe pero pi pila po poa por op
  :pñ pa pan pe pero pi pila po poa por op
  :k, ki Kid kilo kiwi kurdo kiosco kan ki
  :k, ki Kid kilo kiwi kurdo kiosco kan ki
@@ -1048,7 +1057,7 @@ P:pñ pa pan pe pero pi pila po poa por op
  :fb ba bar basta be bea bi bilis bobo bu
 B:Práctica 10
 I:Práctica con las nuevas teclas
-P:Pedro, Berto y Alba pasearán en su bote.
+s:Pedro, Berto y Alba pasearán en su bote.
  :Pedro, Berto y Alba pasearán en su bote.
  :Berta Bueso pagó la orden del miércoles.
  :Berta Bueso pagó la orden del miércoles.
@@ -1060,7 +1069,8 @@ P:Pedro, Berto y Alba pasearán en su bote.
 B:Evaluación Lección 10
 I:Para pasar a la siguiente lección, en esta evaluación su wpm real debe ser de
  : por lo menos 39 con un porcentaje de error inferior al 3%.
-P:Quique Quiles quiere viajar a Quisquella.
+E:3%
+S:Quique Quiles quiere viajar a Quisquella.
  :Quique Quiles quiere viajar a Quisquella.
  :Ufa subirá con Ulises Urrutia a la cúpula.
  :Ufa subirá con Ulises Urrutia a la cúpula.
@@ -1119,7 +1129,7 @@ T:La tecla X se pulsa con el dedo anular izquierdo, esto es, el dedo de la S.
 *:PRACTICA_LECCION_11
 B:Práctica 11
 I:Ejercicio de práctica
-P:Berta no puede ir sola al fuerte Valdés.
+s:Berta no puede ir sola al fuerte Valdés.
  :Pedro, Leo, Sonia e Irene viajan juntos.
  :Sí, mi único hijo se llama Jorge Arturo.
  :En esta práctica una intención era aprender a usar el tabulador,
@@ -1128,7 +1138,7 @@ P:Berta no puede ir sola al fuerte Valdés.
 
 B:Práctica 11
 I:Practica con las nuevas teclas
-P:sx xs sxs exo nexo taxi anexo exime ex exige
+s:sx xs sxs exo nexo taxi anexo exime ex exige
  :yj jy hay aya yodo yace yegua yerno ya yerba
  :Yo voy a la playa con Yadira en el yate Maya.
  :Xavier no puede eximir del examen a Xiomara.
@@ -1138,7 +1148,8 @@ P:sx xs sxs exo nexo taxi anexo exime ex exige
 B:Evaluación Lección 11
 I:Para pasar a la siguiente lección, en esta evaluación su wpm real debe ser de
  : por lo menos 39 con un porcentaje de error inferior al 3%.
-P:Voy a ayudar a Yamilete en su examen de yodo.
+E:3%
+S:Voy a ayudar a Yamilete en su examen de yodo.
  :Acomoden el yate en el anexo de Xavier Yanés.
  :Fue a visitar a su hermano que está exiliado.
  :Puede exigir al médico que cambie ese examen.
@@ -1203,7 +1214,7 @@ T:La tecla Z se pulsa con el dedo meñique izquierdo, esto es, el dedo de la A.
 *:PRACTICA_LECCION_12
 B:Práctica 12
 I:Ejercicio de práctica
-P:m p . n i r v t a s d x y c f g l , o q y e
+s:m p . n i r v t a s d x y c f g l , o q y e
  :Xiomara y Xavier pronto regresarán de Quito.
  :Yany, la nuera de Yamil compró yuca en Yauco.
  :Visite el volcán y vea los viveros de Vanesa.
@@ -1213,7 +1224,7 @@ P:m p . n i r v t a s d x y c f g l , o q y e
 
 B:Práctica 12
 I:Practica con las nuevas teclas
-P:az za aza zag zinc zona haz Zoé taza zumo zejel
+s:az za aza zag zinc zona haz Zoé taza zumo zejel
  :ñ; ;; si; lo; por; tal; as; de; Sr.; son; pues;
  :ñ: :: es: su: A: De: la: Para: Año: señor:
  :Señor:  Puede ir con su esposa; no con su hija.
@@ -1224,7 +1235,8 @@ P:az za aza zag zinc zona haz Zoé taza zumo zejel
 B:Evaluación Lección 12
 I:Para pasar a la siguiente lección, en esta evaluación su wpm real debe ser de
  : por lo menos 40 con un porcentaje de error inferior al 3%.
-P:El signo ; señala una pausa intermedia, equivalente a dos tiempos, con un
+E:3%
+S:El signo ; señala una pausa intermedia, equivalente a dos tiempos, con un
  :descenso en la entonación.  Indica una pausa mayor que la señalada por la coma
  :pero no tan notable como la del punto.
  :Actualmente se le emplea menos que antes, desplazado en muchos casos por el
@@ -1291,7 +1303,7 @@ T:Esta lección es un repaso general del teclado alfabético, simplemente se trata
 *:PRACTICA_LECCION_13
 B:Práctica 12
 I:Ejercicio de práctica
-P:Hay abundantes palabras en el español que admiten consonantes repetidas, por
+s:Hay abundantes palabras en el español que admiten consonantes repetidas, por
  :ejemplo, para la RR como regla general, cuando se pronuncia la R de forma
  :fuerte, se escribe doble R, si no se está al principio o al final de una
  :palabra, de lo contrario se escribe una sola R, como ejemplo en el primer caso
@@ -1302,7 +1314,7 @@ P:Hay abundantes palabras en el español que admiten consonantes repetidas, por
  :Cabe anotar que no hay palabras que empiecen con doble C ni con doble N
 B:Práctica 12
 I:Práctica con las letras dobles
-P:Corran por el cerro, pero cuídense del perro que cuida.
+s:Corran por el cerro, pero cuídense del perro que cuida.
  :Corran por el cerro, pero cuídense del perro que cuida.
  :Lleva horas lloviendo y el sol aún no brilla.
  :Lleva horas lloviendo y el sol aún no brilla.
@@ -1314,7 +1326,8 @@ P:Corran por el cerro, pero cuídense del perro que cuida.
 *:EVALUACION_LECCION_13
 I:Para pasar a la siguiente lección, en esta evaluación su wpm real debe ser de
  : por lo menos 40 con un porcentaje de error inferior al 3%.
-P:ferroviario, ria :adj. Perteneciente o relativo a los ferrocarriles | m y f.
+E:3%
+S:ferroviario, ria :adj. Perteneciente o relativo a los ferrocarriles | m y f.
  :Empleado del ferrocarril.
  :emparrado :m. Armazón que sostiene la parra u otra planta trepadora | Conjunto
  :de los vástagos y hojas de una o más parras que, sostenidas con un armazón de
@@ -1369,7 +1382,7 @@ T:
 
 *:PRACTICA_LECCION_14
 B:Practicando lo Aprendido
-P:Un hombrecito va por allí caminando fresco, cargando un libro de Mr. Edgar
+s:Un hombrecito va por allí caminando fresco, cargando un libro de Mr. Edgar
  :Allan Poe que pesa 5 kilos. De pronto un gordo lo ve pasar y se acerca y le
  :pregunta:
  : Dígame, no le molesta andar con ese libro tan pesado parriba y pabajo
@@ -1431,7 +1444,7 @@ T:Con está lección practicará el uso de las teclas con números y
 
 
 *:PRACTICA_LECCION_15
-P:444 555 666 456 654 456 654 456 654
+s:444 555 666 456 654 456 654 456 654
  :111 222 333 123 321 123 321 132 321
  :777 888 999 789 987 789 987 789 987
  :111 444 777 222 555 888 333 666 999
@@ -1440,7 +1453,7 @@ P:444 555 666 456 654 456 654 456 654
  :1+2+3+4+5+6+7+8+9 9+8+7+6+5+4+3+2+1
  :000 000 000 000 000 000 000 000 000
  :0123456789 9876543210 0.000
-P:1.1/9+3-6
+s:1.1/9+3-6
  :1.1 1.2 1.3 1.4 1.5
  :987654321/123456789
  :1.1
@@ -1450,7 +1463,8 @@ P:1.1/9+3-6
  :2.2
 *:EVALUACION_LECCION_15
 I:Mínimo wpm real: 30, Porcentaje de error máximo: 2%
-P:123 456 789 987 654 321
+E:2%
+S:123 456 789 987 654 321
  :147 852 369 852 147 963
  :159 753 456 852 951 357
  :9/3 es 3.
@@ -1529,7 +1543,7 @@ T:Entre las ventajas que tiene LaTeX se puede encontrar la portabilidad entre
  :marcando simultáneamente la tecla que tiene el ^ y oprima la barra espaciadora
  :después.
 *:PRACTICA_LECCION_16
-P:LaTeX2e es un sistema de preparación de documentos implementado como un
+s:LaTeX2e es un sistema de preparación de documentos implementado como un
  :paquete de Macros para el programa de impresión con formato de Donald E.
  :Knuth.  Leslie Lamport fue quien concibió inicialmente tal idea.
  :El comando LaTeX imprime un archivo de texto usando el programa TeX y el
@@ -1546,7 +1560,7 @@ P:LaTeX2e es un sistema de preparación de documentos implementado como un
  :Samarin, Addison-Wesley, 1994
  :                                     Tomado del Info de LaTeX.
 
-P:Las teclas que se usan en esta lección son \ { } [ ] _ ^ $.
+s:Las teclas que se usan en esta lección son \ { } [ ] _ ^ $.
  :Siempre que se quiera escribir un documento en LaTeX, se debe especificar a
  :qué tipo de documento pertenece, un libro, un artículo, una carta, incluso se
  :puede definir el estilo que uno necesite, por ejemplo una tesis.
@@ -1569,8 +1583,8 @@ P:Las teclas que se usan en esta lección son \ { } [ ] _ ^ $.
 
 *:EVALUACION_LECCION_16
 I:Mínimo wpm real: 33, Porcentaje de error máximo: 5%
-
-P:Primero cree el archivo prueba.tex en un editor de texto, después de esto
+E:5%
+S:Primero cree el archivo prueba.tex en un editor de texto, después de esto
  :escriba lo siguiente dentro del archivo, tal y como está, no olvide grabar
  :\documentclass{article}
  :\begin{document} \begin{center}
@@ -1639,7 +1653,7 @@ T:
 
 *:PRACTICA_LECCION_17
 B:Practicando las nuevas teclas
-P:Primero un calentamiento: <<< <<< >>> >>> &&& &&& """ """ ??? ??? !!! !!!
+s:Primero un calentamiento: <<< <<< >>> >>> &&& &&& """ """ ??? ??? !!! !!!
  :<> <> &" &" ?! ?! <>&"?! <>&"?! <>&"?! <<&&""??!!>> <<&&""??!!>> !?&><"
  :
  :Para escribir en HTML se usan TAGS, un tag es una palabra que se coloca
@@ -1661,7 +1675,8 @@ P:Primero un calentamiento: <<< <<< >>> >>> &&& &&& """ """ ??? ??? !!! !!!
 
 *:EVALUACION_LECCION_17
 I:Mínimo wpm real: 33, Porcentaje de error máximo: 4%
-P:<html>
+E:4%
+S:<html>
  :<head><title>Mi primer documento en HTML</title></head>
  :<!-- Escrito por: "?!" -->
  :<body>
@@ -1734,7 +1749,7 @@ T:Texinfo es un formato apropiado para documentos técnicos.  Se ha usado
 
 *:PRACTICA_LECCION_18
 B:Practicando las nuevas teclas: @ | #
-P:@@@ @@@ ||| ||| ### ### @|@ @|@ |#| |#| |#| |@| |@| @#@ @#@
+s:@@@ @@@ ||| ||| ### ### @|@ @|@ |#| |#| |#| |@| |@| @#@ @#@
  :|@# |@# |@# #|@ #@| #@| #@| #@| #@| @#| @#| @#| |#@ |#@ |#@
  :
  :Como los documentos de Texinfo pueden ser usados para generar archivos info,
@@ -1755,7 +1770,8 @@ P:@@@ @@@ ||| ||| ### ### @|@ @|@ |#| |#| |#| |@| |@| @#@ @#@
 
 *:EVALUACION_LECCION_18
 I:Mínimo wpm real: 33, Porcentaje de error máximo: 4%
-P:@node Overview, Sourcebook of Writer, Top, Top
+E:4%
+S:@node Overview, Sourcebook of Writer, Top, Top
  :@chapter Overview: The Writing Process
  :
  :@quotation
@@ -1818,7 +1834,7 @@ T:
 
 *:PRACTICA_LECCION_19
 B:Fragmento del Quijote
-P:Limpias, pues, sus armas, hecho del morrión celada, puesto nombre a su
+s:Limpias, pues, sus armas, hecho del morrión celada, puesto nombre a su
  :rocín y confirmándose a sí mismo, se dio a entender que no le faltaba otra
  :cosa sino buscar una dama de quien enamorarse; porque el caballero andante
  :sin amores era árbol sin hojas y sin fruto y cuerpo sin alma. Decíase él
@@ -1839,7 +1855,7 @@ P:Limpias, pues, sus armas, hecho del morrión celada, puesto nombre a su
  :    Proyecto Gutemberg. http://promo.net/pg/
 
 B:Fragment of 'Alice in Wonderland'
-P:So she was considering in her own mind (as well as she could,
+s:So she was considering in her own mind (as well as she could,
  :for the hot day made her feel very sleepy and stupid), whether
  :the pleasure of making a daisy-chain would be worth the trouble
  :of getting up and picking the daisies, when suddenly a White
@@ -1861,7 +1877,8 @@ P:So she was considering in her own mind (as well as she could,
 
 *:EVALUACION_LECCION_19
 I:En esta evaluación se espera por lo menos 35wpm y a lo sumo 3% de error
-P:LA PONCIA. (Sale comiendo chorizo y pan): Llevan ya más de dos horas de
+E:3%
+S:LA PONCIA. (Sale comiendo chorizo y pan): Llevan ya más de dos horas de
  : gori-gori. Han venido curas de todos los pueblos. La iglesia está hermosa.
  : En el primer responso se desmayó la Magdalena.
  :CRIADA: Es la que se queda más sola.
@@ -1927,7 +1944,7 @@ T:
 
 *:PRACTICA_VELOCIDAD1
 B:Primera práctica de velocidad
-P:El río Nilo ubicado en Egipto, es considerado el más largo del mundo con
+s:El río Nilo ubicado en Egipto, es considerado el más largo del mundo con
  :4,187 millas desde su nacimiento hasta la desembocadura en el Mar
  :Mediterráneo. Por Colombia, Brasil, Perú y Ecuador pasa el río Amazonas
  :que es el segundo río más largo del mundo con una longitud de 4,080 millas.
@@ -1952,7 +1969,7 @@ N:PRACTICA_VELOCIDAD1
 
 *:PRACTICA_VELOCIDAD2
 B:Segunda práctica de velocidad
-P:Los organismos vivos se han agrupado en distintos reinos
+s:Los organismos vivos se han agrupado en distintos reinos
  :para entenderlos y conocerlos mejor.
  :Nosotros los seres humanos al igual que los animales pertenecemos al
  :reino "Animalia", por su parte las plantas pertenecen al reino
@@ -1977,7 +1994,8 @@ N:PRACTICA_VELOCIDAD2
 *:EVALUACION_VELOCIDAD
 B:Evaluación de Velocidad
 I:En esta evaluación se espera por lo menos 40wpm y a lo sumo 5% de error
-P:Increíble, los océanos cubren aproximadamente el 71% de la superficie de
+E:5%
+S:Increíble, los océanos cubren aproximadamente el 71% de la superficie de
  :la tierra.
  :   http://www.abc.net.au/oceans/facts/default.htm
  :
@@ -2044,7 +2062,7 @@ T:
 
 *:PRACTICA_PRECISION1
 B:Primera práctica de precisión
-P:Fragmento de "CANCIÓN DE LA VIDA PROFUNDA"
+s:Fragmento de "CANCIÓN DE LA VIDA PROFUNDA"
  :
  :Hay días en que somos tan móviles, tan móviles
  :como las leves briznas al viento y al azar...
@@ -2068,7 +2086,7 @@ N:PRACTICA_PRECISION1
 
 *:PRACTICA_PRECISION2
 B:Segunda práctica de precisión
-P:Fragmento de "NOCHE DE DICIEMBRE"
+s:Fragmento de "NOCHE DE DICIEMBRE"
  :
  :Noche como esta, y contemplada a solas,
  :no la puede sufrir mi corazón:
@@ -2093,7 +2111,8 @@ N:PRACTICA_PRECISION2
 *:EVALUACION_PRECISION
 B:Evaluación de precisión
 I:En está evaluación se espera por lo menos 30wpm y a lo sumo 1% de error
-P:Fragmento del prologo a "POR LO QUE HE VIVIDO"
+E:1%
+S:Fragmento del prologo a "POR LO QUE HE VIVIDO"
  :
  :Tres pasiones, simples pero increíblemente fuertes, han gobernado mi vida:
  :las ansias del amor, la búsqueda del conocimiento, y una insoportable

@@ -5,6 +5,9 @@
 # config.h.in, config.sub, config.guess
 # INSTALL, configur.bat, doc/gtypist.info, lessons/gtypist.typ (maybe more)
 
+# warning: if you use autoconf 2.50 or later, then you need to use
+# gettext 0.10.39 or above and not 0.10.38 (earlier versions *might* work)
+
 echo "creating doc/gtypist.info..."
 makeinfo -Idoc doc/gtypist.texi -o doc/gtypist.info
 echo "creating lessons/gtypist.typ..."
