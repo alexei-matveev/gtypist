@@ -60,6 +60,7 @@ for file in configur.bat INSTALL
       exit -1;
   fi
   sed "s/@VERSION/$VERSION/g" ${file}.in > $file 
+  # TODO: this causes cvs to think that ${file}.in was modified...
   touch ${file}.in
 done
 
