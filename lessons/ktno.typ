@@ -886,6 +886,7 @@ T:this file contains the following 15 lessons:
  :
  :        Fkey 11 - Next menu page...
  :        Fkey 12 - Quit program
+Q: Please select a lesson or press Fkey12 to exit
 
 *:MENU_P2
 K:1:S_LESSON11
@@ -917,6 +918,7 @@ T:this file contains the following 15 lessons:
  :
  :        Fkey 11 - Previous menu page...
  :        Fkey 12 - Quit program
+Q: Please select a lesson or press Fkey12 to exit
 
 *:EXIT
 X:

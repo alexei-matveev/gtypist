@@ -565,6 +565,7 @@ T:this file contains the following 10 lessons:
  :
  :
  :        Fkey 12 - Quit program
+Q: Please select a lesson or press Fkey12 to exit
 
 *:EXIT
 X:
