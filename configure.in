@@ -18,7 +18,14 @@ dnl Set of available languages.
 ALL_LINGUAS="de cs es fi fr"
 
 dnl Checks for libraries.
-AC_SEARCH_LIBS(wbkgdset, curses,, echo "*** The curses library is required!";exit 1)
+dnl AC_SEARCH_LIBS(wbkgdset, curses,, echo "*** The curses library is required!";exit 1)
+AC_CHECK_LIB(curses, wbkgdset)
+dnl check for ncurses if curses is not found:
+dnl i.e. on SuSE there are no ncurses* -> curses* links
+if test -z $HAVE_LIBCURSES;
+then
+	AC_CHECK_LIB(ncurses, wbkgdset,, echo "*** The curses library is required!";exit 1)
+fi
 
 dnl Checks for header files.
 AC_HEADER_STDC

@@ -4,7 +4,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: GNU Typist 2.6\n"
-"POT-Creation-Date: 2002-04-25 07:25+0200\n"
+"POT-Creation-Date: 2002-04-28 19:41+0200\n"
 "PO-Revision-Date: 2000-12-08 14:17+01:00\n"
 "Last-Translator: Felix Natter <fnatter@gmx.net>\n"
 "Language-Team: German <de@li.org>\n"
@@ -248,7 +248,7 @@ msgstr "Aufruf mit '%s --help' für mehr Informationen.\n"
 #: gtypist.c:1917
 #, fuzzy
 msgid ""
-"Copyright (C) 1998,1999, 2000, 2001, 2002 Simon Baldwin.\n"
+"Copyright (C) 1998, 1999, 2000, 2001, 2002 Simon Baldwin.\n"
 "This program comes with ABSOLUTELY NO WARRANTY; for details\n"
 "please see the file 'COPYING' supplied with the source code.\n"
 "This is free software, and you are welcome to redistribute it\n"

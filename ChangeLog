@@ -1,3 +1,8 @@
+2002-05-18  Felix Natter  <fnatter@gmx.net>
+
+	* configure.in: check for ncurses if curses is not available
+	(but use 2x AC_CHECK_LIB instead of AC_SEARCH_LIBS to support Solaris)
+
 2002-04-25  Michael Opdenacker <michaelo@gnu.org>
 
 	* Replaced `cz' by `cs' in all file names.
