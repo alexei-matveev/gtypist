@@ -10,6 +10,9 @@ problems,  suggesting  various   improvements,  or  submitting  actual
 code. Here  is a list  of these people.  Help us keep it  complete and
 exempt of errors.
 
+* Rob Leslie <rob@mars.org> for reporting bugs and implementing
+  patches and improvements.
+
 * OLS3 <ols3@www.tnc.edu.tw> for the Traditional Chinese translation.
 
 * Martin Pitt <martin@piware.de> for a patch to ignore trailing
