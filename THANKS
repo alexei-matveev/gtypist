@@ -59,28 +59,28 @@ exempt of errors.
 
 * Igor Tamara <ikks@bigfoot.com> and Vladimir Tamara <vtamara@gnu.org>
   for creating a lesson in spanish; configuration/compilation a la GNU;
-  adding native  language support; porting to DOS/DJGPP, adding NLS in
+  adding native language support; porting to DOS/DJGPP, adding NLS in
   spanish and enhancing documentation.
 
 * Melissa Giraldo <melagira@yahoo.com> for her help with the lesson in
   spanish.
 
-* Kester  Habermann  <kester@linuxtag.de>   for  helping  with  Native
+* Kester Habermann <kester@linuxtag.de> for helping with Native
   Language Support in German
 
 * <Udo.Eberle@keiper.com> for helping with the NLS in German.
 
-* Ben  Armstrong   <synrg@sanctuary.nslug.ns.ca>  for  mantaining  the
-  Debian version and reporting bugs
+* Ben Armstrong <synrg@sanctuary.nslug.ns.ca> for maintaining the
+  Debian version, reporting bugs and proposing patches.
 
-* stephan.hegel@gmx.de  for reporting  a bug  in the  configuration of
+* stephan.hegel@gmx.de for reporting a bug in the configuration of
   typist 2.3.
 
-* Caolan   McNamara  <caolan@csn.ul.ie>  for   sending  a   patch  for
-configure.in in typist 2.3.1 to allow  the use of curses if ncurses is
+* Caolan McNamara <caolan@csn.ul.ie> for sending a patch for
+configure.in in typist 2.3.1 to allow the use of curses if ncurses is
 not available.
 
-* Jhair  Tocancipa <j_tocanc@informatik.uni-kl.de> for  reporting bugs
+* Jhair Tocancipa <j_tocanc@informatik.uni-kl.de> for reporting bugs
   in the documentation.
 
 * Ricardo Cadavid <rcadavid@mv.uni-kl.de> for reporting bugs in the
