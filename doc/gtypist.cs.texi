@@ -60,7 +60,7 @@ osvojit si principy správného psaní na klávesnici v¹emi deseti prsty.
 Obsahuje nìkolik lekcí pro rùzné typy klávesnic a rùzné jazyky. (Mezi
 nimi nechybí ani èe¹tina.) Lekce pro gtypist jsou napsány ve snadno
 pochopitelném skriptovacím jazyku, tak¾e je mohou u¾ivatelé
-modifkovat èi vytváøet nové. Pokud zadáte parametr cz.typ,
+modifkovat èi vytváøet nové. Pokud zadáte parametr cs.typ,
 spustíte lekce v èe¹tinì zamìøené na èeskou klávesnici.
 
 @end ifnottex
