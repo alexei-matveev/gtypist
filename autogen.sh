@@ -54,13 +54,14 @@ for file in configur.bat INSTALL
   do
   echo "creating $file..."
   if test $file -nt ${file}.in; then
-      echo "*** \"$file\" has been modified."
-      echo "\"$file\" is generated from ${file}.in."
+      echo "*** \"$file\" has been modified,"
+      echo "but it is generated from ${file}.in."
       echo "Please apply the changes to ${file}.in instead."
       exit -1;
   fi
-  sed "s/@VERSION/$VERSION/g" ${file}.in > $file 
+  sed "s/@VERSION/$VERSION/g" ${file}.in > $file
   # TODO: this causes cvs to think that ${file}.in was modified...
+  # solution: use a "stamp" file for each $file ?
   touch ${file}.in
 done
 

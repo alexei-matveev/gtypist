@@ -1,3 +1,11 @@
+2001-10-20  Felix Natter  <f.natter@ndh.net>
+
+	* gtypist.texi: fix some TODO's
+	* gtypist.texi: rename node "Emacs mode for editing gtypist lessons" to
+	"Emacs mode for editing gtypist scripts"
+	* gtypist.texi (VIM Syntax highlighting for gtypist scripts):
+	new node which explains how to install tools/gtypist.vim
+
 2001-09-17  Felix Natter  <f.natter@ndh.net>
 
 	* gtypist.texi: new node "Design-patterns for lessons"

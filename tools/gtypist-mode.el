@@ -87,14 +87,7 @@
 ;; completing-read to support XEmacs
 ;; Fri Oct 12 17:36:22 2001: change gtypist-mode-goto-label to C-c M-g
 ;; because XEmacs interprets C-c C-g as (keyboard-quit)
-
-;; TODO:
-;; - gtypist-mode-goto-label-history, gtypist-mode-lesson-name-history ?
-;; - better documentation for gtypist-mode-next-label, gtypist-mode and
-;;   gtypist-mode-info ?
-;; - allow customization via customize ?
-;; - gtypist-mode-fortune-to-drill: automatically split fortune if it's
-;;   too long ?
+;; Fri Oct 19 20:18:46 2001: allow only digits after the first ':' in "^K"
 
  ;;; Code:
 
@@ -175,7 +168,7 @@ It's really only useful for font-locking."
    ;; note: cannot use font-lock-constant-face because it isn't supported by
    ;; (some versions of) XEmacs
    ;; TODO: this doesn't catch labels like "F:THREE**": mention in docs ?
-   (list "^[GYNKF]:\\(.*:\\)?\\(.+[^*]\\)\\*?[ \t]*$"
+   (list "^[GYNKF]:\\([0-9]+:\\)?\\(.+[^*]\\)\\*?[ \t]*$"
 	 2 'font-lock-reference-face)
 
    ;; this is used as a parameter to E:
