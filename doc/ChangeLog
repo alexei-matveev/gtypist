@@ -1,3 +1,19 @@
+2003-10-25  Hynek Hanke  <hanke@volny.cz>
+
+	* gtypist-cs.texi: Renamed from gtypist.cs.texi. The reason is not
+	to cause automake errors related to invalid suffix.
+	
+	* gtypist.cs.texi: Include version2.texi, not version.texi, so that
+	the auto-tools don't complain. It seems this is some ugly workaround
+	for something, but it is advised in the documentation and it shouldn't
+	break anything as ver*.texi files are generated automatically.	
+
+	* Makefile.am: Handle also the HTML target so that we don't have
+	to do it manually in autogen.sh.
+	The target `all' now depends on target `info' AND `html'.
+
+	* gtypist.cs.texi: Build into gtypist.cs.info, not gtypist.info.
+
 2003-10-24  Hynek Hanke  <hanke@volny.cz>
 
 	* gtypist.cs.texi: @documentencoding and @documentlanguage moved to the beginning
