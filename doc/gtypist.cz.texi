@@ -407,180 +407,193 @@ Pokud uvádíte více ne¾ jeden parametr, musíte je uvést v apostrofech:
 @node Pøíkazy skriptovacího jazyka, Vytvoøte nové lekce, Pou¾ívání typefortune, Top
 @chapter Pøíkazy skriptovacího jazyka
 
-GNU Typist reads in the data for its typing lessons from a script file.
-With the exception of comments and blank lines, each line in the file is
-of the format
+GNU Typist naèítá data pro jednotlivé lekce ze skriptového
+souboru. Ka¾dá øádka s výjimkou komentáøù a prázdných øádek
+má následující formát
 
-@code{command_char : command_data}
+@code{znak_pøíkazu : data_pøíkazu}
 
 @noindent
-Here, @code{command_char} is a single character code that defines an
-action for gtypist to take, and @code{command_data} is data for that
-command. If @code{command_char} is a space character, this indicates that the
-line is a continuation of the preceding non-space command. The ':'
-separator must be in column two of the line.
 
-Comment lines are lines beginning with a '#' character, and are
-ignored, as are blank lines. Comment lines may have any format provided
-that they begin with '#'; other lines must have the above format.
+@code{Znak pøíkazu} je jeden znak, který urèuje, co bude
+gtypist dìlat, a @code{data_pøíkazu} jsou data, se kterými
+bude operovat. Pokud je  @code{znak_pøíkazu} mezera, znamená
+to, ¾e øádka je pokraèováním pøedchozího pøíkazu.
+Oddìlovaè ':' musí být v¾dy v druhém sloupci øádky.
 
-You should read the introduction so that you are familiar with the
-basics: @xref{Úvod}.
+Øádky komentáøù jsou øádky zaèínající znakem '#' a stejnì
+jako prázdné øádky jsou ignorovány. Komentáøe mohou mít
+jakýkoliv formát, jediným po¾adavkem je, aby zaèínaly '#'.
+V¹echny ostatní øádky musí mít vý¹e uvedený formát.
 
-The following is a list of valid @code{command_char} values:
+Abyste se seznámili se základy, mìli byste si pøeèíst @xref{Úvod}.
+
+Následující výèet je seznamem platných hodnot @code{znakù_pøíkazu}:
 
 @table @code
 @item B
-This command clears the complete screen. If any @code{command_data} is
-present, it is displayed in the one-line banner at the top of the
-screen, and remains in place until the next @code{B} command. This command may
-not be continued on the following line; it is a single line command.
+Tento pøíkaz sma¾e celou obrazovku. Pokud má nìjaká 
+@code{data_pøíkazu}, ta jsou zobrazena v horním jednoøádkovém
+banneru a zùstanou tam a¾ do zavolání následujícího pøíkazu @code{B}. 
+Tento pøíkaz nesmí pokraèovat na následující øádce.
 
 @item T
-This presents a tutorial, and is a multi-line command, up to the
-limit of the screen length. Each line in the command is simply
-printed to the screen. This command clears the screen beneath the top
-banner line. After the display is done, the program waits before
-proceeding. This is also used to display menu-items.
+T znamená tutoriál. Pøíkaz mù¾e zpracovávat více øádek
+a to a¾ do zaplnìní obrazovky. Ka¾dá øádka pøíkazu je
+prostì vyti¹tìna na obrazovku. Pøíkaz sma¾e obrazovku
+pod horním jednoøádkovým bannerem. Kdy¾ je zobrazování
+hotovo, program èeká na u¾ivatelský vstup. Toho je také
+vyu¾íváno pro tisk polo¾ek menu.
 
 @item *
-This indicates a label in the file. The label may be the target of a
-@code{G}, @code{Y}, @code{N} or @code{F} command. Labels may contain any
-character, including space, and are a single line command. Labels must
-be unique within lesson files. Whitespace at the end of labels is ignored.
+Hvìdièka znamená návìstí v souboru. Návìstí mù¾e být cílem pro
+pøíkazy @code{G}, @code{Y}, @code{N} nebo @code{F}. Návìstí
+mohou zahrnovat jakékoliv znaky vèetnì mezer a jsou 
+jednoøádkovým pøíkazem. Mezery na konci návìstí jsou ignorovány.
 
 @item I
-The I command can display some brief instructions above a drill or a
-speed test.  Only two lines or less are permitted.  Unlike the
-@code{T} command, it does not wait for any further keypresses before
-proceeding.  So it should really always be followed by an exercise.
-It clears the whole screen exercise area, so in this respect it's just
-like a two-line T.
+Tento pøíkaz zobrazí struèné instrukce k drilovému èi rychlostnímu
+testu. Je dovoleno pou¾ít pouze dvou øádek. Narozdíl od pøíkazu @code{T} 
+se pøed pokraèováním neèeká na stisk klávesy. Znaèka by tedy
+mìla být v¾dy následována cvièením. Ma¾e plochu obrazovky
+pro cvièení, v tomto ohledu se chová jako dvouøádkové T.
 
 @c TODO: more information about ``should be used for''...
 @item D,d
-This command is called ``drill'', and it is one of two types of
-typing exercises.
+Tento pøíkaz se nazývá ,,drill''  a je jedním ze dvou typù
+cvièení.
 
-It is a multi-line command. The text is displayed in every second
-line, and you type in the intermediate lines. Because of this, you cannot
-use more than 11 lines of drill content.
+Je to víceøádkový pøíkaz. Text je zobrazován v ka¾dé druhé
+øádce a u¾ivatel jej opisuje do prostoru mezi nimi.
+To je dùvod, proè nemù¾ete pou¾ít více jak 11 øádek
+obsahu.
 
-This type of exercise is supposed to be used for finger training
-(i.e. jfjfjjf), but may also contain complete words and sentences
-@c TODO: grip
-if they are used to practice something (i.e. a letter/syllable/"grip"),
-and aren't real texts.
+Tento typ cvièení by mìl být pou¾íván pouze pro cvièení
+prstù (napø. jfjfjjf), ale mù¾e obsahovat i celá slova
+a vìty, kdy¾ jsou vyu¾ívány k procvièování (písmeno, slabika)
+a nejedná se o opravdové texty.
 
-The lowercase version @code{d} is a ``practice only'' drill -
-the user will not have not repeat this drill if he/she made too many
-mistakes.
+Verze s malým písmenem @code{d} znamená ,,pouze procvièování'',
+u¾ivatel nebude muset cvièení opakovat ani pokud udìlal pøíli¹
+mnoho chyb.
 
 @c TODO: more information about ``should be used for''...
 @item S,s
-This is the second type of typing exercise: the ``speed test''.
+To je druhý typ cvièení: ,,rychlostní test''.
 
-It is a multi-line command.  It displays its text on the screen, and
-prompts the user to type on top of it.  That's why you can use up to
-22 lines of text for one speed test.
-In a speed test you can correct your mistakes, but this will not decrease
-the error-count.
+Jedná se o víceøádkový pøíkaz. Zobrazuje svùj obsah na obrazovce
+a èeká, a¾ jej u¾ivatel pøepí¹e tím samým textem. Proto mù¾ete
+na jeden rychlostní test pou¾ít a¾ 22 øádek. V tomto druhu testu
+mù¾ete své chyby opravovat, poèítadlo ve statistice je ale stále
+bude poèítat jako chyby.
 
-Speed tests should be used for typing (mostly) complete sentences,
-texts or files (i.e. a letter, texinfo/html/tex files).
+Rychlostní testy by mìly být pou¾ívány pro opisování
+kompletních vìt, textù a souborù (napø. dopis, texinfo,
+html èi tex soubor).
 
-The lowercase version @code{s} is a ``practice only'' speed test -
-the user will not have not repeat this drill if (s)he
-made too many mistakes.
+Verze s malým písmenem @code{s} je rychlostní test
+,,pouze k procvièování'', co¾ znamená, ¾e ani u¾ivatel,
+který udìlá pøíli¹ mnoho chyb, jej nebude muset opakovat.
 
 @item G
-This causes gtypist to go to the label in @code{command_data}, and continue
-execution of the script there. This is a single line command.
+Toto pøinutí gtypist pøeskoèit na návìstí v @code{datech_pøíkazu}
+a pokraèovat ve vyvolávání skriptu odtud. Jde o jednoøádkový
+pøíkaz.
 
 @item Q
-This command command prompts its text on the message line, and waits for
-a @key{Y} or an @key{N} before proceeding. Other characters are ignored.
+Tento pøíkaz vypí¹e svùj text na stavové øádce a pøed
+pokraèováním èeká na klávesu @key{Y} nebo @key{N}.
+Ostatní znaky jsou ignorovány.
 
-As a side effect, you can hit an fkey if it is bound (That's why
-this is used to set the prompt for menus).
+Jako vedlej¹í efekt mù¾ete také stisknout F-klávesu,
+pokud je potøeba (proto je tento pøíkaz pou¾íván pro promt
+v nabídkách).
 
 @item Y
-This is like @code{G}, except that the goto is executed only if the result of
-the last @code{Q} command was @key{Y}.
+Y Je podobné @code{G}, s výjimkou toho, ¾e pøíkaz skoku
+je vyvolán pouze pokud odpovìï na pøedchozí otázku @code{Q} 
+byla @key{Y}.
 
 @item N
-This is like @code{G}, except that the goto is executed only if the result of
-the last @code{Q} command was @key{N}.
+N je podobné @code{G}, s výjimkou toho, ¾e pøíkaz skoku
+je vyvolán pouze pokud odpovìï na pøedchozí otázku @code{Q} 
+byla @key{N}.
 
 @item K
-This binds a function key to a label. The format of the data line
-following this command must be @code{fkey_number:label}, where
-@code{fkey_number} is a function key number in the range 1 to 12, and
-@code{label} is a label to go to when this key is pressed. A value of
-NULL for label removes any label binding from the key.
+Vá¾e funkèní klávesu na návìstí. Formát dat následujících
+tento pøíkaz musí být @code{Fklávesa:návìstí}, kde
+@code{Fklávesa} je èíslo funkèní klávesy mezi 1 a 12
+a @code{návìstí} je místo, kam se pøesunout po stisku
+této klávesy. Hodnota návìstí NULL klávesu znefunkèní.
 
-If function keys are not available on the terminal other keys can be
-used: @key{1} to @key{9} to replace @key{F1} to @key{F9}, @key{0} to 
-replace @key{F10}, @key{A} for @key{F11} and @key{S} for @key{F12}.
+Pokud na terminálu nejsou dostupné funkèní klávesy,
+mohou být místo jich pou¾ity klávesy
+@key{1} a¾ @key{9} pro @key{F1} a¾ @key{F9}, @key{0} pro
+@key{F10}, @key{A} pro @key{F11} a @key{S} pro @key{F12}.
 
-Other alternatives for the keys @key{F1} to @key{F12} are the
-combinations: @key{Ctrl-Q}, @key{Ctrl-W}, @key{Ctrl-E}, @key{Ctrl-R}, 
+Jinou alternativou pro @key{F1} a¾ @key{F12} jsou kombinace: 
+@key{Ctrl-Q}, @key{Ctrl-W}, @key{Ctrl-E}, @key{Ctrl-R}, 
 @key{Ctrl-T}, @key{Ctrl-Z}, @key{Ctrl-U}, @key{Ctrl-I}, 
-@key{Ctrl-O}, @key{Ctrl-P}, @key{Ctrl-A} and @key{Ctrl-S}.
+@key{Ctrl-O}, @key{Ctrl-P}, @key{Ctrl-A} a @key{Ctrl-S}.
 
-This is also useful where function keys are intercepted by other
-programs (for example by a window manager).
+To je také u¾iteèné, pokud jsou funkèní klávesy odchytávány
+jinými programy (napøíklad window managery).
 
 @item E
-This command is used to set the highest error-rate permitted for
-the next drill (E:<value>%) or for all following drills until the next
-E: (E:<value>%*).
+Tento pøíkaz je pou¾íván pro nastavení nejvy¹¹ího procenta
+chyb dovoleného pro úspì¹né absolvování následující lekce
+(E:<value>%) èi pro v¹echny lekce a¾ do dal¹ího výskytu E
+(E:<value>%*).
 
-If @option{--error-max/-e} is specified then this command will only
-have an effect if it is @emph{stricter} than the value specified on
-the command-line.
+Pokud je nastaveno @option{--error-max/-e}, tak bute tento
+pøíkaz platit pouze tehdy, pokud je @emph{pøísnìj¹í} 
+ne¾ hodnota specifikovaná na pøíkazové øádce.
 
-@code{command_data} consists of the value (between 0.0 and 100.0),
-followed by '%' (this is required so that scripts are more readable).
-A special value of @code{default} or @code{Default} sets the error-max
-value back to the default.
+@code{data_pøíkazu} se skládají z hodnoty (mezi 0.0 a 100.0)
+následované znakem '%' (toto je po¾adováno, aby byly skripty
+lépe èitelné). Existuje speciální hodnota @code{default} 
+nebo @code{Default}, která nastavuje maximální procento chyb
+zpìt na defaultní hodnotu.
 
 @item F
-This command (``set on-failure label'') is used to set the label (in
-@code{command_data}) where the user will have to go to if (s)he fails
-an exercise.
+Tento pøíkaz mù¾e být pou¾it k nastavení návìstí 
+(v @code{data_pøíkazu}), kam bude u¾ivatel muset 
+jít, pokud úspì¹nì neprojde cvièením.
 
-Usually, this command only applies to the next exercise, but you can make
-it persistent by putting a '*' at the end of @code{command_data}.
+Tento pøíkaz se vìt¹inou vztahuje pouze k následujícímu
+cvièení, ale pokud na konec @code{dat_pøíkazu}
+vlo¾íte '*', mù¾ete jej tak uèinit trvale platným.
 
-If label is NULL then this resets the label.
+Pokud je návìstí NULL, pak pøíkaz návìstí resetuje.
 
 @item X
-This command causes gtypist to exit. It is a single line command. Any
-@code{command_data} is ignored. The program also exits if the end of the file
-is found (so you could also place a label there and just @code{G} to it)
+Tento pøíkaz pøinutí gtypist vyskoèit. Je to jednoøádkový
+pøíkaz. Jakékoliv @code{data_pøíkazu} jsou ignorována. 
+Jiný zpùsob, jakým mù¾e dojít k opu¹tìní programu,
+je kdy¾ gtypist dojde na konec souboru (tak¾e tam mù¾ete
+také umístit návìstí a odkazovat na nìj pøíkazem @code{G})
 
 @end table
 
 @c TODO: more examples (i.e. one example for E:/F:, one for a menu, ...)
 
-Here is a tiny example script to demonstrate the available commands
-(@file{tinydemo.typ} lesson file):
+Prohlédnìte si malý pøíklad skriptu, který demonstruje
+dostupné pøíkazy (soubor lekce @file{tinydemo.typ}):
 
 @example
-# Minimal demonstration 
-B: Typing tutor demonstration 
+# Malý pøíklad
+B: Demonstrace tutoriálu
 *:LOOP
 K:1:QDONE
-T:This is a small example tutor script. A better
- :example may be found in the demo.typ file that
- :accompanies GNU Typist
-I:Here is an example of a drill: 
+T:Zde je malý pøíklad skriptu pro lekci.
+ :Lep¹í pøíklad mù¾ete nalézt v souboru
+ :demo.typ, který je dodáván s GNU Typist.
+I:Tady je drilové cvièení: 
 D:asdf ghjkl;
-I:And here is an example of a speed test: 
+I:A tady je zas rychlostní test: 
 S:qwe rt yu iop
 *:QDONE
-Q:Seen enough yet? [Y/N] 
+Q:Staèilo to ji¾? [Y/N] 
 N:LOOP 
 X:
 @end example
