@@ -927,7 +927,7 @@ který se také nauèil psát na klávesnici s gtypistem.
 Vývoj projektu nyní probíhá na
 @url{http://savannah.gnu.org/projects/gtypist/}.
 @item V èervnu 2001 se k projektu pøipojil 
-Felix Natter @email{f.natter@@ndh.net} 
+Felix Natter @email{fnatter@@gmx.net} 
 a výraznì mu pøispìl portováním
 lekcí z jiných tutoriálù, vylep¹ením pomocných utilit,
 nových mo¾ností tutoriálù a módem pro Emacs.
