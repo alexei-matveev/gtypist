@@ -70,7 +70,7 @@ while(defined($ktouchfilename = shift(@ARGV)))
     print TYPFILE "# ktouch can be found at http://ktouch.sourceforge.net\n";
     print TYPFILE "# If you have suggestions about these lessons,\n";
     print TYPFILE "# please send mail to haavard\@users.sourceforge.net\n";
-    print TYPFILE "# (or whoever is the current ktouch-maintainer), with\n";
+    print TYPFILE "# (or whoever is the current ktouch maintainer), with\n";
     print TYPFILE "# cc to bug-gtypist\@gnu.org\n\n";
     print TYPFILE "G:MENU\n\n";
 
