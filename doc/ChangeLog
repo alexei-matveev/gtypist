@@ -1,3 +1,8 @@
+2002-04-20  Michael Opdenacker  <michaelo@gnu.org>
+
+	* gtypist.texi: fixed to include the original fdl.texi file.
+        Also added a table of contents at the beginning.
+
 2002-04-08  Michael Opdenacker  <michaelo@gnu.org>
 
 	* gtypist.texi: uses the new @copying command provided by texinfo-4.2.
