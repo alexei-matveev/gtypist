@@ -1,6 +1,11 @@
+2003-09-24  Michael Opdenacker <michaelo@gnu.org>
+
+	* gtypist*.texi: added a table of contents at the beginning
+	* gtypist.texi: mentioned the lessons in Russian.
+
 2003-04-06  Felix Natter  <fnatter@gmx.net>
 
-	* gtypist.texi: add documentation for M: command + mark old menus
+	* gtypist.texi: added documentation for M: command + mark old menus
 	(K:) as deprecated
 
 2002-06-28  Hynek Hanke  <hanke@volny.cz>
