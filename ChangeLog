@@ -1,3 +1,7 @@
+2002-03-10  Felix Natter  <fnatter@gmx.net>
+
+	* fix a bug: -k wasn't mentioned in getopt (don't know why !)
+
 2002-03-09  Felix Natter  <fnatter@gmx.net>
 
 	* add new script `typefortune', as suggested and started by
