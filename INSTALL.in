@@ -6,33 +6,42 @@ Compilation under Unix
 ----------------------
 
 In order to compile this program, you must have:
-- The 'ncurses' or the 'curses' library
+
+  - The 'ncurses' or the 'curses' library
 
 * Uncompress the sources distribution:
-	tar xvfz gtypist-@VERSION.tar.gz
+
+  > tar jxvf gtypist-@VERSION.tar.bz2
+  or
+  > tar zxvf gtypist-@VERSION.tar.gz
 
 * Change to the sources directory
-	cd gtypist-@VERSION
+
+  > cd gtypist-@VERSION
 
 * Configure the package. By default the program will be installed at
 /usr/local/bin and the lessons and international support in
 /usr/local/share/gtypist (you can change with the option --prefix). By 
 default it will install Native Language Support (you can disable this
 with the option --disable-nls)
-	./configure 
+
+  > ./configure 
 
 * Compile
-	make
+
+  > make
 
 * Become root and install
-	su
-	umask 022
-	make install
+
+  > su
+  > umask 022
+  > make install
 
 * To test your installation type
-	gtypist
+
+  > gtypist
   or
-	/usr/local/bin/gtypist
+  > /usr/local/bin/gtypist
 
 
 Compilation under Windows/DOS
@@ -48,33 +57,34 @@ You must have:
     ftp://ftp.simtel.net/pub/simtelnet/gnu/djgpp/v2tk/pdcur24b.zip
 
 * Decompress the sources distribution 
+
 * Open a DOS session, change to the sources directory
-	cd gtypist-@VERSION
+  > cd gtypist-@VERSION
 
 * Configure the package
-	configur
+  > configur
 
 * Compile
-	make
+  > make
 
 * To install it, you should create a directory (e.g. c:\GTypist) and
   copy into it the lessons of directory 'lessons' \ and the program
   gtypist.exe:
 
-	mkdir c:\GTypist
-	copy gtypist.exe c:\GTypist
-	copy lessons\*.typ c:\GTypist
+  > mkdir c:\GTypist
+  > copy gtypist.exe c:\GTypist
+  > copy lessons\*.typ c:\GTypist
 
 * To use it go to the directory where you installed it and run gtypist.exe
-	cd GTypist
-	gtypist
+  > cd GTypist
+  > gtypist
 
 
 ** Read on if you want to package the DOS-version.
 
 * You might want to remove symbols from gtypist.exe:
 	
-	strip --strip-all gtypist.exe
+  > strip --strip-all gtypist.exe
 
 * Include cwsdpmi.exe and cwsdpmi.doc (the DOS extender, see
   http://www.delorie.com for details), to support plain DOS
@@ -82,10 +92,11 @@ You must have:
 * You need to convert the lessons with a 8bit-characters with a program
   like "recode" (on GNU/Linux):
 
-	for i in *.typ
-	do
-		recode latin1..ibmpc $i
-	done
+  > for i in *.typ
+  > do
+  >   recode latin1..ibmpc $i
+  > done
+
   (it doesn't hurt to convert all lessons)	
   With old versions of recode (i.e. 3.4.1), you have to use "latin1:ibmpc".
 
@@ -98,7 +109,7 @@ You must have:
   line-endings with recode, for example (see above)
 
 * Copy all the files in one "gtypist" directory and then run
-    zip -9 -r gtyp@VERSION.zip gtypist
+  > zip -9 -r gtyp@VERSION.zip gtypist
   (remove the points in gtyp@VERSION and truncate it to 8 chars to support
   plain DOS)
   I've had trouble with infozip: zip 2.0.1 did not work,
@@ -126,12 +137,12 @@ Dvorak Keyboard under GNU/Linux (Ben Armstrong <synrg@sanctuary.nslug.ns.ca>)
 	To get Dvorak keymaps, run the 'loadkeys' command on the appropriate keymap
         file. For example if your keymaps are at /usr/share/keymaps
 
-	loadkeys /usr/share/keymaps/i386/dvorak/dvorak.kmap.gz
+	> loadkeys /usr/share/keymaps/i386/dvorak/dvorak.kmap.gz
 
         To switch to your default keyboard mappings, run loadkeys on
         the default keymap file:
 
-	loadkeys /etc/console-tools/default.map.gz
+	> loadkeys /etc/console-tools/default.map.gz
 
         If you are in X, please visit the Dvorak home page at
         http://www.mwbrooks.com/dvorak/ for more information.
