@@ -1,35 +1,35 @@
 Version 2.4 - September/2001
 
-	- changes to the types of exercises: d,D for drills and s,S
+	- Changes to the types of exercises: d,D for drills and s,S
 	for speed-tests
-	- add commands E: (sets error-max) and F: (sets "on failure" label)
+	- Added commands E: (sets error-max) and F: (sets "on failure" label)
 	(currently only used in demo.typ and esp.typ)
 	- do_drill, do_speedtest: add "builtin repeat loop"
 	- print_help: only break on whitespace in help-strings, use ';'
 	to separate words ..
-	- allow translation of the "do you want to repeat?" message
+	- Allowed translation of the "do you want to repeat?" message
 	(which is possible because it is now builtin) and the corresponding
 	keys (Y/N)
 	- fatal_error: make the ouput more logical
-	- allow "give up" (repeat lesson) via ESC (there is no way to
+	- Allowed "give up" (repeat lesson) via ESC (there is no way to
 	skip an exercise in 2.4)
-	- add (unsigned char) cast in ADDCH, ADDCH_REV to support
+	- Added (unsigned char) cast in ADDCH, ADDCH_REV to support
 	8bit-characters in exercises
-	- rewrote command-line parsing + use '-' as word-separator in
+	- Rewrote command-line parsing + use '-' as word-separator in
 	long options
 	- command_char's are case-sensitive now
-	- ignore trailing whitespace in labels
-	- add new lessons which are converted from ktouch-1.0
+	- Ignores trailing whitespace in labels
+	- Added new lessons which are converted from ktouch-1.0
 	(http://ktouch.sourceforge.net)
 	kt*.typ, converted by tools/ktouch2typ.pl and
 	tipptrainer-0.3.3
 	(http://www.pingos.schulnetz.org/tipptrainer):
 	currently only the german lesson, which is in ttde.typ, converted
 	by tools/tt2typ.pl.
-	- an Emacs-mode for editing gtypist's script-files:
+	- An Emacs-mode for editing gtypist's script-files:
 	tools/gtypist-mode.el
-	- improved i18n-support
-	- improved German translation (with help from de@li.org)
+	- Improved i18n-support
+	- Improved German translation (with help from de@li.org)
 
 Development version
         - Minor fixes (build, charset definition)
