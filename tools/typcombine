@@ -1,5 +1,9 @@
 #!/usr/bin/awk -f
 #
+# CAUTION: Only works with GNU awk (gawk)
+# If /usr/bin/awk doesn't work, you can call this script by:
+# gawk -f typcombine
+#
 # Typist v2.2 - improved typing tutor program for UNIX systems
 # Copyright (C) 1998  Simon Baldwin (simonb@sco.com)
 #
