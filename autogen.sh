@@ -54,7 +54,7 @@ gettext_home=`dirname $gettext_bin`
 gettexth=$gettext_home/share/gettext/gettext.h
 
 echo "Copying gettext.h from $gettexth"
-cp $gettexth .
+cp $gettexth src/
 
 # Generate lesson menus
 (gawk --version) < /dev/null > /dev/null 2>&1 || {
