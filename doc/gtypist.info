@@ -769,7 +769,7 @@ in your `~/.emacs' (adapt path!):
      (autoload 'gtypist-mode "~/elisp/gtypist-mode")
    or put it in `load-path' and use this instead:
      (autoload 'gtypist-mode "gtypist-mode")
-   _and_ add this to your `~/.emacs':
+   *and* add this to your `~/.emacs':
      (setq auto-mode-alist
            (cons '("\\.typ\\'" . gtypist-mode) auto-mode-alist))
    If you want to, you can then byte-compile the file using `M-x
@@ -790,7 +790,8 @@ byte-compile-file'.
 
 `C-c C-b, M-x gtypist-mode-insert-banner'
      This command inserts a centered `B:' command. It's centered on 66
-     columns because "gtypist <version>" is in the right corner.
+     columns because "gtypist <version>" is in the right corner
+     (prompts for content).
 
 `C-c C-r, M-x gtypist-mode-insert-hrule'
      Inserts a horizontal rule (comment) consisting of dashes.
@@ -806,8 +807,8 @@ byte-compile-file'.
 
    Run `C-h m' for a complete list of commands and their keybindings.
 
-   If you have bug-reports or suggestions about this, please write to
-<bug-gtypist@gnu.org>.
+   If you find bugs or if you think there's something else this mode
+could do, please write to <bug-gtypist@gnu.org>.
 
 
 File: gtypist.info,  Node: Technical Information,  Next: History,  Prev: Emacs mode for editing gtypist-lessons,  Up: Top
@@ -937,9 +938,9 @@ Node: Script files and commands26775
 Node: Supplied lessons32268
 Node: How to contribute new lessons33177
 Node: Emacs mode for editing gtypist-lessons33568
-Node: Technical Information35849
-Node: Environment Variables36080
-Node: Errors and omissions38185
-Node: History38902
+Node: Technical Information35901
+Node: Environment Variables36132
+Node: Errors and omissions38237
+Node: History38954
 
 End Tag Table

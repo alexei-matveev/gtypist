@@ -67,7 +67,7 @@ char *COPYRIGHT;
 #define	SPEED_LINE		(LINES - 5)
 
 /* things to help parse the input file */
-#define	SCR_COMMAND(X)		(toupper(X[0]))
+#define	SCR_COMMAND(X)		(X[0])
 #define	SCR_SEP(X)		(X[1])
 #define	SCR_DATA(X)		(&X[2])
 #define	C_COMMENT		'#'

@@ -1,3 +1,7 @@
+2001-07-21  Felix Natter  <fnatter@gmx.net>
+
+	* gtypist.c (SCR_COMMAND): do not accept lowercase command_char's
+
 2001-07-20  Felix Natter  <fnatter@gmx.net>
 
 	* gtypist.c (index_labels,do_goto): remove trailing whitespace in 

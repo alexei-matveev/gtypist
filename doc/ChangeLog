@@ -1,3 +1,9 @@
+2001-07-21  Felix Natter  <f.natter@ndh.net>
+
+	* gtypist.texinfo (Emacs mode for editing gtypist-lessons):
+	use @strong for and + add note that people should submit
+	feature-suggestions
+
 2001-07-20  Felix Natter  <f.natter@ndh.net>
 
 	* node Introduction: some English fixes

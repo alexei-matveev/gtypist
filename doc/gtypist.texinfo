@@ -802,7 +802,7 @@ or put it in @code{load-path} and use this instead:
 @lisp
 (autoload 'gtypist-mode "gtypist-mode")
 @end lisp
-@emph{and} add this to your @file{~/.emacs}:
+@strong{and} add this to your @file{~/.emacs}:
 @lisp
 (setq auto-mode-alist       
       (cons '("\\.typ\\'" . gtypist-mode) auto-mode-alist))
@@ -831,7 +831,8 @@ and hit @kbd{C-c C-l} then gtypist-mode will insert
 
 @item C-c C-b, M-x gtypist-mode-insert-banner
 This command inserts a centered @code{B:} command. It's centered on
-66 columns because ``gtypist <version>'' is in the right corner.
+66 columns because ``gtypist <version>'' is in the right corner
+(prompts for content).
 
 @item C-c C-r, M-x gtypist-mode-insert-hrule
 Inserts a horizontal rule (comment) consisting of dashes.
@@ -849,8 +850,8 @@ prefix to get @code{P:}, and @kbd{C-u C-u} to get @code{D:}.
 
 Run @kbd{C-h m} for a complete list of commands and their keybindings.
 
-If you have bug-reports or suggestions about this, please write to
-@email{bug-gtypist@@gnu.org}.
+If you find bugs or if you think there's something else this mode could
+do, please write to @email{bug-gtypist@@gnu.org}.
 
 @node Technical Information, History, Emacs mode for editing gtypist-lessons, Top
 @chapter Technical Information
