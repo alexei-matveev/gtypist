@@ -5,7 +5,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: typist 2.3.1\n"
-"POT-Creation-Date: 2002-01-14 20:32+0100\n"
+"POT-Creation-Date: 2002-03-17 00:06+0100\n"
 "PO-Revision-Date: 2001-12-19 23:50+0100\n"
 "Last-Translator: José Pelegrín <josepl@acm.org>\n"
 "Language-Team: Spanish/Spain <es@li.org>\n"
@@ -13,7 +13,6 @@ msgstr ""
 "Content-Type: text/plain; charset=iso-8859-1\n"
 "Content-Transfer-Encoding: 8bit\n"
 
-#. print out the error message and stop
 #: gtypist.c:330
 msgid "line"
 msgstr "linea"
@@ -65,17 +64,14 @@ msgid "instructions are limited to two lines"
 msgstr "las instrucciones están limitadas a dos líneas"
 
 #: gtypist.c:1463
-#, c-format
 msgid "'*' must immediately follow '%'"
 msgstr "«*» debe ser seguido por «%»"
 
 #: gtypist.c:1465 gtypist.c:1467
-#, c-format
 msgid "missing '%'"
 msgstr "falta «%»"
 
 #: gtypist.c:1470
-#, c-format
 msgid "'%' must immediately follow value"
 msgstr "«%» debe seguir un valor"
 
@@ -264,22 +260,18 @@ msgstr ""
 "bajo ciertas condiciones; nuevamente vea detalles en 'COPYING'.\n"
 "Este programa se ha liberado bajo la GNU General Public License."
 
-#. this string is displayed in the mode-line when in a tutorial
 #: gtypist.c:1918
 msgid " Tutorial "
 msgstr " Tutorial "
 
-#. this string is displayed in the mode-line when in a query
 #: gtypist.c:1920
 msgid "  Query   "
 msgstr "  Consulta   "
 
-#. this string is displayed in the mode-line when running a drill
 #: gtypist.c:1922
 msgid "  Drill   "
 msgstr "  Rutina  "
 
-#. this string is displayed in the mode-line when running a speedtest
 #: gtypist.c:1924
 msgid "Speed test"
 msgstr "Test de velocidad "
@@ -318,44 +310,25 @@ msgstr ""
 "Lo siento, «gtypist» está configurado para no permitir saltarse las "
 "lecciones."
 
-#. This must be adjusted to the right with one space at the end.
-#. Leading and trailing whitespaces are important because the text
-#. is displayed in reverse video.
-#. This text must must be aligned with the next two messages
-#. (it's best to run gtypist to see this in practice)
 #: gtypist.c:1952
 #, c-format
 msgid " Raw speed      = %6.2f wpm "
 msgstr " Velocidad en bruto = %6.2f wpm "
 
-#. this must be adjusted to the right with one space at the end.
-#. Leading whitespace is important because it is displayed in reverse
-#. video and because it must be aligned with the previous and next messages
-#. (it's best to run gtypist to see this in practice)
 #: gtypist.c:1957
 #, c-format
 msgid " Adjusted speed = %6.2f wpm "
 msgstr " Velocidad neta     = %6.2f wpm "
 
-#. this must be adjusted to the right with one space at the end.
-#. Leading whitespace is important because it is displayed in reverse
-#. video and because it must be aligned with the next last two messages
-#. (it's best to run gtypist to see this in practice)
 #: gtypist.c:1962
 #, c-format
 msgid "            with %.1f%% errors "
 msgstr "                con %3.0f%% errores "
 
-#. this is used to translate the keys for Y/N-queries. Must be two
-#. uppercase letters separated by '/'. Y/N will still be accepted as
-#. well. Note that the messages (prompts) themselves cannot be
-#. translated because they are read from the script-file.
 #: gtypist.c:1967
 msgid "Y/N"
 msgstr "Y/N"
 
-#. this is used to translate the keys for Repeat/Next/Exit
-#. queries. Must be three uppercase letters separated by slashes.
 #: gtypist.c:1977
 msgid "R/N/E"
 msgstr "R/N/E"

@@ -73,7 +73,7 @@ gettextize --force --copy --intl
 
 echo "creating build configuration files..."
 rm -f config.cache
-aclocal
+aclocal -I m4
 autoheader
 automake --add-missing
 autoconf

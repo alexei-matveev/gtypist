@@ -1,3 +1,9 @@
+2002-03-17  Felix Natter  <fnatter@gmx.net>
+
+	* run gettextize from gettext 0.11.1
+	* create po/Makevars
+	* run aclocal with "-I m4" in autogen.sh
+
 2002-03-14  Michael Opdenacker <michaelo@gnu.org>
 
 	* autogen.sh: automake-1.6, autoconf 2.53, gettext-0.11 recommended;
