@@ -968,7 +968,7 @@ and made major contributions to the project: lesson
 imports from other tutors, tool enhancements, new tutorial capabilities,
 , Emacs mode, arrow key based interface, and many more!
 @item
-In 2003, @email{rutsky@school.ioffe.rssi.ru, Dmitry Rutsky} joined
+In 2003, @email{rutsky@@school.ioffe.rssi.ru, Dmitry Rutsky} joined
 joined the development team and brought in a dramatic number ideas, hacks
 and improvements, and he's not done yet!  
 @end itemize
