@@ -750,7 +750,7 @@ X:
 @chapter Supplied lessons
 
 The following lessons are supplied with GNU Typist :
-@table @samp
+@table @file
 @item q.typ 
 Quick QWERTY course in English
 @item r.typ
@@ -773,6 +773,10 @@ Calculator keypad in English
 Compendium of the previous lessons in English
 @item esp.typ
 QWERTY course in Spanish
+@item kt*.typ
+These lessons are the standard lessons from Ktouch 1.0
+(@url{http://ktouch.sourceforge.net}), which have been converted to
+gtypist's file format using @file{tools/ktouch2typ.pl}.
 @end table
 
 @noindent
@@ -783,17 +787,43 @@ about it, by writing an email to @email{bug-gtypist@@gnu.org}.
 @node How to contribute new lessons, Emacs mode for editing gtypist-lessons, Supplied lessons, Top
 @chapter How to contribute new lessons
 
-This chapter has not been written yet. It will give guidelines
-for supporting a new keyboard and/or language, though all the
-needed technical details are already given in this manual. 
+@c This chapter has not been written yet. It will give guidelines
+@c for supporting a new keyboard and/or language, though all the
+@c needed technical details are already given in this manual. 
+
+A very easy way to write lessons is to write them in the format
+that @command{ktouch} uses, and then convert it to a gtypist lesson
+using @command{tools/ktouch2typ.pl}. This will take care of writing
+some loops, ``jump-tables'' and a menu. 
+
+The ktouch-format consists only of lessons, which are preceded by
+their names, and separated by blank lines and/or comments (# at the
+beginning of the line). So the first non-blank, non-comment line in
+the file is the name of the first lesson, and the first lesson
+consists of all the lines up to the next comment or blank line. After
+the separator (comment or blank line) the name of the second lesson
+follows and so on.
+
+Once you are done, use @command{tools/ktouch2typ.pl} to convert the
+file: @samp{ktouch2typ.pl lesson.ktouch} converts @file{lesson.ktouch}
+to @file{lesson.typ}. It is important that the input-file ends in
+``.ktouch'', otherwise @command{ktouch2typ.pl} will skip it. Warning:
+this will overwrite @file{lesson.typ} without asking you !
+
+You can customize the number of lines that @command{ktouch2typ.pl}
+uses for each drill by modifying the relevant variable in
+@file{tools/ktouch2typ.pl}.
+
+Obviously, the disadvantage of this is that you cannot make use of all
+of gtypist's features.
 
 @node Emacs mode for editing gtypist-lessons, Technical Information, How to contribute new lessons, Top
 @chapter Emacs mode for editing gtypist-lessons
 
 gtypist now comes with an Emacs major-mode which does
 syntax-highlighting, indentation and has some convenience commands for
-things like counting labels as well as a goto-label-command, and
-inserting properly centered banners, special comments and a bit more.
+counting labels, a goto-label-command, inserting
+properly centered banners, special comments and a bit more.
 
 Copy this file from @file{tools/gtypist-mode.el}
 (or @file{/usr/share/doc/gtypist} if you are using the debian package) to
