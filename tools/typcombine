@@ -151,7 +151,8 @@ END	{
   printf(" :\"info gtypist\" (or \"info '(gtypist)'\" if that doesn't work),\n");
   printf(" :or by loading \"gtypist.htm\" in your browser (DOS).\n");
   printf(" :\n");
-  printf(" : If you have comments, suggestions or bug-reports, please write to bug-gtypist@gnu.org.\n");
+  printf(" :If you have comments, suggestions or bug-reports,\n");
+  printf(" :please write to bug-gtypist@gnu.org.\n");
   printf("G:__SERIESMENU\n");
 
 # TODO: find sth like "abort"
@@ -247,6 +248,6 @@ END	{
 }
 
 # Local Variables:
-# compile-command: "(cd ../lessons && gawk -f ../tools/typcombine ?.typ > gtypist.typ)"
+# compile-command: "(cd ../lessons && gawk -f ../tools/typcombine q.typ r.typ t.typ v.typ u.typ d.typ m.typ s.typ n.typ > gtypist.typ)"
 # truncate-lines: t
 # End:
