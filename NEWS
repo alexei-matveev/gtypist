@@ -3,6 +3,15 @@
 
 	See the `ChangeLog' and `THANKS' files for details
 	about changes and contributors.
+
+Version 2.4.1 - November/2001
+
+	- documentation: fix some TODOs, shorten the node-names
+	and add descriptions in	menus, remove node "Technical Information"
+	and place its children on top-level and small markup changes
+	- gtypist-mode.el now works with XEmacs as well (because of this,
+	gtypist-mode-goto-label is now bound to C-c M-g)
+	- VIM Syntax highlighting: tools/gtypist.vim
  
 Version 2.4 - September/2001
 

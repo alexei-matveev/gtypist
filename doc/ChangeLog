@@ -7,8 +7,8 @@
 	it contains two subnodes that are completely unrelated (Environment
 	Variables and Known bugs); put the two subnodes in the toplevel
 	menu instead
-	* gtypist.texi (Distribution): use @ instead of @emph because
-	@emph results in "_Primary distribution site_" (use @asis instead)
+	* gtypist.texi (Distribution): use @asis instead of @emph because
+	@emph results in "_Primary distribution site_"
 
 2001-10-20  Felix Natter  <f.natter@ndh.net>
 
