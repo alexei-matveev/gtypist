@@ -1,5 +1,5 @@
-Dies ist gtypist.info, hergestellt von Makeinfo Version 4.0 aus
-gtypist.texinfo.
+Dies ist doc/gtypist.info, hergestellt von Makeinfo Version 4.0 aus
+doc/gtypist.texinfo.
 
 INFO-DIR-SECTION Education
 START-INFO-DIR-ENTRY
@@ -1006,7 +1006,7 @@ History of GNU Typist
 
    * Since 1997, Ben Armstrong <synrg@sanctuary.nslug.ns.ca> has helped
      by fixing bugs and maintaining a Debian package (see
-     <http://packages.debian.org/typist>).
+     <http://packages.debian.org/gtypist>).
 
    * In 2000, Vladimir Támara <vtamara@users.sourceforge.net> and Igor
      Támara <ikks@users.sourceforge.net> became the maintainers of the
@@ -1024,20 +1024,20 @@ History of GNU Typist
 
 
 Tag Table:
-Node: Top215
-Node: Distribution898
-Node: Copying1787
-Node: Introduction20942
-Node: Invoking23203
-Node: Script files and commands26892
-Node: Supplied lessons32434
-Node: How to contribute new lessons33919
-Node: Ktouch-lessons34246
-Node: Create drills from fortune36498
-Node: Emacs mode for editing gtypist-lessons37210
-Node: Technical Information39475
-Node: Environment Variables39706
-Node: Errors and omissions41811
-Node: History42528
+Node: Top223
+Node: Distribution906
+Node: Copying1795
+Node: Introduction20950
+Node: Invoking23211
+Node: Script files and commands26900
+Node: Supplied lessons32442
+Node: How to contribute new lessons33927
+Node: Ktouch-lessons34254
+Node: Create drills from fortune36506
+Node: Emacs mode for editing gtypist-lessons37218
+Node: Technical Information39483
+Node: Environment Variables39714
+Node: Errors and omissions41819
+Node: History42536
 
 End Tag Table
