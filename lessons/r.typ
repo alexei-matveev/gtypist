@@ -1452,71 +1452,20 @@ G:_R_S_R14
 # Lesson series R menu
 #------------------------------------------------------------------------------
 *:_R_MENU
-*:_R_MENU_PAGE0
-B:                 Lesson selection menu - series R [page 1 of 2]
-K:1:_R_M_R1
-K:2:_R_M_R2
-K:3:_R_M_R3
-K:4:_R_M_R4
-K:5:_R_M_R5
-K:6:_R_M_R6
-K:7:_R_M_R7
-K:8:_R_M_R8
-K:9:_R_M_R9
-K:10:_R_M_R10
-K:11:_R_MENU_PAGE1
-K:12:_R_QEXIT
-T:The R series contains the following 14 lessons:
- :
- :        Fkey 1 - Lesson R1     Practise
- :        Fkey 2 - Lesson R2     Practise
- :        Fkey 3 - Lesson R3     Practise
- :        Fkey 4 - Lesson R4     Practise
- :        Fkey 5 - Lesson R5     Practise
- :        Fkey 6 - Lesson R6     Practise
- :        Fkey 7 - Lesson R7     Practise
- :        Fkey 8 - Lesson R8     Practise
- :        Fkey 9 - Lesson R9     Practise
- :        Fkey10 - Lesson R10    Practise
- :
- :        Fkey11 - Next menu page...
- :        Fkey12 - Leave this lesson series
-Q: Please select a lesson, or Fkey12 to exit 
-G:_R_MENU_PAGE0
-*:_R_MENU_PAGE1
-B:                 Lesson selection menu - series R [page 2 of 2]
-K:1:_R_M_R11
-K:2:_R_M_R12
-K:3:_R_M_R13
-K:4:_R_M_R14
-K:5:NULL
-K:6:NULL
-K:7:NULL
-K:8:NULL
-K:9:NULL
-K:10:NULL
-K:11:_R_MENU_PAGE0
-K:12:_R_QEXIT
-T:The R series contains the following 14 lessons:
- :
- :        Fkey 1 - Lesson R11    Practise
- :        Fkey 2 - Lesson R12    Practise
- :        Fkey 3 - Lesson R13    Practise
- :        Fkey 4 - Lesson R14    Practise
- :
- :
- :
- :
- :
- :
- :
- :        Fkey11 - First menu page...
- :        Fkey12 - Leave this lesson series
-Q: Please select a lesson, or Fkey12 to exit 
-G:_R_MENU_PAGE1
-*:_R_QEXIT
-Q: Do you want to leave this lesson series? [Y/N] ? 
-N:_R_MENU
-G:_R_EXIT
+M: UP=_EXIT "The R series contains the following 14 lessons"
+ :_R_M_R1  "Lesson R1     Practise"
+ :_R_M_R2  "Lesson R2     Practise"
+ :_R_M_R3  "Lesson R3     Practise"
+ :_R_M_R4  "Lesson R4     Practise"
+ :_R_M_R5  "Lesson R5     Practise"
+ :_R_M_R6  "Lesson R6     Practise"
+ :_R_M_R7  "Lesson R7     Practise"
+ :_R_M_R8  "Lesson R8     Practise"
+ :_R_M_R9  "Lesson R9     Practise"
+ :_R_M_R10 "Lesson R10    Practise"
+ :_R_M_R11 "Lesson R11    Practise"
+ :_R_M_R12 "Lesson R12    Practise"
+ :_R_M_R13 "Lesson R13    Practise"
+ :_R_M_R14 "Lesson R14    Practise"
 *:_R_EXIT
 #------------------------------------------------------------------------------

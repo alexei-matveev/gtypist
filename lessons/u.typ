@@ -765,71 +765,20 @@ G:_U_S_U13
 # Lesson series U menu
 #------------------------------------------------------------------------------
 *:_U_MENU
-*:_U_MENU_PAGE0
-B:                 Lesson selection menu - series U [page 1 of 2]
-K:1:_U_M_U1
-K:2:_U_M_U2
-K:3:_U_M_U3
-K:4:_U_M_U4
-K:5:_U_M_U5
-K:6:_U_M_U6
-K:7:_U_M_U7
-K:8:_U_M_U8
-K:9:_U_M_U9
-K:10:_U_M_U10
-K:11:_U_MENU_PAGE1
-K:12:_U_QEXIT
-T:The U series contains the following 13 lessons:
- :
- :        Fkey 1 - Lesson U1     Home row
- :        Fkey 2 - Lesson U2     Other letters
- :        Fkey 3 - Lesson U3     Shift numerals figs
- :        Fkey 4 - Lesson U4     Practise
- :        Fkey 5 - Lesson U5     Drill on S Combinations
- :        Fkey 6 - Lesson U6     Drill on R Combinations
- :        Fkey 7 - Lesson U7     Drill on L Combinations
- :        Fkey 8 - Lesson U8     Drill on D-T Combinations
- :        Fkey 9 - Lesson U9     Drill on M-N Combinations
- :        Fkey10 - Lesson U10    Drill on com-con Combinations
- :
- :        Fkey11 - Next menu page...
- :        Fkey12 - Leave this lesson series
-Q: Please select a lesson, or Fkey12 to exit 
-G:_U_MENU_PAGE0
-*:_U_MENU_PAGE1
-B:                 Lesson selection menu - series U [page 2 of 2]
-K:1:_U_M_U11
-K:2:_U_M_U12
-K:3:_U_M_U13
-K:4:NULL
-K:5:NULL
-K:6:NULL
-K:7:NULL
-K:8:NULL
-K:9:NULL
-K:10:NULL
-K:11:_U_MENU_PAGE0
-K:12:_U_QEXIT
-T:The U series contains the following 13 lessons:
- :
- :        Fkey 1 - Lesson U11    Drill on sion-tion Combinations
- :        Fkey 2 - Lesson U12    Drill on ter, ther, tor, ture, ster, der
- :        Fkey 3 - Lesson U13    Drill on qu, ch, wh, dw, sw, tw, de, des,
- :                                 dis, ex, self, tran, cial, cious,
- :                                 ology, ship, tive
- :
- :
- :
- :
- :
- :
- :        Fkey11 - First menu page...
- :        Fkey12 - Leave this lesson series
-Q: Please select a lesson, or Fkey12 to exit 
-G:_U_MENU_PAGE1
-*:_U_QEXIT
-Q: Do you want to leave this lesson series? [Y/N] ? 
-N:_U_MENU
-G:_U_EXIT
+M: UP=_EXIT "The U series contains the following 13 lessons"
+ :_U_M_U1  "Lesson U1     Home row"
+ :_U_M_U2  "Lesson U2     Other letters"
+ :_U_M_U3  "Lesson U3     Shift numerals figs"
+ :_U_M_U4  "Lesson U4     Practise"
+ :_U_M_U5  "Lesson U5     Drill on S Combinations"
+ :_U_M_U6  "Lesson U6     Drill on R Combinations"
+ :_U_M_U7  "Lesson U7     Drill on L Combinations"
+ :_U_M_U8  "Lesson U8     Drill on D-T Combinations"
+ :_U_M_U9  "Lesson U9     Drill on M-N Combinations"
+ :_U_M_U10 "Lesson U10    Drill on com-con Combinations"
+ :_U_M_U11 "Lesson U11    Drill on sion-tion Combinations"
+ :_U_M_U12 "Lesson U12    Drill on ter, ther, tor, ture, ster, der"
+ :_U_M_U13 "Lesson U13    Drill on qu, ch, wh, dw, sw, tw, de, des, dis, ex,"
+ :_U_M_U13 "Lesson U13    self, tran, cial, cious, ology, ship, tive"
 *:_U_EXIT
 #------------------------------------------------------------------------------

@@ -1821,71 +1821,22 @@ G:_T_S_T16
 # Lesson series T menu
 #------------------------------------------------------------------------------
 *:_T_MENU
-*:_T_MENU_PAGE0
-B:                 Lesson selection menu - series T [page 1 of 2]
-K:1:_T_M_T1
-K:2:_T_M_T2
-K:3:_T_M_T3
-K:4:_T_M_T4
-K:5:_T_M_T5
-K:6:_T_M_T6
-K:7:_T_M_T7
-K:8:_T_M_T8
-K:9:_T_M_T9
-K:10:_T_M_T10
-K:11:_T_MENU_PAGE1
-K:12:_T_QEXIT
-T:The T series contains the following 16 lessons:
- :
- :        Fkey 1 - Lesson T1     a s d f g h j k l ;
- :        Fkey 2 - Lesson T2     e g h ,
- :        Fkey 3 - Lesson T3     i r . shift
- :        Fkey 4 - Lesson T4     o p shift ?
- :        Fkey 5 - Lesson T5     t n :
- :        Fkey 6 - Lesson T6     b u /
- :        Fkey 7 - Lesson T7     c m -
- :        Fkey 8 - Lesson T8     w y v backspace
- :        Fkey 9 - Lesson T9     q x z
- :        Fkey10 - Lesson T10    1 2 3 4
- :
- :        Fkey11 - Next menu page...
- :        Fkey12 - Leave this lesson series
-Q: Please select a lesson, or Fkey12 to exit 
-G:_T_MENU_PAGE0
-*:_T_MENU_PAGE1
-B:                 Lesson selection menu - series T [page 2 of 2]
-K:1:_T_M_T11
-K:2:_T_M_T12
-K:3:_T_M_T13
-K:4:_T_M_T14
-K:5:_T_M_T15
-K:6:_T_M_T16
-K:7:NULL
-K:8:NULL
-K:9:NULL
-K:10:NULL
-K:11:_T_MENU_PAGE0
-K:12:_T_QEXIT
-T:The T series contains the following 16 lessons:
- :
- :        Fkey 1 - Lesson T11    7 8 9 0
- :        Fkey 2 - Lesson T12    5 6 ( )
- :        Fkey 3 - Lesson T13
- :        Fkey 4 - Lesson T14    ' " !
- :        Fkey 5 - Lesson T15    = * + > < ^
- :        Fkey 6 - Lesson T16    @ # $ % &
- :
- :
- :
- :
- :
- :        Fkey11 - First menu page...
- :        Fkey12 - Leave this lesson series
-Q: Please select a lesson, or Fkey12 to exit 
-G:_T_MENU_PAGE1
-*:_T_QEXIT
-Q: Do you want to leave this lesson series? [Y/N] ? 
-N:_T_MENU
-G:_T_EXIT
+M: UP=_EXIT "The T series contains the following 16 lessons"
+ :_T_M_T1  "Lesson T1     a s d f g h j k l ;"
+ :_T_M_T2  "Lesson T2     e g h ,"
+ :_T_M_T3  "Lesson T3     i r . shift"
+ :_T_M_T4  "Lesson T4     o p shift ?"
+ :_T_M_T5  "Lesson T5     t n :"
+ :_T_M_T6  "Lesson T6     b u /"
+ :_T_M_T7  "Lesson T7     c m -"
+ :_T_M_T8  "Lesson T8     w y v backspace"
+ :_T_M_T9  "Lesson T9     q x z"
+ :_T_M_T10 "Lesson T10    1 2 3 4"
+ :_T_M_T11 "Lesson T11    7 8 9 0"
+ :_T_M_T12 "Lesson T12    5 6 ( )"
+ :_T_M_T13 "Lesson T13"
+ :_T_M_T14 "Lesson T14    ' " !"
+ :_T_M_T15 "Lesson T15    = * + > < ^"
+ :_T_M_T16 "Lesson T16    @ # $ % &"
 *:_T_EXIT
 #------------------------------------------------------------------------------

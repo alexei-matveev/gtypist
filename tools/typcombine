@@ -27,6 +27,8 @@
 # - add two menu-items: "more lessons" (Fkey10) and "help"/"manual" (Fkey 11)
 # - add ';' after each command to make emacs indentation work
 # - add the "(function-key) help" and series descriptions
+# Felix Natter on Mon Mar 31 20:15:05 2003:
+# - use M:
 
 BEGIN 	{
 # some initializations

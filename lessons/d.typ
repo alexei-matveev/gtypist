@@ -1041,71 +1041,20 @@ G:_D_S_D14
 # Lesson series D menu
 #------------------------------------------------------------------------------
 *:_D_MENU
-*:_D_MENU_PAGE0
-B:                 Lesson selection menu - series D [page 1 of 2]
-K:1:_D_M_D1
-K:2:_D_M_D2
-K:3:_D_M_D3
-K:4:_D_M_D4
-K:5:_D_M_D5
-K:6:_D_M_D6
-K:7:_D_M_D7
-K:8:_D_M_D8
-K:9:_D_M_D9
-K:10:_D_M_D10
-K:11:_D_MENU_PAGE1
-K:12:_D_QEXIT
-T:The D series contains the following 14 lessons:
- :
- :        Fkey 1 - Lesson D1     The home row
- :        Fkey 2 - Lesson D2     Learning the Shift Key
- :        Fkey 3 - Lesson D3     Home Row and the Period
- :        Fkey 4 - Lesson D4     Upper Row and Essential Punctuation
- :        Fkey 5 - Lesson D5     Review
- :        Fkey 6 - Lesson D6     Learning the Lower Row
- :        Fkey 7 - Lesson D7     Practise
- :        Fkey 8 - Lesson D8     Practise
- :        Fkey 9 - Lesson D9     Practise
- :        Fkey10 - Lesson D10    Practise
- :
- :        Fkey11 - Next menu page...
- :        Fkey12 - Leave this lesson series
-Q: Please select a lesson, or Fkey12 to exit 
-G:_D_MENU_PAGE0
-*:_D_MENU_PAGE1
-B:                 Lesson selection menu - series D [page 2 of 2]
-K:1:_D_M_D11
-K:2:_D_M_D12
-K:3:_D_M_D13
-K:4:_D_M_D14
-K:5:NULL
-K:6:NULL
-K:7:NULL
-K:8:NULL
-K:9:NULL
-K:10:NULL
-K:11:_D_MENU_PAGE0
-K:12:_D_QEXIT
-T:The D series contains the following 14 lessons:
- :
- :        Fkey 1 - Lesson D11    Practise
- :        Fkey 2 - Lesson D12    Practise
- :        Fkey 3 - Lesson D13    Frequent words
- :        Fkey 4 - Lesson D14    Alphabetic sentences
- :
- :
- :
- :
- :
- :
- :
- :        Fkey11 - First menu page...
- :        Fkey12 - Leave this lesson series
-Q: Please select a lesson, or Fkey12 to exit 
-G:_D_MENU_PAGE1
-*:_D_QEXIT
-Q: Do you want to leave this lesson series? [Y/N] ? 
-N:_D_MENU
-G:_D_EXIT
+M: UP=_EXIT "The D series contains the following 14 lessons"
+ :_D_M_D1  "Lesson D1     The home row"
+ :_D_M_D2  "Lesson D2     Learning the Shift Key"
+ :_D_M_D3  "Lesson D3     Home Row and the Period"
+ :_D_M_D4  "Lesson D4     Upper Row and Essential Punctuation"
+ :_D_M_D5  "Lesson D5     Review"
+ :_D_M_D6  "Lesson D6     Learning the Lower Row"
+ :_D_M_D7  "Lesson D7     Practise"
+ :_D_M_D8  "Lesson D8     Practise"
+ :_D_M_D9  "Lesson D9     Practise"
+ :_D_M_D10 "Lesson D10    Practise"
+ :_D_M_D11 "Lesson D11    Practise"
+ :_D_M_D12 "Lesson D12    Practise"
+ :_D_M_D13 "Lesson D13    Frequent words"
+ :_D_M_D14 "Lesson D14    Alphabetic sentences"
 *:_D_EXIT
 #------------------------------------------------------------------------------

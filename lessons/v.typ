@@ -1884,71 +1884,26 @@ G:_V_S_V19
 # Lesson series V menu
 #------------------------------------------------------------------------------
 *:_V_MENU
-*:_V_MENU_PAGE0
-B:                 Lesson selection menu - series V [page 1 of 2]
-K:1:_V_M_V1
-K:2:_V_M_V2
-K:3:_V_M_V3
-K:4:_V_M_V4
-K:5:_V_M_V5
-K:6:_V_M_V6
-K:7:_V_M_V7
-K:8:_V_M_V8
-K:9:_V_M_V9
-K:10:_V_M_V10
-K:11:_V_MENU_PAGE1
-K:12:_V_QEXIT
-T:The V series contains the following 19 lessons:
- :
- :        Fkey 1 - Lesson V1     R F U J
- :        Fkey 2 - Lesson V2     D K E I
- :        Fkey 3 - Lesson V3     T Y G H
- :        Fkey 4 - Lesson V4     S L W O
- :        Fkey 5 - Lesson V5     A ; Q P
- :        Fkey 6 - Lesson V6     Shift Keys for Capitalization
- :        Fkey 7 - Lesson V7     Shift Lock and :
- :        Fkey 8 - Lesson V8     Introducing the Period
- :        Fkey 9 - Lesson V9     V and M
- :        Fkey10 - Lesson V10    B and N
- :
- :        Fkey11 - Next menu page...
- :        Fkey12 - Leave this lesson series
-Q: Please select a lesson, or Fkey12 to exit 
-G:_V_MENU_PAGE0
-*:_V_MENU_PAGE1
-B:                 Lesson selection menu - series V [page 2 of 2]
-K:1:_V_M_V11
-K:2:_V_M_V12
-K:3:_V_M_V13
-K:4:_V_M_V14
-K:5:_V_M_V15
-K:6:_V_M_V16
-K:7:_V_M_V17
-K:8:_V_M_V18
-K:9:_V_M_V19
-K:10:NULL
-K:11:_V_MENU_PAGE0
-K:12:_V_QEXIT
-T:The V series contains the following 19 lessons:
- :
- :        Fkey 1 - Lesson V11    C and Comma
- :        Fkey 2 - Lesson V12    X and .
- :        Fkey 3 - Lesson V13    Z and /
- :        Fkey 4 - Lesson V14    The Question Mark
- :        Fkey 5 - Lesson V15    1, 4, 5, 6, 7
- :        Fkey 6 - Lesson V16    3 and 8
- :        Fkey 7 - Lesson V17    2 and 9
- :        Fkey 8 - Lesson V18    0 and the Hyphen
- :        Fkey 9 - Lesson V19    Practise
- :
- :
- :        Fkey11 - First menu page...
- :        Fkey12 - Leave this lesson series
-Q: Please select a lesson, or Fkey12 to exit 
-G:_V_MENU_PAGE1
-*:_V_QEXIT
-Q: Do you want to leave this lesson series? [Y/N] ? 
-N:_V_MENU
+M: UP=_EXIT "The V series contains the following 19 lessons"
+ :_V_M_V1  "Lesson V1     R F U J"
+ :_V_M_V2  "Lesson V2     D K E I"
+ :_V_M_V3  "Lesson V3     T Y G H"
+ :_V_M_V4  "Lesson V4     S L W O"
+ :_V_M_V5  "Lesson V5     A ; Q P"
+ :_V_M_V6  "Lesson V6     Shift Keys for Capitalization"
+ :_V_M_V7  "Lesson V7     Shift Lock and :"
+ :_V_M_V8  "Lesson V8     Introducing the Period"
+ :_V_M_V9  "Lesson V9     V and M"
+ :_V_M_V10 "Lesson V10    B and N"
+ :_V_M_V11 "Lesson V11    C and Comma"
+ :_V_M_V12 "Lesson V12    X and ."
+ :_V_M_V13 "Lesson V13    Z and /"
+ :_V_M_V14 "Lesson V14    The Question Mark"
+ :_V_M_V15 "Lesson V15    1, 4, 5, 6, 7"
+ :_V_M_V16 "Lesson V16    3 and 8"
+ :_V_M_V17 "Lesson V17    2 and 9"
+ :_V_M_V18 "Lesson V18    0 and the Hyphen"
+ :_V_M_V19 "Lesson V19    Practise"
 G:_V_EXIT
 *:_V_EXIT
 #------------------------------------------------------------------------------

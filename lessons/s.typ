@@ -506,40 +506,10 @@ G:_S_S_S4
 # Lesson series S menu
 #------------------------------------------------------------------------------
 *:_S_MENU
-*:_S_MENU_PAGE0
-B:                 Lesson selection menu - series S
-K:1:_S_M_S1
-K:2:_S_M_S2
-K:3:_S_M_S3
-K:4:_S_M_S4
-K:5:NULL
-K:6:NULL
-K:7:NULL
-K:8:NULL
-K:9:NULL
-K:10:NULL
-K:11:NULL
-K:12:_S_QEXIT
-T:The S series contains the following 4 lessons:
- :
- :        Fkey 1 - Lesson S1     Speed tests
- :        Fkey 2 - Lesson S2     Speed tests
- :        Fkey 3 - Lesson S3     Speed tests
- :        Fkey 4 - Lesson S4     Speed tests
- :
- :
- :
- :
- :
- :
- :
- :
- :        Fkey12 - Leave this lesson series
-Q: Please select a lesson, or Fkey12 to exit 
-G:_S_MENU_PAGE0
-*:_S_QEXIT
-Q: Do you want to leave this lesson series? [Y/N] ? 
-N:_S_MENU
-G:_S_EXIT
+M: UP=_EXIT "The S series contains the following 4 lessons"
+ :_S_M_S1 "Lesson S1     Speed tests"
+ :_S_M_S2 "Lesson S2     Speed tests"
+ :_S_M_S3 "Lesson S3     Speed tests"
+ :_S_M_S4 "Lesson S4     Speed tests"
 *:_S_EXIT
 #------------------------------------------------------------------------------

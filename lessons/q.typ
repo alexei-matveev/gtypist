@@ -567,40 +567,11 @@ G:_Q_S_Q5
 # Lesson series Q menu
 #------------------------------------------------------------------------------
 *:_Q_MENU
-*:_Q_MENU_PAGE0
-B:                 Lesson selection menu - series Q
-K:1:_Q_M_Q1
-K:2:_Q_M_Q2
-K:3:_Q_M_Q3
-K:4:_Q_M_Q4
-K:5:_Q_M_Q5
-K:6:NULL
-K:7:NULL
-K:8:NULL
-K:9:NULL
-K:10:NULL
-K:11:NULL
-K:12:_Q_QEXIT
-T:The Q series contains the following 5 lessons:
- :
- :        Fkey 1 - Lesson Q1     a s d f g h j k l ;
- :        Fkey 2 - Lesson Q2     h g o u n . t
- :        Fkey 3 - Lesson Q3     y r c , ? : p
- :        Fkey 4 - Lesson Q4     m w v z x b q
- :        Fkey 5 - Lesson Q5     ' -
- :
- :
- :
- :
- :
- :
- :
- :        Fkey12 - Leave this lesson series
-Q: Please select a lesson, or Fkey12 to exit 
-G:_Q_MENU_PAGE0
-*:_Q_QEXIT
-Q: Do you want to leave this lesson series? [Y/N] ? 
-N:_Q_MENU
-G:_Q_EXIT
+M: UP=_EXIT "The Q series contains the following 5 lessons"
+ :_Q_M_Q1 "Lesson Q1     a s d f g h j k l ;"
+ :_Q_M_Q2 "Lesson Q2     h g o u n . t"
+ :_Q_M_Q3 "Lesson Q3     y r c , ? : p"
+ :_Q_M_Q4 "Lesson Q4     m w v z x b q"
+ :_Q_M_Q5 "Lesson Q5     ' -"
 *:_Q_EXIT
 #------------------------------------------------------------------------------

@@ -1,3 +1,8 @@
+2003-04-05  Felix Natter  <fnatter@gmx.net>
+
+	* lessons/: v.typ, u.typ, t.typ, s.typ, r.typ, q.typ, n.typ, m.typ,
+	d.typ: move to M:
+
 2003-03-31  Felix Natter  <fnatter@gmx.net>
 
 	* cursmenu.c (do_menu): parse UP=<LABEL> as the first thing in M:

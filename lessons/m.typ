@@ -1091,71 +1091,17 @@ G:_M_S_M11
 # Lesson series M menu
 #------------------------------------------------------------------------------
 *:_M_MENU
-*:_M_MENU_PAGE0
-B:                 Lesson selection menu - series M [page 1 of 2]
-K:1:_M_M_M1
-K:2:_M_M_M2
-K:3:_M_M_M3
-K:4:_M_M_M4
-K:5:_M_M_M5
-K:6:_M_M_M6
-K:7:_M_M_M7
-K:8:_M_M_M8
-K:9:_M_M_M9
-K:10:_M_M_M10
-K:11:_M_MENU_PAGE1
-K:12:_M_QEXIT
-T:The M series contains the following 11 lessons:
- :
- :        Fkey 1 - Lesson M1     Practise
- :        Fkey 2 - Lesson M2     Practise
- :        Fkey 3 - Lesson M3     Practise
- :        Fkey 4 - Lesson M4     Practise
- :        Fkey 5 - Lesson M5     Practise
- :        Fkey 6 - Lesson M6     Practise
- :        Fkey 7 - Lesson M7     Practise
- :        Fkey 8 - Lesson M8     Practise
- :        Fkey 9 - Lesson M9     Practise
- :        Fkey10 - Lesson M10    Practise
- :
- :        Fkey11 - Next menu page...
- :        Fkey12 - Leave this lesson series
-Q: Please select a lesson, or Fkey12 to exit 
-G:_M_MENU_PAGE0
-*:_M_MENU_PAGE1
-B:                 Lesson selection menu - series M [page 2 of 2]
-K:1:_M_M_M11
-K:2:NULL
-K:3:NULL
-K:4:NULL
-K:5:NULL
-K:6:NULL
-K:7:NULL
-K:8:NULL
-K:9:NULL
-K:10:NULL
-K:11:_M_MENU_PAGE0
-K:12:_M_QEXIT
-T:The M series contains the following 11 lessons:
- :
- :        Fkey 1 - Lesson M11    Practise
- :
- :
- :
- :
- :
- :
- :
- :
- :
- :
- :        Fkey11 - First menu page...
- :        Fkey12 - Leave this lesson series
-Q: Please select a lesson, or Fkey12 to exit 
-G:_M_MENU_PAGE1
-*:_M_QEXIT
-Q: Do you want to leave this lesson series? [Y/N] ? 
-N:_M_MENU
-G:_M_EXIT
+M: UP=_EXIT "The M series contains the following 11 lessons"
+ :_M_M_M1  "Lesson M1     Practise"
+ :_M_M_M2  "Lesson M2     Practise"
+ :_M_M_M3  "Lesson M3     Practise"
+ :_M_M_M4  "Lesson M4     Practise"
+ :_M_M_M5  "Lesson M5     Practise"
+ :_M_M_M6  "Lesson M6     Practise"
+ :_M_M_M7  "Lesson M7     Practise"
+ :_M_M_M8  "Lesson M8     Practise"
+ :_M_M_M9  "Lesson M9     Practise"
+ :_M_M_M10 "Lesson M10    Practise"
+ :_M_M_M11 "Lesson M11    Practise"
 *:_M_EXIT
 #------------------------------------------------------------------------------

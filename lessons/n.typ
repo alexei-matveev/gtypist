@@ -426,40 +426,9 @@ G:_N_S_N3
 # Lesson series N menu
 #------------------------------------------------------------------------------
 *:_N_MENU
-*:_N_MENU_PAGE0
-B:                 Lesson selection menu - series N
-K:1:_N_M_N1
-K:2:_N_M_N2
-K:3:_N_M_N3
-K:4:NULL
-K:5:NULL
-K:6:NULL
-K:7:NULL
-K:8:NULL
-K:9:NULL
-K:10:NULL
-K:11:NULL
-K:12:_N_QEXIT
-T:The N series contains the following 3 lessons:
- :
- :        Fkey 1 - Lesson N1     4 5 . 6 1
- :        Fkey 2 - Lesson N2     2 3 0 8 9 7
- :        Fkey 3 - Lesson N3     Practise
- :
- :
- :
- :
- :
- :
- :
- :
- :
- :        Fkey12 - Leave this lesson series
-Q: Please select a lesson, or Fkey12 to exit 
-G:_N_MENU_PAGE0
-*:_N_QEXIT
-Q: Do you want to leave this lesson series? [Y/N] ? 
-N:_N_MENU
-G:_N_EXIT
+M: UP=_EXIT "The N series contains the following 3 lessons"
+ :_N_M_N1 "Lesson N1     4 5 . 6 1"
+ :_N_M_N2 "Lesson N2     2 3 0 8 9 7"
+ :_N_M_N3 "Lesson N3     Practise"
 *:_N_EXIT
 #------------------------------------------------------------------------------
