@@ -1,3 +1,8 @@
+2002-04-07  Felix Natter  <fnatter@gmx.net>
+
+	* gtypist.c (fatal_error): write "\n" if line==NULL
+	(so that there is always a '\n' at the end of the error-message)
+
 2002-04-05  Felix Natter  <fnatter@gmx.net>
 
 	* gtypist.c: add /* xgettext: no-c-format */ comments so that

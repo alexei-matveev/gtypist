@@ -331,6 +331,8 @@ fatal_error( char *message, char *line ) {
 	   message );
   if ( line != NULL )
     fprintf( stderr, ":\n%s\n", line );
+  else
+    fprintf( stderr, "\n" );
   exit( 1 );
 }
 
