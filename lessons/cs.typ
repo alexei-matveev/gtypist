@@ -573,23 +573,18 @@ G:_Q_MENU
 
 *:_Q_M_Q1
 B:                            Lekce Q1
-K:12:_Q_MENU
 G:_Q_S_Q1
 *:_Q_M_Q2
 B:                            Lekce Q2
-K:12:_Q_MENU
 G:_Q_S_Q2
 *:_Q_M_Q3
 B:                            Lekce Q3
-K:12:_Q_MENU
 G:_Q_S_Q3
 *:_Q_M_Q4
 B:                            Lekce Q4
-K:12:_Q_MENU
 G:_Q_S_Q4
 *:_Q_M_Q5
 B:                            Lekce Q5
-K:12:_Q_MENU
 G:_Q_S_Q5
 #------------------------------------------------------------------------------
 # Lekce series Q menu
@@ -2167,59 +2162,45 @@ G:_R_MENU
 
 *:_R_M_R1
 B:                            Lekce R1
-K:12:_R_MENU
 G:_R_S_R1
 *:_R_M_R2
 B:                            Lekce R2
-K:12:_R_MENU
 G:_R_S_R2
 *:_R_M_R3
 B:                            Lekce R3
-K:12:_R_MENU
 G:_R_S_R3
 *:_R_M_R4
 B:                            Lekce R4
-K:12:_R_MENU
 G:_R_S_R4
 *:_R_M_R5
 B:                            Lekce R5
-K:12:_R_MENU
 G:_R_S_R5
 *:_R_M_R6
 B:                            Lekce R6
-K:12:_R_MENU
 G:_R_S_R6
 *:_R_M_R7
 B:                            Lekce R7
-K:12:_R_MENU
 G:_R_S_R7
 *:_R_M_R8
 B:                            Lekce R8
-K:12:_R_MENU
 G:_R_S_R8
 *:_R_M_R9
 B:                            Lekce R9
-K:12:_R_MENU
 G:_R_S_R9
 *:_R_M_R10
 B:                           Lekce R10
-K:12:_R_MENU
 G:_R_S_R10
 *:_R_M_R11
 B:                           Lekce R11
-K:12:_R_MENU
 G:_R_S_R11
 *:_R_M_R12
 B:                           Lekce R12
-K:12:_R_MENU
 G:_R_S_R12
 *:_R_M_R13
 B:                           Lekce R13
-K:12:_R_MENU
 G:_R_S_R13
 *:_R_M_R14
 B:                           Lekce R14
-K:12:_R_MENU
 G:_R_S_R14
 #------------------------------------------------------------------------------
 # Lekce series R menu
@@ -4140,67 +4121,51 @@ G:_T_MENU
 
 *:_T_M_T1
 B:                            Lekce T1
-K:12:_T_MENU
 G:_T_S_T1
 *:_T_M_T2
 B:                            Lekce T2
-K:12:_T_MENU
 G:_T_S_T2
 *:_T_M_T3
 B:                            Lekce T3
-K:12:_T_MENU
 G:_T_S_T3
 *:_T_M_T4
 B:                            Lekce T4
-K:12:_T_MENU
 G:_T_S_T4
 *:_T_M_T5
 B:                            Lekce T5
-K:12:_T_MENU
 G:_T_S_T5
 *:_T_M_T6
 B:                            Lekce T6
-K:12:_T_MENU
 G:_T_S_T6
 *:_T_M_T7
 B:                            Lekce T7
-K:12:_T_MENU
 G:_T_S_T7
 *:_T_M_T8
 B:                            Lekce T8
-K:12:_T_MENU
 G:_T_S_T8
 *:_T_M_T9
 B:                            Lekce T9
-K:12:_T_MENU
 G:_T_S_T9
 *:_T_M_T10
 B:                           Lekce T10
-K:12:_T_MENU
 G:_T_S_T10
 *:_T_M_T11
 B:                           Lekce T11
-K:12:_T_MENU
 G:_T_S_T11
 *:_T_M_T12
 B:                           Lekce T12
-K:12:_T_MENU
 G:_T_S_T12
 *:_T_M_T13
 B:                           Lekce T13
-K:12:_T_MENU
 G:_T_S_T13
 *:_T_M_T14
 B:                           Lekce T14
-K:12:_T_MENU
 G:_T_S_T14
 *:_T_M_T15
 B:                           Lekce T15
-K:12:_T_MENU
 G:_T_S_T15
 *:_T_M_T16
 B:                           Lekce T16
-K:12:_T_MENU
 G:_T_S_T16
 #------------------------------------------------------------------------------
 # Lekce series T menu
@@ -6044,79 +6009,60 @@ G:_V_MENU
 
 *:_V_M_V1
 B:                            Lekce V1
-K:12:_V_MENU
 G:_V_S_V1
 *:_V_M_V2
 B:                            Lekce V2
-K:12:_V_MENU
 G:_V_S_V2
 *:_V_M_V3
 B:                            Lekce V3
-K:12:_V_MENU
 G:_V_S_V3
 *:_V_M_V4
 B:                            Lekce V4
-K:12:_V_MENU
 G:_V_S_V4
 *:_V_M_V5
 B:                            Lekce V5
-K:12:_V_MENU
 G:_V_S_V5
 *:_V_M_V6
 B:                            Lekce V6
-K:12:_V_MENU
 G:_V_S_V6
 *:_V_M_V7
 B:                            Lekce V7
-K:12:_V_MENU
 G:_V_S_V7
 *:_V_M_V8
 B:                            Lekce V8
-K:12:_V_MENU
 G:_V_S_V8
 *:_V_M_V9
 B:                            Lekce V9
-K:12:_V_MENU
 G:_V_S_V9
 *:_V_M_V10
 B:                           Lekce V10
-K:12:_V_MENU
 G:_V_S_V10
 *:_V_M_V11
 B:                           Lekce V11
-K:12:_V_MENU
 G:_V_S_V11
 *:_V_M_V12
 B:                           Lekce V12
-K:12:_V_MENU
 G:_V_S_V12
 *:_V_M_V13
 B:                           Lekce V13
-K:12:_V_MENU
 G:_V_S_V13
 *:_V_M_V14
 B:                           Lekce V14
-K:12:_V_MENU
 G:_V_S_V14
 *:_V_M_V15
 B:                           Lekce V15
-K:12:_V_MENU
 G:_V_S_V15
 *:_V_M_V16
 B:                           Lekce V16
-K:12:_V_MENU
 G:_V_S_V16
 *:_V_M_V17
 B:                           Lekce V17
-K:12:_V_MENU
 G:_V_S_V17
 *:_V_M_V18
 B:                           Lekce V18
-K:12:_V_MENU
 G:_V_S_V18
 *:_V_M_V19
 B:                           Lekce V19
-K:12:_V_MENU
 G:_V_S_V19
 #------------------------------------------------------------------------------
 # Lekce series V menu
@@ -6690,47 +6636,36 @@ G:_U_M_U11
 
 *:_U_M_U1
 B:                            Lekce U1
-K:12:_U_MENU
 G:_U_S_U1
 *:_U_M_U2
 B:                            Lekce U2
-K:12:_U_MENU
 G:_U_S_U2
 *:_U_M_U3
 B:                            Lekce U3
-K:12:_U_MENU
 G:_U_S_U3
 *:_U_M_U4
 B:                            Lekce U4
-K:12:_U_MENU
 G:_U_S_U4
 *:_U_M_U5
 B:                            Lekce U5
-K:12:_U_MENU
 G:_U_S_U5
 *:_U_M_U6
 B:                            Lekce U6
-K:12:_U_MENU
 G:_U_S_U6
 *:_U_M_U7
 B:                            Lekce U7
-K:12:_U_MENU
 G:_U_S_U7
 *:_U_M_U8
 B:                            Lekce U8
-K:12:_U_MENU
 G:_U_S_U8
 *:_U_M_U9
 B:                            Lekce U9
-K:12:_U_MENU
 G:_U_S_U9
 *:_U_M_U10
 B:                           Lekce U10
-K:12:_U_MENU
 G:_U_S_U10
 *:_U_M_U11
 B:                           Lekce U11
-K:12:_U_MENU
 G:_U_S_U11
 #------------------------------------------------------------------------------
 # Lekce series U menu
@@ -7962,59 +7897,45 @@ G:_D_MENU
 
 *:_D_M_D1
 B:                            Lekce D1
-K:12:_D_MENU
 G:_D_S_D1
 *:_D_M_D2
 B:                            Lekce D2
-K:12:_D_MENU
 G:_D_S_D2
 *:_D_M_D3
 B:                            Lekce D3
-K:12:_D_MENU
 G:_D_S_D3
 *:_D_M_D4
 B:                            Lekce D4
-K:12:_D_MENU
 G:_D_S_D4
 *:_D_M_D5
 B:                            Lekce D5
-K:12:_D_MENU
 G:_D_S_D5
 *:_D_M_D6
 B:                            Lekce D6
-K:12:_D_MENU
 G:_D_S_D6
 *:_D_M_D7
 B:                            Lekce D7
-K:12:_D_MENU
 G:_D_S_D7
 *:_D_M_D8
 B:                            Lekce D8
-K:12:_D_MENU
 G:_D_S_D8
 *:_D_M_D9
 B:                            Lekce D9
-K:12:_D_MENU
 G:_D_S_D9
 *:_D_M_D10
 B:                           Lekce D10
-K:12:_D_MENU
 G:_D_S_D10
 *:_D_M_D11
 B:                           Lekce D11
-K:12:_D_MENU
 G:_D_S_D11
 *:_D_M_D12
 B:                           Lekce D12
-K:12:_D_MENU
 G:_D_S_D12
 *:_D_M_D13
 B:                           Lekce D13
-K:12:_D_MENU
 G:_D_S_D13
 *:_D_M_D14
 B:                           Lekce D14
-K:12:_D_MENU
 G:_D_S_D14
 #------------------------------------------------------------------------------
 # Lekce series D menu
@@ -9097,47 +9018,36 @@ G:_M_MENU
 
 *:_M_M_M1
 B:                            Lekce M1
-K:12:_M_MENU
 G:_M_S_M1
 *:_M_M_M2
 B:                            Lekce M2
-K:12:_M_MENU
 G:_M_S_M2
 *:_M_M_M3
 B:                            Lekce M3
-K:12:_M_MENU
 G:_M_S_M3
 *:_M_M_M4
 B:                            Lekce M4
-K:12:_M_MENU
 G:_M_S_M4
 *:_M_M_M5
 B:                            Lekce M5
-K:12:_M_MENU
 G:_M_S_M5
 *:_M_M_M6
 B:                            Lekce M6
-K:12:_M_MENU
 G:_M_S_M6
 *:_M_M_M7
 B:                            Lekce M7
-K:12:_M_MENU
 G:_M_S_M7
 *:_M_M_M8
 B:                            Lekce M8
-K:12:_M_MENU
 G:_M_S_M8
 *:_M_M_M9
 B:                            Lekce M9
-K:12:_M_MENU
 G:_M_S_M9
 *:_M_M_M10
 B:                           Lekce M10
-K:12:_M_MENU
 G:_M_S_M10
 *:_M_M_M11
 B:                           Lekce M11
-K:12:_M_MENU
 G:_M_S_M11
 #------------------------------------------------------------------------------
 # Lekce series M menu
@@ -9573,19 +9483,15 @@ G:_S_MENU
 
 *:_S_M_S1
 B:                            Lekce S1
-K:12:_S_MENU
 G:_S_S_S1
 *:_S_M_S2
 B:                            Lekce S2
-K:12:_S_MENU
 G:_S_S_S2
 *:_S_M_S3
 B:                            Lekce S3
-K:12:_S_MENU
 G:_S_S_S3
 *:_S_M_S4
 B:                            Lekce S4
-K:12:_S_MENU
 G:_S_S_S4
 #------------------------------------------------------------------------------
 # Lekce series S menu
@@ -10026,15 +9932,12 @@ G:_N_MENU
 
 *:_N_M_N1
 B:                            Lekce N1
-K:12:_N_MENU
 G:_N_S_N1
 *:_N_M_N2
 B:                            Lekce N2
-K:12:_N_MENU
 G:_N_S_N2
 *:_N_M_N3
 B:                            Lekce N3
-K:12:_N_MENU
 G:_N_S_N3
 #------------------------------------------------------------------------------
 # Lekce series N menu
