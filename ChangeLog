@@ -1,3 +1,12 @@
+2002-01-14  Michael Opdenacker <michaelo@gnu.org>
+
+	* configure.in: suppressed "ncurses" in AC_SEARCH_LIBS, and kept
+	only "curses". This is enough because ncurses installs provide
+	all the files expected for curses. This caused problems in platforms
+	such as GNU/Solaris where both curses and ncurses are installed.
+        gcc was compiling for curses, but ld was given ¨-l ncurses¨,
+        which resulted in undefined symbols.  
+	
 2001-12-10  Felix Natter  <f.natter@ndh.net>
 
 	* change CONFIRM_EXIT_MSG to include "[Y/N]"

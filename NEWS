@@ -23,6 +23,8 @@ Version 2.5 - December/2001
 	- Renamed --wpmode to --word-processor
 	- Added interface messages in French (using gtranslator)
 	- Spanish interface updated by José Pelegrín <josepl@acm.org>
+        - No more undefined symbols compiling on Unix systems (such as Solaris)
+        when both curses and ncurses are installed.
 
 Version 2.4.1 - November/2001
 

@@ -20,7 +20,7 @@ ALL_LINGUAS="de es fi fr"
 dnl Checks for libraries.
 
 dnl Search for ncurses or curses
-AC_SEARCH_LIBS(wbkgdset, ncurses curses,,echo "*** The ncurses library is required!";exit 1)
+AC_SEARCH_LIBS(wbkgdset, curses,,echo "*** The ncurses library is required!";exit 1)
 
 dnl Checks for header files.
 AC_HEADER_STDC
