@@ -5,10 +5,6 @@
 # config.h.in, config.sub, config.guess
 # INSTALL, configur.bat, doc/gtypist.info, lessons/gtypist.typ (maybe more)
 
-# warning: if you use autoconf 2.50 or later, then you need to use
-# gettext 0.10.39 or above and not 0.10.38 (earlier versions _might_ work ?)
-
-
 (autoconf --version) < /dev/null > /dev/null 2>&1 || {
     echo
     echo "**Error**: You must have \`autoconf' installed"
@@ -28,7 +24,7 @@
 (gettext --version) < /dev/null > /dev/null 2>&1 || {
     echo
     echo "**Error**: You must have \`gettext' installed."
-    echo "Get ftp://ftp.gnu.org/gnu/gettext/gettext-0.11.4.tar.gz"
+    echo "Get ftp://ftp.gnu.org/gnu/gettext/gettext-0.11.5.tar.gz"
     echo "(or a newer version if it is available)"
     exit 1
 }
@@ -84,7 +80,7 @@ done
 
 # gettextize
 echo "running gettextize...  Ignore non-fatal messages."
-gettextize --force --copy --intl
+gettextize --force --copy --intl --no-changelog
 
 # Build configuration files
 
@@ -125,4 +121,6 @@ echo "creating doc/gtypist.cs.html..."
 makeinfo --html --no-header --no-split gtypist.cs.texi -o gtypist.cs.html 
 cd ..
 
-# Final instructions
+# Create the source packages
+
+make dist
