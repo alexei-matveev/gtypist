@@ -10,7 +10,7 @@
 
 # Build documentation files
 
-makeinfo doc/gtypist.texinfo -o doc/gtypist.info
+makeinfo doc/gtypist.texi -o doc/gtypist.info
 
 # Build configuration files
 
