@@ -110,7 +110,8 @@ while(defined($ktouchfilename = shift(@ARGV)))
     --$lesson_counter;
 
     generate_jump_table($lesson_counter, \*TYPFILE);
-    generate_menu($lesson_counter, \*TYPFILE, @lesson_names);
+    generate_menu("ktouch lesson ($ktouchfilename)",
+		  $lesson_counter, \*TYPFILE, @lesson_names);
 
     close(TYPFILE) || die "Couldn't close $typfilename: $!";
     close(KTOUCHFILE) || die "Couldn't close $ktouchfilename: $!";

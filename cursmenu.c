@@ -182,6 +182,7 @@ char *do_menu (FILE *script, char *line)
   wattroff (stdscr, A_REVERSE);
  
   seek_label (script, labels[cur_choice], line);
+  get_script_line( script, line );
   free (labels);
   free (descriptions);
   free (data);

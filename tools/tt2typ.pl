@@ -105,7 +105,8 @@ while (-f "$datadir/lektion.$lesson_counter")
 
 --$lesson_counter;
 generate_jump_table($lesson_counter, \*TYPFILE);
-generate_menu($lesson_counter, \*TYPFILE, @lesson_names);
+generate_menu("tipptrainer 0.4 lessons",
+	      $lesson_counter, \*TYPFILE, @lesson_names);
 
 close(TYPFILE) || die "Couldn't close $typfilename: $!";
 

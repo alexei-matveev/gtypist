@@ -12,11 +12,15 @@ pkgdata_DATA =  gtypist.typ \
 		t.typ \
 		u.typ \
 		v.typ \
-		ktlecten.typ \
-		ktnumber.typ \
+		ttde.typ \
 		ktde.typ \
+		ktdk2.typ \
 		kten.typ \
+		ktfr2.typ \
+		ktnumber.typ \
+		ktdk.typ \
+		ktdvorak.typ \
 		ktfr.typ \
-		ktno.typ \
-		ttde.typ
+		ktno.typ 
+
 EXTRA_DIST= $(pkgdata_DATA)

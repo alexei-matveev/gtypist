@@ -47,7 +47,9 @@
 char *COPYRIGHT;
 
 /* a definition of a boolean type */
+#ifndef bool
 #define bool			int
+#endif
 
 /* some screen postions */
 #define	MESSAGE_LINE		(LINES - 1)

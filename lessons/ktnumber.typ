@@ -1,5 +1,5 @@
-# created by ktouch2typ.pl from /mnt/src/ktouch-1.0/ktouch/number.ktouch
-# on Son Aug 12 17:43:36 CEST 2001
+# created by ktouch2typ.pl from /home/felix/src/kdeedu-3.1/ktouch/training/number.ktouch
+# on Sun Feb  2 18:41:53 CET 2003
 # ktouch2typ.pl is part of gtypist (http://www.gnu.org/software/gtypist/)
 # ktouch can be found at http://ktouch.sourceforge.net
 # If you have suggestions about these lessons,
@@ -9,94 +9,369 @@
 
 G:MENU
 
-# Level 1
+# Level 1 "4 5"
 *:S_LESSON1
 K:12:MENU
 B:                           Lesson 1: 45
 *:LESSON1_D1
 I:(1)
-D:455454545445454545454
- :5454555445454554454
- :544445454454454545545
- :544545445544545454545
+D:45
+ :544
+ :55
+ :545
 *:LESSON1_D2
 I:(2)
-D:55445555445545545455
+D:555
+ :545
+ :4
+ :5
+*:LESSON1_D3
+I:(3)
+D:45
+ :45
+ :54
+ :5
+*:LESSON1_D4
+I:(4)
+D:45
+ :5
+ :45
+ :4
+*:LESSON1_D5
+I:(5)
+D:5
+ :44545
+ :4545
+ :454
+*:LESSON1_D6
+I:(6)
+D:545
+ :45
+ :5
+ :455
+*:LESSON1_D7
+I:(7)
+D:55
+ :44
+ :545
+ :45
 G:E_LESSON1
 
+# Level 2  "0 6"
 *:S_LESSON2
 K:12:MENU
 B:                           Lesson 2: 06
 *:LESSON2_D1
 I:(1)
-D:6006540604605650650546
- :6056050565464065060654
- :60650446506060606465406
- :0465406060646054060406
+D:5460
+ :50606
+ :06504
+ :4605
 *:LESSON2_D2
 I:(2)
-D:06546006406405065065460
- :6054406540650456600460
+D:060
+ :6
+ :06
+ :06
+*:LESSON2_D3
+I:(3)
+D:465
+ :40
+ :06
+ :04
+*:LESSON2_D4
+I:(4)
+D:6540
+ :6
+ :06
+ :06460
+*:LESSON2_D5
+I:(5)
+D:540
+ :6
+ :04
+ :06
+*:LESSON2_D6
+I:(6)
+D:065
+ :46006
+ :406405065
+ :0
+*:LESSON2_D7
+I:(7)
+D:6
+ :546
+ :0
+ :60
+*:LESSON2_D8
+I:(8)
+D:5404
+ :06
+ :5
+ :4065
+*:LESSON2_D9
+I:(9)
+D:04
+ :566
+ :00
+ :460
 G:E_LESSON2
 
+# Level 3  "1 9"
 *:S_LESSON3
 K:12:MENU
 B:                           Lesson 3: 19
 *:LESSON3_D1
 I:(1)
-D:190190194609199019094
- :590490491095094019049
- :56040916460910956491
- :910919049096014540916
+D:190
+ :1
+ :9
+ :01
 *:LESSON3_D2
 I:(2)
-D:50455901609564019
+D:94
+ :6091
+ :99
+ :01
+*:LESSON3_D3
+I:(3)
+D:90
+ :94
+ :590
+ :490491
+*:LESSON3_D4
+I:(4)
+D:095
+ :09401
+ :90
+ :49
+*:LESSON3_D5
+I:(5)
+D:56
+ :04091
+ :6460
+ :9109
+*:LESSON3_D6
+I:(6)
+D:564
+ :9
+ :1
+ :9
+*:LESSON3_D7
+I:(7)
+D:109
+ :19
+ :0490
+ :9601
+*:LESSON3_D8
+I:(8)
+D:45
+ :40
+ :9
+ :16
+*:LESSON3_D9
+I:(9)
+D:150
+ :41
+ :51
+ :115
+*:LESSON3_D10
+I:(10)
+D:901
+ :610
+ :91
+ :51
+*:LESSON3_D11
+I:(11)
+D:641
+ :019
 G:E_LESSON3
 
+# Level 4  "3 7"
 *:S_LESSON4
 K:12:MENU
 B:                           Lesson 4: 37
 *:LESSON4_D1
 I:(1)
-D:731373164353197
- :1316406031379413164973
- :4316090373737033703037973
- :197303197379134679037
+D:73
+ :13
+ :7
+ :3
 *:LESSON4_D2
 I:(2)
-D:51305497133464377
+D:1643
+ :53197
+ :71
+ :3
+*:LESSON4_D3
+I:(3)
+D:7
+ :167
+ :43
+ :063
+*:LESSON4_D4
+I:(4)
+D:303
+ :7
+ :137
+ :9413
+*:LESSON4_D5
+I:(5)
+D:176
+ :734
+ :973
+ :43
+*:LESSON4_D6
+I:(6)
+D:3
+ :7
+ :716
+ :09037
+*:LESSON4_D7
+I:(7)
+D:3737
+ :03
+ :3703
+ :0379
+*:LESSON4_D8
+I:(8)
+D:73
+ :1973
+ :031
+ :79
+*:LESSON4_D9
+I:(9)
+D:737
+ :913467
+ :9037
+ :513
+*:LESSON4_D10
+I:(10)
+D:05497
+ :1334
+ :64377
 G:E_LESSON4
 
+# Level 5  "8 2"
 *:S_LESSON5
 K:12:MENU
 B:                           Lesson 5: 82
 *:LESSON5_D1
 I:(1)
-D:268292164372156428283802
- :828314619872378031873218
- :7321783642083274138
- :5284208083549398328
+D:26
+ :829
+ :216
+ :438
+*:LESSON5_D2
+I:(2)
+D:72
+ :15648
+ :282
+ :838
+*:LESSON5_D3
+I:(3)
+D:02
+ :82
+ :8314
+ :6192
+*:LESSON5_D4
+I:(4)
+D:87
+ :237
+ :803187
+ :32
+*:LESSON5_D5
+I:(5)
+D:182
+ :7
+ :283
+ :2812
+*:LESSON5_D6
+I:(6)
+D:878
+ :823
+ :6248
+ :220
+*:LESSON5_D7
+I:(7)
+D:28
+ :83
+ :28
+ :2741
+*:LESSON5_D8
+I:(8)
+D:82
+ :38
+ :58
+ :82
+*:LESSON5_D9
+I:(9)
+D:2828
+ :42820
+ :882028
+ :823
+*:LESSON5_D10
+I:(10)
+D:52
+ :849
+ :329
+ :883
+*:LESSON5_D11
+I:(11)
+D:28
 G:E_LESSON5
 
+# Level 6  "+"
 *:S_LESSON6
 K:12:MENU
 B:                            Lesson 6: +
 *:LESSON6_D1
 I:(1)
-D:1+424+414+5+8+5+685+54
- :54+454+87+85+4547+548+54
+D:1+42
+ :4+4
+ :14+5+8
+ :5+5+6
+*:LESSON6_D2
+I:(2)
+D:85+54
+ :54+4
+ :54+8
+ :7+8
+*:LESSON6_D3
+I:(3)
+D:5+45
+ :47+54
+ :8+54
 G:E_LESSON6
 
+# Level 7  "."
 *:S_LESSON7
 K:12:MENU
 B:                            Lesson 7: .
 *:LESSON7_D1
 I:(1)
-D:5.445+5.5+5665.66+6564.64
- :465.4+0.4+0.005+465.56+54
+D:5.44
+ :5+5.5
+ :5.665
+ :6.6+6
+*:LESSON7_D2
+I:(2)
+D:64.64
+ :4.6
+ :5.4+0.4
+ :6.6+0.00
+*:LESSON7_D3
+I:(3)
+D:5+465.56+5.4
  :46.4+4654.4
+ :4.3
+ :4.5
+*:LESSON7_D4
+I:(4)
+D:23.4
 G:E_LESSON7
 
+# Level 8  "/"
 *:S_LESSON8
 K:12:MENU
 B:                            Lesson 8: /
@@ -105,31 +380,67 @@ I:(1)
 D:4/5+6.0/7
  :5/6
  :6/8.6+5
+ :4/5
+*:LESSON8_D2
+I:(2)
+D:4.7/4
+ :4/5
+ :34/3.4
+ :3+3/2
+*:LESSON8_D3
+I:(3)
+D:2/9
+ :9/3/9
 G:E_LESSON8
 
+# Level 9  "*"
 *:S_LESSON9
 K:12:MENU
 B:                            Lesson 9: *
 *:LESSON9_D1
 I:(1)
 D:4*3*3
- :-4*5
- :-7+5*5*4*0.6
+ :4*5
+ :7*5
+ :5*4*0.6
+*:LESSON9_D2
+I:(2)
+D:2*4/3
+ :5*7/2
+ :5.5*1.2
+ :2*3*2*7
+*:LESSON9_D3
+I:(3)
+D:4.5*65*2
+ :5*6
 G:E_LESSON9
 
+# Level 10  "-"
 *:S_LESSON10
 K:12:MENU
 B:                           Lesson 10: -
 *:LESSON10_D1
 I:(1)
-D:45-65.54-45.2+8-9-0.01
- :-9+5-+65*0.5
- :45+65
- :6.5+5.6
+D:45-65
+ :3.54-45.2
+ :8-9-0.01
+ :-9+5-
 *:LESSON10_D2
 I:(2)
-D:9.5-6.4
- :-
+D:-65-0.5
+ :45-65
+ :6.5-5.6
+ :9.5-6.4
+*:LESSON10_D3
+I:(3)
+D:4-4-5
+ :2-5*3
+ :3+4-3
+ :-5
+*:LESSON10_D4
+I:(4)
+D:-1+7
+ :-6*5-1
 G:E_LESSON10
 
 
@@ -173,39 +484,15 @@ G:S_LESSON10
 *:E_LESSON10
 G:MENU
 
-
 *:MENU
-*:MENU_P1
-K:1:S_LESSON1
-K:2:S_LESSON2
-K:3:S_LESSON3
-K:4:S_LESSON4
-K:5:S_LESSON5
-K:6:S_LESSON6
-K:7:S_LESSON7
-K:8:S_LESSON8
-K:9:S_LESSON9
-K:10:S_LESSON10
-K:11:NULL
-K:12:EXIT
-
-B:               Lesson selection menu - [page 1 of 1]
-T:this file contains the following 10 lessons:
- :
- :        Fkey 1 - 45
- :        Fkey 2 - 06
- :        Fkey 3 - 19
- :        Fkey 4 - 37
- :        Fkey 5 - 82
- :        Fkey 6 - +
- :        Fkey 7 - .
- :        Fkey 8 - /
- :        Fkey 9 - *
- :        Fkey 10 - -
- :
- :
- :        Fkey 12 - Quit program
-Q: Please select a lesson or press Fkey12 to exit
-
-*:EXIT
-X:
+M: "ktouch number-keypad lesson"
+ :S_LESSON1 "45"
+ :S_LESSON2 "06"
+ :S_LESSON3 "19"
+ :S_LESSON4 "37"
+ :S_LESSON5 "82"
+ :S_LESSON6 "+"
+ :S_LESSON7 "."
+ :S_LESSON8 "/"
+ :S_LESSON9 "*"
+ :S_LESSON10 "-"

@@ -1,5 +1,5 @@
-# created by ktouch2typ.pl from /mnt/src/ktouch-1.0/ktouch/german.ktouch
-# on Son Aug 12 17:43:36 CEST 2001
+# created by ktouch2typ.pl from /home/felix/src/kdeedu-3.1/ktouch/training/german.ktouch
+# on Sun Feb  2 18:41:53 CET 2003
 # ktouch2typ.pl is part of gtypist (http://www.gnu.org/software/gtypist/)
 # ktouch can be found at http://ktouch.sourceforge.net
 # If you have suggestions about these lessons,
@@ -533,39 +533,15 @@ G:S_LESSON10
 *:E_LESSON10
 G:MENU
 
-
 *:MENU
-*:MENU_P1
-K:1:S_LESSON1
-K:2:S_LESSON2
-K:3:S_LESSON3
-K:4:S_LESSON4
-K:5:S_LESSON5
-K:6:S_LESSON6
-K:7:S_LESSON7
-K:8:S_LESSON8
-K:9:S_LESSON9
-K:10:S_LESSON10
-K:11:NULL
-K:12:EXIT
-
-B:               Lesson selection menu - [page 1 of 1]
-T:this file contains the following 10 lessons:
- :
- :        Fkey 1 - Grundstellung
- :        Fkey 2 - Grundstellung
- :        Fkey 3 - e und i
- :        Fkey 4 - Komma
- :        Fkey 5 - r und u
- :        Fkey 6 - g und h
- :        Fkey 7 - t und z
- :        Fkey 8 - v und m
- :        Fkey 9 - b und n
- :        Fkey 10 - Punkt
- :
- :
- :        Fkey 12 - Quit program
-Q: Please select a lesson or press Fkey12 to exit
-
-*:EXIT
-X:
+M: "ktouch german lesson"
+ :S_LESSON1 "Grundstellung"
+ :S_LESSON2 "Grundstellung"
+ :S_LESSON3 "e und i"
+ :S_LESSON4 "Komma"
+ :S_LESSON5 "r und u"
+ :S_LESSON6 "g und h"
+ :S_LESSON7 "t und z"
+ :S_LESSON8 "v und m"
+ :S_LESSON9 "b und n"
+ :S_LESSON10 "Punkt"

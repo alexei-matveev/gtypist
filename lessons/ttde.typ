@@ -1,5 +1,5 @@
-# created by tt2typ.pl from /mnt/src/tipptrainer-0.3.3/data/german
-# on Son Aug 12 17:45:28 CEST 2001
+# created by tt2typ.pl from /home/felix/src/tipptrainer-0.4/data/german
+# on Sun Feb  2 18:27:48 CET 2003
 # tt2typ.pl is part of gtypist (http://www.gnu.org/software/gtypist/)
 # tipptrainer can be found at http://www.pingos.schulnetz.org/tipptrainer
 # If you have suggestions about these lessons, write to
@@ -1968,143 +1968,40 @@ G:S_LESSON35
 *:E_LESSON35
 G:MENU
 
-
 *:MENU
-*:MENU_P1
-K:1:S_LESSON1
-K:2:S_LESSON2
-K:3:S_LESSON3
-K:4:S_LESSON4
-K:5:S_LESSON5
-K:6:S_LESSON6
-K:7:S_LESSON7
-K:8:S_LESSON8
-K:9:S_LESSON9
-K:10:S_LESSON10
-K:11:MENU_P2
-K:12:EXIT
-
-B:               Lesson selection menu - [page 1 of 4]
-T:this file contains the following 35 lessons:
- :
- :        Fkey 1 - Lesson 1: Die Grundreihe a s d f - - j k l ö
- :        Fkey 2 - Lesson 2: Erste Wortbildungen mit der Grundreihe
- :        Fkey 3 - Lesson 3: Die Buchstaben "e" und "i"
- :        Fkey 4 - Lesson 4: Die Buchstaben "g" und "h"
- :        Fkey 5 - Lesson 5: Die Buchstaben "w" und "o"
- :        Fkey 6 - Lesson 6: Die Buchstaben "r" und "u"
- :        Fkey 7 - Lesson 7: Wortübungen mit dem Bekannten 
- :        Fkey 8 - Lesson 8: Die Buchstaben "t" und "z"
- :        Fkey 9 - Lesson 9: Häufigkeitswörter - Schnelltippübung
- :        Fkey 10 - Lesson 10: Die Buchstaben "q" und "p"
- :
- :        Fkey 11 - Next menu page...
- :        Fkey 12 - Quit program
-
-Q: Please select a lesson or press Fkey12 to exit
-
-
-*:MENU_P2
-K:1:S_LESSON11
-K:2:S_LESSON12
-K:3:S_LESSON13
-K:4:S_LESSON14
-K:5:S_LESSON15
-K:6:S_LESSON16
-K:7:S_LESSON17
-K:8:S_LESSON18
-K:9:S_LESSON19
-K:10:MENU_P1
-K:11:MENU_P3
-K:12:EXIT
-
-B:               Lesson selection menu - [page 2 of 4]
-T:this file contains the following 35 lessons:
- :
- :        Fkey 1 - Lesson 11: Die Buchstaben "v" und "m"
- :        Fkey 2 - Lesson 12: Die Buchstaben "b" und "n" 
- :        Fkey 3 - Lesson 13: Das "c" und das Komma
- :        Fkey 4 - Lesson 14: Zum "x"ten Mal und Punkt
- :        Fkey 5 - Lesson 15: ASCII-ART -etwas Auflockerung
- :        Fkey 6 - Lesson 16: Der Buchstabe "y" und der Mittelstrich
- :        Fkey 7 - Lesson 17: Die Buchstaben "ä" und "ü"
- :        Fkey 8 - Lesson 18: Das "ß" (sprich: "Ess-zet")
- :        Fkey 9 - Lesson 19: GROSSSCHREIBUNG
- :
- :        Fkey 10 - Previous menu page...
- :        Fkey 11 - Next menu page...
- :        Fkey 12 - Quit program
-
-Q: Please select a lesson or press Fkey12 to exit
-
-
-*:MENU_P3
-K:1:S_LESSON20
-K:2:S_LESSON21
-K:3:S_LESSON22
-K:4:S_LESSON23
-K:5:S_LESSON24
-K:6:S_LESSON25
-K:7:S_LESSON26
-K:8:S_LESSON27
-K:9:S_LESSON28
-K:10:MENU_P2
-K:11:MENU_P4
-K:12:EXIT
-
-B:               Lesson selection menu - [page 3 of 4]
-T:this file contains the following 35 lessons:
- :
- :        Fkey 1 - Lesson 20: Linux - meine Freude
- :        Fkey 2 - Lesson 21: Das Internet
- :        Fkey 3 - Lesson 22: Lesung
- :        Fkey 4 - Lesson 23: Gedicht
- :        Fkey 5 - Lesson 24: Die Zeichen "<" und ">"
- :        Fkey 6 - Lesson 25: Die 1, das ! und das ?
- :        Fkey 7 - Lesson 26: 5 8 - Prozent "%" und Klammer auf "("
- :        Fkey 8 - Lesson 27: 6 7 - Kaufmanns-und "&" und Slash "/" 
- :        Fkey 9 - Lesson 28: 4 9 - Dollarzeichen "$" und Klammer zu ")"
- :
- :        Fkey 10 - Previous menu page...
- :        Fkey 11 - Next menu page...
- :        Fkey 12 - Quit program
-
-Q: Please select a lesson or press Fkey12 to exit
-
-
-*:MENU_P4
-K:1:S_LESSON29
-K:2:S_LESSON30
-K:3:S_LESSON31
-K:4:S_LESSON32
-K:5:S_LESSON33
-K:6:S_LESSON34
-K:7:S_LESSON35
-K:8:NULL
-K:9:NULL
-K:10:NULL
-K:11:MENU_P3
-K:12:EXIT
-
-B:               Lesson selection menu - [page 4 of 4]
-T:this file contains the following 35 lessons:
- :
- :        Fkey 1 - Lesson 29: 3 0 - Paragraph "§" und Gleichheitszeichen "="
- :        Fkey 2 - Lesson 30: 2 und Anführungsstriche "" (=Gänsefüßchen)
- :        Fkey 3 - Lesson 31: Sonderzeichen ^ und ° ´ und `
- :        Fkey 4 - Lesson 32: Sonderzeichen + * # '
- :        Fkey 5 - Lesson 33: Sitzung (ein Übungstext mit "Gänsefüßchen")
- :        Fkey 6 - Lesson 34: <Tab> und <Backspace>
- :        Fkey 7 - Lesson 35: Die Drittbelegung: |@²³{[]}\~
- :
- :
- :
- :
- :        Fkey 11 - Previous menu page...
- :        Fkey 12 - Quit program
-
-Q: Please select a lesson or press Fkey12 to exit
-
-
-*:EXIT
-X:
+M: "tipptrainer 0.4 lessons"
+ :S_LESSON1 "Lesson 1: Die Grundreihe a s d f - - j k l ö"
+ :S_LESSON2 "Lesson 2: Erste Wortbildungen mit der Grundreihe"
+ :S_LESSON3 "Lesson 3: Die Buchstaben "e" und "i""
+ :S_LESSON4 "Lesson 4: Die Buchstaben "g" und "h""
+ :S_LESSON5 "Lesson 5: Die Buchstaben "w" und "o""
+ :S_LESSON6 "Lesson 6: Die Buchstaben "r" und "u""
+ :S_LESSON7 "Lesson 7: Wortübungen mit dem Bekannten "
+ :S_LESSON8 "Lesson 8: Die Buchstaben "t" und "z""
+ :S_LESSON9 "Lesson 9: Häufigkeitswörter - Schnelltippübung"
+ :S_LESSON10 "Lesson 10: Die Buchstaben "q" und "p""
+ :S_LESSON11 "Lesson 11: Die Buchstaben "v" und "m""
+ :S_LESSON12 "Lesson 12: Die Buchstaben "b" und "n" "
+ :S_LESSON13 "Lesson 13: Das "c" und das Komma"
+ :S_LESSON14 "Lesson 14: Zum "x"ten Mal und Punkt"
+ :S_LESSON15 "Lesson 15: ASCII-ART -etwas Auflockerung"
+ :S_LESSON16 "Lesson 16: Der Buchstabe "y" und der Mittelstrich"
+ :S_LESSON17 "Lesson 17: Die Buchstaben "ä" und "ü""
+ :S_LESSON18 "Lesson 18: Das "ß" (sprich: "Ess-zet")"
+ :S_LESSON19 "Lesson 19: GROSSSCHREIBUNG"
+ :S_LESSON20 "Lesson 20: Linux - meine Freude"
+ :S_LESSON21 "Lesson 21: Das Internet"
+ :S_LESSON22 "Lesson 22: Lesung"
+ :S_LESSON23 "Lesson 23: Gedicht"
+ :S_LESSON24 "Lesson 24: Die Zeichen "<" und ">""
+ :S_LESSON25 "Lesson 25: Die 1, das ! und das ?"
+ :S_LESSON26 "Lesson 26: 5 8 - Prozent "%" und Klammer auf "(""
+ :S_LESSON27 "Lesson 27: 6 7 - Kaufmanns-und "&" und Slash "/" "
+ :S_LESSON28 "Lesson 28: 4 9 - Dollarzeichen "$" und Klammer zu ")""
+ :S_LESSON29 "Lesson 29: 3 0 - Paragraph "§" und Gleichheitszeichen "=""
+ :S_LESSON30 "Lesson 30: 2 und Anführungsstriche "" (=Gänsefüßchen)"
+ :S_LESSON31 "Lesson 31: Sonderzeichen ^ und ° ´ und `"
+ :S_LESSON32 "Lesson 32: Sonderzeichen + * # '"
+ :S_LESSON33 "Lesson 33: Sitzung (ein Übungstext mit "Gänsefüßchen")"
+ :S_LESSON34 "Lesson 34: <Tab> und <Backspace>"
+ :S_LESSON35 "Lesson 35: Die Drittbelegung: |@²³{[]}\~"
