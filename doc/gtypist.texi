@@ -25,6 +25,8 @@ or create new ones.
 
 @end ifnottex
 
+@c TODO: write descriptions for the menu-items ?
+
 @menu
 * Distribution::
 * Copying::
@@ -48,7 +50,7 @@ The precise conditions are found in the GNU General Public License that
 comes with with this program and also appears following this section.
 
 @noindent
-You can obtain GNU Typist from a friend or from Internet:
+You can obtain GNU Typist from a friend or from the Internet:
 
 @table @emph
 
@@ -586,19 +588,34 @@ to quickly create new drills for you to practice with.
 Once you installed @file{gtypist-mode.el} 
 (@pxref{Emacs mode for editing gtypist-lessons}), you can open a file
 with ``.typ'' extension and run @kbd{C-c C-f} to create a drill
-(@code{O:} by default, use @kbd{C-u} or @kbd{C-u C-u} prefix to
+(@code{D:} by default, use @kbd{C-u} or @kbd{C-u C-u} prefix to
 change).
 
 @node Design-patterns for lessons, Create drills from fortune, , How to contribute new lessons
 @section Design-patterns for lessons
 
-@c TODO: this should be divided into categories:
-@c o overall layout of lessons
-@c o drills/speedtests
+@subsection Structure of lesson-files
 
 @itemize @bullet
 @item use mixture of drills and speed-tests (this is more fun for the user)
-@item use 'word, word.' to practice ,/.
+@item use some ``practice-only'' exercises (d:/s:) (possibly mixed with
+``real'' exercises) followed by a ``final test''.
+@file{esp.typ} uses this scheme.
+
+@end itemize
+
+@subsection Patterns for exercises
+
+@itemize @bullet
+@item when introducing a new key, start out by mixing other (known) keys
+of the same finger in with the new key in the first drill(s).
+Here is an example (from @file{t.typ}, line 237):
+@example
+I:Use your J-finger for the H key.
+*:_T_R_L23
+D:jjj jhj jjj jhj jjj jhj
+@end example
+@item use 'word, word.' repeatedly to practice ,/.
 @end itemize
 
 
@@ -607,8 +624,8 @@ change).
 
 gtypist now comes with an Emacs major-mode which does
 syntax-highlighting, indentation and has some convenience commands for
-counting labels, a goto-label-command, inserting
-properly centered banners, special comments and a bit more.
+counting labels, a goto-label-command, inserting properly centered
+banners, special comments and a bit more.
 
 Copy this file from @file{tools/gtypist-mode.el}
 (or @file{/usr/share/doc/gtypist} if you are using the debian package) to

@@ -585,26 +585,26 @@ T:			SPEED EXERCISES
 I:Try this sentence:
 *:_T_R_L77
 #                                                             ../orig/t.typ:273
-P:Sarah has liked knitting all her life.
+S:Sarah has liked knitting all her life.
 
 #                                                             ../orig/t.typ:274
 I:Try a little longer sentence.
 *:_T_R_L78
 #                                                             ../orig/t.typ:275
-P:She looked past her garden to the fields and longed to see the other side.
+S:She looked past her garden to the fields and longed to see the other side.
 
 #                                                             ../orig/t.typ:277
 I:When you type a multi-line paragraph, you will have to hit the RETURN-key at
  :the end of each line.
 *:_T_R_L79
 #                                                             ../orig/t.typ:280
-P:All the sane people in this area sold their gold
+S:All the sane people in this area sold their gold
  :right at the start.  The insane ones held their
  :gold and later it paid off.
 
 *:_T_R_L80
 #                                                             ../orig/t.typ:285
-P:One fine afternoon the king had an idea.  He
+S:One fine afternoon the king had an idea.  He
  :sent a letter to all the lords and ladies of
  :his land.  He asked for a great feast.  His
  :people prepared roasts.  His jester did a jig.
@@ -674,7 +674,7 @@ D:;/; n/a ;/; and/or ;/; left/right
 I:Try your speed on some paragraphs:
 *:_T_R_L89
 #                                                             ../orig/t.typ:315
-P:All bills are to be paid in full.  If
+S:All bills are to be paid in full.  If
  :there is no fee to be paid, return the
  :bill and put n/a in the total due part.
 
@@ -682,7 +682,7 @@ P:All bills are to be paid in full.  If
 I:You should be aiming for 15 WPM.  (If you did better, work on accuracy.)
 *:_T_R_L90
 #                                                             ../orig/t.typ:319
-P:In baseball, bunting is a kind of hit.  But, bunting also
+S:In baseball, bunting is a kind of hit.  But, bunting also
  :refers to a kind of bird and the stuff that is used in
  :flags.  English sure is a strange language.
 
@@ -774,12 +774,12 @@ D:Fifteen dollars a month--measured in current dollars--is a good rate.
 I:Let's try a speed drill on these sentences:
 *:_T_R_L105
 #                                                             ../orig/t.typ:355
-P:The clock ran out, signaling the end of
+S:The clock ran out, signaling the end of
  :the second-half.  The game had been lost.
 
 *:_T_R_L106
 #                                                             ../orig/t.typ:364
-P:The paper just made an announce-
+S:The paper just made an announce-
  :ment about a commotion at the
  :college.  Someone has just
  :produced a micro-organism in the
@@ -793,7 +793,7 @@ P:The paper just made an announce-
 I:Hit the return key twice for blank lines:
 *:_T_R_L107
 #                                                             ../orig/t.typ:374
-P:Dear Mr. Mandrake:
+S:Dear Mr. Mandrake:
  :
  :All of us appreciated the fine performance of those magic
  :tricks.  Please arrange to come to another of our meet-
@@ -838,7 +838,7 @@ D:sws who sws what sws when sws where sws
 
 *:_T_R_L113
 #                                                             ../orig/t.typ:391
-P:How much wood could a woodchuck chuck if a
+S:How much wood could a woodchuck chuck if a
  :woodchuck could chuck wood?  A woodchuck
  :would chuck all the wood that a woodchuck
  :could chuck, if a woodchuck could chuck wood.
@@ -859,7 +859,7 @@ D:jjj why jjj you jjj try jjj rye jjj
 I:Try your speed on this sentence:
 *:_T_R_L116
 #                                                             ../orig/t.typ:398
-P:Why are you typing so slowly?
+S:Why are you typing so slowly?
 
 #                                                             ../orig/t.typ:399
 I:Use your F-finger for the V-key.
@@ -902,19 +902,19 @@ T:			THE BACKSPACE
 I:Let's try our speed on some nursery rhymes!
 *:_T_R_L122
 #                                                             ../orig/t.typ:424
-P:Mary had a little lamb
+S:Mary had a little lamb
  :Its fleece was white as snow
  :And every where that Mary went
  :The lamb was sure to go.
 
 *:_T_R_L123
 #                                                             ../orig/t.typ:426
-P:Jack and Jill went up a hill to fetch a pail of water.
+S:Jack and Jill went up a hill to fetch a pail of water.
  :Jack fell down and broke his crown and Jill came tumbling after.
 
 *:_T_R_L124
 #                                                             ../orig/t.typ:431
-P:Little Miss Muffet sat on a tuffet
+S:Little Miss Muffet sat on a tuffet
  :Eating her curds and whey.
  :Along came a spider
  :Who sat down beside her
@@ -922,7 +922,7 @@ P:Little Miss Muffet sat on a tuffet
 
 *:_T_R_L125
 #                                                             ../orig/t.typ:436
-P:Hey, diddle diddle--
+S:Hey, diddle diddle--
  :The cat and the fiddle
  :The cow jumped over the moon.
  :The little dog laughed to see such sport,
@@ -1031,13 +1031,13 @@ D:A quick brown fox jumped over the lazy dogs.
 I:See how fast you can type it this time:
 *:_T_R_L140
 #                                                             ../orig/t.typ:475
-P:A quick brown fox jumped over the lazy dogs.
+S:A quick brown fox jumped over the lazy dogs.
 
 #                                                             ../orig/t.typ:476
 I:Again,
 *:_T_R_L141
 #                                                             ../orig/t.typ:477
-P:A quick brown fox jumped over the lazy dogs.
+S:A quick brown fox jumped over the lazy dogs.
 
 G:_T_E_T9
 #------------------------------------------------------------------------------
@@ -1146,7 +1146,7 @@ D:fff f4r fff 4vr fff 4vr fff
 I:Try your speed on this line:
 *:_T_R_L154
 #                                                             ../orig/t.typ:533
-P:Our team won 1st, 2nd, and 3rd place at the 12th annual outing.
+S:Our team won 1st, 2nd, and 3rd place at the 12th annual outing.
 
 #                                                             ../orig/t.typ:535
 I:As we stated earlier, many typewriters do not have a 1 key.  Let's practice
@@ -1233,7 +1233,7 @@ D:;;; ;0p ;;; /0p ;;; 0/p ;;;
 I:Let's try some paragraphs.
 *:_T_R_L167
 #                                                             ../orig/t.typ:580
-P:Zip codes are arranged so that the first 3 digits
+S:Zip codes are arranged so that the first 3 digits
  :designate the regional office and the last 2
  :digits designate the local branch.  The numbering
  :is roughly east to west.  That is, numbers
@@ -1245,7 +1245,7 @@ P:Zip codes are arranged so that the first 3 digits
 
 *:_T_R_L168
 #                                                             ../orig/t.typ:587
-P:The new nine digit zip codes have upset quite a
+S:The new nine digit zip codes have upset quite a
  :few people.  It was bad enough being referred to
  :as 73218.  But now, we will have to remember
  :numbers like 73218-4208.  The worst hit will be
@@ -1283,7 +1283,7 @@ D:f5f f54 f5f t5g f5f t5r f5f
 
 *:_T_R_L173
 #                                                             ../orig/t.typ:600
-P:The 5 of us each carried 50 pound packs all 45 miles of the trip.
+S:The 5 of us each carried 50 pound packs all 45 miles of the trip.
 
 #                                                             ../orig/t.typ:601
 I:And now, the longest reach of all!  Use your J-finger for the 6-key.
@@ -1337,14 +1337,14 @@ D:1 2 3 4 5 6 7 8 9 10
 I:Try your speed on this song.
 *:_T_R_L184
 #                                                             ../orig/t.typ:621
-P:1 little, 2 little, 3 little Indians,
+S:1 little, 2 little, 3 little Indians,
  :4 little, 5 little, 6 little Indians,
  :7 little, 8 little, 9 little Indians,
  :10 little Indian boys.
 
 *:_T_R_L185
 #                                                             ../orig/t.typ:625
-P:If we want to catch the 6:15 flight to Phoenix (which is the
+S:If we want to catch the 6:15 flight to Phoenix (which is the
  :non-stop), we will have to leave by 5:00 at the latest (in
  :case we run into traffic).  Otherwise, we will have to take
  :the 6:45 flight (which makes 5 stops).
@@ -1369,11 +1369,11 @@ D:12.00 67.50 99.95 38.75 19.99
 I:Now let's try for some speed.
 *:_T_R_L189
 #                                                             ../orig/t.typ:633
-P:353 648 604 592 468 501 296
+S:353 648 604 592 468 501 296
 
 *:_T_R_L190
 #                                                             ../orig/t.typ:641
-P:3574
+S:3574
  :1937
  :2586
  :1904
@@ -1544,7 +1544,7 @@ D:j^j X^2 j^j Y^3 j^j Z^4 j^j
 I:Try entering this BASIC program:
 *:_T_R_L214
 #                                                             ../orig/t.typ:719
-P:10 LET x=10
+S:10 LET x=10
  :20 LET y=20
  :30 PRINT x+y/3
  :40 PRINT y/x*5
@@ -1554,7 +1554,7 @@ P:10 LET x=10
 I:And another:
 *:_T_R_L215
 #                                                             ../orig/t.typ:728
-P:10 REM Program to find square roots with using ^.5 feature
+S:10 REM Program to find square roots with using ^.5 feature
  :20 INPUT "What number do you want the square root of? ";s
  :30 x = 2
  :40 y = s/x
@@ -1567,7 +1567,7 @@ P:10 REM Program to find square roots with using ^.5 feature
 I:Press down the CAPS LOCK key to simplify typing in this BASIC program:
 *:_T_R_L216
 #                                                             ../orig/t.typ:744
-P:100 REM PROGRAM TO SOLVE QUADRATIC EQUATION
+S:100 REM PROGRAM TO SOLVE QUADRATIC EQUATION
  :125 PRINT "ENTER THE VALUES OF A, B, AND C WHERE:"
  :150 PRINT
  :175 PRINT "AX^2 + BX + C = 0"

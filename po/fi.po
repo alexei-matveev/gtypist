@@ -4,7 +4,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: typist 2.4.0beta1\n"
-"POT-Creation-Date: 2001-09-02 22:11+0200\n"
+"POT-Creation-Date: 2001-09-18 21:37+0200\n"
 "PO-Revision-Date: 2001-09-03 13:51+03:00\n"
 "Last-Translator: Kimmo Surakka <kusti@iki.fi>\n"
 "Language-Team: Finnish <fi@li.org>\n"
@@ -13,220 +13,238 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 
 #. print out the error message and stop
-#: gtypist.c:316
+#: gtypist.c:324
 msgid "line"
 msgstr "rivi"
 
-#: gtypist.c:349
+#: gtypist.c:357
 msgid "data shortage"
 msgstr "liian vähän dataa"
 
-#: gtypist.c:351
+#: gtypist.c:359
 msgid "missing ':'"
 msgstr "puuttuva ':'"
 
-#: gtypist.c:357
+#: gtypist.c:365
 msgid "line too long for screen"
 msgstr "rivi ei mahdu näytölle"
 
-#: gtypist.c:413 gtypist.c:427 gtypist.c:722
+#: gtypist.c:421 gtypist.c:435 gtypist.c:730
 msgid "internal error: malloc"
 msgstr "sisäinen virhe: malloc"
 
-#: gtypist.c:445
+#: gtypist.c:453
 msgid "label redefinition"
 msgstr "tunnisteen uudelleenmäärittely"
 
-#: gtypist.c:488 gtypist.c:1472
+#: gtypist.c:496 gtypist.c:1488
 #, c-format
 msgid "label '%s' not found"
 msgstr "tunnistetta '%s' ei löydy"
 
-#: gtypist.c:494 gtypist.c:914 gtypist.c:1124
+#: gtypist.c:502 gtypist.c:927 gtypist.c:1140
 msgid "internal error: fseek"
 msgstr "sisäinen virhe: fseek"
 
-#: gtypist.c:621
+#: gtypist.c:629
 #, c-format
 msgid "invalid key binding (%d:%s)"
 msgstr "virheellinen näppäinliitos (%d:%s)"
 
-#: gtypist.c:623
+#: gtypist.c:631
 msgid "invalid function key number"
 msgstr "virheellinen funktionäppäimen numero"
 
-#: gtypist.c:660 gtypist.c:770 gtypist.c:984
+#: gtypist.c:668 gtypist.c:778 gtypist.c:997
 msgid "data exceeds screen length"
 msgstr "koko teksti ei mahdu ruudulle"
 
-#: gtypist.c:697
+#: gtypist.c:705
 msgid "instructions are limited to two lines"
 msgstr "ohjeita saa olla enintään kaksi riviä"
 
-#: gtypist.c:1381
+#: gtypist.c:1397
 #, c-format
 msgid "'*' must immediately follow '%'"
 msgstr "asteriskin ('*') pitää olla välittömästi '%':n jälkeen"
 
-#: gtypist.c:1383 gtypist.c:1385
+#: gtypist.c:1399 gtypist.c:1401
 #, c-format
 msgid "missing '%'"
 msgstr "puuttuva '%'"
 
-#: gtypist.c:1388
+#: gtypist.c:1404
 #, c-format
 msgid "'%' must immediately follow value"
 msgstr "'%':n pitää olla välittömasti arvon jälkeen"
 
-#: gtypist.c:1397
+#: gtypist.c:1413
 msgid "overflow in do_error_max_set"
 msgstr "ylivuoto funktiossa do_error_max_set"
 
-#: gtypist.c:1417
+#: gtypist.c:1433
 msgid "Invalid value for \"E:\" (out of range)"
 msgstr "Virheellinen arvo parametrille \"E:\" (rajojen ulkopuolella)"
 
-#: gtypist.c:1534
+#: gtypist.c:1550
 msgid "unknown command"
 msgstr "tuntematon komento"
 
-#: gtypist.c:1640
+#: gtypist.c:1656
 msgid ""
 "default maximum error percentage (default 3.0); valid values are between 0.0 "
 "and 100.0"
-msgstr "oletusarvoinen virheiden enimmäismäärä prosentteina (oletuksena 3.0); lailliset arvot ovat 0.0:n ja 100.0:n välissä"
+msgstr ""
+"oletusarvoinen virheiden enimmäismäärä prosentteina (oletuksena 3.0); "
+"lailliset arvot ovat 0.0:n ja 100.0:n välissä"
 
-#: gtypist.c:1641
+#: gtypist.c:1657
 msgid "turn off WPM timer in drills"
 msgstr "älä laske harjoituksissa, montako sanaa kirjoitetaan minuutissa"
 
-#: gtypist.c:1642
+#: gtypist.c:1658
 msgid "use the terminal's hardware cursor"
 msgstr "käytä päätteen laitteistokohdistinta"
 
-#: gtypist.c:1643
+#: gtypist.c:1659
 msgid ""
 "cursor flash period P*.1 sec (default 10); valid  values are between 0 and "
 "512; this is ignored if -t is specified"
-msgstr "kohdistimen vilkkumisjakso kymmenesosasekunteina (oletusarvo 10); lailliset arvot ovat 0:n ja 512:n välissä; tällä ei ole merkitystä, jos on annettu optio -t"
+msgstr ""
+"kohdistimen vilkkumisjakso kymmenesosasekunteina (oletusarvo 10); lailliset "
+"arvot ovat 0:n ja 512:n välissä; tällä ei ole merkitystä, jos on annettu "
+"optio -t"
 
-#: gtypist.c:1644
+#: gtypist.c:1660
 msgid "set initial display colours where available"
 msgstr "aseta näytön alkuvärit, jos mahdollista"
 
-#: gtypist.c:1645
+#: gtypist.c:1661
 msgid "don't beep on errors"
 msgstr "kytke virhetilanteen merkkiääni pois käytöstä"
 
-#: gtypist.c:1646
+#: gtypist.c:1662
 msgid "same as -s, --silent"
 msgstr "sama kuin -s, --silent"
 
-#: gtypist.c:1647
+#: gtypist.c:1663
 msgid "start the lesson at label 'L'"
 msgstr "aloita oppitunti tunnisteesta 'L'"
 
-#: gtypist.c:1648
+#: gtypist.c:1664
 msgid "try to mimic word processors"
 msgstr "yritä matkia tekstinkäsittelijöitä"
 
-#: gtypist.c:1649
+#: gtypist.c:1665
 msgid "print this message"
 msgstr "tulosta tämä viesti"
 
-#: gtypist.c:1650
+#: gtypist.c:1666
 msgid "output version information and exit"
 msgstr "näytä versiotiedot ja lopeta"
 
-#: gtypist.c:1654
+#: gtypist.c:1670
 msgid ""
 "`gtypist' is a typing tutor with several lessons for different keyboards and "
 "languages.  New lessons can be written by the user easily.\n"
 "\n"
-msgstr "'gtypist' on konekirjoituksen harjoitteluohjelma, joka tukee useita eri näppäimistöasetteluita ja kieliä. Käyttäjän on helppo lisätä uusia harjoituksia.\n\n"
+msgstr ""
+"'gtypist' on konekirjoituksen harjoitteluohjelma, joka tukee useita eri "
+"näppäimistöasetteluita ja kieliä. Käyttäjän on helppo lisätä uusia "
+"harjoituksia.\n"
+"\n"
 
-#: gtypist.c:1656
+#: gtypist.c:1672
 msgid "Usage"
 msgstr "Käyttö"
 
-#: gtypist.c:1656 gtypist.c:1657
+#: gtypist.c:1672 gtypist.c:1673
 msgid "Options"
 msgstr "Optiot"
 
-#: gtypist.c:1656
+#: gtypist.c:1672
 msgid "script-file"
 msgstr "skriptitiedosto"
 
-#: gtypist.c:1664
+#: gtypist.c:1680
 #, c-format
 msgid ""
 "\n"
 "If not supplied, script-file defaults to '%s/%s'.\n"
-msgstr "\nJos skriptitiedostoa ei kerrota, oletusarvo on '%s/%s'\n"
+msgstr ""
+"\n"
+"Jos skriptitiedostoa ei kerrota, oletusarvo on '%s/%s'\n"
 
-#: gtypist.c:1666
+#: gtypist.c:1682
 msgid ""
 "The path $GTYPIST_PATH is searched for script files.\n"
 "\n"
-msgstr "Skriptitiedostoja etsitään ympäristömuuttujan $GTYPIST_PATH mukaisesta polusta.\n\n"
+msgstr ""
+"Skriptitiedostoja etsitään ympäristömuuttujan $GTYPIST_PATH mukaisesta "
+"polusta.\n"
+"\n"
 
-#: gtypist.c:1668
+#: gtypist.c:1684
 msgid "Examples"
 msgstr "Esimerkkejä"
 
-#: gtypist.c:1670
+#: gtypist.c:1686
 msgid "To run the default lesson in english `gtypist.typ'"
 msgstr "Suorittaa englanninkielisen oletusoppitunnin 'gtypist.typ'"
 
-#: gtypist.c:1672
+#: gtypist.c:1688
 msgid "To run the lesson in spanish"
 msgstr "Käynnistää espanjankielisen oppitunnin"
 
-#: gtypist.c:1674
+#: gtypist.c:1690
 msgid ""
 "To instruct gtypist to look for lesson `bar.typ' in a non standard directory"
-msgstr "Kehottaa gtypist-ohjelmaa etsimään oppituntia 'bar.typ' epästandardista hakemistosta"
+msgstr ""
+"Kehottaa gtypist-ohjelmaa etsimään oppituntia 'bar.typ' epästandardista "
+"hakemistosta"
 
-#: gtypist.c:1676
+#: gtypist.c:1692
 msgid ""
 "To run the lesson in the file `test.typ' of directory `temp', starting at "
 "label `TEST1', using the terminal's cursor, and run silently"
-msgstr "Suorittaa oppitunnin tiedostosta 'test.typ' hakemistossa 'temp', alkaen tunnisteesta 'TEST1', käyttäen päätteen kohdistinta ja äänettömästi"
+msgstr ""
+"Suorittaa oppitunnin tiedostosta 'test.typ' hakemistossa 'temp', alkaen "
+"tunnisteesta 'TEST1', käyttäen päätteen kohdistinta ja äänettömästi"
 
-#: gtypist.c:1677
+#: gtypist.c:1693
 msgid "Report bugs to bug-gtypist@gnu.org"
 msgstr "Virheilmoitukset osoitteeseen bug-gtypist@gnu.org"
 
-#: gtypist.c:1715
+#: gtypist.c:1731
 #, c-format
 msgid "%s: invalid error-max value\n"
 msgstr "%s: virheellinen arvo parametrilla error-max\n"
 
-#: gtypist.c:1731
+#: gtypist.c:1747
 #, c-format
 msgid "%s: invalid curs-flash value\n"
 msgstr "%s: virheellinen kohdistimen vilkkumisjakson arvo\n"
 
-#: gtypist.c:1742
+#: gtypist.c:1758
 #, c-format
 msgid "%s: invalid colours value\n"
 msgstr "%s: virheelinen värimääritysparametrin arvo\n"
 
-#: gtypist.c:1755
+#: gtypist.c:1771
 #, c-format
 msgid "%s: internal error: malloc\n"
 msgstr "%s: sisäinen virhe: malloc\n"
 
-#: gtypist.c:1770
+#: gtypist.c:1786
 msgid "Written by Simon Baldwin"
 msgstr "Tekijä: Simon Baldwin"
 
-#: gtypist.c:1776 gtypist.c:1783
+#: gtypist.c:1792 gtypist.c:1799
 #, c-format
 msgid "Try '%s --help' for more information.\n"
 msgstr "Kirjoita '%s --help' saadaksesi lisätietoja.\n"
 
-#: gtypist.c:1822
+#: gtypist.c:1838
 msgid ""
 "Copyright (C) 1998,2001  Simon Baldwin.\n"
 "This program comes with ABSOLUTELY NO WARRANTY; for details\n"
@@ -237,42 +255,42 @@ msgid ""
 msgstr ""
 
 #. this string is displayed in the mode-line when in a tutorial
-#: gtypist.c:1829
+#: gtypist.c:1845
 msgid " Tutorial "
 msgstr " Opastus  "
 
 #. this string is displayed in the mode-line when in a query
-#: gtypist.c:1831
+#: gtypist.c:1847
 msgid "  Query   "
 msgstr "  Kysely  "
 
 #. this string is displayed in the mode-line when running a drill
-#: gtypist.c:1833
+#: gtypist.c:1849
 msgid "  Drill   "
 msgstr "Harjoitus "
 
 #. this string is displayed in the mode-line when running a speedtest
-#: gtypist.c:1835
+#: gtypist.c:1851
 msgid "Speed test"
 msgstr "Nopeuskoe "
 
-#: gtypist.c:1836
+#: gtypist.c:1852
 msgid " Press Return to continue... "
 msgstr " Paina Return jatkaaksesi... "
 
-#: gtypist.c:1839
+#: gtypist.c:1855
 #, c-format
 msgid "Your error-rate is too high. You have to achieve %.1f%%."
 msgstr "Virhetiheytesi on liian suuri. Virheitä saa olla enintään %.1f%%."
 
-#: gtypist.c:1843
+#: gtypist.c:1859
 #, c-format
 msgid "You failed this test, so you need to go back to %s."
 msgstr "Et läpäissyt koetta, sinun on palattava kohtaan %s."
 
 #. this is used for queries. you can translate the keys as well
 #. (if you translate msgid "Y/N" accordingly)
-#: gtypist.c:1846
+#: gtypist.c:1862
 msgid "Press Y to continue, N to repeat or Fkey12 to exit"
 msgstr "Paina K jatkaaksesi, E toistaaksesi tai F12 lopettaaksesi"
 
@@ -280,7 +298,7 @@ msgstr "Paina K jatkaaksesi, E toistaaksesi tai F12 lopettaaksesi"
 #. Leading whitespace is important because it is displayed in reverse
 #. video because it must be aligned with the next two messages
 #. (it's best to run gtypist to see this in practice)
-#: gtypist.c:1851
+#: gtypist.c:1867
 #, c-format
 msgid " Raw speed      = %6.2f wpm "
 msgstr "  Raakanopeus    = %6.2f s/m "
@@ -289,7 +307,7 @@ msgstr "  Raakanopeus    = %6.2f s/m "
 #. Leading whitespace is important because it is displayed in reverse
 #. video and because it must be aligned with the previous and next messages
 #. (it's best to run gtypist to see this in practice)
-#: gtypist.c:1856
+#: gtypist.c:1872
 #, c-format
 msgid " Adjusted speed = %6.2f wpm "
 msgstr " Korjattu nopeus = %6.2f s/m "
@@ -298,17 +316,17 @@ msgstr " Korjattu nopeus = %6.2f s/m "
 #. Leading whitespace is important because it is displayed in reverse
 #. video and because it must be aligned with the next last two messages
 #. (it's best to run gtypist to see this in practice)
-#: gtypist.c:1861
+#: gtypist.c:1877
 #, c-format
 msgid "            with %.1f%% errors "
 msgstr "      virheitä yhteensä %.1f%%. "
 
 #. this is used to translate the keys for Y/N-queries. Must be two uppercase
 #. letters. Y/N will still be accepted as well
-#: gtypist.c:1864
+#: gtypist.c:1880
 msgid "Y/N"
 msgstr "K/E"
 
-#: gtypist.c:1912
+#: gtypist.c:1928
 msgid "can't find or open file"
 msgstr "tiedostoa ei löydy tai voida avata"

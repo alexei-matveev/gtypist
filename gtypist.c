@@ -1055,6 +1055,7 @@ do_speedtest( FILE *script, char *line ) {
 	      p--;		/* defeat p++ coming up */
 	      continue;
 	    }
+	  if ( c == ASCII_ESC ) break;
       
 	  /* check that the character was correct */
 	  if ( c == *p
@@ -1118,12 +1119,9 @@ do_speedtest( FILE *script, char *line ) {
       if ( c == ASCII_ESC ) continue;
     
       /* display timings */
-      if ( c != ASCII_ESC ) 
-	{
-	  end_time = (long)time( NULL );
-	  display_speed( chars_typed, end_time - start_time,
-			 errors );
-	}
+      end_time = (long)time( NULL );
+      display_speed( chars_typed, end_time - start_time,
+		     errors );
       
       /* check whether the error-percentage is too high (unless in s:) */
       if (drill_type != C_SPEEDTEST_PRACTICE_ONLY &&

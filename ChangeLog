@@ -1,3 +1,12 @@
+2001-09-18  Felix Natter  <f.natter@ndh.net>
+
+	* gtypist.c (do_speedtest): fix problem: give up via ESC wasn't
+	possible in speed-tests. I fixed this by inserting
+        if ( c == ASCII_ESC ) break;
+	in do_speedtest simply because it's done in do_drill as well.
+	this fixes the problem but do_drill and do_speedtest need to be
+	rethought some day.
+
 2001-09-13  Felix Natter  <f.natter@ndh.net>
 
 	* configure.in (ALL_LINGUAS): add fi.po (finnish by

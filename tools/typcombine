@@ -22,7 +22,7 @@
 # modified by Felix Natter <fnatter@gmx.net> on Thu Aug 30 20:49:26 2001:
 # - add two menu-items: "more lessons" (Fkey10) and "help"/"manual" (Fkey 11)
 # - add ';' after each command to make emacs indentation work
-# - add the "function-key help" and series descriptions
+# - add the "(function-key) help" and series descriptions
 
 BEGIN 	{
 # some initializations
@@ -117,13 +117,13 @@ END	{
   printf(" : gtypist with an argument, the name of the file:\n");
   printf(" :\n");
   printf(" : esp.typ - Spanish lessons\n");
-  printf(" : ttde.typ - German lessons from tipptrainer\n");
   printf(" : ktde.typ - German lessons from ktouch\n");
-  printf(" : ktno.typ - Norwegian lessons from ktouch\n");
-  printf(" : ktfr.typ - French lessons from ktouch\n");
   printf(" : kten.typ - English lessons from ktouch\n");
-  printf(" : ktnumber.typ - Ktouch lessons for the numeric keypad\n");
+  printf(" : ktfr.typ - French lessons from ktouch\n");
   printf(" : ktlecten.typ - Another set of English lessons from ktouch\n");
+  printf(" : ktno.typ - Norwegian lessons from ktouch\n");
+  printf(" : ktnumber.typ - Ktouch lessons for the numeric keypad\n");
+  printf(" : ttde.typ - German lessons from tipptrainer\n");
   printf(" :\n");
   printf(" : See the comments at the top of each .typ-file for more information\n");
   printf("G:__SERIESMENU\n");

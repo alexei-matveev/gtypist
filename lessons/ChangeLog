@@ -1,0 +1,6 @@
+2001-09-02  Felix Natter  <f.natter@ndh.net>
+
+	* ?.typ: adapt lessons to new 2.4 syntax
+	* demo.typ: rewrite for 2.4
+	* gtypist.typ: now generated in autogen.sh
+
