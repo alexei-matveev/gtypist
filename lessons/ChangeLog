@@ -1,3 +1,7 @@
+2003-08-28  Michael Opdenacker <michaelo@gnu.org>
+
+	* d.typ: Fixed 2 small typos, reported by Rob Leslie <rob@mars.org>
+
 2003-04-14	Hynek Hanke	<hanke@volny.cz>
 
 	* cs.typ: Removed unnecessary K: commands.
@@ -10,7 +14,6 @@
 2003-04-06  Felix Natter  <fnatter@gmx.net>
 
 	* esp.typ: use M: everywhere
-
 	* demo.typ: add a menu
 
 2003-04-05  Felix Natter  <fnatter@gmx.net>

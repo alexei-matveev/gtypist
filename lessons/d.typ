@@ -220,7 +220,7 @@ I:(4)
 #                                                             ../orig/d.typ:105
 D:In the house Adana dined in haste on toast and dates.
  :Sated as she had eaten she noted the sheen on the dunes
- :asd the shade in the sheds.  She hates to see an idiot
+ :and the shade in the sheds.  She hates to see an idiot
  :stand and shoot his tenth doe in the dense heath.
 
 #                                                             ../orig/d.typ:106
@@ -673,7 +673,7 @@ D:The queen was given a query for which an ample reply would
 I:(6)
 *:_D_R_L76
 #                                                             ../orig/d.typ:315
-D:Six husky cooks boiled clam broth, shrmp and prawns and broiled
+D:Six husky cooks boiled clam broth, shrimp and prawns and broiled
  :liver for seven lucky elves, then made their hasty exits.
 
 #                                                             ../orig/d.typ:316
