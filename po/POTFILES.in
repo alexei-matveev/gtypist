@@ -1,3 +1,7 @@
 # List of source files containing translatable strings.
 
 gtypist.c
+cursmenu.c
+error.c
+script.c
+
