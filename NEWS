@@ -5,6 +5,8 @@
 	`THANKS' files for details about changes and contributors.
 
 	- New Dutch interface from J.M. Cogels <jcogels@chello.nl>
+	- Now ignores trailing spaces in lesson file lines which
+	  were invisible in the interface.
 
 Version 2.6.2 - September/2002
 	- Now installs lessons (bug only in version 2.6.1).

@@ -1,3 +1,8 @@
+2003-03-11  Michael Opdenacker <michaelo@gnu.org>
+
+	* script.c: updated with patch from Martin Pitt <martin@piware.de>
+	to ignore trailing spaces in lesson file lines.
+
 2003-03-01  Felix Natter  <fnatter@gmx.net>
 
 	* doc/gtypist.texi (Supplied lessons): update the section on kt*.typ

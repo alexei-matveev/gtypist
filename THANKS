@@ -10,6 +10,9 @@ problems,  suggesting  various   improvements,  or  submitting  actual
 code. Here  is a list  of these people.  Help us keep it  complete and
 exempt of errors.
 
+* Martin Pitt <martin@piware.de> for a patch to ignore trailing
+  spaces in lesson file lines. 
+
 * Stefan Troeger <stefan@troeger.st> for typefortune fixes.
 
 * J. M. Cogels <jcogels@chello.nl> for the Dutch interface translation.
