@@ -756,6 +756,19 @@ File: gtypist.info,  Node: How to contribute new lessons,  Next: Emacs mode for 
 How to contribute new lessons
 *****************************
 
+   Here are some hints how you can quickly create new lessons.
+
+* Menu:
+
+* Ktouch-lessons::
+* Create drills from fortune::
+
+
+File: gtypist.info,  Node: Ktouch-lessons,  Prev: Create drills from fortune,  Up: How to contribute new lessons
+
+Ktouch-lessons
+==============
+
    A very easy way to write lessons is to write them in the format that
 `ktouch' uses, and then convert it to a gtypist lesson using
 `tools/ktouch2typ.pl'. This will take care of writing some loops,
@@ -768,6 +781,28 @@ file is the name of the first lesson, and the first lesson consists of
 all the lines up to the next comment or blank line. After the separator
 (comment or blank line) the name of the second lesson follows and so on.
 
+   This is an example of a three-lesson ktouch-file (excerpts from the
+first three lessons of german.ktouch):
+     #
+     # Deutsche Training-Datei für KTouch
+     #
+     
+     Grundstellung
+     f f f f f f fff fff fff f f f f f f fff fff fff f f f f f f f fff
+     j j j j j j jjj jjj jjj j j j j j j jjj jjj jjj j j j j j j j jjj
+     fff jjj fff jjj jjj fff jjj fff fjf fjf fjf jfj jfj jfj fjf jfjfj
+     
+     Grundstellung
+     fff jjj ddd kkk aaa ööö fff jjj ddd kkk aaa ööö fff jjj ddd kkkff
+     fda jkö fda jkö fda jkö fda jkö fda jkö fda jkö fda jkö fda jköfd
+     s s s s s s sss sss sss s s s s s s sss sss sss s s s s s s s sss
+     
+     #Zwei wichtige Vokale: e und i
+     e und i
+     asdf ölkj fdsa jklö asdf ölkj fdsa jklö asdf ölkj fdsa jklö asdfö
+     das dass lös fad dass lös als dass las lös fad dass als dass dass
+     ded ded ded dej dek del deö ded deö del dek dej ded dej dek delde
+
    Once you are done, use `tools/ktouch2typ.pl' to convert the file:
 `ktouch2typ.pl lesson.ktouch' converts `lesson.ktouch' to `lesson.typ'.
 It is important that the input-file ends in ".ktouch", otherwise
@@ -779,6 +814,23 @@ each drill by modifying the relevant variable in `tools/ktouch2typ.pl'.
 
    Obviously, the disadvantage of this is that you cannot make use of
 all of gtypist's features.
+
+
+File: gtypist.info,  Node: Create drills from fortune,  Next: Ktouch-lessons,  Up: How to contribute new lessons
+
+Create drills from fortune
+==========================
+
+   Using `gtypist-mode.el' you can quickly create lessons with text
+from the program `fortune' (or the emacs-internal `yow' if `fortune'
+isn't available, as is the case on windows).
+
+   Besides being used for creating new lessons, this command can be used
+to quickly create new drills for you to practice with.
+
+   Once you installed `gtypist-mode.el' (*note Emacs mode for editing
+gtypist-lessons::), you can run `C-c C-f' to create a drill (`O:' by
+default, use `C-u' or `C-u C-u' prefix to change).
 
 
 File: gtypist.info,  Node: Emacs mode for editing gtypist-lessons,  Next: Technical Information,  Prev: How to contribute new lessons,  Up: Top
@@ -939,7 +991,7 @@ History of GNU Typist
      <http://www.ocston.org/~simonb/typist/>
 
    * Since 1997, Ben Armstrong <synrg@sanctuary.nslug.ns.ca> has helped
-     by fixing bugs and mantaining a Debian package (see
+     by fixing bugs and maintaining a Debian package (see
      <http://packages.debian.org/typist>).
 
    * In 2000, Vladimir Támara <vtamara@users.sourceforge.net> and Igor
@@ -966,10 +1018,12 @@ Node: Invoking23189
 Node: Script files and commands26878
 Node: Supplied lessons32420
 Node: How to contribute new lessons33525
-Node: Emacs mode for editing gtypist-lessons34922
-Node: Technical Information37229
-Node: Environment Variables37460
-Node: Errors and omissions39565
-Node: History40282
+Node: Ktouch-lessons33852
+Node: Create drills from fortune36104
+Node: Emacs mode for editing gtypist-lessons36778
+Node: Technical Information39085
+Node: Environment Variables39316
+Node: Errors and omissions41421
+Node: History42138
 
 End Tag Table

@@ -1,3 +1,9 @@
+2001-07-27  Felix Natter  <f.natter@ndh.net>
+
+	* node How to contribute new lessons: add menu with nodes
+	"Ktouch-lessons" and "Create drills from fortune".
+	* node Ktouch-lessons: add example of .ktouch-lesson
+
 2001-07-26  Felix Natter  <f.natter@ndh.net>
 
 	* node Supplied Lessons: mention kt*.typ

@@ -1,3 +1,8 @@
+2001-07-26  Felix Natter  <f.natter@ndh.net>
+
+	* configure.in: add AM_PATH_LISPDIR which is needed for
+	lisp_LISP = gtypist-mode.el
+
 2001-07-24  Felix Natter  <f.natter@ndh.net>
 
 	* gtypist.c (cl_wpmode): should be disabled by default

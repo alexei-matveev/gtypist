@@ -1,4 +1,4 @@
-\input texinfo @c -*-texinfo-*-
+\input texinfo @c -*-mode:texinfo; compile-command: "makeinfo gtypist.texinfo"-*-
 @setfilename gtypist.info
 @settitle GNU Typist Manual
 
@@ -791,6 +791,16 @@ about it, by writing an email to @email{bug-gtypist@@gnu.org}.
 @c for supporting a new keyboard and/or language, though all the
 @c needed technical details are already given in this manual. 
 
+Here are some hints how you can quickly create new lessons.
+
+@menu
+* Ktouch-lessons:: 
+* Create drills from fortune:: 
+@end menu
+
+@node Ktouch-lessons, , Create drills from fortune, How to contribute new lessons
+@section Ktouch-lessons
+
 A very easy way to write lessons is to write them in the format
 that @command{ktouch} uses, and then convert it to a gtypist lesson
 using @command{tools/ktouch2typ.pl}. This will take care of writing
@@ -804,6 +814,30 @@ consists of all the lines up to the next comment or blank line. After
 the separator (comment or blank line) the name of the second lesson
 follows and so on.
 
+This is an example of a three-lesson ktouch-file (excerpts from the
+first three lessons of german.ktouch):
+@example
+#
+# Deutsche Training-Datei für KTouch
+#
+
+Grundstellung
+f f f f f f fff fff fff f f f f f f fff fff fff f f f f f f f fff
+j j j j j j jjj jjj jjj j j j j j j jjj jjj jjj j j j j j j j jjj
+fff jjj fff jjj jjj fff jjj fff fjf fjf fjf jfj jfj jfj fjf jfjfj
+
+Grundstellung
+fff jjj ddd kkk aaa ööö fff jjj ddd kkk aaa ööö fff jjj ddd kkkff
+fda jkö fda jkö fda jkö fda jkö fda jkö fda jkö fda jkö fda jköfd
+s s s s s s sss sss sss s s s s s s sss sss sss s s s s s s s sss
+
+#Zwei wichtige Vokale: e und i
+e und i
+asdf ölkj fdsa jklö asdf ölkj fdsa jklö asdf ölkj fdsa jklö asdfö
+das dass lös fad dass lös als dass las lös fad dass als dass dass
+ded ded ded dej dek del deö ded deö del dek dej ded dej dek delde
+@end example
+
 Once you are done, use @command{tools/ktouch2typ.pl} to convert the
 file: @samp{ktouch2typ.pl lesson.ktouch} converts @file{lesson.ktouch}
 to @file{lesson.typ}. It is important that the input-file ends in
@@ -816,6 +850,22 @@ uses for each drill by modifying the relevant variable in
 
 Obviously, the disadvantage of this is that you cannot make use of all
 of gtypist's features.
+
+@node Create drills from fortune, Ktouch-lessons, , How to contribute new lessons
+@section Create drills from fortune
+
+Using @file{gtypist-mode.el} you can quickly create lessons with
+text from the program @command{fortune} (or the emacs-internal
+@command{yow} if @command{fortune} isn't available, as is the case on
+windows).
+
+Besides being used for creating new lessons, this command can be used
+to quickly create new drills for you to practice with.
+
+Once you installed @file{gtypist-mode.el} 
+(@pxref{Emacs mode for editing gtypist-lessons}), you can run @kbd{C-c
+C-f} to create a drill (@code{O:} by default, use @kbd{C-u} or
+@kbd{C-u C-u} prefix to change).
 
 @node Emacs mode for editing gtypist-lessons, Technical Information, How to contribute new lessons, Top
 @chapter Emacs mode for editing gtypist-lessons
