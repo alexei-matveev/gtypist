@@ -979,7 +979,7 @@ JTypist but that now is called Typist:
 
  @url{http://www.ocston.org/~simonb/typist/}
 @item
-Since 1997, Ben Armstrong @email{synrg@@sanctuary.nslug.ns.ca} has helped by fixing bugs and mantaining a Debian package (see @url{http://packages.debian.org/typist}).
+Since 1997, Ben Armstrong @email{synrg@@sanctuary.nslug.ns.ca} has helped by fixing bugs and maintaining a Debian package (see @url{http://packages.debian.org/typist}).
 @item
 In 2000, Vladimir Támara @email{vtamara@@users.sourceforge.net} and
 Igor Támara @email{ikks@@users.sourceforge.net} became the maintainers of
