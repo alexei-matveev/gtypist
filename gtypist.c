@@ -145,12 +145,13 @@ static short	colour_array[] = {
 #define	ADDCH(X)		addch( (unsigned char) X )
 
 /* command line options/values */
+static bool     cl_error_max_specified = FALSE; /* is --error-max specified? */
 static float	cl_default_error_max = 3.0;	/* maximum error percentage */
 static bool	cl_notimer = FALSE;		/* no timings in drills */
 static bool	cl_term_cursor = FALSE;		/* don't do s/w cursor */
 static int	cl_curs_flash = 10;		/* cursor flash period */
 static bool	cl_silent = FALSE;		/* no beep on errors */
-static char	*cl_start_label = NULL;		/* initial lesson start point */
+static char	*cl_start_label = NULL;		/* initial lesson start point*/
 static bool	cl_colour = FALSE;		/* set if -c given */
 static int	cl_fgcolour = 0;		/* fg colour */
 static int	cl_bgcolour = 0;		/* bg colour */
@@ -1340,6 +1341,7 @@ do_error_max_set( FILE *script, char *line )
   char *data;
   bool star = FALSE;
   char *tail;
+  double temp_value;
 
   /* we need to make a copy for a potential error-message */
   strcpy( copy_of_line, line );
@@ -1389,13 +1391,24 @@ do_error_max_set( FILE *script, char *line )
        beginning, but strtod ignores this */
     data = SCR_DATA( line );
     errno = 0;
-    /* TODO:! */
-    global_error_max = (float)strtod( data, &tail );
+    temp_value = (float)strtod( data, &tail );
     if (errno)
       fatal_error( _("overflow in do_error_max_set"), copy_of_line );
     /* TODO: if line="E:-1.0%", then tail will be ".0 "...
-    if (*tail != '\0')
-    fatal_error( _("can't parse value"), tail );*/
+       if (*tail != '\0')
+       fatal_error( _("can't parse value"), tail );*/
+    /*
+      If --error-max is specified (but *not* if the default value is used),
+      an E:-command will only be applied if its level is more
+      difficult (smaller) than the one specified via --error-max/-e
+    */
+    if (cl_error_max_specified) {
+      if (temp_value < cl_default_error_max)
+	global_error_max = temp_value;
+      else
+	global_error_max = cl_default_error_max;
+    } else
+      global_error_max = temp_value;
   }
 
   /* sanity checks */
@@ -1687,6 +1700,7 @@ parse_cmdline( int argc, char **argv ) {
       switch (c)
 	{
 	case 'e':
+	  cl_error_max_specified = TRUE;
 	  if ( sscanf( optarg, "%f", &cl_default_error_max ) != 1 
 	       || cl_default_error_max < 0.0
 	       || cl_default_error_max > 100.0 ) 
