@@ -186,7 +186,7 @@ The syntax to invoke GNU Typist is:
 @code{gtypist [ Options... ] [ script_file ]}
 
 The supported options are given below (note that the long form is
-supported only in GNU/Linux):
+not supported on DOS):
 
 @table @code
 

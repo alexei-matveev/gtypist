@@ -65,22 +65,44 @@ You must have:
 	copy gtypist.exe c:\GTypist
 	copy lessons\*.typ c:\GTypist
 
-* If you distribute it, then you might want to remove symbols from gtypist.exe:
+* To use it go to the directory where you installed it and run gtypist.exe
+	cd GTypist
+	gtypist
+
+
+** Read on if you want to package the DOS-version.
+
+* You might want to remove symbols from gtypist.exe:
 	
 	strip --strip-all gtypist.exe
 
-* If you want to use lessons which contain 8bit characters, then you need
-  to convert these lessons with a program like "recode" (on GNU/Linux):
+* Include cwsdpmi.exe and cwsdpmi.doc (the DOS extender, see
+  http://www.delorie.com for details), to support plain DOS
+
+* You need to convert the lessons with a 8bit-characters with a program
+  like "recode" (on GNU/Linux):
+
 	for i in *.typ
 	do
 		recode latin1..ibmpc $i
 	done
-  Furthermore, I've had trouble with infozip: zip 2.0.1 does not work,
-  but 2.3 (or above) seem to work
+  (it doesn't hurt to convert all lessons)	
+  With old versions of recode (i.e. 3.4.1), you have to use "latin1:ibmpc".
+
+* Using "texi2html -monolithic gtypist.texi" in the docs-directory to create
+  gtypist.html. Rename this to gtypist.htm (to support DOS), and replace all
+  occurrences of "gtypist.html" with "gtypist.htm".
+  then create plain text documentation from this either with
+  Netscape or "lynx -dump gtypist.htm > gtypist.txt", and convert it to DOS
+  line-endings with recode, for example (see above)
+
+* Copy all the files in one "gtypist" directory and then run
+    zip -9 -r gtyp@VERSION.zip gtypist
+  (remove the points in gtyp@VERSION and truncate it to 8 chars to support
+  plain DOS)
+  I've had trouble with infozip: zip 2.0.1 did not work,
+  but 2.3 (or above) seem to work.
 	
-* To use it go to the directory where you installed it and run gtypist.exe
-	cd GTypist
-	gtypist
 
 Problems and their solution
 ---------------------------
