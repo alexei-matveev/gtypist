@@ -19,7 +19,7 @@
 
 GNU Typist  is an interactive typing  tutor that can help  you to type
 correctly.  It has  several lessons for different keyboards  layouts and in
-different languages.   The lessons  for typist are  described in  a easy
+different languages.   The lessons  for gtypist are  described in  a easy
 scripting language that  the user can use to  modify the exising lessons
 or create new ones.
 
@@ -535,7 +535,7 @@ use the terminal's cursor instead.
 
 @item -f, --curs_flash
 The curs_flash value  sets the block cursor flash period  in tenths of a
-second.  A  value of 0 indi cates no cursor flashing.   The default is
+second.  A  value of 0 indicates no cursor flashing.   The default is
 10,  and  the  maximum  is  512.   This  option  is  ignored  if  -t  or
 --term_cursor has been set.
 
@@ -546,7 +546,7 @@ foreground  and background  colours on  terminals that  support colours.
 The  colours are  specified as  two integers, in  the range  0  to 7,
 separated by commas, setting the foreground and background colours.  The
 colour codes 0  to 7 indicate black, red,  green, yellow, blue, magenta,
-cyan, and  white respec tively.  The default  colours string is  7,0 -
+cyan, and  white respectively.  The default  colours string is  7,0 -
 white on black.  The option is  ignored if the terminal does not support
 colours.
 
@@ -578,26 +578,26 @@ the file.
 
 @noindent
 To run the default lessons of lesson @file{gtypist.typ}:@*
-@code{typist}
+@code{gtypist}
 
 
 @noindent
 To run the lesson in spanish: @*
-@code{typist esp.typ}
+@code{gtypist esp.typ}
 
 
 @noindent
-To  instruct  typist  to  look for lesson bar.typ in a non
+To  instruct  gtypist  to  look for lesson bar.typ in a non
 standard directory /home/foo: @*
 @code{export GTYPIST_PATH="/home/foo"}
-@code{typist bar.typ}
+@code{gtypist bar.typ}
 
 
 @noindent
 To run the lessons in the file @file{test.typ} of directory @file{/tmp},
 starting at label @code{TEST1}, using the terminal's cursor, and running
 silently:@*
-@code{typist -t -q -l TEST1 /tmp/test.typ}
+@code{gtypist -t -q -l TEST1 /tmp/test.typ}
 
 
 @node Script files and commands, Supplied lessons, Invoking, Top
@@ -635,7 +635,7 @@ This indicates a label in the file.  The label may be the target of a @code{G},
 @code{Y}, or @code{N} command.  Labels may contain any character, including space, and are a single line command.
 
 @item T
-This  presents a  tutorial,  and is  a  multi line  command,  up to  the
+This  presents a  tutorial,  and is  a  multi-line  command,  up to  the
 available size of the curses screen.  Each line in the command is simply
 printed to the  screen.  This command clears the  screen beneath the top
 banner line.
@@ -691,7 +691,7 @@ combinations: @key{Ctrl-Q},  @key{Ctrl-W}, @key{Ctrl-E}, @key{Ctrl-R},
 @key{Ctrl-T}, @key{Ctrl-Z}, @key{Ctrl-U}, @key{Ctrl-I}, 
 @key{Ctrl-O}, @key{Ctrl-P}, @key{Ctrl-A} and @key{Ctrl-S}.
 
-This is also useful  where function keys are inter­ cepted
+This is also useful  where function keys are intercepted
 by other programs, for example, a window manager.
 
 @item X
@@ -725,7 +725,7 @@ X:
 @node Supplied lessons, Technical Information, Script files and commands, Top
 @chapter Supplied lessons
 
-The following lessons are supplied with GNU typist :
+The following lessons are supplied with GNU Typist :
 @table @samp
 @item q.typ 
 Quick QWERTY course in english
@@ -767,7 +767,7 @@ about it, by writing an email to @email{bug-gtypist@@gnu.org}.
 
 @node Environment Variables, Errors and omissions, Technical Information, Technical Information
 @section Environment Variables
-GNU typist uses the following environment variables:
+GNU Typist uses the following environment variables:
 
 @table @code
 
@@ -775,10 +775,10 @@ GNU typist uses the following environment variables:
 
 Typist offers Native Language Support  (NLS) with support of the gettext
 library, this means that if your system supports it, the language of the
-messages shown by  typist can be choosen.  By  now typist is distributed
+messages shown by  gtypist can be chosen.  By  now gtypist is distributed
 with messages  in english, spanish and  german. To use  a particular NLS
 use the environment variable LANG and  set it to the appropriate ISO 639
-two-letter code  (i.e 'es' or  'de').  In some  systems it will  be also
+two-letter code  (i.e. 'es' or  'de').  In some  systems it will  be also
 necessary to set the environment variable LANGUAGE to the same value.
 
 If you  want to translate  messages to a  different language (or  if you
@@ -789,7 +789,7 @@ want   to    correct   one   message),   please    communicate   it   to
 @item GTYPIST_PATH
 Lists the  directories that the program  will look in  for script files.
 It has  the standard format  for paths, that  is, a list  of directories
-separated  by ':'s.  To  open a  script, typist  will try  the following
+separated  by ':'s.  To  open a  script, gtypist  will try  the following
 paths: (1) to use  the script name alone (2) it will  append each one of
 the directories specified in  the variable @code{GTYPIST_PATH} and (3) it will
 append  the  directory  used   during  the  installation  process  (e.g.
@@ -801,8 +801,8 @@ Used by curses to manage the display.
 @item TERMINFO
 This  may need  to  be  set if  the  path to  the  @code{terminfo} database  is
 different between the  system the binary was compiled on  and the one it
-is  being run on.   For example,  in older  Slackware systems,  the ter­
-minfo database resides in @file{/usr/lib/terminfo}.   On RedHat Linux, it is in
+is  being run on.   For example,  in older  Slackware systems,  the terminfo
+database resides in @file{/usr/lib/terminfo}.   On RedHat Linux, it is in
 @file{/usr/share/terminfo}.  If the program  complains about the terminal type,
 and the value of @code{TERM} is correct, check into this.
 
@@ -811,7 +811,7 @@ and the value of @code{TERM} is correct, check into this.
 @node Errors and omissions,  , Environment Variables, Technical Information
 @section Errors and omissions
 
-GNU typist  does not  go to  much effort  to minimise  terminal  output.  In
+GNU Typist  does not  go to  much effort  to minimize  terminal  output.  In
 particular,  the  flashing  block  cursor  can cause  a  lot  of  cursor
 movement.  Using the  terminal's own cursor will help  if this becomes a
 problem.
@@ -839,24 +839,26 @@ library
 @item
 Simon Baldwin @email{simonb@@sco.com} rewrote the version of D. Jason Penney,
 his innovations are described in the NEWS file (versions 2.2 to 2.2b).
-He is the  holder of the copyright for GNU  Typist (that is distribute
+He is the  holder of the copyright for GNU  Typist (that is distributed
 under the GPL).
 Simon also wrote a version of  typist in Java that initially he called
-JTypist but  that now  is called  Typist:
+JTypist but that now is called Typist:
 
   @url{http://www.ocston.org/~simonb/typist/}
 @item
 Since 1997 Ben Armstrong @email{synrg@@sanctuary.nslug.ns.ca} has helped by fixing bugs and mantaining a Debian package (see @url{http://packages.debian.org/typist}).
 @item
-Since  2000 Vladimir  Támara  @email{vtamara@@users.sourceforge.net} and
-Igor  Támara @email{ikks@@users.sourceforge.net}  are the  mantainers of
-the C version. Before Nov/2000, GNU  Typist was mantained as part of the
+In 2000 Vladimir  Támara  @email{vtamara@@users.sourceforge.net} and
+Igor  Támara @email{ikks@@users.sourceforge.net}  became the maintainers of
+the C version. Before Nov/2000, GNU  Typist was maintained as part of the
 project Structio.
 @url{http://structio.sourceforge.net}
 @item
-November  2000, accepted as  a GNU  package! Renamed  to GNU  Typist (or
+November  2000, accepted as  a GNU  package! Renamed  to GNU Typist (or
 gtypist).
+@item In May 2001 Michael Opdenacker @email{michaelo@@gnu.org} became the
+new maintainer of the project. Project development is now hosted on
+@url{http://savannah.gnu.org/projects/gtypist/}.
 @end itemize
 
 @bye
-
