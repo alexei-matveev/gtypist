@@ -1,5 +1,4 @@
-			GNU Typist -  Typing Tutor
-
+			GNU Typist - Typing Tutor
 
 Introduction
 ------------
@@ -8,54 +7,31 @@ GNU Typist (or  gtypist) is free software that  assist you in learning
 to type correctly.
 
 It is intended to be used  on a raw terminal  without graphics. It has
-been compiled and  used in Unix (GNU/Linux, Aix,  Solaris) and also in
-DOS/Windows (DOS 6.22, Windows 98).
+been compiled and used in Unix (GNU/Linux, Aix, Solaris, openBSD) and
+also in DOS/Windows (DOS 6.22, Windows 98).
 
 GNU  Typist is  GNU  software. You  can  read recent  news about  this
 software in its homepage:
 
-    http://www.gnu.org/software/gtypist
+    http://www.gnu.org/software/gtypist/
 
+See the manual ('info gtypist' after installing GNU Typist) for
+details about the tool usage and available lessons.
 
-Available lessons and usage
----------------------------
+Files in this package:
+----------------------
 
-The   program  read  lessons   written  in   a  very   easy  scripting
-language. For details, once installed see 'info gtypist'
-
-There are  several complete  and good lessons  available, you  can use
-them, modify them or create new lessons.
-
-
-q.typ        Quick QWERTY course in English
-r.typ        Long QWERTY course  in English
-t.typ        QWERTY touch typing in English
-v.typ        Yet Another QWERTY  in English
-u.typ        QWERTY Review in English
-d.typ        Dvorak touch typing in English
-m.typ        Typing drills in English
-s.typ        Speed drills in English
-n.typ        Calculator keypad in English
-gtypist.typ  Compendium of the previous 9 lessons
-esp.typ      Lesson in Spanish
-
-
-Once installed (see  the file INSTALL for instructions)  you can start
-by typing
-
-	gtypist <lesson>
-
-for example
-
-	gtypist esp.typ
-
+- INSTALL: compiling and installation instructions.
+- COPYING: copying conditions
+- NEWS: description of major changes in this release.
+- AUTHORS, THANKS: list of authors and other contributors.
+- NEWS: description of major changes in this release.
+- TODO: ideas on how you could help us improve gtypist.
+- version.sh: defines the version number.
+- autogen.sh: updates the version, runs automake, autoconf and
+  gettextize.
 
 Feedback
 --------
 
 Send your suggestions, bug reports or patches to bug-gtypist@gnu.org
-
-
-
-
-
