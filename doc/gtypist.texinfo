@@ -19,7 +19,7 @@
 
 GNU Typist is an interactive typing tutor that can help you to type
 correctly. It has several lessons for different keyboards layouts and in
-different languages. The lessons for gtypist are described in a easy
+different languages. The lessons for gtypist are described in a easy-to-learn
 scripting language that the user can use to modify the exising lessons
 or create new ones.
 
@@ -475,7 +475,7 @@ is intended to be used on raw terminals without graphics ---it has been
 compiled and used in GNU/Linux and Unix (Aix, Solaris) and also in
 DOS/Windows (DOS 6.22, Windows 98, Windows NT).
 
-The program reads lessons written in a very easy scripting language. It
+The program reads lessons written in an easy-to-learn scripting language. It
 is distributed with several complete and good lessons, you can use them,
 modify them or create new lessons (@pxref{Script files and commands}).
 
