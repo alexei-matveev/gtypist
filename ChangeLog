@@ -1,3 +1,31 @@
+2003-08-03	Dmitry Rutsky	<rutsky@school.ioffe.rssi.ru>
+
+	* lessons/ru.typ:  new Russian cyrillic keyboard course.
+	* po/ru.po, configure.in:  new Russian localization.
+	* tools/typcombine:  tell about new course in "More lessons..."
+	* *.[ch]:  corrected "gtypist-bug" to "bug-gtypist" in addresses.
+	* gtypist.c:  #include <locale.h>, internationalization didn't worked
+	  without it (LC_ALL was not #defined);  type of YN and RNE strings
+	  changed to `unsigned char' (comparisons with them if they were
+	  characters with 8th bit set didn't work correctly).
+	* lessons/Makefile.am:  include ru.typ in the distribution, as well as
+	  cs.typ.
+
+2003-07-19	Dmitry Rutsky	<rutsky@school.ioffe.rssi.ru>
+
+	* configure.in:  removed Makefiles automagically added there by
+	  gettextize (yes, that was my mistake in 2003-07-01).  Added note
+	  that this file will be changed by gettextize.
+	* autogen.sh:  don't run gettextize if the sources were gettextized
+	  already.
+	* Makefile.am:  added headers to gtypist_SOURCES back (yes, that was
+	  my mistake too), removed some duplicates of what gettextize
+	  added there.  Added note regarding gettextize.
+	* cursmenu.c:  'q' now works as ESCAPE in the menus.
+	* *.[ch] except getopt*.[ch]:  added/corrected legal attributes.
+	* gtypist.c, script.c:  exit in case user got to particular excersize
+	  with -l and tried to exit using `E'.
+
 2003-07-19	Dmitry Rutsky	<rutsky@school.ioffe.rssi.ru>
 
 	* configure.in:  removed Makefiles automagically added there by

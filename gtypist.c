@@ -3,7 +3,7 @@
  * 
  * Copyright (C) 1998, 1999, 2000, 2001, 2002, 2003  
  * 					Simon Baldwin (simonb@sco.com)
- * Copyright (C) 2003  GNU Typist Development Team <gtypist-bug@gnu.org>
+ * Copyright (C) 2003  GNU Typist Development Team <bug-gtypist@gnu.org>
  *
  * This program is free software; you can redistribute it and/or
  * modify it under the terms of the GNU General Public License
@@ -37,6 +37,7 @@
 #include <string.h>
 #include <getopt.h>
 #include <assert.h>
+#include <locale.h>
 
 #include "cursmenu.h"
 #include "script.h"
@@ -86,8 +87,8 @@ char *NO_SKIP_MSG;
 char *SPEED_RAW;
 char *SPEED_ADJ;
 char *SPEED_PCT_ERROR;
-char *YN;
-char *RNE;
+unsigned char *YN;
+unsigned char *RNE;
 
 #ifndef DATADIR
 #define DATADIR "."

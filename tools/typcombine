@@ -132,6 +132,7 @@ END	{
   printf(" :\n");
   printf(" : esp.typ      -  Spanish lessons\n");
   printf(" : cs.typ       -  Czech lessons\n");
+  printf(" : ru.typ       -  Russian lessons\n");
   printf(" : ktde.typ     -  German lessons from ktouch\n");
   printf(" : ktdk.typ     -  Danish lessons 1 from ktouch\n");
   printf(" : ktdk2.typ    -  Danish lessons 2 from ktouch\n");
