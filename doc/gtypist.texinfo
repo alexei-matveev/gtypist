@@ -30,7 +30,7 @@ or create new ones.
 * Copying::
 * Introduction::
 * Invoking::
-* Script files and commands::
+* Script-file commands::
 * Supplied lessons::
 * How to contribute new lessons::
 * Emacs mode for editing gtypist-lessons::
@@ -477,16 +477,25 @@ DOS/Windows (DOS 6.22, Windows 98, Windows NT).
 
 The program reads lessons written in an easy-to-learn scripting language. It
 is distributed with several complete and good lessons, you can use them,
-modify them or create new lessons (@pxref{Script files and commands}).
+modify them or create new lessons (@pxref{Script-file commands}).
 
-There are two types of drills - one-time and ordinary. In an ordinary
-drill, gtypist displays text on the screen, and waits for the user to
+In a drill, gtypist displays text on the screen, and waits for the user to
 correctly type the exact same text, underneath. It indicates typing
-errors, and if at the end of the exercise there were errors, it will
-re-run the drill, up to a maximum number of tries. In a one-time drill,
-the procedure is the same, except that the program will not repeat the
-drill if it is not typed correctly. Backspace and delete are not
-permitted in drills.
+errors, and if at the end of the exercise there were too many errors, it will
+re-run the drill.
+Backspace and delete are not permitted in drills.
+
+If you already made too many mistakes, then you can use @key{ESC} to
+give up and restart the drill from the beginning.
+
+@c There are two types of drills - one-time and ordinary. In an ordinary
+@c drill, gtypist displays text on the screen, and waits for the user to
+@c correctly type the exact same text, underneath. It indicates typing
+@c errors, and if at the end of the exercise there were errors, it will
+@c re-run the drill, up to a maximum number of tries. In a one-time drill,
+@c the procedure is the same, except that the program will not repeat the
+@c drill if it is not typed correctly. Backspace and delete are not
+@c permitted in drills.
 
 In a speed test, gtypist displays text on the screen, and waits for the
 user to correctly over-type the exact same text. It indicates typing
@@ -510,7 +519,7 @@ divided by five, then divided again by the number of minutes elapsed in
 typing the passage. The adjusted WPM factors in the errors; each error
 is counted as a word mistyped.
 
-@node Invoking, Script files and commands, Introduction, Top
+@node Invoking, Script-file commands, Introduction, Top
 @chapter Invoking
 
 The syntax to invoke GNU Typist is:
@@ -521,12 +530,13 @@ The supported options are given below (note that the long form is
 supported only in GNU/Linux):
 
 @table @code
-@item -d,--drill-tries
-Specifies the maximum number of drill tries permitted. When running
-through an ordinary typing drill, gtypist will not proceed past the drill
-until it is completed without errors, or until the number of tries
-exceeds drill_tries. The default value is 3, the minimum 1, and the
-maximum 1000. This value is ignored for one-time typing drills.
+
+@item -e, --error-max
+Specifies the default maximum error percentage.  The default value is
+3.0 and it must be between 0.0 and 100.0. There is a corresponding
+script-file command (@pxref{Script-file commands}) which only
+overrides this if it is stricter (smaller). This value is ignored for
+``practice only'' drills.
 
 @item -n, --notimer
 gtypist will display the typing speeds in WPM after both drills and speed
@@ -610,8 +620,8 @@ starting at label @code{TEST1}, using the terminal's cursor, and running
 silently:@*
 @code{gtypist -t -q -l TEST1 /tmp/test.typ}
 
-@node Script files and commands, Supplied lessons, Invoking, Top
-@chapter Script files and commands
+@node Script-file commands, Supplied lessons, Invoking, Top
+@chapter Script-file commands
 
 GNU Typist reads in the data for its typing lessons from a script file.
 With the exception of comments and blank lines, each line in the file is
@@ -688,7 +698,9 @@ execution of the script there. This is a single line command.
 
 @item Q
 This command command prompts its text on the message line, and waits for
-a @key{Y} or an @key{N} before proceeding.  Other characters are ignored.
+a @key{Y} or an @key{N} before proceeding. Other characters are ignored.
+As a side effect, you can hit an fkey if it is bound (That's why
+this is used to set the prompt for menus).
 
 @item Y
 This is like @code{G}, except that the goto is executed only if the result of
@@ -716,7 +728,7 @@ combinations: @key{Ctrl-Q}, @key{Ctrl-W}, @key{Ctrl-E}, @key{Ctrl-R},
 @key{Ctrl-O}, @key{Ctrl-P}, @key{Ctrl-A} and @key{Ctrl-S}.
 
 This is also useful where function keys are intercepted
-by other programs, for example, by a window manager.
+by other programs (for example by a window manager).
 
 @item X
 This command causes gtypist to exit. It is a single line command. Any
@@ -739,14 +751,14 @@ T:This is a small example tutor script. A better
 I:Here is an example of a drill: 
 D:asdf ghjkl;
 I:And here is an example of a speed test: 
-P:qwe rt yu iop
+S:qwe rt yu iop
 *:QDONE
 Q:Seen enough yet? [Y/N] 
 N:LOOP 
 X:
 @end example
 
-@node Supplied lessons, How to contribute new lessons, Script files and commands, Top
+@node Supplied lessons, How to contribute new lessons, Script-file commands, Top
 @chapter Supplied lessons
 
 The following lessons are supplied with GNU Typist :
@@ -919,6 +931,11 @@ Here are the commands along with the keybindings:
 
 @table @kbd
 
+@item C-c C-h, M-x gtypist-mode-help
+This shows gtypist's texinfo-documentation, starting with node
+``Script-file commands'' (@pxref{Script-file commands}). With prefix,
+start at the top-node.
+
 @item C-c C-g, M-x gtypist-mode-goto-label
 Query for a label to go to (with completion).
 
@@ -946,9 +963,9 @@ Insert the comments (header) and a label to start a new lesson
 (prompts for name).
 
 @item C-c C-f, M-x gtypist-mode-fortune-to-drill
-Insert a drill (@code{O:}) with text from @command{fortune} (or
+Insert a drill (@code{D:}) with text from @command{fortune} (or
 @command{yow} if @command{fortune} isn't available). Use @kbd{C-u}
-prefix to get @code{P:}, and @kbd{C-u C-u} to get @code{D:}.
+prefix to get @code{S:}, and @kbd{C-u C-u} to get @code{d:}.
 
 @end table
 

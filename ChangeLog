@@ -1,3 +1,32 @@
+2001-08-12  Felix Natter  <f.natter@ndh.net>
+
+	* gtypist.c (print_help): add that --error-max is the _default_
+	maximum error percentage, and that it can be changed in the
+	script-file to some extent
+	* gtypist.c (print_help): clean up so that i.e. "-c F,B" fits in
+	* gtypist.c (print_rep): replace by indent_to
+	* gtypist.c (print_usage_item): only break between words
+	* remove parameter cl_drill_tries, add cl_default_error_max and
+	adapt do_drill and do_speedtest accordingly
+	* gtypist.c (do_query): third parameter for use by
+	do_query_noscriptfile, return value: if TRUE means got a
+	function-key, if FALSE means Y/N
+	* gtypist.c (do_query_noscriptfile): new function used in do_drill/
+	do_speedtest
+	* english-fixes in comments + use same style
+	* add prototypes
+	* add WANNA_REPEAT_MSG, ERROR_TOO_HIGH_MSG, SKIPBACK_VIA_F_MSG
+	* gtypist.c (do_drill, do_speedtest): add "builtin repeat loop"
+	* gtypist.c (print_help): use ';' to separate sentences in help-strings
+	* gtypist.c (fatal_error): make the ouput more logical
+	* gtypist.c (do_error_max_set): new function which sets --error-max
+	* gtypist.c (do_on_failure_label_set): new function whichs set the
+	"skipback-on-failure label"
+	* gtypist.c (do_drill, do_speedtest): remove O:, rename P: to S:
+	and add "practice only" drills d: and s:
+	* gtypist.c (do_drill, do_speedtest): allow "give up" via ESC
+	(repeat lesson)
+
 2001-07-26  Felix Natter  <f.natter@ndh.net>
 
 	* configure.in: add AM_PATH_LISPDIR which is needed for

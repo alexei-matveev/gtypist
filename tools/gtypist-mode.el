@@ -76,16 +76,19 @@
 ;; if drill-type=P:
 ;; Wed Jul 18 19:21:28 2001: don't accept lowercase commands
 ;; Wed Jul 18 19:31:24 2001: (gtypist-mode-new-banner): use insert-char
-;; Sun Jul 29 18:49:15 2001: rename gtypist-mode-new-banner to
-;; gtypist-mode-insert-banner
+;; Wed Aug  1 22:23:49 2001: use if-form in font-lock-keywords instead of
+;; defining a font-lock function; rewrite ...-in-drill-text-p
+;; (suggestion from Stefan Monnier <foo@acm.com>)
+;; Sat Aug 11 16:39:16 2001: adapt to 2.4.0's drill-types
+;; Sat Aug 11 18:08:56 2001: color "[Dd]efault" (as in "E: default")
 
 ;; TODO:
 ;; - gtypist-mode-goto-label-history, gtypist-mode-lesson-name-history ?
-;; - better documentation for gtypist-mode-next-label and gtypist-mode
+;; - better documentation for gtypist-mode-next-label, gtypist-mode and
+;;   gtypist-mode-help ?
 ;; - allow customization via customize ?
 ;; - gtypist-mode-fortune-to-drill: automatically split fortune if it's
 ;;   too long ?
-;; - optimize gtypist-mode-font-lock-find-drill-text
 
  ;;; Code:
 
@@ -112,67 +115,103 @@
   (modify-syntax-entry ?\n ">" gtypist-mode-syntax-table)
   )
 
-
 (defvar gtypist-mode-map nil "Keymap for gtypist-mode.")
 (unless gtypist-mode-map
   (setq gtypist-mode-map (make-sparse-keymap))
-  ;; TODO: change order to be more logical (for C-h m) 
   (define-key gtypist-mode-map "\C-c\C-f" 'gtypist-mode-fortune-to-drill)
   (define-key gtypist-mode-map "\C-c\C-n" 'gtypist-mode-new-lesson)
   (define-key gtypist-mode-map "\C-c\C-r" 'gtypist-mode-insert-hrule)
   (define-key gtypist-mode-map "\C-c\C-b" 'gtypist-mode-insert-banner)
   (define-key gtypist-mode-map "\C-c\C-l" 'gtypist-mode-next-label)
-  (define-key gtypist-mode-map "\C-c\C-g" 'gtypist-mode-goto-label))
+  (define-key gtypist-mode-map "\C-c\C-g" 'gtypist-mode-goto-label)
+  ;; TODO: bind this to C-c C-i as well ?
+  (define-key gtypist-mode-map "\C-c\C-h" 'gtypist-mode-help))
+
+(defun gtypist-mode-in-drill-text-p()
+  "Find out whether pos is in drill-text. This preserves the match data.
+This assumes that (thing-at-point 'line) matches \"^[OPD ]:.*\".
+It's really only useful for font-locking."
+  (let ((temp)
+	(match-data (match-data))
+	(result)
+	(deactivate-mark)) ;; TODO: is this necessary ?
+    (save-excursion
+      (goto-char (point))
+      (end-of-line)
+      (if (not (re-search-backward "^\\([A-Za-z]:\\)" nil t))
+	  (error "%s: syntactic error" (what-line)))
+      (setq temp (match-string 1))
+      (setq result (string-match "^[DdSs]:$" temp))
+      (set-match-data match-data))
+    result))
+    
 
 ;; TODO: why do some font-lock faces (i.e. font-lock-warning-face)
 ;; need to be quoted ?
 (defconst gtypist-mode-font-lock-keywords
   (list
 
-   (list "^\\(#\\)[ \t]*\\(TODO\\|FIXME\\):\\(.*\\)"
+   (list "^\\([[#!]\\)[ \t]*\\(TODO\\|FIXME\\):\\(.*\\)"
 	 (list 1 'font-lock-comment-face)
 	 (list 2 'font-lock-warning-face)
 	 (list 3 'font-lock-comment-face))
 
    ;; this is better than coloring via syntax-table, because it
-;; doesn't color comments which don't start at the beginning of the line
+   ;; doesn't color comments which don't start at the beginning of the line
    (cons "^[#!].*" 'font-lock-comment-face)
 
    (list "^\\(X\\):" 1 'font-lock-warning-face)
-   (cons "^\\([A-Z]\\):" 1)
-   ;;   (cons "^[A-Z\\*]:" 'font-lock-keyword-face)
    
-   ;; labels: definition of labels and references to labels
+   ;; command_chars as keywords
+   (cons "^\\([A-Za-z]\\):" 1) 
+   
+   ;; labels: definitions of labels and references to labels
    (list "^\\*:\\(.*\\)" 1 'font-lock-variable-name-face)
-;; note: cannot use font-lock-constant-face because it isn't supported by
+   ;; note: cannot use font-lock-constant-face because it isn't supported by
    ;; (some versions of) XEmacs
-   (list "^[GYNK]:\\(.*:\\)?\\(.*\\)" 2 'font-lock-reference-face)
+   ;; TODO: this doesn't catch labels like "F:THREE**": mention in docs ?
+   (list "^[GYNKF]:\\(.*:\\)?\\(.+[^*]\\)\\*?[ \t]*$"
+	 2 'font-lock-reference-face)
 
-   ;; (list "^[A-Z\\* ]\\(:\\)" 1 'font-lock-reference-face)
-   ;;   (list "^[OPD ]:\\(.*\\)" 1 'font-lock-string-face)
+   ;; this is used as a parameter to E:
+   (cons "\\<[Dd]efault\\>" 'font-lock-keyword-face)
 
-   (list 'gtypist-mode-font-lock-find-drill-text 1 'font-lock-string-face)
+   ;; '*' at the end of command_data, used to make a set-command persistent
+   (cons "^[EF]:.*[^*]\\(\\*\\)[ \t]*$" 1)
+
+   ;; color drill/speedtest-content, including continuation-lines
+   (list "^[DdSs ]:\\(.*\\)" 1
+	 '(if (gtypist-mode-in-drill-text-p)
+	      font-lock-string-face))
 
    )
   "This constant controls how font-locking is done.")
 
  ;;;; public functions
 
+(defun gtypist-mode-help(prefix)
+  "Show the texinfo-manual at node \"Script-file commands\".
+With prefix, start with the Top-node (main menu)."
+  (interactive "P")
+  (if (null prefix)
+      (info-other-window "(gtypist)Script-file commands")
+    (info-other-window "(gtypist)Top")))
+
 (defun gtypist-mode-fortune-to-drill(prefix)
-  "Insert a drill (O:) with text from `fortune' (or `yow' if `fortune' isn't
-available). Use C-u prefix to get P:, and C-u C-u to get D:."
+  "Insert a drill (D:) with text from `fortune' (or `yow' if `fortune' isn't
+available). Use C-u prefix to get S:, and C-u C-u to get d:."
   (interactive "P")
   (let ((fortune-lines)
 	(drill-type
 	 (cond 
 	  ((null prefix)
-	   "O:") ;; no prefix
+	   "D:") ;; no prefix
 	  ((numberp prefix)
 	   (error "Invalid prefix !"))
 	  ((= (car-safe prefix) 4)
-	   "P:") ;; C-u
+	   "S:") ;; C-u
 	  ((= (car-safe prefix) 16)
-	   "D:")))) ;; C-u C-u
+	   "d:")))) ;; C-u C-u
     (if (executable-find "fortune")
 	(setq fortune-lines
 	      (split-string (shell-command-to-string "fortune") "\n"))
@@ -181,17 +220,18 @@ available). Use C-u prefix to get P:, and C-u C-u to get D:."
     ;; check whether last line is an "author-line"
     (if (string-match "^[\t ]*-- \\(.+\\)[ \t]*" (car (last fortune-lines)))
 	(progn ;; add banner...
-	  (gtypist-mode-insert-banner (match-string 1 (car (last fortune-lines))))
+	  (gtypist-mode-insert-banner (match-string 
+				       1 (car (last fortune-lines))))
 	  ;; ... and remove "author-line"
 	  (setcdr (last fortune-lines 2) nil)))
     ;; emit warning if fortune is too long
-    (if (> (length fortune-lines) (if (string-equal drill-type "P:")
+    (if (> (length fortune-lines) (if (string-equal drill-type "S:")
 				      22
 				    11))
-	(let ((alt-measure (if (or (string-equal drill-type "P:")
+	(let ((alt-measure (if (or (string-equal drill-type "S:")
 				    (> (length fortune-lines) 22))
 			       ""
-			     " or use P:")))
+			     " or use S:")))
 	  (insert "# TODO: this is too long (split it" alt-measure ")!\n")
 	  (message "This Fortune is too long. Please split it %s!" alt-measure)
 	  (beep)))
@@ -309,34 +349,6 @@ available). Use C-u prefix to get P:, and C-u C-u to get D:."
 	;; this is faster:
 	(setq labels (nconc labels (list (cons (match-string 1) (point))))))
       labels)))
-
-(defun gtypist-mode-in-drill-text-p(pos)
-  "Find out whether pos is in drill-text. This changes the match data."
-  (let ((temp))
-    (save-excursion
-      (goto-char pos)
-      (if (not (re-search-backward "^\\([A-Z]:\\)"))
-	  (error "%s: syntactic error" (what-line)))
-      (setq temp (match-string 1))
-      (if (string-match "^[OPD]:$" temp)
-	  t
-	nil))))
-
-(defun gtypist-mode-font-lock-find-drill-text(limit)
-  "This is used to color drill-text in font-lock-mode."
-  (let ((result)
-	(done nil)
- 	(match-data))
-    (while (not done)
-      (setq result (re-search-forward "^[OPD ]:\\(.*\\)" limit t))
-      (setq match-data (match-data))
-      ;; gtypist-mode-in-drill-text-p changes the match data
-      (if (or (gtypist-mode-in-drill-text-p (point))
-			  (null result))
-		  (setq done t))
-      (set-match-data match-data)
-      )
-    result))
 
 
 (provide 'gtypist-mode)

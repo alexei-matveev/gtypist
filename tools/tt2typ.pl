@@ -22,8 +22,8 @@ use Cwd; # Cwd::getcwd
 use gtypist;
 
 # configurable variables
-my $drill_type = "O:";
-my $lines_per_drill = 4; # 1-11 for O: and D:, 1-22 for P:
+my $lines_per_drill = 4; # 1-11 for [Dd]:, 1-22 for [Ss]:
+my $drill_type = "D:"; # [DdSs]
 
 # TODO:
 # - use kurs.* files
@@ -34,16 +34,16 @@ my $lines_per_drill = 4; # 1-11 for O: and D:, 1-22 for P:
 if ($lines_per_drill < 1) {
     die "Invalid lines_per_drill: $lines_per_drill\n";
 }
-if ($drill_type eq "O:" || $drill_type eq "D:") {
+if ($drill_type eq "D:" || $drill_type eq "d:") {
     if ($lines_per_drill > 11) {
 	die "Invalid lines_per_drill for [OD]:: $lines_per_drill\n";
     }
 } else {
-    if ($drill_type ne "P:") {
+    if ($drill_type ne "S:" && $drill_type ne "s:") {
 	die "Invalid drill_type: $drill_type\n";
     }
     if ($lines_per_drill > 22) {
-	die "Invalid lines_per_drill for P:: $lines_per_drill\n";
+	die "Invalid lines_per_drill for [Ss]:: $lines_per_drill\n";
     }
 }
 
@@ -85,6 +85,7 @@ while (-f "$datadir/lektion.$lesson_counter")
     open(TTFILE, "$datadir/lektion.a$lesson_counter") ||
 	die "Couldn't open $datadir/lektion.a$lesson_counter for reading: $!";
     print TYPFILE "*:S_LESSON$lesson_counter\n";
+    print TYPFILE "K:12:MENU\n";
     print TYPFILE getBanner($lesson_names[$lesson_counter]);
     print TYPFILE "T:\n";
     while (defined($line = <TTFILE>))
@@ -154,15 +155,17 @@ sub convert_lesson($$*)
 	}
 	++$line_counter;
 	if ($line_counter == $lines_per_drill) {
-	    print $typfile
-		"Q: Press Y to continue, N to repeat, or Fkey 12 to exit\n";
-	    print $typfile "N:LESSON${lesson_counter}_D$drill_counter\n";
+# this is not necessary any more: it's implied in D:
+#	    print $typfile
+#		"Q: Press Y to continue, N to repeat, or Fkey 12 to exit\n";
+#	    print $typfile "N:LESSON${lesson_counter}_D$drill_counter\n";
 	    $line_counter = 0; ++$drill_counter;
 	}
     }
     close(TTFILE) || die "Couldn't close $lesson_file: $!";
-    print $typfile "Q: Press Y to continue, N to repeat, or Fkey 12 to exit\n";
-    print $typfile "N:LESSON${lesson_counter}_D$drill_counter\n";
+# this is not necessary any more: it's implied in D:
+#   print $typfile "Q: Press Y to continue, N to repeat, or Fkey 12 to exit\n";
+#   print $typfile "N:LESSON${lesson_counter}_D$drill_counter\n";
 }
 
 # Local Variables:

@@ -1,5 +1,5 @@
 # created by ktouch2typ.pl from /mnt/src/ktouch-1.0/ktouch/number.ktouch
-# on Son Jul 29 18:55:31 CEST 2001
+# on Son Aug 12 17:43:36 CEST 2001
 # ktouch2typ.pl is part of gtypist (http://www.gnu.org/software/gtypist/)
 # ktouch can be found at http://ktouch.sourceforge.net
 # If you have suggestions about these lessons,
@@ -11,147 +11,125 @@ G:MENU
 
 # Level 1
 *:S_LESSON1
+K:12:MENU
 B:                           Lesson 1: 45
 *:LESSON1_D1
 I:(1)
-O:455454545445454545454
+D:455454545445454545454
  :5454555445454554454
  :544445454454454545545
  :544545445544545454545
-Q: Press Y to continue, N to repeat, or Fkey 12 to exit
-N:LESSON1_D1
 *:LESSON1_D2
 I:(2)
-O:55445555445545545455
-Q: Press Y to continue, N to repeat, or Fkey 12 to exit
-N:LESSON1_D2
+D:55445555445545545455
 G:E_LESSON1
 
 *:S_LESSON2
+K:12:MENU
 B:                           Lesson 2: 06
 *:LESSON2_D1
 I:(1)
-O:6006540604605650650546
+D:6006540604605650650546
  :6056050565464065060654
  :60650446506060606465406
  :0465406060646054060406
-Q: Press Y to continue, N to repeat, or Fkey 12 to exit
-N:LESSON2_D1
 *:LESSON2_D2
 I:(2)
-O:06546006406405065065460
+D:06546006406405065065460
  :6054406540650456600460
-Q: Press Y to continue, N to repeat, or Fkey 12 to exit
-N:LESSON2_D2
 G:E_LESSON2
 
 *:S_LESSON3
+K:12:MENU
 B:                           Lesson 3: 19
 *:LESSON3_D1
 I:(1)
-O:190190194609199019094
+D:190190194609199019094
  :590490491095094019049
  :56040916460910956491
  :910919049096014540916
-Q: Press Y to continue, N to repeat, or Fkey 12 to exit
-N:LESSON3_D1
 *:LESSON3_D2
 I:(2)
-O:50455901609564019
-Q: Press Y to continue, N to repeat, or Fkey 12 to exit
-N:LESSON3_D2
+D:50455901609564019
 G:E_LESSON3
 
 *:S_LESSON4
+K:12:MENU
 B:                           Lesson 4: 37
 *:LESSON4_D1
 I:(1)
-O:731373164353197
+D:731373164353197
  :1316406031379413164973
  :4316090373737033703037973
  :197303197379134679037
-Q: Press Y to continue, N to repeat, or Fkey 12 to exit
-N:LESSON4_D1
 *:LESSON4_D2
 I:(2)
-O:51305497133464377
-Q: Press Y to continue, N to repeat, or Fkey 12 to exit
-N:LESSON4_D2
+D:51305497133464377
 G:E_LESSON4
 
 *:S_LESSON5
+K:12:MENU
 B:                           Lesson 5: 82
 *:LESSON5_D1
 I:(1)
-O:268292164372156428283802
+D:268292164372156428283802
  :828314619872378031873218
  :7321783642083274138
  :5284208083549398328
-Q: Press Y to continue, N to repeat, or Fkey 12 to exit
-N:LESSON5_D1
-Q: Press Y to continue, N to repeat, or Fkey 12 to exit
-N:LESSON5_D2
 G:E_LESSON5
 
 *:S_LESSON6
+K:12:MENU
 B:                            Lesson 6: +
 *:LESSON6_D1
 I:(1)
-O:1+424+414+5+8+5+685+54
+D:1+424+414+5+8+5+685+54
  :54+454+87+85+4547+548+54
-Q: Press Y to continue, N to repeat, or Fkey 12 to exit
-N:LESSON6_D1
 G:E_LESSON6
 
 *:S_LESSON7
+K:12:MENU
 B:                            Lesson 7: .
 *:LESSON7_D1
 I:(1)
-O:5.445+5.5+5665.66+6564.64
+D:5.445+5.5+5665.66+6564.64
  :465.4+0.4+0.005+465.56+54
  :46.4+4654.4
-Q: Press Y to continue, N to repeat, or Fkey 12 to exit
-N:LESSON7_D1
 G:E_LESSON7
 
 *:S_LESSON8
+K:12:MENU
 B:                            Lesson 8: /
 *:LESSON8_D1
 I:(1)
-O:4/5+6.0/7
+D:4/5+6.0/7
  :5/6
  :6/8.6+5
-Q: Press Y to continue, N to repeat, or Fkey 12 to exit
-N:LESSON8_D1
 G:E_LESSON8
 
 *:S_LESSON9
+K:12:MENU
 B:                            Lesson 9: *
 *:LESSON9_D1
 I:(1)
-O:4*3*3
+D:4*3*3
  :-4*5
  :-7+5*5*4*0.6
-Q: Press Y to continue, N to repeat, or Fkey 12 to exit
-N:LESSON9_D1
 G:E_LESSON9
 
 *:S_LESSON10
+K:12:MENU
 B:                           Lesson 10: -
 *:LESSON10_D1
 I:(1)
-O:45-65.54-45.2+8-9-0.01
+D:45-65.54-45.2+8-9-0.01
  :-9+5-+65*0.5
  :45+65
  :6.5+5.6
-Q: Press Y to continue, N to repeat, or Fkey 12 to exit
-N:LESSON10_D1
 *:LESSON10_D2
 I:(2)
-O:9.5-6.4
+D:9.5-6.4
  :-
-Q: Press Y to continue, N to repeat, or Fkey 12 to exit
-N:LESSON10_D2
 G:E_LESSON10
 
 

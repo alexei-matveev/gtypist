@@ -217,10 +217,9 @@ sub generate_menu($*@)
 		"Next menu page...\n";
 	}
 	# print help for "exit"
-	print $fh " :        Fkey 12 - Quit program\n";
+	print $fh " :        Fkey 12 - Quit program\n\n";
+	print $fh "Q: Please select a lesson or press Fkey12 to exit\n\n";
 
-	# TODO: should there be a Q: to avoid the "Press Enter to cont."-msg ?
-	#print $fh "Q: Please select a lesson";
 	$cur_lesson += $n_lessons_this_page;
 	++$page_counter;
     }

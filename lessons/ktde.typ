@@ -1,5 +1,5 @@
 # created by ktouch2typ.pl from /mnt/src/ktouch-1.0/ktouch/german.ktouch
-# on Son Jul 29 18:55:31 CEST 2001
+# on Son Aug 12 17:43:36 CEST 2001
 # ktouch2typ.pl is part of gtypist (http://www.gnu.org/software/gtypist/)
 # ktouch can be found at http://ktouch.sourceforge.net
 # If you have suggestions about these lessons,
@@ -13,619 +13,483 @@ G:MENU
 # Deutsche Training-Datei für KTouch
 #
 *:S_LESSON1
+K:12:MENU
 B:                      Lesson 1: Grundstellung
 *:LESSON1_D1
 I:(1)
-O:f f f f f f fff fff fff f f f f f f fff fff fff f f f f f f f fff
+D:f f f f f f fff fff fff f f f f f f fff fff fff f f f f f f f fff
  :j j j j j j jjj jjj jjj j j j j j j jjj jjj jjj j j j j j j j jjj
  :fff jjj fff jjj jjj fff jjj fff fjf fjf fjf jfj jfj jfj fjf jfjfj
  :d d d d d d ddd ddd ddd d d d d d d ddd fff jjj ddd fff jjj dddff
-Q: Press Y to continue, N to repeat, or Fkey 12 to exit
-N:LESSON1_D1
 *:LESSON1_D2
 I:(2)
-O:djd djd djd jdj jdj jdj dfd dfd dfd fdf fdf fdf ddf ffd jdd djdfd
+D:djd djd djd jdj jdj jdj dfd dfd dfd fdf fdf fdf ddf ffd jdd djdfd
  :k k k k k k kkk kkk kkk k k k k k k kkk ddd fff jjj kkk ddd jkjkj
  :kdk kdk kdk dkd dkd dkd dkd jkj jkj jkj fkf fkf fkf kdk dkd jkjkj
  :a a a a a a aaa aaa aaa a a a a a a aaa aaa aaa a a a a a a a aaa
-Q: Press Y to continue, N to repeat, or Fkey 12 to exit
-N:LESSON1_D2
 *:LESSON1_D3
 I:(3)
-O:aaa jjj kkk aaa fff aaa ddd aaa jjj kkk aaa fff aaa ddd aaa fafaf
+D:aaa jjj kkk aaa fff aaa ddd aaa jjj kkk aaa fff aaa ddd aaa fafaf
  :ö ö ö ö ö ö ööö ööö ööö ö ö ö ö ö ö ööö ööö ööö ö ö ö ö ö ö öööjj
  :ööö fff ddd ööö jjj kkk ööö fff ööö ddd ööö jjj ööö kkk ööö föfjö
  :fff jjj ddd kkk aaa ööö fff jjj ddd kkk aaa ööö fff jjj ddd fjfjf
-Q: Press Y to continue, N to repeat, or Fkey 12 to exit
-N:LESSON1_D3
 *:LESSON1_D4
 I:(4)
-O:aaa ööö ddd kkk fff jjj aaa ööö ddd kkk fff jjj aaa ööö ddd aöaöa
+D:aaa ööö ddd kkk fff jjj aaa ööö ddd kkk fff jjj aaa ööö ddd aöaöa
  :adf ökj adf ökj adf ökj adf ökj adf ökj adf ökj adf ökj adf ökjök
  :fda jkö fda jkö fda jkö fda jkö fda jkö fda jkö fda jkö fda jköjk
-Q: Press Y to continue, N to repeat, or Fkey 12 to exit
-N:LESSON1_D4
 G:E_LESSON1
 
 *:S_LESSON2
+K:12:MENU
 B:                      Lesson 2: Grundstellung
 *:LESSON2_D1
 I:(1)
-O:fff jjj ddd kkk aaa ööö fff jjj ddd kkk aaa ööö fff jjj ddd kkkff
+D:fff jjj ddd kkk aaa ööö fff jjj ddd kkk aaa ööö fff jjj ddd kkkff
  :fda jkö fda jkö fda jkö fda jkö fda jkö fda jkö fda jkö fda jköfd
  :s s s s s s sss sss sss s s s s s s sss sss sss s s s s s s s sss
  :sss jjj sss kkk sss ööö sss jjj sss ddd sss aaa sss ddd sss jjjss
-Q: Press Y to continue, N to repeat, or Fkey 12 to exit
-N:LESSON2_D1
 *:LESSON2_D2
 I:(2)
-O:l l l l l l lll lll lll l l l l l l lll lll lll l l l l l l l lll
+D:l l l l l l lll lll lll l l l l l l lll lll lll l l l l l l l lll
  :lll fff lll ddd lll sss lll aaa lll jjj lll kkk lll ööö lll fffll
  :asdf jklö asdf jklö asdf jklö asdf jklö asdf jklö asdf jklö asdfj
  :fdsa jklö fdsa jklö fdsa jklö fdsa jklö fdsa jklö fdsa jklö fdsaj
-Q: Press Y to continue, N to repeat, or Fkey 12 to exit
-N:LESSON2_D2
 *:LESSON2_D3
 I:(3)
-O:asdf jklö fdsa jklö asdf jklö fdsa jklö asdf jklö fdsa jklö asdfj
+D:asdf jklö fdsa jklö asdf jklö fdsa jklö asdf jklö fdsa jklö asdfj
  :fdsa ölkj asdf jklö fdsa ölkj asdf jklö fdsa ölkj asdf jklö fdsaö
  :la la la ka ka ka sö sö sö dö dö dö la la la ka ka ka sö sö la ka
  :al al al ak ak ak ös ös ös öd öd öd al al al ak ak ak ös ös öd öd
-Q: Press Y to continue, N to repeat, or Fkey 12 to exit
-N:LESSON2_D3
 *:LESSON2_D4
 I:(4)
-O:ja ja ja da da da ja ja ja da da da ja ja ja da da da ja ja da da
+D:ja ja ja da da da ja ja ja da da da ja ja ja da da da ja ja da da
  :öd öd öd ja ja ja öd öd öd da da da öd öd öd ja ja ja öd öd ja ja
  :fad fad fad fad las las las las fad fad fad fad las las las ja öd
  :als als als als fad fad fad fad las las las las als als als öd ja
-Q: Press Y to continue, N to repeat, or Fkey 12 to exit
-N:LESSON2_D4
 *:LESSON2_D5
 I:(5)
-O:lös lös lös lös als als als als fad fad fad fad las las las ja öd
+D:lös lös lös lös als als als als fad fad fad fad las las las ja öd
  :das das das das als als als als das als das als das als das da ja
  :las las las las das das das das las das las das las das las öd da
  :lös lös lös lös fad fad fad fad lös fad lös fad lös fad lös ja öd
-Q: Press Y to continue, N to repeat, or Fkey 12 to exit
-N:LESSON2_D5
 *:LESSON2_D6
 I:(6)
-O:da das da das da das las ja las ja las ja öd ja las das fad ja öd
+D:da das da das da das las ja las ja las ja öd ja las das fad ja öd
  :ja lös ja lös ja lös lös da fad da fad da öd öd fad lös dad öd ja
  :öd fad öd fad öd fad das ja das ja das ja da da lös fad lös ja öd
-Q: Press Y to continue, N to repeat, or Fkey 12 to exit
-N:LESSON2_D6
 G:E_LESSON2
 
 #Zwei wichtige Vokale: e und i
 *:S_LESSON3
+K:12:MENU
 B:                         Lesson 3: e und i
 *:LESSON3_D1
 I:(1)
-O:asdf ölkj fdsa jklö asdf ölkj fdsa jklö asdf ölkj fdsa jklö asdfö
+D:asdf ölkj fdsa jklö asdf ölkj fdsa jklö asdf ölkj fdsa jklö asdfö
  :das dass lös fad dass lös als dass las lös fad dass als dass dass
  :ded ded ded dej dek del deö ded deö del dek dej ded dej dek delde
  :ded ded dea dea des des def def ded ded dea dea des des def defed
-Q: Press Y to continue, N to repeat, or Fkey 12 to exit
-N:LESSON3_D1
 *:LESSON3_D2
 I:(2)
-O:ede ede ede edj edj edk edl edö edf eds ede ede edj edj edk edled
+D:ede ede ede edj edj edk edl edö edf eds ede ede edj edj edk edled
  :öde öde öde ade ade ade öle öle öle ade ade öde öde ade ade alles
  :alle alle alle lade lade lade alle alles lade lade alles lade las
  :löse löse löse jede jede jede löse löse jede jede löse jede alles
-Q: Press Y to continue, N to repeat, or Fkey 12 to exit
-N:LESSON3_D2
 *:LESSON3_D3
 I:(3)
-O:kik kik kik kif kid kis kia kik kia kis kid kif kik kis kia kikik
+D:kik kik kik kif kid kis kia kik kia kis kid kif kik kis kia kikik
  :kik kik kiö kiö kil kil kik kik kij kij kik kil kiö kil kij kikik
  :iki iki ikf ikd iks ikj ikl ikö ikf ded kik ded kik ded kik dedki
  :sie sie sie sei sei sei sie sie sei sei sie sie sei sei seid seid
-Q: Press Y to continue, N to repeat, or Fkey 12 to exit
-N:LESSON3_D3
 *:LESSON3_D4
 I:(4)
-O:die die die sie sie sie die die sie sie die die sie sie die diese
+D:die die die sie sie sie die die sie sie die die sie sie die diese
  :seid seid seid dies dies dies seid seid dies dies seid dies diese
  :fiel fiel fiel lief lief lief fiel fiel lief lief fiel lief leise
  :feil feil feil fiel fiel fiel lief lief fiel fiel feil feil fidel
-Q: Press Y to continue, N to repeat, or Fkey 12 to exit
-N:LESSON3_D4
 *:LESSON3_D5
 I:(5)
-O:seid seid seid fiel fiel feil feil seid seid lief lief fiel fidel
+D:seid seid seid fiel fiel feil feil seid seid lief lief fiel fidel
  :dies dies lief feil seid seid feil lief fiel dies seid dies leise
  :ideal ideal ideal fidel fidel fidel ideal ideal fidel fidel ideal
  :leise leise leise ideal ideal ideal leise leise ideal leise fidel
-Q: Press Y to continue, N to repeat, or Fkey 12 to exit
-N:LESSON3_D5
 *:LESSON3_D6
 I:(6)
-O:alles alles alles leise leise leise alles alles leise alles leise
+D:alles alles alles leise leise leise alles alles leise alles leise
  :feil feil feil seid seid seid dies dies dies fiel fiel fiel fidel
  :seid fiel dies feil dies fiel seid feil fiel seid dies seid leise
  :diese diese diese leise leise leise diese diese leise leise diese
-Q: Press Y to continue, N to repeat, or Fkey 12 to exit
-N:LESSON3_D6
 *:LESSON3_D7
 I:(7)
-O:leise leise diese diese lasse lasse leise lasse diese lasse leise
+D:leise leise diese diese lasse lasse leise lasse diese lasse leise
  :diese leise lasse diese leise lasse lasse leise diese leise lasse
  :ideal ideal ideal fidel fidel fidel ideal ideal fidel fidel ideal
  :alles alles alles ideal ideal ideal alles alles ideal ideal alles
-Q: Press Y to continue, N to repeat, or Fkey 12 to exit
-N:LESSON3_D7
 *:LESSON3_D8
 I:(8)
-O:las lasse das dass las lasse das dass las lasse das dass las dass
+D:las lasse das dass las lasse das dass las lasse das dass las dass
  :jede jede ödes ödes dass dass jede jede ödes ödes dass dass lasse
-Q: Press Y to continue, N to repeat, or Fkey 12 to exit
-N:LESSON3_D8
 G:E_LESSON3
 
 #Komma
 *:S_LESSON4
+K:12:MENU
 B:                          Lesson 4: Komma
 *:LESSON4_D1
 I:(1)
-O:asdf jklö desa kilö fesa jilö asdf jklö desa kilö fesa jilö desak
+D:asdf jklö desa kilö fesa jilö asdf jklö desa kilö fesa jilö desak
  :als die all sie sei das las die all als sei sie las das all leise
  :kik k,k kik k,k k,ö k,l k,k k,j k,k k,l k,ö k,j kik k,k k,ö kik,k
  :ak, sk, dk, fk, jk, lk, ök, ak, sk, dk, fk, jk, lk, lk, ak, sk,kö
-Q: Press Y to continue, N to repeat, or Fkey 12 to exit
-N:LESSON4_D1
 *:LESSON4_D2
 I:(2)
-O:da, da, da, ja, ja, ja, je, je, je, öd, öd, öd, da, ja, je, dies,
+D:da, da, da, ja, ja, ja, je, je, je, öd, öd, öd, da, ja, je, dies,
  :sie, sie, sie, sei, sei, sei, sie, sie, sei, sei, sie, sei, dies,
  :fiel, fiel, fiel, feil, feil, feil, fiel, fiel, feil, feil, fiel,
  :es sei, löse es, lade es, sei leise, sei fidel, lies leise, dies,
-Q: Press Y to continue, N to repeat, or Fkey 12 to exit
-N:LESSON4_D2
 *:LESSON4_D3
 I:(3)
-O:sie sei fidel, lies das alles leise, es sei ideal, lies es, fiel,
+D:sie sei fidel, lies das alles leise, es sei ideal, lies es, fiel,
  :lade es, lade dies, lade dies allei, löse dies, löse alles, seid,
  :fdsa jklö asdf ölkj fdsa jklö asdf ölkj fdsa jklö asdf ölkj fdsaj
  :ded kik def kij des kil dea kiö ded kik def kij des kil dea kikde
-Q: Press Y to continue, N to repeat, or Fkey 12 to exit
-N:LESSON4_D3
 *:LESSON4_D4
 I:(4)
-O:da, da, ja, ja, es, es, öd, öd, je, je, es, es, da, da, öd, lade,
+D:da, da, ja, ja, es, es, öd, öd, je, je, es, es, da, da, öd, lade,
  :da, ja, ed, öd, je, ed, da, öd, ed, je, da, je, ja, öd, da, löse,
  :elf, elf, des, des, öde, öde, ade, ade, des, des, öde, elf, ödes,
  :elf, des, öde, ade, des, öde, elf, ade, des, elf, öde, ade, seid,
-Q: Press Y to continue, N to repeat, or Fkey 12 to exit
-N:LESSON4_D4
 *:LESSON4_D5
 I:(5)
-O:seid, seid, dies, dies, eile, eile, dies, dies, seid, seid, eile,
+D:seid, seid, dies, dies, eile, eile, dies, dies, seid, seid, eile,
  :seid, dies, eile, dies, seid, eile, dies, eile, seid, dies, seid,
  :fiel, fiel, lief, lief, feil, feil, fiel, fiel, lief, lief, feil,
  :fiel, lief, feil, fiel, lief, feil, lief, fiel, lief, feil, lief,
-Q: Press Y to continue, N to repeat, or Fkey 12 to exit
-N:LESSON4_D5
 *:LESSON4_D6
 I:(6)
-O:lies, lies, jede, jede, lade, lade, alle, alle, jede, jede, lade,
+D:lies, lies, jede, jede, lade, lade, alle, alle, jede, jede, lade,
  :lies, jede, lade, alle, jede, lies, alle, lade, lies, jede, lies,
  :leise, leise, alles, alles, fidel, fidel, leise, leise, je, alle,
  :leise, alles, fidel, alles, fidel, leise, alles, leise, je, lies,
-Q: Press Y to continue, N to repeat, or Fkey 12 to exit
-N:LESSON4_D6
 *:LESSON4_D7
 I:(7)
-O:löse es, löse das, löse alles, löse das, löse es, löse das, löse,
+D:löse es, löse das, löse alles, löse das, löse es, löse das, löse,
  :lies alles, lies das alles, sei leise, sie las leise, ideal, lies
  :jede las leise, jede las das alles leise, es sei ideal, als, jede
-Q: Press Y to continue, N to repeat, or Fkey 12 to exit
-N:LESSON4_D7
 G:E_LESSON4
 
 #Zwei häufige Buchstaben: r und u
 *:S_LESSON5
+K:12:MENU
 B:                         Lesson 5: r und u
 *:LESSON5_D1
 I:(1)
-O:asdf, jklö, desa, jilö, fesa, jilö, asdf, jklö, desa, kilö, desa,
+D:asdf, jklö, desa, jilö, fesa, jilö, asdf, jklö, desa, kilö, desa,
  :da, ja, es, öd, je, es, da, öd, je, ja, es, öd, ja, je, da, ödes,
  :ded frf frf frf frj frk frl fri frf frd frs fra frf fri fra dedfr
  :dir dir dir dar dar dar dir dir dar dar dir dar dir dar dir leere
-Q: Press Y to continue, N to repeat, or Fkey 12 to exit
-N:LESSON5_D1
 *:LESSON5_D2
 I:(2)
-O:leer leer leer reif reif reif leer leer reif reif leer reif reife
+D:leer leer leer reif reif reif leer leer reif reif leer reif reife
  :aller aller aller reise reise reise aller aller reise reise aller
  :freie freie freie klare klare klare freie freie klare klare freie
  :jeder jeder jeder raffe raffe raffe jeder jeder raffe raffe jeder
-Q: Press Y to continue, N to repeat, or Fkey 12 to exit
-N:LESSON5_D2
 *:LESSON5_D3
 I:(3)
-O:kik juj juj juj juf jud jus jua juj juk jul juö juj juk jul kikju
+D:kik juj juj juj juf jud jus jua juj juk jul juö juj juk jul kikju
  :aus aus aus auf auf auf aus aus auf auf aus auf aus auf aus laufe
  :faul faul faul rufe rufe rufe faul faul rufe rufe faul rufe faule
  :kaufe kaufe kaufe laufe laufe laufe kaufe kaufe laufe laufe kaufe
-Q: Press Y to continue, N to repeat, or Fkey 12 to exit
-N:LESSON5_D3
 *:LESSON5_D4
 I:(4)
-O:dulde dulde dulde freue freue freue dulde dulde freue freue dulde
+D:dulde dulde dulde freue freue freue dulde dulde freue freue dulde
  :flaue flaue flaue dulde dulde klare klare flaue dulde klare flaue
  :sause sause sause sauer sauer sauer raufe raufe raufe sause sauer
  :sauer sauer raufe raufe sause sause sauer raufe sause sauer raufe
-Q: Press Y to continue, N to repeat, or Fkey 12 to exit
-N:LESSON5_D4
 *:LESSON5_D5
 I:(5)
-O:dar darauf darauf darauf daraus daraus daraus darauf daraus drauf
+D:dar darauf darauf darauf daraus daraus daraus darauf daraus drauf
  :dir dauere dauere dauere leeres leeres leeres dauere leeres leere
  :rar erlasse erlasse erlasse erfasse erfasse erfasse erlasse fasse
  :liefere liefere liefere darauf darauf darauf liefere leider lasse
-Q: Press Y to continue, N to repeat, or Fkey 12 to exit
-N:LESSON5_D5
 *:LESSON5_D6
 I:(6)
-O:leider leer, leider flau, leider faul, leider leer, liefere alles
+D:leider leer, leider flau, leider faul, leider leer, liefere alles
  :alles frei, alles klar, alles reif, alles leer, erfasse das, klar
  :er rufe, er rufe es, er rufe dir, er dulde es, sie dulde es, dass
  :er lasse, er lasse es, er erlasse das, er fasse, er erfasse alles
-Q: Press Y to continue, N to repeat, or Fkey 12 to exit
-N:LESSON5_D6
 *:LESSON5_D7
 I:(7)
-O:alles klar, alles frei, alles reif, alles leer, erfasse das klar,
+D:alles klar, alles frei, alles reif, alles leer, erfasse das klar,
  :er dulde, er dulde es, rede leise, sie rief aus, er liefere alles
  :er kaufe, kaufe alles, kaufe alles auf, sie kaufe alles auf, alle
  :liefere dies, liefere alles, liefere es, liefere alles aus, rufe,
-Q: Press Y to continue, N to repeat, or Fkey 12 to exit
-N:LESSON5_D7
 *:LESSON5_D8
 I:(8)
-O:rufe das aus, rufe dies aus, rufe dies alles aus, rufe aus, alles
+D:rufe das aus, rufe dies aus, rufe dies alles aus, rufe aus, alles
  :erlasse es, erlasse dies, erlasse dieses, leider dies alles leer,
-Q: Press Y to continue, N to repeat, or Fkey 12 to exit
-N:LESSON5_D8
 G:E_LESSON5
 
 #Die ersten Spreizgriffe: g und h
 *:S_LESSON6
+K:12:MENU
 B:                         Lesson 6: g und h
 *:LESSON6_D1
 I:(1)
-O:asdedfrf ölkikjuj frfdedsa jujkiklö asdedfrf ölkikjuj jk,kl kik,k
+D:asdedfrf ölkikjuj frfdedsa jujkiklö asdedfrf ölkikjuj jk,kl kik,k
  :frei, leer, lies, klar, darf, faul, frei, leer, lies, klar, darf,
  :fgf fgf fgf fgö fgl fgk fgj fgf fga fgs fgd fgf fga fgs fgd fgfgf
  :gfa gfs gfd gfg gri gri gru gru gre gre gri gru gre gri gru grgrg
-Q: Press Y to continue, N to repeat, or Fkey 12 to exit
-N:LESSON6_D1
 *:LESSON6_D2
 I:(2)
-O:lag lag lag gar gar gar lag lag gar gar lag lag gar gar lag klage
+D:lag lag lag gar gar gar lag lag gar gar lag lag gar gar lag klage
  :klug klug klug sage sage sage klug klug sage sage klug sage kluge
  :grau grau grau karg karg karg grau grau karg karg geau karg graue
  :griff griff griff grell grell grell griff griff grell grell griff
-Q: Press Y to continue, N to repeat, or Fkey 12 to exit
-N:LESSON6_D2
 *:LESSON6_D3
 I:(3)
-O:jhj jhj jhj jha jhs jhd jhf jhj jhö jhl jhk jhö jhl jhk jhö jhjhj
+D:jhj jhj jhj jha jhs jhd jhf jhj jhö jhl jhk jhö jhl jhk jhö jhjhj
  :hjö hjl hjk hjö hjl hjk hjö jhj jhk jhl jhö hjö hjl hjk hjh öjhjö
  :aha aha aha sah sah sah her her her aha aha sah sah her her helle
  :ehe ehe ehe ihr ihr ihr ehe ehe ihr ihr her her sah ehe ihr ihrer
-Q: Press Y to continue, N to repeat, or Fkey 12 to exit
-N:LESSON6_D3
 *:LESSON6_D4
 I:(4)
-O:kahl kahl kahl fahl fahl fahl kahl kahl fahl fahl kahl kahl kahle
+D:kahl kahl kahl fahl fahl fahl kahl kahl fahl fahl kahl kahl kahle
  :hell hell hell ihre ihre ihre sehr sehr sehr hell ihre sehr helle
  :ruhig ruhig ruhig fahre fahre fahre ruhig ruhig fahre fahre ruhig
  :leihe leihe leihe siehe siehe siehe leihe leihe siehe siehe leihe
-Q: Press Y to continue, N to repeat, or Fkey 12 to exit
-N:LESSON6_D4
 *:LESSON6_D5
 I:(5)
-O:herauf herauf heraus heraus herauf herauf heraus herauf geduldige
+D:herauf herauf heraus heraus herauf herauf heraus herauf geduldige
  :gehöre gehöre gehöre ruhige ruhige ruhige gehöre ruhige religiöse
  :lehre lehre lehre heile heile heile lehre lehre heile heile lehre
  :helle helle helle graue graue graue helle helle graue graue helle
-Q: Press Y to continue, N to repeat, or Fkey 12 to exit
-N:LESSON6_D5
 *:LESSON6_D6
 I:(6)
-O:sehr diesig, sehr eifrig, sehr gierig, sehr grell, er lieh alles,
+D:sehr diesig, sehr eifrig, sehr gierig, sehr grell, er lieh alles,
  :gerade heraus, gerade erfuhr er es, gerade lieh er das alles aus,
  :es sei eilig, es sei sehr eilig, es sei eiliger, er erfahre dies,
  :siehe her, siehe herauf, siehe hierher, es lag, das lag hier aus,
-Q: Press Y to continue, N to repeat, or Fkey 12 to exit
-N:LESSON6_D6
 *:LESSON6_D7
 I:(7)
-O:erledige das, erledige alles, erledige es freudig, höre eilig auf
+D:erledige das, erledige alles, erledige es freudig, höre eilig auf
  :hilf ihr, es sei sehr heil, dies sei ruhig, sie sei hier ruhiger,
  :das sei sehr hell, das sei arg, sie erfuhr es, er erfuhr es hier,
  :er fuhr ruhig, er fuhr ruhiger, lege es heraus, hier lag das aus,
-Q: Press Y to continue, N to repeat, or Fkey 12 to exit
-N:LESSON6_D7
 *:LESSON6_D8
 I:(8)
-O:sie las eifrig, sie las das alles sehr eifrig, er las das eifrig,
+D:sie las eifrig, sie las das alles sehr eifrig, er las das eifrig,
  :das sei grell, dies sei greller, da lag es, er griff es hier auf,
-Q: Press Y to continue, N to repeat, or Fkey 12 to exit
-N:LESSON6_D8
 G:E_LESSON6
 
 #Zwei wichtige Konsonanten: t und z
 *:S_LESSON7
+K:12:MENU
 B:                         Lesson 7: t und z
 *:LESSON7_D1
 I:(1)
-O:frfgf jujhj asded ölkik jk,kö frfgf jujhj asded ölkik jk,kö frf,f
+D:frfgf jujhj asded ölkik jk,kö frfgf jujhj asded ölkik jk,kö frf,f
  :jage, half, lege, hell, sage, kahl, fege, sehr, rege, hilf, grau,
  :frf ftf ftf ftf frf fta fts ftd fta fts ftd tfö tfl tfk tfj frftf
  :hat hat hat tut tut tut hat hat tut tut hat tut tut hat tut hatte
-Q: Press Y to continue, N to repeat, or Fkey 12 to exit
-N:LESSON7_D1
 *:LESSON7_D2
 I:(2)
-O:gut gut gut tat tat tat gut gut tat tat gut tat tat gut tat gutes
+D:gut gut gut tat tat tat gut gut tat tat gut tat tat gut tat gutes
  :kalt kalt kalt tief tief tief laut laut laut hart hart hart kalte
  :riet riet riet erst erst erst riet riet erst erst riet erst erste
  :alte alte alte fast fast fast alte alte fast fast alte fast altes
-Q: Press Y to continue, N to repeat, or Fkey 12 to exit
-N:LESSON7_D2
 *:LESSON7_D3
 I:(3)
-O:juj jzj jzj jzj juj jzj jzö jzl jzk jzö jzl jzk jzö zjl zjk jujzj
+D:juj jzj jzj jzj juj jzj jzö jzl jzk jzö jzl jzk jzö zjl zjk jujzj
  :kurz kurz kurz zart zart zart kurz kurz zart zart kurz zart kurze
  :zielt zielt zielt sitzt sitzt sitzt zielt zielt sitzt sitzt zielt
  :geizig geizig geizig zögert zögert zögert geizig zögert zersetzte
-Q: Press Y to continue, N to repeat, or Fkey 12 to exit
-N:LESSON7_D3
 *:LESSON7_D4
 I:(4)
-O:zerfiel zerfiel zerfiel zergeht zergeht zergeht zerfiel zerstreut
+D:zerfiel zerfiel zerfiel zergeht zergeht zergeht zerfiel zerstreut
  :hitzige hitzige hitzige heftige heftige heftige hitzig dreisitzig
  :jetzt jetzt jetzt ritzt ritzt ritzt jetzt jetzt ritzt ritzt jetzt
  :zerstreut zerstreut zerstreut zersetzte zersetzte zerstreut zerrt
-Q: Press Y to continue, N to repeat, or Fkey 12 to exit
-N:LESSON7_D4
 *:LESSON7_D5
 I:(5)
-O:ehrgeizig ehrgeizig ehrgeizig ersetztes ersetztes kulturell sitzt
+D:ehrgeizig ehrgeizig ehrgeizig ersetztes ersetztes kulturell sitzt
  :zuletzt zuletzt zuletzt zuerst zuerst zuerst zuletzt zuerst herzu
  :reduziert reduziert reduziert kulturell kulturell kulturell ziert
  :heftig gestört, heute erzielt, heftig gestört, er zahlt es jetzt,
-Q: Press Y to continue, N to repeat, or Fkey 12 to exit
-N:LESSON7_D5
 *:LESSON7_D6
 I:(6)
-O:erst reduziert, es ist heiter, erst reduziert, sie zögerte jetzt,
+D:erst reduziert, es ist heiter, erst reduziert, sie zögerte jetzt,
  :zuerst ersetzt, sie liest gut, zuerst ersetzt, er ist jetzt hier,
  :zeige das, zeige es klar, du hast gehört, du hattest alles gehört
  :leite es, leite es gut, leite alle gut, er hat alles gut geleitet
-Q: Press Y to continue, N to repeat, or Fkey 12 to exit
-N:LESSON7_D6
 *:LESSON7_D7
 I:(7)
-O:er zahlte es, er zahlte alles aus, er zahlte alles erst jetzt aus
+D:er zahlte es, er zahlte alles aus, er zahlte alles erst jetzt aus
  :sie teilt es auf, er teilt es jetzt auf, er teilt jetzt alles auf
  :er hat alles ersetzt, sie hatte alles gut ersetzt, er hatte dies,
  :du hast alles gehört, du hattest alles gut gehört, sie sagte aus,
-Q: Press Y to continue, N to repeat, or Fkey 12 to exit
-N:LESSON7_D7
 *:LESSON7_D8
 I:(8)
-O:sie sagte es klar, sie sagte das alles sehr klar, er hört darauf,
+D:sie sagte es klar, sie sagte das alles sehr klar, er hört darauf,
  :er hat gezahlt, er hat jetzt gezahlt, sie hat es jetzt ausgezahlt
-Q: Press Y to continue, N to repeat, or Fkey 12 to exit
-N:LESSON7_D8
 G:E_LESSON7
 
 #Die Zeigefinger in der Unterreihe: v und m
 *:S_LESSON8
+K:12:MENU
 B:                         Lesson 8: v und m
 *:LESSON8_D1
 I:(1)
-O:asded frfgf ölkik jujhj frftf jujzj jk,kö ök,kj frftf jujzj jk,kö
+D:asded frfgf ölkik jujhj frftf jujzj jk,kö ök,kj frftf jujzj jk,kö
  :satt, zart, gute, zage, rate, zart, riet, zage, treu, zart, rate,
  :frf fvf fvf fvf fvö fvl fvk fvj fva fvs fvd fvf fvd fvs fvs fvfvf
  :viel viel viel vier vier vier viel viel vier vier viel vier viele
-Q: Press Y to continue, N to repeat, or Fkey 12 to exit
-N:LESSON8_D1
 *:LESSON8_D2
 I:(2)
-O:verlas verlas verlas versah versah verlas verfasse verliere viele
+D:verlas verlas verlas versah versah verlas verfasse verliere viele
  :verzeiht verzeiht verkehrt verkehrt verödet verödet verödet aktiv
  :verzagte verzagte verzagte verhörte verhört verhört verdaut aktiv
  :aktiver aktiver aktiver relativ relativ relativ aktiv vegetatives
-Q: Press Y to continue, N to repeat, or Fkey 12 to exit
-N:LESSON8_D2
 *:LESSON8_D3
 I:(3)
-O:juj jmj jmj jmj jma jms jmd jmf jmö jml jmk jmj jmö jml jmk jmjmj
+D:juj jmj jmj jmj jma jms jmd jmf jmö jml jmk jmj jmö jml jmk jmjmj
  :dem dem dem kam kam kam mag mag mag dem dem kam kam mag mag mager
  :mir mir mir arm arm arm mit mit mit mir mir arm arm mit mit armes
  :mehr mehr mild mild male male mehr mild male male mild mehr milde
-Q: Press Y to continue, N to repeat, or Fkey 12 to exit
-N:LESSON8_D3
 *:LESSON8_D4
 I:(4)
-O:merke merke immer immer fremd fremd merke immer fremd merke fremd
+D:merke merke immer immer fremd fremd merke immer fremd merke fremd
  :filme filme emsig emsig mager mager filme emsig mager filme emsig
  :vermeide vermeide vermerke vermerke vermeide vermerke jedem merke
  :vermehrt vermehrt vermehrt verfilme verfilme verfilme milde filme
-Q: Press Y to continue, N to repeat, or Fkey 12 to exit
-N:LESSON8_D4
 *:LESSON8_D5
 I:(5)
-O:verfiel immer mehr, verlief immer mild, verriet heute immer mehr,
+D:verfiel immer mehr, verlief immer mild, verriet heute immer mehr,
  :vieles ist gefilmt, vielerlei merkt er, er vermittelte mir alles,
  :vermittle es heute, sie verliert heute, höre jetzt aufmerksam zu,
  :hier malt er emsig, du vermittelst das, sie ist hier vökkig fremd
-Q: Press Y to continue, N to repeat, or Fkey 12 to exit
-N:LESSON8_D5
 *:LESSON8_D6
 I:(6)
-O:merke dir dies gut, verkaufe das heute, verleihe das alles heute,
+D:merke dir dies gut, verkaufe das heute, verleihe das alles heute,
  :er hat das gemerkt, er verkaufte alles, sie verliest jetzt alles,
  :melde es mir heute, melde es ihm, melde es heute, meldet es jetzt
  :lies aufmerksam, lies immer aufmerksam, leite es jetzt aufmerksam
-Q: Press Y to continue, N to repeat, or Fkey 12 to exit
-N:LESSON8_D6
 *:LESSON8_D7
 I:(7)
-O:vermittle es, vermittle es ihm, vermeide das, vermeide dies heute
+D:vermittle es, vermittle es ihm, vermeide das, vermeide dies heute
  :er vermag es, dies ist relativ, er verteilte meist alles sehr gut
  :dies ist seltsam, diea alles ist sehr seltsam, verleihe es heute,
  :hier verkauft er viel, sie verkaufte hier mehr, das mag er jetzt,
-Q: Press Y to continue, N to repeat, or Fkey 12 to exit
-N:LESSON8_D7
 *:LESSON8_D8
 I:(8)
-O:sie vermittelt es, sie vermittelte es mehrmals, merke dir das gut
+D:sie vermittelt es, sie vermittelte es mehrmals, merke dir das gut
  :er merkt alles, er vermerkte das meiste, sie verlieh heute alles,
-Q: Press Y to continue, N to repeat, or Fkey 12 to exit
-N:LESSON8_D8
 G:E_LESSON8
 
 #Spreizgriffe in die Unterreihe: b und n
 *:S_LESSON9
+K:12:MENU
 B:                         Lesson 9: b und n
 *:LESSON9_D1
 I:(1)
-O:frf fvf juj jmj frfvf jujmj fgf jhj frf fvf juj jmj k,k k,ö frfvf
+D:frf fvf juj jmj frfvf jujmj fgf jhj frf fvf juj jmj k,k k,ö frfvf
  :am, im, mit, mir, mag, mal, mehr, viel, immer, jedem, damit, mir,
  :fvf fbf fbf fbf fbö fbl fbk fbj fvf fbf fbd fbs fba fbs fbd fvfbf
  :bis bis bis bei bei bei bis bis bis bei bei bis bis bei bis bilde
-Q: Press Y to continue, N to repeat, or Fkey 12 to exit
-N:LESSON9_D1
 *:LESSON9_D2
 I:(2)
-O:beim beim halb halb aber aber bald bald beim halb aber bald halbe
+D:beim beim halb halb aber aber bald bald beim halb aber bald halbe
  :fbfrf fbfr fbr bri briet briet breit breit brav brav breite brave
  :frfbf frfb frb arb arbeite arbeite arbeitet verdarb verdarb erbe,
  :fbftf fbft fbt ibt gibt gibt gibt lebt lebt lebt labt lebte labte
-Q: Press Y to continue, N to repeat, or Fkey 12 to exit
-N:LESSON9_D2
 *:LESSON9_D3
 I:(3)
-O:jmj jnj jnj jnj jna jns jnd jnf jnö jnl jnk jnj njö jnl njk jnjnj
+D:jmj jnj jnj jnj jna jns jnd jnf jnö jnl jnk jnj njö jnl njk jnjnj
  :den den den ein ein ein neu neu neu den den ein ein neu neu einen
  :sein sein kein kein lang lang mein mein sein kein lang mein seine
  :allen allen gegen gegen einen einen allen gegen einen allen gegen
-Q: Press Y to continue, N to repeat, or Fkey 12 to exit
-N:LESSON9_D3
 *:LESSON9_D4
 I:(4)
-O:gehen gehen dient dient ihren ihren gehen dient ihren gehen dient
+D:gehen gehen dient dient ihren ihren gehen dient ihren gehen dient
  :sagen sagen sehen sehen keine keine sagen sehen keine sagen sehen
  :geben geben geben haben haben haben geben geben haben haben geben
  :neben neben neben leben leben leben neben neben leben leben neben
-Q: Press Y to continue, N to repeat, or Fkey 12 to exit
-N:LESSON9_D4
 *:LESSON9_D5
 I:(5)
-O:binden binden binden darben darben darben binden darben mag binde
+D:binden binden binden darben darben darben binden darben mag binde
  :antik antik antik beige beige beige antik antik beige beige antik
  :unfair unfair unfair genial genial genial unfair genial unfair ab
  :abstrakt abstrakt abstrakt basieren basieren basieren abstrakt ab
-Q: Press Y to continue, N to repeat, or Fkey 12 to exit
-N:LESSON9_D5
 *:LESSON9_D6
 I:(6)
-O:sie halten nun immer daran fest, sie halten nun immer daran fest,
+D:sie halten nun immer daran fest, sie halten nun immer daran fest,
  :er behandelt es als eilig, sie behandeln es heute als sehr eilig,
  :sie dankten, sie bieten, sie sehen es ein, sie bitten jetzt darum
  :sie senden, sie geben, sie kennen, sie beten, sie behandelten es,
-Q: Press Y to continue, N to repeat, or Fkey 12 to exit
-N:LESSON9_D6
 *:LESSON9_D7
 I:(7)
-O:sie können es, sie kann viel, sie könnten es aber heute verlieren
+D:sie können es, sie kann viel, sie könnten es aber heute verlieren
  :jetzt bitten sie darum, jetzt hört sie, jetzt lernen sie es aber,
  :er arbeitet mit, sie arbeitet nit, alle arbeite, jetzt immer mit,
  :er diktiert gut, sie diktiert gut, alle diktieren jetzt aber gut,
-Q: Press Y to continue, N to repeat, or Fkey 12 to exit
-N:LESSON9_D7
 *:LESSON9_D8
 I:(8)
-O:er behandelt es, sie behandelt es, alle behandeln es jetzt eilig,
+D:er behandelt es, sie behandelt es, alle behandeln es jetzt eilig,
  :er lernt eifrig, sie lernt eifrig, alle lernen jetzt aber eifrig,
-Q: Press Y to continue, N to repeat, or Fkey 12 to exit
-N:LESSON9_D8
 G:E_LESSON9
 
 #Punkt
 *:S_LESSON10
+K:12:MENU
 B:                         Lesson 10: Punkt
 *:LESSON10_D1
 I:(1)
-O:asdfbf ölkjnj fbfdsa jnjklö frfded jujkik fvfbfv jmjnjm k,k k,k,k
+D:asdfbf ölkjnj fbfdsa jnjklö frfded jujkik fvfbfv jmjnjm k,k k,k,k
  :an, ab, in, im, er, es, an, ab, in, im, er, es, an, ab, in, ihre,
  :jmj k,k l.l l.l l.l l.a l.s l.d l.f l.j l.k l.ö l.j l.k l.j l.l.l
  :ab, ab. er, er. im, im. in, in. ab. er. im. in. ab. er. im. Aber.
-Q: Press Y to continue, N to repeat, or Fkey 12 to exit
-N:LESSON10_D1
 *:LESSON10_D2
 I:(2)
-O:bis, bis. die, die. mir, mir. sei, sei. mir, mir. die, die. Dies.
+D:bis, bis. die, die. mir, mir. sei, sei. mir, mir. die, die. Dies.
  :ihr, ihr. ihn, ihn. her, her, hin, hin. ihr. ihn. her. hin. Nein.
  :vier, vier. viel, viel. gelb, gelb. vier. viel. gelb. viel. Gelb.
  :können, können. stehen, stehen. binden, binden. sein. Anderseits.
-Q: Press Y to continue, N to repeat, or Fkey 12 to exit
-N:LESSON10_D2
 *:LESSON10_D3
 I:(3)
-O:eignen, eignen. dienen, dienen. andere, andere. kein. Verbreitet.
+D:eignen, eignen. dienen, dienen. andere, andere. kein. Verbreitet.
  :gemein, gemein. gesagt, gesagt. besser, besser. nein. Verbessert.
  :stellt, stellt. breite, breite. dauert, dauert. fein. Unangenehm.
  :bringt, bringt. bittet, bittet. meinte, meinte. neue. Verkauften.
-Q: Press Y to continue, N to repeat, or Fkey 12 to exit
-N:LESSON10_D3
 *:LESSON10_D4
 I:(4)
-O:sie können es erfahren, bestimmt können sie heute alles erfahren.
+D:sie können es erfahren, bestimmt können sie heute alles erfahren.
  :sie sind gut trainiert, allerdings sind jetzt alle gut trainiert.
  :alle arbeiten gern mit, seitdem arbeitete sie aber immer gut mit.
  :es ist ganz klar bestimmt, das ist jetzt aber ganz klar bestimmt.
-Q: Press Y to continue, N to repeat, or Fkey 12 to exit
-N:LESSON10_D4
 *:LESSON10_D5
 I:(5)
-O:sie könnte dazu beitragen, sie hatte immer viel dazu beigetragen.
+D:sie könnte dazu beitragen, sie hatte immer viel dazu beigetragen.
  :frf juj ftf jzj fgf jhj fvf jmj fbf jnj frf juj ftf jzj fgf jujzj
  :fbfvfdsa jnjmjklö fbfvfdsa jnjmjklö fbfvfdsa jnjmjklö fbfvf jnjmj
  :ftfrfded jzjujkik ftfrfded jzjujkik ftfrfded jzjujkik ftfrf jzjvj
-Q: Press Y to continue, N to repeat, or Fkey 12 to exit
-N:LESSON10_D5
 *:LESSON10_D6
 I:(6)
-O:aber dann jede sein kein mein mehr denn hier bald gute halb beste
+D:aber dann jede sein kein mein mehr denn hier bald gute halb beste
  :neue seid vier fest halt lebe gebe hebe alle leer kann ihre neues
  :feine danke blaue liebe bitte genau lange gegen sende gönne reine
  :jetzt merke nehme ganze hatte dabei lerne kenne darum kaufe binde
-Q: Press Y to continue, N to repeat, or Fkey 12 to exit
-N:LESSON10_D6
 *:LESSON10_D7
 I:(7)
-O:klage, klage. neues, neues. altes, altes. meine, meine. sein, ja.
+D:klage, klage. neues, neues. altes, altes. meine, meine. sein, ja.
  :bauen, bauen. trage, trage. fahre, fahre. denke, denke. dein, ab.
  :sagen, sagen. hörte, hörte. halbe, halbe. fange, fange. mein, an.
  :bestimmt hielt sie daran fest. bestimmt halten sie es jetzt fest.
-Q: Press Y to continue, N to repeat, or Fkey 12 to exit
-N:LESSON10_D7
 *:LESSON10_D8
 I:(8)
-O:dies ist ganz klar festgelegt. es ist jetzt aber klar festgelegt.
+D:dies ist ganz klar festgelegt. es ist jetzt aber klar festgelegt.
  :er kann hierzu aber beitragen. alle könnten heute dazu beitragen.
  :sie könnte besser diskutieren. nun diskutiert sie aber sehr viel.
-Q: Press Y to continue, N to repeat, or Fkey 12 to exit
-N:LESSON10_D8
 G:E_LESSON10
 
 

@@ -22,8 +22,8 @@ use Cwd; # Cwd::getcwd
 use gtypist;
 
 # configurable variables
-my $lines_per_drill = 4; # 1-11 for O: and D:, 1-22 for P:
-my $drill_type = "O:";
+my $lines_per_drill = 4; # 1-11 for [Dd]: and D:, 1-22 for [Ss]:
+my $drill_type = "D:"; # [DdSs]
 
 
 my $ktouchfilename = undef;
@@ -35,16 +35,16 @@ my $TYPFILE = undef;
 if ($lines_per_drill < 1) {
     die "Invalid lines_per_drill: $lines_per_drill\n";
 }
-if ($drill_type eq "O:" || $drill_type eq "D:") {
+if ($drill_type eq "D:" || $drill_type eq "d:") {
     if ($lines_per_drill > 11) {
-	die "Invalid lines_per_drill for [OD]:: $lines_per_drill\n";
+	die "Invalid lines_per_drill for [Dd]:: $lines_per_drill\n";
     }
 } else {
-    if ($drill_type ne "P:") {
+    if ($drill_type ne "S:" && $drill_type ne "s:") {
 	die "Invalid drill_type: $drill_type\n";
     }
     if ($lines_per_drill > 22) {
-	die "Invalid lines_per_drill for P:: $lines_per_drill\n";
+	die "Invalid lines_per_drill for [Ss]:: $lines_per_drill\n";
     }
 }
 
@@ -90,6 +90,7 @@ while(defined($ktouchfilename = shift(@ARGV)))
 	if (!defined($line)) { $done = 1; next;	}
 	
 	print TYPFILE "*:S_LESSON$lesson_counter\n";
+	print TYPFILE "K:12:MENU\n";
 	# $line contains the first non-blank, non-comment line (which is the
 	# name of the lesson)
 	chomp($line);
@@ -139,14 +140,16 @@ sub convert_lesson($lesson_counter *KTOUCHFILE *TYPFILE)
 
 	++$line_counter;
 	if ($line_counter == $lines_per_drill) {
-	    print $typfile
-		"Q: Press Y to continue, N to repeat, or Fkey 12 to exit\n";
-	    print $typfile "N:LESSON${lesson_counter}_D$drill_counter\n";
+# this is not necessary any more: it's implied in D:
+#	    print $typfile
+#		"Q: Press Y to continue, N to repeat, or Fkey 12 to exit\n";
+#	    print $typfile "N:LESSON${lesson_counter}_D$drill_counter\n";
 	    $line_counter = 0; ++$drill_counter;
 	}
     }
-    print $typfile "Q: Press Y to continue, N to repeat, or Fkey 12 to exit\n";
-    print $typfile "N:LESSON${lesson_counter}_D$drill_counter\n";
+# this is not necessary any more: it's implied in D:
+#   print $typfile "Q: Press Y to continue, N to repeat, or Fkey 12 to exit\n";
+#    print $typfile "N:LESSON${lesson_counter}_D$drill_counter\n";
 }
 
 # Local Variables:

@@ -1,3 +1,13 @@
+2001-08-12  Felix Natter  <f.natter@ndh.net>
+
+        * node Emacs mode for editing gtypist-lessons: add info
+	about gtypist-mode-help and change the informatin about
+	gtypist-mode-fortune-to-drill
+	* node Script-file commands: mention that Q: accepts fkeys as
+	a side-effect, and that this is used to set the prompt for menus
+	* many nodes: rename "Script files and commands" to
+	"Script-file commands"
+
 2001-07-28  Felix Natter  <f.natter@ndh.net>
 
 	* node Emacs mode for editing gtypist-lessons: mention that

@@ -1,5 +1,5 @@
-Dies ist doc/gtypist.info, hergestellt von Makeinfo Version 4.0 aus
-doc/gtypist.texinfo.
+Dies ist gtypist.info, hergestellt von Makeinfo Version 4.0 aus
+gtypist.texinfo.
 
 INFO-DIR-SECTION Education
 START-INFO-DIR-ENTRY
@@ -24,7 +24,7 @@ exising lessons or create new ones.
 * Copying::
 * Introduction::
 * Invoking::
-* Script files and commands::
+* Script-file commands::
 * Supplied lessons::
 * How to contribute new lessons::
 * Emacs mode for editing gtypist-lessons::
@@ -437,17 +437,17 @@ also in DOS/Windows (DOS 6.22, Windows 98, Windows NT).
 
    The program reads lessons written in an easy-to-learn scripting
 language. It is distributed with several complete and good lessons, you
-can use them, modify them or create new lessons (*note Script files and
+can use them, modify them or create new lessons (*note Script-file
 commands::).
 
-   There are two types of drills - one-time and ordinary. In an ordinary
-drill, gtypist displays text on the screen, and waits for the user to
-correctly type the exact same text, underneath. It indicates typing
-errors, and if at the end of the exercise there were errors, it will
-re-run the drill, up to a maximum number of tries. In a one-time drill,
-the procedure is the same, except that the program will not repeat the
-drill if it is not typed correctly. Backspace and delete are not
+   In a drill, gtypist displays text on the screen, and waits for the
+user to correctly type the exact same text, underneath. It indicates
+typing errors, and if at the end of the exercise there were too many
+errors, it will re-run the drill.  Backspace and delete are not
 permitted in drills.
+
+   If you already made too many mistakes, then you can use <ESC> to
+give up and restart the drill from the beginning.
 
    In a speed test, gtypist displays text on the screen, and waits for
 the user to correctly over-type the exact same text. It indicates typing
@@ -472,7 +472,7 @@ typing the passage. The adjusted WPM factors in the errors; each error
 is counted as a word mistyped.
 
 
-File: gtypist.info,  Node: Invoking,  Next: Script files and commands,  Prev: Introduction,  Up: Top
+File: gtypist.info,  Node: Invoking,  Next: Script-file commands,  Prev: Introduction,  Up: Top
 
 Invoking
 ********
@@ -484,13 +484,12 @@ Invoking
    The supported options are given below (note that the long form is
 supported only in GNU/Linux):
 
-`-d,--drill-tries'
-     Specifies the maximum number of drill tries permitted. When running
-     through an ordinary typing drill, gtypist will not proceed past
-     the drill until it is completed without errors, or until the
-     number of tries exceeds drill_tries. The default value is 3, the
-     minimum 1, and the maximum 1000. This value is ignored for
-     one-time typing drills.
+`-e, --error-max'
+     Specifies the default maximum error percentage.  The default value
+     is 3.0 and it must be between 0.0 and 100.0. There is a
+     corresponding script-file command (*note Script-file commands::)
+     which only overrides this if it is stricter (smaller). This value
+     is ignored for "practice only" drills.
 
 `-n, --notimer'
      gtypist will display the typing speeds in WPM after both drills
@@ -564,10 +563,10 @@ at label `TEST1', using the terminal's cursor, and running silently:
 `gtypist -t -q -l TEST1 /tmp/test.typ'
 
 
-File: gtypist.info,  Node: Script files and commands,  Next: Supplied lessons,  Prev: Invoking,  Up: Top
+File: gtypist.info,  Node: Script-file commands,  Next: Supplied lessons,  Prev: Invoking,  Up: Top
 
-Script files and commands
-*************************
+Script-file commands
+********************
 
    GNU Typist reads in the data for its typing lessons from a script
 file.  With the exception of comments and blank lines, each line in the
@@ -646,8 +645,9 @@ that they begin with '#'; other lines must have the above format.
 
 `Q'
      This command command prompts its text on the message line, and
-     waits for a <Y> or an <N> before proceeding.  Other characters are
-     ignored.
+     waits for a <Y> or an <N> before proceeding. Other characters are
+     ignored.  As a side effect, you can hit an fkey if it is bound
+     (That's why this is used to set the prompt for menus).
 
 `Y'
      This is like `G', except that the goto is executed only if the
@@ -674,7 +674,7 @@ that they begin with '#'; other lines must have the above format.
      <Ctrl-S>.
 
      This is also useful where function keys are intercepted by other
-     programs, for example, by a window manager.
+     programs (for example by a window manager).
 
 `X'
      This command causes gtypist to exit. It is a single line command.
@@ -695,14 +695,14 @@ that they begin with '#'; other lines must have the above format.
      I:Here is an example of a drill:
      D:asdf ghjkl;
      I:And here is an example of a speed test:
-     P:qwe rt yu iop
+     S:qwe rt yu iop
      *:QDONE
      Q:Seen enough yet? [Y/N]
      N:LOOP
      X:
 
 
-File: gtypist.info,  Node: Supplied lessons,  Next: How to contribute new lessons,  Prev: Script files and commands,  Up: Top
+File: gtypist.info,  Node: Supplied lessons,  Next: How to contribute new lessons,  Prev: Script-file commands,  Up: Top
 
 Supplied lessons
 ****************
@@ -873,6 +873,11 @@ care of this for GNU Emacs) and use this instead:
 
 Here are the commands along with the keybindings:
 
+`C-c C-h, M-x gtypist-mode-help'
+     This shows gtypist's texinfo-documentation, starting with node
+     "Script-file commands" (*note Script-file commands::). With prefix,
+     start at the top-node.
+
 `C-c C-g, M-x gtypist-mode-goto-label'
      Query for a label to go to (with completion).
 
@@ -896,9 +901,9 @@ Here are the commands along with the keybindings:
      (prompts for name).
 
 `C-c C-f, M-x gtypist-mode-fortune-to-drill'
-     Insert a drill (`O:') with text from `fortune' (or `yow' if
-     `fortune' isn't available). Use `C-u' prefix to get `P:', and `C-u
-     C-u' to get `D:'.
+     Insert a drill (`D:') with text from `fortune' (or `yow' if
+     `fortune' isn't available). Use `C-u' prefix to get `S:', and `C-u
+     C-u' to get `d:'.
 
 Run `C-h m' for a complete list of commands and their keybindings.
 
@@ -1024,20 +1029,20 @@ History of GNU Typist
 
 
 Tag Table:
-Node: Top223
-Node: Distribution906
-Node: Copying1795
-Node: Introduction20950
-Node: Invoking23211
-Node: Script files and commands26900
-Node: Supplied lessons32442
-Node: How to contribute new lessons33927
-Node: Ktouch-lessons34254
-Node: Create drills from fortune36506
-Node: Emacs mode for editing gtypist-lessons37218
-Node: Technical Information39483
-Node: Environment Variables39714
-Node: Errors and omissions41819
-Node: History42536
+Node: Top215
+Node: Distribution893
+Node: Copying1782
+Node: Introduction20937
+Node: Invoking23096
+Node: Script-file commands26726
+Node: Supplied lessons32366
+Node: How to contribute new lessons33846
+Node: Ktouch-lessons34173
+Node: Create drills from fortune36425
+Node: Emacs mode for editing gtypist-lessons37137
+Node: Technical Information39605
+Node: Environment Variables39836
+Node: Errors and omissions41941
+Node: History42658
 
 End Tag Table
