@@ -37,8 +37,6 @@ Version 2.4 - September/2001
 	tools/gtypist-mode.el
 	- Improved i18n-support
 	- Improved German translation (with help from de@li.org)
-
-Development version
         - Minor fixes (build, charset definition)
 	- Documentation improvements
 
