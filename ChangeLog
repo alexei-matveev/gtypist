@@ -1,3 +1,7 @@
+2002-05-20  Felix Natter  <fnatter@gmx.net>
+
+	* gtypist.c: do the same as last item for headers
+
 2002-05-18  Felix Natter  <fnatter@gmx.net>
 
 	* configure.in: check for ncurses if curses is not available

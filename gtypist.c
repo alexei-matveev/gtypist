@@ -25,7 +25,12 @@
 #include <stdio.h>
 #include <ctype.h>
 #include <signal.h>
+/* necessary on SuSE there are no ncurses* -> curses* links */
+#ifdef HAVE_LIBCURSES
 #include <curses.h>
+#else
+#include <ncurses.h>
+#endif
 #include <time.h>
 #include <errno.h>
 #include <string.h>
