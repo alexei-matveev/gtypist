@@ -1,5 +1,7 @@
 2003-10-25  Hynek Hanke  <hanke@volny.cz>
 
+	* po/POTFILES.in: Updated to reflect that the sources are now in src/
+	
 	* configure.in: Build also src/Makefile.am
 
 	* Makefile.am: Some stuff moved to src/Makefile.am
