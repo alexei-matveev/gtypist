@@ -132,13 +132,13 @@ screen displays a message line, queries, and other status information.
 The lines in between are used for the tutorials, drills, and speed
 tests.
 
-There are two types of typing exercises: drills and speed tests.
+There are two types of typing exercises: @dfn{drills} and @dfn{speed tests}.
 
-In a drill, gtypist displays text in every other line on the screen,
+In a @dfn{drill}, gtypist displays text in every other line on the screen,
 and waits for the user to correctly type the exact same text in the
 intermediate lines.
 @c TODO: intention is ``Griff-Übung'' (finger exercise)
-Typing errors are indicated with an inverse @code{^}, or @code{>} if
+Typing errors are indicated with an inverse @samp{^}, or @samp{>} if
 the character is a newline and at the end of the
 exercise it calculates the real and effective rate in Words Per Minute (@acronym{WPM}).
 If there were too many errors, it will re-run the drill.
@@ -166,7 +166,7 @@ There are also ``practice only'' exercises (of both drills and speed tests)
 which you won't have to repeat at all. But we won't tell you when this
 is the case, so you'll have to give your best anyway ;-)
 
-In typing speed reports, a 'word' is deemed to be five characters, so
+In typing speed reports, a @dfn{word} is deemed to be five characters, so
 the raw (gross) @acronym{WPM} is the number of characters in the test passage,
 divided by five, then divided again by the number of minutes elapsed in
 typing the passage. The adjusted @acronym{WPM} factors in the errors; each error
@@ -318,9 +318,12 @@ These lessons are the standard lessons from
 which have been converted to
 gtypist's file format using @file{tools/ktouch2typ.pl}.
 
-The files are called ktde.typ (german.ktouch), kten.typ (english.ktouch),
-ktfr.typ (french.ktouch), ktlecten.typ (lecture_en.ktouch), ktno.typ
-(norwegian.ktouch) and ktnumber.typ (number.ktouch).
+The files are called @file{ktde.typ} (@file{german.ktouch}),
+@file{kten.typ} (@file{english.ktouch}),
+@file{ktfr.typ} (@file{french.ktouch}),
+@file{ktlecten.typ} (@file{lecture_en.ktouch}),
+@file{ktno.typ} (@file{norwegian.ktouch})
+and @file{ktnumber.typ} (@file{number.ktouch}).
 @item ttde.typ
 This is the German lesson of
 @uref{http://www.pingos.schulnetz.org/tipptrainer/, tipptrainer},
@@ -336,7 +339,7 @@ about it, by writing an email to @email{bug-gtypist@@gnu.org}.
 @node Using typefortune, Script file commands, Supplied lessons, Top
 @chapter Using typefortune
 
-`typefortune' lets you practice with text from `fortune'.
+@command{typefortune} lets you practice with text from @command{fortune}.
 
 @code{SYNTAX: typefortune [-dslh] [-n count] [-o <gtypist_opts>]}
 
@@ -361,7 +364,7 @@ value, i.e. @code{-o e,1.0}) where @code{option} is the name of the
 option (short or long) with all leading dashes removed.
 You need to quote the argument to @option{-o} if you are specifying
 more than one argument:
-@command{typefortune -n 3 -o 'silent e,5 word-processor'}.
+@code{typefortune -n 3 -o 'silent e,5 word-processor'}.
 
 @end table
 
@@ -411,16 +414,16 @@ character, including space, and are a single line command. Labels must
 be unique within lesson files. Whitespace at the end of labels is ignored.
 
 @item I
-The I command can display some brief instructions above a drill or a
+The @code{I} command can display some brief instructions above a drill or a
 speed test.  Only two lines or less are permitted.  Unlike the
 @code{T} command, it does not wait for any further keypresses before
 proceeding.  So it should really always be followed by an exercise.
 It clears the whole screen exercise area, so in this respect it's just
-like a two-line T.
+like a two-line @code{T}.
 
 @c TODO: more information about ``should be used for''...
 @item D,d
-This command is called ``drill'', and it is one of two types of
+This command is called @dfn{drill}, and it is one of two types of
 typing exercises.
 
 It is a multi-line command. The text is displayed in every second
@@ -439,7 +442,7 @@ mistakes.
 
 @c TODO: more information about ``should be used for''...
 @item S,s
-This is the second type of typing exercise: the ``speed test''.
+This is the second type of typing exercise: the @dfn{speed test}.
 
 It is a multi-line command.  It displays its text on the screen, and
 prompts the user to type on top of it.  That's why you can use up to
@@ -450,7 +453,7 @@ the error-count.
 Speed tests should be used for typing (mostly) complete sentences,
 texts or files (i.e. a letter, texinfo/html/tex files).
 
-The lowercase version @code{s} is a ``practice only'' speed test -
+The lowercase version @code{s} is a @dfn{practice only speed test}:
 the user will not have not repeat this drill if (s)he
 made too many mistakes.
 
@@ -494,8 +497,8 @@ programs (for example by a window manager).
 
 @item E
 This command is used to set the highest error-rate permitted for
-the next drill (E:<value>%) or for all following drills until the next
-E: (E:<value>%*).
+the next drill (@code{E:<value>%}) or for all following drills until the next
+@code{E:} (@code{E:<value>%*}).
 
 If @option{--error-max/-e} is specified then this command will only
 have an effect if it is @emph{stricter} than the value specified on
@@ -570,7 +573,7 @@ using @command{tools/ktouch2typ.pl}. This will take care of writing
 ``jump-tables'', a menu and a bit more.
 
 The ktouch-format consists only of lessons, which are preceded by
-their names, and separated by blank lines and/or comments (# at the
+their names, and separated by blank lines and/or comments (@samp{#} at the
 beginning of the line). So the first non-blank, non-comment line in
 the file is the name of the first lesson, and the first lesson
 consists of all the lines up to the next comment or blank line. After
@@ -578,7 +581,7 @@ the separator (comment or blank line) the name of the second lesson
 follows and so on.
 
 This is an example of a three-lesson ktouch file (excerpts from the
-first three lessons of german.ktouch):
+first three lessons of @file{german.ktouch}):
 @example
 #
 # Deutsche Training-Datei für KTouch
@@ -604,7 +607,7 @@ ded ded ded dej dek del deö ded deö del dek dej ded dej dek delde
 Once you are done, use @command{tools/ktouch2typ.pl} to convert the
 file: @samp{ktouch2typ.pl lesson.ktouch} converts @file{lesson.ktouch}
 to @file{lesson.typ}. It is important that the input file ends in
-``.ktouch'', otherwise @command{ktouch2typ.pl} will skip it. Warning:
+@samp{.ktouch}, otherwise @command{ktouch2typ.pl} will skip it. Warning:
 this will overwrite @file{lesson.typ} without asking you !
 
 You can customize the number of lines that @command{ktouch2typ.pl}
@@ -625,7 +628,7 @@ case on Windows).
 
 Once you installed @file{gtypist-mode.el} 
 (@pxref{Emacs mode}), you can open a file
-with it ``.typ'' extension and run @kbd{C-c C-f} to create a drill
+with the @samp{.typ} extension and run @kbd{C-c C-f} to create a drill
 (@code{D:} by default, use @kbd{C-u} or @kbd{C-u C-u} prefix to
 change).
 
@@ -635,9 +638,9 @@ change).
 @subsection Structure of lesson files
 
 @itemize @bullet
-@item use mixture of drills and speed tests (this is more fun for the user)
-@item use some ``practice-only'' exercises (d:/s:) (possibly mixed with
-``real'' exercises) followed by a ``final test''.
+@item Use mixture of drills and speed tests (this is more fun for the user)
+@item Use some ``practice-only'' exercises (@code{d:}/@code{s:})
+(possibly mixed with ``real'' exercises) followed by a ``final test''.
 @file{esp.typ} uses this scheme.
 
 @end itemize
@@ -645,7 +648,7 @@ change).
 @subsection Patterns for exercises
 
 @itemize @bullet
-@item when introducing a new key, start out by mixing other (known) keys
+@item When introducing a new key, start out by mixing other (known) keys
 of the same finger in with the new key in the first drill(s).
 Here is an example (from @file{t.typ}, line 237):
 @example
@@ -760,9 +763,9 @@ language of the messages shown by gtypist can be chosen. By now
 gtypist is distributed with messages in English, Czech, Finnish, French,
 German and Spanish.
 To use a particular NLS use the environment variable LANG and
-set it to the appropriate 'LL_CC' combination where 'LL' is an ISO 639
-two-letter language code and 'CC' is an ISO 3166 two-letter country
-code (e.g. 'es_ES' for Spain and 'de_DE' for Germany). In some systems
+set it to the appropriate @samp{LL_CC} combination where @samp{LL} is an ISO 639
+two-letter language code and @samp{CC} is an ISO 3166 two-letter country
+code (e.g. @samp{es_ES} for Spain and @code{de_DE} for Germany). In some systems
 it will be also necessary to set the environment variable LANGUAGE to
 the same value.
 

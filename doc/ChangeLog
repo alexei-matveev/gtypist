@@ -9,6 +9,7 @@
 	Replaced 'Name @email{address}' by '@mail{address, Name}.
 	Used @option everywhere for command line options.
 	Used @samp to introduce single characters.
+        Small fixes to use texinfo commands when needed.
 	* gtypist.texi: updated Felix Natter's email address.
 
 2002-04-08  Michael Opdenacker  <michaelo@gnu.org>
