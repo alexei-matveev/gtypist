@@ -1,3 +1,12 @@
+2002-02-23  Felix Natter  <fnatter@gmx.net>
+
+	* gtypist.texi (Emacs mode): do not mention that C-c C-f can be used
+	to quickly create lesson for oneself to practice with (That will
+	be typefortune's purpose)
+	* gtypist.texi: put node Script file commands after Supplied lessons
+	(swap Supplied lessons and Script file commands)
+	to make the order more logical
+
 2002-01-19  Michael Opdenacker <michaelo@gnu.org>
 
 	* gtypist.texi: Added French to the list of interface languages.

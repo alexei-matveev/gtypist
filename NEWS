@@ -4,6 +4,10 @@
 	See the `ChangeLog' (top-level and in some subdirectories) and
 	`THANKS' files for details about changes and contributors.
 
+Version 2.5.1 February/2002
+	- fix a bug in --help output
+	- small documentation fixes
+
 Version 2.5 - January/2002
 	
 	- Allowed the user to skip an exercise or exit the lesson by

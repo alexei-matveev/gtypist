@@ -33,8 +33,8 @@ or create new ones.
                             copy and share gtypist
 * Introduction::            Important concepts you need to know as a user
 * Invoking::                How to invoke gtypist
-* Script file commands::    Information about the syntax of gtypist lessons
 * Supplied lessons::        Overview of the lessons in the gtypist distribution
+* Script file commands::    Information about the syntax of gtypist lessons
 * Create new lessons::      How to contribute new lessons
 * Emacs mode::              Emacs mode for editing gtypist scripts
 * Environment Variables::   Environment variables which affect gtypist
@@ -178,7 +178,7 @@ divided by five, then divided again by the number of minutes elapsed in
 typing the passage. The adjusted WPM factors in the errors; each error
 is counted as a mistyped word.
 
-@node Invoking, Script file commands, Introduction, Top
+@node Invoking, Supplied lessons, Introduction, Top
 @chapter Invoking
 
 The syntax to invoke GNU Typist is:
@@ -289,7 +289,53 @@ starting at label @code{TEST1}, using the terminal's cursor, and running
 silently:@*
 @code{gtypist -t -q -l TEST1 /tmp/test.typ}
 
-@node Script file commands, Supplied lessons, Invoking, Top
+@node Supplied lessons, Script file commands, Invoking, Top
+@chapter Supplied lessons
+
+The following lessons are supplied with GNU Typist :
+@table @file
+@item q.typ 
+Quick QWERTY course in English
+@item r.typ
+Long QWERTY course in English
+@item t.typ
+QWERTY touch typing in English
+@item v.typ
+Yet Another QWERTY in English
+@item w.typ
+QWERTY Review in English
+@item d.typ
+Dvorak touch typing in English
+@item m.typ
+Typing drills in English
+@item s.typ
+Speed drills in English
+@item n.typ
+Calculator keypad in English
+@item gtypist.typ
+Compendium of all previous lessons in English
+@item esp.typ
+QWERTY course in Spanish
+@item kt*.typ
+These lessons are the standard lessons from Ktouch 1.0
+(@url{http://ktouch.sourceforge.net}), which have been converted to
+gtypist's file format using @file{tools/ktouch2typ.pl}.
+
+The files are called ktde.typ (german.ktouch), kten.typ (english.ktouch),
+ktfr.typ (french.ktouch), ktlecten.typ (lecture_en.ktouch), ktno.typ
+(norwegian.ktouch) and ktnumber.typ (number.ktouch).
+@item ttde.typ
+This is the German lesson of tipptrainer
+(@url{http://www.pingos.schulnetz.org/tipptrainer}), which has been
+converted using @file{tools/tt2typ.pl}.
+@end table
+
+@noindent
+If you find errors in these lessons, if you modify any of them or if you
+write a new lesson, please release it with a free license and tell us
+about it, by writing an email to @email{bug-gtypist@@gnu.org}.
+
+@node Script file commands, Create new lessons, Supplied lessons, Top
 @chapter Script file commands
 
 GNU Typist reads in the data for its typing lessons from a script file.
@@ -470,53 +516,8 @@ N:LOOP
 X:
 @end example
 
-@node Supplied lessons, Create new lessons, Script file commands, Top
-@chapter Supplied lessons
 
-The following lessons are supplied with GNU Typist :
-@table @file
-@item q.typ 
-Quick QWERTY course in English
-@item r.typ
-Long QWERTY course in English
-@item t.typ
-QWERTY touch typing in English
-@item v.typ
-Yet Another QWERTY in English
-@item w.typ
-QWERTY Review in English
-@item d.typ
-Dvorak touch typing in English
-@item m.typ
-Typing drills in English
-@item s.typ
-Speed drills in English
-@item n.typ
-Calculator keypad in English
-@item gtypist.typ
-Compendium of all previous lessons in English
-@item esp.typ
-QWERTY course in Spanish
-@item kt*.typ
-These lessons are the standard lessons from Ktouch 1.0
-(@url{http://ktouch.sourceforge.net}), which have been converted to
-gtypist's file format using @file{tools/ktouch2typ.pl}.
-
-The files are called ktde.typ (german.ktouch), kten.typ (english.ktouch),
-ktfr.typ (french.ktouch), ktlecten.typ (lecture_en.ktouch), ktno.typ
-(norwegian.ktouch) and ktnumber.typ (number.ktouch).
-@item ttde.typ
-This is the German lesson of tipptrainer
-(@url{http://www.pingos.schulnetz.org/tipptrainer}), which has been
-converted using @file{tools/tt2typ.pl}.
-@end table
-
-@noindent
-If you find errors in these lessons, if you modify any of them or if you
-write a new lesson, please release it with a free license and tell us
-about it, by writing an email to @email{bug-gtypist@@gnu.org}.
-
-@node Create new lessons, Emacs mode, Supplied lessons, Top
+@node Create new lessons, Emacs mode, Script file commands, Top
 @chapter Create new lessons
 
 This section provides guidelines and hints for creating new lessons
@@ -591,9 +592,6 @@ Using @file{gtypist-mode.el} you can quickly create lessons with text
 from the program @command{fortune} (or the emacs-internal
 @command{yow} if @command{fortune} isn't available, as is usually the
 case on Windows).
-
-Besides being used for creating new lessons, this command can be used
-to quickly create new drills for you to practice with.
 
 Once you installed @file{gtypist-mode.el} 
 (@pxref{Emacs mode}), you can open a file
