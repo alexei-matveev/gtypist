@@ -1,9 +1,9 @@
-# Russian localization for GNU Typist 2.7beta2.
+# Russian localization for GNU Typist 2.7.
 # Copyright (C) 2003  Dmitry Rutsky <rutsky@school.ioffe.rssi.ru>
 # This file is distributed under the same license as the GNU Typist.
 msgid ""
 msgstr ""
-"Project-Id-Version: GNU Typist 2.7beta2\n"
+"Project-Id-Version: GNU Typist 2.7\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2003-07-19 18:09+0400\n"
 "PO-Revision-Date: 2003-08-03 00:01+0400\n"
