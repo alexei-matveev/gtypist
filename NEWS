@@ -21,7 +21,7 @@ Version 2.5 - December/2001
 	- The last two changes make the lesson-files quite a bit simpler
 	- Fixed errors in d.typ and esp.typ (see lessons/ChangeLog)
 	- Renamed --wpmode to --word-processor
-	- Added interface messages in French
+	- Added interface messages in French (using gtranslator)
 
 Version 2.4.1 - November/2001
 
