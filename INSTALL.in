@@ -89,11 +89,12 @@ You must have:
   (it doesn't hurt to convert all lessons)	
   With old versions of recode (i.e. 3.4.1), you have to use "latin1:ibmpc".
 
-* Using "texi2html -monolithic gtypist.texi" in the docs-directory to create
-  gtypist.html. Rename this to gtypist.htm (to support DOS), and replace all
-  occurrences of "gtypist.html" with "gtypist.htm".
-  then create plain text documentation from this either with
-  Netscape or "lynx -dump gtypist.htm > gtypist.txt", and convert it to DOS
+* To generate the HTML manuals, run "autogen.sh" (if not already done).
+  To support DOS, rename "doc/gtypist.html" to "gtypist.htm"
+  and other "doc/gtypist.<lg>.html" manuals to "gtyp_<ll>.htm"
+  (where <ll> is a 2 character language code). 
+  Then, create plain text documentation from these files either with
+  Mozilla or "lynx -dump gtypist.htm > gtypist.txt", and convert it to DOS
   line-endings with recode, for example (see above)
 
 * Copy all the files in one "gtypist" directory and then run
@@ -101,7 +102,7 @@ You must have:
   (remove the points in gtyp@VERSION and truncate it to 8 chars to support
   plain DOS)
   I've had trouble with infozip: zip 2.0.1 did not work,
-  but 2.3 (or above) seem to work.
+  but 2.3 (or above) seems to work.
 	
 
 Problems and their solution
