@@ -27,6 +27,7 @@
 #define	C_KEYBIND		'K'
 #define C_ERROR_MAX_SET         'E'
 #define C_ON_FAILURE_SET        'F'
+#define C_MENU                  'M'
 
 #ifndef DJGPP
 #define ASCII_ENTER             '\n'

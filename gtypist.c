@@ -1397,6 +1397,7 @@ parse_file( FILE *script, char *label ) {
 	case C_LABEL:	get_script_line( script, line ); break;
 	case C_ERROR_MAX_SET: do_error_max_set( script, line ); break;
 	case C_ON_FAILURE_SET: do_on_failure_label_set( script, line ); break;
+	case C_MENU: do_menu (script, line); break;
 	default:
 	  fatal_error( _("unknown command"), line );
 	  break;
