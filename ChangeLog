@@ -1,3 +1,8 @@
+
+2002-06-28  Hynek Hanke  <hanke@volny.cz>
+
+	* findwords.sh: New script to help with creating lessons.
+
 2002-05-20  Felix Natter  <fnatter@gmx.net>
 
 	* gtypist.c: do the same as last item for headers
