@@ -4,8 +4,8 @@
 #
 msgid ""
 msgstr ""
-"Project-Id-Version: gtypist 2.5\n"
-"POT-Creation-Date: 2002-09-18 21:37+0200\n"
+"Project-Id-Version: GNU Typist 2.6\n"
+"POT-Creation-Date: 2002-04-25 07:25+0200\n"
 "PO-Revision-Date: 2001-04-11 23:15+0100\n"
 "Last-Translator: Hynek Hanke <hanke@volny.cz>\n"
 "Language-Team: Czech\n"
@@ -94,8 +94,8 @@ msgid ""
 "default maximum error percentage (default 3.0); valid values are between 0.0 "
 "and 100.0"
 msgstr ""
-"defaultní maximální poèet chyb (standardnì 3.0); platné hodnoty jsou mezi 0.0 "
-"a 100.0"
+"defaultní maximální poèet chyb (standardnì 3.0); platné hodnoty jsou mezi "
+"0.0 a 100.0"
 
 #: gtypist.c:1731
 msgid "turn off WPM timer in drills"
@@ -110,8 +110,8 @@ msgid ""
 "cursor flash period P*.1 sec (default 10); valid  values are between 0 and "
 "512; this is ignored if -t is specified"
 msgstr ""
-"perioda blikání kurzoru P*0,1 sekund (defaultnì 10); platné hodnoty jsou mezi "
-"0 a 512; parametr je ignorován, pokud bylo zadáno -t."
+"perioda blikání kurzoru P*0,1 sekund (defaultnì 10); platné hodnoty jsou "
+"mezi 0 a 512; parametr je ignorován, pokud bylo zadáno -t."
 
 #: gtypist.c:1734
 msgid "set initial display colours where available"
@@ -199,16 +199,15 @@ msgstr "Spustit lekci ve ¹panìl¹tinì"
 #: gtypist.c:1765
 msgid ""
 "To instruct gtypist to look for lesson `bar.typ' in a non standard directory"
-msgstr ""
-"Prohledává pro bar.typ nestandardní adresáø"
+msgstr "Prohledává pro bar.typ nestandardní adresáø"
 
 #: gtypist.c:1767
 msgid ""
 "To run the lesson in the file `test.typ' of directory `temp', starting at "
 "label `TEST1', using the terminal's cursor, and run silently"
 msgstr ""
-"Spustí lekcii `test.typ' z adresáøe `temp', zaène na návìstí `TEST1',"
-"pou¾ij terminálový kurzor a pracuj v tichém módu"
+"Spustí lekcii `test.typ' z adresáøe `temp', zaène na návìstí `TEST1',pou¾ij "
+"terminálový kurzor a pracuj v tichém módu"
 
 #: gtypist.c:1768
 msgid "Report bugs to bug-gtypist@gnu.org"
@@ -245,7 +244,7 @@ msgstr "Více informací získáte zadáním '%s --help.'\n"
 
 #: gtypist.c:1917
 msgid ""
-"Copyright (C) 1998,2001  Simon Baldwin.\n"
+"Copyright (C) 1998,1999, 2000, 2001, 2002 Simon Baldwin.\n"
 "This program comes with ABSOLUTELY NO WARRANTY; for details\n"
 "please see the file 'COPYING' supplied with the source code.\n"
 "This is free software, and you are welcome to redistribute it\n"
@@ -321,7 +320,7 @@ msgid "Y/N"
 msgstr "A/N"
 
 #: gtypist.c:1983
-msgid  "R/N/E"
+msgid "R/N/E"
 msgstr "O/D/K"
 
 #: gtypist.c:2034

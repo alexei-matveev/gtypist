@@ -1,3 +1,9 @@
+2002-04-25  Michael Opdenacker <michaelo@gnu.org>
+
+	* Replaced `cz' by `cs' in all file names.
+	* *.po: Updated with the msgmerged files; updated the version
+	  and package name, as well as the copyright notices.
+
 2002-04-22  Michael Opdenacker <michaelo@gnu.org>
 
 	* gtypist.c, Makefile.am: for consistency with 'PACKAGE_LOCALE_DIR'
