@@ -1,3 +1,9 @@
+2001-06-11  Christian Weisgerber <naddy@openbsd.org>
+
+	* po/Makefile.in.in: now correctly uses DESTDIR
+	* Makefile.am: removed "CPPFLAGS+=-Wall" to support
+	  compilers different from gcc.
+
 2000-11-10  Vladimir Tamara  <vtamara@gnu.org>
 
 	* typist.c: Changed name to GNU Typist (gtypist)

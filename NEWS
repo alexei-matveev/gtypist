@@ -1,3 +1,7 @@
+Development version
+        - Minor fixes (build, charset definition)
+	- Documentation improvements
+
 Version 2.3.2 - Nov/2000
         - Now this program is part of GNU!  We celebrate with a new
           name: "GNU Typist" (or gtypist) and a new release

@@ -1,6 +1,11 @@
+2001-06-11  Christian Weisgerber <naddy@openbsd.org>
+ 
+	* *.po: added a proper charset specification.
+	  (for current gettext with iconv support)
+
 2000-12-05  Kester Habermann  <<kester@linuxtag.de>
 
-	* de.po: Revision of grammar and ortography
+	* de.po: Revision of grammar and spelling
 
 2000-11-10  Vladimir Tamara  <vtamara@gnu.org>
 

@@ -10,8 +10,6 @@ gtypist_LDADD = @INTLLIBS@
 man_MANS = gtypist.1
 INCLUDES = -I./intl -DPACKAGE_DATA_DIR=\"$(pkgdatadir)\" 
 
-CPPFLAGS+=-Wall
-
 # GEN_MAN is a shell command that generates the man page
 GEN_MAN=@GEN_MAN@
 
