@@ -14,6 +14,12 @@ Your suggestions are welcome too!
 
 SHORT TERM
 
+ * Support UTF-8, as today
+   1) charsets of the file and terminal must be the same;
+   2) they have to have no wide characters
+   This already impacts users
+   (reported by Jeff Nelson <jtnelson@el-camino.net>
+
  * Make sure that all source files come with a suitable copyright
    statement (may be different with lessons?)
 
