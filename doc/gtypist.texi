@@ -564,6 +564,9 @@ This section provides guidelines and hints for creating new lessons
 * Ktouch lessons::              Generate lessons from a set of drills
 * Exercises from fortune::      Create drills/speedtests with text from fortune
 * Design patterns for lessons:: Hints/Design patterns for lessons
+* Findwords script::		Simple script designed to help you
+                    		find words with certain letters
+
 @end menu
 
 @node Ktouch lessons, , Exercises from fortune, Create new lessons
@@ -634,7 +637,7 @@ with the @samp{.typ} extension and run @kbd{C-c C-f} to create a drill
 (@code{D:} by default, use @kbd{C-u} or @kbd{C-u C-u} prefix to
 change).
 
-@node Design patterns for lessons, Exercises from fortune, , Create new lessons
+@node Design patterns for lessons, Exercises from fortune, Findwords script, Create new lessons
 @section Design patterns for lessons
 
 @subsection Structure of lesson files
@@ -661,6 +664,78 @@ D:jjj jhj jjj jhj jjj jhj
 @item use 'word, word.' repeatedly to practice ,/.
 @end itemize
 
+@node Findwords script, Design patterns for lessons, , Create new lessons
+@section Findwords script
+
+The script @file{tools/findwords.sh} is there to assist
+you in creating new lessons. 
+
+@subsection Purpose
+
+In the beggining when you are creating new tutorial from scratch,
+it's not very easy to form words and even sentences while the
+range of letters you can use is restricted. Sometimes
+you want to insert some paragraph ``targeted'' at
+some special combination of two or three letters.
+This is even harder.
+
+For this purpose we created findwords.sh. It uses the dictionaries
+from aspell database (free multilingual spellchecker).
+
+@subsection Instalation
+
+You will need following packages @file{aspell} and @file{aspell-LG},
+where LG is the ISO language code for the language you
+want to use.
+
+After succesful instalation, you will have to make
+a little change in configuration so that aspells's
+master database is the one of your language. This can
+be done two different ways:
+
+@enumerate
+        @item In your home directory create file @*
+ .aspell.conf and add this line: @*
+            @code{master LANGUAGE}
+	@item Create /usr/share/pspell/cz-aspell.pwli @*
+ and add this line: @*
+            @code{/usr/lib/aspell/LG} @*
+ Make sure your locale setting is LG.
+@end enumerate
+
+In the above, LG means ISO language code (eg. `en', `fr', `cs')
+and LANGUAGE means name of the database in /usr/lib/aspell
+(eg. `english.multi',`french',`czech').
+
+You can try if it works by typing: 
+@example
+        aspell dump master | less
+@end example
+
+@subsection Using findwords.sh
+
+The syntax is as follows: @*
+        @code{./findwords.sh letters [combination]}
+
+In the obligatory argument letters you must list the letters
+that you want use without any spaces. You can optionally
+use the dot (`.') to say `all letters'. The seccond argument
+combination is optional and you can specify there what
+combination of letters are you searching for.
+
+Some examples:
+@itemize
+	@item @code{./findwords.sh asdfjkleruio} @*
+We are looking for all words composed from the
+listed letters.
+	@item @code{./findwords.sh asdfjkleruio sa} @*
+We search words containing the combination
+`sa', but only these composed from specified
+letters.
+	@item @code{./findwords.sh . col} @*
+Words can contain all letters, but must have
+`col' somewhere inside.
+@end itemize
 
 @node Emacs mode, Environment Variables, Create new lessons, Top
 @chapter Emacs mode

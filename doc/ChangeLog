@@ -1,3 +1,9 @@
+
+2002-06-28  Hynek Hanke  <hanke@volny.cz>
+
+	* gtypist.texi: Added section Findwords script to the
+	chapter Creating lessons.
+
 2002-04-23  Michael Opdenacker  <michaelo@gnu.org>
 
 	* gtypist.cz.texi: fixed to support the original fdl.texi file
