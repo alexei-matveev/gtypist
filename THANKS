@@ -13,8 +13,11 @@ exempt of errors.
 * Kimmo K. I. Surakka <kusti@iki.fi> for Native Language Support in
   Finnish.
  
-* Felix Natter <f.natter@ndh.net> for bringing lots of fixes and
-  improvements to the code and documentation (to be continued). 
+* Felix Natter <f.natter@ndh.net> for bringing new features, lots of
+  fixes and improvements to the code and documentation, improving and
+  converting lessons from other typing tutors, extending tool
+  capabilities by lesson syntax enhancements, implementing a gtypist
+  lesson file mode for Emacs, etc. See ChangeLog for details! 
 
 * Michael Opdenacker <michaelo@gnu.org> for administrating CVS, the
   mailing-list, GNU Savannah, etc., writing and improving
