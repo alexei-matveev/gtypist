@@ -6,16 +6,19 @@
 
 Version 2.5 - December/2001
 	
-	- allow the user to skip a lesson by pressing ESC twice (once to
+	- allow the user to skip an exercise by pressing ESC twice (once to
  	restart and then again at the beginning of the exercise to skip)
+	- add new switch --no-skip which forbids the user to skip exercises
 	- remove more occurrences of "Q: Press Y to continue, ..."  following
 	an exercise (because this is builtin since 2.4) in d.typ, r.typ, v.typ
 	and esp.typ
 	- remove all occurrences of "Q: Press Y to cont..." following T: :
 	It doesn't make sense to repeat a T:, the standard message
 	"Press Enter to continue." is better (d.typ, v.typ, r.typ)
+	(multi-page T:'s are the exception)
 	- the last two changes make the lesson-files quite a bit simpler
 	- fixed errors in d.typ and esp.typ (see lessons/ChangeLog)
+	- rename --wpmode to --word-processor
 
 Version 2.4.1 - November/2001
 

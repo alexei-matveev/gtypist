@@ -1,3 +1,18 @@
+2001-12-08  Felix Natter  <f.natter@ndh.net>
+
+	* gtypist.c (print_help,...): rename --wpmode to --word-processor
+	(as suggested by Michael); rename variable to cl_wpemu
+	* new variable cl_no_skip from option --no-skip, no message NO_SKIP_MSG
+	* do_query_noscriptfile: remove
+	* do_query: remove hack which was used in do_query_noscriptfile
+	* do_query_repeat: new query which prompts for repeat/next/exit
+	(new i18n string "R/N/E")
+	* do_drill, do_speedtest: use do_query_repeat instead
+	of do_query_noscriptfile for WANNA_REPEAT_MSG
+	* main: add translatable strings RNE and change WANNA_REPEAT_MSG
+	to "R to repeat, N for next or E to exit" (now called
+	REPEAT_NEXT_EXIT_MSG)
+
 2001-11-29  Felix Natter  <fnatter@gmx.net>
 
 	* gtypist.c (do_drill, do_speedtest): allow ESC ESC to be used for

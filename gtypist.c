@@ -123,11 +123,13 @@ char *MODE_SPEEDTEST;
 char *WAIT_MESSAGE;
 char *ERROR_TOO_HIGH_MSG;
 char *SKIPBACK_VIA_F_MSG;
-char *WANNA_REPEAT_MSG;
+char *REPEAT_NEXT_EXIT_MSG;
+char *NO_SKIP_MSG;
 char *SPEED_RAW;
 char *SPEED_ADJ;
 char *SPEED_PCT_ERROR;
 char *YN;
+char *RNE;
 
 #ifndef PACKAGE_DATA_DIR
 #define PACKAGE_DATA_DIR "."
@@ -164,7 +166,8 @@ static char	*cl_start_label = NULL;		/* initial lesson start point*/
 static bool	cl_colour = FALSE;		/* set if -c given */
 static int	cl_fgcolour = 0;		/* fg colour */
 static int	cl_bgcolour = 0;		/* bg colour */
-static bool	cl_wpmode = FALSE;		/* do wp-like stuff */
+static bool	cl_wp_emu = FALSE;		/* do wp-like stuff */
+static bool     cl_no_skip = FALSE;             /* forbid the user to */
 
 /* a few global variables */
 static char	*argv0 = NULL;
@@ -224,8 +227,8 @@ static void do_speedtest( FILE *script, char *line );
 static void do_clear( FILE *script, char *line );
 static void do_goto( FILE *script, char *line, bool flag );
 static void do_exit( FILE *script );
-static bool do_query_noscriptfile( FILE *script, const char *prompt );
-static bool do_query( FILE *script, char *line, bool get_next_script_line );
+static char do_query_repeat( FILE *script );
+static bool do_query( FILE *script, char *line );
 static void do_error_max_set( FILE *script, char *line );
 static void do_on_failure_label_set( FILE *script, char *line );
 static void parse_file( FILE *script, char *label );
@@ -847,7 +850,7 @@ do_drill( FILE *script, char *line ) {
 	
 	  /* check that the character was correct */
 	  if ( c == *p
-	       || ( cl_wpmode && c == ASCII_SPACE
+	       || ( cl_wp_emu && c == ASCII_SPACE
 		    && *p == ASCII_NL ))
 	    ADDCH( c );
 	  else 
@@ -870,7 +873,7 @@ do_drill( FILE *script, char *line ) {
 	    }
 
 	  /* perform any other word processor like adjustments */
-	  if ( cl_wpmode ) 
+	  if ( cl_wp_emu ) 
 	    {
 	      if ( c == ASCII_SPACE ) 
 		{
@@ -908,8 +911,17 @@ do_drill( FILE *script, char *line ) {
       if ( c == ASCII_ESC && chars_typed != 1)
 	continue; /* repeat */
 
+      /* honor --no-skip */
+      if ( c == ASCII_ESC && cl_no_skip ) 
+	{
+	  if ( ! wait_user( NO_SKIP_MSG, MODE_DRILL, script, line )) {
+	    seek_done = TRUE;
+	    break; /* function key */
+	  }
+	  continue;
+	}
+
       /* skip timings and don't check error-pct if exit was through ESC */
-      /* (unless prohibited by TODO) */
       if ( c != ASCII_ESC )
 	{
 	  /* display timings */
@@ -954,14 +966,14 @@ do_drill( FILE *script, char *line ) {
 	    }
 	}
 
-      /* ask the user whether he/she wants to repeat */
-      if ( ! do_query_noscriptfile ( script, WANNA_REPEAT_MSG ) ) {
+      /* ask the user whether he/she wants to repeat or exit */
+      c = do_query_repeat (script);
+      if (c == 'E') {
 	seek_done = TRUE;
-	break; /* function key */
+	break;
       }
-      if (global_resp_flag)
-	break; /* user has hit Y */
-
+      if (c == 'N')
+	break;
 
     }
   
@@ -972,8 +984,9 @@ do_drill( FILE *script, char *line ) {
   if (!global_error_max_persistent)
     global_error_max = cl_default_error_max;
 
-  /* buffer_command takes care of advancing `script' (and setting `line'),
-     so we only do it if an fkey was pressed (as a side-effect of a query/wait)
+  /* buffer_command takes care of advancing `script' (and setting
+     `line'), so we only do it if an fkey/E was pressed (as a
+     side-effect of a query/wait)
   */
   if (seek_done)
     get_script_line( script, line );
@@ -1078,7 +1091,7 @@ do_speedtest( FILE *script, char *line ) {
 
 	  /* check that the character was correct */
 	  if ( c == *p
-	       || ( cl_wpmode && c == ASCII_SPACE
+	       || ( cl_wp_emu && c == ASCII_SPACE
 		    && *p == ASCII_NL ))
 	    ADDCH( c );
 	  else 
@@ -1099,7 +1112,7 @@ do_speedtest( FILE *script, char *line ) {
 	    }
       
 	  /* perform any other word processor like adjustments */
-	  if ( cl_wpmode ) 
+	  if ( cl_wp_emu ) 
 	    {
 	      if ( c == ASCII_SPACE ) 
 		{
@@ -1139,8 +1152,17 @@ do_speedtest( FILE *script, char *line ) {
       if ( c == ASCII_ESC && chars_typed != 1)
 	continue; /* repeat */
 
+      /* honor --no-skip */
+      if ( c == ASCII_ESC && cl_no_skip ) 
+	{
+	  if ( ! wait_user( NO_SKIP_MSG, MODE_DRILL, script, line )) {
+	    seek_done = TRUE;
+	    break; /* function key */
+	  }
+	  continue;
+	}
+
       /* skip timings and don't check error-pct if exit was through ESC */
-      /* (unless prohibited by TODO) */
       if ( c != ASCII_ESC )
 	{
 	  /* display timings */
@@ -1182,24 +1204,28 @@ do_speedtest( FILE *script, char *line ) {
 	    }
 	}
 
-      /* ask the user whether he/she wants to repeat */
-      if ( ! do_query_noscriptfile ( script, WANNA_REPEAT_MSG ) ) {
+      /* ask the user whether he/she wants to repeat or exit */
+      c = do_query_repeat (script);
+      if (c == 'E') {
 	seek_done = TRUE;
-	break; /* function key */
+	break;
       }
-      if (global_resp_flag)
-	break; /* user has hit Y */
+      if (c == 'N')
+	break;
+
     }
 
   /* free the malloced memory */
   free( data );
 
+
   /* reset global_error_max */
   if (!global_error_max_persistent)
     global_error_max = cl_default_error_max;
 
-  /* buffer_command takes care of advancing `script' (and setting `line'),
-     so we only do it if an fkey was pressed (as a side-effect of a query/wait)
+  /* buffer_command takes care of advancing `script' (and setting
+     `line'), so we only do it if an fkey/E was pressed (as a
+     side-effect of a query/wait)
   */
   if (seek_done)
     get_script_line( script, line );
@@ -1278,28 +1304,59 @@ do_exit( FILE *script )
   exit( 0 );
 }
 
-/*
-  This is used to implement "builtin loops" in do_drill and do_speedtest
-  returns true if we just got the expected Y/N,
-  false if exit was by a function key
-*/
-static bool
-do_query_noscriptfile( FILE *script, const char *prompt )
-{
-  char line[MAX_SCR_LINE];
 
-  sprintf(line, "Q:%s\n", prompt);
-  return do_query(script, line, FALSE);
+/*
+  
+*/
+static char
+do_query_repeat ( FILE *script )
+{
+  char resp;
+
+  /* display the prompt */
+  move( MESSAGE_LINE, 0 ); clrtoeol();
+  move( MESSAGE_LINE, COLS - strlen( MODE_QUERY ) - 2 );
+  ADDSTR_REV( MODE_QUERY );
+  move( MESSAGE_LINE, 0 );
+  ADDSTR_REV( REPEAT_NEXT_EXIT_MSG );
+
+  /* wait for [RrNnEe] */
+  while (TRUE)
+    {
+      resp = getch_fl( ASCII_NULL );
+
+      if (toupper ((char)resp) == 'R' ||
+	  toupper ((char)resp) == RNE[0]) {
+	resp = 'R';
+	break;
+      }
+      if (toupper ((char)resp) == 'N' ||
+	  toupper ((char)resp) == RNE[2]) {
+	resp = 'N';
+	break;
+      }
+      if ((toupper ((char)resp) == 'E' || toupper ((char)resp) == RNE[4]) &&
+	  fkey_bindings [11] != NULL)
+	{
+	  seek_label( script, fkey_bindings [11], NULL );
+	  resp = 'E';
+	  break;
+	}
+    }
+
+  /* clear out the message line */
+  move( MESSAGE_LINE, 0 ); clrtoeol();
+  
+  return (char)resp;
 }
 
+
 /*
-  get a Y/N response from the user; get_next_script_line is FALSE if
-  this isn't started from a script-file Q:-command (as in
-  do_drill_noscriptfile) returns true if we just got the expected Y/N,
-  false if exit was by a function key
+  get a Y/N response from the user: returns true if we just got the
+  expected Y/N, false if exit was by a function key
 */
 static bool 
-do_query( FILE *script, char *line, bool get_next_script_line )
+do_query( FILE *script, char *line )
 {
   int	resp;			/* response character */
   int	fkey;			/* function key iterator */
@@ -1368,9 +1425,8 @@ do_query( FILE *script, char *line, bool get_next_script_line )
   /* clear out the message line */
   move( MESSAGE_LINE, 0 ); clrtoeol();
 
-  /* get the next command (unless this is a "noscriptfile"-query) */
-  if (get_next_script_line)
-    get_script_line( script, line );
+  /* get the next command */
+  get_script_line( script, line );
 
   /* tell the caller whether we got Y/N or a function key */
   return ( ret_code );
@@ -1559,7 +1615,7 @@ parse_file( FILE *script, char *label ) {
 	case C_CLEAR:	do_clear( script, line ); break;
 	case C_GOTO:	do_goto( script, line, TRUE ); break;
 	case C_EXIT:	do_exit( script ); break;
-	case C_QUERY:	do_query( script, line, TRUE ); break;
+	case C_QUERY:	do_query( script, line ); break;
 	case C_YGOTO:	do_goto( script, line, global_resp_flag );
 	  break;
 	case C_NGOTO:	do_goto( script, line, !global_resp_flag );
@@ -1666,6 +1722,7 @@ print_help()
       "-q",
       "-l L",
       "-w",
+      "-k"
       "-h",
       "-v" };
   char *lop[]= 
@@ -1677,7 +1734,8 @@ print_help()
       "--silent",
       "--quiet",
       "--start-label=L",
-      "--wpmode",
+      "--word-processor",
+      "--no-skip",
       "--help",
       "--version" };
   char *help[] = 
@@ -1691,6 +1749,7 @@ print_help()
       _("same as -s, --silent"),
       _("start the lesson at label 'L'"),
       _("try to mimic word processors"),
+      _("forbid the user to skip exercises"),
       _("print this message"),
       _("output version information and exit") };
   
@@ -1740,7 +1799,8 @@ parse_cmdline( int argc, char **argv ) {
     { "silent",		no_argument, 0, 's' },
     { "quiet",		no_argument, 0, 'q' },
     { "start-label",	required_argument, 0, 'l' },
-    { "wpmode",		no_argument, 0, 'w' },
+    { "word-processor",	no_argument, 0, 'w' },
+    { "no-skip",        no_argument, 0, 'k' },
     { "help",		no_argument, 0, 'h' },
     { "version",	no_argument, 0, 'v' },
     { 0, 0, 0, 0 }};
@@ -1803,7 +1863,10 @@ parse_cmdline( int argc, char **argv ) {
 	  strcpy( cl_start_label, optarg );
 	  break;
 	case 'w':
-	  cl_wpmode = TRUE;
+	  cl_wp_emu = TRUE;
+	  break;
+	case 'k':
+	  cl_no_skip = TRUE;
 	  break;
 	case 'h':
 	  print_help();
@@ -1884,11 +1947,15 @@ This program is released under the GNU General Public License.");
     _("Your error-rate is too high. You have to achieve %.1f%%.");
   /* this message is displayed when the user has failed in a [DS]: drill,
      and an F:<LABEL> ("on failure label") is in effect */
-  SKIPBACK_VIA_F_MSG =
+  SKIPBACK_VIA_F_MSG=
     _("You failed this test, so you need to go back to %s.");
-  /* this is used for queries. you can translate the keys as well
-     (if you translate msgid "Y/N" accordingly) */
-  WANNA_REPEAT_MSG= _("Press Y to continue, N to repeat or Fkey12 to exit");
+  /* this is used for repeat-queries. you can translate the keys as well
+     (if you translate msgid "R/N/E" accordingly) */
+  REPEAT_NEXT_EXIT_MSG= _("R to repeat, N for next or E to exit");
+  /* This message is displayed if the user tries to skip a lesson
+     (ESC ESC) and --no-skip is specified */
+  NO_SKIP_MSG= 
+    _("Sorry, gtypist is configured to forbid skipping exercises.");
   /* this must be adjusted to the right with one space at the end.
      Leading whitespace is important because it is displayed in reverse
      video because it must be aligned with the next two messages 
@@ -1904,14 +1971,29 @@ This program is released under the GNU General Public License.");
      video and because it must be aligned with the next last two messages
      (it's best to run gtypist to see this in practice)   */
   SPEED_PCT_ERROR=_("            with %.1f%% errors ");
-  /* this is used to translate the keys for Y/N-queries. Must be two uppercase
-     letters. Y/N will still be accepted as well */
+  /* this is used to translate the keys for Y/N-queries. Must be two
+     uppercase letters separated by '/'. Y/N will still be accepted as
+     well. Note that the messages (prompts) themselves cannot be
+     translated because they are read from the script-file. */
   YN = _("Y/N");
   if (strlen(YN) != 3 || YN[1] != '/' || !isupper(YN[0]) || !isupper(YN[2]))
     {
       fprintf( stderr,
 	       "%s: i18n problem: invalid value for msgid \"Y/N\": %s\n",
 	       argv0, YN );
+      exit( 1 );
+    }
+  /* this is used to translate the keys for Repeat/Next/Exit
+     queries. Must be three uppercase letters separated by slashes. */
+  RNE = _("R/N/E");
+  if (strlen(RNE) != 5 ||
+      !isupper(RNE[0]) || RNE[1] != '/' ||
+      !isupper(RNE[2]) || RNE[3] != '/' ||
+      !isupper(RNE[4]))
+    {
+      fprintf( stderr,
+	       "%s: i18n problem: invalid value for msgid \"R/N/E\": %s\n",
+	       argv0, RNE );
       exit( 1 );
     }
   
@@ -2000,4 +2082,3 @@ This program is released under the GNU General Public License.");
   /* for lint... */
   return( 0 );
 }
-
