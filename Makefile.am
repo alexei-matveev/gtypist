@@ -11,7 +11,7 @@ SUBDIRS= po lessons tools doc src
 
 man_MANS = typefortune.1
 
-EXTRA_DIST = config.rpath mkinstalldirs  typefortune gtypist.1 typefortune.1 \
+EXTRA_DIST = config.rpath mkinstalldirs  typefortune src/gtypist.1 typefortune.1 \
 	configur.bat version.sh configur.bat.in autogen.sh \
 	INSTALL.in TODO QUESTIONS
 
