@@ -58,6 +58,7 @@ or create new ones.
 @end ifnottex
 
 @menu
+@c TODO:
 * Distribution::            Where to find gtypist: source, packages etc.
 * Copying::                 The GNU General Public License says how you can
                             copy and share gtypist
@@ -348,6 +349,8 @@ Calculator keypad in English
 Compendium of all previous lessons in English
 @item esp.typ
 QWERTY course in Spanish
+@item cz.typ
+Lessons in Czech
 @item kt*.typ
 These lessons are the standard lessons from Ktouch 1.0
 (@url{http://ktouch.sourceforge.net}), which have been converted to
@@ -791,7 +794,7 @@ GNU Typist uses the following environment variables:
 GNU Typist offers Native Language Support (NLS) with support of the
 gettext library, this means that if your system supports it, the
 language of the messages shown by gtypist can be chosen. By now
-gtypist is distributed with messages in English, Finnish, French,
+gtypist is distributed with messages in English, Czech, Finnish, French,
 German and Spanish.
 To use a particular NLS use the environment variable LANG and
 set it to the appropriate 'LL_CC' combination where 'LL' is an ISO 639

@@ -671,104 +671,160 @@ G:_R_MENU
 *:_R_R_L0
 #                                                              ../orig/r.typ:4
 T:
- :In the R series lessons we work on speed and accuracy.
+ :V této sérii lekcí si zopakujeme kurz správného psaní,
+ :budeme postupnì pøidávat písmena a zamìøíme se na rychlost
+ :a pøesnost.
 
 #                                                              ../orig/r.typ:5
-I:(1) Warming-Up Drill
+I:F, J - levým a pravým ukazováèkem
+ :D, K - levý a pravý prostøedník.
 *:_R_R_L1
 #                                                              ../orig/r.typ:6
-D:Up to date I can not see that the thing is as good as this one.
+D:f f f f f f f f f f f f f f f f f f f f f f f
+ :j j j j j j j j j j j j j j j j j j j j j j j
+ :f j f j f j f j f j f j f j f j f j f j f j f
+ :d d d d d d d d d d d d d d d d d d d d d d d
+ :k k k k k k k k k k k k k k k k k k k k k k k
+ :d k d k d k d k d k d k d k d k d k d k d k d
+ :f j d k f j d k f j d k f j d k f j d k f j d
+ :fj fj fj fj fj fj fj fj fj fj fj fj fj fj fj
 
 #                                                              ../orig/r.typ:7
-I:(2) Balanced Keyboard Drill
+I:F, J - levým a pravým ukazováèkem
+ :D, K - levý a pravý prostøedník.
 *:_R_R_L2
 #                                                              ../orig/r.typ:8
-D:uch pos oug ept ing ope hic ati sch cou get ice con goo ght
+D:dk dk dk dk dk dk dk dk dk dk dk dk dk dk dk
+ :jf jf jf jf jf jf jf jf jf jf jf jf jf jf jf
+ :kd kd kd kd kd kd kd kd kd kd kd kd kd kd kd
+ :dk kd dk kd dk kd dk kd dk kd dk kd dk kd dk
+ :dj jd dj jd dj jd dj jd dj jd dj jd dj jd dj
+ :df fd df fd df fd df fd df fd df fd df fd df
+ :fj jf fj jf fj jf fj jf fj jf fj jf fj jf fj
+ :jk kj jk kj jk kj jk kj jk kj jk kj jk kj jk
 
 #                                                              ../orig/r.typ:9
-I:(3) Continuous Copy
+I:Sna¾te se psát rytmicky i za cenu ni¾¹í rychlosti.
 *:_R_R_L3
 #                                                             ../orig/r.typ:10
-D:Nan is cute. She can sing and dance.  She can tap a piano.
+D:fk kf fk kf fk kf fk kf fk kf fk kf fk kf fk kf
+ :fkj jkf fkj jkf fkj jkf fkj jkf fkj jkf fkj jkf
+ :fjk kjf fjk kjf fjk kjf fjk kjf fjk kjf fjk kjf
+ :dfj jfd dfj jfd dfj jfd dfj jfd dfj jfd dfj jfd
+ :djf fjd djf fjd djf fjd djf fjd djf fjd djf fjd
+ :kdf fdk kdf fdk kdf fdk kdf fdk kdf fdk kdf fdk
+ :jdf fdj jdf fdj jdf fdj jdf fdj jdf fdj jdf fdj
+ :kfj jfk kfj jfk kfj jfk kfj jfk kfj jfk kfj jfk
+ :dkf kfd dkf kfd dkf kfd dkf kfd dkf kfd dkf kfd
 
 #                                                             ../orig/r.typ:11
-I:(4)
+I:Je¹tì ètyøpísmenné kombinace
 *:_R_R_L4
 #                                                             ../orig/r.typ:13
-D:Tonight Nan opens the piano. She sings such good songs and
- :soon dashes into a dance. Nan can dance.  The noise stops.
+D:jfd kjf jfd kjf jfd kjf jfd kjf jfd kjf jfd kjf
+ :fjf fjd fjf fjd fjf fjd fjf fjd fjf fjd fjf fjd
+ :kjk kjd kjk kjd kjk kjd kjk kjd kjk kjd kjk kjd
+ :dfjk kjfd dfjk kjfd dfjk kjfd dfjk kjfd dfjk kj
+ :fjdk jfkd fjdk jfkd fjdk jfkd fjdk jfkd fjdk jf
+ :dfjk kjdf dfjk kjdf dfjk kjdf dfjk kjdf dfjk kj
+ :fjdk jfdk fjdk jfdk fjdk jfdk fjdk jfdk fjdk jf
 
 #                                                             ../orig/r.typ:14
-I:(5)
+I:Písmeno S pí¹eme levým prsteníkem,
+ :písmeno L prsteníkem pravým.
 *:_R_R_L5
 #                                                             ../orig/r.typ:17
-D:Nan gets us going. The dance is on.  Ted pounds the piano
- :as Ann stops to go to the phone. She has to get the gang.
- :This chance scene passes too soon. I hope it happens again.
+D:f j d k f j d k f j d k f j d k f j d k f j d kf
+ :fj jf dk kd fj jf dk kd fj jf dk kd fj jf dk kd
+ :fjk kjf dfj jfd fjk kjf dfj jfd fjk kjf dfj jfd
+ :s l s l s l s l s l s l s l s l s l s l s l s l
+ :f j d k s l f j d k s l f j d k s l f j d k s l
+ :sl ls sl ls sl ls sl ls sl ls sl ls sl ls sl ls
+ :sd ds sd ds sd ds sd ds sd ds sd ds sd ds sd ds
+ :lk kl lk kl lk kl lk kl lk kl lk kl lk kl lk kl
+ :sf fs sf fs sf fs sf fs sf fs sf fs sf fs sf fs
 
 #                                                             ../orig/r.typ:18
-I:(6)
+I:Opìt klademe dùraz na pravidelnost úhozù.
 *:_R_R_L6
 #                                                             ../orig/r.typ:22
-D:At eight papa said that he ought to put out his good pipe
- :and then get a good nap. Soon papa is snug in a deep nap.
- :At eight ten I guess the dance gets going. At ten it stops.
- :As papa put it, such singing upsets him enough for one night.
+D:lf fl lf fl lf fl lf fl lf fl lf fl lf fl lf fl
+ :sk ks sk ks sk ks sk ks sk ks sk ks sk ks sk ks
+ :sdf fds sdf fds sdf fds sdf fds sdf fds sdf fds
+ :lkj jkl lkj jkl lkj jkl lkj jkl lkj jkl lkj jkl
+ :sfj jfs sfj jfs sfj jfs sfj jfs sfj jfs sfj jfs
+ :ljk fjl ljk fjl ljk fjl ljk fjl ljk fjl ljk fjl
+ :sdj jds sdj jds sdj jds sdj jds sdj jds sdj jds
+ :lkf fkl lkf fkl lkf fkl lkf fkl lkf fkl lkf fkl
+ :sdf jkl sdf jkl sdf jkl sdf jkl sdf jkl sdf jkl
+
 
 #                                                             ../orig/r.typ:23
-I:(7)
+I:Máte správnì pokrèené prsty?
 *:_R_R_L7
 #                                                             ../orig/r.typ:28
-D:Get the gang. Catch this sign.  Get going.  Go up this high
- :post and put a sign on top. Put these copies on each post.
- :I guess no one intends to stop us. The cast is set.  Each
- :scene is set. Each act can open in good shape.  I hope that
- :enough cash is paid in so the cast need not stand the costs.
+D:lkj fds lkj fds lkj fds lkj fds lkj fds lkj fds lkj
+ :fds lkj fds lkj fsd jlk fsd jlk fsd jlk fsd jlk fsd
+ :jlk fsd jlk fsd jlk fsd jlk fsd dfs kjl dfs kjl dfs
+ :kjl dfs kjl dfs kjl dfs kjl dfs kjl dfs kjl dfs dsf
+ :klj dsf klj dsf klj dsf klj dsf klj dsf klj dsf klj
+ :dsf klj dsf sfj ljk sfj ljk sfj ljk sfj ljk sfj ljk
+ :sfj ljk sfj ljk sfj ljk sfj
 
+I:Písmeno A pí¹eme levým malíèkem, 
+ :písmeno Ù malíèkem pravým.
 *:_R_R_L8
 #                                                             ../orig/r.typ:43
-T:			SPEED EXERCISES
- :
- :From now on, I will be mixing speed exercises in with the lessons. In the
- :drills that you have been doing, I make you keep practicing a line until
- :you get it right. In a speed exercise, I will only display the text once.
- :
- :What will be different is that I will be timing you. From the time you type
- :the first letter of the line until you hit the final carriage return, my
- :stopwatch will be running. When you finish, I will calculate your typing speed
- :and convert it to words per minute (WPM). I will also count each of the
- :mistakes you make and display the total number of errors.
- :
- :If you make a mistake, I will beep at you and light up the letter that you
- :should have typed in inverse video (a black letter on a white background).
- :Just keep going and try to make as few errors as possible.
+D:f j d k s l f j d k s l f j d k s l f j d k s l f
+ :fj jf dk kd sl ls fj jf dk kd sl ls fj jf dk kd sl
+ :fds jkl sdf lkj fds jkl sdf lkj fds jkl sdf lkj fds
+ :fsd jlk sfd ljk fsd jlk sfd ljk fsd jlk sfd ljk fsd
+ :a ù a ù a ù a ù a ù a ù a ù a ù a ù a ù a ù a ù a ù
+ :f j d k s l a ù f j d k s l a ù f j d k s l a ù f j
+ :fa jù fa jù fa jù fa jù fa jù fa jù fa jù fa jù fa
+ :da kù da kù da kù da kù da kù da kù da kù da kù da
+
 
 #                                                             ../orig/r.typ:44
-I:(8) Pointer Paragraph (o e)
+I:Nezvedejte ostatní prsty z jejich základní polohy.
 *:_R_R_L9
 #                                                             ../orig/r.typ:49
-S:    Only too well do we know about your house.  Mother told
- :me you hope to be settled there quite soon. Of course she
- :would enjoy seeing the whole house next week. Before then
- :please write her a letter to let her know how to get there
- :from here. We know you have moved to a very cozy new home.
+D:sa lù sa lù sa lù sa lù sa lù sa lù sa lù sa lù
+ :ja ka la ja ka la ja ka la ja ka la ja ka la ja
+ :fù dù sù fù dù sù fù dù sù fù dù sù fù dù sù fù
+ :fa da sa fa da sa fa da sa fa da sa fa da sa fa
+ :jù kù lù jù kù lù jù kù lù jù kù lù jù kù lù jù
+ :as ad af as ad af as ad af as ad af as ad af as
+ :ùl ùk ùj ùl ùk ùj ùl ùk ùj ùl ùk ùj ùl ùk ùj ùl
+ :jas sad jas sad jas sad jas sad jas sad jas sad
 
 #                                                             ../orig/r.typ:50
-I:(9) Test Paragraph
+I:Pokraèujte v procvièování.
 *:_R_R_L10
 #                                                             ../orig/r.typ:56
-S:    The High dance opens at eight and the gang is going.
- :So Ted shuts the piano and stops at the phone to catch Ann.
- :I ought to post Ted that he pounds the piano as I once did.
- :I guess he is upset. He has to catch Dad to get the cash.
- :He has to see Ann to each dance. This is not a noisy night.
- :His auto is a cheap one and no good on a night such as this.
+D:jak jsa jak jsa jak jsa jak jsa jak jsa jak jsa
+ :kùl lùj kùl lùj kùl lùj kùl lùj kùl lùj kùl lùj
+ :jal sak jal sak jal sak jal sak jal sak jal sak
+ :dal lak dal lak dal lak dal lak dal lak dal lak
+ :sladù klasù sladù klasù sladù klasù sladù klasù
+ :sklad kajak sklad kajak sklad kajak sklad kajak
+ :kladù kladl kladù kladl kladù kladl kladù kladl
+ :jas kùl jak lùj jal dùl sak lak sùl dal klù jas
+ :kladù sladù klasù sklad kajak kladl sladù klasù
 
 #                                                             ../orig/r.typ:57
-I:(10) Rhythmic Review
+I:Písmena G a H pí¹eme ukazováèky vychýlením 
+ :ze základní polohy.
 *:_R_R_L11
 #                                                             ../orig/r.typ:58
-D:The gang can use the piano and good songs to open the dance.
+D:f j d k s l a ù f j d k s l a ù f j d k s l a ù
+ :fa jù da kù sa lù fa jù da kù sa lù fa jù da kù
+ :ja ka la fù dù sù ja ka la fù dù sù ja ka la fù
+ :as ad af ùl ùk ùj as ad af ùl ùk ùj as ad af ùl
+ :jas kùl jak lùj sak dùl lak jas kùl jak lùj sak
+ :kladù sladù klasù sklad kajak kladù sladù klasù
+ :g h g h g h g h g h g h g h g h g h g h g h g h
+ :f j d k s l a ù g h f j d k s l a ù g h f j d k
 
 G:_R_E_R1
 #------------------------------------------------------------------------------
@@ -777,86 +833,136 @@ G:_R_E_R1
 *:R2
 *:_R_S_R2
 #                                                             ../orig/r.typ:62
-I:(1) Warming-Up Drill
+I:Pokraèujeme s písmeny G a H.
 *:_R_R_L12
 #                                                             ../orig/r.typ:63
-D:It is a good thing to use good habits each time you practice.
+D:fgf jhj fgf jhj fgf jhj fgf jhj fgf jhj fgf
+ :dgf khj dgf khj dgf khj dgf khj dgf khj dgf
+ :sgf lhj sgf lhj sgf lhj sgf lhj sgf lhj sgf
+ :agf ùhj agf ùhj agf ùhj agf ùhj agf ùhj agf
+ :kg ha kg ha kg ha kg ha kg ha kg ha kg ha
+ :ag hl ag hl ag hl ag hl ag hl ag hl ag hl
 
 #                                                             ../orig/r.typ:64
-I:(2) Balanced Keyboard Drill
+I:Zkusíme slova.
 *:_R_R_L13
 #                                                             ../orig/r.typ:65
-D:thr pre rec ear ers ure urn gre art ore her are ter ere tru
+D:gag hala gag hala gag hala gag hala gag hala
+ :haf has haf has haf has haf has haf has haf
+ :halas hùlka halas hùlka halas hùlka halas
+ :halda hlasù halda hlasù halda hlasù halda
+ :jahùdka lahùdka jahùdka lahùdka jahùdka
+ :jas has jak gag jal hal kùl gal lùj aga
+ :kladù halas sladù halda klasù hùlka kajak
+ :kladù halas skladù jahùdka klasù hùlka aga
 
 #                                                             ../orig/r.typ:66
-I:(3) Continuous Copy
+I:Písmena R a L pí¹eme obìma ukazováèky vychylováním 
+ :vlevo nahoru.
 *:_R_R_L14
 #                                                             ../orig/r.typ:67
-D:Dad and his son, Dan, are to go east on a great auto trip.
+D:hlas klasù hùlka sklad hlasù halas klasù hùlka
+ :jahùdka lahùdka jahùdka lahùdka jahùdka lahùdka
+ :frf juj frf juj frf juj frf juj frf juj frf juj
+ :fgr jhu fgr jhu fgr jhu fgr jhu fgr jhu fgr jhu
+ :grf huj grf huj grf huj grf huj grf huj grf huj
+ :frg juh frg juh frg juh frg juh frg juh frg juh
+ :arf ùuj arf ùuj arf ùuj arf ùuj arf ùuj arf ùuj
 
 #                                                             ../orig/r.typ:68
-I:(4)
+I:(2) Písmena R a L pí¹eme obìma ukazováèky vychylováním
+ :vlevo nahoru.
 *:_R_R_L15
 #                                                             ../orig/r.typ:70
-D:The phone rings. Dan hopes the rain has not upset the trip.
- :Soon the pair share a snug rug and start out in our red car.
+D:drf kuj drf kuj drf kuj drf kuj drf kuj drf kuj
+ :rfa ujù rfa ujù rfa ujù rfa ujù rfa ujù rfa ujù
+ :kra hra kra hra kra hra kra hra kra hra kra hra
+ :duj kuj duj kuj duj kuj duj kuj duj kuj duj kuj
+ :rud dur rud dur rud dur rud dur rud dur rud dur
+ :rad rak rad rak rad rak rad rak rad rak rad rak
+ :suk kus suk kus suk kus suk kus suk kus suk kus
 
 #                                                             ../orig/r.typ:71
-I:(5)
+I:A slova...
 *:_R_R_L16
 #                                                             ../orig/r.typ:74
-D:On a poor, rough road, Dan dares to rush in the rain. Soon
- :he sees a horse ahead. He tries hard to stop.  The car hits
- :and then turns around. The horse runs east at a great rate.
+D:klasu krasu klasu krasu klasu krasu klasu krasu
+ :druhu grafu druhu grafu druhu grafu druhu grafu
+ :kursu hradu kursu hradu kursu hradu kursu hradu
+ :krajù kladu krajù kladu krajù kladu krajù kladu
+ :radar kruhu radar kruhu radar kruhu radar kruhu
+ :lusku grafù lusku grafù lusku grafù lusku grafù
+ :agaru kufrù agaru kufrù agaru kufrù agaru kufrù
+ :jas has kra hra suk kus dùl sùl rud dur jar luk
 
 #                                                             ../orig/r.typ:75
-I:(6)
+I:Písmena E a I pí¹eme prostøedníky.
 *:_R_R_L17
 #                                                             ../orig/r.typ:79
-D:In order to raise a poor grade one tries to use good sense.
- :An error is a sure sign not to do the thing that one did.
- :An error seen once does not hurt. As soon as an error is
- :seen or heard again, note its sort and end it right there.
-Q:Press Y to continue, N to repeat, or Fkey12 to exit 
+
+D:klasù sladù halas druhu klasù sladù halas druhu
+ :hlasù radar kruhu grafu hlasù radar kruhu grafu
+ :ded kik ded kik ded kik ded kik ded kik ded kik
+ :frf juj ded kik frf juj ded kik frf juj ded kik
+ :asi kde asi kde asi kde asi kde asi kde asi kde
+ :led lid led lid led lid led lid led lid led lid
+ :les lis les lis les lis les lis les lis les lis
+ :jde jdi jde jdi jde jdi jde jdi jde jdi jde jdi
+
+Q:Pro pokraèování stitknìte Y, N opakovat, nebo F12 konec. 
 N:_R_R_L17
 
 #                                                             ../orig/r.typ:80
-I:(7)
+I:Rytmus!
 *:_R_R_L18
 #                                                             ../orig/r.typ:85
-D:Her error is a sign that this thing or that has upset her.
- :Does she care? Is it a hard part?  She has to get used to
- :the letters that she has to print. Is this order upset?
- :Is she tired? Then she needs a short rest.  Is it the rate?
- :She need not raise her rate too high. Has she a good touch?
+
+D:jedla jedli jedla jedli jedla jedli jedla jedli
+ :kdesi jaksi kdesi jaksi kdesi jaksi kdesi jaksi
+ :ledek lilek ledek lilek ledek lilek ledek lilek
+ :deska klika deska klika deska klika deska klika
+ :hraje hraji hraje hraji hraje hraji hraje hraji
+ :usedl udali usedl udali usedl udali usedl udali
+ :kraje kraji kraje kraji kraje kraji kraje kraji
+ :dlela dleli dlela dleli dlela dleli dlela dleli
+ :aleje ideje aleje ideje aleje ideje aleje ideje
 
 #
-I:(8) Pointed Paragraph (t h)
+I:Èárku pí¹eme prostøedníkem pravým.
 *:_R_R_L19
 #                                                             ../orig/r.typ:92
-S:    Hugh thought he ought to start that night although the
- :weather might hurt his health. Hal thought they ought to go
- :to Arizona together the thirtieth of June. Both hastened
- :through the streets to their very high hotel. Hal hesitated
- :to start north without warm clothes. Although he hated to
- :hurt his health, Hugh started north quickly on the sixteenth.
+D:ulili sliji ulili sliji ulili sliji ulili sliji
+ :ki, ji, ki, ji, ki, ji, ki, ji, ki, ji, ki, ji,
+ :si, li, si, li, si, li, si, li, si, li, si, li,
+ :ke, je, ke, je, ke, je, ke, je, ke, je, ke, je,
+ :fe, re, fe, re, fe, re, fe, re, fe, re, fe, re,
+ :duji, duje, duji, duje, duji, duje, duji, duje,
+ :kuji, kuje, kuji, kuje, kuji, kuje, kuji, kuje,
+ :ledu, lidu, ledu, lidu, ledu, lidu, ledu, lidu,
+ :lesu, lisu, lesu, lisu, lesu, lisu, lesu, lisu,
 
 #                                                             ../orig/r.typ:93
-I:(9) Test Paragraph
+I:Opakování
 *:_R_R_L20
 #                                                             ../orig/r.typ:99
-S:    Dad and his son are to start on a trip in our red car.
- :House cares are the sort that upset Dad and he is so tired
- :that he tries a nap in order to rest. It rains at a great
- :rate. Dan is too sure.  He has heard this road is poor in
- :parts. It is a great error, Dan, to rush a short turn on a
- :grade. The car turns out and ends on its side.  Hurt?  No.
-
-#                                                            ../orig/r.typ:100
-I:(10) Rhythmic Review
+D:l a ù g h r u e i f j d k s l a ù g h r u e
+ :ah la si ke hl se kg ar ku dr ji je re gr hr
+ :aga luk rak lùj drh hùl rej kur ara kus ala
+ :fiala jehla dùlek khaki shluk lelek alias
+ :krajka, freska, figura, hrudka, rekurs, kladka,
+ :diskuse, galerie, figurka, klasika, galerka,
+ :daru, darù, kusu, kusù, rada, radu, kùra,
+ :laku, lakù, ledu, ledù, lisu, lisù, krku,
+ :dres, dresu dresù dluh, dluhu dluhù druh,
+ :hrad, hlad, hlas, hles, hled, hluk, kruh,
+#                                                           ../orig/r.typ:100
+I:(10) Rytmické opakování.
 *:_R_R_L21
 #                                                            ../orig/r.typ:101
-D:Dad had a short rest in order to start on the hard car trip.
+D:grafika led kde jahùdka lis jej agrafa, les
+ :figurka lid jel klasikù hle dia galuska sil
+ :dùsledek as si kaligraf je ji sladidla ku
+ :hlediska hùrka ra el sleduji, kùrka rg eg
 
 G:_R_E_R2
 #------------------------------------------------------------------------------
@@ -865,96 +971,135 @@ G:_R_E_R2
 *:R3
 *:_R_S_R3
 #                                                            ../orig/r.typ:105
-I:(1) Warming-Up Drill
+I:Krátká rozcvièka
 *:_R_R_L22
 #                                                            ../orig/r.typ:106
-D:As a rule call earlier on all orders as long as this one.
+D:frf juj ded kik frf juj ded kik frf juj ded kik
+ :jde jdi sel sil jde jdi sel sil jde jdi sel sil
+ :led lid dle jsi led lid dle jsi led lid dle jsi
+ :ki, ji, di, fi, ki, ji, di, fi, ki, ji, di, fi,
+ :disk, duel, lira, idea, disk, duel, lira, idea,
+ :skif, esej, lila, hele, skif, esej, lila, hele,
 
 #                                                            ../orig/r.typ:107
-I:(2) Balanced Keyboard Drill
+I:Písmeno O a interpunkèní znaménko teèku (.) 
+ :pí¹eme pravým prsteníkem.
 *:_R_R_L23
 #                                                            ../orig/r.typ:108
-D:als ple gla ulo clo ile ill oul all eas onl ion tle lea ndl
+D:rok rod rok rod rok rod rok rod rok rod rok rod
+ :kdo kol kdo kol kdo kol kdo kol kdo kol kdo kol
+ :sok kos sok kos sok kos sok kos sok kos sok kos
+ :sos roj sos roj sos roj sos roj sos roj sos roj
+ :osa eso osa eso osa eso osa eso osa eso osa eso
+ :hor hod hor hod hor hod hor hod hor hod hor hod
+ :lo. ki, lo. ki, lo. ki, lo. ki, lo. ki, lo. ki,
+ :ul. ks, ul. ks, ul. ks, ul. ks, ul. ks, ul. ks,
 
 #                                                            ../orig/r.typ:109
-I:(3) Continuous Copy
+I:(2) Písmeno O a interpunkèní znaménko teèku (.)
+ :pí¹eme pravým prsteníkem.
+
 *:_R_R_L24
 #                                                            ../orig/r.typ:110
-D:As a rule it is the real line drill that helps one to learn.
+D:jako. kdos. jako. kdos. jako. kdos. jako. kdos.
+ :sklo. soda. sklo. soda. sklo. soda. sklo. soda.
+ :rodu. dolu. rodu. dolu. rodu. dolu. rodu. dolu.
+ :soud. kola. soud. kola. soud. kola. soud. kola.
+ :hora. hold. hora. hold. hora. hold. hora. hold.
+ :golf. krok. golf. krok. golf. krok. golf. krok.
+ :orel. osud. orel. osud. orel. osud. orel. osud.
 
 #                                                            ../orig/r.typ:111
-I:(4)
+I:Opakujeme o a teèku.
 *:_R_R_L25
 #                                                            ../orig/r.typ:113
-D:It helps to read a line as soon as one can. It helps to see
- :its sense. This, indeed, helps to hold each line until done.
+D:osa rok kdo sok roj eso los roh hod rod oko sos
+ :akord hrdlo draho jakou dohra korek fluor losos
+ :alkohol odkudsi dohodou ideolog doskoku hroudou
+ :soudruh. filolog. souhlas. odeslal. sedadlo.
+ :do dolu. do sadu. do sudu. do rohu. do lesa.
 
 #                                                            ../orig/r.typ:114
-I:(5)
+I:Písmeno P pí¹eme vychýlením pravého malíèku 
+ :na horní písmennou øadu.
+
 *:_R_R_L26
 #                                                            ../orig/r.typ:117
-D:As soon as one hits a hard place then one plans to drill on
- :this part. Later one can drill this hard part again.  In
- :order to end an error one can drill all the old line again.
+
+D:frf juj ded kik lol ki, lo. frf juj ded kik lol
+ :rod kdo sok los roh osa hor rod kdo sok los roh
+ :golf. kosa. horu. kord. laso. kdos. krok. golf.
+ :ùpù lol ùpù lol ùpù lol ùpù lol ùpù lol ùpù lol
+ :frf juj ded kik lol ùpù frf juj ded kik lol ùpù
+ :pak pal pak pal pak pal pak pal pak pal pak pal
+ :per pes per pes per pes per pes per pes per pes
+ :pra pro pra pro pra pro pra pro pra pro pra pro
 
 #                                                            ../orig/r.typ:118
-I:(6)
+I:Zkuste opsat odstavec co nejrychleji
 *:_R_R_L27
 #                                                            ../orig/r.typ:122
-D:Learn the sound as one uses loose hands to type out a line.
- :As one types his usual rate he ought to learn its sound until
- :at this rate all the line has the usual, clean, clear sound.
- :As soon as the usual rate is lost one can hear it as a slip.
+D:hop pùl hop pùl hop pùl hop pùl hop pùl hop pùl
+ :parku perla parku perla parku perla parku perla
+ :kapka kapsa kapka kapsa kapka kapsa kapka kapsa
+ :dopad dopis dopad dopis dopad dopis dopad dopis
+ :odpis odpad odpis odpad odpis odpad odpis odpad
+ :sklep spoje sklep spoje sklep spoje sklep spoje
+ :upadl uspal upadl uspal upadl uspal upadl uspal
+ :opera ples. opera ples. opera ples. opera ples.
+
 
 #                                                            ../orig/r.typ:123
-I:(7)
+I:Opakovat, opakovat, opakovat...
 *:_R_R_L28
 #                                                            ../orig/r.typ:128
-D:Total lines that one turns out tell all that one is young.
- :In order that this class also can print a large line total,
- :it still helps to spell; it also helps to print all the line
- :as one line, and it helps less and less to drill single
- :letters. Each one in the class can tell his total lines.
+D:fiasko, housle, souhra, dokola, soulad, soused,
+ :holduj, holduji holduje soudil, soudili horuji,
+ :pokora. poloha. porada. posila. dokola. dohola.
+ :daleko. dlouho. rekord. rekordu ledakdo ledakde
+ :podhled prùhled podklad podpora doposud lepidlo
+ :filolog sleduje dialog, diskusi o podporu klasikù.
 
 #                                                            ../orig/r.typ:129
-I:(8) One- to three-letter words (a to l)
+I:Písmeno T pí¹eme vychýlením levého ukazováèku
+ :na horní písmennou øadu
 *:_R_R_L29
 #                                                            ../orig/r.typ:146
-S:Dear Ted,
- :
- :    A day ago Ann got a bad cut on her arm and a few by her
- :eye and ear. It is an act of God she did not die.  Her car
- :did the job. It is the end of her car.  She has no use for a
- :car. The fee is to be big.  She is in bed, but she can not
- :eat. She can not eat a bit of egg.  It is no fun at all.
- :
- :    It is hot.  It is too hot for her fur hat, but I can buy
- :a box for it. I am due any day.  I can cut a day if I fly.
- :It is not far if I go by air. If I go by car, I add a day.
- :
- :    How is Dan?  Did he get his job?  Dan had to beg for it
- :if he did. He is big and fat but not bad.  The boy can do
- :it if he can act to fit his age. Ask him not to act as a kid.
- :
- :Yours sincerely,
+D:pedagog, sloupek, paprsek, kapelou, pedagog,
+ :reprodukuji spolupodpis pedagogikou reprodukuji
+ :frf ftf frf ftf frf ftf frf ftf frf ftf frf ftf
+ :rak tak rak tak rak tak rak tak rak tak rak tak
+ :gor got gor got gor got gor got gor got gor got
+ :aro ato aro ato aro ato aro ato aro ato aro ato
+ :tip tep tip tep tip tep tip tep tip tep tip tep
 
 #                                                            ../orig/r.typ:147
-I:(9) Test Paragraph
+I:Pokraèujte...
 *:_R_R_L30
 #                                                            ../orig/r.typ:154
-S:    To tell this class all there is to learn is not a real
- :help later. Let the class plan the loose ease that can hold
- :each hand in place, or plan to end this or that poor slip,
- :or plan to do its total lines in less hours. As a rule, to
- :plan and to do are also to learn. The class plans to drop
- :the old action to clear the road. Those old slips are lost.
- :The class has large plans; gains in hours and less slips.
+
+D:ret let ret let ret let ret let ret let ret let ret
+ :taj dat taj dat taj dat taj dat taj dat taj dat taj
+ :sta tas sta tas sta tas sta tas sta tas sta tas sta
+ :trakt patro trakt patro trakt patro trakt patro trakt
+ :pasta dosti pasta dosti pasta dosti pasta dosti pasta
+ :strhl stroj strhl stroj strhl stroj strhl stroj strhl
+ :fakta efekt fakta efekt fakta efekt fakta efekt fakta
+ :drtit kartu drtit kartu drtit kartu drtit kartu drtit
 
 #                                                            ../orig/r.typ:155
-I:(10) Rhythmic Review
+I:Zkusíme dlouhá slova.
 *:_R_R_L31
 #                                                            ../orig/r.typ:156
-D:To learn to read or spell a rule helps less than to drill.
+D:osladit setkali osladit setkali osladit setkali osladit
+ :katalog opereta katalog opereta katalog opereta katalog
+ :oplatka lopatou oplatka lopatou oplatka lopatou oplatka
+ :tuk let sta pat trh jet sto tak ret fit akt tah pot tis
+ :trafika spousta pstruhù reaktor potlesk karotka loterie
+ :trhat prstu strop oktet krtek pultu tlaku autor titul
+ :trofeje, starost, registr, projekt, praskat, splatit
+ :elektrodou. statistika. katastrofa. dialektika.
+
 
 G:_R_E_R3
 #------------------------------------------------------------------------------
@@ -963,84 +1108,112 @@ G:_R_E_R3
 *:R4
 *:_R_S_R4
 #                                                            ../orig/r.typ:160
-I:(1) Warming-Up Drill
+I:Rozcvièka
 *:_R_R_L32
 #                                                            ../orig/r.typ:161
-D:After that date I believe he can not say that it is not a fact.
+D:frf ftf kta tra lta str tla rta tka frf ftf kta tra
+ :trh stu tep akt ret tah set fit trs trh stu tep akt ret
+ :tlukot, kostka, sektor, dorost, trojka, tlukot, kostka,
+ :trest stisk takto sport tlupa datel trest stisk takto
+ :prefekt. despekt. respekt. dialekt. prefekt. despekt.
 
 #                                                            ../orig/r.typ:162
-I:(2) Balanced Keyboard Drill
+I:Písmeno Y pí¹eme vychýlením pravého ukazováèku
+ :smìrem vlevo vzhùru.
 *:_R_R_L33
 #                                                            ../orig/r.typ:163
-D:any for efo fte day fin you ful ery nly hey afk ays fro say
+D:literaturou, statistika, popularita, literaturou,
+ :juj jyj juj jyj juj jyj juj jyj juj jyj juj jyj
+ :frf ftf juj jyj frf ftf juj jyj frf ftf juj jyj
+ :kdy jdu kdy jdu kdy jdu kdy jdu kdy jdu kdy jdu
+ :rty rtu rty rtu rty rtu rty rtu rty rtu rty rtu
+ :ledy rohy ledy rohy ledy rohy ledy rohy ledy rohy
+ :jasy kusy jasy kusy jasy kusy jasy kusy jasy kusy
 
 #                                                            ../orig/r.typ:164
-I:(3) Continuous Copy
+I:Opìt Y.
 *:_R_R_L34
 #                                                            ../orig/r.typ:166
-D:I feel sorry to say I can not send a full order on that day.
- :Forty-odd pounds is all that I can spare at this early date.
+D:tahy spady tahy spady tahy spady tahy spady
+ :kydat haldy kydat haldy kydat haldy kydat
+ :odkdy dokdy odkdy dokdy odkdy dokdy odkdy
+ :pytel pasy pytel pasy pytel pasy pytel pasy
+ :rysu hydru rysu hydru rysu hydru rysu hydru
+ :tuhy hroty tuhy hroty tuhy hroty tuhy hroty
+ :hory yoga hory yoga hory yoga hory yoga hory
+ :rady krytu rady krytu rady krytu rady krytu
+ :strigy s otrapy strigy s otrapy strigy s
 
 #                                                            ../orig/r.typ:167
-I:(4)
+I:Sedíte rovnì? To vám mù¾e psaní hodnì usnadnit.
 *:_R_R_L35
 #                                                            ../orig/r.typ:170
-D:All loose lots are sent on fast local lines at a half rate,
- :so there is close to no delay and you also do not lose any.
- :It is fine, fresh stuff and our first fancy fruit this year.
+D:sypaly pruhy letadly. sypaly pruhy letadly. sypaly
+ :tady jsou ty dodatky ke spisu, tady jsou ty dodatky
+ :kdy se koupaly. kdy se koupaly. kdy se koupaly.
+ :ladily housle. okusily to. ladily housle. okusily to.
+ :typy a tipy pro statistiky. typy a tipy pro statistiky.
+ :tady tudy do porady. tady tudy do porady. tady tudy
 
 #                                                            ../orig/r.typ:171
-I:(5)
+I:Písmena Ú a Q pí¹eme malíèky vychýlením nahoru 
+ :(vpravo a vlevo)
 *:_R_R_L36
 #                                                            ../orig/r.typ:175
-D:This offer is only for fancy fresh fruit to be used as gifts.
- :Try these and candy to suit the young lady. They are dandy.
- :You can feel safe. Sales are easy and final.  They go fast.
- :After at least four days you can order daily or on Friday.
+D:klady dupaly ustoupil oprostily klady dupaly
+ :dostoupily popularity. dostoupily popularity.
+ :aqa ùpù ùúù aqa ùpù ùúù aqa ùpù ùúù aqa ùpù ùúù
+ :qui túr qui túr qui túr qui túr qui túr qui túr
+ :quo kúr quo kúr quo kúr quo kúr quo kúr quo kúr
+ :qua yaú qua yaú qua yaú qua yaú qua yaú qua yaú
+ :aqua, túra, aqua, túra, aqua, túra, aqua, túra,
 
 #                                                            ../orig/r.typ:176
-I:(6)
+I:(2) Písmena Ú a Q pí¹eme malíèky vychýlením nahoru
 *:_R_R_L37
 #                                                            ../orig/r.typ:185
-S:Dear Ted,
- :
- :    After I read your dandy note I felt sorry for the lady.
- :Here is plenty of cash if you young people agree to spend it
- :sanely. Is it for a natty sail or only for golf?  Did you and
- :Dan play or fight? Dan said he felt as if a full load of
- :coal hit his head. Is that fact or fancy?
- :
- :Yours sincerely,
+D:quasi kúrou quasi kúrou quasi kúrou quasi kúrou
+ :ústup ústrk ústup ústrk ústup ústrk ústup ústrk
+ :túra úhradou túra úhradou túra úhradou túra úhradou
+ :útlaku, útlost, útlaku, útlost, útlaku, útlost,
+ :úhel, úsudek, úhel, úsudek, úhel, úsudek, úhel,
+ :úklady, úpadek, úkoly, úpadek, úkoly, úpadek,
+ :úseku úderù úkolu úrokù úhoru úhory úly úlek,
+ :ústupek túra úplata, úhel, útrata, quarta, skútru,
+
 
 #                                                            ../orig/r.typ:186
-I:(7) Pointed Paragraph (a s)
+I:Opakování
 *:_R_R_L38
 #                                                            ../orig/r.typ:193
-S:    Sadness possesses her as she stands against the panes
- :that the sash separates. She is sad because the same dress
- :is not washed and in shape; and so she says it is useless to
- :save it. She is sad also because she has to stay in Alabama
- :next season. She says to plan to sail across the seas to
- :Alaska or Asia or Spain is useless. So in June she amuses
- :herself by drawing five or six quaint, small-sized maps.
+
+D:ty jsi dostala spoustu dopisù. ty jsi dostala
+ :autor ty tu porto úl topoly ta úd dary ty ti
+ :úhel quasi ti ty kapitalista kúrou qa at úkrok
+ :jdu suk jdi ges lis rok sol sto pùl tah kdy sil
+ :diskuse jakosti úsporou sleduje studuje podklad
+ :dopis adres grafù úkolù desek stroj hesel okres
+ :fotograf jistily tiskopis prùklepù dokladù,
 
 #                                                            ../orig/r.typ:194
-I:(8) Test Paragraph
+I:Dal¹í opakování.
 *:_R_R_L39
 #                                                            ../orig/r.typ:201
-S:    They say this fruit is the finest.  It is full and good.
- :Dr. Ted feels the first fruit is too green for young or old.
- :After one eats any of it he is sorry. In fact, if I try it,
- :that night in fancy I sail the the South Seas for eight hours.
- :The air is fine and clear; on the ship are only fruit and I.
- :To a lady in those seas I gladly offer all fruit and candy.
- :There is no reply. Only the seas run high and I feel ill.
+D:je to úkol. dostatek produktù se tu pokukuje
+ :dosud je dostatek traktorù dosud je dostatek
+ :je tu úkol postarat se o úrodu a pojistit dostatek
+ :o dary hoduje spousta faktorù, poloha pole
+ :dary se pokukuje podle disky od hektaru a dostatku
+ :podtrhuje se úloha strojù a traktorù, ale jde
+ :úloha strojù roste, stroj pro lidi, je tu
 
 #                                                            ../orig/r.typ:202
-I:(9) Rhythmic Review
+I:Rytmické cvièení.
 *:_R_R_L40
 #                                                            ../orig/r.typ:203
-D:The young lady often has pounds of fruit and candy each day.
+D:se stroji tys orat pole o holografie sta hektarù
+ :s úsporou sil. pak lyrik pojistit dostatek
+ :produktù pro trh okresu a kraje.
 
 G:_R_E_R4
 #------------------------------------------------------------------------------
@@ -1049,96 +1222,130 @@ G:_R_E_R4
 *:R5
 *:_R_S_R5
 #                                                            ../orig/r.typ:207
-I:(1) Warming-Up Drill
+I:Rozcvièka
 *:_R_R_L41
 #                                                            ../orig/r.typ:208
-D:In any case there is only one order that is long past due.
+D:frf ftf juj jyj ùpù ùúù aqa frf ftf juj jyj ùpù ùúù
+ :tak kdy qui túr sto lyrik úlu tak kdy qui túr sto
+ :lehkost episody autokar lehkost episody autokar
+ :elektroakustika elektrostatika, elektroakustika
+
 
 #                                                            ../orig/r.typ:209
-I:(2) Balanced Keyboard Drill
+I:Písmeno V pí¹eme ukazováèkem levé ruky, vychýleným
+ :vpravo dolù
 *:_R_R_L42
 #                                                            ../orig/r.typ:210
-D:est ace ric ity red per der pro sel par ish ial ing eal let
+D:dalekohledu filatelista prstokladu, dalekohledu
+ :fvf fvr fvt fvf fvr fvt fvf fvr fvt fvf fvr fvt
+ :var vat var vat var vat var vat var vat var vat
+ :div dav div dav div dav div dav div dav div dav
+ :ves vek ves vek ves vek ves vek ves vek ves vek
+ :kov jev kov jev kov jev kov jev kov jev kov jev
+ :vis vid vis vid vis vid vis vid vis vid vis vid
 
 #                                                            ../orig/r.typ:211
-I:(3) Continuous Copy--Review
+I:Opìt V.
 *:_R_R_L43
-#                                                            ../orig/r.typ:212
-D:To learn to type, first get a nice rate going, then hold it.
+#
+D:vrata vstup vrata vstup vrata vstup vrata vstup
+ :vraty divit vraty divit vraty divit vraty divit
+ :vyla vidle vyla vidle vyla vidle vyla vidle vyla
+ :koval tavil koval tavil koval tavil koval tavil
+ :vysypaly do krovu vysypaly do krovu vysypaly do
+ :úvaha slova úvaha slova úvaha slova úvaha slova
+ :vrtal otvor vrtal otvor vrtal otvor vrtal otvor
+ :servi útvar servi útvar servi útvar servi útvar
 
 #                                                            ../orig/r.typ:213
-I:(4)
+I:Cvièení.
 *:_R_R_L44
 #                                                            ../orig/r.typ:215
-D:If you read copy set your eyes on that copy and stay on it.
- :If you hear copy then use your eyes to hit sure and fast.
+D:sleva poplatku, doslov autora, verva vylodily,
+ :tvoje odvaha, povolal lidi, tvoje odvaha, povolal
+ :tvar letadla, uhodil vedle, vhled, vada, tvar
+ :spisovatel veseloher, spolky spisovatelù, spisovatel
+ :dal kolektivu slovo, dal kolektivu slovo, dal
+ :dopadlo to podle jeho slov, dopadlo to podle
+ :diktoval dopis do stroje, diktoval dopis
+ :kvalita je jakost, oprava a úprava, kvalita
 
 #                                                            ../orig/r.typ:216
-I:(5)
+I:Písmeno M pí¹eme pravým ukazováèkem vychylováním 
+ :vpravo ¹ikmo dolù.
 *:_R_R_L45
 #                                                            ../orig/r.typ:219
-D:Do not hurry. Set a nice rate.  Yet hit each letter fast.
- :To strike letters start easily and fast and use a light touch.
- :You can not type lightly and faster if you start to pound.
+D:redaktorky odhlasovaly redaktorky odhlasovaly
+ :jmj jmu jmy jmj jmu jmy jmj jmu jmy jmj jmu jmy
+ :jim jam jim jam jim jam jim jam jim jam jim jam
+ :ohm lom ohm lom ohm lom ohm lom ohm lom ohm lom
+ :myl mat myl mat myl mat myl mat myl mat myl mat
+ :tam tom tam tom tam tom tam tom tam tom tam tom
+ :mùj dùm mùj dùm mùj dùm mùj dùm mùj dùm mùj dùm
 
 #                                                            ../orig/r.typ:220
-I:(6)
+I:Rytmika!
 *:_R_R_L46
 #                                                            ../orig/r.typ:224
-D:It is a slip if you do not use a letter in its right order,
- :since in line after line each has its place on the paper.
- :You soon learn the usual order for all letters that you type
- :and learn to print the letters in any necessary order.
+D:hmat, sedm, hmat, sedm, hmat, sedm, hmat, sedm,
+ :moje, myla, moje, myla, moje, myla, moje, myla,
+ :domù, mysl, domù, mysl, domù, mysl, domù, mysl,
+ :klam, kmih, klam, kmih, klam, kmih, klam, kmih,
+ :vyjmuta, vyjmuto, vyjmuta, vyjmuto, vyjmuta, vyjmuto,
+ :reklama komedie reklama komedie reklama komedie
+ :smaragd mramoru smaragd mramoru smaragd mramoru
+ :mladost lidumil mladost lidumil mladost lidumil
 
 #                                                            ../orig/r.typ:225
-I:(7)
+I:Opakovací cvièení je zamìøeno na rytmus
+ :a obtí¾ná spojení.
 *:_R_R_L47
 #                                                            ../orig/r.typ:230
-D:It is easy at first to make errors by losing this usual order.
- :If you read, hold the eyes on copy to help get this order.
- :If you do hit this or that letter out of order, it is not
- :that you fail to spell. You can spell and yet not type;
- :this fine class drill is to help the type fly in fair order.
+D:gram, klam, jilm, kmet, kmit, kmih, mrak, mrav,
+ :vlak, vlas, vrak, vlek, vjet, vkus, vrut, vtip,
+ :darovat dolovat hmatali hmitali lakovat letovat
+ :lisoval litoval maloval mapoval upravil ustavil
+ :filmoval formoval sletoval slevoval slepoval
+ :spalovat spilovat spojovat stahovat stolovat
+ :akumulovala dopravovala prokoumala doprovodila
+ :vymordovala kompletovat komplikovat kormidlovat
+
 
 #                                                            ../orig/r.typ:231
-I:(8) One- to three-letter words (m to z)
+I:Písmeno C pi¹te vychylováním levého prostøedníku
+ :vpravo dolù.
 *:_R_R_L48
 #                                                            ../orig/r.typ:249
-S:Dear Tom,
- :
- :    Mr. May has one new car.  It has a low red top.  The top
- :is so low you can not see the sun if you sit in the car. Mr.
- :May has not let his own son use it. I saw his son try to put
- :the top up. I ran and met him.  Why not be men and run the car
- :out? We did.  We set out to run it at six.  We two ran it off
- :to an old lot by the sea.
- :
- :    Did his pa see us?  Yes, sir, who but Pa was at No. Ten
- :as we ran by in the car--and Ma, too. Oh, it was war--his pa
- :had a lot to say. Let me lay out the law to you.  You may not
- :use the car as you did not pay for it. You are not yet a man.
- :Son did not lie nor did he win his way.
- :
- :    How are you all?  Now if you get a new car, let me run it.
- :
- :Yours sincerely,
+D:poloautomatika, aktuality, poloautomatika, hospody,
+ :dcd dce dec dcd dce dec dcd dce dec dcd dce dec dcd
+ :cis ces cis ces cis ces cis ces cis ces cis ces cis
+ :cit cti cit cti cit cti cit cti cit cti cit cti cit
+ :cep pec cep pec cep pec cep pec cep pec cep pec cep
+ :clo moc clo moc clo moc clo moc clo moc clo moc clo
+ :agitace úschova agitace úschova agitace úschova
 
 #                                                            ../orig/r.typ:250
-I:(9) Pointed Paragraph (t c)
+I:Del¹í slova.
 *:_R_R_L49
 #                                                            ../orig/r.typ:256
-S:    Is it quite certain that the citizens could continue the
- :old conditions if they voted a straight ticket? If we accept
- :as accurate the picture of recent conditions, we can not crave
- :to continue them. We lack the tact to get the citizens to
- :vote a split ticket. Tax collectors try to collect taxes on
- :vacant lots. A discount for cash increases collections.
+
+D:prùvodce vegetace prùvodce vegetace prùvodce
+ :pochovat doslechl pochovat doslechl pochovat
+ :veselice pravomoc veselice pravomoc veselice
+ :vytlouci plachtit vytlouci plachtit vytlouci
+ :pec cos moc ces sic cha cik cak cif cup doc
+ :couvat, tlouci, chodit, vracet, sladce, lecjak,
+ :charaktery komerce, spolupracovali, socialistickou.
+
 
 #                                                            ../orig/r.typ:257
-I:(10) Rhythmic Review
+I:Opakování.
 *:_R_R_L50
 #                                                            ../orig/r.typ:258
-D:In order to type fast you hit lightly after each short delay.
+D:pocit tepla srdce ulice pocit tepla srdce ulice
+ :hledisko vcelku po ruce, hledisko vcelku po ruce,
+ :poslali pro chlapce i dcerku. poslali pro chlapce
+ :autor cestopisù, odchod do dùchodu.
 
 G:_R_E_R5
 #------------------------------------------------------------------------------
@@ -1147,87 +1354,128 @@ G:_R_E_R5
 *:R6
 *:_R_S_R6
 #                                                            ../orig/r.typ:262
-I:(1) Warming-Up Drill
+I:Rozcvièka
 *:_R_R_L51
 #                                                            ../orig/r.typ:263
-D:It seems to me that we want to know what was said just now.
+D:fvf fvr fvt jmj jmu jmy dcd dce dec fvf fvr fvt
+ :cit cop cep cos clo cla clu cel cis ces cit cop
+ :ctitel, dalece, chopit, kocour, svrchu, scelit,
+ :chasa chata chlad chlap chlum chlup chrup chaos
 
 #                                                            ../orig/r.typ:264
-I:(2) Balanced Keyboard Drill
+I:Písmena X a W pí¹eme levým prsteníkem,
+ :pomlèku pravým malíèkem.
 *:_R_R_L52
 #                                                            ../orig/r.typ:266
-D:ent ake mon mak tim kin orm omp rom ork mys kno com ome Mr.
- :ant may was way now job wit toi wri jus wil jul whi wou whe
+D:civilista, komplikace, demokracie, motorista,
+ :sxs sws sxs sws sxs sws sxs sws sxs sws sxs
+ :lux lex lux lex lux lex lux lex lux lex lux
+ :ù-ù ù-p ù-ú ù-ù ù-p ù-ú ù-ù ù-p ù-ú ù-ù ù-p
+ :fix tix fix tix fix tix fix tix fix tix fix
+ :tax tex tax tex tax tex tax tex tax tex tax
+ :mix max mix max mix max mix max mix max mix
 
 #                                                            ../orig/r.typ:267
-I:(3) Continuous Copy
+I:Pokrète správnì prsty.
 *:_R_R_L53
 #                                                            ../orig/r.typ:268
-D:Let me have a horse where the wide West still runs wild.
+D:extra kodex extra kodex extra kodex extra kodex
+ :export, expert, export, expert, export, expert,
+ :wolfram komplex wolfram komplex wolfram komplex
+ :dostala-li, poslala-li, dostala-li, poslala-li,
+ :expres, textil, expres, textil, expres, textil,
+ :exekuce exhumace exekuce exhumace exekuce exhumace
+ :maximum reflex, maximum reflex, maximum reflex,
+ :kilowatt expedice kilowatt expedice kilowatt
 
 #                                                            ../orig/r.typ:269
-I:(4)
+I:Procvièíme pomlèku.
 *:_R_R_L54
 #                                                            ../orig/r.typ:271
-D:I must see the warm colors, and feel the wind on that land.
- :I want to see a few cows among great rocks and sage brush.
+D:dostala-li, poslala-li, dostala-li, poslala-li,
+ :xperti uvedli, jak charaktery komplex hal
+ :maximum textilu jde i pro export - maximum
+ :exhumace v divadle - exhumace v divadle - exhumace
+ :poslali exekuci - poslali exekuci - poslali
 
 #                                                            ../orig/r.typ:272
-I:(5)
+I:Z pí¹eme levým malíèkem posunutím ze základní
+ :polohy vpravo dolù
 *:_R_R_L55
 #                                                            ../orig/r.typ:275
-D:I like to hear a horse stamp. I like the sweat on a horse.
- :I want to keep a camp, close to water, miles from any crowd.
- :At night, I want to enjoy a moon that shines on all the land.
+D:exporty, wolframitu, xerografie, exhumace.
+ :aza aqz aza aqz aza aqz aza aqz aza aqz aza
+ :vùz zem zad vùz zem zad vùz zem zad vùz zem
+ :rzi zas zet rzi zas zet rzi zas zet rzi zas
+ :kyz zel koz zdi zel koz zdi zel koz zdi zel
+ :zas raz zas raz zas raz zas raz zas raz zas
+ :zda zde zda zde zda zde zda zde zda zde zda
 
 #                                                            ../orig/r.typ:276
-I:(6)
+I:(2) Z pí¹eme levým malíèkem posunutím ze základní
+ :polohy vpravo dolù
+
 *:_R_R_L56
 #                                                            ../orig/r.typ:280
-D:Yet I am in this city room to type news items for the paper.
- :I know the ins and outs of my city--its mayor, judge, jail.
- :I know how some men keep in power, and some get only kicks.
- :I am sick of dark ways to make money, of bribery and fraud.
+D:mrz tzv. rzi mrz tzv. rzi mrz tzv. rzi mrz tzv.
+ :rozpadal vzrostl rozpadal vzrostl rozpadal vzrostl
+ :porazil mezihry porazil mezihry porazil mezihry
+ :rozkradl mezisklad rozkradl mezisklad rozkradl
+ :zastala, zatahala, zastala, zatahala, zastala,
+ :pozor, tady kazy. pozor, tady kazy. pozor,
+ :teze, dotaz, teze, dotaz, teze, dotaz, teze,
+ :zkraty vzadu zkraty vzadu zkraty vzadu zkraty
+ :mosaz meze mosaz meze mosaz meze mosaz meze
 
 #                                                            ../orig/r.typ:281
-I:(7)
+I:Pocvièíme ménì zdatné prsty.
 *:_R_R_L57
 #                                                            ../orig/r.typ:286
-D:I want to hear the talk of folks who know hot sun and stock.
- :I like to join in jokes with men whose names I do not ask.
- :So had I just an old motor car and some gas to make it jump,
- :I would come at forty miles an hour, past fields of wheat,
- :till the grade grows high and rough, in keen air out West.
+D:chytili myl cos prùmysl kly ces situace max pec
+ :jde i o mzdovou charakteristiku jde i o mzdovou
+ :chodu se ji latex je to waltz as po chaty co ex
+ :vydavatelem kytic vy za socialismus cyklu ix ax
+ :rozhodl o exkurzi rozhodl o exkurzi rozhodl
+ :horoval pro chalupu horoval pro chalupu horoval
+ :prùzkum situace s chatami prùzkum situace
+ :komplex hal s dvorkem komplex hal s dvorkem
+
 
 #                                                            ../orig/r.typ:287
-I:(8) Pointed Paragraph (p y)
+I:Písmeno B pí¹eme levým ukazováèkem, vychýleným
+ :hodnì doprava a dolù.
 *:_R_R_L58
 #                                                            ../orig/r.typ:293
-S:    Please report the people who study typing.  You may
- :truly say that money paid for this study is happily spent.
- :Today typing plays a very practical part in acquiring a
- :paying position. We can use plenty of these days for exact
- :work in typing: Monday, Tuesday, Wednesday, Thursday, Friday,
- :and Saturday. Have you this sized type to print your copy?
+D:vymyslel zvyklost typograf rychlost cyklista
+ :systematika vychovateli sympatizuje dramaticky,
+ :fvf fbf fbr fvf fbf fbr fvf fbf fbr fvf fbf
+ :boj bor bod boj bor bod boj bor bod boj bor
+ :bez bar byt bez bar byt bez bar byt bez bar
+ :byl brk bok byl brk bok byl brk bok byl brk
+ :aby box bys aby box bys aby box bys aby box
 
 #                                                            ../orig/r.typ:294
-I:(9) Test Paragraph
+I:Opakujeme B.
 *:_R_R_L59
 #                                                            ../orig/r.typ:302
-S:    Were you the judge in a case like this, could you do the
- :just thing? An old woman who keeps rooms hides her money
- :under a clock. A man using one of the rooms motors rapidly
- :away. The old woman says her money is gone.  We join in a
- :hunt for the man who is found in the West. We take from him
- :the same sum of money. We try to make him sweat and talk.
- :I use my power to set his term at ten years. After he is put
- :in jail, the old woman finds her money still under the clock.
+D:hloubka chloubu hloubka chloubu hloubka chloubu
+ :obsah obvod obsah obvod obsah obvod obsah obvod
+ :stavby volby tavby volby tavby volby stavby volby
+ :dobou rybou dobou rybou dobou rybou dobou rybou
+ :chyby obuvi chyby obuvi chyby obuvi chyby obuvi
+ :barva brzdy barva brzdy barva brzdy barva brzdy
+ :zabrzdil zpùsobil zabrzdil zpùsobil zabrzdil
 
 #                                                            ../orig/r.typ:303
-I:(10) Rhythmic Review
+I:Dejte si pozor na rytmus.
 *:_R_R_L60
 #                                                            ../orig/r.typ:304
-D:How do we know which way so wild a horse will kick or jump?
+D:dobarvil vybarvil odbarvil vybalili zabalili
+ :obohacovali prohloubili vybavovali, vzbuzovali,
+ :i s obalem. i s ozdobou i s obchody i s rozbory
+ :bez odbytu. bez obvazu. bez obvodu. bez obruby.
+ :pracuje i v sobotu. pracuje i v sobotu. pracuje
+ :brzdili rozvoj. brzdili rozvoj. brzdili rozvoj.
 
 G:_R_E_R6
 #------------------------------------------------------------------------------
@@ -1236,86 +1484,121 @@ G:_R_E_R6
 *:R7
 *:_R_S_R7
 #                                                            ../orig/r.typ:308
-I:(1) Warming-Up Drill
+I:Rozcvièka
 *:_R_R_L61
 #                                                            ../orig/r.typ:309
-D:With that end in view I may soon have to put this question.
+D:fvf fbf fbr fbt fvf fbf fbr fbt fvf fbf fbr fbt fvf
+ :a a bal a o bod a y byl a u bus a e bez a i bit a a
+ :arborka republik vyrobili dobropis zpùsobem barometr
+ :barbarismus vybagrovali blahobytem, fotbalista.
 
 #                                                            ../orig/r.typ:310
-I:(2) Balanced Keyboard Drill
+I:Písmeno N pí¹eme pravým ukazováèkem vychýleným
+ :vlevo dolù.
 *:_R_R_L62
 #                                                            ../orig/r.typ:311
-D:ave hav eve ver ove quo not ive giv qui vis que ved eiv tha
+D:jmj jnj jmn jmj jnj jmn jmj jnj jmn jmj jnj jmn jmj
+ :nad neb nic nad neb nic nad neb nic nad neb nic nad
+ :noc nit nos noc nit nos noc nit nos noc nit nos noc
+ :oni ony ona oni ony ona oni ony ona oni ony ona oni
+ :inu ano mne inu ano mne inu ano mne inu ano mne inu
+ :snadno, funkce, snadno, funkce, snadno, funkce, snadno,
 
 #                                                            ../orig/r.typ:312
-I:(3) Continuous Copy
+I:Jako v¾dy nìjaká slova.
 *:_R_R_L63
 #                                                            ../orig/r.typ:313
-D:At our new villa a very novel event was given for the navy.
+D:nutno nemoc nutno nemoc nutno nemoc nutno nemoc nutno
+ :vznik novin vznik novin vznik novin vznik novin vznik
+ :telefony okolnost telefony okolnost telefony okolnost
+ :znamenat stanovit znamenat stanovit znamenat stanovit
+ :vhodnost minulost vhodnost minulost vhodnost minulost
+ :prosinec techniky prosinec techniky prosinec techniky
 
 #                                                            ../orig/r.typ:314
-I:(4)
+I:Souvislý text.
 *:_R_R_L64
 #                                                            ../orig/r.typ:316
-D:Covers were laid in the unique ivory room. Even the king
- :and queen were there with a quota of fair and lovely ladies.
+D:chceme zajistit rozvoj obchodu dobrou reklamou. s tou se se
+ :sejdeme v tisku i v televizi. reklama propaguje, co se vy-
+ :robilo a vzbuzuje tak mezi obyvatelstvem obdiv pro bohatou
+ :tvorbu prùmyslu. reklamou se prohlubuje vkus obyvatelstva.
+ :chceme, aby vzhled obchodù vedl k propagaci prodeje, aby se
+ :dbalo i o kulturu prodeje. o obratu velmi rozhoduje i zpù-
+ :sob obsluhy. ochota a vztah k lidem jsou pro obchod pravou
+ :reklamou.
 
 #                                                            ../orig/r.typ:317
-I:(5)
+I:Velká písmena Z,U,I,O,P,H,J,K,L,N,M -- stiskneme
+ :levý Shift + klávesu.
+
 *:_R_R_L65
 #                                                            ../orig/r.typ:320
-D:The queen was ready to quaff when her glass fell. At once
- :all was quiet. Every one, save one alone, quit the dance.
- :In all their lives, to quote, was never a thing more grave.
+D:investovali kompletnost bezcennosti navrhovatel
+ :Ja Ja Ka Ka La La Ha Ha Za Za Ua Ua Ja Ja Ka Ka
+ :Ia Ia Oa Oa Pa Pa Na Na Ma Ma Ia Ia Oa Oa Pa Pa
+ :Jakub, Karel, Jakub, Karel, Jakub, Karel, Jakub,
+ :Lucie, Hanka, Lucie, Hanka, Lucie, Hanka, Lucie,
+ :Zlata, Urban, Ivana, Oskar, Zlata, Urban, Ivana,
 
 #                                                            ../orig/r.typ:321
-I:(6)
+I:Koneènì vìty.
 *:_R_R_L66
 #                                                            ../orig/r.typ:325
-D:Who was the lady with the vivid hair in the dress of heavy
- :gold? Who was this queer one who dared so treat the queen?
- :Each guest did quail. Could such quiet nerve ever avail?
- :With a move quite free and easy the lady let fall her glass.
+D:Nemohl zavolat z podniku pro poruchu kabelù. Nemohl zavolat
+ :Iniciativa ekonomù. Povinnosti dodavatelù. Iniciativa ekonomù.
+ :Mezi lidmi se najde mnoho fandù divadla. Mezi lidmi se najde
+ :Program veletrhu je letos velmi obsazen. Program veletrhu je
 
 #                                                            ../orig/r.typ:326
-I:(7)
+I:Písmeno Ø pí¹eme ukazováèkem levé ruky vychýleným
+ :kolmo vzhùru.
 *:_R_R_L67
 #                                                            ../orig/r.typ:331
-D:The queen put this query in a quick voice to quell them all:
- :Why does the whole world love a lover? Why do we value you?
- :All did laugh. The queen asked that, as a favor, you give us
- :those who have nerve, for they can love and serve. Quite as
- :one who gave an equal favor, the queen sang over the radio.
+D:Florencie, Bulharsko, Venezuela, Stockholm, Guatemala,
+ :frø føf frø føf frø føf frø føf frø føf frø føf frø føf
+ :fvø fbø fvø fbø fvø fbø fvø fbø fvø fbø fvø fbø fvø fbø
+ :jaø keø jaø keø jaø keø jaø keø jaø keø jaø keø jaø keø
+ :zøi vøe zøi vøe zøi vøe zøi vøe zøi vøe zøi vøe zøi vøe
 
 #                                                            ../orig/r.typ:332
-I:(8) Pointed Paragraph (l s)
+I:Opistujte text.
 *:_R_R_L68
 #                                                            ../orig/r.typ:338
-S:    The earliest possible sales lessen the total losses.
- :Please enclose the latest details in those lists yourself.
- :On almost all calls I could save six dollars, especially in
- :July. Tell the girls all the usual questions asked will be
- :useful shortly. Use a small-sized envelope to post letters.
- :Last but not least, all else should still go on as usual.
+D:pøenesl chøipku pøenesl chøipku pøenesl chøipku
+ :øemeslo tesaøe, øemeslo tesaøe, øemeslo tesaøe
+ :spatøil høeben, spatøil høeben, spatøil høeben
+ :tvoøili tøetinu tvoøili tøetinu tvoøili tøetinu
+ :sevøeli pøitom, sevøeli pøitom, sevøeli pøitom
+ :jaø tøi keø øez zøi øad miø øek vøe øev pøe zøe
+
 
 #                                                            ../orig/r.typ:339
-I:(9) Test Paragraph
+I:Pokraèujte v opisování.
 *:_R_R_L69
 #                                                            ../orig/r.typ:347
-S:    In our queen city I used to value two covers set every
- :day. At these I used to serve a young man and a girl.  I did
- :love to see her quiet dress and quick smile favor her so.
- :I have never quite seen her equal, or a girl so very alive.
- :After I had given over this work, I went there to see them.
- :One night I saw a query form on her lips until she gave it
- :up and took leave. The way she quit the boy was very queer
- :even if the papers did quote his prison term as five years.
+
+D:Za bouøky. Ve støehu. Od øepaøe. Po pekaøi. Ke støedu.
+ :spotøeba paliv spotøeba energie, spotøeba paliv
+ :ochoøeli chøipkou ochoøeli chøipkou ochoøeli chøipkou
+ :dveøe se otevøely dveøe se otevøely dveøe se otevøely
+ :modernizace pøepravy modernizace pøepravy modernizace
+ :vyøezali ze døeva figurky, vyøezali ze døeva figurky,
+ :S elektøinou. S pøedmluvou. V kultuøe. Z øady.
 
 #                                                            ../orig/r.typ:348
-I:(10) Rhythmic Review
+I:Písmeno Á pí¹eme pravým ukazováèkem, 
+ :vychýleným mírnì vpravo nahoru.
 *:_R_R_L70
 #                                                            ../orig/r.typ:349
-D:Even her very quick smile never makes us quite at our ease.
+D:chmelaøi bøitvou, podpoøil køeslem, døevina,
+ :pøipomenout zaøizovali, døevoøezba, støediskem,
+ :juá jáj juá jáj juá jáj juá jáj juá jáj juá jáj
+ :háj dál háj dál háj dál háj dál háj dál háj dál
+ :máj sál máj sál máj sál máj sál máj sál máj sál
+ :nám rád nám rád nám rád nám rád nám rád nám rád
+ :vás bát vás bát vás bát vás bát vás bát vás bát
+
 
 G:_R_E_R7
 #------------------------------------------------------------------------------
@@ -1324,91 +1607,120 @@ G:_R_E_R7
 *:R8
 *:_R_S_R8
 #                                                            ../orig/r.typ:353
-I:(1) Warming-Up Drill
+I:Opakování
 *:_R_R_L71
 #                                                            ../orig/r.typ:354
-D:I don't know why he can't have a large-sized order for you.
+D:S elektøinou. S pøedmluvou. V kultuøe. Z øady.
+ :S naftou je tøeba dobøe hospodaøit. S naftou
+ :Bylo nutno vytvoøit pøedpoklady pro malou spotøebu.
 
 #                                                            ../orig/r.typ:355
-I:(2) Balanced Keyboard Drill
+I:Opakujeme Á.
 *:_R_R_L72
 #                                                            ../orig/r.typ:357
-D:sen aze hen ose hat ous had ize tte see hin oze to- zoo n't
- :e'l e's u'l h's d's n's s's e'r a's t's y's r's n't m's es'
+D:dodávku nemáme, dodávku nemáme, dodávku nemáme,
+ :ukázali celofán ukázali celofán ukázali celofán
+ :dostává zprávy, dostává zprávy, dostává zprávy,
+ :sázenku dáváme, sázenku dáváme, sázenku dáváme,
+ :tøikrát diváci, tøikrát diváci, tøikrát diváci,
+ :morálka brigády morálka brigády morálka brigády
+ :mám - vám - rám - báj - lán - gáz - háv - kár
+
 
 #                                                            ../orig/r.typ:358
-I:(3) Continuous Copy
+I:Dlouhá slova.
 *:_R_R_L73
 #                                                            ../orig/r.typ:359
-D:I'd never call Dan lazy; still, I can't say he wins prizes.
+D:hospodáøská spolupráce, hospodáøská spolupráce,
+ :pøedcházeli katastrofám pøedcházeli katastrofám
+ :sekretáøkám procházkám, sekretáøkám procházkám,
+ :zpracováván nástrojaøem zpracováván nástrojaøem
+ :sestavovány objednávky, sestavovány objednávky,
+
 
 #                                                            ../orig/r.typ:360
-I:(4)
+I:Opakování.
 *:_R_R_L74
 #                                                            ../orig/r.typ:362
-D:Doesn't Dan know how to make an exclamation point? He'll
- :have to hold down the spacer and hit the apostrophe and period.
+D:øád nám ukázali národohospodáøi politickoorganizátorská
+ :záøil aø oø jeøáb eø áø hoøák øa øá vøelá øe øi okøál
+ :hospodáøská øádná má dá hospodáøská øádná má dá hospodáøská
+ :mateøská dovolená mateøská dovolená mateøská dovolená
+ :hospodáøská soustava hospodáøská soustava hospodáøská
+ :pøeprava nákladù, pøeprava nákladù, pøeprava nákladù
+
 
 #                                                            ../orig/r.typ:363
-I:(5)
+I:Písmeno È pí¹eme levým prostøedníkem vychýleným
+ :kolmo vzhùru.
 *:_R_R_L75
 #                                                            ../orig/r.typ:366
-D:Owing to Dan's zeal, he'll get the point; he'll realize it's
- :faster. He'll use it when amazed, as:  Whiz!  He'll use it
- :when he feels real zest, as: Zip!  Let's go!  It's a fire!
+D:uspoøili pøepravu nákladu, nahrávka recitálu
+ :pøedpokládá hospodáøská sekretáøská pøedpokládá
+ :deè dèd deè dèd deè dèd deè dèd deè dèd deè dèd
+ :èas meè èas meè èas meè èas meè èas meè èas meè
+ :naè øeè naè øeè naè øeè naè øeè naè øeè naè øeè
+ :èin tyè èin tyè èin tyè èin tyè èin tyè èin tyè
+ :leè èáp leè èáp leè èáp leè èáp leè èáp leè èáp
 
 #                                                            ../orig/r.typ:367
-I:(6)
+I:Kláves se dotýkáme jen lehce.
 *:_R_R_L76
 #                                                            ../orig/r.typ:372
-D:A dozen small-sized craft frozen in the ice are afire under
- :a cold azure sky. It's near zero in the fire zone; and over
- :the ships now razed to the water's edge, a light haze hangs.
- :I'm dazed as I gaze at my own ship; I'd never recognize that
- :crazy maze of still fizzing ruins as a deck. What a fizzle!
+
+D:èasopis uèiteli èasopis uèiteli èasopis uèiteli
+ :úèinná, hraèka, úèinná, hraèka, úèinná, hraèka,
+ :aèkoliv naèisto aèkoliv naèisto aèkoliv naèisto
+ :poèkali vyboèil poèkali vyboèil poèkali vyboèil
+ :náèrtek chladiè náèrtek chladiè náèrtek chladiè
+
 
 #                                                            ../orig/r.typ:373
-I:(7)
+I:Pokraèujeme v procvièování.
 *:_R_R_L77
 #                                                            ../orig/r.typ:379
-D:Isn't there a lot of zip and zest to your work on a paper of
- :this size? Don't you like to seize some amazing news item
- :that's good for the first page? If Tom's hazy fire story is
- :a fizzle, why won't you squeeze it to a dozen lines? Isn't
- :that easy for you? I've wanted to see my name in print; I
- :guess I'll sail in a zeppelin to see if you'll print that.
+D:èleny èluny èleny èluny èleny èluny èleny èluny èleny
+ :vèera veèer vèera veèer vèera veèer vèera veèer vèera
+ :koèár úèel, koèár úèel, koèár úèel, koèár úèel, koèár
+ :èokoláda chemièka èokoláda chemièka èokoláda chemièka
+ :babièka, baboèka, babièka, baboèka, babièka, baboèka
+ :zapoèatá èinnost, zapoèatá èinnost, zapoèatá èinnost
 
 #                                                            ../orig/r.typ:380
-I:(8) Pointed Paragraph (r n)
+I:A je¹tì...
 *:_R_R_L78
 #                                                            ../orig/r.typ:387
-S:    A note from Ann says her friend prefers to change her
- :return to Arizona from next February to November. The reason
- :is an error of the owner of the ranch who will not refund
- :her rent. The janitor is running some errand, for he has
- :worked in the rain near the northern entrance during dinner.
- :I hear that now neither her friends from North Carolina nor
- :Virginia can remain an afternoon and refrain from a quarrel.
+D:obèanská vybavenost, obèanská vybavenost, obèanská
+ :oznaèkovali turistickou cestu èervenou znaèkou
+ :odboèili ze silnice, roztoèil koleèka, nepøekroèil
+ :nahrávaè se smeèaøem ve ètyøhøe, neèekaná událost
+ :do poètu ve ètyøi do ètverce, obèerstvili se
+ :Poèátek lhùty je od ètvrtka. Poèátek lhùty
+
 
 #                                                            ../orig/r.typ:388
-I:(9) Test Paragraph
+I:Písmeno Í pí¹eme vychýlením pravého prostøedníku
+ :mírnì vpravo vzhùru.
 *:_R_R_L79
 #                                                            ../orig/r.typ:396
-S:    I'll admit I seize a chance to go with these dozen
- :people. We left under an azure sky, yet today it's rainy
- :and hazy. That Dr. Tedd is odd; he won't play; he's doing
- :a report on how to zone cities of any size; so he won't let
- :us dance to radio jazz. Tonight we're to try a play that
- :hasn't any zest or zip. Its prize is Tom's money, and he'll
- :not stay; he feels it's a fizzle. My zeal for gazing on the
- :crowd is at zero. They don't and can't pass any play quiz.
+
+D:dokonèil rozpoèet hranièáø lednièka èerpadlo èinitelù
+ :nároènosti, nespoèetná, slouèeninám odpoèinkem, bezúèinnost
+ :kií kík kií kík kií kík kií kík kií kík kií kík kií
+ :dík cíl dík cíl dík cíl dík cíl dík cíl dík cíl dík
+ :jíl fík jíl fík jíl fík jíl fík jíl fík jíl fík jíl
 
 #                                                            ../orig/r.typ:397
-I:(10) Rhythmic Review
+I:Nezoufejte :)
 *:_R_R_L80
-#                                                            ../orig/r.typ:398
-D:It's crazy for me to type news items on paper of this size!
+D:díl - mít - víc - jíl - sít - dlí - ctí - sní - bdí
+ :získali vlastní moderní obydlí, cítíme, hlavní
+ :administrativní nenahraditelní, kvalitativního
+ :dílem písmo dílem písmo dílem písmo dílem písmo
+ :bílá, musí, bílá, musí, bílá, musí, bílá, musí, bílá
+ :Poøádá se proto øada semináøù.
 
+#                                                            ../orig/r.typ:398
 G:_R_E_R8
 #------------------------------------------------------------------------------
 # Lekce R9
@@ -1416,100 +1728,124 @@ G:_R_E_R8
 *:R9
 *:_R_S_R9
 #                                                            ../orig/r.typ:402
-I:(1) Warming-Up Drill
+I:Rozcvièka.
 *:_R_R_L81
 #                                                            ../orig/r.typ:403
-D:To some extent he has been able to do the next best thing.
+D:akèní øídí staèí aè èi uèení zí èí ètení èe ní líèek tè jí
+ :vedoucí èinitel dílèích operací vedoucí èinitel dílèích operací
+ :vlastní strojní èinnost i s racionalizaèním úsilím, vlastní
+ :Organizátorská èinnost energetikù. Organizátorská èinnost
 
 #                                                            ../orig/r.typ:404
-I:(2) Balanced Keyboard Drill
+I:Nacvièujte zrychlování a zpomalování psaní.
 *:_R_R_L82
 #                                                            ../orig/r.typ:405
-D:abo bet bee ble bou bef ext ber six sib nex abl aby mbe box
+D:Hlavní pøíèina závady. Hlavní pøíèina závady.
+ :sociální zabezpeèení sociální zabezpeèení
+ :èasto se øíká tradièní názor èasto se øíká tradièní
+ :pracovní úrazy pracovní èasy, pracovní úrazy pracovní èasy,
+ :tvùrèích èinù, sluneèní energie, tvùrèích èinù
+ :existenèním minimem, kooperaèním seskupením
+
 
 #                                                            ../orig/r.typ:406
-I:(3) Continuous Copy
+I:Písmeno © pí¹eme levým prsteníkem vychýleným 
+ :kolmo vzhùru.
 *:_R_R_L83
 #                                                            ../orig/r.typ:407
-D:Dad just about broke down at the bad news. Bill has no job.
+D:redakèním pouèení veèerník redukèní èistírna pøíèinná
+ :rekreaèního malièkostí, kooperaèním seskupením
+ :sw¹ s¹s sw¹ s¹s sw¹ s¹s sw¹ s¹s sw¹ s¹s sw¹ s¹s sw¹
+ :ná¹ ¹ek ná¹ ¹ek ná¹ ¹ek ná¹ ¹ek ná¹ ¹ek ná¹ ¹ek ná¹
+ :v¹e øe¹ v¹e øe¹ v¹e øe¹ v¹e øe¹ v¹e øe¹ v¹e øe¹ v¹e
+ :vá¹ ¹íp vá¹ ¹íp vá¹ ¹íp vá¹ ¹íp vá¹ ¹íp vá¹ ¹íp vá¹
 
 #                                                            ../orig/r.typ:408
-I:(4)
+I:Opakování ©.
 *:_R_R_L84
 #                                                            ../orig/r.typ:410
-D:Dad was vexed. He said that he might as well burn his bonds
- :next. He has sixty bonds but the prices sent all below par.
+D:om¹elá, pøíli¹, om¹elá, pøíli¹, om¹elá, pøíli¹, om¹elá
+ :rozko¹, dne¹ek, rozko¹, dne¹ek, rozko¹, dne¹ek, rozko¹
+ :du¹evní dal¹ích du¹evní dal¹ích du¹evní dal¹ích du¹evní
+ :¹títek, mlad¹í, ¹títek, mlad¹í, ¹títek, mlad¹í, ¹títek
+ :¹um ko¹ ¹ál v¹e má¹ ¹ek dá¹ ¹at pi¹ ¹la èí¹ ¹ít ná¹
+
 
 #                                                            ../orig/r.typ:411
-I:(5)
+I:A znovu.
 *:_R_R_L85
-#                                                            ../orig/r.typ:414
-D:Dad talks about a jinx. He says that maybe their bank will
- :close so he cannot pay up taxes and bills before Christmas.
- :Dad says they all may have to exist on home-grown wax beans.
+#                                                           ../orig/r.typ:414
+D:v¹ude ¹koda v¹ude ¹koda v¹ude ¹koda v¹ude ¹koda v¹ude
+ :spí¹e ru¹il spí¹e ru¹il spí¹e ru¹il spí¹e ru¹il spí¹e
+ :vy¹¹í ¹koly vy¹¹í ¹koly vy¹¹í ¹koly vy¹¹í ¹koly vy¹¹í
+ :av¹ak na¹im av¹ak na¹im av¹ak na¹im av¹ak na¹im av¹ak
+ :zvlá¹tní naru¹ení zvlá¹tní naru¹ení zvlá¹tní naru¹ení
+ :èe¹tina, øe¹ením, èe¹tina, øe¹ením, èe¹tina, øe¹ením.
 
 #                                                            ../orig/r.typ:415
-I:(6)
+I:Rychleji, pomaleji, rychleji, pomaleji...
 *:_R_R_L86
 #                                                            ../orig/r.typ:419
-D:Dad adds that boys ought to be busy and maybe play ball or
- :box at the club. Bill excels, but says he cannot box on
- :wax beans alone. Beef must be back on the board.  Bill has
- :boxed as an extra at a bazaar. He is big, and able to box.
+D:V leto¹ním roce. V leto¹ním roce. V leto¹ním roce. 
+ :Zlep¹ovací návrh je podán pøihlá¹kou. Zlep¹ovací návrh
+ :Písmeno É pí¹eme vychýlením pravého prsteníku vpravo 
+ :nahoru.
 
 #                                                            ../orig/r.typ:420
-I:(7)
+I:Písmeno É pí¹eme vychýlením pravého prsteníku 
+ :vpravo nahoru.
 *:_R_R_L87
 #                                                            ../orig/r.typ:425
-D:Bill begs Dad not to be blue, and his text is this: We
- :are all in the same boat. No one can buy.  No one can build.
- :Labor is hard hit, too. I, for one, would like to toss the
- :cards on the table and start a new deal. When exact codes
- :are fixed, as best for all, every person must do his bit.
+D:nepøi¹li vy¹lapal zhor¹ili vy¹etøil zkou¹eli roz¹íøil
+ :vzne¹enost, nav¹tívili, ¹lechetnost pøíslu¹nost
+ :loé lél loé lél loé lél loé lél loé lél loé lél loé
+ :lék léè lék léè lék léè lék léè lék léè lék léè lék
+ :své tvé své tvé své tvé své tvé své tvé své tvé své
+ :¹éf zlé ¹éf zlé ¹éf zlé ¹éf zlé ¹éf zlé ¹éf zlé ¹éf
 
 #                                                            ../orig/r.typ:426
-I:(8) Pointed Paragraph (f y)
+I:Pokud pøíli¹ chybujete, radìji zpomalte.
 *:_R_R_L88
 #                                                            ../orig/r.typ:433
-S:    Satisfy yourself that it will be funny, but perfectly
- :satisfactory, for forty or fifty of the faculty to fly from
- :Buffalo to New York on the first Friday in February. If
- :they prefer, we will offer them waffles, jelly, and coffee
- :before they fly or get dizzy. Sixty flyers can qualify
- :confidently to face any difficulty. A friendly inquiry
- :from any family will be very cheerfully and fully answered.
+D:zejména problém zejména problém zejména problém
+ :tématem povinné tématem povinné tématem povinné
+ :¹iroké, takové, ¹iroké, takové, ¹iroké, takové,
+ :nejlépe trénuje nejlépe trénuje nejlépe trénuje
+ :ve¹keré prémie, ve¹keré prémie, ve¹keré prémie,
+ :své - lék - tvé - zlé - ¹éf - léè - fér - véb
 
 #                                                            ../orig/r.typ:434
-I:(8a) Pointed Paragraph (i d)
+I:Opakování.
 *:_R_R_L89
 #                                                            ../orig/r.typ:440
-S:    Children find being quizzed in division, addition, and
- :reading difficult. They studied daily during their third
- :period and tried to be confident. I think they did include
- :Florida and Rhode Island in their wide reading; and have
- :just decided to dispose of Detroit, Grand Rapids, Richmond,
- :Providence, and Philadelphia next week.
+D:potøebné obèanské potøebné obèanské potøebné obèanské
+ :¹oférùm, plynové, ¹oférùm, plynové, ¹oférùm, plynové
+ :zahlédli vzájemné zahlédli vzájemné zahlédli vzájemné
+ :hospodáøské spoleèenské hospodáøské spoleèenské
+ :prùmyslové, elektrické, prùmyslové, elektrické
+ :jednotlivé, samozøejmé, jednotlivé, samozøejmé
+ :energetické jednorázové energetické jednorázové
 
 #                                                            ../orig/r.typ:441
-I:(9) Test Paragraph
+I:Otestujte si svou rychlost.
 *:_R_R_L90
 #                                                            ../orig/r.typ:451
-S:    By using the new banks of keys on the new keyboard, you
- :are able to learn or excel with less labor. These new banks
- :have been based on an exact table of words used. You begin
- :at once on the best bank. On the old keyboard you have to
- :type most of the text on the next bank above and on the bank
- :below. Because of this fact your fingers bound back and
- :forth between the upper and lower banks of keys. But those
- :extra jumps necessary on the old keyboard do not exist on the
- :new keyboard. Nor is your left hand taxed with extra labor.
- :The keys are fixed to keep both hands busy and in balance.
+D:rodné jméno mateøské ¹koly rodné jméno mateøské
+ :roèní nájemné, èeské sklo, roèní nájemné, èeské
+ :nahodilé setkání, spravedlivé rozhodnutí, nahodilé
+ :ve vzájemné spolupráci, chráníme dobré jméno svého
+ :tenké jemné hedvábí, mixování potravin mixérem
+ :jedlé houby jedovaté houby jedlé houby jedovaté
+ :stálé sídlo cizojazyèné knihy stálé sídlo cizojazyèné
+ :úkoly obcím na úseku oprav dosavadního bytového
 
 #                                                            ../orig/r.typ:452
-I:(10) Rhythmic Review
+I:Opakování zamìøené na rytmus.
 *:_R_R_L91
 #                                                            ../orig/r.typ:453
-D:Those boxes of books for New Mexico may be ready next week.
+D:léèebna startér kariéra schéma, zelené. léèebna
+ :smést snést uvést plést kvést slézt svézt smést
+ :pøíznivé kapesné, upravené kudrnaté praménky vlasové
 
 G:_R_E_R9
 #------------------------------------------------------------------------------
@@ -1518,98 +1854,128 @@ G:_R_E_R9
 *:R10
 *:_R_S_R10
 #                                                            ../orig/r.typ:457
-I:(1) Warming-Up Drill
+I:Rozcvièka.
 *:_R_R_L92
 #                                                            ../orig/r.typ:458
-D:Next time we must ask to have you make them just as he does.
+D:Sekce vzájemné hospodáøské pomoci.
+ :Sekce vzájemné hospodáøské pomoci.
 
 #                                                            ../orig/r.typ:459
-I:(2) Balanced Keyboard Drill
+I:Písmeno Ì pí¹eme levým malíèkem, který vychylujeme 
+ :pøímo nahoru.
+
 *:_R_R_L93
 #                                                            ../orig/r.typ:461
-D:ite ith ine nce tio she hou how ime ibl ece muc out oth our
- :ate and een ind oon und one thi lix his ise wer jun ett exp
+D:prohloubené cizojazyèné nedokonalé, lékaøstvím.
+ :aqì aìa aqì aìa aqì aìa aqì aìa aqì aìa aqì aìa
+ :mìl vìk mìl vìk mìl vìk mìl vìk mìl vìk mìl vìk
+ :obì dvì obì dvì obì dvì obì dvì obì dvì obì dvì
+ :dìl tìl dìl tìl dìl tìl dìl tìl dìl tìl dìl tìl
 
 #                                                            ../orig/r.typ:462
-I:(3) Continuous Copy--Review
+I:Slova.
 *:_R_R_L94
 #                                                            ../orig/r.typ:463
-D:I am going to be lazy this weekend and do just what I want.
+D:obecnì, reálnì, obecnì, reálnì, obecnì, reálnì
+ :zvlá¹tì úspì¹ní zvlá¹tì úspì¹ní zvlá¹tì úspì¹ní
+ :zmìnìn, bìlou¹, zmìnìn, bìlou¹, zmìnìn, bìlou¹
+ :mìl vìk mnì bìh nìj dìl obì dìj vìø mìj tì¹ mìø
+ :nìkolik pìstoun sdìlili liknavì zámìnou vybìhli
+ :zamìstnaneckého nejkvalitnìj¹ím nepravdìpodobnì
 
 #                                                            ../orig/r.typ:464
-I:(4)
+I:Procvièení.
 *:_R_R_L95
 #                                                            ../orig/r.typ:466
-D:Today I quit being vexed with the old job. I must seize
- :one extra bit of zest and join the exit from the big city.
+D:Na vìdomí. Na vrcholu ¹tìstí. Na vìdomí. Na vrcholu
+ :dovoz nebyl zaji¹tìn ve vnìj¹ích vztazích dovoz
+ :mezinárodní dìlba práce mezinárodní dìlba práce
+ :má zaji¹tìn pracovní pomìr døívìj¹í zamìstnání
+ :øídil se smìrnicemi, sbìratel vìcí, øídil se
 
 #                                                            ../orig/r.typ:467
-I:(5)
+I:Písmeno ® pí¹eme levým ukazováèkem, 
+ :který vychylujeme vpravo nahoru.
 *:_R_R_L96
 #                                                            ../orig/r.typ:470
-D:To begin with, the same old auto will bear us to the beach
- :where a good-sized boat floats easily in the blue water.
- :Our boat is build for room. Her cabin has a busy table.
+D:pøesvìdèené nadprùmìrnì zaji¹tìného zkvalitnìné
+ :ft¾ f¾f føf ft¾ f¾f føf ft¾ f¾f føf ft¾ f¾f føf
+ :je¾ ji¾ je¾ ji¾ je¾ ji¾ je¾ ji¾ je¾ ji¾ je¾ ji¾
+ :tá¾ té¾ tá¾ té¾ tá¾ té¾ tá¾ té¾ tá¾ té¾ tá¾ té¾
+ :bì¾ vì¾ bì¾ vì¾ bì¾ vì¾ bì¾ vì¾ bì¾ vì¾ bì¾ vì¾
+ :co¾ ¾il co¾ ¾il co¾ ¾il co¾ ¾il co¾ ¾il co¾ ¾il
 
 #                                                            ../orig/r.typ:471
-I:(6)
+I:Opakujeme ®.
 *:_R_R_L97
 #                                                            ../orig/r.typ:475
-D:I know Nan will come if Bill does, and Ted likes to be with
- :Ann. I would never quite have the nerve to keep my good
- :board back when our club navy moves out into the quiet water.
- :We leave at an early hour when the sun is still under cover.
+D:re¾isér soutì¾í re¾isér soutì¾í re¾isér soutì¾í
+ :odvá¾el sto¾ár, odvá¾el sto¾ár, odvá¾el sto¾ár
+ :tr¾i¹tì kní¾ek, tr¾i¹tì kní¾ek, tr¾i¹tì kní¾ek
+ :obtí¾ná montá¾, obtí¾ná montá¾, obtí¾ná montá¾
+ :obì¾ník krou¾ku obì¾ník krou¾ku obì¾ník krou¾ku
+ :dodr¾et zadr¾et vydr¾et obdr¾et podr¾et udr¾et
+ :slo¾il, vlo¾il, ulo¾il, nalo¾il vylo¾il zalo¾il
+
 
 #                                                            ../orig/r.typ:476
-I:(7)
+I:Zrychlujte a zpomalujte.
 *:_R_R_L98
 #                                                            ../orig/r.typ:481
-D:All day will be warm and novel. The far banks will slide by
- :while we gaze. She is an out-and-out able boat, heavy but
- :never gives trouble. She is never taxed in quick water.  I
- :feel the water jump and break. Queer how I feel the bond
- :that exists between me and my boat. She is a prize I value.
+D:dru¾stevním stí¾nostem, dru¾stevním stí¾nostem
+ :dosa¾itelná ko¾e¹nictví dosa¾itelná ko¾e¹nictví
+ :arbitrá¾ním po¾adavkùm, arbitrá¾ním po¾adavkùm
+ :¾urnalistùm soutì¾ících ¾urnalistùm soutì¾ících
+ :re¾ie jako¾ vá¾nì bì¾el l¾íce tak¾e svì¾í zú¾il
+ :jestli¾e vy¾ádali nejni¾¹í pøirá¾ku umo¾nili
+ :ka¾doroènì, ¾eleznièní, vymo¾enost, pova¾ovali
+
 
 #                                                            ../orig/r.typ:482
-I:(8) Pointed Paragraph (m w)
+I:Písmeno Ý pí¹eme ukazováèkem pravé ruky vychýlením
+ :vpravo vzhùru.
+
 *:_R_R_L99
 #                                                            ../orig/r.typ:488
-S:    Some women swim in the spring.  Some women swim in
- :the warm water of summer. Women in Brazil may swim even in
- :November. Some women from Japan will swim tomorrow.  We want
- :to show the women from New Mexico and Wyoming how to swim in
- :winter. We will work with them for a few weeks.  When they
- :go home we wonder if they will write from time to time.
+D:údr¾báøi vy¾adují mno¾ství podlo¾ek údr¾báøi
+ :¾elezáøství penì¾nictví slo¾itìj¹í, soutì¾ením.
+ :juý jýj jáj juý jýj jáj juý jýj jáj juý jýj jáj
+ :být dým být dým být dým být dým být dým být dým
+ :kýl rým kýl rým kýl rým kýl rým kýl rým kýl rým
+ :sýr zlý sýr zlý sýr zlý sýr zlý sýr zlý sýr zlý
+ :rýè kým rýè kým rýè kým rýè kým rýè kým rýè kým
 
 #                                                            ../orig/r.typ:489
-I:(8A) Pointed Paragraph (i o)
+I:Slova.
 *:_R_R_L100
 #                                                            ../orig/r.typ:495
-S:    I'm going to obtain oil options tonight and to file my
- :copies without noise, or outside notice. I am anxious to
- :avoid an action. If I voice an official opinion, I will omit
- :serious points. Knowing conditions, I am hoping that I'll
- :be enjoying a glorious addition to my income. I am going to
- :join society and be social with juniors and seniors alike.
+D:slýchal otýpkou slýchal otýpkou slýchal otýpkou
+ :blondýn in¾enýr blondýn in¾enýr blondýn in¾enýr
+ :ohýbaný dýchací ohýbaný dýchací ohýbaný dýchací
+ :divokým pomý¹lí divokým pomý¹lí divokým pomý¹lí
+ :dým nýt rýh výr hýl týt prý rýt zlý rým tý¾ mýt
+ :výmysly kostýmy výkonný pionýøi mlýnice sýkorka
+ :¾enský, øadová, ¾íznivý øeèená, ¾ulový, øíjnová
 
 #                                                            ../orig/r.typ:496
-I:(9) Test Paragraph
+I:Cvièení.
 *:_R_R_L101
 #                                                            ../orig/r.typ:504
-S:    Bound for some place where the sun sets in the west,
- :soon it is the night that I favor. Next to the night and
- :boat and water, maybe I judge our sail by its excellent bill
- :of fare. Here I am very exact, as I never set a poor table.
- :I stock an up-to-date table, set out under the first dozen
- :stars. I enjoy having every boy able to quaff his quota of
- :soup and boast or sing with zeal and make any queer joke.
- :With a moon, I can name no event to equal a boat and water.
+D:hospodáøský hospodárný, hospodáøský hospodárný,
+ :prùmyslovým technickými prùmyslovým technickými
+ :polovièatým sebejistých polovièatým sebejistých
+ :ostýchavými pokrývaèský ostýchavými pokrývaèský
+ :francouzský klopýtnutím francouzský klopýtnutím
+ :dýha, dýka, dýmka pýcha mýdla rýma, rýha, výhra
+
 
 #                                                            ../orig/r.typ:505
-I:(10) Rhythmic Review
+I:Opakování.
 *:_R_R_L102
 #                                                            ../orig/r.typ:506
-D:It is good drill to keep going in even time for ten minutes.
+D:prùmyslovým technickými prùmyslovým technickými
+ :polovièatým sebejistých polovièatým sebejistých
+ :ostýchavými pokrývaèský ostýchavými pokrývaèský
 
 G:_R_E_R10
 #------------------------------------------------------------------------------
@@ -1620,78 +1986,99 @@ G:_R_E_R10
 *:_R_R_L103
 #                                                            ../orig/r.typ:514
 T:
- :In this lesson we start on the top row, which has the numerals and
- :a lot of the special characters. Note that the F-finger presses the
- :4-key and the 5-key; the J-finger presses the 7-key and the 8-key.
- :Either the F-finger or the J-finger may press the 6-key.
+ :  Ji¾ jsme témìø u konce, vydr¾te!
 
 #                                                            ../orig/r.typ:515
-I:(1) Warming-Up Drill
+I:Rozcvièka.
 *:_R_R_L104
 #                                                            ../orig/r.typ:516
-D:She can tell us all there is to say on her side and what to do.
+D:Opo¾dìnými dodávkovými pøíkazy. Opo¾dìnými dodávkovými
+ :Pøekroèení stanovených úkolù ve výrobním odvìtví.
 
 #                                                            ../orig/r.typ:517
-I:(2) Rhythm and Keyboard Drill
+I:Ï, «, Ò: levý Shift+háèek, písmeno. 
+ :Ó - èárka (klávesa háèku), O.
+
 *:_R_R_L105
 #                                                            ../orig/r.typ:519
-D:ki9 de3 ju8 fr4 ju7 fr5 jy6 ft6 lo0 sw2 ju7 fr5 jy6 ft6 ;p-
- :k9 d3 j8 f4 j7 f5 f6 l0 s2 j8 f4 j7 f5 j6 f6 k9 d3 ;- s2
+D:ïa, »a, òa, ïa, »a, òa, ïa, »a, òa, ïa, »a, òa, ïa,
+ :loï na» báò loï na» báò loï na» báò loï na» báò loï
+ :seï by» laò seï by» laò seï by» laò seï by» laò seï
+ :buï hu» kùò buï hu» kùò buï hu» kùò buï hu» kùò buï
+ :káï dr» míò káï dr» míò káï dr» míò káï dr» míò káï
 
 #                                                            ../orig/r.typ:520
-I:(3) Continuous Copy
+I:Toto je obtí¾ná èást, budeme muset hodnì cvièit.
 *:_R_R_L106
 #                                                            ../orig/r.typ:521
-D:To buy an air-mail stamp I save 1, 2, 4, and at last 6 cents.
+D:ló¾e móda ló¾e móda ló¾e móda ló¾e móda ló¾e móda
+ :hnìï, ètvr» bázeò pøíï, tøí¹» náplò ¾erï, la»ka
+ :zaji¹»uje poji¹»uje zji¹»uje, uplatòuje zmocòuje
+ :milión bonbón fazóna glóbus citrón pódium kvóta
+ :báòský in¾enýr, báòský in¾enýr, báòský in¾enýr
+ :begónie a pelargónie, begónie a pelargónie
+
 #                                                            ../orig/r.typ:522
-I:(4)
+I:Vìty.
 *:_R_R_L107
 #                                                            ../orig/r.typ:524
-D:In two years my dollar earns 1, 3, 5, 7, and perhaps 8 cents.
- :Buy at once: 4 candy balls,9 bars, 6 or 8 of gum, 2 cakes.
+D:Madloò je rù¾ovì kvetoucí strom, jeho¾ semeny jsou mandle.
+ :Bóje je plovoucí tìleso oznaèující nebezpeèné místo ve vodì.
+ :Objí¾ïka znamená náhradní cestu za uzavøenou komunikaci.
+ :Rtu» je tekutý, jedovatý, støíbøitì kovový prvek.
+ :Skóre je pomìr bodù ve sportovním utkání.
+
 #                                                            ../orig/r.typ:525
-I:(5)
+I:©,Ï... - shift-háèek, shift-písmeno.
 *:_R_R_L108
 #                                                            ../orig/r.typ:528
-D:2 and 2 are 4; 3 and 3 are 6; 4 and 4 are 8; 5 and 0 are 5.
- :3 and 4 are 7; 5 and 4 are 9; 2 and 6 are 8; 7 and 0 are 7.
- :1 and 1 are 2; 3 and 1 are 4; 5 and 1 are 6; 7 and 1 are 8.
+D:®a, ®a, Òa, Òa, «a, «a, ®a, ®a, Òa, Òa, «a, «a, ®a
+ :Øa, ©a, Øa, ©a, Øa, ©a, Øa, ©a, Øa, ©a, Øa, ©a, Øa
+ :Ïa, Èa, Ïa, Èa, Ïa, Èa, Ïa, Èa, Ïa, Èa, Ïa, Èa, Ïa
+ :Úa, Óa, Éù, Áù, Úa, Óa, Éù, Áù, Úa, Óa, Éù, Áù, Úa
+ :®eleznièní stavitesltví, ®eleznièní opravny a strojírny,
+
 
 #                                                            ../orig/r.typ:529
-I:(6)
+I:A znovu...
 *:_R_R_L109
 #                                                            ../orig/r.typ:533
-D:I have finished Grade 9B. In my first weeks of typing in
- :Grade 10A, I learned to use all the keys in Lessons 3 and 4.
- :In Lessons 1 and 2, and in part of No.5, I tried my hands on
- :the home row. Both Lessons 6 and 7 were in the bank above.
+D:Øempo, oborový podnik, Øeditelství dálnic
+ :©koda, koncernový podnik, ©umavské vápenice, ©ohaj
+ :Èokoládovny, oborový podnik, Èeská státní spoøitelna
+ :Ïumbier, výrobní dru¾stvo, Ïáblice, Ïumbier, výrobní
+ :Ústøední rada odborù, Ústav národního zdraví, Úpavan
+ :®elezárny Bílá Cerkev, ©roubárna ®atec
 
 #                                                            ../orig/r.typ:534
-I:(7)
+I:Nepodvádìjte s CAPS LOCKem!
 *:_R_R_L110
 #                                                            ../orig/r.typ:539
-D:Typing is clerical work. Twenty years ago less than 5 per
- :cent of all those at work had clerical jobs; today, about 8
- :per cent have such jobs. Does it interest you that of all
- :paid typists only 3 per cent are more than 44 years of age?
- :Most of the 810,000 typists in the last census are young.
+D:PLZEÒ, DOMA®LICE, HORA®ÏOVICE, PIE©«ANY, PØEROV
+ :ÈSSR, ÈSR, ÈNR, ÈSAV, V©E, SE©, ÈKD, V®KG, ÈSAD
+ :JESENÍKY, TÁBOR, PÍSEK, BLATNÁ, NÁCHOD, PÚCHOV
+ :KÚNZ, OÚNZ, ÚV KSÈ, ÚV ÈSTV, ÚV NF, ÚRO, ÚV SSM
 
 #                                                            ../orig/r.typ:540
-I:(8-9)
+I:pravý ukazováèek: ?, pravý prsteníèek: :, 
+ :pravý malíèek: !,/,(,).
 *:_R_R_L111
 #                                                            ../orig/r.typ:546
-S:To throw a carriage do you take 6 or 7 times--or to shift for
- :a capital, 2 or 3 times--as long as to hit one letter? And
- :do you know the common keys? One common pair of letters is used
- :for every 3 or 4 other pairs, even though there are more than
- :600 other pairs. The digits are 0, 1, 2, 3, 4, 5, 6, 7, 8, 9.
- :You will spell these out more often than you will type them.
+D:k? k? ù! ù! k? k? ù! ù! k? k? ù! ù! k? k? ù! ù! k?
+ :Máte zájem o spolupráci? Mù¾ete nám vyhovìt? Splníte?
+ :Kam letos na dovolenou? Jaké bude poèasí? Uèíte se?
+ :Dávejte pozor! Sledujte pozornì výklad! 
+ :Míru zdar! Pìtiletce zdar! Za trvalý mír! Svìtu mír!
 
 #                                                            ../orig/r.typ:547
-I:(10) Rhythmic Review
+I:Opakování
 *:_R_R_L112
 #                                                            ../orig/r.typ:548
-D:I am vexed if my prize went to my old address, 55 Fifth Avenue.
+D:l: l: l; l; l: l: l; l; l: l: l; l; l: l: l; l; l: l:
+ :Klávesnice obsahuje: písmennou øadu støední, dolní,
+ :èíselnou.
+ :Zpùsob doruèení písemností oznaèujeme takto: Doporuèenì
+ :Otevøená listovní zásilka Letecky Par Avion Air mail
 
 G:_R_E_R11
 #------------------------------------------------------------------------------
@@ -1700,338 +2087,109 @@ G:_R_E_R11
 *:R12
 *:_R_S_R12
 #                                                            ../orig/r.typ:552
-I:(1) Warming-Up Drill
+I:Toto je poslední lekce. Pùjdeme na èísla.
 *:_R_R_L113
 #                                                            ../orig/r.typ:553
-D:I should like to arrange to have you see me here next week.
+D:A1A A2A A1A A2A A1A A2A A1A A2A A1A A2A A1A A2A A1A A2A
+ :S3S S3S S3S S3S S3S S3S S3S S3S S3S S3S S3S S3S S3S S3S
+ :D4D D4D D4D D4D D4D D4D D4D D4D D4D D4D D4D D4D D4D D4D
+ :F5F F6F F5F F6F F5F F6F F5F F6F F5F F6F F5F F6F F5F F6F
+ :J7J J8J J7J J8J J7J J8J J7J J8J J7J J8J J7J J8J J7J J8J
+ :K9K K9K K9K K9K K9K K9K K9K K9K K9K K9K K9K K9K K9K K9K
 
 #                                                            ../orig/r.typ:554
-I:(2) Rhythm and Keyboard Drill
+I:Pokraèujeme. Nepodvádìjte na numerické klávesnici!
 *:_R_R_L114
 #                                                            ../orig/r.typ:556
-D:k9 d3 j8 f4 j7 f5 f6 j6 10 s2 j8 f4 j7 f5 f6 j6 k9 d3 ;- s2
- :k98 d34 j87 f45 109 s23 k93 d39 j84 f48 j75 f57 j76 f56 102
+D:J7J J8J J7J J8J J7J J8J J7J J8J J7J J8J J7J J8J J7J
+ :K9K K9K K9K K9K K9K K9K K9K K9K K9K K9K K9K K9K K9K
+ :L0L L0L L0L L0L L0L L0L L0L L0L L0L L0L L0L L0L L0L
+ :1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 20
+ :21 22 23 24 25 26 27 28 29 30 12 23 34 45 56 67 78
+ :123 345 567 789 901 710 629 538 450 817 3 92 604 6
 
 #                                                            ../orig/r.typ:557
-I:(3) Continuous Copy
+I:Opakování.
 *:_R_R_L115
 #                                                            ../orig/r.typ:558
-D:10 11 12 13 14 15 16 17 18 19 20 21 22 23 24 25 26 27 28 29
+D:123 345 567 789 901 710 629 538 450 817 3 92 604
+ :98,2; 2 115,70; Kès 78 900,--; 1 264 603, 520 71
+ :Jednota, LSD Rokycany, è. tel. 25 55; prodejna
+ :èp 542, è. tel. 91 53 50
+ :KÚNZ - Fakultní nemocnice, Plzeò, Lenonova 13
+ :èíslo telefonu 21 62 nebo 27 33 36, linka 350
+
 
 #                                                            ../orig/r.typ:559
-I:(4)
+I:Zkuste si i dal¹í symboly, pou¾ijte v¾dy nejbli¾¹í prst.
 *:_R_R_L116
 #                                                            ../orig/r.typ:561
-D:As soon as you can type at 12 words a minute, jump to 24;
- :later to 30, 36, 42, 48, or other rate that seems to fit.
+D:I = 1, V = 5, X = 10, L = 50, C = 100, D = 500
+ :I II IV V VI IX X XI XIX XX XXI XL L LI LX LXX
+ :CD DX DC DL CM M MC; MMMDCLXVI (3 666)
+ :150 + 65 = 215; 344 - 44 = 300; 32,5 x 26,8 = 871;
 
 #                                                            ../orig/r.typ:562
-I:(5)
+I:Jsme u konce.
 *:_R_R_L117
 #                                                            ../orig/r.typ:565
-D:On one day in June the heat ran to 106, 103, 98, 95, 92, in
- :some cities, but only to 40, 43, 47, 50, 51, 52, 60 in other
- :cities. Rain fell from .00 or .04 to .40 or to .68 inches.
-
-#                                                            ../orig/r.typ:566
-I:(6)
-*:_R_R_L118
-#                                                            ../orig/r.typ:570
-D:The next step in better typing is to learn to graph a curve.
- :If your test score each week rises from 22 to 28, 32, 37,
- :40, 44, 48, 51, 53, and 55 words a minute, put these on a
- :chart. See this curve grow higher each week.  Or use bars.
-
-#                                                            ../orig/r.typ:571
-I:(7)
-*:_R_R_L119
-#                                                            ../orig/r.typ:576
-D:The usual test scores point to waste in many a class. After
- :all the work of a first term, girls may reach only 25 words
- :a minute, boys only 22 words. At the end of 34 weeks these
- :usual scores might be 29 or 31 or 34. Indeed, 25 to 33 per
- :cent of the students may type less than 20 words per minute.
-
-#                                                            ../orig/r.typ:577
-I:(8) Pointed Paragraph (n v)
-*:_R_R_L120
-#                                                            ../orig/r.typ:584
-S:    Eleven invitations for Thanksgiving vacation arrived in
- :advance of November. In vain have a dozen relatives invited
- :me to visit Vermont, Virginia, and Nevada. I love being
- :invited and I believe in never avoiding an invitation to any
- :Thanksgiving banquet. I even plan to have the sixth to the
- :seventeenth of November for varied ventures and to visit
- :that novel Denver University on my vacation.
-
-#                                                            ../orig/r.typ:585
-I:(9) Test Paragraph
-*:_R_R_L121
-#                                                            ../orig/r.typ:593
-S:    How much do you weigh?  A young boy who is 5 feet tall
- :may weigh 112 pounds; with an extra inch, 115 pounds. Add 3
- :pounds for any inch added. Thus if 5 feet and 4 inches, he
- :may weigh 124. If taller, add 4 pounds for each added inch.
- :If 5 feet and 7 inches, he may weigh 136; if 5 feet and 9
- :inches, 144; if 5 feet and 10 inches, he may weigh 148. Now
- :add 5 pounds for each added inch. Thus to stand 6 feet tall
- :may mean 158 pounds. It is better to be a little over-weight.
-
-#                                                            ../orig/r.typ:594
-I:(10) Rhythmic Review
-*:_R_R_L122
-#                                                            ../orig/r.typ:595
-D:In order to park on Sixth at 11:05 we have to beat 135 cars!
+D:Mo¾ná budete chtít zkusit i jiné série lekcí
+ :a dále se zdokonalovat. Mù¾ete se ale zdokonalovat
+ :i praxí. Pøesto va¹í rychlosti velmi pomù¾e, pokud
+ :se tøeba za rok ke kurzu vrátíte a aèkoliv ji¾
+ :budete umìt správnì psát, projdete si jej je¹tì
+ :jednou. Uvidíte, ¾e zlep¹ení v rychlosti se urèitì
+ :dostaví. Hlavnì mìjte na pamìti, ¾e je tøeba
+ :psát plynule, rychlost se dostaví èasem. Gratuluji!
 
 G:_R_E_R12
-#------------------------------------------------------------------------------
-# Lekce R13
-#------------------------------------------------------------------------------
-*:R13
-*:_R_S_R13
-*:_R_R_L123
-#                                                            ../orig/r.typ:601
-T:
- :In this lesson we will learn the rest of the special characters
- :on the keyboard.
-
-#                                                            ../orig/r.typ:602
-I:(1) Warming-Up Drill
-*:_R_R_L124
-#                                                            ../orig/r.typ:603
-D:If you do not hear soon, I want you to write again and again.
-
-#                                                            ../orig/r.typ:604
-I:(2) Rhythm and Keyboard Drill
-*:_R_R_L125
-#                                                            ../orig/r.typ:607
-D:k9( d3# j8* f4$ j7& f5% f6^ j6^ l0) s2@ ;-_ ;[] ;`~ d3# ;/?
- :k( d# j* f$ j& f% j^ f^ l) s@ ;_ s@ ;{ d# ;@ f% ;? f^ j^ s@
- :"A "S "O "W "E "C "P "F "I "M "E "B e5" t4" u3" h2" u1' n6'
-
-#                                                            ../orig/r.typ:608
-I:(3) Continuous Copy
-*:_R_R_L126
-#                                                            ../orig/r.typ:609
-D:Send at once: Form #93* @ $18.50 per dozen, 12% discount.
-
-#                                                            ../orig/r.typ:610
-I:(4)
-*:_R_R_L127
-#                                                            ../orig/r.typ:613
-D:Sold to Smith & Sons, terms 1%, 10 days; 8 doz. 3" screws @
- :5.25 cents, 42 cents; 16 files @ 5-3/8 cents, 86 cents; 3 #9 drills
- :@ 75 cents, $2.75.
-
-#                                                            ../orig/r.typ:614
-I:(5)
-*:_R_R_L128
-#                                                            ../orig/r.typ:617
-D:Arrange to have A. C. Whitman & Co. deliver to our Seattle
- :office, Wednesday, October, 26: 30 reams white paper, #99,
- :@ 75 cents, $22.50; 4 files, Style 6**, @ $9 each, $26.....$58.50.
-
-#                                                            ../orig/r.typ:618
-I:(6)
-*:_R_R_L129
-#                                                            ../orig/r.typ:624
-D:In his speech on "Can a Business Man Be Honest?" he proved:
- :
- :(1) There are may ways, some hardly honest, to make money.
- :(2) It may pay to treat fairly a business rival or employee.
- :(3) Saving time and material often leads to a large profit.
- :(4) The most desirable kinds of success are gained honestly.
-
-#                                                            ../orig/r.typ:625
-I:(7)
-*:_R_R_L130
-#                                                            ../orig/r.typ:630
-D:The common stock has paid from 8% to 27% cash before 1929.
- :Both the common and the "B" stocks have received 12% this
- :year, or $3 per share. The class "B" stock has made a new
- :record, the range in price being 38.5 high and 32.25 low. As
- :the market improves the common and "B" stocks may pay 15%.
-
-#                                                            ../orig/r.typ:631
-I:(8)
-*:_R_R_L131
-#                                                            ../orig/r.typ:645
-S:A. C. White & Company
- :Idaho Falls, Idaho
- :
- :Gentlemen:
- :
- :Ship to our general office, by express, the following order:
- :
- :75 boxes, style 2**, 14.25" x 18.5", @ 60 cents each . . . . .$45.00
- : 5 boxes, style 3**, 16.25" x 20.5", @ 65 cents each . . . . . 3.25
- : 9 dozen boxes, style #7, @ $2 a doz. (less 10%) . . . . . . . 16.20
- :
- :We will send our check January 4; less 2% for cash.
- :
- :Very truly yours,
-
-#                                                            ../orig/r.typ:646
-I:(9) Rhythmic Review
-*:_R_R_L132
-#                                                            ../orig/r.typ:647
-D:He said, "I long to get home after seven days in the country."
-
-G:_R_E_R13
-#------------------------------------------------------------------------------
-# Lekce R14
-#------------------------------------------------------------------------------
-*:R14
-*:_R_S_R14
-#                                                            ../orig/r.typ:651
-I:(1) Warming-Up Drill
-*:_R_R_L133
-#                                                            ../orig/r.typ:652
-D:I trust that you will be able to call upon us very soon.
-
-#                                                            ../orig/r.typ:653
-I:(2) Rhythm and Keyboard Drill
-*:_R_R_L134
-#                                                            ../orig/r.typ:656
-D:k( d# j* f$ j& f% j& f^ l) s@ ;_ d# ;` f% ;` f$ j^ s@
- :(3 8% #9 2) @0 [@ *4 2_ $8 [% 3 1/5 3 @ 5 & 3^ $7 5* $8 `)
- :as" nt" et" re" us" me" is" de" it" t." e." r," o," ?" ?" ?"
-
-*:_R_R_L135
-#                                                            ../orig/r.typ:659
-D:t( e# h* u$ h& u% h& u^ n) o@ s~ e# s/ u% s/ u$ h^ o@
- :(3 8% #9 2) @0 [@ *4 2_ $8 [% 3 1/5 3 @ 5 & 3^ $7 5* $8 `)
- :as" nt" et" re" us" me" is" de" it" t." e." r," o," ?" ?" ?"
-
-#                                                            ../orig/r.typ:660
-I:(3) Continuous Copy
-*:_R_R_L136
-#                                                            ../orig/r.typ:661
-D:The Herald, the Daily News, and the Post reported the story.
-
-#                                                            ../orig/r.typ:662
-I:(4)
-*:_R_R_L137
-#                                                            ../orig/r.typ:664
-D:Read "National Affairs" in Time for December 6, 1940. You
- :may think that Snappy Stories has more news than Time.
-
-#                                                            ../orig/r.typ:665
-I:(5)
-*:_R_R_L138
-#                                                            ../orig/r.typ:668
-D:He goes November 6, on Train #2 (North Coast), at 9:15 p.m.
- :Train #35-4 (Southern Route) leaves at 6:00 but stops often.
- :He likes to go by bus (Overland Route), but it goes at 2:10.
-
-#                                                            ../orig/r.typ:669
-I:(6)
-*:_R_R_L139
-#                                                            ../orig/r.typ:673
-D:"Good morning," said the clerk. "May I be of help to you?"
- :"Thank you," she replied, "but I must wait to see Mr. Burd."
- :"He will be in his office at 10:20," the clerk assured her.
- :"That will be fine," the clerk said, "I'll wait for him, too."
-
-#                                                            ../orig/r.typ:674
-I:(7)
-*:_R_R_L140
-#                                                            ../orig/r.typ:679
-D:SOIL--Remove to depth of 9" under house and 5' on all sides.
- :FRAME WORK--Beams 2" x 8"; braces 2" x 4"; rafters 2" x 6".
- :ROOF--Use 18", #1 cedar shingles, laid 5" to the weather.
- :PLUMBING--Use #1 materials; 4" cast iron pipe; sink 2' x 6'.
- :LATH AND PLASTER--Use #1 spruce 3/8 x 1.5"; 2 coats plaster.
-
-#                                                            ../orig/r.typ:680
-I:(8) Pointed Paragraph (a o)
-*:_R_R_L141
-#                                                            ../orig/r.typ:688
-S:    To attain a personal association with so popular an
- :author is an approved social ambition. To loan him money or
- :catalog his books we consider a favor. Today his tailor, later
- :with a coat, loads on him a thousand pardons. A normal Mon-
- :day program allows a lazy forenoon to ocean and boat; after-
- :noon to various auto roads in orange season; night to play
- :contract or follow the local opera. As soon as he can account
- :for another book, our author is anxious to go abroad.
-
-#                                                            ../orig/r.typ:689
-I:(9) Test Paragraph
-*:_R_R_L142
-#                                                            ../orig/r.typ:697
-S:    "Has #4-4 gone?" she asked, rushing in out of the cold.
- :    "No--why $4?" the station agent* answered (he had won-
- :dered why she was so worried). But he wasn't to find out--
- :for a white hand pushed back $15 and picked up an old copy
- :of Good Housekeeping from a seat. She began to read.  When
- :he noted she had chosen "Winter Comfort" he was 100% amused.
- :------------------------------------------------------------
- :*Red Wild (heir to $750,000 at 5%, working on the B. & O.).
-
-#                                                            ../orig/r.typ:698
-I:(10) Rhythmic Review
-*:_R_R_L143
-#                                                            ../orig/r.typ:699
-D:I said, "There is the city and this bus won't be long now."
-
-G:_R_E_R14
 #------------------------------------------------------------------------------
 # Lekce series R jump tables
 #------------------------------------------------------------------------------
 *:_R_E_R1
-Q:Do you want to continue to lesson R2 [Y/N] ? 
+Q:Chcete pokraèovat do lekce R2 [Y(ano)/N(ne)]? 
 N:_R_MENU
 G:_R_M_R2
 *:_R_E_R2
-Q:Do you want to continue to lesson R3 [Y/N] ? 
+Q:Chcete pokraèovat do lekce R3 [Y(ano)/N(ne)]? 
 N:_R_MENU
 G:_R_M_R3
 *:_R_E_R3
-Q:Do you want to continue to lesson R4 [Y/N] ? 
-N:_R_MENU
+Q:Chcete pokraèovat do lekce R4 [Y(ano)/N(ne)]? 
 G:_R_M_R4
 *:_R_E_R4
-Q:Do you want to continue to lesson R5 [Y/N] ? 
+Q:Chcete pokraèovat do lekce R5 [Y(ano)/N(ne)]? 
 N:_R_MENU
 G:_R_M_R5
 *:_R_E_R5
-Q:Do you want to continue to lesson R6 [Y/N] ? 
+Q:Chcete pokraèovat do lekce R6 [Y(ano)/N(ne)]? 
 N:_R_MENU
 G:_R_M_R6
 *:_R_E_R6
-Q:Do you want to continue to lesson R7 [Y/N] ? 
+Q:Chcete pokraèovat do lekce R7 [Y(ano)/N(ne)]? 
 N:_R_MENU
 G:_R_M_R7
 *:_R_E_R7
-Q:Do you want to continue to lesson R8 [Y/N] ? 
+Q:Chcete pokraèovat do lekce R8 [Y(ano)/N(ne)]? 
 N:_R_MENU
 G:_R_M_R8
 *:_R_E_R8
-Q:Do you want to continue to lesson R9 [Y/N] ? 
+Q:Chcete pokraèovat do lekce R9 [Y(ano)/N(ne)]? 
 N:_R_MENU
 G:_R_M_R9
 *:_R_E_R9
-Q:Do you want to continue to lesson R10 [Y/N] ? 
+Q:Chcete pokraèovat do lekce R10 [Y(ano)/N(ne)]? 
 N:_R_MENU
 G:_R_M_R10
 *:_R_E_R10
-Q:Do you want to continue to lesson R11 [Y/N] ? 
+Q:Chcete pokraèovat do lekce R11 [Y(ano)/N(ne)]? 
 N:_R_MENU
 G:_R_M_R11
 *:_R_E_R11
-Q:Do you want to continue to lesson R12 [Y/N] ? 
+Q:Chcete pokraèovat do lekce R12 [Y(ano)/N(ne)]? 
 N:_R_MENU
 G:_R_M_R12
 *:_R_E_R12
-Q:Do you want to continue to lesson R13 [Y/N] ? 
-N:_R_MENU
-G:_R_M_R13
-*:_R_E_R13
-Q:Do you want to continue to lesson R14 [Y/N] ? 
-N:_R_MENU
-G:_R_M_R14
-*:_R_E_R14
 G:_R_MENU
 
 *:_R_M_R1
@@ -2095,7 +2253,7 @@ G:_R_S_R14
 #------------------------------------------------------------------------------
 *:_R_MENU
 *:_R_MENU_PAGE0
-B:                Lekce selection menu - series R [page 1 of 2]
+B:                Vyberte si lekci - série R [stránka 1 z 2]
 K:1:_R_M_R1
 K:2:_R_M_R2
 K:3:_R_M_R3
@@ -2108,25 +2266,25 @@ K:9:_R_M_R9
 K:10:_R_M_R10
 K:11:_R_MENU_PAGE1
 K:12:_R_QEXIT
-T:The R series contains the following 14 lessons:
+T:Série R obsahuje tyto lekce:
  :
- :       Fkey 1 - Lekce R1     Practise
- :       Fkey 2 - Lekce R2     Practise
- :       Fkey 3 - Lekce R3     Practise
- :       Fkey 4 - Lekce R4     Practise
- :       Fkey 5 - Lekce R5     Practise
- :       Fkey 6 - Lekce R6     Practise
- :       Fkey 7 - Lekce R7     Practise
- :       Fkey 8 - Lekce R8     Practise
- :       Fkey 9 - Lekce R9     Practise
- :       Fkey10 - Lekce R10    Practise
+ :       F1  - Lekce R1     f,j,d,k,s,l,a,ù,g,h
+ :       F2  - Lekce R2     r,l,e,i,y,n
+ :       F3  - Lekce R3     o,.,p,t
+ :       F4  - Lekce R4     y,ú,q
+ :       F5  - Lekce R5     v,m,c
+ :       F6  - Lekce R6     x,w,-,z,b
+ :       F7  - Lekce R7     n, velká písmena, ø, á
+ :       F8  - Lekce R8     è, í
+ :       F9  - Lekce R9     ¹, é
+ :       F10 - Lekce R10    ì, ¾, ý
  :
- :       Fkey11 - Next menu page...
- :       Fkey12 - Leave this lesson series
-Q:Please select a lesson, or Fkey12 to exit 
+ :       F11 - Dal¹í stránka seznamu...
+ :       F12 - Opustit tuto sérii lekcí
+Q:Prosím vyberte si lekci nebo stisknìte F12 pro konec 
 G:_R_MENU_PAGE0
 *:_R_MENU_PAGE1
-B:                Lekce selection menu - series R [page 2 of 2]
+B:                Vyberte si lekci - série R [stránka 2 z 2]
 K:1:_R_M_R11
 K:2:_R_M_R12
 K:3:_R_M_R13
@@ -2139,25 +2297,25 @@ K:9:NULL
 K:10:NULL
 K:11:_R_MENU_PAGE0
 K:12:_R_QEXIT
-T:The R series contains the following 14 lessons:
+T:Série R obsahuje tyto lekce:
  :
- :       Fkey 1 - Lekce R11    Practise
- :       Fkey 2 - Lekce R12    Practise
- :       Fkey 3 - Lekce R13    Practise
- :       Fkey 4 - Lekce R14    Practise
- :
+ :       F1 - Lekce R11    ï,»,ò,ó, velká diakritická
+ :				?,!,(,),;,:
+ :       F2 - Lekce R12    èísla,=,-,+
  :
  :
  :
  :
  :
  :
- :       Fkey11 - First menu page...
- :       Fkey12 - Leave this lesson series
-Q:Please select a lesson, or Fkey12 to exit 
+ :
+ :
+ :       F11 - Dal¹í stránka seznamu...
+ :       F12 - Opustit tuto sérii lekcí
+Q:Prosím vyberte si lekci nebo stisknìte F12 pro konec 
 G:_R_MENU_PAGE1
 *:_R_QEXIT
-Q:Do you want to leave this lesson series? [Y/N] ? 
+Q:Chcete opustit tuto sérii lekcí? [Y(ano)/N(ne)] ? 
 N:_R_MENU
 G:_R_EXIT
 *:_R_EXIT
@@ -2898,16 +3056,17 @@ D:fø jý fø jý fý jø fj øý ýø jf
 
 I:ì pí¹eme výrazným vychýlením A-prstu nahoru.
 *:_T_R_L84
-D:s ì s ì s ì s ì s sì sì sì dì fì aì
- :s ì pìst nìkolik tìsno aì oì lì jì
+D:a ì a ì a ì a ì a aì aì aì dì fì aì
+ :a ì pìst nìkolik tìsno aì oì lì jì
 
-I:ì = A-prstem hodnì nahoru. F prst musí zùstat na F!
+I:ì = A-prstem hodnì nahoru. S prst musí zùstat na S!
  :tìsto stolek gìpoi eìrì pøesto sì
+ :aì sì dì fì jì kì lì ùì gì hì tìsto
 
 I:í pí¹eme prstem na K.
 *:_T_R_L85
-D:l í l í l í lí líl líl ílí ílí llíí ílí
- :líto lípa síla fíkus píka pila snílek
+D:k í k í k í kí kík kík íkí íkí kkíí íkí
+ :líto lípa díkes fíkus píka pika snílek
 
 I:Teï v¹e dohromady. Prsty se musejí v¾dy vracet do základní polohy.
 *:_T_R_L86
@@ -2926,28 +3085,28 @@ D:Ukrojit ostudu. Nýtovat. Dìti sedí.
 
 I:á pí¹eme vychýlením J-prstu mírnì vpravo nahoru.
 *:_T_R_L89
-D:k á k á k á kák kák kák áká kák áká
- :kára rákos Lára párá sát hrát si
+D:j á j á j á jáj jáj jáj ájá jáj ájá
+ :jára rákos Lára párá sát hrát si Jára
 
-I:Opisujte.
+I:Opisujte...
 *:_T_R_L90
-D:pýr párat tápat klást klíny.
+D:pýr párat tápat, klást klíny.
  :rýt pýøit poklop Sára projektor protektorát
 
-I:Nepropadejte panice :)
+I:... a nepropadejte panice :)
 *:_T_R_L91
 D:pøísada, náhoda, pìt øíkanek, kánoe, dálava
  :psát hnít tì øeka hýkat pøe látka práskat
 
 I:è pí¹eme vychýlením prstu na D. Prsty S a F musí zùstat.
 *:_T_R_L92
-D:fff fèf fèf fff èèè fèf dèd sès aèa èè ff èj èl èù
+D:ddd dèd dèd ddd èèè dèd fèf sès aèa èè ff èj èl èù
  :èaèa èíèa fíèa toèit spáè strýèek Kaèka èas èeský
 
 I:é pí¹eme vychýlením prstu na L mírnì vpravo nahoru. 
 *:_T_R_L93
-D:ùùù ééé ùùù é ù ùéù ùéù éùé ùù éé ùù
- :jé sé lé ké té lýko péro stékat réka
+D:lll ééé lll é l lél lél lél ll éé ll
+ :lé jé sé lé ké té lýko péro stékat réka
 
 I:é pí¹eme L prstem a è D prstem
 *:_T_R_L94
@@ -2966,7 +3125,7 @@ S:Národ èeský není hloupý. Je dost inteligentní.
 
 I:Posledním písmenem v této lekci je ¹. Pí¹eme jej S-prstem.
 *:_T_R_L97
-D:ddd ¹¹¹ d¹d d¹d d¹d dd ¹¹ ¹d¹ ¹¹¹ s¹s¹
+D:sss ¹¹¹ s¹s s¹s s¹s ss ¹¹ ¹s¹ ¹¹¹ s¹s¹
  :¹i¹ka èé¹ka prá¹ek øe¹eto pøe¹lap pa¹a
 
 I:Dejte si pozor, abyste pøi vychylování S-prstu nemaèkali jiné klávesy.
@@ -3004,7 +3163,7 @@ D:Kolik je hodin? Jak to jde? Je to ok.
 
 I:¾ maèkáme prstem na F vychýleným prudce vpravo nahoru.
 *:_T_R_L101
-D:jjj ¾¾¾ jjj ¾¾¾ j¾j j¾j ¾j¾ ¾j¾ f¾f h¾h j¾h
+D:fff ¾¾¾ fff ¾¾¾ f¾f f¾f ¾f¾ ¾f¾ f¾f h¾h j¾h
  :¾i¾lat, ¾u¾lat ¾í¾nit øe¾a p¾alk, ¾í¾ala
 
 I:Je to úplnì nejdel¹í pøehmat na klávesnici.
@@ -3032,7 +3191,7 @@ D:Drahý Dr. Stone: K Hilbertu:
 #                                                            ../orig/t.typ:271
 T:			Rychlostní zkou¹ky
  :
- :Odteï budu do lekcí zamíchávat také rychlostní zkou¹ky. V drilových
+ :Odteï budu do lekcí míchat také rychlostní zkou¹ky. V drilových
  :testech, které jste dìlali a¾ dosud, jsem zobrazoval text dokud
  :jste ho nezadali správnì. V rychlostních cvièeních zobrazím text
  :pouze jednou.
@@ -3302,7 +3461,7 @@ I:Nehýbejte ostatními prsty ze základní pozice.
 #                                                            ../orig/t.typ:385
 D:sss war sss who sss was sss
 
-I:Èe¹tina w moc nepou¾ívá, za to angliètina ano.
+I:Èe¹tina w moc nepou¾ívá, zato angliètina ano.
 *:_T_R_L140
 #                                                            ../orig/t.typ:387
 D:sws who sws what sws when sws where sws
@@ -10392,15 +10551,15 @@ K:12:__SERIESQEXIT
 B:                      Výbìr sérií lekcí
 T:Máte k dispozici následující lekce:
  :
- :    F1 - Série T     Výukový kurz QWERTY            (T1 - T16)
- :    F2 - Série U     Opakování QWERTY               (U1 - U11)
- :    F3 - Série N     Èíselná klávesnice             (N1 - N3)
+ :    F1 - Série T     Výukový kurz QWERTY (cz)       (T1 - T16)
+ :    F2 - Série U     Opakování QWERTY (cz)          (U1 - U11)
+ :    F3 - Série N     Èíselná klávesnice (cz)        (N1 - N3)
  :
- :    F4 - Série M     Procvièovací drilové testy     (M1 - M11)
- :    F5 - Série S     Rychlostní testy               (S1 - S4)
+ :    F4 - Série M     Procvièovací drilové testy (cz)(M1 - M11)
+ :    F5 - Série S     Rychlostní testy (cz)          (S1 - S4)
  :
  :    F6 - Série Q     Rychlý kurz QWERTY (en)        (Q1 - Q5)
- :    F7 - Série R     Dlouhý kurz QWERTY (en)        (R1 - R14)
+ :    F7 - Série R     Dlouhý kurz QWERTY (cz)        (R1 - R14)
  :    F8 - Série V     Je¹tì jeden kurz QWERTY (en)   (V1 - V19)
  :    F9 - Série D     Výukový kurz kláv. Dvorak (en) (D1 - D14)
  :

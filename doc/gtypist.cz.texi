@@ -3,6 +3,31 @@
 @settitle Pøíruèka pro GTypist
 @include version.texi
 
+@copying
+Toto je manuál pro GNU Typist (verze @value{VERSION}, @value{UPDATED}),
+program urèený k výuce psaní na klávesnici pro nìkolik
+jazykù a rùzné klávesové rozlo¾ení.
+
+Copyright @copyright{} 1998, 1999, 2000, 2001, 2002
+Free Software Foundation, Inc.
+
+@quotation
+Dáváme povolení ke kopírování, distribuci a/nebo provádìní
+zmìn v tomto dokumentu pod podmínkami GNU Free Documentation
+License verze 1.1 nebo jakékoliv pozdìj¹í verze publikované
+Nadací pro svobodný software (Free Software Foundation); text
+neobsahuje ¾ádnou Invariant Section, Front Cover text je
+,,GNU Manuál'' a Back-Cover Text je uveden v (a) ní¾e.
+Kopie licence je pøilo¾ena v sekci nazvané ,,GNU Free
+Docuemntation License''.
+
+(a) Back Cover Text FSF je: ,,Máte svobodu kopírovat
+a modifikovat tento GNU manuál stejnì jako GNU software.
+Výtì¾ek z kopií publikovaných Nadací pro svobodný software
+jsou pou¾ity na vývoj GNU.''
+@end quotation
+@end copying
+
 @dircategory Education
 @direntry Education
 * GTypist: (gtypist). Dokumentace k výukovému programu psaní
@@ -10,74 +35,78 @@ na klávesnici gtypist.
 @end direntry
 
 @titlepage
-@title GNU pøíruèka pro GTypist
+@title Pøíruèka pro GNU Typist
 @subtitle Verze @value{VERSION}
 @author Poslední update: @value{UPDATED}
+@page
+@vskip 0pt plus 1filll
+@insertcopying
+Publikováno Nadací pro svobodný software @*
+59 Temple Place Suite 330 @*
+Boston, MA 02111-1307 @*
+USA @*
 @end titlepage
 @page
 
 @ifnottex
 @node Top, Distribuce, (dir), (dir)
 @top GNU Typist - psaní v¹emi deseti
+@insertcopying
 
 GNU Typist je interaktivní výukový program, který vám pomù¾e
-osvojit si principy psaní na klávesnici v¹emi deseti prsty.
-Má nìkolik lekcí pro rùzné typy klávesnic a rùzné jazyky. (Mezi
+osvojit si principy správného psaní na klávesnici v¹emi deseti prsty.
+Obsahuje nìkolik lekcí pro rùzné typy klávesnic a rùzné jazyky. (Mezi
 nimi nechybí ani èe¹tina.) Lekce pro gtypist jsou napsány ve snadno
 pochopitelném skriptovacím jazyku, tak¾e je mohou u¾ivatelé
-modifkovat a vytváøet nové. Pokud zadáte parametr cz.typ,
+modifkovat èi vytváøet nové. Pokud zadáte parametr cz.typ,
 spustíte lekce v èe¹tinì zamìøené na èeskou klávesnici.
 
 @end ifnottex
 
 @menu
 @c TODO:
-* Distribuce::              Kde najít gtypist: zdrojové kódy, balíèky apod. 
-* Kopírování::              GNU General Public License øíká, jak mù¾ete
-                            kopírovat a svobodnì sdílet gtypist
-* Úvod::         	    Co byste mìli jakou¾ivatel vìdìt
+* Distribuce::              Kde najít gtypist: zdrojové kódy, balíèky apod.
+* Kopírování::              Kopírování a svobodné sdílení gtypist pod GPL
+* Úvod::         	    Co byste mìli jako u¾ivatelé vìdìt
 * Spou¹tìní::               Jak spustit gtypist
-* Pøíkazy skriptovacího jazyka::    Informace o syntaxi lekcí pro gtypist
 * Dostupné lekce::          Pøehled lekcí v distribuci gtypistu
+* Pou¾ívání typefortune::   Procvièování na textu z `fortune' (perl)
+* Pøíkazy skriptovacího jazyka::    Informace o syntaxi lekcí pro gtypist
 * Vytvoøte nové lekce::     Jak pøispìt novými lekcemi
 * Mód Emacsu::              Mód Emacsu pro editaci skriptù do gtypistu
-* Zvýrazòování syntaxe ve VIM:: Zvýrazòování syntaxe v editoru VIM
 * Promìnné prostøedí::      Promìnné prostøedí, které ovlivòují gtypist
 * Chyby a opominutí::       Známé problémy
-* Historie::                 Historie GNU Typistu
+* Historie::                Historie GNU Typistu
+* Kopírování tohoto manuálu::	Licence svobodné dokumentace GNU.
 @end menu
-
 
 @node Distribuce, Kopírování, Top, Top
 @unnumbered Distribuce
 
-GNU Typist (èi gtypist) je svobodný software; to znamená, ¾e
+GNU Typist (èi gtypist) je @dfn{svobodný software}; to znamená, ¾e
 jej mù¾e za urèitých podmínek ka¾dý svobodnì pou¾ívat a 
-dále distribuovat. Pøesné podmínky mù¾ete nalézt v GNU
-General Public Lincense, která se vá¾e na tento program.
-GNU GPL následuje tuto sekci.
+dále redistribuovat. Pøesné podmínky mù¾ete nalézt v GNU
+General Public Lincense, kterou jste obdr¾eli s tímto programem
+a která následuje tuto sekci.
 
 @noindent
 GNU Typist mù¾ete získat od pøítele nebo z Internetu:
 
 @table @asis
 
-@item Èeská verze
-@url{http://www.volny.cz/gnumaniacs/project/gtypist/index_cz.html}
-
 @item Hlavní distribuèní web:
 @url{ftp://ftp.gnu.org/gnu/gtypist/}
 
 @item Domovská stránka
-@url{http://www.gnu.org/software/gtypist/}
+@url{http://www.gnu.org/software/gtypist/gtypist.cs.html}
 
-@item On-line manuál (updaty mezi vydáním jednotlivých verzí)
+@item On-line manuál (aktualizace mezi vydáním jednotlivých verzí)
 @url{http://www.gnu.org/software/gtypist/doc/}
 
 @item Stránka vývojáøù (CVS repozitáø, úlohy, podpora...)
 @url{http://savannah.gnu.org/projects/gtypist/}
 
-@item Sta¾ení GNU Typist (zdrojové kódy, binárky, tutoriály)
+@item Sta¾ení GNU Typist (zdrojové kódy, binární verze, tutoriály)
 @url{http://gtypist.free.fr/}
 
 @item Obrázky
@@ -114,13 +143,13 @@ a rychlostní testy.
 V programu jsou dva typy cvièení: drilové a rychlostní testy.
 
 V drilových vám gtypist zobrazí text v ka¾dé druhé øádce obrazovky
-a poèká, a¾ u¾ivatel zadá pøesnì ten samý text do zbývajících prázdných
-øádkù. 
+a poèká, a¾ u¾ivatel správnì opí¹e text do zbývajících prázdných
+øádek. 
 @c TODO: intention is ``Griff-Übung'' (finger exercise)
 Chybnì zadaná písmena jsou indikována obráceným @code{^},
 nebo @code{>}, pokud je ¹patnì zadaným znakem konec øádky.
 Na konci cvièení program spoèítá skuteènou a u¾iteènou 
-rychlost ve slovech za minutu. Pokud jste udìlali pøíli¹ mnoho
+rychlost v jednotkách slov za minutu. Pokud jste udìlali pøíli¹ mnoho
 chyb, cvièení se spustí znova.
 
 @c TODO: make this less formal
@@ -187,7 +216,7 @@ hrubé WPM je poèet znakù v testovací oblasti dìlené pìti a znovu
 dìlené poètem uplynulých minut. Co se týèe faktoru chyby, který
 WPM ovlivòuje, ka¾dá chyba je poèítaná za ¹patné slovo.
 
-@node Spou¹tìní, Pøíkazy skriptovacího jazyka, Úvod, Top
+@node Spou¹tìní, Dostupné lekce, Úvod, Top
 @chapter Spou¹tìní
 
 Syntaxe pro spu¹tìní GNU Typist je:
@@ -204,16 +233,16 @@ Udává maximální procento chybovosti pøi zadávání textu.
 Defaultní hodnota je 3,0. Musí být mezi 0,0 a 100,0.
 Existuje i pøíkaz skriptovacího jazyka
 (@pxref{Pøíkazy skriptovacího jazyka}), který to mù¾e zmìnit,
-pokud je èíslo men¹í. Pro procvièovací lekce je tato
+pokud je zadané èíslo men¹í. Pro procvièovací lekce je tato
 hodnota ale ignorována.
 
 @item -n, --notimer
-Normálnì GNU Typist zobrazuje rychlost ve WPM jak po drilových
-cvièeních, tak po rychlostních zkou¹kách. Lekce ale vypadají, ¾e jsou
-napsané pro program, který by zobrazoval WPM pouze pøi rychlostních 
-testech. Abychom gtypist pøinutili k takovémuto chování odpovídajícímu
-lekcím, tedy aby nezobrazoval WPM u drilových testù, pou¾ijte tento
-parametr.
+Normálnì GNU Typist zobrazuje rychlost ve WPM (slova za minutu) jak 
+po drilových cvièeních, tak po rychlostních zkou¹kách. Lekce jsou ale 
+zøejmì napsané pro program, který zobrazoval rychlost pouze pøi rychlostních 
+testech. Abyste gtypist pøinutili k takovémuto chování odpovídajícímu
+lekcím, tedy aby nezobrazoval poèet slov za minutu u drilových testù, 
+pou¾ijte tento parametr.
 
 @item -t, --term-cursor
 gtypist si vytváøí vlastní obdélníèkový kurzor, aby pomohl
@@ -245,7 +274,6 @@ mù¾ete zvukový signál potlaèit.
 To samé jako -s, --silent.
 
 @item -w, --wpmode
-
 Tímto donutíte gtypist urèitým zpùsobem napodobovat textový
 procesor, kdykoliv spou¹tí nìjaké cvièení. Mezeru na konci øádku
 bude brát jako korektní znak a pøejde na dal¹í øádku. Pokud stisknete
@@ -255,13 +283,17 @@ Vícenádobné mezery stlaèí na jedinou a bude pøeskakovat rozdìlovací
 
 @item -l, --start-label
 Tento parametr udává návìstí ve skriptovém souboru, kde
-gtyping zaène. Pokud není start_label definováno, zaène 
-od zaèátku souboru.
+gtyping zaène (pro informace o návìstí
+viz ní¾e skriptovací jazyk). Pokud není start_label definováno, zaène 
+se od zaèátku souboru.
+
+@item -k, --no-skip
+Zaká¾e u¾ivateli pøeskakovat lekce nebo z nich utíkat pomocí
+@key{ESC ESC}.
 
 @end table
 
 @noindent
-
 Pokud chcete spou¹tìt gtypist ve svém rodném jazyce, musíte
 také vhodnì nastavit promìnnou prostøedí @env{LANG} 
 @xref{Promìnné prostøedí}.
@@ -269,13 +301,13 @@ také vhodnì nastavit promìnnou prostøedí @env{LANG}
 @strong{Pøíklady:}
 
 @noindent
-Ke spu¹tìní standardního èeského souboru lekcí @file{gtypist.typ}:@*
+Ke spu¹tìní standardního anglického souboru lekcí @file{gtypist.typ}:@*
 @code{gtypist}
 
 
 @noindent
-Ke spu¹tìní anglických lekcí: @*
-@code{gtypist en.typ}
+Ke spu¹tìní èeských lekcí: @*
+@code{gtypist cs.typ}
 
 
 @noindent
@@ -287,11 +319,92 @@ adresáøi @file{/home/foo}: @*
 
 @noindent
 Abychom mohli spustit lekci @file{test.typ} v adresáøi @file{/tmp},
-a zaèít na návìstí @code{TEST1}, v tichém módu za pou¾ití
+a zaèít na návìstí @code{TEST1}, v tichém módu, za pou¾ití
 standardního kurzoru terminálu, zadáme toto:@*
 @code{gtypist -t -q -l TEST1 /tmp/test.typ}
 
-@node Pøíkazy skriptovacího jazyka, Dostupné lekce, Spou¹tìní, Top
+@node Dostupné lekce, Pou¾ívání typefortune, Spou¹tìní, Top
+@chapter Dostupné lekce
+
+S GNU Typist jsou dodávány tyto lekce :
+@table @file
+@item cs.typ
+Soubor QWERTY kurzù v èe¹tinì (+ numerická klávesnice)
+@item q.typ
+Rychlý QWERTY kurz v angliètinì
+@item r.typ
+Dlouhý QWERTY kurz v angliètinì
+@item t.typ
+QWERTY výuka v angliètinì
+@item v.typ
+Je¹tì dal¹í QWERTY v angliètinì
+@item w.typ
+QWERTY opakování v angliètinì
+@item d.typ
+Výuka klávesnice Dvorak v angliètinì
+@item m.typ
+Drilová cvièení v angliètinì
+@item s.typ
+Rychlostní testy v angliètinì
+@item n.typ
+Numerická klávesnice v angliètinì
+@item gtypist.typ
+Soubor v¹ech pøedchozích anglických lekcí
+@item esp.typ
+Kurz QWERTY ve ¹panìl¹tinì
+@item kt*.typ
+Toto jsou standardní lekce z Ktouch 1.0
+(@url{http://ktouch.sourceforge.net}), které byly
+do formátu gtypistu zkonvertovány s pou¾itím
+@file{tools/ktouch2typ.pl}.
+
+Tyto soubory jsou ktde.typ (german.ktouch), kten.typ (english.ktouch),
+ktfr.typ (french.ktouch), ktlecten.typ (lecture_en.ktouch), ktno.typ
+(norwegian.ktouch) and ktnumber.typ (number.ktouch).
+@item ttde.typ
+To je nìmecká lekce pro tipptrainer
+(@url{http://www.pingos.schulnetz.org/tipptrainer}), která byla
+zkonvertována s pomocí @file{tools/tt2typ.pl}.
+@end table
+
+@noindent
+Pokud v tìchto lekcích najdete chyby, pokud nìjakou upravíte,
+nebo pokud napí¹ete lekci novou, prosím vydejte ji pod
+svobodnou licencí a øeknìte nám o tom -- mù¾ete nám napsat
+mail na @email{bug-gtypist@@gnu.org}.
+
+@node Pou¾ívání typefortune, Pøíkazy skriptovacího jazyka, Dostupné lekce, Top
+@chapter Pou¾ívání typefortune
+
+`typefortune' vám dovolí cvièit s textem z `fortune'.
+
+@code{SYNTAX: typefortune [-dslh] [-n poèet] [-o <parametry_gtp>]}
+
+@table @code
+
+@item -d
+Pou¾ije @code{D:} místo @code{S:}.
+
+@item -s
+Spustí fortune s @code{-s}.
+
+@item -l
+Spustí fortune s @code{-l}.
+
+@item -n <poèet>
+Cvièení <poèet> fortunes.
+
+@item -o <gtypist_options>
+Pøedej gtypistu nastavení ve formì @option{option} (nastavení pøepínaèe,
+napø. @code{-o word-processor}), @option{option,value} (nastavení hodnoty, 
+napø. @code{-o e,1.0}) kde @code{option} je jméno nastavení
+(zkrácené èi dlouhé) s tím, ¾e v¹echny úvodní pomlèky jsou odstranìny.
+Pokud uvádíte více ne¾ jeden parametr, musíte je uvést v apostrofech:
+@command{typefortune -n 3 -o 'silent e,5 word-processor'}.
+
+@end table
+
+@node Pøíkazy skriptovacího jazyka, Vytvoøte nové lekce, Pou¾ívání typefortune, Top
 @chapter Pøíkazy skriptovacího jazyka
 
 GNU Typist reads in the data for its typing lessons from a script file.
@@ -472,57 +585,7 @@ N:LOOP
 X:
 @end example
 
-@node Dostupné lekce, Vytvoøte nové lekce, Pøíkazy skriptovacího jazyka, Top
-@chapter Supplied lessons
-
-V GNU Typist naleznete tyto lekce:
-@table @file
-@item gtypist.typ
-Souhrn v¹ech lekcí (v angliètinì)
-@item cz.typ
-Souhrn v¹ech lekcí (v èe¹tinì)
-@item q.typ 
-Rychlý QWERTY kurz v angliètinì
-@item r.typ
-Dlouhý QWERTY kurz v angliètinì
-@item t.typ
-QWERTY výukový kurz v angliètinì
-@item v.typ
-Je¹tì jeden kurz QWERTY v angliètinì
-@item w.typ
-Opakování anglické QWERTY 
-@item d.typ
-Anglický kurz klávesnice Dvorak
-@item m.typ
-Drilová cvièení v angliètinì
-@item s.typ
-Rychlostní testy v angliètinì
-@item n.typ
-Numerická klávesnice v angliètinì
-@item gtypist.typ
-Souhrn v¹ech lekcí (v èe¹tinì)
-@item esp.typ
-©panìlský kurz QWERTY
-@item kt*.typ
-Toto jsou standardní lekce z Ktouch 1.0
-(@url{http://ktouch.sourceforge.net}), které byly do gtypistu 
-konvertovány s pou¾itím @file{tools/ktouch2typ.pl}.
-
-Tyto soubory se nazývají ktde.typ (german.ktouch), kten.typ (english.ktouch),
-ktfr.typ (french.ktouch), ktlecten.typ (lecture_en.ktouch), ktno.typ
-(norwegian.ktouch) a ktnumber.typ (number.ktouch).
-@item ttde.typ
-Toto je nìmecká lekce z tipptraineru
-(@url{http://www.pingos.schulnetz.org/tipptrainer}), která byla konvertována
-za pou¾ití @file{tools/tt2typ.pl}.
-@end table
-
-@noindent
-Pokud v tìchto lekcích najdete chyby, nìjakou pozmìníte, nebo napí¹ete
-nové lekce, prosím uvolnìte je pod licencí svobodného 
-software a dejte nám o tom vìdìt emailem na @email{bug-gtypist@@gnu.org}.
-
-@node Vytvoøte nové lekce, Mód Emacsu, Dostupné lekce, Top
+@node Vytvoøte nové lekce, Mód Emacsu, Pøíkazy skriptovacího jazyka, Top
 @chapter Vytvoøte nové lekce
 
 This section provides guidelines and hints for creating new lessons
@@ -598,9 +661,6 @@ from the program @command{fortune} (or the emacs-internal
 @command{yow} if @command{fortune} isn't available, as is usually the
 case on Windows).
 
-Besides being used for creating new lessons, this command can be used
-to quickly create new drills for you to practice with.
-
 Once you installed @file{gtypist-mode.el} 
 (@pxref{Mód Emacsu}), you can open a file
 with it ``.typ'' extension and run @kbd{C-c C-f} to create a drill
@@ -635,7 +695,7 @@ D:jjj jhj jjj jhj jjj jhj
 @end itemize
 
 
-@node Mód Emacsu, Zvýrazòování syntaxe ve VIM, Vytvoøte nové lekce, Top
+@node Mód Emacsu, Promìnné prostøedí, Vytvoøte nové lekce, Top
 @chapter Mód Emacsu
 
 gtypist now comes with an Emacs major-mode which does
@@ -643,18 +703,18 @@ syntax-highlighting, indentation and has some convenient commands for
 counting labels, a goto-label-command, inserting properly centered
 banners, special comments and a bit more.
 
-Copy this file from @file{tools/gtypist-mode.el}
-(or @file{/usr/share/doc/gtypist} if you are using the debian package) to
-wherever you put your local elisp files (e.g. @file{~/elisp}) and put
-this in your @file{~/.emacs} (adapt path!):
+Copy this file from @file{tools/gtypist-mode.el} to wherever you put 
+your local elisp files (e.g.  @file{~/elisp}) and put this in your 
+@file{~/.emacs} (adapt path!):
 
 @lisp
 (autoload 'gtypist-mode "~/elisp/gtypist-mode")
 @end lisp
 
 or put it in @code{load-path} (@samp{make install} in the
-sources should take care of this for GNU Emacs) and use this
-instead:
+sources should take care of this for GNU Emacs, or if you
+are using the Debian package, it installs it here for you)
+and use this instead:
 
 @lisp
 (autoload 'gtypist-mode "gtypist-mode")
@@ -724,44 +784,7 @@ Run @kbd{C-h m} for a complete list of commands and their keybindings.
 If you find bugs or if you think there's something else this mode could
 do, please write to @email{bug-gtypist@@gnu.org}.
 
-@node Zvýrazòování syntaxe ve VIM, Promìnné prostøedí, Mód Emacsu, Top
-@chapter Zvýrazòování syntaxe ve VIM
-
-@noindent
-@file{tools/gtypist.vim} provides syntax highlighting for Vim 5.x and 6.x.
-
-To install for version 5.x (or any version on DOS/Windows), copy
-@file{tools/gtypist.vim} to where the syntax-files go (for example
-@file{/usr/share/vim/vim56/syntax/} for Vim 5.6 on Debian 2.2; if all
-else fails you can search for i.e. @file{xml.vim}) and add this to
-@file{~/.vimrc} (@file{$HOME/_vimrc} on DOS/Windows):
-@example
-autocmd BufNewFile,BufRead *.typ set ft=gtypist 
-@end example
-
-Installation for Vim 6.x is simpler: first create @file{~/.vim/syntax/}:
-@code{mkdir -p ~/.vim/syntax} and put @file{tools/gtypist.vim} in there.
-Finally add this to @file{~/.vimrc}:
-@example
-autocmd BufNewFile,BufRead *.typ setf gtypist
-@end example
-
-In any case, make sure that this command is at the top of @file{vimrc}
-ahead of all other @code{autocmd}-commands:
-@example
-autocmd!  " Remove ALL autocommands for the current group
-@end example
-(which avoids problems if @file{vimrc} is sourced more than once).
-And if you haven't done it already, you need to need to enable syntax
-highlighting:
-@example
-syntax on " turn on syntax highlighting
-@end example
-
-@noindent
-V¹echno toto jw zmínìno v README-sekce @file{tools/gtypist.vim}.
-
-@node Promìnné prostøedí, Chyby a opominutí, Zvýrazòování syntaxe ve VIM, Top
+@node Promìnné prostøedí, Chyby a opominutí, Mód Emacsu, Top
 @section Promìnné prostøedí
 GNU Typist pou¾ívá tyto promìnné prostøedí:
 
@@ -769,18 +792,18 @@ GNU Typist pou¾ívá tyto promìnné prostøedí:
 
 @item LANG
 
-GNU Typist nabázá Native Language Support (NLS) s podporou
+GNU Typist nabízí Native Language Support (NLS) s podporou
 knihovny gettext. To znamená, ¾e pokud to vá¹ systém podoruje,
 mù¾ete si vybrat jazyk, ve kterém chcete zobrazovat hlá¹ky gtypistu.
 Momentálnì jsou k dispozici angliètina, ¹panìl¹tina, nìmèina,
 fin¹tina a èe¹tina. K pou¾ití konkrétní NLS je tøeba nastavit
 promìnnou prostøedí LANG na odpovídající LL_CC kombinaci, 
-kde LL je dvouznakový kód jazyka podle ISO 639 a CC je dvouznakový
+kde LL je dvouznakový kód jazyka podle ISO 639 a CC je dvoupísmenný
 znak zemì podle ISO 3166 (napø. es_ES pro ©panìlsko nebo de_DE
 pro Nìmecko). Na nìkterých systémech budete muset asi nastavit
-i promìnnou LANGUAGE.
+na tu samou hodnotu i promìnnou LANGUAGE.
 
-Pokud chcete pøelo¾it nìjaké zprávy do jiného jazyka, nebo pokud
+Pokud chcete pøelo¾it zprávy do nìjakého jiného jazyka, nebo pokud
 chcete nìco opravit, ozvìte se prosím na
 @email{bug-gtypist@@gnu.org}.
 
@@ -824,12 +847,12 @@ Barevné módy zøejmì nepracují dobøe s UnixWare. Nìkdy
 nejsou správnì zobrazeny pøevrácené barvy. To se týká nìkterých
 typù terminálù a xterminálù.
 
-@node Historie, , Chyby a opominutí, Top
+@node Historie, Kopírování tohoto manuálu, Chyby a opominutí, Top
 @appendix Historie GNU Typist
 
 @itemize @bullet
 @item
-Pùvodní program byl napsán pro VAX/VMS BASIC nìkým na Harris
+Pùvodní program byl napsán pro VAX/VMS BASIC nìkým z Harris
 Corp (Ft. Lauderdale, FL).
 @item
 D. Jason Penney @email{penneyj@@slc.com} jej pøepsal pro Microsoft BASICA
@@ -838,7 +861,7 @@ D. Jason Penney @email{penneyj@@slc.com} jej pøepsal pro C s knihovnou curses
 @item
 Simon Baldwin @email{simonb@@sco.com} pøepsal verzi D. Jason Penneyho,
 jeho vylep¹ení jsou popsána v souboru NEWS (mezi verzí 2.2 a 2.2b).
-On je dr¾itelem copyrightu na GNU Typist
+On je také dr¾itelem copyrightu na GNU Typist
 (gtypist je distribuovaný pod podmínkami GNU GPL).
 Simon také napsal verzi Typistu v Javì, kterou pùvodnì nazýval 
 JTypist, ale nyní se jmenuje Typist:
@@ -851,7 +874,7 @@ pomohl opravováním chyb a udr¾ování balíèku pro Debian
 @item
 V roce 2000 se Vladimir Támara @email{vtamara@@users.sourceforge.net} a
 Igor Támara @email{ikks@@users.sourceforge.net} stali maintainery verze 
-v C. Pøed listopadem 200  byl GNU Typist spravován jako souèást
+v C. Pøed listopadem 2000 byl GNU Typist spravován jako souèást
 projektu Structio.
 @item
 Listopad 2000, program byl pøijat do GNU! Byl pøejmenován na GNU Typist
@@ -859,15 +882,18 @@ Listopad 2000, program byl pøijat do GNU! Byl pøejmenován na GNU Typist
 @item V kvìtnu 2001 se stal novým maintainerem 
 Michael Opdenacker @email{michaelo@@gnu.org},
 který se také nauèil psát na klávesnici s gtypistem.
-Vývoj projektu je nyní na
+Vývoj projektu nyní probíhá na
 @url{http://savannah.gnu.org/projects/gtypist/}.
-@item V èervnu 2001 se k projektu Felix Natter @email{f.natter@@ndh.net} 
-pøipojil Felix Natter a výraznì mu pøispìl portováním
+@item V èervnu 2001 se k projektu pøipojil 
+Felix Natter @email{f.natter@@ndh.net} 
+a výraznì mu pøispìl portováním
 lekcí z jiných tutoriálù, vylep¹ením pomocných utilit,
 nových mo¾ností tutoriálù a módem pro Emacs.
-@item V listopadu 2001 byla vytvoøena Hynkem Hanke èeská verze
-vèetnì pøelo¾ených tutoriálù.
 @end itemize
+
+@node Kopírování tohoto manuálu, , Historie, Top
+@appendix Kopírování tohoto manuálu: GNU Free Documentation License
+@include fdl.texi
 
 @bye
 
