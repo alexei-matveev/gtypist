@@ -32,10 +32,10 @@ or create new ones.
 * Copying::
 * Introduction::
 * Invoking::
-* Script-file commands::
+* Script file commands::
 * Supplied lessons::
 * How to contribute new lessons::
-* Emacs mode for editing gtypist-lessons::
+* Emacs mode for editing gtypist lessons::
 * Technical Information::
 * History::
 @end menu
@@ -78,16 +78,16 @@ You can obtain GNU Typist from a friend or from the Internet:
 @chapter Introduction
 
 GNU Typist is an interactive typing tutor program. It uses an input file to
-@c TODO: timed speed-tests
+@c TODO: timed speed tests
 create a series of typing tutorials, drills, and speed tests. It
-is intended to be used on raw terminals without graphics ---it has been
+is intended to be used on raw terminals without graphics --it has been
 compiled and used in GNU/Linux and Unix (Aix, OpenBSD) and also in
 DOS/Windows (DOS 6.22, Windows 98, Windows NT).
 
 The program reads lessons written in an easy-to-learn scripting language. It
 is distributed with several complete and good lessons, you can use them,
 @c TODO: reference to node How to contribute ....!
-modify them or create new lessons (@pxref{Script-file commands}).
+modify them or create new lessons (@pxref{Script file commands}).
 
 If a script file is not specified on the command line, a default file
 @file{gtypist.typ} will be used. (See details about the path in the
@@ -98,12 +98,12 @@ screen displays a message line, queries, and other status information.
 The lines in between are used for the tutorials, drills, and speed
 tests.
 
-There are two types of typing-exercises: drills and speed-tests.
+There are two types of typing exercises: drills and speed tests.
 
 In a drill, gtypist displays text in every other line on the screen,
 and waits for the user to correctly type the exact same text in the
 intermediate lines.
-@c TODO: intention is ``Griff-Übung'' (finger-exercise)
+@c TODO: intention is ``Griff-Übung'' (finger exercise)
 Typing errors are indicated with an inverse @code{^}, or @code{>} if
 the character is a newline and at the end of the
 exercise it calculates the real and effective rate in WPM.
@@ -118,7 +118,7 @@ user to correctly over-type the exact same text. It indicates typing
 errors, and at the end of the test it calculates the real and effective
 rate in WPM. 
 @c TODO: what is it used for ?
-If there were too many errors, it will re-run the speed-test.
+If there were too many errors, it will re-run the speed test.
 Backward deleting of previously typed characters to correct errors is
 permitted, but errors still accumulate.
 
@@ -126,8 +126,8 @@ If you already made too many mistakes, then you can use @key{ESC} to
 give up and start again. Once you complete a lesson, you will be asked
 whether you want to repeat it.
 
-@c TODO: indicate ``practice only''-exercises in modeline ?
-There are also ``practice only'' exercises (of both drills and speed-tests)
+@c TODO: indicate ``practice only'' exercises in modeline ?
+There are also ``practice only'' exercises (of both drills and speed tests)
 which you won't have to repeat at all. But we won't tell you when this
 is the case, so you'll have to give your best anyway ;-)
 
@@ -174,7 +174,7 @@ divided by five, then divided again by the number of minutes elapsed in
 typing the passage. The adjusted WPM factors in the errors; each error
 is counted as a mistyped word.
 
-@node Invoking, Script-file commands, Introduction, Top
+@node Invoking, Script file commands, Introduction, Top
 @chapter Invoking
 
 The syntax to invoke GNU Typist is:
@@ -189,7 +189,7 @@ supported only in GNU/Linux):
 @item -e, --error-max
 Specifies the default maximum error percentage.  The default value is
 3.0 and it must be between 0.0 and 100.0. There is a corresponding
-script-file command (@pxref{Script-file commands}) which only
+script file command (@pxref{Script file commands}) which only
 overrides this if it is @emph{stricter} (smaller). This value is
 ignored for ``practice only'' drills.
 
@@ -239,7 +239,7 @@ if applicable. It will compress multiple spaces into a single
 space. And it will skip over hyphens found at the end of a line.
 
 @item -l, --start-label
-Specifies the label in the script_file at which gtypist begins executing
+Specifies the label in the script file at which gtypist begins executing
 (see script files and commands below for information on labels). If
 start_label is not given, gtypist begins execution at the first line of
 the file.
@@ -275,8 +275,8 @@ starting at label @code{TEST1}, using the terminal's cursor, and running
 silently:@*
 @code{gtypist -t -q -l TEST1 /tmp/test.typ}
 
-@node Script-file commands, Supplied lessons, Invoking, Top
-@chapter Script-file commands
+@node Script file commands, Supplied lessons, Invoking, Top
+@chapter Script file commands
 
 GNU Typist reads in the data for its typing lessons from a script file.
 With the exception of comments and blank lines, each line in the file is
@@ -331,13 +331,13 @@ like a two-line T.
 @c TODO: more information about ``should be used for''...
 @item D,d
 This command is called ``drill'', and it is one of two types of
-typing-exercises.
+typing exercises.
 
 It is a multi-line command. The text is displayed in every second
 line, and you type in the intermediate lines. Because of this, you cannot
-use more than 11 lines of drill-content.
+use more than 11 lines of drill content.
 
-This type of exercise is supposed to be used for finger-training
+This type of exercise is supposed to be used for finger training
 (i.e. jfjfjjf), but may also contain complete words and sentences
 @c TODO: grip
 if they are used to practice something (i.e. a letter/syllable/"grip"),
@@ -349,18 +349,18 @@ mistakes.
 
 @c TODO: more information about ``should be used for''...
 @item S,s
-This is the second type of typing-exercise: the ``speed test''.
+This is the second type of typing exercise: the ``speed test''.
 
 It is a multi-line command.  It displays its text on the screen, and
 prompts the user to type on top of it.  That's why you can use up to
-22 lines of text for one speed-test.
-In a speed-test you can correct your mistakes, but this will not decrease
+22 lines of text for one speed test.
+In a speed test you can correct your mistakes, but this will not decrease
 the error-count.
 
-Speed-tests should be used for typing (mostly) complete sentences,
+Speed tests should be used for typing (mostly) complete sentences,
 texts or files (i.e. a letter, texinfo/html/tex files).
 
-The lowercase version @code{s} is a ``practice only'' speed-test -
+The lowercase version @code{s} is a ``practice only'' speed test -
 the user will not have not repeat this drill if (s)he
 made too many mistakes.
 
@@ -457,7 +457,7 @@ N:LOOP
 X:
 @end example
 
-@node Supplied lessons, How to contribute new lessons, Script-file commands, Top
+@node Supplied lessons, How to contribute new lessons, Script file commands, Top
 @chapter Supplied lessons
 
 The following lessons are supplied with GNU Typist :
@@ -503,7 +503,7 @@ If you find errors in these lessons, if you modify any of them or if you
 write a new lesson, please release it with a free license and tell us
 about it, by writing an email to @email{bug-gtypist@@gnu.org}.
 
-@node How to contribute new lessons, Emacs mode for editing gtypist-lessons, Supplied lessons, Top
+@node How to contribute new lessons, Emacs mode for editing gtypist lessons, Supplied lessons, Top
 @chapter How to contribute new lessons
 
 @c This chapter has not been written yet. It will give guidelines
@@ -512,16 +512,16 @@ about it, by writing an email to @email{bug-gtypist@@gnu.org}.
 
 Here are some hints how you can quickly create new lessons.
 
-@c TODO: better name for ``Design-patterns'' ??
+@c TODO: better name for ``Design patterns'' ??
 
 @menu
-* Ktouch-lessons:: 
+* Ktouch lessons:: 
 * Create drills from fortune:: 
-* Design-patterns for lessons::
+* Design patterns for lessons::
 @end menu
 
-@node Ktouch-lessons, , Create drills from fortune, How to contribute new lessons
-@section Ktouch-lessons
+@node Ktouch lessons, , Create drills from fortune, How to contribute new lessons
+@section Ktouch lessons
 
 A very easy way to write lessons is to write them in the format
 that @command{ktouch} uses, and then convert it to a gtypist lesson
@@ -536,7 +536,7 @@ consists of all the lines up to the next comment or blank line. After
 the separator (comment or blank line) the name of the second lesson
 follows and so on.
 
-This is an example of a three-lesson ktouch-file (excerpts from the
+This is an example of a three-lesson ktouch file (excerpts from the
 first three lessons of german.ktouch):
 @example
 #
@@ -562,7 +562,7 @@ ded ded ded dej dek del deö ded deö del dek dej ded dej dek delde
 
 Once you are done, use @command{tools/ktouch2typ.pl} to convert the
 file: @samp{ktouch2typ.pl lesson.ktouch} converts @file{lesson.ktouch}
-to @file{lesson.typ}. It is important that the input-file ends in
+to @file{lesson.typ}. It is important that the input file ends in
 ``.ktouch'', otherwise @command{ktouch2typ.pl} will skip it. Warning:
 this will overwrite @file{lesson.typ} without asking you !
 
@@ -571,10 +571,10 @@ uses for each drill by modifying the relevant variable in
 @file{tools/ktouch2typ.pl}.
 
 Obviously, the disadvantage of this is that you cannot make use of all
-of gtypist's features (but the output-file is very readable, so you
+of gtypist's features (but the output file is very readable, so you
 can edit it to use more of gtypist's features).
 
-@node Create drills from fortune, Ktouch-lessons, Design-patterns for lessons, How to contribute new lessons
+@node Create drills from fortune, Ktouch lessons, Design patterns for lessons, How to contribute new lessons
 @section Create drills from fortune
 
 Using @file{gtypist-mode.el} you can quickly create lessons with
@@ -586,18 +586,18 @@ Besides being used for creating new lessons, this command can be used
 to quickly create new drills for you to practice with.
 
 Once you installed @file{gtypist-mode.el} 
-(@pxref{Emacs mode for editing gtypist-lessons}), you can open a file
+(@pxref{Emacs mode for editing gtypist lessons}), you can open a file
 with it ``.typ'' extension and run @kbd{C-c C-f} to create a drill
 (@code{D:} by default, use @kbd{C-u} or @kbd{C-u C-u} prefix to
 change).
 
-@node Design-patterns for lessons, Create drills from fortune, , How to contribute new lessons
-@section Design-patterns for lessons
+@node Design patterns for lessons, Create drills from fortune, , How to contribute new lessons
+@section Design patterns for lessons
 
-@subsection Structure of lesson-files
+@subsection Structure of lesson files
 
 @itemize @bullet
-@item use mixture of drills and speed-tests (this is more fun for the user)
+@item use mixture of drills and speed tests (this is more fun for the user)
 @item use some ``practice-only'' exercises (d:/s:) (possibly mixed with
 ``real'' exercises) followed by a ``final test''.
 @file{esp.typ} uses this scheme.
@@ -619,8 +619,8 @@ D:jjj jhj jjj jhj jjj jhj
 @end itemize
 
 
-@node Emacs mode for editing gtypist-lessons, Technical Information, How to contribute new lessons, Top
-@chapter Emacs mode for editing gtypist-lessons
+@node Emacs mode for editing gtypist lessons, Technical Information, How to contribute new lessons, Top
+@chapter Emacs mode for editing gtypist lessons
 
 gtypist now comes with an Emacs major-mode which does
 syntax-highlighting, indentation and has some convenient commands for
@@ -629,7 +629,7 @@ banners, special comments and a bit more.
 
 Copy this file from @file{tools/gtypist-mode.el}
 (or @file{/usr/share/doc/gtypist} if you are using the debian package) to
-wherever you put your local elisp-files (e.g. @file{~/elisp}) and put
+wherever you put your local elisp files (e.g. @file{~/elisp}) and put
 this in your @file{~/.emacs} (adapt path!):
 
 @lisp
@@ -664,7 +664,7 @@ Here are the commands along with the keybindings:
 
 @item C-c C-i, M-x gtypist-mode-info
 This shows gtypist's texinfo-documentation, starting at node
-``Script-file commands'' (@pxref{Script-file commands}). With prefix,
+``Script file commands'' (@pxref{Script file commands}). With prefix,
 start at the top-node.
 
 @item C-c C-g, M-x gtypist-mode-goto-label
@@ -706,7 +706,7 @@ Run @kbd{C-h m} for a complete list of commands and their keybindings.
 If you find bugs or if you think there's something else this mode could
 do, please write to @email{bug-gtypist@@gnu.org}.
 
-@node Technical Information, History, Emacs mode for editing gtypist-lessons, Top
+@node Technical Information, History, Emacs mode for editing gtypist lessons, Top
 @chapter Technical Information
 
 @menu
