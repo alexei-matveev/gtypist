@@ -1,3 +1,8 @@
+2002-03-09  Felix Natter  <fnatter@gmx.net>
+
+	* add new script `typefortune', as suggested and started by
+	Yuusuke Mita <neiklotrrj@yahoo.com>
+
 2002-01-14  Michael Opdenacker <michaelo@gnu.org>
 
 	* configure.in: suppressed "ncurses" in AC_SEARCH_LIBS, and kept

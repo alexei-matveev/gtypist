@@ -4,7 +4,11 @@
 	See the `ChangeLog' (top-level and in some subdirectories) and
 	`THANKS' files for details about changes and contributors.
 
-Version 2.5.1 February/2002
+Version 2.6 - March/2002
+	- new `typefortune' (perl-)script which creates lessons from `fortune'
+	(see the new section "Using typefortune" in the manual)
+
+Version 2.5.1 - February/2002
 	- fix a bug in --help output
 	- small documentation fixes
 

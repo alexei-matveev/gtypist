@@ -28,9 +28,12 @@ if (!getopts ("dslhn:o:", \%opts) || $opts{h}) {
     print "-l: use fortune -l\n";
     print "-n <count>: practice <count> fortunes\n";
     print "-o <gtypist_options>: pass options to gtypist\n";
+    print "See the gtypist manual (info gtypist or info '(gtypist)') " . 
+	"for details.\n";
     exit 1;
 }
 
+# operate on command-line arguments
 my $exercise_type = "S:";
 if ($opts{d}) { $exercise_type = "D:"; }
 my $max_lines = 22;
@@ -41,21 +44,47 @@ if ($opts{s}) { $fortune_command .= " -s"; }
 if ($opts{l}) { $fortune_command .= " -l"; }
 my $count = 1;
 if (defined ($opts{n})) { $count = $opts{n}; }
-if (defined ($opts{o})) { die "-o isn't yet implemented\n"; }
+
+# create option-list for gtypist
+my $gtypist_options = "";
+if (!defined ($opts{o})) {
+    # avoid warning
+    $opts{o} = "";
+}
+foreach my $opt (split (/\s+/, $opts{o}))
+{
+    my $sepidx = index ($opt, ",");
+    if ($sepidx == -1) {
+	# boolean option
+	if (length ($opt) == 1) { # short option
+	    $gtypist_options .= "-" . $opt;
+	} else { # long option
+	    $gtypist_options .= "--" . $opt;
+	}
+    } else {
+	# option with value
+	if ($sepidx == 1) { # short option
+	    $gtypist_options .= "-" . substr ($opt, 0, 1);
+	} else { # long option
+	    $gtypist_options .= "--" . substr ($opt, 0, $sepidx - 1);
+	}
+	$gtypist_options .= " " . substr ($opt, $sepidx + 1);
+    }
+    $gtypist_options .= " ";
+}
 
 # make sure that fortune is available
-system("fortune > /dev/null 2>&1");
+system("fortune > /dev/null");
 
+my $i;
+my $j;
+my @lines;
 my $typfilename = "/tmp/typefortune.$$";
 my $TYPFILE = undef;
 open(TYPFILE, ">$typfilename") ||
     die "Couldn't open $typfilename for writing: $!";
 
-my $i;
-my $j;
-my @lines;
-
-# not $#lines is the index of the last line (and not the length of @lines)
+# note: $#lines is the index of the last line (and not the length of @lines)
 print TYPFILE "# temporary file created by typefortune\n";
 for ($i = 0; $i < $count; $i++)
 {
@@ -87,17 +116,14 @@ for ($i = 0; $i < $count; $i++)
     }
 }
 
+print TYPFILE getBanner("Practice complete");
 print TYPFILE "T:\n :\n :\n : Congratulations: " .
-    "you successfully completed the " .
+    "you successfully completed the $count " .
     "fortune lessons !\n";
     
 close(TYPFILE) || die "Couldn't close $typfilename: $!";
 
 
-# create option-list for gtypist
-my $gtypist_options = "";
-# TODO:
- 
 # call gtypist
 exec ("gtypist $gtypist_options $typfilename");
 

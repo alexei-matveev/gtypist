@@ -341,7 +341,7 @@ about it, by writing an email to @email{bug-gtypist@@gnu.org}.
 
 `typefortune' lets you practice with text from `fortune'.
 
-@code{SYNTAX: typefortune [-dslh] [-n count] [-o gtypist_opts]}
+@code{SYNTAX: typefortune [-dslh] [-n count] [-o <gtypist_opts>]}
 
 @table @code
 
@@ -358,7 +358,13 @@ Run fortune with @code{-l}.
 Practice <count> fortunes.
 
 @item -o <gtypist_options>
-Pass options to gtypist:
+Pass options to gtypist, in the form @option{option} (boolean option,
+i.e. @code{-o word-processor}), @option{option,value} (option with
+value, i.e. @code{-o e,1.0}) where @code{option} is the name of the
+option (short or long) with all leading dashes removed.
+You need to quote the argument to @option{-o} if you are specifying
+more than one argument:
+@command{typefortune -n 3 -o 'silent e,5 word-processor'}.
 
 @end table
 
