@@ -5,7 +5,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: GNU Typist 2.5\n"
-"POT-Creation-Date: 2001-12-10 20:03+0100\n"
+"POT-Creation-Date: 2002-01-14 20:32+0100\n"
 "PO-Revision-Date: 2001-12-10 22:27+0100\n"
 "Last-Translator: Michael Opdenacker <michaelo@gnu.org>\n"
 "Language-Team: French <traduc@traduc.org>\n"
@@ -153,9 +153,9 @@ msgid ""
 "languages.  New lessons can be written by the user easily.\n"
 "\n"
 msgstr ""
-"`gtypist' est un programme pour apprendre à taper au clavier dans différentes "
-"langues et pour différents claviers. Il est facile d'écrire de nouvelles "
-"leçons.\n"
+"`gtypist' est un programme pour apprendre à taper au clavier dans "
+"différentes langues et pour différents claviers. Il est facile d'écrire de "
+"nouvelles leçons.\n"
 
 #: gtypist.c:1741
 msgid "Usage"
@@ -214,7 +214,7 @@ msgstr ""
 
 #: gtypist.c:1762
 msgid "Report bugs to bug-gtypist@gnu.org"
-msgstr "Contactez bug-gtypist@gnu.org pour signaler des problèmes"
+msgstr "Contactez bug-gtypist@gnu.org pour signaler tout problème."
 
 #: gtypist.c:1801
 #, c-format
@@ -315,14 +315,15 @@ msgstr "Voulez-vous vraiment quitter cette leçon? [O/N]"
 msgid "Sorry, gtypist is configured to forbid skipping exercises."
 msgstr "Désolé, gtypist est configuré pour interdire de sauter un exercice."
 
-#. this must be adjusted to the right with one space at the end.
-#. Leading whitespace is important because it is displayed in reverse
-#. video because it must be aligned with the next two messages
+#. This must be adjusted to the right with one space at the end.
+#. Leading and trailing whitespaces are important because the text
+#. is displayed in reverse video.
+#. This text must must be aligned with the next two messages
 #. (it's best to run gtypist to see this in practice)
 #: gtypist.c:1952
 #, c-format
 msgid " Raw speed      = %6.2f wpm "
-msgstr " Vitesse brute      = %6.2f mpm"
+msgstr " Vitesse brute    = %6.2f mpm "
 
 #. this must be adjusted to the right with one space at the end.
 #. Leading whitespace is important because it is displayed in reverse
@@ -331,7 +332,7 @@ msgstr " Vitesse brute      = %6.2f mpm"
 #: gtypist.c:1957
 #, c-format
 msgid " Adjusted speed = %6.2f wpm "
-msgstr "Vitesse corrigée = %6.2f mpm"
+msgstr " Vitesse corrigée = %6.2f mpm "
 
 #. this must be adjusted to the right with one space at the end.
 #. Leading whitespace is important because it is displayed in reverse
@@ -340,7 +341,7 @@ msgstr "Vitesse corrigée = %6.2f mpm"
 #: gtypist.c:1962
 #, c-format
 msgid "            with %.1f%% errors "
-msgstr "            avec %.1f%% d'erreurs"
+msgstr "           avec %.1f%% d'erreurs "
 
 #. this is used to translate the keys for Y/N-queries. Must be two
 #. uppercase letters separated by '/'. Y/N will still be accepted as
@@ -359,4 +360,3 @@ msgstr "R/S/Q"
 #: gtypist.c:2028
 msgid "can't find or open file"
 msgstr "fichier introuvable ou impossible à ouvrir"
-
