@@ -1,5 +1,12 @@
-2003-10-25  Hynek Hanke  <hanke@volny.cz>
+2003-10-26  Hynek Hanke  <hanke@volny.cz>
 
+	* autogen.sh (gettexth): Added a search for gettext.h in /usr/ as Dmitry
+	suggested.
+
+	* po/cs.po: Updated.
+
+2003-10-25  Hynek Hanke  <hanke@volny.cz>
+	
 	* Makefile.am (EXTRA_DIST): gtypist.1 corrected to src/gtypist.1
 
 	* configure.in: Added missing target Makefile.in
