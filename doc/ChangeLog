@@ -1,4 +1,8 @@
-2000-05-24  Michael Opdenacker  <michaelo@linux-azur.org>
+2000-06-26  Michael Opdenacker  <michaelo@gnu.org> 
+
+	* Fixed errors and improved the manual.
+
+2000-05-24  Michael Opdenacker  <michaelo@gnu.org>
 
 	* Replaced `typist' by `gtypist' in the documentation
 	  (the `typist' executable is no longer built in 2.3.2)
