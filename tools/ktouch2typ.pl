@@ -134,8 +134,7 @@ while(defined($ktouchfilename = shift(@ARGV)))
 
 	# bind function keys
 	$i = $cur_lesson;
-	# TODO: try <!
-	while ($i <= $lesson_counter && $i<=$cur_lesson + $n_lessons_this_page)
+	while ($i <= $lesson_counter && $i < $cur_lesson + $n_lessons_this_page)
 	{
 	    print TYPFILE "K:" . ($i - $cur_lesson + 1) . ":S_LESSON$i\n";
 	    ++$i;
@@ -182,7 +181,7 @@ while(defined($ktouchfilename = shift(@ARGV)))
 	print TYPFILE "T:this file contains the following $lesson_counter " .
 	    "lessons:\n :\n";
 	$i = $cur_lesson;
-	while ($i <= $lesson_counter && $i<$cur_lesson + $n_lessons_this_page)
+	while ($i <= $lesson_counter && $i < $cur_lesson + $n_lessons_this_page)
 	{
 	    print TYPFILE " :        Fkey " . ($i - $cur_lesson + 1) .
 		" - $lesson_names[$i]\n";
@@ -260,5 +259,5 @@ sub convert_lesson
 }
 
 # Local Variables:
-# compile-command: "./ktouch2typ.pl german.ktouch norwegian.ktouch"
+# compile-command: "./ktouch2typ.pl german.ktouch norwegian.ktouch g.ktouch"
 # End:
