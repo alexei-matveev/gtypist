@@ -2,7 +2,7 @@
 
 SUBDIRS=intl po lessons tools doc
 
-EXTRA_DIST=gtypist.1 configur.bat version.sh
+EXTRA_DIST=gtypist.1 configur.bat version.sh configur.bat.in autogen.sh INSTALL.in TODO
 
 bin_PROGRAMS = gtypist
 gtypist_SOURCES = gtypist.c getopt.h getopt.c getopt1.c
