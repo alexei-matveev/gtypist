@@ -1,3 +1,9 @@
+2003-03-01  Felix Natter  <fnatter@gmx.net>
+
+	* doc/gtypist.texi (Supplied lessons): update the section on kt*.typ
+
+	* cursmenu.c (do_menu): handle PAGE UP/PAGE DOWN
+
 2003-02-02  Felix Natter  <fnatter@gmx.net>
 
 	* added/updated lessons: ttde.typ ktde.typ ktdk2.typ kten.typ

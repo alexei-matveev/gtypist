@@ -1,4 +1,4 @@
-\input texinfo @c -*-mode:texinfo; compile-command: "makeinfo gtypist.texi"-*-
+^\input texinfo @c -*-mode:texinfo; compile-command: "makeinfo gtypist.texi"-*-
 @setfilename gtypist.info
 @settitle GNU Typist Manual
 @documentlanguage en
@@ -323,8 +323,11 @@ gtypist's file format using @file{tools/ktouch2typ.pl}.
 The files are called @file{ktde.typ} (@file{german.ktouch}),
 @file{kten.typ} (@file{english.ktouch}),
 @file{ktfr.typ} (@file{french.ktouch}),
-@file{ktlecten.typ} (@file{lecture_en.ktouch}),
+@file{ktfr2.typ} (@file{french-2.ktouch}),
 @file{ktno.typ} (@file{norwegian.ktouch})
+@file{ktdk.typ} (@file{danish.ktouch}),
+@file{ktdk2.typ} (@file{danish-2.ktouch}),
+@file{ktdvorak.typ} (@file{dvorak.ktouch})
 and @file{ktnumber.typ} (@file{number.ktouch}).
 @item ttde.typ
 This is the German lesson of

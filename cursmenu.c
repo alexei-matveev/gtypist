@@ -17,7 +17,7 @@
 char *do_menu (FILE *script, char *line)
 {
   int num_items;
-  char *data, *title, **labels, **descriptions;
+  char *data, *up, *title, **labels, **descriptions;
   int ch, i, j, k, idx;
   int cur_choice = 0, max_width, start_y, columns;
   int start_idx, end_idx; /* visible menu-items */
@@ -33,9 +33,15 @@ char *do_menu (FILE *script, char *line)
   /* data has a trailing '\n' => num_items = num_newlines - 1 */
   i = 0; j = 0;
   while (data[i] != '\0')
+  {
     if (data[i++] == '\n')
       j++;
+  }
   num_items = j - 1;
+
+  /* get UP-label if present*/
+  up = NULL;
+  
 
   /* get title */
   i = 0;
@@ -55,33 +61,33 @@ char *do_menu (FILE *script, char *line)
   labels = (char**)malloc (sizeof (char*) * num_items);
   descriptions = (char**)malloc (sizeof (char*) * num_items);
   for (k = 0; k < num_items; k++)
-    {
-      while (data[i] != '\n')
-	i++;
-      /* skip '\n' and other whitespace */
-      while (isspace (data[i]))
-	i++;
-      /* get label, which ends when the description (enclosed in
-	 quotes) starts */
-      labels[k] = data + i;
-      while (data[i] != '"')
-	i++;
-      j = i + 1; /* remember this position: start of description */
+  {
+    while (data[i] != '\n')
+      i++;
+    /* skip '\n' and other whitespace */
+    while (isspace (data[i]))
+      i++;
+    /* get label, which ends when the description (enclosed in
+       quotes) starts */
+    labels[k] = data + i;
+    while (data[i] != '"')
+      i++;
+    j = i + 1; /* remember this position: start of description */
+    i--;
+    while (isspace (data[i]))
       i--;
-      while (isspace (data[i]))
-	i--;
-      data[i + 1] = 0; /* terminate label-string */
-      /* get description (enclosed in double quotes) */
-      i = j;
-      descriptions[k] = data + i;
-      /* look for closing quote: the description may contain "
-	 so we have to find the _last_ " */
-      while (data[i] != '\n')
-	i++;
-      while (data[i] != '"') 
-	i--;
-      data[i] = 0; /* terminate description */
-    }
+    data[i + 1] = 0; /* terminate label-string */
+    /* get description (enclosed in double quotes) */
+    i = j;
+    descriptions[k] = data + i;
+    /* look for closing quote: the description may contain "
+       so we have to find the _last_ " */
+    while (data[i] != '\n')
+      i++;
+    while (data[i] != '"') 
+      i--;
+    data[i] = 0; /* terminate description */
+  }
       
   /* get the longest description */
   max_width = 0;
@@ -156,6 +162,7 @@ char *do_menu (FILE *script, char *line)
       ch = wgetch (stdscr);
       switch (ch)
 	{
+	  /* UP/DN */
 	case KEY_UP:
 	  cur_choice = max (0, cur_choice - 1);
 	  if (cur_choice < start_idx) {
@@ -168,9 +175,23 @@ char *do_menu (FILE *script, char *line)
 	    start_idx++; end_idx++;
 	  }
 	  break;
+
+	case KEY_PPAGE:
+	  k = start_idx;
+	  start_idx = max (0, start_idx - items_per_page);
+	  end_idx += start_idx - k;
+	  cur_choice += start_idx - k;
+	  break;
+	case KEY_NPAGE:
+	  k = end_idx;
+	  end_idx = min (end_idx + items_per_page, num_items - 1);
+	  start_idx += end_idx - k;
+	  cur_choice += end_idx - k;
+	  break;
+
 	case '\n':
 	  break;
-	  /* TODO: support more keys */
+
 	default:
 	  /*
 	  waddstr(stdscr, "DEFAULT!!!");
