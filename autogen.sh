@@ -5,6 +5,8 @@
 # config.h.in, config.sub, config.guess
 # INSTALL, configur.bat, doc/gtypist.info, lessons/gtypist.typ (maybe more)
 
+echo "Checking for required tools..."
+
 (autoconf --version) < /dev/null > /dev/null 2>&1 || {
     echo
     echo "**Error**: You must have \`autoconf' installed"
@@ -46,7 +48,7 @@
     exit 1
 }
 
-# Copy gettext.h from gettext install 
+# Copy gettext.h from gettext install
 
 gettext_exe=`which gettext`
 gettext_bin=`dirname $gettext_exe`
@@ -87,9 +89,9 @@ for file in configur.bat INSTALL
   touch ${file}.in
 done
 
-# gettextize
-echo "running gettextize...  Ignore non-fatal messages."
-gettextize --force --copy --intl --no-changelog
+# Add gettext infrastructure.
+echo "running autopoint..."
+autopoint
 
 # Build configuration files
 

@@ -1,10 +1,5 @@
 # Process this file with autoconf to produce a configure script.
 
-#
-#	NOTE:  this file will probably be changed by gettextize, so don't commit
-#	changed version to CVS.
-#
-
 AC_INIT(GNU Typist, esyscmd(./version.sh), bug-gtypist@gnu.org)
 AM_INIT_AUTOMAKE(gtypist, "`./version.sh`")
 AC_CONFIG_SRCDIR(src/gtypist.c)
@@ -62,6 +57,7 @@ AC_CHECK_FUNCS([__argz_count __argz_next __argz_stringify dcgettext getcwd getwd
 
 # Internationalization macros
 
+AM_GNU_GETTEXT_VERSION(0.12.1)
 AM_GNU_GETTEXT
 
 # Manual page generation
@@ -75,5 +71,5 @@ AM_PATH_LISPDIR
 
 # Generate files
 
-AC_OUTPUT(lessons/Makefile tools/Makefile doc/Makefile src/Makefile Makefile)
-
+AC_OUTPUT(lessons/Makefile tools/Makefile doc/Makefile src/Makefile Makefile
+		intl/Makefile po/Makefile.in m4/Makefile)
