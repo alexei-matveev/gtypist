@@ -2,6 +2,11 @@
 
 	* Makefile.am: now requires automake 1.8.2
 
+2004-02-23      Dmitry Rutsky   <rutsky@school.ioffe.rssi.ru>
+
+	* README:  removed repeated or redundant lines in `Files' section,
+	  changed the section's name to probably more appropriate. 
+
 2003-11-23	Dmitry Rutsky	<rutsky@school.ioffe.rssi.ru>
 
 	* tools/typcombine:  removed `ktlecten.typ' from the `More lessons...'

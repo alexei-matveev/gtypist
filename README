@@ -15,21 +15,15 @@ software in its homepage:
 
     http://www.gnu.org/software/gtypist/
 
-See the manual ('info gtypist' after installing GNU Typist) for
-details about the tool usage and available lessons.
 
-Files in this package:
-----------------------
+Files in this package which provide further information:
+--------------------------------------------------------
 
 - INSTALL: compiling and installation instructions.
 - COPYING: copying conditions
 - NEWS: description of major changes in this release.
 - AUTHORS, THANKS: list of authors and other contributors.
-- NEWS: description of major changes in this release.
 - TODO: ideas on how you could help us improve gtypist.
-- version.sh: defines the version number.
-- autogen.sh: updates the version, runs automake, autoconf and
-  gettextize.
 
 Feedback
 --------
