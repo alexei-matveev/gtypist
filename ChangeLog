@@ -1,3 +1,8 @@
+2001-07-20  Felix Natter  <fnatter@gmx.net>
+
+	* gtypist.c (index_labels,do_goto): remove trailing whitespace in 
+	labels
+
 2001-06-11  Christian Weisgerber <naddy@openbsd.org>
 
 	* po/Makefile.in.in: now correctly uses DESTDIR

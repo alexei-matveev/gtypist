@@ -332,6 +332,7 @@ hash_label( char *label ) {
  */
 static void index_labels( FILE *script ) {
   char line[MAX_SCR_LINE];
+  char *line_iterator;
   struct label_entry	*new_label = NULL;	/* new label entry */
   struct label_entry	*list_tail[NLHASH];	/* tail tracking */
   int	hash;					/* hash index */
@@ -363,6 +364,14 @@ static void index_labels( FILE *script ) {
 	  if ( new_label == NULL )
 	    fatal_error( _("internal error: malloc"), line );
 	  
+	  /* remove trailing whitespace from line */
+	  line_iterator = line + strlen(line) - 1;
+	  while (line_iterator != line && isspace(*line_iterator))
+	    {
+	      *line_iterator = '\0';
+	      --line_iterator;
+	    }
+
 	  /* make some space for the label string */
 	  new_label->label =
 	    malloc( strlen( SCR_DATA( line )) + 1 );
@@ -1060,7 +1069,17 @@ do_clear( FILE *script, char *line ) {
   go to a label - the flag is used to implement conditional goto's
  */
 static void 
-do_goto( FILE *script, char *line, bool flag ) {
+do_goto( FILE *script, char *line, bool flag )
+{
+  char *line_iterator;
+
+  /* remove trailing whitespace from line */
+  line_iterator = line + strlen(line) - 1;
+  while (line_iterator != line && isspace(*line_iterator))
+    {
+      *line_iterator = '\0';
+      --line_iterator;
+    }
 
   /* reposition only if flag set - otherwise a noop */
   if ( flag ) 
