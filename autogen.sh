@@ -16,7 +16,7 @@
 (automake --version) < /dev/null > /dev/null 2>&1 || {
     echo
     echo "**Error**: You must have \`automake' installed."
-    echo "Get ftp://ftp.gnu.org/gnu/automake/automake-1.7.6.tar.bz2"
+    echo "Get ftp://ftp.gnu.org/gnu/automake/automake-1.7.7.tar.bz2"
     echo "(or a newer version if it is available)"
     exit 1
 }
