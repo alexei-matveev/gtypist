@@ -1,0 +1,142 @@
+Questions asked by Brave GNU World 
+----------------------------------
+
+ * What is it?
+
+   GNU Typist is a typing tutor. You can learn correct
+   typing with it and improve your skills by practicing
+   its exercises on a regular basis.
+
+ * Who would use it?
+
+   - Individuals who want to improve their typing skills.
+   - Educational institutions for their typing course
+     exercises.
+
+ * Why would they use it instead of similar projects?
+
+   This is mainly thanks to the GNU General Public license under which
+   is it released. I won't discuss all the interests of Free Software,
+   but here are the major ones I see for this tool...
+
+   - For individuals: 
+
+     o The program is freely available, and is already
+       installed in some GNU systems (such as Debian GNU / Linux)
+
+     o The program is been made by people using it, or according to the
+       needs expressed by users. 
+
+     o They can participate in improving the tool quality, by reporting bugs
+       and even propose improvements to the source code.
+
+   - For educational institutions, in addition to the above reasons:
+
+     o They can rely on the availability of this software, as nobody
+       can restrict their freedom to use it for their educational programs.
+       
+       Freeware typing programs are available at the moment, but their
+       owners can discontinue their distribution or their support without
+       any notice. You can't base your educational programs on such software. 
+
+       More generally, with proprietary software, you have no way to make sure 
+       that the software satisfies your needs. You depend one somebody else's
+       good will.
+
+       Using Free Software gives you freedom to modify the programs
+       according to your needs, or pay someone to do that. 
+
+     o Teachers will be able to rely on the course library delivered
+       with the software. As the lesson file format is simple, they
+       can easily write their own lessons (possibly from exercises they
+       have already written) 
+
+       This is a way of encouraging schools to share their
+       teaching materials and support education in developing countries,
+       who may neither have enough teachers nor funds to acquire proprietary
+       courses. 
+
+ * (Programming) language used in this project?
+
+   - C language. Compliant with GNU coding standards
+
+ * Special features/strengths?
+
+   - Available in several versions of Unix (including GNU/Linux) and Windows.
+   - It's extensible... lessons for other keyboards and languages
+     can be easily added.
+
+ * Special problems?
+
+   - May be tough to continue to support Win32 when new features such as
+     a GTK graphical interface or speech synthesis is implemented,
+     because of the lack of support of the new libraries to be used.
+     However, free operating systems are prioritary.
+
+ * Who is working on it?
+
+   o Ben Armstrong, Debian package maintainer  
+   o Rob Mars, development
+   o Felix Natter, development, German translation
+   o Michael Opdenacker, current project maintainer
+   o Dmitry Rutsky, development, Russian translation 
+
+   ... and lots of other contributors are listed in the `ChangeLog'
+    and `THANKS' files.
+
+ * History of the project?
+
+   - See the manual (http://www.gnu.org/software/gtypist/doc/gtypist.html)
+     for the complete history of this project. It started on VAX/VMS! 
+
+ * Plans for the close and distant future?
+
+   - See the http://www.gnu.org/software/gtypist/TODO.txt file.
+     It is a copy of the TODO file in the project sources.  
+
+ * Do you need help? If so: of what kind?
+
+   Yes, we need help!
+
+   - For supporting other languages in the interface.
+   - For coding and testing, or getting patches for today's code.
+   - For finding people (teachers, for example), who would write
+     new lessons.
+   - For finding old typing lessons in libraries, which copyrights
+     have expired (how long does it take for a copyright on
+     a written document to expire?). Once we have written lesson
+     files in the GNU Typist format from these old documents,
+     I guess there is no problem to copyleft these new files
+     under the GPL.
+
+ * Interesting/fun stories that might juice up the story?
+
+   - Nothing yet.
+
+ * Website/FTP addresses?
+
+   - All the online resources are documented at http://www.gnu.org/software/gtypist/
+
+ * License?!
+
+   - The GNU General Public License, for the software and all the files
+     included in its source tarball. It is copyrighted directly by the Free Software
+     Foundation.
+
+   - All the contributions to be added to the source tarball
+     (typically lesson files) must thus be released with the same license 
+     and copyright.
+   
+ * Standard documents to read in this context?
+
+   - Nothing yet.
+
+ * Anything you would like to see mentioned?
+
+   - Nothing yet.
+
+ * Answer to a question I forgot?
+ 
+   - Who shall I send my comments to?
+
+     o Your comments are all welcome! Please, send them to bug-gtypist@gnu.org
