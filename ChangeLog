@@ -1,3 +1,12 @@
+2001-08-31  Felix Natter  <f.natter@ndh.net>
+
+	* Makefile.am: add version.sh to EXTRA_DIST
+
+2001-08-30  Felix Natter  <f.natter@ndh.net>
+
+	* configure.in: now configure.in gets the version-number from
+	version.sh (as suggested by Michael)
+
 2001-08-23  Felix Natter  <f.natter@ndh.net>
 
 	* gtypist.c (main): change "skip back" to "go back" in
