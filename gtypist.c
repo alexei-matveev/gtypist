@@ -118,7 +118,8 @@ char *SKIPBACK_VIA_F_MSG;
 char *WANNA_REPEAT_MSG;
 char *SPEED_RAW;
 char *SPEED_ADJ;
-char *SPEED_PCERR;
+char *SPEED_PCT_ERROR;
+char *YN;
 
 #ifndef PACKAGE_DATA_DIR
 #define PACKAGE_DATA_DIR "."
@@ -311,9 +312,6 @@ fatal_error( char *message, char *line ) {
     wbkgdset( stdscr, 0 );
   clear(); refresh(); endwin();
   
-  /* print out the error message and stop */
-  /*  fprintf( stderr, "%s: %s, %s %d", argv0, _("line"), message,
-      global_line_counter );*/
   fprintf( stderr, "%s: %s %d: %s", argv0, _("line"), global_line_counter,
 	   message );
   if ( line != NULL )
@@ -600,7 +598,7 @@ static void display_speed( int total_chars, long elapsed_time, int errcount ) {
 	   adjusted_speed >= 0.01 ? adjusted_speed : 0.0 );
   move( SPEED_LINE + 1, COLS - strlen( message ) - 1 );
   ADDSTR_REV( message );
-  sprintf( message, SPEED_PCERR,
+  sprintf( message, SPEED_PCT_ERROR,
 	   (double)100.0*(double)errcount / (double)total_chars );
   move( SPEED_LINE + 2, COLS - strlen( message ) - 1 );
   ADDSTR_REV( message );
@@ -1305,13 +1303,15 @@ do_query( FILE *script, char *line, bool get_next_script_line )
       }
       
       /* no FKEY binding - check for Y or N */
-      if ( toupper( (char)resp ) == QUERY_Y ) 
+      if ( toupper( (char)resp ) == QUERY_Y ||
+	   toupper( (char)resp ) == YN[0] ) 
 	{
 	  ret_code = TRUE;
 	  global_resp_flag = TRUE;
 	  break;
 	}
-      if ( toupper( (char)resp ) == QUERY_N ) 
+      if ( toupper( (char)resp ) == QUERY_N ||
+	   toupper( (char)resp ) == YN[1] ) 
 	{
 	  ret_code = TRUE;
 	  global_resp_flag = FALSE;
@@ -1630,7 +1630,7 @@ print_help()
     "--version" };
   char *help[] = 
     { 
-      _("default maximum error percentage (default 3.0); valid values are between 0.0 and 100.0 (this can be changed in the script-file - but only to be stricter)"),
+      _("default maximum error percentage (default 3.0); valid values are between 0.0 and 100.0"),
       _("turn off WPM timer in drills"),
       _("use the terminal's hardware cursor"),
       _("cursor flash period P*.1 sec (default 10); valid  values are between 0 and 512; this is ignored if -t is specified"),
@@ -1646,7 +1646,7 @@ print_help()
   
   printf(_("`gtypist' is a typing tutor with several lessons for different keyboards and languages.  New lessons can be written by the user easily.\n\n"));
   printf("%s: %s [ %s... ] [ %s ]\n\n",
-	 _("Usage"),argv0,_("Options"),_("script_file"));
+	 _("Usage"),argv0,_("Options"),_("script-file"));
   printf("%s:\n",_("Options"));
   /* print out each line of the help text array */
   for ( loop = 0; loop < sizeof(help)/sizeof(char *); loop++ ) 
@@ -1654,7 +1654,7 @@ print_help()
       print_usage_item( op[loop], lop[loop], help[loop], 1, 8, 25, 75 );
     }
 
-  printf(_("\nIf not supplied, script_file defaults to '%s/%s'.\n")
+  printf(_("\nIf not supplied, script-file defaults to '%s/%s'.\n")
 	 ,PACKAGE_DATA_DIR,DEFAULT_SCRIPT);
   printf(_("The path $GTYPIST_PATH is searched for script files.\n\n"));
 
@@ -1705,7 +1705,7 @@ parse_cmdline( int argc, char **argv ) {
 	       || cl_default_error_max < 0.0
 	       || cl_default_error_max > 100.0 ) 
 	    {
-	      fprintf( stderr, _("%s: invalid max-error value\n"),
+	      fprintf( stderr, _("%s: invalid error-max value\n"),
 		       argv0 );
 	      exit( 1 );
 	    }
@@ -1818,19 +1818,49 @@ please see the file 'COPYING' supplied with the source code.\n\
 This is free software, and you are welcome to redistribute it\n\
 under certain conditions; again, see 'COPYING' for details.\n\
 This program is released under the GNU General Public License.");
+  /* this string is displayed in the mode-line when in a tutorial */
   MODE_TUTORIAL=_(" Tutorial ");
+  /* this string is displayed in the mode-line when in a query */
   MODE_QUERY=_("  Query   ");
+  /* this string is displayed in the mode-line when running a drill */
   MODE_DRILL=_("  Drill   ");
+  /* this string is displayed in the mode-line when running a speedtest */
   MODE_SPEEDTEST=_("Speed test");
   WAIT_MESSAGE=_(" Press Return to continue... ");
+  /* this message is displayed when the user has failed in a [DS]: drill */
   ERROR_TOO_HIGH_MSG=
     _("Your error-rate is too high. You have to achieve %.1f%%.");
+  /* this message is displayed when the user has failed in a [DS]: drill,
+     and an F:<LABEL> ("on failure label") is in effect */
   SKIPBACK_VIA_F_MSG =
     _("You failed this test, so you need to skip back to %s.");
+  /* this is used for queries. you can translate the keys as well
+     (if you translate msgid "YN" accordingly) */
   WANNA_REPEAT_MSG= _("Press Y to continue, N to repeat or Fkey12 to exit");
+  /* this must be adjusted to the right with one space at the end.
+     Leading whitespace is important because it is displayed in reverse
+     video because it must be aligned with the next two messages 
+     (it's best to run gtypist to see this in practice)   */
   SPEED_RAW=_(" Raw speed      = %6.2f wpm ");
+  /* this must be adjusted to the right with one space at the end.
+     Leading whitespace is important because it is displayed in reverse
+     video and because it must be aligned with the previous and next messages
+     (it's best to run gtypist to see this in practice)   */
   SPEED_ADJ=  _(" Adjusted speed = %6.2f wpm ");
-  SPEED_PCERR=_("            with %.1f%% errors ");
+  /* this must be adjusted to the right with one space at the end.
+     Leading whitespace is important because it is displayed in reverse
+     video and because it must be aligned with the next last two messages
+     (it's best to run gtypist to see this in practice)   */
+  SPEED_PCT_ERROR=_("            with %.1f%% errors ");
+  /* this is used to translate the keys for Y/N-queries. Must be two uppercase
+     letters. Y/N will still be accepted as well */
+  YN = _("YN");
+  if (strlen(YN) != 2 || !isupper(YN[0]) || !isupper(YN[1]))
+    {
+      fprintf( stderr, "%s: i18n problem: invalid value for msgid \"YN\": %s",
+	       argv0, YN );
+      exit( 1 );
+    }
   
   /* get our name for error messages */
   argv0 = argv[0] + strlen( argv[0] );

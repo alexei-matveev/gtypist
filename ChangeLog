@@ -1,3 +1,16 @@
+2001-08-13  Felix Natter  <f.natter@ndh.net>
+
+	* gtypist.c (main, do_query): add new translatable string `YN'
+	which is used to translate the keys in Y/N-queries (but Y/N are
+	still accepted as well)
+	* gtypist.c: replace SPEED_PC_ERR by SPEED_PCT_ERROR (pct is
+	the normal abbreviation for percent)
+	* gtypist.c: add some comments where _() appear, to help translators
+	(recent versions of xgettext put these comments in the po-files)
+	* gtypist.c (print_help): in help-string for --error-max, don't
+	mention that it can be overridden in the script-file (but that
+	is still mentioned in the manual)
+
 2001-08-12  Felix Natter  <f.natter@ndh.net>
 
 	* gtypist.c (do_error_max_set): if --error-max is specified
