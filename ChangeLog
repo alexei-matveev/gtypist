@@ -2,6 +2,11 @@
 
 	* gtypist.c: replaced '1998-2001' by `1998, 1999, 2000, 2001, 2002'
 	  in the copyright notices (following GNU guidelines).
+	* autogen.sh: made `help2man' mandatory for building sources.
+	* configure.in: suppressed the check for help2man, as the manual
+	  is now always created in the sources. 
+        * doc/fdl.texi: temporary hack of the original file, so that building
+	  works (to be fixed very soon).
 
 2002-04-16  Michael Opdenacker <michaelo@gnu.org>
 

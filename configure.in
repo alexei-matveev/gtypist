@@ -41,15 +41,7 @@ dnl internationalization macros
 AM_GNU_GETTEXT
 
 dnl manual page generation
-AC_CHECK_PROG(HELP2MAN, help2man, help2man, no)
-if (test "$HELP2MAN" = "no") then {
-  GEN_MAN="echo \"Without help2man, manual pages could not be generated. Use 'info gtypist' to access gtypist documentation.\" > gtypist.1"
-} 
-else
-{
-  GEN_MAN="help2man ./gtypist -o gtypist.1"
-}
-fi;
+GEN_MAN="help2man ./gtypist -o gtypist.1"
 
 dnl this is necessary for tools/gtypist-mode.el
 AM_PATH_LISPDIR
