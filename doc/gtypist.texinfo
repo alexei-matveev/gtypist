@@ -56,6 +56,9 @@ You can obtain GNU Typist from a friend or from Internet:
 @item Home page
 @url{http://www.gnu.org/software/gtypist/}
 
+@item On-line manual (updates between program releases)
+@url{http://www.gnu.org/software/gtypist/doc/}
+
 @item Developers' home page (CVS repository, tasks, support...)
 @url{http://savannah.gnu.org/projects/gtypist/}
 
@@ -875,8 +878,8 @@ project Structio.
 @item
 November 2000, accepted as a GNU package! Renamed to GNU Typist (or
 gtypist).
-@item In May 2001, Michael Opdenacker @email{michaelo@@gnu.org} became the
-new maintainer of the project. Project development is now hosted on
+@item In May 2001, Michael Opdenacker @email{michaelo@@gnu.org}, who learnt touch
+typing with GNU Typist, became the new maintainer. Project development is now hosted on
 @url{http://savannah.gnu.org/projects/gtypist/}.
 @end itemize
 
