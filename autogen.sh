@@ -47,7 +47,13 @@
 }
 
 # Generate lesson menus
-
+(gawk --version) < /dev/null > /dev/null 2>&1 || {
+    echo
+    echo "**Error**: The cvs version requires \`gawk' (awk won't do)."
+    echo "This is needed to build lessons/gtypist.typ."
+    echo "Write to bug-gtypist@gnu.org if you have problems with this."
+    exit 1
+}
 echo "creating lessons/gtypist.typ..."
 (cd lessons && gawk -f ../tools/typcombine q.typ r.typ t.typ v.typ u.typ d.typ m.typ s.typ n.typ > gtypist.typ)
 

@@ -1,3 +1,7 @@
+2002-09-21  Felix Natter  <fnatter@gmx.net>
+
+	* autogen.sh: exit if gawk isn't installed
+
 2002-09-15  Felix Natter  <fnatter@gmx.net>
 
 	* typefortune: allow (E)xit: have to add a *:END label
