@@ -1,10 +1,21 @@
+2001-12-10  Felix Natter  <f.natter@ndh.net>
+
+	* change CONFIRM_EXIT_MSG to include "[Y/N]"
+	* do_query_repeat: add 2nd parameter which indicates whether
+	"Next" is an option
+	* do_drill, do_speedtest: don't display a message saying
+	"Sorry, you can't skip this lesson". Instead, just don't make
+	"Next" be an option in the following call to do_query_repeat
+	* rename CONFIRM_EXIT_MSG to CONFIRM_EXIT_LESSON_MSG
+	because it isn't used to exit the program
+
 2001-12-09  Felix Natter  <f.natter@ndh.net>
 
-	* main: change REPEAT_NEXT_EXIT_MSG
+	* main: change REPEAT_NEXT_EXIT_MSG (longer)
 
 2001-12-08  Felix Natter  <f.natter@ndh.net>
 
-	* do_query_repeat: call do_query_simple (CONFIRM_EXIT_MSG) to let the
+	* do_query_repeat: call do_query_simple(CONFIRM_EXIT_MSG) to let the
 	user confirm (E)xit
 	* do_query_simple: new function
 	* wait_user: don't check for Fkeys. you can now quit a lesson

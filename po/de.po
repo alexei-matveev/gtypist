@@ -4,7 +4,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: typist 2.4.0beta1\n"
-"POT-Creation-Date: 2001-12-08 21:43+0100\n"
+"POT-Creation-Date: 2001-12-10 20:03+0100\n"
 "PO-Revision-Date: 2000-12-08 14:17+01:00\n"
 "Last-Translator: Felix Natter <fnatter@gmx.net>\n"
 "Language-Team: German <de@li.org>\n"
@@ -13,53 +13,53 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 
 #. print out the error message and stop
-#: gtypist.c:329
+#: gtypist.c:330
 msgid "line"
 msgstr "Zeile"
 
-#: gtypist.c:362
+#: gtypist.c:363
 msgid "data shortage"
 msgstr "zu wenig Daten"
 
-#: gtypist.c:364
+#: gtypist.c:365
 msgid "missing ':'"
 msgstr "':' fehlt"
 
-#: gtypist.c:370
+#: gtypist.c:371
 msgid "line too long for screen"
 msgstr "Zeile zu lang für den Bildschirm"
 
-#: gtypist.c:426 gtypist.c:440 gtypist.c:688
+#: gtypist.c:427 gtypist.c:441 gtypist.c:689
 msgid "internal error: malloc"
 msgstr "interner Fehler: malloc"
 
-#: gtypist.c:458
+#: gtypist.c:459
 msgid "label redefinition"
 msgstr "Neudefinition von Bezeichnern"
 
-#: gtypist.c:501 gtypist.c:1554
+#: gtypist.c:502 gtypist.c:1554
 #, c-format
 msgid "label '%s' not found"
 msgstr "Bezeichner '%s' nicht gefunden"
 
-#: gtypist.c:507 gtypist.c:899 gtypist.c:1128
+#: gtypist.c:508 gtypist.c:893 gtypist.c:1118
 msgid "internal error: fseek"
 msgstr "interner Fehler: fseek"
 
-#: gtypist.c:587
+#: gtypist.c:588
 #, c-format
 msgid "invalid key binding (%d:%s)"
 msgstr "ungültige Tastenkombination (%d:%s)"
 
-#: gtypist.c:589
+#: gtypist.c:590
 msgid "invalid function key number"
 msgstr "ungültige Funktionstastennummer"
 
-#: gtypist.c:626 gtypist.c:736 gtypist.c:971
+#: gtypist.c:627 gtypist.c:737 gtypist.c:968
 msgid "data exceeds screen length"
 msgstr "die Daten passen nicht auf den Bildschirm"
 
-#: gtypist.c:663
+#: gtypist.c:664
 msgid "instructions are limited to two lines"
 msgstr "Einführungen sind auf zwei Zeilen beschränkt"
 
@@ -302,18 +302,19 @@ msgstr "Deine Fehlerrate ist zu hoch. Du musst %.1f%% erreichen."
 msgid "You failed this test, so you need to go back to %s."
 msgstr "Der Test war nicht gut genug: zur Wiederh. zurück zu %s."
 
-#. this is used for repeat-queries. you can translate the keys as well
-#. (if you translate msgid "R/N/E" accordingly)
-#: gtypist.c:1935
-msgid "R to repeat, N for next or E to exit"
-msgstr "W um zu wiederholen, N für Nächste oder B für Beenden"
+#: gtypist.c:1936
+msgid "Press R to repeat, N for next exercise or E to exit"
+msgstr "Drücke W um zu wiederholen, N für nächste Übung oder B zum Beenden"
 
-#. This is used make the user confirm (E)xit in REPEAT_NEXT_EXIT_MSG
-#: gtypist.c:1937
-msgid "Are you sure you want to exit this lesson ?"
-msgstr "Willst du wirklich diese Lektion verlassen ?"
+#: gtypist.c:1940
+msgid "Press R to repeat or E to exit"
+msgstr "Drücke W um zu wiederholen oder B zum Beenden"
 
-#: gtypist.c:1941
+#: gtypist.c:1943
+msgid "Are you sure you want to exit this lesson? [Y/N]"
+msgstr "Willst du wirklich diese Lektion verlassen ? [J/N]"
+
+#: gtypist.c:1947
 msgid "Sorry, gtypist is configured to forbid skipping exercises."
 msgstr "Es ist nicht erlaubt, Übungen zu überspringen."
 
@@ -321,7 +322,7 @@ msgstr "Es ist nicht erlaubt, Übungen zu überspringen."
 #. Leading whitespace is important because it is displayed in reverse
 #. video because it must be aligned with the next two messages
 #. (it's best to run gtypist to see this in practice)
-#: gtypist.c:1946
+#: gtypist.c:1952
 #, c-format
 msgid " Raw speed      = %6.2f wpm "
 msgstr " Netto-Geschwindigkeit        = %6.2f wpm "
@@ -330,7 +331,7 @@ msgstr " Netto-Geschwindigkeit        = %6.2f wpm "
 #. Leading whitespace is important because it is displayed in reverse
 #. video and because it must be aligned with the previous and next messages
 #. (it's best to run gtypist to see this in practice)
-#: gtypist.c:1951
+#: gtypist.c:1957
 #, c-format
 msgid " Adjusted speed = %6.2f wpm "
 msgstr " Tatsächliche Geschwindigkeit = %6.2f wpm "
@@ -339,7 +340,7 @@ msgstr " Tatsächliche Geschwindigkeit = %6.2f wpm "
 #. Leading whitespace is important because it is displayed in reverse
 #. video and because it must be aligned with the next last two messages
 #. (it's best to run gtypist to see this in practice)
-#: gtypist.c:1956
+#: gtypist.c:1962
 #, c-format
 msgid "            with %.1f%% errors "
 msgstr "                          mit %.1f%% Fehlern "
@@ -348,16 +349,16 @@ msgstr "                          mit %.1f%% Fehlern "
 #. uppercase letters separated by '/'. Y/N will still be accepted as
 #. well. Note that the messages (prompts) themselves cannot be
 #. translated because they are read from the script-file.
-#: gtypist.c:1961
+#: gtypist.c:1967
 msgid "Y/N"
 msgstr "J/N"
 
 #. this is used to translate the keys for Repeat/Next/Exit
 #. queries. Must be three uppercase letters separated by slashes.
-#: gtypist.c:1971
+#: gtypist.c:1977
 msgid "R/N/E"
 msgstr "W/N/B"
 
-#: gtypist.c:2022
+#: gtypist.c:2028
 msgid "can't find or open file"
 msgstr "Datei nicht vorhanden oder nicht lesbar"

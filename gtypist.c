@@ -124,7 +124,8 @@ char *WAIT_MESSAGE;
 char *ERROR_TOO_HIGH_MSG;
 char *SKIPBACK_VIA_F_MSG;
 char *REPEAT_NEXT_EXIT_MSG;
-char *CONFIRM_EXIT_MSG;
+char *REPEAT_EXIT_MSG;
+char *CONFIRM_EXIT_LESSON_MSG;
 char *NO_SKIP_MSG;
 char *SPEED_RAW;
 char *SPEED_ADJ;
@@ -228,7 +229,7 @@ static void do_speedtest( FILE *script, char *line );
 static void do_clear( FILE *script, char *line );
 static void do_goto( FILE *script, char *line, bool flag );
 static void do_exit( FILE *script );
-static char do_query_repeat( FILE *script );
+static char do_query_repeat( FILE *script, bool allow_next );
 static bool do_query_simple( char *text );
 static bool do_query( FILE *script, char *line );
 static void do_error_max_set( FILE *script, char *line );
@@ -866,13 +867,6 @@ do_drill( FILE *script, char *line ) {
       if ( c == ASCII_ESC && chars_typed != 1)
 	continue; /* repeat */
 
-      /* honor --no-skip */
-      if ( c == ASCII_ESC && cl_no_skip ) 
-	{
-	  wait_user( NO_SKIP_MSG, MODE_DRILL );
-	  continue;
-	}
-
       /* skip timings and don't check error-pct if exit was through ESC */
       if ( c != ASCII_ESC )
 	{
@@ -914,7 +908,10 @@ do_drill( FILE *script, char *line ) {
 	}
 
       /* ask the user whether he/she wants to repeat or exit */
-      c = do_query_repeat (script);
+      if ( c == ASCII_ESC && cl_no_skip ) /* honor --no-skip */
+	c = do_query_repeat (script, FALSE);
+      else
+	c = do_query_repeat (script, TRUE);
       if (c == 'E') {
 	seek_done = TRUE;
 	break;
@@ -1098,13 +1095,6 @@ do_speedtest( FILE *script, char *line ) {
       if ( c == ASCII_ESC && chars_typed != 1)
 	continue; /* repeat */
 
-      /* honor --no-skip */
-      if ( c == ASCII_ESC && cl_no_skip ) 
-	{
-	  wait_user( NO_SKIP_MSG, MODE_DRILL );
-	  continue;
-	}
-
       /* skip timings and don't check error-pct if exit was through ESC */
       if ( c != ASCII_ESC )
 	{
@@ -1143,7 +1133,10 @@ do_speedtest( FILE *script, char *line ) {
 	}
 
       /* ask the user whether he/she wants to repeat or exit */
-      c = do_query_repeat (script);
+      if ( c == ASCII_ESC && cl_no_skip ) /* honor --no-skip */
+	c = do_query_repeat (script, FALSE);
+      else
+	c = do_query_repeat (script, TRUE);
       if (c == 'E') {
 	seek_done = TRUE;
 	break;
@@ -1245,9 +1238,10 @@ do_exit( FILE *script )
 /*
   Ask the user whether he/she wants to repeat, continue or exit
   (this is used at the end of an exercise (drill/speedtest))
+  The second argument is FALSE if skipping a lesson isn't allowed (--no-skip).
 */
 static char
-do_query_repeat ( FILE *script )
+do_query_repeat ( FILE *script, bool allow_next )
 {
   char resp;
 
@@ -1256,7 +1250,10 @@ do_query_repeat ( FILE *script )
   move( MESSAGE_LINE, COLS - strlen( MODE_QUERY ) - 2 );
   ADDSTR_REV( MODE_QUERY );
   move( MESSAGE_LINE, 0 );
-  ADDSTR_REV( REPEAT_NEXT_EXIT_MSG );
+  if (allow_next)
+    ADDSTR_REV( REPEAT_NEXT_EXIT_MSG );
+  else
+    ADDSTR_REV( REPEAT_EXIT_MSG );
 
   /* wait for [RrNnEe] (or translation of these) */
   while (TRUE)
@@ -1268,14 +1265,14 @@ do_query_repeat ( FILE *script )
 	resp = 'R';
 	break;
       }
-      if (toupper ((char)resp) == 'N' ||
-	  toupper ((char)resp) == RNE [2]) {
+      if (allow_next && (toupper ((char)resp) == 'N' ||
+			 toupper ((char)resp) == RNE [2])) {
 	resp = 'N';
 	break;
       }
       if (toupper ((char)resp) == 'E' || toupper ((char)resp) == RNE [4]) {
 	if (fkey_bindings [11] != NULL &&
-	    do_query_simple (CONFIRM_EXIT_MSG))
+	    do_query_simple (CONFIRM_EXIT_LESSON_MSG))
 	  {
 	    seek_label (script, fkey_bindings [11], NULL);
 	    resp = 'E';
@@ -1286,7 +1283,10 @@ do_query_repeat ( FILE *script )
 	move( MESSAGE_LINE, COLS - strlen( MODE_QUERY ) - 2 );
 	ADDSTR_REV( MODE_QUERY );
 	move( MESSAGE_LINE, 0 );
-	ADDSTR_REV( REPEAT_NEXT_EXIT_MSG );
+	if (allow_next)
+	  ADDSTR_REV( REPEAT_NEXT_EXIT_MSG );
+	else
+	  ADDSTR_REV( REPEAT_EXIT_MSG );
       }
     }
 
@@ -1934,8 +1934,13 @@ This program is released under the GNU General Public License.");
      (if you translate msgid "R/N/E" accordingly) */
   REPEAT_NEXT_EXIT_MSG= 
 	_("Press R to repeat, N for next exercise or E to exit");
+  /* this is used for repeat-queries with --no-skip. you can translate
+     the keys as well (if you translate msgid "R/N/E" accordingly) */
+  REPEAT_EXIT_MSG= 
+	_("Press R to repeat or E to exit");
   /* This is used make the user confirm (E)xit in REPEAT_NEXT_EXIT_MSG */
-  CONFIRM_EXIT_MSG= _("Are you sure you want to exit this lesson ?");
+  CONFIRM_EXIT_LESSON_MSG=
+    _("Are you sure you want to exit this lesson? [Y/N]");
   /* This message is displayed if the user tries to skip a lesson
      (ESC ESC) and --no-skip is specified */
   NO_SKIP_MSG= 
