@@ -46,6 +46,7 @@
 typedef struct _MenuNode
 {
    char *label;
+   int line;
    struct _MenuNode *next;
 }
 MenuNode;
@@ -59,7 +60,7 @@ static MenuNode *node_new ()
    if (!mn)
    {
       perror ("calloc");
-      fatal_error ("internal error: malloc", NULL);
+      fatal_error ("internal error: calloc", NULL);
    }
 
    return mn;
@@ -73,8 +74,6 @@ static void node_delete (MenuNode *mn)
    free (mn);
 }
 
-// NOTE:  it is very ineffecient approach in general, but it is quite
-// appropriate for this quick and dirty hack.
 static void append_menu_history (const char *label)
 {
    if (!label)
@@ -86,14 +85,13 @@ static void append_menu_history (const char *label)
       MenuNode *mn = start_node;
       do
       {
-	 if (!strcmp (label, (mn -> label)))
+	 if (global_line_counter == (mn -> line))
 	 {
 	    if (mn == last_node)
 	       return;
 
 	    // Go to the (same) old place
 	    last_node = mn;
-	    (last_node -> next) = NULL;
 
 	    mn = (mn -> next);
 	    while (mn)
@@ -102,6 +100,8 @@ static void append_menu_history (const char *label)
 	       node_delete (mn);
 	       mn = t;
 	    }
+
+	    (last_node -> next) = NULL;
 
 	    return;
 	 }
@@ -126,6 +126,8 @@ static void append_menu_history (const char *label)
       perror ("strdup");
       fatal_error ("internal error: strdup", NULL);
    }
+
+   (last_node -> line) = global_line_counter;
 }
 
 // Set the position of the script to the preceeding to the last_label,
@@ -147,10 +149,23 @@ static void prepare_to_go_back (FILE *script)
    if (!*(start_node -> next -> label))
       do_exit (script);
 
-   seek_label (script, (mn -> label), (last_node -> label));
    node_delete (last_node);
    (mn -> next) = NULL;
    last_node = mn;
+
+   if (!strcmp ((mn -> label), ""))
+   {
+      global_line_counter = 0;
+      rewind (script);
+   }
+   else
+      seek_label (script, (mn -> label), NULL);
+   
+   if (mn == start_node)
+   {
+      node_delete (start_node);
+      start_node = last_node = NULL;
+   }
 }
 
 /* TODO: check terminal setup/reset */
@@ -162,6 +177,7 @@ char *do_menu (FILE *script, char *line)
   int cur_choice = 0, max_width, start_y, columns;
   int start_idx, end_idx; /* visible menu-items */
   int items_first_column, items_per_page, real_items_per_column, spacing;
+  int has_up_label = 0;
 
   const int MENU_HEIGHT_MAX = LINES - 6;
 
@@ -171,11 +187,6 @@ char *do_menu (FILE *script, char *line)
   bind_F12 (__last_label);
 
   data = buffer_command (script, line);
-  /* e.g.:
-   data=' "A course for the beginners"
-   LESSON_1 "Lesson 1: home row keys"
-   LESSON_2 "Lesson 2: some more keys"
-   ' */
 
   /* data has a trailing '\n' => num_items = num_newlines - 1 
      (plus one item for UP or EXIT) */
@@ -204,6 +215,8 @@ char *do_menu (FILE *script, char *line)
     if (strcmp (up, "_exit") == 0 ||
 	strcmp (up, "_EXIT") == 0)
       up = NULL;
+
+    has_up_label = 1;
   }
 
   /* get title */
@@ -251,16 +264,6 @@ char *do_menu (FILE *script, char *line)
       i--;
     data[i] = 0; /* terminate description */
   }
-/*  if (up == NULL)
-  {
-    labels[k] = NULL;
-    descriptions[k] = _("Exit"); 
-  }
-  else
-  {
-    labels[k] = up;
-    descriptions[k] = _("Up");
-  }*/
       
   /* get the longest description */
   max_width = 0;
@@ -351,6 +354,8 @@ char *do_menu (FILE *script, char *line)
 	    }
 	}
 
+      wattroff (stdscr, A_REVERSE);
+
       ch = wgetch (stdscr);
       switch (ch)
 	{
@@ -432,7 +437,10 @@ char *do_menu (FILE *script, char *line)
 	case ASCII_ESC:
 	case 'q':
 	case 'Q':
-	  prepare_to_go_back (script);
+	  if (has_up_label)
+             seek_label (script, up, NULL);
+	  else
+	     prepare_to_go_back (script);
 	  goto cleanup;
 
 	default:
@@ -445,7 +453,7 @@ char *do_menu (FILE *script, char *line)
   wattroff (stdscr, A_REVERSE);
   if (labels[cur_choice] != NULL)
   {
-    seek_label (script, labels[cur_choice], line);
+    seek_label (script, labels[cur_choice], NULL);
     get_script_line( script, line );
   }
   else
@@ -455,5 +463,6 @@ cleanup:
   free (labels);
   free (descriptions);
   free (data);
+
   return NULL;
 }

@@ -1,3 +1,7 @@
+2003-10-31	Dmitry Rutsky	<rutsky@school.ioffe.rssi.ru>
+
+	* gtypist.texi:  updated the information about the `M' command.
+
 2003-10-25  Hynek Hanke  <hanke@volny.cz>
 
 	* gtypist-cs.texi: Renamed from gtypist.cs.texi. The reason is not

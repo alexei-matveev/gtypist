@@ -1499,6 +1499,7 @@ parse_file( FILE *script, char *label ) {
 	case C_KEYBIND:	do_keybind( script, line ); break;
 	  
 	case C_LABEL:
+	   __update_last_label (SCR_DATA (line));
 	   get_script_line (script, line);
 	   break;
 	case C_ERROR_MAX_SET: do_error_max_set( script, line ); break;
@@ -2017,4 +2018,3 @@ This program is released under the GNU General Public License.");
   /* for lint... */
   return( 0 );
 }
-

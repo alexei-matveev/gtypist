@@ -1,4 +1,4 @@
-# !/usr/bin/gtypist
+#! /usr/bin/gtypist
 #
 #	GNU Typist Russian touch typing course, version 0.2.
 #	

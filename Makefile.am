@@ -7,7 +7,7 @@
 
 AUTOMAKE_OPTIONS = 1.7.7 dist-bzip2
 
-SUBDIRS= po lessons tools doc src
+SUBDIRS= po intl lessons tools doc src
 
 man_MANS = typefortune.1
 

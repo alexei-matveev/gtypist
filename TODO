@@ -14,6 +14,8 @@ Your suggestions are welcome too!
 
 SHORT TERM
 
+ * Show correct line numbers when nonexistent label was hit in the M command.
+
  * I'd like an option that only enabled wordwrapping.  The -w option does
    enable wordwrapping, but it also changes how paragraph breaks and
    spaces after periods are handled, which I don't want.

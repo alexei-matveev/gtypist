@@ -1,3 +1,16 @@
+2003-10-31	Dmitry Rutsky	<rutsky@school.ioffe.rssi.ru>
+
+	* version.sh, autogen.sh, configure.in:  a better handling of version
+	  definition.  Changed AC_INIT macro to handle current AC_INIT
+	  semantics.
+	* Makefile.am:  added `intl' to SUBDIRS to fix broken distribution.
+	* lessons/ru.typ:  `#! /' typo was fixed.
+	* src/cursmenu.c:  up-label, if present, now works as described in
+	  the manual.  Most of the problems with ESCAPE key handling were
+	  fixed.  Error messages in case of a nonexistent label will no
+	  longer contain irrelevant script lines...
+	* TODO:  ...nonetheless the line number is still irrelevant.
+
 2003-10-26  Hynek Hanke  <hanke@volny.cz>
 
 	* autogen.sh (gettexth): Added a search for gettext.h in /usr/ as Dmitry

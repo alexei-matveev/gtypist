@@ -441,22 +441,35 @@ like a two-line @code{T}.
 This command is the new way to create menus (since gtypist 2.7). 
 Here is the syntax:
 @example
-M: [UP=(LABEL|_EXIT)] "title"
- :LABEL1 "description1"
- :LABEL2 "description2"
+M: [UP=RETURN_LABEL|_EXIT] "title"
+ :LABEL1 "item1"
+ :LABEL2 "item2"
  ...
 @end example
 
-The UP-label indicates the parent-menu's label which defines the last
-menu-item (if it's _EXIT ``Exit'', else the last menu-item ``Up'' will
-jump to the specified label). It is optional: if it is not supplied,
-the special value _EXIT is used.
+This will display a convenient menu made from the specified items and let the
+user to choose from them.  If an item was selected, gtypist will continue script
+execution from the corresponding label.  If the Escape key was pressed and
+@code{UP} label is defined, gtypist will go to the @code{UP} label likewise, or
+quit from, if there is @code{``_EXIT''} in the place of the label.  If
+the @code{UP} label is not defined, gtypist will try to return to the
+previous menu and jump to the last label met in the script before previous
+@code{M} command.  If there is no such label and some menu was displayed
+before the current one, gtypist will just go to the beginnig of the script.
+If none of the previous conditions were met, gtypist will just exit from the
+script.
+
+The above details make it natural to create menu hierarchies without using
+@code{UP} labels.
 
 The title and all descriptions must be wrapped in quotes ("").
-Additionally, there must be at least one space between UP=XXX and
+Additionally, there must be at least one space between @code{UP=XXX} and
 "title" and between the labels and the corresponding descriptions.
 
-See the existing lesson-files for examples.
+This command was introduced as an easy way to arrange various parts of lesson
+files into single menu hierarchy which can be easily navigated, as well as a
+replacement for ancient @code{F}-key menus.  See the existing lesson-files for
+examples.
 
 @c TODO: more information about ``should be used for''...
 @item D,d

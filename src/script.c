@@ -117,9 +117,6 @@ void get_script_line( FILE *script, char *line )
 	   && strlen( SCR_DATA( line )) > COLS )
 	fatal_error( _("line too long for screen"), line );
     }
-
-  if (SCR_COMMAND (line) == '*')
-     __update_last_label (SCR_DATA (line));
 }
 
 /*
@@ -132,13 +129,7 @@ char *buffer_command( FILE *script, char *line ) {
   /* get the complete exercise into a single string */
   do 
     {
-      
-      /* allocate space for the extra data */
-      if ( total_chars == 0 )
-	data = (char*)malloc( strlen(SCR_DATA( line )) +
-			      strlen(STRING_NL) + 1 );
-      else
-	data = (char*)realloc( data, strlen( data ) +
+      data = (char*)realloc( data, (data ? strlen( data ) : 0) +
 			       strlen(SCR_DATA( line )) +
 			       strlen(STRING_NL) + 1 );
       if ( data == NULL )
