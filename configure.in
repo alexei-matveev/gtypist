@@ -10,6 +10,7 @@ AM_INIT_AUTOMAKE(gtypist, "`cat version.sh|grep '^VERSION'|awk -F= '{print $2}'`
 AM_CONFIG_HEADER(config.h)
 
 # Checks for prograns
+
 AC_PROG_AWK
 AC_PROG_CC
 AC_ISC_POSIX
@@ -20,30 +21,29 @@ AC_PROG_RANLIB
 AC_PROG_YACC
 
 # Set of available languages.
+
 ALL_LINGUAS="de cs es fi fr ru zh_TW"
 
 # Checks for libraries.
-AC_CHECK_LIB(curses, wbkgdset,
-  [AC_DEFINE(HAVE_LIBCURSES, 1, [Is curses available])
-  HAVE_LIBCURSES=yes
-  LIBS="-lcurses $LIBS"])
-# check for ncurses if curses is not found:
-# i.e. on SuSE there are no ncurses* -> curses* links
-if test -z $HAVE_LIBCURSES;
-then
-	AC_CHECK_LIB(ncurses, wbkgdset,, echo "*** The curses or ncurses library is required!";exit 1)
-fi
+# Special curses or ncurses checks
+
+AC_CHECK_LIB(ncurses, wbkgdset, [AC_CHECK_HEADERS(ncurses/curses.h)],
+  [AC_CHECK_LIB(curses, wbkgdset, [AC_CHECK_HEADERS(curses.h)],
+               [echo "*** Either the ncurses or the curses library is required!"; exit 1])])
 
 # Checks for header files.
+
 AC_HEADER_STDC
-AC_CHECK_HEADERS([unistd.h alloca.h argz.h curses.h errno.h fcntl.h langinfo.h libintl.h limits.h locale.h malloc.h stddef.h stdlib.h string.h strings.h sys/param.h unistd.h])
+AC_CHECK_HEADERS([unistd.h alloca.h argz.h errno.h fcntl.h langinfo.h libintl.h limits.h locale.h malloc.h stddef.h stdlib.h string.h strings.h sys/param.h unistd.h])
 
 # Checks for typedefs, structures, and compiler characteristics.
+
 AC_C_CONST
 AC_C_INLINE
 AC_TYPE_SIZE_T
 
 # Checks for library functions.
+
 AC_PROG_GCC_TRADITIONAL
 AC_FUNC_ALLOCA
 AC_FUNC_MALLOC
@@ -51,15 +51,19 @@ AC_TYPE_SIGNAL
 AC_FUNC_STRTOD
 AC_CHECK_FUNCS([__argz_count __argz_next __argz_stringify dcgettext getcwd getwd mempcpy memset munmap nl_langinfo setlocale stpcpy strcasecmp strchr strcspn strdup strstr strtoul])
 
-# internationalization macros
+# Internationalization macros
+
 AM_GNU_GETTEXT
 
-# manual page generation
-GEN_MAN="help2man ./gtypist -o gtypist.1"
+# Manual page generation
 
-# this is necessary for tools/gtypist-mode.el
+GEN_MAN="help2man ./gtypist -o gtypist.1"
+AC_SUBST(GEN_MAN)
+
+# This is necessary for tools/gtypist-mode.el
+
 AM_PATH_LISPDIR
 
-AC_SUBST(GEN_MAN)
+# Generate files
 
 AC_OUTPUT(lessons/Makefile tools/Makefile doc/Makefile Makefile) 
