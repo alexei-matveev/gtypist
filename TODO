@@ -14,6 +14,8 @@ Your suggestions are welcome too!
 
 SHORT TERM
 
+ * Make `typefortune' available in <prefix>/bin?
+
  * Support UTF-8, as today
    1) charsets of the file and terminal must be the same;
    2) they have to have no wide characters
