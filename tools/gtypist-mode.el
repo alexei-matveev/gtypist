@@ -83,6 +83,10 @@
 ;; Sat Aug 11 18:08:56 2001: color "[Dd]efault" (as in "E: default")
 ;; Tue Aug 14 18:22:34 2001: rename gtypist-mode-help to gtypist-mode-info
 ;; Sun Sep  2 16:36:20 2001: put point after ':' in gtypist-mode-indent-line
+;; Wed Oct 10 16:48:59 2001: omit the last two arguments from call to
+;; completing-read to support XEmacs
+;; Fri Oct 12 17:36:22 2001: change gtypist-mode-goto-label to C-c M-g
+;; because XEmacs interprets C-c C-g as (keyboard-quit)
 
 ;; TODO:
 ;; - gtypist-mode-goto-label-history, gtypist-mode-lesson-name-history ?
@@ -125,7 +129,7 @@
   (define-key gtypist-mode-map "\C-c\C-r" 'gtypist-mode-insert-hrule)
   (define-key gtypist-mode-map "\C-c\C-b" 'gtypist-mode-insert-banner)
   (define-key gtypist-mode-map "\C-c\C-l" 'gtypist-mode-next-label)
-  (define-key gtypist-mode-map "\C-c\C-g" 'gtypist-mode-goto-label)
+  (define-key gtypist-mode-map "\C-c\M-g" 'gtypist-mode-goto-label)
   (define-key gtypist-mode-map "\C-c\C-i" 'gtypist-mode-info))
 
 (defun gtypist-mode-in-drill-text-p()
@@ -300,9 +304,10 @@ available). Use C-u prefix to get S:, and C-u C-u to get d:."
 	     nil))))
     (if (string-equal label "NULL")
 	(setq label nil))
+	;; omit "" t) from call to completing-read for the sake of xemacs
     (setq label (completing-read "Goto label: " labels nil t label
-				 ;; history
-				 nil nil))
+								 ;; history
+								 nil))
     (goto-char (cdr (assoc label labels)))
     ))
 

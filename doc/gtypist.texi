@@ -671,7 +671,7 @@ This shows gtypist's texinfo-documentation, starting at node
 ``Script file commands'' (@pxref{Script file commands}). With prefix,
 start at the top-node.
 
-@item C-c C-g, M-x gtypist-mode-goto-label
+@item C-c M-g, M-x gtypist-mode-goto-label
 Query for a label to go to (with completion).
 
 @item C-c C-l, M-x gtypist-mode-next-label
