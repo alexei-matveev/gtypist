@@ -27,9 +27,10 @@
 #else
 #include <ncurses.h>
 #endif
-#include "gettext.h"
-
 #include <stdlib.h>
+
+#include "gettext.h"
+#define _(String) gettext (String)
 
 char *argv0 = NULL;
 

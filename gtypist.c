@@ -26,12 +26,14 @@
 #include <stdio.h>
 #include <ctype.h>
 #include <signal.h>
+
 /* necessary on SuSE there are no ncurses* -> curses* links */
 #ifdef HAVE_LIBCURSES
 #include <curses.h>
 #else
 #include <ncurses.h>
 #endif
+
 #include <time.h>
 #include <errno.h>
 #include <string.h>
@@ -42,8 +44,10 @@
 #include "cursmenu.h"
 #include "script.h"
 #include "error.h"
-#include "gettext.h"
 #include "gtypist.h"
+
+#include "gettext.h"
+#define _(String) gettext (String)
 
 /* VERSION and PACKAGE defined in config.h */
 

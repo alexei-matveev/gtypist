@@ -26,13 +26,15 @@
 #else
 #include <ncurses.h>
 #endif
-#include "gettext.h"
 #include "error.h"
 #include "gtypist.h"
 
 #include <stdlib.h>
 #include <string.h>
 #include <ctype.h>
+
+#include "gettext.h"
+#define _(String) gettext (String)
 
 #define max(x,y) (((x)>(y)) ? (x) : (y))
 #define min(x,y) (((x)<(y)) ? (x) : (y))
