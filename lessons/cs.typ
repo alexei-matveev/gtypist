@@ -2582,7 +2582,7 @@ D:das fùl klas kùl jak kajak fùj
 I:Procvièování není nikdy dost.
 *:_T_R_L21
 #                                                             ../orig/t.typ:99
-D:asdf jklù fdsa ùlkj fjdkslaù klas slak fjùs
+D:asdf jklù fdsa ùlkj fjdk slaù klas slak fjùs
 
 #                                                             ../orig/t.typ:98
 I:Poslední cvièení. Dejte si zále¾et.
@@ -2941,7 +2941,7 @@ D:Kolik je? Je rak ok?
 I:Za znakem otazníku v¾dy vynecháváme mezeru.
 *:_T_R_L68
 #                                                            ../orig/t.typ:231
-D:Kde je suk? Suk je dole.
+D:Kde je sok? Sok je dole.
 
 I:Poslední.
 *:_T_R_L69
@@ -2996,30 +2996,29 @@ I:Vychýlením prstu z J dolù maèkáme N.
 D:jjj jnj jjj nnn jjj jnj jjj
  :jjj nnn jjj nnn jn jn nj nj
 
-I: Stále dbejte na rytmus.
+I:Stále dbejte na rytmus.
 *:_T_R_L77
-#                                                            ../orig/t.typ:251
+#                                                             ../orig/t.typ:251
 D:jnj ne jnj ton jnj nej jnj
  :jnj Nero jnj ona jnj nasolit jnj
  :Nikdo to nejedl.
-
-I: V pøí¹tí lekci zkusíme diakritiku. Musíme tedy dùkladnì v¹e procvièit.
+sdfsdf
+I:Zkusíme nìjaké vìty.
 *:_T_R_L78
 #                                                            ../orig/t.typ:251
 D:Kolik je to rokù?
- :jde, fouka, pole, rak, kriket, rek. foukat.
+ :jde, foka, pole, rak, kriket, rek. fidlat.
  :Nikdo to nejedl.
  :TotO JsoU TrNy.
  :Ted neni diakritika a nejde psat poradne.
 
-
 I: V pøí¹tí lekci zkusíme diakritiku. Musíme tedy dùkladnì v¹e procvièit.
 *:_T_R_L79
 #                                                            ../orig/t.typ:251
-D:jde, fouka, pole, rak, kriket, rek. foukat.
+D:jde, pole, rak, kriket, rek. fidlat.
  :Kus kere je s trny.
- :Hned dostala hlad. Neji salat, nesnasi susenky.
- :Google.Org je na Internetu.
+ :Hned dostala hlad. Neji salat, nesnasi ani jidla na soji.
+ :Google.Org je na Internet.
 
 G:_T_E_T5
 #------------------------------------------------------------------------------
@@ -3048,7 +3047,7 @@ D:fff øøø føf føf øfø fføø øøff føfføfføf fføfføøøføf
  :siø øik øil poø øepa aøs pøe døe tøe
  :øeka høeje los pøeje tøe rø rø r
 
-I:ý pí¹eme vychýlením prstu na klávese J prudce nahoru
+I:ý pí¹eme vychýlením prstu na klávese J prudce nahoru.
 *:_T_R_L82
 D:jjj ýýý jjj ýýý jýj jýj jjýý ýýjj jýj ýjý
  :j ý rýha sýr dýr kýr dýka týkat se
@@ -3062,20 +3061,18 @@ I:ì pí¹eme výrazným vychýlením A-prstu nahoru.
 *:_T_R_L84
 D:a ì a ì a ì a ì a aì aì aì dì fì aì
  :a ì pìst nìkolik tìsno aì oì lì jì
-
-I:ì = A-prstem hodnì nahoru. S prst musí zùstat na S!
  :tìsto stolek gìpoi eìrì pøesto sì
  :aì sì dì fì jì kì lì ùì gì hì tìsto
 
 I:í pí¹eme prstem na K.
 *:_T_R_L85
 D:k í k í k í kí kík kík íkí íkí kkíí íkí
- :líto lípa díkes fíkus píka pika snílek
+ :líto lípa díkes fík píka pika snílek
 
 I:Teï v¹e dohromady. Prsty se musejí v¾dy vracet do základní polohy.
 *:_T_R_L86
 D:í ì ø ý ø ì í ø ý ì í ì
- :dítì, øíkat, pøít se, mìsto, pøíchod nìkoho.
+ :dítì, øíkat, pøít se, tìsto, pøíchod nìkoho.
 
 I:Zkusíme vìty. Vychylování prstù do diakritické øady vám velmi
  :ulehèí správné pokrèení prstù v pozici základního postavení.
@@ -3099,7 +3096,7 @@ D:pýr párat tápat, klást klíny.
 
 I:... a nepropadejte panice :)
 *:_T_R_L91
-D:pøísada, náhoda, pìt øíkanek, kánoe, dálava
+D:pøísada, náhoda, pìt øíkanek, kánoe, dálka
  :psát hnít tì øeka hýkat pøe látka práskat
 
 I:è pí¹eme vychýlením prstu na D. Prsty S a F musí zùstat.
@@ -3117,14 +3114,14 @@ I:é pí¹eme L prstem a è D prstem
 D:èert hadé klika kleè èelké jépane fér èièinka
  :èé éè péèko pýøí se éèko øada béèko
 
-I:Zkusíme vìtu
+I:Zkusíme vìtu.
 *:_T_R_L95
 D:Tahle èíèa dnes nebude papat mlíèko.
  :Policisté øíkají, to není tak snadné.
 
 I:Dáme test na rychlost.
 *:_T_R_L96
-S:Národ èeský není hloupý. Je dost inteligentní.
+S:Národ èeský není neinteligentní. Je dost inteligentní.
  :Psaní je dost lehké. Jen potøebuje hbitost.
 
 I:Posledním písmenem v této lekci je ¹. Pí¹eme jej S-prstem.
@@ -3135,7 +3132,7 @@ D:sss ¹¹¹ s¹s s¹s s¹s ss ¹¹ ¹s¹ ¹¹¹ s¹s¹
 I:Dejte si pozor, abyste pøi vychylování S-prstu nemaèkali jiné klávesy.
 *:_T_R_L98
 D:kalný hloupá ¹ik èaèa pì¹ky breèet
- :Ná¹ ¹ik si to ¹trapádil touhle øekou.
+ :Ná¹ ¹ik si to ¹trapádil pøes øeèi¹tì.
 
 
 G:_T_E_T6
@@ -3156,19 +3153,19 @@ I: Lekce 7
 
 I:Nejprve opakování.
 *:_T_R_L99
-D:fff jjj ùjù dklù kladù kulo ules resk
- :èeský pøesný ¹i¹lat pøe¹krtnout
+D:fff jjj ùjù dklù kladù kel les resk
+ :èeský pøesný ¹i¹lat pøe¹krtni
 
 I:Nejprve opakování.
 *:_T_R_L100
 D:Kolik je hodin? Jak to jde? Je to ok.
- :Stane se to, ale je to hloupost.
+ :Stane se to, ale to jen nìkde.
  :Nesná¹í posádku lodi Kìsta.
 
 I:¾ maèkáme prstem na F vychýleným prudce vpravo nahoru.
 *:_T_R_L101
 D:fff ¾¾¾ fff ¾¾¾ f¾f f¾f ¾f¾ ¾f¾ f¾f h¾h j¾h
- :¾i¾lat, ¾u¾lat ¾í¾nit øe¾a p¾alk, ¾í¾ala
+ :¾i¾lat, ¾i¾lat ¾í¾nit øe¾a p¾alk, ¾í¾ala, pl¾i
 
 I:Je to úplnì nejdel¹í pøehmat na klávesnici.
 *:_T_R_L102
@@ -3185,11 +3182,11 @@ D:lll l:l lll ::: lll l:l lll
 I:Za dvojteèkou v¾dy následuje dvojitá mezera.
 *:_T_R_L104
 #                                                            ../orig/t.typ:255
-D:: Drahá Petro:  Drahý Jane:
+D:Test:  Drahá Petro:  Drahý Jane:
 
 *:_T_R_L105
 #                                                            ../orig/t.typ:256
-D:Drahý Dr. Stone: K Hilbertu:
+D:Drahý Dr. Stone:  K Hilbertu:
 
 *:_T_R_L106
 #                                                            ../orig/t.typ:271
@@ -3214,22 +3211,22 @@ T:			Rychlostní zkou¹ky
 I:Zkuste tuto vìtu:
 *:_T_R_L107
 #                                                            ../orig/t.typ:273
-S:Sarah zkou¹ela psát test.
+S:Sarah psala test.
 
 #                                                            ../orig/t.typ:274
 I:Tato vìta je tro¹ku del¹í.
 *:_T_R_L108
 #                                                            ../orig/t.typ:275
-S:Není to ani tro¹ku snadné, ale snad to nebude ani tak tì¾ké.
+S:Není to ani tro¹ka snadné, ale snad to není ani tak tì¾ké.
 
 #                                                            ../orig/t.typ:277
 I:Pøi opisování víceøádkového odstavce musíte ka¾dý øádek
  :ukonèit stiskem klávesy ENTER.
 *:_T_R_L109
 #                                                            ../orig/t.typ:280
-S:Tihle lidé snad nemohli postoupit ani tro¹ku.
+S:Tihle lidé snad nemohli pokroèit ani tro¹ku.
  :Poka¾dé to bylo ¹patnì, zda dìlali to èi ono.
- :Je to dost hloupá náhoda, ale bylo to tak.
+ :Je to dost náhoda, ale bylo to tak.
 
 I:Chcete si zkusit anglický odstavec? Nebudete muset pou¾ívat
  :diakritiku. Je to snaz¹í.
@@ -3237,7 +3234,7 @@ I:Chcete si zkusit anglický odstavec? Nebudete muset pou¾ívat
 #                                                            ../orig/t.typ:285
 S:One fine afternoon the king had an idea. He
  :sent a letter to all the lords and ladies of
- :his land. He asked for a great feast.  His
+ :his land. He asked for a great feast. His
  :people prepared roasts. His jester did a jig.
  :All the people left hoping to do it again.
 
@@ -3258,7 +3255,7 @@ D:jkj fdf jlj fsf jùj faf kik ded frf
 #                                                            ../orig/t.typ:293
 D:fgf jhj k,k l.l AùA FùF EùE
  :lol ùpù JaJ :a: ftf jnj ù:ù
- :teda hloupý kalný èilá ¹ila pìní
+ :teda nekalý kalný èilá ¹ila pìní
 
 #                                                            ../orig/t.typ:295
 I:Písmeno B pí¹eme vychýlením prstu na F hodnì doprava dolù.
@@ -3399,7 +3396,7 @@ D:Minulý pátek se stala pøíhoda, na kterou nemohu nepo-
  :myslet. Je to tak, ale nikdo mi to neba¹tí.
 
 #                                                            ../orig/t.typ:351
-I:Pou¾ívá se i k oddìlení vsuvky ve vìtì:
+I:Dlouhá pomlèka se pou¾ívá k oddìlení vsuvky ve vìtì:
 *:_T_R_L132
 #                                                            ../orig/t.typ:352
 D:Není to tak snadné -- chtìl jsem øíci, mohlo to být hor¹í -- ale jde to.
