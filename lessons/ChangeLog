@@ -1,8 +1,13 @@
-2003-11-23	Dmitry Rutsky	<rutsky@school.ioffe.rssi.ru>
+2003-12-28  Michael Opdenacker <michaelo@gnu.org>
+
+	* r.typ: corrected "may" by "many" on line 1198
+	  (Reported by Sayan <Sebastien.Li-thiao-te@crans.org>)
+
+2003-11-23  Dmitry Rutsky <rutsky@school.ioffe.rssi.ru>
 
 	* kten.typ:  fixed several too long lines.
 
-2003-08-31  Rob Leslie  <rob@mars.org>
+2003-08-31  Rob Leslie <rob@mars.org>
 
 	* cs.typ, m.typ: Fixed a few small typos.
 
@@ -10,21 +15,21 @@
 
 	* d.typ: Fixed 2 small typos, reported by Rob Leslie <rob@mars.org>
 
-2003-04-14	Hynek Hanke	<hanke@volny.cz>
+2003-04-14  Hynek Hanke	<hanke@volny.cz>
 
 	* cs.typ: Removed unnecessary K: commands.
 
-2003-04-14  Felix Natter  <fnatter@gmx.net>
+2003-04-14  Felix Natter <fnatter@gmx.net>
 
 	* v.typ, u.typ, t.typ, s.typ, r.typ, q.typ, n.typ, m.typ, f.typ:
 	remove useless K:12:.*
 
-2003-04-06  Felix Natter  <fnatter@gmx.net>
+2003-04-06  Felix Natter <fnatter@gmx.net>
 
 	* esp.typ: use M: everywhere
 	* demo.typ: add a menu
 
-2003-04-05  Felix Natter  <fnatter@gmx.net>
+2003-04-05  Felix Natter <fnatter@gmx.net>
 
 	* v.typ, u.typ, t.typ, s.typ, r.typ, q.typ, n.typ, m.typ, f.typ:
 	move to M:
