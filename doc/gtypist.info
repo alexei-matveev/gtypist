@@ -829,8 +829,9 @@ isn't available, as is the case on windows).
 to quickly create new drills for you to practice with.
 
    Once you installed `gtypist-mode.el' (*note Emacs mode for editing
-gtypist-lessons::), you can run `C-c C-f' to create a drill (`O:' by
-default, use `C-u' or `C-u C-u' prefix to change).
+gtypist-lessons::), you can open a file with ".typ" extension and run
+`C-c C-f' to create a drill (`O:' by default, use `C-u' or `C-u C-u'
+prefix to change).
 
 
 File: gtypist.info,  Node: Emacs mode for editing gtypist-lessons,  Next: Technical Information,  Prev: How to contribute new lessons,  Up: Top
@@ -847,17 +848,20 @@ banners, special comments and a bit more.
 `/usr/share/doc/gtypist' if you are using the debian package) to
 wherever you put your local elisp-files (e.g. `~/elisp') and put this
 in your `~/.emacs' (adapt path!):
+
      (autoload 'gtypist-mode "~/elisp/gtypist-mode")
-   or put it in `load-path' and use this instead:
+
+   or put it in `load-path' (`make install' in the sources should take
+care of this for GNU Emacs) and use this instead:
+
      (autoload 'gtypist-mode "gtypist-mode")
+
    *and* add this to your `~/.emacs':
+
      (setq auto-mode-alist
            (cons '("\\.typ\\'" . gtypist-mode) auto-mode-alist))
-   If you want to, you can then byte-compile the file using `M-x
-byte-compile-file'.
 
-   All this is also mentioned in the README-section in
-`tools/gtypist-mode.el'.
+Here are the commands along with the keybindings:
 
 `C-c C-g, M-x gtypist-mode-goto-label'
      Query for a label to go to (with completion).
@@ -886,7 +890,7 @@ byte-compile-file'.
      `fortune' isn't available). Use `C-u' prefix to get `P:', and `C-u
      C-u' to get `D:'.
 
-   Run `C-h m' for a complete list of commands and their keybindings.
+Run `C-h m' for a complete list of commands and their keybindings.
 
    If you find bugs or if you think there's something else this mode
 could do, please write to <bug-gtypist@gnu.org>.
@@ -1020,10 +1024,10 @@ Node: Supplied lessons32420
 Node: How to contribute new lessons33525
 Node: Ktouch-lessons33852
 Node: Create drills from fortune36104
-Node: Emacs mode for editing gtypist-lessons36778
-Node: Technical Information39085
-Node: Environment Variables39316
-Node: Errors and omissions41421
-Node: History42138
+Node: Emacs mode for editing gtypist-lessons36816
+Node: Technical Information39081
+Node: Environment Variables39312
+Node: Errors and omissions41417
+Node: History42134
 
 End Tag Table

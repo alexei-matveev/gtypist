@@ -1,3 +1,8 @@
+2001-07-28  Felix Natter  <f.natter@ndh.net>
+
+	* node Emacs mode for editing gtypist-lessons: mention that
+	"make install" puts gtypist-mode.el in load-path
+
 2001-07-27  Felix Natter  <f.natter@ndh.net>
 
 	* node How to contribute new lessons: add menu with nodes

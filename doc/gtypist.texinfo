@@ -863,9 +863,10 @@ Besides being used for creating new lessons, this command can be used
 to quickly create new drills for you to practice with.
 
 Once you installed @file{gtypist-mode.el} 
-(@pxref{Emacs mode for editing gtypist-lessons}), you can run @kbd{C-c
-C-f} to create a drill (@code{O:} by default, use @kbd{C-u} or
-@kbd{C-u C-u} prefix to change).
+(@pxref{Emacs mode for editing gtypist-lessons}), you can open a file
+with ``.typ'' extension and run @kbd{C-c C-f} to create a drill
+(@code{O:} by default, use @kbd{C-u} or @kbd{C-u C-u} prefix to
+change).
 
 @node Emacs mode for editing gtypist-lessons, Technical Information, How to contribute new lessons, Top
 @chapter Emacs mode for editing gtypist-lessons
@@ -879,23 +880,34 @@ Copy this file from @file{tools/gtypist-mode.el}
 (or @file{/usr/share/doc/gtypist} if you are using the debian package) to
 wherever you put your local elisp-files (e.g. @file{~/elisp}) and put
 this in your @file{~/.emacs} (adapt path!):
+
 @lisp
 (autoload 'gtypist-mode "~/elisp/gtypist-mode")
 @end lisp
-or put it in @code{load-path} and use this instead:
+
+or put it in @code{load-path} (@samp{make install} in the
+sources should take care of this for GNU Emacs) and use this
+instead:
+
 @lisp
 (autoload 'gtypist-mode "gtypist-mode")
 @end lisp
+
 @strong{and} add this to your @file{~/.emacs}:
+
 @lisp
 (setq auto-mode-alist       
       (cons '("\\.typ\\'" . gtypist-mode) auto-mode-alist))
 @end lisp
-If you want to, you can then byte-compile the file using
-@kbd{M-x byte-compile-file}.
 
-All this is also mentioned in the README-section in
-@file{tools/gtypist-mode.el}.
+@c If you want to, you can then byte-compile the file using
+@c @kbd{M-x byte-compile-file} (but @samp{make install} takes care of
+@c this).
+@c All this is also mentioned in the README-section in
+@c @file{tools/gtypist-mode.el}.
+
+@noindent
+Here are the commands along with the keybindings:
 
 @table @kbd
 
@@ -932,6 +944,7 @@ prefix to get @code{P:}, and @kbd{C-u C-u} to get @code{D:}.
 
 @end table
 
+@noindent
 Run @kbd{C-h m} for a complete list of commands and their keybindings.
 
 If you find bugs or if you think there's something else this mode could
