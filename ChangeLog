@@ -2,6 +2,9 @@
 
 	* configure.in:  added checks for [n]curses libraries header files,
 	  only select curses or ncurses if corresponding header is found.
+	* autogen.sh:  didn't write version info in INSTALL file, fixed that.
+	* INSTALL.in:  slightly edited unix installation section;  tell that
+	  not only [n]curses library but its header files are required.
 
 2004-02-26	Michael Opdenacker	<michaelo@gnu.org>
 

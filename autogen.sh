@@ -74,6 +74,8 @@ cp $gettexth src/
 echo "creating lessons/gtypist.typ..."
 (cd lessons && gawk -f ../tools/typcombine q.typ r.typ t.typ v.typ u.typ d.typ m.typ s.typ n.typ > gtypist.typ)
 
+VERSION=`./version.sh`
+
 for file in configur.bat INSTALL
   do
   echo "creating $file..."

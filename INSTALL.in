@@ -1,13 +1,20 @@
 		GNU Typist @VERSION Installation instructions
 
-This program can be compiled under Unix and under Windows/DOS.
+This program is designed for UNIXes and Microsoft Windows/DOS, but it can be
+compiled in various environments provided that there is a standard compiler
+and required libraries.
 
 Compilation under Unix 
 ----------------------
 
 In order to compile this program, you must have:
 
-  - The 'ncurses' or the 'curses' library
+  - A reasonably standard C compiler (and standard C library with corresponding
+    header files of course).
+  - The 'ncurses' or the 'curses' library with corresponding header files
+    installed in convenient places.
+
+The instructions are general for most Unix software in source form:
 
 * Uncompress the sources distribution:
 
@@ -15,26 +22,30 @@ In order to compile this program, you must have:
   or
   > tar zxvf gtypist-@VERSION.tar.gz
 
-* Change to the sources directory
+* Change to the sources directory:
 
   > cd gtypist-@VERSION
 
-* Configure the package. By default the program will be installed at
-/usr/local/bin and the lessons and international support in
-/usr/local/share/gtypist (you can change with the option --prefix). By 
-default it will install Native Language Support (you can disable this
-with the option --disable-nls)
+* Configure the package:
 
-  > ./configure 
+  > ./configure [you may insert some options here;  run with `--help' to get
+  			full list of them].
 
-* Compile
+  By default the program executable will be installed in
+  /usr/local/bin and the lessons and internationalization support files in
+  /usr/local/share/gtypist (you can change this with the `--prefix' option). By 
+  default Native Language Support will be installed (but you can disable this
+  with the `--disable-nls' option).
+
+
+* Build the package:
 
   > make
 
-* Become root and install
+* Get required permissions and install the package:
 
-  > su
-  > umask 022
+  > su		# If you've chosen (as by default) to install system-wide.
+  > umask 022	# TODO: is this necessary at all?
   > make install
 
 * To test your installation type
@@ -53,7 +64,7 @@ You must have:
     http://www.delorie.com/djgpp/zip-picker.html
   You only will need the C compiler.
 
-- Emulation of the curses library pdcurses v2.4. Available at
+- Emulation of the curses library pdcurses v2.4.  Available at
     ftp://ftp.simtel.net/pub/simtelnet/gnu/djgpp/v2tk/pdcur24b.zip
 
 * Decompress the sources distribution 
