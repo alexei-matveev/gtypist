@@ -1,5 +1,6 @@
 2001-07-24  Felix Natter  <f.natter@ndh.net>
 
+	* gtypist.c (cl_wpmode): should be disabled by default
 	* gtypist.c replace all occurrences of addch by ADDCH
 	* gtypist.c (ADDCH, ADDCH_REV): add (unsigned char) cast
 	which is necessary to display 8 bit characters correctly

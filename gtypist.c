@@ -137,7 +137,7 @@ static short	colour_array[] = {
 #define	ADDCH_REV(X)		do { attron( A_REVERSE ); \
                                 addch( (unsigned char)X ); \
 				attroff( A_REVERSE ); } while ( 0 )
-#define	ADDCH(X)		addch( (unsigned char) X ) /* for symmetry! */
+#define	ADDCH(X)		addch( (unsigned char) X )
 
 /* command line options/values */
 static int	cl_drill_tries = 3;		/* times to loop drills */
@@ -149,7 +149,7 @@ static char	*cl_start_label = NULL;		/* initial lesson start point */
 static bool	cl_colour = FALSE;		/* set if -c given */
 static int	cl_fgcolour = 0;		/* fg colour */
 static int	cl_bgcolour = 0;		/* bg colour */
-static bool	cl_wpmode = TRUE;		/* do wp-like stuff */
+static bool	cl_wpmode = FALSE;		/* do wp-like stuff */
 
 /* a few global variables */
 static char	*argv0 = NULL;
