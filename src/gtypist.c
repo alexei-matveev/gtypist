@@ -594,6 +594,7 @@ do_drill( FILE *script, char *line ) {
   char	message[MAX_WIN_LINE];	 /* message buffer */
   char	drill_type;		 /* note of the drill type */
   int	chars_typed;		 /* count of chars typed */
+  int	chars_in_the_line_typed;
   bool  seek_done = FALSE;       /* was there a seek_label before exit? */
   int	error_sync;		 /* error resync state */
 
@@ -643,41 +644,31 @@ do_drill( FILE *script, char *line ) {
       for ( p = data; *p == ASCII_SPACE && *p != ASCII_NULL; p++ )
 	ADDCH( *p );
 
-      for ( chars_typed = 0, errors = 0, error_sync = 0;
+      for ( chars_typed = 0, errors = 0, error_sync = 0,
+		      chars_in_the_line_typed = 0;
 	    *p != ASCII_NULL; p++ ) 
 	{
-	  rc = getch_fl( *p == ASCII_TAB ?
-			 ASCII_TAB : ASCII_SPACE );
-	  c = (char)rc;
+	  do
+	  {
+	     rc = getch_fl (chars_in_the_line_typed >= COLS ? *(p + 1) :
+			     (*p == ASCII_TAB ? ASCII_TAB : ASCII_SPACE));
+	     c = (char)rc;
+	  }
+	  while ( rc == KEY_BACKSPACE || c == ASCII_BS || c == ASCII_DEL );
+
+#ifdef DJGPP
 	  /* this is necessary for DOS: when using raw(), pdcurses 2.4's
 	     getch() returns 0x0D on DOS/Windows  */
-#ifdef DJGPP
 	  if ( c == 0x0D )
 	    rc = c = 0x0A;
 #endif
 
-	  while ( rc == KEY_BACKSPACE
-		  || c == ASCII_BS || c == ASCII_DEL ) 
-	    {
-	      rc = getch_fl( *p == ASCII_TAB ?
-			     ASCII_TAB : ASCII_SPACE );
-	      c = (char)rc;
-	    }
-	
 	  /* start timer on first char entered */
 	  if ( chars_typed == 0 )
 	    start_time = (long)time( NULL );
 	  chars_typed++;
 	  error_sync--;
 	
-	  /* ignore delete or backspace in drills */
-	  if ( rc == KEY_BACKSPACE ||
-	       c == ASCII_BS || c == ASCII_DEL ) 
-	    {
-	      p--;		/* defeat p++ coming up */
-	      continue;
-	    }
-
 	  /* ESC is "give up"; ESC at beginning of exercise is "skip lesson"
 	     (this is handled outside the for loop) */
 	  if ( c == ASCII_ESC )
@@ -687,7 +678,20 @@ do_drill( FILE *script, char *line ) {
 	  if ( c == *p
 	       || ( cl_wp_emu && c == ASCII_SPACE
 		    && *p == ASCII_NL ))
-	    ADDCH( c );
+	  {
+	     if (cl_wp_emu && c == ASCII_SPACE && *p == ASCII_NL)
+		chars_in_the_line_typed = 0;
+	     else
+	     {
+	        if (c != ASCII_NL)
+	        {
+		   ADDCH( c );
+		   chars_in_the_line_typed ++;
+	        }
+	        else
+		   chars_in_the_line_typed = 0;
+	     }
+	  }
 	  else 
 	    {
 	      /* try to sync with typist behind */
@@ -697,10 +701,18 @@ do_drill( FILE *script, char *line ) {
 		  continue;
 		}
 
-	      ADDCH_REV( *p == ASCII_NL ? DRILL_NL_ERR :
+	      if (chars_in_the_line_typed < COLS)
+	      {
+	         ADDCH_REV( *p == ASCII_NL ? DRILL_NL_ERR :
 			 (*p == ASCII_TAB ?
 			  ASCII_TAB : (cl_rev_video_errors ?
 				       c : DRILL_CH_ERR)));
+		 chars_in_the_line_typed ++;
+	      }
+	      
+	      if (*p == ASCII_NL)
+		 chars_in_the_line_typed = 0;
+
 	      if ( ! cl_silent ) 
 		{
 		  putchar( ASCII_BELL ); fflush( stdout );
@@ -732,6 +744,7 @@ do_drill( FILE *script, char *line ) {
 			  && *(p+1) != ASCII_NULL ) 
 		    {
 		      p++; ADDCH( *p );
+		      chars_in_the_line_typed ++;
 		    }
 		}
 	      else if ( c == ASCII_NL ) 
@@ -741,9 +754,11 @@ do_drill( FILE *script, char *line ) {
 			  && *(p+1) != ASCII_NULL ) 
 		    {
 		      p++; ADDCH( *p );
+		      chars_in_the_line_typed ++;
 		      if ( *p == ASCII_NL ) {
 			linenum++; linenum++;
 			move( linenum, 0 );
+			chars_in_the_line_typed = 0;
 		      }
 		    }
 		}
@@ -754,6 +769,7 @@ do_drill( FILE *script, char *line ) {
 		  p++; ADDCH( *p );
 		  linenum++; linenum++;
 		  move( linenum, 0 );
+		  chars_in_the_line_typed = 0;
 		}
 	    }
 	}
@@ -900,11 +916,13 @@ do_speedtest( FILE *script, char *line ) {
 	{
 	  rc = getch_fl( (*p != ASCII_NL) ? *p : ASCII_SPACE );
 	  c = (char)rc;
-      
+
+#ifdef DJGPP
 	  /* this is necessary for DOS: when using raw(), pdcurses 2.4's
 	     getch() returns 0x0D on DOS/Windows  */
 	  if ( c == 0x0D )
 	    rc = c = 0x0A;
+#endif
 
 	  /* start timer on first char entered */
 	  if ( chars_typed == 0 )

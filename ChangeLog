@@ -1,3 +1,10 @@
+2003-11-23	Dmitry Rutsky	<rutsky@school.ioffe.rssi.ru>
+
+	* tools/typcombine:  removed `ktlecten.typ' from the `More lessons...'
+	  screen.
+	* src/gtypist.c:  minor cleanups, fixed incorrect handling of
+	  80-characters long lines in drills.
+
 2003-11-16	Dmitry Rutsky	<rutsky@school.ioffe.rssi.ru>
 
 	* autogen.sh:  use `autopoint' instead of `gettextize'.

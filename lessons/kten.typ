@@ -467,10 +467,11 @@ D:contenting notices raccoons groveler gondola gogglers firing erode sidelong
  :medicos nosedives scaffold recoiled latching sentencing rigger condensate
 *:LESSON9_D6
 I:(6)
-D:calorimetric carillonned degassing evildoings glover commented disconnectednesses
- :cognoscente noncaloric grisliest dosages relocates delineations rocking
- :senior snooks ossifies offhandednesses endorser contritions etiologic
- :recooking signalmen magnolia shedding disregarded collectivists triathlons
+D:calorimetric carillonned degassing evildoings glover commented
+ :disconnectednesses cognoscente noncaloric grisliest dosages relocates
+ :delineations rocking senior snooks ossifies offhandednesses endorser contritions
+ :etiologic recooking signalmen magnolia shedding disregarded collectivists
+ :triathlons
 *:LESSON9_D7
 I:(7)
 D:frosted jingle vialing oldest donnishness grandfathering evensongs smartening
@@ -501,9 +502,9 @@ D:toecaps boilermakers shippings bloated precipitation behaviorisms intangibles
  :pitchforked plaited bespattering childbirth apprenticeships privacies clobber
 *:LESSON10_D3
 I:(3)
-D:preoperative peril dispersals chaplains plodded demographers perming embitterment
- :scrimped rabidnesses fillable pinsetters halfpennies copperheads beechen
- :premier betrothed carbine skateboarding doorstops proceeder platings
+D:preoperative peril dispersals chaplains plodded demographers perming
+ :embitterment scrimped rabidnesses fillable pinsetters halfpennies copperheads
+ :beechen premier betrothed carbine skateboarding doorstops proceeder platings
  :readership vb sandbags kaleidescope bicarbs perceiving parlance siphoning
 *:LESSON10_D4
 I:(4)
@@ -520,15 +521,16 @@ D:basters porringer deprives lappets enveloper shipments considerables
 *:LESSON10_D6
 I:(6)
 D:emptinesses philodendrons reparable handpicked halfback fissionables nonparallel
- :corporatism tapeline banister pothole brightens triplicating palleted promotiveness
- :paired composed microscopies reprobation shipper dibbles badmintons
- :tabooed vocabs escapable prince plainsman compilable breadth pariah
+ :corporatism tapeline banister pothole brightens triplicating palleted
+ :promotiveness paired composed microscopies reprobation shipper dibbles
+ :badmintons tabooed vocabs escapable prince plainsman compilable breadth pariah
 *:LESSON10_D7
 I:(7)
 D:binded shopkeep poach torpedoing dispossess compartmented contraptions
- :choreographies becalming padre limpidities pref battered peeked blinders presidents
- :bigheartedness backstairs boot obverses flapjack parallelism incorporable repairing
- :impetigos telephoners bemoaning patentee tabor escarpments teachableness
+ :choreographies becalming padre limpidities pref battered peeked blinders
+ :presidents bigheartedness backstairs boot obverses flapjack parallelism
+ :incorporable repairing impetigos telephoners bemoaning patentee tabor
+ :escarpments teachableness
 *:LESSON10_D8
 I:(8)
 D:prosing pediatrician boninesses impregnated prised nonpersons overemphasis
@@ -550,7 +552,8 @@ I:(2)
 D:runoff sunned unmonitored populous actuating scudded unlearn uncap
  :popgun suckles roguish illumined rectangular concurred accountings
  :churl statuettes fugitive annunciators furnaced furred multilevel
- :unestablished documents craniums coupon robustest influence undervalue laughableness
+ :unestablished documents craniums coupon robustest influence undervalue
+ :laughableness
 *:LESSON11_D3
 I:(3)
 D:fortunateness viaducts turbocharging mournfuller teaspoonful subsequences
@@ -560,9 +563,11 @@ D:fortunateness viaducts turbocharging mournfuller teaspoonful subsequences
 *:LESSON11_D4
 I:(4)
 D:quoit curving bequeaths obfuscated unbending umbilical lutenists prematureness
- :restructuring curmudgeons remounting recurring incongruous trustfulness subpopulations
- :gradualist macromolecule minute cruelties multifunctioned butternut constructional
- :overtured scurvier hugger outrunning amputate nucleates courtlinesses
+ :restructuring curmudgeons remounting recurring incongruous trustfulness
+ :subpopulations
+ :gradualist macromolecule minute cruelties multifunctioned butternut
+ :constructional overtured scurvier hugger outrunning amputate nucleates
+ :courtlinesses
 *:LESSON11_D5
 I:(5)
 D:mulishnesses haiku sunburned unsupportable compendium bullfrogs elucidations
@@ -620,7 +625,8 @@ I:(5)
 D:wanderlust bobbing invent preordain demand paternal standstill councilpersons
  :nonvoter manumitting shillings masterliness nicenesses aggregations sandpiper
  :signposted ruction whoops illumining counterbalances engorgements flatwares
- :bushiness woodlands sugarcanes resembling subsequentness grimnesses unconventionalities
+ :bushiness woodlands sugarcanes resembling subsequentness grimnesses
+ :unconventionalities
 *:LESSON12_D6
 I:(6)
 D:equidistant ringlike swifter shrewdnesses disjointing recipient renaturing
@@ -647,8 +653,9 @@ B:                           Lesson 13: cx
 I:(1)
 D:shadowboxes antacids retrenching cants panache fractious compressor scrawniest
  :elocution scourer thunderclouds unpacking indirections contentiousnesses
- :scaremongers officiation clothespin reselects emetic functioned concoct cinctures
- :wackier corrupting chugging inferencing competitors caribou peacemakings
+ :scaremongers officiation clothespin reselects emetic functioned concoct
+ :cinctures wackier corrupting chugging inferencing competitors caribou
+ :peacemakings
 *:LESSON13_D2
 I:(2)
 D:mice luncheon compose commutes tricolored faculties shucker tamaracks
@@ -665,8 +672,8 @@ D:sanctums commonsense putrescences criming crisis restrictive unsociable
 I:(4)
 D:obstetrical exalting nonexplosive choirmaster decremented witchcraft perception
  :complicators efficient outbacks licked prancing stacking isotonic exterminators
- :experiment halfback connivance teacups electoral cons ecru poulticing saccharides
- :codgers hesitancies backslashed commencement universalistic smacking
+ :experiment halfback connivance teacups electoral cons ecru poulticing
+ :saccharides codgers hesitancies backslashed commencement universalistic smacking
 *:LESSON13_D5
 I:(5)
 D:maximum electroshocking discords charioted craw carcass cliffs noticed
@@ -675,9 +682,9 @@ D:maximum electroshocking discords charioted craw carcass cliffs noticed
  :cravened muckier correcter coffeecup lockets mariachi oculists subscripts
 *:LESSON13_D6
 I:(6)
-D:constituents commemorator creations scalloping commentates innocentest discipleship
- :captious noninclusive etcher cleanlinesses priceless pathologic cannabises
- :adduct triceratops impracticalness packsaddle lilacs chipmunk muscles
+D:constituents commemorator creations scalloping commentates innocentest
+ :discipleship captious noninclusive etcher cleanlinesses priceless pathologic
+ :cannabises adduct triceratops impracticalness packsaddle lilacs chipmunk muscles
  :trichinoses instructed consenting monstrances evacuative chis cored creped
 *:LESSON13_D7
 I:(7)
@@ -697,10 +704,11 @@ K:12:MENU
 B:                           Lesson 14: yz
 *:LESSON14_D1
 I:(1)
-D:sylphic detoxifying hypertrophies accompany orthodoxy westernizes incomprehensibility
- :demilitarize universally grippingly esthetically contemporary sedimentary
- :fragility mythically electrolyzed jimmy speedy nudity horseplayer seltzer
- :disqualify imposingly desolately crucially rhythmic capaciously rumply
+D:sylphic detoxifying hypertrophies accompany orthodoxy westernizes
+ :incomprehensibility demilitarize universally grippingly esthetically
+ :contemporary sedimentary fragility mythically electrolyzed jimmy speedy nudity
+ :horseplayer seltzer disqualify imposingly desolately crucially rhythmic
+ :capaciously rumply
 *:LESSON14_D2
 I:(2)
 D:challengingly ingenuously summary lippy unoptimizes individualized factuality
@@ -709,22 +717,25 @@ D:challengingly ingenuously summary lippy unoptimizes individualized factuality
  :nonfreezing difficulty abbey understandably instinctively demonetizing buoy
 *:LESSON14_D3
 I:(3)
-D:laundryman unvarying bilaterally baptizers fogy debauchery vitalizing delightfully
- :lazed yearning scrutinizes kittenishly anaglyph demilitarization depolarize
- :asymmetry terminally scarcely pasteurize mutably seismography epidemically
- :physician collectivized surreptitiously strayer harrying stiltedly patriarchy
+D:laundryman unvarying bilaterally baptizers fogy debauchery vitalizing
+ :delightfully lazed yearning scrutinizes kittenishly anaglyph demilitarization
+ :depolarize asymmetry terminally scarcely pasteurize mutably seismography
+ :epidemically physician collectivized surreptitiously strayer harrying
+ :stiltedly patriarchy
 *:LESSON14_D4
 I:(4)
-D:sanctimoniously searingly tantalized admirably traumatizing gallimaufry unequalized
- :dizzy unsuspectingly ascendancy coweringly reorganizes lyricists internationalizing
- :declamatory pussyfooting richly expressionlessly axiomatization soybean
- :joyfulnesses yellowing warranty slashingly yowled importunely eyefuls inhumanity
+D:sanctimoniously searingly tantalized admirably traumatizing gallimaufry
+ :unequalized dizzy unsuspectingly ascendancy coweringly reorganizes lyricists
+ :internationalizing declamatory pussyfooting richly expressionlessly
+ :axiomatization soybean joyfulnesses yellowing warranty slashingly yowled
+ :importunely eyefuls inhumanity
 *:LESSON14_D5
 I:(5)
 D:platitudinously mys miscarrying ridiculously occupy minimizers rowdyism horizon
  :employees pleasingly capillary catalytically propinquity tommy seizable
  :flippantly credibility memorially puppyish eyewash haze paycheck array
- :hydrodynamical hypothyroid effigy campanology polyclinic unorganized acoustically
+ :hydrodynamical hypothyroid effigy campanology polyclinic unorganized
+ :acoustically
 *:LESSON14_D6
 I:(6)
 D:ineffability overcapitalized unparameterized presbyter brotherly inconsistently
@@ -736,11 +747,13 @@ I:(7)
 D:subway prodigy leukocyte costively apply cosmetically inappropriately
  :loyalties jazzy thirsty impenitently curly illegally yearned infrequently
  :sukiyaki palatalize ferry tranquilizing globularity sermonizes intellectualizes
- :interdependency depreciatively resolvability trailblazing antithetically syntactics
+ :interdependency depreciatively resolvability trailblazing antithetically
+ :syntactics
 *:LESSON14_D8
 I:(8)
 D:optimizers nanotechnology horseplay housefly soliloquize lamasery thuggery
- :intermolecularly layperson immunizing disarmingly distantly uncriticizing suburbanizing
+ :intermolecularly layperson immunizing disarmingly distantly uncriticizing
+ :suburbanizing
 G:E_LESSON14
 
 # Level 15

@@ -1,3 +1,7 @@
+2003-11-23	Dmitry Rutsky	<rutsky@school.ioffe.rssi.ru>
+
+	* kten.typ:  fixed several too long lines.
+
 2003-08-31  Rob Leslie  <rob@mars.org>
 
 	* cs.typ, m.typ: Fixed a few small typos.

@@ -140,7 +140,6 @@ END	{
   printf(" : kten.typ     -  English lessons from ktouch\n");
   printf(" : ktfr.typ     -  French lessons 1 from ktouch\n");
   printf(" : ktfr2.typ    -  French lessons 2 from ktouch\n");
-  printf(" : ktlecten.typ -  Another set of English lessons from ktouch\n");
   printf(" : ktno.typ     -  Norwegian lessons from ktouch\n");
   printf(" : ktnumber.typ -  Ktouch lessons for the numeric keypad\n");
   printf(" : ttde.typ     -  German lessons from tipptrainer\n");
