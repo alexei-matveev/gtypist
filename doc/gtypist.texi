@@ -1,4 +1,4 @@
-\input texinfo @c -*-mode:texinfo; compile-command: "makeinfo gtypist.texinfo"-*-
+\input texinfo @c -*-mode:texinfo; compile-command: "makeinfo gtypist.texi"-*-
 @setfilename gtypist.info
 @settitle GNU Typist Manual
 
@@ -106,9 +106,7 @@ Typing errors are indicated with an inverse @code{^}, or @code{>} if
 the character is a newline and at the end of the
 exercise it calculates the real and effective rate in WPM.
 If there were too many errors, it will re-run the drill.
-@c TODO: delete ???
-@key{Backspace} and @key{delete} not permitted in drills.
-
+@key{Backspace} and @key{delete} are not permitted in drills.
 
 In a speed test, gtypist displays text on the screen, and waits for the
 user to correctly over-type the exact same text. It indicates typing
@@ -116,7 +114,7 @@ errors, and at the end of the test it calculates the real and effective
 rate in WPM. 
 @c TODO: what is it used for ?
 If there were too many errors, it will re-run the speed-test.
-@key{Backspace} is recognised, but errors still accumulate.
+@key{Backspace} and @key{delete} are recognised, but errors still accumulate.
 
 If you already made too many mistakes, then you can use @key{ESC} to
 give up and start again. Once you complete a lesson, you will be asked
@@ -334,7 +332,10 @@ line, and you type in the intermediate lines. Because of this, you cannot
 use more than 11 lines of drill-content.
 
 This type of exercise is supposed to be used for finger-training
-(i.e. jfjfjjf).
+(i.e. jfjfjjf), but may also contain complete words and sentences
+@c TODO: grip
+if they are used to practice something (i.e. a letter/syllable/"grip"),
+and aren't real texts.
 
 The lowercase version @code{d} is a ``practice only'' drill -
 the user will not have not repeat this drill if he/she made too many
@@ -351,7 +352,7 @@ prompts the user to type on top of it.  That's why you can use up to
 Backspace is recognised, but errors still accumulate.
 
 Speed-tests should be used for typing (mostly) complete sentences,
-texts or files.
+texts or files (i.e. a letter, texinfo/html/tex files).
 
 The lowercase version @code{s} is a ``practice only'' speed-test -
 the user will not have not repeat this drill if he/she
@@ -397,8 +398,8 @@ programs (for example by a window manager).
 
 @item E
 @c TODO: better English:
-This command is used to set the error-max value. This is the upper limit
-of the error-rate that the user may have.
+This command is used to set the error-max value.
+This is the highest error-rate permitted.
 
 If @option{--error-max/-e} is specified then this command will only
 have an effect if it is @emph{stricter} than the value specified on

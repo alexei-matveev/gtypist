@@ -11,7 +11,7 @@
 
 # Get version and write it in files
 
-. version.sh
+makeinfo -Idoc doc/gtypist.texi -o doc/gtypist.info
 
 for file in configure.in configur.bat INSTALL
 do
