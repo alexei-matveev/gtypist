@@ -44,7 +44,7 @@ echo "creating lessons/gtypist.typ..."
 
 # make sure that there's no whitespace after the version number
 # (in that case the awk command at the top of configure.in won't work)
-VERSION_FROM_AWK="`cat version.sh | grep ^VERSION | awk -F= '{print $2}'`"
+VERSION_FROM_AWK="`cat version.sh | grep '^VERSION' | awk -F= '{print $2}'`"
 if test "$VERSION_FROM_AWK" != "$VERSION"; then
     echo "There is whitespace around the version-number in version.sh. Please fix it."
     exit -1
