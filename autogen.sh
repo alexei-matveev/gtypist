@@ -20,7 +20,7 @@
 (automake --version) < /dev/null > /dev/null 2>&1 || {
     echo
     echo "**Error**: You must have \`automake' installed."
-    echo "Get ftp://ftp.gnu.org/gnu/automake/automake-1.6.tar.gz"
+    echo "Get ftp://ftp.gnu.org/gnu/automake/automake-1.6.2.tar.gz"
     echo "(or a newer version if it is available)"
     exit 1
 }
@@ -28,7 +28,7 @@
 (gettext --version) < /dev/null > /dev/null 2>&1 || {
     echo
     echo "**Error**: You must have \`gettext' installed."
-    echo "Get ftp://ftp.gnu.org/gnu/gettext/gettext-0.11.tar.gz"
+    echo "Get ftp://ftp.gnu.org/gnu/gettext/gettext-0.11.4.tar.gz"
     echo "(or a newer version if it is available)"
     exit 1
 }
