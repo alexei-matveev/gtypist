@@ -1,3 +1,10 @@
+2002-04-22  Michael Opdenacker <michaelo@gnu.org>
+
+	* gtypist.c, Makefile.am: for consistency with 'PACKAGE_LOCALE_DIR'
+	  replaced by `LOCALEDIR', replaced `PACKAGE_DATA_DIR' by `DATADIR'.
+	* autogen.sh: now checks that texinfo is installed.
+	  Generates the html manuals too.
+
 2002-04-18  Michael Opdenacker <michaelo@gnu.org>
 
 	* gtypist.c: replaced '1998-2001' by `1998, 1999, 2000, 2001, 2002'

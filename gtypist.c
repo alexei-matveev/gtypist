@@ -133,8 +133,8 @@ char *SPEED_PCT_ERROR;
 char *YN;
 char *RNE;
 
-#ifndef PACKAGE_DATA_DIR
-#define PACKAGE_DATA_DIR "."
+#ifndef DATADIR
+#define DATADIR "."
 #endif
 
 #define	DEFAULT_SCRIPT      "gtypist.typ"
@@ -1753,7 +1753,7 @@ print_help()
     }
 
   printf(_("\nIf not supplied, script-file defaults to '%s/%s'.\n")
-	 ,PACKAGE_DATA_DIR,DEFAULT_SCRIPT);
+	 ,DATADIR,DEFAULT_SCRIPT);
   printf(_("The path $GTYPIST_PATH is searched for script files.\n\n"));
 
   printf("%s:\n",_("Examples"));
@@ -2004,7 +2004,7 @@ This program is released under the GNU General Public License.");
   if ( argc - optind == 1 )
     strcpy( script_file, argv[optind] );
   else
-    sprintf( script_file,"%s/%s",PACKAGE_DATA_DIR,DEFAULT_SCRIPT);
+    sprintf( script_file,"%s/%s",DATADIR,DEFAULT_SCRIPT);
   
   script = fopen( script_file, "r" );
   if (script==NULL && getenv( "GTYPIST_PATH" ) != NULL ) 
@@ -2022,7 +2022,7 @@ This program is released under the GNU General Public License.");
     }
   if (script==NULL)
     {
-      strcpy( filepath, PACKAGE_DATA_DIR );
+      strcpy( filepath, DATADIR );
       strcat( filepath, "/" );
       strcat( filepath, script_file );
       script = fopen( filepath, "r" );
