@@ -145,30 +145,16 @@ END	{
   printf(" : ktnumber.typ -  Ktouch lessons for the numeric keypad\n");
   printf(" : ttde.typ     -  German lessons from tipptrainer\n");
   printf(" :\n");
-  printf(" : See the comments at the top of each .typ-file for more information.\n");
+  printf(" : See the comments at the top of each .typ file for more information.\n");
   printf("G:__SERIESMENU\n");
 
   printf("*:__HELP\n");
   printf("B: Help screen\n");
   printf("T:\n");
-# fkeys are deprecated
-#  printf(" :Use the function keys on the keyboard to navigate through the lesson\n");
-#  printf(" :series and lesson selection menus.  In a lesson series, pressing the\n");
-#  printf(" :function key Fkey12 will return you to the series menu; when already at\n");
-#  printf(" :the series menu, it will take you to the main program menu.  At the\n");
-#  printf(" :main program menu, Fkey12 exits the program.\n");
-#  printf(" :\n");
   printf(" :Use the arrow-keys to navigate through the menus.\n");
   printf(" :\n");
   printf(" :You can repeat a lesson by pressing ESC or skip it by pressing ESC twice.\n");
   printf(" :\n");
-# fkeys are deprecated
-#   printf(" :If you do not have function keys available on your terminal, or if they\n");
-#   printf(" :do not work for some reason (for example, they are intercepted by\n");
-#   printf(" :another program), you can use the keys 1 to 9 for F1 to F9, 0 for F10,\n");
-#   printf(" :A for F11 and S for F12.  Some combinations with the Ctrl key will work also.\n");
-#   printf(" :Ctrl-Q to Ctrl-P are alternatives for Fkey1 to Fkey10, and Ctrl-A and Ctrl-S\n");
-#   printf(" :for Fkey11 and Fkey12.\n");
   printf(" :\n");
   printf(" :You can access gtypist's manual either by running\n");
   printf(" :\"info gtypist\" (or \"info '(gtypist)'\" if that doesn't work),\n");
@@ -193,17 +179,6 @@ END	{
       printf( "=" );
     printf( "\n" );
     printf( "*:__SERIESMENU\n" );
-
-# fkeys are deprecated
-# output a complete series of function key mappings
-#     for ( i = 1; i <= scount; i++ )
-#       printf( "K:%d:__S_%s_SERIES\n", i, series[i] );
-#     for ( ; i <= 9; i++ )
-#       printf( "K:%d:NULL\n", i );
-#     printf( "K:10:__MORE_LESSONS\n" );
-#     printf( "K:11:__HELP\n" );
-#     printf( "K:12:__SERIESQEXIT\n" );
-#     printf( "*:__SERIESMENU_DISP\n" );
 
 # output the menu screen
     banner = "Series selection menu";
