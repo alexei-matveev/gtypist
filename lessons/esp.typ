@@ -412,7 +412,7 @@ s:jn jnj nen en ene nene no son nada n nos
 
 
 B:Ejercicio de aplicación
-s:no son nene en don dedo donde ni tin lino
+s:no son nene en don dedo donde ni fin lino
  :re oro rana ir res reir reloj ar aro raro
  :id ida lila si sin idea hijas de dio risa
  :es reo el niño la flor da risa el nene si
@@ -1614,7 +1614,7 @@ S:Primero cree el archivo prueba.tex en un editor de texto, después de esto
  :\end{picture} \end{center} \caption{Mi primer dibujo usando \LaTeX}\end{figure}
  :\end{center} \end{document}
  :Para compilar se invoca latex prueba.tex desde un shell
- :Para ver el resultado se invoca xdvi prueba.tex desde un entorno gráfico
+ :Para ver el resultado se invoca xdvi prueba.dvi desde un entorno gráfico
  :Para obtener la impresión se usa dvips prueba.dvi
 
 G:LECCION_16
