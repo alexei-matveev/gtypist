@@ -41,8 +41,17 @@
     exit 1
 }
 
-echo "creating doc/gtypist.info..."
-makeinfo -Idoc doc/gtypist.texi -o doc/gtypist.info
+
+(makeinfo --version) < /dev/null > /dev/null 2>&1 || {
+    echo
+    echo "**Error**: You must have \`texinfo' installed."
+    echo "Get ftp://ftp.gnu.org/gnu/texinfo/texinfo-4.2.tar.gz"
+    echo "(or a newer version if it is available)"
+    exit 1
+}
+
+# Generate lesson menus
+
 echo "creating lessons/gtypist.typ..."
 (cd lessons && gawk -f ../tools/typcombine q.typ r.typ t.typ v.typ u.typ d.typ m.typ s.typ n.typ > gtypist.typ)
 
@@ -96,4 +105,19 @@ fi
 echo
 echo running ./configure "$@"...
 echo
-./configure "$@" && echo Type \`make\' to compile gtypist
+./configure "$@"
+
+# Generate documentation now that version.texi exists
+
+cd doc
+echo "creating doc/gtypist.info..."
+makeinfo -Idoc gtypist.texi -o gtypist.info
+echo "creating doc/gtypist.html..."
+# Bug: '--html --no-header' doesn't work without '--no-split'
+# Reported to texinfo developers.
+makeinfo --html --no-header --no-split gtypist.texi -o gtypist.html 
+cd ..
+
+# Final instructions
+
+echo Type \`make\' to compile gtypist
