@@ -1787,7 +1787,7 @@ parse_cmdline( int argc, char **argv ) {
     { 0, 0, 0, 0 }};
 
   /* process every option */
-  while ( (c=getopt_long( argc, argv, "e:ntf:c:sql:whv",
+  while ( (c=getopt_long( argc, argv, "e:ntf:c:sql:wkhv",
 			  long_options, &option_index )) != -1 ) 
     {
       switch (c)
