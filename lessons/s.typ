@@ -488,19 +488,15 @@ G:_S_MENU
 
 *:_S_M_S1
 B:                             Lesson S1
-K:12:_S_MENU
 G:_S_S_S1
 *:_S_M_S2
 B:                             Lesson S2
-K:12:_S_MENU
 G:_S_S_S2
 *:_S_M_S3
 B:                             Lesson S3
-K:12:_S_MENU
 G:_S_S_S3
 *:_S_M_S4
 B:                             Lesson S4
-K:12:_S_MENU
 G:_S_S_S4
 #------------------------------------------------------------------------------
 # Lesson series S menu

@@ -1394,59 +1394,45 @@ G:_R_MENU
 
 *:_R_M_R1
 B:                             Lesson R1
-K:12:_R_MENU
 G:_R_S_R1
 *:_R_M_R2
 B:                             Lesson R2
-K:12:_R_MENU
 G:_R_S_R2
 *:_R_M_R3
 B:                             Lesson R3
-K:12:_R_MENU
 G:_R_S_R3
 *:_R_M_R4
 B:                             Lesson R4
-K:12:_R_MENU
 G:_R_S_R4
 *:_R_M_R5
 B:                             Lesson R5
-K:12:_R_MENU
 G:_R_S_R5
 *:_R_M_R6
 B:                             Lesson R6
-K:12:_R_MENU
 G:_R_S_R6
 *:_R_M_R7
 B:                             Lesson R7
-K:12:_R_MENU
 G:_R_S_R7
 *:_R_M_R8
 B:                             Lesson R8
-K:12:_R_MENU
 G:_R_S_R8
 *:_R_M_R9
 B:                             Lesson R9
-K:12:_R_MENU
 G:_R_S_R9
 *:_R_M_R10
 B:                            Lesson R10
-K:12:_R_MENU
 G:_R_S_R10
 *:_R_M_R11
 B:                            Lesson R11
-K:12:_R_MENU
 G:_R_S_R11
 *:_R_M_R12
 B:                            Lesson R12
-K:12:_R_MENU
 G:_R_S_R12
 *:_R_M_R13
 B:                            Lesson R13
-K:12:_R_MENU
 G:_R_S_R13
 *:_R_M_R14
 B:                            Lesson R14
-K:12:_R_MENU
 G:_R_S_R14
 #------------------------------------------------------------------------------
 # Lesson series R menu

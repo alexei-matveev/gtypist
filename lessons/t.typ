@@ -1755,67 +1755,51 @@ G:_T_MENU
 
 *:_T_M_T1
 B:                             Lesson T1
-K:12:_T_MENU
 G:_T_S_T1
 *:_T_M_T2
 B:                             Lesson T2
-K:12:_T_MENU
 G:_T_S_T2
 *:_T_M_T3
 B:                             Lesson T3
-K:12:_T_MENU
 G:_T_S_T3
 *:_T_M_T4
 B:                             Lesson T4
-K:12:_T_MENU
 G:_T_S_T4
 *:_T_M_T5
 B:                             Lesson T5
-K:12:_T_MENU
 G:_T_S_T5
 *:_T_M_T6
 B:                             Lesson T6
-K:12:_T_MENU
 G:_T_S_T6
 *:_T_M_T7
 B:                             Lesson T7
-K:12:_T_MENU
 G:_T_S_T7
 *:_T_M_T8
 B:                             Lesson T8
-K:12:_T_MENU
 G:_T_S_T8
 *:_T_M_T9
 B:                             Lesson T9
-K:12:_T_MENU
 G:_T_S_T9
 *:_T_M_T10
 B:                            Lesson T10
-K:12:_T_MENU
 G:_T_S_T10
 *:_T_M_T11
 B:                            Lesson T11
-K:12:_T_MENU
 G:_T_S_T11
 *:_T_M_T12
 B:                            Lesson T12
-K:12:_T_MENU
 G:_T_S_T12
 *:_T_M_T13
 B:                            Lesson T13
-K:12:_T_MENU
 G:_T_S_T13
 *:_T_M_T14
 B:                            Lesson T14
-K:12:_T_MENU
 G:_T_S_T14
 *:_T_M_T15
 B:                            Lesson T15
-K:12:_T_MENU
 G:_T_S_T15
 *:_T_M_T16
 B:                            Lesson T16
-K:12:_T_MENU
 G:_T_S_T16
 #------------------------------------------------------------------------------
 # Lesson series T menu

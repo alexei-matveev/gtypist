@@ -983,59 +983,45 @@ G:_D_MENU
 
 *:_D_M_D1
 B:                             Lesson D1
-K:12:_D_MENU
 G:_D_S_D1
 *:_D_M_D2
 B:                             Lesson D2
-K:12:_D_MENU
 G:_D_S_D2
 *:_D_M_D3
 B:                             Lesson D3
-K:12:_D_MENU
 G:_D_S_D3
 *:_D_M_D4
 B:                             Lesson D4
-K:12:_D_MENU
 G:_D_S_D4
 *:_D_M_D5
 B:                             Lesson D5
-K:12:_D_MENU
 G:_D_S_D5
 *:_D_M_D6
 B:                             Lesson D6
-K:12:_D_MENU
 G:_D_S_D6
 *:_D_M_D7
 B:                             Lesson D7
-K:12:_D_MENU
 G:_D_S_D7
 *:_D_M_D8
 B:                             Lesson D8
-K:12:_D_MENU
 G:_D_S_D8
 *:_D_M_D9
 B:                             Lesson D9
-K:12:_D_MENU
 G:_D_S_D9
 *:_D_M_D10
 B:                            Lesson D10
-K:12:_D_MENU
 G:_D_S_D10
 *:_D_M_D11
 B:                            Lesson D11
-K:12:_D_MENU
 G:_D_S_D11
 *:_D_M_D12
 B:                            Lesson D12
-K:12:_D_MENU
 G:_D_S_D12
 *:_D_M_D13
 B:                            Lesson D13
-K:12:_D_MENU
 G:_D_S_D13
 *:_D_M_D14
 B:                            Lesson D14
-K:12:_D_MENU
 G:_D_S_D14
 #------------------------------------------------------------------------------
 # Lesson series D menu

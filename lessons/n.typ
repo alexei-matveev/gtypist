@@ -412,15 +412,12 @@ G:_N_MENU
 
 *:_N_M_N1
 B:                             Lesson N1
-K:12:_N_MENU
 G:_N_S_N1
 *:_N_M_N2
 B:                             Lesson N2
-K:12:_N_MENU
 G:_N_S_N2
 *:_N_M_N3
 B:                             Lesson N3
-K:12:_N_MENU
 G:_N_S_N3
 #------------------------------------------------------------------------------
 # Lesson series N menu

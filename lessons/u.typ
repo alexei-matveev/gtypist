@@ -711,55 +711,42 @@ G:_U_MENU
 
 *:_U_M_U1
 B:                             Lesson U1
-K:12:_U_MENU
 G:_U_S_U1
 *:_U_M_U2
 B:                             Lesson U2
-K:12:_U_MENU
 G:_U_S_U2
 *:_U_M_U3
 B:                             Lesson U3
-K:12:_U_MENU
 G:_U_S_U3
 *:_U_M_U4
 B:                             Lesson U4
-K:12:_U_MENU
 G:_U_S_U4
 *:_U_M_U5
 B:                             Lesson U5
-K:12:_U_MENU
 G:_U_S_U5
 *:_U_M_U6
 B:                             Lesson U6
-K:12:_U_MENU
 G:_U_S_U6
 *:_U_M_U7
 B:                             Lesson U7
-K:12:_U_MENU
 G:_U_S_U7
 *:_U_M_U8
 B:                             Lesson U8
-K:12:_U_MENU
 G:_U_S_U8
 *:_U_M_U9
 B:                             Lesson U9
-K:12:_U_MENU
 G:_U_S_U9
 *:_U_M_U10
 B:                            Lesson U10
-K:12:_U_MENU
 G:_U_S_U10
 *:_U_M_U11
 B:                            Lesson U11
-K:12:_U_MENU
 G:_U_S_U11
 *:_U_M_U12
 B:                            Lesson U12
-K:12:_U_MENU
 G:_U_S_U12
 *:_U_M_U13
 B:                            Lesson U13
-K:12:_U_MENU
 G:_U_S_U13
 #------------------------------------------------------------------------------
 # Lesson series U menu

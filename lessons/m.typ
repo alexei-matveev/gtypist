@@ -1045,47 +1045,36 @@ G:_M_MENU
 
 *:_M_M_M1
 B:                             Lesson M1
-K:12:_M_MENU
 G:_M_S_M1
 *:_M_M_M2
 B:                             Lesson M2
-K:12:_M_MENU
 G:_M_S_M2
 *:_M_M_M3
 B:                             Lesson M3
-K:12:_M_MENU
 G:_M_S_M3
 *:_M_M_M4
 B:                             Lesson M4
-K:12:_M_MENU
 G:_M_S_M4
 *:_M_M_M5
 B:                             Lesson M5
-K:12:_M_MENU
 G:_M_S_M5
 *:_M_M_M6
 B:                             Lesson M6
-K:12:_M_MENU
 G:_M_S_M6
 *:_M_M_M7
 B:                             Lesson M7
-K:12:_M_MENU
 G:_M_S_M7
 *:_M_M_M8
 B:                             Lesson M8
-K:12:_M_MENU
 G:_M_S_M8
 *:_M_M_M9
 B:                             Lesson M9
-K:12:_M_MENU
 G:_M_S_M9
 *:_M_M_M10
 B:                            Lesson M10
-K:12:_M_MENU
 G:_M_S_M10
 *:_M_M_M11
 B:                            Lesson M11
-K:12:_M_MENU
 G:_M_S_M11
 #------------------------------------------------------------------------------
 # Lesson series M menu

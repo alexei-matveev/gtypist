@@ -1806,79 +1806,60 @@ G:_V_MENU
 
 *:_V_M_V1
 B:                             Lesson V1
-K:12:_V_MENU
 G:_V_S_V1
 *:_V_M_V2
 B:                             Lesson V2
-K:12:_V_MENU
 G:_V_S_V2
 *:_V_M_V3
 B:                             Lesson V3
-K:12:_V_MENU
 G:_V_S_V3
 *:_V_M_V4
 B:                             Lesson V4
-K:12:_V_MENU
 G:_V_S_V4
 *:_V_M_V5
 B:                             Lesson V5
-K:12:_V_MENU
 G:_V_S_V5
 *:_V_M_V6
 B:                             Lesson V6
-K:12:_V_MENU
 G:_V_S_V6
 *:_V_M_V7
 B:                             Lesson V7
-K:12:_V_MENU
 G:_V_S_V7
 *:_V_M_V8
 B:                             Lesson V8
-K:12:_V_MENU
 G:_V_S_V8
 *:_V_M_V9
 B:                             Lesson V9
-K:12:_V_MENU
 G:_V_S_V9
 *:_V_M_V10
 B:                            Lesson V10
-K:12:_V_MENU
 G:_V_S_V10
 *:_V_M_V11
 B:                            Lesson V11
-K:12:_V_MENU
 G:_V_S_V11
 *:_V_M_V12
 B:                            Lesson V12
-K:12:_V_MENU
 G:_V_S_V12
 *:_V_M_V13
 B:                            Lesson V13
-K:12:_V_MENU
 G:_V_S_V13
 *:_V_M_V14
 B:                            Lesson V14
-K:12:_V_MENU
 G:_V_S_V14
 *:_V_M_V15
 B:                            Lesson V15
-K:12:_V_MENU
 G:_V_S_V15
 *:_V_M_V16
 B:                            Lesson V16
-K:12:_V_MENU
 G:_V_S_V16
 *:_V_M_V17
 B:                            Lesson V17
-K:12:_V_MENU
 G:_V_S_V17
 *:_V_M_V18
 B:                            Lesson V18
-K:12:_V_MENU
 G:_V_S_V18
 *:_V_M_V19
 B:                            Lesson V19
-K:12:_V_MENU
 G:_V_S_V19
 #------------------------------------------------------------------------------
 # Lesson series V menu

@@ -545,23 +545,18 @@ G:_Q_MENU
 
 *:_Q_M_Q1
 B:                             Lesson Q1
-K:12:_Q_MENU
 G:_Q_S_Q1
 *:_Q_M_Q2
 B:                             Lesson Q2
-K:12:_Q_MENU
 G:_Q_S_Q2
 *:_Q_M_Q3
 B:                             Lesson Q3
-K:12:_Q_MENU
 G:_Q_S_Q3
 *:_Q_M_Q4
 B:                             Lesson Q4
-K:12:_Q_MENU
 G:_Q_S_Q4
 *:_Q_M_Q5
 B:                             Lesson Q5
-K:12:_Q_MENU
 G:_Q_S_Q5
 #------------------------------------------------------------------------------
 # Lesson series Q menu
