@@ -3,6 +3,28 @@
 @settitle GNU Typist Manual
 @include version.texi
 
+@copying
+This manual is for GNU Typist (version @value{VERSION}, @value{UPDATED}),
+a program to learn typing in several languages and for different
+keyboard layouts.
+
+Copyright @copyright{} 1998, 1999, 2000, 2001, 2002
+Free Software Foundation, Inc.
+
+@quotation
+Permission is granted to copy, distribute and/or modify this document
+under the terms of the GNU Free Documentation License, Version 1.1 or
+any later version published by the Free Software Foundation; with no
+Invariant Sections, with the Front-Cover texts being ``A GNU Manual,''
+and with the Back-Cover Texts as in (a) below.  A copy of the license is
+included in the section entitled ``GNU Free Documentation License.''
+
+(a) The FSF's Back-Cover Text is: ``You have freedom to copy and modify
+this GNU Manual, like GNU software.  Copies published by the Free
+Software Foundation raise funds for GNU development.''
+@end quotation
+@end copying
+
 @dircategory Education
 @direntry Education
 * GTypist: (gtypist). Documentation of the typing tutor gtypist.
@@ -12,12 +34,20 @@
 @title GNU Typist Manual
 @subtitle Version @value{VERSION}
 @author Latest update: @value{UPDATED}
+@page
+@vskip 0pt plus 1filll
+@insertcopying
+Published by the Free Software Foundation @*
+59 Temple Place Suite 330 @*
+Boston, MA 02111-1307 @*
+USA @*
 @end titlepage
 @page
 
 @ifnottex
 @node Top, Distribution, (dir), (dir)
 @top GNU Typist - Typing Tutor
+@insertcopying
 
 GNU Typist is an interactive typing tutor that can help you to type
 correctly. It has several lessons for different keyboard layouts and in
@@ -41,6 +71,7 @@ or create new ones.
 * Environment Variables::   Environment variables which affect gtypist
 * Errors and omissions::    Known problems
 * History::                 History of GNU Typist
+* Copying this manual::     The GNU Free Documentation License.
 @end menu
 
 
@@ -812,7 +843,7 @@ Colour curses modes do not seem to work well with UnixWare. In
 particular, reverse video is not always rendered correctly on some
 terminal types, and xterms.
 
-@node History, , Errors and omissions, Top
+@node History, Copying this manual, Errors and omissions, Top
 @appendix History of GNU Typist
 
 @itemize @bullet
@@ -855,6 +886,10 @@ and made major contributions to the project: lesson
 imports from other tutors, tool enhancements, new tutorial capabilities,
 and Emacs mode.
 @end itemize
+
+@node Copying this manual, , History, Top
+@appendix Copying this manual: the GNU Free Documentation License
+@include fdl.texi
 
 @bye
 

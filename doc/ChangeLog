@@ -1,3 +1,9 @@
+2002-04-08  Michael Opdenacker  <michaelo@gnu.org>
+
+	* gtypist.texi: uses the new @copying command provided by texinfo-4.2.
+	The manual is now released under the GNU Free Documentation license
+	which is now included in the manual.
+	
 2002-04-07  Michael Opdenacker  <michaelo@gnu.org>
 
 	* Added the Czech translation of the manual
