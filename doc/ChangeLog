@@ -1,3 +1,7 @@
+2001-08-16  Michael Opdenacker 	<michaelo@gnu.org>
+
+	* Renamed manual sources to `gtypist.texi' (more standard).
+ 
 2001-08-15  Felix Natter  <f.natter@ndh.net>
 
 	* node Introduction: start of rewrite
@@ -6,7 +10,8 @@
 2001-08-15  Michael Opdenacker 	<michaelo@gnu.org>
 
 	* GPL text now taken from a separate file, gpl.texi,
-	copied from GNU hello.
+	copied from GNU hello. Renamed manual sources to
+	`gtypist.texi' (more standard).
  
 2001-08-12  Felix Natter  <f.natter@ndh.net>
 
