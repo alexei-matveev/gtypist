@@ -19,12 +19,9 @@ ALL_LINGUAS="de es fi fr"
 
 dnl Checks for libraries.
 
-dnl Search for ncurses or curses
-AC_SEARCH_LIBS(wbkgdset, curses,,echo "*** The ncurses library is required!";exit 1)
-
 dnl Checks for header files.
 AC_HEADER_STDC
-AC_CHECK_HEADERS([unistd.h alloca.h argz.h errno.h fcntl.h langinfo.h libintl.h limits.h locale.h malloc.h stddef.h stdlib.h string.h strings.h sys/param.h unistd.h])
+AC_CHECK_HEADERS([unistd.h alloca.h argz.h curses.h errno.h fcntl.h langinfo.h libintl.h limits.h locale.h malloc.h stddef.h stdlib.h string.h strings.h sys/param.h unistd.h])
 
 dnl Checks for typedefs, structures, and compiler characteristics.
 AC_C_CONST
