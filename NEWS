@@ -5,11 +5,10 @@
 	`THANKS' files for details about changes and contributors.
 
 Version 2.6 - April/2002
-	- new `typefortune' (perl-)script which creates lessons from `fortune'
+	- New `typefortune' (perl-)script which creates lessons from `fortune'
 	(see the new section "Using typefortune" in the manual)
-
-	TODO: commit these !
-	- new lesson for Czec + Czec translation
+	- New interface, manual and lesson in Czech
+	  from Hynek Hanke <hanke@volny.cz> 
 
 Version 2.5.1 - February/2002
 	- fix a bug in --help output
