@@ -1,3 +1,8 @@
+2001-08-15  Felix Natter  <f.natter@ndh.net>
+
+	* node Introduction: start of rewrite
+	* some spelling fixes
+
 2001-08-15  Michael Opdenacker 	<michaelo@gnu.org>
 
 	* GPL text now taken from a separate file, gpl.texi,

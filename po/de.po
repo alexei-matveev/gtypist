@@ -271,11 +271,11 @@ msgstr "Einführung"
 msgid "  Query   "
 msgstr " Anfrage  "
 
-# TODO: what is the whitespace used for ?
+# TODO: what is the whitespace used for ? TODO: Routine/Griff-Übung ??
 #. this string is displayed in the mode-line when running a drill
 #: gtypist.c:1826
 msgid "  Drill   "
-msgstr " Routine  "
+msgstr "  Drill   "
 
 # TODO: Geschwindigkeitstest ??
 #. this string is displayed in the mode-line when running a speedtest

@@ -20,7 +20,7 @@
 GNU Typist is an interactive typing tutor that can help you to type
 correctly. It has several lessons for different keyboards layouts and in
 different languages. The lessons for gtypist are described in a easy-to-learn
-scripting language that the user can use to modify the exising lessons
+scripting language that the user can use to modify the existing lessons
 or create new ones.
 
 @end ifnottex
@@ -76,26 +76,55 @@ You can obtain GNU Typist from a friend or from Internet:
 @chapter Introduction
 
 GNU Typist is an interactive typing tutor program. It uses an input file to
-create a series of typing tutorials, drills, and timed speed tests. It
+@c TODO: timed speed-tests
+create a series of typing tutorials, drills, and speed tests. It
 is intended to be used on raw terminals without graphics ---it has been
 compiled and used in GNU/Linux and Unix (Aix, Solaris) and also in
 DOS/Windows (DOS 6.22, Windows 98, Windows NT).
 
 The program reads lessons written in an easy-to-learn scripting language. It
 is distributed with several complete and good lessons, you can use them,
+@c TODO: reference to node How to contribute ....!
 modify them or create new lessons (@pxref{Script-file commands}).
+
+If a script file is not specified on the command line, a default file
+@file{gtypist.typ} will be used. (See details about the path in the
+section @pxref{Environment Variables}).
+
+The top line of the screen displays a banner. The bottom line of the
+screen displays a message line, queries, and other status information.
+The lines in between are used for the tutorials, drills, and speed
+tests.
 
 There are two types of typing-exercises: drills and speed-tests.
 
-In a drill, gtypist displays text on the screen, and waits for the user to
-correctly type the exact same text, underneath. It indicates typing
-errors, and if at the end of the exercise there were too many errors, it will
-re-run the drill.
-Backspace and delete are not permitted in drills.
+In a drill, gtypist displays text in every other line on the screen,
+and waits for the user to correctly type the exact same text in the
+intermediate lines.
+@c TODO: intention is ``Griff-Übung'' (finger-exercise)
+ It indicates typing errors and at the end of the
+exercise it calculates the real and effective rate in WPM.
+If there were too many errors, it will re-run the drill.
+@key{Backspace} and @key{delete} are not permitted in drills.
+
+In a speed test, gtypist displays text on the screen, and waits for the
+user to correctly over-type the exact same text. It indicates typing
+errors, and at the end of the test it calculates the real and effective
+rate in WPM. 
+@c TODO: what is it used for ?
+If there were too many errors, it will re-run the speed-test.
+@key{Backspace} and @key{delete} are recognised, but errors still accumulate.
 
 If you already made too many mistakes, then you can use @key{ESC} to
+give up and start again.
+
+@c TODO: indicate ``practice only''-exercises in modeline ?
+There are also ``practice only''-exercises (of both drills and speed-tests)
+which you won't have to repeat at all. But we won't tell you when this
+is the case, so you'll have to give your best anyway ;-)
+
 @c TODO: restart the drill from the beginning
-give up and restart the drill from the beginning.
+@c TODO: from the beginning. ??
 
 @c There are two types of drills - one-time and ordinary. In an ordinary
 @c drill, gtypist displays text on the screen, and waits for the user to
@@ -106,12 +135,9 @@ give up and restart the drill from the beginning.
 @c drill if it is not typed correctly. Backspace and delete are not
 @c permitted in drills.
 
-In a speed test, gtypist displays text on the screen, and waits for the
-user to correctly over-type the exact same text. It indicates typing
-errors, and at the end of the test it calculates the real and effective
-rate in WPM. A speed test is run only once, no matter how many errors
-there were. Backspace and delete are permitted, but errors still
-accumulate.
+@c A speed test is run only once, no matter how many errors
+@c there were. Backspace and delete are permitted, but errors still
+@c accumulate.
 
 @c @item D
 @c This creates an ordinary typing drill. It is a multi-line command;
@@ -133,16 +159,6 @@ accumulate.
 @c colours.  You get only one chance at this test, but delete and backspace
 @c are recognised (errors still accumulate, however).  At the end
 @c of the test, the typing speed and accuracy are displayed.
-
-
-The top line of the screen displays a banner. The bottom line of the
-screen displays a message line, queries, and other status information.
-The lines in between are used for the tutorials, drills, and speed
-tests.
-
-If a script file is not specified on the command line, a default file
-@file{gtypist.typ} will be used. (See details about the path in the section 
- @pxref{Environment Variables}). 
 
 In typing speed reports, a 'word' is deemed to be five characters, so
 the raw (gross) WPM is the number of characters in the test passage,
@@ -414,6 +430,8 @@ is found (so you could also place a label there and just @code{G} to it)
 
 @end table
 
+@c TODO: more examples (i.e. one example for E:/F:, one for a menu, ...)
+
 Here is a tiny example script to demonstrate the available commands
 (@file{tinydemo.typ} lesson file):
 
@@ -459,7 +477,7 @@ Speed drills in English
 @item n.typ
 Calculator keypad in English
 @item gtypist.typ
-Compendium of the previous lessons in English
+Compendium of all previous lessons in English
 @item esp.typ
 QWERTY course in Spanish
 @item kt*.typ
@@ -744,7 +762,9 @@ JTypist but that now is called Typist:
 
  @url{http://www.ocston.org/~simonb/typist/}
 @item
-Since 1997, Ben Armstrong @email{synrg@@sanctuary.nslug.ns.ca} has helped by fixing bugs and maintaining a Debian package (see @url{http://packages.debian.org/gtypist}).
+Since 1997, Ben Armstrong @email{synrg@@sanctuary.nslug.ns.ca} has
+helped by fixing bugs and maintaining a Debian package (see
+@url{http://packages.debian.org/gtypist}).
 @item
 In 2000, Vladimir Támara @email{vtamara@@users.sourceforge.net} and
 Igor Támara @email{ikks@@users.sourceforge.net} became the maintainers of
@@ -754,11 +774,12 @@ project Structio.
 @item
 November 2000, accepted as a GNU package! Renamed to GNU Typist (or
 gtypist).
-@item In May 2001, Michael Opdenacker @email{michaelo@@gnu.org}, who learnt touch
-typing with GNU Typist, became the new maintainer. Project development is now hosted on
+@item In May 2001, Michael Opdenacker @email{michaelo@@gnu.org},
+who learned touch typing with GNU Typist, became the new
+maintainer. Project development is now hosted on
 @url{http://savannah.gnu.org/projects/gtypist/}.
 @end itemize
 
 @bye
 
-@c  LocalWords:  xref
+@c  LocalWords:  xref QWERTY kt
