@@ -105,6 +105,18 @@ aclocal -I m4
 autoheader
 automake --add-missing
 
+if [ $? != 0 ]; then
+    echo ""
+    echo "Automake wasn't able to generate the necessary files like"
+    echo "config.sub, config.guess, etc. needed for compilation"
+    echo "You can copy them from some other place, but it's better"
+    echo "to investigate why automake --add-missing failed, so that"
+    echo "it doesn't cause some obscure problems later."
+    echo "After pressing ENTER, the process will continue, but"
+    echo "you can use CONTROL-C to interrupt it."
+    read
+fi
+
 autoconf
 if [ $? != 0 ]; then
     echo -e \
