@@ -4,7 +4,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: typist 2.3.1\n"
-"POT-Creation-Date: 2001-09-02 22:11+0200\n"
+"POT-Creation-Date: 2001-09-07 21:17+0200\n"
 "PO-Revision-Date: 2000-12-08 14:17+01:00\n"
 "Last-Translator: Vladimir Támara Patiño <vtamara@gnu.org>\n"
 "Language-Team:\n"
@@ -13,84 +13,84 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 
 #. print out the error message and stop
-#: gtypist.c:316
+#: gtypist.c:324
 msgid "line"
 msgstr "linea"
 
-#: gtypist.c:349
+#: gtypist.c:357
 msgid "data shortage"
 msgstr "escaces de datos"
 
-#: gtypist.c:351
+#: gtypist.c:359
 msgid "missing ':'"
 msgstr "falta ':'"
 
-#: gtypist.c:357
+#: gtypist.c:365
 msgid "line too long for screen"
 msgstr "línea demasiado larga para la pantalla"
 
-#: gtypist.c:413 gtypist.c:427 gtypist.c:722
+#: gtypist.c:421 gtypist.c:435 gtypist.c:730
 msgid "internal error: malloc"
 msgstr "error interno: malloc"
 
-#: gtypist.c:445
+#: gtypist.c:453
 msgid "label redefinition"
 msgstr "redefinición de etiqueta"
 
-#: gtypist.c:488 gtypist.c:1472
+#: gtypist.c:496 gtypist.c:1490
 #, c-format
 msgid "label '%s' not found"
 msgstr "etiqueta '%s' no encontrada"
 
-#: gtypist.c:494 gtypist.c:914 gtypist.c:1124
+#: gtypist.c:502 gtypist.c:927 gtypist.c:1142
 msgid "internal error: fseek"
 msgstr "error interno: fseek"
 
-#: gtypist.c:621
+#: gtypist.c:629
 #, c-format
 msgid "invalid key binding (%d:%s)"
 msgstr "asociación de teclas invalida (%d:%s)"
 
-#: gtypist.c:623
+#: gtypist.c:631
 msgid "invalid function key number"
 msgstr "número de tecla de función invalido"
 
-#: gtypist.c:660 gtypist.c:770 gtypist.c:984
+#: gtypist.c:668 gtypist.c:778 gtypist.c:997
 msgid "data exceeds screen length"
 msgstr "los datos excenden la longitud de la pantalla"
 
-#: gtypist.c:697
+#: gtypist.c:705
 msgid "instructions are limited to two lines"
 msgstr "las instrucciones están limitadas a dos líneas"
 
-#: gtypist.c:1381
+#: gtypist.c:1399
 #, c-format
 msgid "'*' must immediately follow '%'"
 msgstr ""
 
-#: gtypist.c:1383 gtypist.c:1385
+#: gtypist.c:1401 gtypist.c:1403
 #, fuzzy, c-format
 msgid "missing '%'"
 msgstr "falta ':'"
 
-#: gtypist.c:1388
+#: gtypist.c:1406
 #, c-format
 msgid "'%' must immediately follow value"
 msgstr ""
 
-#: gtypist.c:1397
+#: gtypist.c:1415
 msgid "overflow in do_error_max_set"
 msgstr ""
 
-#: gtypist.c:1417
+#: gtypist.c:1435
 msgid "Invalid value for \"E:\" (out of range)"
 msgstr ""
 
-#: gtypist.c:1534
+#: gtypist.c:1552
 msgid "unknown command"
 msgstr "comando desconocido"
 
-#: gtypist.c:1640
+#: gtypist.c:1658
 #, fuzzy
 msgid ""
 "default maximum error percentage (default 3.0); valid values are between 0.0 "
@@ -99,15 +99,15 @@ msgstr ""
 "ejecutar practicas N veces en caso de error (por  defecto 3) valores válidos "
 "entre 1 y 1000"
 
-#: gtypist.c:1641
+#: gtypist.c:1659
 msgid "turn off WPM timer in drills"
 msgstr "deshabilitar contador PPM en prácticas"
 
-#: gtypist.c:1642
+#: gtypist.c:1660
 msgid "use the terminal's hardware cursor"
 msgstr "usa el cursor de la terminal"
 
-#: gtypist.c:1643
+#: gtypist.c:1661
 #, fuzzy
 msgid ""
 "cursor flash period P*.1 sec (default 10); valid  values are between 0 and "
@@ -116,35 +116,35 @@ msgstr ""
 "pone el periodo de parpadeo del cursor en P*.1 sec (por defecto 10), los "
 "valores válidos están entre 0 y 512"
 
-#: gtypist.c:1644
+#: gtypist.c:1662
 msgid "set initial display colours where available"
 msgstr "de ser posible establece los colores iniciales de la pantalla"
 
-#: gtypist.c:1645
+#: gtypist.c:1663
 msgid "don't beep on errors"
 msgstr "no producir sonidos en caso de error"
 
-#: gtypist.c:1646
+#: gtypist.c:1664
 msgid "same as -s, --silent"
 msgstr "el mismo efecto de -s, --silent"
 
-#: gtypist.c:1647
+#: gtypist.c:1665
 msgid "start the lesson at label 'L'"
 msgstr "comenzar la lección en la etiqueta 'L'"
 
-#: gtypist.c:1648
+#: gtypist.c:1666
 msgid "try to mimic word processors"
 msgstr "intentar imitar procesadores de texto"
 
-#: gtypist.c:1649
+#: gtypist.c:1667
 msgid "print this message"
 msgstr "imprimir este mensaje"
 
-#: gtypist.c:1650
+#: gtypist.c:1668
 msgid "output version information and exit"
 msgstr "presentar información de la versión y salir"
 
-#: gtypist.c:1654
+#: gtypist.c:1672
 #, fuzzy
 msgid ""
 "`gtypist' is a typing tutor with several lessons for different keyboards and "
@@ -156,20 +156,20 @@ msgstr ""
 "facilmente\n"
 "\n"
 
-#: gtypist.c:1656
+#: gtypist.c:1674
 msgid "Usage"
 msgstr "Utilización"
 
-#: gtypist.c:1656 gtypist.c:1657
+#: gtypist.c:1674 gtypist.c:1675
 msgid "Options"
 msgstr "Opciones"
 
-#: gtypist.c:1656
+#: gtypist.c:1674
 #, fuzzy
 msgid "script-file"
 msgstr "archivo_script"
 
-#: gtypist.c:1664
+#: gtypist.c:1682
 #, fuzzy, c-format
 msgid ""
 "\n"
@@ -178,7 +178,7 @@ msgstr ""
 "\n"
 "Si no se da, el archivo_script por defecto es '%s/%s'.\n"
 
-#: gtypist.c:1666
+#: gtypist.c:1684
 msgid ""
 "The path $GTYPIST_PATH is searched for script files.\n"
 "\n"
@@ -186,26 +186,26 @@ msgstr ""
 "Se buscarán archivos script en la vía $GTYPIST_PATH.\n"
 "\n"
 
-#: gtypist.c:1668
+#: gtypist.c:1686
 msgid "Examples"
 msgstr "Ejemplos"
 
-#: gtypist.c:1670
+#: gtypist.c:1688
 msgid "To run the default lesson in english `gtypist.typ'"
 msgstr "Para ejecutar la lección en inglés por omisión `gtypist.typ'"
 
-#: gtypist.c:1672
+#: gtypist.c:1690
 msgid "To run the lesson in spanish"
 msgstr "Para ejecutar la lección en español"
 
-#: gtypist.c:1674
+#: gtypist.c:1692
 msgid ""
 "To instruct gtypist to look for lesson `bar.typ' in a non standard directory"
 msgstr ""
 "Para indicarle a gtypist que busque la lección `bar.typ' en un directorio no "
 "estándar"
 
-#: gtypist.c:1676
+#: gtypist.c:1694
 msgid ""
 "To run the lesson in the file `test.typ' of directory `temp', starting at "
 "label `TEST1', using the terminal's cursor, and run silently"
@@ -214,40 +214,40 @@ msgstr ""
 "comenzando en la etiqueta `TEST1', usando el cursor de la terminal y en modo "
 "silencioso"
 
-#: gtypist.c:1677
+#: gtypist.c:1695
 msgid "Report bugs to bug-gtypist@gnu.org"
 msgstr "Reporte fallas a bug-gtypist@gnu.org"
 
-#: gtypist.c:1715
+#: gtypist.c:1733
 #, fuzzy, c-format
 msgid "%s: invalid error-max value\n"
 msgstr "%s: valor de color invalido\n"
 
-#: gtypist.c:1731
+#: gtypist.c:1749
 #, fuzzy, c-format
 msgid "%s: invalid curs-flash value\n"
 msgstr "%s: valor de curs_flash invalido\n"
 
-#: gtypist.c:1742
+#: gtypist.c:1760
 #, c-format
 msgid "%s: invalid colours value\n"
 msgstr "%s: valor de color invalido\n"
 
-#: gtypist.c:1755
+#: gtypist.c:1773
 #, c-format
 msgid "%s: internal error: malloc\n"
 msgstr "%s: error interno: malloc\n"
 
-#: gtypist.c:1770
+#: gtypist.c:1788
 msgid "Written by Simon Baldwin"
 msgstr "Escrito por Simon Baldwin"
 
-#: gtypist.c:1776 gtypist.c:1783
+#: gtypist.c:1794 gtypist.c:1801
 #, c-format
 msgid "Try '%s --help' for more information.\n"
 msgstr "Intente con '%s --help' para obtener más información.\n"
 
-#: gtypist.c:1822
+#: gtypist.c:1840
 #, fuzzy
 msgid ""
 "Copyright (C) 1998,2001  Simon Baldwin.\n"
@@ -265,42 +265,42 @@ msgstr ""
 "Este programa se ha liberado bajo la GNU General Public License."
 
 #. this string is displayed in the mode-line when in a tutorial
-#: gtypist.c:1829
+#: gtypist.c:1847
 msgid " Tutorial "
 msgstr " Tutorial "
 
 #. this string is displayed in the mode-line when in a query
-#: gtypist.c:1831
+#: gtypist.c:1849
 msgid "  Query   "
 msgstr " Pregunta "
 
 #. this string is displayed in the mode-line when running a drill
-#: gtypist.c:1833
+#: gtypist.c:1851
 msgid "  Drill   "
 msgstr "  Rutina  "
 
 #. this string is displayed in the mode-line when running a speedtest
-#: gtypist.c:1835
+#: gtypist.c:1853
 msgid "Speed test"
 msgstr "Velocidad "
 
-#: gtypist.c:1836
+#: gtypist.c:1854
 msgid " Press Return to continue... "
 msgstr " Presione Enter para continuar... "
 
-#: gtypist.c:1839
+#: gtypist.c:1857
 #, c-format
 msgid "Your error-rate is too high. You have to achieve %.1f%%."
 msgstr ""
 
-#: gtypist.c:1843
+#: gtypist.c:1861
 #, c-format
 msgid "You failed this test, so you need to go back to %s."
 msgstr ""
 
 #. this is used for queries. you can translate the keys as well
 #. (if you translate msgid "Y/N" accordingly)
-#: gtypist.c:1846
+#: gtypist.c:1864
 msgid "Press Y to continue, N to repeat or Fkey12 to exit"
 msgstr ""
 
@@ -308,7 +308,7 @@ msgstr ""
 #. Leading whitespace is important because it is displayed in reverse
 #. video because it must be aligned with the next two messages
 #. (it's best to run gtypist to see this in practice)
-#: gtypist.c:1851
+#: gtypist.c:1869
 #, c-format
 msgid " Raw speed      = %6.2f wpm "
 msgstr " Velocidad Neta = %6.2f wpm "
@@ -317,7 +317,7 @@ msgstr " Velocidad Neta = %6.2f wpm "
 #. Leading whitespace is important because it is displayed in reverse
 #. video and because it must be aligned with the previous and next messages
 #. (it's best to run gtypist to see this in practice)
-#: gtypist.c:1856
+#: gtypist.c:1874
 #, c-format
 msgid " Adjusted speed = %6.2f wpm "
 msgstr " Velocidad Real = %6.2f wpm "
@@ -326,18 +326,18 @@ msgstr " Velocidad Real = %6.2f wpm "
 #. Leading whitespace is important because it is displayed in reverse
 #. video and because it must be aligned with the next last two messages
 #. (it's best to run gtypist to see this in practice)
-#: gtypist.c:1861
+#: gtypist.c:1879
 #, fuzzy, c-format
 msgid "            with %.1f%% errors "
 msgstr "            con %3.0f%% errores "
 
 #. this is used to translate the keys for Y/N-queries. Must be two uppercase
 #. letters. Y/N will still be accepted as well
-#: gtypist.c:1864
+#: gtypist.c:1882
 msgid "Y/N"
 msgstr ""
 
-#: gtypist.c:1912
+#: gtypist.c:1930
 msgid "can't find or open file"
 msgstr "no se pudo encontrar o abrir archivo"
 

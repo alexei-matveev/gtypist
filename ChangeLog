@@ -1,3 +1,11 @@
+2001-09-07  Felix Natter  <f.natter@ndh.net>
+
+	* gtypist.c: add macro ASCII_ENTER which is used in wait_user
+	(necessary because pdcurs-2.4 returns 0x0D for Enter if raw() is used)
+	* gtypist.c (do_drill, do_speedtest): translate 0x0D (DOS newline)
+	to ASCII_NL
+	(necessary because pdcurs-2.4 returns 0x0D for Enter if raw() is used)
+
 2001-09-05  Felix Natter  <f.natter@ndh.net>
 
 	* gtypist.c (do_speedtest): add unsigned char cast to avoid

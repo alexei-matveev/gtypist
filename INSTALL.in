@@ -63,6 +63,10 @@ You must have:
 	mkdir c:\GTypist
 	copy gtypist.exe c:\GTypist
 	copy lessons\*.typ c:\GTypist
+
+* If you distribute it, then you might want to remove symbols from gtypist.exe:
+	
+	strip --strip-all gtypist.exe
 	
 * To use it go to the directory where you installed it and run gtypist.exe
 	cd GTypist

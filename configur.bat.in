@@ -1,4 +1,4 @@
-@echo Configuring @PACKAGE@
+@echo Configuring gtypist @VERSION
 @echo Using DJGPP and PDCURSES
 @echo No Native Language Support
 @echo Creating config.h

@@ -106,7 +106,7 @@ G:MUESTRA_MENU_PRINCIPAL_2
 *:MENU_PRINCIPAL_3
 K:1:VELOCIDAD
 K:2:PRECISION
-K:3:NULL
+:3:NULL
 K:4:NULL
 K:5:NULL
 K:6:NULL
@@ -245,6 +245,7 @@ B:Evaluación Lección 1.
 I:Para pasar a la siguiente lección, en esta evaluación su wpm real debe ser de
  :por lo menos 30 con un porcentaje de errores menor al 5%.
 E:5%
+F:MUESTRA_MENU_LECCION_1
 S:fff ff f jjj jj j fff jj f jjj ff j f j
  :ddd dd d kkk kk k ddd kk d kkk dd k d k
  :sss ss s lll ll l sss ll s lll ss l s l
@@ -332,6 +333,7 @@ B:Evaluación Lección 2.
 I:Para pasar a la siguiente lección, en esta evaluación su wpm real debe ser de
  : por lo menos 31 con un porcentaje de errores inferior al 5%.
 E:5%
+F:MUESTRA_MENU_LECCION_2
 S:a as asd asdf j jk jkl jklñ s sa sal las
  :a as asd asdf j jk jkl jklñ s sa sal las
  :f fa faj faja j ja jal jala j as aja ala
@@ -425,6 +427,7 @@ B:Evaluación Lección 3.
 I:Para pasar a la siguiente lección, en esta evaluación su wpm real debe ser de
  : por lo menos 32, con un porcentaje de error inferior al 4%.
 E:4%
+F:MUESTRA_MENU_LECCION_3
 S:j jf jfk jfkl ñ añ aña daña l la las faja
  :j jf jfk jfkl ñ añ aña daña l la las faja
  :e le lea leal j je eje deje a ja aje ajos
@@ -528,6 +531,7 @@ B:Evaluación Lección 4
 I:Para pasar a la siguiente lección, en esta evaluación su wpm real debe ser de
  : por lo menos 33 con un porcentaje de error inferior al 4%.
 E:4%
+F:MUESTRA_MENU_LECCION_4
 S:fdsa jklñ fdsa jklñ asdf ñlkj fdsa jklñ
  :fdsa jklñ fdsa jklñ asdf ñlkj fdsa jklñ
  :da sa ja la as al ña da sa fa la as ala
@@ -618,6 +622,7 @@ B:Evaluación Lección 5
 I:Para pasar a la siguiente lección, en esta evaluación su wpm real debe ser de
  : por lo menos 34 con un porcentaje de error inferior al 3%.
 E:3%
+F:MUESTRA_MENU_LECCION_5
 S:a la sal sala f fa fas faja e es ese seda
  :a la sal sala f fa fas faja e es ese seda
  :d de del dedo l lo los solo j je eje ojos
@@ -708,6 +713,7 @@ B:Evaluación Lección 6
 I:Para pasar a la siguiente lección, en esta evaluación su wpm real debe ser de
  : por lo menos 35 con un porcentaje de error inferior al 3%.
 E:3%
+F:MUESTRA_MENU_LECCION_6
 S:jmj mj m mmm jj m mas me m mes mi j eme
  :jmj mj m mmm jj m mas me m mes mi j eme
  :fgf gg f gfg gf g gas ga g gas go g gol
@@ -800,6 +806,7 @@ B:Evaluación Lección 7
 I:Para pasar a la siguiente lección, en esta evaluación su wpm real debe ser de
  : por lo menos 36 con un porcentaje de error inferior al 3%.
 E:3%
+F:MUESTRA_MENU_LECCION_7
 S:aqa aq q qqq qa aqa qa q aaa qa q aqa
  :juj uj u uuu ju u juj uj u juj ju juj
  :Jaj La L Lola Ll J Juj Juan Jul Julio
@@ -896,6 +903,7 @@ B:Evaluación Lección 8
 I:Para pasar a la siguiente lección, en esta evaluación su wpm real debe ser de
  : por lo menos 37 con un porcentaje de error inferior al 3%.
 E:3%
+F:MUESTRA_MENU_LECCION_8
 S:a q s d e c f r t g h j u n m k i l o ñ
  :asd dec frg frt jhn jum kil lo. año uña
  :Un kilo de queso. Nin te trae su tarea.
@@ -987,6 +995,7 @@ B:Evaluación Lección 9
 I:Para pasar a la siguiente lección, en esta evaluación su wpm real debe ser de
  : por lo menos 38 con un porcentaje de error inferior al 3%.
 E:3%
+F:MUESTRA_MENU_LECCION_9
 S:sws ss sw w www sws sws ws w sal ws w
  :ñ sé sí é ése dé í tía él ' ñ'ñ tío
  :fvf vv f fvf fv f vvv fv v fff fv ver
@@ -1070,6 +1079,7 @@ B:Evaluación Lección 10
 I:Para pasar a la siguiente lección, en esta evaluación su wpm real debe ser de
  : por lo menos 39 con un porcentaje de error inferior al 3%.
 E:3%
+F:MUESTRA_MENU_LECCION_10
 S:Quique Quiles quiere viajar a Quisquella.
  :Quique Quiles quiere viajar a Quisquella.
  :Ufa subirá con Ulises Urrutia a la cúpula.
@@ -1149,6 +1159,7 @@ B:Evaluación Lección 11
 I:Para pasar a la siguiente lección, en esta evaluación su wpm real debe ser de
  : por lo menos 39 con un porcentaje de error inferior al 3%.
 E:3%
+F:MUESTRA_MENU_LECCION_11
 S:Voy a ayudar a Yamilete en su examen de yodo.
  :Acomoden el yate en el anexo de Xavier Yanés.
  :Fue a visitar a su hermano que está exiliado.
@@ -1236,6 +1247,7 @@ B:Evaluación Lección 12
 I:Para pasar a la siguiente lección, en esta evaluación su wpm real debe ser de
  : por lo menos 40 con un porcentaje de error inferior al 3%.
 E:3%
+F:MUESTRA_MENU_LECCION_12
 S:El signo ; señala una pausa intermedia, equivalente a dos tiempos, con un
  :descenso en la entonación.  Indica una pausa mayor que la señalada por la coma
  :pero no tan notable como la del punto.
@@ -1327,6 +1339,7 @@ s:Corran por el cerro, pero cuídense del perro que cuida.
 I:Para pasar a la siguiente lección, en esta evaluación su wpm real debe ser de
  : por lo menos 40 con un porcentaje de error inferior al 3%.
 E:3%
+F:MUESTRA_MENU_LECCION_13
 S:ferroviario, ria :adj. Perteneciente o relativo a los ferrocarriles | m y f.
  :Empleado del ferrocarril.
  :emparrado :m. Armazón que sostiene la parra u otra planta trepadora | Conjunto
@@ -1464,6 +1477,7 @@ s:1.1/9+3-6
 *:EVALUACION_LECCION_15
 I:Mínimo wpm real: 30, Porcentaje de error máximo: 2%
 E:2%
+F:MUESTRA_MENU_LECCION_15
 S:123 456 789 987 654 321
  :147 852 369 852 147 963
  :159 753 456 852 951 357
@@ -1584,6 +1598,7 @@ s:Las teclas que se usan en esta lección son \ { } [ ] _ ^ $.
 *:EVALUACION_LECCION_16
 I:Mínimo wpm real: 33, Porcentaje de error máximo: 5%
 E:5%
+F:MUESTRA_MENU_LECCION_16
 S:Primero cree el archivo prueba.tex en un editor de texto, después de esto
  :escriba lo siguiente dentro del archivo, tal y como está, no olvide grabar
  :\documentclass{article}
@@ -1676,6 +1691,7 @@ s:Primero un calentamiento: <<< <<< >>> >>> &&& &&& """ """ ??? ??? !!! !!!
 *:EVALUACION_LECCION_17
 I:Mínimo wpm real: 33, Porcentaje de error máximo: 4%
 E:4%
+F:MUESTRA_MENU_LECCION_17
 S:<html>
  :<head><title>Mi primer documento en HTML</title></head>
  :<!-- Escrito por: "?!" -->
@@ -1771,6 +1787,7 @@ s:@@@ @@@ ||| ||| ### ### @|@ @|@ |#| |#| |#| |@| |@| @#@ @#@
 *:EVALUACION_LECCION_18
 I:Mínimo wpm real: 33, Porcentaje de error máximo: 4%
 E:4%
+F:MUESTRA_MENU_LECCION_18
 S:@node Overview, Sourcebook of Writer, Top, Top
  :@chapter Overview: The Writing Process
  :
@@ -1878,6 +1895,7 @@ s:So she was considering in her own mind (as well as she could,
 *:EVALUACION_LECCION_19
 I:En esta evaluación se espera por lo menos 35wpm y a lo sumo 3% de error
 E:3%
+F:MUESTRA_MENU_LECCION_19
 S:LA PONCIA. (Sale comiendo chorizo y pan): Llevan ya más de dos horas de
  : gori-gori. Han venido curas de todos los pueblos. La iglesia está hermosa.
  : En el primer responso se desmayó la Magdalena.
@@ -1995,6 +2013,7 @@ N:PRACTICA_VELOCIDAD2
 B:Evaluación de Velocidad
 I:En esta evaluación se espera por lo menos 40wpm y a lo sumo 5% de error
 E:5%
+F:MUESTRA_MENU_VELOCIDAD
 S:Increíble, los océanos cubren aproximadamente el 71% de la superficie de
  :la tierra.
  :   http://www.abc.net.au/oceans/facts/default.htm
@@ -2112,6 +2131,7 @@ N:PRACTICA_PRECISION2
 B:Evaluación de precisión
 I:En está evaluación se espera por lo menos 30wpm y a lo sumo 1% de error
 E:1%
+F:MUESTRA_MENU_PRECISION
 S:Fragmento del prologo a "POR LO QUE HE VIVIDO"
  :
  :Tres pasiones, simples pero increíblemente fuertes, han gobernado mi vida:

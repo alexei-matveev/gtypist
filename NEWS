@@ -3,6 +3,7 @@ Version 2.4 - September/2001
 	- changes to the types of exercises: d,D for drills and s,S
 	for speed-tests
 	- add commands E: (sets error-max) and F: (sets "on failure" label)
+	(currently only used in demo.typ and esp.typ)
 	- do_drill, do_speedtest: add "builtin repeat loop"
 	- print_help: only break on whitespace in help-strings, use ';'
 	to separate words ..

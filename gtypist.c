@@ -102,6 +102,14 @@ char *MODE_SPEEDTEST;
 #define	QUERY_N			'N'
 #define	DRILL_CH_ERR		'^'
 #define	DRILL_NL_ERR		'<'
+/* this is needed in wait_user
+   DJGPP defines '\n' as 0x0A, but pdcurses 2.4 returns 0x0D (because
+   raw() is called) */
+#ifndef DJGPP
+#define ASCII_ENTER             '\n'
+#else
+#define ASCII_ENTER             0x0D
+#endif
 #define	ASCII_NL		'\n'
 #define	ASCII_NULL		'\0'
 #define	ASCII_ESC		27
@@ -806,6 +814,11 @@ do_drill( FILE *script, char *line ) {
 	  rc = getch_fl( *p == ASCII_TAB ?
 			 ASCII_TAB : ASCII_SPACE );
 	  c = (char)rc;
+	  /* this is necessary for DOS: when using raw(), pdcurses 2.4's
+	     getch() returns 0x0D on DOS/Windows  */
+	  if ( c == 0x0D )
+	    rc = c = 0x0A;
+
 	  while ( rc == KEY_BACKSPACE
 		  || c == ASCII_BS || c == ASCII_DEL ) 
 	    {
@@ -1019,6 +1032,11 @@ do_speedtest( FILE *script, char *line ) {
 	  rc = getch_fl( (*p != ASCII_NL) ? *p : ASCII_SPACE );
 	  c = (char)rc;
       
+	  /* this is necessary for DOS: when using raw(), pdcurses 2.4's
+	     getch() returns 0x0D on DOS/Windows  */
+	  if ( c == 0x0D )
+	    rc = c = 0x0A;
+
 	  /* start timer on first char entered */
 	  if ( chars_typed == 0 )
 	    start_time = (long)time( NULL );
