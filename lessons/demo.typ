@@ -122,7 +122,7 @@ T:The E command is used to set the maximum error percentage allowed for
  :If -e is specified then E: only has an effect if it is less (stricter)
  :than the value specified on the command-line (but this is only true if
  :the option is explicitly specified, not if the default is used)
- :Furthermore, if you use E:<value>%*, then you use the special form
+ :Furthermore, if you use E:<value>%*, then you can use the special form
  :E: Default (or E: default) to reset the value to its the default setting.
  :Warning: Don't follow a E: by a practice-only drill (d: or s:)!
  : 

@@ -294,7 +294,7 @@ msgid "Your error-rate is too high. You have to achieve %.1f%%."
 msgstr "Deine Fehlerrate ist zu hoch. Du musst %.1f%% erreichen."
 
 #: gtypist.c:1861
-#, fuzzy, c-format
+#, c-format
 msgid "You failed this test, so you need to go back to %s."
 msgstr "Der Test war nicht gut genug: zur Wiederh. zurück zu %s."
 

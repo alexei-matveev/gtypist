@@ -1,3 +1,8 @@
+2001-09-13  Felix Natter  <f.natter@ndh.net>
+
+	* configure.in (ALL_LINGUAS): add fi.po (finnish by
+	kusti@iki.fi (Kimmo K. I. Surakka))
+
 2001-09-07  Felix Natter  <f.natter@ndh.net>
 
 	* gtypist.c: add macro ASCII_ENTER which is used in wait_user
