@@ -8,7 +8,7 @@
 (autoconf --version) < /dev/null > /dev/null 2>&1 || {
     echo
     echo "**Error**: You must have \`autoconf' installed"
-    echo "Get ftp://ftp.gnu.org/gnu/autoconf/autoconf-2.57.tar.gz"
+    echo "Get ftp://ftp.gnu.org/gnu/autoconf/autoconf-2.57.tar.bz2"
     echo "(or a newer version if it is available)"
     exit 1
 }
@@ -16,7 +16,7 @@
 (automake --version) < /dev/null > /dev/null 2>&1 || {
     echo
     echo "**Error**: You must have \`automake' installed."
-    echo "Get ftp://ftp.gnu.org/gnu/automake/automake-1.7.3.tar.gz"
+    echo "Get ftp://ftp.gnu.org/gnu/automake/automake-1.7.6.tar.bz2"
     echo "(or a newer version if it is available)"
     exit 1
 }
@@ -41,7 +41,7 @@
 (makeinfo --version) < /dev/null > /dev/null 2>&1 || {
     echo
     echo "**Error**: You must have \`texinfo' installed."
-    echo "Get ftp://ftp.gnu.org/gnu/texinfo/texinfo-4.5.tar.gz"
+    echo "Get ftp://ftp.gnu.org/gnu/texinfo/texinfo-4.6.tar.bz2"
     echo "(or a newer version if it is available)"
     exit 1
 }

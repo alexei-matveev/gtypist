@@ -9,6 +9,9 @@
 	- Now ignores trailing spaces in lesson file lines which
 	  were invisible in the interface.
 
+Version 2.7 - September 2003
+	- Built with automake-1.7.6 and texinfo-4.6
+
 Version 2.6.2 - September/2002
 	- Now installs lessons (bug only in version 2.6.1).
 
