@@ -1,3 +1,8 @@
+2001-09-17  Felix Natter  <f.natter@ndh.net>
+
+	* gtypist.texi: new node "Design-patterns for lessons"
+	which has hints about all kinds of things for writing lessons
+
 2001-08-22  Felix Natter  <f.natter@ndh.net>
 
 	* gtypist.texi (Introduction): as Kevin Gallagher <kevingal@onramp.net>

@@ -510,9 +510,12 @@ about it, by writing an email to @email{bug-gtypist@@gnu.org}.
 
 Here are some hints how you can quickly create new lessons.
 
+@c TODO: better name for ``Design-patterns'' ??
+
 @menu
 * Ktouch-lessons:: 
 * Create drills from fortune:: 
+* Design-patterns for lessons::
 @end menu
 
 @node Ktouch-lessons, , Create drills from fortune, How to contribute new lessons
@@ -569,7 +572,7 @@ Obviously, the disadvantage of this is that you cannot make use of all
 of gtypist's features (but the output-file is very readable, so you
 can edit it to use more of gtypist's features).
 
-@node Create drills from fortune, Ktouch-lessons, , How to contribute new lessons
+@node Create drills from fortune, Ktouch-lessons, Design-patterns for lessons, How to contribute new lessons
 @section Create drills from fortune
 
 Using @file{gtypist-mode.el} you can quickly create lessons with
@@ -585,6 +588,19 @@ Once you installed @file{gtypist-mode.el}
 with ``.typ'' extension and run @kbd{C-c C-f} to create a drill
 (@code{O:} by default, use @kbd{C-u} or @kbd{C-u C-u} prefix to
 change).
+
+@node Design-patterns for lessons, Create drills from fortune, , How to contribute new lessons
+@section Design-patterns for lessons
+
+@c TODO: this should be divided into categories:
+@c o overall layout of lessons
+@c o drills/speedtests
+
+@itemize @bullet
+@item use mixture of drills and speed-tests (this is more fun for the user)
+@item use 'word, word.' to practice ,/.
+@end itemize
+
 
 @node Emacs mode for editing gtypist-lessons, Technical Information, How to contribute new lessons, Top
 @chapter Emacs mode for editing gtypist-lessons
@@ -692,8 +708,8 @@ GNU Typist uses the following environment variables:
 Typist offers Native Language Support (NLS) with support of the
 gettext library, this means that if your system supports it, the
 language of the messages shown by gtypist can be chosen. By now
-gtypist is distributed with messages in English, Spanish and
-German. To use a particular NLS use the environment variable LANG and
+gtypist is distributed with messages in English, Spanish, German and
+Finnish. To use a particular NLS use the environment variable LANG and
 set it to the appropriate 'LL_CC' combination where 'LL' is an ISO 639
 two-letter language code and 'CC' is an ISO 3166 two-letter country
 code (i.e. 'es_ES' for Spain and 'de_DE' for Germany). In some systems
