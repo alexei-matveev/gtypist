@@ -11,16 +11,16 @@
 
 (autoconf --version) < /dev/null > /dev/null 2>&1 || {
     echo
-    echo "**Error**: You must have \`autoconf' installed to."
-    echo "Download the appropriate package for your distribution,"
-    echo "or get the source tarball at ftp://ftp.gnu.org/pub/gnu/"
+    echo "**Error**: You must have \`autoconf' installed"
+    echo "Get ftp://ftp.gnu.org/gnu/autoconf/autoconf-2.53.tar.gz"
+    echo "(or a newer version if it is available)"
     exit 1
 }
 
 (automake --version) < /dev/null > /dev/null 2>&1 || {
     echo
     echo "**Error**: You must have \`automake' installed."
-    echo "Get ftp://ftp.gnu.org/pub/gnu/automake-1.4.tar.gz"
+    echo "Get ftp://ftp.gnu.org/gnu/automake/automake-1.6.tar.gz"
     echo "(or a newer version if it is available)"
     exit 1
 }
@@ -28,7 +28,7 @@
 (gettext --version) < /dev/null > /dev/null 2>&1 || {
     echo
     echo "**Error**: You must have \`gettext' installed."
-    echo "Get ftp://ftp.gnu.org/gnu/gettext-0.10.39.tar.gz"
+    echo "Get ftp://ftp.gnu.org/gnu/gettext/gettext-0.11.tar.gz"
     echo "(or a newer version if it is available)"
     exit 1
 }
@@ -67,7 +67,7 @@ done
 
 # gettextize
 echo "running gettextize...  Ignore non-fatal messages."
-gettextize --force --copy
+gettextize --force --copy --intl
 
 # Build configuration files
 
