@@ -4,7 +4,7 @@
 	See the `ChangeLog' (top-level and in some subdirectories) and
 	`THANKS' files for details about changes and contributors.
 
-Version 2.4.2 - December/2001
+Version 2.5 - December/2001
 	
 	- allow the user to skip a lesson by pressing ESC twice (once to
  	restart and then again at the beginning of the exercise to skip)
@@ -15,7 +15,7 @@ Version 2.4.2 - December/2001
 	It doesn't make sense to repeat a T:, the standard message
 	"Press Enter to continue." is better (d.typ, v.typ, r.typ)
 	- the last two changes make the lesson-files quite a bit simpler
-	- fixed an error in d.typ (see lessons/ChangeLog)
+	- fixed errors in d.typ and esp.typ (see lessons/ChangeLog)
 
 Version 2.4.1 - November/2001
 

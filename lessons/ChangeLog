@@ -1,3 +1,8 @@
+2001-12-02  Michael Opdenacker <michaelo@gnu.org>
+
+	* esp.typ: added missing `K' on line 109,
+	as suggested by José Pelegrín <josepl@acm.org>.
+
 2001-12-01  Felix Natter  <f.natter@ndh.net>
 
 	* d.typ, r.typ, v.typ, esp.typ: remove more occurrences of "Q:
@@ -9,8 +14,7 @@
 	
 	* d.typ: There was such an I: command:
 I:Juvenile zest for excitement whetted interest in parking by the quay.
-	(and a D: command was missing in the paragraph). changed this to
-	D:.
+	(and a D: command was missing in the paragraph). changed this to D:.
 
 2001-09-02  Felix Natter  <f.natter@ndh.net>
 
