@@ -36,11 +36,11 @@
 echo "creating doc/gtypist.info..."
 makeinfo -Idoc doc/gtypist.texi -o doc/gtypist.info
 echo "creating lessons/gtypist.typ..."
-(cd lessons && ../tools/typcombine q.typ r.typ t.typ v.typ u.typ d.typ m.typ s.typ n.typ > gtypist.typ)
+(cd lessons && gawk -f ../tools/typcombine q.typ r.typ t.typ v.typ u.typ d.typ m.typ s.typ n.typ > gtypist.typ)
 
 
 # Get version and write it in files
-. version.sh
+. ./version.sh
 
 # make sure that there's no whitespace after the version number
 # (in that case the awk command at the top of configure.in won't work)
