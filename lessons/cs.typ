@@ -6955,7 +6955,7 @@ I:(4)
 #                                                            ../orig/d.typ:105
 D:In the house Adana dined in haste on toast and dates.
  :Sated as she had eaten she noted the sheen on the dunes
- :asd the shade in the sheds. She hates to see an idiot
+ :and the shade in the sheds. She hates to see an idiot
  :stand and shoot his tenth doe in the dense heath.
 Q: Stisknutím Y mù¾ete pokraèovat, N bude cvièení opakovat, F12 - konec. 
 N:_D_R_L21
@@ -7518,7 +7518,7 @@ N:_D_R_L75
 I:(6)
 *:_D_R_L76
 #                                                            ../orig/d.typ:315
-D:Six husky cooks boiled clam broth, shrmp and prawns and broiled
+D:Six husky cooks boiled clam broth, shrimp and prawns and broiled
  :liver for seven lucky elves, then made their hasty exits.
 Q: Stisknutím Y mù¾ete pokraèovat, N bude cvièení opakovat, F12 - konec. 
 N:_D_R_L76
@@ -8834,7 +8834,7 @@ S:Dear Nathan,
  :plying to state that you are planning to come promptly? We will
  :make you one of the officers of the shipping business.
  :
- :Your sincerely,
+ :Yours sincerely,
 
 #                                                            ../orig/m.typ:588
 I:(5) Slova o devíti písmenech (od a k i)

@@ -861,7 +861,7 @@ S:Dear Nathan,
  :plying to state that you are planning to come promptly?  We will
  :make you one of the officers of the shipping business.
  :
- :Your sincerely,
+ :Yours sincerely,
 
 #                                                             ../orig/m.typ:588
 I:(5) Nine-letter words (a to i)
