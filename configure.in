@@ -18,7 +18,9 @@ dnl Set of available languages.
 ALL_LINGUAS="de cs es fi fr"
 
 dnl Checks for libraries.
-AC_CHECK_LIB(curses, wbkgdset)
+AC_CHECK_LIB(curses, wbkgdset,
+  [AC_DEFINE(HAVE_LIBCURSES)
+  LIBS="-lcurses $LIBS"],
 dnl check for ncurses if curses is not found:
 dnl i.e. on SuSE there are no ncurses* -> curses* links
 if test -z $HAVE_LIBCURSES;
@@ -54,5 +56,5 @@ AM_PATH_LISPDIR
 
 AC_SUBST(GEN_MAN)
 
-AC_OUTPUT(po/Makefile.in intl/Makefile lessons/Makefile tools/Makefile doc/Makefile Makefile po/Makefile.in m4/Makefile  intl/Makefile )
+AC_OUTPUT(po/Makefile.in intl/Makefile lessons/Makefile tools/Makefile doc/Makefile Makefile po/Makefile.in m4/Makefile  intl/Makefile  intl/Makefile po/Makefile.in m4/Makefile )
 
