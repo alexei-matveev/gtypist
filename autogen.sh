@@ -110,7 +110,7 @@ if test -z "$*"; then
     echo
     echo "**Warning**: I am going to run \`configure' with no arguments."
     echo "If you wish to pass any to it, please specify them on the"
-    echo \`$0\'" command line."
+    echo \'$0\'" command line."
 fi
 
 echo
@@ -130,8 +130,6 @@ echo "creating doc/gtypist.info..."
 makeinfo -Idoc gtypist.texi -o gtypist.info
 echo "creating doc/gtypist.cs.info..."
 makeinfo -Idoc gtypist.cs.texi -o gtypist.cs.info
-# Bug: '--html --no-header' doesn't work without '--no-split'
-# Reported to texinfo developers.
 echo "creating doc/gtypist.html..."
 makeinfo --html --no-header --no-split gtypist.texi -o gtypist.html 
 echo "creating doc/gtypist.cs.html..."
