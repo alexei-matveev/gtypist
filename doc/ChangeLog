@@ -1,3 +1,8 @@
+2002-04-07  Michael Opdenacker  <michaelo@gnu.org>
+
+	* Added the Czech translation of the manual
+	from Hynek Hanke <hanke@volny.cz>
+
 2002-02-23  Felix Natter  <fnatter@gmx.net>
 
 	* gtypist.texi (Emacs mode): do not mention that C-c C-f can be used

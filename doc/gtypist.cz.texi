@@ -1,0 +1,874 @@
+\input texinfo @c -*-mode:texinfo; compile-command: "makeinfo gtypist.texi"-*-
+@setfilename gtypist.info
+@settitle Pøíruèka pro GTypist
+@include version.texi
+
+@dircategory Education
+@direntry Education
+* GTypist: (gtypist). Dokumentace k výukovému programu psaní
+na klávesnici gtypist.
+@end direntry
+
+@titlepage
+@title GNU pøíruèka pro GTypist
+@subtitle Verze @value{VERSION}
+@author Poslední update: @value{UPDATED}
+@end titlepage
+@page
+
+@ifnottex
+@node Top, Distribuce, (dir), (dir)
+@top GNU Typist - psaní v¹emi deseti
+
+GNU Typist je interaktivní výukový program, který vám pomù¾e
+osvojit si principy psaní na klávesnici v¹emi deseti prsty.
+Má nìkolik lekcí pro rùzné typy klávesnic a rùzné jazyky. (Mezi
+nimi nechybí ani èe¹tina.) Lekce pro gtypist jsou napsány ve snadno
+pochopitelném skriptovacím jazyku, tak¾e je mohou u¾ivatelé
+modifkovat a vytváøet nové. Pokud zadáte parametr cz.typ,
+spustíte lekce v èe¹tinì zamìøené na èeskou klávesnici.
+
+@end ifnottex
+
+@menu
+@c TODO:
+* Distribuce::              Kde najít gtypist: zdrojové kódy, balíèky apod. 
+* Kopírování::              GNU General Public License øíká, jak mù¾ete
+                            kopírovat a svobodnì sdílet gtypist
+* Úvod::         	    Co byste mìli jakou¾ivatel vìdìt
+* Spou¹tìní::               Jak spustit gtypist
+* Pøíkazy skriptovacího jazyka::    Informace o syntaxi lekcí pro gtypist
+* Dostupné lekce::          Pøehled lekcí v distribuci gtypistu
+* Vytvoøte nové lekce::     Jak pøispìt novými lekcemi
+* Mód Emacsu::              Mód Emacsu pro editaci skriptù do gtypistu
+* Zvýrazòování syntaxe ve VIM:: Zvýrazòování syntaxe v editoru VIM
+* Promìnné prostøedí::      Promìnné prostøedí, které ovlivòují gtypist
+* Chyby a opominutí::       Známé problémy
+* Historie::                 Historie GNU Typistu
+@end menu
+
+
+@node Distribuce, Kopírování, Top, Top
+@unnumbered Distribuce
+
+GNU Typist (èi gtypist) je svobodný software; to znamená, ¾e
+jej mù¾e za urèitých podmínek ka¾dý svobodnì pou¾ívat a 
+dále distribuovat. Pøesné podmínky mù¾ete nalézt v GNU
+General Public Lincense, která se vá¾e na tento program.
+GNU GPL následuje tuto sekci.
+
+@noindent
+GNU Typist mù¾ete získat od pøítele nebo z Internetu:
+
+@table @asis
+
+@item Èeská verze
+@url{http://www.volny.cz/gnumaniacs/project/gtypist/index_cz.html}
+
+@item Hlavní distribuèní web:
+@url{ftp://ftp.gnu.org/gnu/gtypist/}
+
+@item Domovská stránka
+@url{http://www.gnu.org/software/gtypist/}
+
+@item On-line manuál (updaty mezi vydáním jednotlivých verzí)
+@url{http://www.gnu.org/software/gtypist/doc/}
+
+@item Stránka vývojáøù (CVS repozitáø, úlohy, podpora...)
+@url{http://savannah.gnu.org/projects/gtypist/}
+
+@item Sta¾ení GNU Typist (zdrojové kódy, binárky, tutoriály)
+@url{http://gtypist.free.fr/}
+
+@item Obrázky
+@url{http://gtypist.free.fr/screenshots/}
+@end table
+
+@node Kopírování, Úvod, Distribuce, Top
+@include gpl.texi
+
+@node Úvod, Spou¹tìní, Kopírování, Top
+@chapter Úvod
+
+GNU Typist je interaktivní program pro výuku psaní na klávesnici
+v¹emi deseti prsty. Obsahuje výukové lekce, cvièení i rychlostní
+testy. Program je urèen pro pou¾ívání na terminálech bez grafiky.
+Byl zkompilován na GNU/Linuxu, Unixech (Aix, OpenBSD) a také
+na DOS/Windows (DOS 6.22, Windows 98, Windows NT).
+
+Program naèítá lekce vytvoøené ve snadno pochopitelném 
+skritpovacím jazyku. Je distribuován spolu s nìkolika
+dobrými a kompletními lekcemi, které mù¾ete pou¾ívat,
+modifikovat, nebo psát nové. (@pxref{Vytvoøte nové lekce}
+@pxref{Pøíkazy skriptovacího jazyka}).
+
+Pokud nespecifikujete pøíslu¹ný soubor lekcí na pøíkazové øádce, bude pou¾it
+@file{gtypist.typ}. (Podrobnosti o cestì k souborùm naleznete v sekci
+@pxref{Promìnné prostøedí}).
+
+Na horní øádce obrazovky naleznete banner programu. Na nejspodnìj¹í
+øádce se potom nalézají rùzné zprávy, dotazy a dal¹í informace
+o stavu. Øádky mezi tím jsou pou¾ívány pro tutoriály, cvièení
+a rychlostní testy.
+
+V programu jsou dva typy cvièení: drilové a rychlostní testy.
+
+V drilových vám gtypist zobrazí text v ka¾dé druhé øádce obrazovky
+a poèká, a¾ u¾ivatel zadá pøesnì ten samý text do zbývajících prázdných
+øádkù. 
+@c TODO: intention is ``Griff-Übung'' (finger exercise)
+Chybnì zadaná písmena jsou indikována obráceným @code{^},
+nebo @code{>}, pokud je ¹patnì zadaným znakem konec øádky.
+Na konci cvièení program spoèítá skuteènou a u¾iteènou 
+rychlost ve slovech za minutu. Pokud jste udìlali pøíli¹ mnoho
+chyb, cvièení se spustí znova.
+
+@c TODO: make this less formal
+Není dovoleno zpìtnì opravovat ¹patnì zadané znaky.
+
+V rychlostních testech zobrazuje gtypist text na obrazovce a
+èeká, a¾ ho u¾ivatel pøepí¹e tím samým. Chyby se zobrazují
+a na konci testu se spoèítá opravdová a u¾iteèná rychlost ve
+WPM (words per minute -- slova za minutu).
+@c TODO: what is it used for ?
+Pokud se vyskytlo pøíli¹ mnoho chyb, test se spustí znovu.
+Opravování chyb je povoleno, ale takto opravené chyby budou stejnì 
+zapoèítány do hodnocení.
+
+Jestli jste ji¾ udìlali pøíli¹ mnoho chyb, mù¾ete pou¾ít @key{ESC} 
+a test se spustí znovu. Kdykoliv dokonèíte lekci, butete dotázáni,
+zda ji chcete opakovat.
+
+@c TODO: indicate ``practice only'' exercises in modeline ?
+GNU Typist obsahuje i cvièení zamìøené pouze na procvièování
+(jak drilová cvièení, tak rychlostní testy), která mo¾ná nebudete
+muset vùbec opakovat. Nechceme ale øíkat, zda se to týká zrovna
+vás, tak¾e se stejnì budete muset sna¾it, jak nejlépe umíte ;-)
+
+@c TODO: restart the drill from the beginning
+@c TODO: from the beginning. ??
+
+@c There are two types of drills - one-time and ordinary. In an ordinary
+@c drill, gtypist displays text on the screen, and waits for the user to
+@c correctly type the exact same text, underneath. It indicates typing
+@c errors, and if at the end of the exercise there were errors, it will
+@c re-run the drill, up to a maximum number of tries. In a one-time drill,
+@c the procedure is the same, except that the program will not repeat the
+@c drill if it is not typed correctly. Backspace and delete are not
+@c permitted in drills.
+
+@c A speed test is run only once, no matter how many errors
+@c there were. Backspace and delete are permitted, but errors still
+@c accumulate.
+
+@c @item D
+@c This creates an ordinary typing drill. It is a multi-line command;
+@c as many lines may be used as available on the screen. 
+@c The text is displayed  alternate screen lines, and prompts
+@c you to type the same text in on the intermediate lines.  Typing errors
+@c are indicated with an inverse @code{^}, or @code{>} if the character is a newline.
+@c The drill completes when it is typed correctly, or after a
+@c number of attempts.  Delete and backspace are not recognised.  @key{Escape}
+@c may be used to exit from the drill before completion.
+@c @item O
+@c This creates a one-time typing drill. It has the same behaviour as
+@c the @code{D} command, but it does not repeat until the text is
+@c typed correctly.
+@c @item P
+@c This creates a speed test. It is a multi-line command; as many lines
+@c may be used as are available to curses. It  displays its text on the screen,
+@c and prompts you to type on top of it.  Typing errors are highlighted in inverse
+@c colours.  You get only one chance at this test, but delete and backspace
+@c are recognised (errors still accumulate, however).  At the end
+@c of the test, the typing speed and accuracy are displayed.
+
+Ve výsledcích rychlosti znamená jedno slovo pìt znakù, tak¾e
+hrubé WPM je poèet znakù v testovací oblasti dìlené pìti a znovu
+dìlené poètem uplynulých minut. Co se týèe faktoru chyby, který
+WPM ovlivòuje, ka¾dá chyba je poèítaná za ¹patné slovo.
+
+@node Spou¹tìní, Pøíkazy skriptovacího jazyka, Úvod, Top
+@chapter Spou¹tìní
+
+Syntaxe pro spu¹tìní GNU Typist je:
+
+@code{gtypist [ parametry... ] [ script_file ]}
+
+Podporované parametry jsou popsány ní¾e (pozor, dlouhé tvary
+nejsou v DOSu podporovány).
+
+@table @code
+
+@item -e, --error-max
+Udává maximální procento chybovosti pøi zadávání textu.
+Defaultní hodnota je 3,0. Musí být mezi 0,0 a 100,0.
+Existuje i pøíkaz skriptovacího jazyka
+(@pxref{Pøíkazy skriptovacího jazyka}), který to mù¾e zmìnit,
+pokud je èíslo men¹í. Pro procvièovací lekce je tato
+hodnota ale ignorována.
+
+@item -n, --notimer
+Normálnì GNU Typist zobrazuje rychlost ve WPM jak po drilových
+cvièeních, tak po rychlostních zkou¹kách. Lekce ale vypadají, ¾e jsou
+napsané pro program, který by zobrazoval WPM pouze pøi rychlostních 
+testech. Abychom gtypist pøinutili k takovémuto chování odpovídajícímu
+lekcím, tedy aby nezobrazoval WPM u drilových testù, pou¾ijte tento
+parametr.
+
+@item -t, --term-cursor
+gtypist si vytváøí vlastní obdélníèkový kurzor, aby pomohl
+u¾ivateli rozli¹it mezi kurzorem a oznaèením chyb v inverzních
+barvách. Tímto parametrem takové chování potlaèíme a donutíme program
+pou¾ívat standardní kurzor terminálu.
+
+@item -f, --curs-flash
+Hodnota tohoto parametru nastavuje blikání obdélníkového kurzoru
+v desetinách sekund. Hodnota 0 znamená, ¾e kurzor nebude blikat.
+Standardní hodnota je 10, maximální 512. Toto je ignorováno, pokud 
+bylo nastaveno -t nebo --term-cursor.
+
+@item -c, --colo[u]rs
+Normálnì pou¾ívá gtypist pouze normální a pøevrácené
+monochromatické barvy. Tímto parametrem mù¾ete nastavit
+barvu popøedí a pozadí na terminálech, které podporují
+barevný výstup. Barvy jsou specifikovány jako dvì èísla
+mezi 0 a 7. Kódy barev od 0 do 7 znamenají barvu èernou,
+èervenou, zelenou, ¾lutou, modrou, magenta a modrozelenou
+a bílou. Defalutní nastavení je 7,0 -- bílá na èerném pozadí.
+Toto nastavení je ignorováno pokud terminál nepodporuje barvy.
+
+@item -s, --silent 
+Kdykoliv narazí gtypist na chybu, zapípá. Tímto nastavením
+mù¾ete zvukový signál potlaèit.
+
+@item -q, --quiet
+To samé jako -s, --silent.
+
+@item -w, --wpmode
+
+Tímto donutíte gtypist urèitým zpùsobem napodobovat textový
+procesor, kdykoliv spou¹tí nìjaké cvièení. Mezeru na konci øádku
+bude brát jako korektní znak a pøejde na dal¹í øádku. Pokud stisknete
+na konci øádky ENTER, pøesune vás na následující odstavec.
+Vícenádobné mezery stlaèí na jedinou a bude pøeskakovat rozdìlovací
+èárky na konci øádek.
+
+@item -l, --start-label
+Tento parametr udává návìstí ve skriptovém souboru, kde
+gtyping zaène. Pokud není start_label definováno, zaène 
+od zaèátku souboru.
+
+@end table
+
+@noindent
+
+Pokud chcete spou¹tìt gtypist ve svém rodném jazyce, musíte
+také vhodnì nastavit promìnnou prostøedí @env{LANG} 
+@xref{Promìnné prostøedí}.
+
+@strong{Pøíklady:}
+
+@noindent
+Ke spu¹tìní standardního èeského souboru lekcí @file{gtypist.typ}:@*
+@code{gtypist}
+
+
+@noindent
+Ke spu¹tìní anglických lekcí: @*
+@code{gtypist en.typ}
+
+
+@noindent
+Donutíme gtypist, aby hledal lekci bar.typ v nestandardním 
+adresáøi @file{/home/foo}: @*
+@code{export GTYPIST_PATH="/home/foo"}
+@code{gtypist bar.typ}
+
+
+@noindent
+Abychom mohli spustit lekci @file{test.typ} v adresáøi @file{/tmp},
+a zaèít na návìstí @code{TEST1}, v tichém módu za pou¾ití
+standardního kurzoru terminálu, zadáme toto:@*
+@code{gtypist -t -q -l TEST1 /tmp/test.typ}
+
+@node Pøíkazy skriptovacího jazyka, Dostupné lekce, Spou¹tìní, Top
+@chapter Pøíkazy skriptovacího jazyka
+
+GNU Typist reads in the data for its typing lessons from a script file.
+With the exception of comments and blank lines, each line in the file is
+of the format
+
+@code{command_char : command_data}
+
+@noindent
+Here, @code{command_char} is a single character code that defines an
+action for gtypist to take, and @code{command_data} is data for that
+command. If @code{command_char} is a space character, this indicates that the
+line is a continuation of the preceding non-space command. The ':'
+separator must be in column two of the line.
+
+Comment lines are lines beginning with a '#' character, and are
+ignored, as are blank lines. Comment lines may have any format provided
+that they begin with '#'; other lines must have the above format.
+
+You should read the introduction so that you are familiar with the
+basics: @xref{Úvod}.
+
+The following is a list of valid @code{command_char} values:
+
+@table @code
+@item B
+This command clears the complete screen. If any @code{command_data} is
+present, it is displayed in the one-line banner at the top of the
+screen, and remains in place until the next @code{B} command. This command may
+not be continued on the following line; it is a single line command.
+
+@item T
+This presents a tutorial, and is a multi-line command, up to the
+limit of the screen length. Each line in the command is simply
+printed to the screen. This command clears the screen beneath the top
+banner line. After the display is done, the program waits before
+proceeding. This is also used to display menu-items.
+
+@item *
+This indicates a label in the file. The label may be the target of a
+@code{G}, @code{Y}, @code{N} or @code{F} command. Labels may contain any
+character, including space, and are a single line command. Labels must
+be unique within lesson files. Whitespace at the end of labels is ignored.
+
+@item I
+The I command can display some brief instructions above a drill or a
+speed test.  Only two lines or less are permitted.  Unlike the
+@code{T} command, it does not wait for any further keypresses before
+proceeding.  So it should really always be followed by an exercise.
+It clears the whole screen exercise area, so in this respect it's just
+like a two-line T.
+
+@c TODO: more information about ``should be used for''...
+@item D,d
+This command is called ``drill'', and it is one of two types of
+typing exercises.
+
+It is a multi-line command. The text is displayed in every second
+line, and you type in the intermediate lines. Because of this, you cannot
+use more than 11 lines of drill content.
+
+This type of exercise is supposed to be used for finger training
+(i.e. jfjfjjf), but may also contain complete words and sentences
+@c TODO: grip
+if they are used to practice something (i.e. a letter/syllable/"grip"),
+and aren't real texts.
+
+The lowercase version @code{d} is a ``practice only'' drill -
+the user will not have not repeat this drill if he/she made too many
+mistakes.
+
+@c TODO: more information about ``should be used for''...
+@item S,s
+This is the second type of typing exercise: the ``speed test''.
+
+It is a multi-line command.  It displays its text on the screen, and
+prompts the user to type on top of it.  That's why you can use up to
+22 lines of text for one speed test.
+In a speed test you can correct your mistakes, but this will not decrease
+the error-count.
+
+Speed tests should be used for typing (mostly) complete sentences,
+texts or files (i.e. a letter, texinfo/html/tex files).
+
+The lowercase version @code{s} is a ``practice only'' speed test -
+the user will not have not repeat this drill if (s)he
+made too many mistakes.
+
+@item G
+This causes gtypist to go to the label in @code{command_data}, and continue
+execution of the script there. This is a single line command.
+
+@item Q
+This command command prompts its text on the message line, and waits for
+a @key{Y} or an @key{N} before proceeding. Other characters are ignored.
+
+As a side effect, you can hit an fkey if it is bound (That's why
+this is used to set the prompt for menus).
+
+@item Y
+This is like @code{G}, except that the goto is executed only if the result of
+the last @code{Q} command was @key{Y}.
+
+@item N
+This is like @code{G}, except that the goto is executed only if the result of
+the last @code{Q} command was @key{N}.
+
+@item K
+This binds a function key to a label. The format of the data line
+following this command must be @code{fkey_number:label}, where
+@code{fkey_number} is a function key number in the range 1 to 12, and
+@code{label} is a label to go to when this key is pressed. A value of
+NULL for label removes any label binding from the key.
+
+If function keys are not available on the terminal other keys can be
+used: @key{1} to @key{9} to replace @key{F1} to @key{F9}, @key{0} to 
+replace @key{F10}, @key{A} for @key{F11} and @key{S} for @key{F12}.
+
+Other alternatives for the keys @key{F1} to @key{F12} are the
+combinations: @key{Ctrl-Q}, @key{Ctrl-W}, @key{Ctrl-E}, @key{Ctrl-R}, 
+@key{Ctrl-T}, @key{Ctrl-Z}, @key{Ctrl-U}, @key{Ctrl-I}, 
+@key{Ctrl-O}, @key{Ctrl-P}, @key{Ctrl-A} and @key{Ctrl-S}.
+
+This is also useful where function keys are intercepted by other
+programs (for example by a window manager).
+
+@item E
+This command is used to set the highest error-rate permitted for
+the next drill (E:<value>%) or for all following drills until the next
+E: (E:<value>%*).
+
+If @option{--error-max/-e} is specified then this command will only
+have an effect if it is @emph{stricter} than the value specified on
+the command-line.
+
+@code{command_data} consists of the value (between 0.0 and 100.0),
+followed by '%' (this is required so that scripts are more readable).
+A special value of @code{default} or @code{Default} sets the error-max
+value back to the default.
+
+@item F
+This command (``set on-failure label'') is used to set the label (in
+@code{command_data}) where the user will have to go to if (s)he fails
+an exercise.
+
+Usually, this command only applies to the next exercise, but you can make
+it persistent by putting a '*' at the end of @code{command_data}.
+
+If label is NULL then this resets the label.
+
+@item X
+This command causes gtypist to exit. It is a single line command. Any
+@code{command_data} is ignored. The program also exits if the end of the file
+is found (so you could also place a label there and just @code{G} to it)
+
+@end table
+
+@c TODO: more examples (i.e. one example for E:/F:, one for a menu, ...)
+
+Here is a tiny example script to demonstrate the available commands
+(@file{tinydemo.typ} lesson file):
+
+@example
+# Minimal demonstration 
+B: Typing tutor demonstration 
+*:LOOP
+K:1:QDONE
+T:This is a small example tutor script. A better
+ :example may be found in the demo.typ file that
+ :accompanies GNU Typist
+I:Here is an example of a drill: 
+D:asdf ghjkl;
+I:And here is an example of a speed test: 
+S:qwe rt yu iop
+*:QDONE
+Q:Seen enough yet? [Y/N] 
+N:LOOP 
+X:
+@end example
+
+@node Dostupné lekce, Vytvoøte nové lekce, Pøíkazy skriptovacího jazyka, Top
+@chapter Supplied lessons
+
+V GNU Typist naleznete tyto lekce:
+@table @file
+@item gtypist.typ
+Souhrn v¹ech lekcí (v angliètinì)
+@item cz.typ
+Souhrn v¹ech lekcí (v èe¹tinì)
+@item q.typ 
+Rychlý QWERTY kurz v angliètinì
+@item r.typ
+Dlouhý QWERTY kurz v angliètinì
+@item t.typ
+QWERTY výukový kurz v angliètinì
+@item v.typ
+Je¹tì jeden kurz QWERTY v angliètinì
+@item w.typ
+Opakování anglické QWERTY 
+@item d.typ
+Anglický kurz klávesnice Dvorak
+@item m.typ
+Drilová cvièení v angliètinì
+@item s.typ
+Rychlostní testy v angliètinì
+@item n.typ
+Numerická klávesnice v angliètinì
+@item gtypist.typ
+Souhrn v¹ech lekcí (v èe¹tinì)
+@item esp.typ
+©panìlský kurz QWERTY
+@item kt*.typ
+Toto jsou standardní lekce z Ktouch 1.0
+(@url{http://ktouch.sourceforge.net}), které byly do gtypistu 
+konvertovány s pou¾itím @file{tools/ktouch2typ.pl}.
+
+Tyto soubory se nazývají ktde.typ (german.ktouch), kten.typ (english.ktouch),
+ktfr.typ (french.ktouch), ktlecten.typ (lecture_en.ktouch), ktno.typ
+(norwegian.ktouch) a ktnumber.typ (number.ktouch).
+@item ttde.typ
+Toto je nìmecká lekce z tipptraineru
+(@url{http://www.pingos.schulnetz.org/tipptrainer}), která byla konvertována
+za pou¾ití @file{tools/tt2typ.pl}.
+@end table
+
+@noindent
+Pokud v tìchto lekcích najdete chyby, nìjakou pozmìníte, nebo napí¹ete
+nové lekce, prosím uvolnìte je pod licencí svobodného 
+software a dejte nám o tom vìdìt emailem na @email{bug-gtypist@@gnu.org}.
+
+@node Vytvoøte nové lekce, Mód Emacsu, Dostupné lekce, Top
+@chapter Vytvoøte nové lekce
+
+This section provides guidelines and hints for creating new lessons
+(or improving existing ones).
+
+@c TODO: better name for ``Design patterns'' ??
+
+@menu
+* Ktouch lessons::              Generate lessons from a set of drills
+* Exercises from fortune::      Create drills/speedtests with text from fortune
+* Design patterns for lessons:: Hints/Design patterns for lessons
+@end menu
+
+@node Ktouch lessons, , Exercises from fortune, Vytvoøte nové lekce
+@section Ktouch lessons
+
+A very easy way to write lessons is to write them in the format
+that @command{ktouch} uses, and then convert it to a gtypist lesson
+using @command{tools/ktouch2typ.pl}. This will take care of writing
+``jump-tables'', a menu and a bit more.
+
+The ktouch-format consists only of lessons, which are preceded by
+their names, and separated by blank lines and/or comments (# at the
+beginning of the line). So the first non-blank, non-comment line in
+the file is the name of the first lesson, and the first lesson
+consists of all the lines up to the next comment or blank line. After
+the separator (comment or blank line) the name of the second lesson
+follows and so on.
+
+This is an example of a three-lesson ktouch file (excerpts from the
+first three lessons of german.ktouch):
+@example
+#
+# Deutsche Training-Datei für KTouch
+#
+
+Grundstellung
+f f f f f f fff fff fff f f f f f f fff fff fff f f f f f f f fff
+j j j j j j jjj jjj jjj j j j j j j jjj jjj jjj j j j j j j j jjj
+fff jjj fff jjj jjj fff jjj fff fjf fjf fjf jfj jfj jfj fjf jfjfj
+
+Grundstellung
+fff jjj ddd kkk aaa ööö fff jjj ddd kkk aaa ööö fff jjj ddd kkkff
+fda jkö fda jkö fda jkö fda jkö fda jkö fda jkö fda jkö fda jköfd
+s s s s s s sss sss sss s s s s s s sss sss sss s s s s s s s sss
+
+#Zwei wichtige Vokale: e und i
+e und i
+asdf ölkj fdsa jklö asdf ölkj fdsa jklö asdf ölkj fdsa jklö asdfö
+das dass lös fad dass lös als dass las lös fad dass als dass dass
+ded ded ded dej dek del deö ded deö del dek dej ded dej dek delde
+@end example
+
+Once you are done, use @command{tools/ktouch2typ.pl} to convert the
+file: @samp{ktouch2typ.pl lesson.ktouch} converts @file{lesson.ktouch}
+to @file{lesson.typ}. It is important that the input file ends in
+``.ktouch'', otherwise @command{ktouch2typ.pl} will skip it. Warning:
+this will overwrite @file{lesson.typ} without asking you !
+
+You can customize the number of lines that @command{ktouch2typ.pl}
+uses for each drill by modifying the relevant variable in
+@file{tools/ktouch2typ.pl}.
+
+Obviously, the disadvantage of this is that you cannot make use of all
+of gtypist's features (but the output file is very readable, so you
+can edit it to use more of gtypist's features).
+
+@node Exercises from fortune, Ktouch lessons, Design patterns for lessons, Vytvoøte nové lekce
+@section Exercises from fortune
+
+Using @file{gtypist-mode.el} you can quickly create lessons with text
+from the program @command{fortune} (or the emacs-internal
+@command{yow} if @command{fortune} isn't available, as is usually the
+case on Windows).
+
+Besides being used for creating new lessons, this command can be used
+to quickly create new drills for you to practice with.
+
+Once you installed @file{gtypist-mode.el} 
+(@pxref{Mód Emacsu}), you can open a file
+with it ``.typ'' extension and run @kbd{C-c C-f} to create a drill
+(@code{D:} by default, use @kbd{C-u} or @kbd{C-u C-u} prefix to
+change).
+
+@node Design patterns for lessons, Exercises from fortune, , Vytvoøte nové lekce
+@section Design patterns for lessons
+
+@subsection Structure of lesson files
+
+@itemize @bullet
+@item use mixture of drills and speed tests (this is more fun for the user)
+@item use some ``practice-only'' exercises (d:/s:) (possibly mixed with
+``real'' exercises) followed by a ``final test''.
+@file{esp.typ} uses this scheme.
+
+@end itemize
+
+@subsection Patterns for exercises
+
+@itemize @bullet
+@item when introducing a new key, start out by mixing other (known) keys
+of the same finger in with the new key in the first drill(s).
+Here is an example (from @file{t.typ}, line 237):
+@example
+I:Use your J-finger for the H key.
+*:_T_R_L23
+D:jjj jhj jjj jhj jjj jhj
+@end example
+@item use 'word, word.' repeatedly to practice ,/.
+@end itemize
+
+
+@node Mód Emacsu, Zvýrazòování syntaxe ve VIM, Vytvoøte nové lekce, Top
+@chapter Mód Emacsu
+
+gtypist now comes with an Emacs major-mode which does
+syntax-highlighting, indentation and has some convenient commands for
+counting labels, a goto-label-command, inserting properly centered
+banners, special comments and a bit more.
+
+Copy this file from @file{tools/gtypist-mode.el}
+(or @file{/usr/share/doc/gtypist} if you are using the debian package) to
+wherever you put your local elisp files (e.g. @file{~/elisp}) and put
+this in your @file{~/.emacs} (adapt path!):
+
+@lisp
+(autoload 'gtypist-mode "~/elisp/gtypist-mode")
+@end lisp
+
+or put it in @code{load-path} (@samp{make install} in the
+sources should take care of this for GNU Emacs) and use this
+instead:
+
+@lisp
+(autoload 'gtypist-mode "gtypist-mode")
+@end lisp
+
+@strong{and} add this to your @file{~/.emacs}:
+
+@lisp
+(setq auto-mode-alist       
+      (cons '("\\.typ\\'" . gtypist-mode) auto-mode-alist))
+@end lisp
+
+@c If you want to, you can then byte-compile the file using
+@c @kbd{M-x byte-compile-file} (but @samp{make install} takes care of
+@c this).
+
+@noindent
+All this is also mentioned in the README-section of
+@file{tools/gtypist-mode.el}.
+
+@noindent
+Here are the commands along with the keybindings:
+
+@table @kbd
+
+@item C-c C-i, M-x gtypist-mode-info
+This shows gtypist's texinfo-documentation, starting at node
+``Script file commands'' (@pxref{Pøíkazy skriptovacího jazyka}). With prefix,
+start at the top-node.
+
+@item C-c M-g, M-x gtypist-mode-goto-label
+Query for a label to go to (with completion).
+
+@item C-c C-l, M-x gtypist-mode-next-label
+This command inserts the next label in a numbered sequence of labels.
+For example, if you insert
+@example
+*:SERIES1_L1
+@end example
+and hit @kbd{C-c C-l} then gtypist-mode will insert
+@example
+*:SERIES1_L2
+@end example
+
+@item C-c C-b, M-x gtypist-mode-insert-banner
+This command inserts a centered @code{B:} command. It's centered on
+66 columns because ``gtypist <version>'' is in the right corner
+(prompts for content).
+
+@item C-c C-r, M-x gtypist-mode-insert-hrule
+Inserts a horizontal rule (comment) consisting of dashes.
+
+@item C-c C-n, M-x gtypist-mode-new-lesson
+Insert the comments (header) and a label to start a new lesson
+(prompts for name).
+
+@item C-c C-f, M-x gtypist-mode-fortune-to-drill
+Insert a drill (@code{D:}) with text from @command{fortune} (or
+@command{yow} if @command{fortune} isn't available). Use @kbd{C-u}
+prefix to get @code{S:}, and @kbd{C-u C-u} to get @code{d:}.
+
+@end table
+
+@noindent
+Run @kbd{C-h m} for a complete list of commands and their keybindings.
+
+If you find bugs or if you think there's something else this mode could
+do, please write to @email{bug-gtypist@@gnu.org}.
+
+@node Zvýrazòování syntaxe ve VIM, Promìnné prostøedí, Mód Emacsu, Top
+@chapter Zvýrazòování syntaxe ve VIM
+
+@noindent
+@file{tools/gtypist.vim} provides syntax highlighting for Vim 5.x and 6.x.
+
+To install for version 5.x (or any version on DOS/Windows), copy
+@file{tools/gtypist.vim} to where the syntax-files go (for example
+@file{/usr/share/vim/vim56/syntax/} for Vim 5.6 on Debian 2.2; if all
+else fails you can search for i.e. @file{xml.vim}) and add this to
+@file{~/.vimrc} (@file{$HOME/_vimrc} on DOS/Windows):
+@example
+autocmd BufNewFile,BufRead *.typ set ft=gtypist 
+@end example
+
+Installation for Vim 6.x is simpler: first create @file{~/.vim/syntax/}:
+@code{mkdir -p ~/.vim/syntax} and put @file{tools/gtypist.vim} in there.
+Finally add this to @file{~/.vimrc}:
+@example
+autocmd BufNewFile,BufRead *.typ setf gtypist
+@end example
+
+In any case, make sure that this command is at the top of @file{vimrc}
+ahead of all other @code{autocmd}-commands:
+@example
+autocmd!  " Remove ALL autocommands for the current group
+@end example
+(which avoids problems if @file{vimrc} is sourced more than once).
+And if you haven't done it already, you need to need to enable syntax
+highlighting:
+@example
+syntax on " turn on syntax highlighting
+@end example
+
+@noindent
+V¹echno toto jw zmínìno v README-sekce @file{tools/gtypist.vim}.
+
+@node Promìnné prostøedí, Chyby a opominutí, Zvýrazòování syntaxe ve VIM, Top
+@section Promìnné prostøedí
+GNU Typist pou¾ívá tyto promìnné prostøedí:
+
+@table @code
+
+@item LANG
+
+GNU Typist nabázá Native Language Support (NLS) s podporou
+knihovny gettext. To znamená, ¾e pokud to vá¹ systém podoruje,
+mù¾ete si vybrat jazyk, ve kterém chcete zobrazovat hlá¹ky gtypistu.
+Momentálnì jsou k dispozici angliètina, ¹panìl¹tina, nìmèina,
+fin¹tina a èe¹tina. K pou¾ití konkrétní NLS je tøeba nastavit
+promìnnou prostøedí LANG na odpovídající LL_CC kombinaci, 
+kde LL je dvouznakový kód jazyka podle ISO 639 a CC je dvouznakový
+znak zemì podle ISO 3166 (napø. es_ES pro ©panìlsko nebo de_DE
+pro Nìmecko). Na nìkterých systémech budete muset asi nastavit
+i promìnnou LANGUAGE.
+
+Pokud chcete pøelo¾it nìjaké zprávy do jiného jazyka, nebo pokud
+chcete nìco opravit, ozvìte se prosím na
+@email{bug-gtypist@@gnu.org}.
+
+
+@item GTYPIST_PATH
+Seznam adresáøù, kde bude program hledovat skriptovací soubory.
+Dodr¾uje standardní zpùsob specifikace adresáøù, to znamená
+seznam adresáøù oddìlených znaky ':'. GNU Typist se pøi spu¹tìní
+nejprve pokusí skript spustit z aktuálního adresáøe a poté
+bude hledat v adresáøích specifikovaných promìnnou @code{GTYPIST_PATH}.
+Nakonec se podívá do adresáøe vytvoøeného pøi instalaci.
+(Napø. @file{/usr/local/share/gtypist} nebo @file{/usr/share/gtypist}).
+
+@item TERM
+Tuto promìnnou pou¾ívá knihovna curses k urèení obrazovky.
+
+@item TERMINFO
+Tento parametr budete muset zmìnit, pokud jsou adresáøe s
+ @code{terminfo} rozdílné na systému, kde byl gtypist kompilován
+a na systému, kde má fungovat. Napøíklad na star¹ích
+distribucích Slackware je terminfo umístìno v
+@file{/usr/lib/terminfo}. Na RedHat Linuxu je v 
+@file{/usr/share/terminfo}. Pokud si program stì¾uje
+na typ terminálu a má správnì nastavenou hodnotu
+@code{TERM}, zkuste toto.
+
+@end table
+
+@node Chyby a opominutí, Historie, Promìnné prostøedí, Top
+@section Chyby a opominutí
+
+GNU Typist se nijak nesna¾í minimalizovat výstup na terminál.
+Speciálnì blikající kurzor mù¾e pùsobit hodnì pohybu. Pokud
+by to byl problém, pou¾ijte kurzor terminálu.
+
+V rychlostních testech není mo¾né pou¾ívat backspace a delete
+za zaèátkem nové øádky nebo po klávese TAB. To je kvùli zjednodu¹ení
+aktualizace obrazovky.
+
+Barevné módy zøejmì nepracují dobøe s UnixWare. Nìkdy 
+nejsou správnì zobrazeny pøevrácené barvy. To se týká nìkterých
+typù terminálù a xterminálù.
+
+@node Historie, , Chyby a opominutí, Top
+@appendix Historie GNU Typist
+
+@itemize @bullet
+@item
+Pùvodní program byl napsán pro VAX/VMS BASIC nìkým na Harris
+Corp (Ft. Lauderdale, FL).
+@item
+D. Jason Penney @email{penneyj@@slc.com} jej pøepsal pro Microsoft BASICA
+@item
+D. Jason Penney @email{penneyj@@slc.com} jej pøepsal pro C s knihovnou curses
+@item
+Simon Baldwin @email{simonb@@sco.com} pøepsal verzi D. Jason Penneyho,
+jeho vylep¹ení jsou popsána v souboru NEWS (mezi verzí 2.2 a 2.2b).
+On je dr¾itelem copyrightu na GNU Typist
+(gtypist je distribuovaný pod podmínkami GNU GPL).
+Simon také napsal verzi Typistu v Javì, kterou pùvodnì nazýval 
+JTypist, ale nyní se jmenuje Typist:
+@url{http://www.geocities.com/simon_baldwin/typist/}
+@item
+Since 1997, Ben Armstrong @email{synrg@@sanctuary.nslug.ns.ca} 
+pomohl opravováním chyb a udr¾ování balíèku pro Debian
+(podívejte se na
+@url{http://packages.debian.org/gtypist}).
+@item
+V roce 2000 se Vladimir Támara @email{vtamara@@users.sourceforge.net} a
+Igor Támara @email{ikks@@users.sourceforge.net} stali maintainery verze 
+v C. Pøed listopadem 200  byl GNU Typist spravován jako souèást
+projektu Structio.
+@item
+Listopad 2000, program byl pøijat do GNU! Byl pøejmenován na GNU Typist
+(také gtypist).
+@item V kvìtnu 2001 se stal novým maintainerem 
+Michael Opdenacker @email{michaelo@@gnu.org},
+který se také nauèil psát na klávesnici s gtypistem.
+Vývoj projektu je nyní na
+@url{http://savannah.gnu.org/projects/gtypist/}.
+@item V èervnu 2001 se k projektu Felix Natter @email{f.natter@@ndh.net} 
+pøipojil Felix Natter a výraznì mu pøispìl portováním
+lekcí z jiných tutoriálù, vylep¹ením pomocných utilit,
+nových mo¾ností tutoriálù a módem pro Emacs.
+@item V listopadu 2001 byla vytvoøena Hynkem Hanke èeská verze
+vèetnì pøelo¾ených tutoriálù.
+@end itemize
+
+@bye
+
+@c  LocalWords:  xref QWERTY kt
