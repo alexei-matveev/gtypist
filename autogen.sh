@@ -52,6 +52,11 @@ gettext_exe=`which gettext`
 gettext_bin=`dirname $gettext_exe`
 gettext_home=`dirname $gettext_bin`
 gettexth=$gettext_home/share/gettext/gettext.h
+if [ ! -r $gettexth ]; then
+   echo "Couldn't find gettext.h"
+   echo "Looking for gettext.h in /usr/ ..."
+   gettexth=`find /usr/ -name gettext.h -print`
+fi
 
 echo "Copying gettext.h from $gettexth"
 cp $gettexth src/
