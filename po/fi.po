@@ -4,7 +4,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: typist 2.4.0beta1\n"
-"POT-Creation-Date: 2001-12-10 20:03+0100\n"
+"POT-Creation-Date: 2002-01-14 20:32+0100\n"
 "PO-Revision-Date: 2001-09-03 13:51+03:00\n"
 "Last-Translator: Kimmo Surakka <kusti@iki.fi>\n"
 "Language-Team: Finnish <fi@li.org>\n"
@@ -310,14 +310,15 @@ msgstr ""
 msgid "Sorry, gtypist is configured to forbid skipping exercises."
 msgstr ""
 
-#. this must be adjusted to the right with one space at the end.
-#. Leading whitespace is important because it is displayed in reverse
-#. video because it must be aligned with the next two messages
+#. This must be adjusted to the right with one space at the end.
+#. Leading and trailing whitespaces are important because the text
+#. is displayed in reverse video.
+#. This text must must be aligned with the next two messages
 #. (it's best to run gtypist to see this in practice)
 #: gtypist.c:1952
 #, c-format
 msgid " Raw speed      = %6.2f wpm "
-msgstr "  Raakanopeus    = %6.2f s/m "
+msgstr " Raakanopeus     = %6.2f s/m "
 
 #. this must be adjusted to the right with one space at the end.
 #. Leading whitespace is important because it is displayed in reverse

@@ -5,7 +5,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: typist 2.3.1\n"
-"POT-Creation-Date: 2001-12-10 20:03+0100\n"
+"POT-Creation-Date: 2002-01-14 20:32+0100\n"
 "PO-Revision-Date: 2001-12-19 23:50+0100\n"
 "Last-Translator: José Pelegrín <josepl@acm.org>\n"
 "Language-Team: Spanish/Spain <es@li.org>\n"
@@ -96,8 +96,8 @@ msgid ""
 "default maximum error percentage (default 3.0); valid values are between 0.0 "
 "and 100.0"
 msgstr ""
-"porcentaje de error máximo (por defecto 3.0); los valores válidos están entre "
-"0.0 y 100.0."
+"porcentaje de error máximo (por defecto 3.0); los valores válidos están "
+"entre 0.0 y 100.0."
 
 #: gtypist.c:1725
 msgid "turn off WPM timer in drills"
@@ -112,8 +112,8 @@ msgid ""
 "cursor flash period P*.1 sec (default 10); valid  values are between 0 and "
 "512; this is ignored if -t is specified"
 msgstr ""
-"pone el periodo de parpadeo del cursor en P*.1 segundos (por defecto 10), los "
-"valores válidos están entre 0 y 512; Se ignorará si se especifica con la "
+"pone el periodo de parpadeo del cursor en P*.1 segundos (por defecto 10), "
+"los valores válidos están entre 0 y 512; Se ignorará si se especifica con la "
 "opción «-t».."
 
 #: gtypist.c:1728
@@ -155,8 +155,8 @@ msgid ""
 "\n"
 msgstr ""
 "«gtypist» es un tutor para aprender a teclear. Está compuesto de diversas "
-"lecciones para diferentes teclados e idiomas.  El usuario puede añadir nuevas "
-"lecciones con facilidad.\n"
+"lecciones para diferentes teclados e idiomas.  El usuario puede añadir "
+"nuevas lecciones con facilidad.\n"
 
 #: gtypist.c:1741
 msgid "Usage"
@@ -318,9 +318,10 @@ msgstr ""
 "Lo siento, «gtypist» está configurado para no permitir saltarse las "
 "lecciones."
 
-#. this must be adjusted to the right with one space at the end.
-#. Leading whitespace is important because it is displayed in reverse
-#. video because it must be aligned with the next two messages
+#. This must be adjusted to the right with one space at the end.
+#. Leading and trailing whitespaces are important because the text
+#. is displayed in reverse video.
+#. This text must must be aligned with the next two messages
 #. (it's best to run gtypist to see this in practice)
 #: gtypist.c:1952
 #, c-format
@@ -334,7 +335,7 @@ msgstr " Velocidad en bruto = %6.2f wpm "
 #: gtypist.c:1957
 #, c-format
 msgid " Adjusted speed = %6.2f wpm "
-msgstr " Velocidad neta = %6.2f wpm "
+msgstr " Velocidad neta     = %6.2f wpm "
 
 #. this must be adjusted to the right with one space at the end.
 #. Leading whitespace is important because it is displayed in reverse
@@ -343,7 +344,7 @@ msgstr " Velocidad neta = %6.2f wpm "
 #: gtypist.c:1962
 #, c-format
 msgid "            with %.1f%% errors "
-msgstr "            con %3.0f%% errores "
+msgstr "                con %3.0f%% errores "
 
 #. this is used to translate the keys for Y/N-queries. Must be two
 #. uppercase letters separated by '/'. Y/N will still be accepted as
