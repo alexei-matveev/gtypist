@@ -215,7 +215,7 @@ I:(1) Rhythm Drill
 *:_Q_R_L13
 #                                                            ../orig/q.typ:108
 D:a;sldkfjgh a;sldkfjgh a;sldkfjgh a;sldkfjgh a;sldkfjgh
- :asdefghk lokijujhjn asdefgfk lokijujhjn asdefgfk
+ :asdefghk lokijujhjn asdefghk lokijujhjn asdefghk
  :l. a.  l.  s.  l.  d.  l.  e.  l.  n.  l.  t.  l.  o.
 
 #                                                            ../orig/q.typ:109
