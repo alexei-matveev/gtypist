@@ -20,6 +20,21 @@
 use strict qw (subs vars refs);
 use Getopt::Std;
 
+# subroutines
+
+# this creates a B:-command (centered on 66 columns because
+# "gtypist <version>" is in the right corner)
+sub getBanner($)
+{
+    my $banner = $_[0];
+    # remove whitespace at the beginning ...
+    $banner =~ s/^\s*//;
+    # ... and at the end
+    $banner =~ s/\s*$//;
+    return "B:" . " " x (33 - int((length($banner) / 2))) . $banner . "\n";
+}
+
+
 my %opts;
 if (!getopts ("dslhn:o:", \%opts) || $opts{h}) {
     print "SYNTAX: typefortune [-dslh] [-n count] [-o gtypist_opts]\n";
@@ -130,21 +145,3 @@ close(TYPFILE) || die "Couldn't close $typfilename: $!";
 
 # call gtypist
 exec ("gtypist $gtypist_options $typfilename");
-
-
-# subroutines
-
-# this creates a B:-command (centered on 66 columns because
-# "gtypist <version>" is in the right corner)
-sub getBanner($)
-{
-    my $banner = $_[0];
-    # remove whitespace at the beginning ...
-    $banner =~ s/^\s*//;
-    # ... and at the end
-    $banner =~ s/\s*$//;
-    return "B:" . " " x (33 - int((length($banner) / 2))) . $banner . "\n";
-}
-
-
-
