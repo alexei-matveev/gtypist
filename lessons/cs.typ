@@ -3001,8 +3001,7 @@ I:Stále dbejte na rytmus.
 #                                                             ../orig/t.typ:251
 D:jnj ne jnj ton jnj nej jnj
  :jnj Nero jnj ona jnj nasolit jnj
- :Nikdo to nejedl.
-sdfsdf
+ :Nikdo to nejedl.sdfsdf
 I:Zkusíme nìjaké vìty.
 *:_T_R_L78
 #                                                            ../orig/t.typ:251
@@ -10536,40 +10535,54 @@ G:__SERIESMENU
 # Series menu
 #==============================================================================
 *:__SERIESMENU
-K:1:__S_T_SERIES
-K:2:__S_U_SERIES
-K:3:__S_N_SERIES
-K:4:__S_M_SERIES
-K:5:__S_S_SERIES
-K:6:__S_Q_SERIES
-K:7:__S_R_SERIES
-K:8:__S_V_SERIES
-K:9:__S_D_SERIES
-K:10:__MORE_LESSONS
-K:11:__HELP
-K:12:__SERIESQEXIT
-*:__SERIESMENU_DISP
-B:                      Výbìr sérií lekcí
-T:Máte k dispozici následující lekce:
- :
- :    F1 - Série T     Výukový kurz QWERTY (cz)       (T1 - T16)
- :    F2 - Série U     Opakování QWERTY (cz)          (U1 - U11)
- :    F3 - Série N     Èíselná klávesnice (cz)        (N1 - N3)
- :
- :    F4 - Série M     Procvièovací drilové testy (cz)(M1 - M11)
- :    F5 - Série S     Rychlostní testy (cz)          (S1 - S4)
- :
- :    F6 - Série Q     Rychlý kurz QWERTY (en)        (Q1 - Q5)
- :    F7 - Série R     Dlouhý kurz QWERTY (cz)        (R1 - R14)
- :    F8 - Série V     Je¹tì jeden kurz QWERTY (en)   (V1 - V19)
- :    F9 - Série D     Výukový kurz kláv. Dvorak (en) (D1 - D14)
- :
- :    F10              Dal¹í lekce...
- :    F11              Nápovìda
- :
- :    F12              Ukonèit program
-Q:Prosím vyberte si sérii nebo opus»te program stiskem F12. 
-G:__SERIESMENU_DISP
+M: "Výbìr sérií lekcí"
+ :__S_T_SERIES   "Série T     Výukový kurz QWERTY (cz)       (T1 - T16)"
+ :__S_U_SERIES   "Série U     Opakování QWERTY (cz)          (U1 - U11)"
+ :__S_N_SERIES   "Série N     Èíselná klávesnice (cz)        (N1 - N3)"
+ :__S_M_SERIES   "Série M     Procvièovací drilové testy (cz)(M1 - M11)"
+ :__S_S_SERIES   "Série S     Rychlostní testy (cz)          (S1 - S4)"
+ :__S_Q_SERIES   "Série Q     Rychlý kurz QWERTY (en)        (Q1 - Q5)"
+ :__S_R_SERIES   "Série R     Dlouhý kurz QWERTY (cz)        (R1 - R14)"
+ :__S_V_SERIES   "Série V     Je¹tì jeden kurz QWERTY (en)   (V1 - V19)"
+ :__S_D_SERIES   "Série D     Výukový kurz kláv. Dvorak (en) (D1 - D14)"
+ :__MORE_LESSONS "Dal¹í lekce..."
+ :__HELP         "Nápovìda"
+
+# *:__SERIESMENU
+# K:1:__S_T_SERIES
+# K:2:__S_U_SERIES
+# K:3:__S_N_SERIES
+# K:4:__S_M_SERIES
+# K:5:__S_S_SERIES
+# K:6:__S_Q_SERIES
+# K:7:__S_R_SERIES
+# K:8:__S_V_SERIES
+# K:9:__S_D_SERIES
+# K:10:__MORE_LESSONS
+# K:11:__HELP
+# K:12:__SERIESQEXIT
+# *:__SERIESMENU_DISP
+# B:                      Výbìr sérií lekcí
+# T:Máte k dispozici následující lekce:
+#  :
+#  :    F1 - Série T     Výukový kurz QWERTY (cz)       (T1 - T16)
+#  :    F2 - Série U     Opakování QWERTY (cz)          (U1 - U11)
+#  :    F3 - Série N     Èíselná klávesnice (cz)        (N1 - N3)
+#  :
+#  :    F4 - Série M     Procvièovací drilové testy (cz)(M1 - M11)
+#  :    F5 - Série S     Rychlostní testy (cz)          (S1 - S4)
+#  :
+#  :    F6 - Série Q     Rychlý kurz QWERTY (en)        (Q1 - Q5)
+#  :    F7 - Série R     Dlouhý kurz QWERTY (cz)        (R1 - R14)
+#  :    F8 - Série V     Je¹tì jeden kurz QWERTY (en)   (V1 - V19)
+#  :    F9 - Série D     Výukový kurz kláv. Dvorak (en) (D1 - D14)
+#  :
+#  :    F10              Dal¹í lekce...
+#  :    F11              Nápovìda
+#  :
+#  :    F12              Ukonèit program
+# Q:Prosím vyberte si sérii nebo opus»te program stiskem F12. 
+# G:__SERIESMENU_DISP
 *:__SERIESQEXIT
 Q:Opravdu chcete program ukonèit? [Y(ano)/N(ne)] ? 
 N:__SERIESMENU

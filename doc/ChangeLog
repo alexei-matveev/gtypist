@@ -1,3 +1,7 @@
+2003-04-06  Felix Natter  <fnatter@gmx.net>
+
+	* gtypist.texi: add documentation for M: command + mark old menus
+	(K:) as deprecated
 
 2002-06-28  Hynek Hanke  <hanke@volny.cz>
 

@@ -51,31 +51,32 @@ M: "Menú principal"
  :LECCION_19 "Lección 19 Literatura"
  :VELOCIDAD  "Evaluación de velocidad"
  :PRECISION  "Evaluación de precisión"
- :AYUDA      "Ayuda de las teclas / Metodologìa de las Lecciones"
+ :AYUDA      "Ayuda: Metodologìa de las Lecciones"
 
 
 *:AYUDA
-B:Ayuda de las teclas
-T:
- :                      Ayuda de las teclas de función
- :
- :Use las teclas de función del teclado para navegar a través de las lecciones
- :y menús de selección de lecciones.  En una serie de lecciones presionando la
- :tecla Fkey12 lo hará volver al menú de series; Cuando está en el menú
- :de series, esta lo llevará al menú principal del programa.  En el menú princi-
- :pal del programa, Fkey12 hace que salga de Typist.
- :
- :Si una serie de lecciones tiene más de una hoja de menú de lecciones use la
- :tecla F11Key para ir a las páginas adicionales.
- :
- :Cuando está en un ejercicio, puede usar la tecla Esc para salir de la rutina
- :o el test.
- :
- :Si no tiene teclas de función disponibles en su terminal, o  si no trabajan
- :por alguna razón (Por ejemplo, otro programa las está interceptando), puede
- :usar las teclas 1 a 9 como F1 a F9, 0 como F10, A como F11 y S como F12.
- :Algunas combinaciones con la tecla Ctrl también sirven:  Ctrl-Q a Ctrl-P son
- :teclas alternativas para Fkey1 a Fkey10, y Ctrl-A y Ctrl-S para Fkey11 y Fkey12.
+# NOTE: fkeys are deprecated
+# B:Ayuda de las teclas
+# T:
+#  :                      Ayuda de las teclas de función
+#  :
+#  :Use las teclas de función del teclado para navegar a través de las lecciones
+#  :y menús de selección de lecciones.  En una serie de lecciones presionando la
+#  :tecla Fkey12 lo hará volver al menú de series; Cuando está en el menú
+#  :de series, esta lo llevará al menú principal del programa.  En el menú princi-
+#  :pal del programa, Fkey12 hace que salga de Typist.
+#  :
+#  :Si una serie de lecciones tiene más de una hoja de menú de lecciones use la
+#  :tecla F11Key para ir a las páginas adicionales.
+#  :
+#  :Cuando está en un ejercicio, puede usar la tecla Esc para salir de la rutina
+#  :o el test.
+#  :
+#  :Si no tiene teclas de función disponibles en su terminal, o  si no trabajan
+#  :por alguna razón (Por ejemplo, otro programa las está interceptando), puede
+#  :usar las teclas 1 a 9 como F1 a F9, 0 como F10, A como F11 y S como F12.
+#  :Algunas combinaciones con la tecla Ctrl también sirven:  Ctrl-Q a Ctrl-P son
+#  :teclas alternativas para Fkey1 a Fkey10, y Ctrl-A y Ctrl-S para Fkey11 y Fkey12.
 B:Metodologìa de las Lecciones
 T:
  :                           Uso de las lecciones
@@ -93,7 +94,7 @@ T:
  :riores.  Esta es la que servirá para hacer el control de la lección, traerá
  :instrucciones de cuáles son los requisitos para que esta sea aprobada.
  :
-Q: Presione Y para continuar, o FKey12 para salir
+Q: Presione Y para continuar
 Y:MENU_PRINCIPAL
 G:AYUDA
 

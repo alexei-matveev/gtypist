@@ -410,7 +410,7 @@ This presents a tutorial, and is a multi-line command, up to the
 limit of the screen length. Each line in the command is simply
 printed to the screen. This command clears the screen beneath the top
 banner line. After the display is done, the program waits before
-proceeding. This is also used to display menu-items.
+proceeding.
 
 @item *
 This indicates a label in the file. The label may be the target of a
@@ -425,6 +425,27 @@ speed test.  Only two lines or less are permitted.  Unlike the
 proceeding.  So it should really always be followed by an exercise.
 It clears the whole screen exercise area, so in this respect it's just
 like a two-line @code{T}.
+
+@item M
+This command is the new way to create menus (since gtypist 2.7). 
+Here is the syntax:
+@example
+M: [UP=(LABEL|_EXIT)] "title"
+ :LABEL1 "description1"
+ :LABEL2 "description2"
+ ...
+@end example
+
+The UP-label indicates the parent-menu's label which defines the last
+menu-item (if it's _EXIT ``Exit'', else the last menu-item ``Up'' will
+jump to the specified label). It is optional: if it is not supplied,
+the special value _EXIT is used.
+
+The title and all descriptions must be wrapped in quotes ("").
+Additionally, there must be at least one space between UP=XXX and
+"title" and between the labels and the corresponding descriptions.
+
+See the existing lesson-files for examples.
 
 @c TODO: more information about ``should be used for''...
 @item D,d
@@ -470,8 +491,8 @@ execution of the script there. This is a single line command.
 This command command prompts its text on the message line, and waits for
 a @key{Y} or an @key{N} before proceeding. Other characters are ignored.
 
-As a side effect, you can hit an Fkey if it is bound (That's why
-this is used to set the prompt for menus).
+As a side effect, you can hit an Fkey if it is bound (a deprecated
+way to create the prompt for menus).
 
 @item Y
 This is like @code{G}, except that the goto is executed only if the result of
@@ -482,6 +503,7 @@ This is like @code{G}, except that the goto is executed only if the result of
 the last @code{Q} command was @key{N}.
 
 @item K
+@emph{This command is deprecated in favor of M:}
 This binds a function key to a label. The format of the data line
 following this command must be @code{fkey_number:label}, where
 @code{fkey_number} is a function key number in the range 1 to 12, and
