@@ -48,8 +48,10 @@ get_script_line( FILE *script, char *line ) {
   /* if a line was read then check it */
   if ( ! feof( script )) 
     {
-      if ( line[strlen( line ) - 1] == ASCII_NL )
-	line[strlen( line ) - 1] = ASCII_NULL;
+      /* Get rid of trailing spaces and newline */
+      while( *line && isspace( line[strlen( line )-1] ) )
+        line[strlen( line )-1] = ASCII_NULL;
+
       if ( strlen( line ) < MIN_SCR_LINE )
 	fatal_error( _("data shortage"), line );
       if ( SCR_SEP( line ) != C_SEP )
