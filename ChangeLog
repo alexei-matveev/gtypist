@@ -3,7 +3,8 @@
 	* gtypist.c, Makefile.am: for consistency with 'PACKAGE_LOCALE_DIR'
 	  replaced by `LOCALEDIR', replaced `PACKAGE_DATA_DIR' by `DATADIR'.
 	* autogen.sh: now checks that texinfo is installed.
-	  Generates the html manuals too.
+	  Runs `make' (to generate `doc/version.texi') and generates
+	  the html manuals.
 
 2002-04-18  Michael Opdenacker <michaelo@gnu.org>
 

@@ -107,6 +107,11 @@ echo running ./configure "$@"...
 echo
 ./configure "$@"
 
+# Run make
+# Needed to generate the version.texi file
+
+make
+
 # Generate documentation now that version.texi exists
 
 cd doc
@@ -120,5 +125,3 @@ makeinfo --html --no-header --no-split gtypist.cz.texi -o gtypist.cz.html
 cd ..
 
 # Final instructions
-
-echo Type \`make\' to compile gtypist
