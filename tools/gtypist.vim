@@ -30,6 +30,7 @@
 
 " ChangeLog:
 " Sat Oct 20 14:35:44 CEST 2001: initial version
+" Sun Oct 21 02:48:24 CEST 2001: use "Error" for gtypistExitCmd
 
 " TODO:
 " - E: color number in Float
@@ -66,7 +67,7 @@ if !exists("did_gtypist_syntax_inits")
   " write to the maintainer if you know a way to make this more logical
   highlight link gtypistKeyword Keyword
   highlight link gtypistCmd SpecialChar
-  highlight link gtypistExitCmd Special
+  highlight link gtypistExitCmd Error
   highlight link gtypistComment Comment
   highlight link gtypistDrillContent String
   highlight link gtypistTODO Todo

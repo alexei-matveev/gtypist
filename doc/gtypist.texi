@@ -27,21 +27,21 @@ or create new ones.
 
 @end ifnottex
 
-@c TODO: write descriptions for the menu-items (and make the menu-items
-@c shorter)
-
 @menu
-* Distribution::
-* Copying::
-* Introduction::
-* Invoking::
-* Script file commands::
-* Supplied lessons::
-* How to contribute new lessons::
-* Emacs mode for editing gtypist scripts::
-* VIM Syntax highlighting for gtypist scripts::
-* Technical Information::
-* History::
+@c TODO:
+* Distribution::            Where to find gtypist: source, packages etc.
+* Copying::                 The GNU General Public License says how you can
+                            copy and share gtypist
+* Introduction::            Important concepts you need to know as a user
+* Invoking::                How to invoke gtypist
+* Script file commands::    Information about the syntax of gtypist lessons
+* Supplied lessons::        Overview of the lessons in the gtypist distribution
+* Create new lessons::      How to contribute new lessons
+* Emacs mode::              Emacs mode for editing gtypist scripts
+* VIM Syntax highlighting:: VIM Syntax highlighting for gtypist scripts
+* Environment Variables::   Environment variables which affect gtypist
+* Errors and omissions::    Known problems
+* History::                 History of GNU Typist
 @end menu
 
 
@@ -56,7 +56,7 @@ comes with this program and also follows this section.
 @noindent
 You can obtain GNU Typist from a friend or from the Internet:
 
-@table @emph
+@table @asis
 
 @item Primary distribution site
 @url{ftp://ftp.gnu.org/gnu/gtypist/}
@@ -91,7 +91,7 @@ DOS/Windows (DOS 6.22, Windows 98, Windows NT).
 
 The program reads lessons written in an easy-to-learn scripting language. It
 is distributed with several complete and good lessons, you can use them,
-modify them or create new lessons (@pxref{How to contribute new lessons}
+modify them or create new lessons (@pxref{Create new lessons}
 and @pxref{Script file commands}).
 
 If a script file is not specified on the command line, a default file
@@ -408,7 +408,6 @@ This is also useful where function keys are intercepted by other
 programs (for example by a window manager).
 
 @item E
-@c TODO: better English:
 This command is used to set the highest error-rate permitted for
 the next drill (E:<value>%) or for all following drills until the next
 E: (E:<value>%*).
@@ -462,7 +461,7 @@ N:LOOP
 X:
 @end example
 
-@node Supplied lessons, How to contribute new lessons, Script file commands, Top
+@node Supplied lessons, Create new lessons, Script file commands, Top
 @chapter Supplied lessons
 
 The following lessons are supplied with GNU Typist :
@@ -508,24 +507,21 @@ If you find errors in these lessons, if you modify any of them or if you
 write a new lesson, please release it with a free license and tell us
 about it, by writing an email to @email{bug-gtypist@@gnu.org}.
 
-@node How to contribute new lessons, Emacs mode for editing gtypist scripts, Supplied lessons, Top
-@chapter How to contribute new lessons
+@node Create new lessons, Emacs mode, Supplied lessons, Top
+@chapter Create new lessons
 
-@c This chapter has not been written yet. It will give guidelines
-@c for supporting a new keyboard and/or language, though all the
-@c needed technical details are already given in this manual. 
-
-Here are some hints how you can quickly create new lessons.
+This section provides guidelines and hints for creating new lessons
+(or improving existing ones).
 
 @c TODO: better name for ``Design patterns'' ??
 
 @menu
-* Ktouch lessons:: 
-* Create drills from fortune:: 
-* Design patterns for lessons::
+* Ktouch lessons::              Generate lessons from a set of drills
+* Exercises from fortune::      Create drills/speedtests with text from fortune
+* Design patterns for lessons:: Hints/Design patterns for lessons
 @end menu
 
-@node Ktouch lessons, , Create drills from fortune, How to contribute new lessons
+@node Ktouch lessons, , Exercises from fortune, Create new lessons
 @section Ktouch lessons
 
 A very easy way to write lessons is to write them in the format
@@ -579,8 +575,8 @@ Obviously, the disadvantage of this is that you cannot make use of all
 of gtypist's features (but the output file is very readable, so you
 can edit it to use more of gtypist's features).
 
-@node Create drills from fortune, Ktouch lessons, Design patterns for lessons, How to contribute new lessons
-@section Create drills from fortune
+@node Exercises from fortune, Ktouch lessons, Design patterns for lessons, Create new lessons
+@section Exercises from fortune
 
 Using @file{gtypist-mode.el} you can quickly create lessons with text
 from the program @command{fortune} (or the emacs-internal
@@ -591,12 +587,12 @@ Besides being used for creating new lessons, this command can be used
 to quickly create new drills for you to practice with.
 
 Once you installed @file{gtypist-mode.el} 
-(@pxref{Emacs mode for editing gtypist scripts}), you can open a file
+(@pxref{Emacs mode}), you can open a file
 with it ``.typ'' extension and run @kbd{C-c C-f} to create a drill
 (@code{D:} by default, use @kbd{C-u} or @kbd{C-u C-u} prefix to
 change).
 
-@node Design patterns for lessons, Create drills from fortune, , How to contribute new lessons
+@node Design patterns for lessons, Exercises from fortune, , Create new lessons
 @section Design patterns for lessons
 
 @subsection Structure of lesson files
@@ -624,8 +620,8 @@ D:jjj jhj jjj jhj jjj jhj
 @end itemize
 
 
-@node Emacs mode for editing gtypist scripts, VIM Syntax highlighting for gtypist scripts, How to contribute new lessons, Top
-@chapter Emacs mode for editing gtypist scripts
+@node Emacs mode, VIM Syntax highlighting, Create new lessons, Top
+@chapter Emacs mode
 
 gtypist now comes with an Emacs major-mode which does
 syntax-highlighting, indentation and has some convenient commands for
@@ -713,8 +709,8 @@ Run @kbd{C-h m} for a complete list of commands and their keybindings.
 If you find bugs or if you think there's something else this mode could
 do, please write to @email{bug-gtypist@@gnu.org}.
 
-@node VIM Syntax highlighting for gtypist scripts, Technical Information, Emacs mode for editing gtypist scripts, Top
-@chapter VIM Syntax highlighting for gtypist scripts
+@node VIM Syntax highlighting, Environment Variables, Emacs mode, Top
+@chapter VIM Syntax highlighting
 
 @noindent
 @file{tools/gtypist.vim} provides syntax highlighting for Vim 5.x and 6.x.
@@ -750,15 +746,7 @@ syntax on " turn on syntax highlighting
 @noindent
 All this is also mentioned in the README-section of @file{tools/gtypist.vim}.
 
-@node Technical Information, History, VIM Syntax highlighting for gtypist scripts, Top
-@chapter Technical Information
-
-@menu
-* Environment Variables:: 
-* Errors and omissions:: 
-@end menu
-
-@node Environment Variables, Errors and omissions, Technical Information, Technical Information
+@node Environment Variables, Errors and omissions, VIM Syntax highlighting, Top
 @section Environment Variables
 GNU Typist uses the following environment variables:
 
@@ -804,7 +792,7 @@ and the value of @code{TERM} is correct, check into this.
 
 @end table
 
-@node Errors and omissions, , Environment Variables, Technical Information
+@node Errors and omissions, History, Environment Variables, Top
 @section Errors and omissions
 
 GNU Typist does not go to much effort to minimize terminal output. In
@@ -820,7 +808,7 @@ Colour curses modes do not seem to work well with UnixWare. In
 particular, reverse video is not always rendered correctly on some
 terminal types, and xterms.
 
-@node History, , Technical Information, Top
+@node History, , Errors and omissions, Top
 @appendix History of GNU Typist
 
 @itemize @bullet

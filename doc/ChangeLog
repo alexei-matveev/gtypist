@@ -1,3 +1,15 @@
+2001-11-03  Felix Natter  <f.natter@ndh.net>
+
+	* gtypist.texi (many nodes): changed the node-names to be shorter
+	and add descriptions in the menus
+	(i.e. Emacs mode for editing gtypist scripts => Emacs mode)
+	* gtypist.texi (Technical Information): remove this node, because
+	it contains two subnodes that are completely unrelated (Environment
+	Variables and Known bugs); put the two subnodes in the toplevel
+	menu instead
+	* gtypist.texi (Distribution): use @ instead of @emph because
+	@emph results in "_Primary distribution site_" (use @asis instead)
+
 2001-10-20  Felix Natter  <f.natter@ndh.net>
 
 	* gtypist.texi: fix some TODO's
