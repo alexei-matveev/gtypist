@@ -1,0 +1,63 @@
+Notes on how to build it from CVS 
+=================================
+(UNIX only)
+
+
+REQUIREMENTS
+------------
+
+First, make sure you ever want to do it.  Remember, there are stable releases,
+and they work nicely.
+
+If you do, then check if you have automake-1.7.3 and autoconf 2.57 properly
+installed on your system (check 'autoconf --version' and 'automake --version').
+You may try it with different versions, but we don't know if they work.
+
+Other requirements include:
+	* GCC (any reasonable version, 3.3 is recommended) and libc headers
+	  (of course they must match the libc);
+	* GNU make (any reasonable version, 3.80 will do);
+	* ncurses 5.3.2 (or any reasonable version) library and headers
+	  (of course they must match the library too);
+	[add other requirements here].
+
+
+BUILDING
+--------
+
+Figure out which options you wish to pass to the configuration script, and pass
+them as parameters to the `autogen.sh' script.  Unfortunately, to
+get the entire list of them, you have to invoke './configure --help', and get
+this script before with 'aclocal; automake --add-missing; autoconf'.  Just don't
+bother about it, most of the people use standard settings.
+Also set $CC, $CFLAGS and $LDFLAGS to desired values, if you wish.
+
+If you are going to install it not system-wide, supply `--perfix=[DIR]' to the
+`autogen.sh', where [DIR] is directory where you are going to install the
+gtypist (e.g. if you have no root, you may want to use `--prefix=$HOME').
+
+Run `autogen.sh' and examine its output for possible errors.  Since this is CVS
+version, it may even not build correctly.  If you are sure that you have done
+everything right and our scripts are buggy, mail description of your problem
+to bug-gtypist mailing list <bug-gtypist@gnu.org>.
+
+Note that autogen.sh will produce even more than you probably need, for example,
+tarballs of the source distribution.  Just ignore everything that you are not
+interested in.
+
+
+INSTALLATION
+------------
+
+Run `make install'.  Of course, you have to have necessary acces rights at the
+time (e.g. if you install it system wide, you have to run it as root).
+
+
+UNINSTALLATION
+--------------
+
+If you still have the same sources with the same configuration settings,
+you can simply `make uninstall'.  If not, then go to `--prefix'
+(/usr/local by default) with which you have done the installation and
+delete the files manually.
+

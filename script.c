@@ -8,8 +8,15 @@
 #include "gettext.h"
 #include "error.h"
 
+#include <stdlib.h>
+#include <string.h>
+#include <ctype.h>
+
 int global_line_counter = 0;
 struct label_entry *global_label_list[NLHASH];
+
+// Nobody bothers to free this string at exit.
+char *__last_label = NULL;
 
 /*
   label hashing function - returns an index for the lists
@@ -106,6 +113,8 @@ char *buffer_command( FILE *script, char *line ) {
 /*
   search out a label from the file, and set the file pointer to
   that location
+
+  It also manages __last_label for the returns into menu from lessons.
 */
 void 
 seek_label( FILE *script, char *label, char *ref_line ) {
@@ -113,6 +122,16 @@ seek_label( FILE *script, char *label, char *ref_line ) {
   int	hash;				/* hash index */
   char	err[MAX_SCR_LINE];		/* error message string */
   
+  // Update __last_label
+  if (__last_label)
+     free (__last_label);
+  __last_label = strdup (label);
+  if (!__last_label)
+  {
+     perror ("strdup");
+     fatal_error (_("internal error: strdup"), ref_line);
+  }
+		  
   /* find the right hash list for the label */
   hash = hash_label( label );
   
@@ -151,6 +170,7 @@ do_exit( FILE *script )
   /* if ( cl_colour && has_colors() )*/
   wbkgdset( stdscr, 0 );
   clear(); refresh(); endwin();
-  printf( "\n" );
+  printf( _("Happy Typing!\n\n") );
   exit( 0 );
 }
+

@@ -2,16 +2,15 @@
 
 AUTOMAKE_OPTIONS = 1.7.2 dist-bzip2
 
-SUBDIRS= m4  m4  po lessons tools doc intl
+SUBDIRS= m4  m4  m4  po lessons tools doc intl
 
-EXTRA_DIST= config.rpath mkinstalldirs  config.rpath mkinstalldirs  config.rpath  typefortune gtypist.1 typefortune.1 \
+EXTRA_DIST= config.rpath mkinstalldirs  config.rpath mkinstalldirs  config.rpath mkinstalldirs  config.rpath  typefortune gtypist.1 typefortune.1 \
 config.rpath configur.bat version.sh configur.bat.in autogen.sh \
 INSTALL.in TODO 
 
 bin_PROGRAMS = gtypist
 bin_SCRIPTS = typefortune
-gtypist_SOURCES = gtypist.c getopt.h getopt.c getopt1.c gettext.h \
-	cursmenu.h cursmenu.c script.h script.c error.h error.c
+gtypist_SOURCES = gtypist.c cursmenu.c script.c error.c getopt.c getopt1.c
 gtypist_LDADD = @LIBINTL@
 man_MANS = gtypist.1 typefortune.1
 
@@ -26,3 +25,4 @@ gtypist.1: gtypist.c gtypist
 	if (test ! -e gtypist.1) then $(GEN_MAN); fi
 
 ACLOCAL_AMFLAGS = -I m4
+

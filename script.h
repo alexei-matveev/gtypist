@@ -52,6 +52,8 @@
 
 extern int global_line_counter;
 
+extern char *__last_label;
+
 /* a global area for label indexing - singly linked lists, hashed */
 #define	NLHASH			32		/* num hash lists */
 struct label_entry {
@@ -71,3 +73,4 @@ extern void do_exit( FILE *script );
 
 
 #endif /* !SCRIPT_H */
+

@@ -91,11 +91,20 @@ gettextize --force --copy --intl --no-changelog
 # Build configuration files
 
 echo "creating build configuration files..."
-rm -f config.cache
 aclocal -I m4
 autoheader
 automake --add-missing
+
 autoconf
+if [ $? != 0 ]; then
+    echo -e \
+    	"--------------------------------------------------------------------" \
+    	"\nSomething was wrong, autoconf failed." \
+	"\nConsult notes on how to build if from CVS in the README.CVS file," \
+	"\nif you don't know how to resolve this."
+    exit 1
+fi
+    
 
 if test -z "$*"; then
     echo
@@ -132,3 +141,4 @@ cd ..
 # Create the source packages
 
 make dist
+

@@ -9,9 +9,121 @@
 #include "gettext.h"
 #include "error.h"
 
+#include <stdlib.h>
+#include <string.h>
+#include <ctype.h>
+
 #define max(x,y) (((x)>(y)) ? (x) : (y))
 #define min(x,y) (((x)<(y)) ? (x) : (y))
 
+// This is from gtypist.c.
+extern char *fkey_bindings [12];
+
+// This history list is needed in order to get the entire menu navigation
+// working
+typedef struct _MenuNode
+{
+   char *label;
+   struct _MenuNode *next;
+}
+MenuNode;
+
+// They are kept non-NULL as soon as the main menu is visited.
+static MenuNode *start_node = NULL, *last_node = NULL;
+
+static MenuNode *node_new ()
+{
+   MenuNode *mn = (MenuNode *) calloc (1, sizeof (MenuNode));
+   if (!mn)
+   {
+      perror ("calloc");
+      fatal_error ("internal error: malloc", NULL);
+   }
+
+   return mn;
+}
+
+static void node_delete (MenuNode *mn)
+{
+   if (mn -> label)
+      free (mn -> label);
+
+   free (mn);
+}
+
+// NOTE:  it is very ineffecient approach in general, but it is quite
+// appropriate for this quick and dirty hack.
+static void append_menu_history (const char *label)
+{
+   // First check if we've already been here
+   if (start_node)
+   {
+      MenuNode *mn = start_node;
+      do
+      {
+	 if (!strcmp (label, (mn -> label)))
+	 {
+	    if (mn == last_node)
+	       return;
+
+	    // Go to the (same) old place
+	    last_node = mn;
+	    (last_node -> next) = NULL;
+
+	    mn = (mn -> next);
+	    while (mn)
+	    {
+	       MenuNode *t = (mn -> next);
+	       node_delete (mn);
+	       mn = t;
+	    }
+
+	    return;
+	 }
+	 
+	 mn = (mn -> next);
+      }
+      while (mn);
+   }
+   
+   // Ok, append it to the history
+   if (!last_node)
+      start_node = last_node = node_new ();
+   else
+   {
+      (last_node -> next) = node_new ();
+      last_node = (last_node -> next);
+   }
+   
+   (last_node -> label) = strdup (label);
+   if (!(last_node -> label))
+   {
+      perror ("strdup");
+      fatal_error ("internal error: strdup", NULL);
+   }
+}
+
+// Set the position of the script to the preceeding to the last_label,
+// remove the last position of the history.
+static void prepare_to_go_back (FILE *script)
+{
+   MenuNode *mn = start_node;
+
+   if (!start_node)
+      return;	// No way back
+
+   if (!(start_node -> next))
+      return;	// No way back too
+
+   // Get the previous node
+   while ((mn -> next) != last_node)
+      mn = (mn -> next);
+
+   seek_label (script, (mn -> label), (last_node -> label));
+   node_delete (last_node);
+   (mn -> next) = NULL;
+   last_node = mn;
+}
 
 /* TODO: check terminal setup/reset */
 char *do_menu (FILE *script, char *line)
@@ -23,7 +135,19 @@ char *do_menu (FILE *script, char *line)
   int start_idx, end_idx; /* visible menu-items */
   int items_first_column, items_per_page, real_items_per_column, spacing;
 
-  data = buffer_command (script, line);
+  append_menu_history (__last_label);
+  
+  // Bind our former F12 key to the current menu.
+  if (fkey_bindings [11])
+     free (fkey_bindings [11]);
+  fkey_bindings [11] = strdup (__last_label);
+  if (! fkey_bindings [11])
+  {
+     perror ("strdup");
+     fatal_error (_("internal error in strdup"), line);
+  }
+
+	data = buffer_command (script, line);
   /* e.g.:
    data=' "A course for the beginners"
    LESSON_1 "Lesson 1: home row keys"
@@ -192,14 +316,17 @@ char *do_menu (FILE *script, char *line)
       ch = wgetch (stdscr);
       switch (ch)
 	{
-	  /* UP/DN */
 	case KEY_UP:
+	case 'K':
+	case 'k':
 	  cur_choice = max (0, cur_choice - 1);
 	  if (cur_choice < start_idx) {
 	    start_idx--; end_idx--;
 	  }
 	  break;
 	case KEY_DOWN:
+	case 'J':
+	case 'j':
 	  cur_choice = min (cur_choice + 1, num_items - 1);
 	  if (cur_choice > end_idx) {
 	    start_idx++; end_idx++;
@@ -219,16 +346,27 @@ char *do_menu (FILE *script, char *line)
 	  cur_choice += end_idx - k;
 	  break;
 
+	case KEY_RIGHT:
+	case 'l':
+	case 'L':
 	case '\n':
+	  ch = KEY_ENTER;
+	case KEY_ENTER:
 	  break;
 
+	case KEY_CANCEL: // anyone knows where is this key on a PC keyboard?
+	case ASCII_ESC:
+	case 'h':
+	case 'H':
+	  prepare_to_go_back (script);
+	  goto cleanup;
+
 	default:
-	  /*
-	  waddstr(stdscr, "DEFAULT!!!");
-	  wgetch (stdscr);*/
+	  // printf ("libncurses think that it's key \\%o\n", ch);
+	  break;
 	}
       
-    } while (ch != '\n');
+    } while (ch != KEY_ENTER);
 
   wattroff (stdscr, A_REVERSE);
   if (labels[cur_choice] != NULL)
@@ -238,7 +376,11 @@ char *do_menu (FILE *script, char *line)
   }
   else
     do_exit (script);
+
+cleanup:
   free (labels);
   free (descriptions);
   free (data);
- }
+  return NULL;
+}
+

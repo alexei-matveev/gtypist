@@ -1,3 +1,41 @@
+2003-07-01	Dmitry Rutsky	<rutsky@school.ioffe.rssi.ru>
+
+	* autogen.sh:  check autoconf exit status and display useful
+	  information if it has failed rather than just go on and get
+	  more failures.
+	* configure.in:  duplicate intl/Makefile, po/Makefile.in 
+	  and po/Makefile have been removed, autoconf no longer fails
+	  to build because of that.
+	* README.CVS now can aid building the sources from CVS by unexperienced
+	  (for me it was a great pain).
+	* autogen.sh:  redundant `rm -f config.cache' has been removed
+	  (it have no effect with modern autoconf).
+	* cursmenu.c:  missing standard #includes were added, the code was
+	  corrected a little to eliminate the compiler warnings (what
+	  the meaning of do_menu return value was intended to be?).
+	* script.c, error.c:  missing standard includes were added, all of the
+	  compiler warnings were suppressed.
+	* Makefile.am:  excluded headers from GTYPIST_sources, they are not
+	  separately compiled and get into dependencies automatically.
+	* configur.bat.in:  really include new modules (see the ChangeLog
+	  record of 2003-04-06;  BTW autogen warns about it).
+	* cursmenu.c:  '\n' was supplemented by KEY_ENTER
+	  (without it in the DOS build it was impossible
+	  to select any menu item, and even exit the program);  new
+	  aliases for the control keys:  KEY_RIGHT for KEY_ENTER; 'K' and
+	  'J' for KEY_UP and KEY_DOWN respectively (now you can write in the
+	  documentation that gtypist supports vi keys in menu control ;-) ).
+	* Some hacks to enable the `E' key in "exit the lesson" queries again,
+	  it seems to work.
+	* cursmenu.c:  added working "go back" key in the menu that completes
+	  the basical navigation code:  'Esc' or 'H' will get you to the 
+	  previous menu where you've been, or out of the program if it is
+	  toplevel menu.
+	* gtypist.c:  quick hack to get rid of annoying Escape key delays in 
+	  the ncurses library.
+	* script.c:  made it to print "Happy Typing!" at exit rather than just
+	  clear the screen :-)
+
 2003-06-08  Felix Natter  <fnatter@gmx.net>
 
 	* cursmenu.c (do_menu): fix a bug when scrolling with many columns

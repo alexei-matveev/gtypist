@@ -8,6 +8,8 @@
 #endif
 #include "gettext.h"
 
+#include <stdlib.h>
+
 char *argv0 = NULL;
 
 /*
@@ -32,3 +34,4 @@ fatal_error( char *message, char *line ) {
     fprintf( stderr, "\n" );
   exit( 1 );
 }
+

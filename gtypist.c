@@ -138,7 +138,7 @@ static bool     global_on_failure_label_persistent = FALSE;
 
 /* a global area for associating function keys with labels */
 #define NFKEYS			12		/* num of function keys */
-static	char	*fkey_bindings[ NFKEYS ] =
+char	*fkey_bindings[ NFKEYS ] =
   { NULL, NULL, NULL, NULL, NULL, NULL,
     NULL, NULL, NULL, NULL, NULL, NULL };
 /* table of pseudo-function keys, to allow ^Q to double as Fkey1, etc */
@@ -150,7 +150,6 @@ static	char	pfkeys[ NFKEYS ] =
 
 
 #define MAX(A,B) ((A)<(B)?(B):(A))
-
 
 /* prototypes */
 
@@ -1817,6 +1816,11 @@ This program is released under the GNU General Public License.");
   signal( SIGPIPE, catcher ); signal( SIGTERM, catcher );
   clear(); refresh(); typeahead( -1 );
   keypad( scr, TRUE ); noecho(); curs_set( 0 ); raw();
+
+  // Quick hack to get rid of the escape delays
+#ifdef __NCURSES_H 
+  ESCDELAY = 0;
+#endif
   
   /* set up colour pairs if possible */
   if ( cl_colour && has_colors() ) 
