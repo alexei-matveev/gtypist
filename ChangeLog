@@ -1,3 +1,8 @@
+2003-10-24  Hynek Hanke  <hanke@volny.cz>
+
+	* autogen.sh (automake --add-missing): Added test on failure of this command,
+	so that it doesn't cause obscure problem later.
+
 2003-10-03: Michael Opdenacker <michaelo@gnu.org>
 
 	* typefortune: Ben Armstrong fixed the '-s' and '-n' options

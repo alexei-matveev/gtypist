@@ -1,3 +1,8 @@
+2003-10-24  Hynek Hanke  <hanke@volny.cz>
+
+	* gtypist.cs.texi: @documentencoding and @documentlanguage moved to the beginning
+	of the file so that the auto-tools don't complain about it.
+
 2003-09-28  Michael Opdenacker <michaelo@gnu.org>
 
 	* gtypist*.texi: added a table of contents at the beginning
