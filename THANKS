@@ -13,6 +13,10 @@ exempt of errors.
 * Rob Leslie <rob@mars.org> for reporting bugs and implementing
   patches and improvements.
 
+* Dmitry Rutsky <rutsky@school.ioffe.rssi.ru> for major improvements
+  to the code, for Russian interface translation, as well as for
+  lessons in Russian.
+
 * OLS3 <ols3@www.tnc.edu.tw> for the Traditional Chinese translation.
 
 * Martin Pitt <martin@piware.de> for a patch to ignore trailing

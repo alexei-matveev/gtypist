@@ -8,6 +8,8 @@ Version 2.7 - September 2003
 	- Built with automake-1.7.7, texinfo-4.6 and gettext-0.12.1
 	- New Traditional Chinese interface from OLS3 <ols3@www.tnc.edu.tw>
 	- New Dutch interface from J.M. Cogels <jcogels@chello.nl>
+	- New Russian interface and lessons
+	  from Dmitry Rutsky <rutsky@school.ioffe.rssi.ru>
 	- Now ignores trailing spaces in lesson file lines which
 	  were invisible in the interface.
 
