@@ -1,7 +1,15 @@
-2002-04-20  Michael Opdenacker  <michaelo@gnu.org>
+2002-04-21  Michael Opdenacker  <michaelo@gnu.org>
 
 	* gtypist.texi: fixed to include the original fdl.texi file.
-        Also added a table of contents at the beginning.
+	* gtypist.texi: changes to let makeinfo use the best output
+	in supported formats, as recommended in the texinfo manual:
+	Replaced all @url calls by @uref (@url doesn't create http links
+	in the makeinfo html output; I was using texi2html to create
+	the html manual, but only makeinfo should be used). 
+	Replaced 'Name @email{address}' by '@mail{address, Name}.
+	Used @option everywhere for command line options.
+	Used @samp to introduce single characters.
+	* gtypist.texi: updated Felix Natter's email address.
 
 2002-04-08  Michael Opdenacker  <michaelo@gnu.org>
 
@@ -11,7 +19,7 @@
 	
 2002-04-07  Michael Opdenacker  <michaelo@gnu.org>
 
-	* Added the Czech translation of the manual
+	* gtypist.cz.texi: Czech translation of the manual
 	from Hynek Hanke <hanke@volny.cz>
 
 2002-02-23  Felix Natter  <fnatter@gmx.net>
