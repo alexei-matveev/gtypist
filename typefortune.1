@@ -1,0 +1,38 @@
+.TH TYPEFORTUNE "1" "March 2002" "typefortune" FSF
+.SH NAME
+typefortune \- manual page for typefortune (part of gtypist)
+.SH SYNOPSIS
+.B typefortune
+[ \fIOptions\fR... ]
+.SH DESCRIPTION
+typefortune creates a gtypist lesson-file from `fortune' and runs `gtypist' on
+it.
+.SH OPTIONS
+.TP
+\fB\-d\fR                   use D: (instead of S:)
+.TP
+\fB\-s\fR                   use `fortune -s'
+.TP
+\fB\-l\fR                   use `fortune -l'
+.TP
+\fB\-n\fR <count>           practice <count> fortunes (default=1)
+.TP
+\fB\-o\fR <gtypist_options> pass options to gtypist
+.SH EXAMPLE
+.IP
+To practice 3 fortunes and run gtypist as --silent -e 5 --word-processor:
+.IP
+`typefortune -n 3 -o 'silent e,5 word-processor'
+.IP
+.SH "SEE ALSO"
+The full documentation for
+.B gtypist (and typefortune)
+is maintained as a Texinfo manual.  If the
+.B info
+and
+.B gtypist
+programs are properly installed at your site, the command
+.IP
+.B info gtypist
+.PP
+(section "Using typefortune") should give you access to the complete manual.
