@@ -1,5 +1,14 @@
 2003-10-25  Hynek Hanke  <hanke@volny.cz>
 
+	* configure.in: Build also src/Makefile.am
+
+	* Makefile.am: Some stuff moved to src/Makefile.am
+	Added src/ to subdirectories.
+
+	* All .c and .h sources moved to a new directory src/.
+
+2003-10-25  Hynek Hanke  <hanke@volny.cz>
+	
 	* autogen.sh: Don't try to build documentation itself.
 	It's generated now by regular auto-tools mechanism. See doc/Makefile.am.
 
