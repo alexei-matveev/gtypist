@@ -19,7 +19,7 @@
  *
  */
 
-
+#include "config.h"
 #include <stdlib.h>
 #include <unistd.h>
 #include <stdio.h>
@@ -36,7 +36,6 @@
 #include <string.h>
 #include <getopt.h>
 #include <assert.h>
-#include "config.h"
 
 /* Internationalization */
 
