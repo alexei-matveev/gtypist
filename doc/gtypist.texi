@@ -248,6 +248,10 @@ Specifies the label in the script file at which gtypist begins executing
 start_label is not given, gtypist begins execution at the first line of
 the file.
 
+@item -k, --no-skip
+Prohibit the user from skipping lessons or exiting from lessons via
+@key{ESC ESC}.
+
 @end table
 
 @noindent

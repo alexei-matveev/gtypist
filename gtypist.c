@@ -124,6 +124,7 @@ char *WAIT_MESSAGE;
 char *ERROR_TOO_HIGH_MSG;
 char *SKIPBACK_VIA_F_MSG;
 char *REPEAT_NEXT_EXIT_MSG;
+char *CONFIRM_EXIT_MSG;
 char *NO_SKIP_MSG;
 char *SPEED_RAW;
 char *SPEED_ADJ;
@@ -216,7 +217,7 @@ static void get_script_line( FILE *script, char *line );
 static int hash_label( char *label );
 static void index_labels( FILE *script );
 static void seek_label( FILE *script, char *label, char *ref_line );
-static bool wait_user( char *message, char *mode, FILE *script, char *line );
+static void wait_user( char *message, char *mode );
 static void display_speed( int total_chars, long elapsed_time, int errcount );
 static void do_keybind( FILE *script, char *line );
 static void do_tutorial( FILE *script, char *line );
@@ -228,6 +229,7 @@ static void do_clear( FILE *script, char *line );
 static void do_goto( FILE *script, char *line, bool flag );
 static void do_exit( FILE *script );
 static char do_query_repeat( FILE *script );
+static bool do_query_simple( char *text );
 static bool do_query( FILE *script, char *line );
 static void do_error_max_set( FILE *script, char *line );
 static void do_on_failure_label_set( FILE *script, char *line );
@@ -508,15 +510,12 @@ seek_label( FILE *script, char *label, char *ref_line ) {
 
 
 /*
-  wait for a nod from the user before continuing -- returns true if
-  we just got the expected return, false if exit was by a function
-  key
+  wait for a nod from the user before continuing
 */
-static bool 
-wait_user( char *message, char *mode, FILE *script, char *line ) {
+static void
+wait_user( char *message, char *mode )
+{
   int	resp;			/* response character */
-  int	fkey;			/* function key iterator */
-  bool	ret_code;		/* return code */
 
   /* move to the message line print a prompt */
   move( MESSAGE_LINE, 0 ); clrtoeol();
@@ -525,56 +524,12 @@ wait_user( char *message, char *mode, FILE *script, char *line ) {
   move( MESSAGE_LINE, 0 );
   ADDSTR_REV( message );
 
-  while ( TRUE ) 
-    {
-      resp = getch_fl( ASCII_NULL );
-      
-      /* translate pseudo Fkeys into real ones if applicable 
-	 The pseudo keys are defined in array pfkeys and are also:
-	 F1 - 1, F2 - 2, F3 - 3,.... F10 - 0, F11 - A, F12 - S */
-      for ( fkey = 1; fkey <= NFKEYS; fkey++ ) 
-	{
-	  if ( resp == pfkeys[ fkey - 1 ] || (fkey<11 && resp == (fkey+'0'))
-	       || (fkey==10 && (resp =='0'))
-	       || (fkey==11 && (resp =='a' || resp=='A'))
-	       || (fkey==12 && (resp =='s' || resp=='S'))) 
-	    {
-	      resp = KEY_F( fkey );
-	      break;
-	    }
-	}
-      
-      /* search the key bindings for a matching key */
-      for ( fkey = 1; fkey <= NFKEYS; fkey++ ) 
-	{
-	  if ( resp == KEY_F( fkey )
-	       && fkey_bindings[ fkey - 1 ] != NULL ) 
-	    {
-	      seek_label( script, fkey_bindings[ fkey - 1 ],
-			  NULL );
-	      get_script_line( script, line );
-	      break;
-	    }
-	}
-      if ( fkey <= NFKEYS ) 
-	{
-	  ret_code = FALSE;
-	  break;
-	}
-      
-      /* not an FKEY - just check for return */
-      if ( (char)resp == ASCII_ENTER ) 
-	{
-	  ret_code = TRUE;
-	  break;
-	}
-    }
-  
+  do {
+    resp = getch_fl( ASCII_NULL );
+  } while (resp != ASCII_ENTER);
+
   /* clear the message line */
   move( MESSAGE_LINE, 0 ); clrtoeol();
-  
-  /* tell the caller if we got a nod or a function key */
-  return ( ret_code );
 }
 
 
@@ -679,7 +634,7 @@ do_tutorial( FILE *script, char *line ) {
   /* wait for a return, unless the next command is a query,
      when we can skip it to save the user keystrokes */
   if ( SCR_COMMAND( line ) != C_QUERY )
-    wait_user( WAIT_MESSAGE, MODE_TUTORIAL, script, line );
+    wait_user( WAIT_MESSAGE, MODE_TUTORIAL );
   global_prior_command = C_TUTORIAL;
 }
 
@@ -914,10 +869,7 @@ do_drill( FILE *script, char *line ) {
       /* honor --no-skip */
       if ( c == ASCII_ESC && cl_no_skip ) 
 	{
-	  if ( ! wait_user( NO_SKIP_MSG, MODE_DRILL, script, line )) {
-	    seek_done = TRUE;
-	    break; /* function key */
-	  }
+	  wait_user( NO_SKIP_MSG, MODE_DRILL );
 	  continue;
 	}
 
@@ -937,10 +889,7 @@ do_drill( FILE *script, char *line ) {
 	      (float)errors/(float)chars_typed > global_error_max/100.0) 
 	    {
 	      sprintf( message, ERROR_TOO_HIGH_MSG, global_error_max );
-	      if ( ! wait_user( message, MODE_DRILL, script, line )) {
-		seek_done = TRUE;
-		break; /* function key */
-	      }
+	      wait_user( message, MODE_DRILL );
 
 	      /* check for F-command */
 	      if (global_on_failure_label != NULL)
@@ -955,9 +904,7 @@ do_drill( FILE *script, char *line ) {
 		  /* reset value unless persistent */
 		  if (!global_on_failure_label_persistent)
 		    global_on_failure_label = NULL;
-		  /* no need to check for fkey because seek_done is
-		     set anyway */
-		  wait_user( message, MODE_DRILL, script, line );
+		  wait_user( message, MODE_DRILL );
 		  seek_done = TRUE;
 		  break;
 		}
@@ -985,9 +932,8 @@ do_drill( FILE *script, char *line ) {
     global_error_max = cl_default_error_max;
 
   /* buffer_command takes care of advancing `script' (and setting
-     `line'), so we only do it if an fkey/E was pressed (as a
-     side-effect of a query/wait)
-  */
+     `line'), so we only do if seek_label had been called (in
+     do_query_repeat or due to a failure and an F: command) */
   if (seek_done)
     get_script_line( script, line );
   global_prior_command = drill_type;
@@ -1155,10 +1101,7 @@ do_speedtest( FILE *script, char *line ) {
       /* honor --no-skip */
       if ( c == ASCII_ESC && cl_no_skip ) 
 	{
-	  if ( ! wait_user( NO_SKIP_MSG, MODE_DRILL, script, line )) {
-	    seek_done = TRUE;
-	    break; /* function key */
-	  }
+	  wait_user( NO_SKIP_MSG, MODE_DRILL );
 	  continue;
 	}
 
@@ -1175,10 +1118,7 @@ do_speedtest( FILE *script, char *line ) {
 	      (float)errors/(float)chars_typed > global_error_max/100.0) 
 	    {
 	      sprintf( message, ERROR_TOO_HIGH_MSG, global_error_max );
-	      if ( ! wait_user( message, MODE_SPEEDTEST, script, line )) {
-		seek_done = TRUE;
-		break; /* function key */
-	      }
+	      wait_user( message, MODE_SPEEDTEST );
 
 	      /* check for F-command */
 	      if (global_on_failure_label != NULL)
@@ -1193,9 +1133,7 @@ do_speedtest( FILE *script, char *line ) {
 		  /* reset value unless persistent */
 		  if (!global_on_failure_label_persistent)
 		    global_on_failure_label = NULL;
-		  /* no need to check for fkey because seek_done is
-		     set anyway */
-		  wait_user( message, MODE_SPEEDTEST, script, line );
+		  wait_user( message, MODE_SPEEDTEST );
 		  seek_done = TRUE;
 		  break;
 		}
@@ -1224,9 +1162,8 @@ do_speedtest( FILE *script, char *line ) {
     global_error_max = cl_default_error_max;
 
   /* buffer_command takes care of advancing `script' (and setting
-     `line'), so we only do it if an fkey/E was pressed (as a
-     side-effect of a query/wait)
-  */
+     `line'), so we only do if seek_label had been called (in
+     do_query_repeat or due to a failure and an F: command) */
   if (seek_done)
     get_script_line( script, line );
   global_prior_command = C_SPEEDTEST;
@@ -1306,7 +1243,8 @@ do_exit( FILE *script )
 
 
 /*
-  
+  Ask the user whether he/she wants to repeat, continue or exit
+  (this is used at the end of an exercise (drill/speedtest))
 */
 static char
 do_query_repeat ( FILE *script )
@@ -1320,34 +1258,77 @@ do_query_repeat ( FILE *script )
   move( MESSAGE_LINE, 0 );
   ADDSTR_REV( REPEAT_NEXT_EXIT_MSG );
 
-  /* wait for [RrNnEe] */
+  /* wait for [RrNnEe] (or translation of these) */
   while (TRUE)
     {
       resp = getch_fl( ASCII_NULL );
 
       if (toupper ((char)resp) == 'R' ||
-	  toupper ((char)resp) == RNE[0]) {
+	  toupper ((char)resp) == RNE [0]) {
 	resp = 'R';
 	break;
       }
       if (toupper ((char)resp) == 'N' ||
-	  toupper ((char)resp) == RNE[2]) {
+	  toupper ((char)resp) == RNE [2]) {
 	resp = 'N';
 	break;
       }
-      if ((toupper ((char)resp) == 'E' || toupper ((char)resp) == RNE[4]) &&
-	  fkey_bindings [11] != NULL)
-	{
-	  seek_label( script, fkey_bindings [11], NULL );
-	  resp = 'E';
-	  break;
-	}
+      if (toupper ((char)resp) == 'E' || toupper ((char)resp) == RNE [4]) {
+	if (fkey_bindings [11] != NULL &&
+	    do_query_simple (CONFIRM_EXIT_MSG))
+	  {
+	    seek_label (script, fkey_bindings [11], NULL);
+	    resp = 'E';
+	    break;
+	  }
+	/* redisplay the prompt */
+	move( MESSAGE_LINE, 0 ); clrtoeol();
+	move( MESSAGE_LINE, COLS - strlen( MODE_QUERY ) - 2 );
+	ADDSTR_REV( MODE_QUERY );
+	move( MESSAGE_LINE, 0 );
+	ADDSTR_REV( REPEAT_NEXT_EXIT_MSG );
+      }
     }
 
   /* clear out the message line */
   move( MESSAGE_LINE, 0 ); clrtoeol();
   
   return (char)resp;
+}
+
+
+/*
+  Same as do_query, but only used internally (doesn't set global_resp_flag,
+  returns the value instead) and doesn't accept Fkeys.
+  This is used to let the user confirm (E)xit.
+*/
+static bool
+do_query_simple ( char *text )
+{
+  char resp;
+
+  /* display the prompt */
+  move( MESSAGE_LINE, 0 ); clrtoeol();
+  move( MESSAGE_LINE, COLS - strlen( MODE_QUERY ) - 2 );
+  ADDSTR_REV( MODE_QUERY );
+  move( MESSAGE_LINE, 0 );
+  ADDSTR_REV( text );
+
+  /* wait for Y/N or translation of Y/N */
+  do
+    {
+      resp = getch_fl( ASCII_NULL );
+      
+      if (toupper (resp) == 'Y' || toupper (resp) == YN[0])
+	resp = 0;
+      if (toupper (resp) == 'N' || toupper (resp) == YN[2])
+	resp = -1;
+    }  while (resp != 0 && resp != -1);
+
+  /* clear out the message line */
+  move( MESSAGE_LINE, 0 ); clrtoeol();
+  
+  return resp == 0 ? TRUE : FALSE;
 }
 
 
@@ -1369,7 +1350,7 @@ do_query( FILE *script, char *line )
   move( MESSAGE_LINE, 0 );
   ADDSTR_REV( SCR_DATA( line ) );
   
-  /* wait for a Y/N response, or matching FKEY */
+  /* wait for a Y/N response, translation of Y/N or matching FKEY */
   while ( TRUE ) 
     {
       resp = getch_fl( ASCII_NULL );
@@ -1951,7 +1932,10 @@ This program is released under the GNU General Public License.");
     _("You failed this test, so you need to go back to %s.");
   /* this is used for repeat-queries. you can translate the keys as well
      (if you translate msgid "R/N/E" accordingly) */
-  REPEAT_NEXT_EXIT_MSG= _("R to repeat, N for next or E to exit");
+  REPEAT_NEXT_EXIT_MSG= 
+	_("Press R to repeat, N for next exercise or E to exit");
+  /* This is used make the user confirm (E)xit in REPEAT_NEXT_EXIT_MSG */
+  CONFIRM_EXIT_MSG= _("Are you sure you want to exit this lesson ?");
   /* This message is displayed if the user tries to skip a lesson
      (ESC ESC) and --no-skip is specified */
   NO_SKIP_MSG= 

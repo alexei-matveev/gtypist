@@ -6,9 +6,11 @@
 
 Version 2.5 - December/2001
 	
-	- allow the user to skip an exercise by pressing ESC twice (once to
- 	restart and then again at the beginning of the exercise to skip)
-	- add new switch --no-skip which forbids the user to skip exercises
+	- allow the user to skip an exercise or exit the lesson by
+	pressing ESC twice (once to restart and then again at the
+	beginning of the exercise to skip)
+	- add new switch --no-skip which prohibits the user from skipping
+	 exercises
 	- remove more occurrences of "Q: Press Y to continue, ..."  following
 	an exercise (because this is builtin since 2.4) in d.typ, r.typ, v.typ
 	and esp.typ

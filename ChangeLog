@@ -1,6 +1,15 @@
+2001-12-09  Felix Natter  <f.natter@ndh.net>
+
+	* main: change REPEAT_NEXT_EXIT_MSG
+
 2001-12-08  Felix Natter  <f.natter@ndh.net>
 
-	* gtypist.c (print_help,...): rename --wpmode to --word-processor
+	* do_query_repeat: call do_query_simple (CONFIRM_EXIT_MSG) to let the
+	user confirm (E)xit
+	* do_query_simple: new function
+	* wait_user: don't check for Fkeys. you can now quit a lesson
+	by pressing 'E' in REPEAT_NEXT_EXIT_MSG
+	* print_help,...: rename --wpmode to --word-processor
 	(as suggested by Michael); rename variable to cl_wpemu
 	* new variable cl_no_skip from option --no-skip, no message NO_SKIP_MSG
 	* do_query_noscriptfile: remove
