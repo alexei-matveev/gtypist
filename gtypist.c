@@ -1,7 +1,7 @@
 
 /*
  * GNU Typist  - interactive typing tutor program for UNIX systems
- * Copyright (C) 1998, 1999, 2000, 2001, 2002  Simon Baldwin (simonb@sco.com)
+ * Copyright (C) 1998, 1999, 2000, 2001, 2002, 2003  Simon Baldwin (simonb@sco.com)
  *
  * This program is free software; you can redistribute it and/or
  * modify it under the terms of the GNU General Public License
@@ -1703,7 +1703,7 @@ int main( int argc, char **argv )
   textdomain (PACKAGE);
 #endif
 
-  COPYRIGHT=_("Copyright (C) 1998, 1999, 2000, 2001, 2002 Simon Baldwin.\n\
+  COPYRIGHT=_("Copyright (C) 1998, 1999, 2000, 2001, 2002, 2003 Simon Baldwin.\n\
 This program comes with ABSOLUTELY NO WARRANTY; for details\n\
 please see the file 'COPYING' supplied with the source code.\n\
 This is free software, and you are welcome to redistribute it\n\
