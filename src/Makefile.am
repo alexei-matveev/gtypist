@@ -10,13 +10,13 @@ gtypist_SOURCES = gtypist.c cursmenu.c script.c error.c getopt.c getopt1.c \
 		cursmenu.h error.h getopt.h gettext.h gtypist.h script.h
 gtypist_LDADD = @LIBINTL@
 
-man_MANS = gtypist.1
-
 AM_CPPFLAGS = -I../intl \
   -DDATADIR=\"$(pkgdatadir)\" \
   -DLOCALEDIR=\"$(datadir)/locale\"
 
 # GEN_MAN is a shell command that generates the man page
+
+man_MANS = gtypist.1
 
 GEN_MAN=@GEN_MAN@
 
