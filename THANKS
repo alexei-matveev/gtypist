@@ -10,6 +10,11 @@ problems,  suggesting  various   improvements,  or  submitting  actual
 code. Here  is a list  of these people.  Help us keep it  complete and
 exempt of errors.
 
+* Richard Susta <http://susta.cz> for contributing new lessons in Czech.
+
+* Hynek Hanke <hanke@volny.cz> for translating to Czech interface
+  messages, lesson files and the user's manual.
+
 * Sven Guckes <guckes@math.fu-berlin.de> for helping us in debugging
   2.5 on Debian GNU/Linux and in GNU/Solaris8.
 

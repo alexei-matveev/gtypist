@@ -6,12 +6,15 @@
 
 Version 2.6 - April/2002
 	- New `typefortune' (perl-)script which creates lessons from `fortune'
-	(see the new section "Using typefortune" in the manual)
-	- New interface messages, manual and lesson in Czech
-	from Hynek Hanke <hanke@volny.cz> 
+	(see the new section "Using typefortune" in the manual).
+	- New interface messages and manual in Czech
+	from Hynek Hanke <hanke@volny.cz>.
+	- New lessons in Czech from Hynek Hanke and Richard Susta <r@susta.cz>.
 	- Manual now using `@copying' as recommended in texinfo-4.2,
 	and released under the GNU Free Documentation License
 	(with no Invariant Sections).
+        - Built with automake 1.6.1, autoconf 2.53, gettext 0.11.1
+	and texinfo 4.2, following their latest guidelines.
 
 Version 2.5.1 - February/2002
 	- fix a bug in --help output
