@@ -1,3 +1,12 @@
+
+2003-04-13	Hynek Hanke	<hanke@volny.cz>
+
+	* lessons/cs.typ: use M instead of K for menus
+
+	* po/cs.po: new messages translated
+
+	* doc/gtypist.cs.texi: updated
+
 2003-04-06  Felix Natter  <fnatter@gmx.net>
 
 	* configur.bat: include the new modules
