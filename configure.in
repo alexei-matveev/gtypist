@@ -5,7 +5,7 @@
 #	changed version to CVS.
 #
 
-AC_INIT(gtypist.c)
+AC_INIT(src/gtypist.c)
 AM_INIT_AUTOMAKE(gtypist, "`cat version.sh|grep '^VERSION'|awk -F= '{print $2}'`")
 AM_CONFIG_HEADER(config.h)
 
@@ -74,4 +74,5 @@ AM_PATH_LISPDIR
 
 # Generate files
 
-AC_OUTPUT(lessons/Makefile tools/Makefile doc/Makefile Makefile) 
+AC_OUTPUT(lessons/Makefile tools/Makefile doc/Makefile src/Makefile Makefile)
+
