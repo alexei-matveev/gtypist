@@ -74,5 +74,5 @@ AM_PATH_LISPDIR
 
 # Generate files
 
-AC_OUTPUT(lessons/Makefile tools/Makefile doc/Makefile src/Makefile po/Makefile.in Makefile)
+AC_OUTPUT(lessons/Makefile tools/Makefile doc/Makefile src/Makefile Makefile)
 
