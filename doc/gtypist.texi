@@ -966,7 +966,11 @@ maintainer. Project development is now hosted on
 In June 2001, @email{fnatter@@gmx.net, Felix Natter} joined
 and made major contributions to the project: lesson
 imports from other tutors, tool enhancements, new tutorial capabilities,
-and Emacs mode.
+, Emacs mode, arrow key based interface, and many more!
+@item
+In 2003, @email{rutsky@school.ioffe.rssi.ru, Dmitry Rutsky} joined
+joined the development team and brought in a dramatic number ideas, hacks
+and improvements, and he's not done yet!  
 @end itemize
 
 @node Copying this manual
