@@ -1,12 +1,19 @@
 2002-04-16  Michael Opdenacker <michaelo@gnu.org>
 
 	* po/: new Makevars file as recommended by gettextize.
+	* Makefile.am: replaced 'INCLUDES' (deprecated) by 'AM_CPPFLAGS'
 	* acconfig.h: removed because deprecated.
 	  Replaced by the use of `-D' in AM_CPPFLAGS (see below).
 	* configure.in: only kept AM_GNU_GETTEXT for i18n.
 	  --nointl and --with-nointl options are no longer available,
-	 but --disable-nls in still available.
+	  but --disable-nls in still available.
+	* Makefile.am: added a new AUTOMAKE_OPTIONS variable
+	  set to '1.6 dist-bzip check-news' (see automake manual).
 	* Other changes: to be documented very soon!
+	* gtypist.c: Replaced PACKAGE_LOCALE_DIR by LOCALE_DIR:
+          more standard: found in gettext doc and used by several packages. 
+	* Makefile.am: Added '-DLOCALEDIR=\"$(datadir)/locale\"'
+          to AM_CPPFLAGS (replaces PACKAGE_LOCAL_DIR defined in acconfig.h)
  
 2002-04-08  Felix Natter  <fnatter@gmx.net>
 
