@@ -37,7 +37,6 @@ or create new ones.
 * Supplied lessons::        Overview of the lessons in the gtypist distribution
 * Create new lessons::      How to contribute new lessons
 * Emacs mode::              Emacs mode for editing gtypist scripts
-* VIM Syntax highlighting:: VIM Syntax highlighting for gtypist scripts
 * Environment Variables::   Environment variables which affect gtypist
 * Errors and omissions::    Known problems
 * History::                 History of GNU Typist
@@ -619,7 +618,7 @@ D:jjj jhj jjj jhj jjj jhj
 @end itemize
 
 
-@node Emacs mode, VIM Syntax highlighting, Create new lessons, Top
+@node Emacs mode, Environment Variables, Create new lessons, Top
 @chapter Emacs mode
 
 gtypist now comes with an Emacs major-mode which does
@@ -708,44 +707,7 @@ Run @kbd{C-h m} for a complete list of commands and their keybindings.
 If you find bugs or if you think there's something else this mode could
 do, please write to @email{bug-gtypist@@gnu.org}.
 
-@node VIM Syntax highlighting, Environment Variables, Emacs mode, Top
-@chapter VIM Syntax highlighting
-
-@noindent
-@file{tools/gtypist.vim} provides syntax highlighting for Vim 5.x and 6.x.
-
-To install for version 5.x (or any version on DOS/Windows), copy
-@file{tools/gtypist.vim} to where the syntax-files go (for example
-@file{/usr/share/vim/vim56/syntax/} for Vim 5.6 on Debian 2.2; if all
-else fails you can search for i.e. @file{xml.vim}) and add this to
-@file{~/.vimrc} (@file{$HOME/_vimrc} on DOS/Windows):
-@example
-autocmd BufNewFile,BufRead *.typ set ft=gtypist 
-@end example
-
-Installation for Vim 6.x is simpler: first create @file{~/.vim/syntax/}:
-@code{mkdir -p ~/.vim/syntax} and put @file{tools/gtypist.vim} in there.
-Finally add this to @file{~/.vimrc}:
-@example
-autocmd BufNewFile,BufRead *.typ setf gtypist
-@end example
-
-In any case, make sure that this command is at the top of @file{vimrc}
-ahead of all other @code{autocmd}-commands:
-@example
-autocmd!  " Remove ALL autocommands for the current group
-@end example
-(which avoids problems if @file{vimrc} is sourced more than once).
-And if you haven't done it already, you need to need to enable syntax
-highlighting:
-@example
-syntax on " turn on syntax highlighting
-@end example
-
-@noindent
-All this is also mentioned in the README-section of @file{tools/gtypist.vim}.
-
-@node Environment Variables, Errors and omissions, VIM Syntax highlighting, Top
+@node Environment Variables, Errors and omissions, Emacs mode, Top
 @chapter Environment Variables
 GNU Typist uses the following environment variables:
 
