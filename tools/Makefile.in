@@ -88,7 +88,7 @@ USE_INCLUDED_LIBINTL = @USE_INCLUDED_LIBINTL@
 USE_NLS = @USE_NLS@
 VERSION = @VERSION@
 
-EXTRA_DIST = typcombine typv1tov2 gtypist-mode.el
+EXTRA_DIST = typcombine typv1tov2 gtypist-mode.el ktouch2typ.pl
 mkinstalldirs = $(SHELL) $(top_srcdir)/mkinstalldirs
 CONFIG_HEADER = ../config.h
 CONFIG_CLEAN_FILES = 
