@@ -135,6 +135,8 @@ char *do_menu (FILE *script, char *line)
   int start_idx, end_idx; /* visible menu-items */
   int items_first_column, items_per_page, real_items_per_column, spacing;
 
+  const int MENU_HEIGHT_MAX = LINES - 6;
+
   append_menu_history (__last_label);
   
   // Bind our former F12 key to the current menu.
@@ -255,8 +257,8 @@ char *do_menu (FILE *script, char *line)
     items_first_column++;
 
   /* compute start_y */
-  if (items_first_column > LINES - 2)
-    start_y = 1;
+  if (items_first_column > MENU_HEIGHT_MAX)
+    start_y = 4;
   else
     start_y = (LINES - items_first_column) / 2;
 
@@ -267,7 +269,7 @@ char *do_menu (FILE *script, char *line)
 
   /* compute items/page (for scrolling) */
   items_per_page = min (num_items, columns * 
-			min (LINES - 2, items_first_column));
+			min (MENU_HEIGHT_MAX, items_first_column));
 
   /* find # of visible items in column */
   real_items_per_column = items_per_page / columns;
@@ -279,10 +281,22 @@ char *do_menu (FILE *script, char *line)
   end_idx = items_per_page - 1;
 
   /* do clrscr only once */
-  wclear (stdscr);
+  // Preserve the top banner.
+  move (1, 0);
+  clrtobot ();
+
+  // The menu title
   wattron (stdscr, A_BOLD);
-  mvwaddstr (stdscr, 0, 0, title);
+  mvwaddstr (stdscr, 2, (80 - strlen (title)) / 2, title);
   wattroff (stdscr, A_BOLD);
+
+  // The prompt at the bottom of the screen
+  mvwaddstr (stdscr, LINES - 1, 0,
+		_(
+"Use arrowed keys to move around, "
+"SPACE or ENTER to select and ESCAPE to go back")
+		);
+  
   do
     {
       /* (re)display the menu */
@@ -349,15 +363,25 @@ char *do_menu (FILE *script, char *line)
 	case KEY_RIGHT:
 	case 'l':
 	case 'L':
+	  if (cur_choice + real_items_per_column < num_items)
+	     cur_choice += real_items_per_column;
+	  break;
+
 	case '\n':
+	case ASCII_SPACE:
 	  ch = KEY_ENTER;
 	case KEY_ENTER:
 	  break;
 
-	case KEY_CANCEL: // anyone knows where is this key on a PC keyboard?
-	case ASCII_ESC:
+	case KEY_LEFT:
 	case 'h':
 	case 'H':
+	  if (cur_choice - real_items_per_column >= 0)
+	     cur_choice -= real_items_per_column;
+	  break;
+	  
+	case KEY_CANCEL: // anyone knows where is this key on a PC keyboard?
+	case ASCII_ESC:
 	  prepare_to_go_back (script);
 	  goto cleanup;
 

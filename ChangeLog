@@ -1,3 +1,11 @@
+2003-07-02	Dmitry Rutsky	<rutsky@school.ioffe.rssi.ru>
+
+	* curmenu.c: Now we do not erase the banner, 
+	  display the menu header centered above the menu, 
+	  and even print some menu motion help at the bottom.
+	  Also now you can move around the menu with arrowed (or vi) keys in any
+	  desired possible direction, it is very useful in multi-column menus.
+
 2003-07-01	Dmitry Rutsky	<rutsky@school.ioffe.rssi.ru>
 
 	* autogen.sh:  check autoconf exit status and display useful
