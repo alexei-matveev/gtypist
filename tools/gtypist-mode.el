@@ -88,6 +88,8 @@
 ;; Fri Oct 12 17:36:22 2001: change gtypist-mode-goto-label to C-c M-g
 ;; because XEmacs interprets C-c C-g as (keyboard-quit)
 ;; Fri Oct 19 20:18:46 2001: allow only digits after the first ':' in "^K"
+;; Tue Jan  8 20:12:50 2002: gtypist-mode-fortune-to-drill: put "author-line"
+;; in I: (not B:) because this is the convention
 
  ;;; Code:
 
@@ -216,12 +218,12 @@ available). Use C-u prefix to get S:, and C-u C-u to get d:."
       (setq fortune-lines (split-string (yow) "\n"))
       (message "`fortune' not found. Falling back to `yow'."))
     ;; check whether last line is an "author-line"
-    (if (string-match "^[\t ]*-- \\(.+\\)[ \t]*" (car (last fortune-lines)))
-	(progn ;; add banner...
-	  (gtypist-mode-insert-banner (match-string 
-				       1 (car (last fortune-lines))))
-	  ;; ... and remove "author-line"
-	  (setcdr (last fortune-lines 2) nil)))
+    (when (string-match "^[\t ]*-- \\(.+\\)[ \t]*" (car (last fortune-lines)))
+	;; add I:...
+      (insert "I:" (match-string 
+		    1 (car (last fortune-lines))) ?\n)
+      ;; ... and remove "author-line"
+      (setcdr (last fortune-lines 2) nil))
     ;; emit warning if fortune is too long
     (if (> (length fortune-lines) (if (string-equal drill-type "S:")
 				      22
@@ -259,7 +261,8 @@ available). Use C-u prefix to get S:, and C-u C-u to get d:."
   (insert "\n"))
 
 (defun gtypist-mode-insert-banner(text)
-  "Insert B:-command with centered content (66 columns because \"gtypist <version>\" is in the right corner)"
+  "Insert B:-command with centered content
+\(66 columns because \"gtypist <version>\" is in the right corner)"
   (interactive "sEnter text for banner: ")  
   (if (string-equal text "")
       (message "Canceled."))
