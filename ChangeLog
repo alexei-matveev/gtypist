@@ -1,3 +1,12 @@
+2003-08-28  Rob Leslie  <rob@mars.org>
+
+	* gtypist.c: Added support to resync with the typist after an
+	  error.  If the typist presses the correct key after an error, it
+	  is ignored (sync behind).  If the typist misses a key, it is
+	  flagged as an error but the key is credited to the next
+	  character so the typist can continue without stopping (sync
+	  ahead).
+
 2003-08-24	Dmitry Rutsky	<rutsky@school.ioffe.rssi.ru>
 
 	* cursmenu.c:  a better handling of `left' and `right' keys in the
