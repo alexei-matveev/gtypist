@@ -1,3 +1,8 @@
+2002-04-18  Michael Opdenacker <michaelo@gnu.org>
+
+	* gtypist.c: replaced '1998-2001' by `1998, 1999, 2000, 2001, 2002'
+	  in the copyright notices (following GNU guidelines).
+
 2002-04-16  Michael Opdenacker <michaelo@gnu.org>
 
 	* po/: new Makevars file as recommended by gettextize.
