@@ -1,3 +1,15 @@
+2003-01-13  Felix Natter  <fnatter@gmx.net>
+
+	* split code into modules (script, curses-menu, error, main)
+	+ hook up menu-code (do_menu, M: command)
+
+2003-01-12  Felix Natter  <fnatter@gmx.net>
+
+	* apply patch from Steven Elliott (elliott4@austin.rr.com):
+	"I've attached a small patch that allows gtypist to display errors
+	in reverse video instead of the reverse video '^' as it currently does"
+	(option --show-errors)
+
 2002-12-10  Michael Opdenacker <michaelo@gnu.org>
 
 	* configure.in: removed intl/Makefile, po/Makefile and m4/Makefile
