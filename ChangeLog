@@ -1,3 +1,9 @@
+2003-08-24	Dmitry Rutsky	<rutsky@school.ioffe.rssi.ru>
+
+	* cursmenu.c:  a better handling of `left' and `right' keys in the
+	  menus, don't go offscreen on the keys if there is a large
+	  single-column list (as in lessons/ttde.typ).
+
 2003-08-03	Dmitry Rutsky	<rutsky@school.ioffe.rssi.ru>
 
 	* lessons/ru.typ:  new Russian cyrillic keyboard course.

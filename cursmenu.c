@@ -383,8 +383,19 @@ char *do_menu (FILE *script, char *line)
 	case KEY_RIGHT:
 	case 'l':
 	case 'L':
-	  if (cur_choice + real_items_per_column < num_items)
+	  if (cur_choice + real_items_per_column < end_idx)
 	     cur_choice += real_items_per_column;
+	  else
+	  {
+	     k = end_idx;
+	     end_idx = min (end_idx + items_per_page, num_items - 1);
+	     start_idx += end_idx - k;
+	     if (end_idx - k)
+	        cur_choice += end_idx - k;
+	     else
+		cur_choice = num_items - 1;
+	  }
+
 	  break;
 
 	case '\n':
@@ -399,8 +410,18 @@ char *do_menu (FILE *script, char *line)
 	case KEY_LEFT:
 	case 'h':
 	case 'H':
-	  if (cur_choice - real_items_per_column >= 0)
+	  if (cur_choice - real_items_per_column >= start_idx)
 	     cur_choice -= real_items_per_column;
+	  else
+	  {
+	     k = start_idx;
+	     start_idx = max (0, start_idx - items_per_page);
+	     end_idx += start_idx - k;
+	     if (start_idx - k)
+	        cur_choice += start_idx - k;
+	     else
+		cur_choice = 0;
+	  }
 	  break;
 	  
 	case KEY_CANCEL: // anyone knows where is this key on a PC keyboard?
