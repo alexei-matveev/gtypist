@@ -19,6 +19,19 @@
 #
 # Demonstration of commands and features
 #
+*:MENU
+M: "Demonstration of commands and features"
+ :DEMO_0  "B:         (banner)"
+ :DEMO_1  "T:         (tutorial)"
+ :DEMO_2  "D:/d:      (drill)"
+ :DEMO_3  "S:/s:      (speed-test)"
+ :DEMO_4  "I:         (instruction)"
+ :DEMO_5  "E:         (set maximum error percentage)"
+ :DEMO_6  "*:/G:      (define label / jump to label)"
+ :DEMO_7  "Q:/Y:/N:   (ask questions)"
+ :DEMO_8  "F:         (set "on failure" label)"
+ :DEMO_9  "M:         (menu)"
+ :DEMO_10 "X:         (exit)"
 
 
 *:DEMO_0
@@ -36,7 +49,7 @@ T:This file demonstrates the commands that the program can do.
  :
  :to clear the screen.  The remainder of this file uses B commands to
  :indicate what it is demonstrating to you.
-
+G:MENU
 
 *:DEMO_1
 B:Demonstration of commands and features - T
@@ -51,7 +64,7 @@ T:The simplest command is the T command.  This just outputs the text on
  :	 :...and this is line 2
 T:This is line one of a T command...
  :...and this is line 2
-
+G:MENU
 
 *:DEMO_2
 B:Demonstration of commands and features - D/d
@@ -70,7 +83,7 @@ T:The D command displays its text on alternate screen lines, and prompts
  :
 D:type these characters
  :then type these
-
+G:MENU
 
 *:DEMO_3
 B:Demonstration of commands and features - S/s
@@ -94,7 +107,7 @@ T:Here is another example.  Experiment with delete and backspace:
 S:Overtype this paragraph with the same text.
  :Note that capitals and punctuation are important.
  :Experiment with delete and backspace keys.
-
+G:MENU
 
 *:DEMO_4
 B:Demonstration of commands and features - I
@@ -113,7 +126,7 @@ T:The I command can display some brief instructions above a drill or
 I:Here is a very short speed test. If you feel like you already made
  :too many mistakes then you can give up (start again) by pressing ESC
 S:Very, very short test...
-
+G:MENU
 
 *:DEMO_5
 B:Demonstration of commands and features - E
@@ -132,7 +145,7 @@ T:The E command is used to set the maximum error percentage allowed for
 E: 4%
 I:this drill requires 4% errors (at most)
 D:Cheer Up!  Things are getting worse at a slower rate.
-
+G:MENU
 
 *:DEMO_6
 B:Demonstration of commands and features - */G
@@ -150,18 +163,18 @@ T:The * places a label into the file.  The G command can then be used to go to
  :	T:We reached this message with a G command
 G:MY_LABEL
 T:*** You won't see this, ever
-*:MY_LABEL
+*:MY_LABEL           
 T:We reached this message with a G command
-
+G:MENU
 
 *:DEMO_7
-B:Demonstration of commands and features - Q/Y/N/K
+B:Demonstration of commands and features - Q/Y/N
 T:The Q command prints its text on the message line, and waits for
  :a 'Y' or an 'N' before proceeding.  Other characters are ignored.
  :
  :The Y command will go to the label on its line if the result of the most
  :recent Q was 'Y'.  The N command does the same thing for 'N'.  K binds
- :a function key to a label.
+ :a function key to a label (deprecated in favor of M:)
  :
  :Here's an example.  As you can see, it can be clumsy, but mostly we
  :don't need anything as intricate:
@@ -186,7 +199,7 @@ G:JUMP_OVER
 *:HIT_N
 T:You pressed N
 *:JUMP_OVER
-
+G:MENU
 
 *:DEMO_8
 B:Demonstration of commands and features - F
@@ -222,9 +235,27 @@ D:You will receive a legacy which will place you above want.
 # undo the effects of E/F
 E:default
 F:NULL
-
+G:MENU
 
 *:DEMO_9
+T:
+ : This text was used to create the main menu in this demo lesson:   
+ :
+ :	M: "Demonstration of commands and features"
+ :	 :DEMO_0  "B:         (banner)"
+ :	 :DEMO_1  "T:         (tutorial)"
+ :	 :DEMO_2  "D:/d:      (drill)"
+ :	 :DEMO_3  "S:/s:      (speed-test)"
+ :	 :DEMO_4  "I:         (instruction)"
+ :	 :DEMO_5  "E:         (set maximum error percentage)"
+ :	 :DEMO_6  "*:/G:      (define label / jump to label)"
+ :	 :DEMO_7  "Q:/Y:/N:   (ask questions)"
+ :	 :DEMO_8  "F:         (set "on failure" label)"
+ :	 :DEMO_9  "M:         (menu)"
+ :	 :DEMO_10 "X:         (exit)"
+G:MENU
+
+*:DEMO_10
 B:Demonstration of commands and features - X
 T:The last command to show is the X command.  This causes the program to
  :exit.  The program also exits if the end of the file is found

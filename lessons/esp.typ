@@ -17,7 +17,7 @@
 #
 
 *:COMIENZO
-B:Lecciones de manejo de teclado en español para Typist
+B:Lecciones de manejo de teclado en español para GNU Typist
 T:
  :
  :Bienvenido a las lecciones de manejo de teclado.
@@ -29,110 +29,29 @@ T:
  :  Febrero-Agosto de 2000. Bogotá Colombia
 
 *:MENU_PRINCIPAL
-K:1:LECCION_1
-K:2:LECCION_2
-K:3:LECCION_3
-K:4:LECCION_4
-K:5:LECCION_5
-K:6:LECCION_6
-K:7:LECCION_7
-K:8:LECCION_8
-K:9:LECCION_9
-K:10:LECCION_10
-K:11:AYUDA
-K:12:FINAL
-*:MUESTRA_MENU_PRINCIPAL
-B:        Menú principal
-T:
- :
- :        Fkey 1  - Lección 1 Teclas guía
- :        Fkey 2  - Lección 2 Teclas cercanas   H E O
- :        Fkey 3  - Lección 3 Más teclas nuevas N R I
- :        Fkey 4  - Lección 4 Dominando lo aprendido
- :        Fkey 5  - Lección 5 Nuevas Teclas     T C Mayúscula derecha
- :        Fkey 6  - Lección 6 Nuevas Teclas     M G . (Punto)
- :        Fkey 7  - Lección 7 Nuevas Teclas     Q U Mayúscula izquierda
- :        Fkey 8  - Lección 8 Dominando lo aprendido
- :        Fkey 9  - Lección 9 Nuevas Teclas     W V ' (Tilde o acento)
- :        Fkey 10 - Lección 10 Nuevas Teclas    P B , (Coma)
- :
- :        Fkey 11 - Menú de ayuda
- :        Fkey 12 - Salir del programa
- :           Y    - Lecciones siguientes
-Q: Elija una opción, o Fkey 12 para salir
-Y:MENU_PRINCIPAL_2
-G:MUESTRA_MENU_PRINCIPAL
-
-
-*:MENU_PRINCIPAL_2
-
-K:1:LECCION_11
-K:2:LECCION_12
-K:3:LECCION_13
-K:4:LECCION_14
-K:5:LECCION_15
-K:6:LECCION_16
-K:7:LECCION_17
-K:8:LECCION_18
-K:9:LECCION_19
-K:10:LECCION_20
-K:11:AYUDA
-K:12:FINAL
-*:MUESTRA_MENU_PRINCIPAL_2
-B:       Menú principal
-T:
- :
- :        Fkey 1  - Lección 11 Nuevas teclas          X Y
- :        Fkey 2  - Lección 12 Nuevas teclas          Z : ;
- :        Fkey 3  - Lección 13 Nuevas teclas (Dobles) RR LL NN CC
- :        Fkey 4  - Lección 14 Practicando lo aprendido
- :        Fkey 5  - Lección 15 Mezclando Números      0 1 2 ... 9
- :        Fkey 6  - Lección 16 Algo de LaTeX          $ { } \ [ ] _ ^
- :        Fkey 7  - Lección 17 Algo de HTML           < > & " ? !
- :        Fkey 8  - Lección 18 Algo de Texinfo        # | @
- :        Fkey 9  - Lección 19 Literatura
- :
- :
- :        Fkey 11 - Menú de ayuda
- :        Fkey 12 - Salir del programa
- :           Y    - Evaluaciones Finales
- :           N    - Lecciones Anteriores
-
-Q: Elija una opción.
-Y:MENU_PRINCIPAL_3
-N:MENU_PRINCIPAL
-G:MUESTRA_MENU_PRINCIPAL_2
-
-*:MENU_PRINCIPAL_3
-K:1:VELOCIDAD
-K:2:PRECISION
-K:3:NULL
-K:4:NULL
-K:5:NULL
-K:6:NULL
-K:7:NULL
-K:8:NULL
-K:9:NULL
-K:10:NULL
-K:11:AYUDA
-K:12:FINAL
-*:MUESTRA_MENU_PRINCIPAL_3
-B:       Menú principal
-T:
- :
- :         Fkey 1 - Evaluación de velocidad
- :         Fkey 2 - Evaluación de precisión
- :
- :
- :
- :         Fkey 11 - Menú de ayuda
- :         Fkey 12 - Salir del programa
- :
- :           N     - Lecciones anteriores
-Q: Elija una opción.
-N:MENU_PRINCIPAL_2
-G:MUESTRA_MENU_PRINCIPAL_3
-
+M: "Menú principal"
+ :LECCION_1  "Lección 1 Teclas guía"
+ :LECCION_2  "Lección 2 Teclas cercanas   H E O"
+ :LECCION_3  "Lección 3 Más teclas nuevas N R I"
+ :LECCION_4  "Lección 4 Dominando lo aprendido"
+ :LECCION_5  "Lección 5 Nuevas Teclas     T C Mayúscula derecha"
+ :LECCION_6  "Lección 6 Nuevas Teclas     M G . (Punto)"
+ :LECCION_7  "Lección 7 Nuevas Teclas     Q U Mayúscula izquierda"
+ :LECCION_8  "Lección 8 Dominando lo aprendido"
+ :LECCION_9  "Lección 9 Nuevas Teclas     W V ' (Tilde o acento)"
+ :LECCION_10 "Lección 10 Nuevas Teclas    P B , (Coma)"
+ :LECCION_11 "Lección 11 Nuevas teclas          X Y"
+ :LECCION_12 "Lección 12 Nuevas teclas          Z : ;"
+ :LECCION_13 "Lección 13 Nuevas teclas (Dobles) RR LL NN CC"
+ :LECCION_14 "Lección 14 Practicando lo aprendido"
+ :LECCION_15 "Lección 15 Mezclando Números      0 1 2 ... 9"
+ :LECCION_16 "Lección 16 Algo de LaTeX          $ { } \ [ ] _ ^"
+ :LECCION_17 "Lección 17 Algo de HTML           < > & " ? !"
+ :LECCION_18 "Lección 18 Algo de Texinfo        # | @"
+ :LECCION_19 "Lección 19 Literatura"
+ :VELOCIDAD  "Evaluación de velocidad"
+ :PRECISION  "Evaluación de precisión"
+ :AYUDA      "Ayuda de las teclas / Metodologìa de las Lecciones"
 
 
 *:AYUDA
@@ -181,30 +100,10 @@ G:AYUDA
 *:LECCION_1
 
 *:MENU_LECCION_1
-K:1:INSTRUCCIONES_LECCION_1
-K:2:PRACTICA_LECCION_1
-K:3:EVALUACION_LECCION_1
-K:4:NULL
-K:5:NULL
-K:6:NULL
-K:7:NULL
-K:8:NULL
-K:9:NULL
-K:10:NULL
-K:11:NULL
-K:12:MENU_PRINCIPAL
-*:MUESTRA_MENU_LECCION_1
-B:       Lección 1 - Teclas Guía
-T:
- :
- :	Fkey 1 - Instrucciones
- :	Fkey 2 - Práctica
- :	Fkey 3 - Evaluación
- :
- :
- :	Fkey 12 - Menú principal
-Q:Elija una opción
-G:MUESTRA_MENU_LECCION_1
+M: UP=MENU_PRINCIPAL "Lección 1 - Teclas Guía"
+ :INSTRUCCIONES_LECCION_1 "Instrucciones"
+ :PRACTICA_LECCION_1      "Práctica"
+ :EVALUACION_LECCION_1    "Evaluación"
 
 *:INSTRUCCIONES_LECCION_1
 B:INDICACIONES INICIALES
@@ -245,7 +144,7 @@ B:Evaluación Lección 1.
 I:Para pasar a la siguiente lección, en esta evaluación su wpm real debe ser de
  :por lo menos 30 con un porcentaje de errores menor al 5%.
 E:5%
-F:MUESTRA_MENU_LECCION_1
+F:MENU_LECCION_1
 S:fff ff f jjj jj j fff jj f jjj ff j f j
  :ddd dd d kkk kk k ddd kk d kkk dd k d k
  :sss ss s lll ll l sss ll s lll ss l s l
@@ -260,31 +159,10 @@ G:LECCION_1
 
 *:LECCION_2
 *:MENU_LECCION_2
-K:1:INSTRUCCIONES_LECCION_2
-K:2:PRACTICA_LECCION_2
-K:3:EVALUACION_LECCION_2
-K:4:NULL
-K:5:NULL
-K:6:NULL
-K:7:NULL
-K:8:NULL
-K:9:NULL
-K:10:NULL
-K:11:NULL
-K:12:MENU_PRINCIPAL
-
-*:MUESTRA_MENU_LECCION_2
-B:       Lección 2 - Teclas cercana H E O
-T:
- :
- :	Fkey 1 - Instrucciones
- :	Fkey 2 - Práctica
- :	Fkey 3 - Evaluación
- :
- :
- :	Fkey 12 - Menú principal
-Q:Elija una opción
-G:MUESTRA_MENU_LECCION_2
+M: UP=MENU_PRINCIPAL "Lección 2 - Teclas cercana H E O"
+ :INSTRUCCIONES_LECCION_2 "Instrucciones"
+ :PRACTICA_LECCION_2      "Práctica"
+ :EVALUACION_LECCION_2    "Evaluación"
 
 *:INSTRUCCIONES_LECCION_2
 B:NUEVAS TECLAS H E O
@@ -333,7 +211,7 @@ B:Evaluación Lección 2.
 I:Para pasar a la siguiente lección, en esta evaluación su wpm real debe ser de
  : por lo menos 31 con un porcentaje de errores inferior al 5%.
 E:5%
-F:MUESTRA_MENU_LECCION_2
+F:MENU_LECCION_2
 S:a as asd asdf j jk jkl jklñ s sa sal las
  :a as asd asdf j jk jkl jklñ s sa sal las
  :f fa faj faja j ja jal jala j as aja ala
@@ -353,32 +231,14 @@ S:a as asd asdf j jk jkl jklñ s sa sal las
  :los dos es de ella el ala es de los osos
  :el sol sale la sal dale los dos es osado
 G:LECCION_2
+
+
 *:LECCION_3
 *:MENU_LECCION_3
-K:1:INSTRUCCIONES_LECCION_3
-K:2:PRACTICA_LECCION_3
-K:3:EVALUACION_LECCION_3
-K:4:NULL
-K:5:NULL
-K:6:NULL
-K:7:NULL
-K:8:NULL
-K:9:NULL
-K:10:NULL
-K:11:NULL
-K:12:MENU_PRINCIPAL
-*:MUESTRA_MENU_LECCION_3
-B:       Lección 3 - Más teclas nuevas N R I
-T:
- :
- :	Fkey 1 - Instrucciones
- :	Fkey 2 - Práctica
- :	Fkey 3 - Evaluación
- :
- :
- :	Fkey 12 - Menú principal
-Q:Elija una opción
-G:MUESTRA_MENU_LECCION_3
+M: UP=MENU_PRINCIPAL "Lección 3 - Más teclas nuevas N R I"
+ :INSTRUCCIONES_LECCION_3 "Instrucciones"
+ :PRACTICA_LECCION_3      "Práctica"
+ :EVALUACION_LECCION_3    "Evaluación"
 
 *:INSTRUCCIONES_LECCION_3
 B:NUEVAS TECLAS N R I
@@ -427,7 +287,7 @@ B:Evaluación Lección 3.
 I:Para pasar a la siguiente lección, en esta evaluación su wpm real debe ser de
  : por lo menos 32, con un porcentaje de error inferior al 4%.
 E:4%
-F:MUESTRA_MENU_LECCION_3
+F:MENU_LECCION_3
 S:j jf jfk jfkl ñ añ aña daña l la las faja
  :j jf jfk jfkl ñ añ aña daña l la las faja
  :e le lea leal j je eje deje a ja aje ajos
@@ -449,30 +309,10 @@ G:LECCION_3
 
 *:LECCION_4
 *:MENU_LECCION_4
-K:1:PRACTICA_LECCION_4_1
-K:2:PRACTICA_LECCION_4_2
-K:3:EVALUACION_LECCION_4
-K:4:NULL
-K:5:NULL
-K:6:NULL
-K:7:NULL
-K:8:NULL
-K:9:NULL
-K:10:NULL
-K:11:NULL
-K:12:MENU_PRINCIPAL
-*:MUESTRA_MENU_LECCION_4
-B:       Lección 4 - Dominando lo aprendido
-T:
- :
- :	Fkey 1 - Práctica 1
- :	Fkey 2 - Práctica 2
- :	Fkey 3 - Evaluación
- :
- :
- :	Fkey 12 - Menú principal
-Q:Elija una opción
-G:MUESTRA_MENU_LECCION_4
+M: UP=MENU_PRINCIPAL "Lección 4 - Dominando lo aprendido"
+ :PRACTICA_LECCION_4_1 "Práctica 1"
+ :PRACTICA_LECCION_4_2 "Práctica 2"
+ :EVALUACION_LECCION_4 "Evaluación"
 
 *:PRACTICA_LECCION_4_1
 B:Práctica lección 4
@@ -531,7 +371,7 @@ B:Evaluación Lección 4
 I:Para pasar a la siguiente lección, en esta evaluación su wpm real debe ser de
  : por lo menos 33 con un porcentaje de error inferior al 4%.
 E:4%
-F:MUESTRA_MENU_LECCION_4
+F:MENU_LECCION_4
 S:fdsa jklñ fdsa jklñ asdf ñlkj fdsa jklñ
  :fdsa jklñ fdsa jklñ asdf ñlkj fdsa jklñ
  :da sa ja la as al ña da sa fa la as ala
@@ -557,30 +397,10 @@ G:LECCION_4
 
 *:LECCION_5
 *:MENU_LECCION_5
-K:1:INSTRUCCIONES_LECCION_5
-K:2:PRACTICA_LECCION_5
-K:3:EVALUACION_LECCION_5
-K:4:NULL
-K:5:NULL
-K:6:NULL
-K:7:NULL
-K:8:NULL
-K:9:NULL
-K:10:NULL
-K:11:NULL
-K:12:MENU_PRINCIPAL
-*:MUESTRA_MENU_LECCION_5
-B:       Lección 5 - Nuevas teclas T C Mayúscula Derecha
-T:
- :
- :	Fkey 1 - Instrucciones
- :	Fkey 2 - Práctica
- :	Fkey 3 - Evaluación
- :
- :
- :	Fkey 12 - Menú principal
-Q:Elija una opción
-G:MUESTRA_MENU_LECCION_5
+M: UP=MENU_PRINCIPAL "Lección 5 - Nuevas teclas T C Mayúscula Derecha"
+ :INSTRUCCIONES_LECCION_5 "Instrucciones"
+ :PRACTICA_LECCION_5      "Práctica"
+ :EVALUACION_LECCION_5    "Evaluación"
 
 *:INSTRUCCIONES_LECCION_5
 B:NUEVAS TECLAS: T C Mayúscula derecha
@@ -622,7 +442,7 @@ B:Evaluación Lección 5
 I:Para pasar a la siguiente lección, en esta evaluación su wpm real debe ser de
  : por lo menos 34 con un porcentaje de error inferior al 3%.
 E:3%
-F:MUESTRA_MENU_LECCION_5
+F:MENU_LECCION_5
 S:a la sal sala f fa fas faja e es ese seda
  :a la sal sala f fa fas faja e es ese seda
  :d de del dedo l lo los solo j je eje ojos
@@ -643,30 +463,10 @@ G:LECCION_5
 
 *:LECCION_6
 *:MENU_LECCION_6
-K:1:INSTRUCCIONES_LECCION_6
-K:2:PRACTICA_LECCION_6
-K:3:EVALUACION_LECCION_6
-K:4:NULL
-K:5:NULL
-K:6:NULL
-K:7:NULL
-K:8:NULL
-K:9:NULL
-K:10:NULL
-K:11:NULL
-K:12:MENU_PRINCIPAL
-*:MUESTRA_MENU_LECCION_6
-B:       Lección 6 - Nuevas teclas M G . (Punto)
-T:
- :
- :	Fkey 1 - Instrucciones
- :	Fkey 2 - Práctica
- :	Fkey 3 - Evaluación
- :
- :
- :	Fkey 12 - Menú principal
-Q:Elija una opción
-G:MUESTRA_MENU_LECCION_6
+M: UP=MENU_PRINCIPAL "Lección 6 - Nuevas teclas M G . (Punto)"
+ :INSTRUCCIONES_LECCION_6 "Instrucciones"
+ :PRACTICA_LECCION_6      "Práctica"
+ :EVALUACION_LECCION_6    "Evaluación"
 
 *:INSTRUCCIONES_LECCION_6
 B:NUEVAS TECLAS: M G y . (Punto)
@@ -713,7 +513,7 @@ B:Evaluación Lección 6
 I:Para pasar a la siguiente lección, en esta evaluación su wpm real debe ser de
  : por lo menos 35 con un porcentaje de error inferior al 3%.
 E:3%
-F:MUESTRA_MENU_LECCION_6
+F:MENU_LECCION_6
 S:jmj mj m mmm jj m mas me m mes mi j eme
  :jmj mj m mmm jj m mas me m mes mi j eme
  :fgf gg f gfg gf g gas ga g gas go g gol
@@ -737,30 +537,10 @@ G:LECCION_6
 
 *:LECCION_7
 *:MENU_LECCION_7
-K:1:INSTRUCCIONES_LECCION_7
-K:2:PRACTICA_LECCION_7
-K:3:EVALUACION_LECCION_7
-K:4:NULL
-K:5:NULL
-K:6:NULL
-K:7:NULL
-K:8:NULL
-K:9:NULL
-K:10:NULL
-K:11:NULL
-K:12:MENU_PRINCIPAL
-*:MUESTRA_MENU_LECCION_7
-B:       Lección 7 - Nuevas Teclas Q U Mayúscula izquierda
-T:
- :
- :	Fkey 1 - Instrucciones
- :	Fkey 2 - Práctica
- :	Fkey 3 - Evaluación
- :
- :
- :	Fkey 12 - Menú principal
-Q:Elija una opción
-G:MUESTRA_MENU_LECCION_7
+M: UP=MENU_PRINCIPAL "Lección 7 - Nuevas Teclas Q U Mayúscula izquierda"
+ :INSTRUCCIONES_LECCION_7 "Instrucciones"
+ :PRACTICA_LECCION_7      "Práctica"
+ :EVALUACION_LECCION_7    "Evaluación"
 
 *:INSTRUCCIONES_LECCION_7
 B:NUEVAS TECLAS: Q U Mayúscula izquierda
@@ -806,7 +586,7 @@ B:Evaluación Lección 7
 I:Para pasar a la siguiente lección, en esta evaluación su wpm real debe ser de
  : por lo menos 36 con un porcentaje de error inferior al 3%.
 E:3%
-F:MUESTRA_MENU_LECCION_7
+F:MENU_LECCION_7
 S:aqa aq q qqq qa aqa qa q aaa qa q aqa
  :juj uj u uuu ju u juj uj u juj ju juj
  :Jaj La L Lola Ll J Juj Juan Jul Julio
@@ -830,30 +610,10 @@ G:LECCION_7
 
 *:LECCION_8
 *:MENU_LECCION_8
-K:1:PRACTICA_LECCION_8_1
-K:2:PRACTICA_LECCION_8_2
-K:3:EVALUACION_LECCION_8
-K:4:NULL
-K:5:NULL
-K:6:NULL
-K:7:NULL
-K:8:NULL
-K:9:NULL
-K:10:NULL
-K:11:NULL
-K:12:MENU_PRINCIPAL
-*:MUESTRA_MENU_LECCION_8
-B:       Lección 8 - Dominando lo aprendido
-T:
- :
- :	Fkey 1 - Práctica 1
- :	Fkey 2 - Práctica 2
- :	Fkey 3 - Evaluación
- :
- :
- :	Fkey 12 - Menú principal
-Q:Elija una opción
-G:MUESTRA_MENU_LECCION_8
+M: UP=MENU_PRINCIPAL "Lección 8 - Dominando lo aprendido"
+ :PRACTICA_LECCION_8_1 "Práctica 1"
+ :PRACTICA_LECCION_8_2 "Práctica 2"
+ :EVALUACION_LECCION_8 "Evaluación"
 
 *:PRACTICA_LECCION_8_1
 B:Repaso de lo aprendido en lecciones anteriores
@@ -903,7 +663,7 @@ B:Evaluación Lección 8
 I:Para pasar a la siguiente lección, en esta evaluación su wpm real debe ser de
  : por lo menos 37 con un porcentaje de error inferior al 3%.
 E:3%
-F:MUESTRA_MENU_LECCION_8
+F:MENU_LECCION_8
 S:a q s d e c f r t g h j u n m k i l o ñ
  :asd dec frg frt jhn jum kil lo. año uña
  :Un kilo de queso. Nin te trae su tarea.
@@ -926,30 +686,10 @@ G:LECCION_8
 
 *:LECCION_9
 *:MENU_LECCION_9
-K:1:INSTRUCCIONES_LECCION_9
-K:2:PRACTICA_LECCION_9
-K:3:EVALUACION_LECCION_9
-K:4:NULL
-K:5:NULL
-K:6:NULL
-K:7:NULL
-K:8:NULL
-K:9:NULL
-K:10:NULL
-K:11:NULL
-K:12:MENU_PRINCIPAL
-*:MUESTRA_MENU_LECCION_9
-B:       Lección 9 - Nuevas Teclas W V ' (Tilde o acento)
-T:
- :
- :	Fkey 1 - Instrucciones
- :	Fkey 2 - Práctica
- :	Fkey 3 - Evaluación
- :
- :
- :	Fkey 12 - Menú principal
-Q:Elija una opción
-G:MUESTRA_MENU_LECCION_9
+M: UP=MENU_PRINCIPAL "Lección 9 - Nuevas Teclas W V ' (Tilde o acento)"
+ :INSTRUCCIONES_LECCION_9 "Instrucciones"
+ :PRACTICA_LECCION_9      "Práctica"
+ :EVALUACION_LECCION_9    "Evaluación"
 
 *:INSTRUCCIONES_LECCION_9
 B:NUEVAS TECLAS: V W ' (Tilde o Acento)
@@ -995,7 +735,7 @@ B:Evaluación Lección 9
 I:Para pasar a la siguiente lección, en esta evaluación su wpm real debe ser de
  : por lo menos 38 con un porcentaje de error inferior al 3%.
 E:3%
-F:MUESTRA_MENU_LECCION_9
+F:MENU_LECCION_9
 S:sws ss sw w www sws sws ws w sal ws w
  :ñ sé sí é ése dé í tía él ' ñ'ñ tío
  :fvf vv f fvf fv f vvv fv v fff fv ver
@@ -1016,30 +756,10 @@ G:LECCION_9
 
 *:LECCION_10
 *:MENU_LECCION_10
-K:1:INSTRUCCIONES_LECCION_10
-K:2:PRACTICA_LECCION_10
-K:3:EVALUACION_LECCION_10
-K:4:NULL
-K:5:NULL
-K:6:NULL
-K:7:NULL
-K:8:NULL
-K:9:NULL
-K:10:NULL
-K:11:NULL
-K:12:MENU_PRINCIPAL
-*:MUESTRA_MENU_LECCION_10
-B:       Lección 10 - Nuevas Teclas P B , (Coma)
-T:
- :
- :	Fkey 1 - Instrucciones
- :	Fkey 2 - Práctica
- :	Fkey 3 - Evaluación
- :
- :
- :	Fkey 12 - Menú principal
-Q:Elija una opción
-G:MUESTRA_MENU_LECCION_10
+M: UP=MENU_PRINCIPAL "Lección 10 - Nuevas Teclas P B , (Coma)"
+ :INSTRUCCIONES_LECCION_10 "Instrucciones"
+ :PRACTICA_LECCION_10      "Práctica"
+ :EVALUACION_LECCION_10    "Evaluación"
 
 *:INSTRUCCIONES_LECCION_10
 B:NUEVAS TECLAS: P B , (Coma)
@@ -1079,7 +799,7 @@ B:Evaluación Lección 10
 I:Para pasar a la siguiente lección, en esta evaluación su wpm real debe ser de
  : por lo menos 39 con un porcentaje de error inferior al 3%.
 E:3%
-F:MUESTRA_MENU_LECCION_10
+F:MENU_LECCION_10
 S:Quique Quiles quiere viajar a Quisquella.
  :Quique Quiles quiere viajar a Quisquella.
  :Ufa subirá con Ulises Urrutia a la cúpula.
@@ -1100,30 +820,10 @@ G:LECCION_10
 
 *:LECCION_11
 *:MENU_LECCION_11
-K:1:INSTRUCCIONES_LECCION_11
-K:2:PRACTICA_LECCION_11
-K:3:EVALUACION_LECCION_11
-K:4:NULL
-K:5:NULL
-K:6:NULL
-K:7:NULL
-K:8:NULL
-K:9:NULL
-K:10:NULL
-K:11:NULL
-K:12:MENU_PRINCIPAL_2
-*:MUESTRA_MENU_LECCION_11
-B:       Lección 11 - X Y
-T:
- :
- :	Fkey 1 - Instrucciones
- :	Fkey 2 - Práctica
- :	Fkey 3 - Evaluación
- :
- :
- :	Fkey 12 - Menú principal
-Q:Elija una opción
-G:MUESTRA_MENU_LECCION_11
+M: UP=MENU_PRINCIPAL "Lección 11 - X Y"
+ :INSTRUCCIONES_LECCION_11 "Instrucciones"
+ :PRACTICA_LECCION_11      "Práctica"
+ :EVALUACION_LECCION_11    "Evaluación"
 
 *:INSTRUCCIONES_LECCION_11
 B:NUEVAS TECLAS: X Y
@@ -1159,7 +859,7 @@ B:Evaluación Lección 11
 I:Para pasar a la siguiente lección, en esta evaluación su wpm real debe ser de
  : por lo menos 39 con un porcentaje de error inferior al 3%.
 E:3%
-F:MUESTRA_MENU_LECCION_11
+F:MENU_LECCION_11
 S:Voy a ayudar a Yamilete en su examen de yodo.
  :Acomoden el yate en el anexo de Xavier Yanés.
  :Fue a visitar a su hermano que está exiliado.
@@ -1180,30 +880,10 @@ G:LECCION_11
 
 *:LECCION_12
 *:MENU_LECCION_12
-K:1:INSTRUCCIONES_LECCION_12
-K:2:PRACTICA_LECCION_12
-K:3:EVALUACION_LECCION_12
-K:4:NULL
-K:5:NULL
-K:6:NULL
-K:7:NULL
-K:8:NULL
-K:9:NULL
-K:10:NULL
-K:11:NULL
-K:12:MENU_PRINCIPAL_2
-*:MUESTRA_MENU_LECCION_12
-B:       Lección 12 - Nuevas teclas Z : ;
-T:
- :
- :	Fkey 1 - Instrucciones
- :	Fkey 2 - Práctica
- :	Fkey 3 - Evaluación
- :
- :
- :	Fkey 12 - Menú principal
-Q:Elija una opción
-G:MUESTRA_MENU_LECCION_12
+M: UP=MENU_PRINCIPAL "Lección 12 - Nuevas teclas Z : ;"
+ :INSTRUCCIONES_LECCION_12 "Instrucciones"
+ :PRACTICA_LECCION_12      "Práctica"
+ :EVALUACION_LECCION_12    "Evaluación"
 
 *:INSTRUCCIONES_LECCION_12
 B:NUEVAS TECLAS: Z : (dos puntos) ; (punto y coma)
@@ -1247,7 +927,7 @@ B:Evaluación Lección 12
 I:Para pasar a la siguiente lección, en esta evaluación su wpm real debe ser de
  : por lo menos 40 con un porcentaje de error inferior al 3%.
 E:3%
-F:MUESTRA_MENU_LECCION_12
+F:MENU_LECCION_12
 S:El signo ; señala una pausa intermedia, equivalente a dos tiempos, con un
  :descenso en la entonación.  Indica una pausa mayor que la señalada por la coma
  :pero no tan notable como la del punto.
@@ -1271,30 +951,10 @@ G:LECCION_12
 
 *:LECCION_13
 *:MENU_LECCION_13
-K:1:INSTRUCCIONES_LECCION_13
-K:2:PRACTICA_LECCION_13
-K:3:EVALUACION_LECCION_13
-K:4:NULL
-K:5:NULL
-K:6:NULL
-K:7:NULL
-K:8:NULL
-K:9:NULL
-K:10:NULL
-K:11:NULL
-K:12:MENU_PRINCIPAL_2
-*:MUESTRA_MENU_LECCION_13
-B:       Lección 13 - Nuevas teclas (Dobles) RR LL NN CC
-T:
- :
- :	Fkey 1 - Instrucciones
- :	Fkey 2 - Práctica
- :	Fkey 3 - Evaluación
- :
- :
- :	Fkey 12 - Menú principal
-Q:Elija una opción
-G:MUESTRA_MENU_LECCION_13
+M: UP=MENU_PRINCIPAL "Lección 13 - Nuevas teclas (Dobles) RR LL NN CC"
+ :INSTRUCCIONES_LECCION_13 "Instrucciones"
+ :PRACTICA_LECCION_13      "Práctica"
+ :EVALUACION_LECCION_13    "Evaluación"
 
 *:INSTRUCCIONES_LECCION_13
 B:Teclas Dobles RR LL NN CC
@@ -1339,7 +999,7 @@ s:Corran por el cerro, pero cuídense del perro que cuida.
 I:Para pasar a la siguiente lección, en esta evaluación su wpm real debe ser de
  : por lo menos 40 con un porcentaje de error inferior al 3%.
 E:3%
-F:MUESTRA_MENU_LECCION_13
+F:MENU_LECCION_13
 S:ferroviario, ria :adj. Perteneciente o relativo a los ferrocarriles | m y f.
  :Empleado del ferrocarril.
  :emparrado :m. Armazón que sostiene la parra u otra planta trepadora | Conjunto
@@ -1359,28 +1019,9 @@ G:LECCION_13
 
 *:LECCION_14
 *:MENU_LECCION_14
-K:1:INSTRUCCIONES_LECCION_14
-K:2:PRACTICA_LECCION_14
-K:4:NULL
-K:5:NULL
-K:6:NULL
-K:7:NULL
-K:8:NULL
-K:9:NULL
-K:10:NULL
-K:11:NULL
-K:12:MENU_PRINCIPAL_2
-*:MUESTRA_MENU_LECCION_14
-B:       Lección 14 - Practicando lo aprendido
-T:
- :
- :	Fkey 1 - Instrucciones
- :	Fkey 2 - Práctica
- :
- :
- :	Fkey 12 - Menú principal
-Q:Elija una opción
-G:MUESTRA_MENU_LECCION_14
+M: UP=MENU_PRINCIPAL "Lección 14 - Practicando lo aprendido"
+ :INSTRUCCIONES_LECCION_14 "Instrucciones"
+ :PRACTICA_LECCION_14      "Práctica"
 
 *:INSTRUCCIONES_LECCION_14
 B:Practicando lo aprendido
@@ -1418,30 +1059,10 @@ s:Un hombrecito va por allí caminando fresco, cargando un libro de Mr. Edgar
 
 *:LECCION_15
 *:MENU_LECCION_15
-K:1:INSTRUCCIONES_LECCION_15
-K:2:PRACTICA_LECCION_15
-K:3:EVALUACION_LECCION_15
-K:4:NULL
-K:5:NULL
-K:6:NULL
-K:7:NULL
-K:8:NULL
-K:9:NULL
-K:10:NULL
-K:11:NULL
-K:12:MENU_PRINCIPAL_2
-*:MUESTRA_MENU_LECCION_15
-B:       Lección 15 - Mezclando Números 0 1 2 3 4 5 6 7 8 9
-T:
- :
- :	Fkey 1 - Instrucciones
- :	Fkey 2 - Práctica
- :	Fkey 3 - Evaluación
- :
- :
- :	Fkey 12 - Menú principal
-Q:Elija una opción
-G:MUESTRA_MENU_LECCION_15
+M: UP=MENU_PRINCIPAL "Lección 15 - Mezclando Números 0 1 2 3 4 5 6 7 8 9"
+ :INSTRUCCIONES_LECCION_15 "Instrucciones"
+ :PRACTICA_LECCION_15      "Práctica"
+ :EVALUACION_LECCION_15    "Evaluación"
 
 *:INSTRUCCIONES_LECCION_15
 T:Con está lección practicará el uso de las teclas con números y
@@ -1474,7 +1095,7 @@ s:1.1/9+3-6
 *:EVALUACION_LECCION_15
 I:Mínimo wpm real: 30, Porcentaje de error máximo: 2%
 E:2%
-F:MUESTRA_MENU_LECCION_15
+F:MENU_LECCION_15
 S:123 456 789 987 654 321
  :147 852 369 852 147 963
  :159 753 456 852 951 357
@@ -1490,30 +1111,10 @@ G:LECCION_15
 
 *:LECCION_16
 *:MENU_LECCION_16
-K:1:INSTRUCCIONES_LECCION_16
-K:2:PRACTICA_LECCION_16
-K:3:EVALUACION_LECCION_16
-K:4:NULL
-K:5:NULL
-K:6:NULL
-K:7:NULL
-K:8:NULL
-K:9:NULL
-K:10:NULL
-K:11:NULL
-K:12:MENU_PRINCIPAL_2
-*:MUESTRA_MENU_LECCION_16
-B:       Lección 16 - Algo de LaTeX  $ { } \ [ ] _ ^
-T:
- :
- :	Fkey 1 - Instrucciones
- :	Fkey 2 - Práctica
- :	Fkey 3 - Evaluación
- :
- :
- :	Fkey 12 - Menú principal
-Q:Elija una opción
-G:MUESTRA_MENU_LECCION_16
+M: UP=MENU_PRINCIPAL "Lección 16 - Algo de LaTeX  $ { } \ [ ] _ ^"
+ :INSTRUCCIONES_LECCION_16 "Instrucciones"
+ :PRACTICA_LECCION_16      "Práctica"
+ :EVALUACION_LECCION_16    "Evaluación"
 
 *:INSTRUCCIONES_LECCION_16
 T:En esta lección se introducirá una forma distinta de hacer documentos, la
@@ -1595,7 +1196,7 @@ s:Las teclas que se usan en esta lección son \ { } [ ] _ ^ $.
 *:EVALUACION_LECCION_16
 I:Mínimo wpm real: 33, Porcentaje de error máximo: 5%
 E:5%
-F:MUESTRA_MENU_LECCION_16
+F:MENU_LECCION_16
 S:Primero cree el archivo prueba.tex en un editor de texto, después de esto
  :escriba lo siguiente dentro del archivo, tal y como está, no olvide grabar
  :\documentclass{article}
@@ -1621,30 +1222,10 @@ G:LECCION_16
 
 *:LECCION_17
 *:MENU_LECCION_17
-K:1:INSTRUCCIONES_LECCION_17
-K:2:PRACTICA_LECCION_17
-K:3:EVALUACION_LECCION_17
-K:4:NULL
-K:5:NULL
-K:6:NULL
-K:7:NULL
-K:8:NULL
-K:9:NULL
-K:10:NULL
-K:11:NULL
-K:12:MENU_PRINCIPAL_2
-*:MUESTRA_MENU_LECCION_17
-B:       Lección 17 - Algo de HTML  < > & " ? !
-T:
- :
- :	Fkey 1 - Instrucciones
- :	Fkey 2 - Práctica
- :	Fkey 3 - Evaluación
- :
- :
- :	Fkey 12 - Menú principal
-Q:Elija una opción
-G:MUESTRA_MENU_LECCION_17
+M: UP=MENU_PRINCIPAL "Lección 17 - Algo de HTML  < > & " ? !"
+ :INSTRUCCIONES_LECCION_17 "Instrucciones"
+ :PRACTICA_LECCION_17      "Práctica"
+ :EVALUACION_LECCION_17    "Evaluación"
 
 *:INSTRUCCIONES_LECCION_17
 B:Algo de HTML
@@ -1688,7 +1269,7 @@ s:Primero un calentamiento: <<< <<< >>> >>> &&& &&& """ """ ??? ??? !!! !!!
 *:EVALUACION_LECCION_17
 I:Mínimo wpm real: 33, Porcentaje de error máximo: 4%
 E:4%
-F:MUESTRA_MENU_LECCION_17
+F:MENU_LECCION_17
 S:<html>
  :<head><title>Mi primer documento en HTML</title></head>
  :<!-- Escrito por: "?!" -->
@@ -1712,30 +1293,10 @@ G:LECCION_17
 
 *:LECCION_18
 *:MENU_LECCION_18
-K:1:INSTRUCCIONES_LECCION_18
-K:2:PRACTICA_LECCION_18
-K:3:EVALUACION_LECCION_18
-K:4:NULL
-K:5:NULL
-K:6:NULL
-K:7:NULL
-K:8:NULL
-K:9:NULL
-K:10:NULL
-K:11:NULL
-K:12:MENU_PRINCIPAL_2
-*:MUESTRA_MENU_LECCION_18
-B:       Lección 18 - Algo de Texinfo # | @
-T:
- :
- :	Fkey 1 - Instrucciones
- :	Fkey 2 - Práctica
- :	Fkey 3 - Evaluación
- :
- :
- :	Fkey 12 - Menú principal
-Q:Elija una opción
-G:MUESTRA_MENU_LECCION_18
+M: UP=MENU_PRINCIPAL "Lección 18 - Algo de Texinfo # | @"
+ :INSTRUCCIONES_LECCION_18 "Instrucciones"
+ :PRACTICA_LECCION_18      "Práctica"
+ :EVALUACION_LECCION_18    "Evaluación"
 
 *:INSTRUCCIONES_LECCION_18
 B:Algo de Texinfo:
@@ -1784,7 +1345,7 @@ s:@@@ @@@ ||| ||| ### ### @|@ @|@ |#| |#| |#| |@| |@| @#@ @#@
 *:EVALUACION_LECCION_18
 I:Mínimo wpm real: 33, Porcentaje de error máximo: 4%
 E:4%
-F:MUESTRA_MENU_LECCION_18
+F:MENU_LECCION_18
 S:@node Overview, Sourcebook of Writer, Top, Top
  :@chapter Overview: The Writing Process
  :
@@ -1809,30 +1370,10 @@ G:LECCION_18
 
 *:LECCION_19
 *:MENU_LECCION_19
-K:1:INSTRUCCIONES_LECCION_19
-K:2:PRACTICA_LECCION_19
-K:3:EVALUACION_LECCION_19
-K:4:NULL
-K:5:NULL
-K:6:NULL
-K:7:NULL
-K:8:NULL
-K:9:NULL
-K:10:NULL
-K:11:NULL
-K:12:MENU_PRINCIPAL_2
-*:MUESTRA_MENU_LECCION_19
-B:       Lección 19 - Literatura
-T:
- :
- :	Fkey 1 - Instrucciones
- :	Fkey 2 - Práctica
- :	Fkey 3 - Evaluación
- :
- :
- :	Fkey 12 - Menú principal
-Q:Elija una opción
-G:MUESTRA_MENU_LECCION_19
+M: UP=MENU_PRINCIPAL "Lección 19 - Literatura"
+ :INSTRUCCIONES_LECCION_19 "Instrucciones"
+ :PRACTICA_LECCION_19      "Práctica"
+ :EVALUACION_LECCION_19    "Evaluación"
 
 *:INSTRUCCIONES_LECCION_19
 B:Literatura
@@ -1892,7 +1433,7 @@ s:So she was considering in her own mind (as well as she could,
 *:EVALUACION_LECCION_19
 I:En esta evaluación se espera por lo menos 35wpm y a lo sumo 3% de error
 E:3%
-F:MUESTRA_MENU_LECCION_19
+F:MENU_LECCION_19
 S:LA PONCIA. (Sale comiendo chorizo y pan): Llevan ya más de dos horas de
  : gori-gori. Han venido curas de todos los pueblos. La iglesia está hermosa.
  : En el primer responso se desmayó la Magdalena.
@@ -1917,31 +1458,11 @@ G:LECCION_19
 
 *:VELOCIDAD
 *:MENU_VELOCIDAD
-K:1:INSTRUCCIONES_VELOCIDAD
-K:2:PRACTICA_VELOCIDAD1
-K:3:PRACTICA_VELOCIDAD2
-K:4:EVALUACION_VELOCIDAD
-K:5:NULL
-K:6:NULL
-K:7:NULL
-K:8:NULL
-K:9:NULL
-K:10:NULL
-K:11:NULL
-K:12:MENU_PRINCIPAL_2
-*:MUESTRA_MENU_VELOCIDAD
-B:       Menú Velocidad
-T:
- :
- :	Fkey 1 - Instrucciones
- :	Fkey 2 - Práctica 1
- :	Fkey 3 - Práctica 2
- :	Fkey 4 - Evaluación
- :
- :
- :	Fkey 12 - Menú principal
-Q:Elija una opción
-G:MUESTRA_MENU_VELOCIDAD
+M: UP=MENU_PRINCIPAL "Menú Velocidad"
+ :INSTRUCCIONES_VELOCIDAD "Instrucciones"
+ :PRACTICA_VELOCIDAD1     "Práctica 1"
+ :PRACTICA_VELOCIDAD2     "Práctica 2"
+ :EVALUACION_VELOCIDAD    "Evaluación"
 
 *:INSTRUCCIONES_VELOCIDAD
 B:Práctica y evaluación de velocidad
@@ -2006,7 +1527,7 @@ s:Los organismos vivos se han agrupado en distintos reinos
 B:Evaluación de Velocidad
 I:En esta evaluación se espera por lo menos 40wpm y a lo sumo 5% de error
 E:5%
-F:MUESTRA_MENU_VELOCIDAD
+F:MENU_VELOCIDAD
 S:Increíble, los océanos cubren aproximadamente el 71% de la superficie de
  :la tierra.
  :   http://www.abc.net.au/oceans/facts/default.htm
@@ -2031,31 +1552,11 @@ G:VELOCIDAD
 
 *:PRECISION
 *:MENU_PRECISION
-K:1:INSTRUCCIONES_PRECISION
-K:2:PRACTICA_PRECISION1
-K:3:PRACTICA_PRECISION2
-K:4:EVALUACION_PRECISION
-K:5:NULL
-K:6:NULL
-K:7:NULL
-K:8:NULL
-K:9:NULL
-K:10:NULL
-K:11:NULL
-K:12:MENU_PRINCIPAL_2
-*:MUESTRA_MENU_PRECISION
-B:       Menú Precisión
-T:
- :
- :	Fkey 1 - Instrucciones
- :	Fkey 2 - Práctica 1
- :	Fkey 3 - Práctica 2
- :	Fkey 4 - Evaluación
- :
- :
- :	Fkey 12 - Menú principal
-Q:Elija una opción
-G:MUESTRA_MENU_PRECISION
+M: UP=MENU_PRINCIPAL "Menú Precisión"
+ :INSTRUCCIONES_PRECISION "Instrucciones"
+ :PRACTICA_PRECISION1     "Práctica 1"
+ :PRACTICA_PRECISION2     "Práctica 2"
+ :EVALUACION_PRECISION    "Evaluación"
 
 *:INSTRUCCIONES_PRECISION
 B:Práctica y evaluación de precisión
@@ -2120,7 +1621,7 @@ s:Fragmento de "NOCHE DE DICIEMBRE"
 B:Evaluación de precisión
 I:En está evaluación se espera por lo menos 30wpm y a lo sumo 1% de error
 E:1%
-F:MUESTRA_MENU_PRECISION
+F:MENU_PRECISION
 S:Fragmento del prologo a "POR LO QUE HE VIVIDO"
  :
  :Tres pasiones, simples pero increíblemente fuertes, han gobernado mi vida:

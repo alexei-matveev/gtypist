@@ -1,3 +1,14 @@
+2003-04-06  Felix Natter  <fnatter@gmx.net>
+
+	* esp.typ: use M: everywhere
+
+	* demo.typ: add a menu
+
+2003-04-05  Felix Natter  <fnatter@gmx.net>
+
+	* v.typ, u.typ, t.typ, s.typ, r.typ, q.typ, n.typ, m.typ, f.typ:
+	move to M:
+
 2002-10-22  Michael Opdenacker <michaelo@gnu.org>
 
 	* Minor fixes in esp.typ from Manuel García <caronte@eresmas.net>

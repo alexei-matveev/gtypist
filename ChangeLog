@@ -1,7 +1,6 @@
-2003-04-05  Felix Natter  <fnatter@gmx.net>
+2003-04-06  Felix Natter  <fnatter@gmx.net>
 
-	* lessons/: v.typ, u.typ, t.typ, s.typ, r.typ, q.typ, n.typ, m.typ,
-	d.typ: move to M:
+	* tools/typcombine: adapt to M:
 
 2003-03-31  Felix Natter  <fnatter@gmx.net>
 
