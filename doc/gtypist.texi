@@ -28,7 +28,6 @@ or create new ones.
 @end ifnottex
 
 @menu
-@c TODO:
 * Distribution::            Where to find gtypist: source, packages etc.
 * Copying::                 The GNU General Public License says how you can
                             copy and share gtypist
@@ -747,7 +746,7 @@ syntax on " turn on syntax highlighting
 All this is also mentioned in the README-section of @file{tools/gtypist.vim}.
 
 @node Environment Variables, Errors and omissions, VIM Syntax highlighting, Top
-@section Environment Variables
+@chapter Environment Variables
 GNU Typist uses the following environment variables:
 
 @table @code
@@ -793,7 +792,7 @@ and the value of @code{TERM} is correct, check into this.
 @end table
 
 @node Errors and omissions, History, Environment Variables, Top
-@section Errors and omissions
+@chapter Errors and omissions
 
 GNU Typist does not go to much effort to minimize terminal output. In
 particular, the flashing block cursor can cause a lot of cursor
