@@ -95,8 +95,14 @@ You can obtain GNU Typist from a friend or from the Internet:
 @item Primary distribution site
 @uref{ftp://ftp.gnu.org/gnu/gtypist/}
 
+@item Alternate distribution site
+@uref{http://gtypist.org/releases/}
+
 @item Home page
 @uref{http://www.gnu.org/software/gtypist/}
+
+@item Alternate home page
+@uref{http://gtypist.org/}
 
 @item On-line manual (updates between program releases)
 @uref{http://www.gnu.org/software/gtypist/doc/}
@@ -105,10 +111,10 @@ You can obtain GNU Typist from a friend or from the Internet:
 @uref{http://savannah.gnu.org/projects/gtypist/}
 
 @item GNU Typist download page (sources, binaries and tutorial updates)
-@uref{http://gtypist.free.fr/}
+@uref{http://gtypist.org/}
 
 @item Screenshots
-@uref{http://gtypist.free.fr/screenshots/}
+@uref{http://gtypist.org/screenshots/}
 @end table
 
 @node Copying, Introduction, Distribution, Top
