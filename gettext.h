@@ -1,5 +1,4 @@
 /* Convenience header for conditional use of GNU <libintl.h>.
-   modified to include "#define _()"
    Copyright (C) 1995-1998, 2000-2002 Free Software Foundation, Inc.
 
    This program is free software; you can redistribute it and/or modify it
@@ -25,7 +24,6 @@
 
 /* Get declarations of GNU message catalog functions.  */
 # include <libintl.h>
-#define _(String) gettext (String)
 
 #else
 
@@ -56,8 +54,6 @@
 # define textdomain(Domainname) ((const char *) (Domainname))
 # define bindtextdomain(Domainname, Dirname) ((const char *) (Dirname))
 # define bind_textdomain_codeset(Domainname, Codeset) ((const char *) (Codeset))
-
-#define _(String) (String)
 
 #endif
 
