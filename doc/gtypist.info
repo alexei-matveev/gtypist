@@ -1,4 +1,4 @@
-This is doc/gtypist.info, produced by makeinfo version 4.0 from
+Dies ist doc/gtypist.info, hergestellt von Makeinfo Version 4.0 aus
 doc/gtypist.texi.
 
 INFO-DIR-SECTION Education
@@ -636,7 +636,9 @@ basics: *Note Introduction::.
      cannot use more than 11 lines of drill-content.
 
      This type of exercise is supposed to be used for finger-training
-     (i.e. jfjfjjf).
+     (i.e. jfjfjjf), but may also contain complete words and sentences
+     if they are used to practice something (i.e. a
+     letter/syllable/"grip"), and aren't real texts.
 
      The lowercase version `d' is a "practice only" drill - the user
      will not have not repeat this drill if he/she made too many
@@ -651,7 +653,7 @@ basics: *Note Introduction::.
      recognised, but errors still accumulate.
 
      Speed-tests should be used for typing (mostly) complete sentences,
-     texts or files.
+     texts or files (i.e. a letter, texinfo/html/tex files).
 
      The lowercase version `s' is a "practice only" speed-test - the
      user will not have not repeat this drill if he/she made too many
@@ -698,8 +700,8 @@ basics: *Note Introduction::.
      programs (for example by a window manager).
 
 `E'
-     This command is used to set the error-max value. This is the upper
-     limit of the error-rate that the user may have.
+     This command is used to set the error-max value.  This is the
+     highest error-rate permitted.
 
      If `--error-max/-e' is specified then this command will only have
      an effect if it is _stricter_ than the value specified on the
@@ -1077,20 +1079,20 @@ History of GNU Typist
 
 
 Tag Table:
-Node: Top216
-Node: Distribution895
-Node: Copying1784
-Node: Introduction20951
-Node: Invoking23579
-Node: Script-file commands27211
-Node: Supplied lessons33982
-Node: How to contribute new lessons35462
-Node: Ktouch-lessons35789
-Node: Create drills from fortune38148
-Node: Emacs mode for editing gtypist-lessons38860
-Node: Technical Information41326
-Node: Environment Variables41557
-Node: Errors and omissions43662
-Node: History44379
+Node: Top220
+Node: Distribution899
+Node: Copying1788
+Node: Introduction20955
+Node: Invoking23583
+Node: Script-file commands27215
+Node: Supplied lessons34158
+Node: How to contribute new lessons35638
+Node: Ktouch-lessons35965
+Node: Create drills from fortune38324
+Node: Emacs mode for editing gtypist-lessons39036
+Node: Technical Information41502
+Node: Environment Variables41733
+Node: Errors and omissions43838
+Node: History44555
 
 End Tag Table

@@ -1,3 +1,7 @@
+2001-08-20  Felix Natter  <f.natter@ndh.net>
+
+	* gtypist.c (main, do_query): rename _("YN") to _("Y/N")
+
 2001-08-16  Felix Natter  <f.natter@ndh.net>
 
 	* NEWS: write the list of new/changed features for 2.4

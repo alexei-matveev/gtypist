@@ -1312,7 +1312,7 @@ do_query( FILE *script, char *line, bool get_next_script_line )
 	  break;
 	}
       if ( toupper( (char)resp ) == QUERY_N ||
-	   toupper( (char)resp ) == YN[1] ) 
+	   toupper( (char)resp ) == YN[2] ) 
 	{
 	  ret_code = TRUE;
 	  global_resp_flag = FALSE;
@@ -1842,7 +1842,7 @@ This program is released under the GNU General Public License.");
   SKIPBACK_VIA_F_MSG =
     _("You failed this test, so you need to skip back to %s.");
   /* this is used for queries. you can translate the keys as well
-     (if you translate msgid "YN" accordingly) */
+     (if you translate msgid "Y/N" accordingly) */
   WANNA_REPEAT_MSG= _("Press Y to continue, N to repeat or Fkey12 to exit");
   /* this must be adjusted to the right with one space at the end.
      Leading whitespace is important because it is displayed in reverse
@@ -1861,10 +1861,10 @@ This program is released under the GNU General Public License.");
   SPEED_PCT_ERROR=_("            with %.1f%% errors ");
   /* this is used to translate the keys for Y/N-queries. Must be two uppercase
      letters. Y/N will still be accepted as well */
-  YN = _("YN");
-  if (strlen(YN) != 2 || !isupper(YN[0]) || !isupper(YN[1]))
+  YN = _("Y/N");
+  if (strlen(YN) != 3 || YN[1] != '/' || !isupper(YN[0]) || !isupper(YN[2]))
     {
-      fprintf( stderr, "%s: i18n problem: invalid value for msgid \"YN\": %s",
+      fprintf( stderr, "%s: i18n problem: invalid value for msgid \"Y/N\": %s",
 	       argv0, YN );
       exit( 1 );
     }
