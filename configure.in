@@ -44,9 +44,9 @@ AC_CHECK_HEADER(ncurses/curses.h, HAVE_NCURSES_H=1)
 
 # We prefer ncurses to curses if both are found.
 if test -n "$HAVE_NCURSES_H" -a -n "$HAVE_LIBNCURSES";  then
-   LIBS="-lcurses $LIBS"
-elif test -n "$HAVE_CURSES_H" -a -n "$HAVE_LIBCURSES"; then
    LIBS="-lncurses $LIBS"
+elif test -n "$HAVE_CURSES_H" -a -n "$HAVE_LIBCURSES"; then
+   LIBS="-lcurses $LIBS"
 else
    echo -e "Error:  both library and header files for either curses or ncurses"\
    	"library\nis required to build this package.  See INSTALL file for"\
