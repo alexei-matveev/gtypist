@@ -15,6 +15,10 @@ Your suggestions are welcome too!
 
 CLOSE FUTURE
 
+ * Improve the French translation of "lesson file", which
+   includes both Drills (translated by "Exercice") and
+   Speed tests ("Tests de vitesse").
+
  * Standardize lesson files, using standards for languages and
    keyboard types.
 
