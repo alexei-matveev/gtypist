@@ -1,3 +1,8 @@
+2001-08-15  Michael Opdenacker 	<michaelo@gnu.org>
+
+	* GPL text now taken from a separate file, gpl.texi,
+	copied from GNU hello.
+ 
 2001-08-12  Felix Natter  <f.natter@ndh.net>
 
         * node Emacs mode for editing gtypist-lessons: add info
