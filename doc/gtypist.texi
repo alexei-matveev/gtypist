@@ -18,7 +18,7 @@
 @top GNU Typist - Typing Tutor
 
 GNU Typist is an interactive typing tutor that can help you to type
-correctly. It has several lessons for different keyboards layouts and in
+correctly. It has several lessons for different keyboard layouts and in
 different languages. The lessons for gtypist are described in a easy-to-learn
 scripting language that the user can use to modify the existing lessons
 or create new ones.
@@ -47,7 +47,7 @@ or create new ones.
 GNU Typist (or gtypist) is @dfn{free software}; this means that everyone
 is free to use it and free to redistribute it on certain conditions.
 The precise conditions are found in the GNU General Public License that
-comes with with this program and also appears following this section.
+comes with this program and also follows this section.
 
 @noindent
 You can obtain GNU Typist from a friend or from the Internet:
@@ -66,8 +66,8 @@ You can obtain GNU Typist from a friend or from the Internet:
 @item Developers' home page (CVS repository, tasks, support...)
 @url{http://savannah.gnu.org/projects/gtypist/}
 
-@item Structio-page with binaries and contributed lessons
-@url{http://structio.sourceforge.net/gtypist/}
+@item GNU Typist download page (sources, binaries and tutorial updates)
+@url{http://gtypist.free.fr/}
 
 @end table
 
@@ -81,7 +81,7 @@ GNU Typist is an interactive typing tutor program. It uses an input file to
 @c TODO: timed speed-tests
 create a series of typing tutorials, drills, and speed tests. It
 is intended to be used on raw terminals without graphics ---it has been
-compiled and used in GNU/Linux and Unix (Aix, Solaris) and also in
+compiled and used in GNU/Linux and Unix (Aix, OpenBSD) and also in
 DOS/Windows (DOS 6.22, Windows 98, Windows NT).
 
 The program reads lessons written in an easy-to-learn scripting language. It
@@ -120,14 +120,14 @@ rate in WPM.
 @c TODO: what is it used for ?
 If there were too many errors, it will re-run the speed-test.
 Backward deleting of previously typed characters to correct errors is
-     permitted, but errors still accumulate.
+permitted, but errors still accumulate.
 
 If you already made too many mistakes, then you can use @key{ESC} to
 give up and start again. Once you complete a lesson, you will be asked
 whether you want to repeat it.
 
 @c TODO: indicate ``practice only''-exercises in modeline ?
-There are also ``practice only''-exercises (of both drills and speed-tests)
+There are also ``practice only'' exercises (of both drills and speed-tests)
 which you won't have to repeat at all. But we won't tell you when this
 is the case, so you'll have to give your best anyway ;-)
 
@@ -172,7 +172,7 @@ In typing speed reports, a 'word' is deemed to be five characters, so
 the raw (gross) WPM is the number of characters in the test passage,
 divided by five, then divided again by the number of minutes elapsed in
 typing the passage. The adjusted WPM factors in the errors; each error
-is counted as a word mistyped.
+is counted as a mistyped word.
 
 @node Invoking, Script-file commands, Introduction, Top
 @chapter Invoking
@@ -361,7 +361,7 @@ Speed-tests should be used for typing (mostly) complete sentences,
 texts or files (i.e. a letter, texinfo/html/tex files).
 
 The lowercase version @code{s} is a ``practice only'' speed-test -
-the user will not have not repeat this drill if he/she
+the user will not have not repeat this drill if (s)he
 made too many mistakes.
 
 @item G
@@ -419,7 +419,7 @@ value back to the default.
 
 @item F
 This command (``set on-failure label'') is used to set the label (in
-@code{command_data}) where the user will have to go to if he/she fails
+@code{command_data}) where the user will have to go to if (s)he fails
 an exercise.
 
 Usually, this command only applies to the next exercise, but you can make
@@ -587,7 +587,7 @@ to quickly create new drills for you to practice with.
 
 Once you installed @file{gtypist-mode.el} 
 (@pxref{Emacs mode for editing gtypist-lessons}), you can open a file
-with ``.typ'' extension and run @kbd{C-c C-f} to create a drill
+with it ``.typ'' extension and run @kbd{C-c C-f} to create a drill
 (@code{D:} by default, use @kbd{C-u} or @kbd{C-u C-u} prefix to
 change).
 
@@ -623,7 +623,7 @@ D:jjj jhj jjj jhj jjj jhj
 @chapter Emacs mode for editing gtypist-lessons
 
 gtypist now comes with an Emacs major-mode which does
-syntax-highlighting, indentation and has some convenience commands for
+syntax-highlighting, indentation and has some convenient commands for
 counting labels, a goto-label-command, inserting properly centered
 banners, special comments and a bit more.
 
@@ -722,14 +722,14 @@ GNU Typist uses the following environment variables:
 
 @item LANG
 
-Typist offers Native Language Support (NLS) with support of the
+GNU Typist offers Native Language Support (NLS) with support of the
 gettext library, this means that if your system supports it, the
 language of the messages shown by gtypist can be chosen. By now
 gtypist is distributed with messages in English, Spanish, German and
 Finnish. To use a particular NLS use the environment variable LANG and
 set it to the appropriate 'LL_CC' combination where 'LL' is an ISO 639
 two-letter language code and 'CC' is an ISO 3166 two-letter country
-code (i.e. 'es_ES' for Spain and 'de_DE' for Germany). In some systems
+code (e.g. 'es_ES' for Spain and 'de_DE' for Germany). In some systems
 it will be also necessary to set the environment variable LANGUAGE to
 the same value.
 
@@ -796,7 +796,7 @@ under the GPL).
 Simon also wrote a version of Typist in Java that initially he called
 JTypist but that now is called Typist:
 
- @url{http://www.ocston.org/~simonb/typist/}
+@url{http://www.geocities.com/simon_baldwin/typist/}
 @item
 Since 1997, Ben Armstrong @email{synrg@@sanctuary.nslug.ns.ca} has
 helped by fixing bugs and maintaining a Debian package (see
@@ -813,6 +813,11 @@ gtypist).
 who learned touch typing with GNU Typist, became the new
 maintainer. Project development is now hosted on
 @url{http://savannah.gnu.org/projects/gtypist/}.
+@item
+In June 2001, Felix Natter @email{f.natter@@ndh.net} joined
+and made major contributions to the project: lesson
+imports from other tutors, tool enhancements, new tutorial capabilities,
+and Emacs mode.
 @end itemize
 
 @bye
