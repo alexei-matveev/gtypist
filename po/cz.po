@@ -1,0 +1,326 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR Free Software Foundation, Inc.
+# Hynek Hanke <hanke@volny.cz>, 2001.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: gtypist 2.4.1"
+"POT-Creation-Date: 2001-09-18 21:37+0200\n"
+"PO-Revision-Date: 2001-11-17 12:32+0100\n"
+"Last-Translator: Hynek 0A4h Hanke <hanke@volny.cz>\n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=iso-8859-2\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#. print out the error message and stop
+#: gtypist.c:324
+msgid "line"
+msgstr "øádka"
+
+#: gtypist.c:357
+msgid "data shortage"
+msgstr "nedostatek dat"
+
+#: gtypist.c:359
+msgid "missing ':'"
+msgstr "chybí ':'"
+
+#: gtypist.c:365
+msgid "line too long for screen"
+msgstr "øádka je na obrazovku pøíli¹ dlouhá"
+
+#: gtypist.c:421 gtypist.c:435 gtypist.c:730
+msgid "internal error: malloc"
+msgstr "vnitøní chyba: malloc"
+
+#: gtypist.c:453
+msgid "label redefinition"
+msgstr "pøedefinování návìstí"
+
+#: gtypist.c:496 gtypist.c:1488
+#, c-format
+msgid "label '%s' not found"
+msgstr "návìstí '%s' nebylo nalezeno"
+
+#: gtypist.c:502 gtypist.c:927 gtypist.c:1140
+msgid "internal error: fseek"
+msgstr "vnitøní chyba: fseek"
+
+#: gtypist.c:629
+#, c-format
+msgid "invalid key binding (%d:%s)"
+msgstr "chybné pøiøazení kláves"
+
+#: gtypist.c:631
+msgid "invalid function key number"
+msgstr "neplatné èíslo F-klávesy"
+
+#: gtypist.c:668 gtypist.c:778 gtypist.c:997
+msgid "data exceeds screen length"
+msgstr "data pøekroèila velikost obrazovky"
+
+#: gtypist.c:705
+msgid "instructions are limited to two lines"
+msgstr "instrukce smí mít pouze dva øádky"
+
+#: gtypist.c:1397
+#, c-format
+msgid "'*' must immediately follow '%'"
+msgstr "po '%' musí okam¾itì následovat '*'"
+
+#: gtypist.c:1399 gtypist.c:1401
+#, c-format
+msgid "missing '%'"
+msgstr "chybí '%'"
+
+#: gtypist.c:1404
+#, c-format
+msgid "'%' must immediately follow value"
+msgstr "po hodnotì musí následovat '%'"
+
+#: gtypist.c:1413
+msgid "overflow in do_error_max_set"
+msgstr "pøeteèení bufferu v do_error_max_set"
+
+#: gtypist.c:1433
+msgid "Invalid value for \"E:\" (out of range)"
+msgstr "Neplatná hodnota pro \"E:\" (mimo obor)"
+
+#: gtypist.c:1550
+msgid "unknown command"
+msgstr "neznámý pøíkaz"
+
+#: gtypist.c:1656
+msgid ""
+"default maximum error percentage (default 3.0); valid values are between 0.0 "
+"and 100.0"
+msgstr "defaultní maximální poèet chyb (standardnì 3.0); platné"
+"hodnoty jsou mezi 0.0 a 100.0"
+
+#: gtypist.c:1657
+msgid "turn off WPM timer in drills"
+msgstr "vypnout sledování rychlosti pøi drilových testech"
+
+#: gtypist.c:1658
+msgid "use the terminal's hardware cursor"
+msgstr "pou¾ívat kurzor terminálu"
+
+#: gtypist.c:1659
+msgid ""
+"cursor flash period P*.1 sec (default 10); valid  values are between 0 and "
+"512; this is ignored if -t is specified"
+msgstr ""
+"perioda blikání kurzoru P*0,1 sekund (defaultnì 10); platné hodnoty"
+"jso mezi 0 a 512; parametr je ignorován, pokud bylo zadáno -t."
+
+
+#: gtypist.c:1660
+msgid "set initial display colours where available"
+msgstr "nastavení výchozích barev, pokud je to mo¾né"
+
+#: gtypist.c:1661
+msgid "don't beep on errors"
+msgstr "pøi chybách nepípat"
+
+#: gtypist.c:1662
+msgid "same as -s, --silent"
+msgstr "to samé jako -s a --silent"
+
+#: gtypist.c:1663
+msgid "start the lesson at label 'L'"
+msgstr "spus» lekci na návìstí L"
+
+#: gtypist.c:1664
+msgid "try to mimic word processors"
+msgstr "emuluj textový procesor"
+
+#: gtypist.c:1665
+msgid "print this message"
+msgstr "vytiskni tuto zprávu"
+
+#: gtypist.c:1666
+msgid "output version information and exit"
+msgstr "vytisknout informace o verzi a skoncit"
+
+#: gtypist.c:1670
+msgid ""
+"`gtypist' is a typing tutor with several lessons for different keyboards and "
+"languages.  New lessons can be written by the user easily.\n"
+"\n"
+msgstr ",,gtypist'' je program pro výuku psaní na klávesnici v¹emi deseti"
+"prsty a obsahuje nìkolik lekcí. Snadno mohou být dopsány i lekce nové.\n"
+"\n"
+
+#: gtypist.c:1672
+msgid "Usage"
+msgstr "Pou¾ívání"
+
+#: gtypist.c:1672 gtypist.c:1673
+msgid "Options"
+msgstr "Nastavení"
+
+#: gtypist.c:1672
+msgid "script-file"
+msgstr "skriptovací soubor"
+
+#: gtypist.c:1680
+#, c-format
+msgid ""
+"\n"
+"If not supplied, script-file defaults to '%s/%s'.\n"
+msgstr ""
+"\n"
+"Pokud není uvedeno jinak, skriptovací soubor bude: '%s/%s'.\n"
+
+#: gtypist.c:1682
+msgid ""
+"The path $GTYPIST_PATH is searched for script files.\n"
+"\n"
+msgstr ""
+"Skriptovací soubory se hledají v $GTYPIST_PATH.\n"
+"\n"
+
+#: gtypist.c:1684
+msgid "Examples"
+msgstr "Pøíklady"
+
+#: gtypist.c:1686
+msgid "To run the default lesson in english `gtypist.typ'"
+msgstr "Spustit defaultní lekci v èe¹tinì gtypist.typ"
+
+#: gtypist.c:1688
+msgid "To run the lesson in spanish"
+msgstr "Spustit lekci ve ¹panìl¹tinì"
+
+#: gtypist.c:1690
+msgid ""
+"To instruct gtypist to look for lesson `bar.typ' in a non standard directory"
+msgstr "Prohledává pro bar.typ nestandardní adresáø"
+
+#: gtypist.c:1692
+msgid ""
+"To run the lesson in the file `test.typ' of directory `temp', starting at "
+"label `TEST1', using the terminal's cursor, and run silently"
+msgstr ""
+
+#: gtypist.c:1693
+msgid "Report bugs to bug-gtypist@gnu.org"
+msgstr "Oznamte chyby na bug-gtypist@gnu.org."
+
+#: gtypist.c:1731
+#, c-format
+msgid "%s: invalid error-max value\n"
+msgstr ""
+
+#: gtypist.c:1747
+#, c-format
+msgid "%s: invalid curs-flash value\n"
+msgstr ""
+
+#: gtypist.c:1758
+#, c-format
+msgid "%s: invalid colours value\n"
+msgstr "%s: neplatné èíslo barvy\n"
+
+#: gtypist.c:1771
+#, c-format
+msgid "%s: internal error: malloc\n"
+msgstr ""
+
+#: gtypist.c:1786
+msgid "Written by Simon Baldwin"
+msgstr "Napsáno Simonem Baldwinem. Èeský tutoriál Hynek Hanke."
+
+#: gtypist.c:1792 gtypist.c:1799
+#, c-format
+msgid "Try '%s --help' for more information.\n"
+msgstr "Více informací získáte zadáním '%s --help.'\n"
+
+#: gtypist.c:1838
+msgid ""
+"Copyright (C) 1998,2001  Simon Baldwin.\n"
+"This program comes with ABSOLUTELY NO WARRANTY; for details\n"
+"please see the file 'COPYING' supplied with the source code.\n"
+"This is free software, and you are welcome to redistribute it\n"
+"under certain conditions; again, see 'COPYING' for details.\n"
+"This program is released under the GNU General Public License."
+msgstr ""
+
+#. this string is displayed in the mode-line when in a tutorial
+#: gtypist.c:1845
+msgid " Tutorial "
+msgstr " Tutoriál "
+
+#. this string is displayed in the mode-line when in a query
+#: gtypist.c:1847
+msgid "  Query   "
+msgstr "  Dotaz  "
+
+#. this string is displayed in the mode-line when running a drill
+#: gtypist.c:1849
+msgid "  Drill   "
+msgstr "  Drilové cvièení  "
+
+#. this string is displayed in the mode-line when running a speedtest
+#: gtypist.c:1851
+msgid "Speed test"
+msgstr "Rychlostní test"
+
+#: gtypist.c:1852
+msgid " Press Return to continue... "
+msgstr " Pokraèujte stisknutím ENTER... "
+
+#: gtypist.c:1855
+#, c-format
+msgid "Your error-rate is too high. You have to achieve %.1f%%."
+msgstr "Va¹e chybovost je pøíli¹ velká. Musíte dosáhnout %.1f%%."
+
+#: gtypist.c:1859
+#, c-format
+msgid "You failed this test, so you need to go back to %s."
+msgstr "Nepro¹el jste tímto testem. Musíte se vrátit na %s."
+
+#. this is used for queries. you can translate the keys as well
+#. (if you translate msgid "Y/N" accordingly)
+#: gtypist.c:1862
+msgid "Press Y to continue, N to repeat or Fkey12 to exit"
+msgstr "Stisknutím Y mù¾ete pokraèovat, nebo N pro opakování. F12 -- konec."
+
+#. this must be adjusted to the right with one space at the end.
+#. Leading whitespace is important because it is displayed in reverse
+#. video because it must be aligned with the next two messages
+#. (it's best to run gtypist to see this in practice)
+#: gtypist.c:1867
+#, c-format
+msgid " Raw speed      = %6.2f wpm "
+msgstr " Hrubá rychlost      = %6.2f slov/m "
+
+#. this must be adjusted to the right with one space at the end.
+#. Leading whitespace is important because it is displayed in reverse
+#. video and because it must be aligned with the previous and next messages
+#. (it's best to run gtypist to see this in practice)
+#: gtypist.c:1872
+#, c-format
+msgid " Adjusted speed = %6.2f wpm "
+msgstr " Orientaèní rychlost = %6.2f slov/m "
+
+#. this must be adjusted to the right with one space at the end.
+#. Leading whitespace is important because it is displayed in reverse
+#. video and because it must be aligned with the next last two messages
+#. (it's best to run gtypist to see this in practice)
+#: gtypist.c:1877
+#, c-format
+msgid "            with %.1f%% errors "
+msgstr "                  s %.1f%% chyb "
+
+#. this is used to translate the keys for Y/N-queries. Must be two uppercase
+#. letters. Y/N will still be accepted as well
+#: gtypist.c:1880
+msgid "Y/N"
+msgstr "A/N"
+
+#: gtypist.c:1928
+msgid "can't find or open file"
+msgstr "Nemù¾u najít èi otevøít soubor"

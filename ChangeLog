@@ -1,3 +1,7 @@
+2002-04-07  Michael Opdenacker <michaelo@gnu.org>
+
+	* Added new Czech interface messages.
+
 2002-04-07  Felix Natter  <fnatter@gmx.net>
 
 	* gtypist.c (fatal_error): write "\n" if line==NULL
@@ -6,7 +10,7 @@
 2002-04-05  Felix Natter  <fnatter@gmx.net>
 
 	* gtypist.c: add /* xgettext: no-c-format */ comments so that
-	xgettext does not thing that '%' is part of a format-string
+	xgettext does not think that '%' is part of a format-string
 	(suggested by Bruno Haible)
 
 2002-03-31  Felix Natter  <fnatter@gmx.net>
