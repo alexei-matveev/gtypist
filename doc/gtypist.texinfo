@@ -468,20 +468,20 @@ Public License instead of this License.
 
 GNU Typist is an interactive typing tutor program. It uses an input file to
 create a series of typing tutorials, drills, and timed speed tests. It
-is intended to be used in a raw terminals without graphics ---it has been
-compiled and used in GNU and Unix (GNU/Linux, Aix, Solaris) and also in
+is intended to be used on raw terminals without graphics ---it has been
+compiled and used in GNU/Linux and Unix (Aix, Solaris) and also in
 DOS/Windows (DOS 6.22, Windows 98, Windows NT).
 
-The program read lessons written in a very easy scripting language. It
+The program reads lessons written in a very easy scripting language. It
 is distributed with several complete and good lessons, you can use them,
 modify them or create new lessons (@pxref{Script files and commands}).
 
-There are two types of drill - one-time, and ordinary. In an ordinary
+There are two types of drills - one-time and ordinary. In an ordinary
 drill, gtypist displays text on the screen, and waits for the user to
 correctly type the exact same text, underneath. It indicates typing
 errors, and if at the end of the exercise there were errors, it will
 re-run the drill, up to a maximum number of tries. In a one-time drill,
-the action is the same, except that the program will not repeat the
+the procedure is the same, except that the program will not repeat the
 drill if it is not typed correctly. Backspace and delete are not
 permitted in drills.
 
@@ -578,6 +578,10 @@ the file.
 
 @end table
 
+@noindent
+You also have to set the environment variable @env{LANG} if you
+want to run gtypist in your native language. @xref{Environment Variables}.
+
 @strong{Examples:}
 
 @noindent
@@ -602,7 +606,6 @@ To run the lessons in the file @file{test.typ} of directory @file{/tmp},
 starting at label @code{TEST1}, using the terminal's cursor, and running
 silently:@*
 @code{gtypist -t -q -l TEST1 /tmp/test.typ}
-
 
 @node Script files and commands, Supplied lessons, Invoking, Top
 @chapter Script files and commands
@@ -877,7 +880,7 @@ it will be also necessary to set the environment variable LANGUAGE to
 the same value.
 
 If you want to translate messages to a different language (or if you
-want to correct one message), please communicate it to
+want to correct a message), please communicate it to
 @email{bug-gtypist@@gnu.org}.
 
 

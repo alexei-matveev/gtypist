@@ -1,6 +1,14 @@
+2001-07-20  Felix Natter  <f.natter@ndh.net>
+
+	* node Introduction: some English fixes
+	* node Invoking: mention $LANG
+
 2001-07-19  Felix Natter <f.natter@ndh.net>
 
-	* Documentation for new Emacs mode and several fixes
+	* node Script files and commands: correct a few errors
+	* node Environment Variables: use LANG=LL_CC
+	* node Invoking: --wpmode is now disabled by default
+	* new node: Emacs mode for editing gtypist-lessons
 
 2001-06-26  Michael Opdenacker  <michaelo@gnu.org> 
 
