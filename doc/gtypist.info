@@ -453,20 +453,21 @@ tests.
 
    In a drill, gtypist displays text in every other line on the screen,
 and waits for the user to correctly type the exact same text in the
-intermediate lines. It indicates typing errors and at the end of the
-exercise it calculates the real and effective rate in WPM.  If there
-were too many errors, it will re-run the drill.  <Backspace> and
-<delete> are not permitted in drills.
+intermediate lines.  Typing errors are indicated with an inverse `^',
+or `>' if the character is a newline and at the end of the exercise it
+calculates the real and effective rate in WPM.  If there were too many
+errors, it will re-run the drill.  <Backspace> and <delete> not
+permitted in drills.
 
    In a speed test, gtypist displays text on the screen, and waits for
 the user to correctly over-type the exact same text. It indicates typing
 errors, and at the end of the test it calculates the real and effective
 rate in WPM.  If there were too many errors, it will re-run the
-speed-test.  <Backspace> and <delete> are recognised, but errors still
-accumulate.
+speed-test.  <Backspace> is recognised, but errors still accumulate.
 
    If you already made too many mistakes, then you can use <ESC> to
-give up and start again.
+give up and start again. Once you complete a lesson, you will be asked
+whether you want to repeat it.
 
    There are also "practice only"-exercises (of both drills and
 speed-tests) which you won't have to repeat at all. But we won't tell
@@ -495,8 +496,8 @@ supported only in GNU/Linux):
      Specifies the default maximum error percentage.  The default value
      is 3.0 and it must be between 0.0 and 100.0. There is a
      corresponding script-file command (*note Script-file commands::)
-     which only overrides this if it is stricter (smaller). This value
-     is ignored for "practice only" drills.
+     which only overrides this if it is _stricter_ (smaller). This
+     value is ignored for "practice only" drills.
 
 `-n, --notimer'
      gtypist will display the typing speeds in WPM after both drills
@@ -592,8 +593,7 @@ ignored, as are blank lines. Comment lines may have any format provided
 that they begin with '#'; other lines must have the above format.
 
    You should read the introduction so that you are familiar with the
-basics (especially the different types of typing exercises): *Note
-Introduction::.
+basics: *Note Introduction::.
 
    The following is a list of valid `command_char' values:
 
@@ -601,8 +601,8 @@ Introduction::.
      This command clears the complete screen. If any `command_data' is
      present, it is displayed in the one-line banner at the top of the
      screen, and remains in place until the next `B' command. This
-     command may not be continued on the next line; it is a single line
-     command.
+     command may not be continued on the following line; it is a single
+     line command.
 
 `T'
      This presents a tutorial, and is a multi-line command, up to the
@@ -622,9 +622,9 @@ Introduction::.
      The I command can display some brief instructions above a drill or
      a speed test.  Only two lines or less are permitted.  Unlike the
      `T' command, it does not wait for any further keypresses before
-     proceeding.  So it should really always be followed by either a
-     drill.  It clears the whole screen drill area, so in this respect
-     it's just like a two-line T, though.
+     proceeding.  So it should really always be followed by an exercise.
+     It clears the whole screen exercise area, so in this respect it's
+     just like a two-line T.
 
 `D,d'
      This command is called "drill", and it is one of two types of
@@ -634,20 +634,26 @@ Introduction::.
      line, and you type in the intermediate lines. Because of this, you
      cannot use more than 11 lines of drill-content.
 
-     Typing errors are indicated with an inverse `^', or `>' if the
-     character is a newline.  Delete and backspace are not recognised.
-     The lowercase version `d' is a "practice only" drill - That means
-     that the user will not have not repeat this drill if he/she made
-     too many mistakes.
+     This type of exercise is supposed to be used for finger-training
+     (i.e. jfjfjjf).
+
+     The lowercase version `d' is a "practice only" drill - the user
+     will not have not repeat this drill if he/she made too many
+     mistakes.
 
 `S,s'
-     This is the second type of typing-exercise: the "speed test".  It
-     is a multi-line command.  It displays its text on the screen, and
-     prompts the user to type on top of it.  That's why you can use up
-     to 22 lines of text for a speed-test.  Delete and backspace are
-     recognised, but errors still accumulate.  The lowercase version
-     `s' is a "practice only" speed-test - That means that the user
-     will not have not repeat this drill if he/she made too many
+     This is the second type of typing-exercise: the "speed test".
+
+     It is a multi-line command.  It displays its text on the screen,
+     and prompts the user to type on top of it.  That's why you can use
+     up to 22 lines of text for one speed-test.  Backspace is
+     recognised, but errors still accumulate.
+
+     Speed-tests should be used for typing (mostly) complete sentences,
+     texts or files.
+
+     The lowercase version `s' is a "practice only" speed-test - the
+     user will not have not repeat this drill if he/she made too many
      mistakes.
 
 `G'
@@ -658,8 +664,10 @@ Introduction::.
 `Q'
      This command command prompts its text on the message line, and
      waits for a <Y> or an <N> before proceeding. Other characters are
-     ignored.  As a side effect, you can hit an fkey if it is bound
-     (That's why this is used to set the prompt for menus).
+     ignored.
+
+     As a side effect, you can hit an fkey if it is bound (That's why
+     this is used to set the prompt for menus).
 
 `Y'
      This is like `G', except that the goto is executed only if the
@@ -690,19 +698,29 @@ Introduction::.
 
 `E'
      This command is used to set the error-max value. This is the upper
-     limit of the error-rate that the user may and make the drill.
-     `command_data' If `--error-max/-e' is specified then It consists
-     of the value (between 0.0 and 100.0), followed by '%' (this is
-     required so that scripts are more readable).  Usually, this
-     command only applies to the next drill, but you can make it
-     persistent by putting a '*' at the end of `command_data'.
+     limit of the error-rate that the user may have.
+
+     If `--error-max/-e' is specified then this command will only have
+     an effect if it is _stricter_ than the value specified on the
+     command-line.
+
+     `command_data' consists of the value (between 0.0 and 100.0),
+     followed by '%' (this is required so that scripts are more
+     readable).  A special value of `default' or `Default' sets the
+     error-max value back to the default.
+
+     Usually, this command only applies to the next drill, but you can
+     make it persistent by putting a '*' at the end of `command_data'.
 
 `F'
      This command ("set on-failure label") is used to set the label (in
      `command_data') where the user will skip to if he/she fails a
-     drill.  Usually, this command only applies to the next drill, but
-     you can make it persistent by putting a '*' at the end of
-     `command_data'.
+     drill.
+
+     Usually, this command only applies to the next drill, but you can
+     make it persistent by putting a '*' at the end of `command_data'.
+
+     If label is NULL then this resets the label.
 
 `X'
      This command causes gtypist to exit. It is a single line command.
@@ -851,7 +869,8 @@ without asking you !
 each drill by modifying the relevant variable in `tools/ktouch2typ.pl'.
 
    Obviously, the disadvantage of this is that you cannot make use of
-all of gtypist's features.
+all of gtypist's features. On the other hand, the output-file is very
+readable, so you can edit it to use more of gtypist's features.
 
 
 File: gtypist.info,  Node: Create drills from fortune,  Next: Ktouch-lessons,  Up: How to contribute new lessons
@@ -1061,16 +1080,16 @@ Node: Top215
 Node: Distribution894
 Node: Copying1783
 Node: Introduction20950
-Node: Invoking23441
-Node: Script-file commands27071
-Node: Supplied lessons33640
-Node: How to contribute new lessons35120
-Node: Ktouch-lessons35447
-Node: Create drills from fortune37699
-Node: Emacs mode for editing gtypist-lessons38411
-Node: Technical Information40877
-Node: Environment Variables41108
-Node: Errors and omissions43213
-Node: History43930
+Node: Invoking23560
+Node: Script-file commands27192
+Node: Supplied lessons33963
+Node: How to contribute new lessons35443
+Node: Ktouch-lessons35770
+Node: Create drills from fortune38129
+Node: Emacs mode for editing gtypist-lessons38841
+Node: Technical Information41307
+Node: Environment Variables41538
+Node: Errors and omissions43643
+Node: History44360
 
 End Tag Table

@@ -1,3 +1,10 @@
+2001-08-16  Felix Natter  <f.natter@ndh.net>
+
+	* NEWS: write the list of new/changed features for 2.4
+	* gtypist.c (do_on_failure_label_set): allow special value "NULL"
+	* gtypist.c (do_speedtest): set errors to 0 in the loop (I forgot
+	to do this when I changed do_speedtest to use a repeat-loop)
+
 2001-08-13  Felix Natter  <f.natter@ndh.net>
 
 	* gtypist.c (main, do_query): add new translatable string `YN'

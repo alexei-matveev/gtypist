@@ -1014,7 +1014,7 @@ do_speedtest( FILE *script, char *line ) {
       move( linenum, 0 );
       for ( p = data; *p == ASCII_SPACE && *p != ASCII_NULL; p++ )
 	ADDCH( *p );
-      for ( chars_typed = 0; *p != ASCII_NULL; p++ ) 
+      for ( chars_typed = 0, errors = 0; *p != ASCII_NULL; p++ ) 
 	{
 	  rc = getch_fl( (*p != ASCII_NL) ? *p : ASCII_SPACE );
 	  c = (char)rc;
@@ -1448,24 +1448,30 @@ do_on_failure_label_set( FILE *script, char *line )
 
   global_on_failure_label_persistent = star;
 
-  /* find the right hash list for the label */
-  i = hash_label( SCR_DATA(line) );
+  /* check for special value "NULL" */
+  if (strcmp(SCR_DATA(line), "NULL") == 0)
+    global_on_failure_label = NULL;
+  else
+    {
+      /* find the right hash list for the label */
+      i = hash_label( SCR_DATA(line) );
   
-  /* search the linked list for the label */
-  for ( global_on_failure_label = global_label_list[i];
-	global_on_failure_label != NULL;
-	global_on_failure_label = global_on_failure_label->next ) 
-    {
-      /* see if this is our label */
-      if ( strcmp( global_on_failure_label->label, SCR_DATA(line) ) == 0 )
-	break;
-    }
+      /* search the linked list for the label */
+      for ( global_on_failure_label = global_label_list[i];
+	    global_on_failure_label != NULL;
+	    global_on_failure_label = global_on_failure_label->next ) 
+	{
+	  /* see if this is our label */
+	  if ( strcmp( global_on_failure_label->label, SCR_DATA(line) ) == 0 )
+	    break;
+	}
 
-  /* see if the label was not found in the file */
-  if ( global_on_failure_label == NULL ) 
-    {
-      sprintf( message, _("label '%s' not found"), SCR_DATA(line) );
-      fatal_error( message, copy_of_line );
+      /* see if the label was not found in the file */
+      if ( global_on_failure_label == NULL ) 
+	{
+	  sprintf( message, _("label '%s' not found"), SCR_DATA(line) );
+	  fatal_error( message, copy_of_line );
+	}
     }
 
   /* get the next command */

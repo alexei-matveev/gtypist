@@ -102,10 +102,13 @@ In a drill, gtypist displays text in every other line on the screen,
 and waits for the user to correctly type the exact same text in the
 intermediate lines.
 @c TODO: intention is ``Griff-Übung'' (finger-exercise)
- It indicates typing errors and at the end of the
+Typing errors are indicated with an inverse @code{^}, or @code{>} if
+the character is a newline and at the end of the
 exercise it calculates the real and effective rate in WPM.
 If there were too many errors, it will re-run the drill.
-@key{Backspace} and @key{delete} are not permitted in drills.
+@c TODO: delete ???
+@key{Backspace} and @key{delete} not permitted in drills.
+
 
 In a speed test, gtypist displays text on the screen, and waits for the
 user to correctly over-type the exact same text. It indicates typing
@@ -113,10 +116,11 @@ errors, and at the end of the test it calculates the real and effective
 rate in WPM. 
 @c TODO: what is it used for ?
 If there were too many errors, it will re-run the speed-test.
-@key{Backspace} and @key{delete} are recognised, but errors still accumulate.
+@key{Backspace} is recognised, but errors still accumulate.
 
 If you already made too many mistakes, then you can use @key{ESC} to
-give up and start again.
+give up and start again. Once you complete a lesson, you will be asked
+whether you want to repeat it.
 
 @c TODO: indicate ``practice only''-exercises in modeline ?
 There are also ``practice only''-exercises (of both drills and speed-tests)
@@ -182,8 +186,8 @@ supported only in GNU/Linux):
 Specifies the default maximum error percentage.  The default value is
 3.0 and it must be between 0.0 and 100.0. There is a corresponding
 script-file command (@pxref{Script-file commands}) which only
-overrides this if it is stricter (smaller). This value is ignored for
-``practice only'' drills.
+overrides this if it is @emph{stricter} (smaller). This value is
+ignored for ``practice only'' drills.
 
 @item -n, --notimer
 gtypist will display the typing speeds in WPM after both drills and speed
@@ -287,9 +291,8 @@ Comment lines are lines beginning with a '#' character, and are
 ignored, as are blank lines. Comment lines may have any format provided
 that they begin with '#'; other lines must have the above format.
 
-@c TODO: omit especially* ?
-You should read the introduction so that you are familiar with the basics
-(especially the different types of typing exercises): @xref{Introduction}.
+You should read the introduction so that you are familiar with the
+basics: @xref{Introduction}.
 
 The following is a list of valid @code{command_char} values:
 
@@ -298,7 +301,7 @@ The following is a list of valid @code{command_char} values:
 This command clears the complete screen. If any @code{command_data} is
 present, it is displayed in the one-line banner at the top of the
 screen, and remains in place until the next @code{B} command. This command may
-not be continued on the next line; it is a single line command.
+not be continued on the following line; it is a single line command.
 
 @item T
 This presents a tutorial, and is a multi-line command, up to the
@@ -317,10 +320,11 @@ be unique within lesson files. Whitespace at the end of labels is ignored.
 The I command can display some brief instructions above a drill or a
 speed test.  Only two lines or less are permitted.  Unlike the
 @code{T} command, it does not wait for any further keypresses before
-proceeding.  So it should really always be followed by either a drill.
-It clears the whole screen drill area, so in this respect it's just
-like a two-line T, though.
+proceeding.  So it should really always be followed by an exercise.
+It clears the whole screen exercise area, so in this respect it's just
+like a two-line T.
 
+@c TODO: more information about ``should be used for''...
 @item D,d
 This command is called ``drill'', and it is one of two types of
 typing-exercises.
@@ -329,44 +333,29 @@ It is a multi-line command. The text is displayed in every second
 line, and you type in the intermediate lines. Because of this, you cannot
 use more than 11 lines of drill-content.
 
-Typing errors are indicated with an inverse @code{^}, or @code{>} if
-the character is a newline.
-Delete and backspace are not recognised.
-The lowercase version @code{d} is a ``practice only'' drill - That means
-that the user will not have not repeat this drill if he/she made too many
+This type of exercise is supposed to be used for finger-training
+(i.e. jfjfjjf).
+
+The lowercase version @code{d} is a ``practice only'' drill -
+the user will not have not repeat this drill if he/she made too many
 mistakes.
 
+@c TODO: more information about ``should be used for''...
 @item S,s
 This is the second type of typing-exercise: the ``speed test''.
-It is a multi-line command.
-It displays its text on the screen,
-and prompts the user to type on top of it.  
-That's why you can use up to 22 lines of text for a speed-test.
-Delete and backspace are recognised, but errors still accumulate.
-The lowercase version @code{s} is a ``practice only'' speed-test -
-That means that the user will not have not repeat this drill if he/she
-made too many mistakes.
 
-@c @item D
-@c This creates an ordinary typing drill. It is a multi-line command;
-@c as many lines may be used as available on the screen. 
-@c The text is displayed  alternate screen lines, and prompts
-@c you to type the same text in on the intermediate lines.  Typing errors
-@c are indicated with an inverse @code{^}, or @code{>} if the character is a newline.
-@c The drill completes when it is typed correctly, or after a
-@c number of attempts.  Delete and backspace are not recognised.  @key{Escape}
-@c may be used to exit from the drill before completion.
-@c @item O
-@c This creates a one-time typing drill. It has the same behaviour as
-@c the @code{D} command, but it does not repeat until the text is
-@c typed correctly.
-@c @item P
-@c This creates a speed test. It is a multi-line command; as many lines
-@c may be used as are available to curses. It  displays its text on the screen,
-@c and prompts you to type on top of it.  Typing errors are highlighted in inverse
-@c colours.  You get only one chance at this test, but delete and backspace
-@c are recognised (errors still accumulate, however).  At the end
-@c of the test, the typing speed and accuracy are displayed.
+It is a multi-line command.  It displays its text on the screen, and
+prompts the user to type on top of it.  That's why you can use up to
+22 lines of text for one speed-test.
+@c TODO: delete ???
+Backspace is recognised, but errors still accumulate.
+
+Speed-tests should be used for typing (mostly) complete sentences,
+texts or files.
+
+The lowercase version @code{s} is a ``practice only'' speed-test -
+the user will not have not repeat this drill if he/she
+made too many mistakes.
 
 @item G
 This causes gtypist to go to the label in @code{command_data}, and continue
@@ -375,6 +364,7 @@ execution of the script there. This is a single line command.
 @item Q
 This command command prompts its text on the message line, and waits for
 a @key{Y} or an @key{N} before proceeding. Other characters are ignored.
+
 As a side effect, you can hit an fkey if it is bound (That's why
 this is used to set the prompt for menus).
 
@@ -388,11 +378,10 @@ the last @code{Q} command was @key{N}.
 
 @item K
 This binds a function key to a label. The format of the data line
-following this command must be @code{fkey_number:label}, where 
-@code{fkey_number} is
-a function key number in the range 1 to 12, and @code{label} is a label to go
-to when this key is pressed. A value of NULL for label removes any
-label binding from the key. 
+following this command must be @code{fkey_number:label}, where
+@code{fkey_number} is a function key number in the range 1 to 12, and
+@code{label} is a label to go to when this key is pressed. A value of
+NULL for label removes any label binding from the key.
 
 If function keys are not available on the terminal other keys can be
 used: @key{1} to @key{9} to replace @key{F1} to @key{F9}, @key{0} to 
@@ -403,16 +392,23 @@ combinations: @key{Ctrl-Q}, @key{Ctrl-W}, @key{Ctrl-E}, @key{Ctrl-R},
 @key{Ctrl-T}, @key{Ctrl-Z}, @key{Ctrl-U}, @key{Ctrl-I}, 
 @key{Ctrl-O}, @key{Ctrl-P}, @key{Ctrl-A} and @key{Ctrl-S}.
 
-This is also useful where function keys are intercepted
-by other programs (for example by a window manager).
+This is also useful where function keys are intercepted by other
+programs (for example by a window manager).
 
 @item E
+@c TODO: better English:
 This command is used to set the error-max value. This is the upper limit
-of the error-rate that the user may and make the drill.
-@code{command_data}
-If @option{--error-max/-e} is specified then 
-It consists of the value (between 0.0 and 100.0), followed by '%'
-(this is required so that scripts are more readable).
+of the error-rate that the user may have.
+
+If @option{--error-max/-e} is specified then this command will only
+have an effect if it is @emph{stricter} than the value specified on
+the command-line.
+
+@code{command_data} consists of the value (between 0.0 and 100.0),
+followed by '%' (this is required so that scripts are more readable).
+A special value of @code{default} or @code{Default} sets the error-max
+value back to the default.
+
 Usually, this command only applies to the next drill, but you can make
 it persistent by putting a '*' at the end of @code{command_data}.
 
@@ -420,8 +416,11 @@ it persistent by putting a '*' at the end of @code{command_data}.
 @item F
 This command (``set on-failure label'') is used to set the label (in
 @code{command_data}) where the user will skip to if he/she fails a drill.
+
 Usually, this command only applies to the next drill, but you can make
 it persistent by putting a '*' at the end of @code{command_data}.
+
+If label is NULL then this resets the label.
 
 @item X
 This command causes gtypist to exit. It is a single line command. Any
@@ -564,7 +563,8 @@ uses for each drill by modifying the relevant variable in
 @file{tools/ktouch2typ.pl}.
 
 Obviously, the disadvantage of this is that you cannot make use of all
-of gtypist's features.
+of gtypist's features. On the other hand, the output-file is very
+readable, so you can edit it to use more of gtypist's features.
 
 @node Create drills from fortune, Ktouch-lessons, , How to contribute new lessons
 @section Create drills from fortune
