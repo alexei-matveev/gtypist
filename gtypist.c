@@ -587,7 +587,7 @@ do_keybind( FILE *script, char *line ) {
      the syntax and correctness of the mappings */
   label = (char*)malloc( strlen(SCR_DATA( line )) + 1 );
   if ( sscanf( SCR_DATA( line ), "%d:%s", &fkey, label ) != 2 )
-    fatal_error( _("invalid key binding (%d:%s)"), line );
+    fatal_error( _("invalid key binding"), line );
   if ( fkey < 1 || fkey > NFKEYS )
     fatal_error( _("invalid function key number"), line );
   

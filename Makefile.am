@@ -1,8 +1,10 @@
 ## Process this file with automake to produce Makefile.in
 
-SUBDIRS= m4 po lessons tools doc
+SUBDIRS= m4 po lessons tools doc intl
 
-EXTRA_DIST= config.rpath gtypist.1 configur.bat version.sh configur.bat.in autogen.sh INSTALL.in TODO
+EXTRA_DIST= typefortune gtypist.1 typefortune.1 \
+config.rpath configur.bat version.sh configur.bat.in autogen.sh \
+INSTALL.in TODO 
 
 bin_PROGRAMS = gtypist
 bin_SCRIPTS = typefortune
