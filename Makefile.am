@@ -8,7 +8,7 @@ bin_PROGRAMS = gtypist
 bin_SCRIPTS = typefortune
 gtypist_SOURCES = gtypist.c getopt.h getopt.c getopt1.c
 gtypist_LDADD = @LIBINTL@
-man_MANS = gtypist.1
+man_MANS = gtypist.1 typefortune.1
 INCLUDES = -I./intl -DPACKAGE_DATA_DIR=\"$(pkgdatadir)\" 
 
 # GEN_MAN is a shell command that generates the man page

@@ -23,14 +23,18 @@ use Getopt::Std;
 my %opts;
 if (!getopts ("dslhn:o:", \%opts) || $opts{h}) {
     print "SYNTAX: typefortune [-dslh] [-n count] [-o gtypist_opts]\n";
-    print "-d: use D:\n";
+    print "-d: use D: (instead of S:)\n";
     print "-s: use fortune -s\n";
     print "-l: use fortune -l\n";
-    print "-n <count>: practice <count> fortunes\n";
+    print "-n <count>: practice <count> fortunes (default=1)\n";
     print "-o <gtypist_options>: pass options to gtypist\n";
     print "See the gtypist manual (info gtypist or info '(gtypist)') " . 
 	"for details.\n";
-    exit 1;
+    if ($opts{h}) {
+	exit 0;
+    } else {
+	exit 1;
+    }
 }
 
 # operate on command-line arguments
