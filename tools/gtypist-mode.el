@@ -81,11 +81,12 @@
 ;; (suggestion from Stefan Monnier <foo@acm.com>)
 ;; Sat Aug 11 16:39:16 2001: adapt to 2.4.0's drill-types
 ;; Sat Aug 11 18:08:56 2001: color "[Dd]efault" (as in "E: default")
+;; Tue Aug 14 18:22:34 2001: rename gtypist-mode-help to gtypist-mode-info
 
 ;; TODO:
 ;; - gtypist-mode-goto-label-history, gtypist-mode-lesson-name-history ?
 ;; - better documentation for gtypist-mode-next-label, gtypist-mode and
-;;   gtypist-mode-help ?
+;;   gtypist-mode-info ?
 ;; - allow customization via customize ?
 ;; - gtypist-mode-fortune-to-drill: automatically split fortune if it's
 ;;   too long ?
@@ -124,8 +125,7 @@
   (define-key gtypist-mode-map "\C-c\C-b" 'gtypist-mode-insert-banner)
   (define-key gtypist-mode-map "\C-c\C-l" 'gtypist-mode-next-label)
   (define-key gtypist-mode-map "\C-c\C-g" 'gtypist-mode-goto-label)
-  ;; TODO: bind this to C-c C-i as well ?
-  (define-key gtypist-mode-map "\C-c\C-h" 'gtypist-mode-help))
+  (define-key gtypist-mode-map "\C-c\C-i" 'gtypist-mode-info))
 
 (defun gtypist-mode-in-drill-text-p()
   "Find out whether pos is in drill-text. This preserves the match data.
@@ -189,9 +189,9 @@ It's really only useful for font-locking."
 
  ;;;; public functions
 
-(defun gtypist-mode-help(prefix)
+(defun gtypist-mode-info(prefix)
   "Show the texinfo-manual at node \"Script-file commands\".
-With prefix, start with the Top-node (main menu)."
+With prefix, start at the Top-node (main menu)."
   (interactive "P")
   (if (null prefix)
       (info-other-window "(gtypist)Script-file commands")

@@ -479,6 +479,8 @@ The program reads lessons written in an easy-to-learn scripting language. It
 is distributed with several complete and good lessons, you can use them,
 modify them or create new lessons (@pxref{Script-file commands}).
 
+There are two types of typing-exercises: drills and speed-tests.
+
 In a drill, gtypist displays text on the screen, and waits for the user to
 correctly type the exact same text, underneath. It indicates typing
 errors, and if at the end of the exercise there were too many errors, it will
@@ -486,6 +488,7 @@ re-run the drill.
 Backspace and delete are not permitted in drills.
 
 If you already made too many mistakes, then you can use @key{ESC} to
+@c TODO: restart the drill from the beginning
 give up and restart the drill from the beginning.
 
 @c There are two types of drills - one-time and ordinary. In an ordinary
@@ -503,6 +506,28 @@ errors, and at the end of the test it calculates the real and effective
 rate in WPM. A speed test is run only once, no matter how many errors
 there were. Backspace and delete are permitted, but errors still
 accumulate.
+
+@c @item D
+@c This creates an ordinary typing drill. It is a multi-line command;
+@c as many lines may be used as available on the screen. 
+@c The text is displayed  alternate screen lines, and prompts
+@c you to type the same text in on the intermediate lines.  Typing errors
+@c are indicated with an inverse @code{^}, or @code{>} if the character is a newline.
+@c The drill completes when it is typed correctly, or after a
+@c number of attempts.  Delete and backspace are not recognised.  @key{Escape}
+@c may be used to exit from the drill before completion.
+@c @item O
+@c This creates a one-time typing drill. It has the same behaviour as
+@c the @code{D} command, but it does not repeat until the text is
+@c typed correctly.
+@c @item P
+@c This creates a speed test. It is a multi-line command; as many lines
+@c may be used as are available to curses. It  displays its text on the screen,
+@c and prompts you to type on top of it.  Typing errors are highlighted in inverse
+@c colours.  You get only one chance at this test, but delete and backspace
+@c are recognised (errors still accumulate, however).  At the end
+@c of the test, the typing speed and accuracy are displayed.
+
 
 The top line of the screen displays a banner. The bottom line of the
 screen displays a message line, queries, and other status information.
@@ -640,6 +665,10 @@ Comment lines are lines beginning with a '#' character, and are
 ignored, as are blank lines. Comment lines may have any format provided
 that they begin with '#'; other lines must have the above format.
 
+@c TODO: omit especially* ?
+You should read the introduction so that you are familiar with the basics
+(especially the different types of typing exercises): @xref{Introduction}.
+
 The following is a list of valid @code{command_char} values:
 
 @table @code
@@ -647,53 +676,78 @@ The following is a list of valid @code{command_char} values:
 This command clears the complete screen. If any @code{command_data} is
 present, it is displayed in the one-line banner at the top of the
 screen, and remains in place until the next @code{B} command. This command may
-not be continued; it is a single line command.
-
-@item *
-This indicates a label in the file. The label may be the target of a
-@code{G}, @code{Y}, or @code{N} command. Labels may contain any
-character, including space, and are a single line command. Labels must
-be unique within lesson files. Whitespace at the end of labels is ignored.
+not be continued on the next line; it is a single line command.
 
 @item T
 This presents a tutorial, and is a multi-line command, up to the
 limit of the screen length. Each line in the command is simply
 printed to the screen. This command clears the screen beneath the top
 banner line. After the display is done, the program waits before
-proceeding.
+proceeding. This is also used to display menu-items.
+
+@item *
+This indicates a label in the file. The label may be the target of a
+@code{G}, @code{Y}, @code{N} or @code{F} command. Labels may contain any
+character, including space, and are a single line command. Labels must
+be unique within lesson files. Whitespace at the end of labels is ignored.
 
 @item I
-The I command can display some brief instructions above a drill or
-a speed test.  Only two lines or less are permitted.  Unlike the @code{T}
-command, it does not wait for any further keypresses before proceeding.
-So it should really always be followed by either a @code{D} or a @code{P}.
-It clears the whole screen drill area, so it's just like a two-line T, though.
+The I command can display some brief instructions above a drill or a
+speed test.  Only two lines or less are permitted.  Unlike the
+@code{T} command, it does not wait for any further keypresses before
+proceeding.  So it should really always be followed by either a drill.
+It clears the whole screen drill area, so in this respect it's just
+like a two-line T, though.
 
-@item D
-This creates an ordinary typing drill. It is a multi-line command;
-as many lines may be used as available on the screen. 
-The text is displayed  alternate screen lines, and prompts
-you to type the same text in on the intermediate lines.  Typing errors
-are indicated with an inverse @code{^}, or @code{>} if the character is a newline.
-The drill completes when it is typed correctly, or after a
-number of attempts.  Delete and backspace are not recognised.  @key{Escape}
-may be used to exit from the drill before completion.
+@item D,d
+This command is called ``drill'', and it is one of two types of
+typing-exercises.
 
-@item O
-This creates a one-time typing drill. It has the same behaviour as
-the @code{D} command, but it does not repeat until the text is
-typed correctly.
+It is a multi-line command. The text is displayed in every second
+line, and you type in the intermediate lines. Because of this, you cannot
+use more than 11 lines of drill-content.
 
-@item P
-This creates a speed test. It is a multi-line command; as many lines
-may be used as are available to curses. It  displays its text on the screen,
-and prompts you to type on top of it.  Typing errors are highlighted in inverse
-colours.  You get only one chance at this test, but delete and backspace
-are recognised (errors still accumulate, however).  At the end
-of the test, the typing speed and accuracy are displayed.
+Typing errors are indicated with an inverse @code{^}, or @code{>} if
+the character is a newline.
+Delete and backspace are not recognised.
+The lowercase version @code{d} is a ``practice only'' drill - That means
+that the user will not have not repeat this drill if he/she made too many
+mistakes.
+
+@item S,s
+This is the second type of typing-exercise: the ``speed test''.
+It is a multi-line command.
+It displays its text on the screen,
+and prompts the user to type on top of it.  
+That's why you can use up to 22 lines of text for a speed-test.
+Delete and backspace are recognised, but errors still accumulate.
+The lowercase version @code{s} is a ``practice only'' speed-test -
+That means that the user will not have not repeat this drill if he/she
+made too many mistakes.
+
+@c @item D
+@c This creates an ordinary typing drill. It is a multi-line command;
+@c as many lines may be used as available on the screen. 
+@c The text is displayed  alternate screen lines, and prompts
+@c you to type the same text in on the intermediate lines.  Typing errors
+@c are indicated with an inverse @code{^}, or @code{>} if the character is a newline.
+@c The drill completes when it is typed correctly, or after a
+@c number of attempts.  Delete and backspace are not recognised.  @key{Escape}
+@c may be used to exit from the drill before completion.
+@c @item O
+@c This creates a one-time typing drill. It has the same behaviour as
+@c the @code{D} command, but it does not repeat until the text is
+@c typed correctly.
+@c @item P
+@c This creates a speed test. It is a multi-line command; as many lines
+@c may be used as are available to curses. It  displays its text on the screen,
+@c and prompts you to type on top of it.  Typing errors are highlighted in inverse
+@c colours.  You get only one chance at this test, but delete and backspace
+@c are recognised (errors still accumulate, however).  At the end
+@c of the test, the typing speed and accuracy are displayed.
 
 @item G
-This causes gtypist to go to the label in @code{command_data}, and continie
+This causes gtypist to go to the label in @code{command_data}, and continue
 execution of the script there. This is a single line command.
 
 @item Q
@@ -730,10 +784,27 @@ combinations: @key{Ctrl-Q}, @key{Ctrl-W}, @key{Ctrl-E}, @key{Ctrl-R},
 This is also useful where function keys are intercepted
 by other programs (for example by a window manager).
 
+@item E
+This command is used to set the error-max value. This is the upper limit
+of the error-rate that the user may and make the drill.
+@code{command_data}
+If @option{--error-max/-e} is specified then 
+It consists of the value (between 0.0 and 100.0), followed by '%'
+(this is required so that scripts are more readable).
+Usually, this command only applies to the next drill, but you can make
+it persistent by putting a '*' at the end of @code{command_data}.
+
+@c TODO: better English: skip to ...
+@item F
+This command (``set on-failure label'') is used to set the label (in
+@code{command_data}) where the user will skip to if he/she fails a drill.
+Usually, this command only applies to the next drill, but you can make
+it persistent by putting a '*' at the end of @code{command_data}.
+
 @item X
 This command causes gtypist to exit. It is a single line command. Any
 @code{command_data} is ignored. The program also exits if the end of the file
-is found (so if you could also place a label there and just @code{G} to it)
+is found (so you could also place a label there and just @code{G} to it)
 
 @end table
 
@@ -931,8 +1002,8 @@ Here are the commands along with the keybindings:
 
 @table @kbd
 
-@item C-c C-h, M-x gtypist-mode-help
-This shows gtypist's texinfo-documentation, starting with node
+@item C-c C-i, M-x gtypist-mode-info
+This shows gtypist's texinfo-documentation, starting at node
 ``Script-file commands'' (@pxref{Script-file commands}). With prefix,
 start at the top-node.
 
@@ -1083,3 +1154,5 @@ typing with GNU Typist, became the new maintainer. Project development is now ho
 @end itemize
 
 @bye
+
+@c  LocalWords:  xref

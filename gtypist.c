@@ -312,6 +312,7 @@ fatal_error( char *message, char *line ) {
     wbkgdset( stdscr, 0 );
   clear(); refresh(); endwin();
   
+  /* print out the error message and stop */
   fprintf( stderr, "%s: %s %d: %s", argv0, _("line"), global_line_counter,
 	   message );
   if ( line != NULL )

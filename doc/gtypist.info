@@ -590,57 +590,45 @@ that they begin with '#'; other lines must have the above format.
      This command clears the complete screen. If any `command_data' is
      present, it is displayed in the one-line banner at the top of the
      screen, and remains in place until the next `B' command. This
-     command may not be continued; it is a single line command.
-
-`*'
-     This indicates a label in the file. The label may be the target of
-     a `G', `Y', or `N' command. Labels may contain any character,
-     including space, and are a single line command. Labels must be
-     unique within lesson files. Whitespace at the end of labels is
-     ignored.
+     command may not be continued on the next line; it is a single line
+     command.
 
 `T'
      This presents a tutorial, and is a multi-line command, up to the
      limit of the screen length. Each line in the command is simply
      printed to the screen. This command clears the screen beneath the
      top banner line. After the display is done, the program waits
-     before proceeding.
+     before proceeding. This is also used to display menu-items.
+
+`*'
+     This indicates a label in the file. The label may be the target of
+     a `G', `Y', `N' or `F' command. Labels may contain any character,
+     including space, and are a single line command. Labels must be
+     unique within lesson files. Whitespace at the end of labels is
+     ignored.
 
 `I'
      The I command can display some brief instructions above a drill or
      a speed test.  Only two lines or less are permitted.  Unlike the
      `T' command, it does not wait for any further keypresses before
      proceeding.  So it should really always be followed by either a
-     `D' or a `P'.  It clears the whole screen drill area, so it's just
-     like a two-line T, though.
+     drill.  It clears the whole screen drill area, so in this respect
+     it's just like a two-line T, though.
 
-`D'
-     This creates an ordinary typing drill. It is a multi-line command;
-     as many lines may be used as available on the screen.  The text is
-     displayed  alternate screen lines, and prompts you to type the
-     same text in on the intermediate lines.  Typing errors are
-     indicated with an inverse `^', or `>' if the character is a
-     newline.  The drill completes when it is typed correctly, or after
-     a number of attempts.  Delete and backspace are not recognised.
-     <Escape> may be used to exit from the drill before completion.
+`D,d'
+     This command is called "drill", and it is one of two types of
+     typing-exercises.  It is a multi-line command; as many lines may
+     be used as available on the screen.  The text is displayed in
+     every second line, and you type in the intermediate lines.  Typing
+     errors are indicated with an inverse `^', or `>' if the character
+     is a newline.  Delete and backspace are not recognised The
+     lowercase version `d' is a "practice only"
 
-`O'
-     This creates a one-time typing drill. It has the same behaviour as
-     the `D' command, but it does not repeat until the text is typed
-     correctly.
-
-`P'
-     This creates a speed test. It is a multi-line command; as many
-     lines may be used as are available to curses. It  displays its
-     text on the screen, and prompts you to type on top of it.  Typing
-     errors are highlighted in inverse colours.  You get only one
-     chance at this test, but delete and backspace are recognised
-     (errors still accumulate, however).  At the end of the test, the
-     typing speed and accuracy are displayed.
+`S,s'
 
 `G'
      This causes gtypist to go to the label in `command_data', and
-     continie execution of the script there. This is a single line
+     continue execution of the script there. This is a single line
      command.
 
 `Q'
@@ -676,10 +664,26 @@ that they begin with '#'; other lines must have the above format.
      This is also useful where function keys are intercepted by other
      programs (for example by a window manager).
 
+`E'
+     This command is used to set the error-max value. This is the upper
+     limit of the error-rate that the user may and make the drill.
+     `command_data' If `--error-max/-e' is specified then It consists
+     of the value (between 0.0 and 100.0), followed by '%' (this is
+     required so that scripts are more readable).  Usually, this
+     command only applies to the next drill, but you can make it
+     persistent by putting a '*' at the end of `command_data'.
+
+`F'
+     This command ("set on-failure label") is used to set the label (in
+     `command_data') where the user will skip to if he/she fails a
+     drill.  Usually, this command only applies to the next drill, but
+     you can make it persistent by putting a '*' at the end of
+     `command_data'.
+
 `X'
      This command causes gtypist to exit. It is a single line command.
      Any `command_data' is ignored. The program also exits if the end
-     of the file is found (so if you could also place a label there and
+     of the file is found (so you could also place a label there and
      just `G' to it)
 
    Here is a tiny example script to demonstrate the available commands
@@ -873,8 +877,8 @@ care of this for GNU Emacs) and use this instead:
 
 Here are the commands along with the keybindings:
 
-`C-c C-h, M-x gtypist-mode-help'
-     This shows gtypist's texinfo-documentation, starting with node
+`C-c C-i, M-x gtypist-mode-info'
+     This shows gtypist's texinfo-documentation, starting at node
      "Script-file commands" (*note Script-file commands::). With prefix,
      start at the top-node.
 
@@ -1035,14 +1039,14 @@ Node: Copying1782
 Node: Introduction20937
 Node: Invoking23096
 Node: Script-file commands26726
-Node: Supplied lessons32366
-Node: How to contribute new lessons33846
-Node: Ktouch-lessons34173
-Node: Create drills from fortune36425
-Node: Emacs mode for editing gtypist-lessons37137
-Node: Technical Information39605
-Node: Environment Variables39836
-Node: Errors and omissions41941
-Node: History42658
+Node: Supplied lessons32509
+Node: How to contribute new lessons33989
+Node: Ktouch-lessons34316
+Node: Create drills from fortune36568
+Node: Emacs mode for editing gtypist-lessons37280
+Node: Technical Information39746
+Node: Environment Variables39977
+Node: Errors and omissions42082
+Node: History42799
 
 End Tag Table
