@@ -1,7 +1,9 @@
 #!/usr/bin/perl -w
 
 # generate a .typ file and call gtypist to run this file
+# 
 # Yuusuke Mita <neiklotrrj@yahoo.com>, Felix Natter <fnatter@gmx.net>
+# Some fixes by Stefan Troeger <stefan@troeger.st>
 #
 # This program is free software; you can redistribute it and/or
 # modify it under the terms of the GNU General Public License
@@ -18,6 +20,8 @@
 # Foundation, Inc., 675 Mass Ave, Cambridge, MA 02139, USA.
 
 use strict qw (subs vars refs);
+use Carp;
+use File::Temp qw (tempfile);
 use Getopt::Std;
 
 # subroutines
@@ -33,7 +37,6 @@ sub getBanner($)
     $banner =~ s/\s*$//;
     return "B:" . " " x (33 - int((length($banner) / 2))) . $banner . "\n";
 }
-
 
 my %opts;
 if (!getopts ("dslhn:o:", \%opts) || $opts{h}) {
@@ -92,58 +95,62 @@ foreach my $opt (split (/\s+/, $opts{o}))
     $gtypist_options .= " ";
 }
 
-# make sure that fortune is available
-system("fortune > /dev/null");
-
 my $i;
 my $j;
 my @lines;
-my $typfilename = "/tmp/typefortune.$$";
-my $TYPFILE = undef;
-open(TYPFILE, ">$typfilename") ||
-    die "Couldn't open $typfilename for writing: $!";
+my ($typfile, $typfilename);
+
+eval {
+  ($typfile, $typfilename) = 
+      tempfile("typefortune.XXXXXX", DIR => "/tmp", UNLINK => 1);
+};
+if ($@) {
+  croak "Couldn't create temporary file in /tmp";
+}
 
 # note: $#lines is the index of the last line (and not the length of @lines)
-print TYPFILE "# temporary file created by typefortune\n";
-print TYPFILE "K:12:END\n";
+print $typfile "# temporary file created by typefortune\n";
+print $typfile "K:12:END\n";
 for ($i = 0; $i < $count; $i++)
 {
-    do {
-	@lines = split (/\n/, `fortune`);
-    } while ($#lines >= $max_lines);
+    {
+        local $^W = 0;
+        do {
+            @lines = split (/\n/, `fortune`);
+            die "Couldn't find fortune" unless $? == 0;
+        } while ($#lines >= $max_lines);
+    }
 
     # maybe insert banner
     if ($#lines > 0 && $lines[$#lines] =~ /^\s*-- (.+)\s*/) {
-	print TYPFILE getBanner($1);
+	print $typfile getBanner($1);
 	pop @lines;
     } else {
 	# clear any existing banner
-	print TYPFILE "B:\n";
+	print $typfile "B:\n";
     }
 
-    print TYPFILE "I:fortune ". ($i + 1) . "/" . $count . "\n";
+    print $typfile "I:fortune ". ($i + 1) . "/" . $count . "\n";
  
     # print lines
     for ($j = 0; $j <= $#lines; $j++)
     {
 	if ($j == 0) { 
-	    print TYPFILE "$exercise_type";
+	    print $typfile "$exercise_type";
 	} else {
-	    print TYPFILE " :";
+	    print $typfile " :";
 	}
-	print TYPFILE $lines[$j];
-	print TYPFILE "\n";
+	print $typfile $lines[$j];
+	print $typfile "\n";
     }
 }
 
-print TYPFILE getBanner("Practice complete");
-print TYPFILE "T:\n :\n :\n : Congratulations: " .
+print $typfile getBanner("Practice complete");
+print $typfile "T:\n :\n :\n : Congratulations: " .
     "you successfully completed the $count " .
     "fortune lessons !\n";
-print TYPFILE "*:END\nX:\n";
-    
-close(TYPFILE) || die "Couldn't close $typfilename: $!";
-
+print $typfile "*:END\nX:\n";    
+close($typfile) || die "Couldn't close $typfilename: $!";
 
 # call gtypist
-exec ("gtypist $gtypist_options $typfilename");
+system("gtypist $gtypist_options $typfilename");
