@@ -21,7 +21,7 @@ char *do_menu (FILE *script, char *line)
   int ch, i, j, k, idx;
   int cur_choice = 0, max_width, start_y, columns;
   int start_idx, end_idx; /* visible menu-items */
-  int items_first_column, items_per_page, spacing;
+  int items_first_column, items_per_page, real_items_per_column, spacing;
 
   data = buffer_command (script, line);
   /* e.g.:
@@ -120,7 +120,7 @@ char *do_menu (FILE *script, char *line)
     max_width = max (max_width, strlen (descriptions[i]));
 
   /* compute the number of columns */
-  columns = 80 / (max_width + 1); /* maximum number of columns possible */
+  columns = COLS / (max_width + 2); /* maximum number of columns possible */
   while (columns > 1 && num_items / columns <= 3)
     /* it doesn't make sense to have i.e. 4 cols each having just one item! */
     columns--;
@@ -145,6 +145,11 @@ char *do_menu (FILE *script, char *line)
   items_per_page = min (num_items, columns * 
 			min (LINES - 2, items_first_column));
 
+  /* find # of visible items in column */
+  real_items_per_column = items_per_page / columns;
+  if (items_per_page % columns != 0)
+    real_items_per_column++;
+
   /* the "viewport" (visible menu-items when scrolling)  */
   start_idx = 0;
   end_idx = items_per_page - 1;
@@ -160,8 +165,8 @@ char *do_menu (FILE *script, char *line)
       for (i = 0; i < columns; i++)
 	{
 	  /* write 1 column */
-	  for (j = 0; j < items_first_column &&
-		 (idx = i * items_first_column + j + start_idx)
+	  for (j = 0; j < real_items_per_column &&
+		 (idx = i * real_items_per_column + j + start_idx)
 		 <= end_idx; 
 	       j++)
 	    {

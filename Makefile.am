@@ -2,9 +2,9 @@
 
 AUTOMAKE_OPTIONS = 1.7.2 dist-bzip2
 
-SUBDIRS= m4  po lessons tools doc intl
+SUBDIRS= m4  m4  po lessons tools doc intl
 
-EXTRA_DIST= config.rpath mkinstalldirs  config.rpath  typefortune gtypist.1 typefortune.1 \
+EXTRA_DIST= config.rpath mkinstalldirs  config.rpath mkinstalldirs  config.rpath  typefortune gtypist.1 typefortune.1 \
 config.rpath configur.bat version.sh configur.bat.in autogen.sh \
 INSTALL.in TODO 
 

@@ -9,4 +9,4 @@
 @echo Creating Makefile
 @echo # Makefile > Makefile
 @echo gtypist.exe: Makefile gtypist.c >> Makefile
-@echo 	gcc -I. -static -O -DNCURSES -o gtypist cursmenu.c error.c getopt.c getopt1.c gtypist.c script.c -lpdcurses -lpanel >> Makefile
+@echo 	gcc -I. -static -O -DNCURSES -o gtypist gtypist.c getopt.c getopt1.c -lpdcurses -lpanel >> Makefile

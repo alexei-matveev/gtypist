@@ -57,5 +57,5 @@ AM_PATH_LISPDIR
 
 AC_SUBST(GEN_MAN)
 
-AC_OUTPUT(lessons/Makefile tools/Makefile doc/Makefile Makefile) 
+AC_OUTPUT(lessons/Makefile tools/Makefile doc/Makefile Makefile intl/Makefile po/Makefile.in m4/Makefile ) 
 

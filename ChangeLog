@@ -1,3 +1,11 @@
+2003-06-08  Felix Natter  <fnatter@gmx.net>
+
+	* cursmenu.c (do_menu): fix a bug when scrolling with many columns
+	and items (new variable `real_items_per_column' replaces
+	`items_first_column')
+	* compute `columns' with a spacing of 2 so that we're sure that
+	menu-item descriptions don't clash
+
 2003-05-02 Michael Opdenacker <michaelo@gnu.org>
 
 	* po/zh_TW: New Traditional Chinese translation
