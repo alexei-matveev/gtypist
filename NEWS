@@ -4,6 +4,7 @@
 	See the `ChangeLog' (top-level and in some subdirectories) and
 	`THANKS' files for details about changes and contributors.
 
+	- New Traditional Chinese interface from OLS3 <ols3@www.tnc.edu.tw>
 	- New Dutch interface from J.M. Cogels <jcogels@chello.nl>
 	- Now ignores trailing spaces in lesson file lines which
 	  were invisible in the interface.

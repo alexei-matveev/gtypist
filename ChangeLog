@@ -1,16 +1,17 @@
+2003-05-02 Michael Opdenacker <michaelo@gnu.org>
+
+	* po/zh_TW: New Traditional Chinese translation
+	from OLS3 <ols3@www.tnc.edu.tw>\ 
 
 2003-04-13	Hynek Hanke	<hanke@volny.cz>
 
 	* lessons/cs.typ: use M instead of K for menus
-
 	* po/cs.po: new messages translated
-
 	* doc/gtypist.cs.texi: updated
 
 2003-04-06  Felix Natter  <fnatter@gmx.net>
 
 	* configur.bat: include the new modules
-
 	* tools/typcombine: adapt to M:
 
 2003-03-31  Felix Natter  <fnatter@gmx.net>
