@@ -5,7 +5,7 @@
 @echo /* config.h */ > config.h
 @echo #undef ENABLE_NLS >>config.h
 @echo #define PACKAGE "gtypist" >>config.h
-@echo #define VERSION "2.3.2" >>config.h
+@echo #define VERSION "2.3.3" >>config.h
 @echo Creating Makefile
 @echo # Makefile > Makefile
 @echo gtypist.exe: Makefile gtypist.c >> Makefile

@@ -147,7 +147,7 @@ static char	*cl_start_label = NULL;		/* initial lesson start point */
 static bool	cl_colour = FALSE;		/* set if -c given */
 static int	cl_fgcolour = 0;		/* fg colour */
 static int	cl_bgcolour = 0;		/* bg colour */
-static bool	cl_nowpmode = TRUE;		/* don't do wp-like stuff */
+static bool	cl_wpmode = TRUE;		/* do wp-like stuff */
 
 /* a few global variables */
 static char	*argv0 = NULL;
@@ -798,7 +798,7 @@ do_drill( FILE *script, char *line ) {
 	
 	/* check that the character was correct */
 	if ( c == *p
-	     || ( ! cl_nowpmode && c == ASCII_SPACE
+	     || ( cl_wpmode && c == ASCII_SPACE
 		  && *p == ASCII_NL ))
 	  ADDCH( c );
 	else 
@@ -821,7 +821,7 @@ do_drill( FILE *script, char *line ) {
 	  }
 
 	/* perform any other word processor like adjustments */
-	if ( ! cl_nowpmode ) 
+	if ( cl_wpmode ) 
 	  {
 	    if ( c == ASCII_SPACE ) 
 	      {
@@ -961,7 +961,7 @@ do_speedtest( FILE *script, char *line ) {
       
       /* check that the character was correct */
       if ( c == *p
-	   || ( ! cl_nowpmode && c == ASCII_SPACE
+	   || ( cl_wpmode && c == ASCII_SPACE
 		&& *p == ASCII_NL ))
 	ADDCH( c );
       else 
@@ -982,7 +982,7 @@ do_speedtest( FILE *script, char *line ) {
 	}
       
       /* perform any other word processor like adjustments */
-      if ( ! cl_nowpmode ) 
+      if ( cl_wpmode ) 
 	{
 	  if ( c == ASCII_SPACE ) 
 	    {
@@ -1313,14 +1313,14 @@ void print_help()
     "-h",
     "-v" };
   char *lop[]= 
-  { "--drill_tries=N",
+  { "--drill-tries=N",
     "--notimer",
-    "--term_cursor",
-    "--curs_flash=P",
+    "--term-cursor",
+    "--curs-flash=P",
     "--colours=F,B",
     "--silent",
     "--quiet",
-    "--start_label=L",
+    "--start-label=L",
     "--wpmode",
     "--help",
     "--version" };
@@ -1374,110 +1374,53 @@ parse_cmdline( int argc, char **argv ) {
   int	c;				/* option character */
   int	option_index;			/* option index */
   static struct option long_options[] = {	/* options table */
-    { "drill_tries",	1, 0, 0 },
-    { "notimer",		0, 0, 0 },
-    { "term_cursor",	0, 0, 0 },
-    { "curs_flash",		1, 0, 0 },
-    { "colours",		1, 0, 0 },
-    { "colors",		1, 0, 0 },
-    { "silent",		0, 0, 0 },
-    { "quiet",		0, 0, 0 },
-    { "start_label",	1, 0, 0 },
-    { "wpmode",		0, 0, 0 },
-    { "help",		0, 0, 0 },
-    { "version",		0, 0, 0 },
+    { "drill-tries",	required_argument, 0, 'd' },
+    { "notimer",	no_argument, 0, 'n' },
+    { "term-cursor",	no_argument, 0, 't' },
+    { "curs-flash",	required_argument, 0, 'f' },
+    { "colours",	required_argument, 0, 'c' },
+    { "colors",		required_argument, 0, 'c' },
+    { "silent",		no_argument, 0, 's' },
+    { "quiet",		no_argument, 0, 'q' },
+    { "start-label",	required_argument, 0, 'l' },
+    { "wpmode",		no_argument, 0, 'w' },
+    { "help",		no_argument, 0, 'h' },
+    { "version",	no_argument, 0, 'v' },
     { 0, 0, 0, 0 }};
 
   /* process every option */
-  while ( (c=getopt_long( argc, argv, "d:ntf:sql:wc:hv",
+  while ( (c=getopt_long( argc, argv, "d:ntf:c:sql:whv",
 			  long_options, &option_index )) != -1 ) 
     {
-      
-      /* check for -d or --drill_tries argument */
-      if ( c == 'd'
-	   || (c == 0 && !strcmp( long_options[option_index].name,
-				  "drill_tries" ))) 
+      switch (c)
 	{
+	case 'd':
 	  if ( sscanf( optarg, "%d", &cl_drill_tries ) != 1 
 	       || cl_drill_tries < 1
 	       || cl_drill_tries > 1000 ) 
 	    {
-	      fprintf( stderr, _("%s: invalid drill_tries value\n"),
+	      fprintf( stderr, _("%s: invalid drill-tries value\n"),
 		       argv0 );
 	      exit( 1 );
 	    }
-	}
-      
-      /* check for -t or --term_cursor argument */
-      else if ( c == 't'
-		|| (c == 0 && !strcmp( long_options[option_index].name,
-				       "term_cursor" )))
-	{
-	  cl_term_cursor = TRUE;
-	}
-      
-      /* check for -n or --notimer argument */
-      else if ( c == 'n'
-		|| (c == 0 && !strcmp( long_options[option_index].name,
-				       "notimer" )))
-	{
+	  break;
+	case 'n':
 	  cl_notimer = TRUE;
-	}
-      
-      /* check for -f or --curs_flash argument */
-      else if ( c == 'f'
-		|| (c == 0 && !strcmp( long_options[option_index].name,
-				       "curs_flash" )))
-	{
+	  break;
+	case 't':
+	  cl_term_cursor = TRUE;
+	  break;
+	case 'f':
 	  if ( sscanf( optarg, "%d", &cl_curs_flash ) != 1
 	       || cl_curs_flash < 0
 	       || cl_curs_flash > 512 ) 
 	    {
-	      fprintf( stderr, _("%s: invalid curs_flash value\n"),
+	      fprintf( stderr, _("%s: invalid curs-flash value\n"),
 		       argv0 );
 	      exit( 1 );
 	    }
-	}
-      
-      /* check for -s/q or --silent/quiet argument */
-      else if ( c == 's' || c == 'q'
-		|| (c == 0 && !strcmp( long_options[option_index].name,
-				       "silent" ))
-		|| (c == 0 && !strcmp( long_options[option_index].name,
-				       "quiet" )))
-	{
-	  cl_silent = TRUE;
-	}
-      
-      /* check for -l or --start_label argument */
-      else if ( c == 'l'
-		|| (c == 0 && !strcmp( long_options[option_index].name,
-				       "start_label" )))
-	{
-	  cl_start_label = (char*)malloc( strlen( optarg ) + 1 );
-	  if ( cl_start_label == NULL ) 
-	    {
-	      fprintf( stderr, _("%s: internal error: malloc\n"),argv0 );
-	      exit( 1 );
-	    }
-	  strcpy( cl_start_label, optarg );
-	}
-      
-      /* check for -w or --wpmode argument */
-      else if ( c == 'w'
-		|| (c == 0 && !strcmp( long_options[option_index].name,
-				       "wpmode" )))
-	{
-	  cl_nowpmode = FALSE;
-	}
-      
-      /* check for -c or --colo[u]rs argument */
-      else if ( c == 'c'
-		|| (c == 0 && !strcmp( long_options[option_index].name,
-				       "colours" ))
-		|| (c == 0 && !strcmp( long_options[option_index].name,
-				       "colors" )))
-	{
+	  break;
+	case 'c':
 	  if ( sscanf( optarg, "%d,%d",
 		       &cl_fgcolour, &cl_bgcolour ) != 2 ||
 	       cl_fgcolour < 0 || cl_fgcolour >= NUM_COLOURS ||
@@ -1487,43 +1430,39 @@ parse_cmdline( int argc, char **argv ) {
 	      exit( 1 );
 	    }
 	  cl_colour = TRUE;
-	}
-      
-      /* check for -h or --help argument */
-      else if ( c == 'h'
-		|| (c == 0 && !strcmp( long_options[option_index].name,
-				       "help" )))
-	{
+	  break;
+	case 's':
+	case 'q':
+	  cl_silent = TRUE;
+	  break;
+	case 'l':
+	  cl_start_label = (char*)malloc( strlen( optarg ) + 1 );
+	  if ( cl_start_label == NULL ) 
+	    {
+	      fprintf( stderr, _("%s: internal error: malloc\n"),argv0 );
+	      exit( 1 );
+	    }
+	  strcpy( cl_start_label, optarg );
+	  break;
+	case 'w':
+	  cl_wpmode = TRUE;
+	  break;
+	case 'h':
 	  print_help();
 	  exit( 0 );
-	}
-      
-      /* check for -v or --version argument */
-      else if ( c == 'v'
-		|| (c == 0 && !strcmp( long_options[option_index].name,
-				       "version" )))
-	{
+	  break;
+	case 'v':
 	  printf( "%s %s\n\n", PACKAGE,VERSION );
 	  printf( "%s\n\n", COPYRIGHT );
 	  printf( "%s\n", _("Written by Simon Baldwin"));
 	  exit( 0 );
-	}
-      
-      /* check for illegal option */
-      else if ( c == '?' ) 
-	{
+	  break;
+	case '?':
+	default:
 	  fprintf( stderr,
 		   _("Try '%s --help' for more information.\n"), argv0 );
 	  exit( 1 );
 	}
-      
-      /* nothing else left to do */
-      else 
-	{
-	  fprintf( stderr, _("%s: getopt returned unknown '%c'\n"), argv0, c );
-	  exit( 1 );
-	}
-      
     }
   if ( argc - optind > 1 ) 
     {

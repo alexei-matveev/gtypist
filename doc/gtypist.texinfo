@@ -64,6 +64,9 @@ You can obtain GNU Typist from a friend or from Internet:
 @item Developers' home page (CVS repository, tasks, support...)
 @url{http://savannah.gnu.org/projects/gtypist/}
 
+@item Structio-page with binaries and contributed lessons
+@url{http://structio.sourceforge.net/gtypist/}
+
 @end table
 
 @node Copying, Introduction, Distribution, Top
@@ -518,7 +521,7 @@ The supported options are given below (note that the long form is
 supported only in GNU/Linux):
 
 @table @code
-@item -d,--drill_tries
+@item -d,--drill-tries
 Specifies the maximum number of drill tries permitted. When running
 through an ordinary typing drill, gtypist will not proceed past the drill
 until it is completed without errors, or until the number of tries
@@ -532,13 +535,13 @@ only does this for speed tests. To make gtypist behave in a manner that
 matches the lessons, that is, to sup WPM reports on drills, use
 -n, --notimer.
 
-@item -t, --term_cursor
+@item -t, --term-cursor
 gtypist creates its own flashing block cursor on the screen, to help
 distinguish between the cursor and reverse video error indications.
 Setting -t or --term_cursor suppresses this, and forces the program to
 use the terminal's cursor instead.
 
-@item -f, --curs_flash
+@item -f, --curs-flash
 The curs_flash value sets the block cursor flash period in tenths of a
 second. A value of 0 indicates no cursor flashing. The default is
 10, and the maximum is 512. This option is ignored if -t or
@@ -570,7 +573,7 @@ the end of a line as a signal to move to the start of the next paragraph
 if applicable. It will compress multiple spaces into a single
 space. And it will skip over hyphens found at the end of a line.
 
-@item -l, --start_label
+@item -l, --start-label
 Specifies the label in the script_file at which gtypist begins executing
 (see script files and commands below for information on labels). If
 start_label is not given, gtypist begins execution at the first line of
@@ -637,9 +640,10 @@ screen, and remains in place until the next @code{B} command. This command may
 not be continued; it is a single line command.
 
 @item *
-This indicates a label in the file. The label may be the target of a @code{G},
-@code{Y}, or @code{N} command. Labels may contain any character, including space,
-and are a single line command. Labels must be unique within lesson files.
+This indicates a label in the file. The label may be the target of a
+@code{G}, @code{Y}, or @code{N} command. Labels may contain any
+character, including space, and are a single line command. Labels must
+be unique within lesson files. Whitespace at the end of labels is ignored.
 
 @item T
 This presents a tutorial, and is a multi-line command, up to the

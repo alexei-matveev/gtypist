@@ -56,6 +56,9 @@ _On-line manual (updates between program releases)_
 _Developers' home page (CVS repository, tasks, support...)_
      <http://savannah.gnu.org/projects/gtypist/>
 
+_Structio-page with binaries and contributed lessons_
+     <http://structio.sourceforge.net/gtypist/>
+
 
 File: gtypist.info,  Node: Copying,  Next: Introduction,  Prev: Distribution,  Up: Top
 
@@ -481,7 +484,7 @@ Invoking
    The supported options are given below (note that the long form is
 supported only in GNU/Linux):
 
-`-d,--drill_tries'
+`-d,--drill-tries'
      Specifies the maximum number of drill tries permitted. When running
      through an ordinary typing drill, gtypist will not proceed past
      the drill until it is completed without errors, or until the
@@ -496,13 +499,13 @@ supported only in GNU/Linux):
      behave in a manner that matches the lessons, that is, to sup WPM
      reports on drills, use -n, -notimer.
 
-`-t, --term_cursor'
+`-t, --term-cursor'
      gtypist creates its own flashing block cursor on the screen, to
      help distinguish between the cursor and reverse video error
      indications.  Setting -t or -term_cursor suppresses this, and
      forces the program to use the terminal's cursor instead.
 
-`-f, --curs_flash'
+`-f, --curs-flash'
      The curs_flash value sets the block cursor flash period in tenths
      of a second. A value of 0 indicates no cursor flashing. The
      default is 10, and the maximum is 512. This option is ignored if
@@ -535,7 +538,7 @@ supported only in GNU/Linux):
      multiple spaces into a single space. And it will skip over hyphens
      found at the end of a line.
 
-`-l, --start_label'
+`-l, --start-label'
      Specifies the label in the script_file at which gtypist begins
      executing (see script files and commands below for information on
      labels). If start_label is not given, gtypist begins execution at
@@ -594,7 +597,8 @@ that they begin with '#'; other lines must have the above format.
      This indicates a label in the file. The label may be the target of
      a `G', `Y', or `N' command. Labels may contain any character,
      including space, and are a single line command. Labels must be
-     unique within lesson files.
+     unique within lesson files. Whitespace at the end of labels is
+     ignored.
 
 `T'
      This presents a tutorial, and is a multi-line command, up to the
@@ -931,16 +935,16 @@ History of GNU Typist
 Tag Table:
 Node: Top215
 Node: Distribution889
-Node: Copying1675
-Node: Introduction20830
-Node: Invoking23086
-Node: Script files and commands26775
-Node: Supplied lessons32268
-Node: How to contribute new lessons33177
-Node: Emacs mode for editing gtypist-lessons33568
-Node: Technical Information35901
-Node: Environment Variables36132
-Node: Errors and omissions38237
-Node: History38954
+Node: Copying1778
+Node: Introduction20933
+Node: Invoking23189
+Node: Script files and commands26878
+Node: Supplied lessons32420
+Node: How to contribute new lessons33329
+Node: Emacs mode for editing gtypist-lessons33720
+Node: Technical Information36053
+Node: Environment Variables36284
+Node: Errors and omissions38389
+Node: History39106
 
 End Tag Table

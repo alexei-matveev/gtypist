@@ -1,5 +1,13 @@
 2001-07-21  Felix Natter  <fnatter@gmx.net>
 
+	* gtypist.c (parse_cmdline): simplify command-line parsing by using
+	the fourth field of struct option + use '-' to separate words
+	in long options
+	* gtypist.c: rename cl_nowpmode to cl_wpmode (and change code
+	accordingly) because it's now disabled by default
+
+2001-07-21  Felix Natter  <fnatter@gmx.net>
+
 	* gtypist.c (SCR_COMMAND): do not accept lowercase command_char's
 
 2001-07-20  Felix Natter  <fnatter@gmx.net>

@@ -58,30 +58,29 @@ To instruct gtypist to look for lesson `bar.typ' in a non standard directory", 3
 To run the lesson in the file `test.typ' of directory `temp', starting at \
 label `TEST1', using the terminal's cursor, and run silently", 36},
   {"Report bugs to bug-gtypist@gnu.org", 37},
-  {"%s: invalid drill_tries value\n", 38},
-  {"%s: invalid curs_flash value\n", 39},
-  {"%s: internal error: malloc\n", 40},
-  {"%s: invalid colours value\n", 41},
+  {"%s: invalid drill-tries value\n", 38},
+  {"%s: invalid curs-flash value\n", 39},
+  {"%s: invalid colours value\n", 40},
+  {"%s: internal error: malloc\n", 41},
   {"Written by Simon Baldwin", 42},
   {"Try '%s --help' for more information.\n", 43},
-  {"%s: getopt returned unknown '%c'\n", 44},
   {"\
 Copyright (C) 1998,2000  Simon Baldwin.\n\
 This program comes with ABSOLUTELY NO WARRANTY; for details\n\
 please see the file 'COPYING' supplied with the source code.\n\
 This is free software, and you are welcome to redistribute it\n\
 under certain conditions; again, see 'COPYING' for details.\n\
-This program is released under the GNU General Public License.", 45},
-  {" Tutorial ", 46},
-  {"  Query   ", 47},
-  {"  Drill   ", 48},
-  {"Speed test", 49},
-  {" Press Return to continue... ", 50},
-  {" Please try again, %d of %d; press Return to continue... ", 51},
-  {" Raw speed      = %6.2f wpm ", 52},
-  {" Adjusted speed = %6.2f wpm ", 53},
-  {"            with %3.0f%% errors ", 54},
-  {"can't find or open file", 55},
+This program is released under the GNU General Public License.", 44},
+  {" Tutorial ", 45},
+  {"  Query   ", 46},
+  {"  Drill   ", 47},
+  {"Speed test", 48},
+  {" Press Return to continue... ", 49},
+  {" Please try again, %d of %d; press Return to continue... ", 50},
+  {" Raw speed      = %6.2f wpm ", 51},
+  {" Adjusted speed = %6.2f wpm ", 52},
+  {"            with %3.0f%% errors ", 53},
+  {"can't find or open file", 54},
 };
 
-int _msg_tbl_length = 55;
+int _msg_tbl_length = 54;
