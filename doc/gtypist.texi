@@ -1,6 +1,7 @@
 \input texinfo @c -*-mode:texinfo; compile-command: "makeinfo gtypist.texi"-*-
 @setfilename gtypist.info
 @settitle GNU Typist Manual
+@include version.texi
 
 @dircategory Education
 @direntry Education
@@ -8,8 +9,9 @@
 @end direntry
 
 @titlepage
-@sp 6
-@center @titlefont{GNU Typist Manual}
+@title GNU Typist Manual
+@subtitle Version @value{VERSION}
+@author Latest update: @value{UPDATED}
 @end titlepage
 @page
 
@@ -69,6 +71,8 @@ You can obtain GNU Typist from a friend or from the Internet:
 @item GNU Typist download page (sources, binaries and tutorial updates)
 @url{http://gtypist.free.fr/}
 
+@item Screenshots
+@url{http://gtypist.free.fr/screenshots/}
 @end table
 
 @node Copying, Introduction, Distribution, Top
