@@ -1,4 +1,4 @@
-This is gtypist.info, produced by makeinfo version 4.0 from
+Dies ist gtypist.info, hergestellt von Makeinfo Version 4.0 aus
 gtypist.texinfo.
 
 INFO-DIR-SECTION Education
@@ -428,21 +428,21 @@ Introduction
 
    GNU Typist is an interactive typing tutor program. It uses an input
 file to create a series of typing tutorials, drills, and timed speed
-tests. It is intended to be used in a raw terminals without graphics
---it has been compiled and used in GNU and Unix (GNU/Linux, Aix,
-Solaris) and also in DOS/Windows (DOS 6.22, Windows 98, Windows NT).
+tests. It is intended to be used on raw terminals without graphics --it
+has been compiled and used in GNU/Linux and Unix (Aix, Solaris) and
+also in DOS/Windows (DOS 6.22, Windows 98, Windows NT).
 
-   The program read lessons written in a very easy scripting language.
+   The program reads lessons written in a very easy scripting language.
 It is distributed with several complete and good lessons, you can use
 them, modify them or create new lessons (*note Script files and
 commands::).
 
-   There are two types of drill - one-time, and ordinary. In an ordinary
+   There are two types of drills - one-time and ordinary. In an ordinary
 drill, gtypist displays text on the screen, and waits for the user to
 correctly type the exact same text, underneath. It indicates typing
 errors, and if at the end of the exercise there were errors, it will
 re-run the drill, up to a maximum number of tries. In a one-time drill,
-the action is the same, except that the program will not repeat the
+the procedure is the same, except that the program will not repeat the
 drill if it is not typed correctly. Backspace and delete are not
 permitted in drills.
 
@@ -540,6 +540,9 @@ supported only in GNU/Linux):
      executing (see script files and commands below for information on
      labels). If start_label is not given, gtypist begins execution at
      the first line of the file.
+
+You also have to set the environment variable `LANG' if you want to run
+gtypist in your native language. *Note Environment Variables::.
 
    *Examples:*
 
@@ -838,7 +841,7 @@ Environment Variables
      environment variable LANGUAGE to the same value.
 
      If you want to translate messages to a different language (or if
-     you want to correct one message), please communicate it to
+     you want to correct a message), please communicate it to
      <bug-gtypist@gnu.org>.
 
 `GTYPIST_PATH'
@@ -925,18 +928,18 @@ History of GNU Typist
 
 
 Tag Table:
-Node: Top211
-Node: Distribution885
-Node: Copying1671
-Node: Introduction20826
-Node: Invoking23085
-Node: Script files and commands26637
-Node: Supplied lessons32130
-Node: How to contribute new lessons33039
-Node: Emacs mode for editing gtypist-lessons33430
-Node: Technical Information35711
-Node: Environment Variables35942
-Node: Errors and omissions38049
-Node: History38766
+Node: Top215
+Node: Distribution889
+Node: Copying1675
+Node: Introduction20830
+Node: Invoking23086
+Node: Script files and commands26775
+Node: Supplied lessons32268
+Node: How to contribute new lessons33177
+Node: Emacs mode for editing gtypist-lessons33568
+Node: Technical Information35849
+Node: Environment Variables36080
+Node: Errors and omissions38185
+Node: History38902
 
 End Tag Table
