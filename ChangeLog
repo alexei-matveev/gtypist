@@ -9,6 +9,7 @@
           are installed, on GNU/Solaris for example.
 	* QUESTIONS: renaming of the StandardQuestions file. Now
 	  distributed in the source package.
+	* TODO: updated. All developers should write their ideas in this file.
 
 2003-08-28  Rob Leslie  <rob@mars.org>
 

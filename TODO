@@ -111,9 +111,8 @@ SHORT TERM
    
 MEDIUM TERM
 
- * Update Native Language Support according to the messages
-   in the new interface. Support other languages 
-   (better do that after the new interface is available)
+ * Add configuration file support. Should be every useful,
+   in particular for teachers! 
 
  * Improve the documentation of course files
 

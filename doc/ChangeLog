@@ -1,7 +1,8 @@
-2003-09-24  Michael Opdenacker <michaelo@gnu.org>
+2003-09-28  Michael Opdenacker <michaelo@gnu.org>
 
 	* gtypist*.texi: added a table of contents at the beginning
 	* gtypist.texi: mentioned the lessons in Russian.
+	* Makefile.am: now ships the html manuals in the source package.
 
 2003-04-06  Felix Natter  <fnatter@gmx.net>
 
