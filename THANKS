@@ -1,0 +1,40 @@
+GNU Typist THANKS file
+
+GNU Typist has originally been  written by Simon Baldwin. More details
+can be fond  in the section "History of GNU Typist"  in the GNU Typist
+Manual.   This manual  can be  found with  info after  the  program is
+installed, or before installing at directory `doc'.
+ 
+Many  people  have further  contributed  to  GNU  Typist by  reporting
+problems,  suggesting  various   improvements,  or  submitting  actual
+code. Here  is a list  of these people.  Help us keep it  complete and
+exempt of errors.
+
+* Igor Tamara <ikks@bigfoot.com> and Vladimir Tamara <vtamara@gnu.org>
+for creating a lesson  in spanish; configuration/compilation a la GNU;
+adding native  language support; porting  to DOS/DJGPP, adding  NLS in
+spanish and enhancing documentation.
+
+* Melissa Giraldo <melagira@yahoo.com> for her help with the lesson in
+  spanish.
+
+* Kester  Habermann  <kester@linuxtag.de>   for  helping  with  Native
+  Language Support in German
+
+* <Udo.Eberle@keiper.com> for helping with the NLS in German.
+
+* Ben  Armstrong   <synrg@sanctuary.nslug.ns.ca>  for  mantaining  the
+  Debian version and reporting bugs
+
+* stephan.hegel@gmx.de  for reporting  a bug  in the  configuration of
+  typist 2.3.
+
+* Caolan   McNamara  <caolan@csn.ul.ie>  for   sending  a   patch  for
+configure.in in typist 2.3.1 to allow  the use of curses if ncurses is
+not available.
+
+* Jhair  Tocancipa <j_tocanc@informatik.uni-kl.de> for  reporting bugs
+  in the documentation.
+
+* Ricardo Cadavid <rcadavid@mv.uni-kl.de> for reporting bugs in the
+  documentation.

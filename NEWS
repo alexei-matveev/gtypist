@@ -1,0 +1,76 @@
+Version 2.3.2 - Nov/2000
+        - Now this program is part of GNU!  We celebrate with a new
+          name: "GNU Typist" (or gtypist) and a new release
+	- New documentation in Texinfo format, the man page now is
+	  generated automatically with the program help2man
+	- Now configure  supports curses  if ncurses is  not available
+          (thanks to Caolan McNamara <caolan@csn.ul.ie>)
+
+Version 2.3.1 - Sep/2000
+	- Fixed bug with --datadir reported by	stephan.hegel@gmx.de 
+          Installation of data by default now in prefix/share/typist
+	- Now the keys F1,F2,...,F12 can be "emulated" with
+	  1,2,3,4,5,6,7,8,9,0,A,S and also C-q, C-w, C-r, C-t, C-z, C-u, 
+	  C-i, C-o, C-p, C-a, C-s
+	- Fixed bug in word processor mode reported by Ben Armstrong,
+      	  <synrg@sanctuary.nslug.ns.ca> now  by  default  this mode  is
+          off, it  can be  activated with the  option --wpmode  or -w.
+          (The option --nowpmode doesn't exist anymore)
+	- Better documentation for installing typist with Dvorak keyboards
+	  and under DOS without Long File Name Support (tested under DOS 6.22)
+
+Version 2.3 - Ago/2000
+	- New lesson in spanish (lessons/esp.typ)
+	- NLS (Native Language Support) added (via GNU gettext).
+	- Avalaible NLS for Spanish (po/es.po) and German (po/de.po)
+	- Ported to Windows/DOS with the DJGPP compiler and PDCURSES library
+	- New configuration scheme, using automake and autoconf
+
+	
+Version 2.2b:
+	- Fixed a bug in exercises, where the typing timer was not started
+	  when the exercise begins with space characters and word processing
+	  behaviour is enabled.
+	- Moved the binary to typist_bin, and created a typist shell script
+	  wrapper to try to cope with TYPIST_PATH not set, and the variations
+	  in the location of the terminfo database between RedHat 5.2 and
+	  other platforms.
+	- Again, why not look at 'Jtypist'.
+
+Version 2.2a:
+	- Added word processing like behaviour to the exercises, so that
+	  multiple spaces combine into one, return moves to the next
+	  paragraph, space is accepted at the end of a line, and hyphens
+	  at a line's end are skipped.
+	- Fixed drills so that delete does not actually insert an error,
+	  but is now just ignored.
+	- Corrected backspace key detection on RedHat Linux 5.2.
+  
+Version 2.2:
+	- Removed the C++ version of the program.  Apart from my elderly
+	  slackware system, this would not really compile anywhere else,
+	  and was causing more problems than it was worth.
+	- Added the "one-time" 'O' drill command.
+	- Added the function key to label binding 'K' command, to allow
+	  better menus to be built.
+	- Tidied the C program for better error handling.  It's still a
+	  bit messy, though.
+	- Optimised T/D/O/P commands to avoid "Press return to continue"
+	  where they are directly followed by a Q command.
+	- Updated typv1tov2 and typcombine to use these new features,
+	  and output improved menus that use the function keys for direct
+	  access to lessons, and repeat-this-exercise queries.
+	- The typist binary is now statically linked for Linux, to try
+	  to enhance its portability as a binary.  The build system is
+	  now RedHat 5.2, and the program is now an incredible 700kB
+	  as a static binary.
+	- All of these enhancements got finished up after I had completed
+	  the Java version, 'Jtypist'.  If you can, I'd heartily recommend
+	  that you use the Java one instead of this package.  It has a
+	  far better interface, and lots of extra features that Typist 2.2
+	  doesn't have.  You should be able to obtain a copy of it from
+	  the same place that you picked up this package from.
+
+Version 2.1a:
+	- Whole package GPLified.  Otherwise, no changes.  None.
+	  Nothing at all.  Really.

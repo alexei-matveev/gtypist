@@ -1,0 +1,285 @@
+# ESPAÑOL
+# Vladimir Támara Patiño <vtamara@gnu.org>, 2000.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: typist 2.3.1\n"
+"POT-Creation-Date: 2000-12-08 14:15+0100\n"
+"PO-Revision-Date: 2000-12-08 14:17+01:00\n"
+"Last-Translator: Vladimir Támara Patiño <vtamara@gnu.org>\n"
+"Language-Team:\n"
+"MIME-Version: 1.0\n"
+"Content-Type:\n"
+"Content-Transfer-Encoding:\n"
+
+#. print out the error message and stop
+#: gtypist.c:268
+msgid "line"
+msgstr "linea"
+
+#: gtypist.c:301
+msgid "data shortage"
+msgstr "escaces de datos"
+
+#: gtypist.c:303
+msgid "missing ':'"
+msgstr "falta ':'"
+
+#: gtypist.c:309
+msgid "line too long for screen"
+msgstr "línea demasiado larga para la pantalla"
+
+#: gtypist.c:364 gtypist.c:370 gtypist.c:665
+msgid "internal error: malloc"
+msgstr "error interno: malloc"
+
+#: gtypist.c:388
+msgid "label redefinition"
+msgstr "redefinición de etiqueta"
+
+#: gtypist.c:431
+#, c-format
+msgid "label '%s' not found"
+msgstr "etiqueta '%s' no encontrada"
+
+#: gtypist.c:437
+msgid "internal error: fseek"
+msgstr "error interno: fseek"
+
+#: gtypist.c:564
+#, c-format
+msgid "invalid key binding (%d:%s)"
+msgstr "asociación de teclas invalida (%d:%s)"
+
+#: gtypist.c:566
+msgid "invalid function key number"
+msgstr "número de tecla de función invalido"
+
+#: gtypist.c:603 gtypist.c:714 gtypist.c:895
+msgid "data exceeds screen length"
+msgstr "los datos excenden la longitud de la pantalla"
+
+#: gtypist.c:640
+msgid "instructions are limited to two lines"
+msgstr "las instrucciones están limitadas a dos líneas"
+
+#: gtypist.c:1210
+msgid "unknown command"
+msgstr "comando desconocido"
+
+#: gtypist.c:1309
+msgid ""
+"run drills N times on errors (default 3), valid   values are between 1 and "
+"1000"
+msgstr ""
+"ejecutar practicas N veces en caso de error (por  defecto 3) valores válidos "
+"entre 1 y 1000"
+
+#: gtypist.c:1310
+msgid "turn off WPM timer in drills"
+msgstr "deshabilitar contador PPM en prácticas"
+
+#: gtypist.c:1311
+msgid "use the terminal's hardware cursor"
+msgstr "usa el cursor de la terminal"
+
+#: gtypist.c:1312
+msgid ""
+"cursor flash period P*.1 sec (default 10), valid  values are between 0 and "
+"512, ignored if -t"
+msgstr ""
+"pone el periodo de parpadeo del cursor en P*.1 sec (por defecto 10), los "
+"valores válidos están entre 0 y 512"
+
+#: gtypist.c:1313
+msgid "set initial display colours where available"
+msgstr "de ser posible establece los colores iniciales de la pantalla"
+
+#: gtypist.c:1314
+msgid "don't beep on errors"
+msgstr "no producir sonidos en caso de error"
+
+#: gtypist.c:1315
+msgid "same as -s, --silent"
+msgstr "el mismo efecto de -s, --silent"
+
+#: gtypist.c:1316
+msgid "start the lesson at label 'L'"
+msgstr "comenzar la lección en la etiqueta 'L'"
+
+#: gtypist.c:1317
+msgid "try to mimic word processors"
+msgstr "intentar imitar procesadores de texto"
+
+#: gtypist.c:1318
+msgid "print this message"
+msgstr "imprimir este mensaje"
+
+#: gtypist.c:1319
+msgid "output version information and exit"
+msgstr "presentar información de la versión y salir"
+
+#: gtypist.c:1323
+msgid ""
+"`gtypist' is a typing tutor, with several lessons for different keyboards "
+"and    languages.  New lessons can be written by the user easily.\n"
+"\n"
+msgstr ""
+"`gtypist' es un tutor para aprender a teclear, con diversas lecciones para "
+"diferentes teclados e idiomas.  El usuario puede escribir nuevas lecciones "
+"facilmente\n"
+"\n"
+
+#: gtypist.c:1325
+msgid "Usage"
+msgstr "Utilización"
+
+#: gtypist.c:1325 gtypist.c:1326
+msgid "Options"
+msgstr "Opciones"
+
+#: gtypist.c:1325
+msgid "script_file"
+msgstr "archivo_script"
+
+#: gtypist.c:1333
+#, c-format
+msgid ""
+"\n"
+"If not supplied, script_file defaults to '%s/%s'.\n"
+msgstr ""
+"\n"
+"Si no se da, el archivo_script por defecto es '%s/%s'.\n"
+
+#: gtypist.c:1335
+msgid ""
+"The path $GTYPIST_PATH is searched for script files.\n"
+"\n"
+msgstr ""
+"Se buscarán archivos script en la vía $GTYPIST_PATH.\n"
+"\n"
+
+#: gtypist.c:1337
+msgid "Examples"
+msgstr "Ejemplos"
+
+#: gtypist.c:1339
+msgid "To run the default lesson in english `gtypist.typ'"
+msgstr "Para ejecutar la lección en inglés por omisión `gtypist.typ'"
+
+#: gtypist.c:1341
+msgid "To run the lesson in spanish"
+msgstr "Para ejecutar la lección en español"
+
+#: gtypist.c:1343
+msgid ""
+"To instruct gtypist to look for lesson `bar.typ' in a non standard directory"
+msgstr ""
+"Para indicarle a gtypist que busque la lección `bar.typ' en un directorio no "
+"estándar"
+
+#: gtypist.c:1345
+msgid ""
+"To run the lesson in the file `test.typ' of directory `temp', starting at "
+"label `TEST1', using the terminal's cursor, and run silently"
+msgstr ""
+"Para ejecutar la lección del archivo `test.typ' del directorio `temp', "
+"comenzando en la etiqueta `TEST1', usando el cursor de la terminal y en modo "
+"silencioso"
+
+#: gtypist.c:1346
+msgid "Report bugs to bug-gtypist@gnu.org"
+msgstr "Reporte fallas a bug-gtypist@gnu.org"
+
+#: gtypist.c:1386
+#, c-format
+msgid "%s: invalid drill_tries value\n"
+msgstr "%s: valor de drill_tries invalido\n"
+
+#: gtypist.c:1417
+#, c-format
+msgid "%s: invalid curs_flash value\n"
+msgstr "%s: valor de curs_flash invalido\n"
+
+#: gtypist.c:1441
+#, c-format
+msgid "%s: internal error: malloc\n"
+msgstr "%s: error interno: malloc\n"
+
+#: gtypist.c:1467
+#, c-format
+msgid "%s: invalid colours value\n"
+msgstr "%s: valor de color invalido\n"
+
+#: gtypist.c:1489
+msgid "Written by Simon Baldwin"
+msgstr "Escrito por Simon Baldwin"
+
+#: gtypist.c:1497 gtypist.c:1512
+#, c-format
+msgid "Try '%s --help' for more information.\n"
+msgstr "Intente con '%s --help' para obtener más información.\n"
+
+#: gtypist.c:1504
+#, c-format
+msgid "%s: getopt returned unknown '%c'\n"
+msgstr "%s: getopt retornó valor desconocido '%c'\n"
+
+#: gtypist.c:1551
+msgid ""
+"Copyright (C) 1998,2000  Simon Baldwin.\n"
+"This program comes with ABSOLUTELY NO WARRANTY; for details\n"
+"please see the file 'COPYING' supplied with the source code.\n"
+"This is free software, and you are welcome to redistribute it\n"
+"under certain conditions; again, see 'COPYING' for details.\n"
+"This program is released under the GNU General Public License."
+msgstr ""
+"Copyright (C) 1998,2000  Simon Baldwin.\n"
+"Este programa viene SIN GARANTIA ALGUNA; si desea ver detalles\n"
+"por favor lea el archivo 'COPYING' suministrado con el código fuente.\n"
+"Este es software libre, y usted está invitado a redistribuirlo\n"
+"bajo ciertas condiciones; nuevamente vea detalles en 'COPYING'.\n"
+"Este programa se ha liberado bajo la GNU General Public License."
+
+#: gtypist.c:1557
+msgid " Tutorial "
+msgstr " Tutorial "
+
+#: gtypist.c:1558
+msgid "  Query   "
+msgstr " Pregunta "
+
+#: gtypist.c:1559
+msgid "  Drill   "
+msgstr "  Rutina  "
+
+#: gtypist.c:1560
+msgid "Speed test"
+msgstr "Velocidad "
+
+#: gtypist.c:1561
+msgid " Press Return to continue... "
+msgstr " Presione Enter para continuar... "
+
+#: gtypist.c:1563
+#, c-format
+msgid " Please try again, %d of %d; press Return to continue... "
+msgstr " Intente de nuevo, %d de %d; presione Enter para continuar... "
+
+#: gtypist.c:1564
+#, c-format
+msgid " Raw speed      = %6.2f wpm "
+msgstr " Velocidad Neta = %6.2f wpm "
+
+#: gtypist.c:1565
+#, c-format
+msgid " Adjusted speed = %6.2f wpm "
+msgstr " Velocidad Real = %6.2f wpm "
+
+#: gtypist.c:1566
+msgid "            with %3.0f%% errors "
+msgstr "            con %3.0f%% errores "
+
+#: gtypist.c:1607
+msgid "can't find or open file"
+msgstr "no se pudo encontrar o abrir archivo"

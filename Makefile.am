@@ -1,0 +1,19 @@
+## Process this file with automake to produce Makefile.in
+
+SUBDIRS=intl po lessons tools doc
+
+EXTRA_DIST=gtypist.1 configur.bat
+
+bin_PROGRAMS = gtypist
+gtypist_SOURCES = gtypist.c getopt.h getopt.c getopt1.c
+gtypist_LDADD = @INTLLIBS@
+man_MANS = gtypist.1
+INCLUDES = -I./intl -DPACKAGE_DATA_DIR=\"$(pkgdatadir)\" 
+
+CPPFLAGS+=-Wall
+
+# GEN_MAN is a shell command that generates the man page
+GEN_MAN=@GEN_MAN@
+
+gtypist.1: gtypist.c gtypist
+	if (test ! -e gtypist.1) then $(GEN_MAN); fi

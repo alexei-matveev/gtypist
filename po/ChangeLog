@@ -1,0 +1,12 @@
+2000-12-05  Kester Habermann  <<kester@linuxtag.de>
+
+	* de.po: Revision of grammar and ortography
+
+2000-11-10  Vladimir Tamara  <vtamara@gnu.org>
+
+	* es.po, de.po: Added new strings shown with --help and --version
+
+2000-07-30  Vladimir Tamara  <vtamara@gnu.org>
+
+	* Support for spanish.  es.po
+

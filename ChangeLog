@@ -1,0 +1,58 @@
+2000-11-10  Vladimir Tamara  <vtamara@gnu.org>
+
+	* typist.c: Changed name to GNU Typist (gtypist)
+	* typist.c: Output of --help and --version changed, in order
+	  to support help2man (that generates automatically a man page).
+	  A new target in the Makefile can do it: typist.1
+	* typist.c: Source code fully GNU Coding Standards compliant.
+
+2000-10-23  Caolan McNamara <caolan@csn.ul.ie>
+	*  configure.in: it  accepts curses  library when  ncurses  is not
+	  available.
+	
+2000-09-14  Vladimir Tamara  <vtamara@gnu.org>
+
+	* typist.c: Now  word processor mode by default is  off, it can be
+	  activated  with  the  options   --wpmode  or  -w.   (The  option
+	  --nowpmode dissapears)
+
+2000-09-12  Vladimir Tamara  <vtamara@gnu.org>
+
+	* The data of typist by default now is installed at prefix/share/typist
+
+2000-09-09  Vladimir Tamara  <vtamara@gnu.org>
+
+	* Now the keys F1,F2,...,F12 can be "emulated" with
+	  1,2,3,4,5,6,7,8,9,0,A,S and also C-q, C-w, C-r, C-t, C-z, C-u, 
+	  C-i, C-o, C-p, C-a, C-s
+	* configure now stops if the ncurses library is not found
+
+2000-09-05  Vladimir Tamara  <vtamara@gnu.org>
+
+	*  Fixed bug in  wp mode.   (Before wp-emulation  mishandled lines
+	ending with '--').  Reported by Ben Armstrong 
+	<synrg@sanctuary.nslug.ns.ca>
+
+2000-08-30  Vladimir Tamara  <vtamara@gnu.org>
+
+	*  Changed  signal  SIGCLD  with  SIGCHLD (in  accordance  to  the
+	mantainer     of    the     Debian    package     Ben    Armstrong
+	<synrg@sanctuary.nslug.ns.ca> that works in Sparc)
+
+	* Instructions  to compile  typist in DOS  without Long  File Name
+	support (version 6.22 or lower)
+
+	*   Help  to   use   typist  with   Dvorak   keyboards  added   to
+	  INSTALL. Thanks to Ben Armstrong <synrg@sanctuary.nslug.ns.ca>
+
+
+2000-08-29  Vladimir Tamara  <vtamara@gnu.org>
+
+	* Fixed problem when configuring with --datadir 
+	(Thanks to stephan.hegel@gmx.de for the bug report)
+
+2000-08-18  Vladimir Tamara  <vtamara@gnu.org>
+
+	*   NLS   for   German   added,   thanks   to   Kester   Habermann
+	<kester@linuxtag.de>
+

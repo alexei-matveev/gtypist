@@ -1,0 +1,170 @@
+#!/usr/bin/awk -f
+#
+# Typist v2.2 - improved typing tutor program for UNIX systems
+# Copyright (C) 1998  Simon Baldwin (simonb@sco.com)
+#
+# This program is free software; you can redistribute it and/or
+# modify it under the terms of the GNU General Public License
+# as published by the Free Software Foundation; either version 2
+# of the License, or (at your option) any later version.
+#
+# This program is distributed in the hope that it will be useful,
+# but WITHOUT ANY WARRANTY; without even the implied warranty of
+# MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+# GNU General Public License for more details.
+#
+# You should have received a copy of the GNU General Public License
+# along with this program; if not, write to the Free Software
+# Foundation, Inc., 59 Temple Place - Suite 330, Boston, MA 02111-1307, USA.
+#
+#
+# awk script to combine several typ files into a single large one
+#
+BEGIN 	{
+	# some initializations
+	scount = 0
+	type = "I"
+	# use "-" here since that's what you get when you run
+	# awk against stdin, at least on Linux
+	cur_filename = "-"
+	cur_series = ""
+
+	# start as ever by going to the menu we'll try to build later
+	printf( "#" )
+	for ( i = 0; i < 78; i++ )
+		printf( "=" )
+	printf( "\n# Combined series file\n#" )
+	for ( i = 0; i < 78; i++ )
+		printf( "=" )
+	printf( "\n" )
+	printf( "G:__SERIESMENU\n" )
+	printf( "*:__NO_SERIESMENU\n" )
+}
+
+
+#
+# look for change of input file on each record
+#
+FILENAME != cur_filename	{
+
+	# wrap up the previous series if there is one
+	if ( cur_filename != "-" ) {
+		printf( "# End of file %s\n", cur_filename )
+		printf( "G:__SERIESMENU\n", cur_series )
+		printf( "#" )
+		for ( i = 0; i < 78; i++ )
+			printf( "=" )
+		printf( "\n" )
+	}
+
+	# find the new series name, and store it
+	cur_filename = FILENAME
+	cur_series = FILENAME
+	gsub( /\..*/, "", cur_series )
+
+	# we like the series names to be uppercase - I can't help
+	# but feel that there must be a better way to accomplish
+	# this, but I can't find it
+	split( "q,w,e,r,t,y,u,i,o,p,a,s,d,f,g,h,j,k,l,z,x,c,v,b,n,m", lc, /,/ )
+	split( "Q,W,E,R,T,Y,U,I,O,P,A,S,D,F,G,H,J,K,L,Z,X,C,V,B,N,M", uc, /,/ )
+	for ( i = 1; i <= 26; i++ )
+		gsub( lc[i], uc[i], cur_series )
+
+	# stash the series name
+	scount++
+	series[scount] = cur_series
+
+	# output the header for this series
+	printf( "#" )
+	for ( i = 0; i < 78; i++ )
+		printf( "=" )
+	printf( "\n" )
+	printf( "*:__S_%s_SERIES\n", cur_series )
+	printf( "# Start of file %s\n", cur_filename )
+}
+
+
+#
+# print out every line read in
+#
+{
+	print $0
+}
+
+
+#
+# end of file processing
+#
+END	{
+	# first finish up the last file's output if there was one
+	if ( cur_filename != "-" ) {
+		printf( "# End of file %s\n", cur_filename )
+		printf( "G:__SERIESMENU\n" )
+		printf( "#" )
+		for ( i = 0; i < 78; i++ )
+			printf( "=" )
+		printf( "\n" )
+	}
+
+	# now build a selection menu to get to each series
+	# (notice how this can't cope with more than 10 lesson series;
+	# this is because there are only 9 and I don't see more coming!)
+	if ( scount > 0 ) {
+		printf( "#" )
+		for ( i = 0; i < 78; i++ )
+			printf( "=" )
+		printf( "\n# Series menu\n#" )
+		for ( i = 0; i < 78; i++ )
+			printf( "=" )
+		printf( "\n" )
+		printf( "*:__SERIESMENU\n" )
+
+		# output a complete series of function key mappings
+		for ( i = 1; i <= scount; i++ )
+			printf( "K:%d:__S_%s_SERIES\n", i, series[i] )
+		for ( ; i <= 11; i++ )
+			printf( "K:%d:NULL\n", i )
+		printf( "K:12:__SERIESQEXIT\n" )
+		printf( "*:__SERIESMENU_DISP\n" )
+
+		# output the menu screen
+		banner = "Series selection menu"
+		printf( "B:" )
+		for ( i = 0; i < ( 66 - length( banner )) / 2; i++ )
+			printf( " " )
+		printf( "%s\n", banner )
+		printf( "T:The following %d lesson series ", scount )
+		if ( scount > 1 )
+			printf( "are" )
+		else
+			printf( "is" )
+		printf( " available:\n" );
+		printf( " :\n" )
+		for ( i = 1; i <= scount; i++ )
+			printf( " :        Fkey%2d - Series %s\n", \
+					i, series[i] )
+		for ( ;i <= 10; i++ )
+			printf( " :\n" )
+		printf( " :\n" )
+		printf( " :\n :        Fkey12 - Exit the program\n" )
+
+		printf( "Q: Please select a series, or Fkey12 to exit \n" )
+		printf( "G:__SERIESMENU_DISP\n" )
+		printf( "*:__SERIESQEXIT\n" )
+		printf( "Q: Do you want to exit the program ? [Y/N] ? \n" )
+		printf( "N:__SERIESMENU\n" )
+		printf( "G:__SERIESEXIT\n" )
+	}
+	else {
+		# saw no series; oh well...
+		printf( "! WARNING: didn't find any series\n" )
+		printf( "G:__SERIESEXIT\n" )
+		printf( "*:__SERIESMENU\n" )
+		printf( "G:__NO_SERIESMENU\n" )
+	}
+	printf( "*:__SERIESEXIT\n" )
+	printf( "#" )
+	for ( i = 0; i < 78; i++ )
+		printf( "=" )
+	printf( "\n" )
+}

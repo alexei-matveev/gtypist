@@ -1,0 +1,342 @@
+#!/usr/bin/awk -f
+#
+# Typist v2.2 - improved typing tutor program for UNIX systems
+# Copyright (C) 1998  Simon Baldwin (simonb@sco.com)
+#
+# This program is free software; you can redistribute it and/or
+# modify it under the terms of the GNU General Public License
+# as published by the Free Software Foundation; either version 2
+# of the License, or (at your option) any later version.
+#
+# This program is distributed in the hope that it will be useful,
+# but WITHOUT ANY WARRANTY; without even the implied warranty of
+# MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+# GNU General Public License for more details.
+#
+# You should have received a copy of the GNU General Public License
+# along with this program; if not, write to the Free Software
+# Foundation, Inc., 59 Temple Place - Suite 330, Boston, MA 02111-1307, USA.
+#
+#
+# awk script to convert v1 .typ files into v2.2 format
+#
+BEGIN 	{
+	# some initializations
+	cindex = 0
+	type = "I"
+	cur_lesson = ""
+	lcount = 0
+	label_count = 0
+
+	# generated labels include the value for 'series', to
+	# enable several converted files to be concatenated;
+	# if series is not set we try to invent something
+	if ( series == "" ) {
+		srand(); series = sprintf( "%6d", rand() * 1000000 )
+	}
+
+	# start by going to the menu we'll try to build later
+	printf( "#" )
+	for ( i = 0; i < 78; i++ )
+		printf( "-" )
+	printf ( "\n# Series %s\n#", series )
+	for ( i = 0; i < 78; i++ )
+		printf( "-" )
+	printf ( "\n" )
+	printf( "G:_%s_MENU\n", series )
+	printf( "*:_%s_NO_MENU\n", series )
+}
+
+
+#
+# some lines had trailing \ with nothing after; strip these
+#
+$0 ~ /\\$/	{
+	# strip off trailing backslashes
+	while ( substr( $0, length( $0 ), 1 ) == "\\" )
+		$0 = substr( $0, 1, length( $0 ) - 1 )
+}
+
+
+#
+# handle a label line; one starting with *
+#
+$0 ~ /^\*/	{
+	# label line - start or end a lesson block
+	$0 = substr ( $0, 2, length( $0 ) - 1 )
+	# stuff between the *s is the label
+	if ( index( $0, "*" ) != 0 ) {
+
+		# this is a lesson start
+		label = substr( $0, 1, index( $0, "*" ) - 1)
+		printf( "#" )
+		for ( i = 0; i < 78; i++ )
+			printf( "-" )
+		printf ( "\n# Lesson %s\n#", label )
+		for ( i = 0; i < 78; i++ )
+			printf( "-" )
+		printf ( "\n" )
+		printf( "*:%s\n", label )
+		lcount++
+		labels[lcount] = label
+		cur_lesson = label
+		# now put out our own version of the label
+		printf( "*:_%s_S_%s\n", series, label )
+		$0 = substr ( $0, index( $0, "*" ), \
+				length( $0 ) - index( $0, "*" ))
+	}
+	else {
+
+		if ( $0 ~ "^ *$" ) {
+			# this is a lesson end - go to a next lesson prompt
+			if ( cur_lesson != "" )
+				printf( "G:_%s_E_%s\n", series, cur_lesson )
+			cur_lesson = ""
+		}
+		else {
+			printf( "! WARNING: suspicious [non-]label below\n" )
+			$0 = "*"$0
+		}
+	}
+
+	# if this leaves the line empty don't go further
+	if ( $0 == "" )
+		next
+}
+
+
+#
+# lines ending \<cmd> give the command that line represents
+#
+$0 ~ /\\[A-Z]$/	{
+	# this is a line that gives the command type
+	type = substr( $0, length( $0 ), 1 )
+	cindex++
+	lcache[cindex] = substr( $0, 1, length( $0 ) - 2 )
+
+	# check for stuff that isn't in a lesson
+	if ( cur_lesson == "" )
+		printf( "! WARNING: found some lines not inside labels\n" )
+
+	# check for commands we didn't expect
+	if ( type != "T" && type != "I" && type != "D" && type != "P" \
+				&& type != "B" )
+		printf( "! WARNING: possible invalid command below\n" )
+
+	# check for odd looking input
+	if ( cindex > 2 && type == "I" || cindex > 1 && type == "B" )
+		printf( "! WARNING: too long I/B detected below\n" )
+
+	# if this is something we might want to repeat, put in
+	# a label so we could repeat it
+	if ( type == "T" || type == "D" || type == "P" ) {
+		printf( "*:_%s_R_L%d\n", series, label_count )
+		label_count++
+	}
+
+	# output the origin of this command for debugging purposes
+	diag = sprintf( "%s:%s", FILENAME, FNR )
+	printf( "#" )
+	for ( i = 0; i < 78 - length( diag ); i++ )
+		printf( " " )
+	printf( "%s\n", diag )
+
+	# dump out the stuff we have read in -- also, translate Ds
+	# to Os since we will handle the repeating ourselves
+	for ( i = 1; i <= cindex; i++ ) {
+		if ( i == 1 )
+			printf( "%s:%s\n",
+					type == "D" ? "O" : type, lcache[i] )
+		else
+			printf( " :%s\n", lcache[i] )
+	}
+	cindex = 0
+
+	# after a tutorial, drill or paragraph, hop in with a
+	# home-grown query about what to do next
+	if ( type == "T" ) {
+		printf( "Q: Press Y to continue, or Fkey12 to exit \n" )
+		printf( "N:_%s_R_L%d\n\n", series, label_count - 1 )
+	}
+	else if ( type == "D" || type == "P" ) {
+		printf( "Q: Press Y to continue, N to repeat, or Fkey12 to exit \n" )
+		printf( "N:_%s_R_L%d\n\n", series, label_count - 1 )
+	}
+
+	type = "I"
+	next
+}
+
+
+#
+# handle plain text lines that don't signify anything yet
+#
+{
+	# nothing special line - just keep it
+	cindex++
+	lcache[cindex] = $0
+}
+
+
+#
+# end of file processing
+#
+END	{
+	# if trailing stuff was read then deal with it
+	if ( cindex > 0 ) {
+		printf( "! WARNING: trailing lines found in input\n" )
+
+		# check for stuff that isn't in a lesson
+		if ( cur_lesson == "" )
+			printf( "! WARNING: found some lines not inside labels\n" )
+
+		# check for odd looking input
+		if ( cindex > 2 && type == "I" || cindex > 1 && type == "B" )
+			printf( "! WARNING: too long I/B detected below\n" )
+
+		# if stuff still cached output it (really shouldn't be)
+		for ( i = 1; i <= cindex; i++ ) {
+			if ( i == 1 )
+				printf( "%s:%s\n", type, lcache[i] )
+			else
+				printf( " :%s\n", lcache[i] )
+		}
+		cindex = 0
+	}
+
+	# create the jump table and menu for the lessons we have seen go by
+	if ( lcount > 0 ) {
+		printf( "#" )
+		for ( i = 0; i < 78; i++ )
+			printf( "-" )
+		printf ( "\n# Lesson series %s jump tables\n#", series )
+		for ( i = 0; i < 78; i++ )
+			printf( "-" )
+		printf ( "\n" )
+		for ( i = 1; i < lcount; i++ ) {
+			printf( "*:_%s_E_%s\n", series, labels[i] )
+			printf( "Q: Do you want to continue to lesson %s [Y/N] ? \n", \
+				labels[i+1] );
+			printf( "N:_%s_MENU\n", series )
+			printf( "G:_%s_M_%s\n", series, labels[i+1] )
+		}
+		printf( "*:_%s_E_%s\n", series, labels[lcount] )
+		printf( "G:_%s_MENU\n\n", series )
+		for ( i = 1; i <= lcount; i++ ) {
+			printf( "*:_%s_M_%s\n", series, labels[i] )
+			banner = sprintf( "Lesson %s", labels[i] );
+			printf( "B:" )
+			for ( j = 0; j < ( 66 - length( banner )) / 2; j++ )
+				printf( " " )
+			printf( "%s\n", banner );
+			printf( "K:12:_%s_MENU\n", series )
+			printf( "G:_%s_S_%s\n", series, labels[i] )
+		}
+
+		printf( "#" )
+		for ( i = 0; i < 78; i++ )
+			printf( "-" )
+		printf ( "\n# Lesson series %s menu\n#", series )
+		for ( i = 0; i < 78; i++ )
+			printf( "-" )
+		printf ( "\n" )
+
+		# start the menu, and count the pages
+		printf( "*:_%s_MENU\n", series )
+		npages = 0; for ( i = lcount; i > 0; i -= 10 )
+			npages++
+
+		# loop for each page in the menu
+		for ( mpage = 0; mpage < npages; mpage++ ) {
+			printf( "*:_%s_MENU_PAGE%d\n", series, mpage )
+
+			# here we take the series name from labels[1]
+			banner = sprintf( "Lesson selection menu - series %s", \
+					substr( labels[1], 1, 1 ))
+			printf( "B:" );
+			for ( j = 0; j < ( 66 - length( banner )) / 2; j++ )
+				printf( " " )
+			printf( "%s", banner );
+
+			# add a note if more than one page
+			if ( npages > 1 )
+				printf( " [page %d of %d]\n", \
+						mpage + 1, npages )
+			else
+				printf( "\n" );
+
+			# output all function key mappings for this menu page
+			for ( i = 1; i <= 10; i++ ) {
+				mindex = mpage * 10 + i
+				if ( mindex <= lcount )
+					printf( "K:%d:_%s_M_%s\n", i, \
+							series, labels[mindex] )
+				else
+					printf( "K:%d:NULL\n", i )
+			}
+
+			# add Fkey11 to go to next or first page, or just null
+			# if this is a one-page menu, Fkey12 to exit
+			if ( npages > 1 )
+				if ( mpage + 1 < npages )
+					printf( "K:11:_%s_MENU_PAGE%d\n", \
+						series, mpage + 1 )
+				else
+					printf( "K:11:_%s_MENU_PAGE%d\n", \
+						series, 0 )
+			else
+				printf( "K:11:NULL\n" )
+			printf( "K:12:_%s_QEXIT\n", series )
+
+			# output the menu page text
+			printf( "T:The %s series contains the following %d lesson", \
+					substr( labels[1], 1, 1 ), lcount )
+			if ( lcount > 1 ) printf( "s" )
+			printf( ":\n" )
+			printf( " :\n" )
+			for ( i = 1; i <= 10; i++ ) {
+				mindex = mpage * 10 + i
+				if ( mindex <= lcount )
+					printf( " :        Fkey%2d - Lesson %s\n", \
+							i, labels[mindex] )
+				else
+					printf( " :\n" )
+			}
+
+			# if multi-page, add information about using Fkey11
+			# to get between pages
+			if ( npages > 1 )
+				if ( mpage + 1 < npages )
+					printf( " :\n :        Fkey11 - Next menu page...\n" )
+				else
+
+					printf( " :\n :        Fkey11 - First menu page...\n" )
+			else
+				printf( " :\n :\n" )
+			printf( " :        Fkey12 - Leave this lesson series\n", \
+					series )
+
+			# at last, get selection input from the user
+			printf( "Q: Please select a lesson, or Fkey12 to exit \n" )
+			printf( "G:_%s_MENU_PAGE%d\n", series, mpage )
+		}
+
+		# confirm exit from this series
+		printf( "*:_%s_QEXIT\n", series )
+		printf( "Q: Do you want to leave this lesson series? [Y/N] ? \n" )
+		printf( "N:_%s_MENU\n", series )
+		printf( "G:_%s_EXIT\n", series )
+	}
+	else {
+		# saw no labels; oh well...
+		printf( "! WARNING: didn't find any labels\n" )
+		printf( "G:_%s_EXIT\n", series )
+		printf( "*:_%s_MENU\n", series )
+		printf( "G:_%s_NO_MENU\n", series )
+	}
+	printf( "*:_%s_EXIT\n", series )
+	printf( "#" )
+	for ( i = 0; i < 78; i++ )
+		printf( "-" )
+	printf ( "\n" )
+}

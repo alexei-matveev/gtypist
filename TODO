@@ -1,0 +1,20 @@
+TASKS TO DO
+
+ * Add Native Language Support  for other languages (see ABOUT_NLS and
+   directory po of sources distributions)
+
+ * Translate or create lessons in other languages
+
+ * Online help. 
+
+
+WISHES
+
+ * Improve user interface:  Pick-and-point interface (with arrows) in 
+   addition to F-keys.  Possibility to exit with the ESC key in prompts.
+
+ * More user freedom in selecting lessons.
+
+ * Better typing statistics.  Speed and accuracy for individual keys, 
+   and individual fingers. Measure of typing rhythm.
+
