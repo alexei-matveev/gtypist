@@ -271,12 +271,10 @@ msgid "You failed this test, so you need to go back to %s."
 msgstr "Nepro¹el jste tímto testem. Musíte se vrátit na %s."
 
 #: gtypist.c:1713
-#, fuzzy
 msgid "Press R to repeat, N for next exercise or E to exit"
 msgstr "Stisknìte O pro opakování, D pro dal¹í cvièení èi K pro konec."
 
 #: gtypist.c:1717
-#, fuzzy
 msgid "Press R to repeat or E to exit"
 msgstr "Stisknìte O pro opakování nebo K pro konec"
 
@@ -317,11 +315,11 @@ msgstr "Nemù¾u najít èi otevøít soubor"
 
 #: cursmenu.c:109
 msgid "Exit"
-msgstr ""
+msgstr "Konec"
 
 #: cursmenu.c:114
 msgid "Up"
-msgstr ""
+msgstr "Zpìt"
 
 #: error.c:27
 msgid "line"
