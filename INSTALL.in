@@ -92,10 +92,9 @@ Configuration with Native Language Support under Unix:
 		./configure --with-included-gettext
 	  And before running gtypist set the environment variable LC_ALL/LANG
 	  to your language and country codes (LL_CC, as described in the
-	  manual, node "Environment Variables"). 
-	  This version of gtypist has support for English (en),
-	  Spanish (es) and German (de). Using this option it was possible
-	  to compile and run gtypist under AIX
+	  manual, node "Environment Variables"). See the manual for the
+          list of supported languages. Using this option it was possible
+          to compile and run gtypist under AIX.
 
 Dvorak Keyboard under GNU/Linux (Ben Armstrong <synrg@sanctuary.nslug.ns.ca>)
 
