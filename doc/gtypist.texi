@@ -804,9 +804,8 @@ helped by fixing bugs and maintaining a Debian package (see
 @item
 In 2000, Vladimir Támara @email{vtamara@@users.sourceforge.net} and
 Igor Támara @email{ikks@@users.sourceforge.net} became the maintainers of
-the C version. Before Nov/2000, GNU Typist was maintained as part of the
-project Structio.
-@url{http://structio.sourceforge.net}
+the C version. Before November 2000, GNU Typist was maintained as part of
+the Structio project.
 @item
 November 2000, accepted as a GNU package! Renamed to GNU Typist (or
 gtypist).
