@@ -1,6 +1,8 @@
 \input texinfo @c -*-mode:texinfo; compile-command: "makeinfo gtypist.texi"-*-
 @setfilename gtypist.info
 @settitle Pøíruèka pro GTypist
+@documentlanguage cs
+@documentencoding ISO-8859-2
 @include version.texi
 
 @copying

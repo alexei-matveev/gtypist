@@ -1,3 +1,11 @@
+2002-04-23  Michael Opdenacker  <michaelo@gnu.org>
+
+	* gtypist.cz.texi: fixed to support the original fdl.texi file
+	* gtypist.cz.texi, gtypist.texi: added @documentlanguage
+	and @documentencoding settings. This makes sure that html
+	manuals are automatically generated with the right language
+	and charset settings.
+
 2002-04-21  Michael Opdenacker  <michaelo@gnu.org>
 
 	* gtypist.texi: fixed to include the original fdl.texi file.
