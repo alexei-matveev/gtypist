@@ -5,7 +5,8 @@
 	AC_DEFINE so now we do it explicitly:
 	AC_CHECK_LIB(curses, wbkgdset,
 	  [AC_DEFINE(HAVE_LIBCURSES)
-	    LIBS="-lcurses $LIBS"],
+	    LIBS="-lcurses $LIBS"])
+	* add #undef HAVE_LIBCURSES to acconfig.h
 
 
 2002-06-28  Hynek Hanke  <hanke@volny.cz>

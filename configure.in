@@ -20,7 +20,7 @@ ALL_LINGUAS="de cs es fi fr"
 dnl Checks for libraries.
 AC_CHECK_LIB(curses, wbkgdset,
   [AC_DEFINE(HAVE_LIBCURSES)
-  LIBS="-lcurses $LIBS"],
+  LIBS="-lcurses $LIBS"])
 dnl check for ncurses if curses is not found:
 dnl i.e. on SuSE there are no ncurses* -> curses* links
 if test -z $HAVE_LIBCURSES;
