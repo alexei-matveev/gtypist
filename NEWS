@@ -6,6 +6,8 @@
 
 Version 2.7 - September 2003
 	- New menu-based ncurses interface, replacing function keys.
+	  You can use arrow keys to navigate in the menus.
+	  You can use vi keys too!
 	  Much more reliable and user friendly!
 	- Make a few changes in the lesson file syntax to support menus.
 	- Built with automake-1.7.7, texinfo-4.6 and gettext-0.12.1
