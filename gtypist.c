@@ -174,6 +174,7 @@ static int	cl_fgcolour = 0;		/* fg colour */
 static int	cl_bgcolour = 0;		/* bg colour */
 static bool	cl_wp_emu = FALSE;		/* do wp-like stuff */
 static bool     cl_no_skip = FALSE;             /* forbid the user to */
+static bool	cl_rev_video_errors = FALSE;    /* reverse video for errors */
 
 /* a few global variables */
 static char	*argv0 = NULL;
@@ -819,7 +820,8 @@ do_drill( FILE *script, char *line ) {
 	    {
 	      ADDCH_REV( *p == ASCII_NL ? DRILL_NL_ERR :
 			 (*p == ASCII_TAB ?
-			  ASCII_TAB : DRILL_CH_ERR ));
+			  ASCII_TAB : (cl_rev_video_errors ?
+				       c : DRILL_CH_ERR)));
 	      if ( ! cl_silent ) 
 		{
 		  putchar( ASCII_BELL ); fflush( stdout );
@@ -1714,6 +1716,7 @@ print_help()
       "-l L",
       "-w",
       "-k",
+      "-i",
       "-h",
       "-v" };
   char *lop[]= 
@@ -1727,6 +1730,7 @@ print_help()
       "--start-label=L",
       "--word-processor",
       "--no-skip",
+      "--show-errors",
       "--help",
       "--version" };
   char *help[] = 
@@ -1741,6 +1745,7 @@ print_help()
       _("start the lesson at label 'L'"),
       _("try to mimic word processors"),
       _("forbid the user to skip exercises"),
+      _("highlight errors with reverse video"),
       _("print this message"),
       _("output version information and exit") };
   
@@ -1792,12 +1797,13 @@ parse_cmdline( int argc, char **argv ) {
     { "start-label",	required_argument, 0, 'l' },
     { "word-processor",	no_argument, 0, 'w' },
     { "no-skip",        no_argument, 0, 'k' },
+    { "show-errors",    no_argument, 0, 'i' },
     { "help",		no_argument, 0, 'h' },
     { "version",	no_argument, 0, 'v' },
     { 0, 0, 0, 0 }};
 
   /* process every option */
-  while ( (c=getopt_long( argc, argv, "e:ntf:c:sql:wkhv",
+  while ( (c=getopt_long( argc, argv, "e:ntf:c:sql:wkihv",
 			  long_options, &option_index )) != -1 ) 
     {
       switch (c)
@@ -1858,6 +1864,9 @@ parse_cmdline( int argc, char **argv ) {
 	  break;
 	case 'k':
 	  cl_no_skip = TRUE;
+	  break;
+	case 'i':
+	  cl_rev_video_errors = TRUE;
 	  break;
 	case 'h':
 	  print_help();
