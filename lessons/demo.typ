@@ -100,9 +100,9 @@ P:Overtype this paragraph with the same text.
 B:Demonstration of commands and features - I
 T:The I command can display some brief instructions above a drill or
  :speed test.  Only two lines or less are available.  Unlike the T
- :command, I does not wait for any further keypresses before proceeding.
+ :command, it does not wait for any further keypresses before proceeding.
  :So it should really always be followed by either a D or a P.
- :I does clear all of the screen drill area, so in that way it's just
+ :It clears the whole screen drill area, so it's just
  :like a two-line T, though.
  :
  :Here's an example:
@@ -117,7 +117,7 @@ P:Very, very short test...
 
 *:DEMO_5
 B:Demonstration of commands and features - */G
-T:The * places a label into the file.  The G can then be used to go to
+T:The * places a label into the file.  The G command can then be used to go to
  :that label.  The program really isn't fussy about label strings.  They
  :can be pretty much anything you like, and include spaces if that's what
  :you want.  Labels must be unique within files.
@@ -136,7 +136,7 @@ T:We reached this message with a G command
 
 *:DEMO_6
 B:Demonstration of commands and features - Q/Y/N/K
-T:The Q command the prompt with its text on the message line, and waits for
+T:The Q command prompts its text on the message line, and waits for
  :a 'Y' or an 'N' before proceeding.  Other characters are ignored.
  :
  :The Y command will go to the label on its line if the result of the most
@@ -171,8 +171,8 @@ T:You pressed N
 *:DEMO_7
 B:Demonstration of commands and features - X
 T:The last command to show is the X command.  This causes the program to
- :exit.  The program also exits if the end of the file is found (so if
- :you wanted to, you could always place a label there and just G to it).
+ :exit.  The program also exits if the end of the file is found
+ :(so you could place a label there and just G to it).
  :
  :Here's a demonstration of the X command.  Since this is the end of
  :the demonstration, here is a good place to use it; the demonstration
