@@ -18,6 +18,7 @@ dnl Set of available languages.
 ALL_LINGUAS="de es fi fr"
 
 dnl Checks for libraries.
+AC_SEARCH_LIBS(wbkgdset, curses,, echo "*** The curses library is required!";exit 1)
 
 dnl Checks for header files.
 AC_HEADER_STDC
