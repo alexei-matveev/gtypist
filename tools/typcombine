@@ -247,6 +247,6 @@ END	{
 }
 
 # Local Variables:
-# compile-command: "(cd ../lessons && ../tools/typcombine ?.typ > gtypist.typ)"
+# compile-command: "(cd ../lessons && gawk -f ../tools/typcombine ?.typ > gtypist.typ)"
 # truncate-lines: t
 # End:
