@@ -121,7 +121,7 @@ echo "creating doc/gtypist.html..."
 # Bug: '--html --no-header' doesn't work without '--no-split'
 # Reported to texinfo developers.
 makeinfo --html --no-header --no-split gtypist.texi -o gtypist.html 
-makeinfo --html --no-header --no-split gtypist.cz.texi -o gtypist.cz.html 
+makeinfo --html --no-header --no-split gtypist.cs.texi -o gtypist.cs.html 
 cd ..
 
 # Final instructions
