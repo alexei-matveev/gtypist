@@ -1,6 +1,6 @@
 ## Process this file with automake to produce Makefile.in
 
-AUTOMAKE_OPTIONS = 1.6.3 dist-bzip2
+AUTOMAKE_OPTIONS = 1.7.2 dist-bzip2
 
 SUBDIRS= m4  po lessons tools doc intl
 
