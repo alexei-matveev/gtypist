@@ -1840,7 +1840,7 @@ This program is released under the GNU General Public License.");
   /* this message is displayed when the user has failed in a [DS]: drill,
      and an F:<LABEL> ("on failure label") is in effect */
   SKIPBACK_VIA_F_MSG =
-    _("You failed this test, so you need to skip back to %s.");
+    _("You failed this test, so you need to go back to %s.");
   /* this is used for queries. you can translate the keys as well
      (if you translate msgid "Y/N" accordingly) */
   WANNA_REPEAT_MSG= _("Press Y to continue, N to repeat or Fkey12 to exit");

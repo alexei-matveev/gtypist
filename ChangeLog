@@ -1,3 +1,8 @@
+2001-08-23  Felix Natter  <f.natter@ndh.net>
+
+	* gtypist.c (main): change "skip back" to "go back" in
+	SKIPBACK_VIA_F_MSG
+
 2001-08-20  Felix Natter  <f.natter@ndh.net>
 
 	* gtypist.c (main, do_query): rename _("YN") to _("Y/N")

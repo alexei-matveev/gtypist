@@ -6,7 +6,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
-"POT-Creation-Date: 2001-08-20 22:41+0200\n"
+"POT-Creation-Date: 2001-08-23 20:06+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -269,7 +269,7 @@ msgstr ""
 
 #: gtypist.c:1843
 #, c-format
-msgid "You failed this test, so you need to skip back to %s."
+msgid "You failed this test, so you need to go back to %s."
 msgstr ""
 
 #. this is used for queries. you can translate the keys as well
