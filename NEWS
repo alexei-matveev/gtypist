@@ -4,6 +4,12 @@
 	See the `ChangeLog' (top-level and in some subdirectories) and
 	`THANKS' files for details about changes and contributors.
 
+Version 2.6.1 - August/2002
+	- findwords.sh: new script to help with creating lessons.
+	See the manual for details.
+	- configure: checks for ncurses if curses if not available.
+	- built with automake-1.6.3 and gettext-0.11.4.
+ 
 Version 2.6 - April/2002
 	- New `typefortune' (perl-)script which creates lessons from `fortune'
 	(see the new section "Using typefortune" in the manual).
