@@ -28,6 +28,8 @@ Version 2.4 - September/2001
 	by tools/tt2typ.pl.
 	- an Emacs-mode for editing gtypist's script-files:
 	tools/gtypist-mode.el
+	- improved i18n-support
+	- improved German translation (with help from de@li.org)
 
 Development version
         - Minor fixes (build, charset definition)

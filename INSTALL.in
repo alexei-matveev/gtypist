@@ -34,6 +34,7 @@ with the option --disable-nls)
   or
 	/usr/local/bin/gtypist
 
+
 Compilation under Windows/DOS
 -----------------------------
 
@@ -67,6 +68,13 @@ You must have:
 * If you distribute it, then you might want to remove symbols from gtypist.exe:
 	
 	strip --strip-all gtypist.exe
+
+* If you want to use lessons which contain 8bit characters, then you need
+  to convert these lessons with a program like "recode" (on GNU/Linux):
+	for i in *.typ
+	do
+		recode latin1..ibmpc $i
+	done
 	
 * To use it go to the directory where you installed it and run gtypist.exe
 	cd GTypist

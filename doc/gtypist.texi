@@ -352,8 +352,8 @@ This is the second type of typing-exercise: the ``speed test''.
 It is a multi-line command.  It displays its text on the screen, and
 prompts the user to type on top of it.  That's why you can use up to
 22 lines of text for one speed-test.
-@c TODO: delete ???
-Backspace is recognised, but errors still accumulate.
+In a speed-test you can correct your mistakes, but this will not decrease
+the error-count.
 
 Speed-tests should be used for typing (mostly) complete sentences,
 texts or files (i.e. a letter, texinfo/html/tex files).
@@ -487,12 +487,12 @@ These lessons are the standard lessons from Ktouch 1.0
 (@url{http://ktouch.sourceforge.net}), which have been converted to
 gtypist's file format using @file{tools/ktouch2typ.pl}.
 
-They are called ktde.typ (german.ktouch), kten.typ (english.ktouch),
+The files are called ktde.typ (german.ktouch), kten.typ (english.ktouch),
 ktfr.typ (french.ktouch), ktlecten.typ (lecture_en.ktouch), ktno.typ
 (norwegian.ktouch) and ktnumber.typ (number.ktouch).
 @item ttde.typ
 This is the German lesson of tipptrainer
-(@url{http://www.pingos.schulnetz.org/tipptrainer}), which have been
+(@url{http://www.pingos.schulnetz.org/tipptrainer}), which has been
 converted using @file{tools/tt2typ.pl}.
 @end table
 
@@ -521,7 +521,7 @@ Here are some hints how you can quickly create new lessons.
 A very easy way to write lessons is to write them in the format
 that @command{ktouch} uses, and then convert it to a gtypist lesson
 using @command{tools/ktouch2typ.pl}. This will take care of writing
-some loops, ``jump-tables'' and a menu. 
+``jump-tables'', a menu and a bit more.
 
 The ktouch-format consists only of lessons, which are preceded by
 their names, and separated by blank lines and/or comments (# at the
@@ -566,8 +566,8 @@ uses for each drill by modifying the relevant variable in
 @file{tools/ktouch2typ.pl}.
 
 Obviously, the disadvantage of this is that you cannot make use of all
-of gtypist's features. On the other hand, the output-file is very
-readable, so you can edit it to use more of gtypist's features.
+of gtypist's features (but the output-file is very readable, so you
+can edit it to use more of gtypist's features).
 
 @node Create drills from fortune, Ktouch-lessons, , How to contribute new lessons
 @section Create drills from fortune

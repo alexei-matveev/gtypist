@@ -23,28 +23,6 @@
 # - add two menu-items: "more lessons" (Fkey10) and "help"/"manual" (Fkey 11)
 # - add ';' after each command to make emacs indentation work
 # - add the "function-key help" and series descriptions
-# TODO: get more of this in there:
-# T:
-#  :                      Function key help screen
-#  :
-#  :Use the function keys on the keyboard to navigate through the lesson
-#  :series and lesson selection menus.  In a lesson series, pressing the
-#  :function key Fkey12 will return you to the series menu; when already at
-#  :the series menu, it will take you to the main program menu.  At the
-#  :main program menu, Fkey12 exits the program.
-#  :
-#  :If a lesson series has more than one menu page of lessons, use Fkey11 to
-#  :go to the additional pages.
-#  :
-#  :When in an exercise, you can use the Esc key to abort the drill or test.
-#  :
-#  :If you do not have function keys available on your terminal, or if they
-#  :do not work for some reason (for example, they are intercepted by
-#  :another program), you can use the keys 1 to 9 for F1 to F9, 0 for F10,
-#  :A for F11 and S for F12.  Some combinations with the Ctrl key will work also.
-#  :Ctrl-Q to Ctrl-P are alternatives for Fkey1 to Fkey10, and Ctrl-A and Ctrl-S 
-#  :for Fkey11 and Fkey12.
-
 
 BEGIN 	{
 # some initializations
@@ -236,10 +214,10 @@ END	{
     for ( ;i <= 9; i++ )
       printf( " :\n" );
     printf( " :\n" );
-    printf( " :        Fkey10 - More lessons...\n" );
-    printf( " :        Fkey11 - Help...\n" );
+    printf( " :        Fkey10                - More lessons...\n" );
+    printf( " :        Fkey11 or A or Ctrl-A - Help...\n" );
     printf( " :\n" );
-    printf( " :        Fkey12 - Exit the program\n" );
+    printf( " :        Fkey12                - Exit the program\n" );
 
     printf( "Q: Please select a series, or Fkey12 to exit \n" );
     printf( "G:__SERIESMENU_DISP\n" );

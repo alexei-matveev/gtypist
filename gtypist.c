@@ -560,7 +560,7 @@ wait_user( char *message, char *mode, FILE *script, char *line ) {
 	}
       
       /* not an FKEY - just check for return */
-      if ( (char)resp == ASCII_NL ) 
+      if ( (char)resp == ASCII_ENTER ) 
 	{
 	  ret_code = TRUE;
 	  break;

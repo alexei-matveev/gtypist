@@ -6,7 +6,32 @@
 # INSTALL, configur.bat, doc/gtypist.info, lessons/gtypist.typ (maybe more)
 
 # warning: if you use autoconf 2.50 or later, then you need to use
-# gettext 0.10.39 or above and not 0.10.38 (earlier versions *might* work)
+# gettext 0.10.39 or above and not 0.10.38 (earlier versions _might_ work ?)
+
+
+(autoconf --version) < /dev/null > /dev/null 2>&1 || {
+    echo
+    echo "**Error**: You must have \`autoconf' installed to."
+    echo "Download the appropriate package for your distribution,"
+    echo "or get the source tarball at ftp://ftp.gnu.org/pub/gnu/"
+    exit 1
+}
+
+(automake --version) < /dev/null > /dev/null 2>&1 || {
+    echo
+    echo "**Error**: You must have \`automake' installed."
+    echo "Get ftp://ftp.gnu.org/pub/gnu/automake-1.4.tar.gz"
+    echo "(or a newer version if it is available)"
+    exit 1
+}
+
+(gettext --version) < /dev/null > /dev/null 2>&1 || {
+    echo
+    echo "**Error**: You must have \`gettext' installed."
+    echo "Get ftp://ftp.gnu.org/gnu/gettext-0.10.39.tar.gz"
+    echo "(or a newer version if it is available)"
+    exit 1
+}
 
 echo "creating doc/gtypist.info..."
 makeinfo -Idoc doc/gtypist.texi -o doc/gtypist.info
@@ -39,7 +64,7 @@ for file in configur.bat INSTALL
 done
 
 # gettextize
-echo "running gettexize..."
+echo "running gettextize...  Ignore non-fatal messages."
 gettextize --force --copy
 
 # Build configuration files
@@ -51,3 +76,14 @@ autoheader
 automake --add-missing
 autoconf
 
+if test -z "$*"; then
+    echo
+    echo "**Warning**: I am going to run \`configure' with no arguments."
+    echo "If you wish to pass any to it, please specify them on the"
+    echo \`$0\'" command line."
+fi
+
+echo
+echo running ./configure "$@"...
+echo
+./configure "$@" && echo Type \`make\' to compile gtypist
