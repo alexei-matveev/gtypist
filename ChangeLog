@@ -1,5 +1,13 @@
 2003-10-25  Hynek Hanke  <hanke@volny.cz>
 
+	* Makefile.am (EXTRA_DIST): gtypist.1 corrected to src/gtypist.1
+
+	* configure.in: Added missing target Makefile.in
+
+	* autogen.sh (gettexth): Copy gettext to src/
+
+2003-10-25  Hynek Hanke  <hanke@volny.cz>
+	
 	* po/POTFILES.in: Updated to reflect that the sources are now in src/
 	
 	* configure.in: Build also src/Makefile.am
