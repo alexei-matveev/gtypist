@@ -10,13 +10,24 @@ problems,  suggesting  various   improvements,  or  submitting  actual
 code. Here  is a list  of these people.  Help us keep it  complete and
 exempt of errors.
 
-* Christian "naddy" Weisgerber for reporting errors and contributing
-  various fixes on po/*.po, Makefile.am, and aclocal.m4
+* Kimmo K. I. Surakka <kusti@iki.fi> for Native Language Support in
+  Finnish.
+ 
+* Felix Natter <f.natter@ndh.net> for bringing lots of fixes and
+  improvements to the code and documentation (to be continued). 
+
+* Michael Opdenacker <michaelo@gnu.org> for administrating CVS, the
+  mailing-list, GNU Savannah, etc., writing and improving
+  documentation, testing and discussing tool features.
+ 
+* Christian "naddy" Weisgerber <naddy@openbsd.org> for reporting
+  errors and contributing various fixes on po/*.po, Makefile.am,
+  and aclocal.m4.
 
 * Igor Tamara <ikks@bigfoot.com> and Vladimir Tamara <vtamara@gnu.org>
-for creating a lesson  in spanish; configuration/compilation a la GNU;
-adding native  language support; porting  to DOS/DJGPP, adding  NLS in
-spanish and enhancing documentation.
+  for creating a lesson in spanish; configuration/compilation a la GNU;
+  adding native  language support; porting to DOS/DJGPP, adding NLS in
+  spanish and enhancing documentation.
 
 * Melissa Giraldo <melagira@yahoo.com> for her help with the lesson in
   spanish.
