@@ -26,12 +26,14 @@
 #else
 #include <ncurses.h>
 #endif
-#include "gettext.h"
 #include "error.h"
 
 #include <stdlib.h>
 #include <string.h>
 #include <ctype.h>
+
+#include "gettext.h"
+#define _(String) gettext (String)
 
 int global_line_counter = 0;
 struct label_entry *global_label_list[NLHASH];
