@@ -1,3 +1,7 @@
+2003-04-14	Hynek Hanke	<hanke@volny.cz>
+
+	* cs.typ: Removed unnecessary K: commands.
+
 2003-04-14  Felix Natter  <fnatter@gmx.net>
 
 	* v.typ, u.typ, t.typ, s.typ, r.typ, q.typ, n.typ, m.typ, f.typ:
