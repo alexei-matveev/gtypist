@@ -912,6 +912,13 @@ and the value of @code{TERM} is correct, check into this.
 @node Errors and omissions, History, Environment Variables, Top
 @chapter Errors and omissions
 
+GNU Typist does not support multi-byte character encoding yet (such as UTF-8).
+To see all the characters in some lesson files, you have to make sure that
+your terminal is run in such an environment in which the LANG variable
+is not set to an UTF-8 encoding. Lazy users can also try just try to
+run GNU Typist on another type of terminal. It sometimes works.
+
+
 GNU Typist does not go to much effort to minimize terminal output. In
 particular, the flashing block cursor can cause a lot of cursor
 movement. Using the terminal's own cursor will help if this becomes a
