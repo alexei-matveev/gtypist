@@ -40,17 +40,7 @@ AC_CHECK_FUNCS([__argz_count __argz_next __argz_stringify dcgettext getcwd getwd
 dnl internationalization macros
 AM_GNU_GETTEXT
 
-dnl Internationalization
-AC_ARG_WITH(nointl,
-        [  --with-nointl           disable internationalization],
-	[],
-	[
-if test "x${prefix}" = "xNONE"; then
-  AC_DEFINE_UNQUOTED(PACKAGE_LOCALE_DIR, "${ac_default_prefix}/${DATADIRNAME}/locale")
-else
-  AC_DEFINE_UNQUOTED(PACKAGE_LOCALE_DIR, "${prefix}/${DATADIRNAME}/locale")
-fi])
-
+dnl manual page generation
 AC_CHECK_PROG(HELP2MAN, help2man, help2man, no)
 if (test "$HELP2MAN" = "no") then {
   GEN_MAN="echo \"Without help2man, manual pages could not be generated. Use 'info gtypist' to access gtypist documentation.\" > gtypist.1"
