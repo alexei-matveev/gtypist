@@ -91,6 +91,7 @@ FILENAME != cur_filename	{
 # we like the series names to be uppercase - I can't help
 # but feel that there must be a better way to accomplish
 # this, but I can't find it
+# TODO: can we use toupper ?
   split( "q,w,e,r,t,y,u,i,o,p,a,s,d,f,g,h,j,k,l,z,x,c,v,b,n,m", lc,/,/ );
   split( "Q,W,E,R,T,Y,U,I,O,P,A,S,D,F,G,H,J,K,L,Z,X,C,V,B,N,M", uc,/,/ );
   for ( i = 1; i <= 26; i++ )
@@ -138,13 +139,13 @@ END	{
   printf(" : gtypist with an argument, the name of the file:\n");
   printf(" :\n");
   printf(" : esp.typ - Spanish lessons\n");
-  printf(" : ttde.typ - German lesson from tipptrainer\n");
-  printf(" : ktde.typ - German lesson from ktouch\n");
-  printf(" : ktno.typ - Norwegian lesson from ktouch\n");
-  printf(" : ktfr.typ - French lesson from ktouch\n");
-  printf(" : kten.typ - English lesson from ktouch\n");
-  printf(" : ktnumber.typ - Ktouch-lesson for the numeric keypad\n");
-  printf(" : ktlecten.typ - Another English lesson from ktouch\n");
+  printf(" : ttde.typ - German lessons from tipptrainer\n");
+  printf(" : ktde.typ - German lessons from ktouch\n");
+  printf(" : ktno.typ - Norwegian lessons from ktouch\n");
+  printf(" : ktfr.typ - French lessons from ktouch\n");
+  printf(" : kten.typ - English lessons from ktouch\n");
+  printf(" : ktnumber.typ - Ktouch lessons for the numeric keypad\n");
+  printf(" : ktlecten.typ - Another set of English lessons from ktouch\n");
   printf(" :\n");
   printf(" : See the comments at the top of each .typ-file for more information\n");
   printf("G:__SERIESMENU\n");

@@ -35,6 +35,10 @@ for file in configur.bat INSTALL
   touch ${file}.in
 done
 
+# gettextize
+echo "running gettexize..."
+gettextize --force --copy
+
 # Build configuration files
 
 echo "creating build configuration files..."
