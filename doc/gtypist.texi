@@ -58,7 +58,6 @@ or create new ones.
 @end ifnottex
 
 @menu
-@c TODO:
 * Distribution::            Where to find gtypist: source, packages etc.
 * Copying::                 The GNU General Public License says how you can
                             copy and share gtypist
@@ -72,10 +71,11 @@ or create new ones.
 * Environment Variables::   Environment variables which affect gtypist
 * Errors and omissions::    Known problems
 * History::                 History of GNU Typist
-* Copying this manual::     The GNU Free Documentation License.
+* Copying this manual::     The GNU Free Documentation License
 @end menu
 
 
+@contents
 @node Distribution, Copying, Top, Top
 @unnumbered Distribution
 
@@ -890,10 +890,13 @@ imports from other tutors, tool enhancements, new tutorial capabilities,
 and Emacs mode.
 @end itemize
 
-@node Copying this manual, , History, Top
-@appendix Copying this manual: the GNU Free Documentation License
-@include fdl.texi
+@node Copying this manual
+@appendix Copying this manual
+@menu
+* GNU Free Documentation License::  How you can copy and share this manual.
+@end menu
 
+@include fdl.texi
 @bye
 
 @c  LocalWords:  xref QWERTY kt
