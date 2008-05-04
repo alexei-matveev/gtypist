@@ -1,0 +1,382 @@
+# Simplified Chinese translation
+# Copyright (C) 2000 Simon Baldwin
+# This file is distributed under the same license as the gtypist package.
+# Wei Mingzhi <whsitler@openoffice.org>, 2006.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: GNU Typist 2.6\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2003-09-28 21:35+0000\n"
+"PO-Revision-Date: 2006-02-13 15:09+0800\n"
+"Last-Translator: Wei Mingzhi <whistler@openoffice.org>\n"
+"Language-Team: Simplified Chinese\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=gb2312\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: gtypist.c:252
+msgid "internal error in strdup"
+msgstr "内部错误: strdup"
+
+#: gtypist.c:374 gtypist.c:388 script.c:145
+msgid "internal error: malloc"
+msgstr "内部错误: malloc"
+
+#: gtypist.c:406
+msgid "label redefinition"
+msgstr "标签重定义"
+
+#: gtypist.c:501
+msgid "invalid key binding"
+msgstr "无效的按键绑定"
+
+#: gtypist.c:503
+msgid "invalid function key number"
+msgstr "无效的功能键编号"
+
+#: gtypist.c:540 gtypist.c:611 gtypist.c:864
+msgid "data exceeds screen length"
+msgstr "数据超出屏幕宽度"
+
+#: gtypist.c:577
+msgid "instructions are limited to two lines"
+msgstr "指令只限二行"
+
+#: gtypist.c:788 gtypist.c:1032 script.c:202
+msgid "internal error: fseek"
+msgstr "内部错误: fseek"
+
+#: gtypist.c:1349
+#, no-c-format
+msgid "'*' must immediately follow '%'"
+msgstr "'*' 必须立即接着 '%'"
+
+#: gtypist.c:1352 gtypist.c:1355
+#, no-c-format
+msgid "missing '%'"
+msgstr "缺少 '%'"
+
+#: gtypist.c:1359
+#, no-c-format
+msgid "'%' must immediately follow value"
+msgstr "'%' 必须立即接着值"
+
+#: gtypist.c:1368
+msgid "overflow in do_error_max_set"
+msgstr "在 do_error_max_set 中溢出"
+
+#: gtypist.c:1388
+msgid "Invalid value for \"E:\" (out of range)"
+msgstr "\"E:\" 的值无效 (超出范围)"
+
+#: gtypist.c:1443 script.c:196
+#, c-format
+msgid "label '%s' not found"
+msgstr "标签 '%s' 没找到"
+
+#: gtypist.c:1508
+msgid "unknown command"
+msgstr "未知的命令"
+
+#: gtypist.c:1622
+msgid ""
+"default maximum error percentage (default 3.0); valid values are between 0.0 "
+"and 100.0"
+msgstr "默认最大的错误百分比 (默认为 3.0); 有效值在 9.0 和 100.0 之间"
+
+#: gtypist.c:1623
+msgid "turn off WPM timer in drills"
+msgstr "在训练中关闭每分钟字数计时器"
+
+#: gtypist.c:1624
+msgid "use the terminal's hardware cursor"
+msgstr "使用终端硬件光标"
+
+#: gtypist.c:1625
+msgid ""
+"cursor flash period P*.1 sec (default 10); valid  values are between 0 and "
+"512; this is ignored if -t is specified"
+msgstr ""
+"光标闪烁周期 P * 0.1 秒 (默认为 10); 有效值在 0 和 512 之间; 若 -t 参数被指定, "
+"则这个值将被忽略"
+
+#: gtypist.c:1626
+msgid "set initial display colours where available"
+msgstr "设置可用的初始显示颜色"
+
+#: gtypist.c:1627
+msgid "don't beep on errors"
+msgstr "当错误发生时不响铃"
+
+#: gtypist.c:1628
+msgid "same as -s, --silent"
+msgstr "和 -s, --silent 相同"
+
+#: gtypist.c:1629
+msgid "start the lesson at label 'L'"
+msgstr "由标签 'L' 的课程开始"
+
+#: gtypist.c:1630
+msgid "try to mimic word processors"
+msgstr "试图模拟字处理软件"
+
+#: gtypist.c:1631
+msgid "forbid the user to skip exercises"
+msgstr "禁止使用者跳过练习"
+
+#: gtypist.c:1632
+msgid "highlight errors with reverse video"
+msgstr "高亮显示错误"
+
+#: gtypist.c:1633
+msgid "print this message"
+msgstr "打印此消息"
+
+#: gtypist.c:1634
+msgid "output version information and exit"
+msgstr "输出版本信息然后退出"
+
+#: gtypist.c:1635
+msgid "do not ask confirmation questions"
+msgstr "不要问确认问题"
+
+#: gtypist.c:1636
+msgid ""
+"set top banner colours (background, foreground, package and version "
+"respectively)"
+msgstr ""
+"设置屏幕上方的广告条颜色 (分别为背景，前景，包和版本)。"
+
+#: gtypist.c:1641
+msgid ""
+"`gtypist' is a typing tutor with several lessons for different keyboards and "
+"languages.  New lessons can be written by the user easily.\n"
+"\n"
+msgstr ""
+"'gtypist' 是一款打字教程软件，支持不同的键盘和语言。新的课程可以由用户很容"
+"易的制作出来。\n"
+
+#: gtypist.c:1643
+msgid "Usage"
+msgstr "用法"
+
+#: gtypist.c:1643 gtypist.c:1644
+msgid "Options"
+msgstr "选项"
+
+#: gtypist.c:1643
+msgid "script-file"
+msgstr "脚本文件"
+
+#: gtypist.c:1651
+#, c-format
+msgid ""
+"\n"
+"If not supplied, script-file defaults to '%s/%s'.\n"
+msgstr ""
+"\n"
+"如果没有提供，默认脚本文件为 '%s/%s'.\n"
+
+#: gtypist.c:1653
+msgid ""
+"The path $GTYPIST_PATH is searched for script files.\n"
+"\n"
+msgstr ""
+"从路径 $GTYPIST_PATH 中搜索脚本文件。\n"
+"\n"
+
+#: gtypist.c:1655
+msgid "Examples"
+msgstr "例子"
+
+#: gtypist.c:1657
+msgid "To run the default lesson in english `gtypist.typ'"
+msgstr "以默认的英语方式 `gtypist.typ' 进行课程"
+
+#: gtypist.c:1659
+msgid "To run the lesson in spanish"
+msgstr "以西班牙语方式进行课程"
+
+#: gtypist.c:1661
+msgid ""
+"To instruct gtypist to look for lesson `bar.typ' in a non standard directory"
+msgstr ""
+"让 gtypist 在一个非标准目录中查找课程 `bar.typ'。"
+
+#: gtypist.c:1663
+msgid ""
+"To run the lesson in the file `test.typ' of directory `temp', starting at "
+"label `TEST1', using the terminal's cursor, and run silently"
+msgstr ""
+"要进行目录 `temp' 下的文件 `test.typ' 中的课程，从标签 `TEST1' 开始，使用终端光标，"
+"并且使用安静模式。"
+
+#: gtypist.c:1664
+msgid "Report bugs to bug-gtypist@gnu.org"
+msgstr "将错误报告给 bug-gtypist@gnu.org "
+
+#: gtypist.c:1707
+#, c-format
+msgid "%s: invalid error-max value\n"
+msgstr "%s: 无效的 error-max 值\n"
+
+#: gtypist.c:1723
+#, c-format
+msgid "%s: invalid curs-flash value\n"
+msgstr "%s: 无效的 curs-flash 值\n"
+
+#: gtypist.c:1734
+#, c-format
+msgid "%s: invalid colours value\n"
+msgstr "%s: 不正确的颜色值\n"
+
+#: gtypist.c:1744
+#, c-format
+msgid "%s:  argument format is incorrect\n"
+msgstr "%s:  参数格式不正确\n"
+
+#: gtypist.c:1754
+#, c-format
+msgid "%s:  incorrect colour values\n"
+msgstr "%s:  不正确的颜色值\n"
+
+#: gtypist.c:1768
+#, c-format
+msgid "%s: internal error: malloc\n"
+msgstr "%s: 内部错误: malloc\n"
+
+#: gtypist.c:1789
+msgid "Written by Simon Baldwin"
+msgstr "作者 Simon Baldwin"
+
+#: gtypist.c:1798 gtypist.c:1805
+#, c-format
+msgid "Try '%s --help' for more information.\n"
+msgstr "打 '%s --help' 可得到更多的信息.\n"
+
+#: gtypist.c:1843
+msgid ""
+"Copyright (C) 1998, 1999, 2000, 2001, 2002, 2003 Simon Baldwin.\n"
+"This program comes with ABSOLUTELY NO WARRANTY; for details\n"
+"please see the file 'COPYING' supplied with the source code.\n"
+"This is free software, and you are welcome to redistribute it\n"
+"under certain conditions; again, see 'COPYING' for details.\n"
+"This program is released under the GNU General Public License."
+msgstr ""
+"版权所有 (c) 1998, 1999, 2000, 2001, 2002 Simon Baldwin.\n"
+"本软件没有任何保证; 详情请参看源码包中的 'COPYING' 文件。\n"
+"本程序是自由软件，您可以在一定的条款下传播。请参看 COPYING\n"
+"文件。本程序在 GNU 一般公众许可证下发布。"
+
+#: gtypist.c:1850
+msgid " Tutorial "
+msgstr "   教程   "
+
+#: gtypist.c:1852
+msgid "  Query   "
+msgstr "   查询   "
+
+#: gtypist.c:1854
+msgid "  Drill   "
+msgstr "   操练   "
+
+#: gtypist.c:1856
+msgid "Speed test"
+msgstr "速度测验"
+
+#: gtypist.c:1858
+msgid " Press RETURN or SPACE to continue, ESC to return to the menu "
+msgstr " 按回车键或空格式继续。ESC 键回到菜单。"
+
+#: gtypist.c:1861
+#, c-format
+msgid " Your error-rate is too high. You have to achieve %.1f%%. "
+msgstr "您的错误率太高了. 您必须达到 %.1f%%."
+
+#: gtypist.c:1865
+msgid " You failed this test, so you need to go back to %s. "
+msgstr "您没有通过此次测验, 所以您必须回到 %s"
+
+#: gtypist.c:1869
+msgid " Press R to repeat, N for next exercise or E to exit "
+msgstr "按 R 重复一次, 按 N 进入下一个练习或按 E 退出"
+
+#: gtypist.c:1873
+msgid " Press R to repeat or E to exit "
+msgstr "按 R 重复一次或按 E 退出"
+
+#: gtypist.c:1876
+msgid " Are you sure you want to exit this lesson? [Y/N] "
+msgstr "您确定要退出此课程吗? [Y/N]"
+
+#: gtypist.c:1880
+msgid " Sorry, gtypist is configured to forbid skipping exercises. "
+msgstr "抱歉, gtypist 目前设定为禁止跳过课程。"
+
+#: gtypist.c:1885
+#, c-format
+msgid " Raw speed      = %6.2f wpm "
+msgstr " 原始速度     = %6.2f 字/分 "
+
+#: gtypist.c:1890
+#, c-format
+msgid " Adjusted speed = %6.2f wpm "
+msgstr " 已调整速度   = %6.2f 字/分 "
+
+#: gtypist.c:1895
+#, c-format
+msgid "            with %.1f%% errors "
+msgstr "           有   %.1f%%  的错误 "
+
+#: gtypist.c:1900
+msgid "Y/N"
+msgstr "Y/N"
+
+#: gtypist.c:1910
+msgid "R/N/E"
+msgstr "R/N/E"
+
+#: gtypist.c:1961
+msgid "can't find or open file"
+msgstr "找不到或无法打开文件"
+
+#: gtypist.c:2008
+msgid "Loading the script..."
+msgstr "正在调入脚本文件"
+
+#: cursmenu.c:320
+msgid ""
+"Use arrowed keys to move around, SPACE or RETURN to select and ESCAPE to go "
+"back"
+msgstr ""
+"使用光标键移动，空格键或回车键选择，ESC 键后退"
+
+#: error.c:50
+msgid "line"
+msgstr "行"
+
+#: script.c:52
+msgid "internal error: strdup"
+msgstr "内部错误: strdup"
+
+#: script.c:110
+msgid "data shortage"
+msgstr "数据不足"
+
+#: script.c:112
+msgid "missing ':'"
+msgstr "缺少 ':'"
+
+#: script.c:118
+msgid "line too long for screen"
+msgstr "行长度超过屏幕可容纳宽度"
+
+#: script.c:217
+msgid ""
+"Happy Typing!\n"
+"\n"
+msgstr ""
+"祝您打字愉快!\n"
+"\n"
+

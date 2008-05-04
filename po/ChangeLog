@@ -1,3 +1,8 @@
+2008-05-04  Paul Goins  <general@vultaire.net>
+
+	* zh_CN.po: Added Simplified Chinese translation, submitted by
+	  Wei Mingzhi <whistler@openoffice.org>
+
 2001-12-07  gettextize  <bug-gnu-utils@gnu.org>
 
 	* Makefile.in.in: Upgrade to gettext-0.10.40.
