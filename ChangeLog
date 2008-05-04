@@ -7,6 +7,7 @@
 	  Makefile since source files are now in the "src" folder.
 	  (NOTE: This batch file may not work on DOS or Win9x, since it uses
 	  "set /p" which is a Windows NT-specific command.)
+	* TODO: Removed one completed item, added one user idea.
 
 2008-05-02  Paul Goins  <general@vultaire.net>
 

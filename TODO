@@ -2,7 +2,7 @@
 THINGS TO DO for GNU Typist
 
 See our latest TODO file on 
-http://savannah.gnu.org/cgi-bin/viewcvs/~checkout~/gtypist/gtypist/TODO !
+http://git.savannah.gnu.org/gitweb/?p=gtypist.git;a=blob_plain;f=TODO;hb=master
 
 -------------------------------------------------------------------------
 
@@ -67,8 +67,6 @@ SHORT TERM
  * Reuse lessons from dvorak7min and possibly other
    typing tutors.
 
- * Put all the program sources in the src/ directory
-
  * Replace 'getopt' by 'GNU gengetopt'
 
  * Improve the French translation of "lesson file", which
@@ -131,6 +129,10 @@ MEDIUM TERM
  * Add configuration file support. Should be every useful,
    in particular for teachers! 
 
+ * Add support for saving the last lesson (or part of a lesson) the user was
+   working on, so the user can easily pick up where s/he left off.
+   (idea by Enrique Pedroso)
+
  * Improve the documentation of course files
 
  * Broaden our lesson database:
@@ -165,4 +167,3 @@ LONG TERM
    maps available to it, and arises as a result of maintaining typing
    statistics by key and by finger (the program needs to know what
    key is operated by which finger).
-
