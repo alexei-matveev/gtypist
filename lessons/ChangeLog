@@ -1,3 +1,9 @@
+2008-05-04  Paul Goins  <general@vultaire.net>
+
+	* esp.typ: A mistake involving a not-yet-introduced key was corrected.
+	  This was submitted by igor@tamarapatino.org, and credited to
+	  Laura Victoria Quishpe <sekhmetnightmare@hotmail.com>.
+
 2004-09-30	Dmitry Rutsky	<balto@bk.ru>
 
 	* ru.typ:	minor improvements.

@@ -297,7 +297,7 @@ S:j jf jfk jfkl ñ añ aña daña l la las faja
  :jn jnj nen en ene nene no son nada n nos
  :fr frf ere er oro risa re res risa r oro
  :ki iki kik ki kil kilo fi fin fina i fin
- :no son nene en don dedo donde ni tin lino
+ :no son nene en don dedo donde ni lin lino
  :re oro rana ir res reir reloj ar aro raro
  :id ida lila si sin idea hijas de dio risa
  :es reo el niño la flor da risa el nene si
