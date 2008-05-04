@@ -1,13 +1,13 @@
 GNU Typist THANKS file
 
-GNU Typist has originally been  written by Simon Baldwin. More details
-can be found  in the section "History of GNU Typist"  in the GNU Typist
-Manual.   This manual  can be  found with  info after  the  program is
+GNU Typist was originally written by Simon Baldwin. More details can
+be found in the section "History of GNU Typist" in the GNU Typist
+Manual. This manual can be found with info after the program is
 installed, or before installing at directory `doc'.
  
-Many  people  have further  contributed  to  GNU  Typist by  reporting
-problems,  suggesting  various   improvements,  or  submitting  actual
-code. Here  is a list  of these people.  Help us keep it  complete and
+Many people have further contributed to GNU Typist by reporting
+problems, suggesting various improvements, or submitting actual
+code. Here is a list of these people. Help us keep it complete and
 exempt of errors.
 
 * Rob Leslie <rob@mars.org> for reporting bugs and implementing
