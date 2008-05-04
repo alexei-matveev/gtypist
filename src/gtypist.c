@@ -7,7 +7,7 @@
  *
  * This program is free software; you can redistribute it and/or
  * modify it under the terms of the GNU General Public License
- * as published by the Free Software Foundation; either version 2
+ * as published by the Free Software Foundation, either version 3
  * of the License, or (at your option) any later version.
  *
  * This program is distributed in the hope that it will be useful,
@@ -190,6 +190,7 @@ static void print_usage_item( char *op, char *lop, char *help,
 static void print_help();
 static void parse_cmdline( int argc, char **argv );
 static void catcher( int signal );
+static void do_bell();
 
 // Display the top banner with the given text
 void banner (const char *text)
@@ -656,7 +657,7 @@ do_drill( FILE *script, char *line ) {
 	  }
 	  while ( rc == KEY_BACKSPACE || c == ASCII_BS || c == ASCII_DEL );
 
-#ifdef DJGPP
+#ifdef PDCURSES_ENTER_KEY_FIX
 	  /* this is necessary for DOS: when using raw(), pdcurses 2.4's
 	     getch() returns 0x0D on DOS/Windows  */
 	  if ( c == 0x0D )
@@ -715,7 +716,7 @@ do_drill( FILE *script, char *line ) {
 
 	      if ( ! cl_silent ) 
 		{
-		  putchar( ASCII_BELL ); fflush( stdout );
+		  do_bell();
 		}
 	      errors++;
 	      error_sync = 1;
@@ -917,7 +918,7 @@ do_speedtest( FILE *script, char *line ) {
 	  rc = getch_fl( (*p != ASCII_NL) ? *p : ASCII_SPACE );
 	  c = (char)rc;
 
-#ifdef DJGPP
+#ifdef PDCURSES_ENTER_KEY_FIX
 	  /* this is necessary for DOS: when using raw(), pdcurses 2.4's
 	     getch() returns 0x0D on DOS/Windows  */
 	  if ( c == 0x0D )
@@ -966,7 +967,7 @@ do_speedtest( FILE *script, char *line ) {
 	      ADDCH_REV( *p == ASCII_NL ?
 			 DRILL_NL_ERR : (unsigned char)*p );
 	      if ( ! cl_silent ) {
-		putchar( ASCII_BELL ); fflush( stdout );
+			do_bell();
 	      }
 	      errors++;
 	      error_sync = 1;
@@ -1224,8 +1225,13 @@ do_query_simple ( char *text )
       
       if (toupper (resp) == 'Y' || toupper (resp) == YN[0])
 	resp = 0;
-      if (toupper (resp) == 'N' || toupper (resp) == YN[2])
+      else if (toupper (resp) == 'N' || toupper (resp) == YN[2])
 	resp = -1;
+    /* Some PDCURSES implementations return -1 when no key is pressed
+       for a second or so.  So, unless resp is explicitly set to Y/N,
+       don't exit! */
+      else
+	resp = 2;
     }  while (resp != 0 && resp != -1);
 
   /* clear out the message line */
@@ -1951,8 +1957,15 @@ This program is released under the GNU General Public License.");
     strcpy( script_file, argv[optind] );
   else
     sprintf( script_file,"%s/%s",DATADIR,DEFAULT_SCRIPT);
-  
-  script = fopen( script_file, "r" );
+
+#ifdef MINGW
+  /* MinGW's ftell doesn't work properly for absolute file positions in
+     text mode, so open in binary mode instead. */
+#  define FILE_READ_MODE "rb"
+#else
+#  define FILE_READ_MODE "r"
+#endif	
+  script = fopen( script_file, FILE_READ_MODE );
   if (script==NULL && getenv( "GTYPIST_PATH" ) != NULL ) 
     {
       p = strtok( getenv( "GTYPIST_PATH" ), ":" );
@@ -1962,7 +1975,7 @@ This program is released under the GNU General Public License.");
 	  strcpy( filepath, p );
 	  strcat( filepath, "/" );
 	  strcat( filepath, script_file );
-	  if ( (script = fopen( filepath, "r" )) != NULL )
+	  if ( (script = fopen( filepath, FILE_READ_MODE )) != NULL )
 	    break;
 	}
     }
@@ -1971,7 +1984,7 @@ This program is released under the GNU General Public License.");
       strcpy( filepath, DATADIR );
       strcat( filepath, "/" );
       strcat( filepath, script_file );
-      script = fopen( filepath, "r" );
+      script = fopen( filepath, FILE_READ_MODE );
     }
   
   if ( script == NULL ) 
@@ -1984,12 +1997,16 @@ This program is released under the GNU General Public License.");
   /* prepare for curses stuff, and set up a signal handler
      to undo curses if we get interrupted */
   scr = initscr();
-  signal( SIGHUP, catcher );  signal( SIGINT, catcher );
+  signal( SIGINT, catcher );
+  signal( SIGTERM, catcher );
+#ifndef MINGW
+  signal( SIGHUP, catcher );
   signal( SIGQUIT, catcher ); 
 #ifndef DJGPP
   signal( SIGCHLD, catcher );
 #endif
-  signal( SIGPIPE, catcher ); signal( SIGTERM, catcher );
+  signal( SIGPIPE, catcher );
+#endif
   clear(); refresh(); typeahead( -1 );
   keypad( scr, TRUE ); noecho(); curs_set( 0 ); raw();
 
@@ -2035,4 +2052,13 @@ This program is released under the GNU General Public License.");
 
   /* for lint... */
   return( 0 );
+}
+
+void do_bell() {
+#ifdef MINGW
+  MessageBeep( -1 );
+#else
+  putchar( ASCII_BELL );
+  fflush( stdout );
+#endif
 }

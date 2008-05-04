@@ -7,7 +7,7 @@
  *
  * This program is free software; you can redistribute it and/or
  * modify it under the terms of the GNU General Public License
- * as published by the Free Software Foundation; either version 2
+ * as published by the Free Software Foundation, either version 3
  * of the License, or (at your option) any later version.
  *
  * This program is distributed in the hope that it will be useful,
@@ -50,10 +50,10 @@
 #define C_ON_FAILURE_SET        'F'
 #define C_MENU                  'M'
 
-#ifndef DJGPP
-#define ASCII_ENTER             '\n'
-#else
+#ifdef PDCURSES_ENTER_KEY_FIX
 #define ASCII_ENTER             0x0D
+#else
+#define ASCII_ENTER             '\n'
 #endif
 #define	ASCII_NL		'\n'
 #define	ASCII_NULL		'\0'

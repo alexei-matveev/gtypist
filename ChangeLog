@@ -1,3 +1,19 @@
+2008-05-04  Paul Goins  <general@vultaire.net>
+
+	* src/gtypist.c: Updated to support MinGW.  Also, added a do_beep
+	  function to call MessageBeep under Windows and putchar( ASCII_BELL )
+	  otherwise.
+	* configur.bat.in: Added support for building via MinGW.  Updated DJGPP
+	  Makefile since source files are now in the "src" folder.
+	  (NOTE: This batch file may not work on DOS or Win9x, since it uses
+	  "set /p" which is a Windows NT-specific command.)
+
+2008-05-02  Paul Goins  <general@vultaire.net>
+
+	* AUTHORS: Added "GNU Typist Development Team"
+	* All gtypist-specific files with a GPL notice specify version 3 of the
+	  GPL.
+
 2004-09-30	Dmitry Rutsky	<balto@bk.ru>
 
 	* version.sh:	bugfix release:  2.7.2.
