@@ -1,3 +1,11 @@
+2008-05-05  Paul Goins  <general@vultaire.net>
+
+	* *.po: Modified Copyright msgid string to match updated version in
+	  gtypist.c.
+	* cs.po: msgstr to match Copyright msgid was empty.  I copied the
+	  English version for now.
+	* zh_*.po: Added 2003 to the Copyright msgstr.
+
 2008-05-04  Paul Goins  <general@vultaire.net>
 
 	* zh_CN.po: Added Simplified Chinese translation, submitted by

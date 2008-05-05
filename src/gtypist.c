@@ -1866,7 +1866,7 @@ int main( int argc, char **argv )
 #endif
 
   COPYRIGHT=_("Copyright (C) 1998, 1999, 2000, 2001, 2002, 2003 Simon Baldwin.\n\
-Copyright (C) 2003, 2004, 2008 GNU Typist Development Team\n\
+Copyright (C) 2003, 2004, 2008 GNU Typist Development Team.\n\
 This program comes with ABSOLUTELY NO WARRANTY; for details\n\
 please see the file 'COPYING' supplied with the source code.\n\
 This is free software, and you are welcome to redistribute it\n\
