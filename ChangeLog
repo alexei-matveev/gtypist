@@ -1,3 +1,7 @@
+2008-05-06  Paul Goins  <general@vultaire.net>
+
+	* version.sh: Updated version for first pre-release of 2.8.
+
 2008-05-04  Paul Goins  <general@vultaire.net>
 
 	* src/gtypist.c: Updated to support MinGW.  Also, added a do_beep
