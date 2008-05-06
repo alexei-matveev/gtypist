@@ -312,10 +312,18 @@ msgstr "Sorry, gtypist is geconfigureerd het overslaan van oefeningen te verbied
 msgid " Raw speed      = %6.2f wpm "
 msgstr " Ruwe snelheid      = %6.2f wpm "
 
+# Will someone please verify this translation?  -Paul
+msgid " Raw speed      = %6.2f cpm "
+msgstr " Ruwe snelheid      = %6.2f cpm "
+
 #: gtypist.c:1968
 #, c-format
 msgid " Adjusted speed = %6.2f wpm "
 msgstr "Aangepaste snelheid = %6.2f wpm "
+
+# Will someone please verify this translation?  -Paul
+msgid " Adjusted speed = %6.2f cpm "
+msgstr "Aangepaste snelheid = %6.2f cpm "
 
 #: gtypist.c:1973
 #, c-format

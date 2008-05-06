@@ -331,10 +331,18 @@ msgstr " Valitan, asetuksissa kiellet‰‰n harjoitusten ohittaminen. "
 msgid " Raw speed      = %6.2f wpm "
 msgstr " Raakanopeus     = %6.2f s/m "
 
+# Note: I need someone to translate "cpm" to Finnish.  -Paul
+msgid " Raw speed      = %6.2f cpm "
+msgstr " Raakanopeus     = %6.2f cpm "
+
 #: src/gtypist.c:1916
 #, c-format
 msgid " Adjusted speed = %6.2f wpm "
 msgstr " Korjattu nopeus = %6.2f s/m "
+
+# Note: I need someone to translate "cpm" to Finnish.  -Paul
+msgid " Adjusted speed = %6.2f cpm "
+msgstr " Korjattu nopeus = %6.2f cpm "
 
 #: src/gtypist.c:1921
 #, c-format

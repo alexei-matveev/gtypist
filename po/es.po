@@ -335,10 +335,18 @@ msgstr ""
 msgid " Raw speed      = %6.2f wpm "
 msgstr " Velocidad en bruto     = %6.2f wpm "
 
+# Will someone please verify this translation?  -Paul
+msgid " Raw speed      = %6.2f cpm "
+msgstr " Velocidad en bruto     = %6.2f cpm "
+
 #: src/gtypist.c:1916
 #, c-format
 msgid " Adjusted speed = %6.2f wpm "
 msgstr " Velocidad neta = %6.2f wpm "
+
+# Will someone please verify this translation?  -Paul
+msgid " Adjusted speed = %6.2f cpm "
+msgstr " Velocidad neta = %6.2f cpm "
 
 #: src/gtypist.c:1921
 #, c-format

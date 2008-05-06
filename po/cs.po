@@ -331,10 +331,18 @@ msgstr " Omlouvám se, ale jsem konfigurován, abych nedovolil pøeskakovat."
 msgid " Raw speed      = %6.2f wpm "
 msgstr " Hrubá rychlost      = %6.2f slov/m "
 
+# Note: I need someone to translate "cpm" to Czech.  -Paul
+msgid " Raw speed      = %6.2f cpm "
+msgstr " Hrubá rychlost      = %6.2f cpm "
+
 #: src/gtypist.c:1916
 #, c-format
 msgid " Adjusted speed = %6.2f wpm "
 msgstr " Orientaèní rychlost = %6.2f slov/m "
+
+# Note: I need someone to translate "cpm" to Czech.  -Paul
+msgid " Adjusted speed = %6.2f cpm "
+msgstr " Orientaèní rychlost = %6.2f cpm "
 
 #: src/gtypist.c:1921
 #, c-format

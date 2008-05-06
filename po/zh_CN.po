@@ -321,10 +321,18 @@ msgstr "抱歉, gtypist 目前设定为禁止跳过课程。"
 msgid " Raw speed      = %6.2f wpm "
 msgstr " 原始速度     = %6.2f 字/分 "
 
+# Note: I need someone to translate "cpm" to Simplified Chinese.  -Paul
+msgid " Raw speed      = %6.2f cpm "
+msgstr " 原始速度     = %6.2f cpm "
+
 #: gtypist.c:1890
 #, c-format
 msgid " Adjusted speed = %6.2f wpm "
 msgstr " 已调整速度   = %6.2f 字/分 "
+
+# Note: I need someone to translate "cpm" to Simplified Chinese.  -Paul
+msgid " Adjusted speed = %6.2f cpm "
+msgstr " 已调整速度   = %6.2f cpm "
 
 #: gtypist.c:1895
 #, c-format

@@ -1,6 +1,9 @@
 2008-05-06  Paul Goins  <general@vultaire.net>
 
-	* *.po: Auto-updated via autogen.sh.
+	* *.po: New string added for CPM (characters-per-minute).
+	  Temporary translations put into place.  Please, verify and/or
+	  correct them!  Line numbers and such have also been auto-updated
+	  via autogen.sh.
 
 2008-05-05  Paul Goins  <general@vultaire.net>
 

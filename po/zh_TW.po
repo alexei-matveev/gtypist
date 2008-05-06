@@ -330,10 +330,18 @@ msgstr "抱歉, gtypist 目前設定禁止跳過練習"
 msgid " Raw speed      = %6.2f wpm "
 msgstr " 原始速度       = %6.2f wpm "
 
+# Will someone please verify this translation?  -Paul
+msgid " Raw speed      = %6.2f cpm "
+msgstr " 原始速度       = %6.2f cpm "
+
 #: src/gtypist.c:1916
 #, c-format
 msgid " Adjusted speed = %6.2f wpm "
 msgstr " 已調整速度     = %6.2f wpm "
+
+# Will someone please verify this translation?  -Paul
+msgid " Adjusted speed = %6.2f cpm "
+msgstr " 已調整速度     = %6.2f cpm "
 
 #: src/gtypist.c:1921
 #, c-format

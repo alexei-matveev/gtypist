@@ -335,10 +335,18 @@ msgstr "Désolé, gtypist est configuré pour interdire de sauter un exercice."
 msgid " Raw speed      = %6.2f wpm "
 msgstr " Vitesse brute    = %6.2f mpm "
 
+# Note: I need someone to translate "cpm" to French.  -Paul
+msgid " Raw speed      = %6.2f cpm "
+msgstr " Vitesse brute    = %6.2f cpm "
+
 #: src/gtypist.c:1916
 #, c-format
 msgid " Adjusted speed = %6.2f wpm "
 msgstr " Vitesse corrigée = %6.2f mpm "
+
+# Note: I need someone to translate "cpm" to French.  -Paul
+msgid " Adjusted speed = %6.2f cpm "
+msgstr " Vitesse corrigée = %6.2f cpm "
 
 #: src/gtypist.c:1921
 #, c-format

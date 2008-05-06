@@ -88,7 +88,9 @@ char *REPEAT_EXIT_MSG;
 char *CONFIRM_EXIT_LESSON_MSG;
 char *NO_SKIP_MSG;
 char *SPEED_RAW;
+char *SPEED_RAW_CPM;
 char *SPEED_ADJ;
+char *SPEED_ADJ_CPM;
 char *SPEED_PCT_ERROR;
 unsigned char *YN;
 unsigned char *RNE;
@@ -135,6 +137,7 @@ static int	cl_menu_title_colour = 7;
 static bool	cl_wp_emu = FALSE;		/* do wp-like stuff */
 static bool     cl_no_skip = FALSE;             /* forbid the user to */
 static bool	cl_rev_video_errors = FALSE;    /* reverse video for errors */
+static bool cl_scoring_cpm = FALSE; /* Characters-per-minute scoring if set */
 
 /* a few global variables */
 static bool	global_resp_flag = TRUE;
@@ -454,34 +457,57 @@ static void wait_user (FILE *script, char *message, char *mode)
 static void display_speed( int total_chars, long elapsed_time, int errcount ) {
   double	test_time;			/* time in minutes */
   double	words;				/* effective words typed */
-  double	speed, adjusted_speed;		/* speeds in wpm */
+  double	speed, adjusted_speed;		/* speeds */
   char	message[MAX_WIN_LINE]; 		        /* buffer */
+  char *raw_speed_str, *adj_speed_str;
 
   /* calculate the speeds */
   test_time = (double)elapsed_time / (double)60.0;
   words = (double)total_chars / (double)5.0;
   if ( elapsed_time > 0 ) 
     {
-      speed = words / test_time;
+      /* Get speed values */
+      if(cl_scoring_cpm)
+        {
+          speed = (double)total_chars / test_time;
+          adjusted_speed = (double)(total_chars - (errcount * 5 )) / test_time;
+        }
+      else
+        {
+          speed = words / test_time;
+          adjusted_speed = ( words - errcount ) / test_time;
+        }
+      /* Set speed values within bounds */
       speed = ( speed < 999.99 ) ? speed : 999.99;
-      adjusted_speed = ( words - errcount ) / test_time;
       adjusted_speed = ( adjusted_speed < 999.99 )
-	? adjusted_speed : 999.99;
+        ? adjusted_speed : 999.99;
+      adjusted_speed = ( adjusted_speed > 0 )
+        ? adjusted_speed : 0;
     }
   else
     /* unmeasurable elapsed time - use big numbers */
     speed = adjusted_speed = (double)999.99;
   
   /* display the speed - no -ve numbers */
-  sprintf( message, SPEED_RAW, speed );
+  if(cl_scoring_cpm)
+    {
+      raw_speed_str = SPEED_RAW_CPM;
+      adj_speed_str = SPEED_ADJ_CPM;
+    }
+  else
+    {
+      raw_speed_str = SPEED_RAW;
+      adj_speed_str = SPEED_ADJ;
+    }
+  sprintf( message, raw_speed_str, speed );
   move( SPEED_LINE, COLS - strlen( message ) - 1 );
   ADDSTR_REV( message );
-  sprintf( message, SPEED_ADJ,
-	   adjusted_speed >= 0.01 ? adjusted_speed : 0.0 );
+  sprintf( message, adj_speed_str,
+           adjusted_speed >= 0.01 ? adjusted_speed : 0.0 );
   move( SPEED_LINE + 1, COLS - strlen( message ) - 1 );
   ADDSTR_REV( message );
   sprintf( message, SPEED_PCT_ERROR,
-	   (double)100.0*(double)errcount / (double)total_chars );
+           (double)100.0*(double)errcount / (double)total_chars );
   move( SPEED_LINE + 2, COLS - strlen( message ) - 1 );
   ADDSTR_REV( message );
 }
@@ -1625,7 +1651,8 @@ print_help()
       "-h",
       "-v",
       "-S",
-      "--banner-colors=F,B,P,V"};
+      "--banner-colors=F,B,P,V",
+      "--scoring=wpm,cpm"};
   char *lop[]= 
     { "--max-error=%",
       "--notimer",
@@ -1641,6 +1668,7 @@ print_help()
       "--help",
       "--version",
       "--always-sure",
+      "",
       ""};
   char *help[] = 
     { 
@@ -1659,7 +1687,8 @@ print_help()
       _("output version information and exit"),
       _("do not ask confirmation questions"),
       _("set top banner colours (background, foreground, package and version "
-		      "respectively)")};
+        "respectively)"),
+      _("set scoring mode (words per minute or characters per minute)")};
   
   int loop;
   
@@ -1697,6 +1726,7 @@ static void
 parse_cmdline( int argc, char **argv ) {
   int	c;				/* option character */
   int	option_index;			/* option index */
+  char *str_option; /* to store string vals of cl opts */
   static struct option long_options[] = {	/* options table */
     { "max-error",      required_argument, 0, 'e' },
     { "notimer",	no_argument, 0, 'n' },
@@ -1715,6 +1745,7 @@ parse_cmdline( int argc, char **argv ) {
     { "help",		no_argument, 0, 'h' },
     { "version",	no_argument, 0, 'v' },
     { "always-sure",	no_argument, 0, 'S' },
+    { "scoring", required_argument, 0, '\x02'},
     { 0, 0, 0, 0 }};
 
   /* process every option */
@@ -1781,7 +1812,27 @@ parse_cmdline( int argc, char **argv ) {
 	  }
 
 	  break;
-		
+    case '\x02': /* Scoring */
+      str_option = (char*)malloc( strlen(optarg) + 1 );
+      if (sscanf (optarg, "%s", str_option) != 1)
+        {
+          fprintf (stderr, _("%s: invalid scoring mode"), optarg);
+          exit (1);
+        }
+      if( strcmp(str_option, "cpm") == 0 )
+        {
+          cl_scoring_cpm = TRUE;
+        }
+      else if( strcmp(str_option, "wpm") == 0 )
+        {
+          cl_scoring_cpm = FALSE;
+        }
+      else
+        {
+          fprintf (stderr, _("%s: invalid scoring mode"), optarg);
+          exit (1);
+        }
+      free( str_option );
 	case 's':
 	case 'q':
 	  cl_silent = TRUE;
@@ -1909,11 +1960,15 @@ This program is released under the GNU General Public License.");
      video because it must be aligned with the next two messages 
      (it's best to run gtypist to see this in practice)   */
   SPEED_RAW=_(" Raw speed      = %6.2f wpm ");
+  /* This is the CPM version of the above.  The same rules apply. */
+  SPEED_RAW_CPM=_(" Raw speed      = %6.2f cpm ");
   /* this must be adjusted to the right with one space at the end.
      Leading whitespace is important because it is displayed in reverse
      video and because it must be aligned with the previous and next messages
      (it's best to run gtypist to see this in practice)   */
   SPEED_ADJ=  _(" Adjusted speed = %6.2f wpm ");
+  /* This is the CPM version of the above.  The same rules apply. */
+  SPEED_ADJ_CPM=  _(" Adjusted speed = %6.2f cpm ");
   /* this must be adjusted to the right with one space at the end.
      Leading whitespace is important because it is displayed in reverse
      video and because it must be aligned with the next last two messages

@@ -1,0 +1,6 @@
+2008-05-06  Paul Goins  <general@vultaire.net>
+
+	* gtypist.c: Added switch for "characters-per-minute" mode.  This
+	  is pretty much cosmetic since "words" are standardized to 5
+	  characters, but some countries tend to use CPM instead of WPM.
+	  However, speeds will top out at 999.99 CPM (200 WPM).

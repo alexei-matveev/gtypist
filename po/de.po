@@ -340,10 +340,18 @@ msgstr "Es ist nicht erlaubt, Übungen zu überspringen."
 msgid " Raw speed      = %6.2f wpm "
 msgstr " Netto-Geschwindigkeit        = %6.2f wpm "
 
+# Will someone please verify this translation?  -Paul
+msgid " Raw speed      = %6.2f cpm "
+msgstr " Netto-Geschwindigkeit        = %6.2f cpm "
+
 #: src/gtypist.c:1916
 #, c-format
 msgid " Adjusted speed = %6.2f wpm "
 msgstr " Tatsächliche Geschwindigkeit = %6.2f wpm "
+
+# Will someone please verify this translation?  -Paul
+msgid " Adjusted speed = %6.2f cpm "
+msgstr " Tatsächliche Geschwindigkeit = %6.2f cpm "
 
 #: src/gtypist.c:1921
 #, c-format

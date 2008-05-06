@@ -334,10 +334,18 @@ msgstr " Извините, gtypist настроен на запрет пропуска упражнений. "
 msgid " Raw speed      = %6.2f wpm "
 msgstr " Средняя скорость %6.2f WPM "
 
+# Will someone please verify this translation?  -Paul
+msgid " Raw speed      = %6.2f cpm "
+msgstr " Средняя скорость %6.2f CPM "
+
 #: src/gtypist.c:1916
 #, c-format
 msgid " Adjusted speed = %6.2f wpm "
 msgstr " С учётом ошибок: %6.2f WPM "
+
+# Will someone please verify this translation?  -Paul
+msgid " Adjusted speed = %6.2f cpm "
+msgstr " С учётом ошибок: %6.2f CPM "
 
 #: src/gtypist.c:1921
 #, c-format
