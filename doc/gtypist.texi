@@ -50,7 +50,7 @@ USA @*
 @page
 
 @ifnottex
-@node Top, Distribution, (dir), (dir)
+@node Top
 @top GNU Typist - Typing Tutor
 @insertcopying
 
@@ -118,6 +118,7 @@ You can obtain GNU Typist from a friend or from the Internet:
 @end table
 
 @node Copying, Introduction, Distribution, Top
+@unnumbered GNU GENERAL PUBLIC LICENSE
 @include gpl.texi
 
 @node Introduction, Invoking, Copying, Top
@@ -994,11 +995,7 @@ and improvements, and he's not done yet!
 @end itemize
 
 @node Copying this manual
-@appendix Copying this manual
-@menu
-* GNU Free Documentation License::  How you can copy and share this manual.
-@end menu
-
+@appendix GNU Free Documentation License
 @include fdl.texi
 @bye
 

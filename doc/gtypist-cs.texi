@@ -119,6 +119,7 @@ GNU Typist mù¾ete získat od pøítele nebo z Internetu:
 @end table
 
 @node Kopírování, Úvod, Distribuce, Top
+@unnumbered GNU GENERAL PUBLIC LICENSE
 @include gpl.texi
 
 @node Úvod, Spou¹tìní, Kopírování, Top
@@ -934,11 +935,7 @@ nových mo¾ností tutoriálù a módem pro Emacs.
 @end itemize
 
 @node Kopírování tohoto manuálu
-@appendix Kopírování tohoto manuálu
-@menu
-* GNU Free Documentation License:: Kopírování tohoto manuálu
-@end menu
-
+@appendix GNU Free Documentation License
 @include fdl.texi
 @bye
 

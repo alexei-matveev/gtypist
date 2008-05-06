@@ -1,3 +1,8 @@
+2008-05-06  Paul Goins  <general@vultaire.net>
+
+	* gtypist*.texi: Slightly modified so the manuals will correctly import
+	  unaltered texinfo source for GPL and FDL.
+
 2008-05-04  Paul Goins  <general@vultaire.net>
 
 	* gpl.texi: Updated to GNU GPL v3

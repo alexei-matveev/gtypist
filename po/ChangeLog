@@ -1,3 +1,7 @@
+2008-05-06  Paul Goins  <general@vultaire.net>
+
+	* *.po: Auto-updated via autogen.sh.
+
 2008-05-05  Paul Goins  <general@vultaire.net>
 
 	* *.po: Modified Copyright msgid string to match updated version in
