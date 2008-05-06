@@ -1833,6 +1833,7 @@ parse_cmdline( int argc, char **argv ) {
           exit (1);
         }
       free( str_option );
+	  break;
 	case 's':
 	case 'q':
 	  cl_silent = TRUE;

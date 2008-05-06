@@ -1,3 +1,7 @@
+2008-05-07  Paul Goins  <general@vultaire.net>
+
+	* gtypist.c: Bug fix: added "break;" for "--scoring" case
+
 2008-05-06  Paul Goins  <general@vultaire.net>
 
 	* gtypist.c: Added switch for "characters-per-minute" mode.  This
