@@ -10,7 +10,7 @@ REQUIREMENTS
 First, make sure you ever want to do it.  Remember, there are stable releases,
 and they work nicely.
 
-If you do, then check if you have automake-1.7.7 and autoconf 2.57 properly
+If you do, then check if you have automake-1.8.2 and autoconf 2.57 properly
 installed on your system (check 'autoconf --version' and 'automake --version').
 You may try it with different versions, but we don't know if they work.
 
