@@ -1,9 +1,10 @@
 2008-05-12  Paul Goins  <general@vultaire.net>
 
-	* gtypist.texi: Updated FSF address, renamed links and removed some
-	  obsolete ones, added mention of CPM scoring, updated command line
+	* gtypist.texi: Updated FSF address, renamed/updated links (and removed
+	  some obsolete ones, added mention of CPM scoring, updated command line
 	  options section, added myself to the history section, and did some
 	  minor reformatting.
+
 	* ChangeLog: Minor formatting update.
 
 2008-05-06  Paul Goins  <general@vultaire.net>

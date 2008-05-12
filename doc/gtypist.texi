@@ -96,10 +96,10 @@ You can obtain GNU Typist from a friend or from the Internet:
 @uref{ftp://ftp.gnu.org/gnu/gtypist/}
 
 @item Official home page
-@uref{http://www.gnu.org/software/gtypist/}
+@uref{http://www.gnu.org/software/gtypist/gtypist.html}
 
 @item On-line manual (updates between program releases)
-@uref{http://www.gnu.org/software/gtypist/doc/}
+@uref{http://www.gnu.org/software/gtypist/doc/gtypist.html}
 
 @item Developers' home page (Git repository, tasks, support...)
 @uref{http://savannah.gnu.org/projects/gtypist/}

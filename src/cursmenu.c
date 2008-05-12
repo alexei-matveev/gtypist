@@ -1,7 +1,7 @@
 /*
  * GNU Typist  - interactive typing tutor program for UNIX systems
  * 
- * Copyright (C) 2003  GNU Typist Development Team <bug-gtypist@gnu.org>
+ * Copyright (C) 2003, 2008  GNU Typist Development Team <bug-gtypist@gnu.org>
  *
  * This program is free software; you can redistribute it and/or
  * modify it under the terms of the GNU General Public License

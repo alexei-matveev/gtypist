@@ -1,5 +1,6 @@
 2008-05-12  Paul Goins  <general@vultaire.net>
 
+	* cursmenu.c, gtypist.c, script.h: Updated copyright notices.
 	* gtypist.c: Bug fix: --banner-colour, the alternate option for
 	  --banner-colours, changed to --banner-colors.
 
