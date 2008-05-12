@@ -1,3 +1,8 @@
+2008-05-12  Paul Goins  <general@vultaire.net>
+
+	* gtypist.c: Bug fix: --banner-colour, the alternate option for
+	  --banner-colours, changed to --banner-colors.
+
 2008-05-07  Paul Goins  <general@vultaire.net>
 
 	* gtypist.c: Bug fix: added "break;" for "--scoring" case

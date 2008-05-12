@@ -1,3 +1,11 @@
+2008-05-12  Paul Goins  <general@vultaire.net>
+
+	* gtypist.texi: Updated FSF address, renamed links and removed some
+	  obsolete ones, added mention of CPM scoring, updated command line
+	  options section, added myself to the history section, and did some
+	  minor reformatting.
+	* ChangeLog: Minor formatting update.
+
 2008-05-06  Paul Goins  <general@vultaire.net>
 
 	* gtypist*.texi: Slightly modified so the manuals will correctly import
@@ -8,7 +16,7 @@
 	* gpl.texi: Updated to GNU GPL v3
 	* fdl.texi: Updated to GNU FDL v1.2
 
-2003-10-31	Dmitry Rutsky	<rutsky@school.ioffe.rssi.ru>
+2003-10-31  Dmitry Rutsky  <rutsky@school.ioffe.rssi.ru>
 
 	* gtypist.texi:  updated the information about the `M' command.
 

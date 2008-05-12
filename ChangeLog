@@ -1,5 +1,6 @@
 2008-05-12  Paul Goins  <general@vultaire.net>
 
+	* NEWS: Updated for 2.8.
 	* README: Added Windows XP as a tested OS.
 	* README.CVS: Updated recommended automake version.
 	* THANKS: Updated.

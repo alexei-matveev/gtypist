@@ -1735,7 +1735,7 @@ parse_cmdline( int argc, char **argv ) {
     { "colours",	required_argument, 0, 'c' },
     { "colors",		required_argument, 0, 'c' },
     { "banner-colours",	required_argument, 0, '\x01' },
-    { "banner-colour",	required_argument, 0, '\x01' },
+    { "banner-colors",	required_argument, 0, '\x01' },
     { "silent",		no_argument, 0, 's' },
     { "quiet",		no_argument, 0, 'q' },
     { "start-label",	required_argument, 0, 'l' },

@@ -40,8 +40,8 @@ Software Foundation raise funds for GNU development.''
 @vskip 0pt plus 1filll
 @insertcopying
 Published by the Free Software Foundation @*
-59 Temple Place Suite 330 @*
-Boston, MA 02111-1307 @*
+51 Franklin Street, Fifth Floor @*
+Boston, MA 02110-1301 @*
 USA @*
 @end titlepage
 
@@ -92,29 +92,17 @@ You can obtain GNU Typist from a friend or from the Internet:
 
 @table @asis
 
-@item Primary distribution site
+@item Official distribution site
 @uref{ftp://ftp.gnu.org/gnu/gtypist/}
 
-@item Alternate distribution site
-@uref{http://gtypist.org/releases/}
-
-@item Home page
+@item Official home page
 @uref{http://www.gnu.org/software/gtypist/}
-
-@item Alternate home page
-@uref{http://gtypist.org/}
 
 @item On-line manual (updates between program releases)
 @uref{http://www.gnu.org/software/gtypist/doc/}
 
-@item Developers' home page (CVS repository, tasks, support...)
+@item Developers' home page (Git repository, tasks, support...)
 @uref{http://savannah.gnu.org/projects/gtypist/}
-
-@item GNU Typist download page (sources, binaries and tutorial updates)
-@uref{http://gtypist.org/}
-
-@item Screenshots
-@uref{http://gtypist.org/screenshots/}
 @end table
 
 @node Copying, Introduction, Distribution, Top
@@ -152,8 +140,8 @@ intermediate lines.
 @c TODO: intention is ``Griff-Übung'' (finger exercise)
 Typing errors are indicated with an inverse @samp{^}, or @samp{>} if
 the character is a newline and at the end of the
-exercise it calculates the real and effective rate in Words Per Minute (@acronym{WPM}).
-If there were too many errors, it will re-run the drill.
+exercise it calculates the real and effective rate in Words Per Minute
+(@acronym{WPM}). If there were too many errors, it will re-run the drill.
 
 @c TODO: make this less formal
 Backward deleting of previously typed characters to correct errors is
@@ -184,6 +172,9 @@ divided by five, then divided again by the number of minutes elapsed in
 typing the passage. The adjusted @acronym{WPM} factors in the errors; each error
 is counted as a mistyped word.
 
+If preferred, speeds can be displayed in Characters Per Minute (@acronym{CPM}).
+This can be done by specifying ``--scoring=cpm'' at the command line.
+
 @node Invoking, Supplied lessons, Introduction, Top
 @chapter Invoking
 
@@ -204,8 +195,8 @@ overrides this if it is @emph{stricter} (smaller). This value is
 ignored for ``practice only'' drills.
 
 @item -n, --notimer
-gtypist will display the typing speeds in @acronym{WPM} after both drills and speed
-tests. However, the lessons appear to be written for a program that
+gtypist will display the typing speeds in @acronym{WPM} after both drills and
+speed tests. However, the lessons appear to be written for a program that
 only does this for speed tests. To make gtypist behave in a manner that
 matches the lessons, that is, to sup @acronym{WPM} reports on drills, use
 @option{-n} or @option{--notimer}.
@@ -240,7 +231,13 @@ option to silence the beep.
 @item -q, --quiet
 Same as @option{-s} or @option{--silent}.
 
-@item -w, --wpmode
+@item -l, --start-label
+Specifies the label in the script file at which gtypist begins executing
+(see script files and commands below for information on labels). If
+this option is not used, gtypist begins execution at the first line of
+the file.
+
+@item -w, --word-processor
 With this option, gtypist will try to mimic a word processor in certain ways
 when executing an exercise. It will treat space at the end of a line as
 a correctly typed character, and word wrap. It will treat return at
@@ -248,15 +245,24 @@ the end of a line as a signal to move to the start of the next paragraph
 if applicable. It will compress multiple spaces into a single
 space. And it will skip over hyphens found at the end of a line.
 
-@item -l, --start-label
-Specifies the label in the script file at which gtypist begins executing
-(see script files and commands below for information on labels). If
-this option is not used, gtypist begins execution at the first line of
-the file.
-
 @item -k, --no-skip
 Prohibit the user from skipping lessons or exiting from lessons via
 @key{ESC ESC}.
+
+@item -i, --show-errors
+Highlight errors with reverse video.
+
+@item -S, --always-sure
+Skips confirmation questions.
+
+@item --banner-colo[u]rs
+Change the color of the banner at the top of the screen.  Color values are the
+same as for the --colo[u]rs command.  The default value is 0,6,5,1 - black
+foreground, cyan background, magenta program name and red version name.
+
+@item --scoring
+Change the scoring mode.  @acronym{WPM} and @acronym{CPM} modes are available,
+with the default being @acronym{WPM}.
 
 @end table
 
@@ -992,6 +998,11 @@ imports from other tutors, tool enhancements, new tutorial capabilities,
 In 2003, @email{rutsky@@school.ioffe.rssi.ru, Dmitry Rutsky} joined
 joined the development team and brought in a dramatic number ideas, hacks
 and improvements, and he's not done yet!  
+@item
+In April 2008, @email{general@@vultaire.net, Paul Goins} took over
+maintainership of GNU Typist, adding a few enhancements (especially building
+under Windows with MinGW), making some documentation updates and changing the
+license to GPL version 3.
 @end itemize
 
 @node Copying this manual

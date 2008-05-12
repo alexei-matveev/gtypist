@@ -1,19 +1,23 @@
+2008-05-12  Paul Goins  <general@vultaire.net>
+
+	* ChangeLog: Minor formatting updates.
+
 2008-05-04  Paul Goins  <general@vultaire.net>
 
 	* esp.typ: A mistake involving a not-yet-introduced key was corrected.
 	  This was submitted by igor@tamarapatino.org, and credited to
 	  Laura Victoria Quishpe <sekhmetnightmare@hotmail.com>.
 
-2004-09-30	Dmitry Rutsky	<balto@bk.ru>
+2004-09-30  Dmitry Rutsky <balto@bk.ru>
 
 	* ru.typ:	minor improvements.
 
-2004-07-31	Dmitry Rutsky	<rutsky@school.ioffe.rssi.ru>
+2004-07-31  Dmitry Rutsky <rutsky@school.ioffe.rssi.ru>
 
 	* q.typ:  some missing key fingering directions were added by
 	  Iain Cunningham <iain.cunningham@ntlworld.com>.
 
-2004-05-07	Dmitry Rutsky	<rutsky@school.ioffe.rssi.ru>
+2004-05-07  Dmitry Rutsky <rutsky@school.ioffe.rssi.ru>
 
 	* ru.typ: corrected unlearned-key bug in IF_Ib lesson last exercise.
 	  Thanks to Renat Sabitov <srr@stacksoft.ru> who has reported this!
