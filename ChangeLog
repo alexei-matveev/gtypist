@@ -1,3 +1,10 @@
+2008-05-14  Paul Goins  <general@vultaire.net>
+
+	* version.sh: Updated to 2.8-pre2.
+	* INSTALL.in: Added build instructions for Windows NT/2000/XP.
+	* conf_dos.bat.in: Created a new file for the old DOS-style batch file.
+	* autogen.sh, Makefile.am: Added conf_dos.bat
+
 2008-05-12  Paul Goins  <general@vultaire.net>
 
 	* NEWS: Updated for 2.8.

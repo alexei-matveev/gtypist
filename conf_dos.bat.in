@@ -1,0 +1,19 @@
+@rem This file is for Windows 9x/Me and DOS systems
+@rem and only supports DJGPP builds.
+@rem For Windows NT/2000/XP, please use configur.bat.
+@echo off
+echo.
+echo Configuring gtypist @VERSION
+echo Using DJGPP and PDCURSES
+echo No Native Language Support
+echo Creating src\config.h
+echo /* config.h */> src\config.h
+echo #undef ENABLE_NLS>> src\config.h
+echo #define PACKAGE "gtypist">> src\config.h
+echo #define VERSION "@VERSION">> src\config.h
+echo #define HAVE_LIBCURSES>> src\config.h
+echo Creating Makefile
+echo # Makefile> Makefile
+echo gtypist.exe: Makefile src\gtypist.c>> Makefile
+echo 	gcc -Isrc -static -O -DNCURSES -DPDCURSES_ENTER_KEY_FIX -o gtypist src\error.c src\script.c src\cursmenu.c src\gtypist.c src\getopt.c src\getopt1.c -lpdcurses -lpanel>> Makefile
+@echo on

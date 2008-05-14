@@ -4,7 +4,7 @@ This program is designed for UNIXes and Microsoft Windows/DOS, but it can be
 compiled in various environments provided that there is a standard compiler
 and required libraries.
 
-Compilation under Unix 
+Compilation under Unix
 ----------------------
 
 In order to compile this program, you must have:
@@ -28,12 +28,12 @@ The instructions are general for most Unix software in source form:
 
 * Configure the package:
 
-  > ./configure [you may insert some options here;  run with `--help' to get
-  			full list of them].
+  > ./configure [you may insert some options here;
+		 run with `--help' to get full list of them.]
 
   By default the program executable will be installed in
   /usr/local/bin and the lessons and internationalization support files in
-  /usr/local/share/gtypist (you can change this with the `--prefix' option). By 
+  /usr/local/share/gtypist (you can change this with the `--prefix' option).  By
   default Native Language Support will be installed (but you can disable this
   with the `--disable-nls' option).
 
@@ -44,8 +44,8 @@ The instructions are general for most Unix software in source form:
 
 * Get required permissions and install the package:
 
-  > su		# If you've chosen (as by default) to install system-wide.
-  > umask 022	# TODO: is this necessary at all?
+  > su               # If you've chosen (as by default) to install system-wide.
+  > umask 022        # TODO: is this necessary at all?
   > make install
 
 * To test your installation type
@@ -55,25 +55,79 @@ The instructions are general for most Unix software in source form:
   > /usr/local/bin/gtypist
 
 
-Compilation under Windows/DOS
------------------------------
+Compilation under Windows NT/2000/XP
+------------------------------------
+
+First, please check to see if there is a Windows build of this version before
+going through the trouble of compiling it yourself!
+  http://ftp.gnu.org/gnu/gtypist/binaries/
+
+If you're still here, then...
+
+You must have:
+- MinGW compiler package, available at
+    http://www.mingw.org/
+  It is advised to use the mingw-installer if you are not familiar with MinGW.
+  The default installation options should be sufficient.
+
+- mingw32-make or MSys.
+
+- A recent version of PDCurses.  The current official binaries of gtypist are
+  compiled using PDCurses 3.3.  It's available at
+    http://pdcurses.sourceforge.net/
+  Compiling PDCurses is outside the scope of these instructions, but here's a
+  few notes:
+  - gtypist was tested with a static, non-Unicode build of PDCurses 3.3.
+  - It's advisable to rename the link libraries from pdcurses.a/panel.a to
+    libpdcurses.a/libpanel.a.
+
+* Decompress the source distribution.
+
+* Open a command prompt window and change to the sources directory.
+  > cd gtypist-@VERSION
+
+* Configure the package, and follow the instructions on screen.
+  > configur
+
+* Open the created Makefile and specify the path to your PDCurses directory
+  as directed by the comments.
+  > notepad Makefile
+
+* Compile using make (substitute mingw32-make if desired)
+  > make
+
+* To install it, you should create a directory (e.g. c:\GTypist) and
+  copy into it the lessons of directory 'lessons' \ and the program
+  gtypist.exe:
+
+  > mkdir c:\GTypist
+  > copy gtypist.exe c:\GTypist
+  > copy lessons\*.typ c:\GTypist
+
+* To use it go to the directory where you installed it and run gtypist.exe
+  > cd GTypist
+  > gtypist
+
+
+Compilation under Windows 9x/DOS
+--------------------------------
 
 You must have:
 
-- DJGPP compiler. Available at
+- DJGPP compiler.  Available at
     http://www.delorie.com/djgpp/zip-picker.html
   You only will need the C compiler.
 
 - Emulation of the curses library pdcurses v2.4.  Available at
     ftp://ftp.simtel.net/pub/simtelnet/gnu/djgpp/v2tk/pdcur24b.zip
 
-* Decompress the sources distribution 
+* Decompress the sources distribution
 
 * Open a DOS session, change to the sources directory
   > cd gtypist-@VERSION
 
 * Configure the package
-  > configur
+  > conf_dos
 
 * Compile
   > make
@@ -94,7 +148,7 @@ You must have:
 ** Read on if you want to package the DOS-version.
 
 * You might want to remove symbols from gtypist.exe:
-	
+
   > strip --strip-all gtypist.exe
 
 * Include cwsdpmi.exe and cwsdpmi.doc (the DOS extender, see
@@ -108,13 +162,13 @@ You must have:
   >   recode latin1..ibmpc $i
   > done
 
-  (it doesn't hurt to convert all lessons)	
+  (it doesn't hurt to convert all lessons)
   With old versions of recode (i.e. 3.4.1), you have to use "latin1:ibmpc".
 
 * To generate the HTML manuals, run "autogen.sh" (if not already done).
   To support DOS, rename "doc/gtypist.html" to "gtypist.htm"
   and other "doc/gtypist.<lg>.html" manuals to "gtyp_<ll>.htm"
-  (where <ll> is a 2 character language code). 
+  (where <ll> is a 2 character language code).
   Then, create plain text documentation from these files either with
   Mozilla or "lynx -dump gtypist.htm > gtypist.txt", and convert it to DOS
   line-endings with recode, for example (see above)
@@ -125,7 +179,7 @@ You must have:
   plain DOS)
   I've had trouble with infozip: zip 2.0.1 did not work,
   but 2.3 (or above) seems to work.
-	
+
 
 Problems and their solution
 ---------------------------
@@ -136,41 +190,40 @@ Configuration with Native Language Support under Unix:
 	  to directory intl remove libintl.h and configure again.
 	* If your Unix doesn't have Native Language Support, the sources
 	  of gtypist come with a limited version, to use it configure with:
-		./configure --with-included-gettext
+	    ./configure --with-included-gettext
 	  And before running gtypist set the environment variable LC_ALL/LANG
 	  to your language and country codes (LL_CC, as described in the
-	  manual, node "Environment Variables"). See the manual for the
-          list of supported languages. Using this option it was possible
-          to compile and run gtypist under AIX.
+	  manual, node "Environment Variables").  See the manual for the
+	  list of supported languages.  Using this option it was possible
+	  to compile and run gtypist under AIX.
 
 Dvorak Keyboard under GNU/Linux (Ben Armstrong <synrg@sanctuary.nslug.ns.ca>)
 
-	To get Dvorak keymaps, run the 'loadkeys' command on the appropriate keymap
-        file. For example if your keymaps are at /usr/share/keymaps
+	To get Dvorak keymaps, run the 'loadkeys' command on the appropriate
+	keymap file.  For example if your keymaps are at /usr/share/keymaps
 
 	> loadkeys /usr/share/keymaps/i386/dvorak/dvorak.kmap.gz
 
-        To switch to your default keyboard mappings, run loadkeys on
-        the default keymap file:
+	To switch to your default keyboard mappings, run loadkeys on
+	the default keymap file:
 
 	> loadkeys /etc/console-tools/default.map.gz
 
-        If you are in X, please visit the Dvorak home page at
-        http://www.mwbrooks.com/dvorak/ for more information.
+	If you are in X, please visit the Dvorak home page at
+	http://www.mwbrooks.com/dvorak/ for more information.
 
 Keyboard under DOS/Windows:
 
 	* You could experience some problems with the keyboard under
-          DOS/Windows, instead of the [Return] key you should use
-          [Control]+[J]. And instead of the F1, F2 .. F11, F12 keys
-          use the keys 1,2 .. 10, A, S respectively.
+	  DOS/Windows.  The [Return] key should now work, but the function keys
+	  (F1, F2... F12) may not.  However, this should not affect usage for
+	  most users.
 
 Compilation under DOS without Long File Name support or in Windows NT
 
-	* It is possible. You only need to rename the library
-    	  libpdcurses.a in the lib directory of the DJGPP distribution
-  	  to something with less than 8 characters for example
-	  libpdc.a. Then modify the makefile of gtypist (don't use
+	* It is possible.  You only need to rename the library
+	  libpdcurses.a in the lib directory of the DJGPP distribution
+	  to something with less than 8 characters for example
+	  libpdc.a.  Then modify the makefile of gtypist (don't use
 	  edit since it doesn't preserve TABs) and change pdcurses
-          with pdc. Finally compile and use it!
-
+	  with pdc.  Finally compile and use it!
