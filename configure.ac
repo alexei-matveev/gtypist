@@ -20,7 +20,7 @@ AC_PROG_YACC
 
 # Set of available languages.
 
-ALL_LINGUAS="de cs es fi fr ru zh_TW"
+ALL_LINGUAS="cs de es fi fr nl ru zh_CN zh_TW"
 
 # Checks for libraries.
 
