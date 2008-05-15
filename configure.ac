@@ -4,8 +4,6 @@ AC_INIT([GNU Typist], [esyscmd(./version.sh)], [bug-gtypist@gnu.org], [gtypist])
 AM_INIT_AUTOMAKE([1.8.2 gnu dist-bzip2])
 AC_CONFIG_SRCDIR([src/gtypist.c])
 AM_CONFIG_HEADER([config.h])
-AC_CONFIG_FILES([lessons/Makefile tools/Makefile doc/Makefile src/Makefile
-		Makefile intl/Makefile po/Makefile.in m4/Makefile])
 
 # Checks for programs
 
@@ -87,4 +85,6 @@ AM_PATH_LISPDIR
 
 # Generate files
 
+AC_CONFIG_FILES([lessons/Makefile tools/Makefile doc/Makefile src/Makefile
+		Makefile intl/Makefile po/Makefile.in m4/Makefile])
 AC_OUTPUT
