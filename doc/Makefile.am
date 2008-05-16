@@ -8,8 +8,8 @@ EXTRA_DIST=gtypist.html gtypist.cs.html
 html_docs = gtypist.html gtypist.cs.html
 
 .texi.html:
-	$(MAKEINFO) --html --no-split -o gtypist.cs.html gtypist-cs.texi
-	$(MAKEINFO) --html --no-split -o gtypist.html gtypist.texi
+	$(MAKEINFO) --html --no-split --no-headers -o gtypist.cs.html gtypist-cs.texi
+	$(MAKEINFO) --html --no-split --no-headers -o gtypist.html gtypist.texi
 
 all: info html
 

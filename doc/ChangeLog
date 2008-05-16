@@ -1,3 +1,9 @@
+2008-05-17  Paul Goins  <general@vultaire.net>
+
+	* Makefile.am: Added --no-headers flag to makeinfo invocation.  This
+	  should give us a manual very close to the last published one, and
+	  avoids a "duplicate menu" which appears in the HTML version otherwise.
+
 2008-05-12  Paul Goins  <general@vultaire.net>
 
 	* gtypist.texi: Updated FSF address, renamed/updated links (and removed
