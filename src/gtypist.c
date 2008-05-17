@@ -465,7 +465,7 @@ static void display_speed( int total_chars, long elapsed_time, int errcount ) {
   /* calculate the speeds */
   test_time = (double)elapsed_time / (double)60.0;
   words = (double)total_chars / (double)5.0;
-  if ( elapsed_time > 0 ) 
+  if ( elapsed_time > 0 )
     {
       /* Get speed values */
       if(cl_scoring_cpm)
@@ -479,16 +479,16 @@ static void display_speed( int total_chars, long elapsed_time, int errcount ) {
           adjusted_speed = ( words - errcount ) / test_time;
         }
       /* Set speed values within bounds */
-      speed = ( speed < 999.99 ) ? speed : 999.99;
-      adjusted_speed = ( adjusted_speed < 999.99 )
-        ? adjusted_speed : 999.99;
+      speed = ( speed < 9999.99 ) ? speed : 9999.99;
+      adjusted_speed = ( adjusted_speed < 9999.99 )
+        ? adjusted_speed : 9999.99;
       adjusted_speed = ( adjusted_speed > 0 )
         ? adjusted_speed : 0;
     }
   else
     /* unmeasurable elapsed time - use big numbers */
-    speed = adjusted_speed = (double)999.99;
-  
+    speed = adjusted_speed = (double)9999.99;
+
   /* display the speed - no -ve numbers */
   if(cl_scoring_cpm)
     {
