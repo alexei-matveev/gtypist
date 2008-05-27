@@ -16,7 +16,7 @@ Free Software Foundation, Inc.
 @quotation
 Dáváme povolení ke kopírování, distribuci a/nebo provádìní
 zmìn v tomto dokumentu pod podmínkami GNU Free Documentation
-License verze 1.1 nebo jakékoliv pozdìj¹í verze publikované
+License verze 1.2 nebo jakékoliv pozdìj¹í verze publikované
 Nadací pro svobodný software (Free Software Foundation); text
 neobsahuje ¾ádnou Invariant Section, Front Cover text je
 ,,GNU Manuál'' a Back-Cover Text je uveden v (a) ní¾e.
