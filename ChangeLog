@@ -1,3 +1,11 @@
+2008-05-29  Paul Goins  <general@vultaire.net>
+
+	* version.sh: Updated to 2.8.1, bug fix release.
+	* Makefile.am: Added dist_bin_SCRIPTS line for typefortune, since it
+	  was being distributed but not properly installed in the 2.8 release.
+	  (Bug reported by Christian "naddy" Weisgerber.)  Also removed an extra
+	  reference to conf_dos.bat.in.
+
 2008-05-27  Paul Goins  <general@vultaire.net>
 
 	* version.sh: Updated to 2.8.
