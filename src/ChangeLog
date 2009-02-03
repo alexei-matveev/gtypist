@@ -1,7 +1,15 @@
+2009-02-04  Paul Goins  <general@vultaire.net>
+
+	* gtypist.c: (display_speed): Fixed long-standing bug where gtypist
+	  would display that an error rate of =< 3.0% is needed, but the
+	  displayed error rate would sometimes be 3.0% due to rounding.  (Now
+	  we use floor() to always round down and avoid this.)
+	  (Error reported by Ali Gundaz)
+
 2008-05-17  Paul Goins  <general@vultaire.net>
 
-	* gtypist.c (display_speed): Changed maximum speed to 9999.99.  CPM mode
-	  could go into 4 digits for really, really fast typists.
+	* gtypist.c (display_speed): Changed maximum speed to 9999.99.  CPM
+	  mode could go into 4 digits for really, really fast typists.
 
 2008-05-12  Paul Goins  <general@vultaire.net>
 

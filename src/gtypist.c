@@ -27,6 +27,7 @@
 #include <stdio.h>
 #include <ctype.h>
 #include <signal.h>
+#include <math.h>
 
 #ifdef HAVE_LIBCURSES
 #include <curses.h>
@@ -508,7 +509,9 @@ static void display_speed( int total_chars, long elapsed_time, int errcount ) {
   move( SPEED_LINE + 1, COLS - strlen( message ) - 1 );
   ADDSTR_REV( message );
   sprintf( message, SPEED_PCT_ERROR,
-           (double)100.0*(double)errcount / (double)total_chars );
+           floor((double)100.0 * (double)errcount / (double)total_chars
+                 * (double)10.0)
+           / (double)10.0);
   move( SPEED_LINE + 2, COLS - strlen( message ) - 1 );
   ADDSTR_REV( message );
 }
