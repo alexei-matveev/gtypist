@@ -44,8 +44,8 @@ na klávesnici gtypist.
 @vskip 0pt plus 1filll
 @insertcopying
 Publikováno Nadací pro svobodný software @*
-59 Temple Place Suite 330 @*
-Boston, MA 02111-1307 @*
+51 Franklin Street, Fifth Floor @*
+Boston, MA 02111-1301 @*
 USA @*
 @end titlepage
 
