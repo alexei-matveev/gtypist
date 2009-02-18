@@ -33,12 +33,11 @@ AC_CHECK_LIB(ncurses, wbkgdset,
 	[AC_DEFINE(HAVE_LIBNCURSES, 1, [Is curses available])
 	         HAVE_LIBNCURSES=yes]
 		 )
-AC_CHECK_LIB(m, floor)
-		 
+
 # Checks for header files.
 
 AC_HEADER_STDC
-AC_CHECK_HEADERS([unistd.h alloca.h argz.h errno.h fcntl.h langinfo.h libintl.h limits.h locale.h malloc.h stddef.h stdio_ext.h stdlib.h string.h strings.h sys/param.h unistd.h math.h])
+AC_CHECK_HEADERS([unistd.h alloca.h argz.h errno.h fcntl.h langinfo.h libintl.h limits.h locale.h malloc.h stddef.h stdio_ext.h stdlib.h string.h strings.h sys/param.h unistd.h])
 
 AC_CHECK_HEADER(curses.h, HAVE_CURSES_H=1)
 AC_CHECK_HEADER(ncurses/curses.h, HAVE_NCURSES_H=1)
@@ -71,7 +70,7 @@ AC_FUNC_MALLOC
 AC_FUNC_REALLOC
 AC_TYPE_SIGNAL
 AC_FUNC_STRTOD
-AC_CHECK_FUNCS([__argz_count __argz_next __argz_stringify floor dcgettext getcwd getwd mempcpy memset munmap nl_langinfo setlocale stpcpy strcasecmp strchr strcspn strdup strstr strtoul])
+AC_CHECK_FUNCS([__argz_count __argz_next __argz_stringify dcgettext getcwd getwd mempcpy memset munmap nl_langinfo setlocale stpcpy strcasecmp strchr strcspn strdup strstr strtoul])
 
 # Internationalization macros
 

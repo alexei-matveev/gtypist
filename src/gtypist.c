@@ -3,7 +3,7 @@
  *
  * Copyright (C) 1998, 1999, 2000, 2001, 2002, 2003
  *               Simon Baldwin (simonb@sco.com)
- * Copyright (C) 2003, 2004, 2008
+ * Copyright (C) 2003, 2004, 2008, 2009
  *               GNU Typist Development Team <bug-gtypist@gnu.org>
  *
  * This program is free software: you can redistribute it and/or modify
@@ -26,7 +26,6 @@
 #include <stdio.h>
 #include <ctype.h>
 #include <signal.h>
-#include <math.h>
 
 #ifdef HAVE_LIBCURSES
 #include <curses.h>
@@ -508,9 +507,7 @@ static void display_speed( int total_chars, long elapsed_time, int errcount ) {
   move( SPEED_LINE + 1, COLS - strlen( message ) - 1 );
   ADDSTR_REV( message );
   sprintf( message, SPEED_PCT_ERROR,
-           floor((double)100.0 * (double)errcount / (double)total_chars
-                 * (double)10.0)
-           / (double)10.0);
+           (double)100.0*(double)errcount / (double)total_chars );
   move( SPEED_LINE + 2, COLS - strlen( message ) - 1 );
   ADDSTR_REV( message );
 }
@@ -606,6 +603,28 @@ do_instruction( FILE *script, char *line ) {
   if ( SCR_COMMAND( line ) == C_CONT && ! feof( script ))
     fatal_error( _("instructions are limited to two lines"), line );
   global_prior_command = C_INSTRUCTION;
+}
+
+/*
+  Calculate whether a drill's error rate is too high, keeping in mind
+  rounding of output to a single decimal place.
+*/
+static int
+is_error_too_high( int chars_typed, int errors ) {
+  /* (double)100.0*(double)errcount / (double)total_chars ) */
+  double err_max, err;
+  char buf[BUFSIZ];
+
+  /* Calculate error rates */
+  err_max = (double)global_error_max;
+  err = (double)100.0*(double)errors / (double)chars_typed;
+
+  /* We need to use the same kind of rounding used by printf. */
+  sprintf(buf, "%.1f", err_max);
+  sscanf(buf, "%lf", &err_max);
+  sprintf(buf, "%.1f", err);
+  sscanf(buf, "%lf", &err);
+  return err > err_max;
 }
 
 /*
@@ -821,7 +840,7 @@ do_drill( FILE *script, char *line ) {
 
 	  /* check whether the error-percentage is too high (unless in d:) */
 	  if (drill_type != C_DRILL_PRACTICE_ONLY &&
-	      (float)errors/(float)chars_typed > global_error_max/100.0) 
+	      is_error_too_high(chars_typed, errors))
 	    {
 	      sprintf( message, ERROR_TOO_HIGH_MSG, global_error_max );
 	      wait_user (script, message, MODE_DRILL);
@@ -1067,7 +1086,7 @@ do_speedtest( FILE *script, char *line ) {
       
 	  /* check whether the error-percentage is too high (unless in s:) */
 	  if (drill_type != C_SPEEDTEST_PRACTICE_ONLY &&
-	      (float)errors/(float)chars_typed > global_error_max/100.0) 
+	      is_error_too_high(chars_typed, errors))
 	    {
 	      sprintf( message, ERROR_TOO_HIGH_MSG, global_error_max );
 	      wait_user (script, message, MODE_SPEEDTEST);
