@@ -1,7 +1,8 @@
 2009-02-19  Paul Goins  <general@vultaire.net>
 
 	* gtypist.c: Re-fixed the rounding bug by adding a function which
-	  compares floats using sprintf-based rounding.
+	  compares floats using sprintf-based rounding.  (Bug re-reported by
+	  Jakub Gedeon.)
 
 2009-02-04  Paul Goins  <general@vultaire.net>
 
