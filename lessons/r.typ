@@ -386,7 +386,7 @@ I:(8) Test Paragraph
 S:     They say this fruit is the finest.  It is full and good.
  :Dr. Ted feels the first fruit is too green for young or old.
  :After one eats any of it he is sorry.  In fact, if I try it,
- :that night in fancy I sail the the South Seas for eight hours.
+ :that night in fancy I sail the South Seas for eight hours.
  :The air is fine and clear; on the ship are only fruit and I.
  :To a lady in those seas I gladly offer all fruit and candy.
  :There is no reply.  Only the seas run high and I feel ill.

@@ -395,7 +395,7 @@ D:amount damper only singing payment moment
 I:(3)
 *:_U_R_L44
 #                                                             ../orig/u.typ:184
-S:We are informed that an increase in anticipated.
+S:We are informed that an increase is anticipated.
  :Please inform us if you are interested in an engine.
  :Banks will extend financial aid to the business man.
  :Unless your invoice is paid, no shipment can be made.
@@ -600,7 +600,7 @@ I:(4)
 #                                                             ../orig/u.typ:305
 S:Raymond Investment Co.
  :120 Wall Street
- :Ney York, NY 10005
+ :New York, NY 10005
  :
  :Gentlemen:
  :

@@ -1,3 +1,8 @@
+2010-12-21  Tim Marston <edam@waxworlds.org>
+
+	* lessons/u.typ, lessons/t.typ: fixed minor typos (thanks to Elmar
+	  Zander <elmar@zandere.de> for reporting)
+
 2008-05-12  Paul Goins  <general@vultaire.net>
 
 	* ChangeLog: Minor formatting updates.
