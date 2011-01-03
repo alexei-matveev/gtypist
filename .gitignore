@@ -49,3 +49,6 @@ src/.deps
 src/gettext.h
 tools/elc-stamp
 tools/gtypist-mode.elc
+.cproject
+.project
+.settings
