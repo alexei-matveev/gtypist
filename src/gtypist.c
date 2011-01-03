@@ -171,7 +171,7 @@ static bool user_is_always_sure = FALSE;
 
 static int getch_fl( char cursor_char );
 static void index_labels( FILE *script );
-static void wait_user (FILE *script, char *message, char *mode );
+static bool wait_user (FILE *script, char *message, char *mode );
 static void display_speed( int total_chars, long elapsed_time, int errcount );
 static void do_keybind( FILE *script, char *line );
 static void do_tutorial( FILE *script, char *line );
@@ -255,20 +255,6 @@ void bind_F12 (const char *label)
        perror ("strdup");
        fatal_error (_("internal error in strdup"), label);
   }
-}
-
-// Return to the last F12-binded location
-static inline void escape (FILE *script)
-{
-   if (fkey_bindings [11])
-   {
-      if (*(fkey_bindings [11]))
-         seek_label (script, fkey_bindings [11], NULL); 
-      else
-	 do_exit (script);
-   }
-   else
-      do_exit (script);
 }
 
 /*
@@ -424,11 +410,13 @@ static void index_labels( FILE *script ) {
 }
 
 /*
-  wait for a nod from the user before continuing
+  wait for a nod from the user before continuing. In MODE_TUTORIAL only, TRUE is
+  returned if the user pressed escape to indicate that seek_label was called
 */
-static void wait_user (FILE *script, char *message, char *mode)
+static bool wait_user (FILE *script, char *message, char *mode)
 {
   int	resp;			/* response character */
+  bool	seek_done = FALSE;	/* was seek_label called? */
 
   /* move to the message line print a prompt */
   move( MESSAGE_LINE, 0 ); clrtoeol();
@@ -439,15 +427,27 @@ static void wait_user (FILE *script, char *message, char *mode)
 
   do {
     resp = getch_fl (ASCII_NULL);
-    if (resp == ASCII_ESC)
+
+    /* in tutorial mode only, escape has the special purpose that we exit to a
+       menu (or quit if there is none) */
+    if (resp == ASCII_ESC && mode == MODE_TUTORIAL)
     {
-       escape (script);
-       break;
+      // Return to the last F12-binded location
+      if( fkey_bindings[ 11 ] && *( fkey_bindings[ 11 ] ) )
+	{
+          seek_label( script, fkey_bindings[ 11 ], NULL );
+          seek_done = TRUE;
+	}
+      else
+	do_exit( script );
+      break;
     }
-  } while (resp != ASCII_ENTER && resp != ASCII_SPACE);
+  } while (resp != ASCII_ENTER && resp != ASCII_SPACE && resp != ASCII_ESC);
 
   /* clear the message line */
   move( MESSAGE_LINE, 0 ); clrtoeol();
+
+  return seek_done;
 }
 
 
@@ -554,7 +554,8 @@ do_keybind( FILE *script, char *line ) {
 */
 static void 
 do_tutorial( FILE *script, char *line ) {
-  int	linenum;			/* line counter */
+  int	linenum;		/* line counter */
+  bool  seek_done = FALSE;      /* was there a seek_label before exit? */
 
   /* start at the top of the screen, and clear it */
   linenum = T_TOP_LINE;
@@ -575,8 +576,13 @@ do_tutorial( FILE *script, char *line ) {
   /* wait for a return, unless the next command is a query,
      when we can skip it to save the user keystrokes */
   if ( SCR_COMMAND( line ) != C_QUERY )
-    wait_user (script, WAIT_MESSAGE, MODE_TUTORIAL);
+    seek_done = wait_user (script, WAIT_MESSAGE, MODE_TUTORIAL);
   global_prior_command = C_TUTORIAL;
+
+  /* if seek_label has been called (in wait_user) then we need to read in the
+     next line of the script in to `line` */
+  if (seek_done)
+    get_script_line( script, line );
 }
 
 
