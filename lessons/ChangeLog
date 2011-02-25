@@ -96,10 +96,9 @@
 	standard message "Press Enter to continue." is better
 	(the exception is esp.typ, where this is used to navigate through
 	multipage T:'s)
-	* d.typ: There was this I: command:
-I:Juvenile zest for excitement whetted interest in parking by the quay.
-	(and a D: command was missing in the paragraph). changed this to
-	D:.
+	* d.typ: There was this I: command: "I:Juvenile zest for excitement
+	whetted interest in parking by the quay." and a D: command was missing
+	in the paragraph). changed this to D:.
 	* esp.typ: fix a typo (reported by José Pelegrín <josepl@acm.org>)
 
 2001-09-02  Felix Natter  <fnatter@gmx.net>

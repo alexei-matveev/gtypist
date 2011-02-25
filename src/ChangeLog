@@ -1,11 +1,11 @@
-2011-01-03	Tim Marston <edam@waxworlds.org>
+2011-01-03  Tim Marston <edam@waxworlds.org>
 
-	* gtypist.c: fixed a bug where pressing escape during wait_user() caused
-	  seek_label() to be called, but get_script_line() was never re-called. This
-	  meant that the previously buffered next script line (from before the seek)
-	  would still get executed. wait_user() now treats escape as a "continue"
-	  character for all but tutorial prompts, which now handle the seek properly
-	  by calling get_script_line().
+	* gtypist.c: fixed a bug where pressing escape during wait_user()
+	  caused seek_label() to be called, but get_script_line() was never re-
+	  called. This meant that the previously buffered next script line
+	  (from before the seek) would still get executed. wait_user() now
+	  treats escape as a "continue" character for all but tutorial prompts,
+	  which now handle the seek properly by calling get_script_line().
 
 2009-02-19  Paul Goins  <general@vultaire.net>
 

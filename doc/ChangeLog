@@ -1,20 +1,21 @@
 2008-05-27  Paul Goins  <general@vultaire.net>
 
-	* gtypist*.texi: Updated a couple of remaining FDL 1.1 references to FDL
-	  1.2.
+	* gtypist*.texi: Updated a couple of remaining FDL 1.1 references to
+	  FDL 1.2.
 
 2008-05-17  Paul Goins  <general@vultaire.net>
 
 	* Makefile.am: Added --no-headers flag to makeinfo invocation.  This
 	  should give us a manual very close to the last published one, and
-	  avoids a "duplicate menu" which appears in the HTML version otherwise.
+	  avoids a "duplicate menu" which appears in the HTML version
+	  otherwise.
 
 2008-05-12  Paul Goins  <general@vultaire.net>
 
 	* gtypist.texi: Updated FSF address, renamed/updated links (and removed
-	  some obsolete ones, added mention of CPM scoring, updated command line
-	  options section, added myself to the history section, and did some
-	  minor reformatting.
+	  some obsolete ones, added mention of CPM scoring, updated command
+	  line options section, added myself to the history section, and did
+	  some minor reformatting.
 
 	* ChangeLog: Minor formatting update.
 
@@ -36,11 +37,11 @@
 
 	* gtypist-cs.texi: Renamed from gtypist.cs.texi. The reason is not
 	to cause automake errors related to invalid suffix.
-	
+
 	* gtypist.cs.texi: Include version2.texi, not version.texi, so that
 	the auto-tools don't complain. It seems this is some ugly workaround
 	for something, but it is advised in the documentation and it shouldn't
-	break anything as ver*.texi files are generated automatically.	
+	break anything as ver*.texi files are generated automatically.
 
 	* Makefile.am: Handle also the HTML target so that we don't have
 	to do it manually in autogen.sh.
@@ -50,8 +51,9 @@
 
 2003-10-24  Hynek Hanke  <hanke@volny.cz>
 
-	* gtypist.cs.texi: @documentencoding and @documentlanguage moved to the beginning
-	of the file so that the auto-tools don't complain about it.
+	* gtypist.cs.texi: @documentencoding and @documentlanguage moved to
+	the beginning of the file so that the auto-tools don't complain about
+	it.
 
 2003-09-28  Michael Opdenacker <michaelo@gnu.org>
 
@@ -84,7 +86,7 @@
 	in supported formats, as recommended in the texinfo manual:
 	Replaced all @url calls by @uref (@url doesn't create http links
 	in the makeinfo html output; I was using texi2html to create
-	the html manual, but only makeinfo should be used). 
+	the html manual, but only makeinfo should be used).
 	Replaced 'Name @email{address}' by '@mail{address, Name}.
 	Used @option everywhere for command line options.
 	Used @samp to introduce single characters.
@@ -96,7 +98,7 @@
 	* gtypist.texi: uses the new @copying command provided by texinfo-4.2.
 	The manual is now released under the GNU Free Documentation license
 	(with no Invariant Sections) which is now included in the manual.
-	
+
 2002-04-07  Michael Opdenacker  <michaelo@gnu.org>
 
 	* gtypist.cz.texi: Czech translation of the manual
@@ -151,7 +153,7 @@
 2001-08-16  Michael Opdenacker 	<michaelo@gnu.org>
 
 	* Renamed manual sources to `gtypist.texi' (more standard).
- 
+
 2001-08-15  Felix Natter  <fnatter@gmx.net>
 
 	* node Introduction: start of rewrite
@@ -162,7 +164,7 @@
 	* GPL text now taken from a separate file, gpl.texi,
 	copied from GNU hello. Renamed manual sources to
 	`gtypist.texi' (more standard).
- 
+
 2001-08-12  Felix Natter  <fnatter@gmx.net>
 
         * node Emacs mode for editing gtypist-lessons: add info
@@ -216,7 +218,7 @@
 	* node Invoking: --wpmode is now disabled by default
 	* new node: Emacs mode for editing gtypist-lessons
 
-2001-06-26  Michael Opdenacker  <michaelo@gnu.org> 
+2001-06-26  Michael Opdenacker  <michaelo@gnu.org>
 
 	* Fixed errors and improved the manual.
 
@@ -226,7 +228,7 @@
 	  (the `typist' executable is no longer built in 2.3.2)
 	* Corrected a few spelling and typing mistakes
 	* Added recent changes to project history
-	
+
 2000-11-29  Vladimir Tamara  <vtamara@gnu.org>
 
 	* New structure and change of name to GNU Typist (gtypist)
