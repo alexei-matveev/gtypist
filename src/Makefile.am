@@ -22,3 +22,5 @@ GEN_MAN=@GEN_MAN@
 
 gtypist.1: gtypist.c gtypist
 	if (test ! -e gtypist.1) then $(GEN_MAN); fi
+
+MAINTAINERCLEANFILES = gtypist.1
