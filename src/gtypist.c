@@ -3,7 +3,7 @@
  *
  * Copyright (C) 1998, 1999, 2000, 2001, 2002, 2003
  *               Simon Baldwin (simonb@sco.com)
- * Copyright (C) 2003, 2004, 2008, 2009
+ * Copyright (C) 2003, 2004, 2008, 2009, 2011
  *               GNU Typist Development Team <bug-gtypist@gnu.org>
  *
  * This program is free software: you can redistribute it and/or modify
@@ -92,6 +92,9 @@ char *SPEED_RAW_CPM;
 char *SPEED_ADJ;
 char *SPEED_ADJ_CPM;
 char *SPEED_PCT_ERROR;
+char *SPEED_BEST;
+char *SPEED_BEST_CPM;
+char *SPEED_BEST_NEW_MSG;
 unsigned char *YN;
 unsigned char *RNE;
 
@@ -100,6 +103,16 @@ unsigned char *RNE;
 #endif
 
 #define	DEFAULT_SCRIPT      "gtypist.typ"
+
+#ifdef MINGW
+#define BESTLOG_FILENAME    "gtypist-bestlog"
+#else
+#ifdef DJGPP
+#define BESTLOG_FILENAME    "gtypist-bestlog"
+#else
+#define BESTLOG_FILENAME    ".gtypist-bestlog"
+#endif
+#endif
 
 
 /* some colour definitions */
@@ -137,17 +150,20 @@ static int	cl_menu_title_colour = 7;
 static bool	cl_wp_emu = FALSE;		/* do wp-like stuff */
 static bool     cl_no_skip = FALSE;             /* forbid the user to */
 static bool	cl_rev_video_errors = FALSE;    /* reverse video for errors */
-static bool cl_scoring_cpm = FALSE; /* Characters-per-minute scoring if set */
+static bool	cl_scoring_cpm = FALSE;		/* Chars-per-minute scoring */
+static bool	cl_personal_best = FALSE;	/* track personal best speeds */
 
 /* a few global variables */
 static bool	global_resp_flag = TRUE;
 static char	global_prior_command = C_CONT;
 
-static float    global_error_max = -1.0;
-static bool     global_error_max_persistent = FALSE;
+static float	global_error_max = -1.0;
+static bool	global_error_max_persistent = FALSE;
 
-static struct label_entry *global_on_failure_label = NULL;
-static bool     global_on_failure_label_persistent = FALSE;
+static struct	label_entry *global_on_failure_label = NULL;
+static bool	global_on_failure_label_persistent = FALSE;
+
+static char 	*global_script_filename = NULL;
 
 /* a global area for associating function keys with labels */
 #define NFKEYS			12		/* num of function keys */
@@ -176,6 +192,7 @@ static void display_speed( int total_chars, long elapsed_time, int errcount );
 static void do_keybind( FILE *script, char *line );
 static void do_tutorial( FILE *script, char *line );
 static void do_instruction( FILE *script, char *line );
+static int is_error_too_high( int chars_typed, int errors );
 static void do_drill( FILE *script, char *line );
 static void do_speedtest( FILE *script, char *line );
 static void do_clear( FILE *script, char *line );
@@ -187,19 +204,24 @@ static void do_error_max_set( FILE *script, char *line );
 static void do_on_failure_label_set( FILE *script, char *line );
 static void parse_file( FILE *script, char *label );
 static void indent_to( int n );
-static void print_usage_item( char *op, char *lop, char *help, 
+static void print_usage_item( char *op, char *lop, char *help,
 			      int col_op, int col_lop, int col_help,
 			      int last_col );
 static void print_help();
 static void parse_cmdline( int argc, char **argv );
 static void catcher( int signal );
 static void do_bell();
+static bool get_best_speed( const char *script_filename,
+			    const char *excersise_label, double *speed );
+static void put_best_speed( const char *script_filename,
+			    const char *excersise_label, double speed );
+void get_bestlog_filename( char *filename );
 
 // Display the top banner with the given text
 void banner (const char *text)
 {
    int colnum, brand_length, brand_position, text_length, text_position;
-   	
+
    // Get rid of spaces at the edges of the text
    while (isspace (*text))
       text ++;
@@ -216,14 +238,14 @@ void banner (const char *text)
    brand_position = COLS - brand_length,
    text_position = ((COLS - brand_length) > text_length) ?
 		(COLS - brand_length - text_length) / 2 : 0;
-	
+
 // TODO:  much of redundant output here...
 
    move (B_TOP_LINE , 0);
    attron (COLOR_PAIR (C_BANNER));
    for (colnum = 0; colnum < COLS; colnum++)
       ADDCH_REV (ASCII_SPACE);
-   
+
    move (B_TOP_LINE, text_position);
    {
       int i;
@@ -246,7 +268,7 @@ void bind_F12 (const char *label)
 {
   if (!label)
      return;
-  
+
   if (fkey_bindings [11])
      free (fkey_bindings [11]);
   fkey_bindings [11] = strdup (label);
@@ -264,18 +286,18 @@ void bind_F12 (const char *label)
   char mistyping indications.  And to complicate things, some
   xterms seem not make the cursor invisible either.
 */
-static int 
-getch_fl( char cursor_char ) 
+static int
+getch_fl( char cursor_char )
 {
   int	y, x;				/* saved cursor posn */
   int	return_char;			/* return value */
   bool	alternate = FALSE;		/* flashes control */
-  
+
   /* save the cursor position - we're going to need it */
   getyx( stdscr, y, x );
-  
+
   /* if no cursor then do our best not to show one */
-  if ( cursor_char == ASCII_NULL ) 
+  if ( cursor_char == ASCII_NULL )
     {
       /* degrade to cursor-less getch */
       curs_set( 0 ); refresh();
@@ -283,7 +305,7 @@ getch_fl( char cursor_char )
       cbreak(); return_char = getch();
       move( y, x );
     }
-  else 
+  else
     {
       /* produce a flashing cursor, or not, as requested */
       if ( ! cl_term_cursor ) {
@@ -291,10 +313,10 @@ getch_fl( char cursor_char )
 	ADDCH_REV( cursor_char );
 	curs_set( 0 ); refresh();
 	move( LINES - 1, COLS - 1 );
-	if ( ( cl_curs_flash / 2 ) > 0 ) 
+	if ( ( cl_curs_flash / 2 ) > 0 )
 	  {
 	    halfdelay( cl_curs_flash / 2 );
-	    while ( (return_char = getch()) == ERR ) 
+	    while ( (return_char = getch()) == ERR )
 	      {
 		move( y, x );
 		if ( alternate )
@@ -305,7 +327,7 @@ getch_fl( char cursor_char )
 		alternate = !alternate;
 	      }
 	  }
-	else 
+	else
 	  {
 	    cbreak(); return_char = getch();
 	  }
@@ -313,7 +335,7 @@ getch_fl( char cursor_char )
 	ADDCH( cursor_char );
 	move( y, x );
       }
-      else 
+      else
 	{
 	  /* just use the terminal's cursor - this is easy */
 	  curs_set( 1 ); refresh();
@@ -321,7 +343,7 @@ getch_fl( char cursor_char )
 	  curs_set( 0 ); refresh();
 	}
     }
-  
+
   /* return what key was pressed */
   return ( return_char );
 }
@@ -336,33 +358,33 @@ static void index_labels( FILE *script ) {
   struct label_entry	*list_tail[NLHASH];	/* tail tracking */
   int	hash;					/* hash index */
   struct label_entry	*check_label;		/* pointer thru list */
-  
+
   /* start at the file's beginning */
   rewind( script );
   global_line_counter = 0;
-  
+
   /* initialize the hash lists */
-  for ( hash = 0; hash < NLHASH; hash++ ) 
+  for ( hash = 0; hash < NLHASH; hash++ )
     {
       global_label_list[ hash ] = NULL;
       list_tail[ hash ] = NULL;
     }
-  
+
   /* read until we get to eof */
   get_script_line( script, line );
-  while (! feof( script )) 
+  while (! feof( script ))
     {
-      
+
       /* see if this is a label line */
-      if ( SCR_COMMAND( line ) == C_LABEL ) 
+      if ( SCR_COMMAND( line ) == C_LABEL )
 	{
-	  
+
 	  /* note this label's position in the table;
 	     first, create a new list entry */
 	  new_label = malloc( sizeof(struct label_entry) );
 	  if ( new_label == NULL )
 	    fatal_error( _("internal error: malloc"), line );
-	  
+
 	  /* remove trailing whitespace from line */
 	  line_iterator = line + strlen(line) - 1;
 	  while (line_iterator != line && isspace(*line_iterator))
@@ -371,31 +393,41 @@ static void index_labels( FILE *script ) {
 	      --line_iterator;
 	    }
 
+	  /* check for spaces in the label (these are banned since 2.9 so that
+	     spaces can be used as field separators in the bestlog) */
+	  line_iterator = SCR_DATA( line );
+	  while( *line_iterator != '\0' )
+	    {
+	      if( *line_iterator == ' ' )
+		fatal_error( _("label contains space"), line );
+	      ++line_iterator;
+	    }
+
 	  /* make some space for the label string */
 	  new_label->label =
 	    malloc( strlen( SCR_DATA( line )) + 1 );
 	  if ( new_label->label == NULL )
 	    fatal_error( _("internal error: malloc"), line );
-	  
+
 	  /* copy the data into the new structure */
 	  strcpy( new_label->label, SCR_DATA( line ));
 	  new_label->offset = ftell( script );
 	  new_label->line_count = global_line_counter;
 	  new_label->next = NULL;
-	  
+
 	  /* find the right hash list for the label */
 	  hash = hash_label( SCR_DATA( line ));
-	  
+
 	  /* search the linked list for the label, to
 	     see if it's already there - nice to check */
 	  for ( check_label = global_label_list[ hash ];
 		check_label != NULL;
-		check_label = check_label->next ) 
+		check_label = check_label->next )
 	    {
 	      if ( strcmp( check_label->label, SCR_DATA( line )) == 0 )
 		fatal_error( _("label redefinition"), line );
 	    }
-	  
+
 	  /* link everything together */
 	  if ( list_tail[ hash ] == NULL )
 	    global_label_list[ hash ] = new_label;
@@ -403,7 +435,7 @@ static void index_labels( FILE *script ) {
 	    list_tail[ hash ]->next = new_label;
 	  list_tail[ hash ] = new_label;
 	}
-      
+
       /* get the next script line */
       get_script_line( script, line );
     }
@@ -458,8 +490,12 @@ static void display_speed( int total_chars, long elapsed_time, int errcount ) {
   double	test_time;			/* time in minutes */
   double	words;				/* effective words typed */
   double	speed, adjusted_speed;		/* speeds */
-  char	message[MAX_WIN_LINE]; 		        /* buffer */
-  char *raw_speed_str, *adj_speed_str;
+  char		message[MAX_WIN_LINE];		/* buffer */
+  char		*raw_speed_str, *adj_speed_str, *best_speed_str;
+  int		line = SPEED_LINE;		/* current line no. */
+  bool		had_best_speed = FALSE;		/* already had a p.best? */
+  bool		new_best_speed = FALSE;		/* have we beaten it? */
+  double	best_speed;			/* personal best speed */
 
   /* calculate the speeds */
   test_time = (double)elapsed_time / (double)60.0;
@@ -478,45 +514,73 @@ static void display_speed( int total_chars, long elapsed_time, int errcount ) {
           adjusted_speed = ( words - errcount ) / test_time;
         }
       /* Set speed values within bounds */
-      speed = ( speed < 9999.99 ) ? speed : 9999.99;
-      adjusted_speed = ( adjusted_speed < 9999.99 )
-        ? adjusted_speed : 9999.99;
+      speed = ( speed < 999.99 ) ? speed : 999.99;
+      adjusted_speed = ( adjusted_speed < 999.99 )
+        ? adjusted_speed : 999.99;
       adjusted_speed = ( adjusted_speed > 0 )
         ? adjusted_speed : 0;
     }
   else
     /* unmeasurable elapsed time - use big numbers */
-    speed = adjusted_speed = (double)9999.99;
+    speed = adjusted_speed = (double)999.99;
+
+  /* obtain (and update?) a personal best speed */
+  if( cl_personal_best )
+    {
+      had_best_speed =
+	get_best_speed( global_script_filename, __last_label, &best_speed );
+      new_best_speed = ( !had_best_speed || adjusted_speed > best_speed ) &&
+	!is_error_too_high( total_chars, errcount );
+      if( new_best_speed )
+	put_best_speed( global_script_filename, __last_label, adjusted_speed );
+    }
+
+  /* adjust display position/height */
+  line -=
+    ( had_best_speed? 1 : 0 ) +
+    ( new_best_speed? 1 : 0 );
 
   /* display the speed - no -ve numbers */
-  if(cl_scoring_cpm)
+  if( cl_scoring_cpm )
     {
       raw_speed_str = SPEED_RAW_CPM;
       adj_speed_str = SPEED_ADJ_CPM;
+      best_speed_str = SPEED_BEST_CPM;
     }
   else
     {
       raw_speed_str = SPEED_RAW;
       adj_speed_str = SPEED_ADJ;
+      best_speed_str = SPEED_BEST;
     }
   sprintf( message, raw_speed_str, speed );
-  move( SPEED_LINE, COLS - strlen( message ) - 1 );
+  move( line++, COLS - strlen( message ) - 1 );
   ADDSTR_REV( message );
   sprintf( message, adj_speed_str,
            adjusted_speed >= 0.01 ? adjusted_speed : 0.0 );
-  move( SPEED_LINE + 1, COLS - strlen( message ) - 1 );
+  move( line++, COLS - strlen( message ) - 1 );
   ADDSTR_REV( message );
   sprintf( message, SPEED_PCT_ERROR,
            (double)100.0*(double)errcount / (double)total_chars );
-  move( SPEED_LINE + 2, COLS - strlen( message ) - 1 );
+  move( line++, COLS - strlen( message ) - 1 );
   ADDSTR_REV( message );
+  if( had_best_speed )
+    {
+      sprintf( message, best_speed_str, best_speed );
+      move( line++, COLS - strlen( message ) - 1 );
+      ADDSTR_REV( message );
+    }
+  if( new_best_speed )
+    {
+      move( line++, COLS - strlen( SPEED_BEST_NEW_MSG ) - 1 );
+      ADDSTR_REV( SPEED_BEST_NEW_MSG );
+    }
 }
-
 
 /*
   bind a function key to a label
 */
-static void 
+static void
 do_keybind( FILE *script, char *line ) {
   int	fkey;				/* function key number */
   char	*label;				/* associated label */
@@ -528,21 +592,21 @@ do_keybind( FILE *script, char *line ) {
     fatal_error( _("invalid key binding"), line );
   if ( fkey < 1 || fkey > NFKEYS )
     fatal_error( _("invalid function key number"), line );
-  
+
   /* free the previous binding malloced data */
-  if ( fkey_bindings[ fkey - 1 ] != NULL ) 
+  if ( fkey_bindings[ fkey - 1 ] != NULL )
     {
       free( fkey_bindings[ fkey - 1 ] );
       fkey_bindings[ fkey - 1 ] = NULL;
     }
-  
+
   /* add the association to the array, or unbind the association
      if the target is the special label "NULL" (ugh - hacky) */
   if ( strcmp( label, "NULL" ) != 0 && strcmp( label, "null" ) != 0 )
     fkey_bindings[ fkey - 1 ] = label;
   else
     free( label );
-  
+
   /* get the next command */
   get_script_line( script, line );
   global_prior_command = C_KEYBIND;
@@ -552,7 +616,7 @@ do_keybind( FILE *script, char *line ) {
 /*
   print the given text onto the screen
 */
-static void 
+static void
 do_tutorial( FILE *script, char *line ) {
   int	linenum;		/* line counter */
   bool  seek_done = FALSE;      /* was there a seek_label before exit? */
@@ -562,7 +626,7 @@ do_tutorial( FILE *script, char *line ) {
   move( linenum, 0 ); clrtobot();
 
   /* output this line, and each continuation line read */
-  do 
+  do
     {
       if ( linenum >= LINES - 1 )
 	fatal_error( _("data exceeds screen length"), line );
@@ -570,7 +634,7 @@ do_tutorial( FILE *script, char *line ) {
       ADDSTR( SCR_DATA( line ));
       get_script_line( script, line );
       linenum++;
-    } 
+    }
   while ( SCR_COMMAND( line ) == C_CONT && ! feof( script ));
 
   /* wait for a return, unless the next command is a query,
@@ -589,7 +653,7 @@ do_tutorial( FILE *script, char *line ) {
 /*
   print up a line, at most two, usually followed by a drill or a speed test
 */
-static void 
+static void
 do_instruction( FILE *script, char *line ) {
 
   /* move to the instruction line and output the first bit */
@@ -598,7 +662,7 @@ do_instruction( FILE *script, char *line ) {
   get_script_line( script, line );
 
   /* if there is a second line then output that too */
-  if ( SCR_COMMAND( line ) == C_CONT && ! feof( script )) 
+  if ( SCR_COMMAND( line ) == C_CONT && ! feof( script ))
     {
       move( I_TOP_LINE + 1, 0 );
       ADDSTR( SCR_DATA( line ) );
@@ -636,7 +700,7 @@ is_error_too_high( int chars_typed, int errors ) {
 /*
   execute a typing drill
 */
-static void 
+static void
 do_drill( FILE *script, char *line ) {
 
   int	errors = 0;		 /* error count */
@@ -668,22 +732,22 @@ do_drill( FILE *script, char *line ) {
 
   /* if the last command was a tutorial, ensure we have
      the complete screen */
-  if ( global_prior_command == C_TUTORIAL ) 
+  if ( global_prior_command == C_TUTORIAL )
     {
       move( T_TOP_LINE, 0 ); clrtobot();
     }
 
   while (1)
     {
-      
+
       /* display drill pattern */
       linenum = DP_TOP_LINE;
       move( linenum, 0 ); clrtobot();
-      for ( p = data; *p != ASCII_NULL; p++ ) 
+      for ( p = data; *p != ASCII_NULL; p++ )
 	{
 	  if ( *p != ASCII_NL )
 	    ADDCH( *p );
-	  else 
+	  else
 	    {
 	      /* newline - move down the screen */
 	      linenum++; linenum++;	/* alternate lines */
@@ -692,7 +756,7 @@ do_drill( FILE *script, char *line ) {
 	}
       move( MESSAGE_LINE, COLS - strlen( MODE_DRILL ) - 2 );
       ADDSTR_REV( MODE_DRILL );
-    
+
       /* run the drill */
       linenum = DP_TOP_LINE + 1;
       move( linenum, 0 );
@@ -701,7 +765,7 @@ do_drill( FILE *script, char *line ) {
 
       for ( chars_typed = 0, errors = 0, error_sync = 0,
 		      chars_in_the_line_typed = 0;
-	    *p != ASCII_NULL; p++ ) 
+	    *p != ASCII_NULL; p++ )
 	{
 	  do
 	  {
@@ -723,12 +787,12 @@ do_drill( FILE *script, char *line ) {
 	    start_time = (long)time( NULL );
 	  chars_typed++;
 	  error_sync--;
-	
+
 	  /* ESC is "give up"; ESC at beginning of exercise is "skip lesson"
 	     (this is handled outside the for loop) */
 	  if ( c == ASCII_ESC )
 	    break;
-	
+
 	  /* check that the character was correct */
 	  if ( c == *p
 	       || ( cl_wp_emu && c == ASCII_SPACE
@@ -747,7 +811,7 @@ do_drill( FILE *script, char *line ) {
 		   chars_in_the_line_typed = 0;
 	     }
 	  }
-	  else 
+	  else
 	    {
 	      /* try to sync with typist behind */
 	      if ( error_sync >= 0 && p > data && c == *(p-1) )
@@ -764,11 +828,11 @@ do_drill( FILE *script, char *line ) {
 				       c : DRILL_CH_ERR)));
 		 chars_in_the_line_typed ++;
 	      }
-	      
+
 	      if (*p == ASCII_NL)
 		 chars_in_the_line_typed = 0;
 
-	      if ( ! cl_silent ) 
+	      if ( ! cl_silent )
 		{
 		  do_bell();
 		}
@@ -782,31 +846,31 @@ do_drill( FILE *script, char *line ) {
 		  error_sync++;
 		}
 	    }
-	
+
 	  /* move screen location if newline */
-	  if ( *p == ASCII_NL ) 
+	  if ( *p == ASCII_NL )
 	    {
 	      linenum++; linenum++;
 	      move( linenum, 0 );
 	    }
 
 	  /* perform any other word processor like adjustments */
-	  if ( cl_wp_emu ) 
+	  if ( cl_wp_emu )
 	    {
-	      if ( c == ASCII_SPACE ) 
+	      if ( c == ASCII_SPACE )
 		{
 		  while ( *(p+1) == ASCII_SPACE
-			  && *(p+1) != ASCII_NULL ) 
+			  && *(p+1) != ASCII_NULL )
 		    {
 		      p++; ADDCH( *p );
 		      chars_in_the_line_typed ++;
 		    }
 		}
-	      else if ( c == ASCII_NL ) 
+	      else if ( c == ASCII_NL )
 		{
 		  while ( ( *(p+1) == ASCII_SPACE
 			    || *(p+1) == ASCII_NL )
-			  && *(p+1) != ASCII_NULL ) 
+			  && *(p+1) != ASCII_NULL )
 		    {
 		      p++; ADDCH( *p );
 		      chars_in_the_line_typed ++;
@@ -818,7 +882,7 @@ do_drill( FILE *script, char *line ) {
 		    }
 		}
 	      else if ( isalpha(*p) && *(p+1) == ASCII_DASH
-			&& *(p+2) == ASCII_NL )	
+			&& *(p+2) == ASCII_NL )
 		{
 		  p++; ADDCH( *p );
 		  p++; ADDCH( *p );
@@ -828,7 +892,7 @@ do_drill( FILE *script, char *line ) {
 		}
 	    }
 	}
-      
+
       /* ESC not at the beginning of the lesson: "give up" */
       if ( c == ASCII_ESC && chars_typed != 1)
 	continue; /* repeat */
@@ -838,7 +902,7 @@ do_drill( FILE *script, char *line ) {
 	{
 	  /* display timings */
 	  end_time = (long)time( NULL );
-	  if ( ! cl_notimer ) 
+	  if ( ! cl_notimer )
 	    {
 	      display_speed( chars_typed, end_time - start_time,
 			     errors );
@@ -855,7 +919,8 @@ do_drill( FILE *script, char *line ) {
 	      if (global_on_failure_label != NULL)
 		{
 		  /* move to the label position in the file */
-		  if (fseek(script,global_on_failure_label->offset,SEEK_SET )==-1)
+		  if (fseek(script, global_on_failure_label->offset, SEEK_SET )
+		      == -1)
 		    fatal_error( _("internal error: fseek"), NULL );
 		  global_line_counter = global_on_failure_label->line_count;
 		  /* tell the user about the misery :) */
@@ -886,7 +951,7 @@ do_drill( FILE *script, char *line ) {
 	break;
 
     }
-  
+
   /* free the malloced memory */
   free( data );
 
@@ -906,7 +971,7 @@ do_drill( FILE *script, char *line ) {
 /*
   execute a timed speed test
 */
-static void 
+static void
 do_speedtest( FILE *script, char *line ) {
   int	errors = 0;		 /* error count */
   int	linenum;		 /* line counter */
@@ -936,7 +1001,7 @@ do_speedtest( FILE *script, char *line ) {
 
   /* if the last command was a tutorial, ensure we have
      the complete screen */
-  if ( global_prior_command == C_TUTORIAL ) 
+  if ( global_prior_command == C_TUTORIAL )
     {
       move( T_TOP_LINE, 0 ); clrtobot();
     }
@@ -946,7 +1011,7 @@ do_speedtest( FILE *script, char *line ) {
       /* display speed test pattern */
       linenum = DP_TOP_LINE;
       move( linenum, 0 ); clrtobot();
-      for ( p = data; *p != ASCII_NULL; p++ ) 
+      for ( p = data; *p != ASCII_NULL; p++ )
 	{
 	  if ( *p != ASCII_NL )
 	    ADDCH( *p );
@@ -959,7 +1024,7 @@ do_speedtest( FILE *script, char *line ) {
 	}
       move( MESSAGE_LINE, COLS - strlen( MODE_SPEEDTEST ) - 2 );
       ADDSTR_REV( MODE_SPEEDTEST );
-  
+
       /* run the data */
       linenum = DP_TOP_LINE;
       move( linenum, 0 );
@@ -967,7 +1032,7 @@ do_speedtest( FILE *script, char *line ) {
 	ADDCH( *p );
 
       for ( chars_typed = 0, errors = 0, error_sync = 0;
-	    *p != ASCII_NULL; p++ ) 
+	    *p != ASCII_NULL; p++ )
 	{
 	  rc = getch_fl( (*p != ASCII_NL) ? *p : ASCII_SPACE );
 	  c = (char)rc;
@@ -984,13 +1049,13 @@ do_speedtest( FILE *script, char *line ) {
 	    start_time = (long)time( NULL );
 	  chars_typed++;
 	  error_sync--;
-      
+
 	  /* check for delete keys if not at line start or
 	     speed test start */
-	  if ( rc == KEY_BACKSPACE || c == ASCII_BS || c == ASCII_DEL ) 
+	  if ( rc == KEY_BACKSPACE || c == ASCII_BS || c == ASCII_DEL )
 	    {
 	      /* just ignore deletes where it's impossible or hard */
-	      if ( p > data && *(p-1) != ASCII_NL 
+	      if ( p > data && *(p-1) != ASCII_NL
 		   && *(p-1) != ASCII_TAB ) {
 		/* back up one character */
 		ADDCH( ASCII_BS ); p--;
@@ -1009,7 +1074,7 @@ do_speedtest( FILE *script, char *line ) {
 	       || ( cl_wp_emu && c == ASCII_SPACE
 		    && *p == ASCII_NL ))
 	    ADDCH( c );
-	  else 
+	  else
 	    {
 	      /* try to sync with typist behind */
 	      if ( error_sync >= 0 && p > data && c == *(p-1) )
@@ -1033,33 +1098,33 @@ do_speedtest( FILE *script, char *line ) {
 		  error_sync++;
 		}
 	    }
-      
+
 	  /* move screen location if newline */
-	  if ( *p == ASCII_NL ) 
+	  if ( *p == ASCII_NL )
 	    {
 	      linenum++;
 	      move( linenum, 0 );
 	    }
-      
+
 	  /* perform any other word processor like adjustments */
-	  if ( cl_wp_emu ) 
+	  if ( cl_wp_emu )
 	    {
-	      if ( c == ASCII_SPACE ) 
+	      if ( c == ASCII_SPACE )
 		{
 		  while ( *(p+1) == ASCII_SPACE
-			  && *(p+1) != ASCII_NULL ) 
+			  && *(p+1) != ASCII_NULL )
 		    {
 		      p++; ADDCH( *p );
 		    }
 		}
-	      else if ( c == ASCII_NL ) 
+	      else if ( c == ASCII_NL )
 		{
 		  while ( ( *(p+1) == ASCII_SPACE
 			    || *(p+1) == ASCII_NL )
-			  && *(p+1) != ASCII_NULL ) 
+			  && *(p+1) != ASCII_NULL )
 		    {
 		      p++; ADDCH( *p );
-		      if ( *p == ASCII_NL ) 
+		      if ( *p == ASCII_NL )
 			{
 			  linenum++;
 			  move( linenum, 0 );
@@ -1067,7 +1132,7 @@ do_speedtest( FILE *script, char *line ) {
 		    }
 		}
 	      else if ( isalpha(*p) && *(p+1) == ASCII_DASH
-			&& *(p+2) == ASCII_NL )	
+			&& *(p+2) == ASCII_NL )
 		{
 		  p++; ADDCH( *p );
 		  p++; ADDCH( *p );
@@ -1076,8 +1141,8 @@ do_speedtest( FILE *script, char *line ) {
 		}
 	    }
 	}
-  
-    
+
+
       /* ESC not at the beginning of the lesson: "give up" */
       if ( c == ASCII_ESC && chars_typed != 1)
 	continue; /* repeat */
@@ -1089,7 +1154,7 @@ do_speedtest( FILE *script, char *line ) {
 	  end_time = (long)time( NULL );
 	  display_speed( chars_typed, end_time - start_time,
 			 errors );
-      
+
 	  /* check whether the error-percentage is too high (unless in s:) */
 	  if (drill_type != C_SPEEDTEST_PRACTICE_ONLY &&
 	      is_error_too_high(chars_typed, errors))
@@ -1101,7 +1166,8 @@ do_speedtest( FILE *script, char *line ) {
 	      if (global_on_failure_label != NULL)
 		{
 		  /* move to the label position in the file */
-		  if (fseek(script,global_on_failure_label->offset,SEEK_SET )==-1)
+		  if (fseek(script, global_on_failure_label->offset, SEEK_SET )
+		      == -1)
 		    fatal_error( _("internal error: fseek"), NULL );
 		  global_line_counter = global_on_failure_label->line_count;
 		  /* tell the user about the misery :) */
@@ -1169,13 +1235,13 @@ static void do_clear (FILE *script, char *line)
 /*
   go to a label - the flag is used to implement conditional goto's
 */
-static void 
+static void
 do_goto( FILE *script, char *line, bool flag )
 {
   char *line_iterator;
 
   /* reposition only if flag set - otherwise a noop */
-  if ( flag ) 
+  if ( flag )
     {
       /* remove trailing whitespace from line */
       line_iterator = line + strlen(line) - 1;
@@ -1247,7 +1313,7 @@ do_query_repeat ( FILE *script, bool allow_next )
 
   /* clear out the message line */
   move( MESSAGE_LINE, 0 ); clrtoeol();
-  
+
   return (char)resp;
 }
 
@@ -1264,7 +1330,7 @@ do_query_simple ( char *text )
 
   if (user_is_always_sure)
      return TRUE;
-  
+
   /* display the prompt */
   move( MESSAGE_LINE, 0 ); clrtoeol();
   move( MESSAGE_LINE, COLS - strlen( MODE_QUERY ) - 2 );
@@ -1276,7 +1342,7 @@ do_query_simple ( char *text )
   do
     {
       resp = getch_fl( ASCII_NULL );
-      
+
       if (toupper (resp) == 'Y' || toupper (resp) == YN[0])
 	resp = 0;
       else if (toupper (resp) == 'N' || toupper (resp) == YN[2])
@@ -1290,7 +1356,7 @@ do_query_simple ( char *text )
 
   /* clear out the message line */
   move( MESSAGE_LINE, 0 ); clrtoeol();
-  
+
   return resp == 0 ? TRUE : FALSE;
 }
 
@@ -1299,45 +1365,45 @@ do_query_simple ( char *text )
   get a Y/N response from the user: returns true if we just got the
   expected Y/N, false if exit was by a function key
 */
-static bool 
+static bool
 do_query( FILE *script, char *line )
 {
   int	resp;			/* response character */
   int	fkey;			/* function key iterator */
   bool ret_code;
-  
+
   /* display the prompt */
   move( MESSAGE_LINE, 0 ); clrtoeol();
   move( MESSAGE_LINE, COLS - strlen( MODE_QUERY ) - 2 );
   ADDSTR_REV( MODE_QUERY );
   move( MESSAGE_LINE, 0 );
   ADDSTR_REV( SCR_DATA( line ) );
-  
+
   /* wait for a Y/N response, translation of Y/N or matching FKEY */
-  while ( TRUE ) 
+  while ( TRUE )
     {
       resp = getch_fl( ASCII_NULL );
-      
-      /* translate pseudo Fkeys into real ones if applicable 
+
+      /* translate pseudo Fkeys into real ones if applicable
 	 The pseudo keys are defined in array pfkeys and are also:
 	 F1 - 1, F2 - 2, F3 - 3,.... F10 - 0, F11 - A, F12 - S */
-      for ( fkey = 1; fkey <= NFKEYS; fkey++ ) 
+      for ( fkey = 1; fkey <= NFKEYS; fkey++ )
 	{
 	  if ( resp == pfkeys[ fkey - 1 ] || (fkey<11 && resp == (fkey+'0'))
 	       || (fkey==10 && (resp =='0'))
 	       || (fkey==11 && (resp =='a' || resp=='A'))
-	       || (fkey==12 && (resp =='s' || resp=='S'))) 
+	       || (fkey==12 && (resp =='s' || resp=='S')))
 	    {
 	      resp = KEY_F( fkey );
 	      break;
 	    }
 	}
-      
+
       /* search the key bindings for a matching key */
-      for ( fkey = 1; fkey <= NFKEYS; fkey++ ) 
+      for ( fkey = 1; fkey <= NFKEYS; fkey++ )
 	{
 	  if ( resp == KEY_F( fkey )
-	       && fkey_bindings[ fkey - 1 ] != NULL ) 
+	       && fkey_bindings[ fkey - 1 ] != NULL )
 	    {
 	      seek_label( script, fkey_bindings[ fkey - 1 ],
 			  NULL );
@@ -1348,24 +1414,24 @@ do_query( FILE *script, char *line )
 	ret_code = FALSE;
 	break;
       }
-      
+
       /* no FKEY binding - check for Y or N */
       if ( toupper( (char)resp ) == QUERY_Y ||
-	   toupper( (char)resp ) == YN[0] ) 
+	   toupper( (char)resp ) == YN[0] )
 	{
 	  ret_code = TRUE;
 	  global_resp_flag = TRUE;
 	  break;
 	}
       if ( toupper( (char)resp ) == QUERY_N ||
-	   toupper( (char)resp ) == YN[2] ) 
+	   toupper( (char)resp ) == YN[2] )
 	{
 	  ret_code = TRUE;
 	  global_resp_flag = FALSE;
 	  break;
 	}
-    } 
-  
+    }
+
   /* clear out the message line */
   move( MESSAGE_LINE, 0 ); clrtoeol();
 
@@ -1380,8 +1446,8 @@ do_query( FILE *script, char *line )
   execute a E:-command: either "E: <value>%" (only applies to the next drill)
   or "E: <value>%*" (applies until the next E:-command)
 */
-static void 
-do_error_max_set( FILE *script, char *line ) 
+static void
+do_error_max_set( FILE *script, char *line )
 {
   char copy_of_line[MAX_SCR_LINE];
   char *data;
@@ -1464,7 +1530,7 @@ do_error_max_set( FILE *script, char *line )
   /* sanity checks */
   if (global_error_max < 0.0 || global_error_max > 100.0)
     fatal_error( _("Invalid value for \"E:\" (out of range)"), copy_of_line );
-  
+
   /* get the next command */
   get_script_line( script, line );
 }
@@ -1472,8 +1538,8 @@ do_error_max_set( FILE *script, char *line )
 /*
 
 */
-static void 
-do_on_failure_label_set( FILE *script, char *line ) 
+static void
+do_on_failure_label_set( FILE *script, char *line )
 {
   char copy_of_line[MAX_SCR_LINE];
   char *line_iterator;
@@ -1504,11 +1570,11 @@ do_on_failure_label_set( FILE *script, char *line )
     {
       /* find the right hash list for the label */
       i = hash_label( SCR_DATA(line) );
-  
+
       /* search the linked list for the label */
       for ( global_on_failure_label = global_label_list[i];
 	    global_on_failure_label != NULL;
-	    global_on_failure_label = global_on_failure_label->next ) 
+	    global_on_failure_label = global_on_failure_label->next )
 	{
 	  /* see if this is our label */
 	  if ( strcmp( global_on_failure_label->label, SCR_DATA(line) ) == 0 )
@@ -1516,7 +1582,7 @@ do_on_failure_label_set( FILE *script, char *line )
 	}
 
       /* see if the label was not found in the file */
-      if ( global_on_failure_label == NULL ) 
+      if ( global_on_failure_label == NULL )
 	{
 	  sprintf( message, _("label '%s' not found"), SCR_DATA(line) );
 	  fatal_error( message, copy_of_line );
@@ -1530,31 +1596,31 @@ do_on_failure_label_set( FILE *script, char *line )
 /*
   execute the directives in the script file
 */
-static void 
+static void
 parse_file( FILE *script, char *label ) {
 
   char	line[MAX_SCR_LINE];		/* line buffer */
   char	command;			/* current command */
 
   /* if label given then start running there */
-  if ( label != NULL ) 
+  if ( label != NULL )
     {
       /* find the label we want to start at */
       seek_label( script, label, NULL );
     }
-  else 
+  else
     {
       /* start at the very beginning (a very good place to start) */
       rewind( script );
       global_line_counter = 0;
     }
   get_script_line( script, line );
-  
+
   /* just handle lines until the end of the file */
-  while( ! feof( script )) 
+  while( ! feof( script ))
     {
       command = SCR_COMMAND( line );
-      switch( command ) 
+      switch( command )
 	{
 	case C_TUTORIAL:
 	  do_tutorial( script, line ); break;
@@ -1575,7 +1641,7 @@ parse_file( FILE *script, char *label ) {
 	case C_SPEEDTEST_PRACTICE_ONLY:
 	  do_speedtest( script, line ); break;
 	case C_KEYBIND:	do_keybind( script, line ); break;
-	  
+
 	case C_LABEL:
 	   __update_last_label (SCR_DATA (line));
 	   get_script_line (script, line);
@@ -1603,7 +1669,7 @@ indent_to( int n )
 }
 
 /**
-   Prints one usage option. 
+   Prints one usage option.
    The arguments op, lop and help should not have special characters '\n' '\t'
    @param op is the short option
    @param lop is the long option
@@ -1614,29 +1680,29 @@ indent_to( int n )
    @param last_col is the last column that can be used
 **/
 static void
-print_usage_item( char *op, char *lop, char *help, 
-		  int col_op, int col_lop, int col_help, int last_col ) 
+print_usage_item( char *op, char *lop, char *help,
+		  int col_op, int col_lop, int col_help, int last_col )
 {
   int col=0;
   char help_string[MAX_SCR_LINE];
   char *token;
   const char delimiters[] = " ";
-  
+
   assert (op!=NULL && lop!=NULL && help!=NULL);
-  assert (0<=col_op && col_op<col_lop 
+  assert (0<=col_op && col_op<col_lop
 	  && col_lop<col_help && col_help<last_col);
-  
+
   indent_to(col_op);
   printf ("%s", op);
   col += col_op + strlen (op);
-  
+
   indent_to(col_lop - col);
   printf ("%s", lop);
   col += MAX(0, col_lop - col) + strlen (lop);
 
   indent_to(col_help - col);
   col += MAX(0, col_help - col);
- 
+
   strcpy ( help_string, help );
   token = strtok ( help_string, delimiters );
   while (token != NULL)
@@ -1664,8 +1730,9 @@ print_usage_item( char *op, char *lop, char *help,
 static void
 print_help()
 {
-  char *op[]= 
-    { "-e %",
+  char *op[]=
+    { "-b",
+      "-e %",
       "-n",
       "-t",
       "-f P",
@@ -1681,8 +1748,9 @@ print_help()
       "-S",
       "--banner-colors=F,B,P,V",
       "--scoring=wpm,cpm"};
-  char *lop[]= 
-    { "--max-error=%",
+  char *lop[]=
+    { "--personal-best",
+      "--max-error=%",
       "--notimer",
       "--term-cursor",
       "--curs-flash=P",
@@ -1698,12 +1766,15 @@ print_help()
       "--always-sure",
       "",
       ""};
-  char *help[] = 
-    { 
-      _("default maximum error percentage (default 3.0); valid values are between 0.0 and 100.0"),
+  char *help[] =
+    {
+      _("track personal best typing speeds"),
+      _("default maximum error percentage (default 3.0); valid values are "
+	"between 0.0 and 100.0"),
       _("turn off WPM timer in drills"),
       _("use the terminal's hardware cursor"),
-      _("cursor flash period P*.1 sec (default 10); valid  values are between 0 and 512; this is ignored if -t is specified"),
+      _("cursor flash period P*.1 sec (default 10); valid  values are between "
+	"0 and 512; this is ignored if -t is specified"),
       _("set initial display colours where available"),
       _("don't beep on errors"),
       _("same as -s, --silent"),
@@ -1717,15 +1788,17 @@ print_help()
       _("set top banner colours (background, foreground, package and version "
         "respectively)"),
       _("set scoring mode (words per minute or characters per minute)")};
-  
+
   int loop;
-  
-  printf(_("`gtypist' is a typing tutor with several lessons for different keyboards and languages.  New lessons can be written by the user easily.\n\n"));
+
+  printf(_("`gtypist' is a typing tutor with several lessons for different "
+	   "keyboards and languages.  New lessons can be written by the user "
+	   "easily.\n\n"));
   printf("%s: %s [ %s... ] [ %s ]\n\n",
 	 _("Usage"),argv0,_("Options"),_("script-file"));
   printf("%s:\n",_("Options"));
   /* print out each line of the help text array */
-  for ( loop = 0; loop < sizeof(help)/sizeof(char *); loop++ ) 
+  for ( loop = 0; loop < sizeof(help)/sizeof(char *); loop++ )
     {
       print_usage_item( op[loop], lop[loop], help[loop], 1, 8, 25, 75 );
     }
@@ -1740,22 +1813,26 @@ print_help()
   printf("  %s:\n    %s esp.typ\n\n",
 	 _("To run the lesson in spanish"),argv0);
   printf("  %s:\n    GTYPIST_PATH=\"/home/foo\" %s bar.typ\n\n",
-	 _("To instruct gtypist to look for lesson `bar.typ' in a non standard directory"),argv0);
+	 _("To instruct gtypist to look for lesson `bar.typ' in a non standard "
+	   "directory"),argv0);
   printf("  %s:\n    %s -t -q -l TEST1 /temp/test.typ\n\n",
-	 _("To run the lesson in the file `test.typ' of directory `temp', starting at label `TEST1', using the terminal's cursor, and run silently"),argv0);
-  printf("%s\n",_("Report bugs to bug-gtypist@gnu.org")); 
+	 _("To run the lesson in the file `test.typ' of directory `temp', "
+	   "starting at label `TEST1', using the terminal's cursor, and run "
+	   "silently"),argv0);
+  printf("%s\n",_("Report bugs to bug-gtypist@gnu.org"));
 }
 
 
 /*
   parse command line options for initial values
 */
-static void 
+static void
 parse_cmdline( int argc, char **argv ) {
   int	c;				/* option character */
   int	option_index;			/* option index */
   char *str_option; /* to store string vals of cl opts */
   static struct option long_options[] = {	/* options table */
+    { "personal-best",	no_argument, 0, 'b' },
     { "max-error",      required_argument, 0, 'e' },
     { "notimer",	no_argument, 0, 'n' },
     { "term-cursor",	no_argument, 0, 't' },
@@ -1773,20 +1850,29 @@ parse_cmdline( int argc, char **argv ) {
     { "help",		no_argument, 0, 'h' },
     { "version",	no_argument, 0, 'v' },
     { "always-sure",	no_argument, 0, 'S' },
-    { "scoring", required_argument, 0, '\x02'},
+    { "scoring",	required_argument, 0, '\x02'},
     { 0, 0, 0, 0 }};
 
   /* process every option */
-  while ( (c=getopt_long( argc, argv, "e:ntf:c:sql:wkihvS",
-			  long_options, &option_index )) != -1 ) 
+  while ( (c=getopt_long( argc, argv, "be:ntf:c:sql:wkihvS",
+			  long_options, &option_index )) != -1 )
     {
       switch (c)
 	{
+	case 'b':
+	  cl_personal_best = TRUE;
+	  if( !getenv( "HOME" ) || !strlen( getenv( "HOME" ) ) )
+	    {
+	      fprintf( stderr, _("%s: HOME environment variable not set\n"),
+		       argv0 );
+	      exit( 1 );
+	    }
+	  break;
 	case 'e':
 	  cl_error_max_specified = TRUE;
-	  if ( sscanf( optarg, "%f", &cl_default_error_max ) != 1 
+	  if ( sscanf( optarg, "%f", &cl_default_error_max ) != 1
 	       || cl_default_error_max < 0.0
-	       || cl_default_error_max > 100.0 ) 
+	       || cl_default_error_max > 100.0 )
 	    {
 	      fprintf( stderr, _("%s: invalid error-max value\n"),
 		       argv0 );
@@ -1802,7 +1888,7 @@ parse_cmdline( int argc, char **argv ) {
 	case 'f':
 	  if ( sscanf( optarg, "%d", &cl_curs_flash ) != 1
 	       || cl_curs_flash < 0
-	       || cl_curs_flash > 512 ) 
+	       || cl_curs_flash > 512 )
 	    {
 	      fprintf( stderr, _("%s: invalid curs-flash value\n"),
 		       argv0 );
@@ -1813,7 +1899,7 @@ parse_cmdline( int argc, char **argv ) {
 	  if ( sscanf( optarg, "%d,%d",
 		       &cl_fgcolour, &cl_bgcolour ) != 2 ||
 	       cl_fgcolour < 0 || cl_fgcolour >= NUM_COLOURS ||
-	       cl_bgcolour < 0 || cl_bgcolour >= NUM_COLOURS ) 
+	       cl_bgcolour < 0 || cl_bgcolour >= NUM_COLOURS )
 	    {
 	      fprintf( stderr, _("%s: invalid colours value\n"),argv0 );
 	      exit( 1 );
@@ -1868,7 +1954,7 @@ parse_cmdline( int argc, char **argv ) {
 	  break;
 	case 'l':
 	  cl_start_label = (char*)malloc( strlen( optarg ) + 1 );
-	  if ( cl_start_label == NULL ) 
+	  if ( cl_start_label == NULL )
 	    {
 	      fprintf( stderr, _("%s: internal error: malloc\n"),argv0 );
 	      exit( 1 );
@@ -1904,7 +1990,7 @@ parse_cmdline( int argc, char **argv ) {
 	  exit( 1 );
 	}
     }
-  if ( argc - optind > 1 ) 
+  if ( argc - optind > 1 )
     {
       fprintf( stderr,
 	       _("Try '%s --help' for more information.\n"), argv0 );
@@ -1916,9 +2002,9 @@ parse_cmdline( int argc, char **argv ) {
 /*
   signal handler to stop curses stuff on intr
 */
-static void 
+static void
 catcher( int signal ) {
-  
+
   /* unravel colours and curses, clean up and exit */
   if ( cl_colour && has_colors() )
     wbkgdset( stdscr, 0 );
@@ -1930,22 +2016,23 @@ catcher( int signal ) {
 /*
   main routine
 */
-int main( int argc, char **argv ) 
+int main( int argc, char **argv )
 {
-  WINDOW	*scr;				/* curses window */
+  WINDOW	*scr;			/* curses window */
   FILE	*script;			/* script file handle */
   char	*p, filepath[FILENAME_MAX];	/* file paths */
   char	script_file[FILENAME_MAX];	/* more file paths */
-  
+
   /* Internationalization */
-  
+
 #if defined(ENABLE_NLS) && defined(LC_ALL)
   setlocale (LC_ALL, "");
   bindtextdomain (PACKAGE, LOCALEDIR);
   textdomain (PACKAGE);
 #endif
 
-  COPYRIGHT=_("Copyright (C) 1998, 1999, 2000, 2001, 2002, 2003 Simon Baldwin.\n\
+  COPYRIGHT=
+    _("Copyright (C) 1998, 1999, 2000, 2001, 2002, 2003 Simon Baldwin.\n\
 Copyright (C) 2003, 2004, 2008 GNU Typist Development Team.\n\
 This program comes with ABSOLUTELY NO WARRANTY; for details\n\
 please see the file 'COPYING' supplied with the source code.\n\
@@ -1971,38 +2058,50 @@ This program is released under the GNU General Public License.");
     _(" You failed this test, so you need to go back to %s. ");
   /* this is used for repeat-queries. you can translate the keys as well
      (if you translate msgid "R/N/E" accordingly) */
-  REPEAT_NEXT_EXIT_MSG= 
+  REPEAT_NEXT_EXIT_MSG=
 	_(" Press R to repeat, N for next exercise or E to exit ");
   /* this is used for repeat-queries with --no-skip. you can translate
      the keys as well (if you translate msgid "R/N/E" accordingly) */
-  REPEAT_EXIT_MSG= 
+  REPEAT_EXIT_MSG=
 	_(" Press R to repeat or E to exit ");
   /* This is used make the user confirm (E)xit in REPEAT_NEXT_EXIT_MSG */
   CONFIRM_EXIT_LESSON_MSG=
     _(" Are you sure you want to exit this lesson? [Y/N] ");
   /* This message is displayed if the user tries to skip a lesson
      (ESC ESC) and --no-skip is specified */
-  NO_SKIP_MSG= 
+  NO_SKIP_MSG=
     _(" Sorry, gtypist is configured to forbid skipping exercises. ");
   /* this must be adjusted to the right with one space at the end.
      Leading whitespace is important because it is displayed in reverse
-     video because it must be aligned with the next two messages 
-     (it's best to run gtypist to see this in practice)   */
+     video because it must be aligned with the next messages (it's best
+     to run gtypist to see this in practice) */
   SPEED_RAW=_(" Raw speed      = %6.2f wpm ");
   /* This is the CPM version of the above.  The same rules apply. */
   SPEED_RAW_CPM=_(" Raw speed      = %6.2f cpm ");
   /* this must be adjusted to the right with one space at the end.
      Leading whitespace is important because it is displayed in reverse
-     video and because it must be aligned with the previous and next messages
-     (it's best to run gtypist to see this in practice)   */
+     video and because it must be aligned with the previous and next
+     messages (it's best to run gtypist to see this in practice) */
   SPEED_ADJ=  _(" Adjusted speed = %6.2f wpm ");
   /* This is the CPM version of the above.  The same rules apply. */
   SPEED_ADJ_CPM=  _(" Adjusted speed = %6.2f cpm ");
   /* this must be adjusted to the right with one space at the end.
      Leading whitespace is important because it is displayed in reverse
-     video and because it must be aligned with the next last two messages
-     (it's best to run gtypist to see this in practice)   */
+     video and because it must be aligned with the previous and next
+     messages (it's best to run gtypist to see this in practice) */
   SPEED_PCT_ERROR=_("            with %.1f%% errors ");
+  /* this must be adjusted to the right with one space at the end.
+     Leading whitespace is important because it is displayed in reverse
+     video and because it must be aligned with the previous messages (it's
+     best to run gtypist to see this in practice) */
+  SPEED_BEST= _(" Personal best  = %6.2f wpm ");
+  /* This is the CPM version of the above.  The same rules apply. */
+  SPEED_BEST_CPM= _(" Personal best  = %6.2f cpm ");
+  /* this must be adjusted to the right with one space at the end.
+     Leading whitespace is important because it is displayed in reverse
+     video and because it must be aligned with the previous messages
+     (it's best to run gtypist to see this in practice) */
+  SPEED_BEST_NEW_MSG= _("           new personal best ");
   /* this is used to translate the keys for Y/N-queries. Must be two
      uppercase letters separated by '/'. Y/N will still be accepted as
      well. Note that the messages (prompts) themselves cannot be
@@ -2028,13 +2127,13 @@ This program is released under the GNU General Public License.");
 	       argv0, RNE );
       exit( 1 );
     }
-  
+
   /* get our name for error messages */
   argv0 = argv[0] + strlen( argv[0] );
   while ( argv0 > argv[0] && *argv0 != '/' )
     argv0--;
   if ( *argv0 == '/' ) argv0++;
-  
+
   /* check usage and open input file */
   parse_cmdline( argc, argv );
   global_error_max = cl_default_error_max;
@@ -2049,19 +2148,24 @@ This program is released under the GNU General Public License.");
 #  define FILE_READ_MODE "rb"
 #else
 #  define FILE_READ_MODE "r"
-#endif	
+#endif
   script = fopen( script_file, FILE_READ_MODE );
-  if (script==NULL && getenv( "GTYPIST_PATH" ) != NULL ) 
+  if( script != NULL )
+    global_script_filename = strdup( script_file );
+  if (script==NULL && getenv( "GTYPIST_PATH" ) != NULL )
     {
       p = strtok( getenv( "GTYPIST_PATH" ), ":" );
       for ( ; p != NULL;
-	    p = strtok( NULL, ":" )) 
+	    p = strtok( NULL, ":" ))
 	{
 	  strcpy( filepath, p );
 	  strcat( filepath, "/" );
 	  strcat( filepath, script_file );
 	  if ( (script = fopen( filepath, FILE_READ_MODE )) != NULL )
-	    break;
+	    {
+	      global_script_filename = strdup( filepath );
+	      break;
+	    }
 	}
     }
   if (script==NULL)
@@ -2070,15 +2174,17 @@ This program is released under the GNU General Public License.");
       strcat( filepath, "/" );
       strcat( filepath, script_file );
       script = fopen( filepath, FILE_READ_MODE );
+      if( script != NULL )
+	global_script_filename = strdup( filepath );
     }
-  
-  if ( script == NULL ) 
+
+  if ( script == NULL )
     {
       fprintf( stderr, "%s: %s %s\n",
 	       argv0, _("can't find or open file"),script_file );
       exit( 1 );
     }
-  
+
   /* prepare for curses stuff, and set up a signal handler
      to undo curses if we get interrupted */
   scr = initscr();
@@ -2086,7 +2192,7 @@ This program is released under the GNU General Public License.");
   signal( SIGTERM, catcher );
 #ifndef MINGW
   signal( SIGHUP, catcher );
-  signal( SIGQUIT, catcher ); 
+  signal( SIGQUIT, catcher );
 #ifndef DJGPP
   signal( SIGCHLD, catcher );
 #endif
@@ -2096,12 +2202,12 @@ This program is released under the GNU General Public License.");
   keypad( scr, TRUE ); noecho(); curs_set( 0 ); raw();
 
   // Quick hack to get rid of the escape delays
-#ifdef __NCURSES_H 
+#ifdef __NCURSES_H
   ESCDELAY = 1;
 #endif
 
   /* set up colour pairs if possible */
-  if (has_colors ()) 
+  if (has_colors ())
   {
      start_color ();
 
@@ -2123,14 +2229,14 @@ This program is released under the GNU General Public License.");
 		     colour_array [cl_menu_title_colour],
 		     colour_array [cl_bgcolour]);
   }
-  
+
   /* put up the top line banner */
   clear();
   banner (_("Loading the script..."));
- 
+
   /* index all the labels in the file */
   index_labels( script );
-  
+
   /* run the input file */
   parse_file( script, cl_start_label );
   do_exit( script );
@@ -2146,4 +2252,104 @@ void do_bell() {
   putchar( ASCII_BELL );
   fflush( stdout );
 #endif
+}
+
+bool get_best_speed( const char *script_filename,
+		     const char *excersise_label, double *speed )
+{
+  FILE *blfile;                        /* bestlog file */
+  char *filename;                      /* bestlog filename */
+  char *search;                        /* string to match in bestlog */
+  char line[FILENAME_MAX];             /* single line from bestlog */
+  int search_len;                      /* length of search string */
+  bool found = FALSE;                  /* did we find it? */
+  int a;
+
+  /* calculate filename */
+  filename = (char *)malloc( strlen( getenv( "HOME" ) ) +
+                             strlen( BESTLOG_FILENAME ) + 2 );
+  if( filename == NULL )
+    {
+       perror( "malloc" );
+       fatal_error( _( "internal error: malloc" ), NULL );
+    }
+  sprintf( filename, "%s/%s", getenv( "HOME" ), BESTLOG_FILENAME );
+
+  /* open best speeds file */
+  blfile = fopen( filename, "r" );
+  if( blfile == NULL )
+    {
+      free( filename );
+      return FALSE;
+    }
+
+  /* construct search string */
+  search_len = strlen( script_filename ) + strlen( excersise_label ) + 3;
+  search = (char *)malloc( search_len + 1 );
+  if( search == NULL )
+    {
+       perror( "malloc" );
+       fatal_error( _( "internal error: malloc" ), NULL );
+    }
+  sprintf( search, " %s:%s ", script_filename, excersise_label );
+
+  /* search for lines that match and use data from the last one */
+  while( fgets( line, FILENAME_MAX, blfile ) )
+    {
+      /* check that there are at least 19 chars (yyyy-mm-dd hh:mm:ss) */
+      for( a = 0; a < 19; a++ )
+	if( line[ a ] == '\0' )
+	  continue;
+
+      /* look for search string and try to obtain a speed */
+      if( !strncmp( search, line + 19, search_len ) &&
+	  sscanf( line + 19 + search_len, "%lg", speed ) == 1 )
+	{
+	  found = true;
+	}
+    }
+
+  /* cleanup and return */
+  free( search );
+  free( filename );
+  fclose( blfile );
+  return found;
+}
+
+void put_best_speed( const char *script_filename,
+		     const char *excersise_label, double speed )
+{
+  FILE *blfile;                        /* bestlog file */
+  char *filename;                      /* bestlog filename */
+
+  /* calculate filename */
+  filename = (char *)malloc( strlen( getenv( "HOME" ) ) +
+                             strlen( BESTLOG_FILENAME ) + 2 );
+  if( filename == NULL )
+    {
+       perror( "malloc" );
+       fatal_error( _( "internal error: malloc" ), NULL );
+    }
+  sprintf( filename, "%s/%s", getenv( "HOME" ), BESTLOG_FILENAME );
+
+  /* open best speeds files */
+  blfile = fopen( filename, "a" );
+  if( blfile == NULL )
+    {
+       perror( "fopen" );
+       fatal_error( _(" internal error: fopen" ), NULL );
+    }
+
+  /* get time */
+  time_t nowts = time( NULL );
+  struct tm *now = localtime( &nowts );
+
+  /* append new score */
+  fprintf( blfile, "%04d-%02d-%02d %02d:%02d:%02d %s:%s %g\n",
+      now->tm_year + 1900, now->tm_mon + 1, now->tm_mday, now->tm_hour,
+      now->tm_min, now->tm_sec, script_filename, excersise_label, speed );
+
+  /* cleanup */
+  free( filename );
+  fclose( blfile );
 }
