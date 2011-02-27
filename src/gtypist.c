@@ -26,6 +26,7 @@
 #include <stdio.h>
 #include <ctype.h>
 #include <signal.h>
+#include <sys/param.h>
 
 #ifdef HAVE_LIBCURSES
 #include <curses.h>
@@ -87,12 +88,12 @@ char *REPEAT_NEXT_EXIT_MSG;
 char *REPEAT_EXIT_MSG;
 char *CONFIRM_EXIT_LESSON_MSG;
 char *NO_SKIP_MSG;
-char *SPEED_RAW;
+char *SPEED_RAW_WPM;
 char *SPEED_RAW_CPM;
-char *SPEED_ADJ;
+char *SPEED_ADJ_WPM;
 char *SPEED_ADJ_CPM;
 char *SPEED_PCT_ERROR;
-char *SPEED_BEST;
+char *SPEED_BEST_WPM;
 char *SPEED_BEST_CPM;
 char *SPEED_BEST_NEW_MSG;
 unsigned char *YN;
@@ -212,9 +213,9 @@ static void parse_cmdline( int argc, char **argv );
 static void catcher( int signal );
 static void do_bell();
 static bool get_best_speed( const char *script_filename,
-			    const char *excersise_label, double *speed );
+			    const char *excersise_label, double *adjusted_cpm );
 static void put_best_speed( const char *script_filename,
-			    const char *excersise_label, double speed );
+			    const char *excersise_label, double adjusted_cpm );
 void get_bestlog_filename( char *filename );
 
 // Display the top banner with the given text
@@ -488,51 +489,44 @@ static bool wait_user (FILE *script, char *message, char *mode)
 */
 static void display_speed( int total_chars, long elapsed_time, int errcount ) {
   double	test_time;			/* time in minutes */
-  double	words;				/* effective words typed */
-  double	speed, adjusted_speed;		/* speeds */
+//  double	words;				/* effective words typed */
+  double	cpm, adjusted_cpm;		/* speeds in CPM */
   char		message[MAX_WIN_LINE];		/* buffer */
-  char		*raw_speed_str, *adj_speed_str, *best_speed_str;
   int		line = SPEED_LINE;		/* current line no. */
   bool		had_best_speed = FALSE;		/* already had a p.best? */
   bool		new_best_speed = FALSE;		/* have we beaten it? */
-  double	best_speed;			/* personal best speed */
+  double	best_cpm;			/* personal best speed in CPM */
+  char		*raw_speed_str, *adj_speed_str, *best_speed_str;
 
   /* calculate the speeds */
   test_time = (double)elapsed_time / (double)60.0;
-  words = (double)total_chars / (double)5.0;
-  if ( elapsed_time > 0 )
+  if( elapsed_time > 0 )
     {
-      /* Get speed values */
-      if(cl_scoring_cpm)
-        {
-          speed = (double)total_chars / test_time;
-          adjusted_speed = (double)(total_chars - (errcount * 5 )) / test_time;
-        }
-      else
-        {
-          speed = words / test_time;
-          adjusted_speed = ( words - errcount ) / test_time;
-        }
-      /* Set speed values within bounds */
-      speed = ( speed < 999.99 ) ? speed : 999.99;
-      adjusted_speed = ( adjusted_speed < 999.99 )
-        ? adjusted_speed : 999.99;
-      adjusted_speed = ( adjusted_speed > 0 )
-        ? adjusted_speed : 0;
+      /* calculate speed values */
+      cpm = (double)total_chars / test_time;
+      adjusted_cpm = (double)( total_chars - ( errcount * 5 ) ) / test_time;
+
+      /* limit speed values */
+      cpm = MIN( cpm, 9999.99 );
+      adjusted_cpm = MAX( MIN( adjusted_cpm, 9999.99 ), 0 );
+
+      /* remove errors in adjusted speed */
+      if( adjusted_cpm < 0.01 )
+	adjusted_cpm = 0;
     }
   else
     /* unmeasurable elapsed time - use big numbers */
-    speed = adjusted_speed = (double)999.99;
+    cpm = adjusted_cpm = (double)9999.99;
 
   /* obtain (and update?) a personal best speed */
   if( cl_personal_best )
     {
       had_best_speed =
-	get_best_speed( global_script_filename, __last_label, &best_speed );
-      new_best_speed = ( !had_best_speed || adjusted_speed > best_speed ) &&
+	get_best_speed( global_script_filename, __last_label, &best_cpm );
+      new_best_speed = ( !had_best_speed || adjusted_cpm > best_cpm ) &&
 	!is_error_too_high( total_chars, errcount );
       if( new_best_speed )
-	put_best_speed( global_script_filename, __last_label, adjusted_speed );
+	put_best_speed( global_script_filename, __last_label, adjusted_cpm );
     }
 
   /* adjust display position/height */
@@ -540,33 +534,29 @@ static void display_speed( int total_chars, long elapsed_time, int errcount ) {
     ( had_best_speed? 1 : 0 ) +
     ( new_best_speed? 1 : 0 );
 
-  /* display the speed - no -ve numbers */
+  /* display everything */
   if( cl_scoring_cpm )
-    {
-      raw_speed_str = SPEED_RAW_CPM;
-      adj_speed_str = SPEED_ADJ_CPM;
-      best_speed_str = SPEED_BEST_CPM;
-    }
+    sprintf( message, SPEED_RAW_CPM, cpm );
   else
-    {
-      raw_speed_str = SPEED_RAW;
-      adj_speed_str = SPEED_ADJ;
-      best_speed_str = SPEED_BEST;
-    }
-  sprintf( message, raw_speed_str, speed );
+    sprintf( message, SPEED_RAW_WPM, cpm / (double)5.0 );
   move( line++, COLS - strlen( message ) - 1 );
   ADDSTR_REV( message );
-  sprintf( message, adj_speed_str,
-           adjusted_speed >= 0.01 ? adjusted_speed : 0.0 );
+  if( cl_scoring_cpm )
+    sprintf( message, SPEED_ADJ_CPM, adjusted_cpm );
+  else
+    sprintf( message, SPEED_ADJ_WPM, adjusted_cpm / (double)5.0 );
   move( line++, COLS - strlen( message ) - 1 );
   ADDSTR_REV( message );
   sprintf( message, SPEED_PCT_ERROR,
-           (double)100.0*(double)errcount / (double)total_chars );
+           (double)100.0 * (double)errcount / (double)total_chars );
   move( line++, COLS - strlen( message ) - 1 );
   ADDSTR_REV( message );
   if( had_best_speed )
     {
-      sprintf( message, best_speed_str, best_speed );
+      if( cl_scoring_cpm )
+	sprintf( message, SPEED_BEST_CPM, best_cpm );
+      else
+	sprintf( message, SPEED_BEST_WPM, best_cpm / (double)5.0 );
       move( line++, COLS - strlen( message ) - 1 );
       ADDSTR_REV( message );
     }
@@ -1795,7 +1785,7 @@ print_help()
 	   "keyboards and languages.  New lessons can be written by the user "
 	   "easily.\n\n"));
   printf("%s: %s [ %s... ] [ %s ]\n\n",
-	 _("Usage"),argv0,_("Options"),_("script-file"));
+	 _("Usage"),argv0,_("options"),_("script-file"));
   printf("%s:\n",_("Options"));
   /* print out each line of the help text array */
   for ( loop = 0; loop < sizeof(help)/sizeof(char *); loop++ )
@@ -2032,13 +2022,13 @@ int main( int argc, char **argv )
 #endif
 
   COPYRIGHT=
-    _("Copyright (C) 1998, 1999, 2000, 2001, 2002, 2003 Simon Baldwin.\n\
-Copyright (C) 2003, 2004, 2008 GNU Typist Development Team.\n\
-This program comes with ABSOLUTELY NO WARRANTY; for details\n\
-please see the file 'COPYING' supplied with the source code.\n\
-This is free software, and you are welcome to redistribute it\n\
-under certain conditions; again, see 'COPYING' for details.\n\
-This program is released under the GNU General Public License.");
+    _("Copyright (C) 1998, 1999, 2000, 2001, 2002, 2003 Simon Baldwin.\n"
+      "Copyright (C) 2003, 2004, 2008, 2011 GNU Typist Development Team.\n"
+      "This program comes with ABSOLUTELY NO WARRANTY; for details\n"
+      "please see the file 'COPYING' supplied with the source code.\n"
+      "This is free software, and you are welcome to redistribute it\n"
+      "under certain conditions; again, see 'COPYING' for details.\n"
+      "This program is released under the GNU General Public License.");
   /* this string is displayed in the mode-line when in a tutorial */
   MODE_TUTORIAL=_(" Tutorial ");
   /* this string is displayed in the mode-line when in a query */
@@ -2075,14 +2065,14 @@ This program is released under the GNU General Public License.");
      Leading whitespace is important because it is displayed in reverse
      video because it must be aligned with the next messages (it's best
      to run gtypist to see this in practice) */
-  SPEED_RAW=_(" Raw speed      = %6.2f wpm ");
+  SPEED_RAW_WPM=_(" Raw speed      = %6.2f wpm ");
   /* This is the CPM version of the above.  The same rules apply. */
   SPEED_RAW_CPM=_(" Raw speed      = %6.2f cpm ");
   /* this must be adjusted to the right with one space at the end.
      Leading whitespace is important because it is displayed in reverse
      video and because it must be aligned with the previous and next
      messages (it's best to run gtypist to see this in practice) */
-  SPEED_ADJ=  _(" Adjusted speed = %6.2f wpm ");
+  SPEED_ADJ_WPM=  _(" Adjusted speed = %6.2f wpm ");
   /* This is the CPM version of the above.  The same rules apply. */
   SPEED_ADJ_CPM=  _(" Adjusted speed = %6.2f cpm ");
   /* this must be adjusted to the right with one space at the end.
@@ -2094,7 +2084,7 @@ This program is released under the GNU General Public License.");
      Leading whitespace is important because it is displayed in reverse
      video and because it must be aligned with the previous messages (it's
      best to run gtypist to see this in practice) */
-  SPEED_BEST= _(" Personal best  = %6.2f wpm ");
+  SPEED_BEST_WPM= _(" Personal best  = %6.2f wpm ");
   /* This is the CPM version of the above.  The same rules apply. */
   SPEED_BEST_CPM= _(" Personal best  = %6.2f cpm ");
   /* this must be adjusted to the right with one space at the end.
@@ -2255,15 +2245,17 @@ void do_bell() {
 }
 
 bool get_best_speed( const char *script_filename,
-		     const char *excersise_label, double *speed )
+		     const char *excersise_label, double *adjusted_cpm )
 {
-  FILE *blfile;                        /* bestlog file */
-  char *filename;                      /* bestlog filename */
-  char *search;                        /* string to match in bestlog */
-  char line[FILENAME_MAX];             /* single line from bestlog */
-  int search_len;                      /* length of search string */
-  bool found = FALSE;                  /* did we find it? */
+  FILE *blfile;				/* bestlog file */
+  char *filename;			/* bestlog filename */
+  char *search;				/* string to match in bestlog */
+  char line[FILENAME_MAX];		/* single line from bestlog */
+  int search_len;			/* length of search string */
+  bool found = FALSE;			/* did we find it? */
   int a;
+  char *fixed_script_filename;		/* fixed-up script filename */
+  char *p;
 
   /* calculate filename */
   filename = (char *)malloc( strlen( getenv( "HOME" ) ) +
@@ -2283,6 +2275,21 @@ bool get_best_speed( const char *script_filename,
       return FALSE;
     }
 
+  /* fix-up script filename */
+  fixed_script_filename = strdup( script_filename );
+  if( fixed_script_filename == NULL )
+    {
+       perror( "malloc" );
+       fatal_error( _( "internal error: malloc" ), NULL );
+    }
+  p = fixed_script_filename;
+  while( *p != '\0' )
+    {
+      if( *p == ' ' )
+	*p = '+';
+      p++;
+    }
+
   /* construct search string */
   search_len = strlen( script_filename ) + strlen( excersise_label ) + 3;
   search = (char *)malloc( search_len + 1 );
@@ -2291,7 +2298,7 @@ bool get_best_speed( const char *script_filename,
        perror( "malloc" );
        fatal_error( _( "internal error: malloc" ), NULL );
     }
-  sprintf( search, " %s:%s ", script_filename, excersise_label );
+  sprintf( search, " %s:%s ", fixed_script_filename, excersise_label );
 
   /* search for lines that match and use data from the last one */
   while( fgets( line, FILENAME_MAX, blfile ) )
@@ -2303,7 +2310,7 @@ bool get_best_speed( const char *script_filename,
 
       /* look for search string and try to obtain a speed */
       if( !strncmp( search, line + 19, search_len ) &&
-	  sscanf( line + 19 + search_len, "%lg", speed ) == 1 )
+	  sscanf( line + 19 + search_len, "%lg", adjusted_cpm ) == 1 )
 	{
 	  found = true;
 	}
@@ -2312,15 +2319,18 @@ bool get_best_speed( const char *script_filename,
   /* cleanup and return */
   free( search );
   free( filename );
+  free( fixed_script_filename );
   fclose( blfile );
   return found;
 }
 
 void put_best_speed( const char *script_filename,
-		     const char *excersise_label, double speed )
+		     const char *excersise_label, double adjusted_cpm )
 {
-  FILE *blfile;                        /* bestlog file */
-  char *filename;                      /* bestlog filename */
+  FILE *blfile;				/* bestlog file */
+  char *filename;			/* bestlog filename */
+  char *fixed_script_filename;		/* fixed-up script filename */
+  char *p;
 
   /* calculate filename */
   filename = (char *)malloc( strlen( getenv( "HOME" ) ) +
@@ -2340,16 +2350,33 @@ void put_best_speed( const char *script_filename,
        fatal_error( _(" internal error: fopen" ), NULL );
     }
 
+  /* fix-up script filename */
+  fixed_script_filename = strdup( script_filename );
+  if( fixed_script_filename == NULL )
+    {
+       perror( "malloc" );
+       fatal_error( _( "internal error: malloc" ), NULL );
+    }
+  p = fixed_script_filename;
+  while( *p != '\0' )
+    {
+      if( *p == ' ' )
+	*p = '+';
+      p++;
+    }
+
   /* get time */
   time_t nowts = time( NULL );
   struct tm *now = localtime( &nowts );
 
   /* append new score */
   fprintf( blfile, "%04d-%02d-%02d %02d:%02d:%02d %s:%s %g\n",
-      now->tm_year + 1900, now->tm_mon + 1, now->tm_mday, now->tm_hour,
-      now->tm_min, now->tm_sec, script_filename, excersise_label, speed );
+	   now->tm_year + 1900, now->tm_mon + 1, now->tm_mday, now->tm_hour,
+	   now->tm_min, now->tm_sec, fixed_script_filename, excersise_label,
+	   adjusted_cpm );
 
   /* cleanup */
   free( filename );
+  free( fixed_script_filename );
   fclose( blfile );
 }

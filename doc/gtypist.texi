@@ -10,7 +10,7 @@ This manual is for GNU Typist (version @value{VERSION}, @value{UPDATED}),
 a program to learn typing in several languages and for different
 keyboard layouts.
 
-Copyright @copyright{} 1998, 1999, 2000, 2001, 2002, 2003
+Copyright @copyright{} 1998, 1999, 2000, 2001, 2002, 2003, 2004, 2008, 2011
 Free Software Foundation, Inc.
 
 @quotation
@@ -186,6 +186,11 @@ The supported options are given below (note that the long form is
 not supported on DOS):
 
 @table @code
+
+@item -b, --personal-best
+gtypist will keep track of your personal best typing speeds and tell you when
+you've beaten them. Best typing speeds are saved in a ``bestlog'' in the user's
+home directory.
 
 @item -e, --error-max
 Specifies the default maximum error percentage.  The default value is
@@ -433,8 +438,9 @@ proceeding.
 @item *
 This indicates a label in the file. The label may be the target of a
 @code{G}, @code{Y}, @code{N} or @code{F} command. Labels may contain any
-character, including space, and are a single line command. Labels must
-be unique within lesson files. Whitespace at the end of labels is ignored.
+character except space (this restriction was added in gtypist 2.9), and are
+a single line command. Labels must be unique within lesson files. Whitespace
+at the end of labels is ignored.
 
 @item I
 The @code{I} command can display some brief instructions above a drill or a
@@ -1003,6 +1009,10 @@ In April 2008, @email{general@@vultaire.net, Paul Goins} took over
 maintainership of GNU Typist, adding a few enhancements (especially building
 under Windows with MinGW), making some documentation updates and changing the
 license to GPL version 3.
+@item
+In December 2011, @email{edam@@waxworlds.org, Tim Marston} took over
+maintainership of GNU Typist, adding some enhancements and support for
+the Colemak keyboard layout.
 @end itemize
 
 @node Copying this manual

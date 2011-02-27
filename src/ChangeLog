@@ -1,3 +1,9 @@
+2011-02-26  Tim Marston <edam@waxworlds.org>
+
+	* gtypist.c: added best-score tracking feature and re-wrote some of the
+	  speed calculation/display code to always work with CPM (which are saved
+	  in the bestlog) and convert to WPM only at display-time.
+
 2011-01-03	Tim Marston <edam@waxworlds.org>
 
 	* gtypist.c: fixed a bug where pressing escape during wait_user() caused
