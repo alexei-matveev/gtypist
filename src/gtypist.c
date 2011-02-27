@@ -489,7 +489,6 @@ static bool wait_user (FILE *script, char *message, char *mode)
 */
 static void display_speed( int total_chars, long elapsed_time, int errcount ) {
   double	test_time;			/* time in minutes */
-//  double	words;				/* effective words typed */
   double	cpm, adjusted_cpm;		/* speeds in CPM */
   char		message[MAX_WIN_LINE];		/* buffer */
   int		line = SPEED_LINE;		/* current line no. */
