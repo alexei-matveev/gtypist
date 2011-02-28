@@ -166,6 +166,8 @@ static bool	global_on_failure_label_persistent = FALSE;
 
 static char 	*global_script_filename = NULL;
 
+static char	*global_home_env = NULL;
+
 /* a global area for associating function keys with labels */
 #define NFKEYS			12		/* num of function keys */
 static char	*fkey_bindings[ NFKEYS ] =
@@ -177,10 +179,6 @@ static	char	pfkeys[ NFKEYS ] =
   { 'Q'-CTRL_OFFSET, 'W'-CTRL_OFFSET, 'E'-CTRL_OFFSET, 'R'-CTRL_OFFSET,
     'T'-CTRL_OFFSET, 'Y'-CTRL_OFFSET, 'U'-CTRL_OFFSET, 'I'-CTRL_OFFSET,
     'O'-CTRL_OFFSET, 'P'-CTRL_OFFSET, 'A'-CTRL_OFFSET, 'S'-CTRL_OFFSET };
-
-
-#define MAX(A,B) ((A)<(B)?(B):(A))
-
 
 static bool user_is_always_sure = FALSE;
 
@@ -211,6 +209,7 @@ static void print_usage_item( char *op, char *lop, char *help,
 static void print_help();
 static void parse_cmdline( int argc, char **argv );
 static void catcher( int signal );
+static FILE *open_script( const char *filename );
 static void do_bell();
 static bool get_best_speed( const char *script_filename,
 			    const char *excersise_label, double *adjusted_cpm );
@@ -1850,12 +1849,6 @@ parse_cmdline( int argc, char **argv ) {
 	{
 	case 'b':
 	  cl_personal_best = TRUE;
-	  if( !getenv( "HOME" ) || !strlen( getenv( "HOME" ) ) )
-	    {
-	      fprintf( stderr, _("%s: HOME environment variable not set\n"),
-		       argv0 );
-	      exit( 1 );
-	    }
 	  break;
 	case 'e':
 	  cl_error_max_specified = TRUE;
@@ -2003,6 +1996,28 @@ catcher( int signal ) {
 }
 
 /*
+  open a script file
+ */
+FILE *open_script( const char *filename )
+{
+  FILE *script;
+
+#ifdef MINGW
+  /* MinGW's ftell doesn't work properly for absolute file positions in
+     text mode, so open in binary mode instead. */
+  script = fopen( filename, "rb" );
+#else
+  script = fopen( filename, "r" );
+#endif
+
+  /* record script filename */
+  if( script != NULL )
+    global_script_filename = strdup( filename );
+
+  return script;
+}
+
+/*
   main routine
 */
 int main( int argc, char **argv )
@@ -2123,54 +2138,68 @@ int main( int argc, char **argv )
     argv0--;
   if ( *argv0 == '/' ) argv0++;
 
-  /* check usage and open input file */
+  /* check usage */
   parse_cmdline( argc, argv );
-  global_error_max = cl_default_error_max;
-  if ( argc - optind == 1 )
-    strcpy( script_file, argv[optind] );
-  else
-    sprintf( script_file,"%s/%s",DATADIR,DEFAULT_SCRIPT);
 
-#ifdef MINGW
-  /* MinGW's ftell doesn't work properly for absolute file positions in
-     text mode, so open in binary mode instead. */
-#  define FILE_READ_MODE "rb"
-#else
-#  define FILE_READ_MODE "r"
-#endif
-  script = fopen( script_file, FILE_READ_MODE );
-  if( script != NULL )
-    global_script_filename = strdup( script_file );
-  if (script==NULL && getenv( "GTYPIST_PATH" ) != NULL )
+  /* figure out what script file to use */
+  if ( argc - optind == 1 )
     {
-      p = strtok( getenv( "GTYPIST_PATH" ), ":" );
-      for ( ; p != NULL;
-	    p = strtok( NULL, ":" ))
-	{
-	  strcpy( filepath, p );
-	  strcat( filepath, "/" );
-	  strcat( filepath, script_file );
-	  if ( (script = fopen( filepath, FILE_READ_MODE )) != NULL )
+      /* try and open scipr file from command line */
+      strcpy( script_file, argv[optind] );
+      script = open_script( script_file );
+
+      /* we failed, so check for script in GTYPIST_PATH */
+      if( !script && getenv( "GTYPIST_PATH" ) )
+        {
+          for( p = strtok( getenv( "GTYPIST_PATH" ), ":" );
+	       p != NULL; p = strtok( NULL, ":" ) )
 	    {
-	      global_script_filename = strdup( filepath );
-	      break;
+	      strcpy( filepath, p );
+	      strcat( filepath, "/" );
+	      strcat( filepath, script_file );
+	      script = open_script( filepath );
+	      if( script )
+		break;
 	    }
 	}
+
+      /* we failed, so try to find script in DATADIR */
+      if( !script )
+        {
+          strcpy( filepath, DATADIR );
+          strcat( filepath, "/" );
+          strcat( filepath, script_file );
+          script = open_script( filepath );
+	}
     }
-  if (script==NULL)
+  else
     {
-      strcpy( filepath, DATADIR );
-      strcat( filepath, "/" );
-      strcat( filepath, script_file );
-      script = fopen( filepath, FILE_READ_MODE );
-      if( script != NULL )
-	global_script_filename = strdup( filepath );
+      /* open default script */
+      sprintf( script_file, "%s/%s", DATADIR, DEFAULT_SCRIPT );
+      script = open_script( script_file );
     }
 
-  if ( script == NULL )
+  /* check to make sure we open a script */
+  if( !script )
     {
       fprintf( stderr, "%s: %s %s\n",
-	       argv0, _("can't find or open file"),script_file );
+	       argv0, _("can't find or open file"), script_file );
+      exit( 1 );
+    }
+
+  /* reset global_error_max */
+  global_error_max = cl_default_error_max;
+
+  /* check for user home directory */
+  if( getenv( "HOME" ) && strlen( getenv( "HOME" ) ) )
+    global_home_env = "HOME";
+#ifdef MINGW
+  else if( getenv( "APPDATA" ) && strlen( getenv( "APPDATA" ) ) )
+    global_home_env = "APPDATA";
+#endif
+  else
+    {
+      fprintf( stderr, _("%s: HOME environment variable not set\n"), argv0 );
       exit( 1 );
     }
 
@@ -2257,14 +2286,14 @@ bool get_best_speed( const char *script_filename,
   char *p;
 
   /* calculate filename */
-  filename = (char *)malloc( strlen( getenv( "HOME" ) ) +
+  filename = (char *)malloc( strlen( getenv( global_home_env ) ) +
                              strlen( BESTLOG_FILENAME ) + 2 );
   if( filename == NULL )
     {
        perror( "malloc" );
        fatal_error( _( "internal error: malloc" ), NULL );
     }
-  sprintf( filename, "%s/%s", getenv( "HOME" ), BESTLOG_FILENAME );
+  sprintf( filename, "%s/%s", getenv( global_home_env ), BESTLOG_FILENAME );
 
   /* open best speeds file */
   blfile = fopen( filename, "r" );
@@ -2332,14 +2361,14 @@ void put_best_speed( const char *script_filename,
   char *p;
 
   /* calculate filename */
-  filename = (char *)malloc( strlen( getenv( "HOME" ) ) +
+  filename = (char *)malloc( strlen( getenv( global_home_env ) ) +
                              strlen( BESTLOG_FILENAME ) + 2 );
   if( filename == NULL )
     {
        perror( "malloc" );
        fatal_error( _( "internal error: malloc" ), NULL );
     }
-  sprintf( filename, "%s/%s", getenv( "HOME" ), BESTLOG_FILENAME );
+  sprintf( filename, "%s/%s", getenv( global_home_env ), BESTLOG_FILENAME );
 
   /* open best speeds files */
   blfile = fopen( filename, "a" );
