@@ -4,6 +4,10 @@
 	See the `ChangeLog' (top-level and in some subdirectories) and
 	`THANKS' files for details about changes and contributors.
 
+Version 2.8.4 - February 2011
+	- Bug fixed where pressing escape at some prompts could crash gtypist
+	- A few corrected typos in some lessons (thanks to Elmar Zander)
+
 Version 2.8 - May 2008
 	- License updated to the GNU General Public License version 3.
 	- Windows NT-based builds (Windows 2000/XP) now supported.

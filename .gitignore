@@ -52,3 +52,11 @@ tools/gtypist-mode.elc
 .cproject
 .project
 .settings
+
+# ignore dist builds
+*.gz
+*.bz2
+*.gz.sig
+*.bz2.sig
+*.directive
+*.directive.asc
