@@ -1,3 +1,8 @@
+2011-03-03  Tim Marston <edam@waxworlds.org>
+
+	* t.typ: punctuation error, reported to Debian by Percival Tiglao
+	  <dragontamer5788@yahoo.com>
+
 2010-12-21  Tim Marston <edam@waxworlds.org>
 
 	* lessons/u.typ, lessons/t.typ: fixed minor typos (thanks to Elmar

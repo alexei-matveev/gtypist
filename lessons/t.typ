@@ -1434,7 +1434,7 @@ D:;;; ;"; ;;; """ ;;; ;"; ;;;
 *:_T_R_L196
 #                                                             ../orig/t.typ:673
 D:;"; "." ;"; ":" ;"; "," ;";
- :"What was that I saw you take from the teacher desk?" asked Tom.
+ :"What was that I saw you take from the teacher's desk?" asked Tom.
  :"It's the answers to tomorrow's quiz", answered Suzy.
  :"If you promise not to tell," she continued, "I'll give you a copy."
 
