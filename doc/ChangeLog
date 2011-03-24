@@ -1,3 +1,9 @@
+2011-03-24  Tim marston <edam@waxworlds.org>
+
+	* gtypist.cs.texi: (renamed from gtypist-cs.texi) specified the wrong
+	  filename for it's .info which prevented make install from running
+	  (reported by Fredrik <siriannalisa@gmail.com>).
+
 2008-05-27  Paul Goins  <general@vultaire.net>
 
 	* gtypist*.texi: Updated a couple of remaining FDL 1.1 references to
