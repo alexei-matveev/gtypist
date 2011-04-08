@@ -4,6 +4,10 @@
 	See the `ChangeLog' (top-level and in some subdirectories) and
 	`THANKS' files for details about changes and contributors.
 
+Version 2.8.5 - March 2011
+	- Fixed an issue that prevented installation.
+	- Corrected a minor typo in a lesson.
+
 Version 2.8.4 - February 2011
 	- Bug fixed where pressing escape at some prompts could crash gtypist
 	- A few corrected typos in some lessons (thanks to Elmar Zander)
