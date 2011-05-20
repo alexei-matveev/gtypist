@@ -1,10 +1,19 @@
+2011-04-08  Tim marston <edam@waxworlds.org>
+
+	* version.sh: updated to 2.8.5
+
+2011-02-24  Tim Marston <edam@waxworlds.org>
+
+	* version.sh: updated to 2.8.4
+	* cleaned up various ChangeLogs, removed duplicate entries
+
 2008-05-29  Paul Goins  <general@vultaire.net>
 
 	* version.sh: Updated to 2.8.1, bug fix release.
 	* Makefile.am: Added dist_bin_SCRIPTS line for typefortune, since it
 	  was being distributed but not properly installed in the 2.8 release.
-	  (Bug reported by Christian "naddy" Weisgerber.)  Also removed an extra
-	  reference to conf_dos.bat.in.
+	  (Bug reported by Christian "naddy" Weisgerber.)  Also removed an
+	  extra reference to conf_dos.bat.in.
 
 2008-05-27  Paul Goins  <general@vultaire.net>
 
@@ -51,15 +60,15 @@
 	* All gtypist-specific files with a GPL notice specify version 3 of the
 	  GPL.
 
-2004-09-30	Dmitry Rutsky	<balto@bk.ru>
+2004-09-30  Dmitry Rutsky <balto@bk.ru>
 
 	* version.sh:	bugfix release:  2.7.2.
 
-2004-08-23	Dmitry Rutsky	<rutsky@school.ioffe.rssi.ru>
+2004-08-23  Dmitry Rutsky <rutsky@school.ioffe.rssi.ru>
 
 	* configure.in:  fixed stupid error in that check.
 
-2004-06-26	Dmitry Rutsky	<rutsky@school.ioffe.rssi.ru>
+2004-06-26  Dmitry Rutsky <rutsky@school.ioffe.rssi.ru>
 
 	* configure.in:  added checks for [n]curses libraries header files,
 	  only select curses or ncurses if corresponding header is found.
@@ -67,23 +76,23 @@
 	* INSTALL.in:  slightly edited unix installation section;  tell that
 	  not only [n]curses library but its header files are required.
 
-2004-02-26	Michael Opdenacker	<michaelo@gnu.org>
+2004-02-26  Michael Opdenacker <michaelo@gnu.org>
 
 	* Makefile.am: now requires automake 1.8.2
 
-2004-02-23      Dmitry Rutsky   <rutsky@school.ioffe.rssi.ru>
+2004-02-23  Dmitry Rutsky <rutsky@school.ioffe.rssi.ru>
 
 	* README:  removed repeated or redundant lines in `Files' section,
-	  changed the section's name to probably more appropriate. 
+	  changed the section's name to probably more appropriate.
 
-2003-11-23	Dmitry Rutsky	<rutsky@school.ioffe.rssi.ru>
+2003-11-23  Dmitry Rutsky <rutsky@school.ioffe.rssi.ru>
 
 	* tools/typcombine:  removed `ktlecten.typ' from the `More lessons...'
 	  screen.
 	* src/gtypist.c:  minor cleanups, fixed incorrect handling of
 	  80-characters long lines in drills.
 
-2003-11-16	Dmitry Rutsky	<rutsky@school.ioffe.rssi.ru>
+2003-11-16  Dmitry Rutsky <rutsky@school.ioffe.rssi.ru>
 
 	* autogen.sh:  use `autopoint' instead of `gettextize'.
 	* configure.in, Makefile.am:  permanently added the gettext stuff,
@@ -91,12 +100,12 @@
 	  in the build process).
 	* m4/Makefile.am:  added.
 
-2003-11-01	Dmitry Rutsky	<rutsky@school.ioffe.rssi.ru>
+2003-11-01  Dmitry Rutsky <rutsky@school.ioffe.rssi.ru>
 
 	* TODO:  documented "unchanging banners" bug.
 	* lessons/ru.typ:  minor improvements.
 
-2003-10-31	Dmitry Rutsky	<rutsky@school.ioffe.rssi.ru>
+2003-10-31  Dmitry Rutsky <rutsky@school.ioffe.rssi.ru>
 
 	* version.sh, autogen.sh, configure.in:  a better handling of version
 	  definition.  Changed AC_INIT macro to handle current AC_INIT
@@ -111,41 +120,36 @@
 
 2003-10-26  Hynek Hanke  <hanke@volny.cz>
 
-	* autogen.sh (gettexth): Added a search for gettext.h in /usr/ as Dmitry
-	suggested.
-
+	* autogen.sh (gettexth): Added a search for gettext.h in /usr/ as
+	Dmitry suggested.
 	* po/cs.po: Updated.
 
 2003-10-25  Hynek Hanke  <hanke@volny.cz>
-	
+
 	* Makefile.am (EXTRA_DIST): gtypist.1 corrected to src/gtypist.1
-
 	* configure.in: Added missing target Makefile.in
-
 	* autogen.sh (gettexth): Copy gettext to src/
 
 2003-10-25  Hynek Hanke  <hanke@volny.cz>
-	
-	* po/POTFILES.in: Updated to reflect that the sources are now in src/
-	
-	* configure.in: Build also src/Makefile.am
 
+	* po/POTFILES.in: Updated to reflect that the sources are now in src/
+	* configure.in: Build also src/Makefile.am
 	* Makefile.am: Some stuff moved to src/Makefile.am
 	Added src/ to subdirectories.
 
 	* All .c and .h sources moved to a new directory src/.
 
 2003-10-25  Hynek Hanke  <hanke@volny.cz>
-	
-	* autogen.sh: Don't try to build documentation itself.
-	It's generated now by regular auto-tools mechanism. See doc/Makefile.am.
+
+	* autogen.sh: Don't try to build documentation itself. It's generated
+	now by regular auto-tools mechanism. See doc/Makefile.am.
 
 2003-10-24  Hynek Hanke  <hanke@volny.cz>
 
-	* autogen.sh (automake --add-missing): Added test on failure of this command,
-	so that it doesn't cause obscure problem later.
+	* autogen.sh (automake --add-missing): Added test on failure of this
+	command, so that it doesn't cause obscure problem later.
 
-2003-10-03: Michael Opdenacker <michaelo@gnu.org>
+2003-10-03  Michael Opdenacker <michaelo@gnu.org>
 
 	* typefortune: Ben Armstrong fixed the '-s' and '-n' options
 
@@ -171,13 +175,13 @@
 	  character so the typist can continue without stopping (sync
 	  ahead).
 
-2003-08-24	Dmitry Rutsky	<rutsky@school.ioffe.rssi.ru>
+2003-08-24  Dmitry Rutsky <rutsky@school.ioffe.rssi.ru>
 
 	* cursmenu.c:  a better handling of `left' and `right' keys in the
 	  menus, don't go offscreen on the keys if there is a large
 	  single-column list (as in lessons/ttde.typ).
 
-2003-08-03	Dmitry Rutsky	<rutsky@school.ioffe.rssi.ru>
+2003-08-03  Dmitry Rutsky <rutsky@school.ioffe.rssi.ru>
 
 	* lessons/ru.typ:  new Russian cyrillic keyboard course.
 	* po/ru.po, configure.in:  new Russian localization.
@@ -190,7 +194,7 @@
 	* lessons/Makefile.am:  include ru.typ in the distribution, as well as
 	  cs.typ.
 
-2003-07-19	Dmitry Rutsky	<rutsky@school.ioffe.rssi.ru>
+2003-07-19  Dmitry Rutsky <rutsky@school.ioffe.rssi.ru>
 
 	* configure.in:  removed Makefiles automagically added there by
 	  gettextize (yes, that was my mistake in 2003-07-01).  Added note
@@ -205,35 +209,20 @@
 	* gtypist.c, script.c:  exit in case user got to particular excersize
 	  with -l and tried to exit using `E'.
 
-2003-07-19	Dmitry Rutsky	<rutsky@school.ioffe.rssi.ru>
-
-	* configure.in:  removed Makefiles automagically added there by
-	  gettextize (yes, that was my mistake in 2003-07-01).  Added note
-	  that this file will be changed by gettextize.
-	* autogen.sh:  don't run gettextize if the sources were gettextized
-	  already.
-	* Makefile.am:  added headers to gtypist_SOURCES back (yes, that was
-	  my mistake too), removed some duplicates of what gettextize
-	  added there.  Added note regarding gettextize.
-	* cursmenu.c:  'q' now works as ESCAPE in the menus.
-	* *.[ch] except getopt*.[ch]:  added/corrected legal attributes.
-	* gtypist.c, script.c:  exit in case user got to particular excersize
-	  with -l and tried to exit using `E'.
-
-2003-07-04	Dmitry Rutsky	<rutsky@school.ioffe.rssi.ru>
+2003-07-04  Dmitry Rutsky <rutsky@school.ioffe.rssi.ru>
 
 	* cursmenu.c:  "Up/Exit" label code was commented out,
 	  since ESCAPE key works, we don't need these items.
 	* gtypist.[ch], cusmenu.c:  support for colors in the top banner.
 	  New gtypist.h header for convenience.  New --banner-colours option to
 	  select the banner colours.
-	* script.c:  now we ignore empty lines with some whitespaces rather than
-	  exit with "data shortage".
+	* script.c:  now we ignore empty lines with some whitespaces rather
+	  than exit with "data shortage".
 	* gtypist.c, cursmenu.c, script.c:  fixed segfault which occured when
 	  the first thing in the script was not a menu.  There actually was
 	  a bunch of problems, it seems that now they are fixed.
 
-2003-07-03	Dmitry Rutsky	<rutsky@school.ioffe.rssi.ru>
+2003-07-03  Dmitry Rutsky <rutsky@school.ioffe.rssi.ru>
 
 	* error.[ch], gtypist.c, cursmenu.c:  some cleanups.
 	* gtypist.c:  new option `--always-sure' was added to suppress stupid
@@ -241,22 +230,22 @@
 	  appearance (spaces at the edges), "Press Return..." now works as
 	  "Press RETURN or SPACE to continue, ESC to return to the menu".
 	* cursmenu.c:  add '\x0A' for working RETURN key in DOS build.
-	  
 
-2003-07-02	Dmitry Rutsky	<rutsky@school.ioffe.rssi.ru>
+2003-07-02  Dmitry Rutsky <rutsky@school.ioffe.rssi.ru>
 
-	* curmenu.c: Now we do not erase the banner, 
-	  display the menu header centered above the menu, 
+	* curmenu.c: Now we do not erase the banner,
+	  display the menu header centered above the menu,
 	  and even print some menu motion help at the bottom.
-	  Also now you can move around the menu with arrowed (or vi) keys in any
-	  desired possible direction, it is very useful in multi-column menus.
+	  Also now you can move around the menu with arrowed (or vi) keys in
+	  any desired possible direction, it is very useful in multi-column
+	  menus.
 
-2003-07-01	Dmitry Rutsky	<rutsky@school.ioffe.rssi.ru>
+2003-07-01  Dmitry Rutsky <rutsky@school.ioffe.rssi.ru>
 
 	* autogen.sh:  check autoconf exit status and display useful
 	  information if it has failed rather than just go on and get
 	  more failures.
-	* configure.in:  duplicate intl/Makefile, po/Makefile.in 
+	* configure.in:  duplicate intl/Makefile, po/Makefile.in
 	  and po/Makefile have been removed, autoconf no longer fails
 	  to build because of that.
 	* README.CVS now can aid building the sources from CVS by unexperienced
@@ -281,10 +270,10 @@
 	* Some hacks to enable the `E' key in "exit the lesson" queries again,
 	  it seems to work.
 	* cursmenu.c:  added working "go back" key in the menu that completes
-	  the basical navigation code:  'Esc' or 'H' will get you to the 
+	  the basical navigation code:  'Esc' or 'H' will get you to the
 	  previous menu where you've been, or out of the program if it is
 	  toplevel menu.
-	* gtypist.c:  quick hack to get rid of annoying Escape key delays in 
+	* gtypist.c:  quick hack to get rid of annoying Escape key delays in
 	  the ncurses library.
 	* script.c:  made it to print "Happy Typing!" at exit rather than just
 	  clear the screen :-)
@@ -297,12 +286,12 @@
 	* compute `columns' with a spacing of 2 so that we're sure that
 	menu-item descriptions don't clash
 
-2003-05-02 Michael Opdenacker <michaelo@gnu.org>
+2003-05-02  Michael Opdenacker <michaelo@gnu.org>
 
 	* po/zh_TW: New Traditional Chinese translation
-	from OLS3 <ols3@www.tnc.edu.tw>\ 
+	from OLS3 <ols3@www.tnc.edu.tw>\
 
-2003-04-13	Hynek Hanke	<hanke@volny.cz>
+2003-04-13  Hynek Hanke <hanke@volny.cz>
 
 	* lessons/cs.typ: use M instead of K for menus
 	* po/cs.po: new messages translated
@@ -388,7 +377,6 @@
 	  [AC_DEFINE(HAVE_LIBCURSES, 1, [Is curses available])
 	    LIBS="-lcurses $LIBS"])
 
-
 2002-06-28  Hynek Hanke  <hanke@volny.cz>
 
 	* findwords.sh: New script to help with creating lessons.
@@ -422,7 +410,7 @@
 	  in the copyright notices (following GNU guidelines).
 	* autogen.sh: made `help2man' mandatory for building sources.
 	* configure.in: suppressed the check for help2man, as the manual
-	  is now always created in the sources. 
+	  is now always created in the sources.
         * doc/fdl.texi: temporary hack of the original file, so that building
 	  works (to be fixed very soon).
 
@@ -439,10 +427,10 @@
 	  set to '1.6 dist-bzip2 check-news' (see automake manual).
 	* Other changes: to be documented very soon!
 	* gtypist.c: Replaced PACKAGE_LOCALE_DIR by LOCALE_DIR:
-          more standard: found in gettext doc and used by several packages. 
+          more standard: found in gettext doc and used by several packages.
 	* Makefile.am: Added '-DLOCALEDIR=\"$(datadir)/locale\"'
           to AM_CPPFLAGS (replaces PACKAGE_LOCAL_DIR defined in acconfig.h)
- 
+
 2002-04-08  Felix Natter  <fnatter@gmx.net>
 
 	* gtypist.c (do_keybind): omit "%d%s"
@@ -494,7 +482,7 @@
 	all the files expected for curses. This caused problems in platforms
 	such as GNU/Solaris where both curses and ncurses are installed.
         gcc was compiling for curses, but ld was given ¨-l ncurses¨,
-        which resulted in undefined symbols.  
+        which resulted in undefined symbols.
        * fr.po, es.po, fi.po: fixed alignment problems with raw speed,
 	adjusted speed and error rate display.
 
@@ -540,11 +528,11 @@
 	ESC at the start of a lesson skips it)
 	(as suggested by Ben Armstrong <synrg@sanctuary.nslug.ns.ca>)
 
-2001-10-08Michael Opdenacker  <michaelo@gnu.org>
+2001-10-08  Michael Opdenacker  <michaelo@gnu.org>
 
 	* Added missing checks in configure.in reported by autoscan.
-	* Removed useless stuff in acconfig.h. Only kept PACKAGE_LOCALE_DIR.	
-  
+	* Removed useless stuff in acconfig.h. Only kept PACKAGE_LOCALE_DIR.
+
 2001-09-24  Michael Opdenacker  <michaelo@gnu.org>
 
 	* Added configur.bat.in, autogen.sh, INSTALL.in
@@ -675,11 +663,11 @@
 
 2001-07-20  Felix Natter  <fnatter@gmx.net>
 
-	* gtypist.c (index_labels,do_goto): remove trailing whitespace in 
+	* gtypist.c (index_labels,do_goto): remove trailing whitespace in
 	labels
 
 2001-06-11  Christian Weisgerber <naddy@openbsd.org>
- 
+
         * po/*.po: added a proper charset specification.
           (for current gettext with iconv support)
 
@@ -689,12 +677,12 @@
 	* Makefile.am: removed "CPPFLAGS+=-Wall" to support
 	  compilers different from gcc.
 
-2000-12-05  Kester Habermann  <<kester@linuxtag.de>
- 
+2000-12-05  Kester Habermann <kester@linuxtag.de>
+
         * po/de.po: Revision of grammar and spelling
 
 2000-11-10  Vladimir Tamara  <vtamara@gnu.org>
- 
+
         * po/es.po, po/de.po: Added new strings shown with --help and --version
 
 2000-11-10  Vladimir Tamara  <vtamara@gnu.org>
@@ -706,9 +694,10 @@
 	* typist.c: Source code fully GNU Coding Standards compliant.
 
 2000-10-23  Caolan McNamara <caolan@csn.ul.ie>
-	*  configure.in: it  accepts curses  library when  ncurses  is not
+
+	* configure.in: it  accepts curses  library when  ncurses  is not
 	  available.
-	
+
 2000-09-14  Vladimir Tamara  <vtamara@gnu.org>
 
 	* typist.c: Now  word processor mode by default is  off, it can be
@@ -722,14 +711,14 @@
 2000-09-09  Vladimir Tamara  <vtamara@gnu.org>
 
 	* Now the keys F1,F2,...,F12 can be "emulated" with
-	  1,2,3,4,5,6,7,8,9,0,A,S and also C-q, C-w, C-r, C-t, C-z, C-u, 
+	  1,2,3,4,5,6,7,8,9,0,A,S and also C-q, C-w, C-r, C-t, C-z, C-u,
 	  C-i, C-o, C-p, C-a, C-s
 	* configure now stops if the ncurses library is not found
 
 2000-09-05  Vladimir Tamara  <vtamara@gnu.org>
 
 	*  Fixed bug in  wp mode.   (Before wp-emulation  mishandled lines
-	ending with '--').  Reported by Ben Armstrong 
+	ending with '--').  Reported by Ben Armstrong
 	<synrg@sanctuary.nslug.ns.ca>
 
 2000-08-30  Vladimir Tamara  <vtamara@gnu.org>
@@ -744,10 +733,9 @@
 	*   Help  to   use   typist  with   Dvorak   keyboards  added   to
 	  INSTALL. Thanks to Ben Armstrong <synrg@sanctuary.nslug.ns.ca>
 
-
 2000-08-29  Vladimir Tamara  <vtamara@gnu.org>
 
-	* Fixed problem when configuring with --datadir 
+	* Fixed problem when configuring with --datadir
 	(Thanks to stephan.hegel@gmx.de for the bug report)
 
 2000-08-18  Vladimir Tamara  <vtamara@gnu.org>
@@ -756,807 +744,9 @@
 	<kester@linuxtag.de>
 
 2000-07-30  Vladimir Tamara  <vtamara@gnu.org>
- 
+
         * Support for spanish.  es.po
 
 	* typefortune: several fixes from Stefan Troeger <stefan@troeger.st>:
 	  improved 'fortune' detection and temporary file deletion.
 
-2002-11-26  Michael Opdenacker <michaelo@gnu.org>
-
-	* po/nl.po: new Dutch interface from J.M. Cogels <jcogels@chello.nl>
-
-2002-10-28  Michael Opdenacker <michaelo@gnu.org>
-
-	* configure.in: replaced 'dnl' by '#',
-	removed duplicate entries in AC_OUTPUT.
-
-2002-09-21  Felix Natter  <fnatter@gmx.net>
-
-	* autogen.sh: exit if gawk isn't installed
-
-2002-09-15  Felix Natter  <fnatter@gmx.net>
-
-	* typefortune: allow (E)xit: have to add a *:END label
-	and K:12:END at the beginning
-
-2002-09-14  Felix Natter  <fnatter@gmx.net>
-
-	* configure.in: Christian Weisgerber <naddy@mips.inka.de>:
-	fix a bug in configure.in: AC_CHECK_LIB doesn't call
-	AC_DEFINE so now we do it explicitly:
-	AC_CHECK_LIB(curses, wbkgdset,
-	  [AC_DEFINE(HAVE_LIBCURSES, 1, [Is curses available])
-	    LIBS="-lcurses $LIBS"])
-
-
-2002-06-28  Hynek Hanke  <hanke@volny.cz>
-
-	* findwords.sh: New script to help with creating lessons.
-
-2002-05-20  Felix Natter  <fnatter@gmx.net>
-
-	* gtypist.c: do the same as last item for headers
-
-2002-05-18  Felix Natter  <fnatter@gmx.net>
-
-	* configure.in: check for ncurses if curses is not available
-	(but use 2x AC_CHECK_LIB instead of AC_SEARCH_LIBS to support Solaris)
-
-2002-04-25  Michael Opdenacker <michaelo@gnu.org>
-
-	* Replaced `cz' by `cs' in all file names.
-	* *.po: Updated with the msgmerged files; updated the version
-	  and package name, as well as the copyright notices.
-
-2002-04-22  Michael Opdenacker <michaelo@gnu.org>
-
-	* gtypist.c, Makefile.am: for consistency with 'PACKAGE_LOCALE_DIR'
-	  replaced by `LOCALEDIR', replaced `PACKAGE_DATA_DIR' by `DATADIR'.
-	* autogen.sh: now checks that texinfo is installed.
-	  Runs `make' (to generate `doc/version.texi') and generates
-	  the html manuals.
-
-2002-04-18  Michael Opdenacker <michaelo@gnu.org>
-
-	* gtypist.c: replaced '1998-2001' by `1998, 1999, 2000, 2001, 2002'
-	  in the copyright notices (following GNU guidelines).
-	* autogen.sh: made `help2man' mandatory for building sources.
-	* configure.in: suppressed the check for help2man, as the manual
-	  is now always created in the sources. 
-        * doc/fdl.texi: temporary hack of the original file, so that building
-	  works (to be fixed very soon).
-
-2002-04-16  Michael Opdenacker <michaelo@gnu.org>
-
-	* po/: new Makevars file as recommended by gettextize.
-	* Makefile.am: replaced 'INCLUDES' (deprecated) by 'AM_CPPFLAGS'
-	* acconfig.h: removed because deprecated.
-	  Replaced by the use of `-D' in AM_CPPFLAGS (see below).
-	* configure.in: only kept AM_GNU_GETTEXT for i18n.
-	  --nointl and --with-nointl options are no longer available,
-	  but --disable-nls in still available.
-	* Makefile.am: added a new AUTOMAKE_OPTIONS variable
-	  set to '1.6 dist-bzip2 check-news' (see automake manual).
-	* Other changes: to be documented very soon!
-	* gtypist.c: Replaced PACKAGE_LOCALE_DIR by LOCALE_DIR:
-          more standard: found in gettext doc and used by several packages. 
-	* Makefile.am: Added '-DLOCALEDIR=\"$(datadir)/locale\"'
-          to AM_CPPFLAGS (replaces PACKAGE_LOCAL_DIR defined in acconfig.h)
- 
-2002-04-08  Felix Natter  <fnatter@gmx.net>
-
-	* gtypist.c (do_keybind): omit "%d%s"
-
-2002-04-07  Michael Opdenacker <michaelo@gnu.org>
-
-	* Added new Czech interface messages.
-
-2002-04-07  Felix Natter  <fnatter@gmx.net>
-
-	* gtypist.c (fatal_error): write "\n" if line==NULL
-	(so that there is always a '\n' at the end of the error-message)
-
-2002-04-05  Felix Natter  <fnatter@gmx.net>
-
-	* gtypist.c: add /* xgettext: no-c-format */ comments so that
-	xgettext does not think that '%' is part of a format-string
-	(suggested by Bruno Haible)
-
-2002-03-31  Felix Natter  <fnatter@gmx.net>
-
-	* Makefile.am: add typefortune.1
-
-2002-03-17  Felix Natter  <fnatter@gmx.net>
-
-	* run gettextize from gettext 0.11.1
-	* create po/Makevars
-	* run aclocal with "-I m4" in autogen.sh
-
-2002-03-14  Michael Opdenacker <michaelo@gnu.org>
-
-	* autogen.sh: automake-1.6, autoconf 2.53, gettext-0.11 recommended;
-        fixed links to their sources.
-        Added --intl option to gettextize in autogen.sh
-
-2002-03-10  Felix Natter  <fnatter@gmx.net>
-
-	* fix a bug: -k wasn't mentioned in getopt (don't know why !)
-
-2002-03-09  Felix Natter  <fnatter@gmx.net>
-
-	* add new script `typefortune', as suggested and started by
-	Yuusuke Mita <neiklotrrj@yahoo.com>
-
-2002-01-14  Michael Opdenacker <michaelo@gnu.org>
-
-	* configure.in: suppressed "ncurses" in AC_SEARCH_LIBS, and kept
-	only "curses". This is enough because ncurses installs provide
-	all the files expected for curses. This caused problems in platforms
-	such as GNU/Solaris where both curses and ncurses are installed.
-        gcc was compiling for curses, but ld was given ¨-l ncurses¨,
-        which resulted in undefined symbols.  
-       * fr.po, es.po, fi.po: fixed alignment problems with raw speed,
-	adjusted speed and error rate display.
-
-2001-12-10  Felix Natter  <fnatter@gmx.net>
-
-	* change CONFIRM_EXIT_MSG to include "[Y/N]"
-	* do_query_repeat: add 2nd parameter which indicates whether
-	"Next" is an option
-	* do_drill, do_speedtest: don't display a message saying
-	"Sorry, you can't skip this lesson". Instead, just don't make
-	"Next" be an option in the following call to do_query_repeat
-	* rename CONFIRM_EXIT_MSG to CONFIRM_EXIT_LESSON_MSG
-	because it isn't used to exit the program
-
-2001-12-09  Felix Natter  <fnatter@gmx.net>
-
-	* main: change REPEAT_NEXT_EXIT_MSG (longer)
-
-2001-12-08  Felix Natter  <fnatter@gmx.net>
-
-	* do_query_repeat: call do_query_simple(CONFIRM_EXIT_MSG) to let the
-	user confirm (E)xit
-	* do_query_simple: new function
-	* wait_user: don't check for Fkeys. you can now quit a lesson
-	by pressing 'E' in REPEAT_NEXT_EXIT_MSG
-	* print_help,...: rename --wpmode to --word-processor
-	(as suggested by Michael); rename variable to cl_wpemu
-	* new variable cl_no_skip from option --no-skip, no message NO_SKIP_MSG
-	* do_query_noscriptfile: remove
-	* do_query: remove hack which was used in do_query_noscriptfile
-	* do_query_repeat: new query which prompts for repeat/next/exit
-	(new i18n string "R/N/E")
-	* do_drill, do_speedtest: use do_query_repeat instead
-	of do_query_noscriptfile for WANNA_REPEAT_MSG
-	* main: add translatable strings RNE and change WANNA_REPEAT_MSG
-	to "R to repeat, N for next or E to exit" (now called
-	REPEAT_NEXT_EXIT_MSG)
-
-2001-11-29  Felix Natter  <fnatter@gmx.net>
-
-	* gtypist.c (do_drill, do_speedtest): allow ESC ESC to be used for
-	skipping a lesson (ESC in the middle of an exercise restarts it and
-	ESC at the start of a lesson skips it)
-	(as suggested by Ben Armstrong <synrg@sanctuary.nslug.ns.ca>)
-
-2001-10-08Michael Opdenacker  <michaelo@gnu.org>
-
-	* Added missing checks in configure.in reported by autoscan.
-	* Removed useless stuff in acconfig.h. Only kept PACKAGE_LOCALE_DIR.	
-  
-2001-09-24  Michael Opdenacker  <michaelo@gnu.org>
-
-	* Added configur.bat.in, autogen.sh, INSTALL.in
-	and TODO to EXTRA_DIST
-
-2001-09-18  Felix Natter  <fnatter@gmx.net>
-
-	* gtypist.c (do_speedtest): fix problem: give up via ESC wasn't
-	possible in speed-tests. I fixed this by inserting
-        if ( c == ASCII_ESC ) break;
-	in do_speedtest simply because it's done in do_drill as well.
-	this fixes the problem but do_drill and do_speedtest need to be
-	rethought some day.
-
-2001-09-13  Felix Natter  <fnatter@gmx.net>
-
-	* configure.in (ALL_LINGUAS): add fi.po (finnish by
-	kusti@iki.fi (Kimmo K. I. Surakka))
-
-2001-09-07  Felix Natter  <fnatter@gmx.net>
-
-	* gtypist.c: add macro ASCII_ENTER which is used in wait_user
-	(necessary because pdcurs-2.4 returns 0x0D for Enter if raw() is used)
-	* gtypist.c (do_drill, do_speedtest): translate 0x0D (DOS newline)
-	to ASCII_NL
-	(necessary because pdcurs-2.4 returns 0x0D for Enter if raw() is used)
-
-2001-09-05  Felix Natter  <fnatter@gmx.net>
-
-	* gtypist.c (do_speedtest): add unsigned char cast to avoid
-	a blinking character if an 8bit-character is mistyped
-
-2001-08-31  Felix Natter  <fnatter@gmx.net>
-
-	* Makefile.am: add version.sh to EXTRA_DIST
-
-2001-08-30  Felix Natter  <fnatter@gmx.net>
-
-	* configure.in: now configure.in gets the version-number from
-	version.sh (as suggested by Michael)
-
-2001-08-23  Felix Natter  <fnatter@gmx.net>
-
-	* gtypist.c (main): change "skip back" to "go back" in
-	SKIPBACK_VIA_F_MSG
-
-2001-08-20  Felix Natter  <fnatter@gmx.net>
-
-	* gtypist.c (main, do_query): rename _("YN") to _("Y/N")
-
-2001-08-16  Felix Natter  <fnatter@gmx.net>
-
-	* NEWS: write the list of new/changed features for 2.4
-	* gtypist.c (do_on_failure_label_set): allow special value "NULL"
-	* gtypist.c (do_speedtest): set errors to 0 in the loop (I forgot
-	to do this when I changed do_speedtest to use a repeat-loop)
-
-2001-08-13  Felix Natter  <fnatter@gmx.net>
-
-	* gtypist.c (main, do_query): add new translatable string `YN'
-	which is used to translate the keys in Y/N-queries (but Y/N are
-	still accepted as well)
-	* gtypist.c: replace SPEED_PC_ERR by SPEED_PCT_ERROR (pct is
-	the normal abbreviation for percent)
-	* gtypist.c: add some comments where _() appear, to help translators
-	(recent versions of xgettext put these comments in the po-files)
-	* gtypist.c (print_help): in help-string for --error-max, don't
-	mention that it can be overridden in the script-file (but that
-	is still mentioned in the manual)
-
-2001-08-12  Felix Natter  <fnatter@gmx.net>
-
-	* gtypist.c (do_error_max_set): if --error-max is specified
-	(*not* if the default value is used), then an E:-command will
-	only be applied if its level is more difficult (smaller) than
-	the one specified via --error-max/-e
-	* gtypist.c (print_help): add that --error-max is the _default_
-	maximum error percentage, and that it can be changed in the
-	script-file to some extent
-	* gtypist.c (print_help): clean up so that i.e. "-c F,B" fits in
-	* gtypist.c (print_rep): replace by indent_to
-	* gtypist.c (print_usage_item): only break between words
-	* remove parameter cl_drill_tries, add cl_default_error_max and
-	adapt do_drill and do_speedtest accordingly
-	* gtypist.c (do_query): third parameter for use by
-	do_query_noscriptfile, return value: if TRUE means got a
-	function-key, if FALSE means Y/N
-	* gtypist.c (do_query_noscriptfile): new function used in do_drill/
-	do_speedtest
-	* english-fixes in comments + use same style
-	* add prototypes
-	* add WANNA_REPEAT_MSG, ERROR_TOO_HIGH_MSG, SKIPBACK_VIA_F_MSG
-	* gtypist.c (do_drill, do_speedtest): add "builtin repeat loop"
-	* gtypist.c (print_help): use ';' to separate sentences in help-strings
-	* gtypist.c (fatal_error): make the ouput more logical
-	* gtypist.c (do_error_max_set): new function which sets --error-max
-	* gtypist.c (do_on_failure_label_set): new function whichs set the
-	"skipback-on-failure label"
-	* gtypist.c (do_drill, do_speedtest): remove O:, rename P: to S:
-	and add "practice only" drills d: and s:
-	* gtypist.c (do_drill, do_speedtest): allow "give up" via ESC
-	(repeat lesson)
-
-2001-07-26  Felix Natter  <fnatter@gmx.net>
-
-	* configure.in: add AM_PATH_LISPDIR which is needed for
-	lisp_LISP = gtypist-mode.el
-
-2001-07-24  Felix Natter  <fnatter@gmx.net>
-
-	* gtypist.c (cl_wpmode): should be disabled by default
-	* gtypist.c replace all occurrences of addch by ADDCH
-	* gtypist.c (ADDCH, ADDCH_REV): add (unsigned char) cast
-	which is necessary to display 8 bit characters correctly
-	(thanks to Thomas E. Dickey" <dickey@herndon4.his.com> for the hint)
-
-2001-07-21  Felix Natter  <fnatter@gmx.net>
-
-	* gtypist.c (parse_cmdline): simplify command-line parsing by using
-	the fourth field of struct option + use '-' to separate words
-	in long options
-	* gtypist.c: rename cl_nowpmode to cl_wpmode (and change code
-	accordingly) because it's now disabled by default
-
-2001-07-21  Felix Natter  <fnatter@gmx.net>
-
-	* gtypist.c (SCR_COMMAND): do not accept lowercase command_char's
-
-2001-07-20  Felix Natter  <fnatter@gmx.net>
-
-	* gtypist.c (index_labels,do_goto): remove trailing whitespace in 
-	labels
-
-2001-06-11  Christian Weisgerber <naddy@openbsd.org>
- 
-        * po/*.po: added a proper charset specification.
-          (for current gettext with iconv support)
-
-2001-06-11  Christian Weisgerber <naddy@openbsd.org>
-
-	* po/Makefile.in.in: now correctly uses DESTDIR
-	* Makefile.am: removed "CPPFLAGS+=-Wall" to support
-	  compilers different from gcc.
-
-2000-12-05  Kester Habermann  <<kester@linuxtag.de>
- 
-        * po/de.po: Revision of grammar and spelling
-
-2000-11-10  Vladimir Tamara  <vtamara@gnu.org>
- 
-        * po/es.po, po/de.po: Added new strings shown with --help and --version
-
-2000-11-10  Vladimir Tamara  <vtamara@gnu.org>
-
-	* typist.c: Changed name to GNU Typist (gtypist)
-	* typist.c: Output of --help and --version changed, in order
-	  to support help2man (that generates automatically a man page).
-	  A new target in the Makefile can do it: typist.1
-	* typist.c: Source code fully GNU Coding Standards compliant.
-
-2000-10-23  Caolan McNamara <caolan@csn.ul.ie>
-	*  configure.in: it  accepts curses  library when  ncurses  is not
-	  available.
-	
-2000-09-14  Vladimir Tamara  <vtamara@gnu.org>
-
-	* typist.c: Now  word processor mode by default is  off, it can be
-	  activated  with  the  options   --wpmode  or  -w.   (The  option
-	  --nowpmode dissapears)
-
-2000-09-12  Vladimir Tamara  <vtamara@gnu.org>
-
-	* The data of typist by default now is installed at prefix/share/typist
-
-2000-09-09  Vladimir Tamara  <vtamara@gnu.org>
-
-	* Now the keys F1,F2,...,F12 can be "emulated" with
-	  1,2,3,4,5,6,7,8,9,0,A,S and also C-q, C-w, C-r, C-t, C-z, C-u, 
-	  C-i, C-o, C-p, C-a, C-s
-	* configure now stops if the ncurses library is not found
-
-2000-09-05  Vladimir Tamara  <vtamara@gnu.org>
-
-	*  Fixed bug in  wp mode.   (Before wp-emulation  mishandled lines
-	ending with '--').  Reported by Ben Armstrong 
-	<synrg@sanctuary.nslug.ns.ca>
-
-2000-08-30  Vladimir Tamara  <vtamara@gnu.org>
-
-	*  Changed  signal  SIGCLD  with  SIGCHLD (in  accordance  to  the
-	mantainer     of    the     Debian    package     Ben    Armstrong
-	<synrg@sanctuary.nslug.ns.ca> that works in Sparc)
-
-	* Instructions  to compile  typist in DOS  without Long  File Name
-	support (version 6.22 or lower)
-
-	*   Help  to   use   typist  with   Dvorak   keyboards  added   to
-	  INSTALL. Thanks to Ben Armstrong <synrg@sanctuary.nslug.ns.ca>
-
-
-2000-08-29  Vladimir Tamara  <vtamara@gnu.org>
-
-	* Fixed problem when configuring with --datadir 
-	(Thanks to stephan.hegel@gmx.de for the bug report)
-
-2000-08-18  Vladimir Tamara  <vtamara@gnu.org>
-
-	* NLS   for   German   added,   thanks   to   Kester   Habermann
-	<kester@linuxtag.de>
-
-2000-07-30  Vladimir Tamara  <vtamara@gnu.org>
- 
-        * Support for spanish.  es.po
-
-	* typefortune: several fixes from Stefan Troeger <stefan@troeger.st>:
-	  improved 'fortune' detection and temporary file deletion.
-
-2002-11-26  Michael Opdenacker <michaelo@gnu.org>
-
-	* po/nl.po: new Dutch interface from J.M. Cogels <jcogels@chello.nl>
-
-2002-10-28  Michael Opdenacker <michaelo@gnu.org>
-
-	* configure.in: replaced 'dnl' by '#',
-	removed duplicate entries in AC_OUTPUT.
-
-2002-09-21  Felix Natter  <fnatter@gmx.net>
-
-	* autogen.sh: exit if gawk isn't installed
-
-2002-09-15  Felix Natter  <fnatter@gmx.net>
-
-	* typefortune: allow (E)xit: have to add a *:END label
-	and K:12:END at the beginning
-
-2002-09-14  Felix Natter  <fnatter@gmx.net>
-
-	* configure.in: Christian Weisgerber <naddy@mips.inka.de>:
-	fix a bug in configure.in: AC_CHECK_LIB doesn't call
-	AC_DEFINE so now we do it explicitly:
-	AC_CHECK_LIB(curses, wbkgdset,
-	  [AC_DEFINE(HAVE_LIBCURSES, 1, [Is curses available])
-	    LIBS="-lcurses $LIBS"])
-
-
-2002-06-28  Hynek Hanke  <hanke@volny.cz>
-
-	* findwords.sh: New script to help with creating lessons.
-
-2002-05-20  Felix Natter  <fnatter@gmx.net>
-
-	* gtypist.c: do the same as last item for headers
-
-2002-05-18  Felix Natter  <fnatter@gmx.net>
-
-	* configure.in: check for ncurses if curses is not available
-	(but use 2x AC_CHECK_LIB instead of AC_SEARCH_LIBS to support Solaris)
-
-2002-04-25  Michael Opdenacker <michaelo@gnu.org>
-
-	* Replaced `cz' by `cs' in all file names.
-	* *.po: Updated with the msgmerged files; updated the version
-	  and package name, as well as the copyright notices.
-
-2002-04-22  Michael Opdenacker <michaelo@gnu.org>
-
-	* gtypist.c, Makefile.am: for consistency with 'PACKAGE_LOCALE_DIR'
-	  replaced by `LOCALEDIR', replaced `PACKAGE_DATA_DIR' by `DATADIR'.
-	* autogen.sh: now checks that texinfo is installed.
-	  Runs `make' (to generate `doc/version.texi') and generates
-	  the html manuals.
-
-2002-04-18  Michael Opdenacker <michaelo@gnu.org>
-
-	* gtypist.c: replaced '1998-2001' by `1998, 1999, 2000, 2001, 2002'
-	  in the copyright notices (following GNU guidelines).
-	* autogen.sh: made `help2man' mandatory for building sources.
-	* configure.in: suppressed the check for help2man, as the manual
-	  is now always created in the sources. 
-        * doc/fdl.texi: temporary hack of the original file, so that building
-	  works (to be fixed very soon).
-
-2002-04-16  Michael Opdenacker <michaelo@gnu.org>
-
-	* po/: new Makevars file as recommended by gettextize.
-	* Makefile.am: replaced 'INCLUDES' (deprecated) by 'AM_CPPFLAGS'
-	* acconfig.h: removed because deprecated.
-	  Replaced by the use of `-D' in AM_CPPFLAGS (see below).
-	* configure.in: only kept AM_GNU_GETTEXT for i18n.
-	  --nointl and --with-nointl options are no longer available,
-	  but --disable-nls in still available.
-	* Makefile.am: added a new AUTOMAKE_OPTIONS variable
-	  set to '1.6 dist-bzip2 check-news' (see automake manual).
-	* Other changes: to be documented very soon!
-	* gtypist.c: Replaced PACKAGE_LOCALE_DIR by LOCALE_DIR:
-          more standard: found in gettext doc and used by several packages. 
-	* Makefile.am: Added '-DLOCALEDIR=\"$(datadir)/locale\"'
-          to AM_CPPFLAGS (replaces PACKAGE_LOCAL_DIR defined in acconfig.h)
- 
-2002-04-08  Felix Natter  <fnatter@gmx.net>
-
-	* gtypist.c (do_keybind): omit "%d%s"
-
-2002-04-07  Michael Opdenacker <michaelo@gnu.org>
-
-	* Added new Czech interface messages.
-
-2002-04-07  Felix Natter  <fnatter@gmx.net>
-
-	* gtypist.c (fatal_error): write "\n" if line==NULL
-	(so that there is always a '\n' at the end of the error-message)
-
-2002-04-05  Felix Natter  <fnatter@gmx.net>
-
-	* gtypist.c: add /* xgettext: no-c-format */ comments so that
-	xgettext does not think that '%' is part of a format-string
-	(suggested by Bruno Haible)
-
-2002-03-31  Felix Natter  <fnatter@gmx.net>
-
-	* Makefile.am: add typefortune.1
-
-2002-03-17  Felix Natter  <fnatter@gmx.net>
-
-	* run gettextize from gettext 0.11.1
-	* create po/Makevars
-	* run aclocal with "-I m4" in autogen.sh
-
-2002-03-14  Michael Opdenacker <michaelo@gnu.org>
-
-	* autogen.sh: automake-1.6, autoconf 2.53, gettext-0.11 recommended;
-        fixed links to their sources.
-        Added --intl option to gettextize in autogen.sh
-
-2002-03-10  Felix Natter  <fnatter@gmx.net>
-
-	* fix a bug: -k wasn't mentioned in getopt (don't know why !)
-
-2002-03-09  Felix Natter  <fnatter@gmx.net>
-
-	* add new script `typefortune', as suggested and started by
-	Yuusuke Mita <neiklotrrj@yahoo.com>
-
-2002-01-14  Michael Opdenacker <michaelo@gnu.org>
-
-	* configure.in: suppressed "ncurses" in AC_SEARCH_LIBS, and kept
-	only "curses". This is enough because ncurses installs provide
-	all the files expected for curses. This caused problems in platforms
-	such as GNU/Solaris where both curses and ncurses are installed.
-        gcc was compiling for curses, but ld was given ¨-l ncurses¨,
-        which resulted in undefined symbols.  
-       * fr.po, es.po, fi.po: fixed alignment problems with raw speed,
-	adjusted speed and error rate display.
-
-2001-12-10  Felix Natter  <fnatter@gmx.net>
-
-	* change CONFIRM_EXIT_MSG to include "[Y/N]"
-	* do_query_repeat: add 2nd parameter which indicates whether
-	"Next" is an option
-	* do_drill, do_speedtest: don't display a message saying
-	"Sorry, you can't skip this lesson". Instead, just don't make
-	"Next" be an option in the following call to do_query_repeat
-	* rename CONFIRM_EXIT_MSG to CONFIRM_EXIT_LESSON_MSG
-	because it isn't used to exit the program
-
-2001-12-09  Felix Natter  <fnatter@gmx.net>
-
-	* main: change REPEAT_NEXT_EXIT_MSG (longer)
-
-2001-12-08  Felix Natter  <fnatter@gmx.net>
-
-	* do_query_repeat: call do_query_simple(CONFIRM_EXIT_MSG) to let the
-	user confirm (E)xit
-	* do_query_simple: new function
-	* wait_user: don't check for Fkeys. you can now quit a lesson
-	by pressing 'E' in REPEAT_NEXT_EXIT_MSG
-	* print_help,...: rename --wpmode to --word-processor
-	(as suggested by Michael); rename variable to cl_wpemu
-	* new variable cl_no_skip from option --no-skip, no message NO_SKIP_MSG
-	* do_query_noscriptfile: remove
-	* do_query: remove hack which was used in do_query_noscriptfile
-	* do_query_repeat: new query which prompts for repeat/next/exit
-	(new i18n string "R/N/E")
-	* do_drill, do_speedtest: use do_query_repeat instead
-	of do_query_noscriptfile for WANNA_REPEAT_MSG
-	* main: add translatable strings RNE and change WANNA_REPEAT_MSG
-	to "R to repeat, N for next or E to exit" (now called
-	REPEAT_NEXT_EXIT_MSG)
-
-2001-11-29  Felix Natter  <fnatter@gmx.net>
-
-	* gtypist.c (do_drill, do_speedtest): allow ESC ESC to be used for
-	skipping a lesson (ESC in the middle of an exercise restarts it and
-	ESC at the start of a lesson skips it)
-	(as suggested by Ben Armstrong <synrg@sanctuary.nslug.ns.ca>)
-
-2001-10-08Michael Opdenacker  <michaelo@gnu.org>
-
-	* Added missing checks in configure.in reported by autoscan.
-	* Removed useless stuff in acconfig.h. Only kept PACKAGE_LOCALE_DIR.	
-  
-2001-09-24  Michael Opdenacker  <michaelo@gnu.org>
-
-	* Added configur.bat.in, autogen.sh, INSTALL.in
-	and TODO to EXTRA_DIST
-
-2001-09-18  Felix Natter  <fnatter@gmx.net>
-
-	* gtypist.c (do_speedtest): fix problem: give up via ESC wasn't
-	possible in speed-tests. I fixed this by inserting
-        if ( c == ASCII_ESC ) break;
-	in do_speedtest simply because it's done in do_drill as well.
-	this fixes the problem but do_drill and do_speedtest need to be
-	rethought some day.
-
-2001-09-13  Felix Natter  <fnatter@gmx.net>
-
-	* configure.in (ALL_LINGUAS): add fi.po (finnish by
-	kusti@iki.fi (Kimmo K. I. Surakka))
-
-2001-09-07  Felix Natter  <fnatter@gmx.net>
-
-	* gtypist.c: add macro ASCII_ENTER which is used in wait_user
-	(necessary because pdcurs-2.4 returns 0x0D for Enter if raw() is used)
-	* gtypist.c (do_drill, do_speedtest): translate 0x0D (DOS newline)
-	to ASCII_NL
-	(necessary because pdcurs-2.4 returns 0x0D for Enter if raw() is used)
-
-2001-09-05  Felix Natter  <fnatter@gmx.net>
-
-	* gtypist.c (do_speedtest): add unsigned char cast to avoid
-	a blinking character if an 8bit-character is mistyped
-
-2001-08-31  Felix Natter  <fnatter@gmx.net>
-
-	* Makefile.am: add version.sh to EXTRA_DIST
-
-2001-08-30  Felix Natter  <fnatter@gmx.net>
-
-	* configure.in: now configure.in gets the version-number from
-	version.sh (as suggested by Michael)
-
-2001-08-23  Felix Natter  <fnatter@gmx.net>
-
-	* gtypist.c (main): change "skip back" to "go back" in
-	SKIPBACK_VIA_F_MSG
-
-2001-08-20  Felix Natter  <fnatter@gmx.net>
-
-	* gtypist.c (main, do_query): rename _("YN") to _("Y/N")
-
-2001-08-16  Felix Natter  <fnatter@gmx.net>
-
-	* NEWS: write the list of new/changed features for 2.4
-	* gtypist.c (do_on_failure_label_set): allow special value "NULL"
-	* gtypist.c (do_speedtest): set errors to 0 in the loop (I forgot
-	to do this when I changed do_speedtest to use a repeat-loop)
-
-2001-08-13  Felix Natter  <fnatter@gmx.net>
-
-	* gtypist.c (main, do_query): add new translatable string `YN'
-	which is used to translate the keys in Y/N-queries (but Y/N are
-	still accepted as well)
-	* gtypist.c: replace SPEED_PC_ERR by SPEED_PCT_ERROR (pct is
-	the normal abbreviation for percent)
-	* gtypist.c: add some comments where _() appear, to help translators
-	(recent versions of xgettext put these comments in the po-files)
-	* gtypist.c (print_help): in help-string for --error-max, don't
-	mention that it can be overridden in the script-file (but that
-	is still mentioned in the manual)
-
-2001-08-12  Felix Natter  <fnatter@gmx.net>
-
-	* gtypist.c (do_error_max_set): if --error-max is specified
-	(*not* if the default value is used), then an E:-command will
-	only be applied if its level is more difficult (smaller) than
-	the one specified via --error-max/-e
-	* gtypist.c (print_help): add that --error-max is the _default_
-	maximum error percentage, and that it can be changed in the
-	script-file to some extent
-	* gtypist.c (print_help): clean up so that i.e. "-c F,B" fits in
-	* gtypist.c (print_rep): replace by indent_to
-	* gtypist.c (print_usage_item): only break between words
-	* remove parameter cl_drill_tries, add cl_default_error_max and
-	adapt do_drill and do_speedtest accordingly
-	* gtypist.c (do_query): third parameter for use by
-	do_query_noscriptfile, return value: if TRUE means got a
-	function-key, if FALSE means Y/N
-	* gtypist.c (do_query_noscriptfile): new function used in do_drill/
-	do_speedtest
-	* english-fixes in comments + use same style
-	* add prototypes
-	* add WANNA_REPEAT_MSG, ERROR_TOO_HIGH_MSG, SKIPBACK_VIA_F_MSG
-	* gtypist.c (do_drill, do_speedtest): add "builtin repeat loop"
-	* gtypist.c (print_help): use ';' to separate sentences in help-strings
-	* gtypist.c (fatal_error): make the ouput more logical
-	* gtypist.c (do_error_max_set): new function which sets --error-max
-	* gtypist.c (do_on_failure_label_set): new function whichs set the
-	"skipback-on-failure label"
-	* gtypist.c (do_drill, do_speedtest): remove O:, rename P: to S:
-	and add "practice only" drills d: and s:
-	* gtypist.c (do_drill, do_speedtest): allow "give up" via ESC
-	(repeat lesson)
-
-2001-07-26  Felix Natter  <fnatter@gmx.net>
-
-	* configure.in: add AM_PATH_LISPDIR which is needed for
-	lisp_LISP = gtypist-mode.el
-
-2001-07-24  Felix Natter  <fnatter@gmx.net>
-
-	* gtypist.c (cl_wpmode): should be disabled by default
-	* gtypist.c replace all occurrences of addch by ADDCH
-	* gtypist.c (ADDCH, ADDCH_REV): add (unsigned char) cast
-	which is necessary to display 8 bit characters correctly
-	(thanks to Thomas E. Dickey" <dickey@herndon4.his.com> for the hint)
-
-2001-07-21  Felix Natter  <fnatter@gmx.net>
-
-	* gtypist.c (parse_cmdline): simplify command-line parsing by using
-	the fourth field of struct option + use '-' to separate words
-	in long options
-	* gtypist.c: rename cl_nowpmode to cl_wpmode (and change code
-	accordingly) because it's now disabled by default
-
-2001-07-21  Felix Natter  <fnatter@gmx.net>
-
-	* gtypist.c (SCR_COMMAND): do not accept lowercase command_char's
-
-2001-07-20  Felix Natter  <fnatter@gmx.net>
-
-	* gtypist.c (index_labels,do_goto): remove trailing whitespace in 
-	labels
-
-2001-06-11  Christian Weisgerber <naddy@openbsd.org>
- 
-        * po/*.po: added a proper charset specification.
-          (for current gettext with iconv support)
-
-2001-06-11  Christian Weisgerber <naddy@openbsd.org>
-
-	* po/Makefile.in.in: now correctly uses DESTDIR
-	* Makefile.am: removed "CPPFLAGS+=-Wall" to support
-	  compilers different from gcc.
-
-2000-12-05  Kester Habermann  <<kester@linuxtag.de>
- 
-        * po/de.po: Revision of grammar and spelling
-
-2000-11-10  Vladimir Tamara  <vtamara@gnu.org>
- 
-        * po/es.po, po/de.po: Added new strings shown with --help and --version
-
-2000-11-10  Vladimir Tamara  <vtamara@gnu.org>
-
-	* typist.c: Changed name to GNU Typist (gtypist)
-	* typist.c: Output of --help and --version changed, in order
-	  to support help2man (that generates automatically a man page).
-	  A new target in the Makefile can do it: typist.1
-	* typist.c: Source code fully GNU Coding Standards compliant.
-
-2000-10-23  Caolan McNamara <caolan@csn.ul.ie>
-	*  configure.in: it  accepts curses  library when  ncurses  is not
-	  available.
-	
-2000-09-14  Vladimir Tamara  <vtamara@gnu.org>
-
-	* typist.c: Now  word processor mode by default is  off, it can be
-	  activated  with  the  options   --wpmode  or  -w.   (The  option
-	  --nowpmode dissapears)
-
-2000-09-12  Vladimir Tamara  <vtamara@gnu.org>
-
-	* The data of typist by default now is installed at prefix/share/typist
-
-2000-09-09  Vladimir Tamara  <vtamara@gnu.org>
-
-	* Now the keys F1,F2,...,F12 can be "emulated" with
-	  1,2,3,4,5,6,7,8,9,0,A,S and also C-q, C-w, C-r, C-t, C-z, C-u, 
-	  C-i, C-o, C-p, C-a, C-s
-	* configure now stops if the ncurses library is not found
-
-2000-09-05  Vladimir Tamara  <vtamara@gnu.org>
-
-	*  Fixed bug in  wp mode.   (Before wp-emulation  mishandled lines
-	ending with '--').  Reported by Ben Armstrong 
-	<synrg@sanctuary.nslug.ns.ca>
-
-2000-08-30  Vladimir Tamara  <vtamara@gnu.org>
-
-	*  Changed  signal  SIGCLD  with  SIGCHLD (in  accordance  to  the
-	mantainer     of    the     Debian    package     Ben    Armstrong
-	<synrg@sanctuary.nslug.ns.ca> that works in Sparc)
-
-	* Instructions  to compile  typist in DOS  without Long  File Name
-	support (version 6.22 or lower)
-
-	*   Help  to   use   typist  with   Dvorak   keyboards  added   to
-	  INSTALL. Thanks to Ben Armstrong <synrg@sanctuary.nslug.ns.ca>
-
-
-2000-08-29  Vladimir Tamara  <vtamara@gnu.org>
-
-	* Fixed problem when configuring with --datadir 
-	(Thanks to stephan.hegel@gmx.de for the bug report)
-
-2000-08-18  Vladimir Tamara  <vtamara@gnu.org>
-
-	* NLS   for   German   added,   thanks   to   Kester   Habermann
-	<kester@linuxtag.de>
-
-2000-07-30  Vladimir Tamara  <vtamara@gnu.org>
- 
-        * Support for spanish.  es.po
