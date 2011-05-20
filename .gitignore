@@ -60,3 +60,6 @@ tools/gtypist-mode.elc
 *.bz2.sig
 *.directive
 *.directive.asc
+
+# ignore personal TODO files
+TODO-personal-*

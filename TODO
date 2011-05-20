@@ -29,8 +29,6 @@ SHORT TERM
    spaces after periods are handled, which I don't want.
    Requested by Adam Olsen <rhamph@d2dc.net>
 
- * Make `typefortune' available in <prefix>/bin?
-
  * Support UTF-8, as today
    1) charsets of the file and terminal must be the same;
    2) they have to have no wide characters
@@ -45,10 +43,6 @@ SHORT TERM
 
  * Make contributors sign a paper accepting the terms of the GPL,
    according to GNU standards.
-
- * Implement a `word processor' option to make GNU Typist accept
-   [SPACE] instead of [RETURN] for new lines.
-   (Suggested by gherald@myway.com)
  
  * Make sure that the numpad's [ENTER] key is accepted
    in numpad lessons.
