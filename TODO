@@ -83,6 +83,11 @@ SHORT TERM
    in which the `.' character is replaced by `,'. Useful for some
    european keyboards.
 
+ * Add configuration file support. Should be very useful,
+   in particular for teachers!
+
+MEDIUM TERM
+
  * Improve the interface by adding 2 interfaces:
 
    * Graphical interface (Probably GTK)
@@ -117,11 +122,6 @@ SHORT TERM
    interface to send it to the user.
 
    Specifications are on going. 
-   
-MEDIUM TERM
-
- * Add configuration file support. Should be every useful,
-   in particular for teachers! 
 
  * Add support for saving the last lesson (or part of a lesson) the user was
    working on, so the user can easily pick up where s/he left off.
@@ -139,19 +139,13 @@ MEDIUM TERM
      lessons or let us reuse theirs...
    - Reuse lessons from old typing teaching books which
      copyrights have expired (how much time does it take?).
+   - This will most likely require UTF-8 support
 
  * Better typing statistics.  Speed and accuracy for individual keys, 
    and individual fingers. This helps to indicate where extra practice
    may be useful to the user (see Jtypist which displays this as
    graphical bars, using color to indicate areas that need work).
    A measure of typing rhythm would also be useful.
-
-LONG TERM
-
- * While typing, graphically show the finger that is supposed to be used.
-
- * Read lessons in the file formats of other free typing tutors
-   (such as Jtypist).
 
  * Emulate other keyboard types.  For example, Jtypist can pretend that
    you have a French, German, or Dvorak keyboard on the system even
@@ -161,3 +155,10 @@ LONG TERM
    maps available to it, and arises as a result of maintaining typing
    statistics by key and by finger (the program needs to know what
    key is operated by which finger).
+
+LONG TERM
+
+ * While typing, graphically show the finger that is supposed to be used.
+
+ * Read lessons in the file formats of other free typing tutors
+   (such as Jtypist).
