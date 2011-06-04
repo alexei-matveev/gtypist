@@ -1,6 +1,6 @@
 #!/usr/bin/perl -w
 
-# converts from ktouch's .ktouch to gtypist's .typ-file
+# converts from ktouch's .ktouch.xml to gtypist's .typ-file
 # send comments and suggestions to bug-gtypist@gnu.org
 
 # This program is free software; you can redistribute it and/or
@@ -17,19 +17,18 @@
 # along with this program; if not, write to the Free Software
 # Foundation, Inc., 675 Mass Ave, Cambridge, MA 02139, USA.
 
+package KTouchParser;
+
 use strict qw(subs vars refs);
 use Cwd; # Cwd::getcwd
 use gtypist;
+use XML::Parser::PerlSAX;
+#use Unicode::String;
+use Text::Iconv;
 
 # configurable variables
 my $lines_per_drill = 4; # 1-11 for [Dd]: and D:, 1-22 for [Ss]:
 my $drill_type = "D:"; # [DdSs]
-
-
-my $ktouchfilename = undef;
-my $typfilename = undef;
-my $KTOUCHFILE = undef;
-my $TYPFILE = undef;
 
 # some sanity checks
 if ($lines_per_drill < 1) {
@@ -48,111 +47,163 @@ if ($drill_type eq "D:" || $drill_type eq "d:") {
     }
 }
 
-while(defined($ktouchfilename = shift(@ARGV)))
+
+if ($#ARGV != 0)
 {
-    if (substr($ktouchfilename, rindex($ktouchfilename, ".")) ne ".ktouch" ||
-	! (-f $ktouchfilename)) { 
-	print "Skipping $ktouchfilename.\n";
-	next;
-    }
-    $typfilename = $ktouchfilename;
-    substr($typfilename, rindex($typfilename, ".")) = ".typ";
-    print "Converting $ktouchfilename to $typfilename...\n";
-
-    open(KTOUCHFILE, "$ktouchfilename") ||
-	die "Couldn't open $ktouchfilename for reading: $!";
-    open(TYPFILE, ">$typfilename") ||
-	die "Couldn't open $typfilename for writing: $!";
-
-    print TYPFILE "# created by ktouch2typ.pl from " . 
-	getAbsoluteFilename($ktouchfilename) . "\n# on " . `date`;
-    print TYPFILE "# ktouch2typ.pl is part of gtypist (http://www.gnu.org/software/gtypist/)\n";
-    print TYPFILE "# ktouch can be found at http://ktouch.sourceforge.net\n";
-    print TYPFILE "# If you have suggestions about these lessons,\n";
-    print TYPFILE "# please send mail to haavard\@users.sourceforge.net\n";
-    print TYPFILE "# (or whoever is the current ktouch maintainer), with\n";
-    print TYPFILE "# cc to bug-gtypist\@gnu.org\n\n";
-    print TYPFILE "G:MENU\n\n";
-
-    my $line = undef;
-    my $done = 0;
-    my $lesson_counter = 1;
-    my @lesson_names = (); # this is needed for the menu
-    while (!$done)
-    {
-	while (defined($line = <KTOUCHFILE>) && isBlankorComment($line)) { 
-	    if (isComment($line)) {
-		# make sure that '#' is at the beginning of the line
-		$line =~ s/^\s*//;
-		print TYPFILE $line;
-	    }
-	}
-	if (!defined($line)) { $done = 1; next;	}
-	
-	print TYPFILE "*:S_LESSON$lesson_counter\n";
-	print TYPFILE "K:12:MENU\n";
-	# $line contains the first non-blank, non-comment line (which is the
-	# name of the lesson)
-	chomp($line);
-	$lesson_names[$lesson_counter] = $line;
-	print TYPFILE getBanner("Lesson $lesson_counter: " . $line);
-
-	convert_lesson($lesson_counter, \*KTOUCHFILE, \*TYPFILE);
-
-	print TYPFILE "G:E_LESSON$lesson_counter\n\n";
-	
-	if (!defined($line)) {
-	    $done = 1;
-	}
-	++$lesson_counter;
-    }
-
-    --$lesson_counter;
-
-    generate_jump_table($lesson_counter, \*TYPFILE);
-    generate_menu("ktouch lesson ($ktouchfilename)",
-		  $lesson_counter, \*TYPFILE, @lesson_names);
-
-    close(TYPFILE) || die "Couldn't close $typfilename: $!";
-    close(KTOUCHFILE) || die "Couldn't close $ktouchfilename: $!";
+    printf "Usage: $0 <*.ktouch.xml>\n";
+    exit 1;
 }
 
+my $ktouchfilename = shift(@ARGV);
+if ($ktouchfilename !~ /^.*\.ktouch\.xml$/ || ! (-f $ktouchfilename)) { 
+    die "Invalid ktouch lesson filename: $ktouchfilename.\n";
+}
 
-# this reads from KTOUCHFILE until it finds a blank line or a comment
-sub convert_lesson($lesson_counter *KTOUCHFILE *TYPFILE)
+my $typfilename = $ktouchfilename;
+substr($typfilename, rindex($typfilename, ".")) = ".typ";
+print "Converting $ktouchfilename to $typfilename...\n";
+
+my $current_element = '';
+my %tagContent = ();
+my @lessonLines;
+my $lessonCounter = 1;
+my @lessonNames = ();
+my $TYPFILE = undef;
+my $converter = Text::Iconv->new("utf-8", "latin1");
+
+open(TYPFILE, ">$typfilename") ||
+    die "Couldn't open $typfilename for writing: $!";
+
+my $handler = KTouchParser->new();
+
+my $parser = XML::Parser::PerlSAX->new(Handler => $handler);
+
+$parser->parse(Source => { 
+    'SystemId' => $ktouchfilename,
+    'Encoding' => 'utf-8'
+               });
+
+sub writeLesson($$)
 {
-    my $lesson_counter = shift;
-    my $ktouchfile = shift;
-    my $typfile = shift;
-    my $line = undef;
-    my $line_counter = 0;
-    my $drill_counter = 1;
+    my $title = shift;
+    my $lines = shift;
 
-    while (defined($line = <$ktouchfile>) && !isBlankorComment($line))
+    print TYPFILE "*:S_LESSON${lessonCounter}\n";
+    print TYPFILE "K:12:MENU\n";
+    print TYPFILE getBanner($title);
+
+    my $drillCounter = 1;
+    my $lineCounter = 0;
+    foreach my $line (@$lines)
     {
-	chomp($line);
-	if ($line_counter == 0) {
-	    print $typfile "*:LESSON${lesson_counter}_D$drill_counter\n";
-	    print $typfile "I:($drill_counter)\n";
-	    print $typfile "${drill_type}$line\n";
+	if ($lineCounter == 0) {
+	    print TYPFILE "*:LESSON${lessonCounter}_D$drillCounter\n";
+	    print TYPFILE "I:($drillCounter)\n";
+	    print TYPFILE "${drill_type}$line\n";
 	} else {
-	    print $typfile " :$line\n";
+	    print TYPFILE " :$line\n";
 	}
-
-	++$line_counter;
-	if ($line_counter == $lines_per_drill) {
-# this is not necessary any more: it's implied in D:
-#	    print $typfile
-#		"Q: Press Y to continue, N to repeat, or Fkey 12 to exit\n";
-#	    print $typfile "N:LESSON${lesson_counter}_D$drill_counter\n";
-	    $line_counter = 0; ++$drill_counter;
+        
+	++$lineCounter;
+	if ($lineCounter == $lines_per_drill) {
+	    $lineCounter = 0;
+            ++$drillCounter;
 	}
     }
-# this is not necessary any more: it's implied in D:
-#   print $typfile "Q: Press Y to continue, N to repeat, or Fkey 12 to exit\n";
-#    print $typfile "N:LESSON${lesson_counter}_D$drill_counter\n";
+
+    print TYPFILE "G:E_LESSON${lessonCounter}\n\n";
 }
+
+
+sub new {
+    my $type = shift;
+    return bless {}, $type;
+}
+
+sub start_element {
+    my ($self, $element) = @_;
+    $current_element = $element->{Name};
+
+    if ($current_element eq 'Levels')
+    {
+        # start of lessons, write out header
+        print TYPFILE "# created by ktouch2typ.pl from " . 
+            getAbsoluteFilename($ktouchfilename) . "\n# on " . `date`;
+        my $FileTitle = $converter->convert($tagContent{'Title'});
+        my $FileComment = $converter->convert($tagContent{'Comment'});
+        print TYPFILE "# ktouch title: $FileTitle\n";
+        if (defined($FileComment))
+        {
+            print TYPFILE "# ktouch comment: $FileComment\n";
+        }
+        print TYPFILE "# ktouch2typ.pl is part of gtypist (http://www.gnu.org/software/gtypist/)\n";
+        print TYPFILE "# ktouch can be found at http://ktouch.sourceforge.net\n";
+        print TYPFILE "# If you have suggestions about these lessons,\n";
+        print TYPFILE "# please send mail to haavard\@users.sourceforge.net\n";
+        print TYPFILE "# (or whoever is the current ktouch maintainer), with\n";
+        print TYPFILE "# cc to bug-gtypist\@gnu.org\n\n";
+        print TYPFILE "G:MENU\n\n";
+    }
+    elsif ($current_element eq 'Level')
+    {
+        # initialize lesson vars
+        @lessonLines = ();
+    }
+
+    #print "Start element: $element->{Name}\n";
+}
+
+sub end_element {
+    my ($self, $element) = @_;
+
+    my $elementName = $element->{Name};
+
+    if ($elementName eq 'Line')
+    {
+        push @lessonLines, $tagContent{'Line'};
+    }
+    elsif ($elementName eq 'Level')
+    {
+        # write out lesson
+        my $title = $tagContent{'NewCharacters'};
+        $lessonNames[$lessonCounter] = $title;
+        writeLesson("Lesson $lessonCounter: " . $title, \@lessonLines);
+
+        # reset lesson variables
+        @lessonLines = ();
+        $lessonCounter++;
+    }
+    elsif ($elementName eq 'Levels')
+    {
+        generate_jump_table($lessonCounter - 1, \*TYPFILE);
+        generate_menu("ktouch lesson: " . $tagContent{'Title'},
+                      $lessonCounter - 1, \*TYPFILE, @lessonNames);
+    }
+    #print "End element: $element->{Name}, line=$tagContent{Line}\n";
+}
+
+sub characters {
+    my ($self, $characters) = @_;
+    my $text = $characters->{Data};
+
+    # remove whitespace
+    $text =~ s/^\s*//;
+    $text =~ s/\s*$//;
+
+    return '' unless $text;
+
+    #my $unicodeString = Unicode::String::utf8($text);
+    # $unicodeString->latin1();
+
+    $tagContent{$current_element} = $converter->convert($text);
+    if (!defined($converter->retval))
+    {
+        die "ERROR: $ktouchfilename cannot be encoded in latin1!";
+    }
+}
+
+close(TYPFILE) || die "Couldn't close $typfilename: $!";
 
 # Local Variables:
-# compile-command: "./ktouch2typ.pl german.ktouch norwegian.ktouch g.ktouch"
+# compile-command: "./ktouch2typ.pl german.ktouch"
 # End:
