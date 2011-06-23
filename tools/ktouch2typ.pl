@@ -69,7 +69,7 @@ my @lessonLines;
 my $lessonCounter = 1;
 my @lessonNames = ();
 my $TYPFILE = undef;
-my $converter = Text::Iconv->new("utf-8", "latin1");
+my $converter = Text::Iconv->new("utf-8", "utf-8");
 
 open(TYPFILE, ">$typfilename") ||
     die "Couldn't open $typfilename for writing: $!";
@@ -189,17 +189,15 @@ sub characters {
     # remove whitespace
     $text =~ s/^\s*//;
     $text =~ s/\s*$//;
-
+    
     return '' unless $text;
-
-    #my $unicodeString = Unicode::String::utf8($text);
-    # $unicodeString->latin1();
 
     $tagContent{$current_element} = $converter->convert($text);
     if (!defined($converter->retval))
     {
-        die "ERROR: $ktouchfilename cannot be encoded in latin1!";
+         die "ERROR: $ktouchfilename cannot be encoded in latin1!";
     }
+    #$tagContent{$current_element} = $text;
 }
 
 close(TYPFILE) || die "Couldn't close $typfilename: $!";

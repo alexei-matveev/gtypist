@@ -21,11 +21,12 @@
 #include "config.h"
 #include "error.h"
 #include "script.h"
-#ifdef HAVE_LIBCURSES
-#include <curses.h>
-#else
-#include <ncurses/curses.h>
-#endif
+/* #ifdef HAVE_LIBCURSES */
+/* #include <curses.h> */
+/* #else */
+/* #include <ncurses/curses.h> */
+/* #endif */
+#include <ncursesw/ncurses.h>
 #include <stdlib.h>
 
 #include "gettext.h"

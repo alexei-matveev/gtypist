@@ -20,11 +20,12 @@
  */
 #include "config.h"
 #include "script.h"
-#ifdef HAVE_LIBCURSES
-#include <curses.h>
-#else
-#include <ncurses.h>
-#endif
+/* #ifdef HAVE_LIBCURSES */
+/* #include <curses.h> */
+/* #else */
+/* #include <ncurses.h> */
+/* #endif */
+#include <ncursesw/ncurses.h>
 #include "error.h"
 
 #include <stdlib.h>
@@ -105,7 +106,10 @@ void get_script_line( FILE *script, char *line )
       while( *line && isspace( line[strlen( line )-1] ) )
         line [strlen (line) - 1] = ASCII_NULL;
 
-      if ( strlen( line ) < MIN_SCR_LINE )
+      // input is UTF-8 !!
+      int numChars = mbstowcs(NULL, line, 0);
+
+      if ( numChars < MIN_SCR_LINE )
 	fatal_error( _("data shortage"), line );
       if ( SCR_SEP( line ) != C_SEP )
 	fatal_error( _("missing ':'"), line );
@@ -113,7 +117,7 @@ void get_script_line( FILE *script, char *line )
 	   && SCR_COMMAND( line ) != C_GOTO 
 	   && SCR_COMMAND( line ) != C_YGOTO
 	   && SCR_COMMAND( line ) != C_NGOTO
-	   && strlen( SCR_DATA( line )) > COLS )
+           && mbstowcs(NULL, SCR_DATA( line ), 0) > COLS )
 	fatal_error( _("line too long for screen"), line );
     }
 }

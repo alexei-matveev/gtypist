@@ -28,11 +28,12 @@
 #include <signal.h>
 #include <sys/param.h>
 
-#ifdef HAVE_LIBCURSES
-#include <curses.h>
-#else
-#include <ncurses/curses.h>
-#endif
+/* #ifdef HAVE_LIBCURSES */
+/* #include <curses.h> */
+/* #else */
+/* #include <ncurses/curses.h> */
+/* #endif */
+#include <ncursesw/ncurses.h>
 
 #include <time.h>
 #include <errno.h>
@@ -132,6 +133,36 @@ static short	colour_array[] = {
 				attroff( A_REVERSE ); } while ( 0 )
 #define	ADDCH(X)		addch( (unsigned char) X )
 
+#define CCHARW_MAX	5
+typedef struct
+{
+    attr_t	attr;
+    wchar_t	chars[CCHARW_MAX];
+#if 0
+#undef NCURSES_EXT_COLORS
+#define NCURSES_EXT_COLORS 20110404
+    int		ext_color;	/* color pair, must be more than 16-bits */
+#endif
+}
+cchar_t;
+
+
+void wideaddch(wchar_t c)
+{
+  cchar_t c2;
+  c2.attr = 0;
+  c2.chars[0] = c;
+  c2.chars[1] = L'\0';
+  add_wch(&c2);
+}
+
+void wideaddch_rev(wchar_t c)
+{
+  attron(A_REVERSE);
+  wideaddch(c);
+  attroff(A_REVERSE);
+}
+
 /* command line options/values */
 static bool     cl_error_max_specified = FALSE; /* is --error-max specified? */
 static float	cl_default_error_max = 3.0;	/* maximum error percentage */
@@ -184,7 +215,7 @@ static bool user_is_always_sure = FALSE;
 
 /* prototypes */
 
-static int getch_fl( char cursor_char );
+static int getch_fl( int cursor_char );
 static void index_labels( FILE *script );
 static bool wait_user (FILE *script, char *message, char *mode );
 static void display_speed( int total_chars, long elapsed_time, int errcount );
@@ -287,7 +318,7 @@ void bind_F12 (const char *label)
   xterms seem not make the cursor invisible either.
 */
 static int
-getch_fl( char cursor_char )
+getch_fl( int cursor_char )
 {
   int	y, x;				/* saved cursor posn */
   int	return_char;			/* return value */
@@ -302,46 +333,53 @@ getch_fl( char cursor_char )
       /* degrade to cursor-less getch */
       curs_set( 0 ); refresh();
       move( LINES - 1, COLS - 1 );
-      cbreak(); return_char = getch();
+      cbreak();
+      get_wch(&return_char);
       move( y, x );
     }
   else
     {
       /* produce a flashing cursor, or not, as requested */
       if ( ! cl_term_cursor ) {
-	/* go for the flashing block here */
-	ADDCH_REV( cursor_char );
-	curs_set( 0 ); refresh();
-	move( LINES - 1, COLS - 1 );
-	if ( ( cl_curs_flash / 2 ) > 0 )
-	  {
-	    halfdelay( cl_curs_flash / 2 );
-	    while ( (return_char = getch()) == ERR )
-	      {
-		move( y, x );
-		if ( alternate )
-		  ADDCH_REV( cursor_char );
-		else
-		  ADDCH( cursor_char );
-		move( LINES - 1, COLS - 1 );
-		alternate = !alternate;
-	      }
-	  }
-	else
-	  {
-	    cbreak(); return_char = getch();
-	  }
-	move( y, x );
-	ADDCH( cursor_char );
-	move( y, x );
+        /* go for the flashing block here */
+        //ADDCH_REV( cursor_char );
+        wideaddch_rev(cursor_char);
+        curs_set( 0 ); refresh();
+        move( LINES - 1, COLS - 1 );
+        if ( ( cl_curs_flash / 2 ) > 0 )
+          {
+            halfdelay( cl_curs_flash / 2 );
+            while ( get_wch(&return_char) == ERR )
+              {
+                move( y, x );
+                if ( alternate )
+                  //ADDCH_REV( cursor_char );
+                  wideaddch_rev(cursor_char);
+                else
+                  //ADDCH( cursor_char );
+                  wideaddch(cursor_char);
+                move( LINES - 1, COLS - 1 );
+                alternate = !alternate;
+              }
+          }
+        else
+          {
+            cbreak(); 
+            get_wch(&return_char);
+          }
+        move( y, x );
+        //ADDCH( cursor_char );
+        wideaddch(cursor_char);
+        move( y, x );
       }
       else
-	{
-	  /* just use the terminal's cursor - this is easy */
-	  curs_set( 1 ); refresh();
-	  cbreak(); return_char = getch();
-	  curs_set( 0 ); refresh();
-	}
+        {
+          /* just use the terminal's cursor - this is easy */
+          curs_set( 1 ); refresh();
+          cbreak(); //return_char = getch();
+          get_wch(&return_char);
+          curs_set( 0 ); refresh();
+        }
     }
 
   /* return what key was pressed */
@@ -688,6 +726,9 @@ is_error_too_high( int chars_typed, int errors ) {
 /*
   execute a typing drill
 */
+/*
+  execute a typing drill
+*/
 static void
 do_drill( FILE *script, char *line ) {
 
@@ -696,7 +737,7 @@ do_drill( FILE *script, char *line ) {
   char	*data = NULL;		 /* data string */
   int	lines_count = 0;	 /* measures drill length */
   int	rc;			 /* curses char typed */
-  char	c=0,*p;			 /* char typed in and ptr */
+  wchar_t  *widep, *wideData;
   long	start_time=0, end_time;	 /* timing variables */
   char	message[MAX_WIN_LINE];	 /* message buffer */
   char	drill_type;		 /* note of the drill type */
@@ -711,10 +752,20 @@ do_drill( FILE *script, char *line ) {
   /* get the complete exercise into a single string */
   data = buffer_command( script, line );
 
+  /* get the exercise as a wide string */
+  int numChars = mbstowcs(NULL, data, 0);
+  wideData = malloc((numChars+1) * sizeof(wchar_t));
+  int convresult = mbstowcs(wideData, data, numChars+1);
+  if (convresult != numChars)
+    fatal_error(_("couldn't convert UTF-8 to wide characters"), line);
+
   /* count the lines in this exercise, and check the result
      against the screen length */
-  for ( p = data, lines_count = 0; *p != ASCII_NULL; p++ )
-    if ( *p == ASCII_NL) lines_count++;
+  for ( widep = wideData, lines_count = 0; *widep != ASCII_NULL; widep++ )
+    {
+      if ( *widep == ASCII_NL)
+        lines_count++;
+    }
   if ( DP_TOP_LINE + lines_count * 2 > LINES )
     fatal_error( _("data exceeds screen length"), line );
 
@@ -731,217 +782,220 @@ do_drill( FILE *script, char *line ) {
       /* display drill pattern */
       linenum = DP_TOP_LINE;
       move( linenum, 0 ); clrtobot();
-      for ( p = data; *p != ASCII_NULL; p++ )
-	{
-	  if ( *p != ASCII_NL )
-	    ADDCH( *p );
-	  else
-	    {
-	      /* newline - move down the screen */
-	      linenum++; linenum++;	/* alternate lines */
-	      move( linenum, 0 );
-	    }
-	}
+      for ( widep = wideData; *widep != ASCII_NULL; widep++ )
+        {
+          if ( *widep != ASCII_NL )
+            wideaddch(*widep);
+          else
+            {
+              /* newline - move down the screen */
+              linenum++; linenum++;	/* alternate lines */
+              move( linenum, 0 );
+            }
+        }
       move( MESSAGE_LINE, COLS - strlen( MODE_DRILL ) - 2 );
       ADDSTR_REV( MODE_DRILL );
 
       /* run the drill */
       linenum = DP_TOP_LINE + 1;
       move( linenum, 0 );
-      for ( p = data; *p == ASCII_SPACE && *p != ASCII_NULL; p++ )
-	ADDCH( *p );
+      for ( widep = wideData; *widep == ASCII_SPACE && *widep != ASCII_NULL; widep++ )
+        wideaddch(*widep);
 
       for ( chars_typed = 0, errors = 0, error_sync = 0,
-		      chars_in_the_line_typed = 0;
-	    *p != ASCII_NULL; p++ )
-	{
-	  do
-	  {
-	     rc = getch_fl (chars_in_the_line_typed >= COLS ? *(p + 1) :
-			     (*p == ASCII_TAB ? ASCII_TAB : ASCII_SPACE));
-	     c = (char)rc;
-	  }
-	  while ( rc == KEY_BACKSPACE || c == ASCII_BS || c == ASCII_DEL );
+              chars_in_the_line_typed = 0;
+            *widep != ASCII_NULL; widep++ )
+        {
+          do
+            {
+              rc = getch_fl (chars_in_the_line_typed >= COLS ? *(widep + 1) :
+                             (*widep == ASCII_TAB ? ASCII_TAB : ASCII_SPACE));
+            }
+          while ( rc == KEY_BACKSPACE || rc == ASCII_BS || rc == ASCII_DEL );
 
 #ifdef PDCURSES_ENTER_KEY_FIX
-	  /* this is necessary for DOS: when using raw(), pdcurses 2.4's
-	     getch() returns 0x0D on DOS/Windows  */
-	  if ( c == 0x0D )
-	    rc = c = 0x0A;
+          /* this is necessary for DOS: when using raw(), pdcurses 2.4's
+             getch() returns 0x0D on DOS/Windows  */
+          if ( c == 0x0D )
+            rc = c = 0x0A;
 #endif
 
-	  /* start timer on first char entered */
-	  if ( chars_typed == 0 )
-	    start_time = (long)time( NULL );
-	  chars_typed++;
-	  error_sync--;
+          /* start timer on first char entered */
+          if ( chars_typed == 0 )
+            start_time = (long)time( NULL );
+          chars_typed++;
+          error_sync--;
 
-	  /* ESC is "give up"; ESC at beginning of exercise is "skip lesson"
-	     (this is handled outside the for loop) */
-	  if ( c == ASCII_ESC )
-	    break;
+          /* ESC is "give up"; ESC at beginning of exercise is "skip lesson"
+             (this is handled outside the for loop) */
+          if ( rc == ASCII_ESC )
+            break;
 
-	  /* check that the character was correct */
-	  if ( c == *p
-	       || ( cl_wp_emu && c == ASCII_SPACE
-		    && *p == ASCII_NL ))
-	  {
-	     if (cl_wp_emu && c == ASCII_SPACE && *p == ASCII_NL)
-		chars_in_the_line_typed = 0;
-	     else
-	     {
-	        if (c != ASCII_NL)
-	        {
-		   ADDCH( c );
-		   chars_in_the_line_typed ++;
-	        }
-	        else
-		   chars_in_the_line_typed = 0;
-	     }
-	  }
-	  else
-	    {
-	      /* try to sync with typist behind */
-	      if ( error_sync >= 0 && p > data && c == *(p-1) )
-		{
-		  p--;
-		  continue;
-		}
+          /* check that the character was correct */
+          if ( rc == *widep ||
+              ( cl_wp_emu && rc == ASCII_SPACE && *widep == ASCII_NL ))
+            {
+              if (cl_wp_emu && rc == ASCII_SPACE && *widep == ASCII_NL)
+                chars_in_the_line_typed = 0;
+              else
+                {
+                  if (rc != ASCII_NL)
+                    {
+                      wideaddch(rc);
+                      chars_in_the_line_typed ++;
+                    }
+                  else
+                    chars_in_the_line_typed = 0;
+                }
+            }
+          else
+            {
+              /* try to sync with typist behind */
+              if ( error_sync >= 0 && widep > wideData && rc == *(widep-1) )
+                {
+                  widep--;
+                  continue;
+                }
 
-	      if (chars_in_the_line_typed < COLS)
-	      {
-	         ADDCH_REV( *p == ASCII_NL ? DRILL_NL_ERR :
-			 (*p == ASCII_TAB ?
-			  ASCII_TAB : (cl_rev_video_errors ?
-				       c : DRILL_CH_ERR)));
-		 chars_in_the_line_typed ++;
-	      }
+              if (chars_in_the_line_typed < COLS)
+                {
+                  wideaddch_rev( *widep == ASCII_NL ? DRILL_NL_ERR :
+                                 (*widep == ASCII_TAB ?
+                                  ASCII_TAB : (cl_rev_video_errors ?
+                                           rc : DRILL_CH_ERR)));
+                  chars_in_the_line_typed ++;
+                }
 
-	      if (*p == ASCII_NL)
-		 chars_in_the_line_typed = 0;
+              if (*widep == ASCII_NL)
+                chars_in_the_line_typed = 0;
 
-	      if ( ! cl_silent )
-		{
-		  do_bell();
-		}
-	      errors++;
-	      error_sync = 1;
+              if ( ! cl_silent )
+                {
+                  do_bell();
+                }
+              errors++;
+              error_sync = 1;
 
-	      /* try to sync with typist ahead */
-	      if ( c == *(p+1) )
-		{
-		  ungetch( c );
-		  error_sync++;
-		}
-	    }
+              /* try to sync with typist ahead */
+              if ( rc == *(widep+1) )
+                {
+                  ungetch( rc );
+                  error_sync++;
+                }
+            }
 
-	  /* move screen location if newline */
-	  if ( *p == ASCII_NL )
-	    {
-	      linenum++; linenum++;
-	      move( linenum, 0 );
-	    }
+          /* move screen location if newline */
+          if ( *widep == ASCII_NL )
+            {
+              linenum++; linenum++;
+              move( linenum, 0 );
+            }
 
-	  /* perform any other word processor like adjustments */
-	  if ( cl_wp_emu )
-	    {
-	      if ( c == ASCII_SPACE )
-		{
-		  while ( *(p+1) == ASCII_SPACE
-			  && *(p+1) != ASCII_NULL )
-		    {
-		      p++; ADDCH( *p );
-		      chars_in_the_line_typed ++;
-		    }
-		}
-	      else if ( c == ASCII_NL )
-		{
-		  while ( ( *(p+1) == ASCII_SPACE
-			    || *(p+1) == ASCII_NL )
-			  && *(p+1) != ASCII_NULL )
-		    {
-		      p++; ADDCH( *p );
-		      chars_in_the_line_typed ++;
-		      if ( *p == ASCII_NL ) {
-			linenum++; linenum++;
-			move( linenum, 0 );
-			chars_in_the_line_typed = 0;
-		      }
-		    }
-		}
-	      else if ( isalpha(*p) && *(p+1) == ASCII_DASH
-			&& *(p+2) == ASCII_NL )
-		{
-		  p++; ADDCH( *p );
-		  p++; ADDCH( *p );
-		  linenum++; linenum++;
-		  move( linenum, 0 );
-		  chars_in_the_line_typed = 0;
-		}
-	    }
-	}
+          /* perform any other word processor like adjustments */
+          if ( cl_wp_emu )
+            {
+              if ( rc == ASCII_SPACE )
+                {
+                  while ( *(widep+1) == ASCII_SPACE
+                          && *(widep+1) != ASCII_NULL )
+                    {
+                      widep++;
+                      wideaddch(*widep);
+                      chars_in_the_line_typed ++;
+                    }
+                }
+              else if ( rc == ASCII_NL )
+                {
+                  while ( ( *(widep+1) == ASCII_SPACE
+                            || *(widep+1) == ASCII_NL )
+                          && *(widep+1) != ASCII_NULL )
+                    {
+                      widep++;
+                      wideaddch(*widep);
+                      chars_in_the_line_typed ++;
+                      if ( *widep == ASCII_NL ) {
+                        linenum++; linenum++;
+                        move( linenum, 0 );
+                        chars_in_the_line_typed = 0;
+                      }
+                    }
+                }
+              else if ( isalpha(*widep) && *(widep+1) == ASCII_DASH
+                        && *(widep+2) == ASCII_NL )
+                {
+                  widep++;
+                  wideaddch(*widep);
+                  widep++;
+                  wideaddch(*widep);
+                  linenum++; linenum++;
+                  move( linenum, 0 );
+                  chars_in_the_line_typed = 0;
+                }
+            }
+        }
 
       /* ESC not at the beginning of the lesson: "give up" */
-      if ( c == ASCII_ESC && chars_typed != 1)
-	continue; /* repeat */
+      if ( rc == ASCII_ESC && chars_typed != 1)
+        continue; /* repeat */
 
       /* skip timings and don't check error-pct if exit was through ESC */
-      if ( c != ASCII_ESC )
-	{
-	  /* display timings */
-	  end_time = (long)time( NULL );
-	  if ( ! cl_notimer )
-	    {
-	      display_speed( chars_typed, end_time - start_time,
-			     errors );
-	    }
+      if ( rc != ASCII_ESC )
+        {
+          /* display timings */
+          end_time = (long)time( NULL );
+          if ( ! cl_notimer )
+            {
+              display_speed( chars_typed, end_time - start_time,
+                             errors );
+            }
 
-	  /* check whether the error-percentage is too high (unless in d:) */
-	  if (drill_type != C_DRILL_PRACTICE_ONLY &&
-	      is_error_too_high(chars_typed, errors))
-	    {
-	      sprintf( message, ERROR_TOO_HIGH_MSG, global_error_max );
-	      wait_user (script, message, MODE_DRILL);
+          /* check whether the error-percentage is too high (unless in d:) */
+          if (drill_type != C_DRILL_PRACTICE_ONLY &&
+              is_error_too_high(chars_typed, errors))
+            {
+              sprintf( message, ERROR_TOO_HIGH_MSG, global_error_max );
+              wait_user (script, message, MODE_DRILL);
 
-	      /* check for F-command */
-	      if (global_on_failure_label != NULL)
-		{
-		  /* move to the label position in the file */
-		  if (fseek(script, global_on_failure_label->offset, SEEK_SET )
-		      == -1)
-		    fatal_error( _("internal error: fseek"), NULL );
-		  global_line_counter = global_on_failure_label->line_count;
-		  /* tell the user about the misery :) */
-		  sprintf(message,SKIPBACK_VIA_F_MSG,
-			  global_on_failure_label->label);
-		  /* reset value unless persistent */
-		  if (!global_on_failure_label_persistent)
-		    global_on_failure_label = NULL;
-		  wait_user (script, message, MODE_DRILL);
-		  seek_done = TRUE;
-		  break;
-		}
+              /* check for F-command */
+              if (global_on_failure_label != NULL)
+                {
+                  /* move to the label position in the file */
+                  if (fseek(script, global_on_failure_label->offset, SEEK_SET )
+                      == -1)
+                    fatal_error( _("internal error: fseek"), NULL );
+                  global_line_counter = global_on_failure_label->line_count;
+                  /* tell the user about the misery :) */
+                  sprintf(message,SKIPBACK_VIA_F_MSG,
+                          global_on_failure_label->label);
+                  /* reset value unless persistent */
+                  if (!global_on_failure_label_persistent)
+                    global_on_failure_label = NULL;
+                  wait_user (script, message, MODE_DRILL);
+                  seek_done = TRUE;
+                  break;
+                }
 
-	      continue;
-	    }
-	}
+              continue;
+            }
+        }
 
       /* ask the user whether he/she wants to repeat or exit */
-      if ( c == ASCII_ESC && cl_no_skip ) /* honor --no-skip */
-	c = do_query_repeat (script, FALSE);
+      if ( rc == ASCII_ESC && cl_no_skip ) /* honor --no-skip */
+        rc = do_query_repeat (script, FALSE);
       else
-	c = do_query_repeat (script, TRUE);
-      if (c == 'E') {
-	seek_done = TRUE;
-	break;
+        rc = do_query_repeat (script, TRUE);
+      if (rc == 'E') {
+        seek_done = TRUE;
+        break;
       }
-      if (c == 'N')
-	break;
+      if (rc == 'N')
+        break;
 
     }
 
   /* free the malloced memory */
   free( data );
+  free( wideData );
 
   /* reset global_error_max */
   if (!global_error_max_persistent)
@@ -966,7 +1020,7 @@ do_speedtest( FILE *script, char *line ) {
   char	*data = NULL;		 /* data string */
   int	lines_count = 0;	 /* measures exercise length */
   int	rc;			 /* curses char typed */
-  char	c=0, *p;		 /* char typed and line ptr */
+  wchar_t  *widep, *wideData;
   long	start_time=0, end_time;	 /* timing variables */
   char	message[MAX_WIN_LINE];	 /* message buffer */
   char	drill_type;		 /* note of the drill type */
@@ -980,10 +1034,28 @@ do_speedtest( FILE *script, char *line ) {
   /* get the complete exercise into a single string */
   data = buffer_command( script, line );
 
+  int numChars = mbstowcs(NULL, data, 0);
+  wideData = malloc((numChars+1) * sizeof(wchar_t));
+  int convresult = mbstowcs(wideData, data, numChars+1);
+  if (convresult != numChars)
+    fatal_error(_("couldn't convert UTF-8 to wide characters"), line);
+
+  /*
+  fprintf(F, "convresult=%d\n", convresult);
+  fprintf(F, "wideData='%ls'\n", wideData);
+  int i;
+  for (i = 0; i <= numChars; i++) {
+    fprintf(F, "wideData[%d]=%d\n", i, wideData[i]);
+  }
+  */
+
   /* count the lines in this exercise, and check the result
      against the screen length */
-  for ( p = data, lines_count = 0; *p != ASCII_NULL; p++ )
-    if ( *p == ASCII_NL) lines_count++;
+  for ( widep = wideData, lines_count = 0; *widep != ASCII_NULL; widep++ )
+    {
+      if ( *widep == ASCII_NL)
+        lines_count++;
+    }
   if ( DP_TOP_LINE + lines_count > LINES )
     fatal_error( _("data exceeds screen length"), line );
 
@@ -999,197 +1071,201 @@ do_speedtest( FILE *script, char *line ) {
       /* display speed test pattern */
       linenum = DP_TOP_LINE;
       move( linenum, 0 ); clrtobot();
-      for ( p = data; *p != ASCII_NULL; p++ )
-	{
-	  if ( *p != ASCII_NL )
-	    ADDCH( *p );
-	  else
-	    {
-	      /* newline - move down the screen */
-	      linenum++;
-	      move( linenum, 0 );
-	    }
-	}
+      for ( widep = wideData; *widep != ASCII_NULL; widep++ )
+        {
+          if ( *widep != ASCII_NL )
+            {
+              wideaddch(*widep);
+            }
+          else
+            {
+              /* newline - move down the screen */
+              linenum++;
+              move( linenum, 0 );
+            }
+        }
       move( MESSAGE_LINE, COLS - strlen( MODE_SPEEDTEST ) - 2 );
       ADDSTR_REV( MODE_SPEEDTEST );
 
       /* run the data */
       linenum = DP_TOP_LINE;
       move( linenum, 0 );
-      for ( p = data; *p == ASCII_SPACE && *p != ASCII_NULL; p++ )
-	ADDCH( *p );
+      for ( widep = wideData; *widep == ASCII_SPACE && *widep != ASCII_NULL; widep++ )
+        wideaddch(*widep);
 
       for ( chars_typed = 0, errors = 0, error_sync = 0;
-	    *p != ASCII_NULL; p++ )
-	{
-	  rc = getch_fl( (*p != ASCII_NL) ? *p : ASCII_SPACE );
-	  c = (char)rc;
+            *widep != ASCII_NULL; widep++ )
+        {
+          rc = getch_fl( (*widep != ASCII_NL) ? *widep : ASCII_SPACE );
+          //c = (char)rc;
 
-#ifdef PDCURSES_ENTER_KEY_FIX
-	  /* this is necessary for DOS: when using raw(), pdcurses 2.4's
-	     getch() returns 0x0D on DOS/Windows  */
-	  if ( c == 0x0D )
-	    rc = c = 0x0A;
+#ifdef PDCURSES_ENTER_KEY_FIX 
+          /* this is necessary for DOS: when using raw(), pdcurses 2.4's
+             getch() returns 0x0D on DOS/Windows  */
+          if ( c == 0x0D )
+            rc = c = 0x0A;
 #endif
 
-	  /* start timer on first char entered */
-	  if ( chars_typed == 0 )
-	    start_time = (long)time( NULL );
-	  chars_typed++;
-	  error_sync--;
+          /* start timer on first char entered */
+          if ( chars_typed == 0 )
+            start_time = (long)time( NULL );
+          chars_typed++;
+          error_sync--;
 
-	  /* check for delete keys if not at line start or
-	     speed test start */
-	  if ( rc == KEY_BACKSPACE || c == ASCII_BS || c == ASCII_DEL )
-	    {
-	      /* just ignore deletes where it's impossible or hard */
-	      if ( p > data && *(p-1) != ASCII_NL
-		   && *(p-1) != ASCII_TAB ) {
-		/* back up one character */
-		ADDCH( ASCII_BS ); p--;
-	      }
-	      p--;		/* defeat p++ coming up */
-	      continue;
-	    }
+          /* check for delete keys if not at line start or
+             speed test start */
+          if ( rc == KEY_BACKSPACE || rc == ASCII_BS || rc == ASCII_DEL )
+            {
+              /* just ignore deletes where it's impossible or hard */
+              if ( widep > wideData && *(widep-1) != ASCII_NL && *(widep-1) != ASCII_TAB ) {
+                /* back up one character */
+                ADDCH( ASCII_BS ); widep--;
+              }
+              widep--;		/* defeat p++ coming up */
+              continue;
+            }
 
-	  /* ESC is "give up"; ESC at beginning of exercise is "skip lesson"
-	     (this is handled outside the for loop) */
-	  if ( c == ASCII_ESC )
-	    break;
+          /* ESC is "give up"; ESC at beginning of exercise is "skip lesson"
+             (this is handled outside the for loop) */
+          if ( rc == ASCII_ESC )
+            break;
 
-	  /* check that the character was correct */
-	  if ( c == *p
-	       || ( cl_wp_emu && c == ASCII_SPACE
-		    && *p == ASCII_NL ))
-	    ADDCH( c );
-	  else
-	    {
-	      /* try to sync with typist behind */
-	      if ( error_sync >= 0 && p > data && c == *(p-1) )
-		{
-		  p--;
-		  continue;
-		}
+          /* check that the character was correct */
+          if ( rc == *widep
+               || ( cl_wp_emu && rc == ASCII_SPACE && *widep == ASCII_NL ))
+            wideaddch(rc);
+          else
+            {
+              /* try to sync with typist behind */
+              if ( error_sync >= 0 && widep > wideData && rc == *(widep-1) )
+                {
+                  widep--;
+                  continue;
+                }
 
-	      ADDCH_REV( *p == ASCII_NL ?
-			 DRILL_NL_ERR : (unsigned char)*p );
-	      if ( ! cl_silent ) {
-			do_bell();
-	      }
-	      errors++;
-	      error_sync = 1;
+              wideaddch_rev(*widep == ASCII_NL ? DRILL_NL_ERR : *widep);
 
-	      /* try to sync with typist ahead */
-	      if ( c == *(p+1) )
-		{
-		  ungetch( c );
-		  error_sync++;
-		}
-	    }
+              if ( ! cl_silent ) {
+                do_bell();
+              }
+              errors++;
+              error_sync = 1;
 
-	  /* move screen location if newline */
-	  if ( *p == ASCII_NL )
-	    {
-	      linenum++;
-	      move( linenum, 0 );
-	    }
+              /* try to sync with typist ahead */
+              if ( rc == *(widep+1) )
+                {
+                  ungetch( rc );
+                  error_sync++;
+                }
+            }
 
-	  /* perform any other word processor like adjustments */
-	  if ( cl_wp_emu )
-	    {
-	      if ( c == ASCII_SPACE )
-		{
-		  while ( *(p+1) == ASCII_SPACE
-			  && *(p+1) != ASCII_NULL )
-		    {
-		      p++; ADDCH( *p );
-		    }
-		}
-	      else if ( c == ASCII_NL )
-		{
-		  while ( ( *(p+1) == ASCII_SPACE
-			    || *(p+1) == ASCII_NL )
-			  && *(p+1) != ASCII_NULL )
-		    {
-		      p++; ADDCH( *p );
-		      if ( *p == ASCII_NL )
-			{
-			  linenum++;
-			  move( linenum, 0 );
-			}
-		    }
-		}
-	      else if ( isalpha(*p) && *(p+1) == ASCII_DASH
-			&& *(p+2) == ASCII_NL )
-		{
-		  p++; ADDCH( *p );
-		  p++; ADDCH( *p );
-		  linenum++;
-		  move( linenum, 0 );
-		}
-	    }
-	}
+          /* move screen location if newline */
+          if ( *widep == ASCII_NL )
+            {
+              linenum++;
+              move( linenum, 0 );
+            }
+
+          /* perform any other word processor like adjustments */
+          if ( cl_wp_emu )
+            {
+              if ( rc == ASCII_SPACE )
+                {
+                  while ( *(widep+1) == ASCII_SPACE
+                          && *(widep+1) != ASCII_NULL )
+                    {
+                      widep++; 
+                      wideaddch(*widep);
+                    }
+                }
+              else if ( rc == ASCII_NL )
+                {
+                  while ( ( *(widep+1) == ASCII_SPACE
+                            || *(widep+1) == ASCII_NL )
+                          && *(widep+1) != ASCII_NULL )
+                    {
+                      widep++;
+                      wideaddch(*widep);
+                      if ( *widep == ASCII_NL )
+                        {
+                          linenum++;
+                          move( linenum, 0 );
+                        }
+                    }
+                }
+              else if ( isalpha(*widep) && *(widep+1) == ASCII_DASH
+                        && *(widep+2) == ASCII_NL )
+                {
+                  widep++; 
+                  wideaddch(*widep);
+                  widep++;
+                  wideaddch(*widep);
+                  linenum++;
+                  move( linenum, 0 );
+                }
+            }
+        }
 
 
       /* ESC not at the beginning of the lesson: "give up" */
-      if ( c == ASCII_ESC && chars_typed != 1)
-	continue; /* repeat */
+      if ( rc == ASCII_ESC && chars_typed != 1)
+        continue; /* repeat */
 
       /* skip timings and don't check error-pct if exit was through ESC */
-      if ( c != ASCII_ESC )
-	{
-	  /* display timings */
-	  end_time = (long)time( NULL );
-	  display_speed( chars_typed, end_time - start_time,
-			 errors );
+      if ( rc != ASCII_ESC )
+        {
+          /* display timings */
+          end_time = (long)time( NULL );
+          display_speed( chars_typed, end_time - start_time,
+                         errors );
 
-	  /* check whether the error-percentage is too high (unless in s:) */
-	  if (drill_type != C_SPEEDTEST_PRACTICE_ONLY &&
-	      is_error_too_high(chars_typed, errors))
-	    {
-	      sprintf( message, ERROR_TOO_HIGH_MSG, global_error_max );
-	      wait_user (script, message, MODE_SPEEDTEST);
+          /* check whether the error-percentage is too high (unless in s:) */
+          if (drill_type != C_SPEEDTEST_PRACTICE_ONLY &&
+              is_error_too_high(chars_typed, errors))
+            {
+              sprintf( message, ERROR_TOO_HIGH_MSG, global_error_max );
+              wait_user (script, message, MODE_SPEEDTEST);
 
-	      /* check for F-command */
-	      if (global_on_failure_label != NULL)
-		{
-		  /* move to the label position in the file */
-		  if (fseek(script, global_on_failure_label->offset, SEEK_SET )
-		      == -1)
-		    fatal_error( _("internal error: fseek"), NULL );
-		  global_line_counter = global_on_failure_label->line_count;
-		  /* tell the user about the misery :) */
-		  sprintf(message,SKIPBACK_VIA_F_MSG,
-			  global_on_failure_label->label);
-		  /* reset value unless persistent */
-		  if (!global_on_failure_label_persistent)
-		    global_on_failure_label = NULL;
-		  wait_user (script, message, MODE_SPEEDTEST);
-		  seek_done = TRUE;
-		  break;
-		}
+              /* check for F-command */
+              if (global_on_failure_label != NULL)
+                {
+                  /* move to the label position in the file */
+                  if (fseek(script, global_on_failure_label->offset, SEEK_SET )
+                      == -1)
+                    fatal_error( _("internal error: fseek"), NULL );
+                  global_line_counter = global_on_failure_label->line_count;
+                  /* tell the user about the misery :) */
+                  sprintf(message,SKIPBACK_VIA_F_MSG,
+                          global_on_failure_label->label);
+                  /* reset value unless persistent */
+                  if (!global_on_failure_label_persistent)
+                    global_on_failure_label = NULL;
+                  wait_user (script, message, MODE_SPEEDTEST);
+                  seek_done = TRUE;
+                  break;
+                }
 
-	      continue;
-	    }
-	}
+              continue;
+            }
+        }
 
       /* ask the user whether he/she wants to repeat or exit */
-      if ( c == ASCII_ESC && cl_no_skip ) /* honor --no-skip */
-	c = do_query_repeat (script, FALSE);
+      if ( rc == ASCII_ESC && cl_no_skip ) /* honor --no-skip */
+        rc = do_query_repeat (script, FALSE);
       else
-	c = do_query_repeat (script, TRUE);
-      if (c == 'E') {
-	seek_done = TRUE;
-	break;
+        rc = do_query_repeat (script, TRUE);
+      if (rc == 'E') {
+        seek_done = TRUE;
+        break;
       }
-      if (c == 'N')
-	break;
+      if (rc == 'N')
+        break;
 
     }
 
   /* free the malloced memory */
   free( data );
-
+  free( wideData );
 
   /* reset global_error_max */
   if (!global_error_max_persistent)
