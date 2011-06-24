@@ -55,3 +55,9 @@ void fatal_error (const char *message, const char *line)
     fprintf( stderr, "\n" );
   exit( 1 );
 }
+
+/*
+  Local Variables:
+  tab-width: 8
+  End:
+*/

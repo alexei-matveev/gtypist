@@ -31,6 +31,7 @@
 #include <stdlib.h>
 #include <string.h>
 #include <ctype.h>
+#include <utf8.h>
 
 #include "gettext.h"
 #define _(String) gettext (String)
@@ -107,7 +108,7 @@ void get_script_line( FILE *script, char *line )
         line [strlen (line) - 1] = ASCII_NULL;
 
       // input is UTF-8 !!
-      int numChars = mbstowcs(NULL, line, 0);
+      int numChars = mbslen(line);
 
       if ( numChars < MIN_SCR_LINE )
 	fatal_error( _("data shortage"), line );
@@ -117,7 +118,7 @@ void get_script_line( FILE *script, char *line )
 	   && SCR_COMMAND( line ) != C_GOTO 
 	   && SCR_COMMAND( line ) != C_YGOTO
 	   && SCR_COMMAND( line ) != C_NGOTO
-           && mbstowcs(NULL, SCR_DATA( line ), 0) > COLS )
+           && mbslen(SCR_DATA( line )) > COLS )
 	fatal_error( _("line too long for screen"), line );
     }
 }
@@ -211,3 +212,9 @@ do_exit( FILE *script )
   printf( _("Happy Typing!\n\n") );
   exit( 0 );
 }
+
+/*
+  Local Variables:
+  tab-width: 8
+  End:
+*/

@@ -268,7 +268,7 @@ char *do_menu (FILE *script, char *line)
   /* get the longest description */
   max_width = 0;
   for (i = 0; i < num_items; i++)
-    max_width = max (max_width, strlen (descriptions[i]));
+    max_width = max (max_width, mbslen (descriptions[i]));
 
   /* compute the number of columns */
   columns = COLS / (max_width + 2); /* maximum number of columns possible */
@@ -313,7 +313,7 @@ char *do_menu (FILE *script, char *line)
   // The menu title
   wattron (stdscr, A_BOLD);
   attron (COLOR_PAIR (C_MENU_TITLE));
-  mvwaddstr (stdscr, 2, (80 - strlen (title)) / 2, title);
+  mvwaddstr (stdscr, 2, (80 - mbslen (title)) / 2, title);
   attron (COLOR_PAIR (C_NORMAL));
   wattroff (stdscr, A_BOLD);
 
@@ -349,7 +349,7 @@ char *do_menu (FILE *script, char *line)
 			 start_y + j,
 			 (i + 1) * spacing + i * max_width,
 			 descriptions[idx]);
-	      for (k = max_width - strlen (descriptions[idx]); k > 0; k--)
+	      for (k = max_width - mbslen (descriptions[idx]); k > 0; k--)
 		waddch (stdscr, ' ');
 	    }
 	}
@@ -466,3 +466,9 @@ cleanup:
 
   return NULL;
 }
+
+/*
+  Local Variables:
+  tab-width: 8
+  End:
+*/

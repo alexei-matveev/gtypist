@@ -46,6 +46,7 @@
 #include "script.h"
 #include "error.h"
 #include "gtypist.h"
+#include "utf8.h"
 
 #include "gettext.h"
 #define _(String) gettext (String)
@@ -132,36 +133,6 @@ static short	colour_array[] = {
                                 addch( (unsigned char)X ); \
 				attroff( A_REVERSE ); } while ( 0 )
 #define	ADDCH(X)		addch( (unsigned char) X )
-
-#define CCHARW_MAX	5
-typedef struct
-{
-    attr_t	attr;
-    wchar_t	chars[CCHARW_MAX];
-#if 0
-#undef NCURSES_EXT_COLORS
-#define NCURSES_EXT_COLORS 20110404
-    int		ext_color;	/* color pair, must be more than 16-bits */
-#endif
-}
-cchar_t;
-
-
-void wideaddch(wchar_t c)
-{
-  cchar_t c2;
-  c2.attr = 0;
-  c2.chars[0] = c;
-  c2.chars[1] = L'\0';
-  add_wch(&c2);
-}
-
-void wideaddch_rev(wchar_t c)
-{
-  attron(A_REVERSE);
-  wideaddch(c);
-  attroff(A_REVERSE);
-}
 
 /* command line options/values */
 static bool     cl_error_max_specified = FALSE; /* is --error-max specified? */
@@ -258,14 +229,16 @@ void banner (const char *text)
       text ++;
    text_length = strlen (text);
    if (text_length > 0)
+   {
       while (isspace (text [text_length - 1]))
       {
          text_length --;
 	 if (! text_length)
 	    break;
       }
+   }
 
-   brand_length = strlen (PACKAGE) + strlen (VERSION) + 3,
+   brand_length = mbslen (PACKAGE) + mbslen (VERSION) + 3,
    brand_position = COLS - brand_length,
    text_position = ((COLS - brand_length) > text_length) ?
 		(COLS - brand_length - text_length) / 2 : 0;
@@ -279,9 +252,16 @@ void banner (const char *text)
 
    move (B_TOP_LINE, text_position);
    {
-      int i;
-      for (i = 0; i < text_length; i ++)
-         ADDCH_REV (text [i]);
+     //ADDSTR_REV(text);
+     int numChars = mbstowcs(NULL, text, 0);
+     wchar_t* wideText = malloc((numChars+1) * sizeof(wchar_t));
+     int convresult = mbstowcs(wideText, text, numChars+1);
+     if (convresult != numChars)
+       fatal_error(_("couldn't convert UTF-8 to wide characters"), "?");
+     int i;
+     for (i = 0; i < numChars; i++)
+       wideaddch_rev(wideText[i]);
+     free(wideText);
    }
 
    move (B_TOP_LINE, brand_position);
@@ -490,7 +470,7 @@ static bool wait_user (FILE *script, char *message, char *mode)
 
   /* move to the message line print a prompt */
   move( MESSAGE_LINE, 0 ); clrtoeol();
-  move( MESSAGE_LINE, COLS - strlen( mode ) - 2 );
+  move( MESSAGE_LINE, COLS - mbslen( mode ) - 2 );
   ADDSTR_REV( mode );
   move( MESSAGE_LINE, 0 );
   ADDSTR_REV( message );
@@ -575,17 +555,17 @@ static void display_speed( int total_chars, long elapsed_time, int errcount ) {
     sprintf( message, SPEED_RAW_CPM, cpm );
   else
     sprintf( message, SPEED_RAW_WPM, cpm / (double)5.0 );
-  move( line++, COLS - strlen( message ) - 1 );
+  move( line++, COLS - mbslen( message ) - 1 );
   ADDSTR_REV( message );
   if( cl_scoring_cpm )
     sprintf( message, SPEED_ADJ_CPM, adjusted_cpm );
   else
     sprintf( message, SPEED_ADJ_WPM, adjusted_cpm / (double)5.0 );
-  move( line++, COLS - strlen( message ) - 1 );
+  move( line++, COLS - mbslen( message ) - 1 );
   ADDSTR_REV( message );
   sprintf( message, SPEED_PCT_ERROR,
            (double)100.0 * (double)errcount / (double)total_chars );
-  move( line++, COLS - strlen( message ) - 1 );
+  move( line++, COLS - mbslen( message ) - 1 );
   ADDSTR_REV( message );
   if( had_best_speed )
     {
@@ -593,12 +573,12 @@ static void display_speed( int total_chars, long elapsed_time, int errcount ) {
 	sprintf( message, SPEED_BEST_CPM, best_cpm );
       else
 	sprintf( message, SPEED_BEST_WPM, best_cpm / (double)5.0 );
-      move( line++, COLS - strlen( message ) - 1 );
+      move( line++, COLS - mbslen( message ) - 1 );
       ADDSTR_REV( message );
     }
   if( new_best_speed )
     {
-      move( line++, COLS - strlen( SPEED_BEST_NEW_MSG ) - 1 );
+      move( line++, COLS - mbslen( SPEED_BEST_NEW_MSG ) - 1 );
       ADDSTR_REV( SPEED_BEST_NEW_MSG );
     }
 }
@@ -793,7 +773,7 @@ do_drill( FILE *script, char *line ) {
               move( linenum, 0 );
             }
         }
-      move( MESSAGE_LINE, COLS - strlen( MODE_DRILL ) - 2 );
+      move( MESSAGE_LINE, COLS - mbslen( MODE_DRILL ) - 2 );
       ADDSTR_REV( MODE_DRILL );
 
       /* run the drill */
@@ -833,7 +813,7 @@ do_drill( FILE *script, char *line ) {
 
           /* check that the character was correct */
           if ( rc == *widep ||
-              ( cl_wp_emu && rc == ASCII_SPACE && *widep == ASCII_NL ))
+               ( cl_wp_emu && rc == ASCII_SPACE && *widep == ASCII_NL ))
             {
               if (cl_wp_emu && rc == ASCII_SPACE && *widep == ASCII_NL)
                 chars_in_the_line_typed = 0;
@@ -862,7 +842,7 @@ do_drill( FILE *script, char *line ) {
                   wideaddch_rev( *widep == ASCII_NL ? DRILL_NL_ERR :
                                  (*widep == ASCII_TAB ?
                                   ASCII_TAB : (cl_rev_video_errors ?
-                                           rc : DRILL_CH_ERR)));
+                                               rc : DRILL_CH_ERR)));
                   chars_in_the_line_typed ++;
                 }
 
@@ -1041,12 +1021,12 @@ do_speedtest( FILE *script, char *line ) {
     fatal_error(_("couldn't convert UTF-8 to wide characters"), line);
 
   /*
-  fprintf(F, "convresult=%d\n", convresult);
-  fprintf(F, "wideData='%ls'\n", wideData);
-  int i;
-  for (i = 0; i <= numChars; i++) {
+    fprintf(F, "convresult=%d\n", convresult);
+    fprintf(F, "wideData='%ls'\n", wideData);
+    int i;
+    for (i = 0; i <= numChars; i++) {
     fprintf(F, "wideData[%d]=%d\n", i, wideData[i]);
-  }
+    }
   */
 
   /* count the lines in this exercise, and check the result
@@ -1084,7 +1064,7 @@ do_speedtest( FILE *script, char *line ) {
               move( linenum, 0 );
             }
         }
-      move( MESSAGE_LINE, COLS - strlen( MODE_SPEEDTEST ) - 2 );
+      move( MESSAGE_LINE, COLS - mbslen( MODE_SPEEDTEST ) - 2 );
       ADDSTR_REV( MODE_SPEEDTEST );
 
       /* run the data */
@@ -1333,7 +1313,7 @@ do_query_repeat ( FILE *script, bool allow_next )
 
   /* display the prompt */
   move( MESSAGE_LINE, 0 ); clrtoeol();
-  move( MESSAGE_LINE, COLS - strlen( MODE_QUERY ) - 2 );
+  move( MESSAGE_LINE, COLS - mbslen( MODE_QUERY ) - 2 );
   ADDSTR_REV( MODE_QUERY );
   move( MESSAGE_LINE, 0 );
   if (allow_next)
@@ -1365,7 +1345,7 @@ do_query_repeat ( FILE *script, bool allow_next )
 	  }
 	/* redisplay the prompt */
 	move( MESSAGE_LINE, 0 ); clrtoeol();
-	move( MESSAGE_LINE, COLS - strlen( MODE_QUERY ) - 2 );
+	move( MESSAGE_LINE, COLS - mbslen( MODE_QUERY ) - 2 );
 	ADDSTR_REV( MODE_QUERY );
 	move( MESSAGE_LINE, 0 );
 	if (allow_next)
@@ -2187,7 +2167,7 @@ int main( int argc, char **argv )
      well. Note that the messages (prompts) themselves cannot be
      translated because they are read from the script-file. */
   YN = _("Y/N");
-  if (strlen(YN) != 3 || YN[1] != '/' || !isupper(YN[0]) || !isupper(YN[2]))
+  if (mbslen(YN) != 3 || YN[1] != '/' || !isupper(YN[0]) || !isupper(YN[2]))
     {
       fprintf( stderr,
 	       "%s: i18n problem: invalid value for msgid \"Y/N\": %s\n",
@@ -2197,7 +2177,7 @@ int main( int argc, char **argv )
   /* this is used to translate the keys for Repeat/Next/Exit
      queries. Must be three uppercase letters separated by slashes. */
   RNE = _("R/N/E");
-  if (strlen(RNE) != 5 ||
+  if (mbslen(RNE) != 5 ||
       !isupper(RNE[0]) || RNE[1] != '/' ||
       !isupper(RNE[2]) || RNE[3] != '/' ||
       !isupper(RNE[4]))
@@ -2484,3 +2464,9 @@ void put_best_speed( const char *script_filename,
   free( fixed_script_filename );
   fclose( blfile );
 }
+
+/*
+  Local Variables:
+  tab-width: 8
+  End:
+*/
