@@ -22,16 +22,16 @@ ALL_LINGUAS="cs de es eu fi fr nl ru zh_CN zh_TW"
 
 # Checks for libraries.
 
-AC_CHECK_LIB(curses, wbkgdset,
-	       [AC_DEFINE(HAVE_LIBCURSES, 1, [Is curses available])
-	         HAVE_LIBCURSES=yes])
+#AC_CHECK_LIB(curses, wbkgdset,
+#	       [AC_DEFINE(HAVE_LIBCURSES, 1, [Is curses available])
+#	         HAVE_LIBCURSES=yes])
 
 # Check for ncurses if curses is not found:
 # i.e. on SuSE there are no ncurses* -> curses* links
 
-AC_CHECK_LIB(ncurses, wbkgdset,
-	[AC_DEFINE(HAVE_LIBNCURSES, 1, [Is curses available])
-	         HAVE_LIBNCURSES=yes]
+AC_CHECK_LIB(ncursesw, add_wch,
+	[AC_DEFINE(HAVE_LIBNCURSESW, 1, [Is ncursesw available])
+	         HAVE_LIBNCURSESW=yes]
 		 )
 
 # Checks for header files.
@@ -39,16 +39,18 @@ AC_CHECK_LIB(ncurses, wbkgdset,
 AC_HEADER_STDC
 AC_CHECK_HEADERS([unistd.h alloca.h argz.h errno.h fcntl.h langinfo.h libintl.h limits.h locale.h malloc.h stddef.h stdio_ext.h stdlib.h string.h strings.h sys/param.h unistd.h])
 
-AC_CHECK_HEADER(curses.h, HAVE_CURSES_H=1)
-AC_CHECK_HEADER(ncurses/curses.h, HAVE_NCURSES_H=1)
+#AC_CHECK_HEADER(curses.h, HAVE_CURSES_H=1)
+AC_CHECK_HEADER(ncursesw/ncurses.h, HAVE_NCURSESW_H=1)
 
 # We prefer ncurses to curses if both are found.
-if test -n "$HAVE_NCURSES_H" -a -n "$HAVE_LIBNCURSES";  then
-   LIBS="-lncurses $LIBS"
-elif test -n "$HAVE_CURSES_H" -a -n "$HAVE_LIBCURSES"; then
-   LIBS="-lcurses $LIBS"
+dnl if test -n "$HAVE_NCURSES_H" -a -n "$HAVE_LIBNCURSES";  then
+dnl    LIBS="-lncurses $LIBS"
+dnl elif test -n "$HAVE_CURSES_H" -a -n "$HAVE_LIBCURSES"; then
+dnl    LIBS="-lcurses $LIBS"
+if test -n "$HAVE_NCURSESW_H" -a -n "$HAVE_LIBNCURSESW";  then
+       LIBS="-lncursesw $LIBS"
 else
-   echo -e "Error:  both library and header files for either curses or ncurses"\
+   echo -e "Error:  both library and header files for ncursesw"\
    	"library\nis required to build this package.  See INSTALL file for"\
 	"further information."
    exit 1;
