@@ -1,4 +1,9 @@
-2011-03-24  Tim marston <edam@waxworlds.org>
+2011-06-28  Tim Marston <edam@waxworlds.org>
+
+	* gtypist.es.texi: added, thanks to smc <smc@manticore.es> for the good
+	  work.
+
+2011-03-24  Tim Marston <edam@waxworlds.org>
 
 	* gtypist.cs.texi: (renamed from gtypist-cs.texi) specified the wrong
 	  filename for it's .info which prevented make install from running
