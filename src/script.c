@@ -109,7 +109,8 @@ void get_script_line( FILE *script, char *line )
 
       // input is UTF-8 !!
       int numChars = mbslen(line);
-
+      if (numChars == -1)
+        fatal_error( _("Invalid multibyte sequence (wrong encoding?)"), line);
       if ( numChars < MIN_SCR_LINE )
 	fatal_error( _("data shortage"), line );
       if ( SCR_SEP( line ) != C_SEP )

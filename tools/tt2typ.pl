@@ -21,6 +21,9 @@ use strict;
 use Cwd; # Cwd::getcwd
 use gtypist;
 
+sub read_lesson_index($);
+sub convert_lesson($$*);
+
 # configurable variables
 my $lines_per_drill = 4; # 1-11 for [Dd]:, 1-22 for [Ss]:
 my $drill_type = "D:"; # [DdSs]
@@ -50,7 +53,8 @@ if ($drill_type eq "D:" || $drill_type eq "d:") {
 if (!defined($ARGV[0]) || !(-d $ARGV[0])) {
     die "You must specify a data-subdirectory of tipptrainer " .
 	"as the 1st argument.\n" . 
-	"For example: 'tt2typ.pl /mnt/src/tipptrainer-0.3.3/data/german/'.\n";
+	"For example: 'tt2typ.pl ~/tipptrainer-0.3.3/data/german/'.\n" .
+        "(you probably want data/german because the english lessons are incomplete)\n";
 }
 # remove trailing '/'
 if ($ARGV[0] =~ /\/$/) {
@@ -105,7 +109,7 @@ while (-f "$datadir/lektion.$lesson_counter")
 
 --$lesson_counter;
 generate_jump_table($lesson_counter, \*TYPFILE);
-generate_menu("tipptrainer 0.4 lessons",
+generate_menu("tipptrainer 0.6.0 lessons",
 	      $lesson_counter, \*TYPFILE, @lesson_names);
 
 close(TYPFILE) || die "Couldn't close $typfilename: $!";
@@ -120,7 +124,7 @@ sub read_lesson_index($)
 	die "Couldn't open $_[0] for reading: $!";
     while (defined($line = <TTFILE>))
     {
-	$line =~ /^Lektion ([0-9]+) (.*)$/;
+	$line =~ /^([0-9]+) (.*)$/;
 	$lesson_names[$1] = "Lesson $1: $2";
     }
     close(TTFILE) || die "Couldn't close $_[0]: $!";
@@ -170,5 +174,5 @@ sub convert_lesson($$*)
 }
 
 # Local Variables:
-# compile-command: "./tt2typ.pl /mnt/src/tipptrainer-0.3.3/data/german/"
+# compile-command: "./tt2typ.pl ~/src/tipptrainer-0.6.0/data/german/"
 # End:
