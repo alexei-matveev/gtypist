@@ -1,3 +1,10 @@
+2011-06-XX: Felix Natter <fnatter@gmx.net>
+	* src/*.[ch]: compile with libncursesw, use utf-8 as primary charset
+	* tools/ktouch2typ.pl: add support for ktouch 1.6 XML lessons (utf-8)
+	  and convert them (lessons/*.ktouch.typ)
+	* tools/tt2typ.pl: add support for tipptrainer 0.6.0 and convert
+	  german tipptrainer lesson to lessons/ttde.typ (utf-8)
+
 2011-06-28  Tim Marston <edam@waxworlds.org>
 
 	* gtypist.es.texi: added, thanks to smc <smc@manticore.es> for the good
