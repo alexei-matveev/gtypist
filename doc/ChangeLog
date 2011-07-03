@@ -3,6 +3,8 @@
           (hope that this is correct, please test)
         * lessons/esp.typ: convert esp.typ (Spanish) from iso8859-1 to utf-8
           (hope that this is correct, please test)
+	* lessons/ru.typ: convert ru.typ (Russian) from KOI8-R to utf-8
+          (hope that this is correct, please test)
 
 2011-06-XX: Felix Natter <fnatter@gmx.net>
 	* src/*.[ch]: compile with libncursesw, use utf-8 as primary charset
