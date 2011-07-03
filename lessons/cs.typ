@@ -1,23 +1,23 @@
 T:
- :Vítáme vás v programu GNU Typist urèeném k vıuce správného
- :psaní na klávesnici v¹emi deseti prsty. 
+ :VÃ­tÃ¡me vÃ¡s v programu GNU Typist urÄenÃ©m k vÃ½uce sprÃ¡vnÃ©ho
+ :psanÃ­ na klÃ¡vesnici vÅ¡emi deseti prsty. 
  :
- :Program je urèen k vıuce klávesnice QWERTY, aèkoliv jej lze 
- :pou¾ít i pro QWERTZ. Podrobnosti najdete v nápovìdì (stisk
- :F11 v hlavním menu).
+ :Program je urÄen k vÃ½uce klÃ¡vesnice QWERTY, aÄkoliv jej lze 
+ :pouÅ¾Ã­t i pro QWERTZ. Podrobnosti najdete v nÃ¡povÄ›dÄ› (stisk
+ :F11 v hlavnÃ­m menu).
  :
- :Pokud jste je¹tì nikdy ¾ádnı kurz neabsolvovali, doporuèujeme 
- :zaèít se sérií T, která vám v¹e dùkladnì vysvìtlí, pøedvede 
- :a procvièí. Je dost pravdìpodobné, ¾e se vám budou jednotlivá 
- :písmenka ze zaèátku plést a v takovém pøípadì mù¾ete sérii
- :T doplòovat cvièeními ze série U. Pokroèilej¹í lekce ze série
- :U vám také mohou pomoci s tréningem rychlosti a pøesnosti.
- :Kdy¾ ji¾ budete ovládat techniku psaní, doporuèujeme vám
- :sérii procvièovacích testù M a rychlostních testù S.
- :Úplnì nezávisle na pøedchozím jsme pro vás také pøipravili 
- :lekce ovládání numerické klávesnice, které najdete 
- :pod písmenem N.
- :	Pøejeme hodnì úspìchù. 
+ :Pokud jste jeÅ¡tÄ› nikdy Å¾Ã¡dnÃ½ kurz neabsolvovali, doporuÄujeme 
+ :zaÄÃ­t se sÃ©riÃ­ T, kterÃ¡ vÃ¡m vÅ¡e dÅ¯kladnÄ› vysvÄ›tlÃ­, pÅ™edvede 
+ :a procviÄÃ­. Je dost pravdÄ›podobnÃ©, Å¾e se vÃ¡m budou jednotlivÃ¡ 
+ :pÃ­smenka ze zaÄÃ¡tku plÃ©st a v takovÃ©m pÅ™Ã­padÄ› mÅ¯Å¾ete sÃ©rii
+ :T doplÅˆovat cviÄenÃ­mi ze sÃ©rie U. PokroÄilejÅ¡Ã­ lekce ze sÃ©rie
+ :U vÃ¡m takÃ© mohou pomoci s trÃ©ningem rychlosti a pÅ™esnosti.
+ :KdyÅ¾ jiÅ¾ budete ovlÃ¡dat techniku psanÃ­, doporuÄujeme vÃ¡m
+ :sÃ©rii procviÄovacÃ­ch testÅ¯ M a rychlostnÃ­ch testÅ¯ S.
+ :ÃšplnÄ› nezÃ¡visle na pÅ™edchozÃ­m jsme pro vÃ¡s takÃ© pÅ™ipravili 
+ :lekce ovlÃ¡dÃ¡nÃ­ numerickÃ© klÃ¡vesnice, kterÃ© najdete 
+ :pod pÃ­smenem N.
+ :	PÅ™ejeme hodnÄ› ÃºspÄ›chÅ¯. 
 #==============================================================================
 # Combined series file
 #==============================================================================
@@ -589,7 +589,7 @@ G:_Q_S_Q5
 # Lekce series Q menu
 #------------------------------------------------------------------------------
 *:_Q_MENU
-M: UP=__SERIESMENU "Série Q obsahuje tìchto 5 lekcí"
+M: UP=__SERIESMENU "SÃ©rie Q obsahuje tÄ›chto 5 lekcÃ­"
  :_Q_M_Q1 "Lekce Q1     a s d f g h j k l ;"
  :_Q_M_Q2 "Lekce Q2     h g o u n . t"
  :_Q_M_Q3 "Lekce Q3     y r c , ? : p"
@@ -637,13 +637,13 @@ G:_R_MENU
 *:_R_R_L0
 #                                                              ../orig/r.typ:4
 T:
- :V této sérii lekcí si zopakujeme kurz správného psaní,
- :budeme postupnì pøidávat písmena a zamìøíme se na rychlost
- :a pøesnost.
+ :V tÃ©to sÃ©rii lekcÃ­ si zopakujeme kurz sprÃ¡vnÃ©ho psanÃ­,
+ :budeme postupnÄ› pÅ™idÃ¡vat pÃ­smena a zamÄ›Å™Ã­me se na rychlost
+ :a pÅ™esnost.
 
 #                                                              ../orig/r.typ:5
-I:F, J - levım a pravım ukazováèkem
- :D, K - levı a pravı prostøedník.
+I:F, J - levÃ½m a pravÃ½m ukazovÃ¡Äkem
+ :D, K - levÃ½ a pravÃ½ prostÅ™ednÃ­k.
 *:_R_R_L1
 #                                                              ../orig/r.typ:6
 D:f f f f f f f f f f f f f f f f f f f f f f f
@@ -656,8 +656,8 @@ D:f f f f f f f f f f f f f f f f f f f f f f f
  :fj fj fj fj fj fj fj fj fj fj fj fj fj fj fj
 
 #                                                              ../orig/r.typ:7
-I:F, J - levım a pravım ukazováèkem
- :D, K - levı a pravı prostøedník.
+I:F, J - levÃ½m a pravÃ½m ukazovÃ¡Äkem
+ :D, K - levÃ½ a pravÃ½ prostÅ™ednÃ­k.
 *:_R_R_L2
 #                                                              ../orig/r.typ:8
 D:dk dk dk dk dk dk dk dk dk dk dk dk dk dk dk
@@ -670,7 +670,7 @@ D:dk dk dk dk dk dk dk dk dk dk dk dk dk dk dk
  :jk kj jk kj jk kj jk kj jk kj jk kj jk kj jk
 
 #                                                              ../orig/r.typ:9
-I:Sna¾te se psát rytmicky i za cenu ni¾¹í rychlosti.
+I:SnaÅ¾te se psÃ¡t rytmicky i za cenu niÅ¾Å¡Ã­ rychlosti.
 *:_R_R_L3
 #                                                             ../orig/r.typ:10
 D:fk kf fk kf fk kf fk kf fk kf fk kf fk kf fk kf
@@ -684,7 +684,7 @@ D:fk kf fk kf fk kf fk kf fk kf fk kf fk kf fk kf
  :dkf kfd dkf kfd dkf kfd dkf kfd dkf kfd dkf kfd
 
 #                                                             ../orig/r.typ:11
-I:Je¹tì ètyøpísmenné kombinace
+I:JeÅ¡tÄ› ÄtyÅ™pÃ­smennÃ© kombinace
 *:_R_R_L4
 #                                                             ../orig/r.typ:13
 D:jfd kjf jfd kjf jfd kjf jfd kjf jfd kjf jfd kjf
@@ -696,8 +696,8 @@ D:jfd kjf jfd kjf jfd kjf jfd kjf jfd kjf jfd kjf
  :fjdk jfdk fjdk jfdk fjdk jfdk fjdk jfdk fjdk jf
 
 #                                                             ../orig/r.typ:14
-I:Písmeno S pí¹eme levım prsteníkem,
- :písmeno L prsteníkem pravım.
+I:PÃ­smeno S pÃ­Å¡eme levÃ½m prstenÃ­kem,
+ :pÃ­smeno L prstenÃ­kem pravÃ½m.
 *:_R_R_L5
 #                                                             ../orig/r.typ:17
 D:f j d k f j d k f j d k f j d k f j d k f j d kf
@@ -711,7 +711,7 @@ D:f j d k f j d k f j d k f j d k f j d k f j d kf
  :sf fs sf fs sf fs sf fs sf fs sf fs sf fs sf fs
 
 #                                                             ../orig/r.typ:18
-I:Opìt klademe dùraz na pravidelnost úhozù.
+I:OpÄ›t klademe dÅ¯raz na pravidelnost ÃºhozÅ¯.
 *:_R_R_L6
 #                                                             ../orig/r.typ:22
 D:lf fl lf fl lf fl lf fl lf fl lf fl lf fl lf fl
@@ -726,7 +726,7 @@ D:lf fl lf fl lf fl lf fl lf fl lf fl lf fl lf fl
 
 
 #                                                             ../orig/r.typ:23
-I:Máte správnì pokrèené prsty?
+I:MÃ¡te sprÃ¡vnÄ› pokrÄenÃ© prsty?
 *:_R_R_L7
 #                                                             ../orig/r.typ:28
 D:lkj fds lkj fds lkj fds lkj fds lkj fds lkj fds lkj
@@ -737,60 +737,60 @@ D:lkj fds lkj fds lkj fds lkj fds lkj fds lkj fds lkj
  :dsf klj dsf sfj ljk sfj ljk sfj ljk sfj ljk sfj ljk
  :sfj ljk sfj ljk sfj ljk sfj
 
-I:Písmeno A pí¹eme levım malíèkem, 
- :písmeno Ù malíèkem pravım.
+I:PÃ­smeno A pÃ­Å¡eme levÃ½m malÃ­Äkem, 
+ :pÃ­smeno Å® malÃ­Äkem pravÃ½m.
 *:_R_R_L8
 #                                                             ../orig/r.typ:43
 D:f j d k s l f j d k s l f j d k s l f j d k s l f
  :fj jf dk kd sl ls fj jf dk kd sl ls fj jf dk kd sl
  :fds jkl sdf lkj fds jkl sdf lkj fds jkl sdf lkj fds
  :fsd jlk sfd ljk fsd jlk sfd ljk fsd jlk sfd ljk fsd
- :a ù a ù a ù a ù a ù a ù a ù a ù a ù a ù a ù a ù a ù
- :f j d k s l a ù f j d k s l a ù f j d k s l a ù f j
- :fa jù fa jù fa jù fa jù fa jù fa jù fa jù fa jù fa
- :da kù da kù da kù da kù da kù da kù da kù da kù da
+ :a Å¯ a Å¯ a Å¯ a Å¯ a Å¯ a Å¯ a Å¯ a Å¯ a Å¯ a Å¯ a Å¯ a Å¯ a Å¯
+ :f j d k s l a Å¯ f j d k s l a Å¯ f j d k s l a Å¯ f j
+ :fa jÅ¯ fa jÅ¯ fa jÅ¯ fa jÅ¯ fa jÅ¯ fa jÅ¯ fa jÅ¯ fa jÅ¯ fa
+ :da kÅ¯ da kÅ¯ da kÅ¯ da kÅ¯ da kÅ¯ da kÅ¯ da kÅ¯ da kÅ¯ da
 
 
 #                                                             ../orig/r.typ:44
-I:Nezvedejte ostatní prsty z jejich základní polohy.
+I:Nezvedejte ostatnÃ­ prsty z jejich zÃ¡kladnÃ­ polohy.
 *:_R_R_L9
 #                                                             ../orig/r.typ:49
-D:sa lù sa lù sa lù sa lù sa lù sa lù sa lù sa lù
+D:sa lÅ¯ sa lÅ¯ sa lÅ¯ sa lÅ¯ sa lÅ¯ sa lÅ¯ sa lÅ¯ sa lÅ¯
  :ja ka la ja ka la ja ka la ja ka la ja ka la ja
- :fù dù sù fù dù sù fù dù sù fù dù sù fù dù sù fù
+ :fÅ¯ dÅ¯ sÅ¯ fÅ¯ dÅ¯ sÅ¯ fÅ¯ dÅ¯ sÅ¯ fÅ¯ dÅ¯ sÅ¯ fÅ¯ dÅ¯ sÅ¯ fÅ¯
  :fa da sa fa da sa fa da sa fa da sa fa da sa fa
- :jù kù lù jù kù lù jù kù lù jù kù lù jù kù lù jù
+ :jÅ¯ kÅ¯ lÅ¯ jÅ¯ kÅ¯ lÅ¯ jÅ¯ kÅ¯ lÅ¯ jÅ¯ kÅ¯ lÅ¯ jÅ¯ kÅ¯ lÅ¯ jÅ¯
  :as ad af as ad af as ad af as ad af as ad af as
- :ùl ùk ùj ùl ùk ùj ùl ùk ùj ùl ùk ùj ùl ùk ùj ùl
+ :Å¯l Å¯k Å¯j Å¯l Å¯k Å¯j Å¯l Å¯k Å¯j Å¯l Å¯k Å¯j Å¯l Å¯k Å¯j Å¯l
  :jas sad jas sad jas sad jas sad jas sad jas sad
 
 #                                                             ../orig/r.typ:50
-I:Pokraèujte v procvièování.
+I:PokraÄujte v procviÄovÃ¡nÃ­.
 *:_R_R_L10
 #                                                             ../orig/r.typ:56
 D:jak jsa jak jsa jak jsa jak jsa jak jsa jak jsa
- :kùl lùj kùl lùj kùl lùj kùl lùj kùl lùj kùl lùj
+ :kÅ¯l lÅ¯j kÅ¯l lÅ¯j kÅ¯l lÅ¯j kÅ¯l lÅ¯j kÅ¯l lÅ¯j kÅ¯l lÅ¯j
  :jal sak jal sak jal sak jal sak jal sak jal sak
  :dal lak dal lak dal lak dal lak dal lak dal lak
- :sladù klasù sladù klasù sladù klasù sladù klasù
+ :sladÅ¯ klasÅ¯ sladÅ¯ klasÅ¯ sladÅ¯ klasÅ¯ sladÅ¯ klasÅ¯
  :sklad kajak sklad kajak sklad kajak sklad kajak
- :kladù kladl kladù kladl kladù kladl kladù kladl
- :jas kùl jak lùj jal dùl sak lak sùl dal klù jas
- :kladù sladù klasù sklad kajak kladl sladù klasù
+ :kladÅ¯ kladl kladÅ¯ kladl kladÅ¯ kladl kladÅ¯ kladl
+ :jas kÅ¯l jak lÅ¯j jal dÅ¯l sak lak sÅ¯l dal klÅ¯ jas
+ :kladÅ¯ sladÅ¯ klasÅ¯ sklad kajak kladl sladÅ¯ klasÅ¯
 
 #                                                             ../orig/r.typ:57
-I:Písmena G a H pí¹eme ukazováèky vychılením 
- :ze základní polohy.
+I:PÃ­smena G a H pÃ­Å¡eme ukazovÃ¡Äky vychÃ½lenÃ­m 
+ :ze zÃ¡kladnÃ­ polohy.
 *:_R_R_L11
 #                                                             ../orig/r.typ:58
-D:f j d k s l a ù f j d k s l a ù f j d k s l a ù
- :fa jù da kù sa lù fa jù da kù sa lù fa jù da kù
- :ja ka la fù dù sù ja ka la fù dù sù ja ka la fù
- :as ad af ùl ùk ùj as ad af ùl ùk ùj as ad af ùl
- :jas kùl jak lùj sak dùl lak jas kùl jak lùj sak
- :kladù sladù klasù sklad kajak kladù sladù klasù
+D:f j d k s l a Å¯ f j d k s l a Å¯ f j d k s l a Å¯
+ :fa jÅ¯ da kÅ¯ sa lÅ¯ fa jÅ¯ da kÅ¯ sa lÅ¯ fa jÅ¯ da kÅ¯
+ :ja ka la fÅ¯ dÅ¯ sÅ¯ ja ka la fÅ¯ dÅ¯ sÅ¯ ja ka la fÅ¯
+ :as ad af Å¯l Å¯k Å¯j as ad af Å¯l Å¯k Å¯j as ad af Å¯l
+ :jas kÅ¯l jak lÅ¯j sak dÅ¯l lak jas kÅ¯l jak lÅ¯j sak
+ :kladÅ¯ sladÅ¯ klasÅ¯ sklad kajak kladÅ¯ sladÅ¯ klasÅ¯
  :g h g h g h g h g h g h g h g h g h g h g h g h
- :f j d k s l a ù g h f j d k s l a ù g h f j d k
+ :f j d k s l a Å¯ g h f j d k s l a Å¯ g h f j d k
 
 G:_R_E_R1
 #------------------------------------------------------------------------------
@@ -799,49 +799,49 @@ G:_R_E_R1
 *:R2
 *:_R_S_R2
 #                                                             ../orig/r.typ:62
-I:Pokraèujeme s písmeny G a H.
+I:PokraÄujeme s pÃ­smeny G a H.
 *:_R_R_L12
 #                                                             ../orig/r.typ:63
 D:fgf jhj fgf jhj fgf jhj fgf jhj fgf jhj fgf
  :dgf khj dgf khj dgf khj dgf khj dgf khj dgf
  :sgf lhj sgf lhj sgf lhj sgf lhj sgf lhj sgf
- :agf ùhj agf ùhj agf ùhj agf ùhj agf ùhj agf
+ :agf Å¯hj agf Å¯hj agf Å¯hj agf Å¯hj agf Å¯hj agf
  :kg ha kg ha kg ha kg ha kg ha kg ha kg ha
  :ag hl ag hl ag hl ag hl ag hl ag hl ag hl
 
 #                                                             ../orig/r.typ:64
-I:Zkusíme slova.
+I:ZkusÃ­me slova.
 *:_R_R_L13
 #                                                             ../orig/r.typ:65
 D:gag hala gag hala gag hala gag hala gag hala
  :haf has haf has haf has haf has haf has haf
- :halas hùlka halas hùlka halas hùlka halas
- :halda hlasù halda hlasù halda hlasù halda
- :jahùdka lahùdka jahùdka lahùdka jahùdka
- :jas has jak gag jal hal kùl gal lùj aga
- :kladù halas sladù halda klasù hùlka kajak
- :kladù halas skladù jahùdka klasù hùlka aga
+ :halas hÅ¯lka halas hÅ¯lka halas hÅ¯lka halas
+ :halda hlasÅ¯ halda hlasÅ¯ halda hlasÅ¯ halda
+ :jahÅ¯dka lahÅ¯dka jahÅ¯dka lahÅ¯dka jahÅ¯dka
+ :jas has jak gag jal hal kÅ¯l gal lÅ¯j aga
+ :kladÅ¯ halas sladÅ¯ halda klasÅ¯ hÅ¯lka kajak
+ :kladÅ¯ halas skladÅ¯ jahÅ¯dka klasÅ¯ hÅ¯lka aga
 
 #                                                             ../orig/r.typ:66
-I:Písmena R a L pí¹eme obìma ukazováèky vychylováním 
+I:PÃ­smena R a L pÃ­Å¡eme obÄ›ma ukazovÃ¡Äky vychylovÃ¡nÃ­m 
  :vlevo nahoru.
 *:_R_R_L14
 #                                                             ../orig/r.typ:67
-D:hlas klasù hùlka sklad hlasù halas klasù hùlka
- :jahùdka lahùdka jahùdka lahùdka jahùdka lahùdka
+D:hlas klasÅ¯ hÅ¯lka sklad hlasÅ¯ halas klasÅ¯ hÅ¯lka
+ :jahÅ¯dka lahÅ¯dka jahÅ¯dka lahÅ¯dka jahÅ¯dka lahÅ¯dka
  :frf juj frf juj frf juj frf juj frf juj frf juj
  :fgr jhu fgr jhu fgr jhu fgr jhu fgr jhu fgr jhu
  :grf huj grf huj grf huj grf huj grf huj grf huj
  :frg juh frg juh frg juh frg juh frg juh frg juh
- :arf ùuj arf ùuj arf ùuj arf ùuj arf ùuj arf ùuj
+ :arf Å¯uj arf Å¯uj arf Å¯uj arf Å¯uj arf Å¯uj arf Å¯uj
 
 #                                                             ../orig/r.typ:68
-I:(2) Písmena R a L pí¹eme obìma ukazováèky vychylováním
+I:(2) PÃ­smena R a L pÃ­Å¡eme obÄ›ma ukazovÃ¡Äky vychylovÃ¡nÃ­m
  :vlevo nahoru.
 *:_R_R_L15
 #                                                             ../orig/r.typ:70
 D:drf kuj drf kuj drf kuj drf kuj drf kuj drf kuj
- :rfa ujù rfa ujù rfa ujù rfa ujù rfa ujù rfa ujù
+ :rfa ujÅ¯ rfa ujÅ¯ rfa ujÅ¯ rfa ujÅ¯ rfa ujÅ¯ rfa ujÅ¯
  :kra hra kra hra kra hra kra hra kra hra kra hra
  :duj kuj duj kuj duj kuj duj kuj duj kuj duj kuj
  :rud dur rud dur rud dur rud dur rud dur rud dur
@@ -855,19 +855,19 @@ I:A slova...
 D:klasu krasu klasu krasu klasu krasu klasu krasu
  :druhu grafu druhu grafu druhu grafu druhu grafu
  :kursu hradu kursu hradu kursu hradu kursu hradu
- :krajù kladu krajù kladu krajù kladu krajù kladu
+ :krajÅ¯ kladu krajÅ¯ kladu krajÅ¯ kladu krajÅ¯ kladu
  :radar kruhu radar kruhu radar kruhu radar kruhu
- :lusku grafù lusku grafù lusku grafù lusku grafù
- :agaru kufrù agaru kufrù agaru kufrù agaru kufrù
- :jas has kra hra suk kus dùl sùl rud dur jar luk
+ :lusku grafÅ¯ lusku grafÅ¯ lusku grafÅ¯ lusku grafÅ¯
+ :agaru kufrÅ¯ agaru kufrÅ¯ agaru kufrÅ¯ agaru kufrÅ¯
+ :jas has kra hra suk kus dÅ¯l sÅ¯l rud dur jar luk
 
 #                                                             ../orig/r.typ:75
-I:Písmena E a I pí¹eme prostøedníky.
+I:PÃ­smena E a I pÃ­Å¡eme prostÅ™ednÃ­ky.
 *:_R_R_L17
 #                                                             ../orig/r.typ:79
 
-D:klasù sladù halas druhu klasù sladù halas druhu
- :hlasù radar kruhu grafu hlasù radar kruhu grafu
+D:klasÅ¯ sladÅ¯ halas druhu klasÅ¯ sladÅ¯ halas druhu
+ :hlasÅ¯ radar kruhu grafu hlasÅ¯ radar kruhu grafu
  :ded kik ded kik ded kik ded kik ded kik ded kik
  :frf juj ded kik frf juj ded kik frf juj ded kik
  :asi kde asi kde asi kde asi kde asi kde asi kde
@@ -875,7 +875,7 @@ D:klasù sladù halas druhu klasù sladù halas druhu
  :les lis les lis les lis les lis les lis les lis
  :jde jdi jde jdi jde jdi jde jdi jde jdi jde jdi
 
-Q:Pro pokraèování stitknìte Y, N opakovat, nebo F12 konec. 
+Q:Pro pokraÄovÃ¡nÃ­ stitknÄ›te Y, N opakovat, nebo F12 konec. 
 N:_R_R_L17
 
 #                                                             ../orig/r.typ:80
@@ -894,7 +894,7 @@ D:jedla jedli jedla jedli jedla jedli jedla jedli
  :aleje ideje aleje ideje aleje ideje aleje ideje
 
 #
-I:Èárku pí¹eme prostøedníkem pravım.
+I:ÄŒÃ¡rku pÃ­Å¡eme prostÅ™ednÃ­kem pravÃ½m.
 *:_R_R_L19
 #                                                             ../orig/r.typ:92
 D:ulili sliji ulili sliji ulili sliji ulili sliji
@@ -908,27 +908,27 @@ D:ulili sliji ulili sliji ulili sliji ulili sliji
  :lesu, lisu, lesu, lisu, lesu, lisu, lesu, lisu,
 
 #                                                             ../orig/r.typ:93
-I:Opakování
+I:OpakovÃ¡nÃ­
 *:_R_R_L20
 #                                                             ../orig/r.typ:99
-D:l a ù g h r u e i f j d k s l a ù g h r u e
+D:l a Å¯ g h r u e i f j d k s l a Å¯ g h r u e
  :ah la si ke hl se kg ar ku dr ji je re gr hr
- :aga luk rak lùj drh hùl rej kur ara kus ala
- :fiala jehla dùlek khaki shluk lelek alias
+ :aga luk rak lÅ¯j drh hÅ¯l rej kur ara kus ala
+ :fiala jehla dÅ¯lek khaki shluk lelek alias
  :krajka, freska, figura, hrudka, rekurs, kladka,
  :diskuse, galerie, figurka, klasika, galerka,
- :daru, darù, kusu, kusù, rada, radu, kùra,
- :laku, lakù, ledu, ledù, lisu, lisù, krku,
- :dres, dresu dresù dluh, dluhu dluhù druh,
+ :daru, darÅ¯, kusu, kusÅ¯, rada, radu, kÅ¯ra,
+ :laku, lakÅ¯, ledu, ledÅ¯, lisu, lisÅ¯, krku,
+ :dres, dresu dresÅ¯ dluh, dluhu dluhÅ¯ druh,
  :hrad, hlad, hlas, hles, hled, hluk, kruh,
 #                                                           ../orig/r.typ:100
-I:(10) Rytmické opakování.
+I:(10) RytmickÃ© opakovÃ¡nÃ­.
 *:_R_R_L21
 #                                                            ../orig/r.typ:101
-D:grafika led kde jahùdka lis jej agrafa, les
- :figurka lid jel klasikù hle dia galuska sil
- :dùsledek as si kaligraf je ji sladidla ku
- :hlediska hùrka ra el sleduji, kùrka rg eg
+D:grafika led kde jahÅ¯dka lis jej agrafa, les
+ :figurka lid jel klasikÅ¯ hle dia galuska sil
+ :dÅ¯sledek as si kaligraf je ji sladidla ku
+ :hlediska hÅ¯rka ra el sleduji, kÅ¯rka rg eg
 
 G:_R_E_R2
 #------------------------------------------------------------------------------
@@ -937,7 +937,7 @@ G:_R_E_R2
 *:R3
 *:_R_S_R3
 #                                                            ../orig/r.typ:105
-I:Krátká rozcvièka
+I:KrÃ¡tkÃ¡ rozcviÄka
 *:_R_R_L22
 #                                                            ../orig/r.typ:106
 D:frf juj ded kik frf juj ded kik frf juj ded kik
@@ -948,8 +948,8 @@ D:frf juj ded kik frf juj ded kik frf juj ded kik
  :skif, esej, lila, hele, skif, esej, lila, hele,
 
 #                                                            ../orig/r.typ:107
-I:Písmeno O a interpunkèní znaménko teèku (.) 
- :pí¹eme pravım prsteníkem.
+I:PÃ­smeno O a interpunkÄnÃ­ znamÃ©nko teÄku (.) 
+ :pÃ­Å¡eme pravÃ½m prstenÃ­kem.
 *:_R_R_L23
 #                                                            ../orig/r.typ:108
 D:rok rod rok rod rok rod rok rod rok rod rok rod
@@ -962,8 +962,8 @@ D:rok rod rok rod rok rod rok rod rok rod rok rod
  :ul. ks, ul. ks, ul. ks, ul. ks, ul. ks, ul. ks,
 
 #                                                            ../orig/r.typ:109
-I:(2) Písmeno O a interpunkèní znaménko teèku (.)
- :pí¹eme pravım prsteníkem.
+I:(2) PÃ­smeno O a interpunkÄnÃ­ znamÃ©nko teÄku (.)
+ :pÃ­Å¡eme pravÃ½m prstenÃ­kem.
 
 *:_R_R_L24
 #                                                            ../orig/r.typ:110
@@ -976,7 +976,7 @@ D:jako. kdos. jako. kdos. jako. kdos. jako. kdos.
  :orel. osud. orel. osud. orel. osud. orel. osud.
 
 #                                                            ../orig/r.typ:111
-I:Opakujeme o a teèku.
+I:Opakujeme o a teÄku.
 *:_R_R_L25
 #                                                            ../orig/r.typ:113
 D:osa rok kdo sok roj eso los roh hod rod oko sos
@@ -986,8 +986,8 @@ D:osa rok kdo sok roj eso los roh hod rod oko sos
  :do dolu. do sadu. do sudu. do rohu. do lesa.
 
 #                                                            ../orig/r.typ:114
-I:Písmeno P pí¹eme vychılením pravého malíèku 
- :na horní písmennou øadu.
+I:PÃ­smeno P pÃ­Å¡eme vychÃ½lenÃ­m pravÃ©ho malÃ­Äku 
+ :na hornÃ­ pÃ­smennou Å™adu.
 
 *:_R_R_L26
 #                                                            ../orig/r.typ:117
@@ -995,8 +995,8 @@ I:Písmeno P pí¹eme vychılením pravého malíèku
 D:frf juj ded kik lol ki, lo. frf juj ded kik lol
  :rod kdo sok los roh osa hor rod kdo sok los roh
  :golf. kosa. horu. kord. laso. kdos. krok. golf.
- :ùpù lol ùpù lol ùpù lol ùpù lol ùpù lol ùpù lol
- :frf juj ded kik lol ùpù frf juj ded kik lol ùpù
+ :Å¯pÅ¯ lol Å¯pÅ¯ lol Å¯pÅ¯ lol Å¯pÅ¯ lol Å¯pÅ¯ lol Å¯pÅ¯ lol
+ :frf juj ded kik lol Å¯pÅ¯ frf juj ded kik lol Å¯pÅ¯
  :pak pal pak pal pak pal pak pal pak pal pak pal
  :per pes per pes per pes per pes per pes per pes
  :pra pro pra pro pra pro pra pro pra pro pra pro
@@ -1005,7 +1005,7 @@ D:frf juj ded kik lol ki, lo. frf juj ded kik lol
 I:Zkuste opsat odstavec co nejrychleji
 *:_R_R_L27
 #                                                            ../orig/r.typ:122
-D:hop pùl hop pùl hop pùl hop pùl hop pùl hop pùl
+D:hop pÅ¯l hop pÅ¯l hop pÅ¯l hop pÅ¯l hop pÅ¯l hop pÅ¯l
  :parku perla parku perla parku perla parku perla
  :kapka kapsa kapka kapsa kapka kapsa kapka kapsa
  :dopad dopis dopad dopis dopad dopis dopad dopis
@@ -1023,12 +1023,12 @@ D:fiasko, housle, souhra, dokola, soulad, soused,
  :holduj, holduji holduje soudil, soudili horuji,
  :pokora. poloha. porada. posila. dokola. dohola.
  :daleko. dlouho. rekord. rekordu ledakdo ledakde
- :podhled prùhled podklad podpora doposud lepidlo
- :filolog sleduje dialog, diskusi o podporu klasikù.
+ :podhled prÅ¯hled podklad podpora doposud lepidlo
+ :filolog sleduje dialog, diskusi o podporu klasikÅ¯.
 
 #                                                            ../orig/r.typ:129
-I:Písmeno T pí¹eme vychılením levého ukazováèku
- :na horní písmennou øadu
+I:PÃ­smeno T pÃ­Å¡eme vychÃ½lenÃ­m levÃ©ho ukazovÃ¡Äku
+ :na hornÃ­ pÃ­smennou Å™adu
 *:_R_R_L29
 #                                                            ../orig/r.typ:146
 D:pedagog, sloupek, paprsek, kapelou, pedagog,
@@ -1040,7 +1040,7 @@ D:pedagog, sloupek, paprsek, kapelou, pedagog,
  :tip tep tip tep tip tep tip tep tip tep tip tep
 
 #                                                            ../orig/r.typ:147
-I:Pokraèujte...
+I:PokraÄujte...
 *:_R_R_L30
 #                                                            ../orig/r.typ:154
 
@@ -1054,14 +1054,14 @@ D:ret let ret let ret let ret let ret let ret let ret
  :drtit kartu drtit kartu drtit kartu drtit kartu drtit
 
 #                                                            ../orig/r.typ:155
-I:Zkusíme dlouhá slova.
+I:ZkusÃ­me dlouhÃ¡ slova.
 *:_R_R_L31
 #                                                            ../orig/r.typ:156
 D:osladit setkali osladit setkali osladit setkali osladit
  :katalog opereta katalog opereta katalog opereta katalog
  :oplatka lopatou oplatka lopatou oplatka lopatou oplatka
  :tuk let sta pat trh jet sto tak ret fit akt tah pot tis
- :trafika spousta pstruhù reaktor potlesk karotka loterie
+ :trafika spousta pstruhÅ¯ reaktor potlesk karotka loterie
  :trhat prstu strop oktet krtek pultu tlaku autor titul
  :trofeje, starost, registr, projekt, praskat, splatit
  :elektrodou. statistika. katastrofa. dialektika.
@@ -1074,7 +1074,7 @@ G:_R_E_R3
 *:R4
 *:_R_S_R4
 #                                                            ../orig/r.typ:160
-I:Rozcvièka
+I:RozcviÄka
 *:_R_R_L32
 #                                                            ../orig/r.typ:161
 D:frf ftf kta tra lta str tla rta tka frf ftf kta tra
@@ -1084,8 +1084,8 @@ D:frf ftf kta tra lta str tla rta tka frf ftf kta tra
  :prefekt. despekt. respekt. dialekt. prefekt. despekt.
 
 #                                                            ../orig/r.typ:162
-I:Písmeno Y pí¹eme vychılením pravého ukazováèku
- :smìrem vlevo vzhùru.
+I:PÃ­smeno Y pÃ­Å¡eme vychÃ½lenÃ­m pravÃ©ho ukazovÃ¡Äku
+ :smÄ›rem vlevo vzhÅ¯ru.
 *:_R_R_L33
 #                                                            ../orig/r.typ:163
 D:literaturou, statistika, popularita, literaturou,
@@ -1097,7 +1097,7 @@ D:literaturou, statistika, popularita, literaturou,
  :jasy kusy jasy kusy jasy kusy jasy kusy jasy kusy
 
 #                                                            ../orig/r.typ:164
-I:Opìt Y.
+I:OpÄ›t Y.
 *:_R_R_L34
 #                                                            ../orig/r.typ:166
 D:tahy spady tahy spady tahy spady tahy spady
@@ -1111,7 +1111,7 @@ D:tahy spady tahy spady tahy spady tahy spady
  :strigy s otrapy strigy s otrapy strigy s
 
 #                                                            ../orig/r.typ:167
-I:Sedíte rovnì? To vám mù¾e psaní hodnì usnadnit.
+I:SedÃ­te rovnÄ›? To vÃ¡m mÅ¯Å¾e psanÃ­ hodnÄ› usnadnit.
 *:_R_R_L35
 #                                                            ../orig/r.typ:170
 D:sypaly pruhy letadly. sypaly pruhy letadly. sypaly
@@ -1122,64 +1122,64 @@ D:sypaly pruhy letadly. sypaly pruhy letadly. sypaly
  :tady tudy do porady. tady tudy do porady. tady tudy
 
 #                                                            ../orig/r.typ:171
-I:Písmena Ú a Q pí¹eme malíèky vychılením nahoru 
+I:PÃ­smena Ãš a Q pÃ­Å¡eme malÃ­Äky vychÃ½lenÃ­m nahoru 
  :(vpravo a vlevo)
 *:_R_R_L36
 #                                                            ../orig/r.typ:175
 D:klady dupaly ustoupil oprostily klady dupaly
  :dostoupily popularity. dostoupily popularity.
- :aqa ùpù ùúù aqa ùpù ùúù aqa ùpù ùúù aqa ùpù ùúù
- :qui túr qui túr qui túr qui túr qui túr qui túr
- :quo kúr quo kúr quo kúr quo kúr quo kúr quo kúr
- :qua yaú qua yaú qua yaú qua yaú qua yaú qua yaú
- :aqua, túra, aqua, túra, aqua, túra, aqua, túra,
+ :aqa Å¯pÅ¯ Å¯ÃºÅ¯ aqa Å¯pÅ¯ Å¯ÃºÅ¯ aqa Å¯pÅ¯ Å¯ÃºÅ¯ aqa Å¯pÅ¯ Å¯ÃºÅ¯
+ :qui tÃºr qui tÃºr qui tÃºr qui tÃºr qui tÃºr qui tÃºr
+ :quo kÃºr quo kÃºr quo kÃºr quo kÃºr quo kÃºr quo kÃºr
+ :qua yaÃº qua yaÃº qua yaÃº qua yaÃº qua yaÃº qua yaÃº
+ :aqua, tÃºra, aqua, tÃºra, aqua, tÃºra, aqua, tÃºra,
 
 #                                                            ../orig/r.typ:176
-I:(2) Písmena Ú a Q pí¹eme malíèky vychılením nahoru
+I:(2) PÃ­smena Ãš a Q pÃ­Å¡eme malÃ­Äky vychÃ½lenÃ­m nahoru
 *:_R_R_L37
 #                                                            ../orig/r.typ:185
-D:quasi kúrou quasi kúrou quasi kúrou quasi kúrou
- :ústup ústrk ústup ústrk ústup ústrk ústup ústrk
- :túra úhradou túra úhradou túra úhradou túra úhradou
- :útlaku, útlost, útlaku, útlost, útlaku, útlost,
- :úhel, úsudek, úhel, úsudek, úhel, úsudek, úhel,
- :úklady, úpadek, úkoly, úpadek, úkoly, úpadek,
- :úseku úderù úkolu úrokù úhoru úhory úly úlek,
- :ústupek túra úplata, úhel, útrata, quarta, skútru,
+D:quasi kÃºrou quasi kÃºrou quasi kÃºrou quasi kÃºrou
+ :Ãºstup Ãºstrk Ãºstup Ãºstrk Ãºstup Ãºstrk Ãºstup Ãºstrk
+ :tÃºra Ãºhradou tÃºra Ãºhradou tÃºra Ãºhradou tÃºra Ãºhradou
+ :Ãºtlaku, Ãºtlost, Ãºtlaku, Ãºtlost, Ãºtlaku, Ãºtlost,
+ :Ãºhel, Ãºsudek, Ãºhel, Ãºsudek, Ãºhel, Ãºsudek, Ãºhel,
+ :Ãºklady, Ãºpadek, Ãºkoly, Ãºpadek, Ãºkoly, Ãºpadek,
+ :Ãºseku ÃºderÅ¯ Ãºkolu ÃºrokÅ¯ Ãºhoru Ãºhory Ãºly Ãºlek,
+ :Ãºstupek tÃºra Ãºplata, Ãºhel, Ãºtrata, quarta, skÃºtru,
 
 
 #                                                            ../orig/r.typ:186
-I:Opakování
+I:OpakovÃ¡nÃ­
 *:_R_R_L38
 #                                                            ../orig/r.typ:193
 
-D:ty jsi dostala spoustu dopisù. ty jsi dostala
- :autor ty tu porto úl topoly ta úd dary ty ti
- :úhel quasi ti ty kapitalista kúrou qa at úkrok
- :jdu suk jdi ges lis rok sol sto pùl tah kdy sil
- :diskuse jakosti úsporou sleduje studuje podklad
- :dopis adres grafù úkolù desek stroj hesel okres
- :fotograf jistily tiskopis prùklepù dokladù,
+D:ty jsi dostala spoustu dopisÅ¯. ty jsi dostala
+ :autor ty tu porto Ãºl topoly ta Ãºd dary ty ti
+ :Ãºhel quasi ti ty kapitalista kÃºrou qa at Ãºkrok
+ :jdu suk jdi ges lis rok sol sto pÅ¯l tah kdy sil
+ :diskuse jakosti Ãºsporou sleduje studuje podklad
+ :dopis adres grafÅ¯ ÃºkolÅ¯ desek stroj hesel okres
+ :fotograf jistily tiskopis prÅ¯klepÅ¯ dokladÅ¯,
 
 #                                                            ../orig/r.typ:194
-I:Dal¹í opakování.
+I:DalÅ¡Ã­ opakovÃ¡nÃ­.
 *:_R_R_L39
 #                                                            ../orig/r.typ:201
-D:je to úkol. dostatek produktù se tu pokukuje
- :dosud je dostatek traktorù dosud je dostatek
- :je tu úkol postarat se o úrodu a pojistit dostatek
- :o dary hoduje spousta faktorù, poloha pole
+D:je to Ãºkol. dostatek produktÅ¯ se tu pokukuje
+ :dosud je dostatek traktorÅ¯ dosud je dostatek
+ :je tu Ãºkol postarat se o Ãºrodu a pojistit dostatek
+ :o dary hoduje spousta faktorÅ¯, poloha pole
  :dary se pokukuje podle disky od hektaru a dostatku
- :podtrhuje se úloha strojù a traktorù, ale jde
- :úloha strojù roste, stroj pro lidi, je tu
+ :podtrhuje se Ãºloha strojÅ¯ a traktorÅ¯, ale jde
+ :Ãºloha strojÅ¯ roste, stroj pro lidi, je tu
 
 #                                                            ../orig/r.typ:202
-I:Rytmické cvièení.
+I:RytmickÃ© cviÄenÃ­.
 *:_R_R_L40
 #                                                            ../orig/r.typ:203
-D:se stroji tys orat pole o holografie sta hektarù
- :s úsporou sil. pak lyrik pojistit dostatek
- :produktù pro trh okresu a kraje.
+D:se stroji tys orat pole o holografie sta hektarÅ¯
+ :s Ãºsporou sil. pak lyrik pojistit dostatek
+ :produktÅ¯ pro trh okresu a kraje.
 
 G:_R_E_R4
 #------------------------------------------------------------------------------
@@ -1188,18 +1188,18 @@ G:_R_E_R4
 *:R5
 *:_R_S_R5
 #                                                            ../orig/r.typ:207
-I:Rozcvièka
+I:RozcviÄka
 *:_R_R_L41
 #                                                            ../orig/r.typ:208
-D:frf ftf juj jyj ùpù ùúù aqa frf ftf juj jyj ùpù ùúù
- :tak kdy qui túr sto lyrik úlu tak kdy qui túr sto
+D:frf ftf juj jyj Å¯pÅ¯ Å¯ÃºÅ¯ aqa frf ftf juj jyj Å¯pÅ¯ Å¯ÃºÅ¯
+ :tak kdy qui tÃºr sto lyrik Ãºlu tak kdy qui tÃºr sto
  :lehkost episody autokar lehkost episody autokar
  :elektroakustika elektrostatika, elektroakustika
 
 
 #                                                            ../orig/r.typ:209
-I:Písmeno V pí¹eme ukazováèkem levé ruky, vychılenım
- :vpravo dolù
+I:PÃ­smeno V pÃ­Å¡eme ukazovÃ¡Äkem levÃ© ruky, vychÃ½lenÃ½m
+ :vpravo dolÅ¯
 *:_R_R_L42
 #                                                            ../orig/r.typ:210
 D:dalekohledu filatelista prstokladu, dalekohledu
@@ -1211,7 +1211,7 @@ D:dalekohledu filatelista prstokladu, dalekohledu
  :vis vid vis vid vis vid vis vid vis vid vis vid
 
 #                                                            ../orig/r.typ:211
-I:Opìt V.
+I:OpÄ›t V.
 *:_R_R_L43
 #
 D:vrata vstup vrata vstup vrata vstup vrata vstup
@@ -1219,26 +1219,26 @@ D:vrata vstup vrata vstup vrata vstup vrata vstup
  :vyla vidle vyla vidle vyla vidle vyla vidle vyla
  :koval tavil koval tavil koval tavil koval tavil
  :vysypaly do krovu vysypaly do krovu vysypaly do
- :úvaha slova úvaha slova úvaha slova úvaha slova
+ :Ãºvaha slova Ãºvaha slova Ãºvaha slova Ãºvaha slova
  :vrtal otvor vrtal otvor vrtal otvor vrtal otvor
- :servi útvar servi útvar servi útvar servi útvar
+ :servi Ãºtvar servi Ãºtvar servi Ãºtvar servi Ãºtvar
 
 #                                                            ../orig/r.typ:213
-I:Cvièení.
+I:CviÄenÃ­.
 *:_R_R_L44
 #                                                            ../orig/r.typ:215
 D:sleva poplatku, doslov autora, verva vylodily,
  :tvoje odvaha, povolal lidi, tvoje odvaha, povolal
  :tvar letadla, uhodil vedle, vhled, vada, tvar
- :spisovatel veseloher, spolky spisovatelù, spisovatel
+ :spisovatel veseloher, spolky spisovatelÅ¯, spisovatel
  :dal kolektivu slovo, dal kolektivu slovo, dal
  :dopadlo to podle jeho slov, dopadlo to podle
  :diktoval dopis do stroje, diktoval dopis
- :kvalita je jakost, oprava a úprava, kvalita
+ :kvalita je jakost, oprava a Ãºprava, kvalita
 
 #                                                            ../orig/r.typ:216
-I:Písmeno M pí¹eme pravım ukazováèkem vychylováním 
- :vpravo ¹ikmo dolù.
+I:PÃ­smeno M pÃ­Å¡eme pravÃ½m ukazovÃ¡Äkem vychylovÃ¡nÃ­m 
+ :vpravo Å¡ikmo dolÅ¯.
 *:_R_R_L45
 #                                                            ../orig/r.typ:219
 D:redaktorky odhlasovaly redaktorky odhlasovaly
@@ -1247,7 +1247,7 @@ D:redaktorky odhlasovaly redaktorky odhlasovaly
  :ohm lom ohm lom ohm lom ohm lom ohm lom ohm lom
  :myl mat myl mat myl mat myl mat myl mat myl mat
  :tam tom tam tom tam tom tam tom tam tom tam tom
- :mùj dùm mùj dùm mùj dùm mùj dùm mùj dùm mùj dùm
+ :mÅ¯j dÅ¯m mÅ¯j dÅ¯m mÅ¯j dÅ¯m mÅ¯j dÅ¯m mÅ¯j dÅ¯m mÅ¯j dÅ¯m
 
 #                                                            ../orig/r.typ:220
 I:Rytmika!
@@ -1255,7 +1255,7 @@ I:Rytmika!
 #                                                            ../orig/r.typ:224
 D:hmat, sedm, hmat, sedm, hmat, sedm, hmat, sedm,
  :moje, myla, moje, myla, moje, myla, moje, myla,
- :domù, mysl, domù, mysl, domù, mysl, domù, mysl,
+ :domÅ¯, mysl, domÅ¯, mysl, domÅ¯, mysl, domÅ¯, mysl,
  :klam, kmih, klam, kmih, klam, kmih, klam, kmih,
  :vyjmuta, vyjmuto, vyjmuta, vyjmuto, vyjmuta, vyjmuto,
  :reklama komedie reklama komedie reklama komedie
@@ -1263,8 +1263,8 @@ D:hmat, sedm, hmat, sedm, hmat, sedm, hmat, sedm,
  :mladost lidumil mladost lidumil mladost lidumil
 
 #                                                            ../orig/r.typ:225
-I:Opakovací cvièení je zamìøeno na rytmus
- :a obtí¾ná spojení.
+I:OpakovacÃ­ cviÄenÃ­ je zamÄ›Å™eno na rytmus
+ :a obtÃ­Å¾nÃ¡ spojenÃ­.
 *:_R_R_L47
 #                                                            ../orig/r.typ:230
 D:gram, klam, jilm, kmet, kmit, kmih, mrak, mrav,
@@ -1278,8 +1278,8 @@ D:gram, klam, jilm, kmet, kmit, kmih, mrak, mrav,
 
 
 #                                                            ../orig/r.typ:231
-I:Písmeno C pi¹te vychylováním levého prostøedníku
- :vpravo dolù.
+I:PÃ­smeno C piÅ¡te vychylovÃ¡nÃ­m levÃ©ho prostÅ™ednÃ­ku
+ :vpravo dolÅ¯.
 *:_R_R_L48
 #                                                            ../orig/r.typ:249
 D:poloautomatika, aktuality, poloautomatika, hospody,
@@ -1288,14 +1288,14 @@ D:poloautomatika, aktuality, poloautomatika, hospody,
  :cit cti cit cti cit cti cit cti cit cti cit cti cit
  :cep pec cep pec cep pec cep pec cep pec cep pec cep
  :clo moc clo moc clo moc clo moc clo moc clo moc clo
- :agitace úschova agitace úschova agitace úschova
+ :agitace Ãºschova agitace Ãºschova agitace Ãºschova
 
 #                                                            ../orig/r.typ:250
-I:Del¹í slova.
+I:DelÅ¡Ã­ slova.
 *:_R_R_L49
 #                                                            ../orig/r.typ:256
 
-D:prùvodce vegetace prùvodce vegetace prùvodce
+D:prÅ¯vodce vegetace prÅ¯vodce vegetace prÅ¯vodce
  :pochovat doslechl pochovat doslechl pochovat
  :veselice pravomoc veselice pravomoc veselice
  :vytlouci plachtit vytlouci plachtit vytlouci
@@ -1305,13 +1305,13 @@ D:prùvodce vegetace prùvodce vegetace prùvodce
 
 
 #                                                            ../orig/r.typ:257
-I:Opakování.
+I:OpakovÃ¡nÃ­.
 *:_R_R_L50
 #                                                            ../orig/r.typ:258
 D:pocit tepla srdce ulice pocit tepla srdce ulice
  :hledisko vcelku po ruce, hledisko vcelku po ruce,
  :poslali pro chlapce i dcerku. poslali pro chlapce
- :autor cestopisù, odchod do dùchodu.
+ :autor cestopisÅ¯, odchod do dÅ¯chodu.
 
 G:_R_E_R5
 #------------------------------------------------------------------------------
@@ -1320,7 +1320,7 @@ G:_R_E_R5
 *:R6
 *:_R_S_R6
 #                                                            ../orig/r.typ:262
-I:Rozcvièka
+I:RozcviÄka
 *:_R_R_L51
 #                                                            ../orig/r.typ:263
 D:fvf fvr fvt jmj jmu jmy dcd dce dec fvf fvr fvt
@@ -1329,20 +1329,20 @@ D:fvf fvr fvt jmj jmu jmy dcd dce dec fvf fvr fvt
  :chasa chata chlad chlap chlum chlup chrup chaos
 
 #                                                            ../orig/r.typ:264
-I:Písmena X a W pí¹eme levım prsteníkem,
- :pomlèku pravım malíèkem.
+I:PÃ­smena X a W pÃ­Å¡eme levÃ½m prstenÃ­kem,
+ :pomlÄku pravÃ½m malÃ­Äkem.
 *:_R_R_L52
 #                                                            ../orig/r.typ:266
 D:civilista, komplikace, demokracie, motorista,
  :sxs sws sxs sws sxs sws sxs sws sxs sws sxs
  :lux lex lux lex lux lex lux lex lux lex lux
- :ù-ù ù-p ù-ú ù-ù ù-p ù-ú ù-ù ù-p ù-ú ù-ù ù-p
+ :Å¯-Å¯ Å¯-p Å¯-Ãº Å¯-Å¯ Å¯-p Å¯-Ãº Å¯-Å¯ Å¯-p Å¯-Ãº Å¯-Å¯ Å¯-p
  :fix tix fix tix fix tix fix tix fix tix fix
  :tax tex tax tex tax tex tax tex tax tex tax
  :mix max mix max mix max mix max mix max mix
 
 #                                                            ../orig/r.typ:267
-I:Pokrète správnì prsty.
+I:PokrÄte sprÃ¡vnÄ› prsty.
 *:_R_R_L53
 #                                                            ../orig/r.typ:268
 D:extra kodex extra kodex extra kodex extra kodex
@@ -1355,7 +1355,7 @@ D:extra kodex extra kodex extra kodex extra kodex
  :kilowatt expedice kilowatt expedice kilowatt
 
 #                                                            ../orig/r.typ:269
-I:Procvièíme pomlèku.
+I:ProcviÄÃ­me pomlÄku.
 *:_R_R_L54
 #                                                            ../orig/r.typ:271
 D:dostala-li, poslala-li, dostala-li, poslala-li,
@@ -1365,21 +1365,21 @@ D:dostala-li, poslala-li, dostala-li, poslala-li,
  :poslali exekuci - poslali exekuci - poslali
 
 #                                                            ../orig/r.typ:272
-I:Z pí¹eme levım malíèkem posunutím ze základní
- :polohy vpravo dolù
+I:Z pÃ­Å¡eme levÃ½m malÃ­Äkem posunutÃ­m ze zÃ¡kladnÃ­
+ :polohy vpravo dolÅ¯
 *:_R_R_L55
 #                                                            ../orig/r.typ:275
 D:exporty, wolframitu, xerografie, exhumace.
  :aza aqz aza aqz aza aqz aza aqz aza aqz aza
- :vùz zem zad vùz zem zad vùz zem zad vùz zem
+ :vÅ¯z zem zad vÅ¯z zem zad vÅ¯z zem zad vÅ¯z zem
  :rzi zas zet rzi zas zet rzi zas zet rzi zas
  :kyz zel koz zdi zel koz zdi zel koz zdi zel
  :zas raz zas raz zas raz zas raz zas raz zas
  :zda zde zda zde zda zde zda zde zda zde zda
 
 #                                                            ../orig/r.typ:276
-I:(2) Z pí¹eme levım malíèkem posunutím ze základní
- :polohy vpravo dolù
+I:(2) Z pÃ­Å¡eme levÃ½m malÃ­Äkem posunutÃ­m ze zÃ¡kladnÃ­
+ :polohy vpravo dolÅ¯
 
 *:_R_R_L56
 #                                                            ../orig/r.typ:280
@@ -1394,22 +1394,22 @@ D:mrz tzv. rzi mrz tzv. rzi mrz tzv. rzi mrz tzv.
  :mosaz meze mosaz meze mosaz meze mosaz meze
 
 #                                                            ../orig/r.typ:281
-I:Pocvièíme ménì zdatné prsty.
+I:PocviÄÃ­me mÃ©nÄ› zdatnÃ© prsty.
 *:_R_R_L57
 #                                                            ../orig/r.typ:286
-D:chytili myl cos prùmysl kly ces situace max pec
+D:chytili myl cos prÅ¯mysl kly ces situace max pec
  :jde i o mzdovou charakteristiku jde i o mzdovou
  :chodu se ji latex je to waltz as po chaty co ex
  :vydavatelem kytic vy za socialismus cyklu ix ax
  :rozhodl o exkurzi rozhodl o exkurzi rozhodl
  :horoval pro chalupu horoval pro chalupu horoval
- :prùzkum situace s chatami prùzkum situace
+ :prÅ¯zkum situace s chatami prÅ¯zkum situace
  :komplex hal s dvorkem komplex hal s dvorkem
 
 
 #                                                            ../orig/r.typ:287
-I:Písmeno B pí¹eme levım ukazováèkem, vychılenım
- :hodnì doprava a dolù.
+I:PÃ­smeno B pÃ­Å¡eme levÃ½m ukazovÃ¡Äkem, vychÃ½lenÃ½m
+ :hodnÄ› doprava a dolÅ¯.
 *:_R_R_L58
 #                                                            ../orig/r.typ:293
 D:vymyslel zvyklost typograf rychlost cyklista
@@ -1430,7 +1430,7 @@ D:hloubka chloubu hloubka chloubu hloubka chloubu
  :dobou rybou dobou rybou dobou rybou dobou rybou
  :chyby obuvi chyby obuvi chyby obuvi chyby obuvi
  :barva brzdy barva brzdy barva brzdy barva brzdy
- :zabrzdil zpùsobil zabrzdil zpùsobil zabrzdil
+ :zabrzdil zpÅ¯sobil zabrzdil zpÅ¯sobil zabrzdil
 
 #                                                            ../orig/r.typ:303
 I:Dejte si pozor na rytmus.
@@ -1450,17 +1450,17 @@ G:_R_E_R6
 *:R7
 *:_R_S_R7
 #                                                            ../orig/r.typ:308
-I:Rozcvièka
+I:RozcviÄka
 *:_R_R_L61
 #                                                            ../orig/r.typ:309
 D:fvf fbf fbr fbt fvf fbf fbr fbt fvf fbf fbr fbt fvf
  :a a bal a o bod a y byl a u bus a e bez a i bit a a
- :arborka republik vyrobili dobropis zpùsobem barometr
+ :arborka republik vyrobili dobropis zpÅ¯sobem barometr
  :barbarismus vybagrovali blahobytem, fotbalista.
 
 #                                                            ../orig/r.typ:310
-I:Písmeno N pí¹eme pravım ukazováèkem vychılenım
- :vlevo dolù.
+I:PÃ­smeno N pÃ­Å¡eme pravÃ½m ukazovÃ¡Äkem vychÃ½lenÃ½m
+ :vlevo dolÅ¯.
 *:_R_R_L62
 #                                                            ../orig/r.typ:311
 D:jmj jnj jmn jmj jnj jmn jmj jnj jmn jmj jnj jmn jmj
@@ -1471,7 +1471,7 @@ D:jmj jnj jmn jmj jnj jmn jmj jnj jmn jmj jnj jmn jmj
  :snadno, funkce, snadno, funkce, snadno, funkce, snadno,
 
 #                                                            ../orig/r.typ:312
-I:Jako v¾dy nìjaká slova.
+I:Jako vÅ¾dy nÄ›jakÃ¡ slova.
 *:_R_R_L63
 #                                                            ../orig/r.typ:313
 D:nutno nemoc nutno nemoc nutno nemoc nutno nemoc nutno
@@ -1482,21 +1482,21 @@ D:nutno nemoc nutno nemoc nutno nemoc nutno nemoc nutno
  :prosinec techniky prosinec techniky prosinec techniky
 
 #                                                            ../orig/r.typ:314
-I:Souvislı text.
+I:SouvislÃ½ text.
 *:_R_R_L64
 #                                                            ../orig/r.typ:316
 D:chceme zajistit rozvoj obchodu dobrou reklamou. s tou se se
  :sejdeme v tisku i v televizi. reklama propaguje, co se vy-
  :robilo a vzbuzuje tak mezi obyvatelstvem obdiv pro bohatou
- :tvorbu prùmyslu. reklamou se prohlubuje vkus obyvatelstva.
- :chceme, aby vzhled obchodù vedl k propagaci prodeje, aby se
- :dbalo i o kulturu prodeje. o obratu velmi rozhoduje i zpù-
+ :tvorbu prÅ¯myslu. reklamou se prohlubuje vkus obyvatelstva.
+ :chceme, aby vzhled obchodÅ¯ vedl k propagaci prodeje, aby se
+ :dbalo i o kulturu prodeje. o obratu velmi rozhoduje i zpÅ¯-
  :sob obsluhy. ochota a vztah k lidem jsou pro obchod pravou
  :reklamou.
 
 #                                                            ../orig/r.typ:317
-I:Velká písmena Z,U,I,O,P,H,J,K,L,N,M -- stiskneme
- :levı Shift + klávesu.
+I:VelkÃ¡ pÃ­smena Z,U,I,O,P,H,J,K,L,N,M -- stiskneme
+ :levÃ½ Shift + klÃ¡vesu.
 
 *:_R_R_L65
 #                                                            ../orig/r.typ:320
@@ -1508,62 +1508,62 @@ D:investovali kompletnost bezcennosti navrhovatel
  :Zlata, Urban, Ivana, Oskar, Zlata, Urban, Ivana,
 
 #                                                            ../orig/r.typ:321
-I:Koneènì vìty.
+I:KoneÄnÄ› vÄ›ty.
 *:_R_R_L66
 #                                                            ../orig/r.typ:325
-D:Nemohl zavolat z podniku pro poruchu kabelù. Nemohl zavolat
- :Iniciativa ekonomù. Povinnosti dodavatelù. Iniciativa ekonomù.
- :Mezi lidmi se najde mnoho fandù divadla. Mezi lidmi se najde
+D:Nemohl zavolat z podniku pro poruchu kabelÅ¯. Nemohl zavolat
+ :Iniciativa ekonomÅ¯. Povinnosti dodavatelÅ¯. Iniciativa ekonomÅ¯.
+ :Mezi lidmi se najde mnoho fandÅ¯ divadla. Mezi lidmi se najde
  :Program veletrhu je letos velmi obsazen. Program veletrhu je
 
 #                                                            ../orig/r.typ:326
-I:Písmeno Ø pí¹eme ukazováèkem levé ruky vychılenım
- :kolmo vzhùru.
+I:PÃ­smeno Å˜ pÃ­Å¡eme ukazovÃ¡Äkem levÃ© ruky vychÃ½lenÃ½m
+ :kolmo vzhÅ¯ru.
 *:_R_R_L67
 #                                                            ../orig/r.typ:331
 D:Florencie, Bulharsko, Venezuela, Stockholm, Guatemala,
- :frø føf frø føf frø føf frø føf frø føf frø føf frø føf
- :fvø fbø fvø fbø fvø fbø fvø fbø fvø fbø fvø fbø fvø fbø
- :jaø keø jaø keø jaø keø jaø keø jaø keø jaø keø jaø keø
- :zøi vøe zøi vøe zøi vøe zøi vøe zøi vøe zøi vøe zøi vøe
+ :frÅ™ fÅ™f frÅ™ fÅ™f frÅ™ fÅ™f frÅ™ fÅ™f frÅ™ fÅ™f frÅ™ fÅ™f frÅ™ fÅ™f
+ :fvÅ™ fbÅ™ fvÅ™ fbÅ™ fvÅ™ fbÅ™ fvÅ™ fbÅ™ fvÅ™ fbÅ™ fvÅ™ fbÅ™ fvÅ™ fbÅ™
+ :jaÅ™ keÅ™ jaÅ™ keÅ™ jaÅ™ keÅ™ jaÅ™ keÅ™ jaÅ™ keÅ™ jaÅ™ keÅ™ jaÅ™ keÅ™
+ :zÅ™i vÅ™e zÅ™i vÅ™e zÅ™i vÅ™e zÅ™i vÅ™e zÅ™i vÅ™e zÅ™i vÅ™e zÅ™i vÅ™e
 
 #                                                            ../orig/r.typ:332
 I:Opistujte text.
 *:_R_R_L68
 #                                                            ../orig/r.typ:338
-D:pøenesl chøipku pøenesl chøipku pøenesl chøipku
- :øemeslo tesaøe, øemeslo tesaøe, øemeslo tesaøe
- :spatøil høeben, spatøil høeben, spatøil høeben
- :tvoøili tøetinu tvoøili tøetinu tvoøili tøetinu
- :sevøeli pøitom, sevøeli pøitom, sevøeli pøitom
- :jaø tøi keø øez zøi øad miø øek vøe øev pøe zøe
+D:pÅ™enesl chÅ™ipku pÅ™enesl chÅ™ipku pÅ™enesl chÅ™ipku
+ :Å™emeslo tesaÅ™e, Å™emeslo tesaÅ™e, Å™emeslo tesaÅ™e
+ :spatÅ™il hÅ™eben, spatÅ™il hÅ™eben, spatÅ™il hÅ™eben
+ :tvoÅ™ili tÅ™etinu tvoÅ™ili tÅ™etinu tvoÅ™ili tÅ™etinu
+ :sevÅ™eli pÅ™itom, sevÅ™eli pÅ™itom, sevÅ™eli pÅ™itom
+ :jaÅ™ tÅ™i keÅ™ Å™ez zÅ™i Å™ad miÅ™ Å™ek vÅ™e Å™ev pÅ™e zÅ™e
 
 
 #                                                            ../orig/r.typ:339
-I:Pokraèujte v opisování.
+I:PokraÄujte v opisovÃ¡nÃ­.
 *:_R_R_L69
 #                                                            ../orig/r.typ:347
 
-D:Za bouøky. Ve støehu. Od øepaøe. Po pekaøi. Ke støedu.
- :spotøeba paliv spotøeba energie, spotøeba paliv
- :ochoøeli chøipkou ochoøeli chøipkou ochoøeli chøipkou
- :dveøe se otevøely dveøe se otevøely dveøe se otevøely
- :modernizace pøepravy modernizace pøepravy modernizace
- :vyøezali ze døeva figurky, vyøezali ze døeva figurky,
- :S elektøinou. S pøedmluvou. V kultuøe. Z øady.
+D:Za bouÅ™ky. Ve stÅ™ehu. Od Å™epaÅ™e. Po pekaÅ™i. Ke stÅ™edu.
+ :spotÅ™eba paliv spotÅ™eba energie, spotÅ™eba paliv
+ :ochoÅ™eli chÅ™ipkou ochoÅ™eli chÅ™ipkou ochoÅ™eli chÅ™ipkou
+ :dveÅ™e se otevÅ™ely dveÅ™e se otevÅ™ely dveÅ™e se otevÅ™ely
+ :modernizace pÅ™epravy modernizace pÅ™epravy modernizace
+ :vyÅ™ezali ze dÅ™eva figurky, vyÅ™ezali ze dÅ™eva figurky,
+ :S elektÅ™inou. S pÅ™edmluvou. V kultuÅ™e. Z Å™ady.
 
 #                                                            ../orig/r.typ:348
-I:Písmeno Á pí¹eme pravım ukazováèkem, 
- :vychılenım mírnì vpravo nahoru.
+I:PÃ­smeno Ã pÃ­Å¡eme pravÃ½m ukazovÃ¡Äkem, 
+ :vychÃ½lenÃ½m mÃ­rnÄ› vpravo nahoru.
 *:_R_R_L70
 #                                                            ../orig/r.typ:349
-D:chmelaøi bøitvou, podpoøil køeslem, døevina,
- :pøipomenout zaøizovali, døevoøezba, støediskem,
- :juá jáj juá jáj juá jáj juá jáj juá jáj juá jáj
- :háj dál háj dál háj dál háj dál háj dál háj dál
- :máj sál máj sál máj sál máj sál máj sál máj sál
- :nám rád nám rád nám rád nám rád nám rád nám rád
- :vás bát vás bát vás bát vás bát vás bát vás bát
+D:chmelaÅ™i bÅ™itvou, podpoÅ™il kÅ™eslem, dÅ™evina,
+ :pÅ™ipomenout zaÅ™izovali, dÅ™evoÅ™ezba, stÅ™ediskem,
+ :juÃ¡ jÃ¡j juÃ¡ jÃ¡j juÃ¡ jÃ¡j juÃ¡ jÃ¡j juÃ¡ jÃ¡j juÃ¡ jÃ¡j
+ :hÃ¡j dÃ¡l hÃ¡j dÃ¡l hÃ¡j dÃ¡l hÃ¡j dÃ¡l hÃ¡j dÃ¡l hÃ¡j dÃ¡l
+ :mÃ¡j sÃ¡l mÃ¡j sÃ¡l mÃ¡j sÃ¡l mÃ¡j sÃ¡l mÃ¡j sÃ¡l mÃ¡j sÃ¡l
+ :nÃ¡m rÃ¡d nÃ¡m rÃ¡d nÃ¡m rÃ¡d nÃ¡m rÃ¡d nÃ¡m rÃ¡d nÃ¡m rÃ¡d
+ :vÃ¡s bÃ¡t vÃ¡s bÃ¡t vÃ¡s bÃ¡t vÃ¡s bÃ¡t vÃ¡s bÃ¡t vÃ¡s bÃ¡t
 
 
 G:_R_E_R7
@@ -1573,118 +1573,118 @@ G:_R_E_R7
 *:R8
 *:_R_S_R8
 #                                                            ../orig/r.typ:353
-I:Opakování
+I:OpakovÃ¡nÃ­
 *:_R_R_L71
 #                                                            ../orig/r.typ:354
-D:S elektøinou. S pøedmluvou. V kultuøe. Z øady.
- :S naftou je tøeba dobøe hospodaøit. S naftou
- :Bylo nutno vytvoøit pøedpoklady pro malou spotøebu.
+D:S elektÅ™inou. S pÅ™edmluvou. V kultuÅ™e. Z Å™ady.
+ :S naftou je tÅ™eba dobÅ™e hospodaÅ™it. S naftou
+ :Bylo nutno vytvoÅ™it pÅ™edpoklady pro malou spotÅ™ebu.
 
 #                                                            ../orig/r.typ:355
-I:Opakujeme Á.
+I:Opakujeme Ã.
 *:_R_R_L72
 #                                                            ../orig/r.typ:357
-D:dodávku nemáme, dodávku nemáme, dodávku nemáme,
- :ukázali celofán ukázali celofán ukázali celofán
- :dostává zprávy, dostává zprávy, dostává zprávy,
- :sázenku dáváme, sázenku dáváme, sázenku dáváme,
- :tøikrát diváci, tøikrát diváci, tøikrát diváci,
- :morálka brigády morálka brigády morálka brigády
- :mám - vám - rám - báj - lán - gáz - háv - kár
+D:dodÃ¡vku nemÃ¡me, dodÃ¡vku nemÃ¡me, dodÃ¡vku nemÃ¡me,
+ :ukÃ¡zali celofÃ¡n ukÃ¡zali celofÃ¡n ukÃ¡zali celofÃ¡n
+ :dostÃ¡vÃ¡ zprÃ¡vy, dostÃ¡vÃ¡ zprÃ¡vy, dostÃ¡vÃ¡ zprÃ¡vy,
+ :sÃ¡zenku dÃ¡vÃ¡me, sÃ¡zenku dÃ¡vÃ¡me, sÃ¡zenku dÃ¡vÃ¡me,
+ :tÅ™ikrÃ¡t divÃ¡ci, tÅ™ikrÃ¡t divÃ¡ci, tÅ™ikrÃ¡t divÃ¡ci,
+ :morÃ¡lka brigÃ¡dy morÃ¡lka brigÃ¡dy morÃ¡lka brigÃ¡dy
+ :mÃ¡m - vÃ¡m - rÃ¡m - bÃ¡j - lÃ¡n - gÃ¡z - hÃ¡v - kÃ¡r
 
 
 #                                                            ../orig/r.typ:358
-I:Dlouhá slova.
+I:DlouhÃ¡ slova.
 *:_R_R_L73
 #                                                            ../orig/r.typ:359
-D:hospodáøská spolupráce, hospodáøská spolupráce,
- :pøedcházeli katastrofám pøedcházeli katastrofám
- :sekretáøkám procházkám, sekretáøkám procházkám,
- :zpracováván nástrojaøem zpracováván nástrojaøem
- :sestavovány objednávky, sestavovány objednávky,
+D:hospodÃ¡Å™skÃ¡ spoluprÃ¡ce, hospodÃ¡Å™skÃ¡ spoluprÃ¡ce,
+ :pÅ™edchÃ¡zeli katastrofÃ¡m pÅ™edchÃ¡zeli katastrofÃ¡m
+ :sekretÃ¡Å™kÃ¡m prochÃ¡zkÃ¡m, sekretÃ¡Å™kÃ¡m prochÃ¡zkÃ¡m,
+ :zpracovÃ¡vÃ¡n nÃ¡strojaÅ™em zpracovÃ¡vÃ¡n nÃ¡strojaÅ™em
+ :sestavovÃ¡ny objednÃ¡vky, sestavovÃ¡ny objednÃ¡vky,
 
 
 #                                                            ../orig/r.typ:360
-I:Opakování.
+I:OpakovÃ¡nÃ­.
 *:_R_R_L74
 #                                                            ../orig/r.typ:362
-D:øád nám ukázali národohospodáøi politickoorganizátorská
- :záøil aø oø jeøáb eø áø hoøák øa øá vøelá øe øi okøál
- :hospodáøská øádná má dá hospodáøská øádná má dá hospodáøská
- :mateøská dovolená mateøská dovolená mateøská dovolená
- :hospodáøská soustava hospodáøská soustava hospodáøská
- :pøeprava nákladù, pøeprava nákladù, pøeprava nákladù
+D:Å™Ã¡d nÃ¡m ukÃ¡zali nÃ¡rodohospodÃ¡Å™i politickoorganizÃ¡torskÃ¡
+ :zÃ¡Å™il aÅ™ oÅ™ jeÅ™Ã¡b eÅ™ Ã¡Å™ hoÅ™Ã¡k Å™a Å™Ã¡ vÅ™elÃ¡ Å™e Å™i okÅ™Ã¡l
+ :hospodÃ¡Å™skÃ¡ Å™Ã¡dnÃ¡ mÃ¡ dÃ¡ hospodÃ¡Å™skÃ¡ Å™Ã¡dnÃ¡ mÃ¡ dÃ¡ hospodÃ¡Å™skÃ¡
+ :mateÅ™skÃ¡ dovolenÃ¡ mateÅ™skÃ¡ dovolenÃ¡ mateÅ™skÃ¡ dovolenÃ¡
+ :hospodÃ¡Å™skÃ¡ soustava hospodÃ¡Å™skÃ¡ soustava hospodÃ¡Å™skÃ¡
+ :pÅ™eprava nÃ¡kladÅ¯, pÅ™eprava nÃ¡kladÅ¯, pÅ™eprava nÃ¡kladÅ¯
 
 
 #                                                            ../orig/r.typ:363
-I:Písmeno È pí¹eme levım prostøedníkem vychılenım
- :kolmo vzhùru.
+I:PÃ­smeno ÄŒ pÃ­Å¡eme levÃ½m prostÅ™ednÃ­kem vychÃ½lenÃ½m
+ :kolmo vzhÅ¯ru.
 *:_R_R_L75
 #                                                            ../orig/r.typ:366
-D:uspoøili pøepravu nákladu, nahrávka recitálu
- :pøedpokládá hospodáøská sekretáøská pøedpokládá
- :deè dèd deè dèd deè dèd deè dèd deè dèd deè dèd
- :èas meè èas meè èas meè èas meè èas meè èas meè
- :naè øeè naè øeè naè øeè naè øeè naè øeè naè øeè
- :èin tyè èin tyè èin tyè èin tyè èin tyè èin tyè
- :leè èáp leè èáp leè èáp leè èáp leè èáp leè èáp
+D:uspoÅ™ili pÅ™epravu nÃ¡kladu, nahrÃ¡vka recitÃ¡lu
+ :pÅ™edpoklÃ¡dÃ¡ hospodÃ¡Å™skÃ¡ sekretÃ¡Å™skÃ¡ pÅ™edpoklÃ¡dÃ¡
+ :deÄ dÄd deÄ dÄd deÄ dÄd deÄ dÄd deÄ dÄd deÄ dÄd
+ :Äas meÄ Äas meÄ Äas meÄ Äas meÄ Äas meÄ Äas meÄ
+ :naÄ Å™eÄ naÄ Å™eÄ naÄ Å™eÄ naÄ Å™eÄ naÄ Å™eÄ naÄ Å™eÄ
+ :Äin tyÄ Äin tyÄ Äin tyÄ Äin tyÄ Äin tyÄ Äin tyÄ
+ :leÄ ÄÃ¡p leÄ ÄÃ¡p leÄ ÄÃ¡p leÄ ÄÃ¡p leÄ ÄÃ¡p leÄ ÄÃ¡p
 
 #                                                            ../orig/r.typ:367
-I:Kláves se dotıkáme jen lehce.
+I:KlÃ¡ves se dotÃ½kÃ¡me jen lehce.
 *:_R_R_L76
 #                                                            ../orig/r.typ:372
 
-D:èasopis uèiteli èasopis uèiteli èasopis uèiteli
- :úèinná, hraèka, úèinná, hraèka, úèinná, hraèka,
- :aèkoliv naèisto aèkoliv naèisto aèkoliv naèisto
- :poèkali vyboèil poèkali vyboèil poèkali vyboèil
- :náèrtek chladiè náèrtek chladiè náèrtek chladiè
+D:Äasopis uÄiteli Äasopis uÄiteli Äasopis uÄiteli
+ :ÃºÄinnÃ¡, hraÄka, ÃºÄinnÃ¡, hraÄka, ÃºÄinnÃ¡, hraÄka,
+ :aÄkoliv naÄisto aÄkoliv naÄisto aÄkoliv naÄisto
+ :poÄkali vyboÄil poÄkali vyboÄil poÄkali vyboÄil
+ :nÃ¡Ärtek chladiÄ nÃ¡Ärtek chladiÄ nÃ¡Ärtek chladiÄ
 
 
 #                                                            ../orig/r.typ:373
-I:Pokraèujeme v procvièování.
+I:PokraÄujeme v procviÄovÃ¡nÃ­.
 *:_R_R_L77
 #                                                            ../orig/r.typ:379
-D:èleny èluny èleny èluny èleny èluny èleny èluny èleny
- :vèera veèer vèera veèer vèera veèer vèera veèer vèera
- :koèár úèel, koèár úèel, koèár úèel, koèár úèel, koèár
- :èokoláda chemièka èokoláda chemièka èokoláda chemièka
- :babièka, baboèka, babièka, baboèka, babièka, baboèka
- :zapoèatá èinnost, zapoèatá èinnost, zapoèatá èinnost
+D:Äleny Äluny Äleny Äluny Äleny Äluny Äleny Äluny Äleny
+ :vÄera veÄer vÄera veÄer vÄera veÄer vÄera veÄer vÄera
+ :koÄÃ¡r ÃºÄel, koÄÃ¡r ÃºÄel, koÄÃ¡r ÃºÄel, koÄÃ¡r ÃºÄel, koÄÃ¡r
+ :ÄokolÃ¡da chemiÄka ÄokolÃ¡da chemiÄka ÄokolÃ¡da chemiÄka
+ :babiÄka, baboÄka, babiÄka, baboÄka, babiÄka, baboÄka
+ :zapoÄatÃ¡ Äinnost, zapoÄatÃ¡ Äinnost, zapoÄatÃ¡ Äinnost
 
 #                                                            ../orig/r.typ:380
-I:A je¹tì...
+I:A jeÅ¡tÄ›...
 *:_R_R_L78
 #                                                            ../orig/r.typ:387
-D:obèanská vybavenost, obèanská vybavenost, obèanská
- :oznaèkovali turistickou cestu èervenou znaèkou
- :odboèili ze silnice, roztoèil koleèka, nepøekroèil
- :nahrávaè se smeèaøem ve ètyøhøe, neèekaná událost
- :do poètu ve ètyøi do ètverce, obèerstvili se
- :Poèátek lhùty je od ètvrtka. Poèátek lhùty
+D:obÄanskÃ¡ vybavenost, obÄanskÃ¡ vybavenost, obÄanskÃ¡
+ :oznaÄkovali turistickou cestu Äervenou znaÄkou
+ :odboÄili ze silnice, roztoÄil koleÄka, nepÅ™ekroÄil
+ :nahrÃ¡vaÄ se smeÄaÅ™em ve ÄtyÅ™hÅ™e, neÄekanÃ¡ udÃ¡lost
+ :do poÄtu ve ÄtyÅ™i do Ätverce, obÄerstvili se
+ :PoÄÃ¡tek lhÅ¯ty je od Ätvrtka. PoÄÃ¡tek lhÅ¯ty
 
 
 #                                                            ../orig/r.typ:388
-I:Písmeno Í pí¹eme vychılením pravého prostøedníku
- :mírnì vpravo vzhùru.
+I:PÃ­smeno Ã pÃ­Å¡eme vychÃ½lenÃ­m pravÃ©ho prostÅ™ednÃ­ku
+ :mÃ­rnÄ› vpravo vzhÅ¯ru.
 *:_R_R_L79
 #                                                            ../orig/r.typ:396
 
-D:dokonèil rozpoèet hranièáø lednièka èerpadlo èinitelù
- :nároènosti, nespoèetná, slouèeninám odpoèinkem, bezúèinnost
- :kií kík kií kík kií kík kií kík kií kík kií kík kií
- :dík cíl dík cíl dík cíl dík cíl dík cíl dík cíl dík
- :jíl fík jíl fík jíl fík jíl fík jíl fík jíl fík jíl
+D:dokonÄil rozpoÄet hraniÄÃ¡Å™ ledniÄka Äerpadlo ÄinitelÅ¯
+ :nÃ¡roÄnosti, nespoÄetnÃ¡, slouÄeninÃ¡m odpoÄinkem, bezÃºÄinnost
+ :kiÃ­ kÃ­k kiÃ­ kÃ­k kiÃ­ kÃ­k kiÃ­ kÃ­k kiÃ­ kÃ­k kiÃ­ kÃ­k kiÃ­
+ :dÃ­k cÃ­l dÃ­k cÃ­l dÃ­k cÃ­l dÃ­k cÃ­l dÃ­k cÃ­l dÃ­k cÃ­l dÃ­k
+ :jÃ­l fÃ­k jÃ­l fÃ­k jÃ­l fÃ­k jÃ­l fÃ­k jÃ­l fÃ­k jÃ­l fÃ­k jÃ­l
 
 #                                                            ../orig/r.typ:397
 I:Nezoufejte :)
 *:_R_R_L80
-D:díl - mít - víc - jíl - sít - dlí - ctí - sní - bdí
- :získali vlastní moderní obydlí, cítíme, hlavní
- :administrativní nenahraditelní, kvalitativního
- :dílem písmo dílem písmo dílem písmo dílem písmo
- :bílá, musí, bílá, musí, bílá, musí, bílá, musí, bílá
- :Poøádá se proto øada semináøù.
+D:dÃ­l - mÃ­t - vÃ­c - jÃ­l - sÃ­t - dlÃ­ - ctÃ­ - snÃ­ - bdÃ­
+ :zÃ­skali vlastnÃ­ modernÃ­ obydlÃ­, cÃ­tÃ­me, hlavnÃ­
+ :administrativnÃ­ nenahraditelnÃ­, kvalitativnÃ­ho
+ :dÃ­lem pÃ­smo dÃ­lem pÃ­smo dÃ­lem pÃ­smo dÃ­lem pÃ­smo
+ :bÃ­lÃ¡, musÃ­, bÃ­lÃ¡, musÃ­, bÃ­lÃ¡, musÃ­, bÃ­lÃ¡, musÃ­, bÃ­lÃ¡
+ :PoÅ™Ã¡dÃ¡ se proto Å™ada seminÃ¡Å™Å¯.
 
 #                                                            ../orig/r.typ:398
 G:_R_E_R8
@@ -1694,124 +1694,124 @@ G:_R_E_R8
 *:R9
 *:_R_S_R9
 #                                                            ../orig/r.typ:402
-I:Rozcvièka.
+I:RozcviÄka.
 *:_R_R_L81
 #                                                            ../orig/r.typ:403
-D:akèní øídí staèí aè èi uèení zí èí ètení èe ní líèek tè jí
- :vedoucí èinitel dílèích operací vedoucí èinitel dílèích operací
- :vlastní strojní èinnost i s racionalizaèním úsilím, vlastní
- :Organizátorská èinnost energetikù. Organizátorská èinnost
+D:akÄnÃ­ Å™Ã­dÃ­ staÄÃ­ aÄ Äi uÄenÃ­ zÃ­ ÄÃ­ ÄtenÃ­ Äe nÃ­ lÃ­Äek tÄ jÃ­
+ :vedoucÃ­ Äinitel dÃ­lÄÃ­ch operacÃ­ vedoucÃ­ Äinitel dÃ­lÄÃ­ch operacÃ­
+ :vlastnÃ­ strojnÃ­ Äinnost i s racionalizaÄnÃ­m ÃºsilÃ­m, vlastnÃ­
+ :OrganizÃ¡torskÃ¡ Äinnost energetikÅ¯. OrganizÃ¡torskÃ¡ Äinnost
 
 #                                                            ../orig/r.typ:404
-I:Nacvièujte zrychlování a zpomalování psaní.
+I:NacviÄujte zrychlovÃ¡nÃ­ a zpomalovÃ¡nÃ­ psanÃ­.
 *:_R_R_L82
 #                                                            ../orig/r.typ:405
-D:Hlavní pøíèina závady. Hlavní pøíèina závady.
- :sociální zabezpeèení sociální zabezpeèení
- :èasto se øíká tradièní názor èasto se øíká tradièní
- :pracovní úrazy pracovní èasy, pracovní úrazy pracovní èasy,
- :tvùrèích èinù, sluneèní energie, tvùrèích èinù
- :existenèním minimem, kooperaèním seskupením
+D:HlavnÃ­ pÅ™Ã­Äina zÃ¡vady. HlavnÃ­ pÅ™Ã­Äina zÃ¡vady.
+ :sociÃ¡lnÃ­ zabezpeÄenÃ­ sociÃ¡lnÃ­ zabezpeÄenÃ­
+ :Äasto se Å™Ã­kÃ¡ tradiÄnÃ­ nÃ¡zor Äasto se Å™Ã­kÃ¡ tradiÄnÃ­
+ :pracovnÃ­ Ãºrazy pracovnÃ­ Äasy, pracovnÃ­ Ãºrazy pracovnÃ­ Äasy,
+ :tvÅ¯rÄÃ­ch ÄinÅ¯, sluneÄnÃ­ energie, tvÅ¯rÄÃ­ch ÄinÅ¯
+ :existenÄnÃ­m minimem, kooperaÄnÃ­m seskupenÃ­m
 
 
 #                                                            ../orig/r.typ:406
-I:Písmeno © pí¹eme levım prsteníkem vychılenım 
- :kolmo vzhùru.
+I:PÃ­smeno Å  pÃ­Å¡eme levÃ½m prstenÃ­kem vychÃ½lenÃ½m 
+ :kolmo vzhÅ¯ru.
 *:_R_R_L83
 #                                                            ../orig/r.typ:407
-D:redakèním pouèení veèerník redukèní èistírna pøíèinná
- :rekreaèního malièkostí, kooperaèním seskupením
- :sw¹ s¹s sw¹ s¹s sw¹ s¹s sw¹ s¹s sw¹ s¹s sw¹ s¹s sw¹
- :ná¹ ¹ek ná¹ ¹ek ná¹ ¹ek ná¹ ¹ek ná¹ ¹ek ná¹ ¹ek ná¹
- :v¹e øe¹ v¹e øe¹ v¹e øe¹ v¹e øe¹ v¹e øe¹ v¹e øe¹ v¹e
- :vá¹ ¹íp vá¹ ¹íp vá¹ ¹íp vá¹ ¹íp vá¹ ¹íp vá¹ ¹íp vá¹
+D:redakÄnÃ­m pouÄenÃ­ veÄernÃ­k redukÄnÃ­ ÄistÃ­rna pÅ™Ã­ÄinnÃ¡
+ :rekreaÄnÃ­ho maliÄkostÃ­, kooperaÄnÃ­m seskupenÃ­m
+ :swÅ¡ sÅ¡s swÅ¡ sÅ¡s swÅ¡ sÅ¡s swÅ¡ sÅ¡s swÅ¡ sÅ¡s swÅ¡ sÅ¡s swÅ¡
+ :nÃ¡Å¡ Å¡ek nÃ¡Å¡ Å¡ek nÃ¡Å¡ Å¡ek nÃ¡Å¡ Å¡ek nÃ¡Å¡ Å¡ek nÃ¡Å¡ Å¡ek nÃ¡Å¡
+ :vÅ¡e Å™eÅ¡ vÅ¡e Å™eÅ¡ vÅ¡e Å™eÅ¡ vÅ¡e Å™eÅ¡ vÅ¡e Å™eÅ¡ vÅ¡e Å™eÅ¡ vÅ¡e
+ :vÃ¡Å¡ Å¡Ã­p vÃ¡Å¡ Å¡Ã­p vÃ¡Å¡ Å¡Ã­p vÃ¡Å¡ Å¡Ã­p vÃ¡Å¡ Å¡Ã­p vÃ¡Å¡ Å¡Ã­p vÃ¡Å¡
 
 #                                                            ../orig/r.typ:408
-I:Opakování ©.
+I:OpakovÃ¡nÃ­ Å .
 *:_R_R_L84
 #                                                            ../orig/r.typ:410
-D:om¹elá, pøíli¹, om¹elá, pøíli¹, om¹elá, pøíli¹, om¹elá
- :rozko¹, dne¹ek, rozko¹, dne¹ek, rozko¹, dne¹ek, rozko¹
- :du¹evní dal¹ích du¹evní dal¹ích du¹evní dal¹ích du¹evní
- :¹títek, mlad¹í, ¹títek, mlad¹í, ¹títek, mlad¹í, ¹títek
- :¹um ko¹ ¹ál v¹e má¹ ¹ek dá¹ ¹at pi¹ ¹la èí¹ ¹ít ná¹
+D:omÅ¡elÃ¡, pÅ™Ã­liÅ¡, omÅ¡elÃ¡, pÅ™Ã­liÅ¡, omÅ¡elÃ¡, pÅ™Ã­liÅ¡, omÅ¡elÃ¡
+ :rozkoÅ¡, dneÅ¡ek, rozkoÅ¡, dneÅ¡ek, rozkoÅ¡, dneÅ¡ek, rozkoÅ¡
+ :duÅ¡evnÃ­ dalÅ¡Ã­ch duÅ¡evnÃ­ dalÅ¡Ã­ch duÅ¡evnÃ­ dalÅ¡Ã­ch duÅ¡evnÃ­
+ :Å¡tÃ­tek, mladÅ¡Ã­, Å¡tÃ­tek, mladÅ¡Ã­, Å¡tÃ­tek, mladÅ¡Ã­, Å¡tÃ­tek
+ :Å¡um koÅ¡ Å¡Ã¡l vÅ¡e mÃ¡Å¡ Å¡ek dÃ¡Å¡ Å¡at piÅ¡ Å¡la ÄÃ­Å¡ Å¡Ã­t nÃ¡Å¡
 
 
 #                                                            ../orig/r.typ:411
 I:A znovu.
 *:_R_R_L85
 #                                                           ../orig/r.typ:414
-D:v¹ude ¹koda v¹ude ¹koda v¹ude ¹koda v¹ude ¹koda v¹ude
- :spí¹e ru¹il spí¹e ru¹il spí¹e ru¹il spí¹e ru¹il spí¹e
- :vy¹¹í ¹koly vy¹¹í ¹koly vy¹¹í ¹koly vy¹¹í ¹koly vy¹¹í
- :av¹ak na¹im av¹ak na¹im av¹ak na¹im av¹ak na¹im av¹ak
- :zvlá¹tní naru¹ení zvlá¹tní naru¹ení zvlá¹tní naru¹ení
- :èe¹tina, øe¹ením, èe¹tina, øe¹ením, èe¹tina, øe¹ením.
+D:vÅ¡ude Å¡koda vÅ¡ude Å¡koda vÅ¡ude Å¡koda vÅ¡ude Å¡koda vÅ¡ude
+ :spÃ­Å¡e ruÅ¡il spÃ­Å¡e ruÅ¡il spÃ­Å¡e ruÅ¡il spÃ­Å¡e ruÅ¡il spÃ­Å¡e
+ :vyÅ¡Å¡Ã­ Å¡koly vyÅ¡Å¡Ã­ Å¡koly vyÅ¡Å¡Ã­ Å¡koly vyÅ¡Å¡Ã­ Å¡koly vyÅ¡Å¡Ã­
+ :avÅ¡ak naÅ¡im avÅ¡ak naÅ¡im avÅ¡ak naÅ¡im avÅ¡ak naÅ¡im avÅ¡ak
+ :zvlÃ¡Å¡tnÃ­ naruÅ¡enÃ­ zvlÃ¡Å¡tnÃ­ naruÅ¡enÃ­ zvlÃ¡Å¡tnÃ­ naruÅ¡enÃ­
+ :ÄeÅ¡tina, Å™eÅ¡enÃ­m, ÄeÅ¡tina, Å™eÅ¡enÃ­m, ÄeÅ¡tina, Å™eÅ¡enÃ­m.
 
 #                                                            ../orig/r.typ:415
 I:Rychleji, pomaleji, rychleji, pomaleji...
 *:_R_R_L86
 #                                                            ../orig/r.typ:419
-D:V leto¹ním roce. V leto¹ním roce. V leto¹ním roce. 
- :Zlep¹ovací návrh je podán pøihlá¹kou. Zlep¹ovací návrh
- :Písmeno É pí¹eme vychılením pravého prsteníku vpravo 
+D:V letoÅ¡nÃ­m roce. V letoÅ¡nÃ­m roce. V letoÅ¡nÃ­m roce. 
+ :ZlepÅ¡ovacÃ­ nÃ¡vrh je podÃ¡n pÅ™ihlÃ¡Å¡kou. ZlepÅ¡ovacÃ­ nÃ¡vrh
+ :PÃ­smeno Ã‰ pÃ­Å¡eme vychÃ½lenÃ­m pravÃ©ho prstenÃ­ku vpravo 
  :nahoru.
 
 #                                                            ../orig/r.typ:420
-I:Písmeno É pí¹eme vychılením pravého prsteníku 
+I:PÃ­smeno Ã‰ pÃ­Å¡eme vychÃ½lenÃ­m pravÃ©ho prstenÃ­ku 
  :vpravo nahoru.
 *:_R_R_L87
 #                                                            ../orig/r.typ:425
-D:nepøi¹li vy¹lapal zhor¹ili vy¹etøil zkou¹eli roz¹íøil
- :vzne¹enost, nav¹tívili, ¹lechetnost pøíslu¹nost
- :loé lél loé lél loé lél loé lél loé lél loé lél loé
- :lék léè lék léè lék léè lék léè lék léè lék léè lék
- :své tvé své tvé své tvé své tvé své tvé své tvé své
- :¹éf zlé ¹éf zlé ¹éf zlé ¹éf zlé ¹éf zlé ¹éf zlé ¹éf
+D:nepÅ™iÅ¡li vyÅ¡lapal zhorÅ¡ili vyÅ¡etÅ™il zkouÅ¡eli rozÅ¡Ã­Å™il
+ :vzneÅ¡enost, navÅ¡tÃ­vili, Å¡lechetnost pÅ™Ã­sluÅ¡nost
+ :loÃ© lÃ©l loÃ© lÃ©l loÃ© lÃ©l loÃ© lÃ©l loÃ© lÃ©l loÃ© lÃ©l loÃ©
+ :lÃ©k lÃ©Ä lÃ©k lÃ©Ä lÃ©k lÃ©Ä lÃ©k lÃ©Ä lÃ©k lÃ©Ä lÃ©k lÃ©Ä lÃ©k
+ :svÃ© tvÃ© svÃ© tvÃ© svÃ© tvÃ© svÃ© tvÃ© svÃ© tvÃ© svÃ© tvÃ© svÃ©
+ :Å¡Ã©f zlÃ© Å¡Ã©f zlÃ© Å¡Ã©f zlÃ© Å¡Ã©f zlÃ© Å¡Ã©f zlÃ© Å¡Ã©f zlÃ© Å¡Ã©f
 
 #                                                            ../orig/r.typ:426
-I:Pokud pøíli¹ chybujete, radìji zpomalte.
+I:Pokud pÅ™Ã­liÅ¡ chybujete, radÄ›ji zpomalte.
 *:_R_R_L88
 #                                                            ../orig/r.typ:433
-D:zejména problém zejména problém zejména problém
- :tématem povinné tématem povinné tématem povinné
- :¹iroké, takové, ¹iroké, takové, ¹iroké, takové,
- :nejlépe trénuje nejlépe trénuje nejlépe trénuje
- :ve¹keré prémie, ve¹keré prémie, ve¹keré prémie,
- :své - lék - tvé - zlé - ¹éf - léè - fér - véb
+D:zejmÃ©na problÃ©m zejmÃ©na problÃ©m zejmÃ©na problÃ©m
+ :tÃ©matem povinnÃ© tÃ©matem povinnÃ© tÃ©matem povinnÃ©
+ :Å¡irokÃ©, takovÃ©, Å¡irokÃ©, takovÃ©, Å¡irokÃ©, takovÃ©,
+ :nejlÃ©pe trÃ©nuje nejlÃ©pe trÃ©nuje nejlÃ©pe trÃ©nuje
+ :veÅ¡kerÃ© prÃ©mie, veÅ¡kerÃ© prÃ©mie, veÅ¡kerÃ© prÃ©mie,
+ :svÃ© - lÃ©k - tvÃ© - zlÃ© - Å¡Ã©f - lÃ©Ä - fÃ©r - vÃ©b
 
 #                                                            ../orig/r.typ:434
-I:Opakování.
+I:OpakovÃ¡nÃ­.
 *:_R_R_L89
 #                                                            ../orig/r.typ:440
-D:potøebné obèanské potøebné obèanské potøebné obèanské
- :¹oférùm, plynové, ¹oférùm, plynové, ¹oférùm, plynové
- :zahlédli vzájemné zahlédli vzájemné zahlédli vzájemné
- :hospodáøské spoleèenské hospodáøské spoleèenské
- :prùmyslové, elektrické, prùmyslové, elektrické
- :jednotlivé, samozøejmé, jednotlivé, samozøejmé
- :energetické jednorázové energetické jednorázové
+D:potÅ™ebnÃ© obÄanskÃ© potÅ™ebnÃ© obÄanskÃ© potÅ™ebnÃ© obÄanskÃ©
+ :Å¡ofÃ©rÅ¯m, plynovÃ©, Å¡ofÃ©rÅ¯m, plynovÃ©, Å¡ofÃ©rÅ¯m, plynovÃ©
+ :zahlÃ©dli vzÃ¡jemnÃ© zahlÃ©dli vzÃ¡jemnÃ© zahlÃ©dli vzÃ¡jemnÃ©
+ :hospodÃ¡Å™skÃ© spoleÄenskÃ© hospodÃ¡Å™skÃ© spoleÄenskÃ©
+ :prÅ¯myslovÃ©, elektrickÃ©, prÅ¯myslovÃ©, elektrickÃ©
+ :jednotlivÃ©, samozÅ™ejmÃ©, jednotlivÃ©, samozÅ™ejmÃ©
+ :energetickÃ© jednorÃ¡zovÃ© energetickÃ© jednorÃ¡zovÃ©
 
 #                                                            ../orig/r.typ:441
 I:Otestujte si svou rychlost.
 *:_R_R_L90
 #                                                            ../orig/r.typ:451
-D:rodné jméno mateøské ¹koly rodné jméno mateøské
- :roèní nájemné, èeské sklo, roèní nájemné, èeské
- :nahodilé setkání, spravedlivé rozhodnutí, nahodilé
- :ve vzájemné spolupráci, chráníme dobré jméno svého
- :tenké jemné hedvábí, mixování potravin mixérem
- :jedlé houby jedovaté houby jedlé houby jedovaté
- :stálé sídlo cizojazyèné knihy stálé sídlo cizojazyèné
- :úkoly obcím na úseku oprav dosavadního bytového
+D:rodnÃ© jmÃ©no mateÅ™skÃ© Å¡koly rodnÃ© jmÃ©no mateÅ™skÃ©
+ :roÄnÃ­ nÃ¡jemnÃ©, ÄeskÃ© sklo, roÄnÃ­ nÃ¡jemnÃ©, ÄeskÃ©
+ :nahodilÃ© setkÃ¡nÃ­, spravedlivÃ© rozhodnutÃ­, nahodilÃ©
+ :ve vzÃ¡jemnÃ© spoluprÃ¡ci, chrÃ¡nÃ­me dobrÃ© jmÃ©no svÃ©ho
+ :tenkÃ© jemnÃ© hedvÃ¡bÃ­, mixovÃ¡nÃ­ potravin mixÃ©rem
+ :jedlÃ© houby jedovatÃ© houby jedlÃ© houby jedovatÃ©
+ :stÃ¡lÃ© sÃ­dlo cizojazyÄnÃ© knihy stÃ¡lÃ© sÃ­dlo cizojazyÄnÃ©
+ :Ãºkoly obcÃ­m na Ãºseku oprav dosavadnÃ­ho bytovÃ©ho
 
 #                                                            ../orig/r.typ:452
-I:Opakování zamìøené na rytmus.
+I:OpakovÃ¡nÃ­ zamÄ›Å™enÃ© na rytmus.
 *:_R_R_L91
 #                                                            ../orig/r.typ:453
-D:léèebna startér kariéra schéma, zelené. léèebna
- :smést snést uvést plést kvést slézt svézt smést
- :pøíznivé kapesné, upravené kudrnaté praménky vlasové
+D:lÃ©Äebna startÃ©r kariÃ©ra schÃ©ma, zelenÃ©. lÃ©Äebna
+ :smÃ©st snÃ©st uvÃ©st plÃ©st kvÃ©st slÃ©zt svÃ©zt smÃ©st
+ :pÅ™Ã­znivÃ© kapesnÃ©, upravenÃ© kudrnatÃ© pramÃ©nky vlasovÃ©
 
 G:_R_E_R9
 #------------------------------------------------------------------------------
@@ -1820,128 +1820,128 @@ G:_R_E_R9
 *:R10
 *:_R_S_R10
 #                                                            ../orig/r.typ:457
-I:Rozcvièka.
+I:RozcviÄka.
 *:_R_R_L92
 #                                                            ../orig/r.typ:458
-D:Sekce vzájemné hospodáøské pomoci.
- :Sekce vzájemné hospodáøské pomoci.
+D:Sekce vzÃ¡jemnÃ© hospodÃ¡Å™skÃ© pomoci.
+ :Sekce vzÃ¡jemnÃ© hospodÃ¡Å™skÃ© pomoci.
 
 #                                                            ../orig/r.typ:459
-I:Písmeno Ì pí¹eme levım malíèkem, kterı vychylujeme 
- :pøímo nahoru.
+I:PÃ­smeno Äš pÃ­Å¡eme levÃ½m malÃ­Äkem, kterÃ½ vychylujeme 
+ :pÅ™Ã­mo nahoru.
 
 *:_R_R_L93
 #                                                            ../orig/r.typ:461
-D:prohloubené cizojazyèné nedokonalé, lékaøstvím.
- :aqì aìa aqì aìa aqì aìa aqì aìa aqì aìa aqì aìa
- :mìl vìk mìl vìk mìl vìk mìl vìk mìl vìk mìl vìk
- :obì dvì obì dvì obì dvì obì dvì obì dvì obì dvì
- :dìl tìl dìl tìl dìl tìl dìl tìl dìl tìl dìl tìl
+D:prohloubenÃ© cizojazyÄnÃ© nedokonalÃ©, lÃ©kaÅ™stvÃ­m.
+ :aqÄ› aÄ›a aqÄ› aÄ›a aqÄ› aÄ›a aqÄ› aÄ›a aqÄ› aÄ›a aqÄ› aÄ›a
+ :mÄ›l vÄ›k mÄ›l vÄ›k mÄ›l vÄ›k mÄ›l vÄ›k mÄ›l vÄ›k mÄ›l vÄ›k
+ :obÄ› dvÄ› obÄ› dvÄ› obÄ› dvÄ› obÄ› dvÄ› obÄ› dvÄ› obÄ› dvÄ›
+ :dÄ›l tÄ›l dÄ›l tÄ›l dÄ›l tÄ›l dÄ›l tÄ›l dÄ›l tÄ›l dÄ›l tÄ›l
 
 #                                                            ../orig/r.typ:462
 I:Slova.
 *:_R_R_L94
 #                                                            ../orig/r.typ:463
-D:obecnì, reálnì, obecnì, reálnì, obecnì, reálnì
- :zvlá¹tì úspì¹ní zvlá¹tì úspì¹ní zvlá¹tì úspì¹ní
- :zmìnìn, bìlou¹, zmìnìn, bìlou¹, zmìnìn, bìlou¹
- :mìl vìk mnì bìh nìj dìl obì dìj vìø mìj tì¹ mìø
- :nìkolik pìstoun sdìlili liknavì zámìnou vybìhli
- :zamìstnaneckého nejkvalitnìj¹ím nepravdìpodobnì
+D:obecnÄ›, reÃ¡lnÄ›, obecnÄ›, reÃ¡lnÄ›, obecnÄ›, reÃ¡lnÄ›
+ :zvlÃ¡Å¡tÄ› ÃºspÄ›Å¡nÃ­ zvlÃ¡Å¡tÄ› ÃºspÄ›Å¡nÃ­ zvlÃ¡Å¡tÄ› ÃºspÄ›Å¡nÃ­
+ :zmÄ›nÄ›n, bÄ›louÅ¡, zmÄ›nÄ›n, bÄ›louÅ¡, zmÄ›nÄ›n, bÄ›louÅ¡
+ :mÄ›l vÄ›k mnÄ› bÄ›h nÄ›j dÄ›l obÄ› dÄ›j vÄ›Å™ mÄ›j tÄ›Å¡ mÄ›Å™
+ :nÄ›kolik pÄ›stoun sdÄ›lili liknavÄ› zÃ¡mÄ›nou vybÄ›hli
+ :zamÄ›stnaneckÃ©ho nejkvalitnÄ›jÅ¡Ã­m nepravdÄ›podobnÄ›
 
 #                                                            ../orig/r.typ:464
-I:Procvièení.
+I:ProcviÄenÃ­.
 *:_R_R_L95
 #                                                            ../orig/r.typ:466
-D:Na vìdomí. Na vrcholu ¹tìstí. Na vìdomí. Na vrcholu
- :dovoz nebyl zaji¹tìn ve vnìj¹ích vztazích dovoz
- :mezinárodní dìlba práce mezinárodní dìlba práce
- :má zaji¹tìn pracovní pomìr døívìj¹í zamìstnání
- :øídil se smìrnicemi, sbìratel vìcí, øídil se
+D:Na vÄ›domÃ­. Na vrcholu Å¡tÄ›stÃ­. Na vÄ›domÃ­. Na vrcholu
+ :dovoz nebyl zajiÅ¡tÄ›n ve vnÄ›jÅ¡Ã­ch vztazÃ­ch dovoz
+ :mezinÃ¡rodnÃ­ dÄ›lba prÃ¡ce mezinÃ¡rodnÃ­ dÄ›lba prÃ¡ce
+ :mÃ¡ zajiÅ¡tÄ›n pracovnÃ­ pomÄ›r dÅ™Ã­vÄ›jÅ¡Ã­ zamÄ›stnÃ¡nÃ­
+ :Å™Ã­dil se smÄ›rnicemi, sbÄ›ratel vÄ›cÃ­, Å™Ã­dil se
 
 #                                                            ../orig/r.typ:467
-I:Písmeno ® pí¹eme levım ukazováèkem, 
- :kterı vychylujeme vpravo nahoru.
+I:PÃ­smeno Å½ pÃ­Å¡eme levÃ½m ukazovÃ¡Äkem, 
+ :kterÃ½ vychylujeme vpravo nahoru.
 *:_R_R_L96
 #                                                            ../orig/r.typ:470
-D:pøesvìdèené nadprùmìrnì zaji¹tìného zkvalitnìné
- :ft¾ f¾f føf ft¾ f¾f føf ft¾ f¾f føf ft¾ f¾f føf
- :je¾ ji¾ je¾ ji¾ je¾ ji¾ je¾ ji¾ je¾ ji¾ je¾ ji¾
- :tá¾ té¾ tá¾ té¾ tá¾ té¾ tá¾ té¾ tá¾ té¾ tá¾ té¾
- :bì¾ vì¾ bì¾ vì¾ bì¾ vì¾ bì¾ vì¾ bì¾ vì¾ bì¾ vì¾
- :co¾ ¾il co¾ ¾il co¾ ¾il co¾ ¾il co¾ ¾il co¾ ¾il
+D:pÅ™esvÄ›dÄenÃ© nadprÅ¯mÄ›rnÄ› zajiÅ¡tÄ›nÃ©ho zkvalitnÄ›nÃ©
+ :ftÅ¾ fÅ¾f fÅ™f ftÅ¾ fÅ¾f fÅ™f ftÅ¾ fÅ¾f fÅ™f ftÅ¾ fÅ¾f fÅ™f
+ :jeÅ¾ jiÅ¾ jeÅ¾ jiÅ¾ jeÅ¾ jiÅ¾ jeÅ¾ jiÅ¾ jeÅ¾ jiÅ¾ jeÅ¾ jiÅ¾
+ :tÃ¡Å¾ tÃ©Å¾ tÃ¡Å¾ tÃ©Å¾ tÃ¡Å¾ tÃ©Å¾ tÃ¡Å¾ tÃ©Å¾ tÃ¡Å¾ tÃ©Å¾ tÃ¡Å¾ tÃ©Å¾
+ :bÄ›Å¾ vÄ›Å¾ bÄ›Å¾ vÄ›Å¾ bÄ›Å¾ vÄ›Å¾ bÄ›Å¾ vÄ›Å¾ bÄ›Å¾ vÄ›Å¾ bÄ›Å¾ vÄ›Å¾
+ :coÅ¾ Å¾il coÅ¾ Å¾il coÅ¾ Å¾il coÅ¾ Å¾il coÅ¾ Å¾il coÅ¾ Å¾il
 
 #                                                            ../orig/r.typ:471
-I:Opakujeme ®.
+I:Opakujeme Å½.
 *:_R_R_L97
 #                                                            ../orig/r.typ:475
-D:re¾isér soutì¾í re¾isér soutì¾í re¾isér soutì¾í
- :odvá¾el sto¾ár, odvá¾el sto¾ár, odvá¾el sto¾ár
- :tr¾i¹tì kní¾ek, tr¾i¹tì kní¾ek, tr¾i¹tì kní¾ek
- :obtí¾ná montá¾, obtí¾ná montá¾, obtí¾ná montá¾
- :obì¾ník krou¾ku obì¾ník krou¾ku obì¾ník krou¾ku
- :dodr¾et zadr¾et vydr¾et obdr¾et podr¾et udr¾et
- :slo¾il, vlo¾il, ulo¾il, nalo¾il vylo¾il zalo¾il
+D:reÅ¾isÃ©r soutÄ›Å¾Ã­ reÅ¾isÃ©r soutÄ›Å¾Ã­ reÅ¾isÃ©r soutÄ›Å¾Ã­
+ :odvÃ¡Å¾el stoÅ¾Ã¡r, odvÃ¡Å¾el stoÅ¾Ã¡r, odvÃ¡Å¾el stoÅ¾Ã¡r
+ :trÅ¾iÅ¡tÄ› knÃ­Å¾ek, trÅ¾iÅ¡tÄ› knÃ­Å¾ek, trÅ¾iÅ¡tÄ› knÃ­Å¾ek
+ :obtÃ­Å¾nÃ¡ montÃ¡Å¾, obtÃ­Å¾nÃ¡ montÃ¡Å¾, obtÃ­Å¾nÃ¡ montÃ¡Å¾
+ :obÄ›Å¾nÃ­k krouÅ¾ku obÄ›Å¾nÃ­k krouÅ¾ku obÄ›Å¾nÃ­k krouÅ¾ku
+ :dodrÅ¾et zadrÅ¾et vydrÅ¾et obdrÅ¾et podrÅ¾et udrÅ¾et
+ :sloÅ¾il, vloÅ¾il, uloÅ¾il, naloÅ¾il vyloÅ¾il zaloÅ¾il
 
 
 #                                                            ../orig/r.typ:476
 I:Zrychlujte a zpomalujte.
 *:_R_R_L98
 #                                                            ../orig/r.typ:481
-D:dru¾stevním stí¾nostem, dru¾stevním stí¾nostem
- :dosa¾itelná ko¾e¹nictví dosa¾itelná ko¾e¹nictví
- :arbitrá¾ním po¾adavkùm, arbitrá¾ním po¾adavkùm
- :¾urnalistùm soutì¾ících ¾urnalistùm soutì¾ících
- :re¾ie jako¾ vá¾nì bì¾el l¾íce tak¾e svì¾í zú¾il
- :jestli¾e vy¾ádali nejni¾¹í pøirá¾ku umo¾nili
- :ka¾doroènì, ¾eleznièní, vymo¾enost, pova¾ovali
+D:druÅ¾stevnÃ­m stÃ­Å¾nostem, druÅ¾stevnÃ­m stÃ­Å¾nostem
+ :dosaÅ¾itelnÃ¡ koÅ¾eÅ¡nictvÃ­ dosaÅ¾itelnÃ¡ koÅ¾eÅ¡nictvÃ­
+ :arbitrÃ¡Å¾nÃ­m poÅ¾adavkÅ¯m, arbitrÃ¡Å¾nÃ­m poÅ¾adavkÅ¯m
+ :Å¾urnalistÅ¯m soutÄ›Å¾Ã­cÃ­ch Å¾urnalistÅ¯m soutÄ›Å¾Ã­cÃ­ch
+ :reÅ¾ie jakoÅ¾ vÃ¡Å¾nÄ› bÄ›Å¾el lÅ¾Ã­ce takÅ¾e svÄ›Å¾Ã­ zÃºÅ¾il
+ :jestliÅ¾e vyÅ¾Ã¡dali nejniÅ¾Å¡Ã­ pÅ™irÃ¡Å¾ku umoÅ¾nili
+ :kaÅ¾doroÄnÄ›, Å¾elezniÄnÃ­, vymoÅ¾enost, povaÅ¾ovali
 
 
 #                                                            ../orig/r.typ:482
-I:Písmeno İ pí¹eme ukazováèkem pravé ruky vychılením
- :vpravo vzhùru.
+I:PÃ­smeno Ã pÃ­Å¡eme ukazovÃ¡Äkem pravÃ© ruky vychÃ½lenÃ­m
+ :vpravo vzhÅ¯ru.
 
 *:_R_R_L99
 #                                                            ../orig/r.typ:488
-D:údr¾báøi vy¾adují mno¾ství podlo¾ek údr¾báøi
- :¾elezáøství penì¾nictví slo¾itìj¹í, soutì¾ením.
- :juı jıj jáj juı jıj jáj juı jıj jáj juı jıj jáj
- :bıt dım bıt dım bıt dım bıt dım bıt dım bıt dım
- :kıl rım kıl rım kıl rım kıl rım kıl rım kıl rım
- :sır zlı sır zlı sır zlı sır zlı sır zlı sır zlı
- :rıè kım rıè kım rıè kım rıè kım rıè kım rıè kım
+D:ÃºdrÅ¾bÃ¡Å™i vyÅ¾adujÃ­ mnoÅ¾stvÃ­ podloÅ¾ek ÃºdrÅ¾bÃ¡Å™i
+ :Å¾elezÃ¡Å™stvÃ­ penÄ›Å¾nictvÃ­ sloÅ¾itÄ›jÅ¡Ã­, soutÄ›Å¾enÃ­m.
+ :juÃ½ jÃ½j jÃ¡j juÃ½ jÃ½j jÃ¡j juÃ½ jÃ½j jÃ¡j juÃ½ jÃ½j jÃ¡j
+ :bÃ½t dÃ½m bÃ½t dÃ½m bÃ½t dÃ½m bÃ½t dÃ½m bÃ½t dÃ½m bÃ½t dÃ½m
+ :kÃ½l rÃ½m kÃ½l rÃ½m kÃ½l rÃ½m kÃ½l rÃ½m kÃ½l rÃ½m kÃ½l rÃ½m
+ :sÃ½r zlÃ½ sÃ½r zlÃ½ sÃ½r zlÃ½ sÃ½r zlÃ½ sÃ½r zlÃ½ sÃ½r zlÃ½
+ :rÃ½Ä kÃ½m rÃ½Ä kÃ½m rÃ½Ä kÃ½m rÃ½Ä kÃ½m rÃ½Ä kÃ½m rÃ½Ä kÃ½m
 
 #                                                            ../orig/r.typ:489
 I:Slova.
 *:_R_R_L100
 #                                                            ../orig/r.typ:495
-D:slıchal otıpkou slıchal otıpkou slıchal otıpkou
- :blondın in¾enır blondın in¾enır blondın in¾enır
- :ohıbanı dıchací ohıbanı dıchací ohıbanı dıchací
- :divokım pomı¹lí divokım pomı¹lí divokım pomı¹lí
- :dım nıt rıh vır hıl tıt prı rıt zlı rım tı¾ mıt
- :vımysly kostımy vıkonnı pionıøi mlınice sıkorka
- :¾enskı, øadová, ¾íznivı øeèená, ¾ulovı, øíjnová
+D:slÃ½chal otÃ½pkou slÃ½chal otÃ½pkou slÃ½chal otÃ½pkou
+ :blondÃ½n inÅ¾enÃ½r blondÃ½n inÅ¾enÃ½r blondÃ½n inÅ¾enÃ½r
+ :ohÃ½banÃ½ dÃ½chacÃ­ ohÃ½banÃ½ dÃ½chacÃ­ ohÃ½banÃ½ dÃ½chacÃ­
+ :divokÃ½m pomÃ½Å¡lÃ­ divokÃ½m pomÃ½Å¡lÃ­ divokÃ½m pomÃ½Å¡lÃ­
+ :dÃ½m nÃ½t rÃ½h vÃ½r hÃ½l tÃ½t prÃ½ rÃ½t zlÃ½ rÃ½m tÃ½Å¾ mÃ½t
+ :vÃ½mysly kostÃ½my vÃ½konnÃ½ pionÃ½Å™i mlÃ½nice sÃ½korka
+ :Å¾enskÃ½, Å™adovÃ¡, Å¾Ã­znivÃ½ Å™eÄenÃ¡, Å¾ulovÃ½, Å™Ã­jnovÃ¡
 
 #                                                            ../orig/r.typ:496
-I:Cvièení.
+I:CviÄenÃ­.
 *:_R_R_L101
 #                                                            ../orig/r.typ:504
-D:hospodáøskı hospodárnı, hospodáøskı hospodárnı,
- :prùmyslovım technickımi prùmyslovım technickımi
- :polovièatım sebejistıch polovièatım sebejistıch
- :ostıchavımi pokrıvaèskı ostıchavımi pokrıvaèskı
- :francouzskı klopıtnutím francouzskı klopıtnutím
- :dıha, dıka, dımka pıcha mıdla rıma, rıha, vıhra
+D:hospodÃ¡Å™skÃ½ hospodÃ¡rnÃ½, hospodÃ¡Å™skÃ½ hospodÃ¡rnÃ½,
+ :prÅ¯myslovÃ½m technickÃ½mi prÅ¯myslovÃ½m technickÃ½mi
+ :poloviÄatÃ½m sebejistÃ½ch poloviÄatÃ½m sebejistÃ½ch
+ :ostÃ½chavÃ½mi pokrÃ½vaÄskÃ½ ostÃ½chavÃ½mi pokrÃ½vaÄskÃ½
+ :francouzskÃ½ klopÃ½tnutÃ­m francouzskÃ½ klopÃ½tnutÃ­m
+ :dÃ½ha, dÃ½ka, dÃ½mka pÃ½cha mÃ½dla rÃ½ma, rÃ½ha, vÃ½hra
 
 
 #                                                            ../orig/r.typ:505
-I:Opakování.
+I:OpakovÃ¡nÃ­.
 *:_R_R_L102
 #                                                            ../orig/r.typ:506
-D:prùmyslovım technickımi prùmyslovım technickımi
- :polovièatım sebejistıch polovièatım sebejistıch
- :ostıchavımi pokrıvaèskı ostıchavımi pokrıvaèskı
+D:prÅ¯myslovÃ½m technickÃ½mi prÅ¯myslovÃ½m technickÃ½mi
+ :poloviÄatÃ½m sebejistÃ½ch poloviÄatÃ½m sebejistÃ½ch
+ :ostÃ½chavÃ½mi pokrÃ½vaÄskÃ½ ostÃ½chavÃ½mi pokrÃ½vaÄskÃ½
 
 G:_R_E_R10
 #------------------------------------------------------------------------------
@@ -1952,99 +1952,99 @@ G:_R_E_R10
 *:_R_R_L103
 #                                                            ../orig/r.typ:514
 T:
- :  Ji¾ jsme témìø u konce, vydr¾te!
+ :  JiÅ¾ jsme tÃ©mÄ›Å™ u konce, vydrÅ¾te!
 
 #                                                            ../orig/r.typ:515
-I:Rozcvièka.
+I:RozcviÄka.
 *:_R_R_L104
 #                                                            ../orig/r.typ:516
-D:Opo¾dìnımi dodávkovımi pøíkazy. Opo¾dìnımi dodávkovımi
- :Pøekroèení stanovenıch úkolù ve vırobním odvìtví.
+D:OpoÅ¾dÄ›nÃ½mi dodÃ¡vkovÃ½mi pÅ™Ã­kazy. OpoÅ¾dÄ›nÃ½mi dodÃ¡vkovÃ½mi
+ :PÅ™ekroÄenÃ­ stanovenÃ½ch ÃºkolÅ¯ ve vÃ½robnÃ­m odvÄ›tvÃ­.
 
 #                                                            ../orig/r.typ:517
-I:Ï, «, Ò: levı Shift+háèek, písmeno. 
- :Ó - èárka (klávesa háèku), O.
+I:Ä, Å¤, Å‡: levÃ½ Shift+hÃ¡Äek, pÃ­smeno. 
+ :Ã“ - ÄÃ¡rka (klÃ¡vesa hÃ¡Äku), O.
 
 *:_R_R_L105
 #                                                            ../orig/r.typ:519
-D:ïa, »a, òa, ïa, »a, òa, ïa, »a, òa, ïa, »a, òa, ïa,
- :loï na» báò loï na» báò loï na» báò loï na» báò loï
- :seï by» laò seï by» laò seï by» laò seï by» laò seï
- :buï hu» kùò buï hu» kùò buï hu» kùò buï hu» kùò buï
- :káï dr» míò káï dr» míò káï dr» míò káï dr» míò káï
+D:Äa, Å¥a, Åˆa, Äa, Å¥a, Åˆa, Äa, Å¥a, Åˆa, Äa, Å¥a, Åˆa, Äa,
+ :loÄ naÅ¥ bÃ¡Åˆ loÄ naÅ¥ bÃ¡Åˆ loÄ naÅ¥ bÃ¡Åˆ loÄ naÅ¥ bÃ¡Åˆ loÄ
+ :seÄ byÅ¥ laÅˆ seÄ byÅ¥ laÅˆ seÄ byÅ¥ laÅˆ seÄ byÅ¥ laÅˆ seÄ
+ :buÄ huÅ¥ kÅ¯Åˆ buÄ huÅ¥ kÅ¯Åˆ buÄ huÅ¥ kÅ¯Åˆ buÄ huÅ¥ kÅ¯Åˆ buÄ
+ :kÃ¡Ä drÅ¥ mÃ­Åˆ kÃ¡Ä drÅ¥ mÃ­Åˆ kÃ¡Ä drÅ¥ mÃ­Åˆ kÃ¡Ä drÅ¥ mÃ­Åˆ kÃ¡Ä
 
 #                                                            ../orig/r.typ:520
-I:Toto je obtí¾ná èást, budeme muset hodnì cvièit.
+I:Toto je obtÃ­Å¾nÃ¡ ÄÃ¡st, budeme muset hodnÄ› cviÄit.
 *:_R_R_L106
 #                                                            ../orig/r.typ:521
-D:ló¾e móda ló¾e móda ló¾e móda ló¾e móda ló¾e móda
- :hnìï, ètvr» bázeò pøíï, tøí¹» náplò ¾erï, la»ka
- :zaji¹»uje poji¹»uje zji¹»uje, uplatòuje zmocòuje
- :milión bonbón fazóna glóbus citrón pódium kvóta
- :báòskı in¾enır, báòskı in¾enır, báòskı in¾enır
- :begónie a pelargónie, begónie a pelargónie
+D:lÃ³Å¾e mÃ³da lÃ³Å¾e mÃ³da lÃ³Å¾e mÃ³da lÃ³Å¾e mÃ³da lÃ³Å¾e mÃ³da
+ :hnÄ›Ä, ÄtvrÅ¥ bÃ¡zeÅˆ pÅ™Ã­Ä, tÅ™Ã­Å¡Å¥ nÃ¡plÅˆ Å¾erÄ, laÅ¥ka
+ :zajiÅ¡Å¥uje pojiÅ¡Å¥uje zjiÅ¡Å¥uje, uplatÅˆuje zmocÅˆuje
+ :miliÃ³n bonbÃ³n fazÃ³na glÃ³bus citrÃ³n pÃ³dium kvÃ³ta
+ :bÃ¡ÅˆskÃ½ inÅ¾enÃ½r, bÃ¡ÅˆskÃ½ inÅ¾enÃ½r, bÃ¡ÅˆskÃ½ inÅ¾enÃ½r
+ :begÃ³nie a pelargÃ³nie, begÃ³nie a pelargÃ³nie
 
 #                                                            ../orig/r.typ:522
-I:Vìty.
+I:VÄ›ty.
 *:_R_R_L107
 #                                                            ../orig/r.typ:524
-D:Madloò je rù¾ovì kvetoucí strom, jeho¾ semeny jsou mandle.
- :Bóje je plovoucí tìleso oznaèující nebezpeèné místo ve vodì.
- :Objí¾ïka znamená náhradní cestu za uzavøenou komunikaci.
- :Rtu» je tekutı, jedovatı, støíbøitì kovovı prvek.
- :Skóre je pomìr bodù ve sportovním utkání.
+D:MadloÅˆ je rÅ¯Å¾ovÄ› kvetoucÃ­ strom, jehoÅ¾ semeny jsou mandle.
+ :BÃ³je je plovoucÃ­ tÄ›leso oznaÄujÃ­cÃ­ nebezpeÄnÃ© mÃ­sto ve vodÄ›.
+ :ObjÃ­Å¾Äka znamenÃ¡ nÃ¡hradnÃ­ cestu za uzavÅ™enou komunikaci.
+ :RtuÅ¥ je tekutÃ½, jedovatÃ½, stÅ™Ã­bÅ™itÄ› kovovÃ½ prvek.
+ :SkÃ³re je pomÄ›r bodÅ¯ ve sportovnÃ­m utkÃ¡nÃ­.
 
 #                                                            ../orig/r.typ:525
-I:©,Ï... - shift-háèek, shift-písmeno.
+I:Å ,Ä... - shift-hÃ¡Äek, shift-pÃ­smeno.
 *:_R_R_L108
 #                                                            ../orig/r.typ:528
-D:®a, ®a, Òa, Òa, «a, «a, ®a, ®a, Òa, Òa, «a, «a, ®a
- :Øa, ©a, Øa, ©a, Øa, ©a, Øa, ©a, Øa, ©a, Øa, ©a, Øa
- :Ïa, Èa, Ïa, Èa, Ïa, Èa, Ïa, Èa, Ïa, Èa, Ïa, Èa, Ïa
- :Úa, Óa, Éù, Áù, Úa, Óa, Éù, Áù, Úa, Óa, Éù, Áù, Úa
- :®eleznièní stavitesltví, ®eleznièní opravny a strojírny,
+D:Å½a, Å½a, Å‡a, Å‡a, Å¤a, Å¤a, Å½a, Å½a, Å‡a, Å‡a, Å¤a, Å¤a, Å½a
+ :Å˜a, Å a, Å˜a, Å a, Å˜a, Å a, Å˜a, Å a, Å˜a, Å a, Å˜a, Å a, Å˜a
+ :Äa, ÄŒa, Äa, ÄŒa, Äa, ÄŒa, Äa, ÄŒa, Äa, ÄŒa, Äa, ÄŒa, Äa
+ :Ãša, Ã“a, Ã‰Å¯, ÃÅ¯, Ãša, Ã“a, Ã‰Å¯, ÃÅ¯, Ãša, Ã“a, Ã‰Å¯, ÃÅ¯, Ãša
+ :Å½elezniÄnÃ­ stavitesltvÃ­, Å½elezniÄnÃ­ opravny a strojÃ­rny,
 
 
 #                                                            ../orig/r.typ:529
 I:A znovu...
 *:_R_R_L109
 #                                                            ../orig/r.typ:533
-D:Øempo, oborovı podnik, Øeditelství dálnic
- :©koda, koncernovı podnik, ©umavské vápenice, ©ohaj
- :Èokoládovny, oborovı podnik, Èeská státní spoøitelna
- :Ïumbier, vırobní dru¾stvo, Ïáblice, Ïumbier, vırobní
- :Ústøední rada odborù, Ústav národního zdraví, Úpavan
- :®elezárny Bílá Cerkev, ©roubárna ®atec
+D:Å˜empo, oborovÃ½ podnik, Å˜editelstvÃ­ dÃ¡lnic
+ :Å koda, koncernovÃ½ podnik, Å umavskÃ© vÃ¡penice, Å ohaj
+ :ÄŒokolÃ¡dovny, oborovÃ½ podnik, ÄŒeskÃ¡ stÃ¡tnÃ­ spoÅ™itelna
+ :Äumbier, vÃ½robnÃ­ druÅ¾stvo, ÄÃ¡blice, Äumbier, vÃ½robnÃ­
+ :ÃšstÅ™ednÃ­ rada odborÅ¯, Ãšstav nÃ¡rodnÃ­ho zdravÃ­, Ãšpavan
+ :Å½elezÃ¡rny BÃ­lÃ¡ Cerkev, Å roubÃ¡rna Å½atec
 
 #                                                            ../orig/r.typ:534
-I:Nepodvádìjte s CAPS LOCKem!
+I:NepodvÃ¡dÄ›jte s CAPS LOCKem!
 *:_R_R_L110
 #                                                            ../orig/r.typ:539
-D:PLZEÒ, DOMA®LICE, HORA®ÏOVICE, PIE©«ANY, PØEROV
- :ÈSSR, ÈSR, ÈNR, ÈSAV, V©E, SE©, ÈKD, V®KG, ÈSAD
- :JESENÍKY, TÁBOR, PÍSEK, BLATNÁ, NÁCHOD, PÚCHOV
- :KÚNZ, OÚNZ, ÚV KSÈ, ÚV ÈSTV, ÚV NF, ÚRO, ÚV SSM
+D:PLZEÅ‡, DOMAÅ½LICE, HORAÅ½ÄOVICE, PIEÅ Å¤ANY, PÅ˜EROV
+ :ÄŒSSR, ÄŒSR, ÄŒNR, ÄŒSAV, VÅ E, SEÅ , ÄŒKD, VÅ½KG, ÄŒSAD
+ :JESENÃKY, TÃBOR, PÃSEK, BLATNÃ, NÃCHOD, PÃšCHOV
+ :KÃšNZ, OÃšNZ, ÃšV KSÄŒ, ÃšV ÄŒSTV, ÃšV NF, ÃšRO, ÃšV SSM
 
 #                                                            ../orig/r.typ:540
-I:pravı ukazováèek: ?, pravı prsteníèek: :, 
- :pravı malíèek: !,/,(,).
+I:pravÃ½ ukazovÃ¡Äek: ?, pravÃ½ prstenÃ­Äek: :, 
+ :pravÃ½ malÃ­Äek: !,/,(,).
 *:_R_R_L111
 #                                                            ../orig/r.typ:546
-D:k? k? ù! ù! k? k? ù! ù! k? k? ù! ù! k? k? ù! ù! k?
- :Máte zájem o spolupráci? Mù¾ete nám vyhovìt? Splníte?
- :Kam letos na dovolenou? Jaké bude poèasí? Uèíte se?
- :Dávejte pozor! Sledujte pozornì vıklad! 
- :Míru zdar! Pìtiletce zdar! Za trvalı mír! Svìtu mír!
+D:k? k? Å¯! Å¯! k? k? Å¯! Å¯! k? k? Å¯! Å¯! k? k? Å¯! Å¯! k?
+ :MÃ¡te zÃ¡jem o spoluprÃ¡ci? MÅ¯Å¾ete nÃ¡m vyhovÄ›t? SplnÃ­te?
+ :Kam letos na dovolenou? JakÃ© bude poÄasÃ­? UÄÃ­te se?
+ :DÃ¡vejte pozor! Sledujte pozornÄ› vÃ½klad! 
+ :MÃ­ru zdar! PÄ›tiletce zdar! Za trvalÃ½ mÃ­r! SvÄ›tu mÃ­r!
 
 #                                                            ../orig/r.typ:547
-I:Opakování
+I:OpakovÃ¡nÃ­
 *:_R_R_L112
 #                                                            ../orig/r.typ:548
 D:l: l: l; l; l: l: l; l; l: l: l; l; l: l: l; l; l: l:
- :Klávesnice obsahuje: písmennou øadu støední, dolní,
- :èíselnou.
- :Zpùsob doruèení písemností oznaèujeme takto: Doporuèenì
- :Otevøená listovní zásilka Letecky Par Avion Air mail
+ :KlÃ¡vesnice obsahuje: pÃ­smennou Å™adu stÅ™ednÃ­, dolnÃ­,
+ :ÄÃ­selnou.
+ :ZpÅ¯sob doruÄenÃ­ pÃ­semnostÃ­ oznaÄujeme takto: DoporuÄenÄ›
+ :OtevÅ™enÃ¡ listovnÃ­ zÃ¡silka Letecky Par Avion Air mail
 
 G:_R_E_R11
 #------------------------------------------------------------------------------
@@ -2053,7 +2053,7 @@ G:_R_E_R11
 *:R12
 *:_R_S_R12
 #                                                            ../orig/r.typ:552
-I:Toto je poslední lekce. Pùjdeme na èísla.
+I:Toto je poslednÃ­ lekce. PÅ¯jdeme na ÄÃ­sla.
 *:_R_R_L113
 #                                                            ../orig/r.typ:553
 D:A1A A2A A1A A2A A1A A2A A1A A2A A1A A2A A1A A2A A1A A2A
@@ -2064,7 +2064,7 @@ D:A1A A2A A1A A2A A1A A2A A1A A2A A1A A2A A1A A2A A1A A2A
  :K9K K9K K9K K9K K9K K9K K9K K9K K9K K9K K9K K9K K9K K9K
 
 #                                                            ../orig/r.typ:554
-I:Pokraèujeme. Nepodvádìjte na numerické klávesnici!
+I:PokraÄujeme. NepodvÃ¡dÄ›jte na numerickÃ© klÃ¡vesnici!
 *:_R_R_L114
 #                                                            ../orig/r.typ:556
 D:J7J J8J J7J J8J J7J J8J J7J J8J J7J J8J J7J J8J J7J
@@ -2075,19 +2075,19 @@ D:J7J J8J J7J J8J J7J J8J J7J J8J J7J J8J J7J J8J J7J
  :123 345 567 789 901 710 629 538 450 817 3 92 604 6
 
 #                                                            ../orig/r.typ:557
-I:Opakování.
+I:OpakovÃ¡nÃ­.
 *:_R_R_L115
 #                                                            ../orig/r.typ:558
 D:123 345 567 789 901 710 629 538 450 817 3 92 604
- :98,2; 2 115,70; Kès 78 900,--; 1 264 603, 520 71
- :Jednota, LSD Rokycany, è. tel. 25 55; prodejna
- :èp 542, è. tel. 91 53 50
- :KÚNZ - Fakultní nemocnice, Plzeò, Lenonova 13
- :èíslo telefonu 21 62 nebo 27 33 36, linka 350
+ :98,2; 2 115,70; KÄs 78 900,--; 1 264 603, 520 71
+ :Jednota, LSD Rokycany, Ä. tel. 25 55; prodejna
+ :Äp 542, Ä. tel. 91 53 50
+ :KÃšNZ - FakultnÃ­ nemocnice, PlzeÅˆ, Lenonova 13
+ :ÄÃ­slo telefonu 21 62 nebo 27 33 36, linka 350
 
 
 #                                                            ../orig/r.typ:559
-I:Zkuste si i dal¹í symboly, pou¾ijte v¾dy nejbli¾¹í prst.
+I:Zkuste si i dalÅ¡Ã­ symboly, pouÅ¾ijte vÅ¾dy nejbliÅ¾Å¡Ã­ prst.
 *:_R_R_L116
 #                                                            ../orig/r.typ:561
 D:I = 1, V = 5, X = 10, L = 50, C = 100, D = 500
@@ -2099,60 +2099,60 @@ D:I = 1, V = 5, X = 10, L = 50, C = 100, D = 500
 I:Jsme u konce.
 *:_R_R_L117
 #                                                            ../orig/r.typ:565
-D:Mo¾ná budete chtít zkusit i jiné série lekcí
- :a dále se zdokonalovat. Mù¾ete se ale zdokonalovat
- :i praxí. Pøesto va¹í rychlosti velmi pomù¾e, pokud
- :se tøeba za rok ke kurzu vrátíte a aèkoliv ji¾
- :budete umìt správnì psát, projdete si jej je¹tì
- :jednou. Uvidíte, ¾e zlep¹ení v rychlosti se urèitì
- :dostaví. Hlavnì mìjte na pamìti, ¾e je tøeba
- :psát plynule, rychlost se dostaví èasem. Gratuluji!
+D:MoÅ¾nÃ¡ budete chtÃ­t zkusit i jinÃ© sÃ©rie lekcÃ­
+ :a dÃ¡le se zdokonalovat. MÅ¯Å¾ete se ale zdokonalovat
+ :i praxÃ­. PÅ™esto vaÅ¡Ã­ rychlosti velmi pomÅ¯Å¾e, pokud
+ :se tÅ™eba za rok ke kurzu vrÃ¡tÃ­te a aÄkoliv jiÅ¾
+ :budete umÄ›t sprÃ¡vnÄ› psÃ¡t, projdete si jej jeÅ¡tÄ›
+ :jednou. UvidÃ­te, Å¾e zlepÅ¡enÃ­ v rychlosti se urÄitÄ›
+ :dostavÃ­. HlavnÄ› mÄ›jte na pamÄ›ti, Å¾e je tÅ™eba
+ :psÃ¡t plynule, rychlost se dostavÃ­ Äasem. Gratuluji!
 
 G:_R_E_R12
 #------------------------------------------------------------------------------
 # Lekce series R jump tables
 #------------------------------------------------------------------------------
 *:_R_E_R1
-Q:Chcete pokraèovat do lekce R2 [Y(ano)/N(ne)]? 
+Q:Chcete pokraÄovat do lekce R2 [Y(ano)/N(ne)]? 
 N:_R_MENU
 G:_R_M_R2
 *:_R_E_R2
-Q:Chcete pokraèovat do lekce R3 [Y(ano)/N(ne)]? 
+Q:Chcete pokraÄovat do lekce R3 [Y(ano)/N(ne)]? 
 N:_R_MENU
 G:_R_M_R3
 *:_R_E_R3
-Q:Chcete pokraèovat do lekce R4 [Y(ano)/N(ne)]? 
+Q:Chcete pokraÄovat do lekce R4 [Y(ano)/N(ne)]? 
 G:_R_M_R4
 *:_R_E_R4
-Q:Chcete pokraèovat do lekce R5 [Y(ano)/N(ne)]? 
+Q:Chcete pokraÄovat do lekce R5 [Y(ano)/N(ne)]? 
 N:_R_MENU
 G:_R_M_R5
 *:_R_E_R5
-Q:Chcete pokraèovat do lekce R6 [Y(ano)/N(ne)]? 
+Q:Chcete pokraÄovat do lekce R6 [Y(ano)/N(ne)]? 
 N:_R_MENU
 G:_R_M_R6
 *:_R_E_R6
-Q:Chcete pokraèovat do lekce R7 [Y(ano)/N(ne)]? 
+Q:Chcete pokraÄovat do lekce R7 [Y(ano)/N(ne)]? 
 N:_R_MENU
 G:_R_M_R7
 *:_R_E_R7
-Q:Chcete pokraèovat do lekce R8 [Y(ano)/N(ne)]? 
+Q:Chcete pokraÄovat do lekce R8 [Y(ano)/N(ne)]? 
 N:_R_MENU
 G:_R_M_R8
 *:_R_E_R8
-Q:Chcete pokraèovat do lekce R9 [Y(ano)/N(ne)]? 
+Q:Chcete pokraÄovat do lekce R9 [Y(ano)/N(ne)]? 
 N:_R_MENU
 G:_R_M_R9
 *:_R_E_R9
-Q:Chcete pokraèovat do lekce R10 [Y(ano)/N(ne)]? 
+Q:Chcete pokraÄovat do lekce R10 [Y(ano)/N(ne)]? 
 N:_R_MENU
 G:_R_M_R10
 *:_R_E_R10
-Q:Chcete pokraèovat do lekce R11 [Y(ano)/N(ne)]? 
+Q:Chcete pokraÄovat do lekce R11 [Y(ano)/N(ne)]? 
 N:_R_MENU
 G:_R_M_R11
 *:_R_E_R11
-Q:Chcete pokraèovat do lekce R12 [Y(ano)/N(ne)]? 
+Q:Chcete pokraÄovat do lekce R12 [Y(ano)/N(ne)]? 
 N:_R_MENU
 G:_R_M_R12
 *:_R_E_R12
@@ -2204,19 +2204,19 @@ G:_R_S_R14
 # Lekce series R menu
 #------------------------------------------------------------------------------
 *:_R_MENU
-M: UP=__SERIESMENU "Série lekcí R obsahuje tìchto 12 lekcí"
- :_R_M_R1  "Lekce R1     f,j,d,k,s,l,a,ù,g,h"
+M: UP=__SERIESMENU "SÃ©rie lekcÃ­ R obsahuje tÄ›chto 12 lekcÃ­"
+ :_R_M_R1  "Lekce R1     f,j,d,k,s,l,a,Å¯,g,h"
  :_R_M_R2  "Lekce R2     r,l,e,i,y,n"
  :_R_M_R3  "Lekce R3     o,.,p,t"
- :_R_M_R4  "Lekce R4     y,ú,q"
+ :_R_M_R4  "Lekce R4     y,Ãº,q"
  :_R_M_R5  "Lekce R5     v,m,c"
  :_R_M_R6  "Lekce R6     x,w,-,z,b"
- :_R_M_R7  "Lekce R7     n, velká písmena, ø, á"
- :_R_M_R8  "Lekce R8     è, í"
- :_R_M_R9  "Lekce R9     ¹, é"
- :_R_M_R10 "Lekce R10    ì, ¾, ı"
- :_R_M_R11 "Lekce R11    ï,»,ò,ó, velká diakritická,..."
- :_R_M_R12 "Lekce R12    èísla,=,-,+"
+ :_R_M_R7  "Lekce R7     n, velkÃ¡ pÃ­smena, Å™, Ã¡"
+ :_R_M_R8  "Lekce R8     Ä, Ã­"
+ :_R_M_R9  "Lekce R9     Å¡, Ã©"
+ :_R_M_R10 "Lekce R10    Ä›, Å¾, Ã½"
+ :_R_M_R11 "Lekce R11    Ä,Å¥,Åˆ,Ã³, velkÃ¡ diakritickÃ¡,..."
+ :_R_M_R12 "Lekce R12    ÄÃ­sla,=,-,+"
 *:_R_EXIT
 
 #------------------------------------------------------------------------------
@@ -2261,145 +2261,145 @@ G:_T_MENU
 *:_T_S_T1
 *:_T_R_L0
 #                                                             ../orig/t.typ:21
-T:			Vítejte v lekci T1.
+T:			VÃ­tejte v lekci T1.
  :
- : V sérii lekcí T se budeme uèit psát na standardní klávesnici.
- : Pøedstavím vám v¹echna písmena. Budu postupovat v¾dy po jednom.
- : A¾ dokonèíte tuto sérii, budete ovládat psaní celé abecedy,
- : v¹ech èísel a vìt¹iny interpunkèních znamének.
+ : V sÃ©rii lekcÃ­ T se budeme uÄit psÃ¡t na standardnÃ­ klÃ¡vesnici.
+ : PÅ™edstavÃ­m vÃ¡m vÅ¡echna pÃ­smena. Budu postupovat vÅ¾dy po jednom.
+ : AÅ¾ dokonÄÃ­te tuto sÃ©rii, budete ovlÃ¡dat psanÃ­ celÃ© abecedy,
+ : vÅ¡ech ÄÃ­sel a vÄ›tÅ¡iny interpunkÄnÃ­ch znamÃ©nek.
  :
- : Pokud jste úplní nováèci a je¹tì jste se nikdy psaní na klávesnici
- : v¹emi deseti prsty neuèili, prosím buïte trpìliví. Psaní není
- : slo¾ité, ale je tøeba hodnì cviku. Prosím vyhnìte se poku¹ení
- : dívat se dolù na prsty, kdy¾ pí¹ete. To je velmi ¹patnı zvyk
- : a tì¾ko se ho potom zbavuje. Kdy¾ zmáèknete ¹patnou klávesu,
- : dám vám vìdìt. (Nikomu to ale neøeknu, tak¾e ¾ádnı strach.)
+ : Pokud jste ÃºplnÃ­ novÃ¡Äci a jeÅ¡tÄ› jste se nikdy psanÃ­ na klÃ¡vesnici
+ : vÅ¡emi deseti prsty neuÄili, prosÃ­m buÄte trpÄ›livÃ­. PsanÃ­ nenÃ­
+ : sloÅ¾itÃ©, ale je tÅ™eba hodnÄ› cviku. ProsÃ­m vyhnÄ›te se pokuÅ¡enÃ­
+ : dÃ­vat se dolÅ¯ na prsty, kdyÅ¾ pÃ­Å¡ete. To je velmi Å¡patnÃ½ zvyk
+ : a tÄ›Å¾ko se ho potom zbavuje. KdyÅ¾ zmÃ¡Äknete Å¡patnou klÃ¡vesu,
+ : dÃ¡m vÃ¡m vÄ›dÄ›t. (Nikomu to ale neÅ™eknu, takÅ¾e Å¾Ã¡dnÃ½ strach.)
  : 
- : Pokud jste byli zvyklí psát metodou ulov-a-klovni, bude pro vás
- : tì¾ké zøíci se dívání. Nebuïte pøekvapení, ¾e vám psaní v¹emi
- : deseti prsty pùjde pomaleji, ne¾ vá¹ starı zpùsob. Asi bude
- : v zaèátcích pomalej¹í. Kdy¾ do toho ale koneènì proniknete, 
- : bude to podstatnì rychlej¹í. U¹etøí vám mnoho èasu.
+ : Pokud jste byli zvyklÃ­ psÃ¡t metodou ulov-a-klovni, bude pro vÃ¡s
+ : tÄ›Å¾kÃ© zÅ™Ã­ci se dÃ­vÃ¡nÃ­. NebuÄte pÅ™ekvapenÃ­, Å¾e vÃ¡m psanÃ­ vÅ¡emi
+ : deseti prsty pÅ¯jde pomaleji, neÅ¾ vÃ¡Å¡ starÃ½ zpÅ¯sob. Asi bude
+ : v zaÄÃ¡tcÃ­ch pomalejÅ¡Ã­. KdyÅ¾ do toho ale koneÄnÄ› proniknete, 
+ : bude to podstatnÄ› rychlejÅ¡Ã­. UÅ¡etÅ™Ã­ vÃ¡m mnoho Äasu.
  :
- : Pokud ji¾ psát v¹emi deseti umíte, projdete lekcemi velmi rychle.
- : Mo¾ná byste mohli spí¹e zkusit rovnou sérii S.
+ : Pokud jiÅ¾ psÃ¡t vÅ¡emi deseti umÃ­te, projdete lekcemi velmi rychle.
+ : MoÅ¾nÃ¡ byste mohli spÃ­Å¡e zkusit rovnou sÃ©rii S.
 *:_T_R_L1
 #                                                             ../orig/t.typ:42
 T:
- :			Domovské klávesy
+ :			DomovskÃ© klÃ¡vesy
  :
- : Abyste mohli stisknout správnou klávesu, musíte v¾dy vìdìt, kde se
- : pøesnì va¹e prsty nacházejí. To zajistíte tak, ¾e budete mít pro
- : ka¾dı prst speciální místo. Takové klávesy se nazıvají ,,základní 
+ : Abyste mohli stisknout sprÃ¡vnou klÃ¡vesu, musÃ­te vÅ¾dy vÄ›dÄ›t, kde se
+ : pÅ™esnÄ› vaÅ¡e prsty nachÃ¡zejÃ­. To zajistÃ­te tak, Å¾e budete mÃ­t pro
+ : kaÅ¾dÃ½ prst speciÃ¡lnÃ­ mÃ­sto. TakovÃ© klÃ¡vesy se nazÃ½vajÃ­ ,,zÃ¡kladnÃ­ 
  : pozice.''
  :
- : Polo¾te si pravı ukazováèek na klávesu J. Nyní dejte pravı prostøedníèek
- : na klávesu K, prsteníèek na L a malíèek na ù. 
+ : PoloÅ¾te si pravÃ½ ukazovÃ¡Äek na klÃ¡vesu J. NynÃ­ dejte pravÃ½ prostÅ™ednÃ­Äek
+ : na klÃ¡vesu K, prstenÃ­Äek na L a malÃ­Äek na Å¯. 
  :
- : Stejnì tak umístìte i prsty va¹í levé ruky na klávesy F, D, S a A. 
- : Pravı ukazováèek na F, prostøedníèek na D, prsteníèek na S a malíèek
- : na A. Pravı i levı palec si polo¾te na SPACE (dlouhá klávesa) úplnì
- : dole, kterou pí¹eme mezeru. K jejímu stisku budeme v¾dy pou¾ívat
- : prst, kterı se nám hodí lépe. Nyní v¹echny prsty lehce nadzvednìte,
- : aby se vzná¹ely pøesnì nad klávesami. Ka¾dı prst by se mìl své 
- : domovské klávesy dotıkat jen velmi jemnì. Toto je elektronická
- : klávesnice a k náhodnému stisku klávesy není tøeba moc tlaku.
+ : StejnÄ› tak umÃ­stÄ›te i prsty vaÅ¡Ã­ levÃ© ruky na klÃ¡vesy F, D, S a A. 
+ : PravÃ½ ukazovÃ¡Äek na F, prostÅ™ednÃ­Äek na D, prstenÃ­Äek na S a malÃ­Äek
+ : na A. PravÃ½ i levÃ½ palec si poloÅ¾te na SPACE (dlouhÃ¡ klÃ¡vesa) ÃºplnÄ›
+ : dole, kterou pÃ­Å¡eme mezeru. K jejÃ­mu stisku budeme vÅ¾dy pouÅ¾Ã­vat
+ : prst, kterÃ½ se nÃ¡m hodÃ­ lÃ©pe. NynÃ­ vÅ¡echny prsty lehce nadzvednÄ›te,
+ : aby se vznÃ¡Å¡ely pÅ™esnÄ› nad klÃ¡vesami. KaÅ¾dÃ½ prst by se mÄ›l svÃ© 
+ : domovskÃ© klÃ¡vesy dotÃ½kat jen velmi jemnÄ›. Toto je elektronickÃ¡
+ : klÃ¡vesnice a k nÃ¡hodnÃ©mu stisku klÃ¡vesy nenÃ­ tÅ™eba moc tlaku.
  : 
- : Dobøe se tuto pozici nauète. Kdykoliv se budete chystat na psaní
- : nové øádky textu, zkontrolujte, zda jsou prsty v základní pozici. 
- : Poté se ji¾ na prsty nekoukejte.
+ : DobÅ™e se tuto pozici nauÄte. Kdykoliv se budete chystat na psanÃ­
+ : novÃ© Å™Ã¡dky textu, zkontrolujte, zda jsou prsty v zÃ¡kladnÃ­ pozici. 
+ : PotÃ© se jiÅ¾ na prsty nekoukejte.
 
 *:_T_R_L2
 T:
  :
- : Témìø v¹echny klávesnice mají na klávesách F a J malé vıstupky,
- : které vám umo¾ní lehce po hmatu základní pozici poznat.
+ : TÃ©mÄ›Å™ vÅ¡echny klÃ¡vesnice majÃ­ na klÃ¡vesÃ¡ch F a J malÃ© vÃ½stupky,
+ : kterÃ© vÃ¡m umoÅ¾nÃ­ lehce po hmatu zÃ¡kladnÃ­ pozici poznat.
  :
- : Sna¾te se sedìt v rovnì, hodnì vám to ulehèí psaní. Lokty by mìly 
- : bıt pokrèené v pravém úhlu a mìly by bıt minimálnì v úrovni klávesnice.
- : Nikdy ne ní¾e, spí¹e o tro¹ku vı¹e.
+ : SnaÅ¾te se sedÄ›t v rovnÄ›, hodnÄ› vÃ¡m to ulehÄÃ­ psanÃ­. Lokty by mÄ›ly 
+ : bÃ½t pokrÄenÃ© v pravÃ©m Ãºhlu a mÄ›ly by bÃ½t minimÃ¡lnÄ› v Ãºrovni klÃ¡vesnice.
+ : Nikdy ne nÃ­Å¾e, spÃ­Å¡e o troÅ¡ku vÃ½Å¡e.
  :
- : Zápìstí by mìla bıt polo¾ena na stole. Nemìla by levitovat ve vzduchu
- : ani viset pøes okraj stolku. Opìt mù¾e pomoci jejich zvı¹ení pomocí
- : speciální podlo¾ky.
+ : ZÃ¡pÄ›stÃ­ by mÄ›la bÃ½t poloÅ¾ena na stole. NemÄ›la by levitovat ve vzduchu
+ : ani viset pÅ™es okraj stolku. OpÄ›t mÅ¯Å¾e pomoci jejich zvÃ½Å¡enÃ­ pomocÃ­
+ : speciÃ¡lnÃ­ podloÅ¾ky.
  :
- : Dbejte na to, abyste mìli prsty pokrèeny a dotıkali se kláves smìrem
- : zeshora. Oba palce musí stále bıt na klávese SPACE. Dotıkají se jí 
- : nikoliv bøí¹ky, ale vnìj¹ím bokem prvního èlánku. Prsty v základní
- : øadì musí dopadat na støed kláves.
+ : Dbejte na to, abyste mÄ›li prsty pokrÄeny a dotÃ½kali se klÃ¡ves smÄ›rem
+ : zeshora. Oba palce musÃ­ stÃ¡le bÃ½t na klÃ¡vese SPACE. DotÃ½kajÃ­ se jÃ­ 
+ : nikoliv bÅ™Ã­Å¡ky, ale vnÄ›jÅ¡Ã­m bokem prvnÃ­ho ÄlÃ¡nku. Prsty v zÃ¡kladnÃ­
+ : Å™adÄ› musÃ­ dopadat na stÅ™ed klÃ¡ves.
  :
 *:_T_R_L3
 #                                                             ../orig/t.typ:63
 T:
- :			PROCVIÈOVÁNÍ
+ :			PROCVIÄŒOVÃNÃ
  :
- : Po zbytek lekce budu v¾dy na v horní èásti zobrazovat instrukce
- : a pod nimi øádku textu.
+ : Po zbytek lekce budu vÅ¾dy na v hornÃ­ ÄÃ¡sti zobrazovat instrukce
+ : a pod nimi Å™Ã¡dku textu.
  :
- : Vy musíte pouze opsat text, kterı vidíte. Kdy¾ stisknete správnou
- : klávesu, nebudu dìlat nic. Kdykoliv udìláte chybu, tak pod písmenem,
- : které jste zadali ¹patnì, udìlám velké X a zapípám.
- : Jednodu¹e pokraèujte dal¹ím písmenem. Nesna¾te se opravovat, prostì
- : jdìte dál.
+ : Vy musÃ­te pouze opsat text, kterÃ½ vidÃ­te. KdyÅ¾ stisknete sprÃ¡vnou
+ : klÃ¡vesu, nebudu dÄ›lat nic. Kdykoliv udÄ›lÃ¡te chybu, tak pod pÃ­smenem,
+ : kterÃ© jste zadali Å¡patnÄ›, udÄ›lÃ¡m velkÃ© X a zapÃ­pÃ¡m.
+ : JednoduÅ¡e pokraÄujte dalÅ¡Ã­m pÃ­smenem. NesnaÅ¾te se opravovat, prostÄ›
+ : jdÄ›te dÃ¡l.
  : 
- : Kdy¾ se dostanete na konec øádky, stisknìte ENTER. To udìláte
- : vychılením pravého malíèku. Stisknìte klávesu a vra»te malíèek
- : zpìt do pùvodní pozice. Dávejte si pozor, aby se va¹e ostatní prsty
- : nehnuly za základní pozice. Dávejte si také pozor, abyste na konci
- : øádky nedìlali navíc je¹tì mezery.
+ : KdyÅ¾ se dostanete na konec Å™Ã¡dky, stisknÄ›te ENTER. To udÄ›lÃ¡te
+ : vychÃ½lenÃ­m pravÃ©ho malÃ­Äku. StisknÄ›te klÃ¡vesu a vraÅ¥te malÃ­Äek
+ : zpÄ›t do pÅ¯vodnÃ­ pozice. DÃ¡vejte si pozor, aby se vaÅ¡e ostatnÃ­ prsty
+ : nehnuly za zÃ¡kladnÃ­ pozice. DÃ¡vejte si takÃ© pozor, abyste na konci
+ : Å™Ã¡dky nedÄ›lali navÃ­c jeÅ¡tÄ› mezery.
  : 
- : Kdy¾ neudìláte na øádce ¾ádnou chybu, zobrazím dal¹í øádku k procvièení.
- : Pokud udìláte chybu, pípnu a po stisku klávesy ENTER budete øádku opisovat
- : znovu. Kdy¾ opìt udìláte chyby, opìt pípnu a nechám vás cvièení zopakovat
- : a tak dále. Nezapomeòte psát mezery jedním z palcù.
+ : KdyÅ¾ neudÄ›lÃ¡te na Å™Ã¡dce Å¾Ã¡dnou chybu, zobrazÃ­m dalÅ¡Ã­ Å™Ã¡dku k procviÄenÃ­.
+ : Pokud udÄ›lÃ¡te chybu, pÃ­pnu a po stisku klÃ¡vesy ENTER budete Å™Ã¡dku opisovat
+ : znovu. KdyÅ¾ opÄ›t udÄ›lÃ¡te chyby, opÄ›t pÃ­pnu a nechÃ¡m vÃ¡s cviÄenÃ­ zopakovat
+ : a tak dÃ¡le. NezapomeÅˆte psÃ¡t mezery jednÃ­m z palcÅ¯.
 
 #                                                             ../orig/t.typ:64
-#I: Stisknìte ètyøikrát klávesu F levım ukazováèkem.
+#I: StisknÄ›te ÄtyÅ™ikrÃ¡t klÃ¡vesu F levÃ½m ukazovÃ¡Äkem.
 *:_T_R_L4
 #                                                             ../orig/t.typ:65
 D:ffff
 
 #                                                             ../orig/t.typ:66
-I: Støídavì maèkejte klávesu F a mezerník.
+I: StÅ™Ã­davÄ› maÄkejte klÃ¡vesu F a mezernÃ­k.
 *:_T_R_L5
 #                                                             ../orig/t.typ:67
 D:fff fff fff ff ff ff f f f
 
 #                                                             ../orig/t.typ:68
-I: Nedívejte se na prsty!
+I: NedÃ­vejte se na prsty!
 #                                                             ../orig/t.typ:69
- : Pro psaní J pou¾ívejte pravı ukazováèek.
+ : Pro psanÃ­ J pouÅ¾Ã­vejte pravÃ½ ukazovÃ¡Äek.
 *:_T_R_L6
 #                                                             ../orig/t.typ:70
 D:jjj jjj jjj jj jj jj j j j
 
 #                                                             ../orig/t.typ:71
-I: Levou rukou pi¹te F a pravou J. Pouze ukazováèky.
+I: Levou rukou piÅ¡te F a pravou J. Pouze ukazovÃ¡Äky.
 *:_T_R_L7
 #                                                             ../orig/t.typ:72
 D:fff jjj fff jj ff jj f j f j
 
 #                                                             ../orig/t.typ:73
-I: Teï je promícháme. Enter pravım malíèkem.
+I: TeÄ je promÃ­chÃ¡me. Enter pravÃ½m malÃ­Äkem.
 *:_T_R_L8
 #                                                             ../orig/t.typ:74
 D:ffjj jjff fjf fjf jfj jfj f
  :fjf fjf fjf jfj jfj jfj jfj
 
 #                                                             ../orig/t.typ:75
-I: Prostøedníèkem levé ruky pí¹eme D.
+I: ProstÅ™ednÃ­Äkem levÃ© ruky pÃ­Å¡eme D.
 *:_T_R_L9
 #                                                             ../orig/t.typ:76
 D:ddd ddd ddd dd dd dd d d d
 
 #                                                             ../orig/t.typ:77
-I: Prostøedníèek pravé ruky slou¾í pro klávesu K.
+I: ProstÅ™ednÃ­Äek pravÃ© ruky slouÅ¾Ã­ pro klÃ¡vesu K.
 *:_T_R_L10
 #                                                             ../orig/t.typ:78
 D:kkk kkk kkk kk kk kk k k k
 
 #                                                             ../orig/t.typ:80
-I: Nyní oba.
+I: NynÃ­ oba.
 *:_T_R_L11
 #                                                             ../orig/t.typ:81
 D:ddd kkk dd  dkd dkd kdk ddd kkk
@@ -2407,7 +2407,7 @@ D:ddd kkk dd  dkd dkd kdk ddd kkk
  :dd kk kd dk dd kk kd dk kk dd d
 
 #                                                             ../orig/t.typ:82
-I: Prsteníèky obou rukou pí¹eme S (levá) a L (pravá).
+I: PrstenÃ­Äky obou rukou pÃ­Å¡eme S (levÃ¡) a L (pravÃ¡).
 *:_T_R_L12
 #                                                             ../orig/t.typ:83
 D:sss lll sss lll sss ss ll ss ll s l
@@ -2415,51 +2415,51 @@ D:sss lll sss lll sss ss ll ss ll s l
  :sls lsl sls lsl ssl lls slsl lsls
 
 #                                                             ../orig/t.typ:84
-I: Malíèky slou¾í pro A (levá ruka) a ù (pravá).
+I: MalÃ­Äky slouÅ¾Ã­ pro A (levÃ¡ ruka) a Å¯ (pravÃ¡).
 *:_T_R_L13
 #                                                             ../orig/t.typ:85
-D:aaa ùùù aaa ùùù aa ùù aa ùù a ù
- :aa ùù aa ùù aùa aùa aùa aùa aùa
- :ùaù aùa ùaù aùa ùùa ùùa aaù ùaù
+D:aaa Å¯Å¯Å¯ aaa Å¯Å¯Å¯ aa Å¯Å¯ aa Å¯Å¯ a Å¯
+ :aa Å¯Å¯ aa Å¯Å¯ aÅ¯a aÅ¯a aÅ¯a aÅ¯a aÅ¯a
+ :Å¯aÅ¯ aÅ¯a Å¯aÅ¯ aÅ¯a Å¯Å¯a Å¯Å¯a aaÅ¯ Å¯aÅ¯
 
 #                                                             ../orig/t.typ:86
-I:To je pro teï v¹echno. Zkusíme si je procvièit.
+I:To je pro teÄ vÅ¡echno. ZkusÃ­me si je procviÄit.
 *:_T_R_L14
 #                                                             ../orig/t.typ:87
-D:fff jjj ddd kkk sss lll aaa ùùù
- :fff jjj ddd kkk sss lll aaa ùùù
+D:fff jjj ddd kkk sss lll aaa Å¯Å¯Å¯
+ :fff jjj ddd kkk sss lll aaa Å¯Å¯Å¯
 
 #                                                             ../orig/t.typ:88
-I:Znovu. Pokud se vám pletou, nevadí. To je normální.
+I:Znovu. Pokud se vÃ¡m pletou, nevadÃ­. To je normÃ¡lnÃ­.
 *:_T_R_L15
 #                                                             ../orig/t.typ:89
-D:fff jjj ddd kkk sss lll aaa ùùù
- :fff jjj ddd kkk sss lll aaa ùùù
+D:fff jjj ddd kkk sss lll aaa Å¯Å¯Å¯
+ :fff jjj ddd kkk sss lll aaa Å¯Å¯Å¯
 
 #                                                             ../orig/t.typ:90
-I:Zkusíme je teï promíchat.
+I:ZkusÃ­me je teÄ promÃ­chat.
 *:_T_R_L16
 #                                                             ../orig/t.typ:91
-D:asdf jklù asdf jklù asdf jklù
- :fdsa ùlkj fdsa ùlkj asdf jklù
+D:asdf jklÅ¯ asdf jklÅ¯ asdf jklÅ¯
+ :fdsa Å¯lkj fdsa Å¯lkj asdf jklÅ¯
 
 #                                                             ../orig/t.typ:92
-I:A znova. Neztrácejte trpìlivost.
+I:A znova. NeztrÃ¡cejte trpÄ›livost.
 *:_T_R_L17
 #                                                             ../orig/t.typ:93
-D:fjf kdk sls ùaù aùa aja aka ala aùa
- :fj jf dk kd sl ls aù ùa fj dk sl aù
- :fj dk sl aù fù dl sk aj jf dk ls ùa
+D:fjf kdk sls Å¯aÅ¯ aÅ¯a aja aka ala aÅ¯a
+ :fj jf dk kd sl ls aÅ¯ Å¯a fj dk sl aÅ¯
+ :fj dk sl aÅ¯ fÅ¯ dl sk aj jf dk ls Å¯a
 
 #                                                             ../orig/t.typ:94
-I:Ne¾ skonèíme, zkuste si nìjaká slova.
+I:NeÅ¾ skonÄÃ­me, zkuste si nÄ›jakÃ¡ slova.
 *:_T_R_L18
 #                                                             ../orig/t.typ:95
-D:sad kùl klas sùl dùl jas
- :klas sùl jas dùl kùl sad
+D:sad kÅ¯l klas sÅ¯l dÅ¯l jas
+ :klas sÅ¯l jas dÅ¯l kÅ¯l sad
 
 #                                                             ../orig/t.typ:96
-I:Co takhle slovní spojení?
+I:Co takhle slovnÃ­ spojenÃ­?
 *:_T_R_L19
 #                                                             ../orig/t.typ:97
 D:klas a jas
@@ -2467,24 +2467,24 @@ D:klas a jas
  :fajfka a kajak
 
 #                                                             ../orig/t.typ:98
-I:Znovu pár slov (a pseudoslov :)
+I:Znovu pÃ¡r slov (a pseudoslov :)
 *:_T_R_L20
 #                                                             ../orig/t.typ:99
-D:das fùl klas kùl jak kajak fùj
- :kajak fajfka sùl klas dùl jak
+D:das fÅ¯l klas kÅ¯l jak kajak fÅ¯j
+ :kajak fajfka sÅ¯l klas dÅ¯l jak
 
 #                                                             ../orig/t.typ:98
-I:Procvièování není nikdy dost.
+I:ProcviÄovÃ¡nÃ­ nenÃ­ nikdy dost.
 *:_T_R_L21
 #                                                             ../orig/t.typ:99
-D:asdf jklù fdsa ùlkj fjdk slaù klas slak fjùs
+D:asdf jklÅ¯ fdsa Å¯lkj fjdk slaÅ¯ klas slak fjÅ¯s
 
 #                                                             ../orig/t.typ:98
-I:Poslední cvièení. Dejte si zále¾et.
+I:PoslednÃ­ cviÄenÃ­. Dejte si zÃ¡leÅ¾et.
 *:_T_R_L22
 #                                                             ../orig/t.typ:99
-D:dk sl ùa sas dl ja klas fl fk ls dù das
- :sas fj dk sl ùf dù sk ja sl dk jf klas
+D:dk sl Å¯a sas dl ja klas fl fk ls dÅ¯ das
+ :sas fj dk sl Å¯f dÅ¯ sk ja sl dk jf klas
 
 G:_T_E_T1
 #------------------------------------------------------------------------------
@@ -2498,48 +2498,48 @@ T:
  :
  : Lekce T2
  :
- : V této lekci si zopakujeme, co jste se ji¾ nauèili, a pøidáme dal¹í 
- : písmena E, G, H a znak teèky. Pokud jste v minulıch cvièeních je¹tì
- : stále dìlali chyby, nic se nedìje. Jednou nauèené budete odteï ji¾
- : stále procvièovat.
+ : V tÃ©to lekci si zopakujeme, co jste se jiÅ¾ nauÄili, a pÅ™idÃ¡me dalÅ¡Ã­ 
+ : pÃ­smena E, G, H a znak teÄky. Pokud jste v minulÃ½ch cviÄenÃ­ch jeÅ¡tÄ›
+ : stÃ¡le dÄ›lali chyby, nic se nedÄ›je. Jednou nauÄenÃ© budete odteÄ jiÅ¾
+ : stÃ¡le procviÄovat.
  :
- : Kdykoliv vychılíte prst ke stisku nìkteré z tìchto kláves, nezapomeòte
- : jej ihned vrátit zpìt do základní pozice. Napøíklad pro stisk klávesy 
- : H zvednìte pravı ukazováèek a posuòte ho mírnì vlevo. Stisknìte klávesu
- : a okam¾itì jej vra»te zpìt na J. 
+ : Kdykoliv vychÃ½lÃ­te prst ke stisku nÄ›kterÃ© z tÄ›chto klÃ¡ves, nezapomeÅˆte
+ : jej ihned vrÃ¡tit zpÄ›t do zÃ¡kladnÃ­ pozice. NapÅ™Ã­klad pro stisk klÃ¡vesy 
+ : H zvednÄ›te pravÃ½ ukazovÃ¡Äek a posuÅˆte ho mÃ­rnÄ› vlevo. StisknÄ›te klÃ¡vesu
+ : a okamÅ¾itÄ› jej vraÅ¥te zpÄ›t na J. 
  :
- : Kdy¾ se ztratíte a neuvìdomíte si, kde jsou va¹e prsty, zkuste to uhodnout.
- : Nedívejte se! Pomohou vám i vıstupky na klávesách J a F. Ujistìte se v¾dy,
- : ¾e ukazováèky cítíte tyto vıstupky a ostatní prsty máte v øadì. Opravdu se 
- : nedívejte.
+ : KdyÅ¾ se ztratÃ­te a neuvÄ›domÃ­te si, kde jsou vaÅ¡e prsty, zkuste to uhodnout.
+ : NedÃ­vejte se! Pomohou vÃ¡m i vÃ½stupky na klÃ¡vesÃ¡ch J a F. UjistÄ›te se vÅ¾dy,
+ : Å¾e ukazovÃ¡Äky cÃ­tÃ­te tyto vÃ½stupky a ostatnÃ­ prsty mÃ¡te v Å™adÄ›. Opravdu se 
+ : nedÃ­vejte.
  :
- : Sna¾te se dodat psaní plynulost. Maèkejte klávesy v pravidelnıch 
- : intervalech. Rychlej¹í prsty budou na pomalej¹í èekat, ale to je
- : v poøádku. V této fázi kurzu není rozhodující rychlost. Nespìchejte
- : a zamìøte se hlavnì na rytmus.
+ : SnaÅ¾te se dodat psanÃ­ plynulost. MaÄkejte klÃ¡vesy v pravidelnÃ½ch 
+ : intervalech. RychlejÅ¡Ã­ prsty budou na pomalejÅ¡Ã­ Äekat, ale to je
+ : v poÅ™Ã¡dku. V tÃ©to fÃ¡zi kurzu nenÃ­ rozhodujÃ­cÃ­ rychlost. NespÄ›chejte
+ : a zamÄ›Å™te se hlavnÄ› na rytmus.
 
 #                                                            ../orig/t.typ:115
-I:Nejprve zkusíme tro¹ku procvièovat.
+I:Nejprve zkusÃ­me troÅ¡ku procviÄovat.
 *:_T_R_L24
 #                                                            ../orig/t.typ:116
-D:fff jjj ddd kkk sss lll aaa ùùù aaa
- :fj fj fj dk dk dk sl sl sl aù aù aù
+D:fff jjj ddd kkk sss lll aaa Å¯Å¯Å¯ aaa
+ :fj fj fj dk dk dk sl sl sl aÅ¯ aÅ¯ aÅ¯
 
 *:_T_R_L25
 #                                                            ../orig/t.typ:120
-D:asdf jklù fdsa ùlkj
- :fjf jfj dkd kdk sls lsl aùa ùaù
- :jkj jlj jùj fdf fsf faf
- :a sad lassù ask dadù
+D:asdf jklÅ¯ fdsa Å¯lkj
+ :fjf jfj dkd kdk sls lsl aÅ¯a Å¯aÅ¯
+ :jkj jlj jÅ¯j fdf fsf faf
+ :a sad lassÅ¯ ask dadÅ¯
 
 #                                                            ../orig/t.typ:121
-I:Ke stisknutí H vychylte vlevo vá¹ prst na J
+I:Ke stisknutÃ­ H vychylte vlevo vÃ¡Å¡ prst na J
 *:_T_R_L26
 #                                                            ../orig/t.typ:122
 D:jjj jhj jjj jhj jjj jhj
  :jjj hhh jjj hhh jjj hhh
 
-I:Nedívejte se na klávesnici. Cítíte vıstupky na J?
+I:NedÃ­vejte se na klÃ¡vesnici. CÃ­tÃ­te vÃ½stupky na J?
 *:_T_R_L27
 #                                                            ../orig/t.typ:125
 D:jjj hhh jjj hhh jj hh j h j h
@@ -2547,13 +2547,13 @@ D:jjj hhh jjj hhh jj hh j h j h
  :jjj sash jjj hash jjj hall jjj
 
 #                                                            ../orig/t.typ:126
-I:Klávesu G maèkejte vychılením prstu na F doprava.
+I:KlÃ¡vesu G maÄkejte vychÃ½lenÃ­m prstu na F doprava.
 *:_T_R_L28
 #                                                            ../orig/t.typ:127
 D:fff fgf fff fgf fff fgf
  :fff ggg fff ggg fff ggg
 
-I: Sna¾te se maèkat klávesy v pravidelnıch intervalech.
+I: SnaÅ¾te se maÄkat klÃ¡vesy v pravidelnÃ½ch intervalech.
 *:_T_R_L29
 #                                                            ../orig/t.typ:130
 D:fff ggg fff ggg fff ggg
@@ -2561,7 +2561,7 @@ D:fff ggg fff ggg fff ggg
  :fff sag fff slag fff hag fff
 
 #                                                            ../orig/t.typ:131
-I:Vychılením prstu D nahoru maèkáme E.
+I:VychÃ½lenÃ­m prstu D nahoru maÄkÃ¡me E.
 *:_T_R_L30
 #                                                            ../orig/t.typ:132
 D:ddd ded ddd ded ddd ded ddd
@@ -2574,32 +2574,32 @@ D:ddd eee ddd eee dd ee dd ee d e
  :lake asked fake gale egg
 
 #                                                            ../orig/t.typ:136
-I:Prstem K vychılenım dolù maèkáme èárku.
+I:Prstem K vychÃ½lenÃ½m dolÅ¯ maÄkÃ¡me ÄÃ¡rku.
 *:_T_R_L32
 #                                                            ../orig/t.typ:137
 D:kkk k,k kkk k,k kkk k,k
 
-I:Pamatujte na dostateèné ohnutí prstù, to vám psaní èárky usnadní.
+I:Pamatujte na dostateÄnÃ© ohnutÃ­ prstÅ¯, to vÃ¡m psanÃ­ ÄÃ¡rky usnadnÃ­.
 *:_T_R_L33
 #                                                            ../orig/t.typ:138
 D:kkk ,,, kkk ,,, kkk ,,, kkk
 
 #                                                            ../orig/t.typ:139
-I:Procvièujeme
+I:ProcviÄujeme
 *:_T_R_L34
 #                                                            ../orig/t.typ:140
-D:klas sedl, ale kùl je, hlad
- :lùk fas hlas gek lùsa sùl kùl
+D:klas sedl, ale kÅ¯l je, hlad
+ :lÅ¯k fas hlas gek lÅ¯sa sÅ¯l kÅ¯l
  :has dj ks ls gf hj jh fg gl gj sj sh
 
-I:Dodr¾ujete rovnomìrnı rytmus?
+I:DodrÅ¾ujete rovnomÄ›rnÃ½ rytmus?
 *:_T_R_L35
 #                                                            ../orig/t.typ:141
 D:hed, glk, sad, jas, jed, keks, lesk
  :had, lesk, sad, kajak, keks gal, dal
  :kasa leh jed hle gala glk kajak das
 
-I:Umíte anglicky?
+I:UmÃ­te anglicky?
 *:_T_R_L36
 #                                                            ../orig/t.typ:141
 D:she had a fake egg, he had a salad
@@ -2613,27 +2613,27 @@ G:_T_E_T2
 *:T3
 *:_T_S_T3
 #                                                            ../orig/t.typ:145
-I: Opìt budeme procvièovat.
+I: OpÄ›t budeme procviÄovat.
 *:_T_R_L37
 #                                                            ../orig/t.typ:146
-D:fff jjj ddd kkk sss lll aaa ùùù
- :fj fj fj fj dk dk dk dk sl sl sl aù aù aù
- :fjf dkd sls aùa jf dk ls aù fj kd sl ùa
- :fs kl ùj adù gal hlad klas las had klad
+D:fff jjj ddd kkk sss lll aaa Å¯Å¯Å¯
+ :fj fj fj fj dk dk dk dk sl sl sl aÅ¯ aÅ¯ aÅ¯
+ :fjf dkd sls aÅ¯a jf dk ls aÅ¯ fj kd sl Å¯a
+ :fs kl Å¯j adÅ¯ gal hlad klas las had klad
 
-I: Je¹tì tyto dva øádky, pak pùjdeme na I.
+I: JeÅ¡tÄ› tyto dva Å™Ã¡dky, pak pÅ¯jdeme na I.
 *:_T_R_L38
 #                                                            ../orig/t.typ:147
 D:fgf jhj ded k,k fgf jhj ded k,k
- :keks, deska, had je jas, kùl, gal
+ :keks, deska, had je jas, kÅ¯l, gal
 
 #                                                            ../orig/t.typ:149
-I:Pro stisknutí klávesy I vychylte prst na K nahoru.
+I:Pro stisknutÃ­ klÃ¡vesy I vychylte prst na K nahoru.
 *:_T_R_L39
 #                                                            ../orig/t.typ:150
 D:kkk kik kkk kik kkk iii kkk
 
-I:Opisujte. Máte lokty v pravém úhlu, zápìstí na stole a prsty pokrèeny?
+I:Opisujte. MÃ¡te lokty v pravÃ©m Ãºhlu, zÃ¡pÄ›stÃ­ na stole a prsty pokrÄeny?
 *:_T_R_L40
 #                                                            ../orig/t.typ:154
 D:kkk iii kkk iii kk ii kk ii
@@ -2642,12 +2642,12 @@ D:kkk iii kkk iii kk ii kk ii
  :kkk klika kkk lih kkk sill kkk
 
 #                                                            ../orig/t.typ:155
-I:Klávesu R stlaète vychılením prstu na F nahoru.
+I:KlÃ¡vesu R stlaÄte vychÃ½lenÃ­m prstu na F nahoru.
 *:_T_R_L42
 #                                                            ../orig/t.typ:156
 D:fff frf fff frf fff frf
 
-I: Teï to promícháme. Upøednostòujte rytmus pøed rychlostí.
+I: TeÄ to promÃ­chÃ¡me. UpÅ™ednostÅˆujte rytmus pÅ™ed rychlostÃ­.
 *:_T_R_L43
 #                                                            ../orig/t.typ:160
 D:fff rrr fff rrr ff rr ff rr
@@ -2655,89 +2655,89 @@ D:fff rrr fff rrr ff rr ff rr
  :fff red fff read fff rada fff
  :fff lara fff frak fff jar fff
 
-I: Jde vám to dobøe, pokraèujte.
+I: Jde vÃ¡m to dobÅ™e, pokraÄujte.
 *:_T_R_L44
 #                                                            ../orig/t.typ:161
 D:fff rak fff kras fff rasa fff
 
-I: Soustøeïte se na rytmus.
+I: SoustÅ™eÄte se na rytmus.
 *:_T_R_L45
 #                                                            ../orig/t.typ:162
-D:fjf dkd sls aùa fj ls dk ùf aj ks
- :fff fùra fff ria fff sirka fff
- :sklad klas lùka rs kùl kras
- :dal fùra klasù, kùl je frak
+D:fjf dkd sls aÅ¯a fj ls dk Å¯f aj ks
+ :fff fÅ¯ra fff ria fff sirka fff
+ :sklad klas lÅ¯ka rs kÅ¯l kras
+ :dal fÅ¯ra klasÅ¯, kÅ¯l je frak
 
 #                                                            ../orig/t.typ:163
-I:Prstem na L vychılenım dolù pí¹eme teèku.
+I:Prstem na L vychÃ½lenÃ½m dolÅ¯ pÃ­Å¡eme teÄku.
 *:_T_R_L46
 #                                                            ../orig/t.typ:164
 D:lll l.l lll l.l lll l.l lll
  :l.l l.l l.l .. l.l ll l.l l..
 
-I:Opìt vám pomù¾e dostateèné pokrèení prstù.
+I:OpÄ›t vÃ¡m pomÅ¯Å¾e dostateÄnÃ© pokrÄenÃ­ prstÅ¯.
 *:_T_R_L47
 #                                                            ../orig/t.typ:167
 D:lll ... lll ... ll .. ll .. l .
  :lll adj. lll id. lll
  :lll eg. lll i.e. lll
- :lak. sklad. rak. sùl. kùl. les.
+ :lak. sklad. rak. sÅ¯l. kÅ¯l. les.
 
 *:_T_R_L48
 #                                                            ../orig/t.typ:179
-T:Nyní se pokusíme zapojit klávesu SHIFT.
+T:NynÃ­ se pokusÃ­me zapojit klÃ¡vesu SHIFT.
  :
- :Kdykoliv chcete napsat nìjaké velké písmeno na levé
- :stranì klávesnice, stisknìte pravı SHIFT
- :a odpovídající klávesu. Øiïte se tìmito radami:
+ :Kdykoliv chcete napsat nÄ›jakÃ© velkÃ© pÃ­smeno na levÃ©
+ :stranÄ› klÃ¡vesnice, stisknÄ›te pravÃ½ SHIFT
+ :a odpovÃ­dajÃ­cÃ­ klÃ¡vesu. Å˜iÄte se tÄ›mito radami:
  :
- :	a.) Pøehoupnìte pravı malíèek na klávesu SHIFT a stisknìte ji.
- :          Nesmíte pøi tom pohnout ukazováèkem z klávesy J. Pohnout
- :          byste nemìli ani ostatními prsty. 
+ :	a.) PÅ™ehoupnÄ›te pravÃ½ malÃ­Äek na klÃ¡vesu SHIFT a stisknÄ›te ji.
+ :          NesmÃ­te pÅ™i tom pohnout ukazovÃ¡Äkem z klÃ¡vesy J. Pohnout
+ :          byste nemÄ›li ani ostatnÃ­mi prsty. 
  :
- :	b.) Stisknìte levou rukou klávesu, ze které chcete mít velké písmeno.
+ :	b.) StisknÄ›te levou rukou klÃ¡vesu, ze kterÃ© chcete mÃ­t velkÃ© pÃ­smeno.
  :
- :	c.) Okam¾itì vra»te pravı malíèek zpìt na základní pozici (klávesa ù)
+ :	c.) OkamÅ¾itÄ› vraÅ¥te pravÃ½ malÃ­Äek zpÄ›t na zÃ¡kladnÃ­ pozici (klÃ¡vesa Å¯)
 
 #                                                            ../orig/t.typ:180
 I:Nekoukejte se na prsty!
 *:_T_R_L49
 #                                                            ../orig/t.typ:181
-D:ùùù ùAù ùùù ùSù ùùù ùDù ùùù ùFù
+D:Å¯Å¯Å¯ Å¯AÅ¯ Å¯Å¯Å¯ Å¯SÅ¯ Å¯Å¯Å¯ Å¯DÅ¯ Å¯Å¯Å¯ Å¯FÅ¯
  :S F G S A F F S D A F A D S F S
 
-I:Nezapomeòte malíèek okam¾itì vracet.
+I:NezapomeÅˆte malÃ­Äek okamÅ¾itÄ› vracet.
 *:_T_R_L50
 #                                                            ../orig/t.typ:182
-D:ùùù Dùl ùùù Sùl ùùù
- :ùùù Fred ùùù Gail ùùù Alf ùùù Dale ùùù
+D:Å¯Å¯Å¯ DÅ¯l Å¯Å¯Å¯ SÅ¯l Å¯Å¯Å¯
+ :Å¯Å¯Å¯ Fred Å¯Å¯Å¯ Gail Å¯Å¯Å¯ Alf Å¯Å¯Å¯ Dale Å¯Å¯Å¯
 
 *:_T_R_L51
 #                                                            ../orig/t.typ:185
-D:ùùù Ada ùùù Al ùùù Greg ùùù
+D:Å¯Å¯Å¯ Ada Å¯Å¯Å¯ Al Å¯Å¯Å¯ Greg Å¯Å¯Å¯
  :jjj Dr. jjj Sr. jjj Fr. jjj
 
 #                                                            ../orig/t.typ:186
-I:Vìta (i na¹e podivná pseudovìta) zaèíná velkım písmenem a konèí teèkou.
+I:VÄ›ta (i naÅ¡e podivnÃ¡ pseudovÄ›ta) zaÄÃ­nÃ¡ velkÃ½m pÃ­smenem a konÄÃ­ teÄkou.
 *:_T_R_L52
 #                                                            ../orig/t.typ:187
-D:Sire, rakù je jak hadù.
+D:Sire, rakÅ¯ je jak hadÅ¯.
 
 *:_T_R_L53
 #                                                            ../orig/t.typ:191
-D:Rak seje sùl.
+D:Rak seje sÅ¯l.
  :Sill dal hlas.
- :Dik hledal dùl.
- :Rak seje sùl.
+ :Dik hledal dÅ¯l.
+ :Rak seje sÅ¯l.
 
 #                                                            ../orig/t.typ:192
-I:Za teèkou v¾dy následuje mezera. Zkuste tento anglickı text.
+I:Za teÄkou vÅ¾dy nÃ¡sleduje mezera. Zkuste tento anglickÃ½ text.
 *:_T_R_L54
 #                                                            ../orig/t.typ:193
 D:A free red jade is fake. Girls like silk.
 
-I:Vytváøet èeské vìty je bez diakritiky zatím tì¾ké, 
- :snad vám angliètina nevadí.
+I:VytvÃ¡Å™et ÄeskÃ© vÄ›ty je bez diakritiky zatÃ­m tÄ›Å¾kÃ©, 
+ :snad vÃ¡m angliÄtina nevadÃ­.
 *:_T_R_L55
 #                                                            ../orig/t.typ:195
 D:She seeks a safe reef, if she sails. A gale is rare.
@@ -2750,95 +2750,95 @@ G:_T_E_T3
 *:T4
 *:_T_S_T4
 #                                                            ../orig/t.typ:199
-I:Nejprve rychlé procvièení:
+I:Nejprve rychlÃ© procviÄenÃ­:
 *:_T_R_L56
 #                                                            ../orig/t.typ:200
-D:jklù fdsa ded fgf jhj k,k kik frf l.l
- :lù l. le es kd ls ùa fj lù l,k kasa hlas
+D:jklÅ¯ fdsa ded fgf jhj k,k kik frf l.l
+ :lÅ¯ l. le es kd ls Å¯a fj lÅ¯ l,k kasa hlas
 
 #                                                            ../orig/t.typ:202
-I:Prst na L vychılíme nahoru a pí¹eme O.
+I:Prst na L vychÃ½lÃ­me nahoru a pÃ­Å¡eme O.
 *:_T_R_L57
 #                                                            ../orig/t.typ:203
 D:lll lol lll ooo lll lol
  :lll ooo lll ooo lll ooo
 
-I:Zkuste psát rytmicky.
+I:Zkuste psÃ¡t rytmicky.
 *:_T_R_L58
 #                                                            ../orig/t.typ:206
 D:lll log lll kol lll aol lll
  :lll kolo lll ohrada lll loj lll
- :hùl dolù deska role sklo klof los
+ :hÅ¯l dolÅ¯ deska role sklo klof los
  :sol los klof folk lok dok oko
 
 #
-I:Vychılením prstu na ù nahoru pí¹eme P.
+I:VychÃ½lenÃ­m prstu na Å¯ nahoru pÃ­Å¡eme P.
 *:_T_R_L59
 #                                                            ../orig/t.typ:207
-D:ùùù ùpù ùùù ppp ùùù ùpù ùùù
- :ùpù ùpù ppp ùùù ùpù ppp ùùù
+D:Å¯Å¯Å¯ Å¯pÅ¯ Å¯Å¯Å¯ ppp Å¯Å¯Å¯ Å¯pÅ¯ Å¯Å¯Å¯
+ :Å¯pÅ¯ Å¯pÅ¯ ppp Å¯Å¯Å¯ Å¯pÅ¯ ppp Å¯Å¯Å¯
 
 *:_T_R_L60
 #                                                            ../orig/t.typ:210
-D:ùùù pùl ùùù pes ùùù pas ùùù
- :ùùù pda ùùù phdr ùùù pisek ùùù
- :ùùù poklop ùùù pepik ùùù krpa ùùù
+D:Å¯Å¯Å¯ pÅ¯l Å¯Å¯Å¯ pes Å¯Å¯Å¯ pas Å¯Å¯Å¯
+ :Å¯Å¯Å¯ pda Å¯Å¯Å¯ phdr Å¯Å¯Å¯ pisek Å¯Å¯Å¯
+ :Å¯Å¯Å¯ poklop Å¯Å¯Å¯ pepik Å¯Å¯Å¯ krpa Å¯Å¯Å¯
 
 *:_T_R_L61
 #                                                            ../orig/t.typ:219
-T:			Levı SHIFT.
+T:			LevÃ½ SHIFT.
  :
- :K napsání velkého písmena na pravé stranì klávesnici pou¾ijeme levı SHIFT.
+ :K napsÃ¡nÃ­ velkÃ©ho pÃ­smena na pravÃ© stranÄ› klÃ¡vesnici pouÅ¾ijeme levÃ½ SHIFT.
  :
- :	1.) Pøesuòte svùj levı prst na SHIFT a stisknìte jej.
- :          Ostatní prsty by se nemìly pohnout. Minimálnì prst na F 
- :          musí zùstat na své pozici.
+ :	1.) PÅ™esuÅˆte svÅ¯j levÃ½ prst na SHIFT a stisknÄ›te jej.
+ :          OstatnÃ­ prsty by se nemÄ›ly pohnout. MinimÃ¡lnÄ› prst na F 
+ :          musÃ­ zÅ¯stat na svÃ© pozici.
  :
- :	2.) Pravou rukou stisknìte písmeno, které chcete napsat velké.
+ :	2.) Pravou rukou stisknÄ›te pÃ­smeno, kterÃ© chcete napsat velkÃ©.
  :
- :	3.) Okam¾itì vra»te prst zpìt na A. 
+ :	3.) OkamÅ¾itÄ› vraÅ¥te prst zpÄ›t na A. 
 
-I: Maèkáme levı SHIFT, proto¾e pí¹eme písmena pravou rukou.
+I: MaÄkÃ¡me levÃ½ SHIFT, protoÅ¾e pÃ­Å¡eme pÃ­smena pravou rukou.
 *:_T_R_L62
 #                                                            ../orig/t.typ:220
 D:aaa Pi aaa Lord aaa Jim aaa
 
 #                                                            ../orig/t.typ:221
-I:Nyní zkusíme napsat velké v¹echny zatím nauèené klávesy vpravo.
+I:NynÃ­ zkusÃ­me napsat velkÃ© vÅ¡echny zatÃ­m nauÄenÃ© klÃ¡vesy vpravo.
 *:_T_R_L63
 #                                                            ../orig/t.typ:222
 D:Joe Kim Lada Pako Olaf Ira Heidi
 
 #                                                            ../orig/t.typ:223
-I:Nezapomínejte pou¾ívat PRAVİ SHIFT pro písmena vlevo:
+I:NezapomÃ­nejte pouÅ¾Ã­vat PRAVÃ SHIFT pro pÃ­smena vlevo:
 *:_T_R_L64
 #                                                            ../orig/t.typ:224
-D:aùa P.S. aùa I.R.A. aùa
+D:aÅ¯a P.S. aÅ¯a I.R.A. aÅ¯a
 
 #                                                            ../orig/t.typ:225
-I:Vychılením prstu na k dolù se stiskem levého SHIFTu pí¹eme otazník. 
+I:VychÃ½lenÃ­m prstu na k dolÅ¯ se stiskem levÃ©ho SHIFTu pÃ­Å¡eme otaznÃ­k. 
 *:_T_R_L65
 #                                                            ../orig/t.typ:226
-D:ùùù ù?ù ùùù ??? ùùù ù?ù ùùù
+D:Å¯Å¯Å¯ Å¯?Å¯ Å¯Å¯Å¯ ??? Å¯Å¯Å¯ Å¯?Å¯ Å¯Å¯Å¯
 
-I:Je¹tì jednou: otazník = levı SHIFT a k-prst dolù.
+I:JeÅ¡tÄ› jednou: otaznÃ­k = levÃ½ SHIFT a k-prst dolÅ¯.
 *:_T_R_L66
 #                                                            ../orig/t.typ:227
-D:ùùù Kdo? ùùù Kolik? ùùù Sùl? ùùù
+D:Å¯Å¯Å¯ Kdo? Å¯Å¯Å¯ Kolik? Å¯Å¯Å¯ SÅ¯l? Å¯Å¯Å¯
 
 #                                                            ../orig/t.typ:228
-I:Zkusíme vìty.
+I:ZkusÃ­me vÄ›ty.
 *:_T_R_L67
 #                                                            ../orig/t.typ:229
 D:Kolik je? Je rak ok?
 
 #                                                            ../orig/t.typ:230
-I:Za znakem otazníku v¾dy vynecháváme mezeru.
+I:Za znakem otaznÃ­ku vÅ¾dy vynechÃ¡vÃ¡me mezeru.
 *:_T_R_L68
 #                                                            ../orig/t.typ:231
 D:Kde je sok? Sok je dole.
 
-I:Poslední.
+I:PoslednÃ­.
 *:_T_R_L69
 #                                                            ../orig/t.typ:233
 D:Did she see his fall? Jake heard he is OK.
@@ -2851,62 +2851,62 @@ G:_T_E_T4
 *:T5
 *:_T_S_T5
 #                                                            ../orig/t.typ:237
-I:Opìt zaèneme opakováním.
+I:OpÄ›t zaÄneme opakovÃ¡nÃ­m.
 *:_T_R_L70
 #                                                            ../orig/t.typ:238
-D:ade fgh ijk lop rsù ?.,
+D:ade fgh ijk lop rsÅ¯ ?.,
 
 #                                                            ../orig/t.typ:239
 I:Znovu.
 *:_T_R_L71
 #                                                            ../orig/t.typ:240
-D:ade fgh ijk lop rsù ?.,
+D:ade fgh ijk lop rsÅ¯ ?.,
 
 #                                                            ../orig/t.typ:242
-I:Prstem z klávesy F vychılením vpravo nahoru stisknete T.
+I:Prstem z klÃ¡vesy F vychÃ½lenÃ­m vpravo nahoru stisknete T.
 *:_T_R_L72
 #                                                            ../orig/t.typ:243
 D:fff ftf fff ttt fff ftf fff
  :fff ttt fff ttt ft tf ft tf
 
-I:Tato klávesa se vám zøejmì bude plést s R. Dávejte si na to pozor.
+I:Tato klÃ¡vesa se vÃ¡m zÅ™ejmÄ› bude plÃ©st s R. DÃ¡vejte si na to pozor.
 *:_T_R_L73
 #                                                            ../orig/t.typ:244
 D:ftf ta ftf test ftf tolik ftf
 
-I:Mezi písmeny T a R jdoucími za sebou se prst nevrací na F, ale jde rovnou.
+I:Mezi pÃ­smeny T a R jdoucÃ­mi za sebou se prst nevracÃ­ na F, ale jde rovnou.
 *:_T_R_L74
 #                                                            ../orig/t.typ:245
 D:trasa ftf testik ftf terasa ftf kolt
 
-I:Je¹tì tro¹ku procvièování. Sedíte rovnì?
+I:JeÅ¡tÄ› troÅ¡ku procviÄovÃ¡nÃ­. SedÃ­te rovnÄ›?
 *:_T_R_L75
 #                                                            ../orig/t.typ:246
 D:Tolik k tragedii, Rogere.
 
 #                                                            ../orig/t.typ:247
-I:Vychılením prstu z J dolù maèkáme N.
+I:VychÃ½lenÃ­m prstu z J dolÅ¯ maÄkÃ¡me N.
 *:_T_R_L76
 #                                                            ../orig/t.typ:248
 D:jjj jnj jjj nnn jjj jnj jjj
  :jjj nnn jjj nnn jn jn nj nj
 
-I:Stále dbejte na rytmus.
+I:StÃ¡le dbejte na rytmus.
 *:_T_R_L77
 #                                                             ../orig/t.typ:251
 D:jnj ne jnj ton jnj nej jnj
  :jnj Nero jnj ona jnj nasolit jnj
  :Nikdo to nejedl.sdfsdf
-I:Zkusíme nìjaké vìty.
+I:ZkusÃ­me nÄ›jakÃ© vÄ›ty.
 *:_T_R_L78
 #                                                            ../orig/t.typ:251
-D:Kolik je to rokù?
+D:Kolik je to rokÅ¯?
  :jde, foka, pole, rak, kriket, rek. fidlat.
  :Nikdo to nejedl.
  :TotO JsoU TrNy.
  :Ted neni diakritika a nejde psat poradne.
 
-I: V pøí¹tí lekci zkusíme diakritiku. Musíme tedy dùkladnì v¹e procvièit.
+I: V pÅ™Ã­Å¡tÃ­ lekci zkusÃ­me diakritiku. MusÃ­me tedy dÅ¯kladnÄ› vÅ¡e procviÄit.
 *:_T_R_L79
 #                                                            ../orig/t.typ:251
 D:jde, pole, rak, kriket, rek. fidlat.
@@ -2923,110 +2923,110 @@ G:_T_E_T5
 #                                                            ../orig/t.typ:289
 T: Lekce 6
  : 
- : V této lekci se nauèíme psát diakritická písmena.
+ : V tÃ©to lekci se nauÄÃ­me psÃ¡t diakritickÃ¡ pÃ­smena.
  :
- : Budete muset sahat pøes celou jednu øadu, ale opìt se jedná
- : pouze o vychılení jednoho prstu a ty ostatní by mìly zùstat
- : pokud mo¾no na místì. Sna¾te se na místì udr¾et minimálnì
- : prsty F a J (ukazováèky).
-I:Nejprve opakování.
+ : Budete muset sahat pÅ™es celou jednu Å™adu, ale opÄ›t se jednÃ¡
+ : pouze o vychÃ½lenÃ­ jednoho prstu a ty ostatnÃ­ by mÄ›ly zÅ¯stat
+ : pokud moÅ¾no na mÃ­stÄ›. SnaÅ¾te se na mÃ­stÄ› udrÅ¾et minimÃ¡lnÄ›
+ : prsty F a J (ukazovÃ¡Äky).
+I:Nejprve opakovÃ¡nÃ­.
 *:_T_R_L80
 D:Kolik je hodin? Jak to jde? Je to ok.
  :Stane se to, ale je to hloupost.
  :Nesnasi posadku lodi Kesta.
 
-I:ø pí¹eme vychılením prstu na F prudce nahoru.
+I:Å™ pÃ­Å¡eme vychÃ½lenÃ­m prstu na F prudce nahoru.
 *:_T_R_L81
-D:fff øøø føf føf øfø fføø øøff føfføfføf fføfføøøføf
- :siø øik øil poø øepa aøs pøe døe tøe
- :øeka høeje los pøeje tøe rø rø r
+D:fff Å™Å™Å™ fÅ™f fÅ™f Å™fÅ™ ffÅ™Å™ Å™Å™ff fÅ™ffÅ™ffÅ™f ffÅ™ffÅ™Å™Å™fÅ™f
+ :siÅ™ Å™ik Å™il poÅ™ Å™epa aÅ™s pÅ™e dÅ™e tÅ™e
+ :Å™eka hÅ™eje los pÅ™eje tÅ™e rÅ™ rÅ™ r
 
-I:ı pí¹eme vychılením prstu na klávese J prudce nahoru.
+I:Ã½ pÃ­Å¡eme vychÃ½lenÃ­m prstu na klÃ¡vese J prudce nahoru.
 *:_T_R_L82
-D:jjj ııı jjj ııı jıj jıj jjıı ııjj jıj ıjı
- :j ı rıha sır dır kır dıka tıkat se
+D:jjj Ã½Ã½Ã½ jjj Ã½Ã½Ã½ jÃ½j jÃ½j jjÃ½Ã½ Ã½Ã½jj jÃ½j Ã½jÃ½
+ :j Ã½ rÃ½ha sÃ½r dÃ½r kÃ½r dÃ½ka tÃ½kat se
 
-I:Promícháme to. Nedíváte se doufám na klávesnici! ø F-prst a ı J-prst.
+I:PromÃ­chÃ¡me to. NedÃ­vÃ¡te se doufÃ¡m na klÃ¡vesnici! Å™ F-prst a Ã½ J-prst.
 *:_T_R_L83
-D:fø jı fø jı fı jø fj øı ıø jf
- :rıha ıı øeka øı tøe ıı slanı ø kalnı
+D:fÅ™ jÃ½ fÅ™ jÃ½ fÃ½ jÅ™ fj Å™Ã½ Ã½Å™ jf
+ :rÃ½ha Ã½Ã½ Å™eka Å™Ã½ tÅ™e Ã½Ã½ slanÃ½ Å™ kalnÃ½
 
-I:ì pí¹eme vıraznım vychılením A-prstu nahoru.
+I:Ä› pÃ­Å¡eme vÃ½raznÃ½m vychÃ½lenÃ­m A-prstu nahoru.
 *:_T_R_L84
-D:a ì a ì a ì a ì a aì aì aì dì fì aì
- :a ì pìst nìkolik tìsno aì oì lì jì
- :tìsto stolek gìpoi eìrì pøesto sì
- :aì sì dì fì jì kì lì ùì gì hì tìsto
+D:a Ä› a Ä› a Ä› a Ä› a aÄ› aÄ› aÄ› dÄ› fÄ› aÄ›
+ :a Ä› pÄ›st nÄ›kolik tÄ›sno aÄ› oÄ› lÄ› jÄ›
+ :tÄ›sto stolek gÄ›poi eÄ›rÄ› pÅ™esto sÄ›
+ :aÄ› sÄ› dÄ› fÄ› jÄ› kÄ› lÄ› Å¯Ä› gÄ› hÄ› tÄ›sto
 
-I:í pí¹eme prstem na K.
+I:Ã­ pÃ­Å¡eme prstem na K.
 *:_T_R_L85
-D:k í k í k í kí kík kík íkí íkí kkíí íkí
- :líto lípa díkes fík píka pika snílek
+D:k Ã­ k Ã­ k Ã­ kÃ­ kÃ­k kÃ­k Ã­kÃ­ Ã­kÃ­ kkÃ­Ã­ Ã­kÃ­
+ :lÃ­to lÃ­pa dÃ­kes fÃ­k pÃ­ka pika snÃ­lek
 
-I:Teï v¹e dohromady. Prsty se musejí v¾dy vracet do základní polohy.
+I:TeÄ vÅ¡e dohromady. Prsty se musejÃ­ vÅ¾dy vracet do zÃ¡kladnÃ­ polohy.
 *:_T_R_L86
-D:í ì ø ı ø ì í ø ı ì í ì
- :dítì, øíkat, pøít se, tìsto, pøíchod nìkoho.
+D:Ã­ Ä› Å™ Ã½ Å™ Ä› Ã­ Å™ Ã½ Ä› Ã­ Ä›
+ :dÃ­tÄ›, Å™Ã­kat, pÅ™Ã­t se, tÄ›sto, pÅ™Ã­chod nÄ›koho.
 
-I:Zkusíme vìty. Vychylování prstù do diakritické øady vám velmi
- :ulehèí správné pokrèení prstù v pozici základního postavení.
+I:ZkusÃ­me vÄ›ty. VychylovÃ¡nÃ­ prstÅ¯ do diakritickÃ© Å™ady vÃ¡m velmi
+ :ulehÄÃ­ sprÃ¡vnÃ© pokrÄenÃ­ prstÅ¯ v pozici zÃ¡kladnÃ­ho postavenÃ­.
 *:_T_R_L87
-D:Je ti to líto? To dílo je pìknì krutı. Není to tak.
+D:Je ti to lÃ­to? To dÃ­lo je pÄ›knÄ› krutÃ½. NenÃ­ to tak.
 
-I:Je¹tì budeme procvièovat. Bez toho to nejde.
+I:JeÅ¡tÄ› budeme procviÄovat. Bez toho to nejde.
 *:_T_R_L88
-D:Ukrojit ostudu. Nıtovat. Dìti sedí.
- :Sıpka pìknì ... Pøesypala, ale neodsypala.
+D:Ukrojit ostudu. NÃ½tovat. DÄ›ti sedÃ­.
+ :SÃ½pka pÄ›knÄ› ... PÅ™esypala, ale neodsypala.
 
-I:á pí¹eme vychılením J-prstu mírnì vpravo nahoru.
+I:Ã¡ pÃ­Å¡eme vychÃ½lenÃ­m J-prstu mÃ­rnÄ› vpravo nahoru.
 *:_T_R_L89
-D:j á j á j á jáj jáj jáj ájá jáj ájá
- :jára rákos Lára párá sát hrát si Jára
+D:j Ã¡ j Ã¡ j Ã¡ jÃ¡j jÃ¡j jÃ¡j Ã¡jÃ¡ jÃ¡j Ã¡jÃ¡
+ :jÃ¡ra rÃ¡kos LÃ¡ra pÃ¡rÃ¡ sÃ¡t hrÃ¡t si JÃ¡ra
 
 I:Opisujte...
 *:_T_R_L90
-D:pır párat tápat, klást klíny.
- :rıt pıøit poklop Sára projektor protektorát
+D:pÃ½r pÃ¡rat tÃ¡pat, klÃ¡st klÃ­ny.
+ :rÃ½t pÃ½Å™it poklop SÃ¡ra projektor protektorÃ¡t
 
 I:... a nepropadejte panice :)
 *:_T_R_L91
-D:pøísada, náhoda, pìt øíkanek, kánoe, dálka
- :psát hnít tì øeka hıkat pøe látka práskat
+D:pÅ™Ã­sada, nÃ¡hoda, pÄ›t Å™Ã­kanek, kÃ¡noe, dÃ¡lka
+ :psÃ¡t hnÃ­t tÄ› Å™eka hÃ½kat pÅ™e lÃ¡tka prÃ¡skat
 
-I:è pí¹eme vychılením prstu na D. Prsty S a F musí zùstat.
+I:Ä pÃ­Å¡eme vychÃ½lenÃ­m prstu na D. Prsty S a F musÃ­ zÅ¯stat.
 *:_T_R_L92
-D:ddd dèd dèd ddd èèè dèd fèf sès aèa èè ff èj èl èù
- :èaèa èíèa fíèa toèit spáè strıèek Kaèka èas èeskı
+D:ddd dÄd dÄd ddd ÄÄÄ dÄd fÄf sÄs aÄa ÄÄ ff Äj Äl ÄÅ¯
+ :ÄaÄa ÄÃ­Äa fÃ­Äa toÄit spÃ¡Ä strÃ½Äek KaÄka Äas ÄeskÃ½
 
-I:é pí¹eme vychılením prstu na L mírnì vpravo nahoru. 
+I:Ã© pÃ­Å¡eme vychÃ½lenÃ­m prstu na L mÃ­rnÄ› vpravo nahoru. 
 *:_T_R_L93
-D:lll ééé lll é l lél lél lél ll éé ll
- :lé jé sé lé ké té lıko péro stékat réka
+D:lll Ã©Ã©Ã© lll Ã© l lÃ©l lÃ©l lÃ©l ll Ã©Ã© ll
+ :lÃ© jÃ© sÃ© lÃ© kÃ© tÃ© lÃ½ko pÃ©ro stÃ©kat rÃ©ka
 
-I:é pí¹eme L prstem a è D prstem
+I:Ã© pÃ­Å¡eme L prstem a Ä D prstem
 *:_T_R_L94
-D:èert hadé klika kleè èelké jépane fér èièinka
- :èé éè péèko pıøí se éèko øada béèko
+D:Äert hadÃ© klika kleÄ ÄelkÃ© jÃ©pane fÃ©r ÄiÄinka
+ :ÄÃ© Ã©Ä pÃ©Äko pÃ½Å™Ã­ se Ã©Äko Å™ada bÃ©Äko
 
-I:Zkusíme vìtu.
+I:ZkusÃ­me vÄ›tu.
 *:_T_R_L95
-D:Tahle èíèa dnes nebude papat mlíèko.
- :Policisté øíkají, to není tak snadné.
+D:Tahle ÄÃ­Äa dnes nebude papat mlÃ­Äko.
+ :PolicistÃ© Å™Ã­kajÃ­, to nenÃ­ tak snadnÃ©.
 
-I:Dáme test na rychlost.
+I:DÃ¡me test na rychlost.
 *:_T_R_L96
-S:Národ èeskı není neinteligentní. Je dost inteligentní.
- :Psaní je dost lehké. Jen potøebuje hbitost.
+S:NÃ¡rod ÄeskÃ½ nenÃ­ neinteligentnÃ­. Je dost inteligentnÃ­.
+ :PsanÃ­ je dost lehkÃ©. Jen potÅ™ebuje hbitost.
 
-I:Posledním písmenem v této lekci je ¹. Pí¹eme jej S-prstem.
+I:PoslednÃ­m pÃ­smenem v tÃ©to lekci je Å¡. PÃ­Å¡eme jej S-prstem.
 *:_T_R_L97
-D:sss ¹¹¹ s¹s s¹s s¹s ss ¹¹ ¹s¹ ¹¹¹ s¹s¹
- :¹i¹ka èé¹ka prá¹ek øe¹eto pøe¹lap pa¹a
+D:sss Å¡Å¡Å¡ sÅ¡s sÅ¡s sÅ¡s ss Å¡Å¡ Å¡sÅ¡ Å¡Å¡Å¡ sÅ¡sÅ¡
+ :Å¡iÅ¡ka ÄÃ©Å¡ka prÃ¡Å¡ek Å™eÅ¡eto pÅ™eÅ¡lap paÅ¡a
 
-I:Dejte si pozor, abyste pøi vychylování S-prstu nemaèkali jiné klávesy.
+I:Dejte si pozor, abyste pÅ™i vychylovÃ¡nÃ­ S-prstu nemaÄkali jinÃ© klÃ¡vesy.
 *:_T_R_L98
-D:kalnı hloupá ¹ik èaèa pì¹ky breèet
- :Ná¹ ¹ik si to ¹trapádil pøes øeèi¹tì.
+D:kalnÃ½ hloupÃ¡ Å¡ik ÄaÄa pÄ›Å¡ky breÄet
+ :NÃ¡Å¡ Å¡ik si to Å¡trapÃ¡dil pÅ™es Å™eÄiÅ¡tÄ›.
 
 
 G:_T_E_T6
@@ -3035,95 +3035,95 @@ G:_T_E_T6
 #------------------------------------------------------------------------------
 I: Lekce 7
  : 
- : Podíváme se na zbıvající diakritiku a zkusíme si rychlostní testy.
+ : PodÃ­vÃ¡me se na zbÃ½vajÃ­cÃ­ diakritiku a zkusÃ­me si rychlostnÃ­ testy.
  :
- : Lokty v pravém úhlu, zápìstí na stole, prsty dostateènì
- : pokrèené. Nedívat se na klávesnici; ukazováèky cítíme vıstupky.
+ : Lokty v pravÃ©m Ãºhlu, zÃ¡pÄ›stÃ­ na stole, prsty dostateÄnÄ›
+ : pokrÄenÃ©. NedÃ­vat se na klÃ¡vesnici; ukazovÃ¡Äky cÃ­tÃ­me vÃ½stupky.
  :
  : A jedem!
 *:T7
 *:_T_S_T7
 #                                                            ../orig/t.typ:289
 
-I:Nejprve opakování.
+I:Nejprve opakovÃ¡nÃ­.
 *:_T_R_L99
-D:fff jjj ùjù dklù kladù kel les resk
- :èeskı pøesnı ¹i¹lat pøe¹krtni
+D:fff jjj Å¯jÅ¯ dklÅ¯ kladÅ¯ kel les resk
+ :ÄeskÃ½ pÅ™esnÃ½ Å¡iÅ¡lat pÅ™eÅ¡krtni
 
-I:Nejprve opakování.
+I:Nejprve opakovÃ¡nÃ­.
 *:_T_R_L100
 D:Kolik je hodin? Jak to jde? Je to ok.
- :Stane se to, ale to jen nìkde.
- :Nesná¹í posádku lodi Kìsta.
+ :Stane se to, ale to jen nÄ›kde.
+ :NesnÃ¡Å¡Ã­ posÃ¡dku lodi KÄ›sta.
 
-I:¾ maèkáme prstem na F vychılenım prudce vpravo nahoru.
+I:Å¾ maÄkÃ¡me prstem na F vychÃ½lenÃ½m prudce vpravo nahoru.
 *:_T_R_L101
-D:fff ¾¾¾ fff ¾¾¾ f¾f f¾f ¾f¾ ¾f¾ f¾f h¾h j¾h
- :¾i¾lat, ¾i¾lat ¾í¾nit øe¾a p¾alk, ¾í¾ala, pl¾i
+D:fff Å¾Å¾Å¾ fff Å¾Å¾Å¾ fÅ¾f fÅ¾f Å¾fÅ¾ Å¾fÅ¾ fÅ¾f hÅ¾h jÅ¾h
+ :Å¾iÅ¾lat, Å¾iÅ¾lat Å¾Ã­Å¾nit Å™eÅ¾a pÅ¾alk, Å¾Ã­Å¾ala, plÅ¾i
 
-I:Je to úplnì nejdel¹í pøehmat na klávesnici.
+I:Je to ÃºplnÄ› nejdelÅ¡Ã­ pÅ™ehmat na klÃ¡vesnici.
 *:_T_R_L102
-D:a¾ s¾ d¾ f¾ g¾ h¾ j¾ k¾ l¾ ù¾
- :èí¾ek, ¾hnout, po¾ár, o¾u¾lal
+D:aÅ¾ sÅ¾ dÅ¾ fÅ¾ gÅ¾ hÅ¾ jÅ¾ kÅ¾ lÅ¾ Å¯Å¾
+ :ÄÃ­Å¾ek, Å¾hnout, poÅ¾Ã¡r, oÅ¾uÅ¾lal
 
 #                                                            ../orig/t.typ:252
-I:Dvojteèku maèkáme L-prstem vychılenım dolù za stisku levého SHIFTU.
+I:DvojteÄku maÄkÃ¡me L-prstem vychÃ½lenÃ½m dolÅ¯ za stisku levÃ©ho SHIFTU.
 *:_T_R_L103
 #                                                            ../orig/t.typ:253
 D:lll l:l lll ::: lll l:l lll
 
 #                                                            ../orig/t.typ:254
-I:Za dvojteèkou v¾dy následuje dvojitá mezera.
+I:Za dvojteÄkou vÅ¾dy nÃ¡sleduje dvojitÃ¡ mezera.
 *:_T_R_L104
 #                                                            ../orig/t.typ:255
-D:Test:  Drahá Petro:  Drahı Jane:
+D:Test:  DrahÃ¡ Petro:  DrahÃ½ Jane:
 
 *:_T_R_L105
 #                                                            ../orig/t.typ:256
-D:Drahı Dr. Stone:  K Hilbertu:
+D:DrahÃ½ Dr. Stone:  K Hilbertu:
 
 *:_T_R_L106
 #                                                            ../orig/t.typ:271
-T:			Rychlostní zkou¹ky
+T:			RychlostnÃ­ zkouÅ¡ky
  :
- :Odteï budu do lekcí míchat také rychlostní zkou¹ky. V drilovıch
- :testech, které jste dìlali a¾ dosud, jsem zobrazoval text dokud
- :jste ho nezadali správnì. V rychlostních cvièeních zobrazím text
+ :OdteÄ budu do lekcÃ­ mÃ­chat takÃ© rychlostnÃ­ zkouÅ¡ky. V drilovÃ½ch
+ :testech, kterÃ© jste dÄ›lali aÅ¾ dosud, jsem zobrazoval text dokud
+ :jste ho nezadali sprÃ¡vnÄ›. V rychlostnÃ­ch cviÄenÃ­ch zobrazÃ­m text
  :pouze jednou.
  :
- :Zmìna bude v tom, ¾e vás budu mìøit. Od okam¾iku, kdy zadáte první
- :písmeno øádky a¾ do okam¾iku, kdy stisknete ukonèující ENTER,
- :pobì¾í moje stopky. A¾ skonèíte, spoèítám va¹i rychlost a pøevedu
- :ji na slova za minutu (words per minute -- WPM). Seètu také
- :v¹echny chyby a zobrazím vám jejich poèet.
+ :ZmÄ›na bude v tom, Å¾e vÃ¡s budu mÄ›Å™it. Od okamÅ¾iku, kdy zadÃ¡te prvnÃ­
+ :pÃ­smeno Å™Ã¡dky aÅ¾ do okamÅ¾iku, kdy stisknete ukonÄujÃ­cÃ­ ENTER,
+ :pobÄ›Å¾Ã­ moje stopky. AÅ¾ skonÄÃ­te, spoÄÃ­tÃ¡m vaÅ¡i rychlost a pÅ™evedu
+ :ji na slova za minutu (words per minute -- WPM). SeÄtu takÃ©
+ :vÅ¡echny chyby a zobrazÃ­m vÃ¡m jejich poÄet.
  :
- :Kdykoliv udìláte chybu, zapípám a rozsvítím písmeno, které jste mìli
- :zadat, v obrácenıch barvách (èerné písmeno na bílém pozadí).
- :Jen pokraèujte dál a sna¾te se udìlat co nejménì chyb.
+ :Kdykoliv udÄ›lÃ¡te chybu, zapÃ­pÃ¡m a rozsvÃ­tÃ­m pÃ­smeno, kterÃ© jste mÄ›li
+ :zadat, v obrÃ¡cenÃ½ch barvÃ¡ch (ÄernÃ© pÃ­smeno na bÃ­lÃ©m pozadÃ­).
+ :Jen pokraÄujte dÃ¡l a snaÅ¾te se udÄ›lat co nejmÃ©nÄ› chyb.
 
 #                                                            ../orig/t.typ:272
-I:Zkuste tuto vìtu:
+I:Zkuste tuto vÄ›tu:
 *:_T_R_L107
 #                                                            ../orig/t.typ:273
 S:Sarah psala test.
 
 #                                                            ../orig/t.typ:274
-I:Tato vìta je tro¹ku del¹í.
+I:Tato vÄ›ta je troÅ¡ku delÅ¡Ã­.
 *:_T_R_L108
 #                                                            ../orig/t.typ:275
-S:Není to ani tro¹ka snadné, ale snad to není ani tak tì¾ké.
+S:NenÃ­ to ani troÅ¡ka snadnÃ©, ale snad to nenÃ­ ani tak tÄ›Å¾kÃ©.
 
 #                                                            ../orig/t.typ:277
-I:Pøi opisování víceøádkového odstavce musíte ka¾dı øádek
- :ukonèit stiskem klávesy ENTER.
+I:PÅ™i opisovÃ¡nÃ­ vÃ­ceÅ™Ã¡dkovÃ©ho odstavce musÃ­te kaÅ¾dÃ½ Å™Ã¡dek
+ :ukonÄit stiskem klÃ¡vesy ENTER.
 *:_T_R_L109
 #                                                            ../orig/t.typ:280
-S:Tihle lidé snad nemohli pokroèit ani tro¹ku.
- :Poka¾dé to bylo ¹patnì, zda dìlali to èi ono.
- :Je to dost náhoda, ale bylo to tak.
+S:Tihle lidÃ© snad nemohli pokroÄit ani troÅ¡ku.
+ :PokaÅ¾dÃ© to bylo Å¡patnÄ›, zda dÄ›lali to Äi ono.
+ :Je to dost nÃ¡hoda, ale bylo to tak.
 
-I:Chcete si zkusit anglickı odstavec? Nebudete muset pou¾ívat
- :diakritiku. Je to snaz¹í.
+I:Chcete si zkusit anglickÃ½ odstavec? Nebudete muset pouÅ¾Ã­vat
+ :diakritiku. Je to snazÅ¡Ã­.
 *:_T_R_L110
 #                                                            ../orig/t.typ:285
 S:One fine afternoon the king had an idea. He
@@ -3139,37 +3139,37 @@ G:_T_E_T7
 *:T8
 *:_T_S_T8
 #                                                            ../orig/t.typ:289
-I:Zopakujeme si, co jsme se ji¾ nauèili.
+I:Zopakujeme si, co jsme se jiÅ¾ nauÄili.
 *:_T_R_L110A
 #                                                            ../orig/t.typ:290
-D:jkj fdf jlj fsf jùj faf kik ded frf
- :føf jıj fèf kák s¹s líl aìa ùéù f¾j
+D:jkj fdf jlj fsf jÅ¯j faf kik ded frf
+ :fÅ™f jÃ½j fÄf kÃ¡k sÅ¡s lÃ­l aÄ›a Å¯Ã©Å¯ fÅ¾j
 
 *:_T_R_L111
 #                                                            ../orig/t.typ:293
-D:fgf jhj k,k l.l AùA FùF EùE
- :lol ùpù JaJ :a: ftf jnj ù:ù
- :teda nekalı kalnı èilá ¹ila pìní
+D:fgf jhj k,k l.l AÅ¯A FÅ¯F EÅ¯E
+ :lol Å¯pÅ¯ JaJ :a: ftf jnj Å¯:Å¯
+ :teda nekalÃ½ kalnÃ½ ÄilÃ¡ Å¡ila pÄ›nÃ­
 
 #                                                            ../orig/t.typ:295
-I:Písmeno B pí¹eme vychılením prstu na F hodnì doprava dolù.
+I:PÃ­smeno B pÃ­Å¡eme vychÃ½lenÃ­m prstu na F hodnÄ› doprava dolÅ¯.
 *:_T_R_L112
 #                                                            ../orig/t.typ:296
 D:fff fbf fff bbb fff fbf fff
 
 #                                                            ../orig/t.typ:297
-I:Pojïme to zkusit znova.
+I:PojÄme to zkusit znova.
 *:_T_R_L113
 #                                                            ../orig/t.typ:298
 D:fff fbf fff bbb fff fbf fff
 
 *:_T_R_L114
 #                                                            ../orig/t.typ:301
-D:frf bar frf byt frf bál frf
- :frf balík frf frf bratr frf
+D:frf bar frf byt frf bÃ¡l frf
+ :frf balÃ­k frf frf bratr frf
 
 #
-I:U pí¹eme vychılením J-prstu.
+I:U pÃ­Å¡eme vychÃ½lenÃ­m J-prstu.
 *:_T_R_L115
 #                                                            ../orig/t.typ:302
 D:jjj juj jjj uuu jjj juj jjj
@@ -3178,24 +3178,24 @@ D:jjj juj jjj uuu jjj juj jjj
 #                                                            ../orig/t.typ:305
 D:juj jug juj use juj hug juj
  :juj tulip juj turn juj upsat juj
- :Hugo prosí o podání kuøete.
+ :Hugo prosÃ­ o podÃ¡nÃ­ kuÅ™ete.
 
 #                                                            ../orig/t.typ:306
-I:/ pí¹eme prstem na klávese ù, kterı si pøehmátne vpravo nahoru.
- :Je nutné pou¾ít levı SHIFT.
+I:/ pÃ­Å¡eme prstem na klÃ¡vese Å¯, kterÃ½ si pÅ™ehmÃ¡tne vpravo nahoru.
+ :Je nutnÃ© pouÅ¾Ã­t levÃ½ SHIFT.
 
 *:_T_R_L116A
 #                                                            ../orig/t.typ:307
-D:ùùù ù/ù ùùù /// ùùù ù/ù ùùù
+D:Å¯Å¯Å¯ Å¯/Å¯ Å¯Å¯Å¯ /// Å¯Å¯Å¯ Å¯/Å¯ Å¯Å¯Å¯
 
 *:_T_R_L117
 #                                                            ../orig/t.typ:311
-D:ù/ù n/a ù/ù a/nebo ù/ù zde/jinde
- :V této éøe E.R.A. snad on/ona najde hledané.
- :On/ona potøebuje jeho/její pomoc.
+D:Å¯/Å¯ n/a Å¯/Å¯ a/nebo Å¯/Å¯ zde/jinde
+ :V tÃ©to Ã©Å™e E.R.A. snad on/ona najde hledanÃ©.
+ :On/ona potÅ™ebuje jeho/jejÃ­ pomoc.
 
 #                                                            ../orig/t.typ:312
-I:Na pár odstavcích si teï vyzkou¹íme rychlost:
+I:Na pÃ¡r odstavcÃ­ch si teÄ vyzkouÅ¡Ã­me rychlost:
 *:_T_R_L118
 #                                                            ../orig/t.typ:315
 S:All bills are to be paid in full. If
@@ -3203,8 +3203,8 @@ S:All bills are to be paid in full. If
  :bill and put n/a in the total due part.
 
 #                                                            ../orig/t.typ:316
-I:Mìli byste získat rychlost aspoò 15 slov/m. (Pokud budete rychlej¹í, pracujte
- :na pøesnosti.)
+I:MÄ›li byste zÃ­skat rychlost aspoÅˆ 15 slov/m. (Pokud budete rychlejÅ¡Ã­, pracujte
+ :na pÅ™esnosti.)
 *:_T_R_L119
 #                                                            ../orig/t.typ:319
 S:In baseball, bunting is a kind of hit. But, bunting also
@@ -3218,17 +3218,17 @@ G:_T_E_T8
 *:T9
 *:_T_S_T9
 #                                                            ../orig/t.typ:323
-I:Nejprve si prozkou¹íme písmena, která ji¾ umíme.
+I:Nejprve si prozkouÅ¡Ã­me pÃ­smena, kterÃ¡ jiÅ¾ umÃ­me.
 *:_T_R_L120
 #                                                            ../orig/t.typ:324
-D:juj ded kik frf lol fgf ùpù jhj
+D:juj ded kik frf lol fgf Å¯pÅ¯ jhj
 
 *:_T_R_L121
 #                                                            ../orig/t.typ:325
-D:ftf jnj ftf jnj fbf juj ù?ù l.l k,k
+D:ftf jnj ftf jnj fbf juj Å¯?Å¯ l.l k,k
 
 #                                                            ../orig/t.typ:327
-I:Prstem na D pí¹eme C. Dolù mírnì vpravo.
+I:Prstem na D pÃ­Å¡eme C. DolÅ¯ mÃ­rnÄ› vpravo.
 *:_T_R_L122
 #                                                            ../orig/t.typ:328
 D:ddd dcd ddd ccc ddd dcd
@@ -3240,79 +3240,79 @@ D:ddd cat ddd cup ddd can
  :dcd crate dcd scrap dcd trick dcd
 
 #                                                            ../orig/t.typ:332
-I:Prstem na J pí¹eme M. Opìt dolù vpravo.
+I:Prstem na J pÃ­Å¡eme M. OpÄ›t dolÅ¯ vpravo.
 *:_T_R_L124
 #                                                            ../orig/t.typ:333
 D:jjj jmj jjj mmm jjj jmj jjj
 
 *:_T_R_L125
 #                                                            ../orig/t.typ:337
-D:jjj mít jjj øím jjj mimika jjj
- :jmj manuál jmj men jmj ham jjj
+D:jjj mÃ­t jjj Å™Ã­m jjj mimika jjj
+ :jmj manuÃ¡l jmj men jmj ham jjj
  :jmj Mr. jmj Mrs. jmj Ms. jmj
- :jmj malík jmj místo jmj manumise jmj
+ :jmj malÃ­k jmj mÃ­sto jmj manumise jmj
 
 #                                                            ../orig/t.typ:338
-I:Dal¹í klávesou pro prst ù je pomlèka. Vychılení vpravo dolù.
+I:DalÅ¡Ã­ klÃ¡vesou pro prst Å¯ je pomlÄka. VychÃ½lenÃ­ vpravo dolÅ¯.
 *:_T_R_L126
 #                                                            ../orig/t.typ:339
-D:ùùù ù-ù ùùù --- ùùù ù-ù ùùù ù-ù
+D:Å¯Å¯Å¯ Å¯-Å¯ Å¯Å¯Å¯ --- Å¯Å¯Å¯ Å¯-Å¯ Å¯Å¯Å¯ Å¯-Å¯
 
-I:V angliètinì pí¹eme zlomky s pomlèkou.
+I:V angliÄtinÄ› pÃ­Å¡eme zlomky s pomlÄkou.
 *:_T_R_L127
 #                                                            ../orig/t.typ:341
-D:ùùù one-third ùùù one-half ùùù three-fifths ùùù
- :ùùù taky-programátor ùùù anti-komunista ùùù
+D:Å¯Å¯Å¯ one-third Å¯Å¯Å¯ one-half Å¯Å¯Å¯ three-fifths Å¯Å¯Å¯
+ :Å¯Å¯Å¯ taky-programÃ¡tor Å¯Å¯Å¯ anti-komunista Å¯Å¯Å¯
 
 #                                                            ../orig/t.typ:342
-I:Zkusíme nìjaké vìty
+I:ZkusÃ­me nÄ›jakÃ© vÄ›ty
 *:_T_R_L128
 #                                                            ../orig/t.typ:343
-D:Marie ráda dìlá omáèky. Tenhle mega-bomba-super
- :stroj by se ani neodlepil od zemì. Kolik je to
- :u¾ let?
+D:Marie rÃ¡da dÄ›lÃ¡ omÃ¡Äky. Tenhle mega-bomba-super
+ :stroj by se ani neodlepil od zemÄ›. Kolik je to
+ :uÅ¾ let?
 
 *:_T_R_L129
 #                                                            ../orig/t.typ:345
-D:Tento program je souèástí projektu GNU.
+D:Tento program je souÄÃ¡stÃ­ projektu GNU.
 
 #                                                            ../orig/t.typ:346
-I:Existují tøi rùzná pou¾ití pomlèky. Jedním z nich je kombinace slov.
+I:ExistujÃ­ tÅ™i rÅ¯znÃ¡ pouÅ¾itÃ­ pomlÄky. JednÃ­m z nich je kombinace slov.
 *:_T_R_L130
 #                                                            ../orig/t.typ:347
-D:Mìla na sobì modro-èernı dres. Nikoho to ale nebralo.
+D:MÄ›la na sobÄ› modro-ÄernÃ½ dres. Nikoho to ale nebralo.
 
 #                                                            ../orig/t.typ:348
-I:K rozdìlení slov:
+I:K rozdÄ›lenÃ­ slov:
 *:_T_R_L131
 #                                                            ../orig/t.typ:350
-D:Minulı pátek se stala pøíhoda, na kterou nemohu nepo-
- :myslet. Je to tak, ale nikdo mi to neba¹tí.
+D:MinulÃ½ pÃ¡tek se stala pÅ™Ã­hoda, na kterou nemohu nepo-
+ :myslet. Je to tak, ale nikdo mi to nebaÅ¡tÃ­.
 
 #                                                            ../orig/t.typ:351
-I:Dlouhá pomlèka se pou¾ívá k oddìlení vsuvky ve vìtì:
+I:DlouhÃ¡ pomlÄka se pouÅ¾Ã­vÃ¡ k oddÄ›lenÃ­ vsuvky ve vÄ›tÄ›:
 *:_T_R_L132
 #                                                            ../orig/t.typ:352
-D:Není to tak snadné -- chtìl jsem øíci, mohlo to bıt hor¹í -- ale jde to.
+D:NenÃ­ to tak snadnÃ© -- chtÄ›l jsem Å™Ã­ci, mohlo to bÃ½t horÅ¡Ã­ -- ale jde to.
 
 #                                                            ../orig/t.typ:353
-I:Zkusíme si na takovıch vìtách cvièení na rychlost.
+I:ZkusÃ­me si na takovÃ½ch vÄ›tÃ¡ch cviÄenÃ­ na rychlost.
 *:_T_R_L133
 #                                                            ../orig/t.typ:355
-S:Je¹tì není tak tma, aby nebylo mo¾né dojít domù.
- :Kolik je let tomuhle poøekadlu, to nikdo nespoèítá.
+S:JeÅ¡tÄ› nenÃ­ tak tma, aby nebylo moÅ¾nÃ© dojÃ­t domÅ¯.
+ :Kolik je let tomuhle poÅ™ekadlu, to nikdo nespoÄÃ­tÃ¡.
 
-I:Opìt na rychlost.
+I:OpÄ›t na rychlost.
 *:_T_R_L134
 #                                                            ../orig/t.typ:364
-S:Muselo to tak bıt, jinak by se to nepovedlo.
- :Co bylo, bylo, nyní musíme pøemı¹let
- :o budoucnosti, jinak bychom se pomátli.
- :Tenhle malı èernı brouk je u¾ pryè a tak
- :je lep¹í na nìj nemyslet.
+S:Muselo to tak bÃ½t, jinak by se to nepovedlo.
+ :Co bylo, bylo, nynÃ­ musÃ­me pÅ™emÃ½Å¡let
+ :o budoucnosti, jinak bychom se pomÃ¡tli.
+ :Tenhle malÃ½ ÄernÃ½ brouk je uÅ¾ pryÄ a tak
+ :je lepÅ¡Ã­ na nÄ›j nemyslet.
 
 #                                                            ../orig/t.typ:365
-I:Prázdné øádky pí¹eme dvojitım stiskem klávesy ENTER:
+I:PrÃ¡zdnÃ© Å™Ã¡dky pÃ­Å¡eme dvojitÃ½m stiskem klÃ¡vesy ENTER:
 *:_T_R_L135
 #                                                            ../orig/t.typ:374
 S:Dear Mr. Mandrake:
@@ -3332,37 +3332,37 @@ G:_T_E_T9
 *:T10
 *:_T_S_T10
 #                                                            ../orig/t.typ:378
-I:Jako v¾dy, zaèneme krátkım opakováním
+I:Jako vÅ¾dy, zaÄneme krÃ¡tkÃ½m opakovÃ¡nÃ­m
 *:_T_R_L136
 #                                                            ../orig/t.typ:379
-D:jfj dkd lsl aùa dcd jmj ù-ù fbf juj
- :trn masa kilo hùrka lopata øeka pì¹ky
- :¾ili pán dítko stéblo øe¹eto had gloglo
+D:jfj dkd lsl aÅ¯a dcd jmj Å¯-Å¯ fbf juj
+ :trn masa kilo hÅ¯rka lopata Å™eka pÄ›Å¡ky
+ :Å¾ili pÃ¡n dÃ­tko stÃ©blo Å™eÅ¡eto had gloglo
 
 #                                                            ../orig/t.typ:381
-I:Zkusíme nìjaká del¹í slova
+I:ZkusÃ­me nÄ›jakÃ¡ delÅ¡Ã­ slova
 *:_T_R_L137
 #                                                            ../orig/t.typ:382
-D:malièkı kamera foton trièko, fosfát, hádì
+D:maliÄkÃ½ kamera foton triÄko, fosfÃ¡t, hÃ¡dÄ›
 
 #                                                            ../orig/t.typ:383
-I:W pí¹eme prstem na S vychılenım nahoru.
+I:W pÃ­Å¡eme prstem na S vychÃ½lenÃ½m nahoru.
 *:_T_R_L138
 #                                                            ../orig/t.typ:384
 D:sss sws sss www sss sws sss
 
-I:Nehıbejte ostatními prsty ze základní pozice.
+I:NehÃ½bejte ostatnÃ­mi prsty ze zÃ¡kladnÃ­ pozice.
 *:_T_R_L139
 #                                                            ../orig/t.typ:385
 D:sss war sss who sss was sss
 
-I:Èe¹tina w moc nepou¾ívá, zato angliètina ano.
+I:ÄŒeÅ¡tina w moc nepouÅ¾Ã­vÃ¡, zato angliÄtina ano.
 *:_T_R_L140
 #                                                            ../orig/t.typ:387
 D:sws who sws what sws when sws where sws
  :knowledge whatever Wimbledon know-it-all
 
-I:Zkuste je¹tì tohle.
+I:Zkuste jeÅ¡tÄ› tohle.
 *:_T_R_L140A
 #                                                            ../orig/t.typ:391
 S:How much wood could a woodchuck chuck if a
@@ -3371,25 +3371,25 @@ S:How much wood could a woodchuck chuck if a
  :could chuck, if a woodchuck could chuck wood.
 
 #                                                            ../orig/t.typ:392
-I:Tvrdé Y pí¹eme J-prstem vychılenım vlevo nahoru.
+I:TvrdÃ© Y pÃ­Å¡eme J-prstem vychÃ½lenÃ½m vlevo nahoru.
 *:_T_R_L141
 #                                                            ../orig/t.typ:393
 D:jjj jyj jjj yyy jjj jyj jjj
 
-I: Neple»te si Y a U! Y je více vlevo.
+I: NepleÅ¥te si Y a U! Y je vÃ­ce vlevo.
 *:_T_R_L142
 #                                                            ../orig/t.typ:396
 D:jjj why jjj you jjj try jjj rye jjj
- :jjj ryk jjj ¹ly jjj mìly jjj daly jjj
+ :jjj ryk jjj Å¡ly jjj mÄ›ly jjj daly jjj
 
 #                                                            ../orig/t.typ:397
-I:Zkuste si va¹i rychlost:
+I:Zkuste si vaÅ¡i rychlost:
 *:_T_R_L143
 #                                                            ../orig/t.typ:398
-S:Vy dámy jste psaly pomalu.
+S:Vy dÃ¡my jste psaly pomalu.
 
 #                                                            ../orig/t.typ:399
-I:V maèkáme prstem na F.
+I:V maÄkÃ¡me prstem na F.
 *:_T_R_L144
 #                                                            ../orig/t.typ:400
 D:fff fvf fff vvv fff fvf fff
@@ -3400,33 +3400,33 @@ D:fff vosa fff eva fff vow fff
 
 *:_T_R_L146
 #                                                            ../orig/t.typ:402
-D:fvf voda fvf kováø fvf víno fvf válec fvf
+D:fvf voda fvf kovÃ¡Å™ fvf vÃ­no fvf vÃ¡lec fvf
 
 *:_T_R_L147
 #                                                            ../orig/t.typ:405
-D:vodovod vøava pøevod návod
- :Víno je velmi dobré.
- :V¹ak víte, ¾e vám vìøím?
+D:vodovod vÅ™ava pÅ™evod nÃ¡vod
+ :VÃ­no je velmi dobrÃ©.
+ :VÅ¡ak vÃ­te, Å¾e vÃ¡m vÄ›Å™Ã­m?
 
 *:_T_R_L148
 #                                                            ../orig/t.typ:419
 T:		         BACKSPACE
  :
- :Vìt¹ina programù, které budete pou¾ívat, vám dovolí opravovat 
- :chyby s pou¾itím kláves BACKSPACE a/nebo DELETE. Tyto klávesy
- :vám dovolí vymazat znak, kterı jste ji¾ jednou zadali. To je
- :jednou z nejvìt¹ích vıhod poèítaèe nad klasickım psacím strojem.
+ :VÄ›tÅ¡ina programÅ¯, kterÃ© budete pouÅ¾Ã­vat, vÃ¡m dovolÃ­ opravovat 
+ :chyby s pouÅ¾itÃ­m klÃ¡ves BACKSPACE a/nebo DELETE. Tyto klÃ¡vesy
+ :vÃ¡m dovolÃ­ vymazat znak, kterÃ½ jste jiÅ¾ jednou zadali. To je
+ :jednou z nejvÄ›tÅ¡Ã­ch vÃ½hod poÄÃ­taÄe nad klasickÃ½m psacÃ­m strojem.
  :
- :V prùbìhu drilovıch cvièení odmítám tyto klávesy akceptovat.
- :(Mìli byste cvièit dokud se vám nepovede opsat text správnì!)
- :Dovolím vám ale pou¾ívat tyto klávesy v rychlostních testech.
- :Uma¾u sice bílé znaèky ¹patnì zadanıch písmen, ale stále je 
- :budu do vısledkù poèítat jako chyby.
+ :V prÅ¯bÄ›hu drilovÃ½ch cviÄenÃ­ odmÃ­tÃ¡m tyto klÃ¡vesy akceptovat.
+ :(MÄ›li byste cviÄit dokud se vÃ¡m nepovede opsat text sprÃ¡vnÄ›!)
+ :DovolÃ­m vÃ¡m ale pouÅ¾Ã­vat tyto klÃ¡vesy v rychlostnÃ­ch testech.
+ :UmaÅ¾u sice bÃ­lÃ© znaÄky Å¡patnÄ› zadanÃ½ch pÃ­smen, ale stÃ¡le je 
+ :budu do vÃ½sledkÅ¯ poÄÃ­tat jako chyby.
  : 
- :Klávesu BACKSPACE stisknìte va¹ím ù-prstem a okam¾itì vra»te
- :v¹echny prsty do základní pozice.
+ :KlÃ¡vesu BACKSPACE stisknÄ›te vaÅ¡Ã­m Å¯-prstem a okamÅ¾itÄ› vraÅ¥te
+ :vÅ¡echny prsty do zÃ¡kladnÃ­ pozice.
 #                                                            ../orig/t.typ:420
-I:Zkuste si va¹i rychlost na tìchto rımech!
+I:Zkuste si vaÅ¡i rychlost na tÄ›chto rÃ½mech!
 *:_T_R_L149
 #                                                            ../orig/t.typ:424
 S:Mary had a little lamb
@@ -3436,25 +3436,25 @@ S:Mary had a little lamb
 
 *:_T_R_L150
 #                                                            ../orig/t.typ:426
-S:Pou¾ívání BACKSPACE je jednoduché a svádí k tomu,
- :abychom psali s chybami a nauèili se je rychle opravovat.
- :To je velmi ¹patnı zlozvyk.
+S:PouÅ¾Ã­vÃ¡nÃ­ BACKSPACE je jednoduchÃ© a svÃ¡dÃ­ k tomu,
+ :abychom psali s chybami a nauÄili se je rychle opravovat.
+ :To je velmi Å¡patnÃ½ zlozvyk.
 
 *:_T_R_L151
 #                                                            ../orig/t.typ:431
-S:Jaké je dnes poèasí?
- :Slunce putuje po jasnì modré obloze.
- :A jaké má bıt poèasí zítra?
- :Z tmavé oblohy mají padat trakaøe.
+S:JakÃ© je dnes poÄasÃ­?
+ :Slunce putuje po jasnÄ› modrÃ© obloze.
+ :A jakÃ© mÃ¡ bÃ½t poÄasÃ­ zÃ­tra?
+ :Z tmavÃ© oblohy majÃ­ padat trakaÅ™e.
 
 *:_T_R_L152
 #                                                            ../orig/t.typ:436
-S:V jednom poèítaèovém èasopise jsem èetl o tom,
- :¾e je dobré nauèit se pou¾ívat my¹ levou
- :rukou, abychom mìli pravou volnou k psaní na klávesnici.
- :To je nesmysl. Klidnì si nìkdy vyzkou¹ejte, ¾e psát
- :v¹emi pìti prsty pravé ruky je vıraznì pomalej¹í a tì¾¹í,
- :ne¾ psát pouze dvìma ukazováèky obou rukou.
+S:V jednom poÄÃ­taÄovÃ©m Äasopise jsem Äetl o tom,
+ :Å¾e je dobrÃ© nauÄit se pouÅ¾Ã­vat myÅ¡ levou
+ :rukou, abychom mÄ›li pravou volnou k psanÃ­ na klÃ¡vesnici.
+ :To je nesmysl. KlidnÄ› si nÄ›kdy vyzkouÅ¡ejte, Å¾e psÃ¡t
+ :vÅ¡emi pÄ›ti prsty pravÃ© ruky je vÃ½raznÄ› pomalejÅ¡Ã­ a tÄ›Å¾Å¡Ã­,
+ :neÅ¾ psÃ¡t pouze dvÄ›ma ukazovÃ¡Äky obou rukou.
 G:_T_E_T10
 #------------------------------------------------------------------------------
 # Lekce T11
@@ -3462,20 +3462,20 @@ G:_T_E_T10
 *:T11
 *:_T_S_T11
 #                                                            ../orig/t.typ:440
-I:Nejprve opakování.
+I:Nejprve opakovÃ¡nÃ­.
 *:_T_R_L153
 #                                                            ../orig/t.typ:441
-D:aùa sls dkd fjf sws jyj fvf dcd jmj ù-ù
- :jıj føf dèd kák s¹s líl aìa ùéù j¾h
+D:aÅ¯a sls dkd fjf sws jyj fvf dcd jmj Å¯-Å¯
+ :jÃ½j fÅ™f dÄd kÃ¡k sÅ¡s lÃ­l aÄ›a Å¯Ã©Å¯ jÅ¾h
 
 #                                                            ../orig/t.typ:443
-I:V¹imnìte si, ¾e u¾ nám zbıvá pouze Q, X, Z a klávesa háèku!
+I:VÅ¡imnÄ›te si, Å¾e uÅ¾ nÃ¡m zbÃ½vÃ¡ pouze Q, X, Z a klÃ¡vesa hÃ¡Äku!
 *:_T_R_L154
 #                                                            ../orig/t.typ:444
-D:aábcèdeìéfghchiíjklmnoprøs¹tuúùvwy
+D:aÃ¡bcÄdeÄ›Ã©fghchiÃ­jklmnoprÅ™sÅ¡tuÃºÅ¯vwy
 
 #                                                            ../orig/t.typ:445
-I:Q maèkáme vychılením prstu na A nahoru.
+I:Q maÄkÃ¡me vychÃ½lenÃ­m prstu na A nahoru.
 *:_T_R_L155
 #                                                            ../orig/t.typ:446
 D:aaa aqa aaa qqq aaa aqa aaa
@@ -3487,7 +3487,7 @@ D:aaa quit aaa quad aaa quip aaa
  :quail quiver inquest marquis
 
 #
-I:Klávesu maèkáme S-prstem vychılenım dolù.
+I:KlÃ¡vesu maÄkÃ¡me S-prstem vychÃ½lenÃ½m dolÅ¯.
 *:_T_R_L157
 #                                                            ../orig/t.typ:451
 D:sss sxs sss xxx sss sxs sss
@@ -3499,7 +3499,7 @@ D:sss ax sss ox sss vex sss wax xxx
  :exactly sphinx oxygen except thorax
 
 #
-I:Prstem A maèkáme klávesu Z.
+I:Prstem A maÄkÃ¡me klÃ¡vesu Z.
 *:_T_R_L159
 #                                                            ../orig/t.typ:456
 D:aaa aza aaa zzz aaa aza aaa
@@ -3510,99 +3510,99 @@ D:aaa adz aaa azo aaa coz aaa
  :quiz jazz quartz zinc dozen
  :oxidize squeeze azimuth zoology
 
-T:Blí¾íme se do finále. 
- :Jistì jste si v¹imli, ¾e ó nemá vlastní klávesu.
- :Musíme jej proto skládat ze stisku klávesy prodlou¾ení a poté
- :daného písmene. Nejedná se o stejnı princip jako s klávesou 
- :SHIFT. Prodlou¾ení nemusíme/nesmíme dr¾et celou dobu, ale zmáèkneme
- :jej první, vrátíme prsty do základní pozice a poté zmáèkneme
+T:BlÃ­Å¾Ã­me se do finÃ¡le. 
+ :JistÄ› jste si vÅ¡imli, Å¾e Ã³ nemÃ¡ vlastnÃ­ klÃ¡vesu.
+ :MusÃ­me jej proto sklÃ¡dat ze stisku klÃ¡vesy prodlouÅ¾enÃ­ a potÃ©
+ :danÃ©ho pÃ­smene. NejednÃ¡ se o stejnÃ½ princip jako s klÃ¡vesou 
+ :SHIFT. ProdlouÅ¾enÃ­ nemusÃ­me/nesmÃ­me drÅ¾et celou dobu, ale zmÃ¡Äkneme
+ :jej prvnÃ­, vrÃ¡tÃ­me prsty do zÃ¡kladnÃ­ pozice a potÃ© zmÃ¡Äkneme
  :o.
  :
- :Prodlou¾ení pí¹eme vychılením pravého malíèku prudce doprava nahoru.
+ :ProdlouÅ¾enÃ­ pÃ­Å¡eme vychÃ½lenÃ­m pravÃ©ho malÃ­Äku prudce doprava nahoru.
  :
- :Pro napsání ó tedy vychılíme pravı malíèek doprava nahoru 
- :a stiskneme klávesu s háèkem.
+ :Pro napsÃ¡nÃ­ Ã³ tedy vychÃ½lÃ­me pravÃ½ malÃ­Äek doprava nahoru 
+ :a stiskneme klÃ¡vesu s hÃ¡Äkem.
 *:_T_R_L161
 #                                                            ../orig/t.typ:459
-D:ùùù ó ó ó ù ó ù ó aó só dó
- :mód dóza gól hùl král móda próza
+D:Å¯Å¯Å¯ Ã³ Ã³ Ã³ Å¯ Ã³ Å¯ Ã³ aÃ³ sÃ³ dÃ³
+ :mÃ³d dÃ³za gÃ³l hÅ¯l krÃ¡l mÃ³da prÃ³za
 
 
-T:Obdobnì pí¹eme i ï, ò a ». Klávesa mìkèení je ale a¾ nad
- :klávesou prodlu¾ování a proto musíme navíc je¹tì zmáèknout
+T:ObdobnÄ› pÃ­Å¡eme i Ä, Åˆ a Å¥. KlÃ¡vesa mÄ›kÄenÃ­ je ale aÅ¾ nad
+ :klÃ¡vesou prodluÅ¾ovÃ¡nÃ­ a proto musÃ­me navÃ­c jeÅ¡tÄ› zmÃ¡Äknout
  :SHIFT.
  :
- :Pro napsání ¹ tedy stiskneme levı SHIFT a dr¾íme. Pravı malíèek
- :vychılíme na klávesu prodlu¾ování a stiskneme. Vrátíme v¹echny
- :prsty do základní pozice. Stiskneme klávesu S.
+ :Pro napsÃ¡nÃ­ Å¡ tedy stiskneme levÃ½ SHIFT a drÅ¾Ã­me. PravÃ½ malÃ­Äek
+ :vychÃ½lÃ­me na klÃ¡vesu prodluÅ¾ovÃ¡nÃ­ a stiskneme. VrÃ¡tÃ­me vÅ¡echny
+ :prsty do zÃ¡kladnÃ­ pozice. Stiskneme klÃ¡vesu S.
 *:_T_R_L162
 #                                                            ../orig/t.typ:456
-D:ùùù aaa aù»ùa aùòùa aùïùa
- :ï » ò ¹ ò è ¾ ì » ò ì ù ú ï
+D:Å¯Å¯Å¯ aaa aÅ¯Å¥Å¯a aÅ¯ÅˆÅ¯a aÅ¯ÄÅ¯a
+ :Ä Å¥ Åˆ Å¡ Åˆ Ä Å¾ Ä› Å¥ Åˆ Ä› Å¯ Ãº Ä
 
 #                                                            ../orig/t.typ:460
-I:Pozor, dnes je velkı den!
+I:Pozor, dnes je velkÃ½ den!
 *:_T_R_L163
 #                                                            ../orig/t.typ:461
-D:aábcèdïeéìfghiíjklmnòoópqrøs¹t»uúùvwxyız¾
+D:aÃ¡bcÄdÄeÃ©Ä›fghiÃ­jklmnÅˆoÃ³pqrÅ™sÅ¡tÅ¥uÃºÅ¯vwxyÃ½zÅ¾
 
 *:_T_R_L164
 #                                                            ../orig/t.typ:463
-D:¾zıyxwvùúu»t¹sørqpóoònmlkjíihgfìéedcba
+D:Å¾zÃ½yxwvÅ¯ÃºuÅ¥tÅ¡sÅ™rqpÃ³oÅˆnmlkjÃ­ihgfÄ›Ã©edcba
 
 #
-I:Zkusíme si nìjaké vìty.
+I:ZkusÃ­me si nÄ›jakÃ© vÄ›ty.
 *:_T_R_L165
 #                                                            ../orig/t.typ:464
-D:Urèitì teï dìláte chyby, ka¾dı jsme dìlali chyby,
- :ale to se brzy zlep¹í, uvidíte.
+D:UrÄitÄ› teÄ dÄ›lÃ¡te chyby, kaÅ¾dÃ½ jsme dÄ›lali chyby,
+ :ale to se brzy zlepÅ¡Ã­, uvidÃ­te.
 
-I:Nepropadejte panice, odteï to ji¾ bude snadné.
+I:Nepropadejte panice, odteÄ to jiÅ¾ bude snadnÃ©.
 *:_T_R_L166
 #                                                            ../orig/t.typ:465
-D:Za pár lekcí ji¾ budu umìt psát velmi dobøe a rychle,
- :nejhor¹í ji¾ mám za sebou.
+D:Za pÃ¡r lekcÃ­ jiÅ¾ budu umÄ›t psÃ¡t velmi dobÅ™e a rychle,
+ :nejhorÅ¡Ã­ jiÅ¾ mÃ¡m za sebou.
 
 *:_T_R_L167
 #                                                            ../orig/t.typ:466
-D:V èeském poèítaèovém slangu se pou¾ívá slovo squìlı.
- :Tedy: jde mi to squìle.
+D:V ÄeskÃ©m poÄÃ­taÄovÃ©m slangu se pouÅ¾Ã­vÃ¡ slovo squÄ›lÃ½.
+ :Tedy: jde mi to squÄ›le.
 
 *:_T_R_L168
 #                                                            ../orig/t.typ:467
-D:Písmena jako x, q a w se v èe¹tinì moc nepou¾ívají.
+D:PÃ­smena jako x, q a w se v ÄeÅ¡tinÄ› moc nepouÅ¾Ã­vajÃ­.
 
 *:_T_R_L169
 #                                                            ../orig/t.typ:469
-D:V na¹em jazyce je ale velmi slo¾itá diakritika.
- :Tøeba napsat velké diakritické písmeno není legrace.
+D:V naÅ¡em jazyce je ale velmi sloÅ¾itÃ¡ diakritika.
+ :TÅ™eba napsat velkÃ© diakritickÃ© pÃ­smeno nenÃ­ legrace.
 
 #                                                            ../orig/t.typ:470
-T:Pro napsání velkého diakritického písmena musíme pou¾ít
- :pomocné diakritické klávesy. Nejprve stiskneme klávesu
- :mìkèení èi prodlou¾ení a poté se SHIFTem dané písmeno.
+T:Pro napsÃ¡nÃ­ velkÃ©ho diakritickÃ©ho pÃ­smena musÃ­me pouÅ¾Ã­t
+ :pomocnÃ© diakritickÃ© klÃ¡vesy. Nejprve stiskneme klÃ¡vesu
+ :mÄ›kÄenÃ­ Äi prodlouÅ¾enÃ­ a potÃ© se SHIFTem danÃ© pÃ­smeno.
 *:_T_R_L170
 #                                                            ../orig/t.typ:471
-D:®e to není tak snadné, o tom se mohli pøesvìdèit ji¾ mnozí.
- :Ále, nebudeme naøíkat, ji¾ jsme zvládli i tì¾¹í vìci.
+D:Å½e to nenÃ­ tak snadnÃ©, o tom se mohli pÅ™esvÄ›dÄit jiÅ¾ mnozÃ­.
+ :Ãle, nebudeme naÅ™Ã­kat, jiÅ¾ jsme zvlÃ¡dli i tÄ›Å¾Å¡Ã­ vÄ›ci.
 
 #                                                            ../orig/t.typ:472
-I:Cvièíme dál.
+I:CviÄÃ­me dÃ¡l.
 *:_T_R_L171
 #                                                            ../orig/t.typ:473
-D:©pièkovı atlet se zúèastnil letních olympijskıch her.
+D:Å piÄkovÃ½ atlet se zÃºÄastnil letnÃ­ch olympijskÃ½ch her.
 
 #                                                            ../orig/t.typ:474
-I:Zkusíme si nyní rychlostní cvièení, co øíkáte:
+I:ZkusÃ­me si nynÃ­ rychlostnÃ­ cviÄenÃ­, co Å™Ã­kÃ¡te:
 *:_T_R_L172
 #                                                            ../orig/t.typ:475
-S:©pièkovı atlet se zúèastnil letních olympijskıch her.
+S:Å piÄkovÃ½ atlet se zÃºÄastnil letnÃ­ch olympijskÃ½ch her.
 
 #                                                            ../orig/t.typ:476
 I:Znovu.
 *:_T_R_L173
 #                                                            ../orig/t.typ:477
-S:©pièkovı atlet se zúèastnil letních olympijskıch her.
+S:Å piÄkovÃ½ atlet se zÃºÄastnil letnÃ­ch olympijskÃ½ch her.
 
 G:_T_E_T11
 #------------------------------------------------------------------------------
@@ -3611,57 +3611,57 @@ G:_T_E_T11
 *:T12
 *:_T_S_T12
 #                                                            ../orig/t.typ:481
-I:Ne¾ zaèneme pracovat s èísly, procvièíme si celou abecedu.
+I:NeÅ¾ zaÄneme pracovat s ÄÃ­sly, procviÄÃ­me si celou abecedu.
 *:_T_R_L174
 #                                                            ../orig/t.typ:482
 D:abcd efg hijk lmnop qrs tuv wx yz
- :èï¹ø¾ıí»éá
+ :ÄÄÅ¡Å™Å¾Ã½Ã­Å¥Ã©Ã¡
 
 #                                                            ../orig/t.typ:484
-I:Pøidáme velká písmena
+I:PÅ™idÃ¡me velkÃ¡ pÃ­smena
 *:_T_R_L175
 #                                                            ../orig/t.typ:485
 D:abcdefghijklmnopqrstuvwxyz
- :« Á È ® İ Ø É Ú Ì Ò Ï
+ :Å¤ Ã ÄŒ Å½ Ã Å˜ Ã‰ Ãš Äš Å‡ Ä
 #                                                            ../orig/t.typ:486
-I:Pou¾ijte pro ka¾dé písmeno SHIFT. Nepou¾ívejte CAPS-LOCK!
+I:PouÅ¾ijte pro kaÅ¾dÃ© pÃ­smeno SHIFT. NepouÅ¾Ã­vejte CAPS-LOCK!
 *:_T_R_L176
 #                                                            ../orig/t.typ:487
 D:ABCDEFGHIJKLMNOPQRSTUVWXYZ
 
 #                                                            ../orig/t.typ:488
-I:Procvièíme i interpunkèní znaménka, která zatím známe.
+I:ProcviÄÃ­me i interpunkÄnÃ­ znamÃ©nka, kterÃ¡ zatÃ­m znÃ¡me.
 *:_T_R_L177
 #                                                            ../orig/t.typ:489
-D:l.l l:l k,k l.l ù/ù .?. -?, ù-,
+D:l.l l:l k,k l.l Å¯/Å¯ .?. -?, Å¯-,
 
 *:_T_R_L178
 #                                                            ../orig/t.typ:509
 T:
- :			NUMERICKÉ KLÁVESY
+ :			NUMERICKÃ‰ KLÃVESY
  :
- :Klávesnice má 2 sady numerickıch kláves. Jedna z nich se
- :nalézá pøímo nad písmeny a ta je standardizovaná pro v¹echny
- :klávesnice psacích strojù. Druhá, která napodobuje klávesnici
- :kalkulaèky, je po va¹í pravici. V tìchto lekcích nás budou zajímat
- :pouze standardní numerické klávesy na hlavní klávesnici.
- :(Pokud byste se chtìli nauèit pou¾ívat numerickou klávesnici,
- :projdìte si rad¹i sérii lekcí N)
+ :KlÃ¡vesnice mÃ¡ 2 sady numerickÃ½ch klÃ¡ves. Jedna z nich se
+ :nalÃ©zÃ¡ pÅ™Ã­mo nad pÃ­smeny a ta je standardizovanÃ¡ pro vÅ¡echny
+ :klÃ¡vesnice psacÃ­ch strojÅ¯. DruhÃ¡, kterÃ¡ napodobuje klÃ¡vesnici
+ :kalkulaÄky, je po vaÅ¡Ã­ pravici. V tÄ›chto lekcÃ­ch nÃ¡s budou zajÃ­mat
+ :pouze standardnÃ­ numerickÃ© klÃ¡vesy na hlavnÃ­ klÃ¡vesnici.
+ :(Pokud byste se chtÄ›li nauÄit pouÅ¾Ã­vat numerickou klÃ¡vesnici,
+ :projdÄ›te si radÅ¡i sÃ©rii lekcÃ­ N)
  :
- :Poznámka: ne v¹echny klávesnice mají numerické klávesy
- :v oddìleném bloku.
+ :PoznÃ¡mka: ne vÅ¡echny klÃ¡vesnice majÃ­ numerickÃ© klÃ¡vesy
+ :v oddÄ›lenÃ©m bloku.
  :
- :Nìkteré klávesnice nemají èíslo 1. V takovém pøípadì musíte pou¾ít
- :klávesu L. Kdykoliv ale mù¾ete napsat korektní 1 jako èíslo,
- :nikdy jej nepi¹te jako písmeno L!
+ :NÄ›kterÃ© klÃ¡vesnice nemajÃ­ ÄÃ­slo 1. V takovÃ©m pÅ™Ã­padÄ› musÃ­te pouÅ¾Ã­t
+ :klÃ¡vesu L. Kdykoliv ale mÅ¯Å¾ete napsat korektnÃ­ 1 jako ÄÃ­slo,
+ :nikdy jej nepiÅ¡te jako pÃ­smeno L!
  :
- :V èeské klávesnici jsou umístìny èísla nad diakritickımi znaky.
- :Budete tedy k jejich napsání muset pou¾ívat SHIFT. To je také
- :dùvod, proè nemù¾eme velká diakritická písmena psát stiskem dané
- :klávesy se SHIFTem, ale musíme pou¾ívat opisnı postup.
+ :V ÄeskÃ© klÃ¡vesnici jsou umÃ­stÄ›ny ÄÃ­sla nad diakritickÃ½mi znaky.
+ :Budete tedy k jejich napsÃ¡nÃ­ muset pouÅ¾Ã­vat SHIFT. To je takÃ©
+ :dÅ¯vod, proÄ nemÅ¯Å¾eme velkÃ¡ diakritickÃ¡ pÃ­smena psÃ¡t stiskem danÃ©
+ :klÃ¡vesy se SHIFTem, ale musÃ­me pouÅ¾Ã­vat opisnÃ½ postup.
 
 #                                                            ../orig/t.typ:510
-I:Vy témìø urèitì jednièku máte. Stisknìte ji A-prstem. ù-prst dr¾í SHIFT.
+I:Vy tÃ©mÄ›Å™ urÄitÄ› jedniÄku mÃ¡te. StisknÄ›te ji A-prstem. Å¯-prst drÅ¾Ã­ SHIFT.
 *:_T_R_L179
 #                                                            ../orig/t.typ:511
 D:aaa a1a aaa 111 aaa a1a
@@ -3670,16 +3670,16 @@ D:aaa a1a aaa 111 aaa a1a
 #                                                            ../orig/t.typ:514
 D:a1q qa1 qz1 az1 aq1 a1z
  :111 ano 111 jakost 111 ahoj 111
- :Kdy¾ 11 mu¾ù chytí ka¾dı po 11 rybách v prùbìhu 11 dnù, 
+ :KdyÅ¾ 11 muÅ¾Å¯ chytÃ­ kaÅ¾dÃ½ po 11 rybÃ¡ch v prÅ¯bÄ›hu 11 dnÅ¯, 
  :Kolik ryb chytili celkem? 11.
 
 #                                                            ../orig/t.typ:515
-I:2ku pí¹eme opìt prstem z A. ù-prstem opìt maèkáme pravı SHIFT.
+I:2ku pÃ­Å¡eme opÄ›t prstem z A. Å¯-prstem opÄ›t maÄkÃ¡me pravÃ½ SHIFT.
 *:_T_R_L181
 #                                                            ../orig/t.typ:516
 D:sss s2s sss s2s sss s2s
 
-I:Nezapomínejte, ¾e se musí v¹echny prsty vracet do pùvodní pozice.
+I:NezapomÃ­nejte, Å¾e se musÃ­ vÅ¡echny prsty vracet do pÅ¯vodnÃ­ pozice.
 *:_T_R_L182 
 #                                                            ../orig/t.typ:520
 D:sss s2w sss 2xw sss w2x sss
@@ -3687,7 +3687,7 @@ D:sss s2w sss 2xw sss w2x sss
  :The 2 men were 2 late 2 catch the 2 PM train.
 
 #
-I:3ku maèkáme prstem z S. Samozøejmì opìt s pravım SHIFTem.
+I:3ku maÄkÃ¡me prstem z S. SamozÅ™ejmÄ› opÄ›t s pravÃ½m SHIFTem.
 *:_T_R_L183
 #                                                            ../orig/t.typ:521
 D:ddd d3d ddd d3d ddd d3d ddd
@@ -3695,11 +3695,11 @@ D:ddd d3d ddd d3d ddd d3d ddd
 *:_T_R_L184
 #                                                            ../orig/t.typ:524
 D:ddd d3e ddd d3c ddd e3c ddd
- :333 dan 333 koèek 333 kolik 333
+ :333 dan 333 koÄek 333 kolik 333
  :1 plus 2 je 3. 11 plus 22 je 33. 111 plus 222 je 333.
 
 #                                                            ../orig/t.typ:525
-I:Poslední, co budeme dnes procvièovat, je èíslo 4. (Pou¾ijte D-prst.)
+I:PoslednÃ­, co budeme dnes procviÄovat, je ÄÃ­slo 4. (PouÅ¾ijte D-prst.)
 *:_T_R_L185
 #                                                            ../orig/t.typ:526
 D:fff f4f fff f4f fff f4f
@@ -3708,28 +3708,28 @@ D:fff f4f fff f4f fff f4f
 #                                                            ../orig/t.typ:531
 D:fff f4r fff 4vr fff 4vr fff
  :444 pro fff krysa 444 test 444
- :Let 423 odlétá od brány 42 ve 4:24.
- :Jak øekli 3 mu¹ketıøi: 1 za v¹echny a v¹ichni za 1.
- :Kdy¾ 1/4 plus 2/3 je 11/12, kolik je 1/2 plus 1/3?
+ :Let 423 odlÃ©tÃ¡ od brÃ¡ny 42 ve 4:24.
+ :Jak Å™ekli 3 muÅ¡ketÃ½Å™i: 1 za vÅ¡echny a vÅ¡ichni za 1.
+ :KdyÅ¾ 1/4 plus 2/3 je 11/12, kolik je 1/2 plus 1/3?
 
 #                                                            ../orig/t.typ:532
-I:Zkuste si va¹i rychlost na této øádce:
+I:Zkuste si vaÅ¡i rychlost na tÃ©to Å™Ã¡dce:
 *:_T_R_L197
 #                                                            ../orig/t.typ:533
-S:Ná¹ tım vyhrál 1., 2. a 3. místo na 12. ka¾doroèním srazu.
+S:NÃ¡Å¡ tÃ½m vyhrÃ¡l 1., 2. a 3. mÃ­sto na 12. kaÅ¾doroÄnÃ­m srazu.
 
 #                                                            ../orig/t.typ:535
-I:Ji¾ jsme øíkali, ¾e nìkteré klávesnice nemají èíslo 1. Pojïme
- :si nacvièit pou¾ívání klávesy L, abyste mohli pou¾ívat i jakıkoliv
- :typ psacího stroje.
+I:JiÅ¾ jsme Å™Ã­kali, Å¾e nÄ›kterÃ© klÃ¡vesnice nemajÃ­ ÄÃ­slo 1. PojÄme
+ :si nacviÄit pouÅ¾Ã­vÃ¡nÃ­ klÃ¡vesy L, abyste mohli pouÅ¾Ã­vat i jakÃ½koliv
+ :typ psacÃ­ho stroje.
 *:_T_R_L188
 #                                                            ../orig/t.typ:536
-D:Tucet je l2. Veletucet je l2 tuctù, neboli l44.
+D:Tucet je l2. Veletucet je l2 tuctÅ¯, neboli l44.
 
 *:_T_R_L189
 #                                                            ../orig/t.typ:538
-D:Jak v osmièkové tak desítkové soustavì je ll krát ll l2l. 
- :A 3 mínus 4 je -l. V osmièkové, je ale l2 dìlitelné 3.
+D:Jak v osmiÄkovÃ© tak desÃ­tkovÃ© soustavÄ› je ll krÃ¡t ll l2l. 
+ :A 3 mÃ­nus 4 je -l. V osmiÄkovÃ©, je ale l2 dÄ›litelnÃ© 3.
 
 G:_T_E_T12
 #------------------------------------------------------------------------------
@@ -3738,7 +3738,7 @@ G:_T_E_T12
 *:T13
 *:_T_S_T13
 #                                                            ../orig/t.typ:542
-I:Zopakujeme si èísla, která ji¾ umíme.
+I:Zopakujeme si ÄÃ­sla, kterÃ¡ jiÅ¾ umÃ­me.
 *:_T_R_L190
 #                                                            ../orig/t.typ:543
 D:a1a s2s d3d f4f 234 413
@@ -3748,7 +3748,7 @@ D:a1a s2s d3d f4f 234 413
 D:f4r d3e s2w a1q az1 sx2 dc3 fv4
 
 #                                                            ../orig/t.typ:546
-I:7 pí¹eme prstem z J za souèasného stisku levého SHIFTu.
+I:7 pÃ­Å¡eme prstem z J za souÄasnÃ©ho stisku levÃ©ho SHIFTu.
 *:_T_R_L192
 #                                                            ../orig/t.typ:547
 D:jjj j7j jjj j7j jjj j7j jjj
@@ -3758,11 +3758,11 @@ D:jjj j7j jjj j7j jjj j7j jjj
 D:jjj j7u jjj 7um jjj u7m jjj
  :777 mapa 777 jug 777 rum 777
  :Je let 377 na Floridu stroj typu 707, 727 nebo 747?
- :Je to 727 a má 4 zastávky. Se v¹emi tìmi zastávkami to zabere 
+ :Je to 727 a mÃ¡ 4 zastÃ¡vky. Se vÅ¡emi tÄ›mi zastÃ¡vkami to zabere 
  :skoro 7 hodin.
 
 #                                                            ../orig/t.typ:552
-I:8ku pí¹eme opìt prstem z klávesy J.
+I:8ku pÃ­Å¡eme opÄ›t prstem z klÃ¡vesy J.
 *:_T_R_L194
 #                                                            ../orig/t.typ:553
 D:kkk k8k kkk k8k kkk k8k kkk
@@ -3770,13 +3770,13 @@ D:kkk k8k kkk k8k kkk k8k kkk
 *:_T_R_L195
 #                                                            ../orig/t.typ:557
 D:kkk k8i kkk 8,i kkk ,i8 kkk
- :888 kus 888 mák 888 tikat 888
- :Agent 88 mìl dorazit v 8:14. Má 38 minut zpo¾dìní.
- :Její tım mìl mít na starost zónu 8 kvadrantu 828.
- :Po¹li 8 dal¹ích agentù.
+ :888 kus 888 mÃ¡k 888 tikat 888
+ :Agent 88 mÄ›l dorazit v 8:14. MÃ¡ 38 minut zpoÅ¾dÄ›nÃ­.
+ :JejÃ­ tÃ½m mÄ›l mÃ­t na starost zÃ³nu 8 kvadrantu 828.
+ :PoÅ¡li 8 dalÅ¡Ã­ch agentÅ¯.
 
 #                                                            ../orig/t.typ:558
-I:9ku pí¹eme prstem z K.
+I:9ku pÃ­Å¡eme prstem z K.
 *:_T_R_L196
 #                                                            ../orig/t.typ:559
 D:lll l9l lll l9l lll l9l lll
@@ -3785,45 +3785,45 @@ D:lll l9l lll l9l lll l9l lll
 #                                                            ../orig/t.typ:563
 D:lll 9.o lll o9. lll l9. lll
  :999 Jr. 999 log 999 oko 999
- :99 lahví piva na stole, 99 lahví vína na druhém stole.
- :Kdy¾ vedle sebe napí¹eme èísla 9 a 9, dostaneme 99.
+ :99 lahvÃ­ piva na stole, 99 lahvÃ­ vÃ­na na druhÃ©m stole.
+ :KdyÅ¾ vedle sebe napÃ­Å¡eme ÄÃ­sla 9 a 9, dostaneme 99.
 
 #                                                            ../orig/t.typ:564
-I:Èíslo 0 pí¹eme prstem na L. Nikdy nezamìòujte nulu s písmenem o.
+I:ÄŒÃ­slo 0 pÃ­Å¡eme prstem na L. Nikdy nezamÄ›Åˆujte nulu s pÃ­smenem o.
 *:_T_R_L198
 #                                                            ../orig/t.typ:565
-D:ùùù ù0ù ùùù ù0ù ùùù ù0ù ùùù
+D:Å¯Å¯Å¯ Å¯0Å¯ Å¯Å¯Å¯ Å¯0Å¯ Å¯Å¯Å¯ Å¯0Å¯ Å¯Å¯Å¯
 
-I:Pou¾íváte doufám levı SHIFT.
+I:PouÅ¾Ã­vÃ¡te doufÃ¡m levÃ½ SHIFT.
 *:_T_R_L199
 #                                                            ../orig/t.typ:570
-D:ùùù ù0p ùùù /0p ùùù 0/p ùùù
- :000 a/c 000 pup 000 já? 000
- :Pánové: Schùzka v 10:00 10 øíjna byla odlo¾ena na 10:30.
- :Schùzka v 10:30 byla pøesunuta na 11:00 do místnosti 302.
- :Místnost 302 pojme ale pouze 10 lidí. Budeme potøebovat 
- :konferenèní sál 20.
+D:Å¯Å¯Å¯ Å¯0p Å¯Å¯Å¯ /0p Å¯Å¯Å¯ 0/p Å¯Å¯Å¯
+ :000 a/c 000 pup 000 jÃ¡? 000
+ :PÃ¡novÃ©: SchÅ¯zka v 10:00 10 Å™Ã­jna byla odloÅ¾ena na 10:30.
+ :SchÅ¯zka v 10:30 byla pÅ™esunuta na 11:00 do mÃ­stnosti 302.
+ :MÃ­stnost 302 pojme ale pouze 10 lidÃ­. Budeme potÅ™ebovat 
+ :konferenÄnÃ­ sÃ¡l 20.
 
 #                                                            ../orig/t.typ:571
-I:Zkusíme si nìjaké odstavce.
+I:ZkusÃ­me si nÄ›jakÃ© odstavce.
 *:_T_R_L200
 #                                                            ../orig/t.typ:580
-S:Zda-li víte, ¾e o èísle 0 existuje nìkolik celıch knih.
- :Stejnì tak o èísle 1. Obì jsou nìèím zvlá¹tní a jaksi
- :dùle¾itìj¹í ne¾ ostatní èísla. Existují i soustavy,
- :kde jsou 1 a 0 v¹ím, tøeba 2-ková soustava. Mimo
- :to se ale vyu¾ívají i soustavy se základem 8,
+S:Zda-li vÃ­te, Å¾e o ÄÃ­sle 0 existuje nÄ›kolik celÃ½ch knih.
+ :StejnÄ› tak o ÄÃ­sle 1. ObÄ› jsou nÄ›ÄÃ­m zvlÃ¡Å¡tnÃ­ a jaksi
+ :dÅ¯leÅ¾itÄ›jÅ¡Ã­ neÅ¾ ostatnÃ­ ÄÃ­sla. ExistujÃ­ i soustavy,
+ :kde jsou 1 a 0 vÅ¡Ã­m, tÅ™eba 2-kovÃ¡ soustava. Mimo
+ :to se ale vyuÅ¾Ã­vajÃ­ i soustavy se zÃ¡kladem 8,
  :16 nebo dokonce 60.
 
 *:_T_R_L201
 #                                                            ../orig/t.typ:587
-S:Není snadné odhadnout, kolik penìz jsme mohli 
- :transakcí z 14.8. ztratit. Ten den v 13:00
- :se pokazilo snad skoro v¹echno. Bylo to sotva
- :2 hodiny po uzavøení obchodu a ji¾ se ukázalo,
- :¾e konkurence o v¹em vìdìla dopøedu a teï nás
- :utopí. Akcie okam¾itì klesly na 2800 bodù.
- :To je propad o více jak 37 procent. 
+S:NenÃ­ snadnÃ© odhadnout, kolik penÄ›z jsme mohli 
+ :transakcÃ­ z 14.8. ztratit. Ten den v 13:00
+ :se pokazilo snad skoro vÅ¡echno. Bylo to sotva
+ :2 hodiny po uzavÅ™enÃ­ obchodu a jiÅ¾ se ukÃ¡zalo,
+ :Å¾e konkurence o vÅ¡em vÄ›dÄ›la dopÅ™edu a teÄ nÃ¡s
+ :utopÃ­. Akcie okamÅ¾itÄ› klesly na 2800 bodÅ¯.
+ :To je propad o vÃ­ce jak 37 procent. 
 
 G:_T_E_T13
 #------------------------------------------------------------------------------
@@ -3832,17 +3832,17 @@ G:_T_E_T13
 *:T14
 *:_T_S_T14
 #                                                            ../orig/t.typ:591
-I:Zopakujeme si èísla, která jsme se ji¾ nauèili.
+I:Zopakujeme si ÄÃ­sla, kterÃ¡ jsme se jiÅ¾ nauÄili.
 *:_T_R_L202
 #                                                            ../orig/t.typ:592
-D:j7j f4f k8k d3d l9l s2s ù0ù a1a
+D:j7j f4f k8k d3d l9l s2s Å¯0Å¯ a1a
 
 *:_T_R_L203
 #                                                            ../orig/t.typ:593
-D:4f4 7j7 3d3 8k8 2s2 9l9 1a1 0ù0
+D:4f4 7j7 3d3 8k8 2s2 9l9 1a1 0Å¯0
 
 #                                                            ../orig/t.typ:595
-I:5ku pí¹eme prstem z F. SHIFT maèkáme vpravo.
+I:5ku pÃ­Å¡eme prstem z F. SHIFT maÄkÃ¡me vpravo.
 *:_T_R_L204
 #                                                            ../orig/t.typ:596
 D:fff f5f fff 555 fff f5f fff
@@ -3850,68 +3850,68 @@ D:fff f5f fff 555 fff f5f fff
 *:_T_R_L205
 #                                                            ../orig/t.typ:599
 D:f5f f54 f5f t5g f5f t5r f5f
- :f5f fór f5f dva f5f baf f5f
+ :f5f fÃ³r f5f dva f5f baf f5f
  :f5f 453 f5f 585 f5f 475 f5f
 
-I:Nezapomínejte na pravı SHIFT.
+I:NezapomÃ­nejte na pravÃ½ SHIFT.
 *:_T_R_L206
 #                                                            ../orig/t.typ:600
-S:5 z nás neslo ty 20ti kilové ruksaky celıch 45 kilometrù.
+S:5 z nÃ¡s neslo ty 20ti kilovÃ© ruksaky celÃ½ch 45 kilometrÅ¯.
 
 #                                                            ../orig/t.typ:601
-I:Prstem z F pí¹eme i 6ku. Pou¾íváme levı SHIFT.
+I:Prstem z F pÃ­Å¡eme i 6ku. PouÅ¾Ã­vÃ¡me levÃ½ SHIFT.
 *:_T_R_L207
 #                                                            ../orig/t.typ:602
 D:jjj j6j jjj 666 jjj j6j jjj
 
-I:Ji¾ z písmena ¾ víme, ¾e toto je úplnì nejdel¹í pøehmat na klávesnici.
- :Teï k nìmu je¹tì druhou rukou maèkáme SHIFT. Dejte si zále¾et.
+I:JiÅ¾ z pÃ­smena Å¾ vÃ­me, Å¾e toto je ÃºplnÄ› nejdelÅ¡Ã­ pÅ™ehmat na klÃ¡vesnici.
+ :TeÄ k nÄ›mu jeÅ¡tÄ› druhou rukou maÄkÃ¡me SHIFT. Dejte si zÃ¡leÅ¾et.
 *:_T_R_L208
 #                                                            ../orig/t.typ:605
-D:j6j január j6j mnoho j6j hum j6j
+D:j6j januÃ¡r j6j mnoho j6j hum j6j
  :j6j y6n j6j u6m j6j h76 j6j
  :j6j 4567 j6j 7654 j6j 6754 j6j
 
 #                                                            ../orig/t.typ:606
-I:Otevírací závorku pí¹eme ù-prstem vychılenım hodnì vlevo za stisku
- :levého SHIFTu.
+I:OtevÃ­racÃ­ zÃ¡vorku pÃ­Å¡eme Å¯-prstem vychÃ½lenÃ½m hodnÄ› vlevo za stisku
+ :levÃ©ho SHIFTu.
 *:_T_R_L209
 #                                                            ../orig/t.typ:607
-D:ù(ù ù(ù ùù (( ùù (( ù(ù (ù(
+D:Å¯(Å¯ Å¯(Å¯ Å¯Å¯ (( Å¯Å¯ (( Å¯(Å¯ (Å¯(
 
 *:_T_R_L210
 #                                                            ../orig/t.typ:608
-D:ù(ù ù.l ù(ù ú(p ù(ù
+D:Å¯(Å¯ Å¯.l Å¯(Å¯ Ãº(p Å¯(Å¯
 
 *:_T_R_L211
 #                                                            ../orig/t.typ:609
-D:ù(ù lopuch ù(ù olej ù(ù jenom ù(ù
+D:Å¯(Å¯ lopuch Å¯(Å¯ olej Å¯(Å¯ jenom Å¯(Å¯
 
 #                                                            ../orig/t.typ:610
-I:Uzavírací závorku pí¹eme tím samım zpùsobem, ale bez SHIFTu.
+I:UzavÃ­racÃ­ zÃ¡vorku pÃ­Å¡eme tÃ­m samÃ½m zpÅ¯sobem, ale bez SHIFTu.
 *:_T_R_L212
 #                                                            ../orig/t.typ:611
-D:ùùù ù)ù ùùù ù)ù ùùù ù)ù
+D:Å¯Å¯Å¯ Å¯)Å¯ Å¯Å¯Å¯ Å¯)Å¯ Å¯Å¯Å¯ Å¯)Å¯
 
 *:_T_R_L213
 #                                                            ../orig/t.typ:613
-D:ùùù (.) úúú (.) ùùù (,) úúú
- :ù)ù pù ù)ù úl ù)ù stùl ù)ù
+D:Å¯Å¯Å¯ (.) ÃºÃºÃº (.) Å¯Å¯Å¯ (,) ÃºÃºÃº
+ :Å¯)Å¯ pÅ¯ Å¯)Å¯ Ãºl Å¯)Å¯ stÅ¯l Å¯)Å¯
 
 *:_T_R_L214
 #                                                            ../orig/t.typ:614
-D:Vy (kupující) byste se ho (prodávajícího) mìl zeptat na cenu (zbo¾í).
+D:Vy (kupujÃ­cÃ­) byste se ho (prodÃ¡vajÃ­cÃ­ho) mÄ›l zeptat na cenu (zboÅ¾Ã­).
 
 *:_T_R_L215
 #                                                            ../orig/t.typ:615
-D:Kdy¾ (X-5) / (X-6) je 56, tak kolik je (X/5) - (X/6)?
+D:KdyÅ¾ (X-5) / (X-6) je 56, tak kolik je (X/5) - (X/6)?
 
 *:_T_R_L216
 #                                                            ../orig/t.typ:616
 D:1 2 3 4 5 6 7 8 9 10
 
 #                                                            ../orig/t.typ:617
-I:Zkuste si rychlost na této anglické písnièce.
+I:Zkuste si rychlost na tÃ©to anglickÃ© pÃ­sniÄce.
 *:_T_R_L217
 #                                                            ../orig/t.typ:621
 S:1 little, 2 little, 3 little Indians,
@@ -3919,16 +3919,16 @@ S:1 little, 2 little, 3 little Indians,
  :7 little, 8 little, 9 little Indians,
  :10 little Indian boys.
 
-I:Co nejrychleji (ale bez chyb) pøepi¹te tento odstavec. 
+I:Co nejrychleji (ale bez chyb) pÅ™epiÅ¡te tento odstavec. 
 *:_T_R_L218
 #                                                            ../orig/t.typ:625
-S:Jestli chceme chytit let v 6:15 do Phoenixu (ten co letí
- :non-stop), budeme muset odejít nejpozdìji v 5:00 (vyhneme
- :se dopravní ¹pièce). Jinak budeme muset letìt tím v 6:15,
- :(ale ten má dvì zastávky).
+S:Jestli chceme chytit let v 6:15 do Phoenixu (ten co letÃ­
+ :non-stop), budeme muset odejÃ­t nejpozdÄ›ji v 5:00 (vyhneme
+ :se dopravnÃ­ Å¡piÄce). Jinak budeme muset letÄ›t tÃ­m v 6:15,
+ :(ale ten mÃ¡ dvÄ› zastÃ¡vky).
 
 #                                                            ../orig/t.typ:626
-I:Pou¾ívejte klávesy hlavní klávesnice! Nepodvádìjte na numerické klávesnici.
+I:PouÅ¾Ã­vejte klÃ¡vesy hlavnÃ­ klÃ¡vesnice! NepodvÃ¡dÄ›jte na numerickÃ© klÃ¡vesnici.
 #                                                            ../orig/t.typ:627
 *:_T_R_L219
 #                                                            ../orig/t.typ:628
@@ -3968,14 +3968,14 @@ G:_T_E_T14
 *:_T_R_L224
 #                                                            ../orig/t.typ:657
 T:
- :Pokud jste ji¾ pro¹li lekcemi od T1 do T14, mù¾ete o sobì 
- :prohla¹ovat, ¾e umíte psát v¹emi deseti prsty. Nauèili jste se
- :toti¾ psát ji¾ v¹echny standardizované klávesy. Pokud chcete, 
- :mù¾ete nyní zaèít s lekcemi ze série S, zamìøenımi na rychlost.
- :(Kdy¾ se setkáte s nìjakım interpunkèním znaménkem, které
- :jste se je¹tì neuèili, prostì se podívejte.)
+ :Pokud jste jiÅ¾ proÅ¡li lekcemi od T1 do T14, mÅ¯Å¾ete o sobÄ› 
+ :prohlaÅ¡ovat, Å¾e umÃ­te psÃ¡t vÅ¡emi deseti prsty. NauÄili jste se
+ :totiÅ¾ psÃ¡t jiÅ¾ vÅ¡echny standardizovanÃ© klÃ¡vesy. Pokud chcete, 
+ :mÅ¯Å¾ete nynÃ­ zaÄÃ­t s lekcemi ze sÃ©rie S, zamÄ›Å™enÃ½mi na rychlost.
+ :(KdyÅ¾ se setkÃ¡te s nÄ›jakÃ½m interpunkÄnÃ­m znamÃ©nkem, kterÃ©
+ :jste se jeÅ¡tÄ› neuÄili, prostÄ› se podÃ­vejte.)
  :
- :Ve zbylıch lekcích se podíváme na dal¹í znaménka.
+ :Ve zbylÃ½ch lekcÃ­ch se podÃ­vÃ¡me na dalÅ¡Ã­ znamÃ©nka.
 
 G:_T_E_T15
 #------------------------------------------------------------------------------
@@ -3984,49 +3984,49 @@ G:_T_E_T15
 *:T16
 *:_T_S_T16
 #                                                            ../orig/t.typ:661
-I:Vykøièník pí¹eme vychılením ù-prstu doprava za stisku levého SHIFTu.
+I:VykÅ™iÄnÃ­k pÃ­Å¡eme vychÃ½lenÃ­m Å¯-prstu doprava za stisku levÃ©ho SHIFTu.
 *:_T_R_L225
 #                                                            ../orig/t.typ:675
-D:ùùù ù!ù ùùù !!! ùùù ù!ù ùùù
+D:Å¯Å¯Å¯ Å¯!Å¯ Å¯Å¯Å¯ !!! Å¯Å¯Å¯ Å¯!Å¯ Å¯Å¯Å¯
 
 *:_T_R_L226
 #                                                            ../orig/t.typ:676
-D:ù!ù Ah! ù!ù Co! ù!ù Ach! ù!ù
+D:Å¯!Å¯ Ah! Å¯!Å¯ Co! Å¯!Å¯ Ach! Å¯!Å¯
 
 #                                                            ../orig/t.typ:677
-I:Za vykøièníkem následuje v¾dy mezera.
+I:Za vykÅ™iÄnÃ­kem nÃ¡sleduje vÅ¾dy mezera.
 *:_T_R_L227
 #                                                            ../orig/t.typ:678
-D:To» otázka! Co kdy¾ nás chytí? Zavøou nás!
+D:ToÅ¥ otÃ¡zka! Co kdyÅ¾ nÃ¡s chytÃ­? ZavÅ™ou nÃ¡s!
 
 *:_T_R_L228
 #                                                            ../orig/t.typ:679
-D:Nikdy by to neudìlal! Nevìøil bych mu ani slovo.
+D:Nikdy by to neudÄ›lal! NevÄ›Å™il bych mu ani slovo.
 
 T:
- :V této lekci si procvièíme je¹tì nìkteré speciální symboly.
+ :V tÃ©to lekci si procviÄÃ­me jeÅ¡tÄ› nÄ›kterÃ© speciÃ¡lnÃ­ symboly.
  :
- :[V èeské verzi tutoriálu jsem tuto sekci vıraznì zredukoval,
- :proto¾e v na¹em jazyce bohu¾el poloha tìchto kláves není 
- :vùbec standardizovaná. Budete se muset nauèit sami na va¹e 
- :rozlo¾ení kláves.]
+ :[V ÄeskÃ© verzi tutoriÃ¡lu jsem tuto sekci vÃ½raznÄ› zredukoval,
+ :protoÅ¾e v naÅ¡em jazyce bohuÅ¾el poloha tÄ›chto klÃ¡ves nenÃ­ 
+ :vÅ¯bec standardizovanÃ¡. Budete se muset nauÄit sami na vaÅ¡e 
+ :rozloÅ¾enÃ­ klÃ¡ves.]
 
 #                                                            ../orig/t.typ:690
-I:Rovnítko pí¹eme vychılením prstu z ù nahoru.
+I:RovnÃ­tko pÃ­Å¡eme vychÃ½lenÃ­m prstu z Å¯ nahoru.
 *:_T_R_L229
 #                                                            ../orig/t.typ:691
-D:ùùù ù=ù ùùù ù=ù ùùù ù=ù ùùù
+D:Å¯Å¯Å¯ Å¯=Å¯ Å¯Å¯Å¯ Å¯=Å¯ Å¯Å¯Å¯ Å¯=Å¯ Å¯Å¯Å¯
 
 *:_T_R_L230
 #                                                            ../orig/t.typ:693
-D:ù=ù -=- ù=ù ?=? ù=ù :=: ù=ù
- :ù=ù X=2 ù=ù Y=3 ù=ù Z=0 ù=ù
+D:Å¯=Å¯ -=- Å¯=Å¯ ?=? Å¯=Å¯ :=: Å¯=Å¯
+ :Å¯=Å¯ X=2 Å¯=Å¯ Y=3 Å¯=Å¯ Z=0 Å¯=Å¯
 
 #                                                            ../orig/t.typ:702
-I:Znak % pí¹eme vychılením ù-prstu nahoru se stiskem levého SHIFTU.
+I:Znak % pÃ­Å¡eme vychÃ½lenÃ­m Å¯-prstu nahoru se stiskem levÃ©ho SHIFTU.
 *:_T_R_L231
 #                                                            ../orig/t.typ:703
-D:ùùù ù%ù ùùù ù%ù ùùù ù%ù ùùù
+D:Å¯Å¯Å¯ Å¯%Å¯ Å¯Å¯Å¯ Å¯%Å¯ Å¯Å¯Å¯ Å¯%Å¯ Å¯Å¯Å¯
 
 *:_T_R_L232
 #                                                            ../orig/t.typ:705
@@ -4035,18 +4035,18 @@ D:89% 93% 27% 03% 12% 62% 15%
 
 *:_T_R_L233
 #                                                            ../orig/t.typ:801
-T:				Závìr
+T:				ZÃ¡vÄ›r
  :
- :Nyní jste dokonèili sérii lekcí T. Pokud jste to je¹tì neudìlali,
- :mìli byste zaèít lekce N nebo S.
+ :NynÃ­ jste dokonÄili sÃ©rii lekcÃ­ T. Pokud jste to jeÅ¡tÄ› neudÄ›lali,
+ :mÄ›li byste zaÄÃ­t lekce N nebo S.
  :
- :Je¹tì stále zùstává nìkolik kláves, které jsme se neuèili. Pokud
- :se rozhodnete psát tyto klávesy s pou¾itím v¹ech deseti prstù,
- :pou¾ijte v¾dy ten nejbli¾¹í. Pro ESC, TAB, CAPS LOCK tedy pou¾ívejte
- :A-prst. Klávesy na pravé stranì jako BACKSPACE, DELETE, ENTER a dal¹í
- :byste zase mìli psát s pou¾itím prstu na ù. Horní klávesy jako je
- :F1, F2 atd. se vìt¹inou tímto zpùsobem nepí¹í, proto¾e jsou pøíli¹
- :daleko. Pokud tam dosáhnete, super.
+ :JeÅ¡tÄ› stÃ¡le zÅ¯stÃ¡vÃ¡ nÄ›kolik klÃ¡ves, kterÃ© jsme se neuÄili. Pokud
+ :se rozhodnete psÃ¡t tyto klÃ¡vesy s pouÅ¾itÃ­m vÅ¡ech deseti prstÅ¯,
+ :pouÅ¾ijte vÅ¾dy ten nejbliÅ¾Å¡Ã­. Pro ESC, TAB, CAPS LOCK tedy pouÅ¾Ã­vejte
+ :A-prst. KlÃ¡vesy na pravÃ© stranÄ› jako BACKSPACE, DELETE, ENTER a dalÅ¡Ã­
+ :byste zase mÄ›li psÃ¡t s pouÅ¾itÃ­m prstu na Å¯. HornÃ­ klÃ¡vesy jako je
+ :F1, F2 atd. se vÄ›tÅ¡inou tÃ­mto zpÅ¯sobem nepÃ­Å¡Ã­, protoÅ¾e jsou pÅ™Ã­liÅ¡
+ :daleko. Pokud tam dosÃ¡hnete, super.
 
 
 G:_T_E_T16
@@ -4054,63 +4054,63 @@ G:_T_E_T16
 # Lekce series T jump tables
 #------------------------------------------------------------------------------
 *:_T_E_T1
-Q:Chcete pokraèovat do lekce T2 [Y(ano)/N(ne)] ? 
+Q:Chcete pokraÄovat do lekce T2 [Y(ano)/N(ne)] ? 
 N:_T_MENU
 G:_T_M_T2
 *:_T_E_T2
-Q:Chcete pokraèovat do lekce T3 [Y(ano)/N(ne)] ? 
+Q:Chcete pokraÄovat do lekce T3 [Y(ano)/N(ne)] ? 
 N:_T_MENU
 G:_T_M_T3
 *:_T_E_T3
-Q:Chcete pokraèovat do lekce T4 [Y(ano)/N(ne)] ? 
+Q:Chcete pokraÄovat do lekce T4 [Y(ano)/N(ne)] ? 
 N:_T_MENU
 G:_T_M_T4
 *:_T_E_T4
-Q:Chcete pokraèovat do lekce T5 [Y(ano)/N(ne)] ? 
+Q:Chcete pokraÄovat do lekce T5 [Y(ano)/N(ne)] ? 
 N:_T_MENU
 G:_T_M_T5
 *:_T_E_T5
-Q:Chcete pokraèovat do lekce T6 [Y(ano)/N(ne)] ? 
+Q:Chcete pokraÄovat do lekce T6 [Y(ano)/N(ne)] ? 
 N:_T_MENU
 G:_T_M_T6
 *:_T_E_T6
-Q:Chcete pokraèovat do lekce T7 [Y(ano)/N(ne)] ? 
+Q:Chcete pokraÄovat do lekce T7 [Y(ano)/N(ne)] ? 
 N:_T_MENU
 G:_T_M_T7
 *:_T_E_T7
-Q:Chcete pokraèovat do lekce T8 [Y(ano)/N(ne)] ? 
+Q:Chcete pokraÄovat do lekce T8 [Y(ano)/N(ne)] ? 
 N:_T_MENU
 G:_T_M_T8
 *:_T_E_T8
-Q:Chcete pokraèovat do lekce T9 [Y(ano)/N(ne)] ? 
+Q:Chcete pokraÄovat do lekce T9 [Y(ano)/N(ne)] ? 
 N:_T_MENU
 G:_T_M_T9
 *:_T_E_T9
-Q:Chcete pokraèovat do lekce T10 [Y(ano)/N(ne)] ? 
+Q:Chcete pokraÄovat do lekce T10 [Y(ano)/N(ne)] ? 
 N:_T_MENU
 G:_T_M_T10
 *:_T_E_T10
-Q:Chcete pokraèovat do lekce T11 [Y(ano)/N(ne)] ? 
+Q:Chcete pokraÄovat do lekce T11 [Y(ano)/N(ne)] ? 
 N:_T_MENU
 G:_T_M_T11
 *:_T_E_T11
-Q:Chcete pokraèovat do lekce T12 [Y(ano)/N(ne)] ? 
+Q:Chcete pokraÄovat do lekce T12 [Y(ano)/N(ne)] ? 
 N:_T_MENU
 G:_T_M_T12
 *:_T_E_T12
-Q:Chcete pokraèovat do lekce T13 [Y(ano)/N(ne)] ? 
+Q:Chcete pokraÄovat do lekce T13 [Y(ano)/N(ne)] ? 
 N:_T_MENU
 G:_T_M_T13
 *:_T_E_T13
-Q:Chcete pokraèovat do lekce T14 [Y(ano)/N(ne)] ? 
+Q:Chcete pokraÄovat do lekce T14 [Y(ano)/N(ne)] ? 
 N:_T_MENU
 G:_T_M_T14
 *:_T_E_T14
-Q:Chcete pokraèovat do lekce T15 [Y(ano)/N(ne)] ? 
+Q:Chcete pokraÄovat do lekce T15 [Y(ano)/N(ne)] ? 
 N:_T_MENU
 G:_T_M_T15
 *:_T_E_T15
-Q:Chcete pokraèovat do lekce T16 [Y(ano)/N(ne)] ? 
+Q:Chcete pokraÄovat do lekce T16 [Y(ano)/N(ne)] ? 
 N:_T_MENU
 G:_T_M_T16
 *:_T_E_T16
@@ -4168,7 +4168,7 @@ G:_T_S_T16
 # Lekce series T menu
 #------------------------------------------------------------------------------
 *:_T_MENU
-M: UP=__SERIESMENU "Série T obsahuje tìchto 16 lekcí"
+M: UP=__SERIESMENU "SÃ©rie T obsahuje tÄ›chto 16 lekcÃ­"
  :_T_M_T1  "Lekce T1     a s d f g h j k l ;"
  :_T_M_T2  "Lekce T2     e g h ,"
  :_T_M_T3  "Lekce T3     i r . shift"
@@ -4279,7 +4279,7 @@ I:(3)
 #                                                             ../orig/v.typ:31
 D:e e e e ded ded ded ded ded i i i i kik kik kik
  :ded kik ded kik ded kik ded kik ded kik ded kik
-Q:Stisknutím Y mù¾ete pokraèovat, N bude cvièení opakovat, F12 - exit. 
+Q:StisknutÃ­m Y mÅ¯Å¾ete pokraÄovat, N bude cviÄenÃ­ opakovat, F12 - exit. 
 N:_V_R_L6
 
 #                                                             ../orig/v.typ:32
@@ -5106,7 +5106,7 @@ G:_V_E_V12
 #                                                            ../orig/v.typ:507
 T:
  :			(Z and /)
-Q:Pro pokraèování stisknìte Y, F12 pro konec. 
+Q:Pro pokraÄovÃ¡nÃ­ stisknÄ›te Y, F12 pro konec. 
 N:_V_R_L86
 
 #                                                            ../orig/v.typ:508
@@ -6064,7 +6064,7 @@ G:_V_S_V19
 # Lekce series V menu
 #------------------------------------------------------------------------------
 *:_V_MENU
-M: UP=__SERIESMENU "Série lekcí V obsahuje tìchto 19 lekcí"
+M: UP=__SERIESMENU "SÃ©rie lekcÃ­ V obsahuje tÄ›chto 19 lekcÃ­"
  :_V_M_V1  "Lekce V1     R F U J"
  :_V_M_V2  "Lekce V2     D K E I"
  :_V_M_V3  "Lekce V3     T Y G H"
@@ -6128,17 +6128,17 @@ G:_U_MENU
 *:_U_S_U1
 *:_U_R_L0
 #                                                              ../orig/u.typ:5
-T:			Vítejte v lekci U1
+T:			VÃ­tejte v lekci U1
  :
- :Stále nevíte jak psát v¹emi deseti? Zaèneme od zaèátku procvièováním 
- :základní øady
+ :StÃ¡le nevÃ­te jak psÃ¡t vÅ¡emi deseti? ZaÄneme od zaÄÃ¡tku procviÄovÃ¡nÃ­m 
+ :zÃ¡kladnÃ­ Å™ady
 
 #                                                              ../orig/u.typ:6
 I:(1) Zkuste si toto:
 *:_U_R_L1
 #                                                              ../orig/u.typ:8
-D:lada kasa jak gasù gash sadù klad asa had klas jak
- :dala had kajak klas hlad gùgl slad kajak lakal lùka
+D:lada kasa jak gasÅ¯ gash sadÅ¯ klad asa had klas jak
+ :dala had kajak klas hlad gÅ¯gl slad kajak lakal lÅ¯ka
 
 G:_U_E_U1
 #------------------------------------------------------------------------------
@@ -6148,35 +6148,35 @@ G:_U_E_U1
 *:_U_S_U2
 
 #                                                             ../orig/u.typ:13
-I:(1) Teï zkusíme zapojit horní øadu:
+I:(1) TeÄ zkusÃ­me zapojit hornÃ­ Å™adu:
 *:_U_R_L3
 #                                                             ../orig/u.typ:15
-D:juj kik lol ùpù jyj
+D:juj kik lol Å¯pÅ¯ jyj
  :frf ded sws aqa ftf
 
 #                                                             ../orig/u.typ:16
-I:(2) Nìjaká slova:
+I:(2) NÄ›jakÃ¡ slova:
 *:_U_R_L4
 #                                                             ../orig/u.typ:20
 D:kolik past juk suk dohad plod kolo hadu kilo
- :dali kos pùda hup daly pik kajak popud dupat
+ :dali kos pÅ¯da hup daly pik kajak popud dupat
  :duh gafas safik hugo podsada lihu fouk dup
- :neduh klasik tùhle ruka quasi wolf trepka
+ :neduh klasik tÅ¯hle ruka quasi wolf trepka
  :hasit kajak sekat drogy stopka udes sas
 #                                                             ../orig/u.typ:21
-I:(3) Nyní druhá ruka dolní øada:
+I:(3) NynÃ­ druhÃ¡ ruka dolnÃ­ Å™ada:
 *:_U_R_L5
 #                                                             ../orig/u.typ:23
-D:jmj k,k l.l ù-ù jnj
+D:jmj k,k l.l Å¯-Å¯ jnj
  :fvf dcd sxs aza fbf
 
-I:(4) Nìjaká slova:
+I:(4) NÄ›jakÃ¡ slova:
 *:_U_R_L6
 D:test kuna polykat byt vykat xavier puzzle
  :rachot proboha, makat-narazit, vynikat, dost.
  :cinkat, spinkat tatar, wolf cimbal nikdo, mykat
  :kastovat mykolog trepka zavrhnout povlak.
- :ukazovat, ubylo, leknout se, pùvod-dùvod
+ :ukazovat, ubylo, leknout se, pÅ¯vod-dÅ¯vod
 G:_U_E_U2
 
 #------------------------------------------------------------------------------
@@ -6186,8 +6186,8 @@ G:_U_E_U2
 *:_U_S_U3
 
 #                                                             ../orig/u.typ:32
-I:(1) Velká písmena pí¹eme stiskem opaèného SHIFTU, ne¾ jakou
- :rukou tiskneme klávesu písmena.
+I:(1) VelkÃ¡ pÃ­smena pÃ­Å¡eme stiskem opaÄnÃ©ho SHIFTU, neÅ¾ jakou
+ :rukou tiskneme klÃ¡vesu pÃ­smena.
 *:_U_R_L8
 #                                                             ../orig/u.typ:33
 D:Kolik je zrovna dnes hodin?
@@ -6196,13 +6196,13 @@ D:Kolik je zrovna dnes hodin?
 I:(2)
 *:_U_R_L9
 #                                                             ../orig/u.typ:35
-D:Marie a Edward se rozhodli zùstat na statku.
+D:Marie a Edward se rozhodli zÅ¯stat na statku.
 
 #                                                             ../orig/u.typ:36
 I:(3)
 *:_U_R_L10
 #                                                             ../orig/u.typ:37
-D:Violeta, Helena, Dora, Jennie a Elsie zùstanou v Hotelu Commodore.
+D:Violeta, Helena, Dora, Jennie a Elsie zÅ¯stanou v Hotelu Commodore.
 
 #                                                             ../orig/u.typ:38
 I:(4)
@@ -6212,35 +6212,35 @@ D:Bydlel jsem v Los Angeles, San Franciscu, Portlandu, Chicagu, St. Louis a
  :Denveru. Robert bydlel v Bostonu, Philadelphii, Jersey a v Utice.
 
 #                                                             ../orig/u.typ:41
-I:(5) Nyní diakritika.
+I:(5) NynÃ­ diakritika.
 *:_U_R_L12
 #                                                             ../orig/u.typ:43
-D:jıj kák líl ùéù j¾j
- :fèf d¹d sìs a+a føf
+D:jÃ½j kÃ¡k lÃ­l Å¯Ã©Å¯ jÅ¾j
+ :fÄf dÅ¡d sÄ›s a+a fÅ™f
 
 #                                                             ../orig/u.typ:44
-I:(6)Èísla a závorky
+I:(6)ÄŒÃ­sla a zÃ¡vorky
 *:_U_R_L13
 #                                                             ../orig/u.typ:46
-D:j7j k8k l9l ù0ù j6j ù)ù
- :f4f d3d s2s a1a f5f ù(ù
+D:j7j k8k l9l Å¯0Å¯ j6j Å¯)Å¯
+ :f4f d3d s2s a1a f5f Å¯(Å¯
 
 #                                                             ../orig/u.typ:47
 I:(7)
 *:_U_R_L14
 #                                                             ../orig/u.typ:52
-S:Prosím za¹lete mi pìt kilo (pøesnì) té vıbu¹niny.
- :Nezabıvejte se tím (stejnì byste to do 12 hodin nestihli).
- :Tenhle dùm mì stál pøesnì 7,567,942 korun -- ale máme kde bydlet.
- :V této chvílí mo¾ná máte pouhıch 10 slov za minutu nebo mo¾ná je¹tì
- :ménì, ale jistì se brzy dostanete a¾ ke 30ti, mo¾ná 40ti slov/m.
+S:ProsÃ­m zaÅ¡lete mi pÄ›t kilo (pÅ™esnÄ›) tÃ© vÃ½buÅ¡niny.
+ :NezabÃ½vejte se tÃ­m (stejnÄ› byste to do 12 hodin nestihli).
+ :Tenhle dÅ¯m mÄ› stÃ¡l pÅ™esnÄ› 7,567,942 korun -- ale mÃ¡me kde bydlet.
+ :V tÃ©to chvÃ­lÃ­ moÅ¾nÃ¡ mÃ¡te pouhÃ½ch 10 slov za minutu nebo moÅ¾nÃ¡ jeÅ¡tÄ›
+ :mÃ©nÄ›, ale jistÄ› se brzy dostanete aÅ¾ ke 30ti, moÅ¾nÃ¡ 40ti slov/m.
 
 #                                                             ../orig/u.typ:53
 I:(8)
 *:_U_R_L15
 #                                                             ../orig/u.typ:55
-D:první 3tí 4tı 5tı
- :6tı 7mı 8mı 9tı 10tı
+D:prvnÃ­ 3tÃ­ 4tÃ½ 5tÃ½
+ :6tÃ½ 7mÃ½ 8mÃ½ 9tÃ½ 10tÃ½
 
 G:_U_E_U3
 #------------------------------------------------------------------------------
@@ -6253,10 +6253,10 @@ G:_U_E_U3
 I:(1)
 *:_U_R_L15A
 #                                                             ../orig/u.typ:60
-D:ùúù ù!ù ù/ù ùúù ù/ù ù!ù ù/ù ùúù ùpù ù.ù ù-ù
+D:Å¯ÃºÅ¯ Å¯!Å¯ Å¯/Å¯ Å¯ÃºÅ¯ Å¯/Å¯ Å¯!Å¯ Å¯/Å¯ Å¯ÃºÅ¯ Å¯pÅ¯ Å¯.Å¯ Å¯-Å¯
 
 #                                                             ../orig/u.typ:61
-I:(2) Anglická vìta obsahující celou abecedu.
+I:(2) AnglickÃ¡ vÄ›ta obsahujÃ­cÃ­ celou abecedu.
 *:_U_R_L17
 #                                                             ../orig/u.typ:62
 D:The quick brown fox jumps over the lazy dog.
@@ -6265,21 +6265,21 @@ D:The quick brown fox jumps over the lazy dog.
 I:(3)
 *:_U_R_L18
 #                                                             ../orig/u.typ:64
-D:Pøedchozí úvodní vìta ale neobsahovala diakritické
- :klávesy, by» je v èe¹tinì hojnì pou¾íváme.
+D:PÅ™edchozÃ­ ÃºvodnÃ­ vÄ›ta ale neobsahovala diakritickÃ©
+ :klÃ¡vesy, byÅ¥ je v ÄeÅ¡tinÄ› hojnÄ› pouÅ¾Ã­vÃ¡me.
 
 #                                                             ../orig/u.typ:65
 I:(4)
 *:_U_R_L19
 #                                                             ../orig/u.typ:66
-D:Ovidius: Nejménì zná èlovìk sám sebe.
+D:Ovidius: NejmÃ©nÄ› znÃ¡ ÄlovÄ›k sÃ¡m sebe.
 
 #                                                             ../orig/u.typ:67
 I:(5)
 *:_U_R_L20
 #                                                             ../orig/u.typ:69
 D:1 2 3 4 5 6 7 8 9 10
- :2 pytlíky bonbonù stojí 40,00Kè, kolik stojí 15 pytlíkù?
+ :2 pytlÃ­ky bonbonÅ¯ stojÃ­ 40,00KÄ, kolik stojÃ­ 15 pytlÃ­kÅ¯?
 
 G:_U_E_U4
 #------------------------------------------------------------------------------
@@ -6290,7 +6290,7 @@ G:_U_E_U4
 *:_U_R_L21
 #                                                             ../orig/u.typ:74
 T:
- :		  (Cvièení na kombinace se s)
+ :		  (CviÄenÃ­ na kombinace se s)
 
 #                                                             ../orig/u.typ:75
 I:(1)
@@ -6302,20 +6302,20 @@ D:sas ses sis sos sus sc scr sh sk sl sm sn sp spl spr st str sw
 I:(2)
 *:_U_R_L23
 #                                                             ../orig/u.typ:80
-D:socha sasko spí¾ samota sport soukolí spìch starı
- :sanita sisao sesadit systém suse stop sabotá¾ srocení
- :september savo stopa skonèit stát sedìt sesunout se
+D:socha sasko spÃ­Å¾ samota sport soukolÃ­ spÄ›ch starÃ½
+ :sanita sisao sesadit systÃ©m suse stop sabotÃ¡Å¾ srocenÃ­
+ :september savo stopa skonÄit stÃ¡t sedÄ›t sesunout se
 
 #                                                             ../orig/u.typ:81
 I:(3)
 *:_U_R_L24
 #                                                             ../orig/u.typ:86
-S:Sára se sama sna¾í systematicky studovat.
- :Sportem se posilní¹ a zesílí¹.
- :Sestra Simony se správnì rozhodla vyhnout se sobotnímu vıletu.
+S:SÃ¡ra se sama snaÅ¾Ã­ systematicky studovat.
+ :Sportem se posilnÃ­Å¡ a zesÃ­lÃ­Å¡.
+ :Sestra Simony se sprÃ¡vnÄ› rozhodla vyhnout se sobotnÃ­mu vÃ½letu.
 
 #                                                             ../orig/u.typ:87
-I:(4) Zkusíme anglickı text. Nebudete potøebovat diakritickou øadu.
+I:(4) ZkusÃ­me anglickÃ½ text. Nebudete potÅ™ebovat diakritickou Å™adu.
 *:_U_R_L25
 #                                                             ../orig/u.typ:91
 S:    Safety first.  This slogan is well known.  Yet many care-
@@ -6332,7 +6332,7 @@ G:_U_E_U5
 *:_U_R_L26
 #                                                             ../orig/u.typ:96
 T:
- :		(Procvièování kombinací s R)
+ :		(ProcviÄovÃ¡nÃ­ kombinacÃ­ s R)
 
 #                                                             ../orig/u.typ:97
 I:(1)
@@ -6344,32 +6344,32 @@ D:rar rer rir ror rur br cr dr fr gr pr shr tr thr
 I:(2)
 *:_U_R_L28
 #                                                            ../orig/u.typ:102
-D:rosa ráno rachot roura rámus rychtáø rotoped
- :rotaèák ropucha horor rumba rozmetat ráfek
- :triko práskaè krpál mráz právì strkat hrad
- :grál, brko, krká, krákorat, navrèet se, prst.
- :vrána propast kráva rará¹ek tráva orat
+D:rosa rÃ¡no rachot roura rÃ¡mus rychtÃ¡Å™ rotoped
+ :rotaÄÃ¡k ropucha horor rumba rozmetat rÃ¡fek
+ :triko prÃ¡skaÄ krpÃ¡l mrÃ¡z prÃ¡vÄ› strkat hrad
+ :grÃ¡l, brko, krkÃ¡, krÃ¡korat, navrÄet se, prst.
+ :vrÃ¡na propast krÃ¡va rarÃ¡Å¡ek trÃ¡va orat
 
 #                                                            ../orig/u.typ:103
 I:(3)
 *:_U_R_L29
 #                                                            ../orig/u.typ:108
-S:Riskovat na rychlostních silnicích rychlou jízdou není rozumné.
- :Právo na vlastní rozhodnutí by mìl obdr¾et ka¾dı normální obèan
- :republiky. Prostor není pro vesmír determinující. Ranní rachot
- :budíku nás provází celım ¾ivotem.
+S:Riskovat na rychlostnÃ­ch silnicÃ­ch rychlou jÃ­zdou nenÃ­ rozumnÃ©.
+ :PrÃ¡vo na vlastnÃ­ rozhodnutÃ­ by mÄ›l obdrÅ¾et kaÅ¾dÃ½ normÃ¡lnÃ­ obÄan
+ :republiky. Prostor nenÃ­ pro vesmÃ­r determinujÃ­cÃ­. RannÃ­ rachot
+ :budÃ­ku nÃ¡s provÃ¡zÃ­ celÃ½m Å¾ivotem.
 
 #                                                            ../orig/u.typ:109
 I:(4)
 *:_U_R_L30
 #                                                            ../orig/u.typ:114
-S:Provozovat krámek není jednoduché. V první øadì je nutné
- :rozmyslet si v¹e peèlivì dopøedu: jak se bude prodávat,
- :kdy se bude prodávat, kdo bude rozvá¾et zbo¾í, kdo bude
- :kromì vás je¹tì pracovat a na jakı úvazek. Po tak
- :podrobném promı¹lení èasto dojdete k závìru, ¾e existuje
- :miliarda snaz¹ích mo¾ností, jak si vydìlávat. Asi
- :tak jako u èehokoliv jiného.
+S:Provozovat krÃ¡mek nenÃ­ jednoduchÃ©. V prvnÃ­ Å™adÄ› je nutnÃ©
+ :rozmyslet si vÅ¡e peÄlivÄ› dopÅ™edu: jak se bude prodÃ¡vat,
+ :kdy se bude prodÃ¡vat, kdo bude rozvÃ¡Å¾et zboÅ¾Ã­, kdo bude
+ :kromÄ› vÃ¡s jeÅ¡tÄ› pracovat a na jakÃ½ Ãºvazek. Po tak
+ :podrobnÃ©m promÃ½Å¡lenÃ­ Äasto dojdete k zÃ¡vÄ›ru, Å¾e existuje
+ :miliarda snazÅ¡Ã­ch moÅ¾nostÃ­, jak si vydÄ›lÃ¡vat. Asi
+ :tak jako u Äehokoliv jinÃ©ho.
 
 G:_U_E_U6
 #------------------------------------------------------------------------------
@@ -6380,7 +6380,7 @@ G:_U_E_U6
 *:_U_R_L31
 #                                                            ../orig/u.typ:119
 T:
- :		(Cvièení na kombinace s L)
+ :		(CviÄenÃ­ na kombinace s L)
 
 
 #                                                            ../orig/u.typ:120
@@ -6393,18 +6393,18 @@ D:lal lel lil lol lul ly bl cl fl gl pl sl
 I:(2)
 *:_U_R_L33
 #                                                            ../orig/u.typ:125
-D:lol rofl klokan láska léno lávka lpìt loskuták
- :laso lano larva le¾ labu» lavor láva lúka lou¾e
- :pléno klání bolest polstr lustr mléko bláhovı
+D:lol rofl klokan lÃ¡ska lÃ©no lÃ¡vka lpÄ›t loskutÃ¡k
+ :laso lano larva leÅ¾ labuÅ¥ lavor lÃ¡va lÃºka louÅ¾e
+ :plÃ©no klÃ¡nÃ­ bolest polstr lustr mlÃ©ko blÃ¡hovÃ½
 
 #                                                            ../orig/u.typ:126
 I:(3)
 *:_U_R_L34
 #                                                            ../orig/u.typ:131
-S:Lada maloval pìkné a líbivé malby.
- :Loskutáka asi v lese nenalezneme.
- :Lára le¾ela na lavièce a na slunci se opalovala.
- :Leze leze po ¾eleze, nedá pokoj, a¾ tam vleze.
+S:Lada maloval pÄ›knÃ© a lÃ­bivÃ© malby.
+ :LoskutÃ¡ka asi v lese nenalezneme.
+ :LÃ¡ra leÅ¾ela na laviÄce a na slunci se opalovala.
+ :Leze leze po Å¾eleze, nedÃ¡ pokoj, aÅ¾ tam vleze.
 
 #                                                            ../orig/u.typ:132
 I:(4) Zkuste si opsat tento text:
@@ -6426,7 +6426,7 @@ G:_U_E_U7
 *:_U_R_L36
 #                                                            ../orig/u.typ:143
 T:
- :		(Cvièení na kombinace s D a T )
+ :		(CviÄenÃ­ na kombinace s D a T )
 
 #                                                            ../orig/u.typ:144
 I:(1)
@@ -6440,28 +6440,28 @@ I:(2)
 *:_U_R_L38
 #                                                            ../orig/u.typ:151
 D:dost dieta test dar debata tamtam touha
- :zadostiuèinìní trest databanka dotovat
- :teda dorùstat dabovat oddenek dok téma
- :pøírùstek nedopatøení pøístavek dostatek
+ :zadostiuÄinÄ›nÃ­ trest databanka dotovat
+ :teda dorÅ¯stat dabovat oddenek dok tÃ©ma
+ :pÅ™Ã­rÅ¯stek nedopatÅ™enÃ­ pÅ™Ã­stavek dostatek
 
 #                                                            ../orig/u.typ:152
 I:(3)
 *:_U_R_L39
 #                                                            ../orig/u.typ:157
-S:Dal Daliborovi dostateènou dávku ¾ita.
- :Tetování je takové zvlá¹tní umìní.
- :Táborníci se dostavili na ka¾dodenní rozcvièku.
- :Touha otestovat ¾ivot závodníka formule 1 dr¾í
- :v mládí snad ka¾dého chlapce.
+S:Dal Daliborovi dostateÄnou dÃ¡vku Å¾ita.
+ :TetovÃ¡nÃ­ je takovÃ© zvlÃ¡Å¡tnÃ­ umÄ›nÃ­.
+ :TÃ¡bornÃ­ci se dostavili na kaÅ¾dodennÃ­ rozcviÄku.
+ :Touha otestovat Å¾ivot zÃ¡vodnÃ­ka formule 1 drÅ¾Ã­
+ :v mlÃ¡dÃ­ snad kaÅ¾dÃ©ho chlapce.
 
 #                                                            ../orig/u.typ:158
 I:(4)
 *:_U_R_L40
 #                                                            ../orig/u.typ:164
-D:Takové tahání taháku pøi písemce z dìjepisu je docela
- :dobrı test odvahy. Mnoho ne¹»astníkù bıvá odhaleno
- :a podrobeno nemilosrdnému trestu ve formì odevzdání
- :nedokonèené práce. Vìt¹inou to konèí velmi zlou známkou.
+D:TakovÃ© tahÃ¡nÃ­ tahÃ¡ku pÅ™i pÃ­semce z dÄ›jepisu je docela
+ :dobrÃ½ test odvahy. Mnoho neÅ¡Å¥astnÃ­kÅ¯ bÃ½vÃ¡ odhaleno
+ :a podrobeno nemilosrdnÃ©mu trestu ve formÄ› odevzdÃ¡nÃ­
+ :nedokonÄenÃ© prÃ¡ce. VÄ›tÅ¡inou to konÄÃ­ velmi zlou znÃ¡mkou.
 
 G:_U_E_U8
 #------------------------------------------------------------------------------
@@ -6472,7 +6472,7 @@ G:_U_E_U8
 *:_U_R_L41
 #                                                            ../orig/u.typ:169
 T:
- :		(Cvièení na M-N kombinace)
+ :		(CviÄenÃ­ na M-N kombinace)
 
 #                                                            ../orig/u.typ:170
 I:(1)
@@ -6485,21 +6485,21 @@ D:am em im om um mb mp cement
 I:(2)
 *:_U_R_L43
 #                                                            ../orig/u.typ:178
-D:mistr nitrát nano nitroglicerin major miss
- :málo nic møí¾e místo nános mnoho milı rameno
- :milost manufaktura èmuchat usnadnit mno¾it
- :neèas nános mòoukat nával nìco mísa mamut
+D:mistr nitrÃ¡t nano nitroglicerin major miss
+ :mÃ¡lo nic mÅ™Ã­Å¾e mÃ­sto nÃ¡nos mnoho milÃ½ rameno
+ :milost manufaktura Ämuchat usnadnit mnoÅ¾it
+ :neÄas nÃ¡nos mÅˆoukat nÃ¡val nÄ›co mÃ­sa mamut
 
 #                                                            ../orig/u.typ:179
 I:(3)
 *:_U_R_L44
 #                                                            ../orig/u.typ:184
-S:Není mnoho mamutù, kteøí by se do¾ili na¹í doby.
- :Pøesto tací monstrózní tvorové je¹tì po zemi
- :bìhají. Nevìøíte? Napøíklad mùj dìdeèek. Má
- :témìø nìkolik set kilogramù a pøi chùzi vydává
- :dunivı dupot. Ani jedinı èlovìk z námìstí se
- :neubrání bázlivému pohledu.
+S:NenÃ­ mnoho mamutÅ¯, kteÅ™Ã­ by se doÅ¾ili naÅ¡Ã­ doby.
+ :PÅ™esto tacÃ­ monstrÃ³znÃ­ tvorovÃ© jeÅ¡tÄ› po zemi
+ :bÄ›hajÃ­. NevÄ›Å™Ã­te? NapÅ™Ã­klad mÅ¯j dÄ›deÄek. MÃ¡
+ :tÃ©mÄ›Å™ nÄ›kolik set kilogramÅ¯ a pÅ™i chÅ¯zi vydÃ¡vÃ¡
+ :dunivÃ½ dupot. Ani jedinÃ½ ÄlovÄ›k z nÃ¡mÄ›stÃ­ se
+ :neubrÃ¡nÃ­ bÃ¡zlivÃ©mu pohledu.
 
 G:_U_E_U9
 #------------------------------------------------------------------------------
@@ -6510,36 +6510,36 @@ G:_U_E_U9
 *:_U_R_L46
 #                                                            ../orig/u.typ:195
 T:
- :		(Kombinace s diakritickımi písmeny)
+ :		(Kombinace s diakritickÃ½mi pÃ­smeny)
 
 #                                                            ../orig/u.typ:196
 I:(1)
 *:_U_R_L47
 #                                                            ../orig/u.typ:198
-D:ì ¹ è ø ¾ ı á í é
- :é í á ı ¾ ø è ¹ ì
- :má øí ¾á é¹ èí ké hı
- :eì s¹ cè rø z¾ yı aá ií eé
- :ï » ò ó Ï « Ò Ó Ú Í É ®
+D:Ä› Å¡ Ä Å™ Å¾ Ã½ Ã¡ Ã­ Ã©
+ :Ã© Ã­ Ã¡ Ã½ Å¾ Å™ Ä Å¡ Ä›
+ :mÃ¡ Å™Ã­ Å¾Ã¡ Ã©Å¡ ÄÃ­ kÃ© hÃ½
+ :eÄ› sÅ¡ cÄ rÅ™ zÅ¾ yÃ½ aÃ¡ iÃ­ eÃ©
+ :Ä Å¥ Åˆ Ã³ Ä Å¤ Å‡ Ã“ Ãš Ã Ã‰ Å½
 
 
 #                                                            ../orig/u.typ:199
 I:(2)
 *:_U_R_L48
 #                                                            ../orig/u.typ:204
-D:¹i¹lat èíèa øeøavı bıt stát pískat sémì
- :¾í¾ala èaèa øád mıdlo èpavek ¾i¾inka
- :tìtiva pøí¹lap pojï vı¹iny tırat mávat
- :zpìv pus» mùra úval tónickı bázeò
+D:Å¡iÅ¡lat ÄÃ­Äa Å™eÅ™avÃ½ bÃ½t stÃ¡t pÃ­skat sÃ©mÄ›
+ :Å¾Ã­Å¾ala ÄaÄa Å™Ã¡d mÃ½dlo Äpavek Å¾iÅ¾inka
+ :tÄ›tiva pÅ™Ã­Å¡lap pojÄ vÃ½Å¡iny tÃ½rat mÃ¡vat
+ :zpÄ›v pusÅ¥ mÅ¯ra Ãºval tÃ³nickÃ½ bÃ¡zeÅˆ
 
 #                                                            ../orig/u.typ:205
 I:(3)
 *:_U_R_L49
 #                                                            ../orig/u.typ:210
-S:®í¾ala po¹eptala ¹nekovi ¾havé novinky ze svìta.
- :Bıval bych to byl dokázal, ale zákony pøita¾livosti mì pøemohly.
- :®vıkaèka nepatøí ve ¹kole do úst.
- :Nad mìstem se zaèalo smrákat a v¹ichni ji¾ míøili domù.
+S:Å½Ã­Å¾ala poÅ¡eptala Å¡nekovi Å¾havÃ© novinky ze svÄ›ta.
+ :BÃ½val bych to byl dokÃ¡zal, ale zÃ¡kony pÅ™itaÅ¾livosti mÄ› pÅ™emohly.
+ :Å½vÃ½kaÄka nepatÅ™Ã­ ve Å¡kole do Ãºst.
+ :Nad mÄ›stem se zaÄalo smrÃ¡kat a vÅ¡ichni jiÅ¾ mÃ­Å™ili domÅ¯.
 
 G:_U_E_U10
 #------------------------------------------------------------------------------
@@ -6550,81 +6550,81 @@ G:_U_E_U10
 *:_U_R_L51
 #                                                            ../orig/u.typ:221
 T:
- :		(Procvièování na èísla)
+ :		(ProcviÄovÃ¡nÃ­ na ÄÃ­sla)
 
 #                                                            ../orig/u.typ:222
-I:(1) Nepodvádìjte s numerickou klávesnicí!
+I:(1) NepodvÃ¡dÄ›jte s numerickou klÃ¡vesnicÃ­!
 *:_U_R_L52
 #                                                            ../orig/u.typ:224
-D:73 jablek, 25 hru¹ek, 1 kilo mouky, 4 l¾ièky cukru
- :v 15:20 87,50 Kè 27.záøí 2007 1492 1512 1989
+D:73 jablek, 25 hruÅ¡ek, 1 kilo mouky, 4 lÅ¾iÄky cukru
+ :v 15:20 87,50 KÄ 27.zÃ¡Å™Ã­ 2007 1492 1512 1989
 
 #                                                            ../orig/u.typ:225
 I:(2)
 *:_U_R_L53
 #                                                            ../orig/u.typ:229
-D:Po¹lete balík na adresu: Ke Komoøanùm 2438/5-1.
- :Nezlobte se, ale v 14:30 mám dùle¾itou schùzi,
- :ne¹lo by to tøeba v pátek 25. v 13:00?
- :Roku 3457 byla v oblasti bıvalé Evropy nalezena pravá ti¹tìná
- :kniha, která se uchovala po událostech 2471 pouze
- :zázrakem.
+D:PoÅ¡lete balÃ­k na adresu: Ke KomoÅ™anÅ¯m 2438/5-1.
+ :Nezlobte se, ale v 14:30 mÃ¡m dÅ¯leÅ¾itou schÅ¯zi,
+ :neÅ¡lo by to tÅ™eba v pÃ¡tek 25. v 13:00?
+ :Roku 3457 byla v oblasti bÃ½valÃ© Evropy nalezena pravÃ¡ tiÅ¡tÄ›nÃ¡
+ :kniha, kterÃ¡ se uchovala po udÃ¡lostech 2471 pouze
+ :zÃ¡zrakem.
 
 #                                                            ../orig/u.typ:230
 I:(3)
 *:_U_R_L54
 #                                                            ../orig/u.typ:235 
-S:Tomovi je 17 let a Markétì 26. Markéta je tedy
- :o 9 let star¹í. Markéta svého bráchu Toma vozí
- :v autì do sousedního mìsta do ¹koly
- :od svıch 18ti, kdy získala øidièák, tedy ji¾ 8 let.
- :Tom si plánuje poøídit øidièák co nejdøíve, ale neví
- :kde sehnat 500 000 na nové auto. Mo¾ná by si
- :mohl pùjèit, ale pøi úroku 7% by to pro nìj nebylo
- :vıhodné.
+S:Tomovi je 17 let a MarkÃ©tÄ› 26. MarkÃ©ta je tedy
+ :o 9 let starÅ¡Ã­. MarkÃ©ta svÃ©ho brÃ¡chu Toma vozÃ­
+ :v autÄ› do sousednÃ­ho mÄ›sta do Å¡koly
+ :od svÃ½ch 18ti, kdy zÃ­skala Å™idiÄÃ¡k, tedy jiÅ¾ 8 let.
+ :Tom si plÃ¡nuje poÅ™Ã­dit Å™idiÄÃ¡k co nejdÅ™Ã­ve, ale nevÃ­
+ :kde sehnat 500 000 na novÃ© auto. MoÅ¾nÃ¡ by si
+ :mohl pÅ¯jÄit, ale pÅ™i Ãºroku 7% by to pro nÄ›j nebylo
+ :vÃ½hodnÃ©.
 
 G:_U_E_U11
 #------------------------------------------------------------------------------
 # Lekce series U jump tables
 #------------------------------------------------------------------------------
 *:_U_E_U1
-Q:Chcete pokraèovat do lekce U2 [Y(ano)/N(ne)] ? 
+Q:Chcete pokraÄovat do lekce U2 [Y(ano)/N(ne)] ? 
 N:_U_MENU
 G:_U_M_U2
 *:_U_E_U2
-Q:Chcete pokraèovat do lekce U3 [Y(ano)/N(ne)] ? 
+Q:Chcete pokraÄovat do lekce U3 [Y(ano)/N(ne)] ? 
 N:_U_MENU
 G:_U_M_U3
 *:_U_E_U3
-Q:Chcete pokraèovat do lekce U4 [Y(ano)/N(ne)] ? 
+Q:Chcete pokraÄovat do lekce U4 [Y(ano)/N(ne)] ? 
 N:_U_MENU
 G:_U_M_U4
 *:_U_E_U4
-Q:Chcete pokraèovat do lekce U5 [Y(ano)/N(ne)] ? 
+Q:Chcete pokraÄovat do lekce U5 [Y(ano)/N(ne)] ? 
 N:_U_MENU
 G:_U_M_U5
 *:_U_E_U5
-Q:Chcete pokraèovat do lekce U6 [Y(ano)/N(ne)] ? 
+Q:Chcete pokraÄovat do lekce U6 [Y(ano)/N(ne)] ? 
 N:_U_MENU
 G:_U_M_U6
 *:_U_E_U6
-Q:Chcete pokraèovat do lekce U7 [Y(ano)/N(ne)] ? 
+Q:Chcete pokraÄovat do lekce U7 [Y(ano)/N(ne)] ? 
 N:_U_MENU
 G:_U_M_U7
 *:_U_E_U7
-Q:Chcete pokraèovat do lekce U8 [Y(ano)/N(ne)] ? 
+Q:Chcete pokraÄovat do lekce U8 [Y(ano)/N(ne)] ? 
 N:_U_MENU
 G:_U_M_U8
 *:_U_E_U8
-Q:Chcete pokraèovat do lekce U9 [Y(ano)/N(ne)] ? 
+Q:Chcete pokraÄovat do lekce U9 [Y(ano)/N(ne)] ? 
 N:_U_MENU
 G:_U_M_U9
 *:_U_E_U9
-Q:Chcete pokraèovat do lekce U10 [Y(ano)/N(ne)] ? 
+Q:Chcete pokraÄovat do lekce U10 [Y(ano)/N(ne)] ? 
 N:_U_MENU
 G:_U_M_U10
 *:_U_E_U10
-Q:Chcete pokraèovat do lekce U11 [Y(ano)/N(ne)] ? 
+Q:Chcete pokraÄovat do lekce U11 [Y(ano)/N(ne)] ? 
 N:_U_MENU
 G:_U_M_U11
 *:_U_E_U11
@@ -6666,18 +6666,18 @@ G:_U_S_U11
 # Lekce series U menu
 #------------------------------------------------------------------------------
 *:_U_MENU
-M: UP=__SERIESMENU "Série U obsahuje tìchto 11 lekcí"
- :_U_M_U1  "Lekce U1     Základní øada"
- :_U_M_U2  "Lekce U2     Ostatní písmena"
- :_U_M_U3  "Lekce U3     Diakritika a èísla"
- :_U_M_U4  "Lekce U4     Procvièování"
- :_U_M_U5  "Lekce U5     Cvièení na kombinace s S"
- :_U_M_U6  "Lekce U6     Cvièení na kombinace s R"
- :_U_M_U7  "Lekce U7     Cvièení na kombinace s L"
- :_U_M_U8  "Lekce U8     Cvièení na kombinace s D-T"
- :_U_M_U9  "Lekce U9     Cvièení na kombinace s M-N"
- :_U_M_U10 "Lekce U10    Cvièení na diakritiku"
- :_U_M_U11 "Lekce U11    Cvièení na èísla"
+M: UP=__SERIESMENU "SÃ©rie U obsahuje tÄ›chto 11 lekcÃ­"
+ :_U_M_U1  "Lekce U1     ZÃ¡kladnÃ­ Å™ada"
+ :_U_M_U2  "Lekce U2     OstatnÃ­ pÃ­smena"
+ :_U_M_U3  "Lekce U3     Diakritika a ÄÃ­sla"
+ :_U_M_U4  "Lekce U4     ProcviÄovÃ¡nÃ­"
+ :_U_M_U5  "Lekce U5     CviÄenÃ­ na kombinace s S"
+ :_U_M_U6  "Lekce U6     CviÄenÃ­ na kombinace s R"
+ :_U_M_U7  "Lekce U7     CviÄenÃ­ na kombinace s L"
+ :_U_M_U8  "Lekce U8     CviÄenÃ­ na kombinace s D-T"
+ :_U_M_U9  "Lekce U9     CviÄenÃ­ na kombinace s M-N"
+ :_U_M_U10 "Lekce U10    CviÄenÃ­ na diakritiku"
+ :_U_M_U11 "Lekce U11    CviÄenÃ­ na ÄÃ­sla"
 *:_U_EXIT
 #------------------------------------------------------------------------------
 # End of file u.typ
@@ -6734,7 +6734,7 @@ T:			Welcome to the Dvorak Course
  :keyboard is like learning to "play on a new surface", as a tennis player must
  :learn to adjust to grass court or hard court when she has been accustomed to
  :playing on a clay court.
-Q: Pro pokraèování stisknìte Y, F12 pro konec. 
+Q: Pro pokraÄovÃ¡nÃ­ stisknÄ›te Y, F12 pro konec. 
 N:_D_R_L0
 
 *:_D_R_L1
@@ -6744,7 +6744,7 @@ T:			General Instructions
  :The fingers of the left hand should be placed over the A-key, the O-key,
  :the E-key, and the U-key. Similarly, the fingers of the right hand should be
  :placed over the H-key, the T-key, the N-key, and the S-key.
-Q: Pro pokraèování stisknìte Y, F12 pro konec. 
+Q: Pro pokraÄovÃ¡nÃ­ stisknÄ›te Y, F12 pro konec. 
 N:_D_R_L1
 
 #                                                             ../orig/d.typ:26
@@ -6753,7 +6753,7 @@ I:(1) Home Row Exercises
 #                                                             ../orig/d.typ:28
 D:aoeu ueoa aoeui snth htns snthd uihd uihd
  :asonetuhid asonetuhid dihutenosa dihutenosa
-Q:Stisknutím Y mù¾ete pokraèovat, N bude cvièení opakovat, F12 - konec. 
+Q:StisknutÃ­m Y mÅ¯Å¾ete pokraÄovat, N bude cviÄenÃ­ opakovat, F12 - konec. 
 N:_D_R_L2
 
 #                                                             ../orig/d.typ:29
@@ -6761,7 +6761,7 @@ I:(2)
 *:_D_R_L3
 #                                                             ../orig/d.typ:30
 D:a s o n e t u h i d a s o n e t u h i d
-Q:Stisknutím Y mù¾ete pokraèovat, N bude cvièení opakovat, F12 - konec. 
+Q:StisknutÃ­m Y mÅ¯Å¾ete pokraÄovat, N bude cviÄenÃ­ opakovat, F12 - konec. 
 N:_D_R_L3
 
 #                                                             ../orig/d.typ:31
@@ -6769,7 +6769,7 @@ I:(3)
 *:_D_R_L4
 #                                                             ../orig/d.typ:32
 D:d i h u t e n o s a d i h u t e n o s a
-Q: Stisknutím Y mù¾ete pokraèovat, N bude cvièení opakovat, F12 - konec. 
+Q: StisknutÃ­m Y mÅ¯Å¾ete pokraÄovat, N bude cviÄenÃ­ opakovat, F12 - konec. 
 N:_D_R_L4
 
 #                                                             ../orig/d.typ:33
@@ -6778,7 +6778,7 @@ I:(4)
 #                                                             ../orig/d.typ:35
 D:as an at ah ad aa ao ae au ai os on ot oh od oi ou oe oo oa
  :es en et eh ed ea eo ee eu ei us un ut uh ud ui uu ue uo ua
-Q:Stisknutím Y mù¾ete pokraèovat, N bude cvièení opakovat, F12 - konec. 
+Q:StisknutÃ­m Y mÅ¯Å¾ete pokraÄovat, N bude cviÄenÃ­ opakovat, F12 - konec. 
 N:_D_R_L5
 
 #                                                             ../orig/d.typ:36
@@ -6787,7 +6787,7 @@ I:(5)
 #                                                             ../orig/d.typ:38
 D:his hat is an aid in the hot sun
  :in his sad sod hut he sat on his hen
-Q:Stisknutím Y mù¾ete pokraèovat, N bude cvièení opakovat, F12 - konec. 
+Q:StisknutÃ­m Y mÅ¯Å¾ete pokraÄovat, N bude cviÄenÃ­ opakovat, F12 - konec. 
 N:_D_R_L6
 
 #                                                             ../orig/d.typ:39
@@ -6796,7 +6796,7 @@ I:(6)
 #                                                             ../orig/d.typ:41
 D:sue did not use his hoe and tin hat
  :dan did not see the dot on his tie as he hid his tan hat
-Q:Stisknutím Y mù¾ete pokraèovat, N bude cvièení opakovat, F12 - konec. 
+Q:StisknutÃ­m Y mÅ¯Å¾ete pokraÄovat, N bude cviÄenÃ­ opakovat, F12 - konec. 
 N:_D_R_L7
 
 #                                                             ../orig/d.typ:42
@@ -6807,7 +6807,7 @@ D:ada add ado aha aid ann dad dan dee den did die din don dot dud
  :due dun duo eda end had has hat hen hid his hit hod hoe hot hue
  :hut ian ida inn ion its nat ned net nod not nun nut odd ode out
  :sat sit sod son sot sun tan tat tee ten tho tit toe ton too tot
-Q:Stisknutím Y mù¾ete pokraèovat, N bude cvièení opakovat, F12 - konec. 
+Q:StisknutÃ­m Y mÅ¯Å¾ete pokraÄovat, N bude cviÄenÃ­ opakovat, F12 - konec. 
 N:_D_R_L8
 
 #                                                             ../orig/d.typ:47
@@ -6815,7 +6815,7 @@ I:(8)
 *:_D_R_L9
 #                                                             ../orig/d.typ:48
 D:i do as i do and the end is not as sad as the one sid had
-Q:Stisknutím Y mù¾ete pokraèovat, N bude cvièení opakovat, F12 - konec. 
+Q:StisknutÃ­m Y mÅ¯Å¾ete pokraÄovat, N bude cviÄenÃ­ opakovat, F12 - konec. 
 N:_D_R_L9
 
 G:_D_E_D1
@@ -6831,7 +6831,7 @@ T:                   Learning the Shift Key
  :To integrate the shift key rhythmically in your practice, a capital letter
  :should take three beats: 1--press the shift key opposite the hand to press
  :the letter; 2--press the letter; 3--release the shift key.
-Q:Pro pokraèování stisknìte Y, F12 pro konec. 
+Q:Pro pokraÄovÃ¡nÃ­ stisknÄ›te Y, F12 pro konec. 
 N:_D_R_L10
 
 #                                                             ../orig/d.typ:56
@@ -6839,7 +6839,7 @@ I:(1) Review
 *:_D_R_L11
 #                                                             ../orig/d.typ:57
 D:een ent est ett hin hou ith ion oth sen tha thi tio tte thu
-Q:Stisknutím Y mù¾ete pokraèovat, N bude cvièení opakovat, F12 - konec. 
+Q:StisknutÃ­m Y mÅ¯Å¾ete pokraÄovat, N bude cviÄenÃ­ opakovat, F12 - konec. 
 N:_D_R_L11
 
 #                                                             ../orig/d.typ:58
@@ -6848,7 +6848,7 @@ I:(2)
 #                                                             ../orig/d.typ:60
 D:Ada An Ana Ann Dad Dan Dee Ed Eta
  :Dan Nan Nat Ned Sid Sue Tad Ted Tod
-Q:Stisknutím Y mù¾ete pokraèovat, N bude cvièení opakovat, F12 - konec. 
+Q:StisknutÃ­m Y mÅ¯Å¾ete pokraÄovat, N bude cviÄenÃ­ opakovat, F12 - konec. 
 N:_D_R_L12
 
 #                                                             ../orig/d.typ:61
@@ -6857,7 +6857,7 @@ I:(3)
 #                                                             ../orig/d.typ:63
 D:The sad tots sat on a tan seat in his neat tent and ate ten nuts
  :On his date Otis had a thin suit and no tint on his shoes
-Q:Stisknutím Y mù¾ete pokraèovat, N bude cvièení opakovat, F12 - konec. 
+Q:StisknutÃ­m Y mÅ¯Å¾ete pokraÄovat, N bude cviÄenÃ­ opakovat, F12 - konec. 
 N:_D_R_L13
 
 #                                                             ../orig/d.typ:64
@@ -6866,7 +6866,7 @@ I:(4)
 #                                                             ../orig/d.typ:66
 D:Enos eats a thin hash diet in a hued dish as he sits on an odd seat
  :Dad does not eat suet  He had seen Sue dent his auto
-Q:Stisknutím Y mù¾ete pokraèovat, N bude cvièení opakovat, F12 - konec. 
+Q:StisknutÃ­m Y mÅ¯Å¾ete pokraÄovat, N bude cviÄenÃ­ opakovat, F12 - konec. 
 N:_D_R_L14
 
 #                                                             ../orig/d.typ:67
@@ -6876,7 +6876,7 @@ I:(5)
 D:ad an de di ed en es ie in ne un ate dis ess eat ied ine
  :ist ite nee nes non nus ses tes tis usi ante anti ates
  :eous eats ines ions ious ists itas itis ness sion tion
-Q:Stisknutím Y mù¾ete pokraèovat, N bude cvièení opakovat, F12 - konec. 
+Q:StisknutÃ­m Y mÅ¯Å¾ete pokraÄovat, N bude cviÄenÃ­ opakovat, F12 - konec. 
 N:_D_R_L15
 
 #                                                             ../orig/d.typ:71
@@ -6885,7 +6885,7 @@ I:(6)
 #                                                             ../orig/d.typ:73
 D:Adna Anna Anne Dana Dead Edie Edna Enid Etta Heda
  :Nate Nina Neta Nona Odie Ohio Otto Stan Tess Thad Theo
-Q:Stisknutím Y mù¾ete pokraèovat, N bude cvièení opakovat, F12 - konec. 
+Q:StisknutÃ­m Y mÅ¯Å¾ete pokraÄovat, N bude cviÄenÃ­ opakovat, F12 - konec. 
 N:_D_R_L16
 
 #                                                             ../orig/d.typ:74
@@ -6897,7 +6897,7 @@ D:adds aids ante ants aunt dead deed dens died dies dine dins dodo
  :none noon noun nuns oats odds odes ones sane sash sate seas seed
  :sees sent sets shad shed shin shot side sine sins sons sued suns
  :tide tine tins toad tone toss tote tout tune undo unit used uses
-Q:Stisknutím Y mù¾ete pokraèovat, N bude cvièení opakovat, F12 - konec. 
+Q:StisknutÃ­m Y mÅ¯Å¾ete pokraÄovat, N bude cviÄenÃ­ opakovat, F12 - konec. 
 N:_D_R_L17
 
 G:_D_E_D2
@@ -6912,14 +6912,14 @@ T:                   Home Row and the Period
  :The period is above the E-finger. Note that the end of a sentence is
  :always followed by two spaces; in abbreviations, it is followed by one
  :space.
-Q: Pro pokraèování stisknìte Y, F12 pro konec. 
+Q: Pro pokraÄovÃ¡nÃ­ stisknÄ›te Y, F12 pro konec. 
 #
 I:(1)
 *:_D_R_L18
 #                                                             ../orig/d.typ:91
 D:e. e.  e.  e.  a.  s.  o.  n.  e.  t.  u.  h.  i.  d.  a.  a.
  :h. u.  a.  i.  o.  n.  s.  d.  t.  e.  h.  o.  u.  i.  s.  a.
-Q: Stisknutím Y mù¾ete pokraèovat, N bude cvièení opakovat, F12 - konec. 
+Q: StisknutÃ­m Y mÅ¯Å¾ete pokraÄovat, N bude cviÄenÃ­ opakovat, F12 - konec. 
 N:_D_R_L18
 
 #                                                             ../orig/d.typ:92
@@ -6930,7 +6930,7 @@ D:anno athe atio atte ause diti enon esen enti este
  :ethe esti ette hese hous hout iate iend ines inst
  :ith itio into ndin ness nnot noth ntio onth osed
  :thei thes tion tten nest nude unti usin tand tate
-Q: Stisknutím Y mù¾ete pokraèovat, N bude cvièení opakovat, F12 - konec. 
+Q: StisknutÃ­m Y mÅ¯Å¾ete pokraÄovat, N bude cviÄenÃ­ opakovat, F12 - konec. 
 N:_D_R_L19
 
 #                                                             ../orig/d.typ:97
@@ -6940,7 +6940,7 @@ I:(3)
 D:Adana Andie Annie Aonia Audie Denis Diana Dinah
  :Donna Duane Edith Ethan India Susan Susie Thane
  :Adana. Andie.  Annie.  Aonia.  Audie.  Denis.  Diana.  Dinah.
-Q: Stisknutím Y mù¾ete pokraèovat, N bude cvièení opakovat, F12 - konec. 
+Q: StisknutÃ­m Y mÅ¯Å¾ete pokraÄovat, N bude cviÄenÃ­ opakovat, F12 - konec. 
 N:_D_R_L20
 
 #                                                            ../orig/d.typ:101
@@ -6951,7 +6951,7 @@ D:In the house Adana dined in haste on toast and dates.
  :Sated as she had eaten she noted the sheen on the dunes
  :and the shade in the sheds. She hates to see an idiot
  :stand and shoot his tenth doe in the dense heath.
-Q: Stisknutím Y mù¾ete pokraèovat, N bude cvièení opakovat, F12 - konec. 
+Q: StisknutÃ­m Y mÅ¯Å¾ete pokraÄovat, N bude cviÄenÃ­ opakovat, F12 - konec. 
 N:_D_R_L21
 
 #                                                            ../orig/d.typ:106
@@ -6960,7 +6960,7 @@ I:(5)
 #                                                            ../orig/d.typ:108
 D:An onion heats and stuns stout noses and sends hands
  :to douse teeth and hoist suede hoods onto heads.
-Q: Stisknutím Y mù¾ete pokraèovat, N bude cvièení opakovat, F12 - konec. 
+Q: StisknutÃ­m Y mÅ¯Å¾ete pokraÄovat, N bude cviÄenÃ­ opakovat, F12 - konec. 
 N:_D_R_L22
 
 #                                                            ../orig/d.typ:109
@@ -6969,7 +6969,7 @@ I:(6)
 #                                                            ../orig/d.typ:111
 D:eates eousness eousnesses esses iates iests iness inesses
  :iousness iousnesses iohness iohnesses itions nesses ousness
-Q: Stisknutím Y mù¾ete pokraèovat, N bude cvièení opakovat, F12 - konec. 
+Q: StisknutÃ­m Y mÅ¯Å¾ete pokraÄovat, N bude cviÄenÃ­ opakovat, F12 - konec. 
 N:_D_R_L23
 
 G:_D_E_D3
@@ -6981,7 +6981,7 @@ G:_D_E_D3
 *:_D_R_L24
 #                                                            ../orig/d.typ:116
 T:                   Upper Row and Essential Punctuation
-Q: Pro pokraèování stisknìte Y, F12 pro konec. 
+Q: Pro pokraÄovÃ¡nÃ­ stisknÄ›te Y, F12 pro konec. 
 N:_D_R_L24
 
 #                                                            ../orig/d.typ:117
@@ -6990,7 +6990,7 @@ I:(1)
 #                                                            ../orig/d.typ:119
 D:tctc upup hghg o,o, nrnr a/a/ slsl a?a? s-s- s--- s---- ----
  :tctc upup hghg, hfhf uyuy, nrnr, slsl, s---, s-s-, a/a/-
-Q: Stisknutím Y mù¾ete pokraèovat, N bude cvièení opakovat, F12 - konec. 
+Q: StisknutÃ­m Y mÅ¯Å¾ete pokraÄovat, N bude cviÄenÃ­ opakovat, F12 - konec. 
 N:_D_R_L25
 
 #                                                            ../orig/d.typ:120
@@ -6999,7 +6999,7 @@ I:(2)
 #                                                            ../orig/d.typ:122
 D:tctc/ upup/ hghg/ uyuy/ hfhf/ nrnr/ slsl/ tctc/ hfhf/ hghg/
  :tctc? upup? hghg? uyuy? nrnr? slsl? hfhf? upup- hghg- tctc-
-Q: Stisknutím Y mù¾ete pokraèovat, N bude cvièení opakovat, F12 - konec. 
+Q: StisknutÃ­m Y mÅ¯Å¾ete pokraÄovat, N bude cviÄenÃ­ opakovat, F12 - konec. 
 N:_D_R_L26
 
 #                                                            ../orig/d.typ:123
@@ -7008,7 +7008,7 @@ I:(3)
 #                                                            ../orig/d.typ:125
 D:Al el if of or up Al el if of or up
  :go la lo pa pi ye go la lo pa pi ye
-Q: Stisknutím Y mù¾ete pokraèovat, N bude cvièení opakovat, F12 - konec. 
+Q: StisknutÃ­m Y mÅ¯Å¾ete pokraÄovat, N bude cviÄenÃ­ opakovat, F12 - konec. 
 N:_D_R_L27
 
 #                                                            ../orig/d.typ:126
@@ -7019,7 +7019,7 @@ D:Can pa go aft and lie on our old cot?
  :The shy ape put on a red hat and ran off the lot.
  :For a top fee, her act is to hop in, lie on the rug, pat her
  :pet cat, fit a fur on her ear, get her fan, and run off.
-Q: Stisknutím Y mù¾ete pokraèovat, N bude cvièení opakovat, F12 - konec. 
+Q: StisknutÃ­m Y mÅ¯Å¾ete pokraÄovat, N bude cviÄenÃ­ opakovat, F12 - konec. 
 N:_D_R_L28
 
 #                                                            ../orig/d.typ:131
@@ -7029,7 +7029,7 @@ I:(5)
 D:ago ail ale all apt arc are art cur cut dig dip dop
  :dry dug eel egg ego fag fig fin fir fly fog for fro
  :fry gag gap gas gay gin gip God goo gun hag hay hep
-Q: Stisknutím Y mù¾ete pokraèovat, N bude cvièení opakovat, F12 - konec. 
+Q: StisknutÃ­m Y mÅ¯Å¾ete pokraÄovat, N bude cviÄenÃ­ opakovat, F12 - konec. 
 N:_D_R_L29
 
 G:_D_E_D4
@@ -7044,7 +7044,7 @@ I:(1) Review
 #                                                            ../orig/d.typ:140
 D:The left road can lead the lads and lady to good lots near
  :your land. The sale of pure gold is held at your door.
-Q: Stisknutím Y mù¾ete pokraèovat, N bude cvièení opakovat, F12 - konec. 
+Q: StisknutÃ­m Y mÅ¯Å¾ete pokraÄovat, N bude cviÄenÃ­ opakovat, F12 - konec. 
 N:_D_R_L30
 
 #                                                            ../orig/d.typ:141
@@ -7054,7 +7054,7 @@ I:(2)
 D:You held no fear of loss for a year. On each trip to your
  :shop he paid in cash for the caps, fish, cups, pans, fuel,
  :logs, peas, ales, rice and fats you sold.
-Q: Stisknutím Y mù¾ete pokraèovat, N bude cvièení opakovat, F12 - konec. 
+Q: StisknutÃ­m Y mÅ¯Å¾ete pokraÄovat, N bude cviÄenÃ­ opakovat, F12 - konec. 
 N:_D_R_L31
 
 #                                                            ../orig/d.typ:145
@@ -7063,7 +7063,7 @@ I:(3)
 #                                                            ../orig/d.typ:147
 D:It is a fact that a slap on the face can hurt. The poor
  :apes feel free to find a sure sort of life in the dale.
-Q: Stisknutím Y mù¾ete pokraèovat, N bude cvièení opakovat, F12 - konec. 
+Q: StisknutÃ­m Y mÅ¯Å¾ete pokraÄovat, N bude cviÄenÃ­ opakovat, F12 - konec. 
 N:_D_R_L32
 
 #                                                            ../orig/d.typ:148
@@ -7074,7 +7074,7 @@ D:aces acts ages ails airs also arcs call caps card cold cops
  :else errs eyes face fair fall fare fate feat feel feet fell
  :gate gets gift gigs glad goat goes gone gosh gray grey gull
  :hole hope hops huff hull ills ires last late lest lets lies
-Q: Stisknutím Y mù¾ete pokraèovat, N bude cvièení opakovat, F12 - konec. 
+Q: StisknutÃ­m Y mÅ¯Å¾ete pokraÄovat, N bude cviÄenÃ­ opakovat, F12 - konec. 
 N:_D_R_L33
 
 #                                                            ../orig/d.typ:153
@@ -7085,7 +7085,7 @@ D:pear pert pest pets pits plop pops post pots puns puts rate real
  :ride rids ripe rips rope rote rues ruff runs runt rush rust ruts
  :span spat spin spit spot spun step stop tags tall tape taps tars
  :ugly upon ruge user yard year yeas yell yelp yips yoga yule your
-Q: Stisknutím Y mù¾ete pokraèovat, N bude cvièení opakovat, F12 - konec. 
+Q: StisknutÃ­m Y mÅ¯Å¾ete pokraÄovat, N bude cviÄenÃ­ opakovat, F12 - konec. 
 N:_D_R_L34
 
 G:_D_E_D5
@@ -7097,7 +7097,7 @@ G:_D_E_D5
 *:_D_R_L35
 #                                                            ../orig/d.typ:162
 T:		Learning the Lower Row
-Q: Pro pokraèování stisknìte Y, F12 pro konec. 
+Q: Pro pokraÄovÃ¡nÃ­ stisknÄ›te Y, F12 pro konec. 
 N:_D_R_L35
 
 #                                                            ../orig/d.typ:163
@@ -7105,7 +7105,7 @@ I:(1)
 *:_D_R_L36
 #                                                            ../orig/d.typ:164
 D:a'sz oqnv ukhm uxhb a"o- oqnv ejtw a'sz uxhb ukkk ukhm a's-
-Q: Stisknutím Y mù¾ete pokraèovat, N bude cvièení opakovat, F12 - konec. 
+Q: StisknutÃ­m Y mÅ¯Å¾ete pokraÄovat, N bude cviÄenÃ­ opakovat, F12 - konec. 
 N:_D_R_L36
 
 #                                                            ../orig/d.typ:165
@@ -7113,7 +7113,7 @@ I:(2)
 *:_D_R_L37
 #                                                            ../orig/d.typ:166
 D:uk sz-a' tw nv ej hm uk a" hb oq uk a' nv hm a" oq sz tw ej
-Q: Stisknutím Y mù¾ete pokraèovat, N bude cvièení opakovat, F12 - konec. 
+Q: StisknutÃ­m Y mÅ¯Å¾ete pokraÄovat, N bude cviÄenÃ­ opakovat, F12 - konec. 
 N:_D_R_L37
 
 #                                                            ../orig/d.typ:167
@@ -7123,7 +7123,7 @@ I:(3)
 D:ale any are ary augh aught ave ay aye ec ece eco el er ere ery ex
  :exa exe far fer fir for ify igh ight il ile ill ily ire aze ize
  :la lly ly my ny ome or ore ough ought ould our re rec sive tive
-Q: Stisknutím Y mù¾ete pokraèovat, N bude cvièení opakovat, F12 - konec. 
+Q: StisknutÃ­m Y mÅ¯Å¾ete pokraÄovat, N bude cviÄenÃ­ opakovat, F12 - konec. 
 N:_D_R_L38
 
 #                                                            ../orig/d.typ:171
@@ -7133,7 +7133,7 @@ I:(4)
 D:I owe him a bun, a ham, ink, a bed and a job.
  :Sam was mad at his own new ox in the bin.
  :At the zoo, the wee, bad boa in a box bit Tom, Bob and me.
-Q: Stisknutím Y mù¾ete pokraèovat, N bude cvièení opakovat, F12 - konec. 
+Q: StisknutÃ­m Y mÅ¯Å¾ete pokraÄovat, N bude cviÄenÃ­ opakovat, F12 - konec. 
 N:_D_R_L39
 
 #                                                            ../orig/d.typ:175
@@ -7144,7 +7144,7 @@ D:am ax be ma me ox oz we adz awe ban but eke eve haw hem
  :hub jab jam jaw jet jib job Joe jot jut kid kin kit man
  :mat Max nab new nub now own quo saw sox sum van vex vie
  :vow wan who win won yen you zax
-Q: Stisknutím Y mù¾ete pokraèovat, N bude cvièení opakovat, F12 - konec. 
+Q: StisknutÃ­m Y mÅ¯Å¾ete pokraÄovat, N bude cviÄenÃ­ opakovat, F12 - konec. 
 N:_D_R_L40
 
 G:_D_E_D6
@@ -7158,7 +7158,7 @@ I:(1)
 *:_D_R_L41
 #                                                            ../orig/d.typ:184
 D:In a daze the band hums the same new tune as they zoom down the exit.
-Q: Stisknutím Y mù¾ete pokraèovat, N bude cvièení opakovat, F12 - konec. 
+Q: StisknutÃ­m Y mÅ¯Å¾ete pokraÄovat, N bude cviÄenÃ­ opakovat, F12 - konec. 
 N:_D_R_L41
 
 #                                                            ../orig/d.typ:185
@@ -7167,7 +7167,7 @@ I:(2)
 #                                                            ../orig/d.typ:187
 D:Next time, I must have a town home, with a book and a vast tome,
  :bees, oxen, hams in the oven, rows of beans, the wind and a view.
-Q: Stisknutím Y mù¾ete pokraèovat, N bude cvièení opakovat, F12 - konec. 
+Q: StisknutÃ­m Y mÅ¯Å¾ete pokraÄovat, N bude cviÄenÃ­ opakovat, F12 - konec. 
 N:_D_R_L42
 
 #                                                            ../orig/d.typ:188
@@ -7176,7 +7176,7 @@ I:(3)
 #                                                            ../orig/d.typ:190
 D:I know six men wait to put down their axes. They want to quit
  :their jobs when the job zone size is too wide.
-Q: Stisknutím Y mù¾ete pokraèovat, N bude cvièení opakovat, F12 - konec. 
+Q: StisknutÃ­m Y mÅ¯Å¾ete pokraÄovat, N bude cviÄenÃ­ opakovat, F12 - konec. 
 N:_D_R_L43
 
 #                                                            ../orig/d.typ:191
@@ -7186,7 +7186,7 @@ I:(4)
 D:ahem aims ajax akin asks atom axis bans bath beak beck been
  :hoax husk inks item jabs jade jamb Java jazz Jean jest jinx
  :knot Knox made maid mail mate mean meet mend mess mind mine
-Q: Stisknutím Y mù¾ete pokraèovat, N bude cvièení opakovat, F12 - konec. 
+Q: StisknutÃ­m Y mÅ¯Å¾ete pokraÄovat, N bude cviÄenÃ­ opakovat, F12 - konec. 
 N:_D_R_L44
 
 #                                                            ../orig/d.typ:195
@@ -7197,7 +7197,7 @@ D:miss mist most musk must nabs news next nibs numb owed owes
  :quiz save saws seem sews skat skew skid skin some sums take
  :vend vent vest veto vise void vote wand weed week wend wins
  :whet whit whiz whom wish wont zebu zest zinc Zion zone zulu
-Q: Stisknutím Y mù¾ete pokraèovat, N bude cvièení opakovat, F12 - konec. 
+Q: StisknutÃ­m Y mÅ¯Å¾ete pokraÄovat, N bude cviÄenÃ­ opakovat, F12 - konec. 
 N:_D_R_L45
 
 G:_D_E_D7
@@ -7211,7 +7211,7 @@ I:(1)
 *:_D_R_L46
 #                                                            ../orig/d.typ:204
 D:He asked about those zebra waits in his beans.
-Q: Stisknutím Y mù¾ete pokraèovat, N bude cvièení opakovat, F12 - konec. 
+Q: StisknutÃ­m Y mÅ¯Å¾ete pokraÄovat, N bude cviÄenÃ­ opakovat, F12 - konec. 
 N:_D_R_L46
 
 #                                                            ../orig/d.typ:205
@@ -7219,7 +7219,7 @@ I:(2)
 *:_D_R_L47
 #                                                            ../orig/d.typ:206
 D:It seems that in a month taxes on homes have taken all we saved.
-Q: Stisknutím Y mù¾ete pokraèovat, N bude cvièení opakovat, F12 - konec. 
+Q: StisknutÃ­m Y mÅ¯Å¾ete pokraÄovat, N bude cviÄenÃ­ opakovat, F12 - konec. 
 N:_D_R_L47
 
 #                                                            ../orig/d.typ:207
@@ -7228,7 +7228,7 @@ I:(3)
 #                                                            ../orig/d.typ:209
 D:John Smith makes a quiet visit to the bases in the winds and
  :weeds on the mound.
-Q: Stisknutím Y mù¾ete pokraèovat, N bude cvièení opakovat, F12 - konec. 
+Q: StisknutÃ­m Y mÅ¯Å¾ete pokraÄovat, N bude cviÄenÃ­ opakovat, F12 - konec. 
 N:_D_R_L48
 
 #                                                            ../orig/d.typ:210
@@ -7239,7 +7239,7 @@ D:ovals ovoid oxide quake queen quest quite quits quote saves seams
  :skein skink skunk sweat takes taken taxed teams teems thank think
  :thumb times towns ukase vaunt vests vises visit vista vivid vixen
  :waits wands wants wends whine white whose zebus zoned zones zulus
-Q: Stisknutím Y mù¾ete pokraèovat, N bude cvièení opakovat, F12 - konec. 
+Q: StisknutÃ­m Y mÅ¯Å¾ete pokraÄovat, N bude cviÄenÃ­ opakovat, F12 - konec. 
 N:_D_R_L49
 
 G:_D_E_D8
@@ -7253,7 +7253,7 @@ I:(1)
 *:_D_R_L50
 #                                                            ../orig/d.typ:219
 D:hghm hbfb upxp uxyx twcw ej.j nvrv oq,q szlz a'?' a"/"
-Q: Stisknutím Y mù¾ete pokraèovat, N bude cvièení opakovat, F12 - konec. 
+Q: StisknutÃ­m Y mÅ¯Å¾ete pokraÄovat, N bude cviÄenÃ­ opakovat, F12 - konec. 
 N:_D_R_L50
 
 #                                                            ../orig/d.typ:220
@@ -7261,7 +7261,7 @@ I:Again...
 *:_D_R_L51
 #                                                            ../orig/d.typ:221
 D:hghm hbfb upxp uxyx twcw ej.j nvrv oq,q szlz a'?' a"/"
-Q: Stisknutím Y mù¾ete pokraèovat, N bude cvièení opakovat, F12 - konec. 
+Q: StisknutÃ­m Y mÅ¯Å¾ete pokraÄovat, N bude cviÄenÃ­ opakovat, F12 - konec. 
 N:_D_R_L51
 
 #                                                            ../orig/d.typ:222
@@ -7269,7 +7269,7 @@ I:(2)
 *:_D_R_L52
 #                                                            ../orig/d.typ:223
 D:gm mg fb bf pk kp yx xy cw wc .j j. rv vr ,q q, lz zl
-Q: Stisknutím Y mù¾ete pokraèovat, N bude cvièení opakovat, F12 - konec. 
+Q: StisknutÃ­m Y mÅ¯Å¾ete pokraÄovat, N bude cviÄenÃ­ opakovat, F12 - konec. 
 N:_D_R_L52
 
 #                                                            ../orig/d.typ:224
@@ -7277,7 +7277,7 @@ I:(3)
 *:_D_R_L53
 #                                                            ../orig/d.typ:225
 D:My big boy may buy a gem at the labs by the bay.
-Q: Stisknutím Y mù¾ete pokraèovat, N bude cvièení opakovat, F12 - konec. 
+Q: StisknutÃ­m Y mÅ¯Å¾ete pokraÄovat, N bude cviÄenÃ­ opakovat, F12 - konec. 
 N:_D_R_L53
 
 #                                                            ../orig/d.typ:226
@@ -7286,7 +7286,7 @@ I:(4)
 #                                                            ../orig/d.typ:228
 D:Mort awes boys with the way he can ward off a blow, kill
  :elks and game, row a yawl, or ram awls into bars.
-Q: Stisknutím Y mù¾ete pokraèovat, N bude cvièení opakovat, F12 - konec. 
+Q: StisknutÃ­m Y mÅ¯Å¾ete pokraÄovat, N bude cviÄenÃ­ opakovat, F12 - konec. 
 N:_D_R_L54
 
 #                                                            ../orig/d.typ:229
@@ -7296,7 +7296,7 @@ I:(5)
 D:ah Al am an as at ax ba be do ed eh el go
  :ha he hi ho if in is it Jo la no ma me no
  :of oh on or ox pa pi Si so to up us we ye
-Q: Stisknutím Y mù¾ete pokraèovat, N bude cvièení opakovat, F12 - konec. 
+Q: StisknutÃ­m Y mÅ¯Å¾ete pokraÄovat, N bude cviÄenÃ­ opakovat, F12 - konec. 
 N:_D_R_L55
 
 G:_D_E_D9
@@ -7311,7 +7311,7 @@ I:(1)
 #                                                            ../orig/d.typ:238
 D:In barns on farms chicks, boars, veals, bucks and stock might
  :enjoy and value an extra quart of water daily.
-Q: Stisknutím Y mù¾ete pokraèovat, N bude cvièení opakovat, F12 - konec. 
+Q: StisknutÃ­m Y mÅ¯Å¾ete pokraÄovat, N bude cviÄenÃ­ opakovat, F12 - konec. 
 N:_D_R_L56
 
 #                                                            ../orig/d.typ:239
@@ -7320,7 +7320,7 @@ I:(2)
 #                                                            ../orig/d.typ:241
 D:Do zebras roam the miles of bleak velds which cover parts of the
  :world while packs of brown bears and wart hogs prowl in the woods?
-Q: Stisknutím Y mù¾ete pokraèovat, N bude cvièení opakovat, F12 - konec. 
+Q: StisknutÃ­m Y mÅ¯Å¾ete pokraÄovat, N bude cviÄenÃ­ opakovat, F12 - konec. 
 N:_D_R_L57
 
 #                                                            ../orig/d.typ:242
@@ -7331,7 +7331,7 @@ D:Some folks claim to favor poems and rhyme, others can wring equal
  :cheer and worth from words and quest and seize all books. Still
  :others amply quell their needs with vocal music and seek all
  :works on voice.
-Q: Stisknutím Y mù¾ete pokraèovat, N bude cvièení opakovat, F12 - konec. 
+Q: StisknutÃ­m Y mÅ¯Å¾ete pokraÄovat, N bude cviÄenÃ­ opakovat, F12 - konec. 
 N:_D_R_L58
 
 #                                                            ../orig/d.typ:247
@@ -7341,7 +7341,7 @@ I:(4)
 D:To begin to use wrong verbs among boors and bores may be
  :a severe error even if the whole group seems to think
  :that exact terms mean less than is normal for them.
-Q: Stisknutím Y mù¾ete pokraèovat, N bude cvièení opakovat, F12 - konec. 
+Q: StisknutÃ­m Y mÅ¯Å¾ete pokraÄovat, N bude cviÄenÃ­ opakovat, F12 - konec. 
 N:_D_R_L59
 
 #                                                            ../orig/d.typ:251
@@ -7352,7 +7352,7 @@ D:allow among avail awful Aztec azure backs balls began being belie
  :bells bills black blank bored borne bring can't chalk champ charm
  :check cheek chick chink comes Czech every evict exalt excel exert
  :exile expel exult Felix folks gable gauze gives glaze gleam globe
-Q: Stisknutím Y mù¾ete pokraèovat, N bude cvièení opakovat, F12 - konec. 
+Q: StisknutÃ­m Y mÅ¯Å¾ete pokraÄovat, N bude cviÄenÃ­ opakovat, F12 - konec. 
 N:_D_R_L60
 
 #                                                            ../orig/d.typ:256
@@ -7363,7 +7363,7 @@ D:verge verse verve vetch vigil vigor viola virus vital vogue voile
  :vouch vowel vying walks walls wards warts whack whale wharf wheat
  :wheel whelp where which whiff while whirl whole wired wires words
  :world worth would write wrong wrote yards yokes yoks zippy zombie
-Q: Stisknutím Y mù¾ete pokraèovat, N bude cvièení opakovat, F12 - konec. 
+Q: StisknutÃ­m Y mÅ¯Å¾ete pokraÄovat, N bude cviÄenÃ­ opakovat, F12 - konec. 
 N:_D_R_L61
 
 G:_D_E_D10
@@ -7378,7 +7378,7 @@ I:(1)
 #                                                            ../orig/d.typ:266
 D:For a meal we lack a room, milk in mugs, warm pork, veal
  :in the oven and cake.
-Q: Stisknutím Y mù¾ete pokraèovat, N bude cvièení opakovat, F12 - konec. 
+Q: StisknutÃ­m Y mÅ¯Å¾ete pokraÄovat, N bude cviÄenÃ­ opakovat, F12 - konec. 
 N:_D_R_L62
 
 #                                                            ../orig/d.typ:267
@@ -7387,7 +7387,7 @@ I:(2)
 #                                                            ../orig/d.typ:269
 D:Mike and Milt were grim, not calm, when Mort came to warn them that
  :the well worn ramp over to the mill was too wet for our mile walk.
-Q: Stisknutím Y mù¾ete pokraèovat, N bude cvièení opakovat, F12 - konec. 
+Q: StisknutÃ­m Y mÅ¯Å¾ete pokraÄovat, N bude cviÄenÃ­ opakovat, F12 - konec. 
 N:_D_R_L63
 
 #                                                            ../orig/d.typ:270
@@ -7396,7 +7396,7 @@ I:(3)
 #                                                            ../orig/d.typ:272
 D:Walt may quip and quote with zeal about too much work, but I
  :saw him melt and mourn about his love for his lost wife.
-Q: Stisknutím Y mù¾ete pokraèovat, N bude cvièení opakovat, F12 - konec. 
+Q: StisknutÃ­m Y mÅ¯Å¾ete pokraÄovat, N bude cviÄenÃ­ opakovat, F12 - konec. 
 N:_D_R_L64
 
 #                                                            ../orig/d.typ:273
@@ -7404,7 +7404,7 @@ I:(4)
 *:_D_R_L65
 #                                                            ../orig/d.typ:274
 D:The pick of wool from rams can make very soft warm garb.
-Q: Stisknutím Y mù¾ete pokraèovat, N bude cvièení opakovat, F12 - konec. 
+Q: StisknutÃ­m Y mÅ¯Å¾ete pokraÄovat, N bude cviÄenÃ­ opakovat, F12 - konec. 
 N:_D_R_L65
 
 #                                                            ../orig/d.typ:275
@@ -7413,7 +7413,7 @@ I:(5)
 #                                                            ../orig/d.typ:277
 D:For his meal the busy bird will use his bill or beak in many
  :ways to peck at or ably to pick up a worm.
-Q: Stisknutím Y mù¾ete pokraèovat, N bude cvièení opakovat, F12 - konec. 
+Q: StisknutÃ­m Y mÅ¯Å¾ete pokraÄovat, N bude cviÄenÃ­ opakovat, F12 - konec. 
 N:_D_R_L66
 
 #                                                            ../orig/d.typ:278
@@ -7422,7 +7422,7 @@ I:(6)
 #                                                            ../orig/d.typ:280
 D:Owls on the wing may move away with limp easy grace or they
  :may sit on a wire and look ever so wise.
-Q: Stisknutím Y mù¾ete pokraèovat, N bude cvièení opakovat, F12 - konec. 
+Q: StisknutÃ­m Y mÅ¯Å¾ete pokraÄovat, N bude cviÄenÃ­ opakovat, F12 - konec. 
 N:_D_R_L67
 
 #                                                            ../orig/d.typ:281
@@ -7431,7 +7431,7 @@ I:(7)
 #                                                            ../orig/d.typ:283
 D:The word or term--prop, mall, king, mark, romp, lock or link--
  :can vary in what it may mean.
-Q: Stisknutím Y mù¾ete pokraèovat, N bude cvièení opakovat, F12 - konec. 
+Q: StisknutÃ­m Y mÅ¯Å¾ete pokraÄovat, N bude cviÄenÃ­ opakovat, F12 - konec. 
 N:_D_R_L68
 
 #                                                            ../orig/d.typ:284
@@ -7442,7 +7442,7 @@ D:helm herb hock holy jeep jeer jell jerk John jolt jump jury
  :kale keel kelp kilt lack laws leak leek levy lick like lime
  :limp link live love luck lump lynx mail many mill more much
  :okra oval pack peak peck peek phew puck ramp rime skip talk
-Q: Stisknutím Y mù¾ete pokraèovat, N bude cvièení opakovat, F12 - konec. 
+Q: StisknutÃ­m Y mÅ¯Å¾ete pokraÄovat, N bude cviÄenÃ­ opakovat, F12 - konec. 
 N:_D_R_L69
 
 #                                                            ../orig/d.typ:289
@@ -7452,7 +7452,7 @@ I:(9)
 D:puck ramp rime skip talk vail vale vary veal veer veld verb vial vice
  :volk walk ware warm warp wars wart ways weal wear well will tilt wire
  :whey whim whip whir wore work worm worn yawn yolk zany zero zinc zing
-Q: Stisknutím Y mù¾ete pokraèovat, N bude cvièení opakovat, F12 - konec. 
+Q: StisknutÃ­m Y mÅ¯Å¾ete pokraÄovat, N bude cviÄenÃ­ opakovat, F12 - konec. 
 N:_D_R_L70
 
 G:_D_E_D11
@@ -7467,7 +7467,7 @@ I:(1)
 #                                                            ../orig/d.typ:298
 D:In barns on farms chicks, bears, veals, bucks and stock might
  :enjoy and value an extra quart of water daily.
-Q: Stisknutím Y mù¾ete pokraèovat, N bude cvièení opakovat, F12 - konec. 
+Q: StisknutÃ­m Y mÅ¯Å¾ete pokraÄovat, N bude cviÄenÃ­ opakovat, F12 - konec. 
 N:_D_R_L71
 
 #                                                            ../orig/d.typ:299
@@ -7476,7 +7476,7 @@ I:(2)
 #                                                            ../orig/d.typ:301
 D:Quick quips, awful quotes and queer talks never quite solve
  :the wants of a very small child.
-Q: Stisknutím Y mù¾ete pokraèovat, N bude cvièení opakovat, F12 - konec. 
+Q: StisknutÃ­m Y mÅ¯Å¾ete pokraÄovat, N bude cviÄenÃ­ opakovat, F12 - konec. 
 N:_D_R_L72
 
 #                                                            ../orig/d.typ:302
@@ -7485,7 +7485,7 @@ I:(3)
 #                                                            ../orig/d.typ:304
 D:Do zebras roam the miles of bleak velds which cover parts of the
  :world while packs of brown bears and wart hogs prowl in the woods?
-Q: Stisknutím Y mù¾ete pokraèovat, N bude cvièení opakovat, F12 - konec. 
+Q: StisknutÃ­m Y mÅ¯Å¾ete pokraÄovat, N bude cviÄenÃ­ opakovat, F12 - konec. 
 N:_D_R_L73
 
 #                                                            ../orig/d.typ:305
@@ -7496,7 +7496,7 @@ D:Some folks claim to favor poems and rhyme, others can wring equal
  :cheer and worth from words and quest and seize all books. Still
  :others amply quell their needs with vocal music and seek all
  :works on voice.
-Q: Stisknutím Y mù¾ete pokraèovat, N bude cvièení opakovat, F12 - konec. 
+Q: StisknutÃ­m Y mÅ¯Å¾ete pokraÄovat, N bude cviÄenÃ­ opakovat, F12 - konec. 
 N:_D_R_L74
 
 #                                                            ../orig/d.typ:310
@@ -7505,7 +7505,7 @@ I:(5)
 #                                                            ../orig/d.typ:312
 D:The queen was given a query for which an ample reply would
  :take a quire of paper.
-Q: Stisknutím Y mù¾ete pokraèovat, N bude cvièení opakovat, F12 - konec. 
+Q: StisknutÃ­m Y mÅ¯Å¾ete pokraÄovat, N bude cviÄenÃ­ opakovat, F12 - konec. 
 N:_D_R_L75
 
 #                                                            ../orig/d.typ:313
@@ -7514,7 +7514,7 @@ I:(6)
 #                                                            ../orig/d.typ:315
 D:Six husky cooks boiled clam broth, shrimp and prawns and broiled
  :liver for seven lucky elves, then made their hasty exits.
-Q: Stisknutím Y mù¾ete pokraèovat, N bude cvièení opakovat, F12 - konec. 
+Q: StisknutÃ­m Y mÅ¯Å¾ete pokraÄovat, N bude cviÄenÃ­ opakovat, F12 - konec. 
 N:_D_R_L76
 
 #                                                            ../orig/d.typ:316
@@ -7524,7 +7524,7 @@ I:(7)
 D:At the games, Mark was so very badly hurt with many broken bones,
  :lumps on his jaws, and some glands burst. Blood oozed from a crack
  :in his wart where it had oozed for weeks. He was lucky to have lived.
-Q: Stisknutím Y mù¾ete pokraèovat, N bude cvièení opakovat, F12 - konec. 
+Q: StisknutÃ­m Y mÅ¯Å¾ete pokraÄovat, N bude cviÄenÃ­ opakovat, F12 - konec. 
 N:_D_R_L77
 
 #                                                            ../orig/d.typ:320
@@ -7533,7 +7533,7 @@ I:(8)
 #                                                            ../orig/d.typ:322
 D:To check pomp and pride, sever from all overt vices, belay all
  :forms of muck raking, and limit all hazards, will bring prime joy.
-Q: Stisknutím Y mù¾ete pokraèovat, N bude cvièení opakovat, F12 - konec. 
+Q: StisknutÃ­m Y mÅ¯Å¾ete pokraÄovat, N bude cviÄenÃ­ opakovat, F12 - konec. 
 N:_D_R_L78
 
 #                                                            ../orig/d.typ:323
@@ -7543,7 +7543,7 @@ I:(9)
 D:To begin to use wrong verbs among boors and bores may be
  :a severe error even if the whole group seems to think
  :that exact terms mean less than is normal for them.
-Q: Stisknutím Y mù¾ete pokraèovat, N bude cvièení opakovat, F12 - konec. 
+Q: StisknutÃ­m Y mÅ¯Å¾ete pokraÄovat, N bude cviÄenÃ­ opakovat, F12 - konec. 
 N:_D_R_L79
 
 #                                                            ../orig/d.typ:327
@@ -7554,7 +7554,7 @@ D:allow among avail awful Aztec azure backs balls began being belie
  :bells bills black blank bored borne bring can't chalk champ charm
  :check cheek chick chink comes Czech every evict exalt excel exert
  :exile expel exult Felix folks gable gauze gives glaze gleam globe
-Q: Stisknutím Y mù¾ete pokraèovat, N bude cvièení opakovat, F12 - konec. 
+Q: StisknutÃ­m Y mÅ¯Å¾ete pokraÄovat, N bude cviÄenÃ­ opakovat, F12 - konec. 
 N:_D_R_L80
 
 #                                                            ../orig/d.typ:332
@@ -7565,7 +7565,7 @@ D:grams grave graze havoc hazel helix hobby jazzy jelly jerky jewel
  :joker jolly jolts jowls judge junco kapok kayak keels keeps kitty
  :knack kneel knelt knock knurl kopek kraal Krupp leave liver money
  :never Ozark pawns peaks pecks peeks phlox pirks power proms prove
-Q: Stisknutím Y mù¾ete pokraèovat, N bude cvièení opakovat, F12 - konec. 
+Q: StisknutÃ­m Y mÅ¯Å¾ete pokraÄovat, N bude cviÄenÃ­ opakovat, F12 - konec. 
 N:_D_R_L81
 
 #                                                            ../orig/d.typ:337
@@ -7576,7 +7576,7 @@ D:quack quaff quail qualm quays quell quill quilt ramps romps rooms
  :rumps salve serve shack shark shawl shirk shock shrew shuck sieve
  :seize skiff skill skimp skirt skulk small spank speak spoke stick
  :stuck threw throw thyme vague valid value valve vapid vault venal
-Q: Stisknutím Y mù¾ete pokraèovat, N bude cvièení opakovat, F12 - konec. 
+Q: StisknutÃ­m Y mÅ¯Å¾ete pokraÄovat, N bude cviÄenÃ­ opakovat, F12 - konec. 
 N:_D_R_L82
 
 #                                                            ../orig/d.typ:342
@@ -7587,7 +7587,7 @@ D:verge verse verve vetch vigil vigor viola virus vital vogue voile
  :vouch vowel vying walks walls wards warts whack whale wharf wheat
  :wheel whelp where which whiff while whirl whole wired wires words
  :world worth would write wrong wrote yards yokes yolks zippy zombi
-Q: Stisknutím Y mù¾ete pokraèovat, N bude cvièení opakovat, F12 - konec. 
+Q: StisknutÃ­m Y mÅ¯Å¾ete pokraÄovat, N bude cviÄenÃ­ opakovat, F12 - konec. 
 N:_D_R_L83
 
 G:_D_E_D12
@@ -7602,7 +7602,7 @@ T:
  :The following 135 words are so frequently used that they comprise 50%
  :of all words normally typed. If you can type the next two exercises without
  :errors, half of your typed words will be correct!
-Q: Pro pokraèování stisknìte Y, F12 pro konec. 
+Q: Pro pokraÄovÃ¡nÃ­ stisknÄ›te Y, F12 pro konec. 
 N:_D_R_L84
 
 *:_D_R_L85
@@ -7612,7 +7612,7 @@ D:a about after all also an and another any are as at back be because
  :even first for from get good had has have he her here him his how I
  :if in into is it its just know last life like little long made make
  :many may me men more most Mr. Ms.  much must my never new no not now
-Q: Stisknutím Y mù¾ete pokraèovat, N bude cvièení opakovat, F12 - konec. 
+Q: StisknutÃ­m Y mÅ¯Å¾ete pokraÄovat, N bude cviÄenÃ­ opakovat, F12 - konec. 
 N:_D_R_L85
 
 *:_D_R_L86
@@ -7622,13 +7622,13 @@ D:of or on one only or other our out over own people said same see she
  :these they this those through time to too two under up very was way
  :we well were what when where which while who will with work would
  :years you your
-Q: Stisknutím Y mù¾ete pokraèovat, N bude cvièení opakovat, F12 - konec. 
+Q: StisknutÃ­m Y mÅ¯Å¾ete pokraÄovat, N bude cviÄenÃ­ opakovat, F12 - konec. 
 N:_D_R_L86
 
 *:_D_R_L87
 #                                                            ../orig/d.typ:364
 T:We now concentrate on home row words.
-Q: Pro pokraèování stisknìte Y, F12 pro konec. 
+Q: Pro pokraÄovÃ¡nÃ­ stisknÄ›te Y, F12 pro konec. 
 N:_D_R_L87
 
 #                                                            ../orig/d.typ:365
@@ -7637,7 +7637,7 @@ I:(1)
 #                                                            ../orig/d.typ:367
 D:The duteous dietitian hesitated at the intense nauseousness inside
  :the dishonest institution.
-Q: Stisknutím Y mù¾ete pokraèovat, N bude cvièení opakovat, F12 - konec. 
+Q: StisknutÃ­m Y mÅ¯Å¾ete pokraÄovat, N bude cviÄenÃ­ opakovat, F12 - konec. 
 N:_D_R_L88
 
 #                                                            ../orig/d.typ:368
@@ -7646,7 +7646,7 @@ I:(2)
 #                                                            ../orig/d.typ:370
 D:In addition, the unastute assassin had another unsound idea. He
  :intended to assassinate the dishonest attendant at the institute.
-Q: Stisknutím Y mù¾ete pokraèovat, N bude cvièení opakovat, F12 - konec. 
+Q: StisknutÃ­m Y mÅ¯Å¾ete pokraÄovat, N bude cviÄenÃ­ opakovat, F12 - konec. 
 N:_D_R_L89
 
 #                                                            ../orig/d.typ:371
@@ -7658,7 +7658,7 @@ D:The unintentioned noisiness and untidiness in the hostess house
  :unassisted, she did not hesitate to initiate a statute at the state
  :house. The statute stated that no attendant in an untenanted haunted
  :hostess house is to attain hostess status.
-Q: Stisknutím Y mù¾ete pokraèovat, N bude cvièení opakovat, F12 - konec. 
+Q: StisknutÃ­m Y mÅ¯Å¾ete pokraÄovat, N bude cviÄenÃ­ opakovat, F12 - konec. 
 N:_D_R_L90
 
 G:_D_E_D13
@@ -7671,7 +7671,7 @@ G:_D_E_D13
 #                                                            ../orig/d.typ:381
 T:
  :In this lesson we practice alphabetic sentences.
-Q: Pro pokraèování stisknìte Y, F12 pro konec. 
+Q: Pro pokraÄovÃ¡nÃ­ stisknÄ›te Y, F12 pro konec. 
 N:_D_R_L91
 
 #                                                            ../orig/d.typ:382
@@ -7679,7 +7679,7 @@ I:(1)
 *:_D_R_L92
 #                                                            ../orig/d.typ:383
 D:Sixty-five quizzical sheep kept their jaws dry in a farm bungalow.
-Q: Stisknutím Y mù¾ete pokraèovat, N bude cvièení opakovat, F12 - konec. 
+Q: StisknutÃ­m Y mÅ¯Å¾ete pokraÄovat, N bude cviÄenÃ­ opakovat, F12 - konec. 
 N:_D_R_L92
 
 #                                                            ../orig/d.typ:384
@@ -7687,7 +7687,7 @@ I:(2)
 *:_D_R_L93
 #                                                            ../orig/d.typ:385
 D:Balky Zulus find they can hoax weary men with quavery jumping.
-Q: Stisknutím Y mù¾ete pokraèovat, N bude cvièení opakovat, F12 - konec. 
+Q: StisknutÃ­m Y mÅ¯Å¾ete pokraÄovat, N bude cviÄenÃ­ opakovat, F12 - konec. 
 N:_D_R_L93
 
 #                                                            ../orig/d.typ:386
@@ -7695,7 +7695,7 @@ I:(3)
 *:_D_R_L94
 #                                                            ../orig/d.typ:387
 D:Jerome quickly began to be vexed by the powerful blizzards.
-Q: Stisknutím Y mù¾ete pokraèovat, N bude cvièení opakovat, F12 - konec. 
+Q: StisknutÃ­m Y mÅ¯Å¾ete pokraÄovat, N bude cviÄenÃ­ opakovat, F12 - konec. 
 N:_D_R_L94
 
 #                                                            ../orig/d.typ:388
@@ -7703,7 +7703,7 @@ I:(4)
 *:_D_R_L95
 #                                                            ../orig/d.typ:389
 D:Squawking gorillas could vex the brazen nymphs in a jiffy.
-Q: Stisknutím Y mù¾ete pokraèovat, N bude cvièení opakovat, F12 - konec. 
+Q: StisknutÃ­m Y mÅ¯Å¾ete pokraÄovat, N bude cviÄenÃ­ opakovat, F12 - konec. 
 N:_D_R_L95
 
 #                                                            ../orig/d.typ:390
@@ -7711,7 +7711,7 @@ I:(5)
 *:_D_R_L96
 #                                                            ../orig/d.typ:391
 D:Can Jerry's equipment file saws, ax, hoe, knives and grind adz?
-Q: Stisknutím Y mù¾ete pokraèovat, N bude cvièení opakovat, F12 - konec. 
+Q: StisknutÃ­m Y mÅ¯Å¾ete pokraÄovat, N bude cviÄenÃ­ opakovat, F12 - konec. 
 N:_D_R_L96
 
 #                                                            ../orig/d.typ:392
@@ -7719,7 +7719,7 @@ I:(6)
 *:_D_R_L97
 #                                                            ../orig/d.typ:393
 D:Ben works at squeezing very juicy plums with flexed thumbs.
-Q: Stisknutím Y mù¾ete pokraèovat, N bude cvièení opakovat, F12 - konec. 
+Q: StisknutÃ­m Y mÅ¯Å¾ete pokraÄovat, N bude cviÄenÃ­ opakovat, F12 - konec. 
 N:_D_R_L97
 
 #                                                            ../orig/d.typ:394
@@ -7727,7 +7727,7 @@ I:(7)
 *:_D_R_L98
 #                                                            ../orig/d.typ:395
 D:The black wizard quipping jovially flexed his muscles.
-Q: Stisknutím Y mù¾ete pokraèovat, N bude cvièení opakovat, F12 - konec. 
+Q: StisknutÃ­m Y mÅ¯Å¾ete pokraÄovat, N bude cviÄenÃ­ opakovat, F12 - konec. 
 N:_D_R_L98
 
 #                                                            ../orig/d.typ:396
@@ -7735,7 +7735,7 @@ I:(8)
 *:_D_R_L99
 #                                                            ../orig/d.typ:397
 D:Will you pack my jugs of liquid veneer in five dozen boxes?
-Q: Stisknutím Y mù¾ete pokraèovat, N bude cvièení opakovat, F12 - konec. 
+Q: StisknutÃ­m Y mÅ¯Å¾ete pokraÄovat, N bude cviÄenÃ­ opakovat, F12 - konec. 
 N:_D_R_L99
 
 #                                                            ../orig/d.typ:398
@@ -7743,7 +7743,7 @@ I:(9)
 *:_D_R_L100
 #                                                            ../orig/d.typ:399
 D:Could the wizard jinx quivering folks by magic yelps?
-Q: Stisknutím Y mù¾ete pokraèovat, N bude cvièení opakovat, F12 - konec. 
+Q: StisknutÃ­m Y mÅ¯Å¾ete pokraÄovat, N bude cviÄenÃ­ opakovat, F12 - konec. 
 N:_D_R_L100
 
 #                                                            ../orig/d.typ:400
@@ -7751,7 +7751,7 @@ I:(10)
 *:_D_R_L101
 #                                                            ../orig/d.typ:401
 D:Brazen gazelles quickly examined the forward jeep.
-Q: Stisknutím Y mù¾ete pokraèovat, N bude cvièení opakovat, F12 - konec. 
+Q: StisknutÃ­m Y mÅ¯Å¾ete pokraÄovat, N bude cviÄenÃ­ opakovat, F12 - konec. 
 N:_D_R_L101
 
 #                                                            ../orig/d.typ:402
@@ -7759,7 +7759,7 @@ I:(11)
 *:_D_R_L102
 #                                                            ../orig/d.typ:403
 D:The brown dog quickly jumped over the lazy fox.
-Q: Stisknutím Y mù¾ete pokraèovat, N bude cvièení opakovat, F12 - konec. 
+Q: StisknutÃ­m Y mÅ¯Å¾ete pokraÄovat, N bude cviÄenÃ­ opakovat, F12 - konec. 
 N:_D_R_L102
 
 #                                                            ../orig/d.typ:404
@@ -7767,7 +7767,7 @@ I:(12)
 *:_D_R_L103
 #                                                            ../orig/d.typ:405
 D:Will the kind judge squelch the five or six brazen nymphs?
-Q: Stisknutím Y mù¾ete pokraèovat, N bude cvièení opakovat, F12 - konec. 
+Q: StisknutÃ­m Y mÅ¯Å¾ete pokraÄovat, N bude cviÄenÃ­ opakovat, F12 - konec. 
 N:_D_R_L103
 
 #                                                            ../orig/d.typ:406
@@ -7775,7 +7775,7 @@ I:(13)
 *:_D_R_L104
 #                                                            ../orig/d.typ:407
 D:Mix zippy Kadota figs with quivering cranberry jelly.
-Q: Stisknutím Y mù¾ete pokraèovat, N bude cvièení opakovat, F12 - konec. 
+Q: StisknutÃ­m Y mÅ¯Å¾ete pokraÄovat, N bude cviÄenÃ­ opakovat, F12 - konec. 
 N:_D_R_L104
 
 #                                                            ../orig/d.typ:408
@@ -7783,7 +7783,7 @@ I:(14)
 *:_D_R_L105
 #                                                            ../orig/d.typ:409
 D:The wives quickly jerked extra big pizzas from the stand.
-Q: Stisknutím Y mù¾ete pokraèovat, N bude cvièení opakovat, F12 - konec. 
+Q: StisknutÃ­m Y mÅ¯Å¾ete pokraÄovat, N bude cviÄenÃ­ opakovat, F12 - konec. 
 N:_D_R_L105
 
 #                                                            ../orig/d.typ:410
@@ -7791,7 +7791,7 @@ I:(15)
 *:_D_R_L106
 #                                                            ../orig/d.typ:411
 D:Lisa quickly mixed the very big jar of new soap.
-Q: Stisknutím Y mù¾ete pokraèovat, N bude cvièení opakovat, F12 - konec. 
+Q: StisknutÃ­m Y mÅ¯Å¾ete pokraÄovat, N bude cviÄenÃ­ opakovat, F12 - konec. 
 N:_D_R_L106
 
 #                                                            ../orig/d.typ:412
@@ -7799,7 +7799,7 @@ I:(16)
 *:_D_R_L107
 #                                                            ../orig/d.typ:413
 D:The major will fix a quiet cozy nook for the vexed, bad Gypsy.
-Q: Stisknutím Y mù¾ete pokraèovat, N bude cvièení opakovat, F12 - konec. 
+Q: StisknutÃ­m Y mÅ¯Å¾ete pokraÄovat, N bude cviÄenÃ­ opakovat, F12 - konec. 
 N:_D_R_L107
 
 #                                                            ../orig/d.typ:414
@@ -7807,7 +7807,7 @@ I:(17)
 *:_D_R_L108
 #                                                            ../orig/d.typ:415
 D:Pairs of lazy knowing oxen came by quietly evading the jam.
-Q: Stisknutím Y mù¾ete pokraèovat, N bude cvièení opakovat, F12 - konec. 
+Q: StisknutÃ­m Y mÅ¯Å¾ete pokraÄovat, N bude cviÄenÃ­ opakovat, F12 - konec. 
 N:_D_R_L108
 
 #                                                            ../orig/d.typ:416
@@ -7819,7 +7819,7 @@ I:(19)
 *:_D_R_L109
 #                                                            ../orig/d.typ:419
 D:Put your big ax, shovel and quartz where Mike's fence joins ours.
-Q: Stisknutím Y mù¾ete pokraèovat, N bude cvièení opakovat, F12 - konec.
+Q: StisknutÃ­m Y mÅ¯Å¾ete pokraÄovat, N bude cviÄenÃ­ opakovat, F12 - konec.
 N:_D_R_L109
 
 #                                                            ../orig/d.typ:420
@@ -7827,7 +7827,7 @@ I:(20)
 *:_D_R_L110
 #                                                            ../orig/d.typ:421
 D:The brawny jaguar held fast till the quaking Zouave victim expired.
-Q: Stisknutím Y mù¾ete pokraèovat, N bude cvièení opakovat, F12 - konec. 
+Q: StisknutÃ­m Y mÅ¯Å¾ete pokraÄovat, N bude cviÄenÃ­ opakovat, F12 - konec. 
 N:_D_R_L110
 
 G:_D_E_D14
@@ -7994,80 +7994,80 @@ G:_M_MENU
 *:M1
 *:_M_S_M1
 #                                                              ../orig/m.typ:3
-I:(1) Rozcvièka
+I:(1) RozcviÄka
 *:_M_R_L0
 #                                                              ../orig/m.typ:4
-D:Tato série je zamìøena zejména na procvièování.
+D:Tato sÃ©rie je zamÄ›Å™ena zejmÃ©na na procviÄovÃ¡nÃ­.
 
 #                                                              ../orig/m.typ:5
 I:(2) Continuous Copy
 *:_M_R_L1
 #                                                              ../orig/m.typ:6
-D:Moje pøíjmy byly: 2,309Kè, 5,687Kè, 3,498Kè, 2,408Kè a 3,697Kè.
+D:Moje pÅ™Ã­jmy byly: 2,309KÄ, 5,687KÄ, 3,498KÄ, 2,408KÄ a 3,697KÄ.
 
 #                                                              ../orig/m.typ:7
 I:(3)
 *:_M_R_L2
 #                                                              ../orig/m.typ:9
-D:Student by se mìl zlep¹it o jedno slovo
- :za minutu ka¾dım rokem vìku: napø. z 13ti na 14,
+D:Student by se mÄ›l zlepÅ¡it o jedno slovo
+ :za minutu kaÅ¾dÃ½m rokem vÄ›ku: napÅ™. z 13ti na 14,
  :ze 14ti na 15, na 16, na 17, na 18...
 
 #                                                             ../orig/m.typ:10
 I:(4)
 *:_M_R_L3
 #                                                             ../orig/m.typ:13
-D:25% studentù v prvním roce nepøekroèí 25 slov za minutu.
- :V druhém roce ji¾ vìt¹ina zvládne 45 slov za minutu.
- :Více jak 50% nedosáhne hranice 50 slov za minutu.
+D:25% studentÅ¯ v prvnÃ­m roce nepÅ™ekroÄÃ­ 25 slov za minutu.
+ :V druhÃ©m roce jiÅ¾ vÄ›tÅ¡ina zvlÃ¡dne 45 slov za minutu.
+ :VÃ­ce jak 50% nedosÃ¡hne hranice 50 slov za minutu.
 
 #                                                             ../orig/m.typ:14
 I:(5)
 *:_M_R_L4
 #                                                             ../orig/m.typ:18
-D:Proè nás v¹echny vzru¹uje sport? Mo¾ná to dìlá ta
- :obrovská dovednost vítìzù. Zeptejte se ale hráèù.
- :Øeknou vám, ¾e, ¾e dovednost je jen èást (50%)
- :z tajemství úspìchu.
+D:ProÄ nÃ¡s vÅ¡echny vzruÅ¡uje sport? MoÅ¾nÃ¡ to dÄ›lÃ¡ ta
+ :obrovskÃ¡ dovednost vÃ­tÄ›zÅ¯. Zeptejte se ale hrÃ¡ÄÅ¯.
+ :Å˜eknou vÃ¡m, Å¾e, Å¾e dovednost je jen ÄÃ¡st (50%)
+ :z tajemstvÃ­ ÃºspÄ›chu.
 
 #                                                             ../orig/m.typ:19
 I:(6)
 *:_M_R_L5
 #                                                             ../orig/m.typ:24
-D:V poèítaèové bran¾i se nám èasto stává, ¾e se
- :setkáme s problémem, kterı jsme je¹tì nikdy neøe¹ili.
- :Vlastnì je pro nás vìt¹ina problémù úplnì nová.
- :Tenhle obor je prostì pøíli¹ rychlı na to, aby
- :zde fungovaly klasické modely jako nauè se ve ¹kole
- :a praktikuj v zamìstnání.
+D:V poÄÃ­taÄovÃ© branÅ¾i se nÃ¡m Äasto stÃ¡vÃ¡, Å¾e se
+ :setkÃ¡me s problÃ©mem, kterÃ½ jsme jeÅ¡tÄ› nikdy neÅ™eÅ¡ili.
+ :VlastnÄ› je pro nÃ¡s vÄ›tÅ¡ina problÃ©mÅ¯ ÃºplnÄ› novÃ¡.
+ :Tenhle obor je prostÄ› pÅ™Ã­liÅ¡ rychlÃ½ na to, aby
+ :zde fungovaly klasickÃ© modely jako nauÄ se ve Å¡kole
+ :a praktikuj v zamÄ›stnÃ¡nÃ­.
 
 #                                                             ../orig/m.typ:25
 I:(7)
 *:_M_R_L6
 #                                                             ../orig/m.typ:29
-D:Mnoho lidí ¹patnì interpretuje termín Free ve spojení
- :Free Software (napø. tento program je Free Software).
- :Naivnì si tak myslí, ¾e to znamená zdarma, a tak jej
- :pokládají za software zdarma. Slovo Free ale ve skuteènosti
- :znamená svobodnı a v tom tkví podstata tohohle hnutí.
- :Program je svobodnım software, máte svobodu dìlat
- :si s ním témìø v¹e (pouze nesmíte zmìnit licenci).
+D:Mnoho lidÃ­ Å¡patnÄ› interpretuje termÃ­n Free ve spojenÃ­
+ :Free Software (napÅ™. tento program je Free Software).
+ :NaivnÄ› si tak myslÃ­, Å¾e to znamenÃ¡ zdarma, a tak jej
+ :poklÃ¡dajÃ­ za software zdarma. Slovo Free ale ve skuteÄnosti
+ :znamenÃ¡ svobodnÃ½ a v tom tkvÃ­ podstata tohohle hnutÃ­.
+ :Program je svobodnÃ½m software, mÃ¡te svobodu dÄ›lat
+ :si s nÃ­m tÃ©mÄ›Å™ vÅ¡e (pouze nesmÃ­te zmÄ›nit licenci).
 
 #                                                             ../orig/m.typ:30
 I:(8)
 *:_M_R_L7
 #                                                             ../orig/m.typ:36
-D:Jednou z velmi zajímavıch oblastí novıch vıpoèetních
- :technologií jsou kvantové poèítaèe. Takové stroje
- :doká¾í provádìt i vıpoèty o kterıch se nám zatím
- :mohlo pouze zdát. Bohu¾el není jisté, zda vùbec
- :lze takové poèítaèe prakticky realizovat. Teoreticky
- :existuje spousta návrhù, ale existuje i spousta návrhù
- :na moderní mechanické, biologické èi optické poèítaèe
- :a jak víme, dosud nic takového v rozumném provozu není.
+D:Jednou z velmi zajÃ­mavÃ½ch oblastÃ­ novÃ½ch vÃ½poÄetnÃ­ch
+ :technologiÃ­ jsou kvantovÃ© poÄÃ­taÄe. TakovÃ© stroje
+ :dokÃ¡Å¾Ã­ provÃ¡dÄ›t i vÃ½poÄty o kterÃ½ch se nÃ¡m zatÃ­m
+ :mohlo pouze zdÃ¡t. BohuÅ¾el nenÃ­ jistÃ©, zda vÅ¯bec
+ :lze takovÃ© poÄÃ­taÄe prakticky realizovat. Teoreticky
+ :existuje spousta nÃ¡vrhÅ¯, ale existuje i spousta nÃ¡vrhÅ¯
+ :na modernÃ­ mechanickÃ©, biologickÃ© Äi optickÃ© poÄÃ­taÄe
+ :a jak vÃ­me, dosud nic takovÃ©ho v rozumnÃ©m provozu nenÃ­.
 
 #                                                             ../orig/m.typ:46
-I:(9A) Odstavec zamìøenı na procvièování m a b
+I:(9A) Odstavec zamÄ›Å™enÃ½ na procviÄovÃ¡nÃ­ m a b
 *:_M_R_L9
 #                                                             ../orig/m.typ:53
 S:    Men are bound to believe that business is bad in winter
@@ -8079,10 +8079,10 @@ S:    Men are bound to believe that business is bad in winter
  :of Commerce members.
 
 #                                                             ../orig/m.typ:54
-I:(10) Rytmické opakování
+I:(10) RytmickÃ© opakovÃ¡nÃ­
 *:_M_R_L10
 #                                                             ../orig/m.typ:55
-D:Sna¾te se opisovat tento text co nejplynuleji.
+D:SnaÅ¾te se opisovat tento text co nejplynuleji.
 
 G:_M_E_M1
 #------------------------------------------------------------------------------
@@ -8091,20 +8091,20 @@ G:_M_E_M1
 *:M2
 *:_M_S_M2
 #                                                             ../orig/m.typ:59
-I:(1) Rozcvièka
+I:(1) RozcviÄka
 *:_M_R_L11
 #                                                             ../orig/m.typ:60
-D:Mnoho poznatkù nabiflovanıch za mlada nám nikdy k nièemu nebude.
+D:Mnoho poznatkÅ¯ nabiflovanÃ½ch za mlada nÃ¡m nikdy k niÄemu nebude.
 
 #                                                             ../orig/m.typ:61
-I:(2) Vyvá¾enı klávesovı dril
+I:(2) VyvÃ¡Å¾enÃ½ klÃ¡vesovÃ½ dril
 *:_M_R_L12
 #                                                             ../orig/m.typ:63
 D:non ana dis dia cle pan ard pur ern eer off age suf ame amb
  :ess ean ist ian cel apo col ary tra neo sur ity sub ele mis
 
 #                                                             ../orig/m.typ:64
-I:(3) Slova o ètyøech písmenech (od a do d)
+I:(3) Slova o ÄtyÅ™ech pÃ­smenech (od a do d)
 *:_M_R_L13
 #                                                             ../orig/m.typ:81
 S:Dear Dan,
@@ -8126,7 +8126,7 @@ S:Dear Dan,
  :Yours sincerely,
 
 #                                                             ../orig/m.typ:82
-I:(4) Slova o ètyøech písmenech (od e po g)
+I:(4) Slova o ÄtyÅ™ech pÃ­smenech (od e po g)
 *:_M_R_L14
 #                                                             ../orig/m.typ:97
 S:Dear Bea,
@@ -8146,7 +8146,7 @@ S:Dear Bea,
  :Yours sincerely,
 
 #                                                             ../orig/m.typ:98
-I:(5) Slova o ètyøech písmenech (od h k l)
+I:(5) Slova o ÄtyÅ™ech pÃ­smenech (od h k l)
 *:_M_R_L15
 #                                                            ../orig/m.typ:119
 S:Dear Hal,
@@ -8178,20 +8178,20 @@ G:_M_E_M2
 *:M3
 *:_M_S_M3
 #                                                            ../orig/m.typ:123
-I:(1) Rozcvièka
+I:(1) RozcviÄka
 *:_M_R_L16
 #                                                            ../orig/m.typ:124
-D:Lidé netu¹í, kolik zla se mù¾e skrıvat ve slovech.
+D:LidÃ© netuÅ¡Ã­, kolik zla se mÅ¯Å¾e skrÃ½vat ve slovech.
 
 #                                                            ../orig/m.typ:125
-I:(2) Vyvá¾ené klávesové cvièení
+I:(2) VyvÃ¡Å¾enÃ© klÃ¡vesovÃ© cviÄenÃ­
 *:_M_R_L17
 #                                                            ../orig/m.typ:127
 D:sus ase sis uni suc epi cor ory tri acy fic ify dom isk ism
- :èas than mıt »ít paøát ¾hnout pìt vést èíhá po¹ta ménì »ava
+ :Äas than mÃ½t Å¥Ã­t paÅ™Ã¡t Å¾hnout pÄ›t vÃ©st ÄÃ­hÃ¡ poÅ¡ta mÃ©nÄ› Å¥ava
 
 #                                                            ../orig/m.typ:128
-I:(3) Ètyøpísmenná slova (od m po p)
+I:(3) ÄŒtyÅ™pÃ­smennÃ¡ slova (od m po p)
 *:_M_R_L18
 #                                                            ../orig/m.typ:145
 S:Dear Pie,
@@ -8213,7 +8213,7 @@ S:Dear Pie,
  :Yours sincerely,
 
 #                                                            ../orig/m.typ:146
-I:(4) Ètyøpísmenná slova (od r k s)
+I:(4) ÄŒtyÅ™pÃ­smennÃ¡ slova (od r k s)
 *:_M_R_L19
 #                                                            ../orig/m.typ:166
 S:Dear Ross,
@@ -8238,7 +8238,7 @@ S:Dear Ross,
  :Yours sincerely,
 
 #                                                            ../orig/m.typ:167
-I:(5) Cílenı odstavec (i a u)
+I:(5) CÃ­lenÃ½ odstavec (i a u)
 *:_M_R_L20
 #                                                            ../orig/m.typ:173
 S:    The public is quite unfair about airing quibbles over
@@ -8249,7 +8249,7 @@ S:    The public is quite unfair about airing quibbles over
  :this outfit uphill and build a suitable crew that won't quit.
 
 #                                                            ../orig/m.typ:174
-I:(6) Cílenı odstavec (d, s, -)
+I:(6) CÃ­lenÃ½ odstavec (d, s, -)
 *:_M_R_L21
 #                                                            ../orig/m.typ:182
 S:    Students should be assisted in studying seated at their
@@ -8268,21 +8268,21 @@ G:_M_E_M3
 *:M4
 *:_M_S_M4
 #                                                            ../orig/m.typ:186
-I:(1) Rozcvièka
+I:(1) RozcviÄka
 *:_M_R_L22
 #                                                            ../orig/m.typ:187
-D:Nezapomínejme, ¾e Murphyho zákony jsou fyzikálnì potvrzeny
- :druhım zákonem termodynamiky.
+D:NezapomÃ­nejme, Å¾e Murphyho zÃ¡kony jsou fyzikÃ¡lnÄ› potvrzeny
+ :druhÃ½m zÃ¡konem termodynamiky.
 
 #                                                            ../orig/m.typ:188
 I:(2) Balanced Keyboard Drill
 *:_M_R_L23
 #                                                            ../orig/m.typ:190
-D:anti tam pùl zkus rak savo nota hic kolem vùz cep buch
- :tì¾ko mì více ¾ivot paøát tìsto èíslo ¾vıkat snì» òákej
+D:anti tam pÅ¯l zkus rak savo nota hic kolem vÅ¯z cep buch
+ :tÄ›Å¾ko mÄ› vÃ­ce Å¾ivot paÅ™Ã¡t tÄ›sto ÄÃ­slo Å¾vÃ½kat snÄ›Å¥ ÅˆÃ¡kej
 
 #                                                            ../orig/m.typ:191
-I:(3) Ètyøpísmenná slova (od t po z)
+I:(3) ÄŒtyÅ™pÃ­smennÃ¡ slova (od t po z)
 *:_M_R_L24
 #                                                            ../orig/m.typ:208
 S:Dear Tris,
@@ -8304,7 +8304,7 @@ S:Dear Tris,
  :Yours sincerely,
 
 #                                                            ../orig/m.typ:209
-I:(4) Pìti písmenná slova (od a k c)
+I:(4) PÄ›ti pÃ­smennÃ¡ slova (od a k c)
 *:_M_R_L25
 #                                                            ../orig/m.typ:227
 S:Dear Cab,
@@ -8327,7 +8327,7 @@ S:Dear Cab,
  :Sincerely yours,
 
 #                                                            ../orig/m.typ:228
-I:(5) Cílenı odstavec (r, t)
+I:(5) CÃ­lenÃ½ odstavec (r, t)
 *:_M_R_L26
 #                                                            ../orig/m.typ:236
 S:    In our motor party on the return trip an attractive
@@ -8346,21 +8346,21 @@ G:_M_E_M4
 *:M5
 *:_M_S_M5
 #                                                            ../orig/m.typ:240
-I:(1) Zahøívací kolo
+I:(1) ZahÅ™Ã­vacÃ­ kolo
 *:_M_R_L27
 #                                                            ../orig/m.typ:241
-D:Werich: Bez lidí dobré vùle by ¾ivot nebyl nic ne¾ nákladné
- :a nebezpeèné dobrodru¾ství.
+D:Werich: Bez lidÃ­ dobrÃ© vÅ¯le by Å¾ivot nebyl nic neÅ¾ nÃ¡kladnÃ©
+ :a nebezpeÄnÃ© dobrodruÅ¾stvÃ­.
 
 #                                                            ../orig/m.typ:242
-I:(2) Vyvá¾ené klávesové cvièení
+I:(2) VyvÃ¡Å¾enÃ© klÃ¡vesovÃ© cviÄenÃ­
 *:_M_R_L28
 #                                                            ../orig/m.typ:244
-D:bìs pøíhoda vı¾iva námìstí táborák Cipísek òi» vı¹ka
- :¾ár ¹epot vìnec b¾ikot máta èé¹ka dìs léno suk squìlı
+D:bÄ›s pÅ™Ã­hoda vÃ½Å¾iva nÃ¡mÄ›stÃ­ tÃ¡borÃ¡k CipÃ­sek ÅˆiÅ¥ vÃ½Å¡ka
+ :Å¾Ã¡r Å¡epot vÄ›nec bÅ¾ikot mÃ¡ta ÄÃ©Å¡ka dÄ›s lÃ©no suk squÄ›lÃ½
 
 #                                                            ../orig/m.typ:245
-I:(3) Pìtipísmenná slova (od d k h)
+I:(3) PÄ›tipÃ­smennÃ¡ slova (od d k h)
 *:_M_R_L29
 #                                                            ../orig/m.typ:262
 S:Dear Fred,
@@ -8382,7 +8382,7 @@ S:Dear Fred,
  :Sincerely yours,
 
 #                                                            ../orig/m.typ:263
-I:(4) Pìtipísmenná slova (od i k p)
+I:(4) PÄ›tipÃ­smennÃ¡ slova (od i k p)
 *:_M_R_L30
 #                                                            ../orig/m.typ:283
 S:Dear Madam,
@@ -8407,7 +8407,7 @@ S:Dear Madam,
  :Yours sincerely,
 
 #                                                            ../orig/m.typ:284
-I:(5) Cílenı odstavec (u, y)
+I:(5) CÃ­lenÃ½ odstavec (u, y)
 *:_M_R_L31
 #                                                            ../orig/m.typ:297
 S:    If truly quoted, you and Guy, mere youths, fly a con-
@@ -8431,20 +8431,20 @@ G:_M_E_M5
 *:M6
 *:_M_S_M6
 #                                                            ../orig/m.typ:301
-I:(1) Rozcvièka
+I:(1) RozcviÄka
 *:_M_R_L32
 #                                                            ../orig/m.typ:302
-D:Tohle tedy není vùbec to samé tvrzení, jako vyprávìl on.
+D:Tohle tedy nenÃ­ vÅ¯bec to samÃ© tvrzenÃ­, jako vyprÃ¡vÄ›l on.
 
 #                                                            ../orig/m.typ:303
-I:(2) Vyvá¾ené cvièení
+I:(2) VyvÃ¡Å¾enÃ© cviÄenÃ­
 *:_M_R_L33
 #                                                            ../orig/m.typ:305
-D:káva pìnkava ¹ít èpìt míle záøe vìnec demo¹ka pøeci
- :èachrovat ¾vıkat mávat nevìsta rétorika ou¾lab úkol
+D:kÃ¡va pÄ›nkava Å¡Ã­t ÄpÄ›t mÃ­le zÃ¡Å™e vÄ›nec demoÅ¡ka pÅ™eci
+ :Äachrovat Å¾vÃ½kat mÃ¡vat nevÄ›sta rÃ©torika ouÅ¾lab Ãºkol
 
 #                                                            ../orig/m.typ:306
-I:(3) Pìtipísmenná slova (q to s)
+I:(3) PÄ›tipÃ­smennÃ¡ slova (q to s)
 *:_M_R_L34
 #                                                            ../orig/m.typ:326
 S:Dear Alice,
@@ -8469,7 +8469,7 @@ S:Dear Alice,
  :Yours sincerely,
 
 #                                                            ../orig/m.typ:327
-I:(4) Pìtipísmenná slova (od t k z)
+I:(4) PÄ›tipÃ­smennÃ¡ slova (od t k z)
 *:_M_R_L35
 #                                                            ../orig/m.typ:348
 S:Dear Mrs. White,
@@ -8495,7 +8495,7 @@ S:Dear Mrs. White,
  :Yours sincerely,
 
 #                                                            ../orig/m.typ:349
-I:(5) Cílenı odstavec (n, m)
+I:(5) CÃ­lenÃ½ odstavec (n, m)
 *:_M_R_L36
 #                                                            ../orig/m.typ:357
 S:    Important dinner company in our small apartment was
@@ -8514,20 +8514,20 @@ G:_M_E_M6
 *:M7
 *:_M_S_M7
 #                                                            ../orig/m.typ:361
-I:(1) Rozcvièka
+I:(1) RozcviÄka
 *:_M_R_L37
 #                                                            ../orig/m.typ:362
-D:Kolik hloupostí napovídají lidé jen proto, ¾e chtìjí
- :øíci nìco chytrého!
+D:Kolik hloupostÃ­ napovÃ­dajÃ­ lidÃ© jen proto, Å¾e chtÄ›jÃ­
+ :Å™Ã­ci nÄ›co chytrÃ©ho!
 
 #                                                            ../orig/m.typ:363
-I:(2) Vyvá¾ené cvièení
+I:(2) VyvÃ¡Å¾enÃ© cviÄenÃ­
 *:_M_R_L38
 #                                                            ../orig/m.typ:364
-D:pøít nesná¹et, hvìzdy zále¾í èmelák mouka Dá¹a
+D:pÅ™Ã­t nesnÃ¡Å¡et, hvÄ›zdy zÃ¡leÅ¾Ã­ ÄmelÃ¡k mouka DÃ¡Å¡a
 
 #                                                            ../orig/m.typ:365
-I:(3) Pøepi¹te toto
+I:(3) PÅ™epiÅ¡te toto
 *:_M_R_L39
 #                                                            ../orig/m.typ:381
 S:Dear Mr. and Mrs. Blank,
@@ -8548,7 +8548,7 @@ S:Dear Mr. and Mrs. Blank,
  :Sincerely yours,
 
 #                                                            ../orig/m.typ:382
-I:(4) ©estipísmenná slova (od d ke k)
+I:(4) Å estipÃ­smennÃ¡ slova (od d ke k)
 *:_M_R_L40
 #                                                            ../orig/m.typ:400
 S:Dear Dick
@@ -8571,7 +8571,7 @@ S:Dear Dick
  :Yours sincerely,
 
 #                                                            ../orig/m.typ:401
-I:(5) Cílenı odstavec (q, z)
+I:(5) CÃ­lenÃ½ odstavec (q, z)
 *:_M_R_L41
 #                                                            ../orig/m.typ:408
 S:    I quit the quiz when I saw the quantity of queer hazy
@@ -8589,19 +8589,19 @@ G:_M_E_M7
 *:M8
 *:_M_S_M8
 #                                                            ../orig/m.typ:412
-I:(1) Pro zahøátí
+I:(1) Pro zahÅ™Ã¡tÃ­
 *:_M_R_L42
 #                                                            ../orig/m.typ:413
-D:Kdo je bohatı? Kdo je spokojen se svım osudem. -- Tolstoj
+D:Kdo je bohatÃ½? Kdo je spokojen se svÃ½m osudem. -- Tolstoj
 
 #                                                            ../orig/m.typ:414
-I:(2) Vyvá¾ené klávesové cvièení
+I:(2) VyvÃ¡Å¾enÃ© klÃ¡vesovÃ© cviÄenÃ­
 *:_M_R_L43
 #                                                            ../orig/m.typ:415
-D:mu¾ èíslo pì¹ák dálka téci puber»ák vìc Òina
+D:muÅ¾ ÄÃ­slo pÄ›Å¡Ã¡k dÃ¡lka tÃ©ci puberÅ¥Ã¡k vÄ›c Å‡ina
 
 #                                                            ../orig/m.typ:416
-I:(3) ©estipísmenná slova (od l k r)
+I:(3) Å estipÃ­smennÃ¡ slova (od l k r)
 *:_M_R_L44
 #                                                            ../orig/m.typ:437
 S:Dear Rollin,
@@ -8627,7 +8627,7 @@ S:Dear Rollin,
  :Yours sincerely,
 
 #                                                            ../orig/m.typ:438
-I:(4) ©estipísmenná slova (od s k z)
+I:(4) Å estipÃ­smennÃ¡ slova (od s k z)
 *:_M_R_L45
 #                                                            ../orig/m.typ:458
 S:Dear Sylvia,
@@ -8652,7 +8652,7 @@ S:Dear Sylvia,
  :Sincerely yours,
 
 #                                                            ../orig/m.typ:470
-I:(5) Cílenı odstavec (a, q)
+I:(5) CÃ­lenÃ½ odstavec (a, q)
 *:_M_R_L45A
 #
 S:    I acquired a bequest from a quizzical Quaker. How
@@ -8672,19 +8672,19 @@ G:_M_E_M8
 *:M9
 *:_M_S_M9
 #                                                            ../orig/m.typ:471
-I:(1) Rozcvièka
+I:(1) RozcviÄka
 *:_M_R_L46
 #                                                            ../orig/m.typ:472
-D:®ádnı uèenı z nebe nespadl, ale pitomce jako by shazovali.
+D:Å½Ã¡dnÃ½ uÄenÃ½ z nebe nespadl, ale pitomce jako by shazovali.
 
 #                                                            ../orig/m.typ:473
-I:(2) Vyvá¾ené klávesové cvièení
+I:(2) VyvÃ¡Å¾enÃ© klÃ¡vesovÃ© cviÄenÃ­
 *:_M_R_L47
 #                                                            ../orig/m.typ:474
-D:stead ation retro geous contr ourse ultra super ntı under
+D:stead ation retro geous contr ourse ultra super ntÃ½ under
 
 #                                                            ../orig/m.typ:475
-I:(3) Sedmipísmenná slova (a-f)
+I:(3) SedmipÃ­smennÃ¡ slova (a-f)
 *:_M_R_L48
 #                                                            ../orig/m.typ:498
 S:Dear Annabel,
@@ -8710,7 +8710,7 @@ S:Dear Annabel,
  :Yours sincerely,
 
 #                                                            ../orig/m.typ:499
-I:(4) Sedmipísmenná slova (g-o)
+I:(4) SedmipÃ­smennÃ¡ slova (g-o)
 *:_M_R_L49
 #                                                            ../orig/m.typ:518
 S:Dear Mrs. White,
@@ -8734,7 +8734,7 @@ S:Dear Mrs. White,
  :Yours sincerely,
 
 #                                                            ../orig/m.typ:519
-I:(4) Sedmipísmenná slova (p a¾ z)
+I:(4) SedmipÃ­smennÃ¡ slova (p aÅ¾ z)
 *:_M_R_L50
 #                                                            ../orig/m.typ:539
 S:Dear Patrick,
@@ -8767,20 +8767,20 @@ G:_M_E_M9
 #                                                            ../orig/m.typ:542
 B:				Lekce M10
 #                                                            ../orig/m.typ:543
-I:(1) Rozcvièka
+I:(1) RozcviÄka
 *:_M_R_L51
 #                                                            ../orig/m.typ:544
-D:Bla¾enı není ten, kdo má, co si pøeje, ale ten, kdo si nepøeje,
- :co nemá
+D:BlaÅ¾enÃ½ nenÃ­ ten, kdo mÃ¡, co si pÅ™eje, ale ten, kdo si nepÅ™eje,
+ :co nemÃ¡
 
 #                                                            ../orig/m.typ:545
-I:(2) Vyvá¾ené klávesové cvièení
+I:(2) VyvÃ¡Å¾enÃ© klÃ¡vesovÃ© cviÄenÃ­
 *:_M_R_L52
 #                                                            ../orig/m.typ:546
 D:inter itude circu gious right cious after extra micro sible
 
 #                                                            ../orig/m.typ:547
-I:(3) Osmipísmenná slova(a -- m)
+I:(3) OsmipÃ­smennÃ¡ slova(a -- m)
 *:_M_R_L53
 #                                                            ../orig/m.typ:566
 S:Dear Thomas,
@@ -8804,7 +8804,7 @@ S:Dear Thomas,
  :Sincerely yours,
 
 #
-I:(4) Osmipísmenná slova (n a¾ z)
+I:(4) OsmipÃ­smennÃ¡ slova (n aÅ¾ z)
 *:_M_R_L54
 #                                                            ../orig/m.typ:587
 S:Dear Nathan,
@@ -8829,7 +8829,7 @@ S:Dear Nathan,
  :Yours sincerely,
 
 #                                                            ../orig/m.typ:588
-I:(5) Slova o devíti písmenech (od a k i)
+I:(5) Slova o devÃ­ti pÃ­smenech (od a k i)
 *:_M_R_L55
 #                                                            ../orig/m.typ:605
 S:Dear Son,
@@ -8859,19 +8859,19 @@ G:_M_E_M10
 #                                                            ../orig/m.typ:608
 B:				Lekce M11
 #                                                            ../orig/m.typ:609
-I:(1) Pro procvièení
+I:(1) Pro procviÄenÃ­
 *:_M_R_L56
 #                                                            ../orig/m.typ:610
-D:Velmi silnı je ten, kdo dovede mlèet, i kdy¾ je v právu.
+D:Velmi silnÃ½ je ten, kdo dovede mlÄet, i kdyÅ¾ je v prÃ¡vu.
 
 #                                                            ../orig/m.typ:611
-I:(2) Vyvá¾ené klávesové cvièení
+I:(2) VyvÃ¡Å¾enÃ© klÃ¡vesovÃ© cviÄenÃ­
 *:_M_R_L57
 #                                                            ../orig/m.typ:612
 D:thing pleas ought quest ember count ditio state recei ction
 
 #                                                            ../orig/m.typ:613
-I:(3) Devítipísmenná slova (j a¾ z)
+I:(3) DevÃ­tipÃ­smennÃ¡ slova (j aÅ¾ z)
 *:_M_R_L58
 #                                                            ../orig/m.typ:633
 S:Dear Gertrude,
@@ -8896,7 +8896,7 @@ S:Dear Gertrude,
  :Yours sincerely,
 
 #                                                            ../orig/m.typ:634
-I:(4) Desetipísmenná slova (a a¾ z)
+I:(4) DesetipÃ­smennÃ¡ slova (a aÅ¾ z)
 *:_M_R_L59
 #                                                            ../orig/m.typ:655
 S:Dear Alex,
@@ -8922,7 +8922,7 @@ S:Dear Alex,
  :Sincerely yours,
 
 #                                                            ../orig/m.typ:656
-I:(5) Jedenácti a¾ ètrnáctipísmenná slova (a a¾ z)
+I:(5) JedenÃ¡cti aÅ¾ ÄtrnÃ¡ctipÃ­smennÃ¡ slova (a aÅ¾ z)
 *:_M_R_L60
 #                                                            ../orig/m.typ:673
 S:Dear Sir,
@@ -8944,7 +8944,7 @@ S:Dear Sir,
  :Yours respectfully,
 
 #                                                            ../orig/m.typ:674
-I:(6) Cílenı odstavec (l r z)
+I:(6) CÃ­lenÃ½ odstavec (l r z)
 *:_M_R_L61
 #                                                            ../orig/m.typ:687
 S:    The JOURNAL learned that the relatives on their arrival in
@@ -8966,43 +8966,43 @@ G:_M_E_M11
 # Lekce series M jump tables
 #------------------------------------------------------------------------------
 *:_M_E_M1
-Q:Chcete pokraèovat do lekce M2 [Y(ano)/N(ne)] ? 
+Q:Chcete pokraÄovat do lekce M2 [Y(ano)/N(ne)] ? 
 N:_M_MENU
 G:_M_M_M2
 *:_M_E_M2
-Q:Chcete pokraèovat do lekce M3 [Y(ano)/N(ne)] ? 
+Q:Chcete pokraÄovat do lekce M3 [Y(ano)/N(ne)] ? 
 N:_M_MENU
 G:_M_M_M3
 *:_M_E_M3
-Q:Chcete pokraèovat do lekce M4 [Y(ano)/N(ne)] ? 
+Q:Chcete pokraÄovat do lekce M4 [Y(ano)/N(ne)] ? 
 N:_M_MENU
 G:_M_M_M4
 *:_M_E_M4
-Q:Chcete pokraèovat do lekce M5 [Y(ano)/N(ne)] ? 
+Q:Chcete pokraÄovat do lekce M5 [Y(ano)/N(ne)] ? 
 N:_M_MENU
 G:_M_M_M5
 *:_M_E_M5
-Q:Chcete pokraèovat do lekce M6 [Y(ano)/N(ne)] ? 
+Q:Chcete pokraÄovat do lekce M6 [Y(ano)/N(ne)] ? 
 N:_M_MENU
 G:_M_M_M6
 *:_M_E_M6
-Q:Chcete pokraèovat do lekce M7 [Y(ano)/N(ne)] ? 
+Q:Chcete pokraÄovat do lekce M7 [Y(ano)/N(ne)] ? 
 N:_M_MENU
 G:_M_M_M7
 *:_M_E_M7
-Q:Chcete pokraèovat do lekce M8 [Y(ano)/N(ne)] ? 
+Q:Chcete pokraÄovat do lekce M8 [Y(ano)/N(ne)] ? 
 N:_M_MENU
 G:_M_M_M8
 *:_M_E_M8
-Q:Chcete pokraèovat do lekce M9 [Y(ano)/N(ne)] ? 
+Q:Chcete pokraÄovat do lekce M9 [Y(ano)/N(ne)] ? 
 N:_M_MENU
 G:_M_M_M9
 *:_M_E_M9
-Q:Chcete pokraèovat do lekce M10 [Y(ano)/N(ne)] ? 
+Q:Chcete pokraÄovat do lekce M10 [Y(ano)/N(ne)] ? 
 N:_M_MENU
 G:_M_M_M10
 *:_M_E_M10
-Q:Chcete pokraèovat do lekce M11 [Y(ano)/N(ne)] ? 
+Q:Chcete pokraÄovat do lekce M11 [Y(ano)/N(ne)] ? 
 N:_M_MENU
 G:_M_M_M11
 *:_M_E_M11
@@ -9045,18 +9045,18 @@ G:_M_S_M11
 # Lekce series M menu
 #------------------------------------------------------------------------------
 *:_M_MENU
-M: UP=__SERIESMENU "Série M obsahuje tìchto 11 lekcí"
- :_M_M_M1  "Lekce M1     Cvièení"
- :_M_M_M2  "Lekce M2     Cvièení"
- :_M_M_M3  "Lekce M3     Cvièení"
- :_M_M_M4  "Lekce M4     Cvièení"
- :_M_M_M5  "Lekce M5     Cvièení"
- :_M_M_M6  "Lekce M6     Cvièení"
- :_M_M_M7  "Lekce M7     Cvièení"
- :_M_M_M8  "Lekce M8     Cvièení"
- :_M_M_M9  "Lekce M9     Cvièení"
- :_M_M_M10 "Lekce M10    Cvièení"
- :_M_M_M11 "Lekce M11    Cvièení"
+M: UP=__SERIESMENU "SÃ©rie M obsahuje tÄ›chto 11 lekcÃ­"
+ :_M_M_M1  "Lekce M1     CviÄenÃ­"
+ :_M_M_M2  "Lekce M2     CviÄenÃ­"
+ :_M_M_M3  "Lekce M3     CviÄenÃ­"
+ :_M_M_M4  "Lekce M4     CviÄenÃ­"
+ :_M_M_M5  "Lekce M5     CviÄenÃ­"
+ :_M_M_M6  "Lekce M6     CviÄenÃ­"
+ :_M_M_M7  "Lekce M7     CviÄenÃ­"
+ :_M_M_M8  "Lekce M8     CviÄenÃ­"
+ :_M_M_M9  "Lekce M9     CviÄenÃ­"
+ :_M_M_M10 "Lekce M10    CviÄenÃ­"
+ :_M_M_M11 "Lekce M11    CviÄenÃ­"
 *:_M_EXIT
 #------------------------------------------------------------------------------
 G:__SERIESMENU
@@ -9101,100 +9101,100 @@ G:_S_MENU
 *:_S_S_S1
 *:_S_R_L0
 #                                                             ../orig/s.typ:14
-T:			Rychlostní cvièení
+T:			RychlostnÃ­ cviÄenÃ­
  :
- :Série lekcí S je navr¾ena k tomu, aby vám pomohla zlep¹it va¹i
- :rychlost a pøesnost psaní. Pøedpokládáme, ¾e jste se ji¾ nauèili
- :správnì psát na nìjakém pøedchozím kurzu nebo ze série T.
+ :SÃ©rie lekcÃ­ S je navrÅ¾ena k tomu, aby vÃ¡m pomohla zlepÅ¡it vaÅ¡i
+ :rychlost a pÅ™esnost psanÃ­. PÅ™edpoklÃ¡dÃ¡me, Å¾e jste se jiÅ¾ nauÄili
+ :sprÃ¡vnÄ› psÃ¡t na nÄ›jakÃ©m pÅ™edchozÃ­m kurzu nebo ze sÃ©rie T.
  :
- :Mù¾ete pou¾ívat tato cvièení i kdy¾ neumíte správnì psát
- :v¹emi deseti, ale doporuèujeme, abyste se nauèili, ne¾
- :zaènete, alespoò vìt¹inu písmen abecedy. Pokud nevíte,
- :jak napsat nìjakı znak, budete se muset podívat. To je ale
- :velmi ¹patnı zvyk a tì¾ko se ho zbavuje. (Nemusíte se strachovat,
- :pokud sklápíte zrak pouze kvùli málo pou¾ívanım klávesám, 
+ :MÅ¯Å¾ete pouÅ¾Ã­vat tato cviÄenÃ­ i kdyÅ¾ neumÃ­te sprÃ¡vnÄ› psÃ¡t
+ :vÅ¡emi deseti, ale doporuÄujeme, abyste se nauÄili, neÅ¾
+ :zaÄnete, alespoÅˆ vÄ›tÅ¡inu pÃ­smen abecedy. Pokud nevÃ­te,
+ :jak napsat nÄ›jakÃ½ znak, budete se muset podÃ­vat. To je ale
+ :velmi Å¡patnÃ½ zvyk a tÄ›Å¾ko se ho zbavuje. (NemusÃ­te se strachovat,
+ :pokud sklÃ¡pÃ­te zrak pouze kvÅ¯li mÃ¡lo pouÅ¾Ã­vanÃ½m klÃ¡vesÃ¡m, 
  :jako je znak dolaru.)
 
 *:_S_R_L1
 #                                                             ../orig/s.typ:30
 T:			  Pravidla
  :
- :Pøi opisování textu vás budu mìøit. Od okam¾iku, kdy zadáte první
- :písmeno øádky a¾ do okam¾iku, kdy stisknete ukonèující ENTER,
- :pobì¾í moje stopky. A¾ skonèíte, spoèítám va¹i rychlost a pøevedu
- :ji na slova za sekundu (words per minute -- WPM). Seètu také
- :v¹echny chyby a zobrazím vám jejich poèet.
+ :PÅ™i opisovÃ¡nÃ­ textu vÃ¡s budu mÄ›Å™it. Od okamÅ¾iku, kdy zadÃ¡te prvnÃ­
+ :pÃ­smeno Å™Ã¡dky aÅ¾ do okamÅ¾iku, kdy stisknete ukonÄujÃ­cÃ­ ENTER,
+ :pobÄ›Å¾Ã­ moje stopky. AÅ¾ skonÄÃ­te, spoÄÃ­tÃ¡m vaÅ¡i rychlost a pÅ™evedu
+ :ji na slova za sekundu (words per minute -- WPM). SeÄtu takÃ©
+ :vÅ¡echny chyby a zobrazÃ­m vÃ¡m jejich poÄet.
  :
- :Kdykoliv udìláte chybu, zapípám a rozsvítím písmeno, které jste mìli
- :zadat, v obrácenıch barvách (èerné písmeno na bílém pozadí).
- :Mù¾ete chybu ignorovat a pokraèovat, nebo se mù¾ete také vrátit 
- :a s pou¾itím kláves DELETE nebo BACKSPACE ji opravit, ale já
- :to budu stále poèítat za chybu.
+ :Kdykoliv udÄ›lÃ¡te chybu, zapÃ­pÃ¡m a rozsvÃ­tÃ­m pÃ­smeno, kterÃ© jste mÄ›li
+ :zadat, v obrÃ¡cenÃ½ch barvÃ¡ch (ÄernÃ© pÃ­smeno na bÃ­lÃ©m pozadÃ­).
+ :MÅ¯Å¾ete chybu ignorovat a pokraÄovat, nebo se mÅ¯Å¾ete takÃ© vrÃ¡tit 
+ :a s pouÅ¾itÃ­m klÃ¡ves DELETE nebo BACKSPACE ji opravit, ale jÃ¡
+ :to budu stÃ¡le poÄÃ­tat za chybu.
  :
- :Pokud udìláte pøíli¹ mnoho chyb, zkuste to pøí¹tì pomaleji.
- :Kdy¾ neudìláte ¾ádnou chybu, nebo pouze jednu èi dvì, zkuste
- :pøí¹tí odstavec rychleji.
+ :Pokud udÄ›lÃ¡te pÅ™Ã­liÅ¡ mnoho chyb, zkuste to pÅ™Ã­Å¡tÄ› pomaleji.
+ :KdyÅ¾ neudÄ›lÃ¡te Å¾Ã¡dnou chybu, nebo pouze jednu Äi dvÄ›, zkuste
+ :pÅ™Ã­Å¡tÃ­ odstavec rychleji.
 
 #                                                             ../orig/s.typ:31
-I:Nejprve rychlé rozcvièení. Tato anglická vìta obsahuje celou abecedu.
+I:Nejprve rychlÃ© rozcviÄenÃ­. Tato anglickÃ¡ vÄ›ta obsahuje celou abecedu.
 *:_S_R_L2
 #                                                             ../orig/s.typ:32
 S:The quick brown fox jumped over the lazy dogs.
 
 #                                                             ../orig/s.typ:33
-I:Je¹tì jednou:
+I:JeÅ¡tÄ› jednou:
 *:_S_R_L3
 #                                                             ../orig/s.typ:34
 S:The quick brown fox jumped over the lazy dogs.
 
 #                                                             ../orig/s.typ:35
-I:Kdy¾ je kurzor na prázdné øádce, stisknìte ENTER a pøeskoète ji.
+I:KdyÅ¾ je kurzor na prÃ¡zdnÃ© Å™Ã¡dce, stisknÄ›te ENTER a pÅ™eskoÄte ji.
 *:_S_R_L4
 #                                                             ../orig/s.typ:48
-S:Dobrı den,
+S:DobrÃ½ den,
  :
- :právì jsem si koupil poèítaèovı systém Heathkit H89
- :a rád bych si pro nìj objednal dva balíky disket.
- :Systém pou¾ívá 5 1/4 palcové jednostranné diskety.
+ :prÃ¡vÄ› jsem si koupil poÄÃ­taÄovÃ½ systÃ©m Heathkit H89
+ :a rÃ¡d bych si pro nÄ›j objednal dva balÃ­ky disket.
+ :SystÃ©m pouÅ¾Ã­vÃ¡ 5 1/4 palcovÃ© jednostrannÃ© diskety.
  :
- :Pøikládám ¹ek na 45 dolarù. Prosím vyøiïte objednávku
- :co nejrychleji, proto¾e dokud diskety nedorazí, nemohu
- :systém pou¾ívat.
+ :PÅ™iklÃ¡dÃ¡m Å¡ek na 45 dolarÅ¯. ProsÃ­m vyÅ™iÄte objednÃ¡vku
+ :co nejrychleji, protoÅ¾e dokud diskety nedorazÃ­, nemohu
+ :systÃ©m pouÅ¾Ã­vat.
  :
- :Pøedem dìkuje,
+ :PÅ™edem dÄ›kuje,
  :
- :Mgr. ®irafa
+ :Mgr. Å½irafa
 
 *:_S_R_L5
 #                                                             ../orig/s.typ:61
-S:Dobrı den,
+S:DobrÃ½ den,
  :
- :dìkuji za rychlé zaslání disket. Dodané diskety jsou
- :ale pro jinı typ mechanik. Jak jsem uvedl v pøedchozím
- :dopise, mùj systém podporuje pouze deseti-sektorové
+ :dÄ›kuji za rychlÃ© zaslÃ¡nÃ­ disket. DodanÃ© diskety jsou
+ :ale pro jinÃ½ typ mechanik. Jak jsem uvedl v pÅ™edchozÃ­m
+ :dopise, mÅ¯j systÃ©m podporuje pouze deseti-sektorovÃ©
  :diskety.
  :
- :Vrátím vám tyto dva balíèky hned jak obdr¾ím ty správné.
+ :VrÃ¡tÃ­m vÃ¡m tyto dva balÃ­Äky hned jak obdrÅ¾Ã­m ty sprÃ¡vnÃ©.
  :
- :Pøedem dìkuje,
+ :PÅ™edem dÄ›kuje,
  :
- :Mgr. ®irafa
+ :Mgr. Å½irafa
 
 *:_S_R_L6
 #                                                             ../orig/s.typ:76
-S:Vá¾enı Mgr. ®irafo,
+S:VÃ¡Å¾enÃ½ Mgr. Å½irafo,
  :
- :dìkujeme za informace o zaslání nevyhovujících disket.
- :Hluboce se vám za to omlouváme a vynasna¾íme se to co
+ :dÄ›kujeme za informace o zaslÃ¡nÃ­ nevyhovujÃ­cÃ­ch disket.
+ :Hluboce se vÃ¡m za to omlouvÃ¡me a vynasnaÅ¾Ã­me se to co
  :nejrychleji napravit.
  :
- :Prosíme Vás, abyste nám je¹tì jednou zaslal pøesné
- :po¾adavky na typ disket, které jsou dané va¹í mechanikou.
- :V pøípadì potøeby vám mù¾eme nabídnout z na¹eho sortimentu
- :i jiné mechaniky.
+ :ProsÃ­me VÃ¡s, abyste nÃ¡m jeÅ¡tÄ› jednou zaslal pÅ™esnÃ©
+ :poÅ¾adavky na typ disket, kterÃ© jsou danÃ© vaÅ¡Ã­ mechanikou.
+ :V pÅ™Ã­padÄ› potÅ™eby vÃ¡m mÅ¯Å¾eme nabÃ­dnout z naÅ¡eho sortimentu
+ :i jinÃ© mechaniky.
  :
- :Doufáme, ¾e se situace k oboustranné spokojenosti co
- :nejrychleji vyøe¹í. Je¹tì jednou se vám hluboce omlouváme.
+ :DoufÃ¡me, Å¾e se situace k oboustrannÃ© spokojenosti co
+ :nejrychleji vyÅ™eÅ¡Ã­. JeÅ¡tÄ› jednou se vÃ¡m hluboce omlouvÃ¡me.
 
 G:_S_E_S1
 #------------------------------------------------------------------------------
@@ -9205,78 +9205,78 @@ G:_S_E_S1
 *:_S_R_L7
 #                                                             ../orig/s.typ:83
 T:
- :V této lekci si projdeme nìjaké citáty od slavnıch (a ménì
- :slavnıch) lidí.
+ :V tÃ©to lekci si projdeme nÄ›jakÃ© citÃ¡ty od slavnÃ½ch (a mÃ©nÄ›
+ :slavnÃ½ch) lidÃ­.
 
 #                                                             ../orig/s.typ:84
 I:Marcus Aurelius
 *:_S_R_L8
 #                                                             ../orig/s.typ:85
-S:Èlovìku se mù¾e ¾ít dobøe dokonce i v paláci.
+S:ÄŒlovÄ›ku se mÅ¯Å¾e Å¾Ã­t dobÅ™e dokonce i v palÃ¡ci.
 
 #                                                             ../orig/s.typ:93
 I:George Washington
 *:_S_R_L12
 #                                                             ../orig/s.typ:94
-S:Pravé pøátelství je kvìtina pomalého rùstu.
+S:PravÃ© pÅ™Ã¡telstvÃ­ je kvÄ›tina pomalÃ©ho rÅ¯stu.
 
 #                                                             ../orig/s.typ:95
 I:Aristoteles
 *:_S_R_L13
 #                                                             ../orig/s.typ:96
-S:I v mozku té nejmoudøej¹í ¾eny je po¹etilı kout.
+S:I v mozku tÃ© nejmoudÅ™ejÅ¡Ã­ Å¾eny je poÅ¡etilÃ½ kout.
 
 #                                                            ../orig/s.typ:119
 I:James Holt McGravran.
 *:_S_R_L18
 #                                                            ../orig/s.typ:121
-S:Existuje je¹tì rychlej¹í zpùsob jak pøesouvat peníze,
- :ne¾ je elektronické bankovnictví. Nazıvá se sòatek.
+S:Existuje jeÅ¡tÄ› rychlejÅ¡Ã­ zpÅ¯sob jak pÅ™esouvat penÃ­ze,
+ :neÅ¾ je elektronickÃ© bankovnictvÃ­. NazÃ½vÃ¡ se sÅˆatek.
 
 #                                                            ../orig/s.typ:124
 I:Robert Frost
 *:_S_R_L20
 #                                                            ../orig/s.typ:125
-S:Báseò zaèíná v radosti a konèí v moudrosti.
+S:BÃ¡seÅˆ zaÄÃ­nÃ¡ v radosti a konÄÃ­ v moudrosti.
 
 #                                                            ../orig/s.typ:126
 I:Louis Pasteur
 *:_S_R_L21
 #                                                            ../orig/s.typ:128
-S:Kdy¾ potkám dítì, vyvolává to ve mnì dva pocity: mìkkost
- :pro to, èím je, a respekt pro to, èím se mù¾e stát.
+S:KdyÅ¾ potkÃ¡m dÃ­tÄ›, vyvolÃ¡vÃ¡ to ve mnÄ› dva pocity: mÄ›kkost
+ :pro to, ÄÃ­m je, a respekt pro to, ÄÃ­m se mÅ¯Å¾e stÃ¡t.
 
 I:Murphy
 *:_S_R_L22
-S:V¾dy si pùjèujte peníze od pesimisty. Ten nedoufá, ¾e by
- :je nìkdy dostal zpìt.
+S:VÅ¾dy si pÅ¯jÄujte penÃ­ze od pesimisty. Ten nedoufÃ¡, Å¾e by
+ :je nÄ›kdy dostal zpÄ›t.
 
 I:Katharin Hepburn
 *:_S_R_L23
-S:Bıt milován je velmi demoralizující.
+S:BÃ½t milovÃ¡n je velmi demoralizujÃ­cÃ­.
 
 I:George Bernard Shaw
 *:_S_R_L24
-S:Dìtství je tak ú¾asná vìc. Je zloèinem plıtvat s ní na dìtech.
+S:DÄ›tstvÃ­ je tak ÃºÅ¾asnÃ¡ vÄ›c. Je zloÄinem plÃ½tvat s nÃ­ na dÄ›tech.
 
 I:M.L.Mencken
 *:_S_R_L25
-S:Láska je triumf pøedstavivosti nad inteligencí.
+S:LÃ¡ska je triumf pÅ™edstavivosti nad inteligencÃ­.
 
 I:Murphy
 *:_S_R_L26
-S:Poèítaèe jsou nespolehlivé, lidé také. Av¹ak poèítaèe jsou v tom
- :mnohem dùkladnìj¹í.
+S:PoÄÃ­taÄe jsou nespolehlivÃ©, lidÃ© takÃ©. AvÅ¡ak poÄÃ­taÄe jsou v tom
+ :mnohem dÅ¯kladnÄ›jÅ¡Ã­.
 
 I:Murphy 
 *:_S_R_L27
-S:Jeslti¾e zùstává¹ klidnı, zatímco ostatní ztrácejí hlavu,
- :je to neklamná známka toho, ¾e jsi problém nepochopil.
+S:JesltiÅ¾e zÅ¯stÃ¡vÃ¡Å¡ klidnÃ½, zatÃ­mco ostatnÃ­ ztrÃ¡cejÃ­ hlavu,
+ :je to neklamnÃ¡ znÃ¡mka toho, Å¾e jsi problÃ©m nepochopil.
 
 I:Nietzsche
 *:_S_R_L28
-S:Man¾elství je právì tak cenné jako ti, které spojuje.
- :Obvykle tedy nestojí za nic.
+S:ManÅ¾elstvÃ­ je prÃ¡vÄ› tak cennÃ© jako ti, kterÃ© spojuje.
+ :Obvykle tedy nestojÃ­ za nic.
 
 
 G:_S_E_S2
@@ -9288,76 +9288,76 @@ G:_S_E_S2
 *:_S_R_L29
 #                                                            ../orig/s.typ:134
 T:
- :V této lekci budeme opisovat ukázky z nìkolika dìl.
- :Sna¾te se psát co nejrychleji, ale bezchybnì.
- :Pokud zjistíte, ¾e dìláte moc chyb, zpomalte.
+ :V tÃ©to lekci budeme opisovat ukÃ¡zky z nÄ›kolika dÄ›l.
+ :SnaÅ¾te se psÃ¡t co nejrychleji, ale bezchybnÄ›.
+ :Pokud zjistÃ­te, Å¾e dÄ›lÃ¡te moc chyb, zpomalte.
 
-I:Douglas Adams: Stopaøùv prùvodce po galaxii
+I:Douglas Adams: StopaÅ™Å¯v prÅ¯vodce po galaxii
 *:_S_R_L30
-S:Dálnice jsou zaøízení, která umo¾òují jistım lidem øítit
- :se z bodu A do B znaènou rychlostí, zatímco jiní lidé se
- :znaènou rychlostí øítí z bodu B do dobu A. Lidé, co bydlí
- :v bodì C, kterı le¾í pøesnì uprostøed, se obèas musí divit,
- :co je na bodì A tak ú¾asného, ¾e se taková spousta lidí
- :z bodu B jen tøese na to, aby se tam dostali, a co je tak
- :zajímavého na bodì B, ¾e taková spousta z bodu A stojí o to,
- :se tam dostat. A èasto si pøejí, aby se lidi u¾ jednou ksakru
- :rozhodli, kde vlastnì chtìjí bıt.
+S:DÃ¡lnice jsou zaÅ™Ã­zenÃ­, kterÃ¡ umoÅ¾ÅˆujÃ­ jistÃ½m lidem Å™Ã­tit
+ :se z bodu A do B znaÄnou rychlostÃ­, zatÃ­mco jinÃ­ lidÃ© se
+ :znaÄnou rychlostÃ­ Å™Ã­tÃ­ z bodu B do dobu A. LidÃ©, co bydlÃ­
+ :v bodÄ› C, kterÃ½ leÅ¾Ã­ pÅ™esnÄ› uprostÅ™ed, se obÄas musÃ­ divit,
+ :co je na bodÄ› A tak ÃºÅ¾asnÃ©ho, Å¾e se takovÃ¡ spousta lidÃ­
+ :z bodu B jen tÅ™ese na to, aby se tam dostali, a co je tak
+ :zajÃ­mavÃ©ho na bodÄ› B, Å¾e takovÃ¡ spousta z bodu A stojÃ­ o to,
+ :se tam dostat. A Äasto si pÅ™ejÃ­, aby se lidi uÅ¾ jednou ksakru
+ :rozhodli, kde vlastnÄ› chtÄ›jÃ­ bÃ½t.
 
-I:J. K. Jerome: Jalové my¹lenky lenivého èlovìka
+I:J. K. Jerome: JalovÃ© myÅ¡lenky lenivÃ©ho ÄlovÄ›ka
 *:_S_R_L31
-S:Leno¹ení se mi líbí, kdy¾ bych nemìl zaháleti, a ne, kdy¾ je
- :to jediná vìc, kterou mám na práci. Mám u¾ tak hloupou povahu.
- :Nejradìji se postavím zády ke kamnùm a poèítám v duchu, kolik
- :jsem komu dlu¾en, kdy¾ je mùj stùl plnı dopisù, které mají bıt
- :zodpovìzeny nejbli¾¹í po¹tou. Loudám-li se zvlá¹» s obìdem, je
- :to tehdy, kdy¾ mne na veèer èeká velká práce. A jestli¾e z nìjakıch
- :nutnıch dùvodù mám vstávati zvlá¹tì brzy, tu více ne¾ kdy jindy si
- :pochutnám na mimoøádné pùlhodince v posteli.
+S:LenoÅ¡enÃ­ se mi lÃ­bÃ­, kdyÅ¾ bych nemÄ›l zahÃ¡leti, a ne, kdyÅ¾ je
+ :to jedinÃ¡ vÄ›c, kterou mÃ¡m na prÃ¡ci. MÃ¡m uÅ¾ tak hloupou povahu.
+ :NejradÄ›ji se postavÃ­m zÃ¡dy ke kamnÅ¯m a poÄÃ­tÃ¡m v duchu, kolik
+ :jsem komu dluÅ¾en, kdyÅ¾ je mÅ¯j stÅ¯l plnÃ½ dopisÅ¯, kterÃ© majÃ­ bÃ½t
+ :zodpovÄ›zeny nejbliÅ¾Å¡Ã­ poÅ¡tou. LoudÃ¡m-li se zvlÃ¡Å¡Å¥ s obÄ›dem, je
+ :to tehdy, kdyÅ¾ mne na veÄer ÄekÃ¡ velkÃ¡ prÃ¡ce. A jestliÅ¾e z nÄ›jakÃ½ch
+ :nutnÃ½ch dÅ¯vodÅ¯ mÃ¡m vstÃ¡vati zvlÃ¡Å¡tÄ› brzy, tu vÃ­ce neÅ¾ kdy jindy si
+ :pochutnÃ¡m na mimoÅ™Ã¡dnÃ© pÅ¯lhodince v posteli.
 
-I:David Lodge: Hostující profesoøi
+I:David Lodge: HostujÃ­cÃ­ profesoÅ™i
 *:_S_R_L32
-S:Absolvovat vysokou ¹kolu v Americe není pøíli¹ tì¾ké.
- :Student má znaènou volnost, zkou¹ky skládá v libovolném
- :termínu, podvádìt je snadné a kvùli vıslednım známkám
- :se nepro¾ívají zvlá¹tní stresy nebo úzkostné stavy.
- :Student (èi studentka) se tudí¾ mù¾e plnì vìnovat normálním
- :zájmùm dospívajícího èlovìka --- sportu, alkoholu, zábavì
- :a opaènému pohlaví. Skuteènı tlak zaèíná a¾ v postgraduálním
- :stadiu, kdy se student tøíbí a kalí v nelítostnıch cvièeních
- :a pøísnıch provìrkách tak dlouho, dokud si nezaslou¾í bıt
- :pasován na PhDr. To u¾ do vìci investoval tolik èasu a penìz,
- :¾e pro nìho nepøichází v úvahu ¾ádná jiná kariéra ne¾ akademická,
- :a to vıhradnì úspì¹ná, nebo» jiná je nepøijatelná. Zkrátka a dobøe,
- :je vy¹kolen k profesi, která je prosáklá duchem volného podnikání
- :neménì ne¾ Wall Street a ve které ka¾dı vyuèující vìdec uzavírá
- :se svım zamìstnavatelem osobní smlouvu a má právo prodat své slu¾by
- :tomu, kdo nabídne nejvíc.
+S:Absolvovat vysokou Å¡kolu v Americe nenÃ­ pÅ™Ã­liÅ¡ tÄ›Å¾kÃ©.
+ :Student mÃ¡ znaÄnou volnost, zkouÅ¡ky sklÃ¡dÃ¡ v libovolnÃ©m
+ :termÃ­nu, podvÃ¡dÄ›t je snadnÃ© a kvÅ¯li vÃ½slednÃ½m znÃ¡mkÃ¡m
+ :se neproÅ¾Ã­vajÃ­ zvlÃ¡Å¡tnÃ­ stresy nebo ÃºzkostnÃ© stavy.
+ :Student (Äi studentka) se tudÃ­Å¾ mÅ¯Å¾e plnÄ› vÄ›novat normÃ¡lnÃ­m
+ :zÃ¡jmÅ¯m dospÃ­vajÃ­cÃ­ho ÄlovÄ›ka --- sportu, alkoholu, zÃ¡bavÄ›
+ :a opaÄnÃ©mu pohlavÃ­. SkuteÄnÃ½ tlak zaÄÃ­nÃ¡ aÅ¾ v postgraduÃ¡lnÃ­m
+ :stadiu, kdy se student tÅ™Ã­bÃ­ a kalÃ­ v nelÃ­tostnÃ½ch cviÄenÃ­ch
+ :a pÅ™Ã­snÃ½ch provÄ›rkÃ¡ch tak dlouho, dokud si nezaslouÅ¾Ã­ bÃ½t
+ :pasovÃ¡n na PhDr. To uÅ¾ do vÄ›ci investoval tolik Äasu a penÄ›z,
+ :Å¾e pro nÄ›ho nepÅ™ichÃ¡zÃ­ v Ãºvahu Å¾Ã¡dnÃ¡ jinÃ¡ kariÃ©ra neÅ¾ akademickÃ¡,
+ :a to vÃ½hradnÄ› ÃºspÄ›Å¡nÃ¡, neboÅ¥ jinÃ¡ je nepÅ™ijatelnÃ¡. ZkrÃ¡tka a dobÅ™e,
+ :je vyÅ¡kolen k profesi, kterÃ¡ je prosÃ¡klÃ¡ duchem volnÃ©ho podnikÃ¡nÃ­
+ :nemÃ©nÄ› neÅ¾ Wall Street a ve kterÃ© kaÅ¾dÃ½ vyuÄujÃ­cÃ­ vÄ›dec uzavÃ­rÃ¡
+ :se svÃ½m zamÄ›stnavatelem osobnÃ­ smlouvu a mÃ¡ prÃ¡vo prodat svÃ© sluÅ¾by
+ :tomu, kdo nabÃ­dne nejvÃ­c.
 
 
-I:C. D. Payne: Mladík v odboji
+I:C. D. Payne: MladÃ­k v odboji
 *:_S_R_L33
 S:SOBOTA, 18. SRPNA
  :
- :Sem na prázdninách. Je to k nevíøe. Tohle pí¹u ruènì do
- :opravdickıho se¹itu s tím, ¾e to pak pøepí¹u do poèítaèe. Je to
- :¹ílená døina. Ale zøejmì v dobách, kdy tu¾ka byla èerstvej
- :vynález, to musel bejt vobrovskej pokrok. Pak k ní òákej génius
- :vymyslel gumu a v¹ichni se jali apgrejdovat.
+ :Sem na prÃ¡zdninÃ¡ch. Je to k nevÃ­Å™e. Tohle pÃ­Å¡u ruÄnÄ› do
+ :opravdickÃ½ho seÅ¡itu s tÃ­m, Å¾e to pak pÅ™epÃ­Å¡u do poÄÃ­taÄe. Je to
+ :Å¡Ã­lenÃ¡ dÅ™ina. Ale zÅ™ejmÄ› v dobÃ¡ch, kdy tuÅ¾ka byla Äerstvej
+ :vynÃ¡lez, to musel bejt vobrovskej pokrok. Pak k nÃ­ ÅˆÃ¡kej gÃ©nius
+ :vymyslel gumu a vÅ¡ichni se jali apgrejdovat.
 
-I:Douglas Adams: Stopaøùv prùvodce po galaxii
- :Tento text jsme ji¾ opisovali na zaèátku lekce. Zkuste si
+I:Douglas Adams: StopaÅ™Å¯v prÅ¯vodce po galaxii
+ :Tento text jsme jiÅ¾ opisovali na zaÄÃ¡tku lekce. Zkuste si
  :jej znovu a rychleji.
 *:_S_R_L34
-S:Dálnice jsou zaøízení, které umo¾òuje jistım lidem øítit
- :se z bodu A do B znaènou rychlostí, zatímco jiní lidé se
- :znaènou rychlostí øítí z bodu B do dobu A. Lidé, co bydlí
- :v bodì C, kterı le¾í pøesnì uprostøed, se obèas musí divit,
- :co je na bodì A tak ú¾asného, ¾e se taková spousta lidí
- :z bodu B jen tøese na to, aby se tam dostali, a co je tak
- :zajímavého na bodì B, ¾e taková spousta z bodu A stojí o to,
- :se tam dostat. A èasto si pøejí, aby se lidi u¾ jednou ksakru
- :rozhodli, kde vlastnì chtìjí bıt.
+S:DÃ¡lnice jsou zaÅ™Ã­zenÃ­, kterÃ© umoÅ¾Åˆuje jistÃ½m lidem Å™Ã­tit
+ :se z bodu A do B znaÄnou rychlostÃ­, zatÃ­mco jinÃ­ lidÃ© se
+ :znaÄnou rychlostÃ­ Å™Ã­tÃ­ z bodu B do dobu A. LidÃ©, co bydlÃ­
+ :v bodÄ› C, kterÃ½ leÅ¾Ã­ pÅ™esnÄ› uprostÅ™ed, se obÄas musÃ­ divit,
+ :co je na bodÄ› A tak ÃºÅ¾asnÃ©ho, Å¾e se takovÃ¡ spousta lidÃ­
+ :z bodu B jen tÅ™ese na to, aby se tam dostali, a co je tak
+ :zajÃ­mavÃ©ho na bodÄ› B, Å¾e takovÃ¡ spousta z bodu A stojÃ­ o to,
+ :se tam dostat. A Äasto si pÅ™ejÃ­, aby se lidi uÅ¾ jednou ksakru
+ :rozhodli, kde vlastnÄ› chtÄ›jÃ­ bÃ½t.
 
 G:_S_E_S3
 #------------------------------------------------------------------------------
@@ -9368,61 +9368,61 @@ G:_S_E_S3
 *:_S_R_L35
 #                                                            ../orig/s.typ:202
 T:
- :V této lekci opìt pokraèujeme nìkolika ukázkami z rùznıch knih.
+ :V tÃ©to lekci opÄ›t pokraÄujeme nÄ›kolika ukÃ¡zkami z rÅ¯znÃ½ch knih.
 #                                                            ../orig/s.typ:183
-I:Douglas Adams: Stopaøùv prùvodce po galaxii
+I:Douglas Adams: StopaÅ™Å¯v prÅ¯vodce po galaxii
 *:_S_R_L36
-S:Kdesi daleko v zaostalıch a nezmapovanıch konèinách onoho
- :cípu Západního spirálního ramene na¹í Galaxie, kterı si rozhodnì
- :nemù¾e dìlat nároky na módnost, le¾í jedno malé, bezvıznamné ¾luté
- :slunce. Kolem nìj zhruba ve vzdálenosti sto padesáti miliónù kilometrù
- :obíhá naprosto zanedbatelná nepatrná modrozelená planeta, na ní¾ jsou
- :formy ¾ivota vze¹lé z opic tak ú¾asnì primitivní, ¾e se dosud domnívají,
- :¾e digitální hodinky jsou docela ¹ikovnı nápad. Hlavní problém této
- :planety spoèívá -- nebo spí¹ spoèíval -- v tom, ¾e vìt¹ina lidí, kteøí
- :na ní ¾ijí, je povìt¹inou ne¹»astná. Vyskytlo se mnoho pokusù o øe¹ení,
- :vìt¹inou se v¹ak tıkaly pohybu malıch zelenıch kouskù papíru, co¾ je
- :zvlá¹tní, proto¾e ony malé zelené kousky papíru koneckoncù ne¹»astné
+S:Kdesi daleko v zaostalÃ½ch a nezmapovanÃ½ch konÄinÃ¡ch onoho
+ :cÃ­pu ZÃ¡padnÃ­ho spirÃ¡lnÃ­ho ramene naÅ¡Ã­ Galaxie, kterÃ½ si rozhodnÄ›
+ :nemÅ¯Å¾e dÄ›lat nÃ¡roky na mÃ³dnost, leÅ¾Ã­ jedno malÃ©, bezvÃ½znamnÃ© Å¾lutÃ©
+ :slunce. Kolem nÄ›j zhruba ve vzdÃ¡lenosti sto padesÃ¡ti miliÃ³nÅ¯ kilometrÅ¯
+ :obÃ­hÃ¡ naprosto zanedbatelnÃ¡ nepatrnÃ¡ modrozelenÃ¡ planeta, na nÃ­Å¾ jsou
+ :formy Å¾ivota vzeÅ¡lÃ© z opic tak ÃºÅ¾asnÄ› primitivnÃ­, Å¾e se dosud domnÃ­vajÃ­,
+ :Å¾e digitÃ¡lnÃ­ hodinky jsou docela Å¡ikovnÃ½ nÃ¡pad. HlavnÃ­ problÃ©m tÃ©to
+ :planety spoÄÃ­vÃ¡ -- nebo spÃ­Å¡ spoÄÃ­val -- v tom, Å¾e vÄ›tÅ¡ina lidÃ­, kteÅ™Ã­
+ :na nÃ­ Å¾ijÃ­, je povÄ›tÅ¡inou neÅ¡Å¥astnÃ¡. Vyskytlo se mnoho pokusÅ¯ o Å™eÅ¡enÃ­,
+ :vÄ›tÅ¡inou se vÅ¡ak tÃ½kaly pohybu malÃ½ch zelenÃ½ch kouskÅ¯ papÃ­ru, coÅ¾ je
+ :zvlÃ¡Å¡tnÃ­, protoÅ¾e ony malÃ© zelenÃ© kousky papÃ­ru koneckoncÅ¯ neÅ¡Å¥astnÃ©
  :nebyly.
 
-I:J. K. Jerome: Tøi mu¾i ve èlunu, o psu nemluvì
+I:J. K. Jerome: TÅ™i muÅ¾i ve Älunu, o psu nemluvÄ›
 *:_S_R_L37
-S:Nic mì tolik nepopudí, jako kdy¾ si ti druzí jenom sedí a nic
- :nedìlají, zatímco já pracuju.
+S:Nic mÄ› tolik nepopudÃ­, jako kdyÅ¾ si ti druzÃ­ jenom sedÃ­ a nic
+ :nedÄ›lajÃ­, zatÃ­mco jÃ¡ pracuju.
  :
- :Jednou jsem bydlel s èlovìkem, kterı mì tímhle zpùsobem dohánìl
- :skoro k ¹ílenství. V¾dycky kdy¾ jsem nìco dìlal, on se povaloval na
- :pohovce a koukal na mì --- celé hodiny mì vydr¾el sledovat oèima,
- :a» jsem se v tom pokoji kamkoli pohnul. Øíkal, ¾e mu dìlá ú¾asnì dobøe,
- :kdy¾ se mù¾e dívat, jak pilnì markıruju práci. Prı mu to dokazuje, ¾e
- :¾ivot není jen jalové snìní, urèené k prozevlování a prozívání, ale
- :vzne¹ené poslání, plné povinností a tvrdé práce. Èasto u¾ prı si kladl
- :otázku, jak mohl vùbec existovat, ne¾ se seznámil se mnou, kdy¾ nemìl
- :nikoho, koho by mohl pozorovat pøi práci.
+ :Jednou jsem bydlel s ÄlovÄ›kem, kterÃ½ mÄ› tÃ­mhle zpÅ¯sobem dohÃ¡nÄ›l
+ :skoro k Å¡Ã­lenstvÃ­. VÅ¾dycky kdyÅ¾ jsem nÄ›co dÄ›lal, on se povaloval na
+ :pohovce a koukal na mÄ› --- celÃ© hodiny mÄ› vydrÅ¾el sledovat oÄima,
+ :aÅ¥ jsem se v tom pokoji kamkoli pohnul. Å˜Ã­kal, Å¾e mu dÄ›lÃ¡ ÃºÅ¾asnÄ› dobÅ™e,
+ :kdyÅ¾ se mÅ¯Å¾e dÃ­vat, jak pilnÄ› markÃ½ruju prÃ¡ci. PrÃ½ mu to dokazuje, Å¾e
+ :Å¾ivot nenÃ­ jen jalovÃ© snÄ›nÃ­, urÄenÃ© k prozevlovÃ¡nÃ­ a prozÃ­vÃ¡nÃ­, ale
+ :vzneÅ¡enÃ© poslÃ¡nÃ­, plnÃ© povinnostÃ­ a tvrdÃ© prÃ¡ce. ÄŒasto uÅ¾ prÃ½ si kladl
+ :otÃ¡zku, jak mohl vÅ¯bec existovat, neÅ¾ se seznÃ¡mil se mnou, kdyÅ¾ nemÄ›l
+ :nikoho, koho by mohl pozorovat pÅ™i prÃ¡ci.
  :
- :Tak takovıhle já nejsem. Já nevydr¾ím klidnì sedìt, kdy¾ vidím,
- :jak se nìkdo jinı otrocky lopotí. To musím vstát a dozírat na nìj,
- :obcházet ho s rukama v kapsách a radit mu, jak na to. To dìlá
- :ta moje èinorodá povaha. Tomu se prostì neubráním.
+ :Tak takovÃ½hle jÃ¡ nejsem. JÃ¡ nevydrÅ¾Ã­m klidnÄ› sedÄ›t, kdyÅ¾ vidÃ­m,
+ :jak se nÄ›kdo jinÃ½ otrocky lopotÃ­. To musÃ­m vstÃ¡t a dozÃ­rat na nÄ›j,
+ :obchÃ¡zet ho s rukama v kapsÃ¡ch a radit mu, jak na to. To dÄ›lÃ¡
+ :ta moje ÄinorodÃ¡ povaha. Tomu se prostÄ› neubrÃ¡nÃ­m.
 
-I:Dr. Jiøí Guth: Spoleèenskı katechismus
+I:Dr. JiÅ™Ã­ Guth: SpoleÄenskÃ½ katechismus
 *:_S_R_L38
-S:Jdìte po ulici a pozorujte chování rùznıch lidí --- podle
- :jejich chùze, chování, pohledù, posunù atd. posoudíte hned,
- :jakého asi jsou druhu a stanou se vám sympatickımi nebo vzbuzují
- :odpor. Tedy pán bezohlednì vám foukne kouø cigarety do tváøe,
- :tam zavane vám z dámy celı voòavkáøskı krám a onde zas pozorujete,
- :kterak dáma se ohlí¾í zvìdavì za toilettì dámy jiné, zlozvyk,
- :kterı zvlá¹tì v Praze bují jako koukol mezi p¹enicí. A kdyby
- :to byly toliko závistivé a zvìdavé dámy! Ale staèí jen drobná
- :vìc vymykající se v¹eobecnosti a u¾ je, a» tak dím, celá Praha vzhùru.
- :Kdysi odpoledne ¹el po Pøíkopech dùstojník, nemající na sobì nic
- :nápaditìj¹ího, ne¾ na èepici bílou pásku z manévrù. ©el jsem za
- :ním... Od piaristského kostela a k ®ivnostenské bance ohlédlo se
- :po nìm tøicet sedm osob!
+S:JdÄ›te po ulici a pozorujte chovÃ¡nÃ­ rÅ¯znÃ½ch lidÃ­ --- podle
+ :jejich chÅ¯ze, chovÃ¡nÃ­, pohledÅ¯, posunÅ¯ atd. posoudÃ­te hned,
+ :jakÃ©ho asi jsou druhu a stanou se vÃ¡m sympatickÃ½mi nebo vzbuzujÃ­
+ :odpor. Tedy pÃ¡n bezohlednÄ› vÃ¡m foukne kouÅ™ cigarety do tvÃ¡Å™e,
+ :tam zavane vÃ¡m z dÃ¡my celÃ½ voÅˆavkÃ¡Å™skÃ½ krÃ¡m a onde zas pozorujete,
+ :kterak dÃ¡ma se ohlÃ­Å¾Ã­ zvÄ›davÄ› za toilettÄ› dÃ¡my jinÃ©, zlozvyk,
+ :kterÃ½ zvlÃ¡Å¡tÄ› v Praze bujÃ­ jako koukol mezi pÅ¡enicÃ­. A kdyby
+ :to byly toliko zÃ¡vistivÃ© a zvÄ›davÃ© dÃ¡my! Ale staÄÃ­ jen drobnÃ¡
+ :vÄ›c vymykajÃ­cÃ­ se vÅ¡eobecnosti a uÅ¾ je, aÅ¥ tak dÃ­m, celÃ¡ Praha vzhÅ¯ru.
+ :Kdysi odpoledne Å¡el po PÅ™Ã­kopech dÅ¯stojnÃ­k, nemajÃ­cÃ­ na sobÄ› nic
+ :nÃ¡paditÄ›jÅ¡Ã­ho, neÅ¾ na Äepici bÃ­lou pÃ¡sku z manÃ©vrÅ¯. Å el jsem za
+ :nÃ­m... Od piaristskÃ©ho kostela a k Å½ivnostenskÃ© bance ohlÃ©dlo se
+ :po nÄ›m tÅ™icet sedm osob!
 
 #                                                            ../orig/s.typ:228
-I:Julius Caesar, Akt III, Scéna II (Fórum) (anglicky)
+I:Julius Caesar, Akt III, ScÃ©na II (FÃ³rum) (anglicky)
 *:_S_R_L39
 #                                                            ../orig/s.typ:243
 S:Friends, Romans, countrymen, lend me your ears;
@@ -9458,15 +9458,15 @@ G:_S_E_S4
 # Lekce series S jump tables
 #------------------------------------------------------------------------------
 *:_S_E_S1
-Q:Chcete pokraèovat do lekce S2 [Y(ano)/N(ne)] ? 
+Q:Chcete pokraÄovat do lekce S2 [Y(ano)/N(ne)] ? 
 N:_S_MENU
 G:_S_M_S2
 *:_S_E_S2
-Q:Chcete pokraèovat do lekce S3 [Y(ano)/N(ne)] ? 
+Q:Chcete pokraÄovat do lekce S3 [Y(ano)/N(ne)] ? 
 N:_S_MENU
 G:_S_M_S3
 *:_S_E_S3
-Q:Chcete pokraèovat do lekce S4 [Y(ano)/N(ne)] ? 
+Q:Chcete pokraÄovat do lekce S4 [Y(ano)/N(ne)] ? 
 N:_S_MENU
 G:_S_M_S4
 *:_S_E_S4
@@ -9488,11 +9488,11 @@ G:_S_S_S4
 # Lekce series S menu
 #------------------------------------------------------------------------------
 *:_S_MENU
-M: UP=__SERIESMENU "Série S obsahuje tyto 4 lekce"
- :_S_M_S1 "Lekce S1     Dopisy Mgr. ®irafy"
- :_S_M_S2 "Lekce S2     Citáty"
- :_S_M_S3 "Lekce S3     Ukázky z knih"
- :_S_M_S4 "Lekce S4     Z knih; Èást hry Shakespeara v angliètinì"
+M: UP=__SERIESMENU "SÃ©rie S obsahuje tyto 4 lekce"
+ :_S_M_S1 "Lekce S1     Dopisy Mgr. Å½irafy"
+ :_S_M_S2 "Lekce S2     CitÃ¡ty"
+ :_S_M_S3 "Lekce S3     UkÃ¡zky z knih"
+ :_S_M_S4 "Lekce S4     Z knih; ÄŒÃ¡st hry Shakespeara v angliÄtinÄ›"
 *:_S_EXIT
 
 #------------------------------------------------------------------------------
@@ -9540,45 +9540,45 @@ G:_N_MENU
 *:_N_R_L0
 #                                                             ../orig/n.typ:21
 T:
- :			Lekce numerické klávesnice
+ :			Lekce numerickÃ© klÃ¡vesnice
  :
- :Série lekcí N vás nauèí pracovat s numerickou klávesnicí. 
- :K tomu, abyste mohli kurz absolvovat, nepotøebujete umìt
- :psát deseti prsty na klasické klávesnici. Mù¾ete tedy zaèít 
- :pøímo touto sérií.
+ :SÃ©rie lekcÃ­ N vÃ¡s nauÄÃ­ pracovat s numerickou klÃ¡vesnicÃ­. 
+ :K tomu, abyste mohli kurz absolvovat, nepotÅ™ebujete umÄ›t
+ :psÃ¡t deseti prsty na klasickÃ© klÃ¡vesnici. MÅ¯Å¾ete tedy zaÄÃ­t 
+ :pÅ™Ã­mo touto sÃ©riÃ­.
  :
- :Kdy¾ zadáváte numerické hodnoty, tak je vìt¹inou dùle¾itìj¹í 
- :pøesnost ne¾ rychlost. Procházejte tìmito lekcemi velmi pomalu.
- :Rychlost se pozdìji dostaví sama.
+ :KdyÅ¾ zadÃ¡vÃ¡te numerickÃ© hodnoty, tak je vÄ›tÅ¡inou dÅ¯leÅ¾itÄ›jÅ¡Ã­ 
+ :pÅ™esnost neÅ¾ rychlost. ProchÃ¡zejte tÄ›mito lekcemi velmi pomalu.
+ :Rychlost se pozdÄ›ji dostavÃ­ sama.
  :
- :Tak jako na standardní klávesnici musíte zaèínat v základní 
- :pozici. Umístìte první tøi prsty va¹í pravé ruky na klávesy
- :4, 5, 6 (ukazováèek, prostøedníèek, prsteníèek).
+ :Tak jako na standardnÃ­ klÃ¡vesnici musÃ­te zaÄÃ­nat v zÃ¡kladnÃ­ 
+ :pozici. UmÃ­stÄ›te prvnÃ­ tÅ™i prsty vaÅ¡Ã­ pravÃ© ruky na klÃ¡vesy
+ :4, 5, 6 (ukazovÃ¡Äek, prostÅ™ednÃ­Äek, prstenÃ­Äek).
  :
- :Palec a vá¹ ¹estı prst jsou volné. Prsty by se mìly pouze lehce
- :vzná¹et nad klávesnicí. Mezerník maèkejte palcem èi jakımkoliv 
- :jinım prstem levé ruky.
+ :Palec a vÃ¡Å¡ Å¡estÃ½ prst jsou volnÃ©. Prsty by se mÄ›ly pouze lehce
+ :vznÃ¡Å¡et nad klÃ¡vesnicÃ­. MezernÃ­k maÄkejte palcem Äi jakÃ½mkoliv 
+ :jinÃ½m prstem levÃ© ruky.
 
 #                                                             ../orig/n.typ:22
-I:Pou¾ívejte pouze prsteníèek
+I:PouÅ¾Ã­vejte pouze prstenÃ­Äek
 *:_N_R_L1
 #                                                             ../orig/n.typ:23
 D:666666
 
 #                                                             ../orig/n.typ:24
-I:Pou¾ívejte prostøedníèek pro psaní èísla 5.
+I:PouÅ¾Ã­vejte prostÅ™ednÃ­Äek pro psanÃ­ ÄÃ­sla 5.
 *:_N_R_L2
 #                                                             ../orig/n.typ:25
 D:6565656
 
 #                                                             ../orig/n.typ:26
-I:4ku pi¹te ukazováèkem.
+I:4ku piÅ¡te ukazovÃ¡Äkem.
 *:_N_R_L3
 #                                                             ../orig/n.typ:27
 D:666444555444666
 
 #                                                             ../orig/n.typ:28
-I:Zkuste si teï pár øádek. ENTER maèkáme malíèkem.
+I:Zkuste si teÄ pÃ¡r Å™Ã¡dek. ENTER maÄkÃ¡me malÃ­Äkem.
 *:_N_R_L4
 #                                                             ../orig/n.typ:36
 S:666444666
@@ -9591,7 +9591,7 @@ S:666444666
  :456456456
 
 #                                                             ../orig/n.typ:37
-I:Teèku pi¹te prsteníèkem.
+I:TeÄku piÅ¡te prstenÃ­Äkem.
 *:_N_R_L5
 #                                                             ../orig/n.typ:38
 D:555...555
@@ -9613,7 +9613,7 @@ S:445566.654
  :555444.666
 
 #                                                             ../orig/n.typ:49
-I:Jednièku pi¹te vychılením ukazováèku dolù.
+I:JedniÄku piÅ¡te vychÃ½lenÃ­m ukazovÃ¡Äku dolÅ¯.
 *:_N_R_L8
 #                                                             ../orig/n.typ:50
 D:444111444.444111444
@@ -9627,7 +9627,7 @@ S:111.444
  :541.146
 
 #                                                             ../orig/n.typ:56
-I:Zopakujeme si, co jsme se ji¾ nauèili.
+I:Zopakujeme si, co jsme se jiÅ¾ nauÄili.
 *:_N_R_L10
 #                                                             ../orig/n.typ:57
 D:444555666111...555444666111
@@ -9651,13 +9651,13 @@ G:_N_E_N1
 *:N2
 *:_N_S_N2
 #                                                             ../orig/n.typ:69
-I:Nejprve opakování z lekce 1.
+I:Nejprve opakovÃ¡nÃ­ z lekce 1.
 *:_N_R_L12
 #                                                             ../orig/n.typ:70
 D:444.555.666.111.6541.6541
 
 #                                                             ../orig/n.typ:71
-I:2ku pí¹eme prstem z klávesy 5 (prostøedníèek). 
+I:2ku pÃ­Å¡eme prstem z klÃ¡vesy 5 (prostÅ™ednÃ­Äek). 
 *:_N_R_L13
 #                                                             ../orig/n.typ:72
 D:555222555.525.525.525
@@ -9673,7 +9673,7 @@ S:45.25
  :24.42
 
 #                                                             ../orig/n.typ:80
-I:3ku pí¹eme prstem z klávesy 6 (prsteníèek).
+I:3ku pÃ­Å¡eme prstem z klÃ¡vesy 6 (prstenÃ­Äek).
 *:_N_R_L15
 #                                                             ../orig/n.typ:81
 D:666333666.636.636
@@ -9701,7 +9701,7 @@ S:12.33
  :34.31
 
 #                                                             ../orig/n.typ:98
-I:Nulu pí¹eme vıraznìj¹ím vychılením ukazováèku ze 4ky dolù.
+I:Nulu pÃ­Å¡eme vÃ½raznÄ›jÅ¡Ã­m vychÃ½lenÃ­m ukazovÃ¡Äku ze 4ky dolÅ¯.
 *:_N_R_L18
 #                                                             ../orig/n.typ:99
 D:444000444.401.410
@@ -9720,7 +9720,7 @@ S:12.00
  :13.04
 
 #                                                            ../orig/n.typ:107
-I:8ku pí¹eme vychılením prostøedníèku z 5ky nahoru.
+I:8ku pÃ­Å¡eme vychÃ½lenÃ­m prostÅ™ednÃ­Äku z 5ky nahoru.
 *:_N_R_L21
 #                                                            ../orig/n.typ:108
 D:555888555.852.258
@@ -9739,7 +9739,7 @@ S:81.05
  :28.38
 
 #                                                            ../orig/n.typ:116
-I:Devítku pí¹eme prstem z 6ky.
+I:DevÃ­tku pÃ­Å¡eme prstem z 6ky.
 *:_N_R_L24
 #                                                            ../orig/n.typ:117
 D:666999666.393.696
@@ -9760,7 +9760,7 @@ S:.91
  :.95
 
 #                                                            ../orig/n.typ:127
-I:Poslední èíslo je sedm. Pi¹te jej prstem ze 4ky.
+I:PoslednÃ­ ÄÃ­slo je sedm. PiÅ¡te jej prstem ze 4ky.
 *:_N_R_L27
 #                                                            ../orig/n.typ:128
 D:444777444.0147.7410
@@ -9805,7 +9805,7 @@ G:_N_E_N2
 *:N3
 *:_N_S_N3
 #                                                            ../orig/n.typ:152
-I:Nejprve si zopakujeme èísla.
+I:Nejprve si zopakujeme ÄÃ­sla.
 *:_N_R_L32
 #                                                            ../orig/n.typ:153
 D:1234567890.0987654321
@@ -9879,7 +9879,7 @@ S:100.200
  :372.973
 
 #                                                            ../orig/n.typ:204
-I:Mezeru maèkejte libovolnım prstem levé ruky.
+I:Mezeru maÄkejte libovolnÃ½m prstem levÃ© ruky.
 *:_N_R_L39
 #                                                            ../orig/n.typ:205
 D:111 222 333 444 555 666 777 888 999 000
@@ -9910,11 +9910,11 @@ G:_N_E_N3
 # Lekce series N jump tables
 #------------------------------------------------------------------------------
 *:_N_E_N1
-Q:Chcete pokraèovat do lekce N2 [Y(ano)/N(ne)] ? 
+Q:Chcete pokraÄovat do lekce N2 [Y(ano)/N(ne)] ? 
 N:_N_MENU
 G:_N_M_N2
 *:_N_E_N2
-Q:Chcete pokraèovat do lekce N3 [Y(ano)/N(ne)] ? 
+Q:Chcete pokraÄovat do lekce N3 [Y(ano)/N(ne)] ? 
 N:_N_MENU
 G:_N_M_N3
 *:_N_E_N3
@@ -9933,10 +9933,10 @@ G:_N_S_N3
 # Lekce series N menu
 #------------------------------------------------------------------------------
 *:_N_MENU
-M: UP=__SERIESMENU "Série N obsahuje tyto 3 lekce"
+M: UP=__SERIESMENU "SÃ©rie N obsahuje tyto 3 lekce"
  :_N_M_N1 "Lekce N1     4 5 . 6 1"
  :_N_M_N2 "Lekce N2     2 3 0 8 9 7"
- :_N_M_N3 "Lekce N3     Procvièování"
+ :_N_M_N3 "Lekce N3     ProcviÄovÃ¡nÃ­"
 *:_N_EXIT
 
 #------------------------------------------------------------------------------
@@ -9944,86 +9944,86 @@ M: UP=__SERIESMENU "Série N obsahuje tyto 3 lekce"
 G:__SERIESMENU
 #==============================================================================
 *:__MORE_LESSONS
-T:... spu¹tìním gtypistu s parametrem jako nìkterım z tìchto 
- :jmen souborù mù¾ete pøistupovat i k jinım sadám lekcí:
+T:... spuÅ¡tÄ›nÃ­m gtypistu s parametrem jako nÄ›kterÃ½m z tÄ›chto 
+ :jmen souborÅ¯ mÅ¯Å¾ete pÅ™istupovat i k jinÃ½m sadÃ¡m lekcÃ­:
  :
- : en.typ - Anglické lekce
- : esp.typ - ©panìlské lekce
- : ktde.typ - Nìmecké lekce z ktouch
- : kten.typ - Anglické lekce z ktouch
- : ktfr.typ - Francouzské lekce z ktouch
- : ktlecten.typ - Dal¹í sada anglickıch lekcí z ktouch
- : ktno.typ - Norské lekce z ktouch
- : ktnumber.typ - Ktouch lekce pro numerickou klávesnici
- : ttde.typ - Nìmecké lekce z tipptrainer
+ : en.typ - AnglickÃ© lekce
+ : esp.typ - Å panÄ›lskÃ© lekce
+ : ktde.typ - NÄ›meckÃ© lekce z ktouch
+ : kten.typ - AnglickÃ© lekce z ktouch
+ : ktfr.typ - FrancouzskÃ© lekce z ktouch
+ : ktlecten.typ - DalÅ¡Ã­ sada anglickÃ½ch lekcÃ­ z ktouch
+ : ktno.typ - NorskÃ© lekce z ktouch
+ : ktnumber.typ - Ktouch lekce pro numerickou klÃ¡vesnici
+ : ttde.typ - NÄ›meckÃ© lekce z tipptrainer
  :
- :Pro více informací si prohlédnìte komentáøe na zaèátku
- :ka¾dého .typ souboru.
+ :Pro vÃ­ce informacÃ­ si prohlÃ©dnÄ›te komentÃ¡Å™e na zaÄÃ¡tku
+ :kaÅ¾dÃ©ho .typ souboru.
 G:__SERIESMENU
 *:__HELP
-T:                     Nápovìda
- : o Jak program ovládat
- : o Proè mám opaènì Y a Z? Co to je QWERTY?
- : o Jak se s pomocí programu mohu nauèit psát na QWERTZ?
- : o Kam posílat oznámení o chybách
+T:                     NÃ¡povÄ›da
+ : o Jak program ovlÃ¡dat
+ : o ProÄ mÃ¡m opaÄnÄ› Y a Z? Co to je QWERTY?
+ : o Jak se s pomocÃ­ programu mohu nauÄit psÃ¡t na QWERTZ?
+ : o Kam posÃ­lat oznÃ¡menÃ­ o chybÃ¡ch
  :
- :Skrz lekce a menu se mù¾ete pohybovat s pou¾itím Fx kláves
- :v horní øadì klávesnice. Pokud se nalézáte uvnitø nìjaké lekce,
- :tak vás stisk F12 pøenese do menu lekce. Zde vás stisk F12
- :pøenese do vıbìru sérií lekcí. Pakli¾e zmáèknete F12 ve vıbìru 
- :lekcí, opustíte program. Na nìkteré dotazy budete odpovídat ano/ne.
- :V takovém pøípadì stisk Y znamená ano, stisk N znamená ne.
+ :Skrz lekce a menu se mÅ¯Å¾ete pohybovat s pouÅ¾itÃ­m Fx klÃ¡ves
+ :v hornÃ­ Å™adÄ› klÃ¡vesnice. Pokud se nalÃ©zÃ¡te uvnitÅ™ nÄ›jakÃ© lekce,
+ :tak vÃ¡s stisk F12 pÅ™enese do menu lekce. Zde vÃ¡s stisk F12
+ :pÅ™enese do vÃ½bÄ›ru sÃ©riÃ­ lekcÃ­. PakliÅ¾e zmÃ¡Äknete F12 ve vÃ½bÄ›ru 
+ :lekcÃ­, opustÃ­te program. Na nÄ›kterÃ© dotazy budete odpovÃ­dat ano/ne.
+ :V takovÃ©m pÅ™Ã­padÄ› stisk Y znamenÃ¡ ano, stisk N znamenÃ¡ ne.
  :
- :Místo Fx kláves (napø. pokud je vá¹ terminál nemá) mù¾ete pou¾ít 
- :i klávesy od 1 do 9 pro F1-F9, 0 pro F10 a klávesu A pro F11
- :stejnì jako S pro F12.
+ :MÃ­sto Fx klÃ¡ves (napÅ™. pokud je vÃ¡Å¡ terminÃ¡l nemÃ¡) mÅ¯Å¾ete pouÅ¾Ã­t 
+ :i klÃ¡vesy od 1 do 9 pro F1-F9, 0 pro F10 a klÃ¡vesu A pro F11
+ :stejnÄ› jako S pro F12.
  :
- :Pøíruèku ke gtypistu si mù¾ete zobrazit zadáním
- :,,info gtypist'' èi ,,info (gtypist)'' na va¹em
- :terminálu. Pokud pracujete pod dosem, zobrazte 
+ :PÅ™Ã­ruÄku ke gtypistu si mÅ¯Å¾ete zobrazit zadÃ¡nÃ­m
+ :,,info gtypist'' Äi ,,info (gtypist)'' na vaÅ¡em
+ :terminÃ¡lu. Pokud pracujete pod dosem, zobrazte 
  :si soubor gtypist.html.
- :		--Pro dal¹í stranu stisknìte ENTER--
-T: 		Proè mám opaènì Y/Z, co je to QWERTY?
+ :		--Pro dalÅ¡Ã­ stranu stisknÄ›te ENTER--
+T: 		ProÄ mÃ¡m opaÄnÄ› Y/Z, co je to QWERTY?
  :
- :Èeská klávesnice má bohu¾el jeden obrovskı problém a tím je 
- :nestandardní poloha kláves Y a Z. Èasto se mù¾ete setkat 
- :s tím, ¾e klávesa Y v horní øadì bude ve skuteènosti psát
- :písmeno Z a obdobnì klávesa Z v øadì dolní bude psát Y.
- :Takovım klávesnicím se øíká QWERTZ (podle polohy prvních
- :¹esti kláves horní øady).
+ :ÄŒeskÃ¡ klÃ¡vesnice mÃ¡ bohuÅ¾el jeden obrovskÃ½ problÃ©m a tÃ­m je 
+ :nestandardnÃ­ poloha klÃ¡ves Y a Z. ÄŒasto se mÅ¯Å¾ete setkat 
+ :s tÃ­m, Å¾e klÃ¡vesa Y v hornÃ­ Å™adÄ› bude ve skuteÄnosti psÃ¡t
+ :pÃ­smeno Z a obdobnÄ› klÃ¡vesa Z v Å™adÄ› dolnÃ­ bude psÃ¡t Y.
+ :TakovÃ½m klÃ¡vesnicÃ­m se Å™Ã­kÃ¡ QWERTZ (podle polohy prvnÃ­ch
+ :Å¡esti klÃ¡ves hornÃ­ Å™ady).
  : 
- :Jeliko¾ toto zpùsobuje obrovské problémy (zvlá¹» pokud jste
- :nuceni pøepínat mezi èeskou a anglickou klávesnicí), zamìøuje
- :se tento kurz na klávesnici QWERTY tak, jak je mezinárodnì 
- :standardizovaná. Vøele vám doporuèuji nastavit si na svém
- :systému také tuto klávesnici, pokud ji je¹tì nepou¾íváte.
- :Není to ¾ádnı problém, prostì hledejte v nastavení klávesnice
- :slovo QWERTY a QWERTZ. Pokud máte QWERTZ, pøepnìte na QWERTY.
+ :JelikoÅ¾ toto zpÅ¯sobuje obrovskÃ© problÃ©my (zvlÃ¡Å¡Å¥ pokud jste
+ :nuceni pÅ™epÃ­nat mezi Äeskou a anglickou klÃ¡vesnicÃ­), zamÄ›Å™uje
+ :se tento kurz na klÃ¡vesnici QWERTY tak, jak je mezinÃ¡rodnÄ› 
+ :standardizovanÃ¡. VÅ™ele vÃ¡m doporuÄuji nastavit si na svÃ©m
+ :systÃ©mu takÃ© tuto klÃ¡vesnici, pokud ji jeÅ¡tÄ› nepouÅ¾Ã­vÃ¡te.
+ :NenÃ­ to Å¾Ã¡dnÃ½ problÃ©m, prostÄ› hledejte v nastavenÃ­ klÃ¡vesnice
+ :slovo QWERTY a QWERTZ. Pokud mÃ¡te QWERTZ, pÅ™epnÄ›te na QWERTY.
  :
- :Pøeji mnoho u¹etøenıch nervù.
- :		--Pro dal¹í stranu stisknìte ENTER--
-T: 		Jak se s pomocí programu nauèit QWERTZ
+ :PÅ™eji mnoho uÅ¡etÅ™enÃ½ch nervÅ¯.
+ :		--Pro dalÅ¡Ã­ stranu stisknÄ›te ENTER--
+T: 		Jak se s pomocÃ­ programu nauÄit QWERTZ
  :
- :Pùvodní zamìøení tohoto programu vám nebrání nauèit
- :se pracovat s klávesnicí QWERTZ. Mù¾ete pou¾ívat kurzy
- :zamìøené na QWERTY a nesetkáte se s vıraznìj¹ím problémem.
- :Pouze pamatujte, ¾e na QWERTZ
+ :PÅ¯vodnÃ­ zamÄ›Å™enÃ­ tohoto programu vÃ¡m nebrÃ¡nÃ­ nauÄit
+ :se pracovat s klÃ¡vesnicÃ­ QWERTZ. MÅ¯Å¾ete pouÅ¾Ã­vat kurzy
+ :zamÄ›Å™enÃ© na QWERTY a nesetkÃ¡te se s vÃ½raznÄ›jÅ¡Ã­m problÃ©mem.
+ :Pouze pamatujte, Å¾e na QWERTZ
  :
- :	Y pí¹eme levım malíèkem vpravo dolù
- : 	Z pí¹eme vychılením pravého ukazováèku vlevo nahoru
+ :	Y pÃ­Å¡eme levÃ½m malÃ­Äkem vpravo dolÅ¯
+ : 	Z pÃ­Å¡eme vychÃ½lenÃ­m pravÃ©ho ukazovÃ¡Äku vlevo nahoru
  :
- :Nìkam si to zapi¹te a ignorujte hlá¹ky tıkající se tìchto dvou
- :písmen pøímo v lekcích.
- :		--Pro dal¹í stranu stisknìte ENTER--
-T:			Pøipomínky, oznámení o chybì
+ :NÄ›kam si to zapiÅ¡te a ignorujte hlÃ¡Å¡ky tÃ½kajÃ­cÃ­ se tÄ›chto dvou
+ :pÃ­smen pÅ™Ã­mo v lekcÃ­ch.
+ :		--Pro dalÅ¡Ã­ stranu stisknÄ›te ENTER--
+T:			PÅ™ipomÃ­nky, oznÃ¡menÃ­ o chybÄ›
  :
- :Pøipomínky ohlednì èeskıch lekcí a jejich funkce prosím zasílejte
- :na hanke@volny.cz. S obecnımi pøipomínkami o programu 
- :a chybami (pokud jste si jisti, ¾e se nejedná o chybu lekce)
- :se prosím obracejte na bug-gtypist@gnu.org.
+ :PÅ™ipomÃ­nky ohlednÄ› ÄeskÃ½ch lekcÃ­ a jejich funkce prosÃ­m zasÃ­lejte
+ :na hanke@volny.cz. S obecnÃ½mi pÅ™ipomÃ­nkami o programu 
+ :a chybami (pokud jste si jisti, Å¾e se nejednÃ¡ o chybu lekce)
+ :se prosÃ­m obracejte na bug-gtypist@gnu.org.
  :
- :Na adrese hanke@volny.cz rád uvítám pomoc s lokalizací zbylıch
- :lekcí a textù.
+ :Na adrese hanke@volny.cz rÃ¡d uvÃ­tÃ¡m pomoc s lokalizacÃ­ zbylÃ½ch
+ :lekcÃ­ a textÅ¯.
  :
  :
 
@@ -10035,15 +10035,15 @@ G:__SERIESMENU
 *:__SERIESMENU
 B:                       Series selection menu
 M: "The following 9 lesson series are available"
- :__S_T_SERIES   "Série T     Vıukovı kurz QWERTY (cz)       (T1 - T16)"
- :__S_U_SERIES   "Série U     Opakování QWERTY (cz)          (U1 - U11)"
- :__S_N_SERIES   "Série N     Èíselná klávesnice (cz)        (N1 - N3)"
- :__S_M_SERIES   "Série M     Procvièovací drilové testy (cz)(M1 - M11)"
- :__S_S_SERIES   "Série S     Rychlostní testy (cz)          (S1 - S4)"
- :__S_Q_SERIES   "Série Q     Rychlı kurz QWERTY (en)        (Q1 - Q5)"
- :__S_R_SERIES   "Série R     Dlouhı kurz QWERTY (cz)        (R1 - R14)"
- :__S_V_SERIES   "Série V     Je¹tì jeden kurz QWERTY (en)   (V1 - V19)"
- :__S_D_SERIES   "Série D     Vıukovı kurz kláv. Dvorak (en) (D1 - D14)"
- :__MORE_LESSONS "Dal¹í lekce..."
- :__HELP         "Nápovìda"
+ :__S_T_SERIES   "SÃ©rie T     VÃ½ukovÃ½ kurz QWERTY (cz)       (T1 - T16)"
+ :__S_U_SERIES   "SÃ©rie U     OpakovÃ¡nÃ­ QWERTY (cz)          (U1 - U11)"
+ :__S_N_SERIES   "SÃ©rie N     ÄŒÃ­selnÃ¡ klÃ¡vesnice (cz)        (N1 - N3)"
+ :__S_M_SERIES   "SÃ©rie M     ProcviÄovacÃ­ drilovÃ© testy (cz)(M1 - M11)"
+ :__S_S_SERIES   "SÃ©rie S     RychlostnÃ­ testy (cz)          (S1 - S4)"
+ :__S_Q_SERIES   "SÃ©rie Q     RychlÃ½ kurz QWERTY (en)        (Q1 - Q5)"
+ :__S_R_SERIES   "SÃ©rie R     DlouhÃ½ kurz QWERTY (cz)        (R1 - R14)"
+ :__S_V_SERIES   "SÃ©rie V     JeÅ¡tÄ› jeden kurz QWERTY (en)   (V1 - V19)"
+ :__S_D_SERIES   "SÃ©rie D     VÃ½ukovÃ½ kurz klÃ¡v. Dvorak (en) (D1 - D14)"
+ :__MORE_LESSONS "DalÅ¡Ã­ lekce..."
+ :__HELP         "NÃ¡povÄ›da"
 #==============================================================================
