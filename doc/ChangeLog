@@ -1,3 +1,9 @@
+2011-07-03: Felix Natter <fnatter@gmx.net>
+        * lessons/cs.typ: convert cs.typ (Czech) from iso8859-2 to utf-8
+          (hope that this is correct, please test)
+        * lessons/esp.typ: convert esp.typ (Spanish) from iso8859-1 to utf-8
+          (hope that this is correct, please test)
+
 2011-06-XX: Felix Natter <fnatter@gmx.net>
 	* src/*.[ch]: compile with libncursesw, use utf-8 as primary charset
 	* tools/ktouch2typ.pl: add support for ktouch 1.6 XML lessons (utf-8)
