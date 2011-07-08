@@ -4,7 +4,8 @@
 void wideaddch(wchar_t c)
 {
   cchar_t c2;
-  attr_get(&c2.attr, &c2.ext_color, NULL);
+  int dummy;
+  attr_get(&c2.attr, &dummy, NULL);
   c2.chars[0] = c;
   c2.chars[1] = L'\0';
   add_wch(&c2);

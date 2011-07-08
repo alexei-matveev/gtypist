@@ -1,3 +1,7 @@
+2011-07-08 Felix Natter <fnatter@gmx.net>
+	* utf8.c, utf8.h: use proper #define before #include for cchar_t
+	  (needed for wide character output)
+
 2011-02-28  Tim Marston <edam@waxworlds.org>
 
 	* gtypist.c: rewrote the code to open a script file and check for the

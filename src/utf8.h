@@ -19,22 +19,9 @@
 #ifndef UTF8_H
 #define UTF8_H
 
+#define _XOPEN_SOURCE_EXTENDED
 #include <ncursesw/ncurses.h>
 #include <wchar.h>
-
-// TODO: replace this with the proper include!
-#define CCHARW_MAX	5
-typedef struct
-{
-    attr_t	attr;
-    wchar_t	chars[CCHARW_MAX];
-#if 1
-#undef NCURSES_EXT_COLORS
-#define NCURSES_EXT_COLORS 20110404
-    int		ext_color;	/* color pair, must be more than 16-bits */
-#endif
-}
-cchar_t;
 
 extern void wideaddch(wchar_t c);
 extern void wideaddch_rev(wchar_t c);
