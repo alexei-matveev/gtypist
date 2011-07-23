@@ -48,6 +48,42 @@ if ($drill_type eq "D:" || $drill_type eq "d:") {
     }
 }
 
+# this reads from KTOUCHFILE until it finds a blank line or a comment
+sub convert_lesson($**)
+{
+    my $lesson_counter = shift;
+    my $ktouchfile = shift;
+    my $typfile = shift;
+    my $line = undef;
+    my $line_counter = 0;
+    my $drill_counter = 1;
+
+    while (defined($line = <$ktouchfile>) && !isBlankorComment($line))
+    {
+	chomp($line);
+	if ($line_counter == 0) {
+	    print $typfile "*:LESSON${lesson_counter}_D$drill_counter\n";
+	    print $typfile "I:($drill_counter)\n";
+	    print $typfile "${drill_type}$line\n";
+	} else {
+	    print $typfile " :$line\n";
+	}
+
+	++$line_counter;
+	if ($line_counter == $lines_per_drill) {
+# this is not necessary any more: it's implied in D:
+#	    print $typfile
+#		"Q: Press Y to continue, N to repeat, or Fkey 12 to exit\n";
+#	    print $typfile "N:LESSON${lesson_counter}_D$drill_counter\n";
+	    $line_counter = 0; ++$drill_counter;
+	}
+    }
+# this is not necessary any more: it's implied in D:
+#   print $typfile "Q: Press Y to continue, N to repeat, or Fkey 12 to exit\n";
+#    print $typfile "N:LESSON${lesson_counter}_D$drill_counter\n";
+}
+
+
 while(defined($ktouchfilename = shift(@ARGV)))
 {
     if (substr($ktouchfilename, rindex($ktouchfilename, ".")) ne ".ktouch" ||
@@ -118,40 +154,6 @@ while(defined($ktouchfilename = shift(@ARGV)))
 }
 
 
-# this reads from KTOUCHFILE until it finds a blank line or a comment
-sub convert_lesson($lesson_counter *KTOUCHFILE *TYPFILE)
-{
-    my $lesson_counter = shift;
-    my $ktouchfile = shift;
-    my $typfile = shift;
-    my $line = undef;
-    my $line_counter = 0;
-    my $drill_counter = 1;
-
-    while (defined($line = <$ktouchfile>) && !isBlankorComment($line))
-    {
-	chomp($line);
-	if ($line_counter == 0) {
-	    print $typfile "*:LESSON${lesson_counter}_D$drill_counter\n";
-	    print $typfile "I:($drill_counter)\n";
-	    print $typfile "${drill_type}$line\n";
-	} else {
-	    print $typfile " :$line\n";
-	}
-
-	++$line_counter;
-	if ($line_counter == $lines_per_drill) {
-# this is not necessary any more: it's implied in D:
-#	    print $typfile
-#		"Q: Press Y to continue, N to repeat, or Fkey 12 to exit\n";
-#	    print $typfile "N:LESSON${lesson_counter}_D$drill_counter\n";
-	    $line_counter = 0; ++$drill_counter;
-	}
-    }
-# this is not necessary any more: it's implied in D:
-#   print $typfile "Q: Press Y to continue, N to repeat, or Fkey 12 to exit\n";
-#    print $typfile "N:LESSON${lesson_counter}_D$drill_counter\n";
-}
 
 # Local Variables:
 # compile-command: "./ktouch2typ.pl german.ktouch norwegian.ktouch g.ktouch"

@@ -1,3 +1,8 @@
+2011-07-23 Felix Natter <fnatter@gmx.net>
+	* tools/ktouchOLD2typ.pl:
+	  include the old ktouch <<1.6 script as a simple way
+	  of creating gtypist lessons. Works with utf-8.
+
 2011-04-08  Tim marston <edam@waxworlds.org>
 
 	* version.sh: updated to 2.8.5
