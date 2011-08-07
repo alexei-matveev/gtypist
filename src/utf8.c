@@ -1,5 +1,8 @@
 #include "utf8.h"
 #include <ncursesw/ncurses.h>
+#include <stdlib.h>
+#include "gettext.h"
+#define _(String) gettext (String)
 
 void wideaddch(wchar_t c)
 {
@@ -18,9 +21,19 @@ void wideaddch_rev(wchar_t c)
   attroff(A_REVERSE);
 }
 
-int mbslen(char* str)
+int mbslen(const char* str)
 {
   return mbstowcs(NULL, str, 0);
+}
+
+wchar_t* widen(const char* text)
+{
+    int numChars = mbslen(text);
+    wchar_t* wideText = malloc((numChars+1) * sizeof(wchar_t));
+    int convresult = mbstowcs(wideText, text, numChars+1);
+    if (convresult != numChars)
+        fatal_error(_("couldn't convert UTF-8 to wide characters"), "?");
+    return wideText;
 }
 
 /*

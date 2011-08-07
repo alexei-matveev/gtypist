@@ -29,7 +29,8 @@ D:djd djd djd jdj jdj jdj dfd dfd dfd fdf fdf fdf ddf ffd jdd djdfd
 *:LESSON1_D3
 I:(3)
 D:aaa jjj kkk aaa fff aaa ddd aaa jjj kkk aaa fff aaa ddd aaa fafaf
- :ö ö ö ö ö ö ööö ööö ööö ö ö ö ö ö ö ööö ööö ööö ö ö ö ö ö ö öööjj
+ :ö ö ö ö ö ö ööö ööö ööö ö ö ö ö ö ö ö
+ :ööö ööö ö ö ö ö ö ö öööjj
  :ööö fff ddd ööö jjj kkk ööö fff ööö ddd ööö jjj ööö kkk ööö föfjö
  :fff jjj ddd kkk aaa ööö fff jjj ddd kkk aaa ööö fff jjj ddd fjfjf
 *:LESSON1_D4

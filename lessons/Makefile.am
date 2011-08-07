@@ -15,36 +15,36 @@ pkgdata_DATA =  gtypist.typ \
 		u.typ \
 		v.typ \
 		ttde.typ \
-		bulgarian.ktouch.typ \
-		bulgarian_long.ktouch.typ \
-		catalan.ktouch.typ \
-		danish2.ktouch.typ \
-		danish.ktouch.typ \
-		dvorak_ABCD.ktouch.typ \
-		dvorak_es.ktouch.typ \
-		dvorak.ktouch.typ \
-		english.ktouch.typ \
-		finnish_for_kids.ktouch.typ \
-		finnish.ktouch.typ \
-		french2.ktouch.typ \
-		french.ktouch.typ \
-		german2.ktouch.typ \
-		german3.ktouch.typ \
-		german.ktouch.typ \
-		german.neo.ktouch.typ \
-		german.number.ktouch.typ \
-		hungarian_expert.ktouch.typ \
-		hungarian.ktouch.typ \
-		italian.ktouch.typ \
-		nederlands_junior.ktouch.typ \
-		nederlands.ktouch.typ \
-		norwegian.ktouch.typ \
-		polish.ktouch.typ \
-		russian.ktouch.typ \
-		russian_long.ktouch.typ \
-		russian_slava.ktouch.typ \
-		slovenian.ktouch.typ \
-		spanish.ktouch.typ
+		ktbg.typ \
+		ktbg_long.typ \
+		ktes_cat.typ \
+		ktdk2.typ \
+		ktdk.typ \
+		ktdvorak_abcd.typ \
+		ktdvorak_es.typ \
+		ktdvorak.typ \
+		kten.typ \
+		ktfi_kids.typ \
+		ktfi.typ \
+		ktfr2.typ \
+		ktfr.typ \
+		ktde2.typ \
+		ktde3.typ \
+		ktde.typ \
+		ktde_neo.typ \
+		ktde_number.typ \
+		kthu_expert.typ \
+		kthu.typ \
+		ktit.typ \
+		ktnl_junior.typ \
+		ktnl.typ \
+		ktno.typ \
+		ktpl.typ \
+		ktru.typ \
+		ktru_long.typ \
+		ktru_slava.typ \
+		ktsi.typ \
+		ktes.typ
 
 # ktde.typ \
 # ktdk2.typ \

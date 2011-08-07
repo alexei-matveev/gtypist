@@ -41,6 +41,7 @@
 #include <getopt.h>
 #include <assert.h>
 #include <locale.h>
+#include <wctype.h>
 
 #include "cursmenu.h"
 #include "script.h"
@@ -98,8 +99,10 @@ char *SPEED_PCT_ERROR;
 char *SPEED_BEST_WPM;
 char *SPEED_BEST_CPM;
 char *SPEED_BEST_NEW_MSG;
-unsigned char *YN;
-unsigned char *RNE;
+// unsigned char *YN;
+wchar_t *YN;
+//unsigned char *RNE;
+wchar_t *RNE;
 
 #ifndef DATADIR
 #define DATADIR "."
@@ -253,7 +256,7 @@ void banner (const char *text)
    move (B_TOP_LINE, text_position);
    {
      //ADDSTR_REV(text);
-     int numChars = mbstowcs(NULL, text, 0);
+     int numChars = mbslen(text);
      wchar_t* wideText = malloc((numChars+1) * sizeof(wchar_t));
      int convresult = mbstowcs(wideText, text, numChars+1);
      if (convresult != numChars)
@@ -1309,7 +1312,7 @@ do_goto( FILE *script, char *line, bool flag )
 static char
 do_query_repeat ( FILE *script, bool allow_next )
 {
-  char resp;
+  int resp;
 
   /* display the prompt */
   move( MESSAGE_LINE, 0 ); clrtoeol();
@@ -1326,17 +1329,17 @@ do_query_repeat ( FILE *script, bool allow_next )
     {
       resp = getch_fl( ASCII_NULL );
 
-      if (toupper ((char)resp) == 'R' ||
-	  toupper ((char)resp) == RNE [0]) {
+      if (towupper (resp) == 'R' ||
+	  towupper (resp) == RNE [0]) {
 	resp = 'R';
 	break;
       }
-      if (allow_next && (toupper ((char)resp) == 'N' ||
-			 toupper ((char)resp) == RNE [2])) {
+      if (allow_next && (towupper (resp) == 'N' ||
+			 towupper (resp) == RNE [2])) {
 	resp = 'N';
 	break;
       }
-      if (toupper ((char)resp) == 'E' || toupper ((char)resp) == RNE [4]) {
+      if (towupper (resp) == 'E' || towupper (resp) == RNE [4]) {
 	if (do_query_simple (CONFIRM_EXIT_LESSON_MSG))
 	  {
 	    seek_label (script, fkey_bindings [11], NULL);
@@ -1370,7 +1373,7 @@ do_query_repeat ( FILE *script, bool allow_next )
 static bool
 do_query_simple ( char *text )
 {
-  char resp;
+  int resp;
 
   if (user_is_always_sure)
      return TRUE;
@@ -1387,9 +1390,9 @@ do_query_simple ( char *text )
     {
       resp = getch_fl( ASCII_NULL );
 
-      if (toupper (resp) == 'Y' || toupper (resp) == YN[0])
+      if (towupper (resp) == 'Y' || towupper (resp) == YN[0])
 	resp = 0;
-      else if (toupper (resp) == 'N' || toupper (resp) == YN[2])
+      else if (towupper (resp) == 'N' || towupper (resp) == YN[2])
 	resp = -1;
     /* Some PDCURSES implementations return -1 when no key is pressed
        for a second or so.  So, unless resp is explicitly set to Y/N,
@@ -1460,15 +1463,15 @@ do_query( FILE *script, char *line )
       }
 
       /* no FKEY binding - check for Y or N */
-      if ( toupper( (char)resp ) == QUERY_Y ||
-	   toupper( (char)resp ) == YN[0] )
+      if ( towupper( resp ) == QUERY_Y ||
+	   towupper( resp ) == YN[0] )
 	{
 	  ret_code = TRUE;
 	  global_resp_flag = TRUE;
 	  break;
 	}
-      if ( toupper( (char)resp ) == QUERY_N ||
-	   toupper( (char)resp ) == YN[2] )
+      if ( towupper( resp ) == QUERY_N ||
+	   towupper( resp ) == YN[2] )
 	{
 	  ret_code = TRUE;
 	  global_resp_flag = FALSE;
@@ -2088,6 +2091,7 @@ int main( int argc, char **argv )
 #if defined(ENABLE_NLS) && defined(LC_ALL)
   setlocale (LC_ALL, "");
   bindtextdomain (PACKAGE, LOCALEDIR);
+  bind_textdomain_codeset(PACKAGE, "utf-8");
   textdomain (PACKAGE);
 #endif
 
@@ -2166,24 +2170,24 @@ int main( int argc, char **argv )
      uppercase letters separated by '/'. Y/N will still be accepted as
      well. Note that the messages (prompts) themselves cannot be
      translated because they are read from the script-file. */
-  YN = _("Y/N");
-  if (mbslen(YN) != 3 || YN[1] != '/' || !isupper(YN[0]) || !isupper(YN[2]))
+  YN = widen(_("Y/N"));
+  if (wcslen(YN) != 3 || YN[1] != '/' || !iswupper(YN[0]) || !iswupper(YN[2]))
     {
       fprintf( stderr,
-	       "%s: i18n problem: invalid value for msgid \"Y/N\": %s\n",
+	       "%s: i18n problem: invalid value for msgid \"Y/N\": %ls\n",
 	       argv0, YN );
       exit( 1 );
     }
   /* this is used to translate the keys for Repeat/Next/Exit
      queries. Must be three uppercase letters separated by slashes. */
-  RNE = _("R/N/E");
-  if (mbslen(RNE) != 5 ||
-      !isupper(RNE[0]) || RNE[1] != '/' ||
-      !isupper(RNE[2]) || RNE[3] != '/' ||
-      !isupper(RNE[4]))
+  RNE = widen(_("R/N/E"));
+  if (wcslen(RNE) != 5 ||
+      !iswupper(RNE[0]) || RNE[1] != '/' ||
+      !iswupper(RNE[2]) || RNE[3] != '/' ||
+      !iswupper(RNE[4]))
     {
       fprintf( stderr,
-	       "%s: i18n problem: invalid value for msgid \"R/N/E\": %s\n",
+	       "%s: i18n problem: invalid value for msgid \"R/N/E\": %ls\n",
 	       argv0, RNE );
       exit( 1 );
     }

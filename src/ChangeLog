@@ -1,3 +1,8 @@
+2011-08-07 Felix Natter <fnatter@gmx.net>
+	* utf8.c: new wchar_t* widen(char*) helper function
+	* gtypist.c: widen the YN and RNE strings, but their usage isn't yet
+	  fixed
+
 2011-07-08 Felix Natter <fnatter@gmx.net>
 	* utf8.c, utf8.h: use proper #define before #include for cchar_t
 	  (needed for wide character output)

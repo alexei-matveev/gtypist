@@ -25,6 +25,8 @@
 
 extern void wideaddch(wchar_t c);
 extern void wideaddch_rev(wchar_t c);
-extern int mbslen(char* str);
+extern int mbslen(const char* str);
+extern wchar_t* widen(const char* text);
+
 
 #endif /* !UTF8_H */
