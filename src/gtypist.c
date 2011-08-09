@@ -2091,7 +2091,7 @@ int main( int argc, char **argv )
 #if defined(ENABLE_NLS) && defined(LC_ALL)
   setlocale (LC_ALL, "");
   bindtextdomain (PACKAGE, LOCALEDIR);
-  bind_textdomain_codeset(PACKAGE, "utf-8");
+  /* bind_textdomain_codeset(PACKAGE, "utf-8"); */
   textdomain (PACKAGE);
 #endif
 
