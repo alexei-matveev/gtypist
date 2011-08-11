@@ -14,6 +14,8 @@ Your suggestions are welcome too!
 
 SHORT TERM
 
+ * Show a warning when caps lock is active
+
  * In the older courses converted to use menus introduced in 2.7, banners
    sometimes don't change when you return to upper-level menus from lower-level
    ones, because corresponding B command does not occur in the right place (with
