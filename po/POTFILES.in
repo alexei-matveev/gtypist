@@ -4,4 +4,5 @@ src/gtypist.c
 src/cursmenu.c
 src/error.c
 src/script.c
+src/utf8.c
 

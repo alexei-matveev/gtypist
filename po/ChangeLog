@@ -1,3 +1,7 @@
+2011-08-11 Felix Natter <fnatter@gmx.net>
+        * de.po: finish German translation
+	* *.po: update from potfile, convert to utf-8 (except for eu.po)
+
 2009-02-03  Paul Goins  <general@vultaire.net>
 
 	* eu.po: New translation for Basque, provided by David Garciabad.

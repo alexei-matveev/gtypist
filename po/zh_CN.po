@@ -8,145 +8,145 @@ msgstr ""
 "Project-Id-Version: GNU Typist 2.6\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2011-02-24 14:20+0000\n"
-"PO-Revision-Date: 2006-02-13 15:09+0800\n"
+"PO-Revision-Date: 2011-08-11 13:47+0200\n"
 "Last-Translator: Wei Mingzhi <whistler@openoffice.org>\n"
 "Language-Team: Simplified Chinese\n"
 "Language: \n"
 "MIME-Version: 1.0\n"
-"Content-Type: text/plain; charset=gb2312\n"
+"Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 
 #: src/gtypist.c:256
 msgid "internal error in strdup"
-msgstr "ÄÚ²¿´íÎó: strdup"
+msgstr "å†…éƒ¨é”™è¯¯: strdup"
 
 #: src/gtypist.c:364 src/gtypist.c:378 src/script.c:135
 msgid "internal error: malloc"
-msgstr "ÄÚ²¿´íÎó: malloc"
+msgstr "å†…éƒ¨é”™è¯¯: malloc"
 
 #: src/gtypist.c:396
 msgid "label redefinition"
-msgstr "±êÇ©ÖØ¶¨Òå"
+msgstr "æ ‡ç­¾é‡å®šä¹‰"
 
 #: src/gtypist.c:528
 msgid "invalid key binding"
-msgstr "ÎŞĞ§µÄ°´¼ü°ó¶¨"
+msgstr "æ— æ•ˆçš„æŒ‰é”®ç»‘å®š"
 
 #: src/gtypist.c:530
 msgid "invalid function key number"
-msgstr "ÎŞĞ§µÄ¹¦ÄÜ¼ü±àºÅ"
+msgstr "æ— æ•ˆçš„åŠŸèƒ½é”®ç¼–å·"
 
 #: src/gtypist.c:568 src/gtypist.c:667 src/gtypist.c:935
 msgid "data exceeds screen length"
-msgstr "Êı¾İ³¬³öÆÁÄ»¿í¶È"
+msgstr "æ•°æ®è¶…å‡ºå±å¹•å®½åº¦"
 
 #: src/gtypist.c:610
 msgid "instructions are limited to two lines"
-msgstr "Ö¸ÁîÖ»ÏŞ¶şĞĞ"
+msgstr "æŒ‡ä»¤åªé™äºŒè¡Œ"
 
 #: src/gtypist.c:859 src/gtypist.c:1105 src/script.c:192
 msgid "internal error: fseek"
-msgstr "ÄÚ²¿´íÎó: fseek"
+msgstr "å†…éƒ¨é”™è¯¯: fseek"
 
 #: src/gtypist.c:1427
 #, no-c-format
 msgid "'*' must immediately follow '%'"
-msgstr "'*' ±ØĞëÁ¢¼´½Ó×Å '%'"
+msgstr "'*' å¿…é¡»ç«‹å³æ¥ç€ '%'"
 
 #: src/gtypist.c:1430 src/gtypist.c:1433
 #, no-c-format
 msgid "missing '%'"
-msgstr "È±ÉÙ '%'"
+msgstr "ç¼ºå°‘ '%'"
 
 #: src/gtypist.c:1437
 #, no-c-format
 msgid "'%' must immediately follow value"
-msgstr "'%' ±ØĞëÁ¢¼´½Ó×ÅÖµ"
+msgstr "'%' å¿…é¡»ç«‹å³æ¥ç€å€¼"
 
 #: src/gtypist.c:1446
 msgid "overflow in do_error_max_set"
-msgstr "ÔÚ do_error_max_set ÖĞÒç³ö"
+msgstr "åœ¨ do_error_max_set ä¸­æº¢å‡º"
 
 #: src/gtypist.c:1466
 msgid "Invalid value for \"E:\" (out of range)"
-msgstr "\"E:\" µÄÖµÎŞĞ§ (³¬³ö·¶Î§)"
+msgstr "\"E:\" çš„å€¼æ— æ•ˆ (è¶…å‡ºèŒƒå›´)"
 
 #: src/gtypist.c:1521 src/script.c:186
 #, c-format
 msgid "label '%s' not found"
-msgstr "±êÇ© '%s' Ã»ÕÒµ½"
+msgstr "æ ‡ç­¾ '%s' æ²¡æ‰¾åˆ°"
 
 #: src/gtypist.c:1587
 msgid "unknown command"
-msgstr "Î´ÖªµÄÃüÁî"
+msgstr "æœªçŸ¥çš„å‘½ä»¤"
 
 #: src/gtypist.c:1703
 msgid ""
 "default maximum error percentage (default 3.0); valid values are between 0.0 "
 "and 100.0"
-msgstr "Ä¬ÈÏ×î´óµÄ´íÎó°Ù·Ö±È (Ä¬ÈÏÎª 3.0); ÓĞĞ§ÖµÔÚ 9.0 ºÍ 100.0 Ö®¼ä"
+msgstr "é»˜è®¤æœ€å¤§çš„é”™è¯¯ç™¾åˆ†æ¯” (é»˜è®¤ä¸º 3.0); æœ‰æ•ˆå€¼åœ¨ 9.0 å’Œ 100.0 ä¹‹é—´"
 
 #: src/gtypist.c:1704
 msgid "turn off WPM timer in drills"
-msgstr "ÔÚÑµÁ·ÖĞ¹Ø±ÕÃ¿·ÖÖÓ×ÖÊı¼ÆÊ±Æ÷"
+msgstr "åœ¨è®­ç»ƒä¸­å…³é—­æ¯åˆ†é’Ÿå­—æ•°è®¡æ—¶å™¨"
 
 #: src/gtypist.c:1705
 msgid "use the terminal's hardware cursor"
-msgstr "Ê¹ÓÃÖÕ¶ËÓ²¼ş¹â±ê"
+msgstr "ä½¿ç”¨ç»ˆç«¯ç¡¬ä»¶å…‰æ ‡"
 
 #: src/gtypist.c:1706
 msgid ""
 "cursor flash period P*.1 sec (default 10); valid  values are between 0 and "
 "512; this is ignored if -t is specified"
 msgstr ""
-"¹â±êÉÁË¸ÖÜÆÚ P * 0.1 Ãë (Ä¬ÈÏÎª 10); ÓĞĞ§ÖµÔÚ 0 ºÍ 512 Ö®¼ä; Èô -t ²ÎÊı±»Ö¸"
-"¶¨, ÔòÕâ¸öÖµ½«±»ºöÂÔ"
+"å…‰æ ‡é—ªçƒå‘¨æœŸ P * 0.1 ç§’ (é»˜è®¤ä¸º 10); æœ‰æ•ˆå€¼åœ¨ 0 å’Œ 512 ä¹‹é—´; è‹¥ -t å‚æ•°è¢«æŒ‡"
+"å®š, åˆ™è¿™ä¸ªå€¼å°†è¢«å¿½ç•¥"
 
 #: src/gtypist.c:1707
 msgid "set initial display colours where available"
-msgstr "ÉèÖÃ¿ÉÓÃµÄ³õÊ¼ÏÔÊ¾ÑÕÉ«"
+msgstr "è®¾ç½®å¯ç”¨çš„åˆå§‹æ˜¾ç¤ºé¢œè‰²"
 
 #: src/gtypist.c:1708
 msgid "don't beep on errors"
-msgstr "µ±´íÎó·¢ÉúÊ±²»ÏìÁå"
+msgstr "å½“é”™è¯¯å‘ç”Ÿæ—¶ä¸å“é“ƒ"
 
 #: src/gtypist.c:1709
 msgid "same as -s, --silent"
-msgstr "ºÍ -s, --silent ÏàÍ¬"
+msgstr "å’Œ -s, --silent ç›¸åŒ"
 
 #: src/gtypist.c:1710
 msgid "start the lesson at label 'L'"
-msgstr "ÓÉ±êÇ© 'L' µÄ¿Î³Ì¿ªÊ¼"
+msgstr "ç”±æ ‡ç­¾ 'L' çš„è¯¾ç¨‹å¼€å§‹"
 
 #: src/gtypist.c:1711
 msgid "try to mimic word processors"
-msgstr "ÊÔÍ¼Ä£Äâ×Ö´¦ÀíÈí¼ş"
+msgstr "è¯•å›¾æ¨¡æ‹Ÿå­—å¤„ç†è½¯ä»¶"
 
 #: src/gtypist.c:1712
 msgid "forbid the user to skip exercises"
-msgstr "½ûÖ¹Ê¹ÓÃÕßÌø¹ıÁ·Ï°"
+msgstr "ç¦æ­¢ä½¿ç”¨è€…è·³è¿‡ç»ƒä¹ "
 
 #: src/gtypist.c:1713
 msgid "highlight errors with reverse video"
-msgstr "¸ßÁÁÏÔÊ¾´íÎó"
+msgstr "é«˜äº®æ˜¾ç¤ºé”™è¯¯"
 
 #: src/gtypist.c:1714
 msgid "print this message"
-msgstr "´òÓ¡´ËÏûÏ¢"
+msgstr "æ‰“å°æ­¤æ¶ˆæ¯"
 
 #: src/gtypist.c:1715
 msgid "output version information and exit"
-msgstr "Êä³ö°æ±¾ĞÅÏ¢È»ºóÍË³ö"
+msgstr "è¾“å‡ºç‰ˆæœ¬ä¿¡æ¯ç„¶åé€€å‡º"
 
 #: src/gtypist.c:1716
 msgid "do not ask confirmation questions"
-msgstr "²»ÒªÎÊÈ·ÈÏÎÊÌâ"
+msgstr "ä¸è¦é—®ç¡®è®¤é—®é¢˜"
 
 #: src/gtypist.c:1717
 msgid ""
 "set top banner colours (background, foreground, package and version "
 "respectively)"
-msgstr "ÉèÖÃÆÁÄ»ÉÏ·½µÄ¹ã¸æÌõÑÕÉ« (·Ö±ğÎª±³¾°£¬Ç°¾°£¬°üºÍ°æ±¾)¡£"
+msgstr "è®¾ç½®å±å¹•ä¸Šæ–¹çš„å¹¿å‘Šæ¡é¢œè‰² (åˆ†åˆ«ä¸ºèƒŒæ™¯ï¼Œå‰æ™¯ï¼ŒåŒ…å’Œç‰ˆæœ¬)ã€‚"
 
 #: src/gtypist.c:1719
 msgid "set scoring mode (words per minute or characters per minute)"
@@ -159,20 +159,20 @@ msgid ""
 "languages.  New lessons can be written by the user easily.\n"
 "\n"
 msgstr ""
-"'gtypist' ÊÇÒ»¿î´ò×Ö½Ì³ÌÈí¼ş£¬Ö§³Ö²»Í¬µÄ¼üÅÌºÍÓïÑÔ¡£ĞÂµÄ¿Î³Ì¿ÉÒÔÓÉÓÃ»§ºÜÈİÒ×"
-"µÄÖÆ×÷³öÀ´¡£\n"
+"'gtypist' æ˜¯ä¸€æ¬¾æ‰“å­—æ•™ç¨‹è½¯ä»¶ï¼Œæ”¯æŒä¸åŒçš„é”®ç›˜å’Œè¯­è¨€ã€‚æ–°çš„è¯¾ç¨‹å¯ä»¥ç”±ç”¨æˆ·å¾ˆå®¹æ˜“"
+"çš„åˆ¶ä½œå‡ºæ¥ã€‚\n"
 
 #: src/gtypist.c:1725
 msgid "Usage"
-msgstr "ÓÃ·¨"
+msgstr "ç”¨æ³•"
 
 #: src/gtypist.c:1725 src/gtypist.c:1726
 msgid "Options"
-msgstr "Ñ¡Ïî"
+msgstr "é€‰é¡¹"
 
 #: src/gtypist.c:1725
 msgid "script-file"
-msgstr "½Å±¾ÎÄ¼ş"
+msgstr "è„šæœ¬æ–‡ä»¶"
 
 #: src/gtypist.c:1733
 #, c-format
@@ -181,7 +181,7 @@ msgid ""
 "If not supplied, script-file defaults to '%s/%s'.\n"
 msgstr ""
 "\n"
-"Èç¹ûÃ»ÓĞÌá¹©£¬Ä¬ÈÏ½Å±¾ÎÄ¼şÎª '%s/%s'.\n"
+"å¦‚æœæ²¡æœ‰æä¾›ï¼Œé»˜è®¤è„šæœ¬æ–‡ä»¶ä¸º '%s/%s'.\n"
 
 #: src/gtypist.c:1735
 #, c-format
@@ -189,81 +189,81 @@ msgid ""
 "The path $GTYPIST_PATH is searched for script files.\n"
 "\n"
 msgstr ""
-"´ÓÂ·¾¶ $GTYPIST_PATH ÖĞËÑË÷½Å±¾ÎÄ¼ş¡£\n"
+"ä»è·¯å¾„ $GTYPIST_PATH ä¸­æœç´¢è„šæœ¬æ–‡ä»¶ã€‚\n"
 "\n"
 
 #: src/gtypist.c:1737
 msgid "Examples"
-msgstr "Àı×Ó"
+msgstr "ä¾‹å­"
 
 #: src/gtypist.c:1739
 msgid "To run the default lesson in english `gtypist.typ'"
-msgstr "ÒÔÄ¬ÈÏµÄÓ¢Óï·½Ê½ `gtypist.typ' ½øĞĞ¿Î³Ì"
+msgstr "ä»¥é»˜è®¤çš„è‹±è¯­æ–¹å¼ `gtypist.typ' è¿›è¡Œè¯¾ç¨‹"
 
 #: src/gtypist.c:1741
 msgid "To run the lesson in spanish"
-msgstr "ÒÔÎ÷°àÑÀÓï·½Ê½½øĞĞ¿Î³Ì"
+msgstr "ä»¥è¥¿ç­ç‰™è¯­æ–¹å¼è¿›è¡Œè¯¾ç¨‹"
 
 #: src/gtypist.c:1743
 msgid ""
 "To instruct gtypist to look for lesson `bar.typ' in a non standard directory"
-msgstr "ÈÃ gtypist ÔÚÒ»¸ö·Ç±ê×¼Ä¿Â¼ÖĞ²éÕÒ¿Î³Ì `bar.typ'¡£"
+msgstr "è®© gtypist åœ¨ä¸€ä¸ªéæ ‡å‡†ç›®å½•ä¸­æŸ¥æ‰¾è¯¾ç¨‹ `bar.typ'ã€‚"
 
 #: src/gtypist.c:1745
 msgid ""
 "To run the lesson in the file `test.typ' of directory `temp', starting at "
 "label `TEST1', using the terminal's cursor, and run silently"
 msgstr ""
-"Òª½øĞĞÄ¿Â¼ `temp' ÏÂµÄÎÄ¼ş `test.typ' ÖĞµÄ¿Î³Ì£¬´Ó±êÇ© `TEST1' ¿ªÊ¼£¬Ê¹ÓÃÖÕ¶Ë"
-"¹â±ê£¬²¢ÇÒÊ¹ÓÃ°²¾²Ä£Ê½¡£"
+"è¦è¿›è¡Œç›®å½• `temp' ä¸‹çš„æ–‡ä»¶ `test.typ' ä¸­çš„è¯¾ç¨‹ï¼Œä»æ ‡ç­¾ `TEST1' å¼€å§‹ï¼Œä½¿ç”¨ç»ˆç«¯"
+"å…‰æ ‡ï¼Œå¹¶ä¸”ä½¿ç”¨å®‰é™æ¨¡å¼ã€‚"
 
 #: src/gtypist.c:1746
 msgid "Report bugs to bug-gtypist@gnu.org"
-msgstr "½«´íÎó±¨¸æ¸ø bug-gtypist@gnu.org "
+msgstr "å°†é”™è¯¯æŠ¥å‘Šç»™ bug-gtypist@gnu.org "
 
 #: src/gtypist.c:1791
 #, c-format
 msgid "%s: invalid error-max value\n"
-msgstr "%s: ÎŞĞ§µÄ error-max Öµ\n"
+msgstr "%s: æ— æ•ˆçš„ error-max å€¼\n"
 
 #: src/gtypist.c:1807
 #, c-format
 msgid "%s: invalid curs-flash value\n"
-msgstr "%s: ÎŞĞ§µÄ curs-flash Öµ\n"
+msgstr "%s: æ— æ•ˆçš„ curs-flash å€¼\n"
 
 #: src/gtypist.c:1818
 #, c-format
 msgid "%s: invalid colours value\n"
-msgstr "%s: ²»ÕıÈ·µÄÑÕÉ«Öµ\n"
+msgstr "%s: ä¸æ­£ç¡®çš„é¢œè‰²å€¼\n"
 
 #: src/gtypist.c:1828
 #, c-format
 msgid "%s:  argument format is incorrect\n"
-msgstr "%s:  ²ÎÊı¸ñÊ½²»ÕıÈ·\n"
+msgstr "%s:  å‚æ•°æ ¼å¼ä¸æ­£ç¡®\n"
 
 #: src/gtypist.c:1838
 #, c-format
 msgid "%s:  incorrect colour values\n"
-msgstr "%s:  ²»ÕıÈ·µÄÑÕÉ«Öµ\n"
+msgstr "%s:  ä¸æ­£ç¡®çš„é¢œè‰²å€¼\n"
 
 #: src/gtypist.c:1847 src/gtypist.c:1860
 #, fuzzy, c-format
 msgid "%s: invalid scoring mode"
-msgstr "%s: ²»ÕıÈ·µÄÑÕÉ«Öµ\n"
+msgstr "%s: ä¸æ­£ç¡®çš„é¢œè‰²å€¼\n"
 
 #: src/gtypist.c:1873
 #, c-format
 msgid "%s: internal error: malloc\n"
-msgstr "%s: ÄÚ²¿´íÎó: malloc\n"
+msgstr "%s: å†…éƒ¨é”™è¯¯: malloc\n"
 
 #: src/gtypist.c:1894
 msgid "Written by Simon Baldwin"
-msgstr "×÷Õß Simon Baldwin"
+msgstr "ä½œè€… Simon Baldwin"
 
 #: src/gtypist.c:1903 src/gtypist.c:1910
 #, c-format
 msgid "Try '%s --help' for more information.\n"
-msgstr "´ò '%s --help' ¿ÉµÃµ½¸ü¶àµÄĞÅÏ¢.\n"
+msgstr "æ‰“ '%s --help' å¯å¾—åˆ°æ›´å¤šçš„ä¿¡æ¯.\n"
 
 #: src/gtypist.c:1948
 msgid ""
@@ -275,62 +275,62 @@ msgid ""
 "under certain conditions; again, see 'COPYING' for details.\n"
 "This program is released under the GNU General Public License."
 msgstr ""
-"°æÈ¨ËùÓĞ (c) 1998, 1999, 2000, 2001, 2002, 2003 Simon Baldwin.\n"
-"°æÈ¨ËùÓĞ (c) 2003, 2004, 2008 GNU Typist Development Team.\n"
-"±¾Èí¼şÃ»ÓĞÈÎºÎ±£Ö¤; ÏêÇéÇë²Î¿´Ô´Âë°üÖĞµÄ 'COPYING' ÎÄ¼ş¡£\n"
-"±¾³ÌĞòÊÇ×ÔÓÉÈí¼ş£¬Äú¿ÉÒÔÔÚÒ»¶¨µÄÌõ¿îÏÂ´«²¥¡£Çë²Î¿´ COPYING\n"
-"ÎÄ¼ş¡£±¾³ÌĞòÔÚ GNU Ò»°ã¹«ÖÚĞí¿ÉÖ¤ÏÂ·¢²¼¡£"
+"ç‰ˆæƒæ‰€æœ‰ (c) 1998, 1999, 2000, 2001, 2002, 2003 Simon Baldwin.\n"
+"ç‰ˆæƒæ‰€æœ‰ (c) 2003, 2004, 2008 GNU Typist Development Team.\n"
+"æœ¬è½¯ä»¶æ²¡æœ‰ä»»ä½•ä¿è¯; è¯¦æƒ…è¯·å‚çœ‹æºç åŒ…ä¸­çš„ 'COPYING' æ–‡ä»¶ã€‚\n"
+"æœ¬ç¨‹åºæ˜¯è‡ªç”±è½¯ä»¶ï¼Œæ‚¨å¯ä»¥åœ¨ä¸€å®šçš„æ¡æ¬¾ä¸‹ä¼ æ’­ã€‚è¯·å‚çœ‹ COPYING\n"
+"æ–‡ä»¶ã€‚æœ¬ç¨‹åºåœ¨ GNU ä¸€èˆ¬å…¬ä¼—è®¸å¯è¯ä¸‹å‘å¸ƒã€‚"
 
 #: src/gtypist.c:1956
 msgid " Tutorial "
-msgstr "   ½Ì³Ì   "
+msgstr "   æ•™ç¨‹   "
 
 #: src/gtypist.c:1958
 msgid "  Query   "
-msgstr "   ²éÑ¯   "
+msgstr "   æŸ¥è¯¢   "
 
 #: src/gtypist.c:1960
 msgid "  Drill   "
-msgstr "   ²ÙÁ·   "
+msgstr "   æ“ç»ƒ   "
 
 #: src/gtypist.c:1962
 msgid "Speed test"
-msgstr "ËÙ¶È²âÑé"
+msgstr "é€Ÿåº¦æµ‹éªŒ"
 
 #: src/gtypist.c:1964
 msgid " Press RETURN or SPACE to continue, ESC to return to the menu "
-msgstr " °´»Ø³µ¼ü»ò¿Õ¸ñÊ½¼ÌĞø¡£ESC ¼ü»Øµ½²Ëµ¥¡£"
+msgstr " æŒ‰å›è½¦é”®æˆ–ç©ºæ ¼å¼ç»§ç»­ã€‚ESC é”®å›åˆ°èœå•ã€‚"
 
 #: src/gtypist.c:1967
 #, c-format
 msgid " Your error-rate is too high. You have to achieve %.1f%%. "
-msgstr "ÄúµÄ´íÎóÂÊÌ«¸ßÁË. Äú±ØĞë´ïµ½ %.1f%%."
+msgstr "æ‚¨çš„é”™è¯¯ç‡å¤ªé«˜äº†. æ‚¨å¿…é¡»è¾¾åˆ° %.1f%%."
 
 #: src/gtypist.c:1971
 #, c-format
 msgid " You failed this test, so you need to go back to %s. "
-msgstr "ÄúÃ»ÓĞÍ¨¹ı´Ë´Î²âÑé, ËùÒÔÄú±ØĞë»Øµ½ %s"
+msgstr "æ‚¨æ²¡æœ‰é€šè¿‡æ­¤æ¬¡æµ‹éªŒ, æ‰€ä»¥æ‚¨å¿…é¡»å›åˆ° %s"
 
 #: src/gtypist.c:1975
 msgid " Press R to repeat, N for next exercise or E to exit "
-msgstr "°´ R ÖØ¸´Ò»´Î, °´ N ½øÈëÏÂÒ»¸öÁ·Ï°»ò°´ E ÍË³ö"
+msgstr "æŒ‰ R é‡å¤ä¸€æ¬¡, æŒ‰ N è¿›å…¥ä¸‹ä¸€ä¸ªç»ƒä¹ æˆ–æŒ‰ E é€€å‡º"
 
 #: src/gtypist.c:1979
 msgid " Press R to repeat or E to exit "
-msgstr "°´ R ÖØ¸´Ò»´Î»ò°´ E ÍË³ö"
+msgstr "æŒ‰ R é‡å¤ä¸€æ¬¡æˆ–æŒ‰ E é€€å‡º"
 
 #: src/gtypist.c:1982
 msgid " Are you sure you want to exit this lesson? [Y/N] "
-msgstr "ÄúÈ·¶¨ÒªÍË³ö´Ë¿Î³ÌÂğ? [Y/N]"
+msgstr "æ‚¨ç¡®å®šè¦é€€å‡ºæ­¤è¯¾ç¨‹å—? [Y/N]"
 
 #: src/gtypist.c:1986
 msgid " Sorry, gtypist is configured to forbid skipping exercises. "
-msgstr "±§Ç¸, gtypist Ä¿Ç°Éè¶¨Îª½ûÖ¹Ìø¹ı¿Î³Ì¡£"
+msgstr "æŠ±æ­‰, gtypist ç›®å‰è®¾å®šä¸ºç¦æ­¢è·³è¿‡è¯¾ç¨‹ã€‚"
 
 #: src/gtypist.c:1991
 #, c-format
 msgid " Raw speed      = %6.2f wpm "
-msgstr " Ô­Ê¼ËÙ¶È     = %6.2f ×Ö/·Ö "
+msgstr " åŸå§‹é€Ÿåº¦     = %6.2f å­—/åˆ† "
 
 #: src/gtypist.c:1993
 #, fuzzy, c-format
@@ -340,7 +340,7 @@ msgstr " Raw speed      = %6.2f cpm "
 #: src/gtypist.c:1998
 #, c-format
 msgid " Adjusted speed = %6.2f wpm "
-msgstr " ÒÑµ÷ÕûËÙ¶È   = %6.2f ×Ö/·Ö "
+msgstr " å·²è°ƒæ•´é€Ÿåº¦   = %6.2f å­—/åˆ† "
 
 #: src/gtypist.c:2000
 #, fuzzy, c-format
@@ -350,7 +350,7 @@ msgstr " Adjusted speed = %6.2f cpm "
 #: src/gtypist.c:2005
 #, c-format
 msgid "            with %.1f%% errors "
-msgstr "           ÓĞ   %.1f%%  µÄ´íÎó "
+msgstr "           æœ‰   %.1f%%  çš„é”™è¯¯ "
 
 #: src/gtypist.c:2010
 msgid "Y/N"
@@ -362,37 +362,37 @@ msgstr "R/N/E"
 
 #: src/gtypist.c:2078
 msgid "can't find or open file"
-msgstr "ÕÒ²»µ½»òÎŞ·¨´ò¿ªÎÄ¼ş"
+msgstr "æ‰¾ä¸åˆ°æˆ–æ— æ³•æ‰“å¼€æ–‡ä»¶"
 
 #: src/gtypist.c:2129
 msgid "Loading the script..."
-msgstr "ÕıÔÚµ÷Èë½Å±¾ÎÄ¼ş"
+msgstr "æ­£åœ¨è°ƒå…¥è„šæœ¬æ–‡ä»¶"
 
 #: src/cursmenu.c:322
 msgid ""
 "Use arrowed keys to move around, SPACE or RETURN to select and ESCAPE to go "
 "back"
-msgstr "Ê¹ÓÃ¹â±ê¼üÒÆ¶¯£¬¿Õ¸ñ¼ü»ò»Ø³µ¼üÑ¡Ôñ£¬ESC ¼üºóÍË"
+msgstr "ä½¿ç”¨å…‰æ ‡é”®ç§»åŠ¨ï¼Œç©ºæ ¼é”®æˆ–å›è½¦é”®é€‰æ‹©ï¼ŒESC é”®åé€€"
 
 #: src/error.c:49
 msgid "line"
-msgstr "ĞĞ"
+msgstr "è¡Œ"
 
 #: src/script.c:51
 msgid "internal error: strdup"
-msgstr "ÄÚ²¿´íÎó: strdup"
+msgstr "å†…éƒ¨é”™è¯¯: strdup"
 
 #: src/script.c:109
 msgid "data shortage"
-msgstr "Êı¾İ²»×ã"
+msgstr "æ•°æ®ä¸è¶³"
 
 #: src/script.c:111
 msgid "missing ':'"
-msgstr "È±ÉÙ ':'"
+msgstr "ç¼ºå°‘ ':'"
 
 #: src/script.c:117
 msgid "line too long for screen"
-msgstr "ĞĞ³¤¶È³¬¹ıÆÁÄ»¿ÉÈİÄÉ¿í¶È"
+msgstr "è¡Œé•¿åº¦è¶…è¿‡å±å¹•å¯å®¹çº³å®½åº¦"
 
 #: src/script.c:207
 #, c-format
@@ -400,5 +400,5 @@ msgid ""
 "Happy Typing!\n"
 "\n"
 msgstr ""
-"×£Äú´ò×ÖÓä¿ì!\n"
+"ç¥æ‚¨æ‰“å­—æ„‰å¿«!\n"
 "\n"

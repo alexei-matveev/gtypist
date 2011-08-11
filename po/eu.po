@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: GNU Typist 2.7\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2011-02-24 14:20+0000\n"
+"POT-Creation-Date: 2011-08-11 12:28+0200\n"
 "Last-Translator: David García-Abad\n"
 "Language-Team: \n"
 "Language: \n"
@@ -10,71 +10,84 @@ msgstr ""
 "Content-Type: text/plain; charset=iso-8859-1\n"
 "Content-Transfer-Encoding: 8bit\n"
 
-#: src/gtypist.c:256
+#: src/gtypist.c:263 src/gtypist.c:743 src/gtypist.c:1024
+msgid "couldn't convert UTF-8 to wide characters"
+msgstr ""
+
+#: src/gtypist.c:292
 msgid "internal error in strdup"
 msgstr "barne errorea strdup-en"
 
-#: src/gtypist.c:364 src/gtypist.c:378 src/script.c:135
+#: src/gtypist.c:407 src/gtypist.c:431 src/gtypist.c:2354 src/gtypist.c:2371
+#: src/gtypist.c:2387 src/gtypist.c:2429 src/gtypist.c:2446 src/script.c:141
 msgid "internal error: malloc"
 msgstr "barne errorea 'malloc' -en"
 
-#: src/gtypist.c:396
+#: src/gtypist.c:423
+msgid "label contains space"
+msgstr ""
+
+#: src/gtypist.c:449
 msgid "label redefinition"
 msgstr "etiketaren berdefinizioa"
 
-#: src/gtypist.c:528
+#: src/gtypist.c:601
 msgid "invalid key binding"
 msgstr "teklen asoziazio ez zuzena"
 
-#: src/gtypist.c:530
+#: src/gtypist.c:603
 msgid "invalid function key number"
 msgstr "funtzio teklaren zenbaki okerra"
 
-#: src/gtypist.c:568 src/gtypist.c:667 src/gtypist.c:935
+#: src/gtypist.c:641 src/gtypist.c:753 src/gtypist.c:1043
 msgid "data exceeds screen length"
 msgstr "datuek pantailaren luzera gainditzen dute"
 
-#: src/gtypist.c:610
+#: src/gtypist.c:683
 msgid "instructions are limited to two lines"
 msgstr "instrukzioak bi lerrotara mugatuta daude"
 
-#: src/gtypist.c:859 src/gtypist.c:1105 src/script.c:192
+#: src/gtypist.c:948 src/gtypist.c:1218 src/script.c:198
 msgid "internal error: fseek"
 msgstr "barne errorea: 'fseek'"
 
-#: src/gtypist.c:1427
+#: src/gtypist.c:1540
 #, no-c-format
 msgid "'*' must immediately follow '%'"
 msgstr "'*'  '% (r)en ostean etorri behar da'"
 
-#: src/gtypist.c:1430 src/gtypist.c:1433
+#: src/gtypist.c:1543 src/gtypist.c:1546
 #, no-c-format
 msgid "missing '%'"
 msgstr "'%' falta da"
 
-#: src/gtypist.c:1437
+#: src/gtypist.c:1550
 #, no-c-format
 msgid "'%' must immediately follow value"
 msgstr "'%' balorearen ostean etorri behar da"
 
-#: src/gtypist.c:1446
+#: src/gtypist.c:1559
 msgid "overflow in do_error_max_set"
 msgstr "'do_error_max_set' -en gainezkatzea"
 
-#: src/gtypist.c:1466
+#: src/gtypist.c:1579
 msgid "Invalid value for \"E:\" (out of range)"
 msgstr "\"E:\" rako balio okerra (tartetik kanpo)"
 
-#: src/gtypist.c:1521 src/script.c:186
+#: src/gtypist.c:1634 src/script.c:192
 #, c-format
 msgid "label '%s' not found"
 msgstr "'%s' etiketa ez aurkitua"
 
-#: src/gtypist.c:1587
+#: src/gtypist.c:1700
 msgid "unknown command"
 msgstr "agindu ezezaguna"
 
-#: src/gtypist.c:1703
+#: src/gtypist.c:1818
+msgid "track personal best typing speeds"
+msgstr ""
+
+#: src/gtypist.c:1819
 msgid ""
 "default maximum error percentage (default 3.0); valid values are between 0.0 "
 "and 100.0"
@@ -82,15 +95,15 @@ msgstr ""
 "gehienezko errorearen ehunekoa (defektuz 3.0); baliozko baloreak 0.0 eta "
 "100.0 bitartean daude"
 
-#: src/gtypist.c:1704
+#: src/gtypist.c:1821
 msgid "turn off WPM timer in drills"
 msgstr "WPM kontadorea desaktibatu praktiketarako"
 
-#: src/gtypist.c:1705
+#: src/gtypist.c:1822
 msgid "use the terminal's hardware cursor"
 msgstr "erabili terminalaren kurtsorea"
 
-#: src/gtypist.c:1706
+#: src/gtypist.c:1823
 msgid ""
 "cursor flash period P*.1 sec (default 10); valid  values are between 0 and "
 "512; this is ignored if -t is specified"
@@ -99,47 +112,47 @@ msgstr ""
 "baloreak 0 eta 512 bitartean daude; Ez da kontuan hartuko '-t' aukera "
 "zehazten bada"
 
-#: src/gtypist.c:1707
+#: src/gtypist.c:1825
 msgid "set initial display colours where available"
 msgstr "pantailaren hasierako koloreak ezartzen ditu posible denean"
 
-#: src/gtypist.c:1708
+#: src/gtypist.c:1826
 msgid "don't beep on errors"
 msgstr "ez egin soinurik erroreak izanez gero"
 
-#: src/gtypist.c:1709
+#: src/gtypist.c:1827
 msgid "same as -s, --silent"
 msgstr "'-s, --silent'-en eragin bera"
 
-#: src/gtypist.c:1710
+#: src/gtypist.c:1828
 msgid "start the lesson at label 'L'"
 msgstr "ikasgaia 'L' etiketan hasi"
 
-#: src/gtypist.c:1711
+#: src/gtypist.c:1829
 msgid "try to mimic word processors"
 msgstr "testu prozesadorak imitatzen saiatzen da"
 
-#: src/gtypist.c:1712
+#: src/gtypist.c:1830
 msgid "forbid the user to skip exercises"
 msgstr "erabiltzaileari ariketei jaramonik ez egitea debekatu"
 
-#: src/gtypist.c:1713
+#: src/gtypist.c:1831
 msgid "highlight errors with reverse video"
 msgstr "koloreak azpimarratu pantailak daukan kolorearen inbertsioarekin"
 
-#: src/gtypist.c:1714
+#: src/gtypist.c:1832
 msgid "print this message"
 msgstr "mezu hau erakutsi"
 
-#: src/gtypist.c:1715
+#: src/gtypist.c:1833
 msgid "output version information and exit"
 msgstr "bertsioari buruzko informazioa erakutsi eta irten"
 
-#: src/gtypist.c:1716
+#: src/gtypist.c:1834
 msgid "do not ask confirmation questions"
 msgstr "baieztatzeko galderarik ez egin"
 
-#: src/gtypist.c:1717
+#: src/gtypist.c:1835
 msgid ""
 "set top banner colours (background, foreground, package and version "
 "respectively)"
@@ -147,11 +160,11 @@ msgstr ""
 "goiko panelaren koloreak ezarri (hondoa, lehen planoa, paketea eta bertsioa  "
 "hurrenez hurren)"
 
-#: src/gtypist.c:1719
+#: src/gtypist.c:1837
 msgid "set scoring mode (words per minute or characters per minute)"
 msgstr "ezarri puntuatzeko modua (hitzak minutuko edo karakterrak minutuko)"
 
-#: src/gtypist.c:1723
+#: src/gtypist.c:1841
 #, c-format
 msgid ""
 "`gtypist' is a typing tutor with several lessons for different keyboards and "
@@ -162,19 +175,24 @@ msgstr ""
 "osatuta dago, teklatu eta hizkuntza desberdinetarako. Erabiltzaile batek "
 "ikasgai berriak gehitu ditzake erraztasunez.\n"
 
-#: src/gtypist.c:1725
+#: src/gtypist.c:1845
 msgid "Usage"
 msgstr "Erabilera"
 
-#: src/gtypist.c:1725 src/gtypist.c:1726
-msgid "Options"
+#: src/gtypist.c:1845
+#, fuzzy
+msgid "options"
 msgstr "Aukerak"
 
-#: src/gtypist.c:1725
+#: src/gtypist.c:1845
 msgid "script-file"
 msgstr "'script' artxiboak"
 
-#: src/gtypist.c:1733
+#: src/gtypist.c:1846
+msgid "Options"
+msgstr "Aukerak"
+
+#: src/gtypist.c:1853
 #, c-format
 msgid ""
 "\n"
@@ -183,7 +201,7 @@ msgstr ""
 "\n"
 "Adierazten ez bada, defektuzko 'script' artxiboa '%s/%s' da.\n"
 
-#: src/gtypist.c:1735
+#: src/gtypist.c:1855
 #, c-format
 msgid ""
 "The path $GTYPIST_PATH is searched for script files.\n"
@@ -192,26 +210,26 @@ msgstr ""
 "'script' artxiboak 'GTYPIST_PATH' aldagaian adierazitako bidean bilatuko "
 "dira.\n"
 
-#: src/gtypist.c:1737
+#: src/gtypist.c:1857
 msgid "Examples"
 msgstr "Adibideak"
 
-#: src/gtypist.c:1739
+#: src/gtypist.c:1859
 msgid "To run the default lesson in english `gtypist.typ'"
 msgstr "Defektuz ingelesez dagoen ikasgaia exekutatzeko 'gtypist.typ'"
 
-#: src/gtypist.c:1741
+#: src/gtypist.c:1861
 msgid "To run the lesson in spanish"
 msgstr "Ikasgaia erdaraz exekutatzeko"
 
-#: src/gtypist.c:1743
+#: src/gtypist.c:1863
 msgid ""
 "To instruct gtypist to look for lesson `bar.typ' in a non standard directory"
 msgstr ""
 "'gtypist' -i 'bar.typ' ikasgaia direktorio ez estandar batean bila dezan "
 "esateko."
 
-#: src/gtypist.c:1745
+#: src/gtypist.c:1866
 msgid ""
 "To run the lesson in the file `test.typ' of directory `temp', starting at "
 "label `TEST1', using the terminal's cursor, and run silently"
@@ -219,58 +237,59 @@ msgstr ""
 "'temp' direktorioan dagoen 'test.typ' artxiboko ikasgaia exekutatzeko, "
 "'TEST1' etiketan hasiz, terminalaren kurtsorea erabiliz eta modu isiliean."
 
-#: src/gtypist.c:1746
+#: src/gtypist.c:1869
 msgid "Report bugs to bug-gtypist@gnu.org"
 msgstr "Errorei buruzko txostena 'bug-gtypist@gnu.org' helbidera bidali"
 
-#: src/gtypist.c:1791
+#: src/gtypist.c:1918
 #, c-format
 msgid "%s: invalid error-max value\n"
 msgstr "%s: 'error-max' -en balore okerra\n"
 
-#: src/gtypist.c:1807
+#: src/gtypist.c:1934
 #, c-format
 msgid "%s: invalid curs-flash value\n"
 msgstr "%s: 'curs-flash' -en balore okerra\n"
 
-#: src/gtypist.c:1818
+#: src/gtypist.c:1945
 #, c-format
 msgid "%s: invalid colours value\n"
 msgstr "%s: kolorearen balore okerra\n"
 
-#: src/gtypist.c:1828
+#: src/gtypist.c:1955
 #, c-format
 msgid "%s:  argument format is incorrect\n"
 msgstr "%s: argumentuaren formatoa ez zuzena da\n"
 
-#: src/gtypist.c:1838
+#: src/gtypist.c:1965
 #, c-format
 msgid "%s:  incorrect colour values\n"
 msgstr "%s: koloreen balore okerrak'\n"
 
-#: src/gtypist.c:1847 src/gtypist.c:1860
+#: src/gtypist.c:1974 src/gtypist.c:1987
 #, c-format
 msgid "%s: invalid scoring mode"
 msgstr "%s: puntuaziorako modu ez zuzena"
 
-#: src/gtypist.c:1873
+#: src/gtypist.c:2000
 #, c-format
 msgid "%s: internal error: malloc\n"
 msgstr "%s: barne errorea: 'malloc'\n"
 
-#: src/gtypist.c:1894
+#: src/gtypist.c:2021
 msgid "Written by Simon Baldwin"
 msgstr "Simon Baldwinek idatzia"
 
-#: src/gtypist.c:1903 src/gtypist.c:1910
+#: src/gtypist.c:2030 src/gtypist.c:2037
 #, c-format
 msgid "Try '%s --help' for more information.\n"
 msgstr "Saiatu '%s --help' erabiliz informazio gehiago eskuratzeko.\n"
 
-#: src/gtypist.c:1948
+#: src/gtypist.c:2099
+#, fuzzy
 msgid ""
 "Copyright (C) 1998, 1999, 2000, 2001, 2002, 2003 Simon Baldwin.\n"
-"Copyright (C) 2003, 2004, 2008 GNU Typist Development Team.\n"
+"Copyright (C) 2003, 2004, 2008, 2011 GNU Typist Development Team.\n"
 "This program comes with ABSOLUTELY NO WARRANTY; for details\n"
 "please see the file 'COPYING' supplied with the source code.\n"
 "This is free software, and you are welcome to redistribute it\n"
@@ -286,99 +305,124 @@ msgstr ""
 "'COPYING' artxiboan dauden xehetasunak irakurri.\n"
 "Programa hau GNU Baimen Publiko Orokorraren pean argitaratu da."
 
-#: src/gtypist.c:1956
+#: src/gtypist.c:2107
 msgid " Tutorial "
 msgstr "Tutoriala"
 
-#: src/gtypist.c:1958
+#: src/gtypist.c:2109
 msgid "  Query   "
 msgstr "Galdeketa"
 
-#: src/gtypist.c:1960
+#: src/gtypist.c:2111
 msgid "  Drill   "
 msgstr "Errutina"
 
-#: src/gtypist.c:1962
+#: src/gtypist.c:2113
 msgid "Speed test"
 msgstr "Abiadura testa"
 
-#: src/gtypist.c:1964
+#: src/gtypist.c:2115
 msgid " Press RETURN or SPACE to continue, ESC to return to the menu "
 msgstr ""
 "Pulse 'RETURN' o 'SPACE' para continuar, 'ESC' para volver al menu 'RETURN' "
 "edo 'SPACE'  sakatu jarraitzeko, 'ESC' menura bueltatzeko"
 
-#: src/gtypist.c:1967
+#: src/gtypist.c:2118
 #, c-format
 msgid " Your error-rate is too high. You have to achieve %.1f%%. "
 msgstr "Zure akatsen tasa altuegia da. %.1f%% lortu behar duzu."
 
-#: src/gtypist.c:1971
+#: src/gtypist.c:2122
 #, c-format
 msgid " You failed this test, so you need to go back to %s. "
 msgstr "Proba honetan huts egin duzu; beraz, '%s' ra joan behar zara berriro."
 
-#: src/gtypist.c:1975
+#: src/gtypist.c:2126
 msgid " Press R to repeat, N for next exercise or E to exit "
 msgstr ""
 "Sakatu 'R' errepikatzeko, 'N' hurrengo ariketa egiteko  edo 'E' irteteko"
 
-#: src/gtypist.c:1979
+#: src/gtypist.c:2130
 msgid " Press R to repeat or E to exit "
 msgstr "Sakatu 'R' errepikatzeko edo 'E' bukatzeko"
 
-#: src/gtypist.c:1982
+#: src/gtypist.c:2133
 msgid " Are you sure you want to exit this lesson? [Y/N] "
 msgstr "Ziur zaude ikasgai hau bukatu nahi izateaz? [Y/N] "
 
-#: src/gtypist.c:1986
+#: src/gtypist.c:2137
 msgid " Sorry, gtypist is configured to forbid skipping exercises. "
 msgstr ""
 "Sentitzen dut, baina 'gtypist' ikasgaiei jaramonik ez egitea ez onartzeko "
 "konfiguratuta dago."
 
-#: src/gtypist.c:1991
+#: src/gtypist.c:2142
 #, c-format
 msgid " Raw speed      = %6.2f wpm "
 msgstr "Abiadura gordina     = %6.2f wpm "
 
-#: src/gtypist.c:1993
+#: src/gtypist.c:2144
 #, c-format
 msgid " Raw speed      = %6.2f cpm "
 msgstr " Abiadura gordina      = %6.2f cpm "
 
-#: src/gtypist.c:1998
+#: src/gtypist.c:2149
 #, c-format
 msgid " Adjusted speed = %6.2f wpm "
 msgstr "Abiadura garbia = %6.2f wpm "
 
-#: src/gtypist.c:2000
+#: src/gtypist.c:2151
 #, c-format
 msgid " Adjusted speed = %6.2f cpm "
 msgstr " Abiadura doitua = %6.2f cpm "
 
-#: src/gtypist.c:2005
+#: src/gtypist.c:2156
 #, c-format
 msgid "            with %.1f%% errors "
 msgstr "            %3.0f%% akatsekin"
 
-#: src/gtypist.c:2010
+#: src/gtypist.c:2161
+#, fuzzy, c-format
+msgid " Personal best  = %6.2f wpm "
+msgstr "Abiadura gordina     = %6.2f wpm "
+
+#: src/gtypist.c:2163
+#, fuzzy, c-format
+msgid " Personal best  = %6.2f cpm "
+msgstr " Abiadura gordina      = %6.2f cpm "
+
+#: src/gtypist.c:2168
+#, fuzzy
+msgid "           new personal best "
+msgstr "            %3.0f%% akatsekin"
+
+#: src/gtypist.c:2173
 msgid "Y/N"
 msgstr "Y/N"
 
-#: src/gtypist.c:2020
+#: src/gtypist.c:2183
 msgid "R/N/E"
 msgstr "R/N/E"
 
-#: src/gtypist.c:2078
+#: src/gtypist.c:2246
 msgid "can't find or open file"
 msgstr "artxiboa ezin izan da aurkitu edo ireki"
 
-#: src/gtypist.c:2129
+#: src/gtypist.c:2262
+#, c-format
+msgid "%s: HOME environment variable not set\n"
+msgstr ""
+
+#: src/gtypist.c:2313
 msgid "Loading the script..."
 msgstr " 'script'-a kargatzen..."
 
-#: src/cursmenu.c:322
+#: src/gtypist.c:2438
+#, fuzzy
+msgid " internal error: fopen"
+msgstr "barne errorea: 'fseek'"
+
+#: src/cursmenu.c:323
 msgid ""
 "Use arrowed keys to move around, SPACE or RETURN to select and ESCAPE to go "
 "back"
@@ -386,27 +430,31 @@ msgstr ""
 "Erabili gezidun teklak mugitzeko, 'SPACE'  edo 'RETURN ' selekzionatzeko eta "
 "'ESCAPE' atzera bueltatzeko"
 
-#: src/error.c:49
+#: src/error.c:50
 msgid "line"
 msgstr "lerroa"
 
-#: src/script.c:51
+#: src/script.c:53
 msgid "internal error: strdup"
 msgstr "barne errorea: strdup"
 
-#: src/script.c:109
+#: src/script.c:113
+msgid "Invalid multibyte sequence (wrong encoding?)"
+msgstr ""
+
+#: src/script.c:115
 msgid "data shortage"
 msgstr "datu gutxiegi"
 
-#: src/script.c:111
+#: src/script.c:117
 msgid "missing ':'"
 msgstr "':' falta da"
 
-#: src/script.c:117
+#: src/script.c:123
 msgid "line too long for screen"
 msgstr "lerroa luzeegia da pantailan sartzeko"
 
-#: src/script.c:207
+#: src/script.c:213
 #, c-format
 msgid ""
 "Happy Typing!\n"

@@ -2174,7 +2174,7 @@ int main( int argc, char **argv )
   if (wcslen(YN) != 3 || YN[1] != '/' || !iswupper(YN[0]) || !iswupper(YN[2]))
     {
       fprintf( stderr,
-	       "%s: i18n problem: invalid value for msgid \"Y/N\": %ls\n",
+	       "%s: i18n problem: invalid value for msgid \"Y/N\" (3 uppercase UTF-8 chars?): %ls\n",
 	       argv0, YN );
       exit( 1 );
     }
@@ -2187,7 +2187,7 @@ int main( int argc, char **argv )
       !iswupper(RNE[4]))
     {
       fprintf( stderr,
-	       "%s: i18n problem: invalid value for msgid \"R/N/E\": %ls\n",
+	       "%s: i18n problem: invalid value for msgid \"R/N/E\" (5 uppercase UTF-8 chars?): %ls\n",
 	       argv0, RNE );
       exit( 1 );
     }
