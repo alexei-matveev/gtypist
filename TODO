@@ -14,6 +14,9 @@ Your suggestions are welcome too!
 
 SHORT TERM
 
+ * Show the label of the last exercise one exit (so that the user can easily
+   return to it using -l)
+
  * Show a warning when caps lock is active
 
  * In the older courses converted to use menus introduced in 2.7, banners
