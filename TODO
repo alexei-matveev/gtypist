@@ -34,12 +34,6 @@ SHORT TERM
    spaces after periods are handled, which I don't want.
    Requested by Adam Olsen <rhamph@d2dc.net>
 
- * Support UTF-8, as today
-   1) charsets of the file and terminal must be the same;
-   2) they have to have no wide characters
-   This already impacts users
-   (reported by Jeff Nelson <jtnelson@el-camino.net>)
-
  * Make sure that all source files come with a suitable copyright
    statement (may be different with lessons?)
 
@@ -48,16 +42,15 @@ SHORT TERM
 
  * Make contributors sign a paper accepting the terms of the GPL,
    according to GNU standards.
+   => From: "Donald R Robertson III via RT" <copyright-clerk@fsf.org>
+      Subject: [gnu.org #695853] Copyright Assignment for GTypist and ... 
+      To: felix.natter@smail.inf.fh-brs.de
+      Date: Thu, 02 Jun 2011 10:16:08 -0400
+      => says that it's not required for GNU Typist
  
  * Make sure that the numpad's [ENTER] key is accepted
    in numpad lessons.
    (Reported by gherald@myway.com)
-
- * Fix ktouch2typ.pl script issues with the latest
-   files from KTouch.
-
- * Update all the kt* lesson files from the latest
-   version of KTouch.
 
  * Another idea is to generate our lessons files
    directly in our format from spelling dictionaries,
