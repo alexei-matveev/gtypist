@@ -1,5 +1,5 @@
 # created by ktouch2typ.pl from /home/felix/doks/gtypist/tools/../lessons/german.ktouch.xml
-# on Do 23. Jun 19:51:55 CEST 2011
+# on So 14. Aug 11:08:04 CEST 2011
 # ktouch title: Deutsch (Kurs in 9 Teilen)
 # ktouch comment: Beinhaltet recht lange Level, keine Sonderzeichen oder Zahlen
 # ktouch2typ.pl is part of gtypist (http://www.gnu.org/software/gtypist/)
@@ -29,8 +29,7 @@ D:djd djd djd jdj jdj jdj dfd dfd dfd fdf fdf fdf ddf ffd jdd djdfd
 *:LESSON1_D3
 I:(3)
 D:aaa jjj kkk aaa fff aaa ddd aaa jjj kkk aaa fff aaa ddd aaa fafaf
- :ö ö ö ö ö ö ööö ööö ööö ö ö ö ö ö ö ö
- :ööö ööö ö ö ö ö ö ö öööjj
+ :ö ö ö ö ö ö ööö ööö ööö ö ö ö ö ö ö ööö ööö ööö ö ö ö ö ö ö öööjj
  :ööö fff ddd ööö jjj kkk ööö fff ööö ddd ööö jjj ööö kkk ööö föfjö
  :fff jjj ddd kkk aaa ööö fff jjj ddd kkk aaa ööö fff jjj ddd fjfjf
 *:LESSON1_D4
@@ -38,41 +37,40 @@ I:(4)
 D:aaa ööö ddd kkk fff jjj aaa ööö ddd kkk fff jjj aaa ööö ddd aöaöa
  :adf ökj adf ökj adf ökj adf ökj adf ökj adf ökj adf ökj adf ökjök
  :fda jkö fda jkö fda jkö fda jkö fda jkö fda jkö fda jkö fda jköjk
- :Grundstellung
+ :fff jjj ddd kkk aaa ööö fff jjj ddd kkk aaa ööö fff jjj ddd kkkff
 *:LESSON1_D5
 I:(5)
-D:fff jjj ddd kkk aaa ööö fff jjj ddd kkk aaa ööö fff jjj ddd kkkff
- :fda jkö fda jkö fda jkö fda jkö fda jkö fda jkö fda jkö fda jköfd
+D:fda jkö fda jkö fda jkö fda jkö fda jkö fda jkö fda jkö fda jköfd
  :s s s s s s sss sss sss s s s s s s sss sss sss s s s s s s s sss
  :sss jjj sss kkk sss ööö sss jjj sss ddd sss aaa sss ddd sss jjjss
+ :l l l l l l lll lll lll l l l l l l lll lll lll l l l l l l l lll
 *:LESSON1_D6
 I:(6)
-D:l l l l l l lll lll lll l l l l l l lll lll lll l l l l l l l lll
- :lll fff lll ddd lll sss lll aaa lll jjj lll kkk lll ööö lll fffll
+D:lll fff lll ddd lll sss lll aaa lll jjj lll kkk lll ööö lll fffll
  :asdf jklö asdf jklö asdf jklö asdf jklö asdf jklö asdf jklö asdfj
  :fdsa jklö fdsa jklö fdsa jklö fdsa jklö fdsa jklö fdsa jklö fdsaj
+ :asdf jklö fdsa jklö asdf jklö fdsa jklö asdf jklö fdsa jklö asdfj
 *:LESSON1_D7
 I:(7)
-D:asdf jklö fdsa jklö asdf jklö fdsa jklö asdf jklö fdsa jklö asdfj
- :fdsa ölkj asdf jklö fdsa ölkj asdf jklö fdsa ölkj asdf jklö fdsaö
+D:fdsa ölkj asdf jklö fdsa ölkj asdf jklö fdsa ölkj asdf jklö fdsaö
  :la la la ka ka ka sö sö sö dö dö dö la la la ka ka ka sö sö la ka
  :al al al ak ak ak ös ös ös öd öd öd al al al ak ak ak ös ös öd öd
+ :ja ja ja da da da ja ja ja da da da ja ja ja da da da ja ja da da
 *:LESSON1_D8
 I:(8)
-D:ja ja ja da da da ja ja ja da da da ja ja ja da da da ja ja da da
- :öd öd öd ja ja ja öd öd öd da da da öd öd öd ja ja ja öd öd ja ja
+D:öd öd öd ja ja ja öd öd öd da da da öd öd öd ja ja ja öd öd ja ja
  :fad fad fad fad las las las las fad fad fad fad las las las ja öd
  :als als als als fad fad fad fad las las las las als als als öd ja
+ :lös lös lös lös als als als als fad fad fad fad las las las ja öd
 *:LESSON1_D9
 I:(9)
-D:lös lös lös lös als als als als fad fad fad fad las las las ja öd
- :das das das das als als als als das als das als das als das da ja
+D:das das das das als als als als das als das als das als das da ja
  :las las las las das das das das las das las das las das las öd da
  :lös lös lös lös fad fad fad fad lös fad lös fad lös fad lös ja öd
+ :da das da das da das las ja las ja las ja öd ja las das fad ja öd
 *:LESSON1_D10
 I:(10)
-D:da das da das da das las ja las ja las ja öd ja las das fad ja öd
- :ja lös ja lös ja lös lös da fad da fad da öd öd fad lös dad öd ja
+D:ja lös ja lös ja lös lös da fad da fad da öd öd fad lös dad öd ja
  :öd fad öd fad öd fad das ja das ja das ja da da lös fad lös ja öd
 G:E_LESSON1
 

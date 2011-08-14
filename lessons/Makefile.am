@@ -29,7 +29,6 @@ pkgdata_DATA =  gtypist.typ \
 		ktfr2.typ \
 		ktfr.typ \
 		ktde2.typ \
-		ktde3.typ \
 		ktde.typ \
 		ktde_neo.typ \
 		ktde_number.typ \
