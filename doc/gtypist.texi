@@ -2,7 +2,7 @@
 @setfilename gtypist.info
 @settitle GNU Typist Manual
 @documentlanguage en
-@documentencoding iso-8859-1
+@documentencoding UTF-8
 @include version.texi
 
 @copying
@@ -137,7 +137,7 @@ There are two types of typing exercises: @dfn{drills} and @dfn{speed tests}.
 In a @dfn{drill}, gtypist displays text in every other line on the screen,
 and waits for the user to correctly type the exact same text in the
 intermediate lines.
-@c TODO: intention is ``Griff-Übung'' (finger exercise)
+@c TODO: intention is ``Griff-Ãœbung'' (finger exercise)
 Typing errors are indicated with an inverse @samp{^}, or @samp{>} if
 the character is a newline and at the end of the
 exercise it calculates the real and effective rate in Words Per Minute
@@ -677,7 +677,7 @@ This is an example of a three-lesson ktouch file (excerpts from the
 first three lessons of @file{german.ktouch}):
 @example
 #
-# Deutsche Training-Datei für KTouch
+# Deutsche Training-Datei fÃ¼r KTouch
 #
 
 Grundstellung
@@ -686,15 +686,15 @@ j j j j j j jjj jjj jjj j j j j j j jjj jjj jjj j j j j j j j jjj
 fff jjj fff jjj jjj fff jjj fff fjf fjf fjf jfj jfj jfj fjf jfjfj
 
 Grundstellung
-fff jjj ddd kkk aaa ööö fff jjj ddd kkk aaa ööö fff jjj ddd kkkff
-fda jkö fda jkö fda jkö fda jkö fda jkö fda jkö fda jkö fda jköfd
+fff jjj ddd kkk aaa Ã¶Ã¶Ã¶ fff jjj ddd kkk aaa Ã¶Ã¶Ã¶ fff jjj ddd kkkff
+fda jkÃ¶ fda jkÃ¶ fda jkÃ¶ fda jkÃ¶ fda jkÃ¶ fda jkÃ¶ fda jkÃ¶ fda jkÃ¶fd
 s s s s s s sss sss sss s s s s s s sss sss sss s s s s s s s sss
 
 #Zwei wichtige Vokale: e und i
 e und i
-asdf ölkj fdsa jklö asdf ölkj fdsa jklö asdf ölkj fdsa jklö asdfö
-das dass lös fad dass lös als dass las lös fad dass als dass dass
-ded ded ded dej dek del deö ded deö del dek dej ded dej dek delde
+asdf Ã¶lkj fdsa jklÃ¶ asdf Ã¶lkj fdsa jklÃ¶ asdf Ã¶lkj fdsa jklÃ¶ asdfÃ¶
+das dass lÃ¶s fad dass lÃ¶s als dass las lÃ¶s fad dass als dass dass
+ded ded ded dej dek del deÃ¶ ded deÃ¶ del dek dej ded dej dek delde
 @end example
 
 Once you are done, use @command{tools/ktouchOLD2typ.pl} to convert the
@@ -1039,8 +1039,8 @@ Since 1997, @email{synrg@@sanctuary.nslug.ns.ca, Ben Armstrong} has
 helped by fixing bugs and maintaining a
 @uref{http://packages.debian.org/gtypist/, Debian package}.
 @item
-In 2000, @email{vtamara@@users.sourceforge.net, Vladimir Támara} and
-@email{ikks@@users.sourceforge.net, Igor Támara} became the maintainers of
+In 2000, @email{vtamara@@users.sourceforge.net, Vladimir TÃ¡mara} and
+@email{ikks@@users.sourceforge.net, Igor TÃ¡mara} became the maintainers of
 the C version. Before November 2000, GNU Typist was maintained as part of
 the Structio project.
 @item
