@@ -1,3 +1,8 @@
+2011-08-19 Felix Natter <fnatter@gmx.net>
+	* doc/gtypist.texi: Update node "Supplied lessons" for new lessons
+	* doc/gtypist.texi: Update node "Ktouch lessons" for distinction
+	  between old 1.0 format and new 1.6 XML format
+
 2011-07-03: Felix Natter <fnatter@gmx.net>
         * lessons/cs.typ: convert cs.typ (Czech) from iso8859-2 to utf-8
           (hope that this is correct, please test)

@@ -339,24 +339,50 @@ Lessons in Czech
 Lessons in Russian
 @item kt*.typ
 These lessons are the standard lessons from
-@uref{http://ktouch.sourceforge.net/, Ktouch 1.0},
+@uref{http://ktouch.sourceforge.net/, Ktouch 1.6},
 which have been converted to
 gtypist's file format using @file{tools/ktouch2typ.pl}.
 
-The files are called @file{ktde.typ} (@file{german.ktouch}),
-@file{kten.typ} (@file{english.ktouch}),
-@file{ktfr.typ} (@file{french.ktouch}),
-@file{ktfr2.typ} (@file{french-2.ktouch}),
-@file{ktno.typ} (@file{norwegian.ktouch})
-@file{ktdk.typ} (@file{danish.ktouch}),
-@file{ktdk2.typ} (@file{danish-2.ktouch}),
-@file{ktdvorak.typ} (@file{dvorak.ktouch})
-and @file{ktnumber.typ} (@file{number.ktouch}).
+The files are called
+@file{ktbg.typ} (@file{bulgarian.ktouch.xml}),
+@file{ktbg_long.typ} (@file{bulgarian_long.ktouch.xml}),
+@file{ktde.typ} (@file{german.ktouch.xml}),
+@file{ktde2.typ} (@file{german3.ktouch.xml}),
+@file{ktde_neo.typ} (@file{german.neo.ktouch.xml}),
+@file{ktde_number.typ} (@file{german.number.ktouch.xml}),
+@file{ktdk.typ} (@file{danish.ktouch.xml}),
+@file{ktdk2.typ} (@file{danish2.ktouch.xml}),
+@file{ktdvorak.typ} (@file{dvorak.ktouch.xml}),
+@file{ktdvorak_es.typ} (@file{dvorak_es.ktouch.xml}),
+@file{ktdvorak_abcd.typ} (@file{dvorak_ABCD.ktouch.xml}),
+@file{kten.typ} (@file{english.ktouch.xml}),
+@file{ktes.typ} (@file{spanish.ktouch.xml}),
+@file{ktes_cat.typ} (@file{catalan.ktouch.xml}),
+@file{ktfi.typ} (@file{finnish.ktouch.xml}),
+@file{ktfi_kids.typ} (@file{finnish_for_kids.ktouch.xml}),
+@file{ktfr.typ} (@file{french.ktouch.xml}),
+@file{ktfr2.typ} (@file{french2.ktouch.xml}),
+@file{kthu.typ} (@file{hungarian.ktouch.xml}),
+@file{kthu_expert.typ} (@file{hungarian_expert.ktouch.xml}),
+@file{ktit.typ} (@file{italian.ktouch.xml}),
+@file{ktnl.typ} (@file{nederlands.ktouch.xml}),
+@file{ktnl_junior.typ} (@file{nederlands_junior.ktouch.xml}),
+@file{ktno.typ} (@file{norwegian.ktouch.xml}),
+@file{ktpl.typ} (@file{polish.ktouch.xml}),
+@file{ktru.typ} (@file{russian.ktouch.xml}),
+@file{ktru_long.typ} (@file{russian_long.ktouch.xml}),
+@file{ktru_slava.typ} (@file{russian_slava.ktouch.xml}),
+@file{ktsi.typ} (@file{slovenian.ktouch.xml}),
+
+@file{german2.ktouch.xml} has not been included because it
+is from the same source as @file{ttde.typ} and @file{ttde.typ}
+contains more information.
+    
 @item ttde.typ
 This is the German lesson of
-@uref{http://www.pingos.schulnetz.org/tipptrainer/, tipptrainer},
-which has been
-converted using @file{tools/tt2typ.pl}.
+@uref{http://www.pingos.schulnetz.org/tipptrainer/, tipptrainer
+0.6.0}, which has been converted using @file{tools/tt2typ.pl}. It is
+quite extensive and has good explanations along the way.
 @end table
 
 @noindent
@@ -634,12 +660,12 @@ This section provides guidelines and hints for creating new lessons
 @node Ktouch lessons, , Exercises from fortune, Create new lessons
 @section Ktouch lessons
 
-A very easy way to write lessons is to write them in the format
-that @command{ktouch} uses, and then convert it to a gtypist lesson
-using @command{tools/ktouch2typ.pl}. This will take care of writing
-``jump-tables'', a menu and a bit more.
+A very easy way to write lessons is to write them in the format that
+@command{ktouch} @emph{1.0} uses, and then convert it to a gtypist
+lesson using @command{tools/ktouch2typ.pl}. This will take care of
+writing ``jump-tables'', a menu and a bit more.
 
-The ktouch-format consists only of lessons, which are preceded by
+The ktouch-1.0-format consists only of lessons, which are preceded by
 their names, and separated by blank lines and/or comments (@samp{#} at the
 beginning of the line). So the first non-blank, non-comment line in
 the file is the name of the first lesson, and the first lesson
@@ -671,19 +697,48 @@ das dass lös fad dass lös als dass las lös fad dass als dass dass
 ded ded ded dej dek del deö ded deö del dek dej ded dej dek delde
 @end example
 
-Once you are done, use @command{tools/ktouch2typ.pl} to convert the
-file: @samp{ktouch2typ.pl lesson.ktouch} converts @file{lesson.ktouch}
+Once you are done, use @command{tools/ktouchOLD2typ.pl} to convert the
+file: @samp{ktouchOLD2typ.pl lesson.ktouch} converts @file{lesson.ktouch}
 to @file{lesson.typ}. It is important that the input file ends in
-@samp{.ktouch}, otherwise @command{ktouch2typ.pl} will skip it. Warning:
+@samp{.ktouch}, otherwise @command{ktouchOLD2typ.pl} will skip it. Warning:
 this will overwrite @file{lesson.typ} without asking you !
 
-You can customize the number of lines that @command{ktouch2typ.pl}
+You can customize the number of lines that @command{ktouchOLD2typ.pl}
 uses for each drill by modifying the relevant variable in
-@file{tools/ktouch2typ.pl}.
+@file{tools/ktouchOLD2typ.pl}.
 
 Obviously, the disadvantage of this is that you cannot make use of all
 of gtypist's features (but the output file is very readable, so you
 can edit it to use more of gtypist's features).
+
+If you prefer, you can use the new ktouch 1.6 XML file format, which looks
+like this (from @file{english.ktouch.xml}:
+@example
+<KTouchLecture>
+ <Title>SAMPLE TITLE</Title>
+ <Comment>SAMPLE COMMENT</Comment>
+ <Levels>
+  <Level>
+   <NewCharacters>jf</NewCharacters>
+   <Line>ff jjj jf jfj j jff fjjf ff jfj j jff ff jjj fjj fjj fjf jfj jjj</Line>
+   <Line>f fjjf jjj fjjf jfj fjjf f j fjj jff j fjj jf jjj fjjf f f fjf</Line>
+   <Line>fjjf jff jjj ff jf fjjf fjjf f fjj fjj jf fjf j jj f j fjj jj jjj</Line>
+   <Line>...</Line>
+  </Level>
+  <Level>
+   <NewCharacters>kd</NewCharacters>
+   <Line>jjd fdfj rd djd jk jd k dd fjk fd fk k jfkd dkkf fk dkd dd jk k</Line>
+   <Line>dfj djd fkkk fk dff d dkkf fd fk fdfj fk k dkkf djd dff dkd dff</Line>
+   <Line>dkd kdk k dkkf k jk fkkk jd k jfkd fk fk jd k d dkd jd k dd rd dffd</Line>
+   <Line>...</Line>
+  </Level>
+ </Levels>
+</KTouchLecture>
+@end example
+In this format, the content of the <NewCharacters> tag acts as a title
+for the following drill. You can convert @file{*.ktouch.xml} to
+@file{*.typ} with @samp{ktouch2typ.pl lesson.ktouch.xml}, which will
+create @file{lesson.ktouch.typ} (again, this may overwrite without asking you).
 
 @node Exercises from fortune, Ktouch lessons, Design patterns for lessons, Create new lessons
 @section Exercises from fortune
