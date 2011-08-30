@@ -709,9 +709,6 @@ is_error_too_high( int chars_typed, int errors ) {
 /*
   execute a typing drill
 */
-/*
-  execute a typing drill
-*/
 static void
 do_drill( FILE *script, char *line ) {
 
@@ -799,8 +796,8 @@ do_drill( FILE *script, char *line ) {
 #ifdef PDCURSES_ENTER_KEY_FIX
           /* this is necessary for DOS: when using raw(), pdcurses 2.4's
              getch() returns 0x0D on DOS/Windows  */
-          if ( c == 0x0D )
-            rc = c = 0x0A;
+          if ( rc == 0x0D )
+            rc = 0x0A;
 #endif
 
           /* start timer on first char entered */
@@ -1104,7 +1101,7 @@ do_speedtest( FILE *script, char *line ) {
                 /* back up one character */
                 ADDCH( ASCII_BS ); widep--;
               }
-              widep--;		/* defeat p++ coming up */
+              widep--;		/* defeat widep++ coming up */
               continue;
             }
 

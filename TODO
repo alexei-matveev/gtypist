@@ -14,6 +14,8 @@ Your suggestions are welcome too!
 
 SHORT TERM
 
+ * Testing: need to test lessons/{cs,esp,ru}.typ conversion to UTF-8
+
  * Show the label of the last exercise one exit (so that the user can easily
    return to it using -l)
 

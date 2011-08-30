@@ -1,18 +1,18 @@
 2011-08-19 Felix Natter <fnatter@gmx.net>
+
 	* doc/gtypist.texi: Update node "Supplied lessons" for new lessons
 	* doc/gtypist.texi: Update node "Ktouch lessons" for distinction
 	  between old 1.0 format and new 1.6 XML format
 	* doc/gtypist.texi: convert to UTF-8
 
-2011-07-03: Felix Natter <fnatter@gmx.net>
-        * lessons/cs.typ: convert cs.typ (Czech) from iso8859-2 to utf-8
-          (hope that this is correct, please test)
-        * lessons/esp.typ: convert esp.typ (Spanish) from iso8859-1 to utf-8
-          (hope that this is correct, please test)
-	* lessons/ru.typ: convert ru.typ (Russian) from KOI8-R to utf-8
-          (hope that this is correct, please test)
+2011-07-03 Felix Natter <fnatter@gmx.net>
 
-2011-06-XX: Felix Natter <fnatter@gmx.net>
+        * lessons/cs.typ: convert cs.typ (Czech) from iso8859-2 to utf-8
+        * lessons/esp.typ: convert esp.typ (Spanish) from iso8859-1 to utf-8
+	* lessons/ru.typ: convert ru.typ (Russian) from KOI8-R to utf-8
+
+2011-06-30 Felix Natter <fnatter@gmx.net>
+
 	* src/*.[ch]: compile with libncursesw, use utf-8 as primary charset
 	* tools/ktouch2typ.pl: add support for ktouch 1.6 XML lessons (utf-8)
 	  and convert them (lessons/*.ktouch.typ)
