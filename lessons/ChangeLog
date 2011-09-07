@@ -1,8 +1,15 @@
+2011-09-07 Tim Marston <edam@waxworlds.org>
+
+	* esp.typ: fixed some typos ("tr אטלעש ביםףת"), thanks to MAbeeTT
+	  <MAbeeTT@gmail.com> for reporting.
+
 2011-08-14 Felix Natter <fnatter@gmx.net>
-	* ktde.typ: remove "Grundstellung" from drill text (from german.ktouch.xml)
+	* ktde.typ: remove "Grundstellung" from drill text (from
+	  german.ktouch.xml)
 	* ktde2.typ: remove because it was generated from the same source
 	  source as ttde.typ (tipptrainer 0.6.0), and ttde.typ includes more
-	  explanations => ktde2.typ is not generated from german3.ktouch.xml!!
+	  explanations => ktde2.typ is not generated from
+	  german3.ktouch.xml!!
 
 2011-08-07 Felix Natter <fnatter@gmx.net>
 	* kt*.typ: convert and rename lessons from ktouch 1.6

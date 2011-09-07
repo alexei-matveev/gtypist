@@ -50,7 +50,7 @@ M: "Menú principal"
  :LECCION_19 "Lección 19 Literatura"
  :VELOCIDAD  "Evaluación de velocidad"
  :PRECISION  "Evaluación de precisión"
- :AYUDA      "Ayuda: Metodologìa de las Lecciones"
+ :AYUDA      "Ayuda: Metodología de las Lecciones"
 
 
 *:AYUDA
@@ -76,7 +76,7 @@ M: "Menú principal"
 #  :usar las teclas 1 a 9 como F1 a F9, 0 como F10, A como F11 y S como F12.
 #  :Algunas combinaciones con la tecla Ctrl también sirven:  Ctrl-Q a Ctrl-P son
 #  :teclas alternativas para Fkey1 a Fkey10, y Ctrl-A y Ctrl-S para Fkey11 y Fkey12.
-B:Metodologìa de las Lecciones
+B:Metodología de las Lecciones
 T:
  :                           Uso de las lecciones
  :
@@ -749,7 +749,7 @@ S:sws ss sw w www sws sws ws w sal ws w
  :la visa tendrás que dejarla con William.
  :la visa tendrás que dejarla con William.
  :Wanda Wilson va de viaje con esa valija.
- :Julio està en la reunión del Hotel visa.
+ :Julio está en la reunión del Hotel visa.
  :William desea dejarle a Waldo su valija.
 
 G:LECCION_9
@@ -990,8 +990,8 @@ s:Corran por el cerro, pero cuídense del perro que cuida.
  :Corran por el cerro, pero cuídense del perro que cuida.
  :Lleva horas lloviendo y el sol aún no brilla.
  :Lleva horas lloviendo y el sol aún no brilla.
- :Es innato en èl, es innecesario tratar de documentarlo.
- :Es innato en èl, es innecesario tratar de documentarlo.
+ :Es innato en él, es innecesario tratar de documentarlo.
+ :Es innato en él, es innecesario tratar de documentarlo.
  :La acción tomada en el accidente es correcta.
  :La acción tomada en el accidente es correcta.
 
