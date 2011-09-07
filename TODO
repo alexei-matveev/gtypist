@@ -14,7 +14,10 @@ Your suggestions are welcome too!
 
 SHORT TERM
 
- * Testing: need to test lessons/{cs,esp,ru}.typ conversion to UTF-8
+ * Testing: need to test lessons/cs.typ conversion to UTF-8
+
+ * lessons/esp.typ, lesson 4, requires 23 rows in the terminal. Is
+   this a problem? Is it fair to assume 24 rows mininum?
 
  * Rename README.CVS to README.git and update it (since we don't use
    CVS anymore). Also, update autogen.sh to reverence git instead of CVS.
