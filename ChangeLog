@@ -486,7 +486,7 @@
 	only "curses". This is enough because ncurses installs provide
 	all the files expected for curses. This caused problems in platforms
 	such as GNU/Solaris where both curses and ncurses are installed.
-        gcc was compiling for curses, but ld was given ¨-l ncurses¨,
+        gcc was compiling for curses, but ld was given Â¨-l ncursesÂ¨,
         which resulted in undefined symbols.
        * fr.po, es.po, fi.po: fixed alignment problems with raw speed,
 	adjusted speed and error rate display.
