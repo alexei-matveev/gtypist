@@ -4,6 +4,12 @@
 	See the `ChangeLog' (top-level and in some subdirectories) and
 	`THANKS' files for details about changes and contributors.
 
+Version 2.9
+   - Full UTF-8 support, by Felix Natter <fnatter@gmx.net>
+   - New Spanish manual from smc <smc@manticore.es>
+   - Tracking of personal best scores, by Tim Marston
+     <edam@waxworlds.org>
+
 Version 2.8.5 - March 2011
 	- Fixed an issue that prevented installation.
 	- Corrected a minor typo in a lesson.
@@ -84,7 +90,7 @@ Version 2.5 - January/2002
 	- Fixed errors in d.typ and esp.typ (see lessons/ChangeLog)
 	- Renamed --wpmode to --word-processor
 	- Added interface messages in French (using gtranslator)
-	- Spanish interface updated by José Pelegrín <josepl@acm.org>
+	- Spanish interface updated by JosÃ© PelegrÃ­n <josepl@acm.org>
         - Fixes for undefined symbols errors compiling on Unix systems
         (such as Solaris) when both curses and ncurses are installed.
 
