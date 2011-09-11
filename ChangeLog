@@ -1,3 +1,6 @@
+2011-09-11 Felix Natter <fnatter@gmx.net>
+        * tools/typcombine: tell about new courses in "More lessons..."
+
 2011-07-23 Felix Natter <fnatter@gmx.net>
 	* tools/ktouchOLD2typ.pl:
 	  include the old ktouch <<1.6 script as a simple way
