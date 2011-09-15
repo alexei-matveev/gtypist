@@ -12,28 +12,34 @@ we will be glad to have you in the development team!
 You can contact us by writing to bug-gtypist@gnu.org.
 Your suggestions are welcome too!
 
-SHORT TERM
+IMMEDIATELY (for 2.9 release)
 
  * Testing: need to test lessons/cs.typ conversion to UTF-8
 
+ * Testing: build and test on Windows, or we may have to (officially,
+   at least) drop Windows support.
+
  * lessons/esp.typ, lesson 4, requires 23 rows in the terminal. Is
-   this a problem? Is it fair to assume 24 rows mininum?
+   this a problem? Is it fair to assume 24 rows minimum?
 
  * Rename README.CVS to README.git and update it (since we don't use
    CVS anymore). Also, update autogen.sh to reverence git instead of CVS.
+
+SHORT TERM
 
  * Show the label of the last exercise one exit (so that the user can easily
    return to it using -l)
 
  * Show a warning when caps lock is active
 
- * In the older courses converted to use menus introduced in 2.7, banners
-   sometimes don't change when you return to upper-level menus from lower-level
-   ones, because corresponding B command does not occur in the right place (with
-   respect to current syntax).  For example, try to select lesson Q1,
-   immediately press ESCAPE, and see that banner is still "Lesson Q1".  This
-   can be fixed manually, but it's perhaps better to wait until a new
-   structurized syntax will come along with smart conversion utility.
+ * In the older courses converted to use menus introduced in 2.7,
+   banners sometimes don't change when you return to upper-level menus
+   from lower-level ones, because corresponding B command does not
+   occur in the right place (with respect to current syntax).  For
+   example, try to select lesson Q1, immediately press ESCAPE, and see
+   that banner is still "Lesson Q1".  This can be fixed manually, but
+   it's perhaps better to wait until a new structured syntax will come
+   along with smart conversion utility.
  
  * Show correct line numbers when nonexistent label was hit in the M command.
 
@@ -45,17 +51,6 @@ SHORT TERM
  * Make sure that all source files come with a suitable copyright
    statement (may be different with lessons?)
 
- * Make FSF Europe the co-owner of the copy rights, to have
-   a much clearer and cleaner situation.
-
- * Make contributors sign a paper accepting the terms of the GPL,
-   according to GNU standards.
-   => From: "Donald R Robertson III via RT" <copyright-clerk@fsf.org>
-      Subject: [gnu.org #695853] Copyright Assignment for GTypist and ... 
-      To: felix.natter@smail.inf.fh-brs.de
-      Date: Thu, 02 Jun 2011 10:16:08 -0400
-      => says that it's not required for GNU Typist
- 
  * Make sure that the numpad's [ENTER] key is accepted
    in numpad lessons.
    (Reported by gherald@myway.com)
