@@ -19,9 +19,6 @@ IMMEDIATELY (for 2.9 release)
  * Testing: build and test on Windows, or we may have to (officially,
    at least) drop Windows support.
 
- * lessons/esp.typ, lesson 4, requires 23 rows in the terminal. Is
-   this a problem? Is it fair to assume 24 rows minimum?
-
 SHORT TERM
 
  * Show the label of the last exercise one exit (so that the user can easily
