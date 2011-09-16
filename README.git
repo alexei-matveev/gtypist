@@ -1,0 +1,90 @@
+Notes on how to build it from git
+=================================
+
+
+You can obtain the source code for gtypist from git like this:
+
+  $ git clone git://git.savannah.gnu.org/gtypist.git
+
+
+REQUIREMENTS
+------------
+
+Below is a list of software required to build GNU Typist along with
+suggested version numbers.  The version are not required, and older
+software versions may work.  But we know that gtypist can be built
+with the software versions specified so, if you run in to problems
+building gtypist, you may want to ensure that your build environment
+is up-to-date.
+
+Software required to build gtypist (older versions may work):
+    * automake 1.11.1
+	* autoconf 2.67
+	* GCC 4.4.5 (and libc headers)
+	* GNU make 3.81
+	* ncurses 5.7
+	* help2man
+	* gettext
+	* makeinfo
+	* gawk
+
+
+BUILDING
+--------
+
+In short, you can build gtypist like this:
+
+  $ ./autogen.sh
+
+You can pass options to 'autogen.sh' in the same way as you would pass
+them to the configuration script.  Unfortunately, to get the entire
+list of available options that you can use, you have to invoke
+'./configure --help', and since autogen.sh creates the configure
+script, this is not possible initially.  If you need to generate the
+configure script before running 'autogen.sh', you can run 'aclocal;
+automake --add-missing; autoconf'.  You can also set $CC, $CFLAGS and
+$LDFLAGS to desired values, if you wish.
+
+If you are unsure about passing options to the configure script, don't
+worry -- the default options are usually what people want.  A common
+exception to this, though, is where you don't have root access and you
+can not install gtypist system-wide.  To install elsewhere, supply the
+'--prefix=[DIR]' option when calling 'autogen.sh' (where [DIR] is the
+directory in which you want to install gtypist). E.g., you may want to
+run 'autogen.sh' like this:
+
+  $ ./autogen.sh --prefix="$HOME"
+
+When you run 'autogen.sh' you should examine its output for possible
+errors.  Since this is a development version, it may even not build
+correctly.  Whether you believe that you have done everything right or
+not, you can email a description of your problem to the bug-gtypist
+mailing list <bug-gtypist@gnu.org> and ask for help.
+
+
+INSTALLATION
+------------
+
+To install gtypist, go:
+
+  $ make install
+
+But you may need to be root to do this. Alternatively, if you have
+permission to use sudo, you might want to go:
+
+  $ sudo make install
+
+If you do not have root access (or permission to use sudo) to install
+gtypist system-wide, you may need to supply a '--prefix=[DIR]' option
+to the configure script.  See the section on building gtypist (above)
+for more information.
+
+
+UNINSTALLATION
+--------------
+
+If you still have the same sources with the same configuration
+settings, you can simply `make uninstall' (you may need to be root, or
+use 'sudo').  If not, and if you have not used a '--prefix' option
+with the configure script, then you should find gtypist installed in
+/usr/local where you can delete the files manually.

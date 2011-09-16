@@ -67,7 +67,7 @@ cp $gettexth src/
 # Generate lesson menus
 (gawk --version) < /dev/null > /dev/null 2>&1 || {
     echo
-    echo "**Error**: The cvs version requires \`gawk' (awk won't do)."
+    echo "**Error**: The git version requires \`gawk' (awk won't do)."
     echo "This is needed to build lessons/gtypist.typ."
     echo "Write to bug-gtypist@gnu.org if you have problems with this."
     exit 1
@@ -120,7 +120,7 @@ if [ $? != 0 ]; then
     echo -e \
     	"--------------------------------------------------------------------" \
     	"\nSomething was wrong, autoconf failed." \
-	"\nConsult notes on how to build if from CVS in the README.CVS file," \
+	"\nConsult notes on how to build if from git in the README.git file," \
 	"\nif you don't know how to resolve this."
     exit 1
 fi
