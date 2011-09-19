@@ -19,14 +19,17 @@ is up-to-date.
 
 Software required to build gtypist (older versions may work):
     * automake 1.11.1
-	* autoconf 2.67
-	* GCC 4.4.5 (and libc headers)
-	* GNU make 3.81
-	* ncursesw 5.7 (with wide-character support)
-	* help2man 1.38.2
-	* gettext 0.18.1.1
-	* makeinfo
-	* gawk
+    * autoconf 2.67
+    * GCC 4.4.5
+        * and libc headers
+    * GNU make 3.81
+    * ncursesw 5.7 (with wide-character support)
+        * and headers
+    * help2man 1.38.2
+    * gettext 0.18.1.1
+    * makeinfo
+    * gawk (awk won't do)
+    * autopoint
 
 
 BUILDING
