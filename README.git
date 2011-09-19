@@ -18,18 +18,21 @@ building gtypist, you may want to ensure that your build environment
 is up-to-date.
 
 Software required to build gtypist (older versions may work):
-  * automake 1.11.1
-	* autoconf 2.67
-	* GCC 4.4.5 (and libc headers)
-	* GNU make 3.81
-	* ncursesw 5.7 (with wide-character support)
-	* help2man 1.38.2
-	* gettext 0.18.1.1
-	* makeinfo
-	* gawk
+    * automake 1.11.1
+    * autoconf 2.67
+    * GCC 4.4.5
+        * and libc headers
+    * GNU make 3.81
+    * ncursesw 5.7 (with wide-character support)
+        * and headers
+    * help2man 1.38.2
+    * gettext 0.18.1.1
+    * makeinfo
+    * gawk (awk won't do)
+    * autopoint
 
 The following should be the required package names for Debian (testing/wheezy):
-  * automake autoconf build-essential libncursesw5-dev help2man gettext texinfo gawk
+  * automake autoconf autopoint build-essential libncursesw5-dev help2man gettext texinfo gawk
     (Ubuntu package names should be similar)
 
 
