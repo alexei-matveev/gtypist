@@ -23,7 +23,7 @@ echo /* config.h */> src\config.h
 echo #undef ENABLE_NLS>> src\config.h
 echo #define PACKAGE "gtypist">> src\config.h
 echo #define VERSION "@VERSION">> src\config.h
-echo #define HAVE_LIBCURSES>> src\config.h
+echo #define HAVE_PDCURSES>> src\config.h
 echo Creating Makefile
 echo # gtypist: Makefile for MinGW> Makefile
 echo # By Paul Goins: general@vultaire.net>> Makefile
@@ -41,7 +41,7 @@ echo # Define the path to a compiled PDCurses library below.>> Makefile
 echo PDCURSES_PATH=c:/devel/pdcurses>> Makefile
 echo.>> Makefile
 echo gtypist.exe:>> Makefile
-echo 	gcc -DMINGW -I$(PDCURSES_PATH) -Isrc -static -s -O2 -DNCURSES -DPDCURSES_ENTER_KEY_FIX -o gtypist src/error.c src/script.c src/cursmenu.c src/gtypist.c src/getopt.c src/getopt1.c -L$(PDCURSES_PATH)/win32 -lpdcurses -lpanel>> Makefile
+echo 	gcc -DMINGW -I$(PDCURSES_PATH) -Isrc -static -s -O2 -o gtypist src/error.c src/script.c src/cursmenu.c src/gtypist.c src/getopt.c src/getopt1.c -L$(PDCURSES_PATH) -lpdcurses -lpanel>> Makefile
 echo.
 echo NOTE: Before running make, change the PDCURSES_PATH variable in the Makefile!
 echo.
@@ -56,11 +56,11 @@ echo /* config.h */> src\config.h
 echo #undef ENABLE_NLS>> src\config.h
 echo #define PACKAGE "gtypist">> src\config.h
 echo #define VERSION "@VERSION">> src\config.h
-echo #define HAVE_LIBCURSES>> src\config.h
+echo #define HAVE_PDCURSES>> src\config.h
 echo Creating Makefile
 echo # Makefile> Makefile
 echo gtypist.exe: Makefile src\gtypist.c>> Makefile
-echo 	gcc -Isrc -static -O -DNCURSES -DPDCURSES_ENTER_KEY_FIX -o gtypist src\error.c src\script.c src\cursmenu.c src\gtypist.c src\getopt.c src\getopt1.c -lpdcurses -lpanel>> Makefile
+echo 	gcc -DDJGPP -I$(PDCURSES_PATH) -Isrc -static -O -o gtypist src\error.c src\script.c src\cursmenu.c src\gtypist.c src\getopt.c src\getopt1.c -L$(PDCURSES_PATH) -lpdcurses -lpanel>> Makefile
 
 goto end
 

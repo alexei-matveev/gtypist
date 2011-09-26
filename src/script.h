@@ -88,6 +88,7 @@ struct label_entry {
 extern struct label_entry *global_label_list[NLHASH];
 
 
+extern void build_label_index( FILE *script );
 extern void get_script_line( FILE *script, char *line );
 extern char *buffer_command( FILE *script, char *line );
 extern void seek_label( FILE *script, char *label, char *ref_line );

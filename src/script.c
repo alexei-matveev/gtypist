@@ -20,12 +20,13 @@
  */
 #include "config.h"
 #include "script.h"
-/* #ifdef HAVE_LIBCURSES */
-/* #include <curses.h> */
-/* #else */
-/* #include <ncurses.h> */
-/* #endif */
+
+#ifdef HAVE_PDCURSES
+#include <curses.h>
+#else
 #include <ncursesw/ncurses.h>
+#endif
+
 #include "error.h"
 
 #include <stdlib.h>
@@ -80,6 +81,100 @@ static int line_is_empty (const char *line)
    }
 
    return 1;
+}
+
+/*
+  go through the file, index all the labels we can find and notice if
+  we have a menu or not
+*/
+void build_label_index( FILE *script ) {
+  char line[MAX_SCR_LINE];
+  char *line_iterator;
+  struct label_entry	*new_label = NULL;	/* new label entry */
+  struct label_entry	*list_tail[NLHASH];	/* tail tracking */
+  int	hash;					/* hash index */
+  struct label_entry	*check_label;		/* pointer thru list */
+
+  /* start at the file's beginning */
+  rewind( script );
+  global_line_counter = 0;
+
+  /* initialize the hash lists */
+  for ( hash = 0; hash < NLHASH; hash++ )
+    {
+      global_label_list[ hash ] = NULL;
+      list_tail[ hash ] = NULL;
+    }
+
+  /* read until we get to eof */
+  get_script_line( script, line );
+  while (! feof( script ))
+    {
+
+      /* see if this is a label line */
+      if ( SCR_COMMAND( line ) == C_LABEL )
+	{
+
+	  /* note this label's position in the table;
+	     first, create a new list entry */
+	  new_label = malloc( sizeof(struct label_entry) );
+	  if ( new_label == NULL )
+	    fatal_error( _("internal error: malloc"), line );
+
+	  /* remove trailing whitespace from line */
+	  line_iterator = line + strlen(line) - 1;
+	  while (line_iterator != line && isspace(*line_iterator))
+	    {
+	      *line_iterator = '\0';
+	      --line_iterator;
+	    }
+
+	  /* check for spaces in the label (these are banned since 2.9 so that
+	     spaces can be used as field separators in the bestlog) */
+	  line_iterator = SCR_DATA( line );
+	  while( *line_iterator != '\0' )
+	    {
+	      if( *line_iterator == ' ' )
+		fatal_error( _("label contains space"), line );
+	      ++line_iterator;
+	    }
+
+	  /* make some space for the label string */
+	  new_label->label =
+	    malloc( strlen( SCR_DATA( line )) + 1 );
+	  if ( new_label->label == NULL )
+	    fatal_error( _("internal error: malloc"), line );
+
+	  /* copy the data into the new structure */
+	  strcpy( new_label->label, SCR_DATA( line ));
+	  new_label->offset = ftell( script );
+	  new_label->line_count = global_line_counter;
+	  new_label->next = NULL;
+
+	  /* find the right hash list for the label */
+	  hash = hash_label( SCR_DATA( line ));
+
+	  /* search the linked list for the label, to
+	     see if it's already there - nice to check */
+	  for ( check_label = global_label_list[ hash ];
+		check_label != NULL;
+		check_label = check_label->next )
+	    {
+	      if ( strcmp( check_label->label, SCR_DATA( line )) == 0 )
+		fatal_error( _("label redefinition"), line );
+	    }
+
+	  /* link everything together */
+	  if ( list_tail[ hash ] == NULL )
+	    global_label_list[ hash ] = new_label;
+	  else
+	    list_tail[ hash ]->next = new_label;
+	  list_tail[ hash ] = new_label;
+	}
+
+      /* get the next script line */
+      get_script_line( script, line );
+    }
 }
 
 /*

@@ -28,12 +28,11 @@
 #include <signal.h>
 #include <sys/param.h>
 
-/* #ifdef HAVE_LIBCURSES */
-/* #include <curses.h> */
-/* #else */
-/* #include <ncurses/curses.h> */
-/* #endif */
+#ifdef HAVE_PDCURSES
+#include <curses.h>
+#else
 #include <ncursesw/ncurses.h>
+#endif
 
 #include <time.h>
 #include <errno.h>
@@ -99,9 +98,7 @@ char *SPEED_PCT_ERROR;
 char *SPEED_BEST_WPM;
 char *SPEED_BEST_CPM;
 char *SPEED_BEST_NEW_MSG;
-// unsigned char *YN;
 wchar_t *YN;
-//unsigned char *RNE;
 wchar_t *RNE;
 
 #ifndef DATADIR
@@ -190,7 +187,6 @@ static bool user_is_always_sure = FALSE;
 /* prototypes */
 
 static int getch_fl( int cursor_char );
-static void index_labels( FILE *script );
 static bool wait_user (FILE *script, char *message, char *mode );
 static void display_speed( int total_chars, long elapsed_time, int errcount );
 static void do_keybind( FILE *script, char *line );
@@ -255,7 +251,6 @@ void banner (const char *text)
 
    move (B_TOP_LINE, text_position);
    {
-     //ADDSTR_REV(text);
      int numChars = mbslen(text);
      wchar_t* wideText = malloc((numChars+1) * sizeof(wchar_t));
      int convresult = mbstowcs(wideText, text, numChars+1);
@@ -325,7 +320,6 @@ getch_fl( int cursor_char )
       /* produce a flashing cursor, or not, as requested */
       if ( ! cl_term_cursor ) {
         /* go for the flashing block here */
-        //ADDCH_REV( cursor_char );
         wideaddch_rev(cursor_char);
         curs_set( 0 ); refresh();
         move( LINES - 1, COLS - 1 );
@@ -336,10 +330,8 @@ getch_fl( int cursor_char )
               {
                 move( y, x );
                 if ( alternate )
-                  //ADDCH_REV( cursor_char );
                   wideaddch_rev(cursor_char);
                 else
-                  //ADDCH( cursor_char );
                   wideaddch(cursor_char);
                 move( LINES - 1, COLS - 1 );
                 alternate = !alternate;
@@ -351,7 +343,6 @@ getch_fl( int cursor_char )
             get_wch(&return_char);
           }
         move( y, x );
-        //ADDCH( cursor_char );
         wideaddch(cursor_char);
         move( y, x );
       }
@@ -367,99 +358,6 @@ getch_fl( int cursor_char )
 
   /* return what key was pressed */
   return ( return_char );
-}
-
-/*
-  go through the file and index all the labels we can find
-*/
-static void index_labels( FILE *script ) {
-  char line[MAX_SCR_LINE];
-  char *line_iterator;
-  struct label_entry	*new_label = NULL;	/* new label entry */
-  struct label_entry	*list_tail[NLHASH];	/* tail tracking */
-  int	hash;					/* hash index */
-  struct label_entry	*check_label;		/* pointer thru list */
-
-  /* start at the file's beginning */
-  rewind( script );
-  global_line_counter = 0;
-
-  /* initialize the hash lists */
-  for ( hash = 0; hash < NLHASH; hash++ )
-    {
-      global_label_list[ hash ] = NULL;
-      list_tail[ hash ] = NULL;
-    }
-
-  /* read until we get to eof */
-  get_script_line( script, line );
-  while (! feof( script ))
-    {
-
-      /* see if this is a label line */
-      if ( SCR_COMMAND( line ) == C_LABEL )
-	{
-
-	  /* note this label's position in the table;
-	     first, create a new list entry */
-	  new_label = malloc( sizeof(struct label_entry) );
-	  if ( new_label == NULL )
-	    fatal_error( _("internal error: malloc"), line );
-
-	  /* remove trailing whitespace from line */
-	  line_iterator = line + strlen(line) - 1;
-	  while (line_iterator != line && isspace(*line_iterator))
-	    {
-	      *line_iterator = '\0';
-	      --line_iterator;
-	    }
-
-	  /* check for spaces in the label (these are banned since 2.9 so that
-	     spaces can be used as field separators in the bestlog) */
-	  line_iterator = SCR_DATA( line );
-	  while( *line_iterator != '\0' )
-	    {
-	      if( *line_iterator == ' ' )
-		fatal_error( _("label contains space"), line );
-	      ++line_iterator;
-	    }
-
-	  /* make some space for the label string */
-	  new_label->label =
-	    malloc( strlen( SCR_DATA( line )) + 1 );
-	  if ( new_label->label == NULL )
-	    fatal_error( _("internal error: malloc"), line );
-
-	  /* copy the data into the new structure */
-	  strcpy( new_label->label, SCR_DATA( line ));
-	  new_label->offset = ftell( script );
-	  new_label->line_count = global_line_counter;
-	  new_label->next = NULL;
-
-	  /* find the right hash list for the label */
-	  hash = hash_label( SCR_DATA( line ));
-
-	  /* search the linked list for the label, to
-	     see if it's already there - nice to check */
-	  for ( check_label = global_label_list[ hash ];
-		check_label != NULL;
-		check_label = check_label->next )
-	    {
-	      if ( strcmp( check_label->label, SCR_DATA( line )) == 0 )
-		fatal_error( _("label redefinition"), line );
-	    }
-
-	  /* link everything together */
-	  if ( list_tail[ hash ] == NULL )
-	    global_label_list[ hash ] = new_label;
-	  else
-	    list_tail[ hash ]->next = new_label;
-	  list_tail[ hash ] = new_label;
-	}
-
-      /* get the next script line */
-      get_script_line( script, line );
-    }
 }
 
 /*
@@ -1077,13 +975,12 @@ do_speedtest( FILE *script, char *line ) {
             *widep != ASCII_NULL; widep++ )
         {
           rc = getch_fl( (*widep != ASCII_NL) ? *widep : ASCII_SPACE );
-          //c = (char)rc;
 
 #ifdef PDCURSES_ENTER_KEY_FIX 
           /* this is necessary for DOS: when using raw(), pdcurses 2.4's
              getch() returns 0x0D on DOS/Windows  */
-          if ( c == 0x0D )
-            rc = c = 0x0A;
+          if ( rc == 0x0D )
+            rc = 0x0A;
 #endif
 
           /* start timer on first char entered */
@@ -2310,7 +2207,7 @@ int main( int argc, char **argv )
   banner (_("Loading the script..."));
 
   /* index all the labels in the file */
-  index_labels( script );
+  build_label_index( script );
 
   /* run the input file */
   parse_file( script, cl_start_label );

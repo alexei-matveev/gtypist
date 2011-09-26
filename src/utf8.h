@@ -21,7 +21,7 @@
 #define UTF8_H
 
 #define _XOPEN_SOURCE_EXTENDED
-#include <ncursesw/ncurses.h>
+
 #include <wchar.h>
 
 extern void wideaddch(wchar_t c);
