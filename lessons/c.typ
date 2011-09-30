@@ -28,7 +28,6 @@ G:_C_MENU
 *:_C_S_C1
 B:                             Lesson C1
 
-*:_C_R_1_-1
 T:			Welcome to the Colemak Course
  :
  :This course is intended for beginners as well as experienced typists.  The
@@ -47,7 +46,6 @@ T:			Welcome to the Colemak Course
  :familiar with using a QWERTY keyboard layout.  Despite this, it appears that
  :the Colemak keyboard is as fast as, if not faster than, the Dvorak keyboard.
 
-*:_C_R_1_0
 T:			General Instructions
  :
  :The fingers of the left hand should be placed over the A-key, the R-key,
@@ -127,7 +125,6 @@ G:_C_E_C3
 *:_C_S_C4
 B:                             Lesson C4
 
-*:_C_R_4_0
 T:			General Instructions
  :
  :When you need to press the D-key or the H-key, the first finger of the left or
@@ -157,7 +154,6 @@ G:_C_E_C4
 *:_C_S_C5
 B:                             Lesson C5
 
-*:_C_R_5_0
 T:			General Instructions
  :
  :The P-key and the L-key should be pressed only by the first finger of the left
@@ -187,7 +183,6 @@ G:_C_E_C5
 *:_C_S_C6
 B:                             Lesson C6
 
-*:_C_R_6_0
 T:			General Instructions
  :
  :The F-key and the U-key should be pressed only by the second finger of the left
@@ -217,7 +212,6 @@ G:_C_E_C6
 *:_C_S_C7
 B:                             Lesson C7
 
-*:_C_R_7_0
 T:			General Instructions
  :
  :The W-key and the Y-key should be pressed only by the third finger of the left
@@ -252,7 +246,6 @@ G:_C_E_C7
 *:_C_S_C8
 B:                             Lesson C8
 
-*:_C_R_8_0
 T:			General Instructions
  :
  :The G-key and the J-key should be pressed only by the first finger of the left
@@ -287,7 +280,6 @@ G:_C_E_C8
 *:_C_S_C9
 B:                             Lesson C9
 
-*:_C_R_9_0
 T:			General Instructions
  :
  :The M-key and the V-key should be pressed only by the first finger of the left
@@ -322,7 +314,6 @@ G:_C_E_C9
 *:_C_S_C10
 B:                             Lesson C10
 
-*:_C_R_10_0
 T:			General Instructions
  :
  :The B-key and the K-key should be pressed only by the first finger of the left
@@ -357,7 +348,6 @@ G:_C_E_C10
 *:_C_S_C11
 B:                             Lesson C11
 
-*:_C_R_11_0
 T:			General Instructions
  :
  :The Q-key should be pressed only by fourth finger on the left hand. The C-key
@@ -397,7 +387,6 @@ G:_C_E_C11
 *:_C_S_C12
 B:                             Lesson C12
 
-*:_C_R_12_0
 T:			General Instructions
  :
  :The Z-key and X-key should be pressed by fourth and third fingers on the left
@@ -426,7 +415,7 @@ D:jerk valve whiz relax work equal fuzzy exert quark hoard evil mixed jolly
 G:_C_E_C12
 
 #------------------------------------------------------------------------------
-# Jump tables
+# Lesson series C jump tables
 #------------------------------------------------------------------------------
 *:_C_E_C1
 Q: Do you want to continue to lesson C2 [Y/N] ? 
@@ -476,7 +465,7 @@ G:_C_S_C12
 G:_C_MENU
 
 #------------------------------------------------------------------------------
-# Menu
+# Lesson series C menu
 #------------------------------------------------------------------------------
 *:_C_MENU
 B:                  Colemak touch typing lessons

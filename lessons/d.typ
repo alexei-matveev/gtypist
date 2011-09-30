@@ -750,6 +750,7 @@ I:(20)
 D:The brawny jaguar held fast till the quaking Zouave victim expired.
 
 G:_D_E_D14
+
 #------------------------------------------------------------------------------
 # Lesson series D jump tables
 #------------------------------------------------------------------------------
