@@ -5,10 +5,12 @@
 	`THANKS' files for details about changes and contributors.
 
 Version 2.9
-   - Full UTF-8 support, by Felix Natter <fnatter@gmx.net>
-   - New Spanish manual from smc <smc@manticore.es>
-   - Tracking of personal best scores, by Tim Marston
-     <edam@waxworlds.org>
+    - Full UTF-8 support, by Felix Natter <fnatter@gmx.net>
+    - New Spanish manual from smc <smc@manticore.es>
+    - Tracking of personal best scores, by Tim Marston
+      <edam@waxworlds.org>
+	- We are dropping support for the DJGPP compiler (the MinGW GCC
+      compiler is still supported).
 
 Version 2.8.5 - March 2011
 	- Fixed an issue that prevented installation.

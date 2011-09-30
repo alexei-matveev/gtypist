@@ -4,6 +4,7 @@
 	  <MAbeeTT@gmail.com> for reporting.
 
 2011-08-14 Felix Natter <fnatter@gmx.net>
+
 	* ktde.typ: remove "Grundstellung" from drill text (from
 	  german.ktouch.xml)
 	* ktde2.typ: remove because it was generated from the same source
@@ -12,6 +13,7 @@
 	  german3.ktouch.xml!!
 
 2011-08-07 Felix Natter <fnatter@gmx.net>
+
 	* kt*.typ: convert and rename lessons from ktouch 1.6
 	* ttde.typ: converted from tipptrainer 0.6.0
 

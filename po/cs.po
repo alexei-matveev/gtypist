@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: GNU Typist 2.7\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2011-08-11 12:28+0200\n"
+"POT-Creation-Date: 2011-09-26 12:38+0100\n"
 "PO-Revision-Date: 2011-08-11 13:26+0200\n"
 "Last-Translator: Hynek Hanke <hanke@volny.cz>\n"
 "Language-Team: Czech\n"
@@ -15,84 +15,71 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 
-#: src/gtypist.c:263 src/gtypist.c:743 src/gtypist.c:1024
+#: src/gtypist.c:258 src/gtypist.c:638 src/gtypist.c:919 src/utf8.c:54
 msgid "couldn't convert UTF-8 to wide characters"
 msgstr ""
 
-#: src/gtypist.c:292
+#: src/gtypist.c:287
 msgid "internal error in strdup"
 msgstr "vnitřní chyba v strdup"
 
-#: src/gtypist.c:407 src/gtypist.c:431 src/gtypist.c:2354 src/gtypist.c:2371
-#: src/gtypist.c:2387 src/gtypist.c:2429 src/gtypist.c:2446 src/script.c:141
-msgid "internal error: malloc"
-msgstr "vnitřní chyba: malloc"
-
-#: src/gtypist.c:423
-msgid "label contains space"
-msgstr ""
-
-#: src/gtypist.c:449
-msgid "label redefinition"
-msgstr "předefinování návěstí"
-
-#: src/gtypist.c:601
+#: src/gtypist.c:499
 msgid "invalid key binding"
 msgstr "chybné přiřazení kláves"
 
-#: src/gtypist.c:603
+#: src/gtypist.c:501
 msgid "invalid function key number"
 msgstr "neplatné číslo F-klávesy"
 
-#: src/gtypist.c:641 src/gtypist.c:753 src/gtypist.c:1043
+#: src/gtypist.c:539 src/gtypist.c:648 src/gtypist.c:938
 msgid "data exceeds screen length"
 msgstr "data překročila velikost obrazovky"
 
-#: src/gtypist.c:683
+#: src/gtypist.c:581
 msgid "instructions are limited to two lines"
 msgstr "instrukce smí mít pouze dva řádky"
 
-#: src/gtypist.c:948 src/gtypist.c:1218 src/script.c:198
+#: src/gtypist.c:843 src/gtypist.c:1112 src/script.c:293
 msgid "internal error: fseek"
 msgstr "vnitřní chyba: fseek"
 
-#: src/gtypist.c:1540
+#: src/gtypist.c:1434
 #, no-c-format
 msgid "'*' must immediately follow '%'"
 msgstr "po '%' musí okamžitě následovat '*'"
 
-#: src/gtypist.c:1543 src/gtypist.c:1546
+#: src/gtypist.c:1437 src/gtypist.c:1440
 #, no-c-format
 msgid "missing '%'"
 msgstr "chybí '%'"
 
-#: src/gtypist.c:1550
+#: src/gtypist.c:1444
 #, no-c-format
 msgid "'%' must immediately follow value"
 msgstr "po hodnotě musí okamžitě následovat '%'"
 
-#: src/gtypist.c:1559
+#: src/gtypist.c:1453
 msgid "overflow in do_error_max_set"
 msgstr "přetečení bufferu v do_error_max_set"
 
-#: src/gtypist.c:1579
+#: src/gtypist.c:1473
 msgid "Invalid value for \"E:\" (out of range)"
 msgstr "Neplatná hodnota pro \"E:\" (mimo obor hodnot)"
 
-#: src/gtypist.c:1634 src/script.c:192
+#: src/gtypist.c:1528 src/script.c:287
 #, c-format
 msgid "label '%s' not found"
 msgstr "návěstí '%s' nebylo nalezeno"
 
-#: src/gtypist.c:1700
+#: src/gtypist.c:1594
 msgid "unknown command"
 msgstr "neznámý příkaz"
 
-#: src/gtypist.c:1818
+#: src/gtypist.c:1712
 msgid "track personal best typing speeds"
 msgstr ""
 
-#: src/gtypist.c:1819
+#: src/gtypist.c:1713
 msgid ""
 "default maximum error percentage (default 3.0); valid values are between 0.0 "
 "and 100.0"
@@ -100,15 +87,15 @@ msgstr ""
 "defaultní maximální počet chyb (standardně 3.0); platné hodnoty jsou mezi "
 "0.0 a 100.0"
 
-#: src/gtypist.c:1821
+#: src/gtypist.c:1715
 msgid "turn off WPM timer in drills"
 msgstr "vypnout sledování rychlosti při drilových testech"
 
-#: src/gtypist.c:1822
+#: src/gtypist.c:1716
 msgid "use the terminal's hardware cursor"
 msgstr "používat kurzor terminálu"
 
-#: src/gtypist.c:1823
+#: src/gtypist.c:1717
 msgid ""
 "cursor flash period P*.1 sec (default 10); valid  values are between 0 and "
 "512; this is ignored if -t is specified"
@@ -116,47 +103,47 @@ msgstr ""
 "perioda blikání kurzoru P*0,1 sekund (defaultně 10); platné hodnoty jsou "
 "mezi 0 a 512; parametr je ignorován, pokud bylo zadáno -t."
 
-#: src/gtypist.c:1825
+#: src/gtypist.c:1719
 msgid "set initial display colours where available"
 msgstr "nastavení výchozích barev, pokud je to možné"
 
-#: src/gtypist.c:1826
+#: src/gtypist.c:1720
 msgid "don't beep on errors"
 msgstr "při chybách nepípat"
 
-#: src/gtypist.c:1827
+#: src/gtypist.c:1721
 msgid "same as -s, --silent"
 msgstr "to samé jako -s a --silent"
 
-#: src/gtypist.c:1828
+#: src/gtypist.c:1722
 msgid "start the lesson at label 'L'"
 msgstr "spusť lekci na návěstí 'L'"
 
-#: src/gtypist.c:1829
+#: src/gtypist.c:1723
 msgid "try to mimic word processors"
 msgstr "emuluj textový procesor"
 
-#: src/gtypist.c:1830
+#: src/gtypist.c:1724
 msgid "forbid the user to skip exercises"
 msgstr "zakaž uživateli přeskakovat cvičení"
 
-#: src/gtypist.c:1831
+#: src/gtypist.c:1725
 msgid "highlight errors with reverse video"
 msgstr "zvýraznit chyby inverzním zobrazením"
 
-#: src/gtypist.c:1832
+#: src/gtypist.c:1726
 msgid "print this message"
 msgstr "vytiskni tuto zprávu"
 
-#: src/gtypist.c:1833
+#: src/gtypist.c:1727
 msgid "output version information and exit"
 msgstr "vytisknout informace o verzi a skončit"
 
-#: src/gtypist.c:1834
+#: src/gtypist.c:1728
 msgid "do not ask confirmation questions"
 msgstr "neptat se na potvrzení"
 
-#: src/gtypist.c:1835
+#: src/gtypist.c:1729
 msgid ""
 "set top banner colours (background, foreground, package and version "
 "respectively)"
@@ -164,11 +151,11 @@ msgstr ""
 "nastavit barvy vrchního banneru (pozadí, popředí, balíček a verzi,v tomto "
 "pořadí)"
 
-#: src/gtypist.c:1837
+#: src/gtypist.c:1731
 msgid "set scoring mode (words per minute or characters per minute)"
 msgstr ""
 
-#: src/gtypist.c:1841
+#: src/gtypist.c:1735
 #, c-format
 msgid ""
 "`gtypist' is a typing tutor with several lessons for different keyboards and "
@@ -179,24 +166,24 @@ msgstr ""
 "obsahuje několik lekcí. Snadno mohou být dopsány i lekce nové.\n"
 "\n"
 
-#: src/gtypist.c:1845
+#: src/gtypist.c:1739
 msgid "Usage"
 msgstr "Používání"
 
-#: src/gtypist.c:1845
+#: src/gtypist.c:1739
 #, fuzzy
 msgid "options"
 msgstr "Nastavení"
 
-#: src/gtypist.c:1845
+#: src/gtypist.c:1739
 msgid "script-file"
 msgstr "skriptovací soubor"
 
-#: src/gtypist.c:1846
+#: src/gtypist.c:1740
 msgid "Options"
 msgstr "Nastavení"
 
-#: src/gtypist.c:1853
+#: src/gtypist.c:1747
 #, c-format
 msgid ""
 "\n"
@@ -205,7 +192,7 @@ msgstr ""
 "\n"
 "Pokud není uvedeno jinak, skriptovací soubor bude: '%s/%s'.\n"
 
-#: src/gtypist.c:1855
+#: src/gtypist.c:1749
 #, c-format
 msgid ""
 "The path $GTYPIST_PATH is searched for script files.\n"
@@ -214,24 +201,24 @@ msgstr ""
 "Skriptovací soubory se hledají v $GTYPIST_PATH.\n"
 "\n"
 
-#: src/gtypist.c:1857
+#: src/gtypist.c:1751
 msgid "Examples"
 msgstr "Příklady"
 
-#: src/gtypist.c:1859
+#: src/gtypist.c:1753
 msgid "To run the default lesson in english `gtypist.typ'"
 msgstr "Ke spuštění defaultní lekce v angličtině gtypist.typ"
 
-#: src/gtypist.c:1861
+#: src/gtypist.c:1755
 msgid "To run the lesson in spanish"
 msgstr "Spustit lekci ve španělštině"
 
-#: src/gtypist.c:1863
+#: src/gtypist.c:1757
 msgid ""
 "To instruct gtypist to look for lesson `bar.typ' in a non standard directory"
 msgstr "Prohledává pro bar.typ nestandardní adresář"
 
-#: src/gtypist.c:1866
+#: src/gtypist.c:1760
 msgid ""
 "To run the lesson in the file `test.typ' of directory `temp', starting at "
 "label `TEST1', using the terminal's cursor, and run silently"
@@ -239,50 +226,50 @@ msgstr ""
 "Spustí lekcii `test.typ' z adresáře `temp', začne na návěstí `TEST1', "
 "použije terminálový kurzor a pracuje v tichém módu"
 
-#: src/gtypist.c:1869
+#: src/gtypist.c:1763
 msgid "Report bugs to bug-gtypist@gnu.org"
 msgstr "Oznamte chyby na bug-gtypist@gnu.org."
 
-#: src/gtypist.c:1918
+#: src/gtypist.c:1812
 #, c-format
 msgid "%s: invalid error-max value\n"
 msgstr "%s: neplatná hodnota error-max\n"
 
-#: src/gtypist.c:1934
+#: src/gtypist.c:1828
 #, c-format
 msgid "%s: invalid curs-flash value\n"
 msgstr "%s: neplatná hodnota curs-flash\n"
 
-#: src/gtypist.c:1945
+#: src/gtypist.c:1839
 #, c-format
 msgid "%s: invalid colours value\n"
 msgstr "%s: neplatné číslo barvy\n"
 
-#: src/gtypist.c:1955
+#: src/gtypist.c:1849
 #, c-format
 msgid "%s:  argument format is incorrect\n"
 msgstr "%s:  neplatný formát argumentu\n"
 
-#: src/gtypist.c:1965
+#: src/gtypist.c:1859
 #, c-format
 msgid "%s:  incorrect colour values\n"
 msgstr "%s:  neplatná čísla barev\n"
 
-#: src/gtypist.c:1974 src/gtypist.c:1987
+#: src/gtypist.c:1868 src/gtypist.c:1881
 #, fuzzy, c-format
 msgid "%s: invalid scoring mode"
 msgstr "%s: neplatné číslo barvy\n"
 
-#: src/gtypist.c:2000
+#: src/gtypist.c:1894
 #, c-format
 msgid "%s: internal error: malloc\n"
 msgstr "%s: interní chyba: malloc\n"
 
-#: src/gtypist.c:2021
+#: src/gtypist.c:1915
 msgid "Written by Simon Baldwin"
 msgstr "Napsáno Simonem Baldwinem"
 
-#: src/gtypist.c:2030 src/gtypist.c:2037
+#: src/gtypist.c:1924 src/gtypist.c:1931
 #, c-format
 msgid "Try '%s --help' for more information.\n"
 msgstr "Více informací získáte zadáním '%s --help.'\n"
@@ -290,7 +277,7 @@ msgstr "Více informací získáte zadáním '%s --help.'\n"
 # The msgstr was totally empty, so I copied the
 # English version for now.  Can someone please
 # translate this?  - Paul
-#: src/gtypist.c:2099
+#: src/gtypist.c:1993
 #, fuzzy
 msgid ""
 "Copyright (C) 1998, 1999, 2000, 2001, 2002, 2003 Simon Baldwin.\n"
@@ -309,119 +296,124 @@ msgstr ""
 "under certain conditions; again, see 'COPYING' for details.\n"
 "This program is released under the GNU General Public License."
 
-#: src/gtypist.c:2107
+#: src/gtypist.c:2001
 msgid " Tutorial "
 msgstr " Tutoriál "
 
-#: src/gtypist.c:2109
+#: src/gtypist.c:2003
 msgid "  Query   "
 msgstr "  Dotaz  "
 
-#: src/gtypist.c:2111
+#: src/gtypist.c:2005
 msgid "  Drill   "
 msgstr "  Drilové cvičení  "
 
-#: src/gtypist.c:2113
+#: src/gtypist.c:2007
 msgid "Speed test"
 msgstr "Rychlostní test"
 
-#: src/gtypist.c:2115
+#: src/gtypist.c:2009
 msgid " Press RETURN or SPACE to continue, ESC to return to the menu "
 msgstr "Stiskněte ENTER nebo mezeru pro pokračování, ESC k návratu do menu"
 
-#: src/gtypist.c:2118
+#: src/gtypist.c:2012
 #, c-format
 msgid " Your error-rate is too high. You have to achieve %.1f%%. "
 msgstr "Vaše chybovost je příliš velká. Musíte dosáhnout %.1f%%."
 
-#: src/gtypist.c:2122
+#: src/gtypist.c:2016
 #, c-format
 msgid " You failed this test, so you need to go back to %s. "
 msgstr " Neprošel jste tímto testem. Musíte se vrátit na %s. "
 
-#: src/gtypist.c:2126
+#: src/gtypist.c:2020
 msgid " Press R to repeat, N for next exercise or E to exit "
 msgstr " Stiskněte O pro opakování, D pro další cvičení či K pro konec "
 
-#: src/gtypist.c:2130
+#: src/gtypist.c:2024
 msgid " Press R to repeat or E to exit "
 msgstr " Stiskněte O pro opakování nebo K pro konec "
 
-#: src/gtypist.c:2133
+#: src/gtypist.c:2027
 msgid " Are you sure you want to exit this lesson? [Y/N] "
 msgstr " Jste si jist/a, že chcete opustit tuto lekci? [A/N] "
 
-#: src/gtypist.c:2137
+#: src/gtypist.c:2031
 msgid " Sorry, gtypist is configured to forbid skipping exercises. "
 msgstr " Omlouvám se, ale jsem konfigurován, abych nedovolil přeskakovat."
 
-#: src/gtypist.c:2142
+#: src/gtypist.c:2036
 #, c-format
 msgid " Raw speed      = %6.2f wpm "
 msgstr " Hrubá rychlost      = %6.2f slov/m "
 
-#: src/gtypist.c:2144
+#: src/gtypist.c:2038
 #, fuzzy, c-format
 msgid " Raw speed      = %6.2f cpm "
 msgstr " Raw speed      = %6.2f cpm "
 
-#: src/gtypist.c:2149
+#: src/gtypist.c:2043
 #, c-format
 msgid " Adjusted speed = %6.2f wpm "
 msgstr " Orientační rychlost = %6.2f slov/m "
 
-#: src/gtypist.c:2151
+#: src/gtypist.c:2045
 #, fuzzy, c-format
 msgid " Adjusted speed = %6.2f cpm "
 msgstr " Adjusted speed = %6.2f cpm "
 
-#: src/gtypist.c:2156
+#: src/gtypist.c:2050
 #, c-format
 msgid "            with %.1f%% errors "
 msgstr "                  s %.1f%% chyb "
 
-#: src/gtypist.c:2161
+#: src/gtypist.c:2055
 #, fuzzy, c-format
 msgid " Personal best  = %6.2f wpm "
 msgstr " Hrubá rychlost      = %6.2f slov/m "
 
-#: src/gtypist.c:2163
+#: src/gtypist.c:2057
 #, fuzzy, c-format
 msgid " Personal best  = %6.2f cpm "
 msgstr " Raw speed      = %6.2f cpm "
 
-#: src/gtypist.c:2168
+#: src/gtypist.c:2062
 #, fuzzy
 msgid "           new personal best "
 msgstr "                  s %.1f%% chyb "
 
-#: src/gtypist.c:2173
+#: src/gtypist.c:2067
 msgid "Y/N"
 msgstr "A/N"
 
-#: src/gtypist.c:2183
+#: src/gtypist.c:2077
 msgid "R/N/E"
 msgstr "O/D/K"
 
-#: src/gtypist.c:2246
+#: src/gtypist.c:2140
 msgid "can't find or open file"
 msgstr "Nemůžu najít či otevřít soubor"
 
-#: src/gtypist.c:2262
+#: src/gtypist.c:2156
 #, c-format
 msgid "%s: HOME environment variable not set\n"
 msgstr ""
 
-#: src/gtypist.c:2313
+#: src/gtypist.c:2207
 msgid "Loading the script..."
 msgstr "Načítám skript..."
 
-#: src/gtypist.c:2438
+#: src/gtypist.c:2248 src/gtypist.c:2265 src/gtypist.c:2281 src/gtypist.c:2323
+#: src/gtypist.c:2340 src/script.c:122 src/script.c:146 src/script.c:236
+msgid "internal error: malloc"
+msgstr "vnitřní chyba: malloc"
+
+#: src/gtypist.c:2332
 #, fuzzy
 msgid " internal error: fopen"
 msgstr "vnitřní chyba: fseek"
 
-#: src/cursmenu.c:323
+#: src/cursmenu.c:322
 msgid ""
 "Use arrowed keys to move around, SPACE or RETURN to select and ESCAPE to go "
 "back"
@@ -429,31 +421,39 @@ msgstr ""
 "K pohybu použijte kurzorových kláves, mezerou či ENTERem vyberte položku "
 "nebo ESC se vraťte zpět"
 
-#: src/error.c:50
+#: src/error.c:51
 msgid "line"
 msgstr "řádka"
 
-#: src/script.c:53
+#: src/script.c:54
 msgid "internal error: strdup"
 msgstr "vnitřní chyba: strdup"
 
-#: src/script.c:113
+#: src/script.c:138
+msgid "label contains space"
+msgstr ""
+
+#: src/script.c:164
+msgid "label redefinition"
+msgstr "předefinování návěstí"
+
+#: src/script.c:208
 msgid "Invalid multibyte sequence (wrong encoding?)"
 msgstr ""
 
-#: src/script.c:115
+#: src/script.c:210
 msgid "data shortage"
 msgstr "nedostatek dat"
 
-#: src/script.c:117
+#: src/script.c:212
 msgid "missing ':'"
 msgstr "chybí ':'"
 
-#: src/script.c:123
+#: src/script.c:218
 msgid "line too long for screen"
 msgstr "řádka je na obrazovku příliš dlouhá"
 
-#: src/script.c:213
+#: src/script.c:308
 #, c-format
 msgid ""
 "Happy Typing!\n"
