@@ -1,4 +1,4 @@
-# Typist v2.2 - improved typing tutor program for UNIX systems
+# GNU Typist - improved typing tutor program for UNIX systems
 # Copyright (C) 1998  Simon Baldwin (simonb@sco.com)
 #
 # This program is free software: you can redistribute it and/or modify

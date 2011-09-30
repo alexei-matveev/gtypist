@@ -1,6 +1,7 @@
 ## Process this file with automake to produce Makefile.in
 
 pkgdata_DATA =  gtypist.typ \
+		c.typ \
 		d.typ \
 		demo.typ \
 		esp.typ \

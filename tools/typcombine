@@ -237,23 +237,25 @@ END	{
     for ( i = 1; i <= scount; i++ )
     {
       if (series[i] == "Q")
-	series_description = "Quick QWERTY course (Q1 - Q5)";
+	series_description = "Quick QWERTY course  (Q1 - Q5)";
       else if (series[i] == "R")
-	series_description = "Long QWERTY course  (R1 - R14)";
+	series_description = "Long QWERTY course   (R1 - R14)";
       else if (series[i] == "T")
-	series_description = "QWERTY touch typing (T1 - T16)";
+	series_description = "QWERTY touch typing  (T1 - T16)";
       else if (series[i] == "V")
-	series_description = "Yet Another QWERTY  (V1 - V19)";
+	series_description = "Yet Another QWERTY   (V1 - V19)";
       else if (series[i] == "U")
-	series_description = "QWERTY Review       (U1 - U13)";
+	series_description = "QWERTY Review        (U1 - U13)";
       else if (series[i] == "D")
-	series_description = "Dvorak touch typing (D1 - D14)";
+	series_description = "Dvorak touch typing  (D1 - D14)";
+      else if (series[i] == "C")
+	series_description = "Colemak touch typing (C1 - C12)";
       else if (series[i] == "M")
-	series_description = "Typing drills       (M1 - M11)";
+	series_description = "Typing drills        (M1 - M11)";
       else if (series[i] == "S")
-	series_description = "Speed drills        (S1 - S4)";
+	series_description = "Speed drills         (S1 - S4)";
       else if (series[i] == "N")
-	series_description = "Calculator keypad   (N1 - N3)";
+	series_description = "Calculator keypad    (N1 - N3)";
       else # TODO: find sth like "abort"
 	exit 1;
       # output 1 menu-item
@@ -280,6 +282,6 @@ END	{
 }
 
 # Local Variables:
-# compile-command: "(cd ../lessons && gawk -f ../tools/typcombine q.typ r.typ t.typ v.typ u.typ d.typ m.typ s.typ n.typ > gtypist.typ)"
+# compile-command: "(cd ../lessons && gawk -f ../tools/typcombine q.typ r.typ t.typ v.typ u.typ d.typ c.typ m.typ s.typ n.typ > gtypist.typ)"
 # truncate-lines: t
 # End:

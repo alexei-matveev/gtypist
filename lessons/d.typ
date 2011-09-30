@@ -1,4 +1,4 @@
-# Typist v2.2 - improved typing tutor program for UNIX systems
+# GNU Typist - improved typing tutor program for UNIX systems
 # Copyright (C) 1998  Simon Baldwin (simonb@sco.com)
 #
 # This program is free software: you can redistribute it and/or modify
@@ -30,15 +30,15 @@ G:_D_MENU
 T:			Welcome to the Dvorak Course
  :
  :This course has been planned for beginners as well as experienced typists.
- :If you are a beginner learning to type on the American Simplified Keyboard
- :(the Dvorak keyboard), you will find this keyboard easier to learn than
- :the QWERTY (Sholes) keyboard.
+ :If you are a beginner learning to type on the Dvorak keyboard (the American
+ :Simplified Keyboard), you will find this keyboard easier to learn than the
+ :QWERTY (Sholes) keyboard.
  :
- :This is because the ASK has been scientifically designed to minimize cumulative
- :finger motion while typing English.  The ten letters on the Home Row
- :(A, O, E, U, I, D, H, T, N, and S) make up about 70% of all keystrokes.
- :These ten letters alone can form over 3000 words.  Needless to say, having
- :these keys in the home row facilitates both speed and accuracy.
+ :This is because the Dvorak keyboard has been scientifically designed to minimize
+ :cumulative finger motion while typing English.  The ten letters on the home row
+ :(A, O, E, U, I, D, H, T, N, and S) make up about 70% of all keystrokes. These
+ :ten letters alone can form over 3000 words.  Needless to say, having these keys
+ :in the home row facilitates both speed and accuracy.
  :
  :If you are already an experienced typist on the Sholes keyboard, don't despair:
  :you won't have to unlearn everything you know.  Your basic typing dexterity
