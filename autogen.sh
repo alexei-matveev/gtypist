@@ -73,7 +73,7 @@ cp $gettexth src/
     exit 1
 }
 echo "creating lessons/gtypist.typ..."
-(cd lessons && gawk -f ../tools/typcombine q.typ r.typ t.typ v.typ u.typ d.typ m.typ s.typ n.typ > gtypist.typ)
+(cd lessons && gawk -f ../tools/typcombine q.typ r.typ t.typ v.typ u.typ d.typ c.typ m.typ s.typ n.typ > gtypist.typ)
 
 VERSION=`./version.sh`
 
