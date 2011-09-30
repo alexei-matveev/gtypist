@@ -20,62 +20,50 @@
 #------------------------------------------------------------------------------
 G:_R_MENU
 *:_R_NO_MENU
+
 #------------------------------------------------------------------------------
 # Lesson R1
 #------------------------------------------------------------------------------
 *:R1
 *:_R_S_R1
+B:                            Lesson R1
+
 *:_R_R_L0
-#                                                               ../orig/r.typ:4
 T:
  :In the R series lessons we work on speed and accuracy.
 
-#                                                               ../orig/r.typ:5
 I:(1) Warming-Up Drill
 *:_R_R_L1
-#                                                               ../orig/r.typ:6
 D:Up to date I can not see that the thing is as good as this one.
 
-#                                                               ../orig/r.typ:7
 I:(2) Balanced Keyboard Drill
 *:_R_R_L2
-#                                                               ../orig/r.typ:8
 D:uch pos oug ept ing ope hic ati sch cou get ice con goo ght
 
-#                                                               ../orig/r.typ:9
 I:(3) Continuous Copy
 *:_R_R_L3
-#                                                              ../orig/r.typ:10
 D:Nan is cute.  She can sing and dance.  She can tap a piano.
 
-#                                                              ../orig/r.typ:11
 I:(4)
 *:_R_R_L4
-#                                                              ../orig/r.typ:13
 D:Tonight Nan opens the piano.  She sings such good songs and
  :soon dashes into a dance.  Nan can dance.  The noise stops.
 
-#                                                              ../orig/r.typ:14
 I:(5)
 *:_R_R_L5
-#                                                              ../orig/r.typ:17
 D:Nan gets us going.  The dance is on.  Ted pounds the piano
  :as Ann stops to go to the phone.  She has to get the gang.
  :This chance scene passes too soon.  I hope it happens again.
 
-#                                                              ../orig/r.typ:18
 I:(6)
 *:_R_R_L6
-#                                                              ../orig/r.typ:22
 D:At eight papa said that he ought to put out his good pipe
  :and then get a good nap.  Soon papa is snug in a deep nap.
  :At eight ten I guess the dance gets going.  At ten it stops.
  :As papa put it, such singing upsets him enough for one night.
 
-#                                                              ../orig/r.typ:23
 I:(7)
 *:_R_R_L7
-#                                                              ../orig/r.typ:28
 D:Get the gang.  Catch this sign.  Get going.  Go up this high
  :post and put a sign on top.  Put these copies on each post.
  :I guess no one intends to stop us.  The cast is set.  Each
@@ -83,7 +71,6 @@ D:Get the gang.  Catch this sign.  Get going.  Go up this high
  :enough cash is paid in so the cast need not stand the costs.
 
 *:_R_R_L8
-#                                                              ../orig/r.typ:43
 T:			SPEED EXERCISES
  :
  :From now on, I will be mixing speed exercises in with the lessons.  In the
@@ -100,20 +87,16 @@ T:			SPEED EXERCISES
  :should have typed in inverse video (a black letter on a white background).
  :Just keep going and try to make as few errors as possible.
 
-#                                                              ../orig/r.typ:44
 I:(8) Pointer Paragraph (o e)
 *:_R_R_L9
-#                                                              ../orig/r.typ:49
 S:     Only too well do we know about your house.  Mother told
  :me you hope to be settled there quite soon.  Of course she
  :would enjoy seeing the whole house next week.  Before then
  :please write her a letter to let her know how to get there
  :from here.  We know you have moved to a very cozy new home.
 
-#                                                              ../orig/r.typ:50
 I:(9) Test Paragraph
 *:_R_R_L10
-#                                                              ../orig/r.typ:56
 S:     The High dance opens at eight and the gang is going.
  :So Ted shuts the piano and stops at the phone to catch Ann.
  :I ought to post Ted that he pounds the piano as I once did.
@@ -121,64 +104,51 @@ S:     The High dance opens at eight and the gang is going.
  :He has to see Ann to each dance.  This is not a noisy night.
  :His auto is a cheap one and no good on a night such as this.
 
-#                                                              ../orig/r.typ:57
 I:(10) Rhythmic Review
 *:_R_R_L11
-#                                                              ../orig/r.typ:58
 D:The gang can use the piano and good songs to open the dance.
 
 G:_R_E_R1
+
 #------------------------------------------------------------------------------
 # Lesson R2
 #------------------------------------------------------------------------------
 *:R2
 *:_R_S_R2
-#                                                              ../orig/r.typ:62
+B:                            Lesson R2
+
 I:(1) Warming-Up Drill
 *:_R_R_L12
-#                                                              ../orig/r.typ:63
 D:It is a good thing to use good habits each time you practice.
 
-#                                                              ../orig/r.typ:64
 I:(2) Balanced Keyboard Drill
 *:_R_R_L13
-#                                                              ../orig/r.typ:65
 D:thr pre rec ear ers ure urn gre art ore her are ter ere tru
 
-#                                                              ../orig/r.typ:66
 I:(3) Continuous Copy
 *:_R_R_L14
-#                                                              ../orig/r.typ:67
 D:Dad and his son, Dan, are to go east on a great auto trip.
 
-#                                                              ../orig/r.typ:68
 I:(4)
 *:_R_R_L15
-#                                                              ../orig/r.typ:70
 D:The phone rings.  Dan hopes the rain has not upset the trip.
  :Soon the pair share a snug rug and start out in our red car.
 
-#                                                              ../orig/r.typ:71
 I:(5)
 *:_R_R_L16
-#                                                              ../orig/r.typ:74
 D:On a poor, rough road, Dan dares to rush in the rain.  Soon
  :he sees a horse ahead.  He tries hard to stop.  The car hits
  :and then turns around.  The horse runs east at a great rate.
 
-#                                                              ../orig/r.typ:75
 I:(6)
 *:_R_R_L17
-#                                                              ../orig/r.typ:79
 D:In order to raise a poor grade one tries to use good sense.
  :An error is a sure sign not to do the thing that one did.
  :An error seen once does not hurt.  As soon as an error is
  :seen or heard again, note its sort and end it right there.
 
-#                                                              ../orig/r.typ:80
 I:(7)
 *:_R_R_L18
-#                                                              ../orig/r.typ:85
 D:Her error is a sign that this thing or that has upset her.
  :Does she care?  Is it a hard part?  She has to get used to
  :the letters that she has to print.  Is this order upset?
@@ -188,7 +158,6 @@ D:Her error is a sign that this thing or that has upset her.
 #
 I:(8) Pointed Paragraph (t h)
 *:_R_R_L19
-#                                                              ../orig/r.typ:92
 S:     Hugh thought he ought to start that night although the
  :weather might hurt his health.  Hal thought they ought to go
  :to Arizona together the thirtieth of June.  Both hastened
@@ -196,10 +165,8 @@ S:     Hugh thought he ought to start that night although the
  :to start north without warm clothes.  Although he hated to
  :hurt his health, Hugh started north quickly on the sixteenth.
 
-#                                                              ../orig/r.typ:93
 I:(9) Test Paragraph
 *:_R_R_L20
-#                                                              ../orig/r.typ:99
 S:     Dad and his son are to start on a trip in our red car.
  :House cares are the sort that upset Dad and he is so tired
  :that he tries a nap in order to rest.  It rains at a great
@@ -207,74 +174,59 @@ S:     Dad and his son are to start on a trip in our red car.
  :parts.  It is a great error, Dan, to rush a short turn on a
  :grade.  The car turns out and ends on its side.  Hurt?  No.
 
-#                                                             ../orig/r.typ:100
 I:(10) Rhythmic Review
 *:_R_R_L21
-#                                                             ../orig/r.typ:101
 D:Dad had a short rest in order to start on the hard car trip.
 
 G:_R_E_R2
+
 #------------------------------------------------------------------------------
 # Lesson R3
 #------------------------------------------------------------------------------
 *:R3
 *:_R_S_R3
-#                                                             ../orig/r.typ:105
+B:                            Lesson R3
+
 I:(1) Warming-Up Drill
 *:_R_R_L22
-#                                                             ../orig/r.typ:106
 D:As a rule call earlier on all orders as long as this one.
 
-#                                                             ../orig/r.typ:107
 I:(2) Balanced Keyboard Drill
 *:_R_R_L23
-#                                                             ../orig/r.typ:108
 D:als ple gla ulo clo ile ill oul all eas onl ion tle lea ndl
 
-#                                                             ../orig/r.typ:109
 I:(3) Continuous Copy
 *:_R_R_L24
-#                                                             ../orig/r.typ:110
 D:As a rule it is the real line drill that helps one to learn.
 
-#                                                             ../orig/r.typ:111
 I:(4)
 *:_R_R_L25
-#                                                             ../orig/r.typ:113
 D:It helps to read a line as soon as one can.  It helps to see
  :its sense.  This, indeed, helps to hold each line until done.
 
-#                                                             ../orig/r.typ:114
 I:(5)
 *:_R_R_L26
-#                                                             ../orig/r.typ:117
 D:As soon as one hits a hard place then one plans to drill on
  :this part.  Later one can drill this hard part again.  In
  :order to end an error one can drill all the old line again.
 
-#                                                             ../orig/r.typ:118
 I:(6)
 *:_R_R_L27
-#                                                             ../orig/r.typ:122
 D:Learn the sound as one uses loose hands to type out a line.
  :As one types his usual rate he ought to learn its sound until
  :at this rate all the line has the usual, clean, clear sound.
  :As soon as the usual rate is lost one can hear it as a slip.
 
-#                                                             ../orig/r.typ:123
 I:(7)
 *:_R_R_L28
-#                                                             ../orig/r.typ:128
 D:Total lines that one turns out tell all that one is young.
  :In order that this class also can print a large line total,
  :it still helps to spell; it also helps to print all the line
  :as one line, and it helps less and less to drill single
  :letters.  Each one in the class can tell his total lines.
 
-#                                                             ../orig/r.typ:129
 I:(8) One- to three-letter words (a to l)
 *:_R_R_L29
-#                                                             ../orig/r.typ:146
 S:Dear Ted,
  :
  :     A day ago Ann got a bad cut on her arm and a few by her
@@ -293,10 +245,8 @@ S:Dear Ted,
  :
  :Yours sincerely,
 
-#                                                             ../orig/r.typ:147
 I:(9) Test Paragraph
 *:_R_R_L30
-#                                                             ../orig/r.typ:154
 S:     To tell this class all there is to learn is not a real
  :help later.  Let the class plan the loose ease that can hold
  :each hand in place, or plan to end this or that poor slip,
@@ -305,58 +255,47 @@ S:     To tell this class all there is to learn is not a real
  :the old action to clear the road.  Those old slips are lost.
  :The class has large plans; gains in hours and less slips.
 
-#                                                             ../orig/r.typ:155
 I:(10) Rhythmic Review
 *:_R_R_L31
-#                                                             ../orig/r.typ:156
 D:To learn to read or spell a rule helps less than to drill.
 
 G:_R_E_R3
+
 #------------------------------------------------------------------------------
 # Lesson R4
 #------------------------------------------------------------------------------
 *:R4
 *:_R_S_R4
-#                                                             ../orig/r.typ:160
+B:                            Lesson R4
+
 I:(1) Warming-Up Drill
 *:_R_R_L32
-#                                                             ../orig/r.typ:161
 D:After that date I believe he can not say that it is not a fact.
 
-#                                                             ../orig/r.typ:162
 I:(2) Balanced Keyboard Drill
 *:_R_R_L33
-#                                                             ../orig/r.typ:163
 D:any for efo fte day fin you ful ery nly hey afk ays fro say
 
-#                                                             ../orig/r.typ:164
 I:(3) Continuous Copy
 *:_R_R_L34
-#                                                             ../orig/r.typ:166
 D:I feel sorry to say I can not send a full order on that day.
  :Forty-odd pounds is all that I can spare at this early date.
 
-#                                                             ../orig/r.typ:167
 I:(4)
 *:_R_R_L35
-#                                                             ../orig/r.typ:170
 D:All loose lots are sent on fast local lines at a half rate,
  :so there is close to no delay and you also do not lose any.
  :It is fine, fresh stuff and our first fancy fruit this year.
 
-#                                                             ../orig/r.typ:171
 I:(5)
 *:_R_R_L36
-#                                                             ../orig/r.typ:175
 D:This offer is only for fancy fresh fruit to be used as gifts.
  :Try these and candy to suit the young lady.  They are dandy.
  :You can feel safe.  Sales are easy and final.  They go fast.
  :After at least four days you can order daily or on Friday.
 
-#                                                             ../orig/r.typ:176
 I:(6)
 *:_R_R_L37
-#                                                             ../orig/r.typ:185
 S:Dear Ted,
  :
  :     After I read your dandy note I felt sorry for the lady.
@@ -367,10 +306,8 @@ S:Dear Ted,
  :
  :Yours sincerely,
 
-#                                                             ../orig/r.typ:186
 I:(7) Pointed Paragraph (a s)
 *:_R_R_L38
-#                                                             ../orig/r.typ:193
 S:     Sadness possesses her as she stands against the panes
  :that the sash separates.  She is sad because the same dress
  :is not washed and in shape; and so she says it is useless to
@@ -379,10 +316,8 @@ S:     Sadness possesses her as she stands against the panes
  :Alaska or Asia or Spain is useless.  So in June she amuses
  :herself by drawing five or six quaint, small-sized maps.
 
-#                                                             ../orig/r.typ:194
 I:(8) Test Paragraph
 *:_R_R_L39
-#                                                             ../orig/r.typ:201
 S:     They say this fruit is the finest.  It is full and good.
  :Dr. Ted feels the first fruit is too green for young or old.
  :After one eats any of it he is sorry.  In fact, if I try it,
@@ -391,74 +326,59 @@ S:     They say this fruit is the finest.  It is full and good.
  :To a lady in those seas I gladly offer all fruit and candy.
  :There is no reply.  Only the seas run high and I feel ill.
 
-#                                                             ../orig/r.typ:202
 I:(9) Rhythmic Review
 *:_R_R_L40
-#                                                             ../orig/r.typ:203
 D:The young lady often has pounds of fruit and candy each day.
 
 G:_R_E_R4
+
 #------------------------------------------------------------------------------
 # Lesson R5
 #------------------------------------------------------------------------------
 *:R5
 *:_R_S_R5
-#                                                             ../orig/r.typ:207
+B:                            Lesson R5
+
 I:(1) Warming-Up Drill
 *:_R_R_L41
-#                                                             ../orig/r.typ:208
 D:In any case there is only one order that is long past due.
 
-#                                                             ../orig/r.typ:209
 I:(2) Balanced Keyboard Drill
 *:_R_R_L42
-#                                                             ../orig/r.typ:210
 D:est ace ric ity red per der pro sel par ish ial ing eal let
 
-#                                                             ../orig/r.typ:211
 I:(3) Continuous Copy--Review
 *:_R_R_L43
-#                                                             ../orig/r.typ:212
 D:To learn to type, first get a nice rate going, then hold it.
 
-#                                                             ../orig/r.typ:213
 I:(4)
 *:_R_R_L44
-#                                                             ../orig/r.typ:215
 D:If you read copy set your eyes on that copy and stay on it.
  :If you hear copy then use your eyes to hit sure and fast.
 
-#                                                             ../orig/r.typ:216
 I:(5)
 *:_R_R_L45
-#                                                             ../orig/r.typ:219
 D:Do not hurry.  Set a nice rate.  Yet hit each letter fast.
  :To strike letters start easily and fast and use a light touch.
  :You can not type lightly and faster if you start to pound.
 
-#                                                             ../orig/r.typ:220
 I:(6)
 *:_R_R_L46
-#                                                             ../orig/r.typ:224
 D:It is a slip if you do not use a letter in its right order,
  :since in line after line each has its place on the paper.
  :You soon learn the usual order for all letters that you type
  :and learn to print the letters in any necessary order.
 
-#                                                             ../orig/r.typ:225
 I:(7)
 *:_R_R_L47
-#                                                             ../orig/r.typ:230
 D:It is easy at first to make errors by losing this usual order.
  :If you read, hold the eyes on copy to help get this order.
  :If you do hit this or that letter out of order, it is not
  :that you fail to spell.  You can spell and yet not type;
  :this fine class drill is to help the type fly in fair order.
 
-#                                                             ../orig/r.typ:231
 I:(8) One- to three-letter words (m to z)
 *:_R_R_L48
-#                                                             ../orig/r.typ:249
 S:Dear Tom,
  :
  :     Mr. May has one new car.  It has a low red top.  The top
@@ -478,10 +398,8 @@ S:Dear Tom,
  :
  :Yours sincerely,
 
-#                                                             ../orig/r.typ:250
 I:(9) Pointed Paragraph (t c)
 *:_R_R_L49
-#                                                             ../orig/r.typ:256
 S:     Is it quite certain that the citizens could continue the
  :old conditions if they voted a straight ticket?  If we accept
  :as accurate the picture of recent conditions, we can not crave
@@ -489,75 +407,60 @@ S:     Is it quite certain that the citizens could continue the
  :vote a split ticket.  Tax collectors try to collect taxes on
  :vacant lots.  A discount for cash increases collections.
 
-#                                                             ../orig/r.typ:257
 I:(10) Rhythmic Review
 *:_R_R_L50
-#                                                             ../orig/r.typ:258
 D:In order to type fast you hit lightly after each short delay.
 
 G:_R_E_R5
+
 #------------------------------------------------------------------------------
 # Lesson R6
 #------------------------------------------------------------------------------
 *:R6
 *:_R_S_R6
-#                                                             ../orig/r.typ:262
+B:                            Lesson R6
+
 I:(1) Warming-Up Drill
 *:_R_R_L51
-#                                                             ../orig/r.typ:263
 D:It seems to me that we want to know what was said just now.
 
-#                                                             ../orig/r.typ:264
 I:(2) Balanced Keyboard Drill
 *:_R_R_L52
-#                                                             ../orig/r.typ:266
 D:ent ake mon mak tim kin orm omp rom ork mys kno com ome Mr.
  :ant may was way now job wit toi wri jus wil jul whi wou whe
 
-#                                                             ../orig/r.typ:267
 I:(3) Continuous Copy
 *:_R_R_L53
-#                                                             ../orig/r.typ:268
 D:Let me have a horse where the wide West still runs wild.
 
-#                                                             ../orig/r.typ:269
 I:(4)
 *:_R_R_L54
-#                                                             ../orig/r.typ:271
 D:I must see the warm colors, and feel the wind on that land.
  :I want to see a few cows among great rocks and sage brush.
 
-#                                                             ../orig/r.typ:272
 I:(5)
 *:_R_R_L55
-#                                                             ../orig/r.typ:275
 D:I like to hear a horse stamp.  I like the sweat on a horse.
  :I want to keep a camp, close to water, miles from any crowd.
  :At night, I want to enjoy a moon that shines on all the land.
 
-#                                                             ../orig/r.typ:276
 I:(6)
 *:_R_R_L56
-#                                                             ../orig/r.typ:280
 D:Yet I am in this city room to type news items for the paper.
  :I know the ins and outs of my city--its mayor, judge, jail.
  :I know how some men keep in power, and some get only kicks.
  :I am sick of dark ways to make money, of bribery and fraud.
 
-#                                                             ../orig/r.typ:281
 I:(7)
 *:_R_R_L57
-#                                                             ../orig/r.typ:286
 D:I want to hear the talk of folks who know hot sun and stock.
  :I like to join in jokes with men whose names I do not ask.
  :So had I just an old motor car and some gas to make it jump,
  :I would come at forty miles an hour, past fields of wheat,
  :till the grade grows high and rough, in keen air out West.
 
-#                                                             ../orig/r.typ:287
 I:(8) Pointed Paragraph (p y)
 *:_R_R_L58
-#                                                             ../orig/r.typ:293
 S:     Please report the people who study typing.  You may
  :truly say that money paid for this study is happily spent.
  :Today typing plays a very practical part in acquiring a
@@ -565,10 +468,8 @@ S:     Please report the people who study typing.  You may
  :work in typing:  Monday, Tuesday, Wednesday, Thursday, Friday,
  :and Saturday.  Have you this sized type to print your copy?
 
-#                                                             ../orig/r.typ:294
 I:(9) Test Paragraph
 *:_R_R_L59
-#                                                             ../orig/r.typ:302
 S:     Were you the judge in a case like this, could you do the
  :just thing?  An old woman who keeps rooms hides her money
  :under a clock.  A man using one of the rooms motors rapidly
@@ -578,74 +479,59 @@ S:     Were you the judge in a case like this, could you do the
  :I use my power to set his term at ten years.  After he is put
  :in jail, the old woman finds her money still under the clock.
 
-#                                                             ../orig/r.typ:303
 I:(10) Rhythmic Review
 *:_R_R_L60
-#                                                             ../orig/r.typ:304
 D:How do we know which way so wild a horse will kick or jump?
 
 G:_R_E_R6
+
 #------------------------------------------------------------------------------
 # Lesson R7
 #------------------------------------------------------------------------------
 *:R7
 *:_R_S_R7
-#                                                             ../orig/r.typ:308
+B:                            Lesson R7
+
 I:(1) Warming-Up Drill
 *:_R_R_L61
-#                                                             ../orig/r.typ:309
 D:With that end in view I may soon have to put this question.
 
-#                                                             ../orig/r.typ:310
 I:(2) Balanced Keyboard Drill
 *:_R_R_L62
-#                                                             ../orig/r.typ:311
 D:ave hav eve ver ove quo not ive giv qui vis que ved eiv tha
 
-#                                                             ../orig/r.typ:312
 I:(3) Continuous Copy
 *:_R_R_L63
-#                                                             ../orig/r.typ:313
 D:At our new villa a very novel event was given for the navy.
 
-#                                                             ../orig/r.typ:314
 I:(4)
 *:_R_R_L64
-#                                                             ../orig/r.typ:316
 D:Covers were laid in the unique ivory room.  Even the king
  :and queen were there with a quota of fair and lovely ladies.
 
-#                                                             ../orig/r.typ:317
 I:(5)
 *:_R_R_L65
-#                                                             ../orig/r.typ:320
 D:The queen was ready to quaff when her glass fell.  At once
  :all was quiet.  Every one, save one alone, quit the dance.
  :In all their lives, to quote, was never a thing more grave.
 
-#                                                             ../orig/r.typ:321
 I:(6)
 *:_R_R_L66
-#                                                             ../orig/r.typ:325
 D:Who was the lady with the vivid hair in the dress of heavy
  :gold?  Who was this queer one who dared so treat the queen?
  :Each guest did quail.  Could such quiet nerve ever avail?
  :With a move quite free and easy the lady let fall her glass.
 
-#                                                             ../orig/r.typ:326
 I:(7)
 *:_R_R_L67
-#                                                             ../orig/r.typ:331
 D:The queen put this query in a quick voice to quell them all:
  :Why does the whole world love a lover?  Why do we value you?
  :All did laugh.  The queen asked that, as a favor, you give us
  :those who have nerve, for they can love and serve.  Quite as
  :one who gave an equal favor, the queen sang over the radio.
 
-#                                                             ../orig/r.typ:332
 I:(8) Pointed Paragraph (l s)
 *:_R_R_L68
-#                                                             ../orig/r.typ:338
 S:     The earliest possible sales lessen the total losses.
  :Please enclose the latest details in those lists yourself.
  :On almost all calls I could save six dollars, especially in
@@ -653,10 +539,8 @@ S:     The earliest possible sales lessen the total losses.
  :useful shortly.  Use a small-sized envelope to post letters.
  :Last but not least, all else should still go on as usual.
 
-#                                                             ../orig/r.typ:339
 I:(9) Test Paragraph
 *:_R_R_L69
-#                                                             ../orig/r.typ:347
 S:     In our queen city I used to value two covers set every
  :day.  At these I used to serve a young man and a girl.  I did
  :love to see her quiet dress and quick smile favor her so.
@@ -666,66 +550,53 @@ S:     In our queen city I used to value two covers set every
  :up and took leave.  The way she quit the boy was very queer
  :even if the papers did quote his prison term as five years.
 
-#                                                             ../orig/r.typ:348
 I:(10) Rhythmic Review
 *:_R_R_L70
-#                                                             ../orig/r.typ:349
 D:Even her very quick smile never makes us quite at our ease.
 
 G:_R_E_R7
+
 #------------------------------------------------------------------------------
 # Lesson R8
 #------------------------------------------------------------------------------
 *:R8
 *:_R_S_R8
-#                                                             ../orig/r.typ:353
+B:                            Lesson R8
+
 I:(1) Warming-Up Drill
 *:_R_R_L71
-#                                                             ../orig/r.typ:354
 D:I don't know why he can't have a large-sized order for you.
 
-#                                                             ../orig/r.typ:355
 I:(2) Balanced Keyboard Drill
 *:_R_R_L72
-#                                                             ../orig/r.typ:357
 D:sen aze hen ose hat ous had ize tte see hin oze to- zoo n't
  :e'l e's u'l h's d's n's s's e'r a's t's y's r's n't m's es'
 
-#                                                             ../orig/r.typ:358
 I:(3) Continuous Copy
 *:_R_R_L73
-#                                                             ../orig/r.typ:359
 D:I'd never call Dan lazy; still, I can't say he wins prizes.
 
-#                                                             ../orig/r.typ:360
 I:(4)
 *:_R_R_L74
-#                                                             ../orig/r.typ:362
 D:Doesn't Dan know how to make an exclamation point?  He'll
  :have to hold down the spacer and hit the apostrophe and period.
 
-#                                                             ../orig/r.typ:363
 I:(5)
 *:_R_R_L75
-#                                                             ../orig/r.typ:366
 D:Owing to Dan's zeal, he'll get the point; he'll realize it's
  :faster.  He'll use it when amazed, as:  Whiz!  He'll use it
  :when he feels real zest, as:  Zip!  Let's go!  It's a fire!
 
-#                                                             ../orig/r.typ:367
 I:(6)
 *:_R_R_L76
-#                                                             ../orig/r.typ:372
 D:A dozen small-sized craft frozen in the ice are afire under
  :a cold azure sky.  It's near zero in the fire zone; and over
  :the ships now razed to the water's edge, a light haze hangs.
  :I'm dazed as I gaze at my own ship; I'd never recognize that
  :crazy maze of still fizzing ruins as a deck.  What a fizzle!
 
-#                                                             ../orig/r.typ:373
 I:(7)
 *:_R_R_L77
-#                                                             ../orig/r.typ:379
 D:Isn't there a lot of zip and zest to your work on a paper of
  :this size?  Don't you like to seize some amazing news item
  :that's good for the first page?  If Tom's hazy fire story is
@@ -733,10 +604,8 @@ D:Isn't there a lot of zip and zest to your work on a paper of
  :that easy for you?  I've wanted to see my name in print; I
  :guess I'll sail in a zeppelin to see if you'll print that.
 
-#                                                             ../orig/r.typ:380
 I:(8) Pointed Paragraph (r n)
 *:_R_R_L78
-#                                                             ../orig/r.typ:387
 S:     A note from Ann says her friend prefers to change her
  :return to Arizona from next February to November.  The reason
  :is an error of the owner of the ranch who will not refund
@@ -745,10 +614,8 @@ S:     A note from Ann says her friend prefers to change her
  :I hear that now neither her friends from North Carolina nor
  :Virginia can remain an afternoon and refrain from a quarrel.
 
-#                                                             ../orig/r.typ:388
 I:(9) Test Paragraph
 *:_R_R_L79
-#                                                             ../orig/r.typ:396
 S:     I'll admit I seize a chance to go with these dozen
  :people.  We left under an azure sky, yet today it's rainy
  :and hazy.  That Dr. Tedd is odd; he won't play; he's doing
@@ -758,74 +625,59 @@ S:     I'll admit I seize a chance to go with these dozen
  :not stay; he feels it's a fizzle.  My zeal for gazing on the
  :crowd is at zero.  They don't and can't pass any play quiz.
 
-#                                                             ../orig/r.typ:397
 I:(10) Rhythmic Review
 *:_R_R_L80
-#                                                             ../orig/r.typ:398
 D:It's crazy for me to type news items on paper of this size!
 
 G:_R_E_R8
+
 #------------------------------------------------------------------------------
 # Lesson R9
 #------------------------------------------------------------------------------
 *:R9
 *:_R_S_R9
-#                                                             ../orig/r.typ:402
+B:                            Lesson R9
+
 I:(1) Warming-Up Drill
 *:_R_R_L81
-#                                                             ../orig/r.typ:403
 D:To some extent he has been able to do the next best thing.
 
-#                                                             ../orig/r.typ:404
 I:(2) Balanced Keyboard Drill
 *:_R_R_L82
-#                                                             ../orig/r.typ:405
 D:abo bet bee ble bou bef ext ber six sib nex abl aby mbe box
 
-#                                                             ../orig/r.typ:406
 I:(3) Continuous Copy
 *:_R_R_L83
-#                                                             ../orig/r.typ:407
 D:Dad just about broke down at the bad news.  Bill has no job.
 
-#                                                             ../orig/r.typ:408
 I:(4)
 *:_R_R_L84
-#                                                             ../orig/r.typ:410
 D:Dad was vexed.  He said that he might as well burn his bonds
  :next.  He has sixty bonds but the prices sent all below par.
 
-#                                                             ../orig/r.typ:411
 I:(5)
 *:_R_R_L85
-#                                                             ../orig/r.typ:414
 D:Dad talks about a jinx.  He says that maybe their bank will
  :close so he cannot pay up taxes and bills before Christmas.
  :Dad says they all may have to exist on home-grown wax beans.
 
-#                                                             ../orig/r.typ:415
 I:(6)
 *:_R_R_L86
-#                                                             ../orig/r.typ:419
 D:Dad adds that boys ought to be busy and maybe play ball or
  :box at the club.  Bill excels, but says he cannot box on
  :wax beans alone.  Beef must be back on the board.  Bill has
  :boxed as an extra at a bazaar.  He is big, and able to box.
 
-#                                                             ../orig/r.typ:420
 I:(7)
 *:_R_R_L87
-#                                                             ../orig/r.typ:425
 D:Bill begs Dad not to be blue, and his text is this:  We
  :are all in the same boat.  No one can buy.  No one can build.
  :Labor is hard hit, too.  I, for one, would like to toss the
  :cards on the table and start a new deal.  When exact codes
  :are fixed, as best for all, every person must do his bit.
 
-#                                                             ../orig/r.typ:426
 I:(8) Pointed Paragraph (f y)
 *:_R_R_L88
-#                                                             ../orig/r.typ:433
 S:     Satisfy yourself that it will be funny, but perfectly
  :satisfactory, for forty or fifty of the faculty to fly from
  :Buffalo to New York on the first Friday in February.  If
@@ -834,10 +686,8 @@ S:     Satisfy yourself that it will be funny, but perfectly
  :confidently to face any difficulty.  A friendly inquiry
  :from any family will be very cheerfully and fully answered.
 
-#                                                             ../orig/r.typ:434
 I:(8a) Pointed Paragraph (i d)
 *:_R_R_L89
-#                                                             ../orig/r.typ:440
 S:     Children find being quizzed in division, addition, and
  :reading difficult.  They studied daily during their third
  :period and tried to be confident.  I think they did include
@@ -845,10 +695,8 @@ S:     Children find being quizzed in division, addition, and
  :just decided to dispose of Detroit, Grand Rapids, Richmond,
  :Providence, and Philadelphia next week.
 
-#                                                             ../orig/r.typ:441
 I:(9) Test Paragraph
 *:_R_R_L90
-#                                                             ../orig/r.typ:451
 S:     By using the new banks of keys on the new keyboard, you
  :are able to learn or excel with less labor.  These new banks
  :have been based on an exact table of words used.  You begin
@@ -860,75 +708,60 @@ S:     By using the new banks of keys on the new keyboard, you
  :new keyboard.  Nor is your left hand taxed with extra labor.
  :The keys are fixed to keep both hands busy and in balance.
 
-#                                                             ../orig/r.typ:452
 I:(10) Rhythmic Review
 *:_R_R_L91
-#                                                             ../orig/r.typ:453
 D:Those boxes of books for New Mexico may be ready next week.
 
 G:_R_E_R9
+
 #------------------------------------------------------------------------------
 # Lesson R10
 #------------------------------------------------------------------------------
 *:R10
 *:_R_S_R10
-#                                                             ../orig/r.typ:457
+B:                            Lesson R10
+
 I:(1) Warming-Up Drill
 *:_R_R_L92
-#                                                             ../orig/r.typ:458
 D:Next time we must ask to have you make them just as he does.
 
-#                                                             ../orig/r.typ:459
 I:(2) Balanced Keyboard Drill
 *:_R_R_L93
-#                                                             ../orig/r.typ:461
 D:ite ith ine nce tio she hou how ime ibl ece muc out oth our
  :ate and een ind oon und one thi lix his ise wer jun ett exp
 
-#                                                             ../orig/r.typ:462
 I:(3) Continuous Copy--Review
 *:_R_R_L94
-#                                                             ../orig/r.typ:463
 D:I am going to be lazy this weekend and do just what I want.
 
-#                                                             ../orig/r.typ:464
 I:(4)
 *:_R_R_L95
-#                                                             ../orig/r.typ:466
 D:Today I quit being vexed with the old job.  I must seize
  :one extra bit of zest and join the exit from the big city.
 
-#                                                             ../orig/r.typ:467
 I:(5)
 *:_R_R_L96
-#                                                             ../orig/r.typ:470
 D:To begin with, the same old auto will bear us to the beach
  :where a good-sized boat floats easily in the blue water.
  :Our boat is build for room.  Her cabin has a busy table.
 
-#                                                             ../orig/r.typ:471
 I:(6)
 *:_R_R_L97
-#                                                             ../orig/r.typ:475
 D:I know Nan will come if Bill does, and Ted likes to be with
  :Ann.  I would never quite have the nerve to keep my good
  :board back when our club navy moves out into the quiet water.
  :We leave at an early hour when the sun is still under cover.
 
-#                                                             ../orig/r.typ:476
 I:(7)
 *:_R_R_L98
-#                                                             ../orig/r.typ:481
 D:All day will be warm and novel.  The far banks will slide by
  :while we gaze.  She is an out-and-out able boat, heavy but
  :never gives trouble.  She is never taxed in quick water.  I
  :feel the water jump and break.  Queer how I feel the bond
  :that exists between me and my boat.  She is a prize I value.
 
-#                                                             ../orig/r.typ:482
 I:(8) Pointed Paragraph (m w)
 *:_R_R_L99
-#                                                             ../orig/r.typ:488
 S:     Some women swim in the spring.  Some women swim in
  :the warm water of summer.  Women in Brazil may swim even in
  :November.  Some women from Japan will swim tomorrow.  We want
@@ -936,10 +769,8 @@ S:     Some women swim in the spring.  Some women swim in
  :winter.  We will work with them for a few weeks.  When they
  :go home we wonder if they will write from time to time.
 
-#                                                             ../orig/r.typ:489
 I:(8A) Pointed Paragraph (i o)
 *:_R_R_L100
-#                                                             ../orig/r.typ:495
 S:     I'm going to obtain oil options tonight and to file my
  :copies without noise, or outside notice.  I am anxious to
  :avoid an action.  If I voice an official opinion, I will omit
@@ -947,10 +778,8 @@ S:     I'm going to obtain oil options tonight and to file my
  :be enjoying a glorious addition to my income.  I am going to
  :join society and be social with juniors and seniors alike.
 
-#                                                             ../orig/r.typ:496
 I:(9) Test Paragraph
 *:_R_R_L101
-#                                                             ../orig/r.typ:504
 S:     Bound for some place where the sun sets in the west,
  :soon it is the night that I favor.  Next to the night and
  :boat and water, maybe I judge our sail by its excellent bill
@@ -960,83 +789,67 @@ S:     Bound for some place where the sun sets in the west,
  :soup and boast or sing with zeal and make any queer joke.
  :With a moon, I can name no event to equal a boat and water.
 
-#                                                             ../orig/r.typ:505
 I:(10) Rhythmic Review
 *:_R_R_L102
-#                                                             ../orig/r.typ:506
 D:It is good drill to keep going in even time for ten minutes.
 
 G:_R_E_R10
+
 #------------------------------------------------------------------------------
 # Lesson R11
 #------------------------------------------------------------------------------
 *:R11
 *:_R_S_R11
+B:                            Lesson R11
+
 *:_R_R_L103
-#                                                             ../orig/r.typ:514
 T:
  :In this lesson we start on the top row, which has the numerals and
  :a lot of the special characters.  Note that the F-finger presses the
  :4-key and the 5-key; the J-finger presses the 7-key and the 8-key.
  :Either the F-finger or the J-finger may press the 6-key.
 
-#                                                             ../orig/r.typ:515
 I:(1) Warming-Up Drill
 *:_R_R_L104
-#                                                             ../orig/r.typ:516
 D:She can tell us all there is to say on her side and what to do.
 
-#                                                             ../orig/r.typ:517
 I:(2) Rhythm and Keyboard Drill
 *:_R_R_L105
-#                                                             ../orig/r.typ:519
 D:ki9 de3 ju8 fr4 ju7 fr5 jy6 ft6 lo0 sw2 ju7 fr5 jy6 ft6 ;p-
  :k9 d3 j8 f4 j7 f5 f6 l0 s2 j8 f4 j7 f5 j6 f6 k9 d3 ;- s2
 
-#                                                             ../orig/r.typ:520
 I:(3) Continuous Copy
 *:_R_R_L106
-#                                                             ../orig/r.typ:521
 D:To buy an air-mail stamp I save 1, 2, 4, and at last 6 cents.
 
-#                                                             ../orig/r.typ:522
 I:(4)
 *:_R_R_L107
-#                                                             ../orig/r.typ:524
 D:In two years my dollar earns 1, 3, 5, 7, and perhaps 8 cents.
  :Buy at once:  4 candy balls,9 bars, 6 or 8 of gum, 2 cakes.
 
-#                                                             ../orig/r.typ:525
 I:(5)
 *:_R_R_L108
-#                                                             ../orig/r.typ:528
 D:2 and 2 are 4; 3 and 3 are 6; 4 and 4 are 8; 5 and 0 are 5.
  :3 and 4 are 7; 5 and 4 are 9; 2 and 6 are 8; 7 and 0 are 7.
  :1 and 1 are 2; 3 and 1 are 4; 5 and 1 are 6; 7 and 1 are 8.
 
-#                                                             ../orig/r.typ:529
 I:(6)
 *:_R_R_L109
-#                                                             ../orig/r.typ:533
 D:I have finished Grade 9B.  In my first weeks of typing in
  :Grade 10A, I learned to use all the keys in Lessons 3 and 4.
  :In Lessons 1 and 2, and in part of No.5, I tried my hands on
  :the home row.  Both Lessons 6 and 7 were in the bank above.
 
-#                                                             ../orig/r.typ:534
 I:(7)
 *:_R_R_L110
-#                                                             ../orig/r.typ:539
 D:Typing is clerical work.  Twenty years ago less than 5 per
  :cent of all those at work had clerical jobs; today, about 8
  :per cent have such jobs.  Does it interest you that of all
  :paid typists only 3 per cent are more than 44 years of age?
  :Most of the 810,000 typists in the last census are young.
 
-#                                                             ../orig/r.typ:540
 I:(8-9)
 *:_R_R_L111
-#                                                             ../orig/r.typ:546
 S:To throw a carriage do you take 6 or 7 times--or to shift for
  :a capital, 2 or 3 times--as long as to hit one letter?  And
  :do you know the common keys?  One common pair of letters is used
@@ -1044,75 +857,60 @@ S:To throw a carriage do you take 6 or 7 times--or to shift for
  :600 other pairs.  The digits are 0, 1, 2, 3, 4, 5, 6, 7, 8, 9.
  :You will spell these out more often than you will type them.
 
-#                                                             ../orig/r.typ:547
 I:(10) Rhythmic Review
 *:_R_R_L112
-#                                                             ../orig/r.typ:548
 D:I am vexed if my prize went to my old address, 55 Fifth Avenue.
 
 G:_R_E_R11
+
 #------------------------------------------------------------------------------
 # Lesson R12
 #------------------------------------------------------------------------------
 *:R12
 *:_R_S_R12
-#                                                             ../orig/r.typ:552
+B:                            Lesson R12
+
 I:(1) Warming-Up Drill
 *:_R_R_L113
-#                                                             ../orig/r.typ:553
 D:I should like to arrange to have you see me here next week.
 
-#                                                             ../orig/r.typ:554
 I:(2) Rhythm and Keyboard Drill
 *:_R_R_L114
-#                                                             ../orig/r.typ:556
 D:k9 d3 j8 f4 j7 f5 f6 j6 10 s2 j8 f4 j7 f5 f6 j6 k9 d3 ;- s2
  :k98 d34 j87 f45 109 s23 k93 d39 j84 f48 j75 f57 j76 f56 102
 
-#                                                             ../orig/r.typ:557
 I:(3) Continuous Copy
 *:_R_R_L115
-#                                                             ../orig/r.typ:558
 D:10 11 12 13 14 15 16 17 18 19 20 21 22 23 24 25 26 27 28 29
 
-#                                                             ../orig/r.typ:559
 I:(4)
 *:_R_R_L116
-#                                                             ../orig/r.typ:561
 D:As soon as you can type at 12 words a minute, jump to 24;
  :later to 30, 36, 42, 48, or other rate that seems to fit.
 
-#                                                             ../orig/r.typ:562
 I:(5)
 *:_R_R_L117
-#                                                             ../orig/r.typ:565
 D:On one day in June the heat ran to 106, 103, 98, 95, 92, in
  :some cities, but only to 40, 43, 47, 50, 51, 52, 60 in other
  :cities.  Rain fell from .00 or .04 to .40 or to .68 inches.
 
-#                                                             ../orig/r.typ:566
 I:(6)
 *:_R_R_L118
-#                                                             ../orig/r.typ:570
 D:The next step in better typing is to learn to graph a curve.
  :If your test score each week rises from 22 to 28, 32, 37,
  :40, 44, 48, 51, 53, and 55 words a minute, put these on a
  :chart.  See this curve grow higher each week.  Or use bars.
 
-#                                                             ../orig/r.typ:571
 I:(7)
 *:_R_R_L119
-#                                                             ../orig/r.typ:576
 D:The usual test scores point to waste in many a class.  After
  :all the work of a first term, girls may reach only 25 words
  :a minute, boys only 22 words.  At the end of 34 weeks these
  :usual scores might be 29 or 31 or 34.  Indeed, 25 to 33 per
  :cent of the students may type less than 20 words per minute.
 
-#                                                             ../orig/r.typ:577
 I:(8) Pointed Paragraph (n v)
 *:_R_R_L120
-#                                                             ../orig/r.typ:584
 S:     Eleven invitations for Thanksgiving vacation arrived in
  :advance of November.  In vain have a dozen relatives invited
  :me to visit Vermont, Virginia, and Nevada.  I love being
@@ -1121,10 +919,8 @@ S:     Eleven invitations for Thanksgiving vacation arrived in
  :seventeenth of November for varied ventures and to visit
  :that novel Denver University on my vacation.
 
-#                                                             ../orig/r.typ:585
 I:(9) Test Paragraph
 *:_R_R_L121
-#                                                             ../orig/r.typ:593
 S:     How much do you weigh?  A young boy who is 5 feet tall
  :may weigh 112 pounds; with an extra inch, 115 pounds.  Add 3
  :pounds for any inch added.  Thus if 5 feet and 4 inches, he
@@ -1134,64 +930,52 @@ S:     How much do you weigh?  A young boy who is 5 feet tall
  :add 5 pounds for each added inch.  Thus to stand 6 feet tall
  :may mean 158 pounds.  It is better to be a little over-weight.
 
-#                                                             ../orig/r.typ:594
 I:(10) Rhythmic Review
 *:_R_R_L122
-#                                                             ../orig/r.typ:595
 D:In order to park on Sixth at 11:05 we have to beat 135 cars!
 
 G:_R_E_R12
+
 #------------------------------------------------------------------------------
 # Lesson R13
 #------------------------------------------------------------------------------
 *:R13
 *:_R_S_R13
+B:                            Lesson R13
+
 *:_R_R_L123
-#                                                             ../orig/r.typ:601
 T:
  :In this lesson we will learn the rest of the special characters
  :on the keyboard.
 
-#                                                             ../orig/r.typ:602
 I:(1) Warming-Up Drill
 *:_R_R_L124
-#                                                             ../orig/r.typ:603
 D:If you do not hear soon, I want you to write again and again.
 
-#                                                             ../orig/r.typ:604
 I:(2) Rhythm and Keyboard Drill
 *:_R_R_L125
-#                                                             ../orig/r.typ:607
 D:k9( d3# j8* f4$ j7& f5% f6^ j6^ l0) s2@ ;-_ ;[] ;`~ d3# ;/?
  :k( d# j* f$ j& f% j^ f^ l) s@ ;_ s@ ;{ d# ;@ f% ;? f^ j^ s@
  :"A "S "O "W "E "C "P "F "I "M "E "B e5" t4" u3" h2" u1' n6'
 
-#                                                             ../orig/r.typ:608
 I:(3) Continuous Copy
 *:_R_R_L126
-#                                                             ../orig/r.typ:609
 D:Send at once:  Form #93* @ $18.50 per dozen, 12% discount.
 
-#                                                             ../orig/r.typ:610
 I:(4)
 *:_R_R_L127
-#                                                             ../orig/r.typ:613
 D:Sold to Smith & Sons, terms 1%, 10 days; 8 doz. 3" screws @
  :5.25 cents, 42 cents; 16 files @ 5-3/8 cents, 86 cents; 3 #9 drills
  :@ 75 cents, $2.75.
 
-#                                                             ../orig/r.typ:614
 I:(5)
 *:_R_R_L128
-#                                                             ../orig/r.typ:617
 D:Arrange to have A. C. Whitman & Co. deliver to our Seattle
  :office, Wednesday, October, 26:  30 reams white paper, #99,
  :@ 75 cents, $22.50; 4 files, Style 6**, @ $9 each, $26.....$58.50.
 
-#                                                             ../orig/r.typ:618
 I:(6)
 *:_R_R_L129
-#                                                             ../orig/r.typ:624
 D:In his speech on "Can a Business Man Be Honest?" he proved:
  :
  :(1) There are many ways, some hardly honest, to make money.
@@ -1199,20 +983,16 @@ D:In his speech on "Can a Business Man Be Honest?" he proved:
  :(3) Saving time and material often leads to a large profit.
  :(4) The most desirable kinds of success are gained honestly.
 
-#                                                             ../orig/r.typ:625
 I:(7)
 *:_R_R_L130
-#                                                             ../orig/r.typ:630
 D:The common stock has paid from 8% to 27% cash before 1929.
  :Both the common and the "B" stocks have received 12% this
  :year, or $3 per share.  The class "B" stock has made a new
  :record, the range in price being 38.5 high and 32.25 low.  As
  :the market improves the common and "B" stocks may pay 15%.
 
-#                                                             ../orig/r.typ:631
 I:(8)
 *:_R_R_L131
-#                                                             ../orig/r.typ:645
 S:A. C. White & Company
  :Idaho Falls, Idaho
  :
@@ -1228,82 +1008,66 @@ S:A. C. White & Company
  :
  :Very truly yours,
 
-#                                                             ../orig/r.typ:646
 I:(9) Rhythmic Review
 *:_R_R_L132
-#                                                             ../orig/r.typ:647
 D:He said, "I long to get home after seven days in the country."
 
 G:_R_E_R13
+
 #------------------------------------------------------------------------------
 # Lesson R14
 #------------------------------------------------------------------------------
 *:R14
 *:_R_S_R14
-#                                                             ../orig/r.typ:651
+B:                            Lesson R14
+
 I:(1) Warming-Up Drill
 *:_R_R_L133
-#                                                             ../orig/r.typ:652
 D:I trust that you will be able to call upon us very soon.
 
-#                                                             ../orig/r.typ:653
 I:(2) Rhythm and Keyboard Drill
 *:_R_R_L134
-#                                                             ../orig/r.typ:656
 D:k( d# j* f$ j& f% j& f^ l) s@ ;_ d# ;` f% ;` f$ j^ s@
  :(3 8% #9 2) @0 [@ *4 2_ $8 [% 3 1/5 3 @ 5 & 3^ $7 5* $8 `)
  :as" nt" et" re" us" me" is" de" it" t." e." r," o," ?" ?" ?"
 
 *:_R_R_L135
-#                                                             ../orig/r.typ:659
 D:t( e# h* u$ h& u% h& u^ n) o@ s~ e# s/ u% s/ u$ h^ o@
  :(3 8% #9 2) @0 [@ *4 2_ $8 [% 3 1/5 3 @ 5 & 3^ $7 5* $8 `)
  :as" nt" et" re" us" me" is" de" it" t." e." r," o," ?" ?" ?"
 
-#                                                             ../orig/r.typ:660
 I:(3) Continuous Copy
 *:_R_R_L136
-#                                                             ../orig/r.typ:661
 D:The Herald, the Daily News, and the Post reported the story.
 
-#                                                             ../orig/r.typ:662
 I:(4)
 *:_R_R_L137
-#                                                             ../orig/r.typ:664
 D:Read "National Affairs" in Time for December 6, 1940.  You
  :may think that Snappy Stories has more news than Time.
 
-#                                                             ../orig/r.typ:665
 I:(5)
 *:_R_R_L138
-#                                                             ../orig/r.typ:668
 D:He goes November 6, on Train #2 (North Coast), at 9:15 p.m.
  :Train #35-4 (Southern Route) leaves at 6:00 but stops often.
  :He likes to go by bus (Overland Route), but it goes at 2:10.
 
-#                                                             ../orig/r.typ:669
 I:(6)
 *:_R_R_L139
-#                                                             ../orig/r.typ:673
 D:"Good morning," said the clerk.  "May I be of help to you?"
  :"Thank you," she replied, "but I must wait to see Mr. Burd."
  :"He will be in his office at 10:20," the clerk assured her.
  :"That will be fine," the clerk said, "I'll wait for him, too."
 
-#                                                             ../orig/r.typ:674
 I:(7)
 *:_R_R_L140
-#                                                             ../orig/r.typ:679
 D:SOIL--Remove to depth of 9" under house and 5' on all sides.
  :FRAME WORK--Beams 2" x 8"; braces 2" x 4"; rafters 2" x 6".
  :ROOF--Use 18", #1 cedar shingles, laid 5" to the weather.
  :PLUMBING--Use #1 materials; 4" cast iron pipe; sink 2' x 6'.
  :LATH AND PLASTER--Use #1 spruce 3/8 x 1.5"; 2 coats plaster.
 
-#                                                             ../orig/r.typ:680
 I:(8) Pointed Paragraph (a o)
 *:_R_R_L141
-#                                                             ../orig/r.typ:688
 S:     To attain a personal association with so popular an
  :author is an approved social ambition.  To loan him money or
  :catalog his books we consider a favor.  Today his tailor, later
@@ -1313,10 +1077,8 @@ S:     To attain a personal association with so popular an
  :contract or follow the local opera.  As soon as he can account
  :for another book, our author is anxious to go abroad.
 
-#                                                             ../orig/r.typ:689
 I:(9) Test Paragraph
 *:_R_R_L142
-#                                                             ../orig/r.typ:697
 S:     "Has #4-4 gone?" she asked, rushing in out of the cold.
  :     "No--why $4?" the station agent* answered (he had won-
  :dered why she was so worried).  But he wasn't to find out--
@@ -1326,131 +1088,89 @@ S:     "Has #4-4 gone?" she asked, rushing in out of the cold.
  :------------------------------------------------------------
  :*Red Wild (heir to $750,000 at 5%, working on the B. & O.).
 
-#                                                             ../orig/r.typ:698
 I:(10) Rhythmic Review
 *:_R_R_L143
-#                                                             ../orig/r.typ:699
 D:I said, "There is the city and this bus won't be long now."
 
 G:_R_E_R14
+
 #------------------------------------------------------------------------------
 # Lesson series R jump tables
 #------------------------------------------------------------------------------
 *:_R_E_R1
 Q: Do you want to continue to lesson R2 [Y/N] ? 
 N:_R_MENU
-G:_R_M_R2
+G:_R_S_R2
 *:_R_E_R2
 Q: Do you want to continue to lesson R3 [Y/N] ? 
 N:_R_MENU
-G:_R_M_R3
+G:_R_S_R3
 *:_R_E_R3
 Q: Do you want to continue to lesson R4 [Y/N] ? 
 N:_R_MENU
-G:_R_M_R4
+G:_R_S_R4
 *:_R_E_R4
 Q: Do you want to continue to lesson R5 [Y/N] ? 
 N:_R_MENU
-G:_R_M_R5
+G:_R_S_R5
 *:_R_E_R5
 Q: Do you want to continue to lesson R6 [Y/N] ? 
 N:_R_MENU
-G:_R_M_R6
+G:_R_S_R6
 *:_R_E_R6
 Q: Do you want to continue to lesson R7 [Y/N] ? 
 N:_R_MENU
-G:_R_M_R7
+G:_R_S_R7
 *:_R_E_R7
 Q: Do you want to continue to lesson R8 [Y/N] ? 
 N:_R_MENU
-G:_R_M_R8
+G:_R_S_R8
 *:_R_E_R8
 Q: Do you want to continue to lesson R9 [Y/N] ? 
 N:_R_MENU
-G:_R_M_R9
+G:_R_S_R9
 *:_R_E_R9
 Q: Do you want to continue to lesson R10 [Y/N] ? 
 N:_R_MENU
-G:_R_M_R10
+G:_R_S_R10
 *:_R_E_R10
 Q: Do you want to continue to lesson R11 [Y/N] ? 
 N:_R_MENU
-G:_R_M_R11
+G:_R_S_R11
 *:_R_E_R11
 Q: Do you want to continue to lesson R12 [Y/N] ? 
 N:_R_MENU
-G:_R_M_R12
+G:_R_S_R12
 *:_R_E_R12
 Q: Do you want to continue to lesson R13 [Y/N] ? 
 N:_R_MENU
-G:_R_M_R13
+G:_R_S_R13
 *:_R_E_R13
 Q: Do you want to continue to lesson R14 [Y/N] ? 
 N:_R_MENU
-G:_R_M_R14
+G:_R_S_R14
 *:_R_E_R14
 G:_R_MENU
 
-*:_R_M_R1
-B:                             Lesson R1
-G:_R_S_R1
-*:_R_M_R2
-B:                             Lesson R2
-G:_R_S_R2
-*:_R_M_R3
-B:                             Lesson R3
-G:_R_S_R3
-*:_R_M_R4
-B:                             Lesson R4
-G:_R_S_R4
-*:_R_M_R5
-B:                             Lesson R5
-G:_R_S_R5
-*:_R_M_R6
-B:                             Lesson R6
-G:_R_S_R6
-*:_R_M_R7
-B:                             Lesson R7
-G:_R_S_R7
-*:_R_M_R8
-B:                             Lesson R8
-G:_R_S_R8
-*:_R_M_R9
-B:                             Lesson R9
-G:_R_S_R9
-*:_R_M_R10
-B:                            Lesson R10
-G:_R_S_R10
-*:_R_M_R11
-B:                            Lesson R11
-G:_R_S_R11
-*:_R_M_R12
-B:                            Lesson R12
-G:_R_S_R12
-*:_R_M_R13
-B:                            Lesson R13
-G:_R_S_R13
-*:_R_M_R14
-B:                            Lesson R14
-G:_R_S_R14
 #------------------------------------------------------------------------------
 # Lesson series R menu
 #------------------------------------------------------------------------------
 *:_R_MENU
+B:                      Long QWERTY course
 M: UP=_EXIT "The R series contains the following 14 lessons"
- :_R_M_R1  "Lesson R1     Practise"
- :_R_M_R2  "Lesson R2     Practise"
- :_R_M_R3  "Lesson R3     Practise"
- :_R_M_R4  "Lesson R4     Practise"
- :_R_M_R5  "Lesson R5     Practise"
- :_R_M_R6  "Lesson R6     Practise"
- :_R_M_R7  "Lesson R7     Practise"
- :_R_M_R8  "Lesson R8     Practise"
- :_R_M_R9  "Lesson R9     Practise"
- :_R_M_R10 "Lesson R10    Practise"
- :_R_M_R11 "Lesson R11    Practise"
- :_R_M_R12 "Lesson R12    Practise"
- :_R_M_R13 "Lesson R13    Practise"
- :_R_M_R14 "Lesson R14    Practise"
+ :_R_S_R1  "Lesson R1     Practise"
+ :_R_S_R2  "Lesson R2     Practise"
+ :_R_S_R3  "Lesson R3     Practise"
+ :_R_S_R4  "Lesson R4     Practise"
+ :_R_S_R5  "Lesson R5     Practise"
+ :_R_S_R6  "Lesson R6     Practise"
+ :_R_S_R7  "Lesson R7     Practise"
+ :_R_S_R8  "Lesson R8     Practise"
+ :_R_S_R9  "Lesson R9     Practise"
+ :_R_S_R10 "Lesson R10    Practise"
+ :_R_S_R11 "Lesson R11    Practise"
+ :_R_S_R12 "Lesson R12    Practise"
+ :_R_S_R13 "Lesson R13    Practise"
+ :_R_S_R14 "Lesson R14    Practise"
 *:_R_EXIT
 #------------------------------------------------------------------------------

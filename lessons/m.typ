@@ -20,70 +20,57 @@
 #------------------------------------------------------------------------------
 G:_M_MENU
 *:_M_NO_MENU
+
 #------------------------------------------------------------------------------
 # Lesson M1
 #------------------------------------------------------------------------------
 *:M1
 *:_M_S_M1
-#                                                               ../orig/m.typ:3
+B:                             Lesson M1
+
 I:(1) Warming-Up Drill
 *:_M_R_L0
-#                                                               ../orig/m.typ:4
 D:If you can do so, will you kindly let us know by return mail.
 
-#                                                               ../orig/m.typ:5
 I:(2) Continuous Copy
 *:_M_R_L1
-#                                                               ../orig/m.typ:6
 D:My totals were:  $2,309, $5,687, $3,498, $2,408, and $3,697.
 
-#                                                               ../orig/m.typ:7
 I:(3)
 *:_M_R_L2
-#                                                               ../orig/m.typ:9
 D:A student may type 1 word per minute faster for each added
  :year of age: i.e., 13 to 14, to 15, to 16, to 17, to 18.
 
-#                                                              ../orig/m.typ:10
 I:(4)
 *:_M_R_L3
-#                                                              ../orig/m.typ:13
 D:Often 25% of first-year students never do 25 words a minute.
  :Many second-year students can type about 45 words a minute.
  :More than 50% do not equal the practical rate of 50 words.
 
-#                                                              ../orig/m.typ:14
 I:(5)
 *:_M_R_L4
-#                                                              ../orig/m.typ:18
 D:Why do we all thrill over sports?  Maybe it is the tireless
  :skill of the winner that we feel.  Ask the players.  They
  :may agree (Rice,* famous as a sports writer, said the cham-
  :pions all agreed) that skill is only part (50%) of it.
 
-#                                                              ../orig/m.typ:19
 I:(6)
 *:_M_R_L5
-#                                                              ../orig/m.typ:24
 D:"When you step on the first tee," says the four-time gold
  :champion, Bobby Jones, "you know you can't afford to make
  :one careless slip."  A tired Bobby Jones (this was the way
  :Bobby told it to Rice) has stood on the 16th tee, leading
  :Smith by 18 strokes.
 
-#                                                              ../orig/m.typ:25
 I:(7)
 *:_M_R_L6
-#                                                              ../orig/m.typ:29
 D:"Up to this point," says Bobby, "I had played 33 holes in 11
  :under par.  I believe it was the best golf I ever played in
  :my life.  But after easing up on the mental side I played
  :the last three holes in 5 over par."
 
-#                                                              ../orig/m.typ:30
 I:(8)
 *:_M_R_L7
-#                                                              ../orig/m.typ:36
 D:In 1919 Babe Ruth shot into the records with 29 home runs.
  :Yet few know that the Babe worked five years in big games
  :before this start that led past Home Run #600.  You may
@@ -91,10 +78,8 @@ D:In 1919 Babe Ruth shot into the records with 29 home runs.
  :picture the Babe after two strikes, smashing to the very
  :spot he had "called" a famous home run.
 
-#                                                              ../orig/m.typ:37
 I:(9)
 *:_M_R_L8
-#                                                              ../orig/m.typ:45
 D:It is the effort against odds that thrills.  We feel these
  :drives that never let down.  We feel (this was the way Rice
  :put it) the champion forces himself into the winning frame of
@@ -104,10 +89,8 @@ D:It is the effort against odds that thrills.  We feel these
  :must pull himself together (100%) to type his steady, smooth
  :way over all upsets.
 
-#                                                              ../orig/m.typ:46
 I:(9A) Pointed Paragraph (m b)
 *:_M_R_L9
-#                                                              ../orig/m.typ:53
 S:     Men are bound to believe that business is bad in winter
  :months.  Maybe Mr. Smith remembers that most building became
  :better in September but both November and December seemed to
@@ -116,35 +99,30 @@ S:     Men are bound to believe that business is bad in winter
  :be built.  Some jobs may begin to come now from the Chamber
  :of Commerce members.
 
-#                                                              ../orig/m.typ:54
 I:(10) Rhythmic Review
 *:_M_R_L10
-#                                                              ../orig/m.typ:55
 D:I said, "Never promise to take much money to such places."
 
 G:_M_E_M1
+
 #------------------------------------------------------------------------------
 # Lesson M2
 #------------------------------------------------------------------------------
 *:M2
 *:_M_S_M2
-#                                                              ../orig/m.typ:59
+B:                             Lesson M2
+
 I:(1) Warming-Up Drill
 *:_M_R_L11
-#                                                              ../orig/m.typ:60
 D:How do I lose if I read a book that doesn't have much in it?
 
-#                                                              ../orig/m.typ:61
 I:(2) Balanced Keyboard Drill
 *:_M_R_L12
-#                                                              ../orig/m.typ:63
 D:non ana dis dia cle pan ard pur ern eer off age suf ame amb
  :ess ean ist ian cel apo col ary tra neo sur ity sub ele mis
 
-#                                                              ../orig/m.typ:64
 I:(3) Four-letter words (a to d)
 *:_M_R_L13
-#                                                              ../orig/m.typ:81
 S:Dear Dan,
  :
  :     Yes, I came out of the corn, back to the city, both to
@@ -163,10 +141,8 @@ S:Dear Dan,
  :
  :Yours sincerely,
 
-#                                                              ../orig/m.typ:82
 I:(4) Four-letter words (e to g)
 *:_M_R_L14
-#                                                              ../orig/m.typ:97
 S:Dear Bea,
  :
  :     I am glad you feel so for the farm in the East.  Even
@@ -183,10 +159,8 @@ S:Dear Bea,
  :
  :Yours sincerely,
 
-#                                                              ../orig/m.typ:98
 I:(5) Four-letter words (h to l)
 *:_M_R_L15
-#                                                             ../orig/m.typ:119
 S:Dear Hal,
  :
  :     Just a line to say I am lost if I cannot fly.  I
@@ -210,28 +184,25 @@ S:Dear Hal,
  :Yours sincerely,
 
 G:_M_E_M2
+
 #------------------------------------------------------------------------------
 # Lesson M3
 #------------------------------------------------------------------------------
 *:M3
 *:_M_S_M3
-#                                                             ../orig/m.typ:123
+B:                             Lesson M3
+
 I:(1) Warming-Up Drill
 *:_M_R_L16
-#                                                             ../orig/m.typ:124
 D:He says he hasn't been very blue once in his two weeks here.
 
-#                                                             ../orig/m.typ:125
 I:(2) Balanced Keyboard Drill
 *:_M_R_L17
-#                                                             ../orig/m.typ:127
 D:sus ase sis uni suc epi cor ory tri acy fic ify dom isk ism
  :ante than ance ling para less plea lent leas post rece cata
 
-#                                                             ../orig/m.typ:128
 I:(3) Four-letter words (m to p)
 *:_M_R_L18
-#                                                             ../orig/m.typ:145
 S:Dear "Pie,"
  :
  :     I open most of my mail and meet the news.  I note that
@@ -250,10 +221,8 @@ S:Dear "Pie,"
  :
  :Yours sincerely,
 
-#                                                             ../orig/m.typ:146
 I:(4) Four-letter words (r to s)
 *:_M_R_L19
-#                                                             ../orig/m.typ:166
 S:Dear Ross,
  :
  :     It is a real rain.  The road is so soft my car can but
@@ -275,10 +244,8 @@ S:Dear Ross,
  :
  :Yours sincerely,
 
-#                                                             ../orig/m.typ:167
 I:(5) Pointed Paragraph (i u)
 *:_M_R_L20
-#                                                             ../orig/m.typ:173
 S:     The public is quite unfair about airing quibbles over
  :house furniture and fruit juices for the university crew.
  :The alumni inquiry into the failure of equipment figures in
@@ -286,10 +253,8 @@ S:     The public is quite unfair about airing quibbles over
  :put a premium on a victorious crew.  Only genius can guide
  :this outfit uphill and build a suitable crew that won't quit.
 
-#                                                             ../orig/m.typ:174
 I:(6) Pointed Paragraph (d s -)
 *:_M_R_L21
-#                                                             ../orig/m.typ:182
 S:     Students should be assisted in studying seated at their
  :desks; cross-questioned as to their needs and desires; ad-
  :vised to use up-to-date leads based on studies of standards.
@@ -300,28 +265,25 @@ S:     Students should be assisted in studying seated at their
  :class friends and good-natured wishers.
 
 G:_M_E_M3
+
 #------------------------------------------------------------------------------
 # Lesson M4
 #------------------------------------------------------------------------------
 *:M4
 *:_M_S_M4
-#                                                             ../orig/m.typ:186
+B:                             Lesson M4
+
 I:(1) Warming-Up Drill
 *:_M_R_L22
-#                                                             ../orig/m.typ:187
 D:Get any piece, since I can't guess the color he always used.
 
-#                                                             ../orig/m.typ:188
 I:(2) Balanced Keyboard Drill
 *:_M_R_L23
-#                                                             ../orig/m.typ:190
 D:anti thin atic fast hypo ness your ther fore ship cial ible
  :ette hter here mber ough over eive with ived just ever mono
 
-#                                                             ../orig/m.typ:191
 I:(3) Four-letter words (t to z)
 *:_M_R_L24
-#                                                             ../orig/m.typ:208
 S:Dear Tris,
  :
  :     It is so very warm at this time of year, I told my wife
@@ -340,10 +302,8 @@ S:Dear Tris,
  :
  :Yours sincerely,
 
-#                                                             ../orig/m.typ:209
 I:(4) Five-letter words (a to c)
 *:_M_R_L25
-#                                                             ../orig/m.typ:227
 S:Dear "Cab,"
  :
  :     Could you apply to the court to allow my claim as agent
@@ -363,10 +323,8 @@ S:Dear "Cab,"
  :
  :Sincerely yours,
 
-#                                                             ../orig/m.typ:228
 I:(5) Pointed Paragraph (r t)
 *:_M_R_L26
-#                                                             ../orig/m.typ:236
 S:     In our motor party on the return trip an attractive
  :quartet first tried to tell thirty or forty short travel
  :stories.  By turns they transferred to the theater, to art
@@ -377,28 +335,25 @@ S:     In our motor party on the return trip an attractive
  :and the sort of extra details that enter into true stories.
 
 G:_M_E_M4
+
 #------------------------------------------------------------------------------
 # Lesson M5
 #------------------------------------------------------------------------------
 *:M5
 *:_M_S_M5
-#                                                             ../orig/m.typ:240
+B:                             Lesson M5
+
 I:(1) Warming-Up Drill
 *:_M_R_L27
-#                                                             ../orig/m.typ:241
 D:Some women who could write her won't raise a hand to help.
 
-#                                                             ../orig/m.typ:242
 I:(2) Balanced Keyboard Drill
 *:_M_R_L28
-#                                                             ../orig/m.typ:244
 D:teen arch acle ward ence ency ease ster tele trix wise some
  :atte tter tion fold ount ancy auto ttle cule mony cion come
 
-#                                                             ../orig/m.typ:245
 I:(3) Five-letter words (d to h)
 *:_M_R_L29
-#                                                             ../orig/m.typ:262
 S:Dear Fred,
  :
  :     I have dared to ask you for an extra favor on the first.
@@ -417,10 +372,8 @@ S:Dear Fred,
  :
  :Sincerely yours,
 
-#                                                             ../orig/m.typ:263
 I:(4) Five-letter words (i to p)
 *:_M_R_L30
-#                                                             ../orig/m.typ:283
 S:Dear Madam,
  :
  :     I have your two later notes of March 1.  Maybe it is a
@@ -442,10 +395,8 @@ S:Dear Madam,
  :
  :Yours sincerely,
 
-#                                                             ../orig/m.typ:284
 I:(5) Pointed Paragraph (u y)
 *:_M_R_L31
-#                                                             ../orig/m.typ:297
 S:     If truly quoted, you and Guy, mere youths, fly a con-
  :tinuous journey of thousands of miles yearly in your study
  :of numerous flying routes.  You say you were south in July
@@ -461,28 +412,25 @@ S:     If truly quoted, you and Guy, mere youths, fly a con-
  :quotable account yourself for the Journal.
 
 G:_M_E_M5
+
 #------------------------------------------------------------------------------
 # Lesson M6
 #------------------------------------------------------------------------------
 *:M6
 *:_M_S_M6
-#                                                             ../orig/m.typ:301
+B:                             Lesson M6
+
 I:(1) Warming-Up Drill
 *:_M_R_L32
-#                                                             ../orig/m.typ:302
 D:They were often too tired to be certain they heard the hour.
 
-#                                                             ../orig/m.typ:303
 I:(2) Balanced Keyboard Drill
 *:_M_R_L33
-#                                                             ../orig/m.typ:305
 D:hood ight sion full ould able like ment ical tial ambi semi
  :hand part king itio hing tory ding enti ting thou ving very
 
-#                                                             ../orig/m.typ:306
 I:(3) Five-letter words (q to s)
 *:_M_R_L34
-#                                                             ../orig/m.typ:326
 S:Dear Alice,
  :
  :     I shall start my river story since you have shown you like
@@ -504,10 +452,8 @@ S:Dear Alice,
  :
  :Yours sincerely,
 
-#                                                             ../orig/m.typ:327
 I:(4) Five-letter words (t to z)
 *:_M_R_L35
-#                                                             ../orig/m.typ:348
 S:Dear Mrs. White,
  :
  :     I wish to thank you for the words you wrote three weeks ago,
@@ -530,10 +476,8 @@ S:Dear Mrs. White,
  :
  :Yours sincerely,
 
-#                                                             ../orig/m.typ:349
 I:(5) Pointed Paragraph (n m)
 *:_M_R_L36
-#                                                             ../orig/m.typ:357
 S:     Important dinner company in our small apartment was
  :not common, and November ninth mamma was solemn in manner.
  :The moment nine American gentlemen were announced, fun and
@@ -544,27 +488,24 @@ S:     Important dinner company in our small apartment was
  :and columns of numbers meant much more to him than to me.
 
 G:_M_E_M6
+
 #------------------------------------------------------------------------------
 # Lesson M7
 #------------------------------------------------------------------------------
 *:M7
 *:_M_S_M7
-#                                                             ../orig/m.typ:361
+B:                             Lesson M7
+
 I:(1) Warming-Up Drill
 *:_M_R_L37
-#                                                             ../orig/m.typ:362
 D:Though I don't seem to hear the doctor, I know he is early.
 
-#                                                             ../orig/m.typ:363
 I:(2) Balanced Keyboard Drill
 *:_M_R_L38
-#                                                             ../orig/m.typ:364
 D:stat each ning ieve ring side nder emen turn embe llow ours
 
-#                                                             ../orig/m.typ:365
 I:(3) Continuous Copy
 *:_M_R_L39
-#                                                             ../orig/m.typ:381
 S:Dear Mr. and Mrs. Blank,
  :
  :     Your son has not called on me.  If he is to become almost an
@@ -582,10 +523,8 @@ S:Dear Mr. and Mrs. Blank,
  :
  :Sincerely yours,
 
-#                                                             ../orig/m.typ:382
 I:(4) Six-letter words (d to k)
 *:_M_R_L40
-#                                                             ../orig/m.typ:400
 S:Dear Dick
  :
  :     I have a dollar.  I expect you to follow me and take dinner.
@@ -605,10 +544,8 @@ S:Dear Dick
  :
  :Yours sincerely,
 
-#                                                             ../orig/m.typ:401
 I:(5) Pointed Paragraph (q z)
 *:_M_R_L41
-#                                                             ../orig/m.typ:408
 S:     I quit the quiz when I saw the quantity of queer hazy
  :questions.  To seize lesser prizes required answers to a
  :dozen queries.  Only a quarter of the quotas qualified with
@@ -618,27 +555,24 @@ S:     I quit the quiz when I saw the quantity of queer hazy
  :query as to zeppelins.  Criticize the quality of jazz music.
 
 G:_M_E_M7
+
 #------------------------------------------------------------------------------
 # Lesson M8
 #------------------------------------------------------------------------------
 *:M8
 *:_M_S_M8
-#                                                             ../orig/m.typ:412
+B:                             Lesson M8
+
 I:(1) Warming-Up Drill
 *:_M_R_L42
-#                                                             ../orig/m.typ:413
 D:At the last minute he wrote that he knew it was done again.
 
-#                                                             ../orig/m.typ:414
 I:(2) Balanced Keyboard Drill
 *:_M_R_L43
-#                                                             ../orig/m.typ:415
 D:trans ition there lease craft hyper etter esque ceive where
 
-#                                                             ../orig/m.typ:416
 I:(3) Six-letter words (l to r)
 *:_M_R_L44
-#                                                             ../orig/m.typ:437
 S:Dear Rollin,
  :
  :     I did notice a number of the pretty places I passed in
@@ -661,10 +595,8 @@ S:Dear Rollin,
  :
  :Yours sincerely,
 
-#                                                             ../orig/m.typ:438
 I:(4) Six-letter words (s to z)
 *:_M_R_L45
-#                                                             ../orig/m.typ:458
 S:Dear Sylvia,
  :
  :     I wonder if my sister talked to you on Sunday of the
@@ -686,7 +618,6 @@ S:Dear Sylvia,
  :
  :Sincerely yours,
 
-#                                                             ../orig/m.typ:470
 I:(5) Pointed Paragraph (a q)
 *:_M_R_L45A
 #
@@ -701,27 +632,24 @@ S:     I acquired a bequest from a quizzical Quaker.  How
  :niques, I acquired my quota of opaque plaques.
 
 G:_M_E_M8
+
 #------------------------------------------------------------------------------
 # Lesson M9
 #------------------------------------------------------------------------------
 *:M9
 *:_M_S_M9
-#                                                             ../orig/m.typ:471
+B:                             Lesson M9
+
 I:(1) Warming-Up Drill
 *:_M_R_L46
-#                                                             ../orig/m.typ:472
 D:Instead of having us tonight he is making ready for Tuesday.
 
-#                                                             ../orig/m.typ:473
 I:(2) Balanced Keyboard Drill
 *:_M_R_L47
-#                                                             ../orig/m.typ:474
 D:stead ation retro geous contr ourse ultra super ntion under
 
-#                                                             ../orig/m.typ:475
 I:(3) Continuous Copy; Seven-letter words (a-f)
 *:_M_R_L48
-#                                                             ../orig/m.typ:498
 S:Dear Annabel,
  :
  :     My brother and his college friends in the factory decided to arrange an
@@ -744,10 +672,8 @@ S:Dear Annabel,
  :
  :Yours sincerely,
 
-#                                                             ../orig/m.typ:499
 I:(4) Seven-letter words (g to o)
 *:_M_R_L49
-#                                                             ../orig/m.typ:518
 S:Dear Mrs. White,
  :
  :     I have been holding on, but this January I am getting out.
@@ -768,10 +694,8 @@ S:Dear Mrs. White,
  :
  :Yours sincerely,
 
-#                                                             ../orig/m.typ:519
 I:(4) Seven-letter words (p to z)
 *:_M_R_L50
-#                                                             ../orig/m.typ:539
 S:Dear Patrick,
  :
  :     I realize that this letter I am sending may subject you to some trouble.
@@ -794,29 +718,25 @@ S:Dear Patrick,
  :With my best regards,
 
 G:_M_E_M9
+
 #------------------------------------------------------------------------------
 # Lesson M10
 #------------------------------------------------------------------------------
 *:M10
 *:_M_S_M10
-#                                                             ../orig/m.typ:542
+B:                             Lesson M10
+
 B:				Lesson M10
-#                                                             ../orig/m.typ:543
 I:(1) Warming-Up Drill
 *:_M_R_L51
-#                                                             ../orig/m.typ:544
 D:He would separate the whole business and buy out their half.
 
-#                                                             ../orig/m.typ:545
 I:(2) Balanced Keyboard Drill
 *:_M_R_L52
-#                                                             ../orig/m.typ:546
 D:inter itude circu gious right cious after extra micro sible
 
-#                                                             ../orig/m.typ:547
 I:(3) Continuous Copy; Eight-letter words(a to m)
 *:_M_R_L53
-#                                                             ../orig/m.typ:566
 S:Dear Thomas,
  :
  :     First, I consider of definite interest anything from
@@ -840,7 +760,6 @@ S:Dear Thomas,
 #
 I:(4) Eight-letter words (n to z)
 *:_M_R_L54
-#                                                             ../orig/m.typ:587
 S:Dear Nathan,
  :
  :     My last shipment has probably been received, for the purchase was made
@@ -862,10 +781,8 @@ S:Dear Nathan,
  :
  :Yours sincerely,
 
-#                                                             ../orig/m.typ:588
 I:(5) Nine-letter words (a to i)
 *:_M_R_L55
-#                                                             ../orig/m.typ:605
 S:Dear Son,
  :
  :     I am beginning this afternoon to give my immediate attention
@@ -885,29 +802,25 @@ S:Dear Son,
  :Yours sincerely,
 
 G:_M_E_M10
+
 #------------------------------------------------------------------------------
 # Lesson M11
 #------------------------------------------------------------------------------
 *:M11
 *:_M_S_M11
-#                                                             ../orig/m.typ:608
+B:                             Lesson M11
+
 B:				Lesson M11
-#                                                             ../orig/m.typ:609
 I:(1) Warming-Up Drill
 *:_M_R_L56
-#                                                             ../orig/m.typ:610
 D:My country friend is beginning to believe trouble is coming.
 
-#                                                             ../orig/m.typ:611
 I:(2) Balanced Keyboard Drill
 *:_M_R_L57
-#                                                             ../orig/m.typ:612
 D:thing pleas ought quest ember count ditio state recei ction
 
-#                                                             ../orig/m.typ:613
 I:(3) Nine-letter words (j to z)
 *:_M_R_L58
-#                                                             ../orig/m.typ:633
 S:Dear Gertrude,
  :
  :     This letter has no reference to shipments which you have
@@ -929,10 +842,8 @@ S:Dear Gertrude,
  :
  :Yours sincerely,
 
-#                                                             ../orig/m.typ:634
 I:(4) Ten-letter words (a to z)
 *:_M_R_L59
-#                                                             ../orig/m.typ:655
 S:Dear Alex,
  :
  :     We are especially interested in the settlement run by a
@@ -955,10 +866,8 @@ S:Dear Alex,
  :
  :Sincerely yours,
 
-#                                                             ../orig/m.typ:656
 I:(5) Eleven- to fourteen-letter words (a to z)
 *:_M_R_L60
-#                                                             ../orig/m.typ:673
 S:Dear Sir,
  :
  :     I wish to acknowledge the recent interesting correspondence
@@ -977,10 +886,8 @@ S:Dear Sir,
  :
  :Yours respectfully,
 
-#                                                             ../orig/m.typ:674
 I:(6) Pointed Paragraph (l r z)
 *:_M_R_L61
-#                                                             ../orig/m.typ:687
 S:     The JOURNAL learned that the relatives on their arrival in
  :April had already referred the trouble to lawyers.  Their early re-
  :turn surprises me.  As to the children themselves, the older girls
@@ -996,100 +903,69 @@ S:     The JOURNAL learned that the relatives on their arrival in
  :should be recognized easily as false.
 
 G:_M_E_M11
+
 #------------------------------------------------------------------------------
 # Lesson series M jump tables
 #------------------------------------------------------------------------------
 *:_M_E_M1
 Q: Do you want to continue to lesson M2 [Y/N] ? 
 N:_M_MENU
-G:_M_M_M2
+G:_M_S_M2
 *:_M_E_M2
 Q: Do you want to continue to lesson M3 [Y/N] ? 
 N:_M_MENU
-G:_M_M_M3
+G:_M_S_M3
 *:_M_E_M3
 Q: Do you want to continue to lesson M4 [Y/N] ? 
 N:_M_MENU
-G:_M_M_M4
+G:_M_S_M4
 *:_M_E_M4
 Q: Do you want to continue to lesson M5 [Y/N] ? 
 N:_M_MENU
-G:_M_M_M5
+G:_M_S_M5
 *:_M_E_M5
 Q: Do you want to continue to lesson M6 [Y/N] ? 
 N:_M_MENU
-G:_M_M_M6
+G:_M_S_M6
 *:_M_E_M6
 Q: Do you want to continue to lesson M7 [Y/N] ? 
 N:_M_MENU
-G:_M_M_M7
+G:_M_S_M7
 *:_M_E_M7
 Q: Do you want to continue to lesson M8 [Y/N] ? 
 N:_M_MENU
-G:_M_M_M8
+G:_M_S_M8
 *:_M_E_M8
 Q: Do you want to continue to lesson M9 [Y/N] ? 
 N:_M_MENU
-G:_M_M_M9
+G:_M_S_M9
 *:_M_E_M9
 Q: Do you want to continue to lesson M10 [Y/N] ? 
 N:_M_MENU
-G:_M_M_M10
+G:_M_S_M10
 *:_M_E_M10
 Q: Do you want to continue to lesson M11 [Y/N] ? 
 N:_M_MENU
-G:_M_M_M11
+G:_M_S_M11
 *:_M_E_M11
 G:_M_MENU
 
-*:_M_M_M1
-B:                             Lesson M1
-G:_M_S_M1
-*:_M_M_M2
-B:                             Lesson M2
-G:_M_S_M2
-*:_M_M_M3
-B:                             Lesson M3
-G:_M_S_M3
-*:_M_M_M4
-B:                             Lesson M4
-G:_M_S_M4
-*:_M_M_M5
-B:                             Lesson M5
-G:_M_S_M5
-*:_M_M_M6
-B:                             Lesson M6
-G:_M_S_M6
-*:_M_M_M7
-B:                             Lesson M7
-G:_M_S_M7
-*:_M_M_M8
-B:                             Lesson M8
-G:_M_S_M8
-*:_M_M_M9
-B:                             Lesson M9
-G:_M_S_M9
-*:_M_M_M10
-B:                            Lesson M10
-G:_M_S_M10
-*:_M_M_M11
-B:                            Lesson M11
-G:_M_S_M11
 #------------------------------------------------------------------------------
 # Lesson series M menu
 #------------------------------------------------------------------------------
 *:_M_MENU
+B:                         Typing drills
 M: UP=_EXIT "The M series contains the following 11 lessons"
- :_M_M_M1  "Lesson M1     Practise"
- :_M_M_M2  "Lesson M2     Practise"
- :_M_M_M3  "Lesson M3     Practise"
- :_M_M_M4  "Lesson M4     Practise"
- :_M_M_M5  "Lesson M5     Practise"
- :_M_M_M6  "Lesson M6     Practise"
- :_M_M_M7  "Lesson M7     Practise"
- :_M_M_M8  "Lesson M8     Practise"
- :_M_M_M9  "Lesson M9     Practise"
- :_M_M_M10 "Lesson M10    Practise"
- :_M_M_M11 "Lesson M11    Practise"
+ :_M_S_M1  "Lesson M1     Practise"
+ :_M_S_M2  "Lesson M2     Practise"
+ :_M_S_M3  "Lesson M3     Practise"
+ :_M_S_M4  "Lesson M4     Practise"
+ :_M_S_M5  "Lesson M5     Practise"
+ :_M_S_M6  "Lesson M6     Practise"
+ :_M_S_M7  "Lesson M7     Practise"
+ :_M_S_M8  "Lesson M8     Practise"
+ :_M_S_M9  "Lesson M9     Practise"
+ :_M_S_M10 "Lesson M10    Practise"
+ :_M_S_M11 "Lesson M11    Practise"
 *:_M_EXIT
 #------------------------------------------------------------------------------

@@ -20,13 +20,15 @@
 #------------------------------------------------------------------------------
 G:_T_MENU
 *:_T_NO_MENU
+
 #------------------------------------------------------------------------------
 # Lesson T1
 #------------------------------------------------------------------------------
 *:T1
 *:_T_S_T1
+B:                            Lesson T1
+
 *:_T_R_L0
-#                                                              ../orig/t.typ:21
 T:			Welcome to lesson T1.
  :
  :In the T series of lessons, we will be learning to touch-type on the standard
@@ -49,7 +51,6 @@ T:			Welcome to lesson T1.
  :fairly quickly.  Or, you may want to go directly to the S series.
 
 *:_T_R_L1
-#                                                              ../orig/t.typ:42
 T:
  :			The HOME Keys.
  :
@@ -73,7 +74,6 @@ T:
  :again.
 
 *:_T_R_L2
-#                                                              ../orig/t.typ:63
 T:
  :			DRILL PATTERNS
  :
@@ -96,118 +96,85 @@ T:
  :on the second try you made more than two mistakes, I will beep again and make
  :you try again, etc.  Don't forget to use your right thumb for the SPACE bar.
 
-#                                                              ../orig/t.typ:64
 I:Hit the F-key four times with the first finger of your left hand.
 *:_T_R_L3
-#                                                              ../orig/t.typ:65
 D:ffff
 
-#                                                              ../orig/t.typ:66
 I:Alternately, hit the F-key and the SPACE bar.
 *:_T_R_L4
-#                                                              ../orig/t.typ:67
 D:fff fff fff ff ff ff f f f
 
-#                                                              ../orig/t.typ:68
 I:Don't look at your hands!
-#                                                              ../orig/t.typ:69
  :Hit the J-key with the first finger of your right hand.
 *:_T_R_L5
-#                                                              ../orig/t.typ:70
 D:jjj jjj jjj jj jj jj j j j
 
-#                                                              ../orig/t.typ:71
 I:Use the left hand for the F and the right hand for the J.
 *:_T_R_L6
-#                                                              ../orig/t.typ:72
 D:fff jjj fff jj ff jj f j f j
 
-#                                                              ../orig/t.typ:73
 I:Now intermix them.
 *:_T_R_L7
-#                                                              ../orig/t.typ:74
 D:ffjj jjff fjf fjf jfj jfj
 
-#                                                              ../orig/t.typ:75
 I:Use the second finger of the left hand for the D-key.
 *:_T_R_L8
-#                                                              ../orig/t.typ:76
 D:ddd ddd ddd dd dd dd d d d
 
-#                                                              ../orig/t.typ:77
 I:Use the second finger of the right hand for the K-key.
 *:_T_R_L9
-#                                                              ../orig/t.typ:78
 D:kkk kkk kkk kk kk kk k k k
 
-#                                                              ../orig/t.typ:80
 I:Now both.
 *:_T_R_L10
-#                                                              ../orig/t.typ:81
 D:ddd kkk dd kk dkd kdk ddd kkk
 
-#                                                              ../orig/t.typ:82
 I:Use the third fingers of the each hand for the S and L-keys.
 *:_T_R_L11
-#                                                              ../orig/t.typ:83
 D:sss lll sss lll sss ss ll ss ll s l
 
-#                                                              ../orig/t.typ:84
 I:Use the fourth fingers for the A and ;-keys.
 *:_T_R_L12
-#                                                              ../orig/t.typ:85
 D:aaa ;;; aaa ;;; aa ;; aa ;; a ;
 
-#                                                              ../orig/t.typ:86
 I:That's enough keys for today.  Let's review them.
 *:_T_R_L13
-#                                                              ../orig/t.typ:87
 D:fff jjj ddd kkk sss lll aaa ;;;
 
-#                                                              ../orig/t.typ:88
 I:Again.
 *:_T_R_L14
-#                                                              ../orig/t.typ:89
 D:fff jjj ddd kkk sss lll aaa ;;;
 
-#                                                              ../orig/t.typ:90
 I:Try mixing them together.
 *:_T_R_L15
-#                                                              ../orig/t.typ:91
 D:asdf jkl; asdf jkl; asdf jkl;
 
-#                                                              ../orig/t.typ:92
 I:And still more.
 *:_T_R_L16
-#                                                              ../orig/t.typ:93
 D:fjf kdk sls ;a;
 
-#                                                              ../orig/t.typ:94
 I:Before, we finish, let's try some words.
 *:_T_R_L17
-#                                                              ../orig/t.typ:95
 D:sad add all; alas flask fad
 
-#                                                              ../orig/t.typ:96
 I:How about a sentence.
 *:_T_R_L18
-#                                                              ../orig/t.typ:97
 D:ask a sad lad
 
-#                                                              ../orig/t.typ:98
 I:Sentences are kind of limited with only one vowel!
 *:_T_R_L19
-#                                                              ../orig/t.typ:99
 D:dad asks a lad; a lass falls
 
 G:_T_E_T1
+
 #------------------------------------------------------------------------------
 # Lesson T2
 #------------------------------------------------------------------------------
 *:T2
 *:_T_S_T2
+B:                            Lesson T2
+
 *:_T_R_L20
-#                                                             ../orig/t.typ:114
 T:
  :In this lesson, we will review the letters that you have already practiced
  :and will add the letters E, G, and H and the period.
@@ -219,139 +186,109 @@ T:
  :
  :If you lose track of where your fingers are guess.  Don't look!
 
-#                                                             ../orig/t.typ:115
 I:First let's review
 *:_T_R_L21
-#                                                             ../orig/t.typ:116
 D:fff jjj ddd kkk sss lll aaa ;;;
 
 *:_T_R_L22
-#                                                             ../orig/t.typ:120
 D:asdf jkl; fdsa ;lkj
  :fjf jfj dkd kdk sls lsl a;a ;a;
  :jkj jlj j;j fdf fsf faf
  :a sad lass; ask dad;
 
-#                                                             ../orig/t.typ:121
 I:Use your J-finger for the H key.
 *:_T_R_L23
-#                                                             ../orig/t.typ:122
 D:jjj jhj jjj jhj jjj jhj
 
 *:_T_R_L24
-#                                                             ../orig/t.typ:125
 D:jjj hhh jjj hhh jj hh j h j h
  :jjj had jjj ash jjj has jjj
  :jjj sash jjj hash jjj hall jjj
 
-#                                                             ../orig/t.typ:126
 I:Use your F-finger for the G-key.
 *:_T_R_L25
-#                                                             ../orig/t.typ:127
 D:fff fgf fff fgf fff fgf
 
 *:_T_R_L26
-#                                                             ../orig/t.typ:130
 D:fff ggg fff ggg fff ggg
  :fff gag fff lag fff flag fff
  :fff sag fff slag fff hag fff
 
-#                                                             ../orig/t.typ:131
 I:Use your D-finger for the E-key
 *:_T_R_L27
-#                                                             ../orig/t.typ:132
 D:ddd ded ddd ded ddd ded ddd
 
 *:_T_R_L28
-#                                                             ../orig/t.typ:135
 D:ddd eee ddd eee dd ee dd ee d e
  :ddd fee ddd see ddd elf ddd
  :lake asked fake gale egg
 
-#                                                             ../orig/t.typ:136
 I:Use your K-finger for the comma.
 *:_T_R_L29
-#                                                             ../orig/t.typ:137
 D:kkk k,k kkk k,k kkk k,k
 
 *:_T_R_L30
-#                                                             ../orig/t.typ:138
 D:kkk ,,, kkk ,,, kkk ,,, kkk
 
-#                                                             ../orig/t.typ:139
 I:Let's finish with some sentences.
 *:_T_R_L31
-#                                                             ../orig/t.typ:140
 D:a lad had a flask, dad had a keg
 
 *:_T_R_L32
-#                                                             ../orig/t.typ:141
 D:she had a fake egg, he had a salad
 
 G:_T_E_T2
+
 #------------------------------------------------------------------------------
 # Lesson T3
 #------------------------------------------------------------------------------
 *:T3
 *:_T_S_T3
-#                                                             ../orig/t.typ:145
+B:                            Lesson T3
+
 I:Let's review first.
 *:_T_R_L33
-#                                                             ../orig/t.typ:146
 D:fff jjj ddd kkk sss lll aaa ;;;
 
 *:_T_R_L34
-#                                                             ../orig/t.typ:147
 D:fgf jhj ded k,k fgf jhj ded k,k
 
-#                                                             ../orig/t.typ:149
 I:Use your K-finger for the I key.
 *:_T_R_L35
-#                                                             ../orig/t.typ:150
 D:kkk kik kkk kik kkk iii kkk
 
 *:_T_R_L36
-#                                                             ../orig/t.typ:154
 D:kkk iii kkk iii kk ii kk ii
  :kkk lid kkk hill kkk did kkk
  :kkk kill kkk kid kkk like kkk
  :kkk kiss kkk hide kkk fill kkk
 
-#                                                             ../orig/t.typ:155
 I:Use your F-finger for the R key.
 *:_T_R_L37
-#                                                             ../orig/t.typ:156
 D:fff frf fff frf fff frf
 
 *:_T_R_L38
-#                                                             ../orig/t.typ:160
 D:fff rrr fff rrr ff rr ff rr
  :fff rake fff rag fff her fff
  :fff red fff read fff rage fff
  :fff far fff red fff jar fff
 
 *:_T_R_L39
-#                                                             ../orig/t.typ:161
 D:fff fare fff rare fff rake fff
 
 *:_T_R_L40
-#                                                             ../orig/t.typ:162
 D:fff rid fff ire fff fair fff
 
-#                                                             ../orig/t.typ:163
 I:Use your L-finger for the period.
 *:_T_R_L41
-#                                                             ../orig/t.typ:164
 D:lll l.l lll l.l lll l.l lll
 
 *:_T_R_L42
-#                                                             ../orig/t.typ:167
 D:lll ... lll ... ll .. ll .. l .
  :lll adj. lll id. lll
  :lll eg. lll i.e. lll
 
 *:_T_R_L43
-#                                                             ../orig/t.typ:179
 T:The next key we are going to practice is the right shift key.
  :
  :Whenever you want to capitalize a key on the left side, you must use the
@@ -365,86 +302,70 @@ T:The next key we are going to practice is the right shift key.
  :
  :	c.)  Immediately bring your fourth finger back to the ;-key.
 
-#                                                             ../orig/t.typ:180
 I:Don't look at your fingers!
 *:_T_R_L44
-#                                                             ../orig/t.typ:181
 D:;;; ;A; ;;; ;F; ;;; ;D; ;;; ;S;
 
 *:_T_R_L45
-#                                                             ../orig/t.typ:182
 D:;;; Dear ;;; Sir ;;;
 
 *:_T_R_L46
-#                                                             ../orig/t.typ:183
 D:;;; Fred ;;; Gail ;;; Alf ;;; Dale ;;;
 
 *:_T_R_L47
-#                                                             ../orig/t.typ:185
 D:;;; Ada ;;; Al ;;; Greg ;;;
  :jjj Dr. jjj Sr. jjj Fr. jjj
 
-#                                                             ../orig/t.typ:186
 I:Let's try some (strange) sentences.
 *:_T_R_L48
-#                                                             ../orig/t.typ:187
 D:Sir, idle disks seek flags.
 
 *:_T_R_L49
-#                                                             ../orig/t.typ:191
 D:She sells seashells.
  :Sailfish sail idle seas.
  :She seeks a fig leaf.
  :Red hair is like a fire.
 
-#                                                             ../orig/t.typ:192
 I:Always double space after a period.
 *:_T_R_L50
-#                                                             ../orig/t.typ:193
 D:A free red jade is fake.  Girls like silk.
 
 *:_T_R_L51
-#                                                             ../orig/t.typ:195
 D:She seeks a safe reef, if she sails.  A gale is rare.
  :Alf fed her egg salad.  Gail likes hash.
 
 G:_T_E_T3
+
 #------------------------------------------------------------------------------
 # Lesson T4
 #------------------------------------------------------------------------------
 *:T4
 *:_T_S_T4
-#                                                             ../orig/t.typ:199
+B:                            Lesson T4
+
 I:First a quick review:
 *:_T_R_L52
-#                                                             ../orig/t.typ:200
 D:jkl; fdsa ded fgf jhj k,k kik frf l.l
 
-#                                                             ../orig/t.typ:202
 I:Use your L-finger for the O-key.
 *:_T_R_L53
-#                                                             ../orig/t.typ:203
 D:lll lol lll ooo lll lol
 
 *:_T_R_L53A
-#                                                             ../orig/t.typ:206
 D:lll log lll rod lll for lll
  :lll load lll roll lll oleo lll
 
 #
 I:Use your ;-finger for the P-key.
 *:_T_R_L54
-#                                                             ../orig/t.typ:207
 D:;;; ;p; ;;; ppp ;;; ;p; ;;;
 
 *:_T_R_L55
-#                                                             ../orig/t.typ:210
 D:;;; pad ;;; peg ;;; ape ;;;
  :;;; poke ;;; pear ;;; peek ;;;
  :;;; opera ;;; hope ;;; drape ;;;
 
 *:_T_R_L56
-#                                                             ../orig/t.typ:219
 T:			The Left-Shift key.
  :
  :To capitalize letters on the right-side of the keyboard:
@@ -456,114 +377,86 @@ T:			The Left-Shift key.
  :	3.)  Immediately swing your A-finger back to its home position.
 
 *:_T_R_L57
-#                                                             ../orig/t.typ:220
 D:aaa Pi aaa Lord aaa Jill aaa
 
-#                                                             ../orig/t.typ:221
 I:Try capitalizing each of the keys on the right-side:
 *:_T_R_L58
-#                                                             ../orig/t.typ:222
 D:Joe Kip Leif Peg Olaf Ira Heidi
 
-#                                                             ../orig/t.typ:223
 I:Don't forget to use your right-shift key for letters on the left side:
 *:_T_R_L59
-#                                                             ../orig/t.typ:224
 D:a;a P.S. a;a I.R.S. a;a
 
-#                                                             ../orig/t.typ:225
 I:Use your ;-finger for the ?-key.
 *:_T_R_L60
-#                                                             ../orig/t.typ:226
 D:;;; ;?; ;;; ??? ;;; ;?; ;;;
 
 *:_T_R_L61
-#                                                             ../orig/t.typ:227
 D:;;; He? ;;; She? ;;; I? ;;;
 
-#                                                             ../orig/t.typ:228
 I:Let's try some sentences.
 *:_T_R_L62
-#                                                             ../orig/t.typ:229
 D:Dad fell off a ladder.  Is he safe?
 
-#                                                             ../orig/t.typ:230
 I:Always double space after a question mark.
 *:_T_R_L63
-#                                                             ../orig/t.typ:231
 D:Is he here?  Sal said he fell hard.
 
 *:_T_R_L64
-#                                                             ../orig/t.typ:233
 D:Did she see his fall?  Jake heard he is OK.
  :I hope people keep off high ladders.
 
 G:_T_E_T4
+
 #------------------------------------------------------------------------------
 # Lesson T5
 #------------------------------------------------------------------------------
 *:T5
 *:_T_S_T5
-#                                                             ../orig/t.typ:237
+B:                            Lesson T5
+
 I:As always, let's start with a review:
 *:_T_R_L65
-#                                                             ../orig/t.typ:238
 D:ade fgh ijk lop rs; ?.,
 
-#                                                             ../orig/t.typ:239
 I:Again.
 *:_T_R_L66
-#                                                             ../orig/t.typ:240
 D:ade fgh ijk lop rs; ?.,
 
-#                                                             ../orig/t.typ:242
 I:Use your F-finger for the T-key.
 *:_T_R_L67
-#                                                             ../orig/t.typ:243
 D:fff ftf fff ttt fff ftf fff
 
 *:_T_R_L68
-#                                                             ../orig/t.typ:244
 D:ftf the ftf top ftf ate ftf
 
 *:_T_R_L69
-#                                                             ../orig/t.typ:245
 D:ftf three ftf often ftf there
 
 *:_T_R_L70
-#                                                             ../orig/t.typ:246
 D:The talk is that those three are threatening her.
 
-#                                                             ../orig/t.typ:247
 I:Use your J-finger for the N-key.
 *:_T_R_L71
-#                                                             ../orig/t.typ:248
 D:jjj jnj jjj nnn jjj jnj jjj
 
 *:_T_R_L72
-#                                                             ../orig/t.typ:251
 D:jnj not jnj ton jnj one jnj
  :jnj neither jnj opening jnj kneeling jnj
  :No one has an interest in it.
 
-#                                                             ../orig/t.typ:252
 I:Use your ;-finger for the :-key.
 *:_T_R_L73
-#                                                             ../orig/t.typ:253
 D:;;; ;:; ;;; ::: ;;; ;:; ;;;
 
-#                                                             ../orig/t.typ:254
 I:Always double space after a colon.
 *:_T_R_L74
-#                                                             ../orig/t.typ:255
 D:Dear Sirs:  Dear John:  Dear Alfred:
 
 *:_T_R_L75
-#                                                             ../orig/t.typ:256
 D:Dear Dr. Stone:  To Heathkit:
 
 *:_T_R_L76
-#                                                             ../orig/t.typ:271
 T:			SPEED EXERCISES
  :
  :From now on, I will be mixing speed exercises in with the lessons.  In the
@@ -580,29 +473,22 @@ T:			SPEED EXERCISES
  :should have typed in inverse video (a black letter on a white background).
  :Just keep going and try to make as few errors as possible.
 
-#                                                             ../orig/t.typ:272
 I:Try this sentence:
 *:_T_R_L77
-#                                                             ../orig/t.typ:273
 S:Sarah has liked knitting all her life.
 
-#                                                             ../orig/t.typ:274
 I:Try a little longer sentence.
 *:_T_R_L78
-#                                                             ../orig/t.typ:275
 S:She looked past her garden to the fields and longed to see the other side.
 
-#                                                             ../orig/t.typ:277
 I:When you type a multi-line paragraph, you will have to hit the RETURN-key at
  :the end of each line.
 *:_T_R_L79
-#                                                             ../orig/t.typ:280
 S:All the sane people in this area sold their gold
  :right at the start.  The insane ones held their
  :gold and later it paid off.
 
 *:_T_R_L80
-#                                                             ../orig/t.typ:285
 S:One fine afternoon the king had an idea.  He
  :sent a letter to all the lords and ladies of
  :his land.  He asked for a great feast.  His
@@ -610,174 +496,138 @@ S:One fine afternoon the king had an idea.  He
  :All the people left hoping to do it again.
 
 G:_T_E_T5
+
 #------------------------------------------------------------------------------
 # Lesson T6
 #------------------------------------------------------------------------------
 *:T6
 *:_T_S_T6
-#                                                             ../orig/t.typ:289
+B:                            Lesson T6
+
 I:Let's review the letters we've already learned.
 *:_T_R_L81
-#                                                             ../orig/t.typ:290
 D:jkj fdf jlj fsf j;j faf kik ded frf
 
 *:_T_R_L82
-#                                                             ../orig/t.typ:293
 D:fgf jhj k,k l.l A;A F;F E;E
  :lol ;p; JaJ :a: ftf jnj ;:;
  :jug ton knot poison the neither often
 
-#                                                             ../orig/t.typ:295
 I:Use your F-finger for the B-key.
 *:_T_R_L83
-#                                                             ../orig/t.typ:296
 D:fff fbf fff bbb fff fbf fff
 
-#                                                             ../orig/t.typ:297
 I:The B-key is the longest reach we've seen so far.  Let's try it again.
 *:_T_R_L84
-#                                                             ../orig/t.typ:298
 D:fff fbf fff bbb fff fbf fff
 
 *:_T_R_L84A
-#                                                             ../orig/t.typ:301
 D:frf bar frf rib frf pub frf
  :frf bring frf abort frf brother frf
 
 #
 I:Use your J-finger for the U-key.
 *:_T_R_L85
-#                                                             ../orig/t.typ:302
 D:jjj juj jjj uuu jjj juj jjj
 
 *:_T_R_L86
-#                                                             ../orig/t.typ:305
 D:juj jug juj use juj hug juj
  :juj tulip juj turn juj under juj
  :Please pass the butter and salt, but not the pepper.
 
-#                                                             ../orig/t.typ:306
 I:Use your ;-finger for the /-key.
 *:_T_R_L87
-#                                                             ../orig/t.typ:307
 D:;;; ;/; ;;; /// ;;; ;/; ;;;
 
 *:_T_R_L88
-#                                                             ../orig/t.typ:311
 D:;/; n/a ;/; and/or ;/; left/right
  :In this era of E.R.A., I hope he/she likes his/her job.
  :He/she should bring his/her spouse at about noon or just before.
  :Should I be here alone?  Is Bernie and/or Julie going to be here, too?
 
-#                                                             ../orig/t.typ:312
 I:Try your speed on some paragraphs:
 *:_T_R_L89
-#                                                             ../orig/t.typ:315
 S:All bills are to be paid in full.  If
  :there is no fee to be paid, return the
  :bill and put n/a in the total due part.
 
-#                                                             ../orig/t.typ:316
 I:You should be aiming for 15 WPM.  (If you did better, work on accuracy.)
 *:_T_R_L90
-#                                                             ../orig/t.typ:319
 S:In baseball, bunting is a kind of hit.  But, bunting also
  :refers to a kind of bird and the stuff that is used in
  :flags.  English sure is a strange language.
 
 G:_T_E_T6
+
 #------------------------------------------------------------------------------
 # Lesson T7
 #------------------------------------------------------------------------------
 *:T7
 *:_T_S_T7
-#                                                             ../orig/t.typ:323
+B:                            Lesson T7
+
 I:First a review of the letters we've learned before:
 *:_T_R_L91
-#                                                             ../orig/t.typ:324
 D:juj ded kik frf lol fgf ;p; jhj
 
 *:_T_R_L92
-#                                                             ../orig/t.typ:325
 D:ftf jnj ftf jnj fbf juj ;?; l.l k,k
 
-#                                                             ../orig/t.typ:327
 I:Use your D-finger for the C-key.
 *:_T_R_L93
-#                                                             ../orig/t.typ:328
 D:ddd dcd ddd ccc ddd dcd
 
 *:_T_R_L94
-#                                                             ../orig/t.typ:331
 D:ddd cat ddd cup ddd can
  :dcd duck dcd card dcd pack dcd
  :dcd crate dcd scrap dcd trick dcd
 
-#                                                             ../orig/t.typ:332
 I:Use your J-finger for the M-key
 *:_T_R_L95
-#                                                             ../orig/t.typ:333
 D:jjj jmj jjj mmm jjj jmj jjj
 
 *:_T_R_L96
-#                                                             ../orig/t.typ:337
 D:jjj met jjj rim jjj map jjj
  :jmj man jmj men jmj ham jjj
  :jmj Mr. jmj Mrs. jmj Ms. jmj
  :jmj number jmj stream jmj mankind jmj
 
-#                                                             ../orig/t.typ:338
 I:Use your ;-finger for the hyphen.
 *:_T_R_L97
-#                                                             ../orig/t.typ:339
 D:;;; ;-; ;;; --- ;;; ;-; ;;; ;-;
 
 *:_T_R_L98
-#                                                             ../orig/t.typ:341
 D:;;; one-third ;;; one-half ;;; three-fifths ;;;
  :;;; part-time ;;; self-made ;;; all-American ;;;
 
-#                                                             ../orig/t.typ:342
 I:Let's try some sentences:
 *:_T_R_L99
-#                                                             ../orig/t.typ:343
 D:Peter Piper picked a peck of pickled peppers.
 
 *:_T_R_L100
-#                                                             ../orig/t.typ:344
 D:Motion pictures often depict macabre scenes.
 
 *:_T_R_L101
-#                                                             ../orig/t.typ:345
 D:Once upon a time, marriages lasted longer than mortgages.
-#                                                             ../orig/t.typ:346
 I:There are three uses of the hyphen.  It can be used to combine two words:
 *:_T_R_L102
-#                                                             ../orig/t.typ:347
 D:She had on a bluish-green dress.  But, no one noticed.
 
-#                                                             ../orig/t.typ:348
 I:To divide a word:
 *:_T_R_L103
-#                                                             ../orig/t.typ:350
 D:At macrame class last night, I made a hanging basket for the philo-
  :dendron in our dining room.
 
-#                                                             ../orig/t.typ:351
 I:Or, to form a dash:
 *:_T_R_L104
-#                                                             ../orig/t.typ:352
 D:Fifteen dollars a month--measured in current dollars--is a good rate.
 
-#                                                             ../orig/t.typ:353
 I:Let's try a speed drill on these sentences:
 *:_T_R_L105
-#                                                             ../orig/t.typ:355
 S:The clock ran out, signaling the end of
  :the second-half.  The game had been lost.
 
 *:_T_R_L106
-#                                                             ../orig/t.typ:364
 S:The paper just made an announce-
  :ment about a commotion at the
  :college.  Someone has just
@@ -788,10 +638,8 @@ S:The paper just made an announce-
  :that it is being patented for use
  :on oil spills at sea.
 
-#                                                             ../orig/t.typ:365
 I:Hit the return key twice for blank lines:
 *:_T_R_L107
-#                                                             ../orig/t.typ:374
 S:Dear Mr. Mandrake:
  :
  :All of us appreciated the fine performance of those magic
@@ -803,85 +651,68 @@ S:Dear Mr. Mandrake:
  :Mrs. Carmichael
 
 G:_T_E_T7
+
 #------------------------------------------------------------------------------
 # Lesson T8
 #------------------------------------------------------------------------------
 *:T8
 *:_T_S_T8
-#                                                             ../orig/t.typ:378
+B:                            Lesson T8
+
 I:As always, we will start with a quick review
 *:_T_R_L108
-#                                                             ../orig/t.typ:379
 D:jfj dkd lsl a;a dcd jmj ;-; fbf juj
 
-#                                                             ../orig/t.typ:381
 I:Let's try some long words.
 *:_T_R_L109
-#                                                             ../orig/t.typ:382
 D:meteorology camera bituminous chimera phosphates
 
-#                                                             ../orig/t.typ:383
 I:Use your S-finger for the W-key.
 *:_T_R_L110
-#                                                             ../orig/t.typ:384
 D:sss sws sss www sss sws sss
 
 *:_T_R_L111
-#                                                             ../orig/t.typ:385
 D:sss wet sss who sss was sss
 
 *:_T_R_L112
-#                                                             ../orig/t.typ:387
 D:sws who sws what sws when sws where sws
  :knowledge whatever Wimbledon know-it-all
 
 *:_T_R_L113
-#                                                             ../orig/t.typ:391
 S:How much wood could a woodchuck chuck if a
  :woodchuck could chuck wood?  A woodchuck
  :would chuck all the wood that a woodchuck
  :could chuck, if a woodchuck could chuck wood.
 
-#                                                             ../orig/t.typ:392
 I:Use your J-finger for the Y-key.
 *:_T_R_L114
-#                                                             ../orig/t.typ:393
 D:jjj jyj jjj yyy jjj jyj jjj
 
 *:_T_R_L115
-#                                                             ../orig/t.typ:396
 D:jjj why jjj you jjj try jjj rye jjj
  :jjj year jjj July jjj your jjj jury jjj
  :Were your yard sales much better last year?
 
-#                                                             ../orig/t.typ:397
 I:Try your speed on this sentence:
 *:_T_R_L116
-#                                                             ../orig/t.typ:398
 S:Why are you typing so slowly?
 
-#                                                             ../orig/t.typ:399
 I:Use your F-finger for the V-key.
 *:_T_R_L117
-#                                                             ../orig/t.typ:400
 D:fff fvf fff vvv fff fvf fff
 
 *:_T_R_L118
-#                                                             ../orig/t.typ:401
 D:fff vat fff eve fff vow fff
 
 *:_T_R_L119
-#                                                             ../orig/t.typ:402
 D:fvf vine fvf dove fvf ever fvf very fvf
 
 *:_T_R_L120
-#                                                             ../orig/t.typ:405
 D:driven vertical advent ventrical
  :What a fine vineyard you have.
  :Do you intend to play adventure every night?
 
 *:_T_R_L121
-#                                                             ../orig/t.typ:419
 T:			THE BACKSPACE
  :
  :Most of the programs that you use will allow you to correct your mistakes by
@@ -897,22 +728,18 @@ T:			THE BACKSPACE
  :If you do chose to use the DELETE or BACKSPACE keys, hit the key with your
  :;-finger and immediately return your fingers to the home position.
 
-#                                                             ../orig/t.typ:420
 I:Let's try our speed on some nursery rhymes!
 *:_T_R_L122
-#                                                             ../orig/t.typ:424
 S:Mary had a little lamb
  :Its fleece was white as snow
  :And every where that Mary went
  :The lamb was sure to go.
 
 *:_T_R_L123
-#                                                             ../orig/t.typ:426
 S:Jack and Jill went up a hill to fetch a pail of water.
  :Jack fell down and broke his crown and Jill came tumbling after.
 
 *:_T_R_L124
-#                                                             ../orig/t.typ:431
 S:Little Miss Muffet sat on a tuffet
  :Eating her curds and whey.
  :Along came a spider
@@ -920,7 +747,6 @@ S:Little Miss Muffet sat on a tuffet
  :And frightened Miss Muffet away.
 
 *:_T_R_L125
-#                                                             ../orig/t.typ:436
 S:Hey, diddle diddle--
  :The cat and the fiddle
  :The cow jumped over the moon.
@@ -928,31 +754,27 @@ S:Hey, diddle diddle--
  :And the dish ran away with the spoon.
 
 G:_T_E_T8
+
 #------------------------------------------------------------------------------
 # Lesson T9
 #------------------------------------------------------------------------------
 *:T9
 *:_T_S_T9
-#                                                             ../orig/t.typ:440
+B:                            Lesson T9
+
 I:First, a review.
 *:_T_R_L126
-#                                                             ../orig/t.typ:441
 D:a;a sls dkd fjf sws jyj fvf dcd jmj ;-;
 
-#                                                             ../orig/t.typ:443
 I:Notice that the only letters left to go are the Q, X, and Z!
 *:_T_R_L127
-#                                                             ../orig/t.typ:444
 D:abcdefghijklmnoprstuvwy
 
-#                                                             ../orig/t.typ:445
 I:Use your A-finger for the Q-key.
 *:_T_R_L128
-#                                                             ../orig/t.typ:446
 D:aaa aqa aaa qqq aaa aqa aaa
 
 *:_T_R_L128A
-#                                                             ../orig/t.typ:450
 D:aaa quit aaa quad aaa quip aaa
  :lacquer inquiry squirt quart
  :quail quiver inquest marquis
@@ -960,11 +782,9 @@ D:aaa quit aaa quad aaa quip aaa
 #
 I:Use your S-finger for the X-key.
 *:_T_R_L129
-#                                                             ../orig/t.typ:451
 D:sss sxs sss xxx sss sxs sss
 
 *:_T_R_L129A
-#                                                             ../orig/t.typ:455
 D:sss ax sss ox sss vex sss wax xxx
  :examine ex-wife excellent boxer sixteen
  :exactly sphinx oxygen except thorax
@@ -972,104 +792,80 @@ D:sss ax sss ox sss vex sss wax xxx
 #
 I:Use your A-finger for the Z-key.
 *:_T_R_L130
-#                                                             ../orig/t.typ:456
 D:aaa aza aaa zzz aaa aza aaa
 
 *:_T_R_L131
-#                                                             ../orig/t.typ:459
 D:aaa adz aaa azo aaa coz aaa
  :quiz jazz quartz zinc dozen
  :oxidize squeeze azimuth zoology
 
-#                                                             ../orig/t.typ:460
 I:The big event!!!!!!!!!!!!!!!!!!
 *:_T_R_L132
-#                                                             ../orig/t.typ:461
 D:abcdefghijklmnopqrstuvwxyz
 
 *:_T_R_L132A
-#                                                             ../orig/t.typ:463
 D:zyxwvutsrqponmlkjihgfedcba
 
 #
 I:Let's try some sentences:
 *:_T_R_L133
-#                                                             ../orig/t.typ:464
 D:A dozen zebras were grazing quietly nearby.
 
 *:_T_R_L134
-#                                                             ../orig/t.typ:465
 D:The zeppelin zigzagged quickly from the horizon up to the zenith.
 
 *:_T_R_L135
-#                                                             ../orig/t.typ:466
 D:Never trust a quack doctor who cannot distinguish oxygen from nitrogen.
 
 *:_T_R_L136
-#                                                             ../orig/t.typ:467
 D:Imagine having a sextet of sexagenarian sextons?
 
 *:_T_R_L137
-#                                                             ../orig/t.typ:469
 D:Remember when queer used to mean zany?
  :Quartz crystal watches were at one time extremely expensive.
 
-#                                                             ../orig/t.typ:470
 I:Let's try a sentence that contains every letter of the alphabet.
 *:_T_R_L138
-#                                                             ../orig/t.typ:471
 D:A quick brown fox jumped over the lazy dogs.
 
-#                                                             ../orig/t.typ:472
 I:Again,
 *:_T_R_L139
-#                                                             ../orig/t.typ:473
 D:A quick brown fox jumped over the lazy dogs.
 
-#                                                             ../orig/t.typ:474
 I:See how fast you can type it this time:
 *:_T_R_L140
-#                                                             ../orig/t.typ:475
 S:A quick brown fox jumped over the lazy dogs.
 
-#                                                             ../orig/t.typ:476
 I:Again,
 *:_T_R_L141
-#                                                             ../orig/t.typ:477
 S:A quick brown fox jumped over the lazy dogs.
 
 G:_T_E_T9
+
 #------------------------------------------------------------------------------
 # Lesson T10
 #------------------------------------------------------------------------------
 *:T10
 *:_T_S_T10
-#                                                             ../orig/t.typ:481
+B:                            Lesson T10
+
 I:Let's review the entire alphabet before starting the number keys.
 *:_T_R_L142
-#                                                             ../orig/t.typ:482
 D:abcd efg hijk lmnop qrs tuv wx yz
 
-#                                                             ../orig/t.typ:484
 I:Once more
 *:_T_R_L143
-#                                                             ../orig/t.typ:485
 D:abcdefghijklmnopqrstuvwxyz
 
-#                                                             ../orig/t.typ:486
 I:Use the shift key for each letter (Do not use the CAPS LOCK key)
 *:_T_R_L144
-#                                                             ../orig/t.typ:487
 D:ABCDEFGHIJKLMNOPQRSTUVWXYZ
 
-#                                                             ../orig/t.typ:488
 I:Now, review the punctuations that you've had.
 *:_T_R_L145
-#                                                             ../orig/t.typ:489
 D:l;l l:l k,k l.l ;/; ;?; :?: ;-;
 
 *:_T_R_L146
-#                                                             ../orig/t.typ:509
 T:
  :			NUMERIC KEYS
  :
@@ -1091,26 +887,20 @@ T:
  :have a 1 key.  If it does, the 1 will always be next to the 2.  If it does not,
  :you will have to use the L-key.
 
-#                                                             ../orig/t.typ:510
 I:Let's start by using the 1-key, since we have one.  (Use your A-finger.)
 *:_T_R_L147
-#                                                             ../orig/t.typ:511
 D:aaa a1a aaa 111 aaa a1a
 
 *:_T_R_L148
-#                                                             ../orig/t.typ:514
 D:a1q qa1 qz1 az1 aq1 a1z
  :111 and 111 ate 111 any 111
  :If 11 men each catch 11 fish in 11 days, how many fish were caught?
 
-#                                                             ../orig/t.typ:515
 I:Use your S-finger for the 2-key.
 *:_T_R_L149
-#                                                             ../orig/t.typ:516
 D:sss s2s sss s2s sss s2s
 
 *:_T_R_L149A
-#                                                             ../orig/t.typ:520
 D:sss s2w sss 2xw sss w2x sss
  :222 saw 222 was 222 wet 222
  :The 2 men were 2 late 2 catch the 2 PM train.
@@ -1118,120 +908,96 @@ D:sss s2w sss 2xw sss w2x sss
 #
 I:Use your D-finger for the 3-key.
 *:_T_R_L150
-#                                                             ../orig/t.typ:521
 D:ddd d3d ddd d3d ddd d3d ddd
 
 *:_T_R_L151
-#                                                             ../orig/t.typ:524
 D:ddd d3e ddd d3c ddd e3c ddd
  :333 did 333 cat 333 eat 333
  :1 plus 2 is 3.  11 plus 22 is 33.  111 plus 222 is 333.
 
-#                                                             ../orig/t.typ:525
 I:The last number we will practice today is the 4-key.  (Use your F-finger.)
 *:_T_R_L152
-#                                                             ../orig/t.typ:526
 D:fff f4f fff f4f fff f4f
 
 *:_T_R_L153
-#                                                             ../orig/t.typ:531
 D:fff f4r fff 4vr fff 4vr fff
  :444 for fff rat 444 vet 444
  :Flight 423 leaves from gate 42 at 4:24.
  :As the 3 musketeers say: 1 4 all, and all 4 1.
  :If 1/4 plus 2/3 is 11/12, what is 1/2 plus 1/3?
 
-#                                                             ../orig/t.typ:532
 I:Try your speed on this line:
 *:_T_R_L154
-#                                                             ../orig/t.typ:533
 S:Our team won 1st, 2nd, and 3rd place at the 12th annual outing.
 
-#                                                             ../orig/t.typ:535
 I:As we stated earlier, many typewriters do not have a 1 key.  Let's practice
  :using the L-key as a 1, so you can use any kind of typewriter.
 *:_T_R_L155
-#                                                             ../orig/t.typ:536
 D:One dozen is l2.  A gross is l2 dozen or l44.
 
 *:_T_R_L156
-#                                                             ../orig/t.typ:538
 D:In both octal and decimal, ll times ll is l2l.  And, 3 minus 4 is -l.
  :But in octal, l2 is not divisible by 3.
 
 G:_T_E_T10
+
 #------------------------------------------------------------------------------
 # Lesson T11
 #------------------------------------------------------------------------------
 *:T11
 *:_T_S_T11
-#                                                             ../orig/t.typ:542
+B:                            Lesson T11
+
 I:Let's review the numbers that you have already learned.
 *:_T_R_L157
-#                                                             ../orig/t.typ:543
 D:a1a s2s d3d f4f 234 413
 
 *:_T_R_L158
-#                                                             ../orig/t.typ:544
 D:f4r d3e s2w a1q az1 sx2 dc3 fv4
 
-#                                                             ../orig/t.typ:546
 I:Use your J-finger for the 7-key
 *:_T_R_L159
-#                                                             ../orig/t.typ:547
 D:jjj j7j jjj j7j jjj j7j jjj
 
 *:_T_R_L160
-#                                                             ../orig/t.typ:551
 D:jjj j7u jjj 7um jjj u7m jjj
  :777 map 777 jug 777 rum 777
  :Is flight number 377 for Florida a 707, a 727 or a 747?
  :It is a 727 with 4 stops.  With all those stops it takes almost 7 hours.
 
-#                                                             ../orig/t.typ:552
 I:Use your K-finger for the 8-key.
 *:_T_R_L161
-#                                                             ../orig/t.typ:553
 D:kkk k8k kkk k8k kkk k8k kkk
 
 *:_T_R_L162
-#                                                             ../orig/t.typ:557
 D:kkk k8i kkk 8,i kkk ,i8 kkk
  :888 kick 888 sink 888 keep 888
  :Agent 88 was supposed to check in at 8:14.  She is 38 minutes late.
  :Her team was assigned to zone 8 of quadrant 828.  Send 8 more agents.
 
-#                                                             ../orig/t.typ:558
 I:Use your L-finger for the 9-key.
 *:_T_R_L163
-#                                                             ../orig/t.typ:559
 D:lll l9l lll l9l lll l9l lll
 
 *:_T_R_L164
-#                                                             ../orig/t.typ:563
 D:lll 9.o lll o9. lll l9. lll
  :999 Jr. 999 log 999 old 999
  :Oh, 99 bottles of beer on the wall, 99 bottles of beer.
  :If 9 of us take 9 each, there will still be 18 left for the song.
 
-#                                                             ../orig/t.typ:564
 I:Use your ;-finger for the 0-key.
 *:_T_R_L165
-#                                                             ../orig/t.typ:565
 D:;;; ;0; ;;; ;0; ;;; ;0; ;;;
 
 *:_T_R_L166
-#                                                             ../orig/t.typ:570
 D:;;; ;0p ;;; /0p ;;; 0/p ;;;
  :000 a/c 000 pup 000 me? 000
  :Dear Sirs:  The 10:00 meeting on March 10 has been postponed until 10:30.
  :The 10:30 meeting was moved to 11:00 in Room 302.
  :But, Room 302 can only hold 10 people.  We will need Conference Room 10.
 
-#                                                             ../orig/t.typ:571
 I:Let's try some paragraphs.
 *:_T_R_L167
-#                                                             ../orig/t.typ:580
 S:Zip codes are arranged so that the first 3 digits
  :designate the regional office and the last 2
  :digits designate the local branch.  The numbering
@@ -1243,7 +1009,6 @@ S:Zip codes are arranged so that the first 3 digits
  :Florida, but their Zip Codes start with 00.
 
 *:_T_R_L168
-#                                                             ../orig/t.typ:587
 S:The new nine digit zip codes have upset quite a
  :few people.  It was bad enough being referred to
  :as 73218.  But now, we will have to remember
@@ -1253,125 +1018,97 @@ S:The new nine digit zip codes have upset quite a
  :will be very difficult to change.
 
 G:_T_E_T11
+
 #------------------------------------------------------------------------------
 # Lesson T12
 #------------------------------------------------------------------------------
 *:T12
 *:_T_S_T12
-#                                                             ../orig/t.typ:591
+B:                            Lesson T12
+
 I:Let's review the numbers that you have learned so far.
 *:_T_R_L169
-#                                                             ../orig/t.typ:592
 D:j7j f4f k8k d3d l9l s2s ;0; a1a
 
 *:_T_R_L170
-#                                                             ../orig/t.typ:593
 D:4f4 7j7 3d3 8k8 2s2 9l9 1a1 0;0
 
-#                                                             ../orig/t.typ:595
 I:Use your F-finger for the 5-key.
 *:_T_R_L171
-#                                                             ../orig/t.typ:596
 D:fff f5f fff 555 fff f5f fff
 
 *:_T_R_L172
-#                                                             ../orig/t.typ:599
 D:f5f f54 f5f t5g f5f t5r f5f
  :f5f five f5f two f5f four f5f
  :f5f 453 f5f 585 f5f 475 f5f
 
 *:_T_R_L173
-#                                                             ../orig/t.typ:600
 S:The 5 of us each carried 50 pound packs all 45 miles of the trip.
 
-#                                                             ../orig/t.typ:601
 I:And now, the longest reach of all!  Use your J-finger for the 6-key.
 *:_T_R_L174
-#                                                             ../orig/t.typ:602
 D:jjj j6j jjj 666 jjj j6j jjj
 
 *:_T_R_L175
-#                                                             ../orig/t.typ:605
 D:j6j June j6j much j6j hum j6j
  :j6j y6n j6j u6m j6j h76 j6j
  :j6j 4567 j6j 7654 j6j 6754 j6j
 
-#                                                             ../orig/t.typ:606
 I:The open parenthesis is the shift of the 9-key.  (Use your L-finger).
 *:_T_R_L176
-#                                                             ../orig/t.typ:607
 
 *:_T_R_L177
-#                                                             ../orig/t.typ:608
 D:l(l (.l l(l 9(9 l(l
 
 *:_T_R_L178
-#                                                             ../orig/t.typ:609
 D:l(l loop l(l oil l(l only l(l
 
-#                                                             ../orig/t.typ:610
 I:The close parenthesis is the shift of the 0-key.  (Use your ;-finger).
 *:_T_R_L179
-#                                                             ../orig/t.typ:611
 D:;;; ;); ;;; ;); ;;; ;);
 
 *:_T_R_L180
-#                                                             ../orig/t.typ:613
 D:;;; (.) ;;; (.) ;;; (,) ;;;
  :;); pole ;); loop ;); pile ;);
 
 *:_T_R_L181
-#                                                             ../orig/t.typ:614
 D:You (the buyer) should ask him (the seller) for the price (of the goods).
 
 *:_T_R_L182
-#                                                             ../orig/t.typ:615
 D:If (X-5) / (X-6) is 56, then what is (X/5) - (X/6)?
 
 *:_T_R_L183
-#                                                             ../orig/t.typ:616
 D:1 2 3 4 5 6 7 8 9 10
 
-#                                                             ../orig/t.typ:617
 I:Try your speed on this song.
 *:_T_R_L184
-#                                                             ../orig/t.typ:621
 S:1 little, 2 little, 3 little Indians,
  :4 little, 5 little, 6 little Indians,
  :7 little, 8 little, 9 little Indians,
  :10 little Indian boys.
 
 *:_T_R_L185
-#                                                             ../orig/t.typ:625
 S:If we want to catch the 6:15 flight to Phoenix (which is the
  :non-stop), we will have to leave by 5:00 at the latest (in
  :case we run into traffic).  Otherwise, we will have to take
  :the 6:45 flight (which makes 5 stops).
 
-#                                                             ../orig/t.typ:626
 I:Use the main keyboard keys.  Don't cheat and use the auxilliary keypad!
-#                                                             ../orig/t.typ:627
  :Try entering straight numbers: 
 *:_T_R_L186
-#                                                             ../orig/t.typ:628
 D:423 475 925 235 295 175 650
 
 *:_T_R_L187
-#                                                             ../orig/t.typ:630
 D:598 693 602 672 315 604 587 307
 
 *:_T_R_L188
-#                                                             ../orig/t.typ:631
 D:12.00 67.50 99.95 38.75 19.99
 
-#                                                             ../orig/t.typ:632
 I:Now let's try for some speed.
 *:_T_R_L189
-#                                                             ../orig/t.typ:633
 S:353 648 604 592 468 501 296
 
 *:_T_R_L190
-#                                                             ../orig/t.typ:641
 S:3574
  :1937
  :2586
@@ -1382,13 +1119,15 @@ S:3574
  :6745
 
 G:_T_E_T12
+
 #------------------------------------------------------------------------------
 # Lesson T13
 #------------------------------------------------------------------------------
 *:T13
 *:_T_S_T13
+B:                            Lesson T13
+
 *:_T_R_L191
-#                                                             ../orig/t.typ:657
 T:
  :There is no Lesson 13!  Don't you know that 13 is an unlucky number?
  :
@@ -1404,68 +1143,60 @@ T:
  :lessons.
 
 G:_T_E_T13
+
 #------------------------------------------------------------------------------
 # Lesson T14
 #------------------------------------------------------------------------------
 *:T14
 *:_T_S_T14
-#                                                             ../orig/t.typ:661
+B:                            Lesson T14
+
 I:Use your ;-finger for the apostrophe.
 *:_T_R_L192
-#                                                             ../orig/t.typ:662
 D:;;; ;'; ;;; ''' ;;; ;'; ;;;
 
 *:_T_R_L193
-#                                                             ../orig/t.typ:664
 D:;'; it's ;'; 'till ;'; won't ;';
 
 *:_T_R_L194
-#                                                             ../orig/t.typ:667
 D:;'; 'tis ;'; isn't ;'; 'tis too ;';
  :What's this I've got?  Isn't this yesterday's paper?  Where's today's?
  :Can't you find anything?  It's right next to Dad's chair.
 
-#                                                             ../orig/t.typ:668
 I:Shift the apostrophe for the quote key.
 *:_T_R_L195
-#                                                             ../orig/t.typ:669
 D:;;; ;"; ;;; """ ;;; ;"; ;;;
 
 *:_T_R_L196
-#                                                             ../orig/t.typ:673
 D:;"; "." ;"; ":" ;"; "," ;";
  :"What was that I saw you take from the teacher's desk?" asked Tom.
  :"It's the answers to tomorrow's quiz", answered Suzy.
  :"If you promise not to tell," she continued, "I'll give you a copy."
 
-#                                                             ../orig/t.typ:674
 I:Use your A-finger for the exclamation point.
 *:_T_R_L197
-#                                                             ../orig/t.typ:675
 D:aaa a!a aaa !!! aaa a!a aaa
 
 *:_T_R_L198
-#                                                             ../orig/t.typ:676
 D:a!a Ah! a!a What! a!a Oh! a!a
 
-#                                                             ../orig/t.typ:677
 I:Always double space after an exclamation point.
 *:_T_R_L199
-#                                                             ../orig/t.typ:678
 D:Tomorrow's quiz!  What if we get caught?  We'll be expelled!
 
 *:_T_R_L200
-#                                                             ../orig/t.typ:679
 D:He'll never suspect a thing!  We'll get some answers wrong to fool him.
 
 G:_T_E_T14
+
 #------------------------------------------------------------------------------
 # Lesson T15
 #------------------------------------------------------------------------------
 *:T15
 *:_T_S_T15
+B:                            Lesson T15
+
 *:_T_R_L201
-#                                                             ../orig/t.typ:688
 T:
  :
  :In this lesson we will be practicing the special symbols which you will need
@@ -1473,86 +1204,64 @@ T:
  :with these symbols right now.  (You should be able to get plenty of exercise by
  :simply typing in programs.)
 
-#                                                             ../orig/t.typ:690
 I:Use your ;-finger for the equals key.
 *:_T_R_L202
-#                                                             ../orig/t.typ:691
 D:;;; ;=; ;;; ;=; ;;; ;=; ;;;
 
 *:_T_R_L203
-#                                                             ../orig/t.typ:693
 D:;=; -=- ;=; '=' ;=; :=: ;=;
  :;=; X=2 ;=; Y=3 ;=; Z=0 ;=;
 
-#                                                             ../orig/t.typ:694
 I:Use your K-finger for the asterisk key.
 *:_T_R_L204
-#                                                             ../orig/t.typ:695
 D:kkk k*k kkk k*k kkk k*k kkk
 
 *:_T_R_L205
-#                                                             ../orig/t.typ:697
 D:k*k 3*2 k*k 5*6 k*k 9*7 k*k
  :k*k i*i k*k *,* k*k 8*8 k*k
 
-#                                                             ../orig/t.typ:698
 I:Use your ;-finger for the plus sign.
 *:_T_R_L206
-#                                                             ../orig/t.typ:699
 D:;;; ;+; ;;; ;+; ;;; ;+; ;;;
 
 *:_T_R_L207
-#                                                             ../orig/t.typ:701
 D:;+; 2+4 ;+; 7+5 ;+; 8+0 ;+;
  :;+; +=+ ;+; -+- ;+; /+/ ;+;
 
-#                                                             ../orig/t.typ:702
 I:Use your L-finger for the greater-than key.
 *:_T_R_L208
-#                                                             ../orig/t.typ:703
 D:lll l>l lll l>l lll l>l lll
 
 *:_T_R_L209
-#                                                             ../orig/t.typ:705
 D:l>l X>3 l>l Y>7 l>l Z>0 l>l
  :l>l >>> l>l 9>9 l>l .>. l>l
 
-#                                                             ../orig/t.typ:706
 I:Use your K-finger for the less-than key.
 *:_T_R_L210
-#                                                             ../orig/t.typ:707
 D:kkk k<k kkk k<k kkk k<k kkk
 
 *:_T_R_L211
-#                                                             ../orig/t.typ:709
 D:k<k X<0 k<k Y<2 k<k Z<8 k<k
  :k<k <.> k<k >.< k<k <<< k<k
 
-#                                                             ../orig/t.typ:710
 I:Use your J-finger for the up-arrow key.
 *:_T_R_L212
-#                                                             ../orig/t.typ:711
 D:jjj j^j jjj ^^^ jjj j^j jjj
 
 *:_T_R_L213
-#                                                             ../orig/t.typ:713
 D:j^j X^2 j^j Y^3 j^j Z^4 j^j
  :j^j <^> j^j .^. j^j "^" j^j
 
-#                                                             ../orig/t.typ:714
 I:Try entering this BASIC program:
 *:_T_R_L214
-#                                                             ../orig/t.typ:719
 S:10 LET x=10
  :20 LET y=20
  :30 PRINT x+y/3
  :40 PRINT y/x*5
  :50 STOP
 
-#                                                             ../orig/t.typ:720
 I:And another:
 *:_T_R_L215
-#                                                             ../orig/t.typ:728
 S:10 REM Program to find square roots with using ^.5 feature
  :20 INPUT "What number do you want the square root of? ";s
  :30 x = 2
@@ -1562,10 +1271,8 @@ S:10 REM Program to find square roots with using ^.5 feature
  :70 PRINT "The square root of ";s;" is ";x
  :80 STOP
 
-#                                                             ../orig/t.typ:729
 I:Press down the CAPS LOCK key to simplify typing in this BASIC program:
 *:_T_R_L216
-#                                                             ../orig/t.typ:744
 S:100 REM PROGRAM TO SOLVE QUADRATIC EQUATION
  :125 PRINT "ENTER THE VALUES OF A, B, AND C WHERE:"
  :150 PRINT
@@ -1583,13 +1290,15 @@ S:100 REM PROGRAM TO SOLVE QUADRATIC EQUATION
  :525 GOTO 125
 
 G:_T_E_T15
+
 #------------------------------------------------------------------------------
 # Lesson T16
 #------------------------------------------------------------------------------
 *:T16
 *:_T_S_T16
+B:                            Lesson T16
+
 *:_T_R_L217
-#                                                             ../orig/t.typ:760
 T:
  :In this lesson we will be practicing the shifted numeric keys on the
  :terminal keyboard.  I will only be giving you practice in the keystroke
@@ -1603,69 +1312,52 @@ T:
  :are in different places on most other keyboards or are totally missing, speed
  :is not important.
 
-#                                                             ../orig/t.typ:761
 I:Use your S-finger for the at-sign.
 *:_T_R_L218
-#                                                             ../orig/t.typ:762
 D:sss s@s sss s@s sss s@s sss
 
 *:_T_R_L219
-#                                                             ../orig/t.typ:764
 D:s@s at@ s@s w@x s@s S@w s@s
  :s@s wax s@s mix s@s @we s@s
 
-#                                                             ../orig/t.typ:765
 I:Use your D-finger for the pound-sign (also called the number-sign).
 *:_T_R_L220
-#                                                             ../orig/t.typ:766
 D:ddd d#d ddd d#d ddd d#d ddd
 
 *:_T_R_L221
-#                                                             ../orig/t.typ:768
 D:d#d d#e d#d 3#c d#d #c# d#d
  :d#d cat d#d dog d#d eat d#d
 
-#                                                             ../orig/t.typ:769
 I:Use your F-finger for the dollar-sign.
 *:_T_R_L222
-#                                                             ../orig/t.typ:770
 D:fff f$f fff f$f fff f$f fff
 
 *:_T_R_L223
-#                                                             ../orig/t.typ:773
 D:f$f r$v f$f v$4 f$f 4$r f$f
  :f$f rave f$f fare f$f $10.00 f$f
  :Joe keeps cryptic inventory bills like:  4# @ $5.00/# or 6# @ $4.50/#.
 
-#                                                             ../orig/t.typ:774
 I:Use your F-finger for the percent sign as well.
 *:_T_R_L224
-#                                                             ../orig/t.typ:775
 D:fff f%f fff f%f fff f%f fff
 
 *:_T_R_L225
-#                                                             ../orig/t.typ:779
 D:f%f 12% f%f 10% f%f 20% f%f
  :f%f two f%f ran f%f bug f%f
  :If a $25.00 item is sold at a 10% discount, it will cost $22.50.
  :But, a 10% markup on a item selling for $22.50 is only $24.75!  How come?
 
-#                                                             ../orig/t.typ:780
 I:Use your J-finger for the ampersand.
 *:_T_R_L226
-#                                                             ../orig/t.typ:781
 D:jjj j&j jjj j&j jjj j&j jjj
 
 *:_T_R_L227
-#                                                             ../orig/t.typ:782
 D:j&j 2&4 j&j 9&5 j&j 7&7 j&j
 
 *:_T_R_L228
-#                                                             ../orig/t.typ:783
 D:j&j you&me j&j he&she j&j M&M j&j
 
 *:_T_R_L229
-#                                                             ../orig/t.typ:801
 T:				THE END
  :
  :You have now completed the T-series of these lessons.  If you have not already
@@ -1686,140 +1378,94 @@ T:				THE END
  :case).
 
 G:_T_E_T16
+
 #------------------------------------------------------------------------------
 # Lesson series T jump tables
 #------------------------------------------------------------------------------
 *:_T_E_T1
 Q: Do you want to continue to lesson T2 [Y/N] ? 
 N:_T_MENU
-G:_T_M_T2
+G:_T_S_T2
 *:_T_E_T2
 Q: Do you want to continue to lesson T3 [Y/N] ? 
 N:_T_MENU
-G:_T_M_T3
+G:_T_S_T3
 *:_T_E_T3
 Q: Do you want to continue to lesson T4 [Y/N] ? 
 N:_T_MENU
-G:_T_M_T4
+G:_T_S_T4
 *:_T_E_T4
 Q: Do you want to continue to lesson T5 [Y/N] ? 
 N:_T_MENU
-G:_T_M_T5
+G:_T_S_T5
 *:_T_E_T5
 Q: Do you want to continue to lesson T6 [Y/N] ? 
 N:_T_MENU
-G:_T_M_T6
+G:_T_S_T6
 *:_T_E_T6
 Q: Do you want to continue to lesson T7 [Y/N] ? 
 N:_T_MENU
-G:_T_M_T7
+G:_T_S_T7
 *:_T_E_T7
 Q: Do you want to continue to lesson T8 [Y/N] ? 
 N:_T_MENU
-G:_T_M_T8
+G:_T_S_T8
 *:_T_E_T8
 Q: Do you want to continue to lesson T9 [Y/N] ? 
 N:_T_MENU
-G:_T_M_T9
+G:_T_S_T9
 *:_T_E_T9
 Q: Do you want to continue to lesson T10 [Y/N] ? 
 N:_T_MENU
-G:_T_M_T10
+G:_T_S_T10
 *:_T_E_T10
 Q: Do you want to continue to lesson T11 [Y/N] ? 
 N:_T_MENU
-G:_T_M_T11
+G:_T_S_T11
 *:_T_E_T11
 Q: Do you want to continue to lesson T12 [Y/N] ? 
 N:_T_MENU
-G:_T_M_T12
+G:_T_S_T12
 *:_T_E_T12
 Q: Do you want to continue to lesson T13 [Y/N] ? 
 N:_T_MENU
-G:_T_M_T13
+G:_T_S_T13
 *:_T_E_T13
 Q: Do you want to continue to lesson T14 [Y/N] ? 
 N:_T_MENU
-G:_T_M_T14
+G:_T_S_T14
 *:_T_E_T14
 Q: Do you want to continue to lesson T15 [Y/N] ? 
 N:_T_MENU
-G:_T_M_T15
+G:_T_S_T15
 *:_T_E_T15
 Q: Do you want to continue to lesson T16 [Y/N] ? 
 N:_T_MENU
-G:_T_M_T16
+G:_T_S_T16
 *:_T_E_T16
 G:_T_MENU
 
-*:_T_M_T1
-B:                             Lesson T1
-G:_T_S_T1
-*:_T_M_T2
-B:                             Lesson T2
-G:_T_S_T2
-*:_T_M_T3
-B:                             Lesson T3
-G:_T_S_T3
-*:_T_M_T4
-B:                             Lesson T4
-G:_T_S_T4
-*:_T_M_T5
-B:                             Lesson T5
-G:_T_S_T5
-*:_T_M_T6
-B:                             Lesson T6
-G:_T_S_T6
-*:_T_M_T7
-B:                             Lesson T7
-G:_T_S_T7
-*:_T_M_T8
-B:                             Lesson T8
-G:_T_S_T8
-*:_T_M_T9
-B:                             Lesson T9
-G:_T_S_T9
-*:_T_M_T10
-B:                            Lesson T10
-G:_T_S_T10
-*:_T_M_T11
-B:                            Lesson T11
-G:_T_S_T11
-*:_T_M_T12
-B:                            Lesson T12
-G:_T_S_T12
-*:_T_M_T13
-B:                            Lesson T13
-G:_T_S_T13
-*:_T_M_T14
-B:                            Lesson T14
-G:_T_S_T14
-*:_T_M_T15
-B:                            Lesson T15
-G:_T_S_T15
-*:_T_M_T16
-B:                            Lesson T16
-G:_T_S_T16
 #------------------------------------------------------------------------------
 # Lesson series T menu
 #------------------------------------------------------------------------------
 *:_T_MENU
+B:                  QWERTY touch typing lessons
 M: UP=_EXIT "The T series contains the following 16 lessons"
- :_T_M_T1  "Lesson T1     a s d f g h j k l ;"
- :_T_M_T2  "Lesson T2     e g h ,"
- :_T_M_T3  "Lesson T3     i r . shift"
- :_T_M_T4  "Lesson T4     o p shift ?"
- :_T_M_T5  "Lesson T5     t n :"
- :_T_M_T6  "Lesson T6     b u /"
- :_T_M_T7  "Lesson T7     c m -"
- :_T_M_T8  "Lesson T8     w y v backspace"
- :_T_M_T9  "Lesson T9     q x z"
- :_T_M_T10 "Lesson T10    1 2 3 4"
- :_T_M_T11 "Lesson T11    7 8 9 0"
- :_T_M_T12 "Lesson T12    5 6 ( )"
- :_T_M_T13 "Lesson T13"
- :_T_M_T14 "Lesson T14    ' " !"
- :_T_M_T15 "Lesson T15    = * + > < ^"
- :_T_M_T16 "Lesson T16    @ # $ % &"
+ :_T_S_T1  "Lesson T1     a s d f g h j k l ;"
+ :_T_S_T2  "Lesson T2     e g h ,"
+ :_T_S_T3  "Lesson T3     i r . shift"
+ :_T_S_T4  "Lesson T4     o p shift ?"
+ :_T_S_T5  "Lesson T5     t n :"
+ :_T_S_T6  "Lesson T6     b u /"
+ :_T_S_T7  "Lesson T7     c m -"
+ :_T_S_T8  "Lesson T8     w y v backspace"
+ :_T_S_T9  "Lesson T9     q x z"
+ :_T_S_T10 "Lesson T10    1 2 3 4"
+ :_T_S_T11 "Lesson T11    7 8 9 0"
+ :_T_S_T12 "Lesson T12    5 6 ( )"
+ :_T_S_T13 "Lesson T13"
+ :_T_S_T14 "Lesson T14    ' " !"
+ :_T_S_T15 "Lesson T15    = * + > < ^"
+ :_T_S_T16 "Lesson T16    @ # $ % &"
 *:_T_EXIT
 #------------------------------------------------------------------------------

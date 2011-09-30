@@ -26,6 +26,7 @@ G:_C_MENU
 #------------------------------------------------------------------------------
 *:C1
 *:_C_S_C1
+B:                             Lesson C1
 
 *:_C_R_1_-1
 T:			Welcome to the Colemak Course
@@ -76,6 +77,7 @@ G:_C_E_C1
 #------------------------------------------------------------------------------
 *:C2
 *:_C_S_C2
+B:                             Lesson C2
 
 I:(1) R and I
 *:_C_R_2_1
@@ -99,6 +101,7 @@ G:_C_E_C2
 #------------------------------------------------------------------------------
 *:C3
 *:_C_S_C3
+B:                             Lesson C3
 
 I:(1) A and O
 *:_C_R_3_1
@@ -122,6 +125,7 @@ G:_C_E_C3
 #------------------------------------------------------------------------------
 *:C4
 *:_C_S_C4
+B:                             Lesson C4
 
 *:_C_R_4_0
 T:			General Instructions
@@ -151,6 +155,7 @@ G:_C_E_C4
 #------------------------------------------------------------------------------
 *:C5
 *:_C_S_C5
+B:                             Lesson C5
 
 *:_C_R_5_0
 T:			General Instructions
@@ -180,6 +185,7 @@ G:_C_E_C5
 #------------------------------------------------------------------------------
 *:C6
 *:_C_S_C6
+B:                             Lesson C6
 
 *:_C_R_6_0
 T:			General Instructions
@@ -209,6 +215,7 @@ G:_C_E_C6
 #------------------------------------------------------------------------------
 *:C7
 *:_C_S_C7
+B:                             Lesson C7
 
 *:_C_R_7_0
 T:			General Instructions
@@ -243,6 +250,7 @@ G:_C_E_C7
 #------------------------------------------------------------------------------
 *:C8
 *:_C_S_C8
+B:                             Lesson C8
 
 *:_C_R_8_0
 T:			General Instructions
@@ -277,6 +285,7 @@ G:_C_E_C8
 #------------------------------------------------------------------------------
 *:C9
 *:_C_S_C9
+B:                             Lesson C9
 
 *:_C_R_9_0
 T:			General Instructions
@@ -311,6 +320,7 @@ G:_C_E_C9
 #------------------------------------------------------------------------------
 *:C10
 *:_C_S_C10
+B:                             Lesson C10
 
 *:_C_R_10_0
 T:			General Instructions
@@ -345,6 +355,7 @@ G:_C_E_C10
 #------------------------------------------------------------------------------
 *:C11
 *:_C_S_C11
+B:                             Lesson C11
 
 *:_C_R_11_0
 T:			General Instructions
@@ -384,6 +395,7 @@ G:_C_E_C11
 #------------------------------------------------------------------------------
 *:C12
 *:_C_S_C12
+B:                             Lesson C12
 
 *:_C_R_12_0
 T:			General Instructions
@@ -416,74 +428,49 @@ G:_C_E_C12
 #------------------------------------------------------------------------------
 # Jump tables
 #------------------------------------------------------------------------------
-*:_C_M_C1
-B:                             Lesson C1
-G:_C_S_C1
 *:_C_E_C1
 Q: Do you want to continue to lesson C2 [Y/N] ? 
 N:_C_MENU
-*:_C_M_C2
-B:                             Lesson C2
 G:_C_S_C2
 *:_C_E_C2
 Q: Do you want to continue to lesson C3 [Y/N] ? 
 N:_C_MENU
-*:_C_M_C3
-B:                             Lesson C3
 G:_C_S_C3
 *:_C_E_C3
 Q: Do you want to continue to lesson C4 [Y/N] ? 
 N:_C_MENU
-*:_C_M_C4
-B:                             Lesson C4
 G:_C_S_C4
 *:_C_E_C4
 Q: Do you want to continue to lesson C5 [Y/N] ? 
 N:_C_MENU
-*:_C_M_C5
-B:                             Lesson C5
 G:_C_S_C5
 *:_C_E_C5
 Q: Do you want to continue to lesson C6 [Y/N] ? 
 N:_C_MENU
-*:_C_M_C6
-B:                             Lesson C6
 G:_C_S_C6
 *:_C_E_C6
 Q: Do you want to continue to lesson C7 [Y/N] ? 
 N:_C_MENU
-*:_C_M_C7
-B:                             Lesson C7
 G:_C_S_C7
 *:_C_E_C7
 Q: Do you want to continue to lesson C8 [Y/N] ? 
 N:_C_MENU
-*:_C_M_C8
-B:                             Lesson C8
 G:_C_S_C8
 *:_C_E_C8
 Q: Do you want to continue to lesson C9 [Y/N] ? 
 N:_C_MENU
-*:_C_M_C9
-B:                             Lesson C9
 G:_C_S_C9
 *:_C_E_C9
 Q: Do you want to continue to lesson C10 [Y/N] ? 
 N:_C_MENU
-*:_C_M_C10
-B:                             Lesson C10
 G:_C_S_C10
 *:_C_E_C10
 Q: Do you want to continue to lesson C11 [Y/N] ? 
 N:_C_MENU
-*:_C_M_C11
-B:                             Lesson C11
 G:_C_S_C11
 *:_C_E_C11
 Q: Do you want to continue to lesson C12 [Y/N] ? 
 N:_C_MENU
-*:_C_M_C12
-B:                             Lesson C12
 G:_C_S_C12
 *:_C_E_C12
 G:_C_MENU
@@ -492,18 +479,19 @@ G:_C_MENU
 # Menu
 #------------------------------------------------------------------------------
 *:_C_MENU
+B:                  Colemak touch typing lessons
 M: UP=_EXIT "The C series contains the following 12 lessons"
- :_C_M_C1  "Lesson C1     S, T, N and E"
- :_C_M_C2  "Lesson C2     R and I"
- :_C_M_C3  "Lesson C3     A and O"
- :_C_M_C4  "Lesson C4     D and H"
- :_C_M_C5  "Lesson C5     P and L"
- :_C_M_C6  "Lesson C6     F and U"
- :_C_M_C7  "Lesson C7     W and Y"
- :_C_M_C8  "Lesson C8     G and J"
- :_C_M_C9  "Lesson C9     M and V"
- :_C_M_C10 "Lesson C10    B and K"
- :_C_M_C11 "Lesson C11    Q and C"
- :_C_M_C12 "Lesson C12    Z and X"
+ :_C_S_C1  "Lesson C1     S, T, N and E"
+ :_C_S_C2  "Lesson C2     R and I"
+ :_C_S_C3  "Lesson C3     A and O"
+ :_C_S_C4  "Lesson C4     D and H"
+ :_C_S_C5  "Lesson C5     P and L"
+ :_C_S_C6  "Lesson C6     F and U"
+ :_C_S_C7  "Lesson C7     W and Y"
+ :_C_S_C8  "Lesson C8     G and J"
+ :_C_S_C9  "Lesson C9     M and V"
+ :_C_S_C10 "Lesson C10    B and K"
+ :_C_S_C11 "Lesson C11    Q and C"
+ :_C_S_C12 "Lesson C12    Z and X"
 *:_C_EXIT
 #------------------------------------------------------------------------------

@@ -20,13 +20,15 @@
 #------------------------------------------------------------------------------
 G:_N_MENU
 *:_N_NO_MENU
+
 #------------------------------------------------------------------------------
 # Lesson N1
 #------------------------------------------------------------------------------
 *:N1
 *:_N_S_N1
+B:                             Lesson N1
+
 *:_N_R_L0
-#                                                              ../orig/n.typ:21
 T:
  :			Numeric Keypad Lessons
  :
@@ -48,28 +50,20 @@ T:
  :of your right hand).  Immediately return your finger to the 6 key.  It is very
  :important that you bring the finger back without looking.
 
-#                                                              ../orig/n.typ:22
 I:Use your third finger only.
 *:_N_R_L1
-#                                                              ../orig/n.typ:23
 D:666666
 
-#                                                              ../orig/n.typ:24
 I:Use your second finger for the 5.
 *:_N_R_L2
-#                                                              ../orig/n.typ:25
 D:6565656
 
-#                                                              ../orig/n.typ:26
 I:Use your first finger for the 4.
 *:_N_R_L3
-#                                                              ../orig/n.typ:27
 D:666444555444666
 
-#                                                              ../orig/n.typ:28
 I:Now let's try several lines.
 *:_N_R_L4
-#                                                              ../orig/n.typ:36
 S:666444666
  :444555666
  :555444555
@@ -79,14 +73,11 @@ S:666444666
  :445566555
  :456456456
 
-#                                                              ../orig/n.typ:37
 I:Use your second finger for the period.
 *:_N_R_L5
-#                                                              ../orig/n.typ:38
 D:555...555
 
 *:_N_R_L6
-#                                                              ../orig/n.typ:43
 S:5.54.45.56.6
  :444.555
  :45.56.6
@@ -94,35 +85,28 @@ S:5.54.45.56.6
  :54.65.4
 
 *:_N_R_L7
-#                                                              ../orig/n.typ:48
 S:445566.654
  :654456.546
  :546546.564
  :554466.645
  :555444.666
 
-#                                                              ../orig/n.typ:49
 I:Use your first finger for the 1-key.
 *:_N_R_L8
-#                                                              ../orig/n.typ:50
 D:444111444.444111444
 
 *:_N_R_L9
-#                                                              ../orig/n.typ:55
 S:111.444
  :414.141
  :456.546
  :415.164
  :541.146
 
-#                                                              ../orig/n.typ:56
 I:Now, let's review the keys we've learned.
 *:_N_R_L10
-#                                                              ../orig/n.typ:57
 D:444555666111...555444666111
 
 *:_N_R_L11
-#                                                              ../orig/n.typ:66
 S:414.564
  :546.145
  :546.145
@@ -134,25 +118,23 @@ S:414.564
  :514.651
 
 G:_N_E_N1
+
 #------------------------------------------------------------------------------
 # Lesson N2
 #------------------------------------------------------------------------------
 *:N2
 *:_N_S_N2
-#                                                              ../orig/n.typ:69
+B:                             Lesson N2
+
 I:First, let's review the keys from lesson 1.
 *:_N_R_L12
-#                                                              ../orig/n.typ:70
 D:444.555.666.111.6541.6541
 
-#                                                              ../orig/n.typ:71
 I:Use your 5-finger for the 2 key.
 *:_N_R_L13
-#                                                              ../orig/n.typ:72
 D:555222555.525.525.525
 
 *:_N_R_L14
-#                                                              ../orig/n.typ:79
 S:45.25
  :52.52
  :62.62
@@ -161,14 +143,11 @@ S:45.25
  :12.52
  :24.42
 
-#                                                              ../orig/n.typ:80
 I:Use your 6-finger for the 3 key.
 *:_N_R_L15
-#                                                              ../orig/n.typ:81
 D:666333666.636.636
 
 *:_N_R_L16
-#                                                              ../orig/n.typ:88
 S:456.123
  :321.654
  :666.333
@@ -178,7 +157,6 @@ S:456.123
  :313.434
 
 *:_N_R_L17
-#                                                              ../orig/n.typ:97
 S:12.33
  :45.33
  :65.35
@@ -189,18 +167,14 @@ S:12.33
  :13.36
  :34.31
 
-#                                                              ../orig/n.typ:98
 I:Use your 4-finger for the zero.
 *:_N_R_L18
-#                                                              ../orig/n.typ:99
 D:444000444.401.410
 
 *:_N_R_L19
-#                                                             ../orig/n.typ:100
 D:410.020.030.040.060.104
 
 *:_N_R_L20
-#                                                             ../orig/n.typ:106
 S:12.00
  :23.00
  :51.50
@@ -208,18 +182,14 @@ S:12.00
  :54.00
  :13.04
 
-#                                                             ../orig/n.typ:107
 I:Use your 5-finger for the 8-key.
 *:_N_R_L21
-#                                                             ../orig/n.typ:108
 D:555888555.852.258
 
 *:_N_R_L22
-#                                                             ../orig/n.typ:109
 D:585.080.808.818.282
 
 *:_N_R_L23
-#                                                             ../orig/n.typ:115
 S:81.05
  :84.80
  :88.88
@@ -227,18 +197,14 @@ S:81.05
  :80.18
  :28.38
 
-#                                                             ../orig/n.typ:116
 I:Use your 6-finger for the 9-key.
 *:_N_R_L24
-#                                                             ../orig/n.typ:117
 D:666999666.393.696
 
 *:_N_R_L25
-#                                                             ../orig/n.typ:118
 D:595.989.696.393.295
 
 *:_N_R_L26
-#                                                             ../orig/n.typ:126
 S:.91
  :.90
  :.94
@@ -248,22 +214,17 @@ S:.91
  :.90
  :.95
 
-#                                                             ../orig/n.typ:127
 I:And, the last number is 7. (Use your 4-finger for it.)
 *:_N_R_L27
-#                                                             ../orig/n.typ:128
 D:444777444.0147.7410
 
 *:_N_R_L28
-#                                                             ../orig/n.typ:129
 D:767.737.797.727.707.717
 
 *:_N_R_L29
-#                                                             ../orig/n.typ:130
 D:1234567890.1234567890
 
 *:_N_R_L30
-#                                                             ../orig/n.typ:140
 S:17.19
  :71.70
  :19.37
@@ -276,7 +237,6 @@ S:17.19
  :70.07
 
 *:_N_R_L31
-#                                                             ../orig/n.typ:149
 S:75856
  :87237
  :21570
@@ -288,23 +248,22 @@ S:75856
  :35827
 
 G:_N_E_N2
+
 #------------------------------------------------------------------------------
 # Lesson N3
 #------------------------------------------------------------------------------
 *:N3
 *:_N_S_N3
-#                                                             ../orig/n.typ:152
+B:                             Lesson N3
+
 I:First, let's review all the numbers.
 *:_N_R_L32
-#                                                             ../orig/n.typ:153
 D:1234567890.0987654321
 
 *:_N_R_L33
-#                                                             ../orig/n.typ:154
 D:12.34.56.78.90.10.29.38.47.57
 
 *:_N_R_L34
-#                                                             ../orig/n.typ:165
 S:123.654
  :212.658
  :908.000
@@ -318,7 +277,6 @@ S:123.654
  :321.840
 
 *:_N_R_L35
-#                                                             ../orig/n.typ:178
 S:12345
  :35840
  :25874
@@ -334,7 +292,6 @@ S:12345
  :28469
 
 *:_N_R_L36
-#                                                             ../orig/n.typ:187
 S:1.00
  :2.05
  :3.50
@@ -346,7 +303,6 @@ S:1.00
  :9.50
 
 *:_N_R_L37
-#                                                             ../orig/n.typ:195
 S:879.359
  :286.498
  :357.159
@@ -357,7 +313,6 @@ S:879.359
  :231.879
 
 *:_N_R_L38
-#                                                             ../orig/n.typ:203
 S:100.200
  :258.246
  :369.741
@@ -367,14 +322,11 @@ S:100.200
  :273.194
  :372.973
 
-#                                                             ../orig/n.typ:204
 I:Use any finger of your left hand for the SPACE bar.
 *:_N_R_L39
-#                                                             ../orig/n.typ:205
 D:111 222 333 444 555 666 777 888 999 000
 
 *:_N_R_L40
-#                                                             ../orig/n.typ:211
 S:123 654 879 264
  :128 364 928 187
  :987 234 681 287
@@ -383,7 +335,6 @@ S:123 654 879 264
  :320 487 364 197
 
 *:_N_R_L41
-#                                                             ../orig/n.typ:220
 S:82.01 35
  :28.50 12
  :50.00 79
@@ -401,30 +352,22 @@ G:_N_E_N3
 *:_N_E_N1
 Q: Do you want to continue to lesson N2 [Y/N] ? 
 N:_N_MENU
-G:_N_M_N2
+G:_N_S_N2
 *:_N_E_N2
 Q: Do you want to continue to lesson N3 [Y/N] ? 
 N:_N_MENU
-G:_N_M_N3
+G:_N_S_N3
 *:_N_E_N3
 G:_N_MENU
 
-*:_N_M_N1
-B:                             Lesson N1
-G:_N_S_N1
-*:_N_M_N2
-B:                             Lesson N2
-G:_N_S_N2
-*:_N_M_N3
-B:                             Lesson N3
-G:_N_S_N3
 #------------------------------------------------------------------------------
 # Lesson series N menu
 #------------------------------------------------------------------------------
 *:_N_MENU
+B:                   Calculator keypad lessons
 M: UP=_EXIT "The N series contains the following 3 lessons"
- :_N_M_N1 "Lesson N1     4 5 . 6 1"
- :_N_M_N2 "Lesson N2     2 3 0 8 9 7"
- :_N_M_N3 "Lesson N3     Practise"
+ :_N_S_N1 "Lesson N1     4 5 . 6 1"
+ :_N_S_N2 "Lesson N2     2 3 0 8 9 7"
+ :_N_S_N3 "Lesson N3     Practise"
 *:_N_EXIT
 #------------------------------------------------------------------------------

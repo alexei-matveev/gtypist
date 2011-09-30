@@ -243,7 +243,7 @@ END	{
       else if (series[i] == "T")
 	series_description = "QWERTY touch typing  (T1 - T16)";
       else if (series[i] == "V")
-	series_description = "Yet Another QWERTY   (V1 - V19)";
+	series_description = "Yet more QWERTY      (V1 - V19)";
       else if (series[i] == "U")
 	series_description = "QWERTY Review        (U1 - U13)";
       else if (series[i] == "D")
