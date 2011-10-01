@@ -54,9 +54,9 @@ T:			General Instructions
  :HOME position.  Only these fingers should be used to press the keys that they
  :are above.
  :
- :In addition to these keys, the SPACE bar should be pressed with the thumb of the
- :right hand. At the end of every line, the RETURN key should be pressed with the
- :fourth finger of the right hand.
+ :In addition to these keys, the SPACE bar should be pressed with the thumb of
+ :the right hand. At the end of every line, the RETURN key should be pressed with
+ :the fourth finger of the right hand.
 
 I:(1) S, T, N and E
 *:_C_R_C1_1
@@ -516,14 +516,14 @@ B:                            Lesson C15
 
 T:			Learning punctuation
  :
- :The period/full stop is below the forth finger on the right hand.  Note that the end
- :of a sentence should be followed by two spaces; in abbreviations, it is followed by
- :one space.
+ :The period/full stop is below the forth finger on the right hand.  Note that
+ :the end of a sentence should be followed by two spaces; in abbreviations, it is
+ :followed by one space.
  :
  :The comma is below the third finger on the right hand.
  :
- :The fourth finger of the right hand and the left SHIFT key should be used to type a
- :question point/mark.
+ :The fourth finger of the right hand and the left SHIFT key should be used to
+ :type a question point/mark.
 
 I:(1)
 *:_C_R_C15_1
@@ -564,9 +564,9 @@ B:                            Lesson C16
 
 T:			Frequent words
  :
- :The following 135 words are so frequently used that they comprise 50% of all words
- :normally typed.  If you can type the next two exercises without errors, half of all
- :of your typed words will be correct!
+ :The following 135 words are so frequently used that they comprise 50% of all
+ :words normally typed.  If you can type the next two exercises without errors,
+ :half of all of your typed words will be correct!
 
 I:(1)
 *:_C_R_C16_1
@@ -584,8 +584,8 @@ D:of or on one only or other our out over own people said same see she
  :we well were what when where which while who will with work would
  :years you your
 
-T:We now concentrate on words amongst the top one thousand most frequently used that
- :can be types using only the HOME row.
+T:We now concentrate on words amongst the top one thousand most frequently used
+ :that can be types using only the HOME row.
 
 I:(3)
 *:_C_R_C16_3
