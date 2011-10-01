@@ -249,7 +249,7 @@ END	{
       else if (series[i] == "D")
 	series_description = "Dvorak touch typing  (D1 - D14)";
       else if (series[i] == "C")
-	series_description = "Colemak touch typing (C1 - C12)";
+	series_description = "Colemak touch typing (C1 - C17)";
       else if (series[i] == "M")
 	series_description = "Typing drills        (M1 - M11)";
       else if (series[i] == "S")
