@@ -195,14 +195,15 @@ END	{
   printf("T:\n");
   printf(" :Use the arrow-keys to navigate through the menus.\n");
   printf(" :\n");
-  printf(" :You can repeat a lesson by pressing ESC or skip it by pressing ESC twice.\n");
+  printf(" :Press ESC to exit, repeat or skip a lesson.  If you are half way through a\n");
+  printf(" :drill, pressing ESC will first reset it (so you will have to press it twice).\n");
   printf(" :\n");
+  printf(" :You can access gtypist's manual either by running \"info gtypist\", or by\n");
+  printf(" :loading \"gtypist.html\" in your browser.  The most recent version of the\n");
+  printf(" :manual can also be found here:\n");
+  printf(" :    http://www.gnu.org/software/gtypist/doc/\n");
   printf(" :\n");
-  printf(" :You can access gtypist's manual either by running\n");
-  printf(" :\"info gtypist\" (or \"info '(gtypist)'\" if that doesn't work),\n");
-  printf(" :or by loading \"gtypist.htm\" in your browser (DOS).\n");
-  printf(" :\n");
-  printf(" :If you have comments, suggestions or bug-reports,\n");
+  printf(" :If you have comments, questons, suggestions or bug-reports,\n");
   printf(" :please write to bug-gtypist@gnu.org.\n");
   printf("G:__SERIESMENU\n");
 
