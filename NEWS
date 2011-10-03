@@ -7,8 +7,8 @@ See the `ChangeLog' (top-level and in some subdirectories) and
 Version 2.9
 	- Full UTF-8 support, by Felix Natter <fnatter@gmx.net>
 	- New Colemak typing lessons, by Tim Marston <edam@waxworlds.org>
-  - Many new international lessons imported from KTouch 1.6 and
-    update of the german tipptrainer 0.6.0 lesson
+	- Many new international lessons imported from KTouch 1.6 and
+	  update of the german tipptrainer 0.6.0 lesson
 	- New Spanish manual from smc <smc@manticore.es>
 	- Tracking of personal best scores, by Tim Marston
 	  <edam@waxworlds.org>
