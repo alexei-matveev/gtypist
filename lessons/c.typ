@@ -193,7 +193,7 @@ I:(7)
 D:rash rate rats read rear redo reds reed rein rend rent rest rhea
  :sate sear seas seat seed seen seer sees send sent sera sere sets
  :soot sore sort sots star stir tads tans tare taro tars tart tats
- :tits toad toed toes tone tons toot tore torn tors tort toss tost
+ :toad toed toes tone tons toot tore torn tors tort toss tost
 
 G:_C_E_C5
 
