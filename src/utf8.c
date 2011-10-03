@@ -17,8 +17,15 @@
  * along with this program.  If not, see <http://www.gnu.org/licenses/>.
  */
 
+#include "config.h"
 #include "utf8.h"
+
+#ifdef HAVE_PDCURSES
+#include <curses.h>
+#else
 #include <ncursesw/ncurses.h>
+#endif
+
 #include <stdlib.h>
 #include "gettext.h"
 #define _(String) gettext (String)

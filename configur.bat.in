@@ -1,20 +1,5 @@
 @echo off
 
-echo.
-echo GNU Typist can be built as either a Windows console or DOS application.
-echo Please choose one:
-echo.
-echo [1] Windows (using MinGW)
-echo [2] DOS (using DJGPP)
-echo.
-set /p _config_choice=Enter your choice: 
-echo.
-if "%_config_choice%"=="1" goto windows
-if "%_config_choice%"=="2" goto dos
-echo Invalid choice.
-goto end
-
-:windows
 echo Configuring gtypist @VERSION
 echo Using MinGW and PDCurses
 echo No Native Language Support
@@ -22,48 +7,23 @@ echo Creating src\config.h
 echo /* config.h */> src\config.h
 echo #undef ENABLE_NLS>> src\config.h
 echo #define PACKAGE "gtypist">> src\config.h
-echo #define VERSION "@VERSION">> src\config.h
+echo #define VERSION "2.9beta1">> src\config.h
 echo #define HAVE_PDCURSES>> src\config.h
 echo Creating Makefile
 echo # gtypist: Makefile for MinGW> Makefile
-echo # By Paul Goins: general@vultaire.net>> Makefile
-echo # Based off the makefile generated for DJGPP>> Makefile
 echo #>> Makefile
-echo # Building under MinGW requires PDCurses, available from>> Makefile
-echo # pdcurses.sourceforge.net.  This was tested using a plain PDCurses build>> Makefile
-echo # (static, non-Unicode).  If building PDCurses using the win32\mingwin32.mak>> Makefile
-echo # make file, make sure that Windows copy/del are in your path (mainly an issue>> Makefile
-echo # for MSys users).  Also, the link libs probably will not be preceded with>> Makefile
-echo # "lib", so you'll need to rename pdcurses.a, panel.a to>> Makefile
-echo # libpdcurses.a, libpanel.a by hand.>> Makefile
+echo # Please read INSTALL for help building gtypist with MinGW.>> Makefile
 echo.>> Makefile
 echo # Define the path to a compiled PDCurses library below.>> Makefile
-echo PDCURSES_PATH=c:/devel/pdcurses>> Makefile
+echo PDCURSES_PATH=C:\dev\PDCurses-3.4>> Makefile
 echo.>> Makefile
 echo gtypist.exe:>> Makefile
-echo 	gcc -DMINGW -I$(PDCURSES_PATH) -Isrc -static -s -O2 -o gtypist src/error.c src/script.c src/cursmenu.c src/gtypist.c src/getopt.c src/getopt1.c -L$(PDCURSES_PATH) -lpdcurses -lpanel>> Makefile
+echo 	gcc -DMINGW -DPDC_WIDE -I$(PDCURSES_PATH) -Isrc -static -s -O2 -o gtypist src/error.c src/script.c src/cursmenu.c src/gtypist.c src/getopt.c src/getopt1.c src/utf8.c -L$(PDCURSES_PATH)/win32 -lpdcurses>> Makefile
 echo.
-echo NOTE: Before running make, change the PDCURSES_PATH variable in the Makefile!
+echo IMPORTANT: Before running make, change the PDCURSES_PATH variable in the
+echo Makefile! Type 'notepad Makefile' to edit it.
 echo.
-goto end
-
-:dos
-echo Configuring gtypist @VERSION
-echo Using DJGPP and PDCURSES
-echo No Native Language Support
-echo Creating src\config.h
-echo /* config.h */> src\config.h
-echo #undef ENABLE_NLS>> src\config.h
-echo #define PACKAGE "gtypist">> src\config.h
-echo #define VERSION "@VERSION">> src\config.h
-echo #define HAVE_PDCURSES>> src\config.h
-echo Creating Makefile
-echo # Makefile> Makefile
-echo gtypist.exe: Makefile src\gtypist.c>> Makefile
-echo 	gcc -DDJGPP -I$(PDCURSES_PATH) -Isrc -static -O -o gtypist src\error.c src\script.c src\cursmenu.c src\gtypist.c src\getopt.c src\getopt1.c -L$(PDCURSES_PATH) -lpdcurses -lpanel>> Makefile
-
 goto end
 
 :end
-set _config_choice=
 @echo on

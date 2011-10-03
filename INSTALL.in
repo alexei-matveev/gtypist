@@ -1,58 +1,71 @@
 		GNU Typist @VERSION Installation instructions
 
-This program is designed for UNIXes and Microsoft Windows/DOS, but it can be
-compiled in various environments provided that there is a standard compiler
-and required libraries.
+This program is designed for UNIXes and Microsoft Windows, but it can
+be compiled in various environments provided that there is a standard
+compiler and required libraries.
 
 Compilation under Unix
 ----------------------
 
 In order to compile this program, you must have:
 
-  - A reasonably standard C compiler (and standard C library with corresponding
-    header files of course).
-  - The 'ncurses' or the 'curses' library with corresponding header files
-    installed in convenient places.
+  - A reasonably standard C compiler (and standard C library with
+    corresponding header files of course).
+  - The 'ncursesw' library (with wide-character support) with
+    corresponding header files installed in convenient places.
 
 The instructions are general for most Unix software in source form:
 
 * Uncompress the sources distribution:
 
-  > tar jxvf gtypist-@VERSION.tar.bz2
+  $ tar jxvf gtypist-@VERSION.tar.bz2
   or
-  > tar zxvf gtypist-@VERSION.tar.gz
+  $ tar zxvf gtypist-@VERSION.tar.gz
 
 * Change to the sources directory:
 
-  > cd gtypist-@VERSION
+  $ cd gtypist-@VERSION
 
 * Configure the package:
 
-  > ./configure [you may insert some options here;
-		 run with `--help' to get full list of them.]
+  $ ./configure
+
+  This default configuration will probably be just fine. However, you
+  may add some configuration options to the end of that line.  Run
+  configure with `--help' to get full list of them, like this:
+
+  $ ./configure --help
 
   By default the program executable will be installed in
-  /usr/local/bin and the lessons and internationalization support files in
-  /usr/local/share/gtypist (you can change this with the `--prefix' option).  By
-  default Native Language Support will be installed (but you can disable this
-  with the `--disable-nls' option).
-
+  /usr/local/bin and the lessons and internationalization support
+  files in /usr/local/share/gtypist (you can change this with the
+  `--prefix' option).  By default Native Language Support will be
+  installed (but you can disable this with the `--disable-nls'
+  option).
 
 * Build the package:
 
-  > make
+  $ make
 
 * Get required permissions and install the package:
 
-  > su               # If you've chosen (as by default) to install system-wide.
-  > umask 022        # TODO: is this necessary at all?
-  > make install
+  $ sudo make install
+
+  The sudo program will ask you for the root password to install
+  gtypist system-wide.  If you do not have the root password, you will
+  not be able to install it system-wide.  Instead, you should run
+  configure with something like '--prefix=~/opt' to install it in your
+  home directory.
 
 * To test your installation type
 
-  > gtypist
-  or
-  > /usr/local/bin/gtypist
+  $ gtypist
+
+  If you already had a version of gtypist installed on the system
+  before you installed this one,you may need to explicitly state which
+  one you want to run. So you may need to type:
+
+  $ /usr/local/bin/gtypist
 
 
 Compilation under Windows NT/2000/XP
@@ -60,125 +73,76 @@ Compilation under Windows NT/2000/XP
 
 First, please check to see if there is a Windows build of this version before
 going through the trouble of compiling it yourself!
-  http://ftp.gnu.org/gnu/gtypist/binaries/
+
+  http://ftp.gnu.org/gnu/gtypist/w32_binaries/
 
 If you're still here, then...
 
 You must have:
-- MinGW compiler package, available at
-    http://www.mingw.org/
-  It is advised to use the mingw-installer if you are not familiar with MinGW.
-  The default installation options should be sufficient.
 
-- mingw32-make or MSys.
+  - MinGW compiler package, available at
 
-- A recent version of PDCurses.  The current official binaries of gtypist are
-  compiled using PDCurses 3.3.  It's available at
-    http://pdcurses.sourceforge.net/
-  Compiling PDCurses is outside the scope of these instructions, but here's a
-  few notes:
-  - gtypist was tested with a static, non-Unicode build of PDCurses 3.3.
-  - It's advisable to rename the link libraries from pdcurses.a/panel.a to
-    libpdcurses.a/libpanel.a.
+      http://www.mingw.org/
+
+    It is advised to use the automatec installer (ming-get-inst) if
+    you are not familiar with MinGW.  Make sure you turn on the option
+    to install "MSYS Basic System" and "MinGW Developer Toolkit".
+
+  - mingw32-make or MSys.  If you installed MinGW using the automated
+    installer (as above), you will already have this.
+
+  - A recent version of PDCurses, available at
+
+      http://pdcurses.sourceforge.net/
+
+    The current official binaries of gtypist are compiled using
+    PDCurses 3.4.  We build a static version of the library with
+    Unicode and forced UTF-8 support.  Although building PDCurses is
+    outside the scope of thi document, here is a quick run-through of
+    what to do...
+
+      - unpack PDCurses
+      - cd to the win32 directory
+      - there's a README in here if you need help
+      - type: make -f mingwin32.mak WIDE=Y UTF8=Y
+      - rename the resulting pdcurses.a to libpdcurses.a
+
+To builf GNU Typist:
 
 * Decompress the source distribution.
 
-* Open a command prompt window and change to the sources directory.
+* Open a Windows command prompt window (not a MinGW shell) and change
+  to the sources directory.
+
   > cd gtypist-@VERSION
 
-* Configure the package, and follow the instructions on screen.
+* Configure the package (run configur.bat)
+
   > configur
 
-* Open the created Makefile and specify the path to your PDCurses directory
-  as directed by the comments.
+* Open the created Makefile and specify the path to your PDCurses
+  directory as directed by the comments.
+
   > notepad Makefile
 
 * Compile using make (substitute mingw32-make if desired)
+
   > make
 
-* To install it, you should create a directory (e.g. c:\GTypist) and
-  copy into it the lessons of directory 'lessons' \ and the program
-  gtypist.exe:
+* To install it, you should create a directory (e.g. C:\GTypist) and
+  copy into it the lessons of directory 'lessons' and the program,
+  gtypist.exe.
 
-  > mkdir c:\GTypist
-  > copy gtypist.exe c:\GTypist
-  > copy lessons\*.typ c:\GTypist
+  > mkdir C:\GTypist
+  > copy gtypist.exe C:\GTypist
+  > copy lessons\*.typ C:\GTypist
 
-* To use it go to the directory where you installed it and run gtypist.exe
-  > cd GTypist
+* To use GNU Typist, go to the directory where you installed it and
+  run gtypist.exe
+
+  > C:
+  > cd \GTypist
   > gtypist
-
-
-Compilation under Windows 9x/DOS
---------------------------------
-
-You must have:
-
-- DJGPP compiler.  Available at
-    http://www.delorie.com/djgpp/zip-picker.html
-  You only will need the C compiler.
-
-- Emulation of the curses library pdcurses v2.4.  Available at
-    ftp://ftp.simtel.net/pub/simtelnet/gnu/djgpp/v2tk/pdcur24b.zip
-
-* Decompress the sources distribution
-
-* Open a DOS session, change to the sources directory
-  > cd gtypist-@VERSION
-
-* Configure the package
-  > conf_dos
-
-* Compile
-  > make
-
-* To install it, you should create a directory (e.g. c:\GTypist) and
-  copy into it the lessons of directory 'lessons' \ and the program
-  gtypist.exe:
-
-  > mkdir c:\GTypist
-  > copy gtypist.exe c:\GTypist
-  > copy lessons\*.typ c:\GTypist
-
-* To use it go to the directory where you installed it and run gtypist.exe
-  > cd GTypist
-  > gtypist
-
-
-** Read on if you want to package the DOS-version.
-
-* You might want to remove symbols from gtypist.exe:
-
-  > strip --strip-all gtypist.exe
-
-* Include cwsdpmi.exe and cwsdpmi.doc (the DOS extender, see
-  http://www.delorie.com for details), to support plain DOS
-
-* You need to convert the lessons with a 8bit-characters with a program
-  like "recode" (on GNU/Linux):
-
-  > for i in *.typ
-  > do
-  >   recode latin1..ibmpc $i
-  > done
-
-  (it doesn't hurt to convert all lessons)
-  With old versions of recode (i.e. 3.4.1), you have to use "latin1:ibmpc".
-
-* To generate the HTML manuals, run "autogen.sh" (if not already done).
-  To support DOS, rename "doc/gtypist.html" to "gtypist.htm"
-  and other "doc/gtypist.<lg>.html" manuals to "gtyp_<ll>.htm"
-  (where <ll> is a 2 character language code).
-  Then, create plain text documentation from these files either with
-  Mozilla or "lynx -dump gtypist.htm > gtypist.txt", and convert it to DOS
-  line-endings with recode, for example (see above)
-
-* Copy all the files in one "gtypist" directory and then run
-  > zip -9 -r gtyp@VERSION.zip gtypist
-  (remove the points in gtyp@VERSION and truncate it to 8 chars to support
-  plain DOS)
-  I've had trouble with infozip: zip 2.0.1 did not work,
-  but 2.3 (or above) seems to work.
 
 
 Problems and their solution
@@ -212,18 +176,9 @@ Dvorak Keyboard under GNU/Linux (Ben Armstrong <synrg@sanctuary.nslug.ns.ca>)
 	If you are in X, please visit the Dvorak home page at
 	http://www.mwbrooks.com/dvorak/ for more information.
 
-Keyboard under DOS/Windows:
+Keyboard under Windows:
 
 	* You could experience some problems with the keyboard under
 	  DOS/Windows.  The [Return] key should now work, but the function keys
 	  (F1, F2... F12) may not.  However, this should not affect usage for
 	  most users.
-
-Compilation under DOS without Long File Name support or in Windows NT
-
-	* It is possible.  You only need to rename the library
-	  libpdcurses.a in the lib directory of the DJGPP distribution
-	  to something with less than 8 characters for example
-	  libpdc.a.  Then modify the makefile of gtypist (don't use
-	  edit since it doesn't preserve TABs) and change pdcurses
-	  with pdc.  Finally compile and use it!
