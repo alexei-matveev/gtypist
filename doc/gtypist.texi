@@ -993,13 +993,6 @@ and the value of @code{TERM} is correct, check into this.
 @node Errors and omissions, History, Environment Variables, Top
 @chapter Errors and omissions
 
-GNU Typist does not support multi-byte character encoding yet (such as UTF-8).
-To see all the characters in some lesson files, you have to make sure that
-your terminal is run in such an environment in which the LANG variable
-is not set to an UTF-8 encoding. Lazy users can also try just try to
-run GNU Typist on another type of terminal. It sometimes works.
-
-
 GNU Typist does not go to much effort to minimize terminal output. In
 particular, the flashing block cursor can cause a lot of cursor
 movement. Using the terminal's own cursor will help if this becomes a
@@ -1012,6 +1005,9 @@ is purely to simplify screen updating.
 Colour curses modes do not seem to work well with UnixWare. In
 particular, reverse video is not always rendered correctly on some
 terminal types, and xterms.
+
+Please see the TODO file in the source distribution for more
+things that need to be fixed.
 
 @node History, Copying this manual, Errors and omissions, Top
 @appendix History of GNU Typist
@@ -1065,7 +1061,7 @@ maintainership of GNU Typist, adding a few enhancements (especially building
 under Windows with MinGW), making some documentation updates and changing the
 license to GPL version 3.
 @item
-In December 2011, @email{edam@@waxworlds.org, Tim Marston} took over
+In December 2010, @email{edam@@waxworlds.org, Tim Marston} took over
 maintainership of GNU Typist, adding some enhancements and support for
 the Colemak keyboard layout.
 @end itemize
