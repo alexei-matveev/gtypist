@@ -83,6 +83,9 @@ SHORT TERM
 
  * allow strings from a .typ file to be translated
    (things like "lesson: ")
+  
+ * display a "return" symbol at the end of each line to avoid
+   confusion with "space"
 
 MEDIUM TERM
 
