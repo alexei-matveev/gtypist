@@ -81,6 +81,9 @@ SHORT TERM
  * Add configuration file support. Should be very useful,
    in particular for teachers!
 
+ * allow strings from a .typ file to be translated
+   (things like "lesson: ")
+
 MEDIUM TERM
 
  * Improve the interface by adding 2 interfaces:
