@@ -2294,7 +2294,7 @@ bool get_best_speed( const char *script_filename,
       if( !strncmp( search, line + 19, search_len ) &&
 	  sscanf( line + 19 + search_len, "%lg", adjusted_cpm ) == 1 )
 	{
-	  found = true;
+	  found = TRUE;
 	}
     }
 
