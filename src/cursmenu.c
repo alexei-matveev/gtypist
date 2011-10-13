@@ -356,6 +356,14 @@ char *do_menu (FILE *script, char *line)
       wattroff (stdscr, A_REVERSE);
 
       ch = wgetch (stdscr);
+
+#ifdef HAVE_PDCURSES
+      /* this is necessary for DOS: when using raw(), PDCurses's
+         wgetch() returns 0x0D on DOS/Windows  */
+      if ( ch == 0x0D )
+        ch = 0x0A;
+#endif
+
       switch (ch)
 	{
 	case KEY_UP:
@@ -406,10 +414,7 @@ char *do_menu (FILE *script, char *line)
 
 	  break;
 
-	case '\n':
-#ifdef PDCURSES_ENTER_KEY_FIX
-	case '\x0D':
-#endif
+	case ASCII_NL:
 	case ASCII_SPACE:
 	  ch = KEY_ENTER;
 	case KEY_ENTER:

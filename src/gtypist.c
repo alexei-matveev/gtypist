@@ -80,9 +80,6 @@ char *MODE_SPEEDTEST;
 #define	QUERY_N			'N'
 #define	DRILL_CH_ERR		'^'
 #define	DRILL_NL_ERR		'<'
-/* this is needed in wait_user
-   DJGPP defines '\n' as 0x0A, but pdcurses 2.4 returns 0x0D (because
-   raw() is called) */
 char *WAIT_MESSAGE;
 char *ERROR_TOO_HIGH_MSG;
 char *SKIPBACK_VIA_F_MSG;
@@ -110,11 +107,7 @@ wchar_t *RNE;
 #ifdef MINGW
 #define BESTLOG_FILENAME    "gtypist-bestlog"
 #else
-#ifdef DJGPP
-#define BESTLOG_FILENAME    "gtypist-bestlog"
-#else
 #define BESTLOG_FILENAME    ".gtypist-bestlog"
-#endif
 #endif
 
 
@@ -133,6 +126,11 @@ static short	colour_array[] = {
                                 addch( (unsigned char)X ); \
 				attroff( A_REVERSE ); } while ( 0 )
 #define	ADDCH(X)		addch( (unsigned char) X )
+
+#ifdef MINGW
+#define MIN( a, b ) ( ( a ) < ( b )? ( a ) : ( b ) )
+#define MAX( a, b ) ( ( a ) > ( b )? ( a ) : ( b ) )
+#endif
 
 /* command line options/values */
 static bool     cl_error_max_specified = FALSE; /* is --error-max specified? */
@@ -356,6 +354,12 @@ getch_fl( int cursor_char )
         }
     }
 
+#ifdef HAVE_PDCURSES
+  /* on windows, PDCurses returns 0x0004000d when you press return for
+   * some reason */
+  return_char &= 0x0ffff;
+#endif
+
   /* return what key was pressed */
   return ( return_char );
 }
@@ -379,6 +383,13 @@ static bool wait_user (FILE *script, char *message, char *mode)
   do {
     resp = getch_fl (ASCII_NULL);
 
+#ifdef HAVE_PDCURSES
+    /* this is necessary for DOS: when using raw(), PDCurses's
+       getch_fl() returns 0x0D on DOS/Windows  */
+    if ( resp == 0x0D )
+      resp = 0x0A;
+#endif
+
     /* in tutorial mode only, escape has the special purpose that we exit to a
        menu (or quit if there is none) */
     if (resp == ASCII_ESC && mode == MODE_TUTORIAL)
@@ -393,7 +404,7 @@ static bool wait_user (FILE *script, char *message, char *mode)
 	do_exit( script );
       break;
     }
-  } while (resp != ASCII_ENTER && resp != ASCII_SPACE && resp != ASCII_ESC);
+  } while (resp != ASCII_NL && resp != ASCII_SPACE && resp != ASCII_ESC);
 
   /* clear the message line */
   move( MESSAGE_LINE, 0 ); clrtoeol();
@@ -691,8 +702,8 @@ do_drill( FILE *script, char *line ) {
             }
           while ( rc == KEY_BACKSPACE || rc == ASCII_BS || rc == ASCII_DEL );
 
-#ifdef PDCURSES_ENTER_KEY_FIX
-          /* this is necessary for DOS: when using raw(), pdcurses 2.4's
+#ifdef HAVE_PDCURSES
+          /* this is necessary for DOS: when using raw(), PDCurses's
              getch() returns 0x0D on DOS/Windows  */
           if ( rc == 0x0D )
             rc = 0x0A;
@@ -976,8 +987,8 @@ do_speedtest( FILE *script, char *line ) {
         {
           rc = getch_fl( (*widep != ASCII_NL) ? *widep : ASCII_SPACE );
 
-#ifdef PDCURSES_ENTER_KEY_FIX 
-          /* this is necessary for DOS: when using raw(), pdcurses 2.4's
+#ifdef HAVE_PDCURSES
+          /* this is necessary for DOS: when using raw(), PDCurses's
              getch() returns 0x0D on DOS/Windows  */
           if ( rc == 0x0D )
             rc = 0x0A;

@@ -50,11 +50,6 @@
 #define C_ON_FAILURE_SET        'F'
 #define C_MENU                  'M'
 
-#ifdef PDCURSES_ENTER_KEY_FIX
-#define ASCII_ENTER             0x0D
-#else
-#define ASCII_ENTER             '\n'
-#endif
 #define	ASCII_NL		'\n'
 #define	ASCII_NULL		'\0'
 #define	ASCII_ESC		27
