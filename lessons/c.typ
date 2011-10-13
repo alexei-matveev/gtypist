@@ -31,8 +31,8 @@ B:                             Lesson C1
 T:			Welcome to the Colemak Course
  :
  :This course is intended for beginners as well as experienced typists.  The
- :Colemak keyboard is an alternative to the QWERTY (Sholes) keyboard layout. You
- :will find it easier to learn than the QWERTY and Dvorak keyboard layouts.
+ :Colemak keyboard is an alternative to the QWERTY (Sholes) keyboard layout.
+ :You will find it easier to learn than the QWERTY and Dvorak keyboard layouts.
  :
  :Like the Dvorak keyboard, this is because the Colemak keyboard layout has been
  :scientifically designed to minimise cumulative finger motion while typing
@@ -57,8 +57,8 @@ T:			General Instructions
  :are above.
  :
  :In addition to these keys, the SPACE bar should be pressed with the thumb of
- :the right hand. At the end of every line, the RETURN key should be pressed with
- :the fourth finger of the right hand.
+ :the right hand.  At the end of every line, the RETURN key should be pressed
+ :with the fourth finger of the right hand.
 
 I:(1) S, T, N and E
 *:_C_R_C1_1
@@ -402,7 +402,7 @@ B:                             Lesson C12
 
 T:			General Instructions
  :
- :The Q-key should be pressed only by fourth finger on the left hand. The C-key
+ :The Q-key should be pressed only by fourth finger on the left hand.  The C-key
  :should only be pressed by the second finger on the left hand.
 
 I:(1) Q and C

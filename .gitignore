@@ -13,8 +13,9 @@ intl
 *.m4
 *.gmo
 *.sed
-*.bz2
 *.gz
+*.bz2
+*.xz
 conf*
 !conf_dos.bat.in
 !configur.bat.in

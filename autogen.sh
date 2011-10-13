@@ -32,6 +32,14 @@ echo "Checking for required tools..."
     exit 1
 }
 
+(autopoint --version) < /dev/null > /dev/null 2>&1 || {
+    echo
+    echo "**Error**: You must have \`autopoint' (part of gettext) installed."
+    echo "Get ftp://ftp.gnu.org/gnu/gettext/gettext-0.12.1.tar.gz"
+    echo "(or a newer version if it is available)"
+    exit 1
+}
+
 (help2man --version) < /dev/null > /dev/null 2>&1 || {
     echo
     echo "**Error**: You must have \`help2man' installed."
@@ -39,7 +47,6 @@ echo "Checking for required tools..."
     echo "(or a newer version if it is available)"
     exit 1
 }
-
 
 (makeinfo --version) < /dev/null > /dev/null 2>&1 || {
     echo
@@ -55,10 +62,17 @@ gettext_exe=`which gettext`
 gettext_bin=`dirname $gettext_exe`
 gettext_home=`dirname $gettext_bin`
 gettexth=$gettext_home/share/gettext/gettext.h
-if [ ! -r $gettexth ]; then
+if [ ! -r "$gettexth" ]; then
    echo "Couldn't find gettext.h"
    echo "Looking for gettext.h in /usr/ ..."
    gettexth=`find /usr/ -name gettext.h -print`
+fi
+if [ ! -r "$gettexth" ]; then
+    echo
+    echo "**Error**: Can not find gettext.h on your system."
+    echo "Get ftp://ftp.gnu.org/gnu/gettext/gettext-0.12.1.tar.gz"
+    echo "(or a newer version if it is available)"
+    exit 1
 fi
 
 echo "Copying gettext.h from $gettexth"

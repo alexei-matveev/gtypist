@@ -1,7 +1,7 @@
 # Process this file with autoconf to produce a configure script.
 
 AC_INIT([GNU Typist], [esyscmd(./version.sh)], [bug-gtypist@gnu.org], [gtypist])
-AM_INIT_AUTOMAKE([1.8.2 gnu dist-bzip2])
+AM_INIT_AUTOMAKE([1.8.2 gnu dist-xz])
 AC_CONFIG_SRCDIR([src/gtypist.c])
 AM_CONFIG_HEADER([config.h])
 
