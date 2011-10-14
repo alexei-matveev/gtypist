@@ -2229,9 +2229,7 @@ int main( int argc, char **argv )
 }
 
 void do_bell() {
-#ifdef MINGW
-  MessageBeep( -1 );
-#else
+#ifndef MINGW
   putchar( ASCII_BELL );
   fflush( stdout );
 #endif
