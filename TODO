@@ -16,25 +16,13 @@ IMMEDIATELY (for 2.9 release)
 
  * Testing: need to test lessons/cs.typ conversion to UTF-8
 
- * Testing: build and test on Windows, or we may have to (officially,
-   at least) drop Windows support.
-
 SHORT TERM
 
- * Show the label of the last exercise one exit (so that the user can easily
+ * Show the label of the last exercise on exit (so that the user can easily
    return to it using -l)
 
  * Show a warning when caps lock is active
 
- * In the older courses converted to use menus introduced in 2.7,
-   banners sometimes don't change when you return to upper-level menus
-   from lower-level ones, because corresponding B command does not
-   occur in the right place (with respect to current syntax).  For
-   example, try to select lesson Q1, immediately press ESCAPE, and see
-   that banner is still "Lesson Q1".  This can be fixed manually, but
-   it's perhaps better to wait until a new structured syntax will come
-   along with smart conversion utility.
- 
  * Show correct line numbers when nonexistent label was hit in the M command.
 
  * I'd like an option that only enabled wordwrapping.  The -w option does
@@ -62,9 +50,6 @@ SHORT TERM
    includes both Drills (translated by "Exercice") and
    Speed tests ("Tests de vitesse").
 
- * Standardize lesson file names, using standards for languages and
-   keyboard types.
-
  * Make a separate package for lessons, so that lessons
    compatible with a given gtypist version can be released
    without having to release the tool again.
@@ -84,9 +69,6 @@ SHORT TERM
  * allow strings from a .typ file to be translated
    (things like "lesson: ")
   
- * display a "return" symbol at the end of each line to avoid
-   confusion with "space"
-
 MEDIUM TERM
 
  * Improve the interface by adding 2 interfaces:
