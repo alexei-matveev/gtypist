@@ -1,3 +1,11 @@
+2011-10-14 Tim Marston <edam@waxworlds.org>
+
+	* gtypist.c, cursmenu.c, script.h: minor fixes to get gtypist to
+	  build under MinGW
+	* gtypist.c: removed call to MessageBeep() on windows, since it just
+	  corrupts the stack! Currently we don't beep on error on windows, as
+	  sending ASCII_BELL to the terminal just pauses and does no "bell".
+
 2011-08-07 Felix Natter <fnatter@gmx.net>
 
 	* utf8.c: new wchar_t* widen(char*) helper function
