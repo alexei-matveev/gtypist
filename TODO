@@ -33,6 +33,9 @@ SHORT TERM
  * Make sure that all source files come with a suitable copyright
    statement (may be different with lessons?)
 
+ * display a "return" symbol at the end of each line to avoid
+   confusion with "space"
+
  * Make sure that the numpad's [ENTER] key is accepted
    in numpad lessons.
    (Reported by gherald@myway.com)
