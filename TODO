@@ -31,6 +31,10 @@ SHORT TERM
      * we have special T:[BEGINNER] commands that are only executed in
        beginner mode
 
+ * emit warning when using non-UTF8 locale
+
+ * put the most current manual on the GNU.org webpage
+
  * Show the label of the last exercise on exit (so that the user can easily
    return to it using -l)
 
@@ -85,7 +89,15 @@ SHORT TERM
  * allow strings from a .typ file to be translated
    (things like "lesson: ")
   
+ * Mac OS X Package? => there is already macports or similar!
+
+ * fix multibyte lessons in MinGW port
+
+ * Test wpemu option in combination with multibyte lessons
+
 MEDIUM TERM
+
+ * Windows installer, shortcuts for different lessons and manual?
 
  * Improve the interface by adding 2 interfaces:
 
