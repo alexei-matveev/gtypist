@@ -1,175 +1,173 @@
 -------------------------------------------------------------------------
 THINGS TO DO for GNU Typist
 
-See our latest TODO file on 
+See our latest TODO file at
 http://git.savannah.gnu.org/gitweb/?p=gtypist.git;a=blob_plain;f=TODO;hb=master
+
+If you are interested in helping for some of the below items, we will
+be glad to have you in the development team!
+
+You can contact us by writing to bug-gtypist@gnu.org. Your suggestions
+are welcome too!
 
 -------------------------------------------------------------------------
 
-If you are interested in helping for some of the below items,
-we will be glad to have you in the development team!
+FOR 2.9 RELEASE
 
-You can contact us by writing to bug-gtypist@gnu.org.
-Your suggestions are welcome too!
+  * Lessons are now in UTF-8, terminals may not be. We need to either
+    a) emit a warning when using non-UTF8 locale, or b) convert the
+    output to the correct format on-the-fly, as gettet does.
 
-IMMEDIATELY (for 2.9 release)
+  * put the most current manual on the GNU.org webpage
 
- * Testing: need to test lessons/cs.typ conversion to UTF-8
+FOR 2.9.1 RELEASE
+
+  * fix UTF-8 lessons in MinGW port
+
+FOR 2.10 RELEASE
+
+  * Testing: need to test lessons/cs.typ conversion to UTF-8
+
+  * add a "beginner mode" which is enabled by default, and can be turned off
+    by --expert/-x
+    * this would explicitly show "return characters" (patch exists)
+    * this would set -e 10
+    * includes a help page that explains drills/speedtests, how to resize a
+      terminal window, ...
+    * how is that help page shown?
+      * either we have a beginner.typ that is executed before gtypist.typ
+        in beginner mode (requires switching of *.typ during runtime!), OR
+      * we have special T:[BEGINNER] commands that are only executed in
+        beginner mode
+
+  * Show correct line numbers when nonexistent label was hit in the M command.
 
 SHORT TERM
 
- * for 2.9.1:
-   add a "beginner mode" which is enabled by default, and can be turned off
-   by --expert/-x
-   * this would explicitly show "return characters" (patch exists)
-   * this would set -e 10
-   * includes a help page that explains drills/speedtests, how to resize a
-     terminal window, ...
-   * how is that help page shown?
-     * either we have a beginner.typ that is executed before gtypist.typ
-       in beginner mode (requires switching of *.typ during runtime!), OR
-     * we have special T:[BEGINNER] commands that are only executed in
-       beginner mode
+  * Show the label of the last exercise on exit (so that the user can
+    easily return to it using -l). Currently, restarting at one of
+    these labels won't set the banner, though.
 
- * emit warning when using non-UTF8 locale
+  * Show a warning when caps lock is active
 
- * put the most current manual on the GNU.org webpage
+  * I'd like an option that only enabled wordwrapping.  The -w option does
+    enable wordwrapping, but it also changes how paragraph breaks and
+    spaces after periods are handled, which I don't want.
+    Requested by Adam Olsen <rhamph@d2dc.net>
 
- * Show the label of the last exercise on exit (so that the user can easily
-   return to it using -l)
+  * Make sure that all source files come with a suitable copyright
+    statement (may be different with lessons?)
 
- * Show a warning when caps lock is active
+  * Make sure that the numpad's [ENTER] key is accepted in numpad
+    lessons. (Reported by gherald@myway.com)
 
- * Show correct line numbers when nonexistent label was hit in the M command.
+  * Another idea is to generate our lessons files directly in our
+    format from spelling dictionaries, as they do in KTouch.
 
- * I'd like an option that only enabled wordwrapping.  The -w option does
-   enable wordwrapping, but it also changes how paragraph breaks and
-   spaces after periods are handled, which I don't want.
-   Requested by Adam Olsen <rhamph@d2dc.net>
+  * Reuse lessons from dvorak7min and possibly other typing tutors.
 
- * Make sure that all source files come with a suitable copyright
-   statement (may be different with lessons?)
+  * Replace 'getopt' by 'GNU gengetopt'
 
- * display a "return" symbol at the end of each line to avoid
-   confusion with "space"
+  * Improve the French translation of "lesson file", which includes
+    both Drills (translated by "Exercice") and Speed tests ("Tests de
+    vitesse").
 
- * Make sure that the numpad's [ENTER] key is accepted
-   in numpad lessons.
-   (Reported by gherald@myway.com)
+  * Make a separate package for lessons, so that lessons compatible
+    with a given gtypist version can be released without having to
+    release the tool again.  This is already done by other packages:
+    gimp plug-ins or TeTeX fonts are released separately.
 
- * Another idea is to generate our lessons files
-   directly in our format from spelling dictionaries,
-   as they do in KTouch.
+    This is definitely need for this tool, for which tutorial files
+    are at least as valuable as the raw program itself.
 
- * Reuse lessons from dvorak7min and possibly other
-   typing tutors.
+  * Provide a variant of the `n.typ' calculator keypad lesson, in
+    which the `.' character is replaced by `,'. Useful for some
+    european keyboards.
 
- * Replace 'getopt' by 'GNU gengetopt'
+  * Add configuration file support. Should be very useful, in
+    particular for teachers!
 
- * Improve the French translation of "lesson file", which
-   includes both Drills (translated by "Exercice") and
-   Speed tests ("Tests de vitesse").
-
- * Make a separate package for lessons, so that lessons
-   compatible with a given gtypist version can be released
-   without having to release the tool again.
-   This is already done by other packages: gimp plug-ins or
-   TeTeX fonts are released separately. 
-
-   This is definitely need for this tool, for which tutorial
-   files are at least as valuable as the raw program itself.
-
- * Provide a variant of the `n.typ' calculator keypad lesson,
-   in which the `.' character is replaced by `,'. Useful for some
-   european keyboards.
-
- * Add configuration file support. Should be very useful,
-   in particular for teachers!
-
- * allow strings from a .typ file to be translated
-   (things like "lesson: ")
+  * allow strings from a .typ file to be translated (things like
+    "lesson: ")
   
- * Mac OS X Package? => there is already macports or similar!
+  * Mac OS X Package? => there is already macports or similar!
 
- * fix multibyte lessons in MinGW port
 
- * Test wpemu option in combination with multibyte lessons
+  * Test wpemu option in combination with multibyte lessons
 
 MEDIUM TERM
 
- * Windows installer, shortcuts for different lessons and manual?
+  * Windows installer, shortcuts for different lessons and manual?
 
- * Improve the interface by adding 2 interfaces:
+  * Improve the interface by adding 2 interfaces:
 
-   * Graphical interface (Probably GTK)
+    * Graphical interface (Probably GTK)
 
-     The benefits we can expect from a GTK interface are:
+      The benefits we can expect from a GTK interface are:
 
-     - Much attractive than the `ncurses' interface. 
-     - Not using `ncurses' should avoid problems supporting different
-       terminal types.
-     - We could have a graphical control panel, to change settings that
-       are so far only available in the command line (keyboard type,
-       silent mode...)
-     - Easy access to help and manual
-     - Could still be compiled on Win32 on which GTK has been ported.
+      - Much attractive than the `ncurses' interface. 
+      - Not using `ncurses' should avoid problems supporting different
+        terminal types.
+      - We could have a graphical control panel, to change settings
+        that are so far only available in the command line (keyboard
+        type, silent mode...)
+      - Easy access to help and manual
+      - Could still be compiled on Win32 on which GTK has been ported.
   
-   * Audio interface
+    * Audio interface
 
-     Could use a system like Speech Dispatcher to read the
-     lessons for visually impaired people or people living
-     in very dense fog. 
+      Could use a system like Speech Dispatcher to read the lessons
+      for visually impaired people or people living in very dense fog.
 
-     We could also support audio typing exercises.
-     Users would type from a text read by a speaker.
-     Several audio files would be need, according to
-     the language and the targeted typing speeded.
-     That would be useful for people like secretaries and journalists.
+      We could also support audio typing exercises.  Users would type
+      from a text read by a speaker.  Several audio files would be
+      need, according to the language and the targeted typing speeded.
+      That would be useful for people like secretaries and
+      journalists.
 
-   All this could be implemented in a clean way by implementing
-   an event based mechanism. The core application could send
-   interface messages to a generic interface manager, which could
-   according to user settings, ask the graphical, text or audio
-   interface to send it to the user.
+      All this could be implemented in a clean way by implementing an
+      event based mechanism. The core application could send interface
+      messages to a generic interface manager, which could according
+      to user settings, ask the graphical, text or audio interface to
+      send it to the user.
 
-   Specifications are on going. 
+      Specifications are on going. 
 
- * Add support for saving the last lesson (or part of a lesson) the user was
-   working on, so the user can easily pick up where s/he left off.
-   (idea by Enrique Pedroso)
+  * Add support for saving the last lesson (or part of a lesson) the
+    user was working on, so the user can easily pick up where s/he
+    left off.  (idea by Enrique Pedroso)
 
- * Improve the documentation of course files
+  * Improve the documentation of course files
 
- * Broaden our lesson database:
+  * Broaden our lesson database:
 
-   - Create new lessons for other languages and keyboard types. 
-   - Translate lessons in other languages (for languages
-     that share the same keyboard, you can reuse instructions
-     and drills) 
-   - We can also look for teachers who are ready to contribute
-     lessons or let us reuse theirs...
-   - Reuse lessons from old typing teaching books which
-     copyrights have expired (how much time does it take?).
-   - This will most likely require UTF-8 support
+    - Create new lessons for other languages and keyboard types. 
+    - Translate lessons in other languages (for languages that share
+      the same keyboard, you can reuse instructions and drills)
+    - We can also look for teachers who are ready to contribute
+      lessons or let us reuse theirs...
+    - Reuse lessons from old typing teaching books which copyrights
+      have expired (how much time does it take?).
+    - This will most likely require UTF-8 support
 
- * Better typing statistics.  Speed and accuracy for individual keys, 
-   and individual fingers. This helps to indicate where extra practice
-   may be useful to the user (see Jtypist which displays this as
-   graphical bars, using color to indicate areas that need work).
-   A measure of typing rhythm would also be useful.
+  * Better typing statistics.  Speed and accuracy for individual keys,
+    and individual fingers. This helps to indicate where extra
+    practice may be useful to the user (see Jtypist which displays
+    this as graphical bars, using color to indicate areas that need
+    work).  A measure of typing rhythm would also be useful.
 
- * Emulate other keyboard types.  For example, Jtypist can pretend that
-   you have a French, German, or Dvorak keyboard on the system even
-   if you don't.  It will translate keypresses between keyboard types
-   before checking them for correctness, and registering timings.
-   This work requires that the program should have keyboard layout
-   maps available to it, and arises as a result of maintaining typing
-   statistics by key and by finger (the program needs to know what
-   key is operated by which finger).
+  * Emulate other keyboard types.  For example, Jtypist can pretend
+    that you have a French, German, or Dvorak keyboard on the system
+    even if you don't.  It will translate keypresses between keyboard
+    types before checking them for correctness, and registering
+    timings.  This work requires that the program should have keyboard
+    layout maps available to it, and arises as a result of maintaining
+    typing statistics by key and by finger (the program needs to know
+    what key is operated by which finger).
 
 LONG TERM
 
- * While typing, graphically show the finger that is supposed to be used.
+  * While typing, graphically show the finger that is supposed to be used.
 
- * Read lessons in the file formats of other free typing tutors
-   (such as Jtypist).
+  * Read lessons in the file formats of other free typing tutors (such
+    as Jtypist).

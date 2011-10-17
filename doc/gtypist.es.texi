@@ -33,7 +33,7 @@ Software Foundation raise funds for GNU development.''
 
 @dircategory Education
 @direntry Education
-* GNU-GTypist: (gtypist.es).    Documentación del tutor mecanográfico gtypist.
+* GNU Typist (es): (gtypist.es). Documentación del tutor mecanográfico gtypist.
 @end direntry
 
 @titlepage
