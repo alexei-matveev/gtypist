@@ -203,7 +203,7 @@ void get_script_line( FILE *script, char *line )
         line [strlen (line) - 1] = ASCII_NULL;
 
       // input is UTF-8 !!
-      int numChars = mbslen(line);
+      int numChars = utf8len(line);
       if (numChars == -1)
         fatal_error( _("Invalid multibyte sequence (wrong encoding?)"), line);
       if ( numChars < MIN_SCR_LINE )
@@ -214,7 +214,7 @@ void get_script_line( FILE *script, char *line )
 	   && SCR_COMMAND( line ) != C_GOTO 
 	   && SCR_COMMAND( line ) != C_YGOTO
 	   && SCR_COMMAND( line ) != C_NGOTO
-           && mbslen(SCR_DATA( line )) > COLS )
+           && utf8len(SCR_DATA( line )) > COLS )
 	fatal_error( _("line too long for screen"), line );
     }
 }

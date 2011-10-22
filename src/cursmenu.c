@@ -267,7 +267,7 @@ char *do_menu (FILE *script, char *line)
   /* get the longest description */
   max_width = 0;
   for (i = 0; i < num_items; i++)
-    max_width = max (max_width, mbslen (descriptions[i]));
+    max_width = max (max_width, utf8len (descriptions[i]));
 
   /* compute the number of columns */
   columns = COLS / (max_width + 2); /* maximum number of columns possible */
@@ -312,12 +312,12 @@ char *do_menu (FILE *script, char *line)
   // The menu title
   wattron (stdscr, A_BOLD);
   attron (COLOR_PAIR (C_MENU_TITLE));
-  mvwaddstr (stdscr, 2, (80 - mbslen (title)) / 2, title);
+  mvwideaddstr (2, (80 - utf8len (title)) / 2, title);
   attron (COLOR_PAIR (C_NORMAL));
   wattroff (stdscr, A_BOLD);
 
   // The prompt at the bottom of the screen
-  mvwaddstr (stdscr, LINES - 1, 0,
+  mvwideaddstr (LINES - 1, 0,
 		_(
 "Use arrowed keys to move around, "
 "SPACE or RETURN to select and ESCAPE to go back")
@@ -344,11 +344,10 @@ char *do_menu (FILE *script, char *line)
 		 i=2: 3*spacing + 2*max_width
 		 i=3: 4*spacing + 3*max_width
 		 => (i+1)*spacing + i*max_width */
-	      mvwaddstr (stdscr,
-			 start_y + j,
+	      mvwideaddstr (start_y + j,
 			 (i + 1) * spacing + i * max_width,
 			 descriptions[idx]);
-	      for (k = max_width - mbslen (descriptions[idx]); k > 0; k--)
+	      for (k = max_width - utf8len (descriptions[idx]); k > 0; k--)
 		waddch (stdscr, ' ');
 	    }
 	}
