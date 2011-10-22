@@ -55,6 +55,11 @@
 
 char *COPYRIGHT;
 
+/* character to be display to represent "enter key" */
+/* TODO: this requires beginner mode!
+#define RETURN_CHARACTER 0x000023CE */
+#define RETURN_CHARACTER 0x00000020 
+
 /* a definition of a boolean type */
 #ifndef bool
 #define bool			int
@@ -68,7 +73,6 @@ char *COPYRIGHT;
 #define DP_TOP_LINE		(I_TOP_LINE + 2)
 #define	SPEED_LINE		(LINES - 5)
 
-
 /* mode indicator strings */
 char *MODE_TUTORIAL;
 char *MODE_QUERY;
@@ -79,7 +83,7 @@ char *MODE_SPEEDTEST;
 #define	QUERY_Y			'Y'
 #define	QUERY_N			'N'
 #define	DRILL_CH_ERR		'^'
-#define	DRILL_NL_ERR		'<'
+#define	DRILL_NL_ERR		'^'
 char *WAIT_MESSAGE;
 char *ERROR_TOO_HIGH_MSG;
 char *SKIPBACK_VIA_F_MSG;
@@ -676,11 +680,14 @@ do_drill( FILE *script, char *line ) {
           if ( *widep != ASCII_NL )
             wideaddch(*widep);
           else
-            {
+          {
+              /* emit return character */
+              wideaddch(RETURN_CHARACTER);
+
               /* newline - move down the screen */
               linenum++; linenum++;	/* alternate lines */
               move( linenum, 0 );
-            }
+          }
         }
       move( MESSAGE_LINE, COLS - mbslen( MODE_DRILL ) - 2 );
       ADDSTR_REV( MODE_DRILL );
@@ -734,7 +741,10 @@ do_drill( FILE *script, char *line ) {
                       chars_in_the_line_typed ++;
                     }
                   else
-                    chars_in_the_line_typed = 0;
+                    {
+                      wideaddch(RETURN_CHARACTER);
+                      chars_in_the_line_typed = 0;
+                    }
                 }
             }
           else
@@ -968,6 +978,9 @@ do_speedtest( FILE *script, char *line ) {
             }
           else
             {
+              /* emit return character */
+              wideaddch(RETURN_CHARACTER);
+
               /* newline - move down the screen */
               linenum++;
               move( linenum, 0 );
@@ -985,7 +998,7 @@ do_speedtest( FILE *script, char *line ) {
       for ( chars_typed = 0, errors = 0, error_sync = 0;
             *widep != ASCII_NULL; widep++ )
         {
-          rc = getch_fl( (*widep != ASCII_NL) ? *widep : ASCII_SPACE );
+          rc = getch_fl( (*widep != ASCII_NL) ? *widep : RETURN_CHARACTER );
 
 #ifdef HAVE_PDCURSES
           /* this is necessary for DOS: when using raw(), PDCurses's
@@ -1021,9 +1034,18 @@ do_speedtest( FILE *script, char *line ) {
           /* check that the character was correct */
           if ( rc == *widep
                || ( cl_wp_emu && rc == ASCII_SPACE && *widep == ASCII_NL ))
-            wideaddch(rc);
-          else
+          { /* character is correct */
+            if (*widep == ASCII_NL)
             {
+                wideaddch(RETURN_CHARACTER);
+            }
+            else
+            {
+                wideaddch(rc);
+            }
+          }
+          else 
+            { /* character is incorrect */
               /* try to sync with typist behind */
               if ( error_sync >= 0 && widep > wideData && rc == *(widep-1) )
                 {
@@ -1031,7 +1053,7 @@ do_speedtest( FILE *script, char *line ) {
                   continue;
                 }
 
-              wideaddch_rev(*widep == ASCII_NL ? DRILL_NL_ERR : *widep);
+              wideaddch_rev(*widep == ASCII_NL ? RETURN_CHARACTER : *widep);
 
               if ( ! cl_silent ) {
                 do_bell();
