@@ -24,10 +24,14 @@
 
 #include <wchar.h>
 
+extern wchar_t* widen(const char* text);
+extern char* convertUTF8ToCurrentEncoding(const char* UTF8Input);
+extern wchar_t* convertFromUTF8(const char* UTF8Text);
+extern void mvwideaddstr(int y, int x, const char* UTF8Text);
+extern void wideaddstr(const char* UTF8Text);
+extern void wideaddstr_rev(const char* UTF8Text);
 extern void wideaddch(wchar_t c);
 extern void wideaddch_rev(wchar_t c);
-extern int mbslen(const char* str);
-extern wchar_t* widen(const char* text);
-
+extern int utf8len(const char* UTF8Text);
 
 #endif /* !UTF8_H */

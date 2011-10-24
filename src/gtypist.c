@@ -41,6 +41,7 @@
 #include <assert.h>
 #include <locale.h>
 #include <wctype.h>
+#include <langinfo.h>
 
 #include "cursmenu.h"
 #include "script.h"
@@ -55,6 +56,14 @@
 
 char *COPYRIGHT;
 
+char* locale_encoding; /* current locale's encoding */
+int isUTF8Locale; /* does the current locale have a UTF-8 encoding? */
+
+/* character to be display to represent "enter key" */
+/* TODO: this requires beginner mode!
+#define RETURN_CHARACTER 0x000023CE */
+#define RETURN_CHARACTER 0x00000020 
+
 /* a definition of a boolean type */
 #ifndef bool
 #define bool			int
@@ -68,7 +77,6 @@ char *COPYRIGHT;
 #define DP_TOP_LINE		(I_TOP_LINE + 2)
 #define	SPEED_LINE		(LINES - 5)
 
-
 /* mode indicator strings */
 char *MODE_TUTORIAL;
 char *MODE_QUERY;
@@ -79,7 +87,7 @@ char *MODE_SPEEDTEST;
 #define	QUERY_Y			'Y'
 #define	QUERY_N			'N'
 #define	DRILL_CH_ERR		'^'
-#define	DRILL_NL_ERR		'<'
+#define	DRILL_NL_ERR		'^'
 char *WAIT_MESSAGE;
 char *ERROR_TOO_HIGH_MSG;
 char *SKIPBACK_VIA_F_MSG;
@@ -118,14 +126,11 @@ static short	colour_array[] = {
 #define	NUM_COLOURS		(sizeof( colour_array ) / sizeof( short ))
 
 /* shortcuts for reverse/normal mode strings */
-#define	ADDSTR_REV(X)		do { attron( A_REVERSE ); addstr( X ); \
-				attroff( A_REVERSE ); } while ( 0 )
-#define	ADDSTR(X)		addstr( X )	/* for symmetry! */
-/* the casts are necessary to handle 8 bit characters correctly */
-#define	ADDCH_REV(X)		do { attron( A_REVERSE ); \
-                                addch( (unsigned char)X ); \
-				attroff( A_REVERSE ); } while ( 0 )
-#define	ADDCH(X)		addch( (unsigned char) X )
+#define ADDSTR(X) wideaddstr(X)
+#define ADDSTR_REV(X) wideaddstr_rev(X)
+#define ADDCH(X) wideaddch(X)
+#define ADDCH_REV(X) wideaddch_rev(X)
+
 
 #ifdef MINGW
 #define MIN( a, b ) ( ( a ) < ( b )? ( a ) : ( b ) )
@@ -235,7 +240,7 @@ void banner (const char *text)
       }
    }
 
-   brand_length = mbslen (PACKAGE) + mbslen (VERSION) + 3,
+   brand_length = utf8len (PACKAGE) + utf8len (VERSION) + 3,
    brand_position = COLS - brand_length,
    text_position = ((COLS - brand_length) > text_length) ?
 		(COLS - brand_length - text_length) / 2 : 0;
@@ -249,11 +254,9 @@ void banner (const char *text)
 
    move (B_TOP_LINE, text_position);
    {
-     int numChars = mbslen(text);
-     wchar_t* wideText = malloc((numChars+1) * sizeof(wchar_t));
-     int convresult = mbstowcs(wideText, text, numChars+1);
-     if (convresult != numChars)
-       fatal_error(_("couldn't convert UTF-8 to wide characters"), "?");
+     wchar_t* wideText = convertFromUTF8(text);
+     int numChars = wcslen(wideText);
+
      int i;
      for (i = 0; i < numChars; i++)
        wideaddch_rev(wideText[i]);
@@ -375,10 +378,10 @@ static bool wait_user (FILE *script, char *message, char *mode)
 
   /* move to the message line print a prompt */
   move( MESSAGE_LINE, 0 ); clrtoeol();
-  move( MESSAGE_LINE, COLS - mbslen( mode ) - 2 );
-  ADDSTR_REV( mode );
+  move( MESSAGE_LINE, COLS - utf8len( mode ) - 2 );
+  wideaddstr_rev(mode);
   move( MESSAGE_LINE, 0 );
-  ADDSTR_REV( message );
+  wideaddstr_rev(message);
 
   do {
     resp = getch_fl (ASCII_NULL);
@@ -467,17 +470,17 @@ static void display_speed( int total_chars, long elapsed_time, int errcount ) {
     sprintf( message, SPEED_RAW_CPM, cpm );
   else
     sprintf( message, SPEED_RAW_WPM, cpm / (double)5.0 );
-  move( line++, COLS - mbslen( message ) - 1 );
+  move( line++, COLS - utf8len( message ) - 1 );
   ADDSTR_REV( message );
   if( cl_scoring_cpm )
     sprintf( message, SPEED_ADJ_CPM, adjusted_cpm );
   else
     sprintf( message, SPEED_ADJ_WPM, adjusted_cpm / (double)5.0 );
-  move( line++, COLS - mbslen( message ) - 1 );
+  move( line++, COLS - utf8len( message ) - 1 );
   ADDSTR_REV( message );
   sprintf( message, SPEED_PCT_ERROR,
            (double)100.0 * (double)errcount / (double)total_chars );
-  move( line++, COLS - mbslen( message ) - 1 );
+  move( line++, COLS - utf8len( message ) - 1 );
   ADDSTR_REV( message );
   if( had_best_speed )
     {
@@ -485,12 +488,12 @@ static void display_speed( int total_chars, long elapsed_time, int errcount ) {
 	sprintf( message, SPEED_BEST_CPM, best_cpm );
       else
 	sprintf( message, SPEED_BEST_WPM, best_cpm / (double)5.0 );
-      move( line++, COLS - mbslen( message ) - 1 );
+      move( line++, COLS - utf8len( message ) - 1 );
       ADDSTR_REV( message );
     }
   if( new_best_speed )
     {
-      move( line++, COLS - mbslen( SPEED_BEST_NEW_MSG ) - 1 );
+      move( line++, COLS - utf8len( SPEED_BEST_NEW_MSG ) - 1 );
       ADDSTR_REV( SPEED_BEST_NEW_MSG );
     }
 }
@@ -549,7 +552,8 @@ do_tutorial( FILE *script, char *line ) {
       if ( linenum >= LINES - 1 )
 	fatal_error( _("data exceeds screen length"), line );
       move( linenum, 0 );
-      ADDSTR( SCR_DATA( line ));
+      /* ADDSTR( SCR_DATA( line )); */
+      wideaddstr(SCR_DATA( line ));
       get_script_line( script, line );
       linenum++;
     }
@@ -642,11 +646,8 @@ do_drill( FILE *script, char *line ) {
   data = buffer_command( script, line );
 
   /* get the exercise as a wide string */
-  int numChars = mbstowcs(NULL, data, 0);
-  wideData = malloc((numChars+1) * sizeof(wchar_t));
-  int convresult = mbstowcs(wideData, data, numChars+1);
-  if (convresult != numChars)
-    fatal_error(_("couldn't convert UTF-8 to wide characters"), line);
+  wideData = convertFromUTF8(data);
+  int numChars = wcslen(wideData);
 
   /* count the lines in this exercise, and check the result
      against the screen length */
@@ -676,13 +677,16 @@ do_drill( FILE *script, char *line ) {
           if ( *widep != ASCII_NL )
             wideaddch(*widep);
           else
-            {
+          {
+              /* emit return character */
+              wideaddch(RETURN_CHARACTER);
+
               /* newline - move down the screen */
               linenum++; linenum++;	/* alternate lines */
               move( linenum, 0 );
-            }
+          }
         }
-      move( MESSAGE_LINE, COLS - mbslen( MODE_DRILL ) - 2 );
+      move( MESSAGE_LINE, COLS - utf8len( MODE_DRILL ) - 2 );
       ADDSTR_REV( MODE_DRILL );
 
       /* run the drill */
@@ -734,7 +738,10 @@ do_drill( FILE *script, char *line ) {
                       chars_in_the_line_typed ++;
                     }
                   else
-                    chars_in_the_line_typed = 0;
+                    {
+                      wideaddch(RETURN_CHARACTER);
+                      chars_in_the_line_typed = 0;
+                    }
                 }
             }
           else
@@ -923,11 +930,8 @@ do_speedtest( FILE *script, char *line ) {
   /* get the complete exercise into a single string */
   data = buffer_command( script, line );
 
-  int numChars = mbstowcs(NULL, data, 0);
-  wideData = malloc((numChars+1) * sizeof(wchar_t));
-  int convresult = mbstowcs(wideData, data, numChars+1);
-  if (convresult != numChars)
-    fatal_error(_("couldn't convert UTF-8 to wide characters"), line);
+  wideData = convertFromUTF8(data);
+  int numChars = wcslen(wideData);
 
   /*
     fprintf(F, "convresult=%d\n", convresult);
@@ -968,12 +972,15 @@ do_speedtest( FILE *script, char *line ) {
             }
           else
             {
+              /* emit return character */
+              wideaddch(RETURN_CHARACTER);
+
               /* newline - move down the screen */
               linenum++;
               move( linenum, 0 );
             }
         }
-      move( MESSAGE_LINE, COLS - mbslen( MODE_SPEEDTEST ) - 2 );
+      move( MESSAGE_LINE, COLS - utf8len( MODE_SPEEDTEST ) - 2 );
       ADDSTR_REV( MODE_SPEEDTEST );
 
       /* run the data */
@@ -985,7 +992,7 @@ do_speedtest( FILE *script, char *line ) {
       for ( chars_typed = 0, errors = 0, error_sync = 0;
             *widep != ASCII_NULL; widep++ )
         {
-          rc = getch_fl( (*widep != ASCII_NL) ? *widep : ASCII_SPACE );
+          rc = getch_fl( (*widep != ASCII_NL) ? *widep : RETURN_CHARACTER );
 
 #ifdef HAVE_PDCURSES
           /* this is necessary for DOS: when using raw(), PDCurses's
@@ -1021,9 +1028,18 @@ do_speedtest( FILE *script, char *line ) {
           /* check that the character was correct */
           if ( rc == *widep
                || ( cl_wp_emu && rc == ASCII_SPACE && *widep == ASCII_NL ))
-            wideaddch(rc);
-          else
+          { /* character is correct */
+            if (*widep == ASCII_NL)
             {
+                wideaddch(RETURN_CHARACTER);
+            }
+            else
+            {
+                wideaddch(rc);
+            }
+          }
+          else 
+            { /* character is incorrect */
               /* try to sync with typist behind */
               if ( error_sync >= 0 && widep > wideData && rc == *(widep-1) )
                 {
@@ -1031,7 +1047,7 @@ do_speedtest( FILE *script, char *line ) {
                   continue;
                 }
 
-              wideaddch_rev(*widep == ASCII_NL ? DRILL_NL_ERR : *widep);
+              wideaddch_rev(*widep == ASCII_NL ? RETURN_CHARACTER : *widep);
 
               if ( ! cl_silent ) {
                 do_bell();
@@ -1221,7 +1237,7 @@ do_query_repeat ( FILE *script, bool allow_next )
 
   /* display the prompt */
   move( MESSAGE_LINE, 0 ); clrtoeol();
-  move( MESSAGE_LINE, COLS - mbslen( MODE_QUERY ) - 2 );
+  move( MESSAGE_LINE, COLS - utf8len( MODE_QUERY ) - 2 );
   ADDSTR_REV( MODE_QUERY );
   move( MESSAGE_LINE, 0 );
   if (allow_next)
@@ -1253,7 +1269,7 @@ do_query_repeat ( FILE *script, bool allow_next )
 	  }
 	/* redisplay the prompt */
 	move( MESSAGE_LINE, 0 ); clrtoeol();
-	move( MESSAGE_LINE, COLS - mbslen( MODE_QUERY ) - 2 );
+	move( MESSAGE_LINE, COLS - utf8len( MODE_QUERY ) - 2 );
 	ADDSTR_REV( MODE_QUERY );
 	move( MESSAGE_LINE, 0 );
 	if (allow_next)
@@ -1996,9 +2012,14 @@ int main( int argc, char **argv )
 #if defined(ENABLE_NLS) && defined(LC_ALL)
   setlocale (LC_ALL, "");
   bindtextdomain (PACKAGE, LOCALEDIR);
-  /* bind_textdomain_codeset(PACKAGE, "utf-8"); */
+  bind_textdomain_codeset(PACKAGE, "utf-8"); /* make gettext always return strings as UTF-8 */
   textdomain (PACKAGE);
 #endif
+
+  locale_encoding = nl_langinfo(CODESET);
+  isUTF8Locale = strcasecmp(locale_encoding, "UTF-8") == 0 ||
+      strcasecmp(locale_encoding, "UTF8") == 0;
+  /* printf("encoding is %s, UTF8=%d\n", locale_encoding, isUTF8Locale); */
 
   COPYRIGHT=
     _("Copyright (C) 1998, 1999, 2000, 2001, 2002, 2003 Simon Baldwin.\n"
