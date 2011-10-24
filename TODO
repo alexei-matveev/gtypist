@@ -14,7 +14,7 @@ Your suggestions are welcome too!
 
 IMMEDIATELY (for 2.9 release)
 
- * Testing: need to test lessons/cs.typ conversion to UTF-8
+ * Testing: need to test Y/N and R/N/E with utf8 and 8bit locales
 
 SHORT TERM
 
@@ -31,7 +31,9 @@ SHORT TERM
      * we have special T:[BEGINNER] commands that are only executed in
        beginner mode
 
- * emit warning when using non-UTF8 locale
+ * try to read (convertFromUTF8()) the whole lesson at the very beginning,
+   in order to terminate at the very beginning in the case of conversion
+   errors (and not in the middle of typing)
 
  * put the most current manual on the GNU.org webpage
 
