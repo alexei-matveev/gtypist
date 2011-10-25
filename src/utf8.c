@@ -29,6 +29,8 @@
 #include <stdlib.h>
 #include <iconv.h>
 #include <errno.h>
+#include <ctype.h>
+#include <wctype.h>
 #include "gettext.h"
 #define _(String) gettext (String)
 
@@ -178,6 +180,30 @@ int utf8len(const char* UTF8Text)
         int len = strlen(textWithCurrentEncoding);
         free(textWithCurrentEncoding);
         return len;
+    }
+}
+
+int iswideupper(wchar_t c)
+{
+    if (isUTF8Locale)
+    {
+        return iswupper(c);
+    }
+    else
+    {
+        return isupper(c);
+    }
+}
+
+wchar_t towideupper(wchar_t c)
+{
+    if (isUTF8Locale)
+    {
+        return towupper(c);
+    }
+    else
+    {
+        return toupper(c);
     }
 }
 

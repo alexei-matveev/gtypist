@@ -14,11 +14,13 @@ are welcome too!
 
 FOR 2.9 RELEASE
 
-  * Lessons are now in UTF-8, terminals may not be. We need to either
-    a) emit a warning when using non-UTF8 locale, or b) convert the
-    output to the correct format on-the-fly, as gettet does.
+  * try to read (convertFromUTF8()) the whole lesson at the very beginning,
+    in order to terminate at the very beginning in the case of conversion
+    errors (and not in the middle of typing)
 
   * put the most current manual on the GNU.org webpage
+
+  * check windows build one more time
 
 FOR 2.9.1 RELEASE
 
@@ -26,7 +28,7 @@ FOR 2.9.1 RELEASE
 
 FOR 2.10 RELEASE
 
-  * Testing: need to test lessons/cs.typ conversion to UTF-8
+  * Testing: need to test Y/N and R/N/E with utf8 and 8bit locales
 
   * add a "beginner mode" which is enabled by default, and can be turned off
     by --expert/-x

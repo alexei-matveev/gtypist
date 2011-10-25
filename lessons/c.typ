@@ -600,7 +600,7 @@ I:(4)
 D:third raised store distance heart instead either nation stone dress
  :straight statement seeds desert history strange trade rather entered
  :interesting sense string stream addition sister radio death determine
- :stretched details entire ahead shoes northern triangle doesn’t
+ :stretched details entire ahead shoes northern triangle doesn't
 
 G:_C_E_C16
 

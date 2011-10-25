@@ -1250,17 +1250,17 @@ do_query_repeat ( FILE *script, bool allow_next )
     {
       resp = getch_fl( ASCII_NULL );
 
-      if (towupper (resp) == 'R' ||
-	  towupper (resp) == RNE [0]) {
+      if (towideupper (resp) == 'R' ||
+	  towideupper (resp) == RNE [0]) {
 	resp = 'R';
 	break;
       }
-      if (allow_next && (towupper (resp) == 'N' ||
-			 towupper (resp) == RNE [2])) {
+      if (allow_next && (towideupper (resp) == 'N' ||
+			 towideupper (resp) == RNE [2])) {
 	resp = 'N';
 	break;
       }
-      if (towupper (resp) == 'E' || towupper (resp) == RNE [4]) {
+      if (towideupper (resp) == 'E' || towideupper (resp) == RNE [4]) {
 	if (do_query_simple (CONFIRM_EXIT_LESSON_MSG))
 	  {
 	    seek_label (script, fkey_bindings [11], NULL);
@@ -1311,9 +1311,9 @@ do_query_simple ( char *text )
     {
       resp = getch_fl( ASCII_NULL );
 
-      if (towupper (resp) == 'Y' || towupper (resp) == YN[0])
+      if (towideupper (resp) == 'Y' || towideupper (resp) == YN[0])
 	resp = 0;
-      else if (towupper (resp) == 'N' || towupper (resp) == YN[2])
+      else if (towideupper (resp) == 'N' || towideupper (resp) == YN[2])
 	resp = -1;
     /* Some PDCURSES implementations return -1 when no key is pressed
        for a second or so.  So, unless resp is explicitly set to Y/N,
@@ -1384,15 +1384,15 @@ do_query( FILE *script, char *line )
       }
 
       /* no FKEY binding - check for Y or N */
-      if ( towupper( resp ) == QUERY_Y ||
-	   towupper( resp ) == YN[0] )
+      if ( towideupper( resp ) == QUERY_Y ||
+	   towideupper( resp ) == YN[0] )
 	{
 	  ret_code = TRUE;
 	  global_resp_flag = TRUE;
 	  break;
 	}
-      if ( towupper( resp ) == QUERY_N ||
-	   towupper( resp ) == YN[2] )
+      if ( towideupper( resp ) == QUERY_N ||
+	   towideupper( resp ) == YN[2] )
 	{
 	  ret_code = TRUE;
 	  global_resp_flag = FALSE;
@@ -2096,8 +2096,8 @@ int main( int argc, char **argv )
      uppercase letters separated by '/'. Y/N will still be accepted as
      well. Note that the messages (prompts) themselves cannot be
      translated because they are read from the script-file. */
-  YN = widen(_("Y/N"));
-  if (wcslen(YN) != 3 || YN[1] != '/' || !iswupper(YN[0]) || !iswupper(YN[2]))
+  YN = convertFromUTF8(_("Y/N"));
+  if (wcslen(YN) != 3 || YN[1] != '/' || !iswideupper(YN[0]) || !iswideupper(YN[2]))
     {
       fprintf( stderr,
 	       "%s: i18n problem: invalid value for msgid \"Y/N\" (3 uppercase UTF-8 chars?): %ls\n",
@@ -2106,11 +2106,11 @@ int main( int argc, char **argv )
     }
   /* this is used to translate the keys for Repeat/Next/Exit
      queries. Must be three uppercase letters separated by slashes. */
-  RNE = widen(_("R/N/E"));
+  RNE = convertFromUTF8(_("R/N/E"));
   if (wcslen(RNE) != 5 ||
-      !iswupper(RNE[0]) || RNE[1] != '/' ||
-      !iswupper(RNE[2]) || RNE[3] != '/' ||
-      !iswupper(RNE[4]))
+      !iswideupper(RNE[0]) || RNE[1] != '/' ||
+      !iswideupper(RNE[2]) || RNE[3] != '/' ||
+      !iswideupper(RNE[4]))
     {
       fprintf( stderr,
 	       "%s: i18n problem: invalid value for msgid \"R/N/E\" (5 uppercase UTF-8 chars?): %ls\n",
