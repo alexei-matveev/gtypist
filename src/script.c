@@ -37,6 +37,8 @@
 #include "gettext.h"
 #define _(String) gettext (String)
 
+extern int isUTF8Locale;
+
 int global_line_counter = 0;
 struct label_entry *global_label_list[NLHASH];
 
@@ -305,7 +307,14 @@ do_exit( FILE *script )
   /* if ( cl_colour && has_colors() )*/
   wbkgdset( stdscr, 0 );
   clear(); refresh(); endwin();
-  printf( _("Happy Typing!\n\n") );
+  if (isUTF8Locale)
+  {
+      printf(_("Happy Typing!\n\n"));
+  }
+  else
+  {
+      printf(convertUTF8ToCurrentEncoding(_("Happy Typing!\n\n")));
+  }
   exit( 0 );
 }
 
