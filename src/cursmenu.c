@@ -37,6 +37,8 @@
 #include "gettext.h"
 #define _(String) gettext (String)
 
+extern int isUTF8Locale;
+
 #define max(x,y) (((x)>(y)) ? (x) : (y))
 #define min(x,y) (((x)<(y)) ? (x) : (y))
 
@@ -354,8 +356,15 @@ char *do_menu (FILE *script, char *line)
 
       wattroff (stdscr, A_REVERSE);
 
-      /* ch = wgetch (stdscr); */
-      get_widech(&ch);
+      if (isUTF8Locale || 1)
+      {
+          get_wch(&ch);
+      }
+      else
+      {
+          ch = getch();
+      }
+
 
 #ifdef HAVE_PDCURSES
       /* this is necessary for DOS: when using raw(), PDCurses's
