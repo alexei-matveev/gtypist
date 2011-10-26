@@ -2012,14 +2012,18 @@ int main( int argc, char **argv )
 #if defined(ENABLE_NLS) && defined(LC_ALL)
   setlocale (LC_ALL, "");
   bindtextdomain (PACKAGE, LOCALEDIR);
-  bind_textdomain_codeset(PACKAGE, "utf-8"); /* make gettext always return strings as UTF-8 */
+  /* make gettext always return strings as UTF-8
+     => this makes programming easier because now _all_ strings
+     (from gettext and from script file) are encoded as UTF8!
+   */
+  bind_textdomain_codeset(PACKAGE, "utf-8"); 
   textdomain (PACKAGE);
 #endif
 
   locale_encoding = nl_langinfo(CODESET);
   isUTF8Locale = strcasecmp(locale_encoding, "UTF-8") == 0 ||
       strcasecmp(locale_encoding, "UTF8") == 0;
-  printf("encoding is %s, UTF8=%d\n", locale_encoding, isUTF8Locale); 
+  /* printf("encoding is %s, UTF8=%d\n", locale_encoding, isUTF8Locale); */
 
   COPYRIGHT=
     _("Copyright (C) 1998, 1999, 2000, 2001, 2002, 2003 Simon Baldwin.\n"
@@ -2237,6 +2241,8 @@ int main( int argc, char **argv )
   /* put up the top line banner */
   clear();
   banner (_("Loading the script..."));
+
+  check_script_file_with_current_encoding(script);
 
   /* index all the labels in the file */
   build_label_index( script );

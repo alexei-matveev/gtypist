@@ -86,6 +86,24 @@ static int line_is_empty (const char *line)
 }
 
 /*
+  go through the file and convert it from UTF8, to make
+  sure that all characters can be converted!
+*/
+void check_script_file_with_current_encoding( FILE *script )
+{
+    char line[MAX_SCR_LINE];
+
+    get_script_line( script, line );
+    while (! feof( script ))
+    {
+        wchar_t* lineConverted = convertFromUTF8(line);
+        free(lineConverted);
+        /* get the next script line */
+        get_script_line( script, line );
+    }
+}
+
+/*
   go through the file, index all the labels we can find and notice if
   we have a menu or not
 */

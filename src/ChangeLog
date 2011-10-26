@@ -2,6 +2,10 @@
 	* gtypist.c, utf8.c/h: add get_widech() wrapper which
 	  calls getch() or get_wch() depending on whether it's a UTF8
           console or not => fixes input problems with KOI8-R terminals
+	* script.c, gtypist.c: try to read (convertFromUTF8()) the whole
+	  lesson at the very beginning, in order to terminate at the very
+          beginning in the case of conversion errors (and not in the middle
+	  of typing)
 
 2011-10-24 Felix Natter <fnatter@gmx.net>
 

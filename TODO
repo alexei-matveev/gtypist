@@ -14,10 +14,6 @@ are welcome too!
 
 FOR 2.9 RELEASE
 
-  * try to read (convertFromUTF8()) the whole lesson at the very beginning,
-    in order to terminate at the very beginning in the case of conversion
-    errors (and not in the middle of typing)
-
   * put the most current manual on the GNU.org webpage
 
   * check windows build one more time
