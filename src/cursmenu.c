@@ -354,7 +354,8 @@ char *do_menu (FILE *script, char *line)
 
       wattroff (stdscr, A_REVERSE);
 
-      ch = wgetch (stdscr);
+      /* ch = wgetch (stdscr); */
+      get_widech(&ch);
 
 #ifdef HAVE_PDCURSES
       /* this is necessary for DOS: when using raw(), PDCurses's
