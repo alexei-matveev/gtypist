@@ -1,3 +1,8 @@
+2011-10-26 Felix Natter <fnatter@gmx.net>
+	* gtypist.c, utf8.c/h: add get_widech() wrapper which
+	  calls getch() or get_wch() depending on whether it's a UTF8
+          console or not => fixes input problems with KOI8-R terminals
+
 2011-10-24 Felix Natter <fnatter@gmx.net>
 	* gtypist.c, utf8.c/h: use convertFromUTF8() instead of widen()
 	  for Y/N and R/N/E. add towideupper() and iswideupper() helper

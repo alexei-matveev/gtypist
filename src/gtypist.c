@@ -313,7 +313,7 @@ getch_fl( int cursor_char )
       curs_set( 0 ); refresh();
       move( LINES - 1, COLS - 1 );
       cbreak();
-      get_wch(&return_char);
+      get_widech(&return_char);
       move( y, x );
     }
   else
@@ -327,7 +327,7 @@ getch_fl( int cursor_char )
         if ( ( cl_curs_flash / 2 ) > 0 )
           {
             halfdelay( cl_curs_flash / 2 );
-            while ( get_wch(&return_char) == ERR )
+            while ( get_widech(&return_char) == ERR )
               {
                 move( y, x );
                 if ( alternate )
@@ -341,7 +341,7 @@ getch_fl( int cursor_char )
         else
           {
             cbreak(); 
-            get_wch(&return_char);
+            get_widech(&return_char);
           }
         move( y, x );
         wideaddch(cursor_char);
@@ -352,7 +352,7 @@ getch_fl( int cursor_char )
           /* just use the terminal's cursor - this is easy */
           curs_set( 1 ); refresh();
           cbreak(); //return_char = getch();
-          get_wch(&return_char);
+          get_widech(&return_char);
           curs_set( 0 ); refresh();
         }
     }
@@ -2019,7 +2019,7 @@ int main( int argc, char **argv )
   locale_encoding = nl_langinfo(CODESET);
   isUTF8Locale = strcasecmp(locale_encoding, "UTF-8") == 0 ||
       strcasecmp(locale_encoding, "UTF8") == 0;
-  /* printf("encoding is %s, UTF8=%d\n", locale_encoding, isUTF8Locale); */
+  printf("encoding is %s, UTF8=%d\n", locale_encoding, isUTF8Locale); 
 
   COPYRIGHT=
     _("Copyright (C) 1998, 1999, 2000, 2001, 2002, 2003 Simon Baldwin.\n"

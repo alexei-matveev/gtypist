@@ -207,6 +207,28 @@ wchar_t towideupper(wchar_t c)
     }
 }
 
+int get_widech(wint_t* c)
+{
+    if (isUTF8Locale)
+    {
+        return get_wch(c);
+    }
+    else
+    {
+        int c2 = getch();
+        if (c2 == ERR)
+        {
+            return ERR;
+        }
+        else
+        {
+            *c = (unsigned char)c2;
+            return OK;
+        }
+
+    }
+}
+
 /*
   Local Variables:
   tab-width: 8
