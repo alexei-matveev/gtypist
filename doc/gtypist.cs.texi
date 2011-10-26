@@ -33,7 +33,7 @@ jsou použity na vývoj GNU.''
 
 @dircategory Education
 @direntry Education
-* GTypist: (gtypist). Dokumentace k výukovému programu psaní
+* GNU Typist (cs): (gtypist.cs). Dokumentace k výukovému programu psaní
 na klávesnici gtypist.
 @end direntry
 

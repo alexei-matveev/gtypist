@@ -29,7 +29,7 @@ Software Foundation raise funds for GNU development.''
 
 @dircategory Education
 @direntry Education
-* GTypist: (gtypist). Documentation of the typing tutor gtypist.
+* GNU Typist: (gtypist). Documentation of the typing tutor gtypist.
 @end direntry
 
 @titlepage
