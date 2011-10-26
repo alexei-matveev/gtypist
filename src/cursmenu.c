@@ -356,7 +356,7 @@ char *do_menu (FILE *script, char *line)
 
       wattroff (stdscr, A_REVERSE);
 
-      if (isUTF8Locale || 1)
+      if (isUTF8Locale)
       {
           get_wch(&ch);
       }
