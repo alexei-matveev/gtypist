@@ -373,6 +373,7 @@ The files are called
 @file{ktru_long.typ} (@file{russian_long.ktouch.xml}),
 @file{ktru_slava.typ} (@file{russian_slava.ktouch.xml}),
 @file{ktsi.typ} (@file{slovenian.ktouch.xml}),
+@file{kttr.typ} (modified @file{tr.ktouch.xml})
 
 @file{german2.ktouch.xml} has not been included because it
 is from the same source as @file{ttde.typ} and @file{ttde.typ}

@@ -178,6 +178,7 @@ END	{
   printf(" : ktru_long.typ     -  Russian lesson (longer) from KTouch 1.6\n");
   printf(" : ktru_slava.typ    -  Russian lesson (hand-made) from KTouch 1.6\n");
   printf(" : ktsi.typ          -  Slovenian lesson from KTouch 1.6\n");
+  printf(" : kttr.typ          -  Turkish lesson from KTouch 1.6 (modified)\n");
 
   printf("T:\n");
   printf(" :\n");

@@ -18,42 +18,33 @@ pkgdata_DATA =  gtypist.typ \
 		ttde.typ \
 		ktbg.typ \
 		ktbg_long.typ \
-		ktes_cat.typ \
-		ktdk2.typ \
-		ktdk.typ \
-		ktdvorak_abcd.typ \
-		ktdvorak_es.typ \
-		ktdvorak.typ \
-		kten.typ \
-		ktfi_kids.typ \
-		ktfi.typ \
-		ktfr2.typ \
-		ktfr.typ \
-		ktde2.typ \
 		ktde.typ \
+		ktde2.typ \
 		ktde_neo.typ \
 		ktde_number.typ \
-		kthu_expert.typ \
+		ktdk.typ \
+		ktdk2.typ \
+		ktdvorak.typ \
+		ktdvorak_abcd.typ \
+		ktdvorak_es.typ \
+		kten.typ \
+		ktes.typ \
+		ktes_cat.typ \
+		ktfi.typ \
+		ktfi_kids.typ \
+		ktfr.typ \
+		ktfr2.typ \
 		kthu.typ \
+		kthu_expert.typ \
 		ktit.typ \
-		ktnl_junior.typ \
 		ktnl.typ \
+		ktnl_junior.typ \
 		ktno.typ \
 		ktpl.typ \
 		ktru.typ \
 		ktru_long.typ \
 		ktru_slava.typ \
 		ktsi.typ \
-		ktes.typ
-
-# ktde.typ \
-# ktdk2.typ \
-# kten.typ \
-# ktfr2.typ \
-# ktnumber.typ \
-# ktdk.typ \
-# ktdvorak.typ \
-# ktfr.typ \
-# ktno.typ 
+		kttr.typ
 
 EXTRA_DIST= $(pkgdata_DATA)
