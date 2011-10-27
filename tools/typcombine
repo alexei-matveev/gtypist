@@ -143,6 +143,7 @@ END	{
   printf(" : esp.typ           -  Spanish lessons\n");
   printf(" : ru.typ            -  Russian lessons\n");
   printf(" : ttde.typ          -  German lesson from tipptrainer 0.6.0\n");
+  printf(" : tr.typ            -  Turkish lessons, originally from ktouch\n");
   printf(" : ktbg.typ          -  Bulgarian lesson from KTouch 1.6\n");
   printf(" : ktbg_long.typ     -  Bulgarian lesson (longer) from KTouch 1.6\n");
   printf(" : ktde.typ          -  German lesson I from KTouch 1.6\n");
@@ -155,11 +156,11 @@ END	{
   printf(" : ktdvorak.typ      -  Dvorak lesson from KTouch 1.6\n");
   printf(" :  (see http://en.wikipedia.org/wiki/Dvorak_Simplified_Keyboard)\n");
   printf(" : ktdvorak_es.typ   -  Spanish Dvorak lesson from KTouch 1.6\n");
-  printf(" : ktdvorak_abcd.typ -  Dvorak lesson (basic) from KTouch 1.6\n");
   
   printf("T:\n");
   printf(" :... and even more lessons:\n");
   printf(" :\n");
+  printf(" : ktdvorak_abcd.typ -  Dvorak lesson (basic) from KTouch 1.6\n");
   printf(" : kten.typ          -  English lesson from KTouch 1.6\n");
   printf(" : ktes.typ          -  Spanish lesson from KTouch 1.6\n");
   printf(" : ktes_cat.typ      -  Catalan lesson from KTouch 1.6\n");
@@ -178,7 +179,6 @@ END	{
   printf(" : ktru_long.typ     -  Russian lesson (longer) from KTouch 1.6\n");
   printf(" : ktru_slava.typ    -  Russian lesson (hand-made) from KTouch 1.6\n");
   printf(" : ktsi.typ          -  Slovenian lesson from KTouch 1.6\n");
-  printf(" : kttr.typ          -  Turkish lesson from KTouch 1.6 (modified)\n");
 
   printf("T:\n");
   printf(" :\n");
