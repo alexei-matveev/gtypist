@@ -24,8 +24,6 @@ FOR 2.9.1 RELEASE
 
   * fix (UTF-8 lessons in) MinGW port
 
-  * beginner mode?
-
 FOR 2.10 RELEASE
 
   * support multibyte encodings other than UTF8??
