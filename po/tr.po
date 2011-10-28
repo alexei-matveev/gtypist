@@ -1,0 +1,460 @@
+# Turkish translations for GNU Typist package.
+# Copyright (C) 2011 Simon Baldwin
+# This file is distributed under the same license as the GNU Typist package.
+#
+# Gökçen Eraslan <gokcen@pardus.org.tr>, 2011.
+msgid ""
+msgstr ""
+"Project-Id-Version: GNU Typist 2.9beta1\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2011-10-26 14:48+0300\n"
+"PO-Revision-Date: 2011-10-28 00:40+0300\n"
+"Last-Translator: Gökçen Eraslan <gokcen@pardus.org.tr>\n"
+"Language-Team: Turkish <pardus-translators@pardus.org.tr>\n"
+"Language: tr_TR\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"X-Generator: Lokalize 1.2\n"
+
+#: src/gtypist.c:288
+msgid "internal error in strdup"
+msgstr "strdup'ta hata"
+
+#: src/gtypist.c:513
+msgid "invalid key binding"
+msgstr "geçersiz tuş ataması"
+
+#: src/gtypist.c:515
+msgid "invalid function key number"
+msgstr "geçersiz fonksiyon tuş numarası"
+
+#: src/gtypist.c:553 src/gtypist.c:660 src/gtypist.c:953
+msgid "data exceeds screen length"
+msgstr "veri ekran boyunu aşıyor"
+
+#: src/gtypist.c:596
+msgid "instructions are limited to two lines"
+msgstr "talimatlar iki satırla sınırlıdır"
+
+#: src/gtypist.c:861 src/gtypist.c:1139 src/script.c:313
+msgid "internal error: fseek"
+msgstr "iç hata: fseek"
+
+#: src/gtypist.c:1461
+#, no-c-format
+msgid "'*' must immediately follow '%'"
+msgstr "'*' karakteri '%' karakterinin hemen ardından gelmeli"
+
+#: src/gtypist.c:1464 src/gtypist.c:1467
+#, no-c-format
+msgid "missing '%'"
+msgstr "eksik '%'"
+
+#: src/gtypist.c:1471
+#, no-c-format
+msgid "'%' must immediately follow value"
+msgstr "'%' karakteri bir değerin ardından gelmeli"
+
+#: src/gtypist.c:1480
+msgid "overflow in do_error_max_set"
+msgstr "do_error_max_set fonksiyonunda taşma"
+
+#: src/gtypist.c:1500
+msgid "Invalid value for \"E:\" (out of range)"
+msgstr "geçersiz \"E:\" değeri (aralık dışında)"
+
+#: src/gtypist.c:1555 src/script.c:307
+#, c-format
+msgid "label '%s' not found"
+msgstr "'%s' etiketi bulunamadı"
+
+#: src/gtypist.c:1621
+msgid "unknown command"
+msgstr "bilinmeyen komut"
+
+#: src/gtypist.c:1739
+msgid "track personal best typing speeds"
+msgstr "kişisel hız rekorlarını takip et"
+
+#: src/gtypist.c:1740
+msgid ""
+"default maximum error percentage (default 3.0); valid values are between 0.0 "
+"and 100.0"
+msgstr ""
+"öntanımlı azami hata yüzdesi (default 3.0); gerçerli değerler 0.0 ile "
+"100.0 arasındadır"
+
+#: src/gtypist.c:1742
+msgid "turn off WPM timer in drills"
+msgstr "atış talimlerinde WPM sayacını kapat"
+
+#: src/gtypist.c:1743
+msgid "use the terminal's hardware cursor"
+msgstr "terminalin donanım imlecini kullan"
+
+#: src/gtypist.c:1744
+msgid ""
+"cursor flash period P*.1 sec (default 10); valid  values are between 0 and "
+"512; this is ignored if -t is specified"
+msgstr ""
+"imleç görünme süresi P * 0.1 sn. (öntanımlı 10); geçerli değerler 0 ile 512 "
+"arasındadır; bu değer -t verildiğinde yoksayılacaktır"
+
+#: src/gtypist.c:1746
+msgid "set initial display colours where available"
+msgstr "mümkünse renkleri değiştir"
+
+#: src/gtypist.c:1747
+msgid "don't beep on errors"
+msgstr "hatalarda bipleme"
+
+#: src/gtypist.c:1748
+msgid "same as -s, --silent"
+msgstr "-s, --silent ile aynıdır"
+
+#: src/gtypist.c:1749
+msgid "start the lesson at label 'L'"
+msgstr "'L' ile etiketli dersten başla"
+
+#: src/gtypist.c:1750
+msgid "try to mimic word processors"
+msgstr "kelime işlemcileri taklit et"
+
+#: src/gtypist.c:1751
+msgid "forbid the user to skip exercises"
+msgstr "kullanıcının dersleri atlamasını engelle"
+
+#: src/gtypist.c:1752
+msgid "highlight errors with reverse video"
+msgstr "hataları tersine video göstererek vurgula"
+
+#: src/gtypist.c:1753
+msgid "print this message"
+msgstr "bu metni yazdırır"
+
+#: src/gtypist.c:1754
+msgid "output version information and exit"
+msgstr "sürüm bilgisini yazdır ve çık"
+
+#: src/gtypist.c:1755
+msgid "do not ask confirmation questions"
+msgstr "onay soruları sorma"
+
+#: src/gtypist.c:1756
+msgid ""
+"set top banner colours (background, foreground, package and version "
+"respectively)"
+msgstr "en üst şeritin renklerini değiştir (arkaplan, önplan, paket ve sürüm)"
+
+#: src/gtypist.c:1758
+msgid "set scoring mode (words per minute or characters per minute)"
+msgstr "puanlama kipini değiştir (dakikadaki kelime ya da karakter sayısı)"
+
+#: src/gtypist.c:1762
+#, c-format
+msgid ""
+"`gtypist' is a typing tutor with several lessons for different keyboards and "
+"languages.  New lessons can be written by the user easily.\n"
+"\n"
+msgstr ""
+"`gtypist' çeşitli klavyeler ve diller için bir çok ders içeren bir yazım "
+"eğitim uygulamasıdır.  "
+"Kullanıcılar da kolayca yeni dersler ekleyebilirler.\n"
+"\n"
+
+#: src/gtypist.c:1766
+msgid "Usage"
+msgstr "Kullanım"
+
+#: src/gtypist.c:1766
+msgid "options"
+msgstr "seçenekler"
+
+#: src/gtypist.c:1766
+msgid "script-file"
+msgstr "betik-dosyası"
+
+#: src/gtypist.c:1767
+msgid "Options"
+msgstr "Seçenekler"
+
+#: src/gtypist.c:1774
+#, c-format
+msgid ""
+"\n"
+"If not supplied, script-file defaults to '%s/%s'.\n"
+msgstr ""
+"\n"
+"Verilmediğinde, betik dosyası '%s/%s' olarak alınır.\n"
+
+#: src/gtypist.c:1776
+#, c-format
+msgid ""
+"The path $GTYPIST_PATH is searched for script files.\n"
+"\n"
+msgstr ""
+"Betikleri bulmak için $GTYPIST_PATH yolu kullanılır.\n"
+"\n"
+
+#: src/gtypist.c:1778
+msgid "Examples"
+msgstr "Örnekler"
+
+#: src/gtypist.c:1780
+msgid "To run the default lesson in english `gtypist.typ'"
+msgstr "Öntanımlı İngilizce ders olan `gtypist.typ' betiğini başlatmak için"
+
+#: src/gtypist.c:1782
+msgid "To run the lesson in spanish"
+msgstr "Dersi İspanyolca başlatmak için"
+
+#: src/gtypist.c:1784
+msgid ""
+"To instruct gtypist to look for lesson `bar.typ' in a non standard directory"
+msgstr ""
+"gtypist'in standart bir dizinde olmayan `bar.typ' betiğini bulması için"
+
+#: src/gtypist.c:1787
+msgid ""
+"To run the lesson in the file `test.typ' of directory `temp', starting at "
+"label `TEST1', using the terminal's cursor, and run silently"
+msgstr ""
+"`temp' dizinindeki `test.typ' betiğini `TEST1' etiketinden başlayıp, terminal "
+"imlecini kullanarak, sessizce çalıştırmak için"
+
+#: src/gtypist.c:1790
+msgid "Report bugs to bug-gtypist@gnu.org"
+msgstr "Hataları bug-gtypist@gnu.org adresine bildirebilirsiniz"
+
+#: src/gtypist.c:1839
+#, c-format
+msgid "%s: invalid error-max value\n"
+msgstr "%s: geçersiz error-max değeri\n"
+
+#: src/gtypist.c:1855
+#, c-format
+msgid "%s: invalid curs-flash value\n"
+msgstr "%s: geçersiz curs-flash değeri\n"
+
+#: src/gtypist.c:1866
+#, c-format
+msgid "%s: invalid colours value\n"
+msgstr "%s: geçersiz colours değeri\n"
+
+#: src/gtypist.c:1876
+#, c-format
+msgid "%s:  argument format is incorrect\n"
+msgstr "%s:  argüman biçimi yanlış\n"
+
+#: src/gtypist.c:1886
+#, c-format
+msgid "%s:  incorrect colour values\n"
+msgstr "%s:  geçersiz renk değerleri\n"
+
+#: src/gtypist.c:1895 src/gtypist.c:1908
+#, c-format
+msgid "%s: invalid scoring mode"
+msgstr "%s: geçersiz puanlama kipi"
+
+#: src/gtypist.c:1921
+#, c-format
+msgid "%s: internal error: malloc\n"
+msgstr "%s: iç hata: malloc\n"
+
+#: src/gtypist.c:1942
+msgid "Written by Simon Baldwin"
+msgstr "Simon Baldwin tarafından yazılmıştır"
+
+#: src/gtypist.c:1951 src/gtypist.c:1958
+#, c-format
+msgid "Try '%s --help' for more information.\n"
+msgstr "Daha fazla bilgi için '%s --help' komutunu kullanın\n"
+
+#: src/gtypist.c:2029
+msgid ""
+"Copyright (C) 1998, 1999, 2000, 2001, 2002, 2003 Simon Baldwin.\n"
+"Copyright (C) 2003, 2004, 2008, 2011 GNU Typist Development Team.\n"
+"This program comes with ABSOLUTELY NO WARRANTY; for details\n"
+"please see the file 'COPYING' supplied with the source code.\n"
+"This is free software, and you are welcome to redistribute it\n"
+"under certain conditions; again, see 'COPYING' for details.\n"
+"This program is released under the GNU General Public License."
+msgstr ""
+
+#: src/gtypist.c:2037
+msgid " Tutorial "
+msgstr " Eğitim "
+
+#: src/gtypist.c:2039
+msgid "  Query   "
+msgstr "  Sorgu   "
+
+#: src/gtypist.c:2041
+msgid "  Drill   "
+msgstr "  Atış talimi   "
+
+#: src/gtypist.c:2043
+msgid "Speed test"
+msgstr "Hız testi"
+
+#: src/gtypist.c:2045
+msgid " Press RETURN or SPACE to continue, ESC to return to the menu "
+msgstr ""
+" Devam etmek için SPACE ya da ENTER tuşuna, ana menüye dönmek içinse ESC'ye "
+"basın "
+
+#: src/gtypist.c:2048
+#, c-format
+msgid " Your error-rate is too high. You have to achieve %.1f%%. "
+msgstr "Hata oranı çok yüksek. %.1f%% oranına ulaşmanız gerekiyor. "
+
+#: src/gtypist.c:2052
+#, c-format
+msgid " You failed this test, so you need to go back to %s. "
+msgstr " Bu testi geçemediniz, %s bölümüne dönmeniz gerekiyor. "
+
+#: src/gtypist.c:2056
+msgid " Press R to repeat, N for next exercise or E to exit "
+msgstr ""
+" Tekrarlamak için T'ye, devam etmek için D'ye, çıkmak içinse Ç'ye basın"
+
+#: src/gtypist.c:2060
+msgid " Press R to repeat or E to exit "
+msgstr " Tekrarlamak için T'ye ya da çıkmak için Ç'ye basın "
+
+#: src/gtypist.c:2063
+msgid " Are you sure you want to exit this lesson? [Y/N] "
+msgstr " Bu dersten çıkmak istediğinize emin misiniz? [E/H] "
+
+#: src/gtypist.c:2067
+msgid " Sorry, gtypist is configured to forbid skipping exercises. "
+msgstr " Üzgünüm, gtypist alıştırmaları geçmenizi engellemek üzere ayarlandı. "
+
+#: src/gtypist.c:2072
+#, c-format
+msgid " Raw speed      = %6.2f wpm "
+msgstr " Ham sürat = %6.2f wpm "
+
+#: src/gtypist.c:2074
+#, c-format
+msgid " Raw speed      = %6.2f cpm "
+msgstr " Ham sürat = %6.2f cpm "
+
+#: src/gtypist.c:2079
+#, c-format
+msgid " Adjusted speed = %6.2f wpm "
+msgstr " Düzenlenmiş sürat = %6.2f wpm "
+
+#: src/gtypist.c:2081
+#, c-format
+msgid " Adjusted speed = %6.2f cpm "
+msgstr " Düzenlenmiş sürat = %6.2f cpm "
+
+#: src/gtypist.c:2086
+#, c-format
+msgid "            with %.1f%% errors "
+msgstr "            %.1f%% hata oranı "
+
+#: src/gtypist.c:2091
+#, c-format
+msgid " Personal best  = %6.2f wpm "
+msgstr " Kişisel rekor = %6.2f wpm "
+
+#: src/gtypist.c:2093
+#, c-format
+msgid " Personal best  = %6.2f cpm "
+msgstr " Kişisel rekor = %6.2f cpm "
+
+#: src/gtypist.c:2098
+msgid "           new personal best "
+msgstr "           yeni kişisel rekor "
+
+#: src/gtypist.c:2103
+msgid "Y/N"
+msgstr "E/H"
+
+#: src/gtypist.c:2113
+msgid "R/N/E"
+msgstr "T/D/Ç"
+
+#: src/gtypist.c:2176
+msgid "can't find or open file"
+msgstr "dosya bulunamadı ya da açılamadı"
+
+#: src/gtypist.c:2192
+#, c-format
+msgid "%s: HOME environment variable not set\n"
+msgstr "%s: HOME çevre değişkeni ayarlanmamış\n"
+
+#: src/gtypist.c:2243
+msgid "Loading the script..."
+msgstr "Betik yükleniyor..."
+
+#: src/gtypist.c:2284 src/gtypist.c:2301 src/gtypist.c:2317 src/gtypist.c:2359
+#: src/gtypist.c:2376 src/script.c:142 src/script.c:166 src/script.c:256
+msgid "internal error: malloc"
+msgstr "İç hata: malloc"
+
+#: src/gtypist.c:2368
+msgid " internal error: fopen"
+msgstr " iç hata: fopen"
+
+#: src/cursmenu.c:322
+msgid ""
+"Use arrowed keys to move around, SPACE or RETURN to select and ESCAPE to go "
+"back"
+msgstr ""
+"Gezinmek için ok tuşlarını, seçmek için SPACE ya da RETURN tuşlarını ve  "
+"geriye gitmek için de ESC tuşunu kullanın."
+
+#: src/error.c:51
+msgid "line"
+msgstr "satır"
+
+#: src/script.c:56
+msgid "internal error: strdup"
+msgstr "iç hata: strdup"
+
+#: src/script.c:158
+msgid "label contains space"
+msgstr "etiket boşluk içeriyor"
+
+#: src/script.c:184
+msgid "label redefinition"
+msgstr "etiket tekrar tanımlanmış"
+
+#: src/script.c:228
+msgid "Invalid multibyte sequence (wrong encoding?)"
+msgstr "Geçersiz çokbaytlı sıralama (yanlış kodlama?)"
+
+#: src/script.c:230
+msgid "data shortage"
+msgstr "veri yetersiz"
+
+#: src/script.c:232
+msgid "missing ':'"
+msgstr "eksik ':'"
+
+#: src/script.c:238
+msgid "line too long for screen"
+msgstr "satır bu ekran için fazla uzun"
+
+#: src/script.c:330 src/script.c:334
+#, c-format
+msgid ""
+"Happy Typing!\n"
+"\n"
+msgstr ""
+"Neşeli Yazmalar!\n"
+"\n"
+
+#: src/utf8.c:47
+msgid "couldn't convert UTF-8 to wide characters"
+msgstr "UTF-8 geniş karaktere çevrilemedi"
+
+#: src/utf8.c:158
+msgid "error in setcchar()"
+msgstr "setcchar() fonksiyonunda hata"
+
