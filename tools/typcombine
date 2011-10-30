@@ -155,11 +155,11 @@ END	{
   printf(" : ktdvorak.typ      -  Dvorak lessons from KTouch 1.6\n");
   printf(" :  (see http://en.wikipedia.org/wiki/Dvorak_Simplified_Keyboard)\n");
   printf(" : ktdvorak_es.typ   -  Spanish Dvorak lessons from KTouch 1.6\n");
+  printf(" : ktdvorak_abcd.typ -  Dvorak lessons (basic) from KTouch 1.6\n");
   
   printf("T:\n");
   printf(" :... and even more lessons:\n");
   printf(" :\n");
-  printf(" : ktdvorak_abcd.typ -  Dvorak lessons (basic) from KTouch 1.6\n");
   printf(" : kten.typ          -  English lessons from KTouch 1.6\n");
   printf(" : ktes.typ          -  Spanish lessons from KTouch 1.6\n");
   printf(" : ktes_cat.typ      -  Catalan lessons from KTouch 1.6\n");
