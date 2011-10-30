@@ -16,13 +16,9 @@ FOR 2.9 RELEASE
 
   * put the most current manual on the GNU.org webpage
 
-  * check windows build one more time
-
-  * Testing: need to test Y/N and R/N/E with utf8 and 8bit locales
-
 FOR 2.9.1 RELEASE
 
-  * fix (UTF-8 lessons in) MinGW port
+  * fix lessons with multi-byte characters in MinGW port
 
 FOR 2.10 RELEASE
 
