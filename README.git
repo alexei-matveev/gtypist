@@ -30,10 +30,15 @@ Software required to build gtypist (older versions may work):
     * makeinfo
     * gawk (awk won't do)
     * autopoint
+	* libiconv
 
-The following should be the required package names for Debian (testing/wheezy):
-  * automake autoconf autopoint build-essential libncursesw5-dev help2man gettext texinfo gawk
-    (Ubuntu package names should be similar)
+The following should be the required package names for Debian
+(testing/wheezy):
+
+  automake autoconf autopoint build-essential libncursesw5-dev
+  help2man gettext texinfo gawk.
+
+  (Ubuntu package names should be similar).
 
 
 BUILDING

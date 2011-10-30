@@ -3,7 +3,7 @@
 # files for GNU Typist:
 # [*/]Makefile.in, aclocal.m4, configure,
 # config.h.in, config.sub, config.guess
-# INSTALL, configur.bat, conf_dos.bat, doc/gtypist.info, lessons/gtypist.typ
+# INSTALL, configur.bat, doc/gtypist.info, lessons/gtypist.typ
 # (maybe more)
 
 echo "Checking for required tools..."
@@ -91,7 +91,7 @@ echo "creating lessons/gtypist.typ..."
 
 VERSION=`./version.sh`
 
-for file in configur.bat conf_dos.bat INSTALL
+for file in configur.bat INSTALL
   do
   echo "creating $file..."
   if test $file -nt ${file}.in; then
