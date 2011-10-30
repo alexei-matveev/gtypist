@@ -207,26 +207,30 @@ wchar_t towideupper(wchar_t c)
     }
 }
 
-int get_widech(wint_t* c)
+int get_widech(int* c)
 {
+    int ch;
+
     if (isUTF8Locale)
     {
-        return get_wch(c);
+        if( get_wch( &ch ) == ERR )
+	    return ERR;
     }
     else
     {
-        int c2 = getch();
-        if (c2 == ERR)
-        {
-            return ERR;
-        }
-        else
-        {
-            *c = (unsigned char)c2;
-            return OK;
-        }
-
+        ch = getch();
+        if( ch == ERR )
+	    return ERR;
     }
+
+#ifdef HAVE_PDCURSES
+    // make sure PDCurses returns recognisable newline characters
+    if( ch == 0x0D )
+	ch = 0x0A;
+#endif
+
+    *c = ch;
+    return OK;
 }
 
 /*

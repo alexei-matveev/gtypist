@@ -107,6 +107,10 @@ You must have:
       - type: make -f mingwin32.mak WIDE=Y UTF8=Y
       - rename the resulting pdcurses.a to libpdcurses.a
 
+  - A recent version of libiconv, available at
+
+      http://gnuwin32.sourceforge.net/
+
 To builf GNU Typist:
 
 * Decompress the source distribution.

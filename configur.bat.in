@@ -16,12 +16,14 @@ echo # Please read INSTALL for help building gtypist with MinGW.>> Makefile
 echo.>> Makefile
 echo # Define the path to a compiled PDCurses library below.>> Makefile
 echo PDCURSES_PATH=C:\dev\PDCurses-3.4>> Makefile
+echo GNUWIN32_PATH=C:\GnuWin32>>Makefile
 echo.>> Makefile
 echo gtypist.exe:>> Makefile
-echo 	gcc -DMINGW -DPDC_WIDE -I$(PDCURSES_PATH) -Isrc -static -s -O2 -o gtypist src/error.c src/script.c src/cursmenu.c src/gtypist.c src/getopt.c src/getopt1.c src/utf8.c -L$(PDCURSES_PATH)/win32 -lpdcurses>> Makefile
+echo 	gcc -DMINGW -DPDC_WIDE -I$(PDCURSES_PATH) -I$(GNUWIN32_PATH)/include -Isrc -static -s -O2 -o gtypist src/error.c src/script.c src/cursmenu.c src/gtypist.c src/getopt.c src/getopt1.c src/utf8.c -L$(PDCURSES_PATH)/win32 -L$(GNUWIN32_PATH)/lib -lpdcurses -liconv.dll>> Makefile
 echo.
-echo IMPORTANT: Before running make, change the PDCURSES_PATH variable in the
-echo Makefile! Type 'notepad Makefile' to edit it.
+echo.
+echo IMPORTANT: Before running make, change the PDCURSES_PATH and GNUWIN32_PATH
+echo variables in the Makefile! Type 'notepad Makefile' to edit it.
 echo.
 goto end
 

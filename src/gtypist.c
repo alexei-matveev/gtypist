@@ -41,7 +41,9 @@
 #include <assert.h>
 #include <locale.h>
 #include <wctype.h>
+#ifndef MINGW
 #include <langinfo.h>
+#endif
 
 #include "cursmenu.h"
 #include "script.h"
@@ -357,12 +359,6 @@ getch_fl( int cursor_char )
         }
     }
 
-#ifdef HAVE_PDCURSES
-  /* on windows, PDCurses returns 0x0004000d when you press return for
-   * some reason */
-  return_char &= 0x0ffff;
-#endif
-
   /* return what key was pressed */
   return ( return_char );
 }
@@ -385,13 +381,6 @@ static bool wait_user (FILE *script, char *message, char *mode)
 
   do {
     resp = getch_fl (ASCII_NULL);
-
-#ifdef HAVE_PDCURSES
-    /* this is necessary for DOS: when using raw(), PDCurses's
-       getch_fl() returns 0x0D on DOS/Windows  */
-    if ( resp == 0x0D )
-      resp = 0x0A;
-#endif
 
     /* in tutorial mode only, escape has the special purpose that we exit to a
        menu (or quit if there is none) */
@@ -706,13 +695,6 @@ do_drill( FILE *script, char *line ) {
             }
           while ( rc == KEY_BACKSPACE || rc == ASCII_BS || rc == ASCII_DEL );
 
-#ifdef HAVE_PDCURSES
-          /* this is necessary for DOS: when using raw(), PDCurses's
-             getch() returns 0x0D on DOS/Windows  */
-          if ( rc == 0x0D )
-            rc = 0x0A;
-#endif
-
           /* start timer on first char entered */
           if ( chars_typed == 0 )
             start_time = (long)time( NULL );
@@ -993,13 +975,6 @@ do_speedtest( FILE *script, char *line ) {
             *widep != ASCII_NULL; widep++ )
         {
           rc = getch_fl( (*widep != ASCII_NL) ? *widep : RETURN_CHARACTER );
-
-#ifdef HAVE_PDCURSES
-          /* this is necessary for DOS: when using raw(), PDCurses's
-             getch() returns 0x0D on DOS/Windows  */
-          if ( rc == 0x0D )
-            rc = 0x0A;
-#endif
 
           /* start timer on first char entered */
           if ( chars_typed == 0 )
@@ -2020,7 +1995,11 @@ int main( int argc, char **argv )
   textdomain (PACKAGE);
 #endif
 
+#ifdef MINGW
+  locale_encoding = "UTF-8";
+#else
   locale_encoding = nl_langinfo(CODESET);
+#endif
   isUTF8Locale = strcasecmp(locale_encoding, "UTF-8") == 0 ||
       strcasecmp(locale_encoding, "UTF8") == 0;
   /* printf("encoding is %s, UTF8=%d\n", locale_encoding, isUTF8Locale); */

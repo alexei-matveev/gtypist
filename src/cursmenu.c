@@ -356,23 +356,7 @@ char *do_menu (FILE *script, char *line)
 
       wattroff (stdscr, A_REVERSE);
 
-      if (isUTF8Locale)
-      {
-          get_wch(&ch);
-      }
-      else
-      {
-          ch = getch();
-      }
-
-
-#ifdef HAVE_PDCURSES
-      /* this is necessary for DOS: when using raw(), PDCurses's
-         wgetch() returns 0x0D on DOS/Windows  */
-      if ( ch == 0x0D )
-        ch = 0x0A;
-#endif
-
+      get_widech( &ch );
       switch (ch)
 	{
 	case KEY_UP:

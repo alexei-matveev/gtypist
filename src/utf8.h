@@ -35,6 +35,6 @@ extern void wideaddch_rev(wchar_t c);
 extern int utf8len(const char* UTF8Text);
 extern int iswideupper(wchar_t c);
 extern wchar_t towideupper(wchar_t c);
-extern int get_widech(wint_t* c);
+extern int get_widech(int* c);
 
 #endif /* !UTF8_H */
