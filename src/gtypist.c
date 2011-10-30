@@ -2160,15 +2160,15 @@ int main( int argc, char **argv )
   global_error_max = cl_default_error_max;
 
   /* check for user home directory */
-  if( getenv( "HOME" ) && strlen( getenv( "HOME" ) ) )
-    global_home_env = "HOME";
 #ifdef MINGW
-  else if( getenv( "APPDATA" ) && strlen( getenv( "APPDATA" ) ) )
-    global_home_env = "APPDATA";
+  global_home_env = "APPDATA";
+#else
+  global_home_env = "HOME";
 #endif
-  else
+  if( !getenv( global_home_env ) || !strlen( getenv( global_home_env ) ) )
     {
-      fprintf( stderr, _("%s: HOME environment variable not set\n"), argv0 );
+      fprintf( stderr, _("%s: %s environment variable not set\n"), \
+	  argv0, global_home_env );
       exit( 1 );
     }
 
