@@ -1,14 +1,16 @@
-# KTouch 10 parmak klaye dersi. Zemberek tarafından otomatik olarak oluşturulmuştur.
-
-# Turkish (generated from KDE4 Ktouch Turkish training file)
-# http://quickgit.kde.org/?p=ktouch.git&a=blob&f=training/Turkish/tr.ktouch.xml
+# created by ktouch2typ.pl from /mnt/data/dev/projects/gtypist/trunk/tools/../../ktouch/training/Turkish/tr.ktouch.xml
+# on Sun Oct 30 15:47:44 GMT 2011
+# ktouch title: Turkish (auto-generated)
+# ktouch comment: KTouch 10 parmak klaye dersi. Zemberek tarafından otomatik olarak oluşturulmuştur.
+# ktouch2typ.pl is part of gtypist (http://www.gnu.org/software/gtypist/)
+# ktouch can be found at http://ktouch.sourceforge.net
 # If you have suggestions about these lessons,
-# please send mail to pardus-devel@pardus.org.tr
-# with cc to bug-gtypist@gnu.org
+# please send mail to haavard@users.sourceforge.net
+# (or whoever is the current ktouch maintainer), with
+# cc to bug-gtypist@gnu.org
 
 G:MENU
 
-# Level 1
 *:S_LESSON1
 K:12:MENU
 B:                           Lesson 1: jf
@@ -44,7 +46,6 @@ D:ffff ffjj jfjf fjfff fjjjj ffff j jjj
  :fjj jffjj ffjj jjj ffjf fjf fjj jfjfj
 G:E_LESSON1
 
-# Level 2
 *:S_LESSON2
 K:12:MENU
 B:                           Lesson 2: kd
@@ -80,7 +81,6 @@ D:kjddd jd kf ddj fjjk kfjjf fkfff ddkk
  :fjfkj kkf fddd fj dk fkfff djf kkj
 G:E_LESSON2
 
-# Level 3
 *:S_LESSON3
 K:12:MENU
 B:                           Lesson 3: ls
@@ -109,14 +109,13 @@ D:ksdjs fskdl sdj j lkfdj sjjdf jlsfd jjsf
  :sdsl sd kdsjf sddlk dksj lld fd sddlk
  :kdsjf lkd jk fssf jlsfd kjll lkd sddlk
 *:LESSON3_D5
-I:(4)
+I:(5)
 D:ksd jsk ssk sssf kjdd sd fssf kjjkd
  :s jlsfd sj ssk lld dlks dkfj sd
  :lkd dlks lkfdj kldld sl kjdd k sddds
  :fd sjjdf sj jsk kkdkj fd dksj lss
 G:E_LESSON3
 
-# Level 4
 *:S_LESSON4
 K:12:MENU
 B:                           Lesson 4: şa
@@ -152,7 +151,6 @@ D:lak faska aksakal adak a adaş kas şaşala
  :kak j da akad kjkf kal d şad
 G:E_LESSON4
 
-# Level 5
 *:S_LESSON5
 K:12:MENU
 B:                           Lesson 5: ci
@@ -188,7 +186,6 @@ D:filika dakik cad kilis kaid lif dakika skif
  :isad şasi ilik ilk ladik faika skif ki
 G:E_LESSON5
 
-# Level 6
 *:S_LESSON6
 K:12:MENU
 B:                           Lesson 6: nt
@@ -224,7 +221,6 @@ D:dikit tck taş alatan indis inikat astat filistin
  :dikit didaktik incila şti kanla nikan ini ant
 G:E_LESSON6
 
-# Level 7
 *:S_LESSON7
 K:12:MENU
 B:                           Lesson 7: vı
@@ -260,7 +256,6 @@ D:ışı tavas alıntı kına cascavlak sandık anık kaval
  :analı vidad kışlak avanak kancık islav şavşat vakit
 G:E_LESSON7
 
-# Level 8
 *:S_LESSON8
 K:12:MENU
 B:                           Lesson 8: me
@@ -296,7 +291,6 @@ D:kefne daima telkin kelamıkadim işlev şike eş tevlit
  :fantasma temin felfelek taşım imal dikmen maksat jest
 G:E_LESSON8
 
-# Level 9
 *:S_LESSON9
 K:12:MENU
 B:                           Lesson 9: hr
@@ -332,7 +326,6 @@ D:ermende arakla temre ekstra ersevim sitrik telmih mandater
  :alivre hatime hafi taşikardi istinsah helva erdem verici
 G:E_LESSON9
 
-# Level 10
 *:S_LESSON10
 K:12:MENU
 B:                           Lesson 10: go
@@ -368,7 +361,6 @@ D:termometre antitoksin kromaj korida anglosakson tiroit hidrograf dilatometre
  :dola rotor ocak denge mikro kron olanak mikrokok
 G:E_LESSON10
 
-# Level 11
 *:S_LESSON11
 K:12:MENU
 B:                           Lesson 11: bp
@@ -404,10 +396,9 @@ D:pohpohla nesib bileşke fribort baak perk pakel cevapla
  :ibriktar kılaptan albinos menakıp bitle itap stop port
 G:E_LESSON11
 
-# Level 12
 *:S_LESSON12
 K:12:MENU
-B:                           Lesson 12: ğu
+B:                          Lesson 12: ğu
 *:LESSON12_D1
 I:(1)
 D:kaşağı boğanak mefkure murafaa savur selnur kuloğlu uğru
@@ -440,10 +431,9 @@ D:dokumahane maun muattal tutekin beşuş kum muhtelis kurşunlu
  :hinoğluhin muhsin durgun rumence kondur doku uğur oldurgan
 G:E_LESSON12
 
-# Level 13
 *:S_LESSON13
 K:12:MENU
-B:                           Lesson 13: ün
+B:                          Lesson 13: ün
 *:LESSON13_D1
 I:(1)
 D:sanalp kamerun kanepe aner konkret naibe insanüstü grandi
@@ -476,10 +466,9 @@ D:korner titan enam apandisit şükret taksonomi timüs boşnak
  :otobüs peronospora fiilen cankurtaran ağrıkesen tesmin abaküs nema
 G:E_LESSON13
 
-# Level 14
 *:S_LESSON14
 K:12:MENU
-B:                           Lesson 14: çz
+B:                          Lesson 14: çz
 *:LESSON14_D1
 I:(1)
 D:gazir zerr akçakiraz bozgun fototropizm keçitırnağı doç benzer
@@ -512,7 +501,6 @@ D:tapgaç zafir pizza çigan bilgiç bezirgan izah azref
  :arapsaç uzan suzidilara hazzet kalpazan nazile gazap donduraç
 G:E_LESSON14
 
-# Level 15
 *:S_LESSON15
 K:12:MENU
 B:                           Lesson 15: ö
@@ -610,7 +598,7 @@ G:S_LESSON15
 G:MENU
 
 *:MENU
-M: "ktouch Turkish lesson"
+M: "ktouch lesson: Turkish (auto-generated)"
  :S_LESSON1 "jf"
  :S_LESSON2 "kd"
  :S_LESSON3 "ls"

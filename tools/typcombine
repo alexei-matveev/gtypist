@@ -143,7 +143,6 @@ END	{
   printf(" : esp.typ           -  Spanish lessons\n");
   printf(" : ru.typ            -  Russian lessons\n");
   printf(" : ttde.typ          -  German lessons from tipptrainer 0.6.0\n");
-  printf(" : tr.typ            -  Turkish lessons, originally from ktouch\n");
   printf(" : ktbg.typ          -  Bulgarian lessons from KTouch 1.6\n");
   printf(" : ktbg_long.typ     -  Bulgarian lessons (longer) from KTouch 1.6\n");
   printf(" : ktde.typ          -  German lessons I from KTouch 1.6\n");
@@ -179,6 +178,7 @@ END	{
   printf(" : ktru_long.typ     -  Russian lessons (longer) from KTouch 1.6\n");
   printf(" : ktru_slava.typ    -  Russian lessons (hand-made) from KTouch 1.6\n");
   printf(" : ktsi.typ          -  Slovenian lessons from KTouch 1.6\n");
+  printf(" : kttr.typ          -  Turkish lessons from KTouch 1.6\n");
 
   printf("T:\n");
   printf(" :\n");
