@@ -1,3 +1,7 @@
+2011-10-30 Tim Marston <edam@waxworlds.org>
+
+	* configur.bat: fixed windows build to use libiconv
+
 2011-10-13 Tim Marston <edam@waxworlds.org>
 
 	* autogen.sh: extra checks for installed software

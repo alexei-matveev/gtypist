@@ -1,4 +1,12 @@
+2011-10-30 Tim Marston <edam@waxworlds.org>
+
+	* gtypist.c, utf8.c/h, cursmenu.c: get_widech() uses ints to avoid
+	  using wint_t, which is broken on Windows. Also, simplified reading
+	  characters so that get_widech() is always used. It also now
+	  handles windows newline characters for us.
+
 2011-10-26 Felix Natter <fnatter@gmx.net>
+
 	* gtypist.c, utf8.c/h: add get_widech() wrapper which
 	  calls getch() or get_wch() depending on whether it's a UTF8
           console or not => fixes input problems with KOI8-R terminals
