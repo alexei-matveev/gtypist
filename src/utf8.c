@@ -215,6 +215,11 @@ int get_widech(int* c)
     {
         if( get_wch( &ch ) == ERR )
 	    return ERR;
+
+#ifdef MINGW
+	// MinGW defines wint_t as a short int, for compatibility with Windows.
+	ch = ch & 0x0ffff;
+#endif
     }
     else
     {
