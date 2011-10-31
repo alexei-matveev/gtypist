@@ -30,7 +30,7 @@ Software required to build gtypist (older versions may work):
     * makeinfo
     * gawk (awk won't do)
     * autopoint
-	* libiconv
+    * libiconv (included in glibc)
 
 The following should be the required package names for Debian
 (testing/wheezy):
