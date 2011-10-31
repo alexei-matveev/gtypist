@@ -11,6 +11,7 @@ Version 2.9
 	  update of the german tipptrainer 0.6.0 lesson
 	- New Spanish manual from smc <smc@manticore.es>
 	- Tracking of personal best scores, by Tim Marston <edam@waxworlds.org>
+  - New Polish translation, by Jakub Bogusz <qboosh@pld-linux.org>
 	- New Turkish translation, by Gökçen Eraslan <gokcen@pardus.org.tr>
 	- We are dropping support for the DJGPP compiler (DOS), although the
 	  MinGW GCC compiler is still supported.
