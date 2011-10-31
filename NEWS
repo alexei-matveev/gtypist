@@ -4,7 +4,7 @@ GNU Typist Release Notes
 See the `ChangeLog' (top-level and in some subdirectories) and
 `THANKS' files for details about changes and contributors.
 
-Version 2.9
+Version 2.9 - October 2011
 	- Full UTF-8 support, by Felix Natter <fnatter@gmx.net>
 	- New Colemak typing lessons, by Tim Marston <edam@waxworlds.org>
 	- Many new international lessons imported from KTouch 1.6 and
