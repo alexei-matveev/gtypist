@@ -1,3 +1,8 @@
+2011-11-02 Tim Marston <edam@waxworlds.org>
+
+	* INSTALL, configure-w32: updated windows build system and
+	  documentation
+
 2011-10-31 Tim Marston <edam@waxworlds.org>
 
 	* version.sh: updated to 2.9
