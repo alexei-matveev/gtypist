@@ -81,7 +81,7 @@ AM_GNU_GETTEXT
 
 # Manual page generation
 
-GEN_MAN="help2man ./gtypist -o gtypist.1"
+GEN_MAN="help2man ./gtypist -o gtypist.1 -n 'a typing tutor with lessons for different keyboards and languages'"
 AC_SUBST(GEN_MAN)
 
 # This is necessary for tools/gtypist-mode.el
