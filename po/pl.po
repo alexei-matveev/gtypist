@@ -4,10 +4,10 @@
 #
 msgid ""
 msgstr ""
-"Project-Id-Version: gtypist 2.8.5\n"
+"Project-Id-Version: gtypist 2.9\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2011-10-30 23:23+0000\n"
-"PO-Revision-Date: 2011-09-18 18:01+0200\n"
+"PO-Revision-Date: 2011-11-04 21:15+0100\n"
 "Last-Translator: Jakub Bogusz <qboosh@pld-linux.org>\n"
 "Language-Team: Polish <translation-team-pl@lists.sourceforge.net>\n"
 "Language: pl\n"
@@ -73,7 +73,7 @@ msgstr "nieznane polecenie"
 
 #: src/gtypist.c:1714
 msgid "track personal best typing speeds"
-msgstr ""
+msgstr "śledzenie własnych rekordów szybkości pisania"
 
 #: src/gtypist.c:1715
 msgid ""
@@ -165,9 +165,8 @@ msgid "Usage"
 msgstr "Składnia"
 
 #: src/gtypist.c:1741
-#, fuzzy
 msgid "options"
-msgstr "Opcje"
+msgstr "opcje"
 
 #: src/gtypist.c:1741
 msgid "script-file"
@@ -271,7 +270,6 @@ msgid "Try '%s --help' for more information.\n"
 msgstr "Polecenie '%s --help' poda więcej informacji.\n"
 
 #: src/gtypist.c:2008
-#, fuzzy
 msgid ""
 "Copyright (C) 1998, 1999, 2000, 2001, 2002, 2003 Simon Baldwin.\n"
 "Copyright (C) 2003, 2004, 2008, 2011 GNU Typist Development Team.\n"
@@ -282,7 +280,7 @@ msgid ""
 "This program is released under the GNU General Public License."
 msgstr ""
 "Copyright (C) 1998, 1999, 2000, 2001, 2002, 2003 Simon Baldwin.\n"
-"Copyright (C) 2003, 2004, 2008 GNU Typist Development Team.\n"
+"Copyright (C) 2003, 2004, 2008, 2011 GNU Typist Development Team.\n"
 "Ten program jest udostępniony BEZ ŻADNEJ GWARANCJI; szczegóły\n"
 "znajdują się w pliku 'COPYING' dołączonym do kodu źródłowego.\n"
 "To oprogramowanie jest wolnodostępne i można je rozpowszechniać\n"
@@ -362,19 +360,18 @@ msgid "            with %.1f%% errors "
 msgstr "                   %.1f%% błędów "
 
 #: src/gtypist.c:2070
-#, fuzzy, c-format
+#, c-format
 msgid " Personal best  = %6.2f wpm "
-msgstr " Sama szybkość       = %6.2f sł/min "
+msgstr " Własny rekord       = %6.2f sł/min "
 
 #: src/gtypist.c:2072
-#, fuzzy, c-format
+#, c-format
 msgid " Personal best  = %6.2f cpm "
-msgstr " Sama szybkość       = %6.2f zn/min "
+msgstr " Własny rekord       = %6.2f zn/min "
 
 #: src/gtypist.c:2077
-#, fuzzy
 msgid "           new personal best "
-msgstr "                   %.1f%% błędów "
+msgstr "                 nowy własny rekord "
 
 #: src/gtypist.c:2082
 msgid "Y/N"
@@ -391,7 +388,7 @@ msgstr "nie można znaleźć lub otworzyć pliku"
 #: src/gtypist.c:2170
 #, c-format
 msgid "%s: %s environment variable not set\n"
-msgstr ""
+msgstr "%s: zmienna środowiskowa %s nie ustawiona\n"
 
 #: src/gtypist.c:2222
 msgid "Loading the script..."
@@ -403,9 +400,8 @@ msgid "internal error: malloc"
 msgstr "błąd wewnętrzny: malloc"
 
 #: src/gtypist.c:2347
-#, fuzzy
 msgid " internal error: fopen"
-msgstr "błąd wewnętrzny: fseek"
+msgstr " błąd wewnętrzny: fopen"
 
 #: src/cursmenu.c:324
 msgid ""
@@ -424,7 +420,7 @@ msgstr "błąd wewnętrzny: strdup"
 
 #: src/script.c:158
 msgid "label contains space"
-msgstr ""
+msgstr "etykieta zawiera spację"
 
 #: src/script.c:184
 msgid "label redefinition"
@@ -432,7 +428,7 @@ msgstr "ponowna definicja etykiety"
 
 #: src/script.c:228
 msgid "Invalid multibyte sequence (wrong encoding?)"
-msgstr ""
+msgstr "Błędna sekwencja wielobajtowa (niewłaściwe kodowanie?)"
 
 #: src/script.c:230
 msgid "data shortage"
@@ -457,8 +453,8 @@ msgstr ""
 
 #: src/utf8.c:47
 msgid "couldn't convert UTF-8 to wide characters"
-msgstr ""
+msgstr "nie udało się przekonwertować UTF-8 do szerokich znaków"
 
 #: src/utf8.c:158
 msgid "error in setcchar()"
-msgstr ""
+msgstr "błąd w setcchar()"
