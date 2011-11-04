@@ -31,6 +31,9 @@
 #include <errno.h>
 #include <ctype.h>
 #include <wctype.h>
+#ifdef MINGW
+#include <Windows.h>
+#endif
 #include "gettext.h"
 #define _(String) gettext (String)
 
@@ -39,9 +42,20 @@ extern int isUTF8Locale;
 
 wchar_t* widen(const char* text)
 {
+#ifdef MINGW
+  /* MultiByteToWideChar() (as opposed to mbstowcs) will convert to UTF-16,
+     (2-byte wchar_t) which is all that minGW+PDCurses support */
+  int numChars = MultiByteToWideChar(CP_UTF8, 0, text, -1, NULL, NULL);
+  wchar_t* wideText = malloc((numChars+1) * sizeof(wchar_t));
+  int convresult = MultiByteToWideChar(CP_UTF8, 0, text,
+				       -1, wideText,
+				       numChars);
+#else
   int numChars = utf8len(text);
   wchar_t* wideText = malloc((numChars+1) * sizeof(wchar_t));
   int convresult = mbstowcs(wideText, text, numChars+1);
+#endif
+
   if (convresult != numChars)
   {
       fatal_error(_("couldn't convert UTF-8 to wide characters"), "?");
