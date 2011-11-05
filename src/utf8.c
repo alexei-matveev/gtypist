@@ -183,13 +183,18 @@ void wideaddch_rev(wchar_t c)
 
 int utf8len(const char* UTF8Text)
 {
-    /* the behavior of mbstowcs depends on LC_CTYPE! */
     if (isUTF8Locale)
     {
+#ifdef MINGW
+        return MultiByteToWideChar(CP_UTF8, 0, UTF8Text, -1, NULL, NULL);
+#else
         return mbstowcs(NULL, UTF8Text, 0);
+#endif
     }
     else
     {
+        /* the behavior of mbstowcs depends on LC_CTYPE! 
+           => that's why we cannot use mbstowcs() for non-utf8 locales */
         char* textWithCurrentEncoding = convertUTF8ToCurrentEncoding(UTF8Text);
         int len = strlen(textWithCurrentEncoding);
         free(textWithCurrentEncoding);
