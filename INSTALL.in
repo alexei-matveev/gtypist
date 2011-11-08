@@ -11,61 +11,62 @@ In order to compile this program, you must have:
 
   - A reasonably standard C compiler (and standard C library with
     corresponding header files of course).
+
   - The 'ncursesw' library (with wide-character support) with
     corresponding header files installed in convenient places.
 
 The instructions are general for most Unix software in source form:
 
-* Uncompress the sources distribution:
+ * Uncompress the sources distribution:
 
-  $ tar jxvf gtypist-@VERSION.tar.bz2
-  or
-  $ tar zxvf gtypist-@VERSION.tar.gz
+   $ tar jxvf gtypist-@VERSION.tar.bz2
+   or
+   $ tar zxvf gtypist-@VERSION.tar.gz
 
-* Change to the sources directory:
+ * Change to the sources directory:
 
-  $ cd gtypist-@VERSION
+   $ cd gtypist-@VERSION
 
-* Configure the package:
+ * Configure the package:
 
-  $ ./configure
+   $ ./configure
 
-  This default configuration will probably be just fine. However, you
-  may add some configuration options to the end of that line.  Run
-  configure with `--help' to get full list of them, like this:
+   This default configuration will probably be just fine. However, you
+   may add some configuration options to the end of that line.  Run
+   configure with `--help' to get full list of them, like this:
 
-  $ ./configure --help
+   $ ./configure --help
 
-  By default the program executable will be installed in
-  /usr/local/bin and the lessons and internationalization support
-  files in /usr/local/share/gtypist (you can change this with the
-  `--prefix' option).  By default Native Language Support will be
-  installed (but you can disable this with the `--disable-nls'
-  option).
+   By default the program executable will be installed in
+   /usr/local/bin and the lessons and internationalization support
+   files in /usr/local/share/gtypist (you can change this with the
+   `--prefix' option).  By default Native Language Support will be
+   installed (but you can disable this with the `--disable-nls'
+   option).
 
-* Build the package:
+ * Build the package:
 
-  $ make
+   $ make
 
-* Get required permissions and install the package:
+ * Get required permissions and install the package:
 
-  $ sudo make install
+   $ sudo make install
 
-  The sudo program will ask you for the root password to install
-  gtypist system-wide.  If you do not have the root password, you will
-  not be able to install it system-wide.  Instead, you should run
-  configure with something like '--prefix=~/opt' to install it in your
-  home directory.
+   The sudo program will ask you for the root password to install
+   gtypist system-wide.  If you do not have the root password, you will
+   not be able to install it system-wide.  Instead, you should run
+   configure with something like '--prefix=~/opt' to install it in your
+   home directory.
 
-* To test your installation type
+ * To test your installation type
 
-  $ gtypist
+   $ gtypist
 
-  If you already had a version of gtypist installed on the system
-  before you installed this one,you may need to explicitly state which
-  one you want to run. So you may need to type:
+   If you already had a version of gtypist installed on the system
+   before you installed this one,you may need to explicitly state which
+   one you want to run. So you may need to type:
 
-  $ /usr/local/bin/gtypist
+   $ /usr/local/bin/gtypist
 
 
 Compilation under Windows NT/2000/XP
@@ -82,14 +83,19 @@ You must have:
 
   - MinGW compiler package, available at
 
+      http://sourceforge.net/projects/mingw/files/
+
+    It is advised that you download the "Automated MinGW Installer"
+    package (ming-get-inst) if you are not familiar with MinGW.  When
+    installing, make sure you turn on the options to install "MSYS
+    Basic System" and "MinGW Developer Toolkit".
+
+    If you don't use the atomated installer, note that you will also
+    need mingw32-make or MSYS.
+
+    More information about MinGW can be found at
+
       http://www.mingw.org/
-
-    It is advised to use the automatec installer (ming-get-inst) if
-    you are not familiar with MinGW.  Make sure you turn on the option
-    to install "MSYS Basic System" and "MinGW Developer Toolkit".
-
-  - mingw32-make or MSys.  If you installed MinGW using the automated
-    installer (as above), you will already have this.
 
   - A recent version of PDCurses, available at
 
@@ -98,55 +104,72 @@ You must have:
     The current official binaries of gtypist are compiled using
     PDCurses 3.4.  We build a static version of the library with
     Unicode and forced UTF-8 support.  Although building PDCurses is
-    outside the scope of thi document, here is a quick run-through of
+    outside the scope of this document, here is a quick run-through of
     what to do...
 
-      - unpack PDCurses
+      - copy the PDCurses-3.4.tar.gz file to C:\dev
+	  - open a MinGW shell, co to C:\dev and unpack PDCurses
+          $ cd /c/dev
+          $ tar -xvf PDCurses-3.4.tar.gz
       - cd to the win32 directory
-      - there's a README in here if you need help
-      - type: make -f mingwin32.mak WIDE=Y UTF8=Y
+	      $ cd PDCurses-3.4/win32
+      - there's a README in there if you need help
+      - build PDCurses
+          $ make -f mingwin32.mak WIDE=Y UTF8=Y
       - rename the resulting pdcurses.a to libpdcurses.a
+          $ mv pdcurses.a libpdcurses.a
 
-  - A recent version of libiconv, available at
+To build GNU Typist:
 
-      http://gnuwin32.sourceforge.net/
+ * Open a MinGW Shell (not a Windows command prompt), create a working
+   doirectory and change to it.
 
-To builf GNU Typist:
+   $ mkdir /c/dev
+   $ cd /c/dev
 
-* Decompress the source distribution.
+ * In a file explorer window, copy gtypist-@VERSION.tar.xz to C:\dev
 
-* Open a Windows command prompt window (not a MinGW shell) and change
-  to the sources directory.
+ * Uncompress gtypist-@VERSION.tar.xz
 
-  > cd gtypist-@VERSION
+   $ tar -xvf gtypist-@VERSION.tar.xz
 
-* Configure the package (run configur.bat)
+ * Change to the gtypist directory and configure the build by running
+   configure-w32
 
-  > configur
+   $ cd gtypist-@VERSION
+   $ configure-w32
 
-* Open the created Makefile and specify the path to your PDCurses
-  directory as directed by the comments.
+ * If you are using PDCurses 3.4 and you unpacked it and built it in
+   the C:\dev\PDCurses-3.4 directory (as suggested in the instructions
+   above), you will not need to change the Makefile created by the
+   previous step. You can skip to the next step.
 
-  > notepad Makefile
+   Otherwise, open the Makefile and specify the path to your PDCurses
+   directory as directed by the comments.
 
-* Compile using make (substitute mingw32-make if desired)
+   $ notepad Makefile
 
-  > make
+ * Compile gtypist using make
 
-* To install it, you should create a directory (e.g. C:\GTypist) and
-  copy into it the lessons of directory 'lessons' and the program,
-  gtypist.exe.
+   $ make
 
-  > mkdir C:\GTypist
-  > copy gtypist.exe C:\GTypist
-  > copy lessons\*.typ C:\GTypist
+ * To install it, you should create a directory (in this example we
+   use C:\GTypist) and copy into it the lessons, documentation, UI
+   translations and the program itsself (gtypist.exe).
 
-* To use GNU Typist, go to the directory where you installed it and
-  run gtypist.exe
+   $ mkdir /c/gtypist
+   $ cp gtypist.exe /c/gtypist
+   $ mkdir /c/gtypist/{doc,lessons}
+   $ cp lessons/*.typ /c/gtypist/lessons
+   $ cp doc/*.html /c/gtypist/doc
+   $ cp -r locale /c/gtypist
 
-  > C:
-  > cd \GTypist
-  > gtypist
+ * To use GNU Typist, go to the directory where you installed it and
+   run gtypist.exe. You can do this in a file explorer, or from the
+   MinGW shell, like this
+
+   $ cd /c/gtypist
+   $ gtypist
 
 
 Problems and their solution
@@ -154,35 +177,40 @@ Problems and their solution
 
 Configuration with Native Language Support under Unix:
 
-	* If you configured first without NLS and now you want NLS, go
-	  to directory intl remove libintl.h and configure again.
-	* If your Unix doesn't have Native Language Support, the sources
-	  of gtypist come with a limited version, to use it configure with:
-	    ./configure --with-included-gettext
-	  And before running gtypist set the environment variable LC_ALL/LANG
-	  to your language and country codes (LL_CC, as described in the
-	  manual, node "Environment Variables").  See the manual for the
-	  list of supported languages.  Using this option it was possible
-	  to compile and run gtypist under AIX.
+ * If you configured first without NLS and now you want NLS, go
+   to directory intl remove libintl.h and configure again.
 
-Dvorak Keyboard under GNU/Linux (Ben Armstrong <synrg@sanctuary.nslug.ns.ca>)
+ * If your Unix doesn't have Native Language Support, the sources of
+   gtypist come with a limited version, to use it configure with:
 
-	To get Dvorak keymaps, run the 'loadkeys' command on the appropriate
-	keymap file.  For example if your keymaps are at /usr/share/keymaps
+     ./configure --with-included-gettext
 
-	> loadkeys /usr/share/keymaps/i386/dvorak/dvorak.kmap.gz
+   And before running gtypist set the environment variable LC_ALL/LANG
+   to your language and country codes (LL_CC, as described in the
+   manual, node "Environment Variables").  See the manual for the list
+   of supported languages.  Using this option it was possible to
+   compile and run gtypist under AIX.
 
-	To switch to your default keyboard mappings, run loadkeys on
-	the default keymap file:
+Dvorak Keyboard under GNU/Linux (Ben Armstrong
+<synrg@sanctuary.nslug.ns.ca>):
 
-	> loadkeys /etc/console-tools/default.map.gz
+ * To get Dvorak keymaps, run the 'loadkeys' command on the
+   appropriate keymap file.  For example if your keymaps are at
+   /usr/share/keymaps
 
-	If you are in X, please visit the Dvorak home page at
-	http://www.mwbrooks.com/dvorak/ for more information.
+   > loadkeys /usr/share/keymaps/i386/dvorak/dvorak.kmap.gz
+
+ * To switch to your default keyboard mappings, run loadkeys on the
+   default keymap file:
+
+   $ loadkeys /etc/console-tools/default.map.gz
+
+ * If you are in X, please visit the Dvorak home page at
+   http://www.mwbrooks.com/dvorak/ for more information.
 
 Keyboard under Windows:
 
-	* You could experience some problems with the keyboard under
-	  DOS/Windows.  The [Return] key should now work, but the function keys
-	  (F1, F2... F12) may not.  However, this should not affect usage for
-	  most users.
+ * You could experience some problems with the keyboard under
+   DOS/Windows.  The [Return] key should now work, but the function
+   keys (F1, F2... F12) may not.  However, this should not affect
+   usage for most users.

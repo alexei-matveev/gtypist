@@ -108,8 +108,12 @@ char *SPEED_BEST_NEW_MSG;
 wchar_t *YN;
 wchar_t *RNE;
 
+#ifdef MINGW
+#define DATADIR "lessons"
+#else
 #ifndef DATADIR
 #define DATADIR "."
+#endif
 #endif
 
 #define	DEFAULT_SCRIPT      "gtypist.typ"

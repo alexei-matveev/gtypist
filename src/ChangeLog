@@ -1,8 +1,10 @@
 2011-11-05 Felix Natter <fnatter@gmx.net>
+
 	* utf8.c use MultiByteToWideChar() also in utf8len() on minGW
 	  (this fixes problems with ru.typ on minGW)
 
 2011-11-04 Felix Natter <fnatter@gmx.net>
+
 	* utf8.c: use MultiByteToWideChar() in widen() on Windows. This will
 	  convert to two-byte wchar_t which is what minGW + PDCurses support
 

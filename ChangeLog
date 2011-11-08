@@ -1,3 +1,12 @@
+2011-11-07 Felix Natter <fnatter@gmx.net>
+
+	* configure-w32.in: support NLS (gettext) on MinGW
+
+2011-11-02 Tim Marston <edam@waxworlds.org>
+
+	* INSTALL, configure-w32: updated windows build system and
+	  documentation
+
 2011-10-31 Tim Marston <edam@waxworlds.org>
 
 	* version.sh: updated to 2.9
