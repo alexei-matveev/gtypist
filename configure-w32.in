@@ -10,16 +10,15 @@ echo -e '#define ENABLE_NLS 1\r' >> src/config.h
 echo -e '#define PACKAGE "gtypist"\r' >> src/config.h
 echo -e '#define VERSION "@VERSION"\r' >> src/config.h
 echo -e '#define HAVE_PDCURSES 1\r' >> src/config.h
-echo -e '#define LOCALEDIR "."\r' >> src/config.h
+echo -e '#define LOCALEDIR "locale"\r' >> src/config.h
 
-echo copying UI translations over...
+echo copying UI translations...
 (cd po/
 for i in *.gmo
 do
     lang=${i/.gmo/}
-    mkdir ../$lang
-    mkdir ../$lang/LC_MESSAGES
-    cp $lang.gmo ../$lang/LC_MESSAGES/gtypist.mo
+    mkdir -p ../locale/$lang/LC_MESSAGES
+    cp $lang.gmo ../locale/$lang/LC_MESSAGES/gtypist.mo
 done
 )
 

@@ -1,4 +1,5 @@
 2011-11-07 Felix Natter <fnatter@gmx.net>
+
 	* configure-w32.in: support NLS (gettext) on MinGW
 
 2011-11-02 Tim Marston <edam@waxworlds.org>

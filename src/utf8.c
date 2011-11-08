@@ -193,8 +193,8 @@ int utf8len(const char* UTF8Text)
     }
     else
     {
-        /* the behavior of mbstowcs depends on LC_CTYPE! 
-           => that's why we cannot use mbstowcs() for non-utf8 locales */
+        /* the behavior of mbstowcs depends on LC_CTYPE!  That's why
+           we cannot use mbstowcs() for non-utf8 locales */
         char* textWithCurrentEncoding = convertUTF8ToCurrentEncoding(UTF8Text);
         int len = strlen(textWithCurrentEncoding);
         free(textWithCurrentEncoding);

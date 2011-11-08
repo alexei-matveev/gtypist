@@ -74,6 +74,16 @@ not, you can email a description of your problem to the bug-gtypist
 mailing list <bug-gtypist@gnu.org> and ask for help.
 
 
+BUILDING on Windows
+-------------------
+
+Note that if you are building on Windows, you must still first run
+autogen.sh in a GNU/Linux environment, as described above, and then
+unpack the resulting .tar.gz in the Windows environment. Running
+autogen.sh under Windows is not supported (you can try it if you
+really want to, but we haven't!).
+
+
 INSTALLATION
 ------------
 

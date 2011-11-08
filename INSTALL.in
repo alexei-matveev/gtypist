@@ -139,10 +139,13 @@ To build GNU Typist:
    $ cd gtypist-@VERSION
    $ configure-w32
 
- * Open the created Makefile and specify the path to your PDCurses
-   directory as directed by the comments.  If you unpacked PDCurese to
-   the C:\dev\PDCurses-3.4 directory, as suggested above, you may not
-   need to change anything.
+ * If you are using PDCurses 3.4 and you unpacked it and built it in
+   the C:\dev\PDCurses-3.4 directory (as suggested in the instructions
+   above), you will not need to change the Makefile created by the
+   previous step. You can skip to the next step.
+
+   Otherwise, open the Makefile and specify the path to your PDCurses
+   directory as directed by the comments.
 
    $ notepad Makefile
 
@@ -150,14 +153,16 @@ To build GNU Typist:
 
    $ make
 
- * To install it, you should create a directory (e.g. C:\GTypist) and
-   copy into it the lessons, documentation and the program,
-   gtypist.exe.
+ * To install it, you should create a directory (in this example we
+   use C:\GTypist) and copy into it the lessons, documentation, UI
+   translations and the program itsself (gtypist.exe).
 
    $ mkdir /c/gtypist
    $ cp gtypist.exe /c/gtypist
-   $ cp lessons/*.typ /c/gtypist
-   $ cp doc/*.html /c/gtypist
+   $ mkdir /c/gtypist/{doc,lessons}
+   $ cp lessons/*.typ /c/gtypist/lessons
+   $ cp doc/*.html /c/gtypist/doc
+   $ cp -r locale /c/gtypist
 
  * To use GNU Typist, go to the directory where you installed it and
    run gtypist.exe. You can do this in a file explorer, or from the
