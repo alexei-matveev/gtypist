@@ -31,7 +31,7 @@ echo -e '# Set the path to a compiled PDCurses library here:\r' >> Makefile
 echo -e 'PDCURSES_PATH=C:\dev\PDCurses-3.4\r' >> Makefile
 echo -e '\r' >> Makefile
 echo -e 'gtypist.exe:\r' >> Makefile
-echo -e '	gcc -DMINGW -DPDC_WIDE -I$(PDCURSES_PATH) -Isrc -static -s -O2 -o gtypist src/error.c src/script.c src/cursmenu.c src/gtypist.c src/getopt.c src/getopt1.c src/utf8.c -L$(PDCURSES_PATH)/win32 -lpdcurses -liconv -lgettextlib.dll -lintl.dll\r' >> Makefile
+echo -e '	gcc -DMINGW -DPDC_WIDE -I$(PDCURSES_PATH) -Isrc -static -s -O2 -o gtypist src/error.c src/script.c src/cursmenu.c src/gtypist.c src/getopt.c src/getopt1.c src/utf8.c -L$(PDCURSES_PATH)/win32 -lpdcurses -lgettextlib.dll -lintl -liconv\r' >> Makefile
 echo
 echo
 echo IMPORTANT: Before running make, change the PDCURSES_PATH variable in the
