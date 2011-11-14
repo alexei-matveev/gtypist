@@ -39,14 +39,8 @@ AC_CHECK_LIB(ncursesw, add_wch,
 AC_HEADER_STDC
 AC_CHECK_HEADERS([unistd.h alloca.h argz.h errno.h fcntl.h langinfo.h libintl.h limits.h locale.h malloc.h stddef.h stdio_ext.h stdlib.h string.h strings.h sys/param.h unistd.h])
 
-#AC_CHECK_HEADER(curses.h, HAVE_CURSES_H=1)
 AC_CHECK_HEADER(ncursesw/ncurses.h, HAVE_NCURSESW_H=1)
 
-# We prefer ncurses to curses if both are found.
-dnl if test -n "$HAVE_NCURSES_H" -a -n "$HAVE_LIBNCURSES";  then
-dnl    LIBS="-lncurses $LIBS"
-dnl elif test -n "$HAVE_CURSES_H" -a -n "$HAVE_LIBCURSES"; then
-dnl    LIBS="-lcurses $LIBS"
 if test -n "$HAVE_NCURSESW_H" -a -n "$HAVE_LIBNCURSESW";  then
        LIBS="-lncursesw $LIBS"
 else
