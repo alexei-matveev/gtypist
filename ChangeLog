@@ -1,3 +1,7 @@
+2011-11-15 Felix Natter <fnatter@gmx.net>
+
+	* configure.ac: clean up, remove checks for BSD curses
+
 2011-11-07 Felix Natter <fnatter@gmx.net>
 
 	* configure-w32.in: support NLS (gettext) on MinGW

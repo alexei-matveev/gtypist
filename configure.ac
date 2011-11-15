@@ -21,32 +21,21 @@ AC_PROG_YACC
 ALL_LINGUAS="cs de es eu fi fr nl pl ru tr zh_CN zh_TW"
 
 # Checks for libraries.
-
-#AC_CHECK_LIB(curses, wbkgdset,
-#	       [AC_DEFINE(HAVE_LIBCURSES, 1, [Is curses available])
-#	         HAVE_LIBCURSES=yes])
-
-# Check for ncurses if curses is not found:
-# i.e. on SuSE there are no ncurses* -> curses* links
-
-AC_CHECK_LIB(ncursesw, add_wch,
-	[AC_DEFINE(HAVE_LIBNCURSESW, 1, [Is ncursesw available])
-	         HAVE_LIBNCURSESW=yes]
-		 )
+AC_CHECK_LIB(ncursesw, add_wch, HAVE_LIBNCURSESW=1)
 
 # Checks for header files.
-
 AC_HEADER_STDC
 AC_CHECK_HEADERS([unistd.h alloca.h argz.h errno.h fcntl.h langinfo.h libintl.h limits.h locale.h malloc.h stddef.h stdio_ext.h stdlib.h string.h strings.h sys/param.h unistd.h])
 
 AC_CHECK_HEADER(ncursesw/ncurses.h, HAVE_NCURSESW_H=1)
 
+# sanity check for libncursesw: 
 if test -n "$HAVE_NCURSESW_H" -a -n "$HAVE_LIBNCURSESW";  then
-       LIBS="-lncursesw $LIBS"
+   LIBS="-lncursesw $LIBS"
 else
-   echo -e "Error:  both library and header files for ncursesw"\
-   	"library\nis required to build this package.  See INSTALL file for"\
-	"further information."
+   echo -e "Error:  both library and header files for the ncursesw library\n"\
+   	"are required to build this package.  See INSTALL file for"\
+	"further information. On Debian/Ubuntu you need to install libncursesw5-dev."
    exit 1;
 fi
 
