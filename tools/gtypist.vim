@@ -16,7 +16,7 @@
 "  syntax on " turn on syntax highlighting
 "
 " vim 5.x:
-" copy this file to where the syntax-files go and use this:
+" copy this file to where the syntax-files go and use this BEFORE "syntax on":
 "  autocmd BufNewFile,BufRead *.typ set ft=gtypist
 " (this is also the recommended way to install with vim 6.x on DOS/Windows)
 "
@@ -25,7 +25,7 @@
 " $ mkdir -p ~/.vim/syntax
 " and put this file in there:
 " $ mv gtypist.vim ~/.vim/syntax
-" put this in vimrc:
+" put this BEFORE "syntax on" in vimrc:
 "  autocmd BufNewFile,BufRead *.typ setf gtypist
 
 " ChangeLog:
