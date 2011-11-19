@@ -73,6 +73,7 @@ or create new ones.
 * Script file commands::    Information about the syntax of gtypist lessons
 * Create new lessons::      How to contribute new lessons
 * Emacs mode::              Emacs mode for editing gtypist scripts
+* VIM Syntax highlighting:: VIM Syntax highlighting for gtypist scripts
 * Environment Variables::   Environment variables which affect gtypist
 * Errors and omissions::    Known problems
 * History::                 History of GNU Typist
@@ -856,7 +857,7 @@ Words can contain all letters, but must have
 `col' somewhere inside.
 @end itemize
 
-@node Emacs mode, Environment Variables, Create new lessons, Top
+@node Emacs mode, VIM Syntax highlighting, Create new lessons, Top
 @chapter Emacs mode
 
 gtypist now comes with an Emacs major-mode which does
@@ -944,7 +945,54 @@ Run @kbd{C-h m} for a complete list of commands and their keybindings.
 If you find bugs or if you think there's something else this mode
 could do, please write to @email{bug-gtypist@@gnu.org}.
 
-@node Environment Variables, Errors and omissions, Emacs mode, Top
+@node VIM Syntax highlighting, Environment Variables, Emacs mode, Top
+@chapter VIM Syntax highlighting
+
+@comment TODO:
+@comment @footnote{@emph{Due to some strict GNU policies the Vim editor syntax file isn\'t distributed along with the GNU Typist package.  This section of the manual is Debian-specific.}}
+
+@noindent
+File @file{tools/gtypist.vim} provides syntax highlighting for Vim
+5.x, 6.x and 7.x.
+
+To install it@footnote{the Debian package installs it automatically
+for you} for version 5.x (or any version on DOS/Windows), copy the
+file to where the syntax-files go (for example
+@file{/usr/share/vim/vim56/syntax/} for Vim 5.6 on Debian 2.2; if
+everything else fails you can search for e.g. @file{xml.vim}) and add
+this to @file{~/.vimrc} (@file{$HOME/_vimrc} on DOS/Windows):
+@example
+autocmd BufNewFile,BufRead *.typ set ft=gtypist 
+@end example
+
+Installation for Vim >= 6.x is simpler: first create @file{~/.vim/syntax/}:
+@code{mkdir -p ~/.vim/syntax} and put @file{tools/gtypist.vim} in there.
+Finally add this to @file{~/.vimrc}:
+
+@example
+autocmd BufNewFile,BufRead *.typ setf gtypist
+@end example
+
+In any case, make sure that the @file{vimrc} file has the following command at the top
+ahead of all other @code{autocmd}-commands:
+
+@example
+autocmd!  " Remove ALL autocommands for the current group
+@end example
+
+(which avoids problems if @file{vimrc} is sourced more than once).
+And if you haven\'t done it already, you need to enable syntax
+highlighting (this may need to be @emph{before} the autocomd).
+
+@example
+syntax on " turn on syntax highlighting
+@end example
+
+@noindent
+All this is also mentioned in the README-section of @file{tools/gtypist.vim}.
+
+
+@node Environment Variables, Errors and omissions, VIM Syntax highlighting, Top
 @chapter Environment Variables
 GNU Typist uses the following environment variables:
 
