@@ -668,8 +668,8 @@ This section provides guidelines and hints for creating new lessons
 @section Ktouch lessons
 
 A very easy way to write lessons is to write them in the format that
-@command{ktouch} @emph{1.0} uses, and then convert it to a gtypist
-lesson using @command{tools/ktouch2typ.pl}. This will take care of
+@command{ktouch} @strong{1.0} uses, and then convert it to a gtypist
+lesson using @command{tools/ktouchOLD2typ.pl}. This will take care of
 writing ``jump-tables'', a menu and a bit more.
 
 The ktouch-1.0-format consists only of lessons, which are preceded by
