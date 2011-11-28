@@ -5,7 +5,7 @@ See the `ChangeLog' (top-level and in some subdirectories) and
 `THANKS' files for details about changes and contributors.
 
 version 2.9.1 - November 2011
-    - Native Language Support added on Windows
+	- Native Language Support added on Windows
 	- fixed support for UTF-8 on Windows
 	- re-added vim syntax highlighting and updated manual
 	- updated Polish translation, thanks to Jakub Bogusz
