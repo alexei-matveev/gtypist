@@ -5,5 +5,4 @@ lisp_LISP = gtypist-mode.el
 #ELCFILES=
 
 EXTRA_DIST=typcombine typv1tov2 ktouch2typ.pl gtypist.pm tt2typ.pl \
-gtypist-mode.el findwords
-
+gtypist-mode.el findwords gtypist.vim
