@@ -186,7 +186,7 @@ int utf8len(const char* UTF8Text)
     if (isUTF8Locale)
     {
 #ifdef MINGW
-        return MultiByteToWideChar(CP_UTF8, 0, UTF8Text, -1, NULL, NULL);
+        return MultiByteToWideChar(CP_UTF8, 0, UTF8Text, -1, NULL, NULL) - 1;
 #else
         return mbstowcs(NULL, UTF8Text, 0);
 #endif

@@ -4,15 +4,22 @@ GNU Typist Release Notes
 See the `ChangeLog' (top-level and in some subdirectories) and
 `THANKS' files for details about changes and contributors.
 
+version 2.9.1 - November 2011
+	- Native Language Support added on Windows
+	- fixed support for UTF-8 on Windows
+	- re-added vim syntax highlighting and updated manual
+	- updated Polish translation, thanks to Jakub Bogusz
+	- several fixes to the build system
+
 Version 2.9 - October 2011
-	- Full UTF-8 support, by Felix Natter <fnatter@gmx.net>
-	- New Colemak typing lessons, by Tim Marston <edam@waxworlds.org>
+	- Full UTF-8 support
+	- New Colemak typing lessons
 	- Many new international lessons imported from KTouch 1.6 and
 	  update of the german tipptrainer 0.6.0 lesson
-	- New Spanish manual from smc <smc@manticore.es>
-	- Tracking of personal best scores, by Tim Marston <edam@waxworlds.org>
-	- New Polish translation, by Jakub Bogusz <qboosh@pld-linux.org>
-	- New Turkish translation, by Gökçen Eraslan <gokcen@pardus.org.tr>
+	- New Spanish manual, thanks to smc
+	- Tracking of personal best scores
+	- New Polish translation, thanks to Jakub Bogusz
+	- New Turkish translation, thanks to Gökçen Eraslan
 	- We are dropping support for the DJGPP compiler (DOS), although the
 	  MinGW GCC compiler is still supported.
 
