@@ -8,6 +8,11 @@
 
 " README:
 " Installation:
+" In case you are using the debian package, this file will already
+" be installed for you, but you need to enable it explicitly:
+"   $ sudo apt-get install vim-addon-manager
+"   $ vim-addons install gtypist
+"
 " 'vimrc' is ~/.vimrc on UNIX, and $HOME/_vimrc on DOS/Windows.
 " This command should be at the top of your vimrc:
 "  autocmd!  " Remove ALL autocommands for the current group
@@ -20,13 +25,16 @@
 "  autocmd BufNewFile,BufRead *.typ set ft=gtypist
 " (this is also the recommended way to install with vim 6.x on DOS/Windows)
 "
-" vim 6.x:
+" vim >= 6.x:
 " create ~/.vim/syntax:
 " $ mkdir -p ~/.vim/syntax
 " and put this file in there:
 " $ mv gtypist.vim ~/.vim/syntax
 " put this BEFORE "syntax on" in vimrc:
 "  autocmd BufNewFile,BufRead *.typ setf gtypist
+"
+" You can verify that this syntax highlighting is active by running
+" ':set ft?' in vim, which should return 'filetype=gtypist'.
 
 " ChangeLog:
 " Sat Oct 20 14:35:44 CEST 2001: initial version
