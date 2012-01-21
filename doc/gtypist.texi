@@ -949,8 +949,8 @@ could do, please write to @email{bug-gtypist@@gnu.org}.
 @chapter VIM Syntax highlighting
 
 @noindent
-File @file{tools/gtypist.vim} provides syntax highlighting for Vim
-5.x, 6.x and 7.x.
+File @file{tools/gtypist.vim} provides vim syntax highlighting for
+gtypist lesson files (vim 5.x, 6.x and 7.x (and higher)).
 
 To install it for version 5.x (or any version on Windows), copy the
 file to where the syntax-files go (for example
@@ -969,6 +969,13 @@ Finally add this to @file{~/.vimrc}:
 autocmd BufNewFile,BufRead *.typ setf gtypist
 @end example
 
+In case you are using the debian package, @file{gtypist.vim} will already
+be installed for you, but you need to enable it explicitly:
+@example
+sudo apt-get install vim-addon-manager
+vim-addons install gtypist
+@end example
+
 In any case, make sure that the @file{vimrc} file has the following
 command at the top ahead of all other @code{autocmd}-commands:
 
@@ -978,15 +985,17 @@ autocmd!  " Remove ALL autocommands for the current group
 
 (which avoids problems if @file{vimrc} is sourced more than once).
 And if you haven\'t done it already, you need to enable syntax
-highlighting (this may need to be @emph{before} the autocomd).
+highlighting (this may need to be @emph{before} the autocmd ... gtypist).
 
 @example
 syntax on " turn on syntax highlighting
 @end example
 
-@noindent
-All this is also mentioned in the README-section of @file{tools/gtypist.vim}.
+You can verify that @file{tools/gtypist.vim} is active by running
+@code{:set ft?} in vim, which should return @emph{filetype=gtypist}.
 
+@noindent
+All of this is also mentioned in the README-section of @file{tools/gtypist.vim}.
 
 @node Environment Variables, Errors and omissions, VIM Syntax highlighting, Top
 @chapter Environment Variables
