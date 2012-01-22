@@ -3,7 +3,7 @@
  *
  * Copyright (C) 1998, 1999, 2000, 2001, 2002, 2003
  *               Simon Baldwin (simonb@sco.com)
- * Copyright (C) 2003, 2004, 2008, 2009, 2011
+ * Copyright (C) 2003, 2004, 2008, 2009, 2011, 2012
  *               GNU Typist Development Team <bug-gtypist@gnu.org>
  *
  * This program is free software: you can redistribute it and/or modify
@@ -50,6 +50,7 @@
 #include "error.h"
 #include "gtypist.h"
 #include "utf8.h"
+#include "infoview.h"
 
 #include "gettext.h"
 #define _(String) gettext (String)
@@ -2224,6 +2225,12 @@ int main( int argc, char **argv )
   /* put up the top line banner */
   clear();
   banner (_("Loading the script..."));
+
+  if (!do_beginner_infoview())
+  {
+      do_exit(script);
+      return 0;
+  }
 
   check_script_file_with_current_encoding(script);
 
