@@ -51,6 +51,7 @@
 #include "gtypist.h"
 #include "utf8.h"
 #include "infoview.h"
+#include "speedbox.h"
 
 #include "gettext.h"
 #define _(String) gettext (String)
@@ -78,7 +79,6 @@ int isUTF8Locale; /* does the current locale have a UTF-8 encoding? */
 #define T_TOP_LINE		(B_TOP_LINE + 1)
 #define I_TOP_LINE		(T_TOP_LINE)
 #define DP_TOP_LINE		(I_TOP_LINE + 2)
-#define	SPEED_LINE		(LINES - 5)
 
 /* mode indicator strings */
 char *MODE_TUTORIAL;
@@ -98,14 +98,6 @@ char *REPEAT_NEXT_EXIT_MSG;
 char *REPEAT_EXIT_MSG;
 char *CONFIRM_EXIT_LESSON_MSG;
 char *NO_SKIP_MSG;
-char *SPEED_RAW_WPM;
-char *SPEED_RAW_CPM;
-char *SPEED_ADJ_WPM;
-char *SPEED_ADJ_CPM;
-char *SPEED_PCT_ERROR;
-char *SPEED_BEST_WPM;
-char *SPEED_BEST_CPM;
-char *SPEED_BEST_NEW_MSG;
 wchar_t *YN;
 wchar_t *RNE;
 
@@ -411,13 +403,11 @@ static bool wait_user (FILE *script, char *message, char *mode)
 
 
 /*
-  display speed and accuracy from a drill or speed test
+  calculate and display speed and accuracy from a drill or speed test
 */
 static void display_speed( int total_chars, long elapsed_time, int errcount ) {
   double	test_time;			/* time in minutes */
   double	cpm, adjusted_cpm;		/* speeds in CPM */
-  char		message[MAX_WIN_LINE];		/* buffer */
-  int		line = SPEED_LINE;		/* current line no. */
   bool		had_best_speed = FALSE;		/* already had a p.best? */
   bool		new_best_speed = FALSE;		/* have we beaten it? */
   double	best_cpm;			/* personal best speed in CPM */
@@ -454,42 +444,9 @@ static void display_speed( int total_chars, long elapsed_time, int errcount ) {
 	put_best_speed( global_script_filename, __last_label, adjusted_cpm );
     }
 
-  /* adjust display position/height */
-  line -=
-    ( had_best_speed? 1 : 0 ) +
-    ( new_best_speed? 1 : 0 );
-
-  /* display everything */
-  if( cl_scoring_cpm )
-    sprintf( message, SPEED_RAW_CPM, cpm );
-  else
-    sprintf( message, SPEED_RAW_WPM, cpm / (double)5.0 );
-  move( line++, COLS - utf8len( message ) - 1 );
-  ADDSTR_REV( message );
-  if( cl_scoring_cpm )
-    sprintf( message, SPEED_ADJ_CPM, adjusted_cpm );
-  else
-    sprintf( message, SPEED_ADJ_WPM, adjusted_cpm / (double)5.0 );
-  move( line++, COLS - utf8len( message ) - 1 );
-  ADDSTR_REV( message );
-  sprintf( message, SPEED_PCT_ERROR,
-           (double)100.0 * (double)errcount / (double)total_chars );
-  move( line++, COLS - utf8len( message ) - 1 );
-  ADDSTR_REV( message );
-  if( had_best_speed )
-    {
-      if( cl_scoring_cpm )
-	sprintf( message, SPEED_BEST_CPM, best_cpm );
-      else
-	sprintf( message, SPEED_BEST_WPM, best_cpm / (double)5.0 );
-      move( line++, COLS - utf8len( message ) - 1 );
-      ADDSTR_REV( message );
-    }
-  if( new_best_speed )
-    {
-      move( line++, COLS - utf8len( SPEED_BEST_NEW_MSG ) - 1 );
-      ADDSTR_REV( SPEED_BEST_NEW_MSG );
-    }
+  /* draw speed box */
+  do_speed_box( total_chars, errcount, cpm, adjusted_cpm, cl_scoring_cpm,
+		had_best_speed, new_best_speed, best_cpm );
 }
 
 /*
@@ -2049,37 +2006,6 @@ int main( int argc, char **argv )
      (ESC ESC) and --no-skip is specified */
   NO_SKIP_MSG=
     _(" Sorry, gtypist is configured to forbid skipping exercises. ");
-  /* this must be adjusted to the right with one space at the end.
-     Leading whitespace is important because it is displayed in reverse
-     video because it must be aligned with the next messages (it's best
-     to run gtypist to see this in practice) */
-  SPEED_RAW_WPM=_(" Raw speed      = %6.2f wpm ");
-  /* This is the CPM version of the above.  The same rules apply. */
-  SPEED_RAW_CPM=_(" Raw speed      = %6.2f cpm ");
-  /* this must be adjusted to the right with one space at the end.
-     Leading whitespace is important because it is displayed in reverse
-     video and because it must be aligned with the previous and next
-     messages (it's best to run gtypist to see this in practice) */
-  SPEED_ADJ_WPM=  _(" Adjusted speed = %6.2f wpm ");
-  /* This is the CPM version of the above.  The same rules apply. */
-  SPEED_ADJ_CPM=  _(" Adjusted speed = %6.2f cpm ");
-  /* this must be adjusted to the right with one space at the end.
-     Leading whitespace is important because it is displayed in reverse
-     video and because it must be aligned with the previous and next
-     messages (it's best to run gtypist to see this in practice) */
-  SPEED_PCT_ERROR=_("            with %.1f%% errors ");
-  /* this must be adjusted to the right with one space at the end.
-     Leading whitespace is important because it is displayed in reverse
-     video and because it must be aligned with the previous messages (it's
-     best to run gtypist to see this in practice) */
-  SPEED_BEST_WPM= _(" Personal best  = %6.2f wpm ");
-  /* This is the CPM version of the above.  The same rules apply. */
-  SPEED_BEST_CPM= _(" Personal best  = %6.2f cpm ");
-  /* this must be adjusted to the right with one space at the end.
-     Leading whitespace is important because it is displayed in reverse
-     video and because it must be aligned with the previous messages
-     (it's best to run gtypist to see this in practice) */
-  SPEED_BEST_NEW_MSG= _("           new personal best ");
   /* this is used to translate the keys for Y/N-queries. Must be two
      uppercase letters separated by '/'. Y/N will still be accepted as
      well. Note that the messages (prompts) themselves cannot be
