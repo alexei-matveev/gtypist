@@ -9,8 +9,7 @@
 @copying
 Este es el manual de GNU Typist (versión @value{VERSION},
 @value{UPDATED}), un programa para aprender a mecanografiar en varios
-idiomas y con distintas disposiciones de teclado.  La traducción al
-castellano está en @value{FASE}.
+idiomas y con distintas disposiciones de teclado.
 
 Copyright @copyright{} 1998, 1999, 2000, 2001, 2002, 2003
 Free Software Foundation, Inc.
