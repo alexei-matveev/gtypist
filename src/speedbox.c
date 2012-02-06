@@ -18,6 +18,8 @@
  */
 
 #include "config.h"
+#include <string.h>
+#include <stdlib.h>
 
 #ifdef HAVE_PDCURSES
 #include <curses.h>
@@ -68,12 +70,12 @@ void do_speed_box( int total_chars, int error_chars,
 	   * messages, the '|' will be replaced with some number of spaces such
 	   * that all the displayed messages are the same number of characters. */
 	  SPEED_RAW_WPM = _("Raw speed|= %6.2f wpm");
-	  SPEED_RAW_CPM = _("Raw speed|= %6.2f cpm");
+	  SPEED_RAW_CPM = _("Raw speed|= %7.2f cpm");
 	  SPEED_ADJ_WPM = _("Adjusted speed|= %6.2f wpm");
-	  SPEED_ADJ_CPM = _("Adjusted speed|= %6.2f cpm");
+	  SPEED_ADJ_CPM = _("Adjusted speed|= %7.2f cpm");
 	  SPEED_PCT_ERROR = _("|with %.1f%% errors");
 	  SPEED_BEST_WPM = _("Personal best|= %6.2f wpm");
-	  SPEED_BEST_CPM = _("Personal best|= %6.2f cpm");
+	  SPEED_BEST_CPM = _("Personal best|= %7.2f cpm");
 	  SPEED_BEST_NEW_MSG = _("|new personal best");
   }
 

@@ -23,3 +23,6 @@ COPYRIGHT_HOLDER = Simon Baldwin
 # This is the list of locale categories, beyond LC_MESSAGES, for which the
 # message catalogs shall be used.  It is usually empty.
 EXTRA_LOCALE_CATEGORIES =
+
+# The email address to send bugs to
+MSGID_BUGS_ADDRESS = bug-gtypist@gnu.org

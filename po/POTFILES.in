@@ -6,4 +6,5 @@ src/error.c
 src/script.c
 src/utf8.c
 src/infoview.c
+src/speedbox.c
 
