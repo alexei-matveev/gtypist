@@ -88,83 +88,50 @@ void draw_scrollbar(int x2, int y1, int y2,
 
 int do_beginner_infoview()
 {
-    const char* constMsg = 
-        _("Welcome to gtypist 2.10!\n"
-          "\n"
-          "This text is meant to get you started using gtypist. Please read the manual\n"
-          "(TODO:URL or \"info gtypist\") for more in-depth information!\n"
-          "Use the arrow keys/PGUP/PGDN to scroll this window, SPACE/ENTER to start\n"
-          "using GTypist, or ESCAPE use GTypist and not show this dialog again.\n"
-          "\n"
-          "There are two types of typing exercises: \"drills\" and \"speed tests\":\n"
-          "In a \"drill\", gtypist displays text in every other line on the\n"
-          "screen, and waits for the user to correctly type the exact same text in\n"
-          "the intermediate lines.\n"
-          "In a \"speed test\", gtypist displays text on the screen, and waits for\n"
-          "the user to correctly over-type the exact same text.\n"
-          "In both exercise types, you have to repeat the test if your error percentage\n"
-          "is higher than the maximum error percentage.\n"
-          "\n"
-          "If the default max. error percentage is too difficult: you can change it\n"
-          "by running gtypist with the \"-e <maxpct>\" command line option.\n"
-          "\n"
-          "On most (UNIX) operating systems, you can use Ctrl--/Ctrl-+ to\n"
-          "resize the terminal window. On Windows, change the properties of the\n"
-          "terminal window by clicking on the top left corner of the window and\n"
-          "choosing 'Properties'\n"
-          "\n"
-          "More lessons:\n"
-          "------------\n"
-          "... there are more lessons which can be accessed by starting\n"
-          "gtypist with an argument, the name of the file:\n"
-          "\n"
-          " cs.typ            -  Czech lessons\n"
-          " esp.typ           -  Spanish lessons\n"
-          " ru.typ            -  Russian lessons\n"
-          " ttde.typ          -  German lessons from tipptrainer 0.6.0\n"
-          " ktbg.typ          -  Bulgarian lessons from KTouch 1.6\n"
-          " ktbg_long.typ     -  Bulgarian lessons (longer) from KTouch 1.6\n"
-          " ktde.typ          -  German lessons I from KTouch 1.6\n"
-          " ktde2.typ         -  German lessons II from KTouch 1.6\n"
-          " ktde_neo.typ      -  German lessons with NEO layout from KTouch 1.6\n"
-          "  (see http://pebbles.schattenlauf.de/layout.php?language=de\n"
-          " ktde_number.typ   -  German number keypad lessons from KTouch 1.6\n"
-          " ktdk.typ          -  Danish lessons I from KTouch 1.6\n"
-          " ktdk2.typ         -  Danish lessons II from KTouch 1.6\n"
-          " ktdvorak.typ      -  Dvorak lessons from KTouch 1.6\n"
-          "  (see http://en.wikipedia.org/wiki/Dvorak_Simplified_Keyboard)\n"
-          " ktdvorak_es.typ   -  Spanish Dvorak lessons from KTouch 1.6\n"
-          " ktdvorak_abcd.typ -  Dvorak lessons (basic) from KTouch 1.6\n"
-          " kten.typ          -  English lessons from KTouch 1.6\n"
-          " ktes.typ          -  Spanish lessons from KTouch 1.6\n"
-          " ktes_cat.typ      -  Catalan lessons from KTouch 1.6\n"
-          " ktfi.typ          -  Finnish lessons from KTouch 1.6\n"
-          " ktfi_kids.typ     -  Finnish lessons for kids from KTouch 1.6\n"
-          " ktfr.typ          -  French lessons I from KTouch 1.6\n"
-          " ktfr2.typ         -  French lessons II from KTouch 1.6\n"
-          " kthu.typ          -  Hungarian lessons I from KTouch 1.6\n"
-          " kthu_expert.typ   -  Hungarian lessons II from KTouch 1.6\n"
-          " ktit.typ          -  Italian lessons from KTouch 1.6\n"
-          " ktnl.typ          -  Dutch lessons from KTouch 1.6\n"
-          " ktnl_junior.typ   -  Dutch lessons for kids from KTouch 1.6\n"
-          " ktno.typ          -  Norwegian lessons from KTouch 1.6\n"
-          " ktpl.typ          -  Polish lessons from KTouch 1.6\n"
-          " ktru.typ          -  Russian lessons from KTouch 1.6\n"
-          " ktru_long.typ     -  Russian lessons (longer) from KTouch 1.6\n"
-          " ktru_slava.typ    -  Russian lessons (hand-made) from KTouch 1.6\n"
-          " ktsi.typ          -  Slovenian lessons from KTouch 1.6\n"
-          " kttr.typ          -  Turkish lessons from KTouch 1.6\n"
-          "\n"
-          "See the comments at the top of each .typ file for more information\n"
-          "about the source and the author of the lessons.\n"
-          "\n"
-          "If you want to write your own lessons, look at the gtypist manual,\n"
-          "it's really simple! If you have any question, write to the\n"
-          "gtypist mailing list: bug-gtypist@gnu.org\n"
-          "\n"
-            );
-    
-    char* msg;
+    const char* constMsg =
+    /* TRANSLATORS: This message must not exceed 76 characters (UTF-8 code
+       points, actually) wide or it will display incorrectly on an 80-character
+       wide terminal. */
+    _(  "Welcome to GNU Typist!\n"
+        "\n"
+        // 23456789012345678901234567890123456789012345678901234567890123456789012345
+        "This message is meant to get you started using gtypist. Please read the\n"
+        "manual (at http://www.gnu.org/software/gtypist/doc/, or type \"info gtypist\")\n"
+        "for more in-depth information!\n"
+        "\n"
+        "Use the arrow keys or PGUP/PGDN to scroll this window, SPACE/ENTER to start\n"
+        "using gtypist, or ESCAPE use gtypist and never show this dialog again.\n"
+        "\n"
+        "There are two types of typing exercises: \"drills\" and \"speed tests\". In a\n"
+        "\"drill\", gtypist displays text in every other line on the screen and waits\n"
+        "for the user to correctly type the exact same text in the intermediate\n"
+        "lines. In a \"speed test\", gtypist displays text on the screen and waits\n"
+        "for the user to correctly type the exact same text over the top.\n"
+        "\n"
+        "In both exercise types, you have to repeat the test if your error percentage\n"
+        "is higher than a maximum error percentage. The default is 3%, but if this is\n"
+        "too difficult you can change it by running gtypist with the \"-e <maxpct>\"\n"
+        "command-line option.\n"
+        "\n"
+        "On most X11-based terminal emulators you can use Ctrl--/Ctrl-+ to resize the\n"
+        "terminal window. On Windows, change the properties of the terminal window by\n"
+        "clicking on the top left corner of the window and choosing 'Properties'.\n"
+        "\n"
+        "Several typing courses are available from the main menu. As well as the\n"
+        "\"QWERTY\" courses, lessons are also available for other keyboard layouts,\n"
+        "such as Dvorak and Colemak, and numeric keypads. There are also other\n"
+        "lessons, besides the ones available on the main menu. To see a list of the\n"
+        "other lessons, select \"More lessons...\" from the main menu. To use one\n"
+        "of these other lessons, run gtypist with the name of the lesson file as a\n"
+        "command-line argument. See the comments at the top of each .typ file for\n"
+        "more information about the source and the author of the lessons. If you want\n"
+        "to write your own lessons, look at the gtypist manual, it's really simple!\n"
+        "\n"
+        "If you have any questions about GNU Typist, please write to the gtypist\n"
+        "mailing list at <bug-gtypist@gnu.org>."
+    );
+
+    char* msg; 
     char** msgLines;
     char* token;
     int numUsableLines, numMsgLines, i, j;
@@ -175,7 +142,7 @@ int do_beginner_infoview()
     msg = strdup(constMsg);
 
     /* count the number of lines in msg */
-    numMsgLines = 1;
+    numMsgLines = 0;
     for (i = 0; i < strlen(msg); i++)
     {
         if (msg[i] == '\n')
@@ -183,23 +150,25 @@ int do_beginner_infoview()
             numMsgLines++;
         }
     }
+    if (i && msg[i - 1] != '\n')
+    {
+        numMsgLines++;
+    }
 
-    msgLines = malloc(numMsgLines * sizeof(char*));
     /* split into lines: use strsep instead of strtok because
        strtok cannot handle empty tokens */
-    i = 0;
-    token = strsep(&msg, "\n");
-    do
+    msgLines = malloc(numMsgLines * sizeof(char*));
+    for (i = 0; i < numMsgLines; i++)
     {
-        msgLines[i++] = strdup(token);
         token = strsep(&msg, "\n");
-    } while (token != NULL);
+        msgLines[i] = strdup(token);
+    }
 
     width = 79 - 2; /* 2x window decoration */
     numUsableLines = LINES - 3; /* header, 2x window decoration */
-    height = MIN(numUsableLines, MAX(numMsgLines, 20));
+    height = MIN(numUsableLines, numMsgLines + 2); /* frame top/bottom */
     xOffset = (COLS-width) / 2;
-    yOffset = 1; /* header above! */
+    yOffset = (LINES-height) / 2;
 
     /* variables for vertical scrolling */
     firstLine = 0;
@@ -255,7 +224,7 @@ int do_beginner_infoview()
         {
             mvwideaddstr(yOffset + 1 + (i-firstLine), xOffset + 1, msgLines[i]);
         }
-        mvwideaddstr(yOffset + height, 0,
+        mvwideaddstr(LINES - 1, 0,
                      _("Press SPACE or ENTER to start gtypist, or ESCAPE to disable this dialog"));
         get_widech(&ch);
     }
