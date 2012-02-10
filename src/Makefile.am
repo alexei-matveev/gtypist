@@ -7,8 +7,8 @@
 
 bin_PROGRAMS = gtypist
 gtypist_SOURCES = gtypist.c cursmenu.c script.c error.c getopt.c getopt1.c \
-	infoview.c speedbox.c cursmenu.h error.h getopt.h gettext.h gtypist.h \
-	script.h utf8.c utf8.h infoview.h speedbox.h
+	infoview.c speedbox.c banner.c cursmenu.h error.h getopt.h gettext.h gtypist.h \
+	script.h utf8.c utf8.h infoview.h speedbox.h banner.h
 gtypist_LDADD = @LIBINTL@
 
 AM_CPPFLAGS = -I../intl \
