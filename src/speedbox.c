@@ -65,17 +65,29 @@ void do_speed_box( int total_chars, int error_chars,
   static bool first_time = TRUE;
   if( first_time ) {
 	  first_time = FALSE;
-	  /* In all these messages, a '|' is used to separate the left and the
-	   * right halves of the message.  When it comes to displaying these
-	   * messages, the '|' will be replaced with some number of spaces such
-	   * that all the displayed messages are the same number of characters. */
+	  /* TRANSLATORS: a '|' character in this message divides it in to two
+	   * halves, which are aligned to the left and right sides of the dialog */
 	  SPEED_RAW_WPM = _("Raw speed|= %6.2f wpm");
+	  /* TRANSLATORS: a '|' character in this message divides it in to two
+	   * halves, which are aligned to the left and right sides of the dialog */
 	  SPEED_RAW_CPM = _("Raw speed|= %7.2f cpm");
+	  /* TRANSLATORS: a '|' character in this message divides it in to two
+	   * halves, which are aligned to the left and right sides of the dialog */
 	  SPEED_ADJ_WPM = _("Adjusted speed|= %6.2f wpm");
+	  /* TRANSLATORS: a '|' character in this message divides it in to two
+	   * halves, which are aligned to the left and right sides of the dialog */
 	  SPEED_ADJ_CPM = _("Adjusted speed|= %7.2f cpm");
+	  /* TRANSLATORS: a '|' character in this message divides it in to two
+	   * halves, which are aligned to the left and right sides of the dialog */
 	  SPEED_PCT_ERROR = _("|with %.1f%% errors");
+	  /* TRANSLATORS: a '|' character in this message divides it in to two
+	   * halves, which are aligned to the left and right sides of the dialog */
 	  SPEED_BEST_WPM = _("Personal best|= %6.2f wpm");
+	  /* TRANSLATORS: a '|' character in this message divides it in to two
+	   * halves, which are aligned to the left and right sides of the dialog */
 	  SPEED_BEST_CPM = _("Personal best|= %7.2f cpm");
+	  /* TRANSLATORS: a '|' character in this message divides it in to two
+	   * halves, which are aligned to the left and right sides of the dialog */
 	  SPEED_BEST_NEW_MSG = _("|new personal best");
   }
 

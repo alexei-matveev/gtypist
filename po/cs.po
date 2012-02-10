@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: GNU Typist 2.7\n"
 "Report-Msgid-Bugs-To: bug-gtypist@gnu.org\n"
-"POT-Creation-Date: 2012-02-07 21:00+0000\n"
+"POT-Creation-Date: 2012-02-09 16:05+0000\n"
 "PO-Revision-Date: 2012-02-06 17:18+0000\n"
 "Last-Translator: Hynek Hanke <hanke@volny.cz>\n"
 "Language-Team: Czech\n"
@@ -464,42 +464,58 @@ msgstr ""
 msgid "Press SPACE or ENTER to start gtypist, or ESCAPE to disable this dialog"
 msgstr ""
 
-#: src/speedbox.c:72
+#. TRANSLATORS: a '|' character in this message divides it in to two
+#. * halves, which are aligned to the left and right sides of the dialog
+#: src/speedbox.c:70
 #, c-format
 msgid "Raw speed|= %6.2f wpm"
 msgstr "Hrubá rychlost|= %6.2f slov/m"
 
+#. TRANSLATORS: a '|' character in this message divides it in to two
+#. * halves, which are aligned to the left and right sides of the dialog
 #: src/speedbox.c:73
 #, c-format
 msgid "Raw speed|= %7.2f cpm"
 msgstr ""
 
-#: src/speedbox.c:74
+#. TRANSLATORS: a '|' character in this message divides it in to two
+#. * halves, which are aligned to the left and right sides of the dialog
+#: src/speedbox.c:76
 #, c-format
 msgid "Adjusted speed|= %6.2f wpm"
 msgstr "Orientační rychlost|= %6.2f slov/m"
 
-#: src/speedbox.c:75
+#. TRANSLATORS: a '|' character in this message divides it in to two
+#. * halves, which are aligned to the left and right sides of the dialog
+#: src/speedbox.c:79
 #, c-format
 msgid "Adjusted speed|= %7.2f cpm"
 msgstr ""
 
-#: src/speedbox.c:76
+#. TRANSLATORS: a '|' character in this message divides it in to two
+#. * halves, which are aligned to the left and right sides of the dialog
+#: src/speedbox.c:82
 #, c-format
 msgid "|with %.1f%% errors"
 msgstr "|s %.1f%% chyb"
 
-#: src/speedbox.c:77
+#. TRANSLATORS: a '|' character in this message divides it in to two
+#. * halves, which are aligned to the left and right sides of the dialog
+#: src/speedbox.c:85
 #, c-format
 msgid "Personal best|= %6.2f wpm"
 msgstr ""
 
-#: src/speedbox.c:78
+#. TRANSLATORS: a '|' character in this message divides it in to two
+#. * halves, which are aligned to the left and right sides of the dialog
+#: src/speedbox.c:88
 #, c-format
 msgid "Personal best|= %7.2f cpm"
 msgstr ""
 
-#: src/speedbox.c:79
+#. TRANSLATORS: a '|' character in this message divides it in to two
+#. * halves, which are aligned to the left and right sides of the dialog
+#: src/speedbox.c:91
 msgid "|new personal best"
 msgstr ""
 
