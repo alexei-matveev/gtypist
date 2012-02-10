@@ -73,13 +73,6 @@ int isUTF8Locale; /* does the current locale have a UTF-8 encoding? */
 #define bool			int
 #endif
 
-/* some screen postions */
-#define	MESSAGE_LINE		(LINES - 1)
-#define B_TOP_LINE		0
-#define T_TOP_LINE		(B_TOP_LINE + 1)
-#define I_TOP_LINE		(T_TOP_LINE)
-#define DP_TOP_LINE		(I_TOP_LINE + 2)
-
 /* mode indicator strings */
 char *MODE_TUTORIAL;
 char *MODE_QUERY;
@@ -123,13 +116,6 @@ static short	colour_array[] = {
   COLOR_BLACK, COLOR_RED, COLOR_GREEN, COLOR_YELLOW,
   COLOR_BLUE, COLOR_MAGENTA, COLOR_CYAN, COLOR_WHITE };
 #define	NUM_COLOURS		(sizeof( colour_array ) / sizeof( short ))
-
-/* shortcuts for reverse/normal mode strings */
-#define ADDSTR(X) wideaddstr(X)
-#define ADDSTR_REV(X) wideaddstr_rev(X)
-#define ADDCH(X) wideaddch(X)
-#define ADDCH_REV(X) wideaddch_rev(X)
-
 
 #ifdef MINGW
 #define MIN( a, b ) ( ( a ) < ( b )? ( a ) : ( b ) )
@@ -219,59 +205,6 @@ static bool get_best_speed( const char *script_filename,
 static void put_best_speed( const char *script_filename,
 			    const char *excersise_label, double adjusted_cpm );
 void get_bestlog_filename( char *filename );
-
-// Display the top banner with the given text
-void banner (const char *text)
-{
-   int colnum, brand_length, brand_position, text_length, text_position;
-
-   // Get rid of spaces at the edges of the text
-   while (isspace (*text))
-      text ++;
-   text_length = strlen (text);
-   if (text_length > 0)
-   {
-      while (isspace (text [text_length - 1]))
-      {
-         text_length --;
-	 if (! text_length)
-	    break;
-      }
-   }
-
-   brand_length = utf8len (PACKAGE) + utf8len (VERSION) + 3,
-   brand_position = COLS - brand_length,
-   text_position = ((COLS - brand_length) > text_length) ?
-		(COLS - brand_length - text_length) / 2 : 0;
-
-// TODO:  much of redundant output here...
-
-   move (B_TOP_LINE , 0);
-   attron (COLOR_PAIR (C_BANNER));
-   for (colnum = 0; colnum < COLS; colnum++)
-      ADDCH_REV (ASCII_SPACE);
-
-   move (B_TOP_LINE, text_position);
-   {
-     wchar_t* wideText = convertFromUTF8(text);
-     int numChars = wcslen(wideText);
-
-     int i;
-     for (i = 0; i < numChars; i++)
-       wideaddch_rev(wideText[i]);
-     free(wideText);
-   }
-
-   move (B_TOP_LINE, brand_position);
-   attron (COLOR_PAIR (C_PROG_NAME));
-   ADDCH_REV (' ');
-   ADDSTR_REV (PACKAGE);
-   ADDCH_REV (' ');
-   attron (COLOR_PAIR (C_PROG_VERSION));
-   ADDSTR_REV (VERSION);
-   refresh ();
-   attron (COLOR_PAIR (C_NORMAL));
-}
 
 void bind_F12 (const char *label)
 {

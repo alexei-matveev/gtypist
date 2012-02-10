@@ -1,3 +1,8 @@
+2012-02-10 Felix Natter <fnatter@gmx.net>
+	* banner.c/h: put banner() in its own file so that it can be used
+	  in infoview.c
+	* infoview.c: display banner at top, use banner colors for scrollbar
+
 2011-11-05 Felix Natter <fnatter@gmx.net>
 
 	* utf8.c use MultiByteToWideChar() also in utf8len() on minGW

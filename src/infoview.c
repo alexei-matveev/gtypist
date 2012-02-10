@@ -34,6 +34,8 @@
 #include "infoview.h"
 #include "utf8.h"
 #include "script.h"
+#include "banner.h"
+#include "gtypist.h"
 
 #include "gettext.h"
 #define _(String) gettext (String)
@@ -42,7 +44,9 @@ static
 void draw_frame(int x1, int y1, int x2, int y2)
 {
     int x, y;
-    // ACS_HLINE, ACS_VLINE, ACS_(UL|UR|LL|LR)CORNER
+
+    attron (COLOR_PAIR (C_BANNER));
+
     mvaddch(y1, x1, ACS_ULCORNER);
     y = y1;
     for (x = x1 + 1; x < x2; x++) /* top edge */
@@ -62,6 +66,8 @@ void draw_frame(int x1, int y1, int x2, int y2)
     x = x1;
     for (y = y1 + 1; y < y2; y++) /* left edge */
         mvaddch(y, x, ACS_VLINE);
+
+   attron (COLOR_PAIR (C_NORMAL));
 }
 
 static
@@ -77,6 +83,7 @@ void draw_scrollbar(int x2, int y1, int y2,
         (int)(firstLine/(float)maxFirstLine * maxOffset + 0.5);
     int y, scrollBarPosition;
     
+    attron (COLOR_PAIR (C_BANNER));
     for (y = y1 + 1, scrollBarPosition = 1; y < y2; y++, scrollBarPosition++)
     {
         mvaddch(y, x2, 
@@ -84,6 +91,7 @@ void draw_scrollbar(int x2, int y1, int y2,
                  scrollBarPosition - scrollBarOffset <= scrollBarHeight)
                 ? /*ACS_CKBOARD*/ ASCII_SPACE|A_REVERSE : ASCII_SPACE);
     }
+    attron (COLOR_PAIR (C_NORMAL));
 }
 
 int do_beginner_infoview()
@@ -217,6 +225,7 @@ int do_beginner_infoview()
         }
 
         clear();
+        banner("Beginner screen");
         draw_frame(xOffset, yOffset, xOffset + width, yOffset + height - 1);
         draw_scrollbar(xOffset + width, yOffset, yOffset + height - 1,
                        firstLine, lastLine, numMsgLines);

@@ -41,15 +41,9 @@ FOR 2.10 RELEASE
       * we have special T:[BEGINNER] commands that are only executed in
         beginner mode
 
-  * ###GTYPIST_VERSION### placeholder for the beginner message
-
   * beginner message += "If you want to know how to resize the gtypist
     window, please look at the manual in section XXX.", also write section
     XXX in manual
-
-  * use banner colors to draw infoview borders?
-
-  * infoview: display a banner at the top
 
   * Show correct line numbers when nonexistent label was hit in the M command.
 
