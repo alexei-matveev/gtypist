@@ -12,19 +12,6 @@ are welcome too!
 
 -------------------------------------------------------------------------
 
-FOR 2.9.2 RELEASE
-
-  * test UTF-8 character input on MinGW build
-
-  * fix this weird bug on the MinGW build:
-     - on Windows, run "gtypist.exe cs.typ"
-     - press ENTER 7 times (this should enter the lesson "Lekce T1")
-     - press ESCAPE, E, Y (to return to the menu)
-     - press ESCAPE (to go back to the previous menu)
-     - press ENTER (to select "Série T")
-     almost immediately, the first lesson on the "Série T" menu is
-     selected, automatically, without any further key presses.
-
 FOR 2.10 RELEASE
 
   * support multibyte encodings other than UTF8??
