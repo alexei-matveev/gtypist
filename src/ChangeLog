@@ -2,7 +2,13 @@
 	* infoview.c: reduce flicker by clearing lines incrementally on a
 	  scrolling event
 
+2012-02-10 Tim Marston <tim@ed.am>
+
+	* speedbox.c: rewrote code to display end-of-lesson speed and
+	  information and pulled it out in to a new file.
+
 2012-02-10 Felix Natter <fnatter@gmx.net>
+
 	* banner.c/h: put banner() in its own file so that it can be used
 	  in infoview.c
 	* infoview.c: display banner at top, use banner colors for scrollbar
