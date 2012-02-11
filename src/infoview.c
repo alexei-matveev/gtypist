@@ -108,7 +108,7 @@ int do_beginner_infoview()
         "for more in-depth information!\n"
         "\n"
         "Use the arrow keys or PGUP/PGDN to scroll this window, SPACE/ENTER to start\n"
-        "using gtypist, or ESCAPE use gtypist and never show this dialog again.\n"
+        "using gtypist, or ESCAPE to use gtypist and never show this dialog again.\n"
         "\n"
         "There are two types of typing exercises: \"drills\" and \"speed tests\". In a\n"
         "\"drill\", gtypist displays text in every other line on the screen and waits\n"
@@ -182,6 +182,10 @@ int do_beginner_infoview()
     firstLine = 0;
     lastLine = (numMsgLines < height - 3) ? (numMsgLines - 1) : (height - 3);
 
+    clear();
+    banner("Beginner screen");
+    draw_frame(xOffset, yOffset, xOffset + width, yOffset + height - 1);
+
     ch = 0x00;
     while (ch != ASCII_SPACE && ch != ASCII_ESC && ch != ASCII_NL
            && ch != 'q' && ch != 'Q')
@@ -223,16 +227,15 @@ int do_beginner_infoview()
             break;
         }
         }
-
-        clear();
-        banner("Beginner screen");
-        draw_frame(xOffset, yOffset, xOffset + width, yOffset + height - 1);
-        draw_scrollbar(xOffset + width, yOffset, yOffset + height - 1,
-                       firstLine, lastLine, numMsgLines);
+        
         for (i = firstLine; i <= lastLine; i++)
         {
+            move(yOffset + 1 + (i-firstLine), xOffset + 1);
+            clrtoeol();
             mvwideaddstr(yOffset + 1 + (i-firstLine), xOffset + 1, msgLines[i]);
         }
+        draw_scrollbar(xOffset + width, yOffset, yOffset + height - 1,
+                       firstLine, lastLine, numMsgLines);
         mvwideaddstr(LINES - 1, 0,
                      _("Press SPACE or ENTER to start gtypist, or ESCAPE to disable this dialog"));
         get_widech(&ch);
