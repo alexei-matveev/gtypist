@@ -5,15 +5,23 @@
 #	commit changed version into CVS.
 #
 
+
+
 bin_PROGRAMS = gtypist
-gtypist_SOURCES = gtypist.c cursmenu.c script.c error.c getopt.c getopt1.c \
-	infoview.c speedbox.c banner.c cursmenu.h error.h getopt.h gettext.h gtypist.h \
-	script.h utf8.c utf8.h infoview.h speedbox.h banner.h
+gtypist_SOURCES = gtypist.c cursmenu.c script.c error.c getopt.c getopt1.c		\
+	infoview.c speedbox.c banner.c cmdline.c cursmenu.h error.h getopt.h		\
+	gettext.h gtypist.h script.h utf8.c utf8.h infoview.h speedbox.h banner.h	\
+	cmdline.h cmdline.ggo
 gtypist_LDADD = @LIBINTL@
 
 AM_CPPFLAGS = -I../intl \
   -DDATADIR=\"$(pkgdatadir)\" \
   -DLOCALEDIR=\"$(datadir)/locale\"
+
+# build cmdline.{c,h} from cmdline.ggo
+
+cmdline.c: cmdline.ggo
+	gengetopt -C < $<
 
 # GEN_MAN is a shell command that generates the man page
 

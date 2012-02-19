@@ -1,0 +1,61 @@
+purpose "GNU Typist is a typing tutor with several lessons for different keyboards and languages.  New lessons can be written by the user easily."
+
+option "personal-best"  b "track personal best typing speeds"
+    flag off
+option "max-error"      e "default maximum error percentage (default 3.0); valid values are between 0.0 and 100.0"
+    float default="3.0"
+#typestr="%"
+option "notimer"        n "turn off WPM timer in drills"
+    flag off
+option "term-cursor"    t "use the terminal's hardware cursor"
+    flag off
+option "curs-flash"     f "cursor flash period P*.1 sec (default 10); valid values are between 0 and 512; this is ignored if -t is specified"
+    int default="10" typestr="P"
+option "colours"        c "set (F)orground and (B)ackground colours, where available (default 7,0)"
+    string default="7,0" typestr="F,B"
+option "silent"         s "don't beep on errors"
+    flag off
+option "quiet"          q "same as --silent"
+	flag off #alias="silent"
+option "start-label"    l "start the lesson at label 'L'"
+    string typestr="L"
+option "word-processor" w "try to mimic word processors"
+    flag off
+option "no-skip"        k "forbid the user to skip exercises"
+    flag off
+option "show-errors"    i "highlight errors with reverse video"
+    flag off
+option "always-sure"    S "do not ask confirmation questions"
+    flag off
+option "banner-colors"  - "set top banner colours: (F)oreground, (B)ackground, (P)ackage and (V)ersion (default 6,0,5,1)"
+    string typestr="F,B,P,V"
+option "scoring"        - "set scoring mode; valid values are \"wpm\" (words per minute) and \"cpm\" (characters per minute)"
+    enum values="wpm","cpm" typestr="M"
+option "expert"         - "don't show beginner tutorial message at start-up"
+    flag off
+
+
+# ORIGINAL HELP
+# -b     --personal-best  track personal best typing speeds
+# -e %   --max-error=%    default maximum error percentage (default 3.0);
+#                         valid values are between 0.0 and 100.0
+# -n     --notimer        turn off WPM timer in drills
+# -t     --term-cursor    use the terminal's hardware cursor
+# -f P   --curs-flash=P   cursor flash period P*.1 sec (default 10); valid
+#                         values are between 0 and 512; this is ignored if
+#                         -t is specified
+# -c F,B --colours=F,B    set initial display colours where available
+# -s     --silent         don't beep on errors
+# -q     --quiet          same as -s, --silent
+# -l L   --start-label=L  start the lesson at label 'L'
+# -w     --word-processor try to mimic word processors
+# -k     --no-skip        forbid the user to skip exercises
+# -i     --show-errors    highlight errors with reverse video
+# -h     --help           print this message
+# -v     --version        output version information and exit
+# -S     --always-sure    do not ask confirmation questions
+# --banner-colors=F,B,P,V set top banner colours (background, foreground,
+#                         package and version respectively)
+# --scoring=wpm,cpm       set scoring mode (words per minute or characters
+#                         per minute)
+
