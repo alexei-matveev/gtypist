@@ -30,6 +30,8 @@ o [Tim] switch to GNU gengetopts for CLI and config file options
    When ESCAPE is used to dismiss the beginner tutorial dialog, add 'expert'
    option to user config file if ESCAPE is used to exit beginner tutorial.
 
+* Mac OS X Package? => there is already macports or similar!
+
 * BUG(?): Make sure that the numpad's [ENTER] key is accepted in numpad lessons.
    Reported by gherald@myway.com.
 
@@ -72,8 +74,6 @@ SHORT TERM
 
 * allow strings from a .typ file to be translated (things like "lesson: ")
   
-* Mac OS X Package? => there is already macports or similar!
-
 * Test wpemu option in combination with multibyte lessons
 
 MEDIUM TERM
