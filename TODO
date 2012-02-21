@@ -18,8 +18,6 @@ are welcome too!
 
 FOR 2.10 RELEASE
 
-* support multibyte encodings other than UTF8??
-
 * Show correct line numbers when nonexistent label was hit in the M command.
 
 o [Tim] switch to GNU gengetopts for CLI and config file options
@@ -79,6 +77,8 @@ SHORT TERM
 * Test wpemu option in combination with multibyte lessons
 
 MEDIUM TERM
+
+* support multibyte encodings other than UTF8??
 
 * Windows installer, shortcuts for different lessons and manual?
 

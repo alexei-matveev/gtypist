@@ -68,6 +68,7 @@ or create new ones.
                             copy and share gtypist
 * Introduction::            Important concepts you need to know as a user
 * Invoking::                How to invoke gtypist
+* Resize GTypist window::   How to resize the terminal window
 * Supplied lessons::        Overview of the lessons in the gtypist distribution
 * Using typefortune::       Practising with text from `fortune' (requires perl)
 * Script file commands::    Information about the syntax of gtypist lessons
@@ -179,7 +180,7 @@ If preferred, speeds can be displayed in Characters Per Minute
 (@acronym{CPM}).  This can be done by specifying ``--scoring=cpm'' at
 the command line.
 
-@node Invoking, Supplied lessons, Introduction, Top
+@node Invoking, Resize GTypist window, Introduction, Top
 @chapter Invoking
 
 The syntax to invoke GNU Typist is:
@@ -309,7 +310,30 @@ To run the lessons in the file @file{test.typ} of directory
 cursor, and running silently:@* @code{gtypist -t -q -l TEST1
 /tmp/test.typ}
 
-@node Supplied lessons, Using typefortune, Invoking, Top
+@node Resize GTypist window, Supplied lessons, Invoking, Top
+@chapter Resize GTypist window
+
+Resizing the GTypist window is a matter of resizing the terminal
+window that GTypist was started in. Depending on the platform,
+this can be achieved by:
+
+@table @code
+
+@item Linux/UNIX (GNOME/KDE/...)
+Hit @kbd{@key{Ctrl} -} (reduce) or @kbd{@key{Ctrl} +} (extend).
+
+@item Mac OS X
+Hit @kbd{@key{Command} -} (reduce) or @kbd{@key{Command} +} (extend).
+The @key{Command} key might be labeled @key{Cmd}.
+
+@item Microsoft Windows
+Click on the upper left corner of the terminal window and choose
+@code{Properties}. Change settings in the @code{Layout} tab of the
+window that appears.
+
+@end table
+
+@node Supplied lessons, Using typefortune, Resize GTypist window, Top
 @chapter Supplied lessons
 
 The following lessons are supplied with GNU Typist :

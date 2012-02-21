@@ -106,6 +106,7 @@ int do_beginner_infoview()
         "This message is meant to get you started using gtypist. Please read the\n"
         "manual (at http://www.gnu.org/software/gtypist/doc/, or type \"info gtypist\")\n"
         "for more in-depth information!\n"
+        "(in particular, the manual describes how to resize GTypist's window).\n"
         "\n"
         "Use the arrow keys or PGUP/PGDN to scroll this window, SPACE/ENTER to start\n"
         "using gtypist, or ESCAPE to use gtypist and never show this dialog again.\n"
