@@ -127,10 +127,10 @@ static short	colour_array[] = {
 static struct gengetopt_args_info cl_args;      /* program options */
 static int	cl_fgcolour = 7;		/* fg colour */
 static int	cl_bgcolour = 0;		/* bg colour */
-static int	cl_banner_bg_colour = 0;	/* banner bg colorr (inversed video!) */
-static int	cl_banner_fg_colour = 6;	/* banner fg colour (inversed video!) */
-static int	cl_prog_name_colour = 5;	/* program name colour in banner */
-static int 	cl_prog_version_colour = 1;     /* program version colour in banner */
+static int	cl_banner_bg_colour = 0;	/* banner bg colorr */
+static int	cl_banner_fg_colour = 6;	/* banner fg colour */
+static int	cl_prog_name_colour = 5;	/* program name colour */
+static int 	cl_prog_version_colour = 1;     /* program version colour */
 
 /* a few global variables */
 static bool	global_resp_flag = TRUE;
@@ -585,10 +585,11 @@ do_drill( FILE *script, char *line ) {
             break;
 
           /* check that the character was correct */
-          if ( rc == *widep ||
-               ( cl_args.word_processor_flag && rc == ASCII_SPACE && *widep == ASCII_NL ))
+          if ( rc == *widep || ( cl_args.word_processor_flag &&
+				 rc == ASCII_SPACE && *widep == ASCII_NL ))
             {
-              if (cl_args.word_processor_flag && rc == ASCII_SPACE && *widep == ASCII_NL)
+              if (cl_args.word_processor_flag && rc == ASCII_SPACE &&
+		  *widep == ASCII_NL)
                 chars_in_the_line_typed = 0;
               else
                 {
@@ -879,8 +880,8 @@ do_speedtest( FILE *script, char *line ) {
             break;
 
           /* check that the character was correct */
-          if ( rc == *widep
-               || ( cl_args.word_processor_flag && rc == ASCII_SPACE && *widep == ASCII_NL ))
+          if ( rc == *widep || ( cl_args.word_processor_flag &&
+				 rc == ASCII_SPACE && *widep == ASCII_NL ))
           { /* character is correct */
             if (*widep == ASCII_NL)
             {
@@ -1506,7 +1507,8 @@ parse_cmdline_and_config( int argc, char **argv )
     }
 
     // parse and check colours
-    if( sscanf( cl_args.colours_arg, "%d,%d", &cl_fgcolour, &cl_bgcolour ) != 2 ||
+    if( sscanf( cl_args.colours_arg, "%d,%d",
+		&cl_fgcolour, &cl_bgcolour ) != 2 ||
 	cl_fgcolour < 0 || cl_fgcolour >= NUM_COLOURS ||
 	cl_bgcolour < 0 || cl_bgcolour >= NUM_COLOURS )
     {
@@ -1527,342 +1529,6 @@ parse_cmdline_and_config( int argc, char **argv )
 	exit( 1 );
     }
 }
-
-#if 0
-/*
-  parse command line options for initial values
-*/
-static void
-parse_cmdline( int argc, char **argv ) {
-  int	c;				/* option character */
-  int	option_index;			/* option index */
-  char *str_option; /* to store string vals of cl opts */
-  static struct option long_options[] = {	/* options table */
-    { "personal-best",	no_argument, 0, 'b' },
-    { "max-error",      required_argument, 0, 'e' },
-    { "notimer",	no_argument, 0, 'n' },
-    { "term-cursor",	no_argument, 0, 't' },
-    { "curs-flash",	required_argument, 0, 'f' },
-    { "colours",	required_argument, 0, 'c' },
-    { "colors",		required_argument, 0, 'c' },
-    { "banner-colours",	required_argument, 0, '\x01' },
-    { "banner-colors",	required_argument, 0, '\x01' },
-    { "silent",		no_argument, 0, 's' },
-    { "quiet",		no_argument, 0, 'q' },
-    { "start-label",	required_argument, 0, 'l' },
-    { "word-processor",	no_argument, 0, 'w' },
-    { "no-skip",        no_argument, 0, 'k' },
-    { "show-errors",    no_argument, 0, 'i' },
-    { "help",		no_argument, 0, 'h' },
-    { "version",	no_argument, 0, 'v' },
-    { "always-sure",	no_argument, 0, 'S' },
-    { "scoring",	required_argument, 0, '\x02'},
-    { 0, 0, 0, 0 }};
-
-  /* process every option */
-  while ( (c=getopt_long( argc, argv, "be:ntf:c:sql:wkihvS",
-			  long_options, &option_index )) != -1 )
-    {
-      switch (c)
-	{
-	case 'b':
-	  cl_personal_best = TRUE;
-	  break;
-	case 'e':
-	  cl_error_max_specified = TRUE;
-	  if ( sscanf( optarg, "%f", &cl_default_error_max ) != 1
-	       || cl_default_error_max < 0.0
-	       || cl_default_error_max > 100.0 )
-	    {
-	      fprintf( stderr, _("%s: invalid error-max value\n"),
-		       argv0 );
-	      exit( 1 );
-	    }
-	  break;
-	case 'n':
-	  cl_notimer = TRUE;
-	  break;
-	case 't':
-	  cl_term_cursor = TRUE;
-	  break;
-	case 'f':
-	  if ( sscanf( optarg, "%d", &cl_curs_flash ) != 1
-	       || cl_curs_flash < 0
-	       || cl_curs_flash > 512 )
-	    {
-	      fprintf( stderr, _("%s: invalid curs-flash value\n"),
-		       argv0 );
-	      exit( 1 );
-	    }
-	  break;
-	case 'c':
-	  if ( sscanf( optarg, "%d,%d",
-		       &cl_fgcolour, &cl_bgcolour ) != 2 ||
-	       cl_fgcolour < 0 || cl_fgcolour >= NUM_COLOURS ||
-	       cl_bgcolour < 0 || cl_bgcolour >= NUM_COLOURS )
-	    {
-	      fprintf( stderr, _("%s: invalid colours value\n"),argv0 );
-	      exit( 1 );
-	    }
-	  cl_colour = TRUE;
-	  break;
-	case '\x01':
-	  if (sscanf (optarg, "%d,%d,%d,%d",
-			&cl_banner_bg_colour, &cl_banner_fg_colour,
-			&cl_prog_name_colour, &cl_prog_version_colour) != 4)
-	  {
-	     fprintf (stderr, _("%s:  argument format is incorrect\n"), optarg);
-	     exit (1);
-	  }
-
-	  if (cl_banner_bg_colour < 0 || cl_banner_bg_colour >= NUM_COLOURS ||
-		cl_banner_fg_colour < 0 || cl_banner_bg_colour >= NUM_COLOURS ||
-		cl_prog_version_colour < 0 ||
-		cl_prog_version_colour >= NUM_COLOURS ||
-		cl_prog_name_colour < 0 || cl_prog_name_colour >= NUM_COLOURS)
-	  {
-	     fprintf (stderr, _("%s:  incorrect colour values\n"), optarg);
-	     exit (1);
-	  }
-
-	  break;
-    case '\x02': /* Scoring */
-      str_option = (char*)malloc( strlen(optarg) + 1 );
-      if (sscanf (optarg, "%s", str_option) != 1)
-        {
-          fprintf (stderr, _("%s: invalid scoring mode"), optarg);
-          exit (1);
-        }
-      if( strcmp(str_option, "cpm") == 0 )
-        {
-          cl_scoring_cpm = TRUE;
-        }
-      else if( strcmp(str_option, "wpm") == 0 )
-        {
-          cl_scoring_cpm = FALSE;
-        }
-      else
-        {
-          fprintf (stderr, _("%s: invalid scoring mode"), optarg);
-          exit (1);
-        }
-      free( str_option );
-	  break;
-	case 's':
-	case 'q':
-	  cl_silent = TRUE;
-	  break;
-	case 'l':
-	  cl_start_label = (char*)malloc( strlen( optarg ) + 1 );
-	  if ( cl_start_label == NULL )
-	    {
-	      fprintf( stderr, _("%s: internal error: malloc\n"),argv0 );
-	      exit( 1 );
-	    }
-	  strcpy( cl_start_label, optarg );
-	  break;
-	case 'w':
-	  cl_wp_emu = TRUE;
-	  break;
-	case 'k':
-	  cl_no_skip = TRUE;
-	  break;
-	case 'i':
-	  cl_rev_video_errors = TRUE;
-	  break;
-	case 'h':
-	  print_help();
-	  exit( 0 );
-	  break;
-	case 'v':
-	  printf( "%s %s\n\n", PACKAGE,VERSION );
-	  printf( "%s\n\n", COPYRIGHT );
-	  printf( "%s\n", _("Written by Simon Baldwin"));
-	  exit( 0 );
-	  break;
-	case 'S':
-	  user_is_always_sure = TRUE;
-	  break;
-	case '?':
-	default:
-	  fprintf( stderr,
-		   _("Try '%s --help' for more information.\n"), argv0 );
-	  exit( 1 );
-	}
-    }
-  if ( argc - optind > 1 )
-    {
-      fprintf( stderr,
-	       _("Try '%s --help' for more information.\n"), argv0 );
-      exit( 1 );
-    }
-}
-
-/**
-   indent to column n
-   @param n is the amount of times to write ' ' (negative or zero means none)
-**/
-static void
-indent_to( int n )
-{
-  int i;
-  for (i=0; i < n; ++i)
-    fputc(' ', stdout);
-}
-
-/**
-   Prints one usage option.
-   The arguments op, lop and help should not have special characters '\n' '\t'
-   @param op is the short option
-   @param lop is the long option
-   @param help is the explanation of the option
-   @param col_op is the column where the short option will be displayed
-   @param col_lop is the column where the long option will be displayed
-   @param col_op is the column where the explanation will be displayed
-   @param last_col is the last column that can be used
-**/
-static void
-print_usage_item( char *op, char *lop, char *help,
-		  int col_op, int col_lop, int col_help, int last_col )
-{
-  int col=0;
-  char help_string[MAX_SCR_LINE];
-  char *token;
-  const char delimiters[] = " ";
-
-  assert (op!=NULL && lop!=NULL && help!=NULL);
-  assert (0<=col_op && col_op<col_lop
-	  && col_lop<col_help && col_help<last_col);
-
-  indent_to(col_op);
-  printf ("%s", op);
-  col += col_op + strlen (op);
-
-  indent_to(col_lop - col);
-  printf ("%s", lop);
-  col += MAX(0, col_lop - col) + strlen (lop);
-
-  indent_to(col_help - col);
-  col += MAX(0, col_help - col);
-
-  strcpy ( help_string, help );
-  token = strtok ( help_string, delimiters );
-  while (token != NULL)
-    {
-      if (col + strlen (token) >= last_col) {
-	putc ( '\n', stdout );
-	indent_to ( col_help );
-	fputs ( token, stdout );
-	putc ( ' ', stdout );
-	col = col_help + strlen(token) + 1;
-      } else {
-	fputs ( token, stdout );
-	putc ( ' ', stdout );
-	col += strlen(token) + 1;
-      }
-      token = strtok ( NULL, delimiters );
-    }
-  putc('\n', stdout);
-}
-
-/**
-   Prints usage instructions
-**/
-static void
-print_help()
-{
-  char *op[]=
-    { "-b",
-      "-e %",
-      "-n",
-      "-t",
-      "-f P",
-      "-c F,B",
-      "-s",
-      "-q",
-      "-l L",
-      "-w",
-      "-k",
-      "-i",
-      "-h",
-      "-v",
-      "-S",
-      "--banner-colors=F,B,P,V",
-      "--scoring=wpm,cpm"};
-  char *lop[]=
-    { "--personal-best",
-      "--max-error=%",
-      "--notimer",
-      "--term-cursor",
-      "--curs-flash=P",
-      "--colours=F,B",
-      "--silent",
-      "--quiet",
-      "--start-label=L",
-      "--word-processor",
-      "--no-skip",
-      "--show-errors",
-      "--help",
-      "--version",
-      "--always-sure",
-      "",
-      ""};
-  char *help[] =
-    {
-      _("track personal best typing speeds"),
-      _("default maximum error percentage (default 3.0); valid values are "
-	"between 0.0 and 100.0"),
-      _("turn off WPM timer in drills"),
-      _("use the terminal's hardware cursor"),
-      _("cursor flash period P*.1 sec (default 10); valid  values are between "
-	"0 and 512; this is ignored if -t is specified"),
-      _("set initial display colours where available"),
-      _("don't beep on errors"),
-      _("same as -s, --silent"),
-      _("start the lesson at label 'L'"),
-      _("try to mimic word processors"),
-      _("forbid the user to skip exercises"),
-      _("highlight errors with reverse video"),
-      _("print this message"),
-      _("output version information and exit"),
-      _("do not ask confirmation questions"),
-      _("set top banner colours (background, foreground, package and version "
-        "respectively)"),
-      _("set scoring mode (words per minute or characters per minute)")};
-
-  int loop;
-
-  printf(_("`gtypist' is a typing tutor with several lessons for different "
-	   "keyboards and languages.  New lessons can be written by the user "
-	   "easily.\n\n"));
-  printf("%s: %s [ %s... ] [ %s ]\n\n",
-	 _("Usage"),argv0,_("options"),_("script-file"));
-  printf("%s:\n",_("Options"));
-  /* print out each line of the help text array */
-  for ( loop = 0; loop < sizeof(help)/sizeof(char *); loop++ )
-    {
-      print_usage_item( op[loop], lop[loop], help[loop], 1, 8, 25, 75 );
-    }
-
-  printf(_("\nIf not supplied, script-file defaults to '%s/%s'.\n")
-	 ,DATADIR,DEFAULT_SCRIPT);
-  printf(_("The path $GTYPIST_PATH is searched for script files.\n\n"));
-
-  printf("%s:\n",_("Examples"));
-  printf("  %s:\n    %s\n\n",
-	 _("To run the default lesson in english `gtypist.typ'"),argv0);
-  printf("  %s:\n    %s esp.typ\n\n",
-	 _("To run the lesson in spanish"),argv0);
-  printf("  %s:\n    GTYPIST_PATH=\"/home/foo\" %s bar.typ\n\n",
-	 _("To instruct gtypist to look for lesson `bar.typ' in a non standard "
-	   "directory"),argv0);
-  printf("  %s:\n    %s -t -q -l TEST1 /temp/test.typ\n\n",
-	 _("To run the lesson in the file `test.typ' of directory `temp', "
-	   "starting at label `TEST1', using the terminal's cursor, and run "
-	   "silently"),argv0);
-  printf("%s\n",_("Report bugs to bug-gtypist@gnu.org"));
-}
-#endif
 
 /*
   signal handler to stop curses stuff on intr
