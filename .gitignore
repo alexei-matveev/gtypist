@@ -1,5 +1,6 @@
 # Ignore temp files
 *~
+*#
 
 # Ignore object files
 *.o
@@ -53,6 +54,8 @@ tools/gtypist-mode.elc
 .cproject
 .project
 .settings
+src/cmdline.c
+src/cmdline.h
 
 # ignore dist builds
 *.gz

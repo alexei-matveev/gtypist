@@ -2,23 +2,23 @@ purpose "GNU Typist is a typing tutor with several lessons for different keyboar
 
 option "personal-best"  b "track personal best typing speeds"
     flag off
-option "max-error"      e "default maximum error percentage (default 3.0); valid values are between 0.0 and 100.0"
+option "max-error"      e "default maximum error percentage; valid values are between 0.0 and 100.0"
     float default="3.0"
 #typestr="%"
 option "notimer"        n "turn off WPM timer in drills"
     flag off
 option "term-cursor"    t "use the terminal's hardware cursor"
     flag off
-option "curs-flash"     f "cursor flash period P*.1 sec (default 10); valid values are between 0 and 512; this is ignored if -t is specified"
+option "curs-flash"     f "cursor flash period P*.1 sec; valid values are between 0 and 512; this is ignored if -t is specified"
     int default="10" typestr="P"
-option "colours"        c "set (F)orground and (B)ackground colours, where available (default 7,0)"
-    string default="7,0" typestr="F,B"
+option "colours"        c "set (F)orground and (B)ackground colours, where available"
+    string default="7,0" typestr="F,B" default="7,0"
 option "silent"         s "don't beep on errors"
     flag off
 option "quiet"          q "same as --silent"
 	flag off #alias="silent"
-option "start-label"    l "start the lesson at label 'L'"
-    string typestr="L"
+option "start-label"    l "start the lesson at label"
+    string typestr="LABEL"
 option "word-processor" w "try to mimic word processors"
     flag off
 option "no-skip"        k "forbid the user to skip exercises"
@@ -27,13 +27,14 @@ option "show-errors"    i "highlight errors with reverse video"
     flag off
 option "always-sure"    S "do not ask confirmation questions"
     flag off
-option "banner-colors"  - "set top banner colours: (F)oreground, (B)ackground, (P)ackage and (V)ersion (default 6,0,5,1)"
-    string typestr="F,B,P,V"
+option "banner-colors"  - "set top banner colours: (F)oreground, (B)ackground, (P)ackage and (V)ersion"
+    string typestr="F,B,P,V" default="6,0,5,1"
 option "scoring"        - "set scoring mode; valid values are \"wpm\" (words per minute) and \"cpm\" (characters per minute)"
-    enum values="wpm","cpm" typestr="M"
+    enum values="wpm","cpm" typestr="MODE"
 option "expert"         - "don't show beginner tutorial message at start-up"
     flag off
 
+args "--default-optional --conf-parser --unamed-opts=SCRIPT"
 
 # ORIGINAL HELP
 # -b     --personal-best  track personal best typing speeds
