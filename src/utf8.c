@@ -253,6 +253,9 @@ int get_widech(int* c)
 	ch = 0x0A;
 #endif
 
+    if (ch == KEY_ENTER)
+        ch = ASCII_NL;
+
     *c = ch;
     return OK;
 }
