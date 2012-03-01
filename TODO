@@ -32,10 +32,6 @@ o [Tim] switch to GNU gengetopts for CLI and config file options
 
 * Mac OS X Package? => there is already macports or similar!
 
-* BUG(?): Make sure that the numpad's [ENTER] key is accepted in numpad lessons.
-   Reported by gherald@myway.com
-  (possible fix pushed, reply from reporter pending)
-
 * Implement a `word processor' option to make GNU Typist accept
    [SPACE] instead of [RETURN] for new lines.
    (Suggested by gherald@myway.com) => use this by default in beginner

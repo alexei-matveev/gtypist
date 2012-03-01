@@ -249,12 +249,9 @@ int get_widech(int* c)
 
 #ifdef HAVE_PDCURSES
     // make sure PDCurses returns recognisable newline characters
-    if( ch == 0x0D )
-	ch = 0x0A;
+    if( ch == 0x0D || ch == PADENTER)
+        ch = 0x0A;
 #endif
-
-    if (ch == KEY_ENTER)
-        ch = ASCII_NL;
 
     *c = ch;
     return OK;
