@@ -24,6 +24,13 @@
 
 #include <wchar.h>
 
+/* 
+   ncurses' KEY_BACKSPACE (0x107) collides with polish "c with acute (0x107)
+   => we need to encode KEY_BACKSPACE!
+*/
+#define GTYPIST_KEY_BACKSPACE 0x0008
+
+
 extern wchar_t* widen(const char* text);
 extern char* convertUTF8ToCurrentEncoding(const char* UTF8Input);
 extern wchar_t* convertFromUTF8(const char* UTF8Text);
