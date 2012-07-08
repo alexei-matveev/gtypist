@@ -4,6 +4,10 @@ GNU Typist Release Notes
 See the `ChangeLog' (top-level and in some subdirectories) and
 `THANKS' files for details about changes and contributors.
 
+version 2.9.2 (TODO)
+  - fix collison between unicode 0x107 (c with accent) and KEY_BACKSPACE
+    (Reported by Kalthor <kalthor@interia.pl>)
+
 version 2.9.1 - November 2011
 	- Native Language Support added on Windows
 	- fixed support for UTF-8 on Windows

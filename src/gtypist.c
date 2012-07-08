@@ -588,7 +588,7 @@ do_drill( FILE *script, char *line ) {
               rc = getch_fl (chars_in_the_line_typed >= COLS ? *(widep + 1) :
                              (*widep == ASCII_TAB ? ASCII_TAB : ASCII_SPACE));
             }
-          while ( rc == KEY_BACKSPACE || rc == ASCII_BS || rc == ASCII_DEL );
+          while ( rc == GTYPIST_KEY_BACKSPACE || rc == ASCII_BS || rc == ASCII_DEL );
 
           /* start timer on first char entered */
           if ( chars_typed == 0 )
@@ -879,7 +879,7 @@ do_speedtest( FILE *script, char *line ) {
 
           /* check for delete keys if not at line start or
              speed test start */
-          if ( rc == KEY_BACKSPACE || rc == ASCII_BS || rc == ASCII_DEL )
+          if ( rc == GTYPIST_KEY_BACKSPACE || rc == ASCII_BS || rc == ASCII_DEL )
             {
               /* just ignore deletes where it's impossible or hard */
               if ( widep > wideData && *(widep-1) != ASCII_NL && *(widep-1) != ASCII_TAB ) {

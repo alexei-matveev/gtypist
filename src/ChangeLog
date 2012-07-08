@@ -1,3 +1,9 @@
+2012-07-08 Felix Natter <fnatter@gmx.net>
+	* gtypist.c, utf8.[ch]: Avoid collision between 0x107 unicode char
+	  (c with accent) and KEY_BACKSPACE by honoring the return value
+	  of get_wch()
+	  (Reported by Kalthor <kalthor@interia.pl>)
+
 2012-02-11 Felix Natter <fnatter@gmx.net>
 	* infoview.c: reduce flicker by clearing lines incrementally on a
 	  scrolling event
