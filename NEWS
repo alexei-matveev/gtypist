@@ -5,8 +5,8 @@ See the `ChangeLog' (top-level and in some subdirectories) and
 `THANKS' files for details about changes and contributors.
 
 version 2.9.2 (TODO)
-  - fix collison between unicode 0x107 (c with accent) and KEY_BACKSPACE
-    (Reported by Kalthor <kalthor@interia.pl>)
+	- fix collison between unicode 0x107 (c with accent) and KEY_BACKSPACE
+	  (Reported by Kalthor <kalthor@interia.pl>)
 
 version 2.9.1 - November 2011
 	- Native Language Support added on Windows
@@ -62,28 +62,28 @@ Version 2.7 - September 2003
  	  Implemented by Rob Leslie <rob@mars.org>
 	- HTML manual (English and Czech) now available in the source package.
 	- Lots of small fixes and improvements
- 	  (See the ChangeLog file for details)
+	  (See the ChangeLog file for details)
 
 Version 2.6.2 - September/2002
 	- Now installs lessons (bug only in version 2.6.1).
 
 Version 2.6.1 - August/2002
 	- findwords.sh: new script to help with creating lessons.
-	See the manual for details.
+	  See the manual for details.
 	- configure: checks for ncurses if curses if not available.
 	- built with automake-1.6.3 and gettext-0.11.5.
  
 Version 2.6 - April/2002
 	- New `typefortune' (perl-)script which creates lessons from `fortune'
-	(see the new section "Using typefortune" in the manual).
+	  (see the new section "Using typefortune" in the manual).
 	- New interface messages and manual in Czech
-	from Hynek Hanke <hanke@volny.cz>.
+	  from Hynek Hanke <hanke@volny.cz>.
 	- New lessons in Czech from Hynek Hanke and Richard Susta <r@susta.cz>.
 	- Manual now using `@copying' as recommended in texinfo-4.2,
-	and released under the GNU Free Documentation License
-	(with no Invariant Sections).
-        - Built with automake 1.6.1, autoconf 2.53, gettext 0.11.1
-	and texinfo 4.2, following their latest guidelines.
+	  and released under the GNU Free Documentation License
+	  (with no Invariant Sections).
+    - Built with automake 1.6.1, autoconf 2.53, gettext 0.11.1
+	  and texinfo 4.2, following their latest guidelines.
 
 Version 2.5.1 - February/2002
 	- fix a bug in --help output
@@ -92,87 +92,87 @@ Version 2.5.1 - February/2002
 Version 2.5 - January/2002
 	
 	- Allowed the user to skip an exercise or exit the lesson by
-	pressing ESC twice (once to restart and then again at the
-	beginning of the exercise to skip)
+	  pressing ESC twice (once to restart and then again at the
+	  beginning of the exercise to skip)
 	- Added new switch --no-skip which prohibits the user from skipping
-	exercises
+	  exercises
 	- Removed more occurrences of "Q: Press Y to continue, ..."  following
-	an exercise (because this is builtin since 2.4) in d.typ, r.typ, v.typ
-	and esp.typ
+	  an exercise (because this is builtin since 2.4) in d.typ, r.typ, v.typ
+	  and esp.typ
 	- Removed all occurrences of "Q: Press Y to cont..." following T: :
-	It doesn't make sense to repeat a T:, the standard message
-	"Press Enter to continue." is better (d.typ, v.typ, r.typ)
-	(multi-page T:'s are the exception)
+	  It doesn't make sense to repeat a T:, the standard message
+	  "Press Enter to continue." is better (d.typ, v.typ, r.typ)
+	  (multi-page T:'s are the exception)
 	- The last two changes make the lesson-files quite a bit simpler
 	- Fixed errors in d.typ and esp.typ (see lessons/ChangeLog)
 	- Renamed --wpmode to --word-processor
 	- Added interface messages in French (using gtranslator)
 	- Spanish interface updated by José Pelegrín <josepl@acm.org>
-        - Fixes for undefined symbols errors compiling on Unix systems
-        (such as Solaris) when both curses and ncurses are installed.
+	- Fixes for undefined symbols errors compiling on Unix systems
+	  (such as Solaris) when both curses and ncurses are installed.
 
 Version 2.4.1 - November/2001
 
 	- documentation: fix some TODOs, shorten the node-names
-	and add descriptions in	menus, remove node "Technical Information"
-	and place its children on top-level and small markup changes
+	  and add descriptions in	menus, remove node "Technical Information"
+	  and place its children on top-level and small markup changes
 	- gtypist-mode.el now works with XEmacs as well (because of this,
-	gtypist-mode-goto-label is now bound to C-c M-g)
+	  gtypist-mode-goto-label is now bound to C-c M-g)
  
 Version 2.4 - September/2001
 
 	- Added Finnish Native Language Support 
 	- Changes to the types of exercises: d,D for drills and s,S
-	for speed-tests
+	  for speed-tests
 	- Added commands E: (sets error-max) and F: (sets "on failure" label)
-	(currently only used in demo.typ and esp.typ)
+	  (currently only used in demo.typ and esp.typ)
 	- do_drill, do_speedtest: added "builtin repeat loop"
 	- print_help: only break on whitespace in help-strings, use ';'
-	to separate words.
+	  to separate words.
 	- Allowed translation of the "do you want to repeat?" message
-	(which is possible because it is now builtin) and the corresponding
-	keys (Y/N)
+	  (which is possible because it is now builtin) and the corresponding
+	  keys (Y/N)
 	- fatal_error: made the output more logical
 	- Allowed "give up" (repeat lesson) via ESC (there is no way to
-	skip an exercise in 2.4)
+	  skip an exercise in 2.4)
 	- Added (unsigned char) cast in ADDCH, ADDCH_REV to support
-	8bit-characters in exercises
+	  8bit-characters in exercises
 	- Rewrote command-line parsing + use '-' as word-separator in
-	long options
+	  long options
 	- command_char's are case-sensitive now
 	- Ignores trailing whitespace in labels
 	- Added new lessons which are converted from ktouch-1.0
-	(http://ktouch.sourceforge.net)
-	kt*.typ, converted by tools/ktouch2typ.pl and
-	tipptrainer-0.3.3
-	(http://www.pingos.schulnetz.org/tipptrainer):
-	currently only the german lesson, which is in ttde.typ, converted
-	by tools/tt2typ.pl.
+	  (http://ktouch.sourceforge.net)
+	  kt*.typ, converted by tools/ktouch2typ.pl and
+	  tipptrainer-0.3.3
+	  (http://www.pingos.schulnetz.org/tipptrainer):
+	  currently only the german lesson, which is in ttde.typ, converted
+	  by tools/tt2typ.pl.
 	- An Emacs-mode for editing gtypist's script-files:
-	tools/gtypist-mode.el
+	  tools/gtypist-mode.el
 	- Improved i18n-support
 	- Improved German translation (with help from de@li.org)
-        - Minor fixes (build, charset definition)
+	- Minor fixes (build, charset definition)
 	- Documentation improvements
 
 Version 2.3.2 - Nov/2000
-        - Now this program is part of GNU!  We celebrate with a new
-          name: "GNU Typist" (or gtypist) and a new release
+	- Now this program is part of GNU!  We celebrate with a new
+	  name: "GNU Typist" (or gtypist) and a new release
 	- New documentation in Texinfo format, the man page now is
 	  generated automatically with the program help2man
 	- Now configure  supports curses  if ncurses is  not available
-          (thanks to Caolan McNamara <caolan@csn.ul.ie>)
+	  (thanks to Caolan McNamara <caolan@csn.ul.ie>)
 
 Version 2.3.1 - Sep/2000
 	- Fixed bug with --datadir reported by	stephan.hegel@gmx.de 
-          Installation of data by default now in prefix/share/typist
+	  Installation of data by default now in prefix/share/typist
 	- Now the keys F1,F2,...,F12 can be "emulated" with
 	  1,2,3,4,5,6,7,8,9,0,A,S and also C-q, C-w, C-r, C-t, C-z, C-u, 
 	  C-i, C-o, C-p, C-a, C-s
 	- Fixed bug in word processor mode reported by Ben Armstrong,
-      	  <synrg@sanctuary.nslug.ns.ca> now  by  default  this mode  is
-          off, it  can be  activated with the  option --wpmode  or -w.
-          (The option --nowpmode doesn't exist anymore)
+	  <synrg@sanctuary.nslug.ns.ca> now  by  default  this mode  is
+	  off, it  can be  activated with the  option --wpmode  or -w.
+	  (The option --nowpmode doesn't exist anymore)
 	- Better documentation for installing typist with Dvorak keyboards
 	  and under DOS without Long File Name Support (tested under DOS 6.22)
 
