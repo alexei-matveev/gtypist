@@ -1488,7 +1488,15 @@ parse_cmdline_and_config( int argc, char **argv )
     if( cmdline_parser( argc, argv, &cl_args ) != 0 )
 	exit( 1 );
 
-    // check there is at ost one script specified
+    // parse config file
+    struct cmdline_parser_params params;
+    cmdline_parser_params_init( &params );
+    params.initialize = 0;
+    params.check_required = 0;
+    if( cmdline_parser_config_file( ".gtypistrc", &cl_args, &params ) != 0 )
+	exit( 1 );
+
+    // check there is at most one script specified
     if( cl_args.inputs_num > 1 ) {
       fprintf( stderr, _( "Try '%s --help' for more information.\n" ), argv0 );
       exit( 1 );

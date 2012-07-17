@@ -1,3 +1,5 @@
+args "--default-optional --conf-parser --unamed-opts=SCRIPT --no-full-help"
+
 purpose "GNU Typist is a typing tutor with several lessons for different keyboards and languages.  New lessons can be written by the user easily."
 
 option "personal-best"  b "track personal best typing speeds"
@@ -34,9 +36,39 @@ option "scoring"        - "set scoring mode; valid values are \"wpm\" (words per
 option "expert"         - "don't show beginner tutorial message at start-up"
     flag off
 
-args "--default-optional --conf-parser --unamed-opts=SCRIPT"
+text "\nIf not supplied, script-file defaults to the 'gtypist.typ' that came with this software.  If you specify a script, the path $GTYPIST_PATH is searched for script files.\n"
 
-# ORIGINAL HELP
+text "\nExamples:
+\nTo run the default lesson in english 'gtypist.typ':
+  gtypist
+\nTo run the lesson in spanish:
+  gtypist esp.typ
+\nTo instruct gtypist to look for lesson 'bar.typ' in a non standard directory:
+  GTYPIST_PATH=\"/home/foo\" gtypist bar.typ
+\nTo run the lesson in the file '/tmp/test.typ', starting at label 'TEST1', using the terminal's cursor, and run silently:
+  gtypist -t -q -l TEST1 /temp/test.typ\n"
+
+text "\nReport bugs to <bug-gtypist@gnu.org>."
+
+versiontext "Copyright (C) 1998, 1999, 2000, 2001, 2002, 2003 Simon Baldwin.
+Copyright (C) 2003, 2004, 2008, 2011, 2012 GNU Typist Development Team.
+This program comes with ABSOLUTELY NO WARRANTY; for details
+please see the file 'COPYING' supplied with the source code.
+This is free software, and you are welcome to redistribute it
+under certain conditions; again, see 'COPYING' for details.
+This program is released under the GNU General Public License.
+
+Written by Simon Baldwin"
+
+
+
+# ORIGINAL OUTPUT:
+#
+#`gtypist' is a typing tutor with several lessons for different keyboards and languages.  New lessons can be written by the user easily.
+#
+#Usage: gtypist [ options... ] [ script-file ]
+#
+#Options:
 # -b     --personal-best  track personal best typing speeds
 # -e %   --max-error=%    default maximum error percentage (default 3.0);
 #                         valid values are between 0.0 and 100.0
@@ -59,4 +91,21 @@ args "--default-optional --conf-parser --unamed-opts=SCRIPT"
 #                         package and version respectively)
 # --scoring=wpm,cpm       set scoring mode (words per minute or characters
 #                         per minute)
-
+#
+#If not supplied, script-file defaults to '/usr/local/share/gtypist/gtypist.typ'.
+#The path $GTYPIST_PATH is searched for script files.
+#
+#Examples:
+#  To run the default lesson in english `gtypist.typ':
+#    gtypist
+#
+#  To run the lesson in spanish:
+#    gtypist esp.typ
+#
+#  To instruct gtypist to look for lesson `bar.typ' in a non standard directory:
+#    GTYPIST_PATH="/home/foo" gtypist bar.typ
+#
+#  To run the lesson in the file `test.typ' of directory `temp', starting at label `TEST1', using the terminal's cursor, and run silently:
+#    gtypist -t -q -l TEST1 /temp/test.typ
+#
+#Report bugs to bug-gtypist@gnu.org
