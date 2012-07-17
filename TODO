@@ -20,11 +20,7 @@ FOR 2.10 RELEASE
 
 * Show correct line numbers when nonexistent label was hit in the M command.
 
-o [Tim] switch to GNU gengetopts for CLI and config file options
-
-- communicate  with the gengetopt developers about i18n.
-
-* disable beginner message when --export is given
+* Add gengetopt config file parsing
 
 * Save 'expert' to config file.
    When ESCAPE is used to dismiss the beginner tutorial dialog, add 'expert'
