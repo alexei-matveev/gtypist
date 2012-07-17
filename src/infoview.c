@@ -23,7 +23,6 @@
 #include <stdio.h>
 #include <ctype.h>
 #include <signal.h>
-#include <sys/param.h>
 
 #ifdef HAVE_PDCURSES
 #include <curses.h>
@@ -39,6 +38,8 @@
 
 #include "gettext.h"
 #define _(String) gettext (String)
+
+#define MIN( a, b ) ( ( a ) < ( b )? ( a ) : ( b ) )
 
 static
 void draw_frame(int x1, int y1, int x2, int y2)
@@ -145,14 +146,15 @@ int do_beginner_infoview()
     char* token;
     int numUsableLines, numMsgLines, i, j;
     int width, height, xOffset, yOffset;
-    int firstLine, lastLine;
+    int firstLine, lastLine, msgLen;
     wchar_t ch;
 
     msg = strdup(constMsg);
+	msgLen = strlen( msg );
 
     /* count the number of lines in msg */
     numMsgLines = 0;
-    for (i = 0; i < strlen(msg); i++)
+    for (i = 0; i < msgLen; i++)
     {
         if (msg[i] == '\n')
         {
@@ -167,11 +169,15 @@ int do_beginner_infoview()
     /* split into lines: use strsep instead of strtok because
        strtok cannot handle empty tokens */
     msgLines = malloc(numMsgLines * sizeof(char*));
-    for (i = 0; i < numMsgLines; i++)
-    {
-        token = strsep(&msg, "\n");
-        msgLines[i] = strdup(token);
-    }
+	msgLines[0] = msg;
+	for (i = j = 0; i < msgLen; i++)
+	{
+		if (msg[i] == '\n')
+		{
+			msg[i] = '\0';
+			msgLines[++j] = &msg[ i + 1 ];
+		}
+	}
 
     width = 79 - 2; /* 2x window decoration */
     numUsableLines = LINES - 3; /* header, 2x window decoration */
@@ -243,10 +249,6 @@ int do_beginner_infoview()
     }
 
     /* free resources */
-    for (i = 0; i < numMsgLines; i++)
-    {
-        free(msgLines[i]);
-    }
     free(msgLines);
     free(msg);
 

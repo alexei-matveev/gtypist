@@ -232,8 +232,18 @@ int get_widech(int* c)
 
     if (isUTF8Locale)
     {
-        if( get_wch( &ch ) == ERR )
+        int retcode = get_wch( &ch );
+        if( retcode == ERR )
 	    return ERR;
+        /* 
+           ncurses' KEY_BACKSPACE (0x107) collides with polish "c with
+           acute (0x107) => we need to encode KEY_BACKSPACE!
+        */
+        if (retcode == KEY_CODE_YES && ch == KEY_BACKSPACE)
+        {
+            ch = GTYPIST_KEY_BACKSPACE;
+        }
+            
 
 #ifdef MINGW
 	// MinGW defines wint_t as a short int, for compatibility with Windows.
@@ -249,8 +259,8 @@ int get_widech(int* c)
 
 #ifdef HAVE_PDCURSES
     // make sure PDCurses returns recognisable newline characters
-    if( ch == 0x0D )
-	ch = 0x0A;
+    if( ch == 0x0D || ch == PADENTER)
+        ch = 0x0A;
 #endif
 
     *c = ch;
