@@ -1,4 +1,4 @@
-args "--default-optional --conf-parser --unamed-opts=SCRIPT --no-full-help"
+args "--default-optional --conf-parser --unamed-opts=SCRIPT --strict-hidden"
 
 purpose "GNU Typist is a typing tutor with several lessons for different keyboards and languages.  New lessons can be written by the user easily."
 
