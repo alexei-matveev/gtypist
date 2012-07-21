@@ -43,4 +43,9 @@ enum
 #define ADDCH(X) wideaddch(X)
 #define ADDCH_REV(X) wideaddch_rev(X)
 
+/* get the path to the .gtypistrc file
+   caller must free memory! */
+char* get_config_file_path();
+
+
 #endif /* GTYPIST_H */

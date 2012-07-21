@@ -1493,8 +1493,10 @@ parse_cmdline_and_config( int argc, char **argv )
     cmdline_parser_params_init( &params );
     params.initialize = 0;
     params.check_required = 0;
-    if( cmdline_parser_config_file( ".gtypistrc", &cl_args, &params ) != 0 )
-	exit( 1 );
+    char* config_file_path = get_config_file_path();
+    if( cmdline_parser_config_file( config_file_path, &cl_args, &params ) != 0 )
+        exit( 1 );
+    free(config_file_path);
 
     // check there is at most one script specified
     if( cl_args.inputs_num > 1 ) {
@@ -1791,10 +1793,13 @@ int main( int argc, char **argv )
   clear();
   banner (_("Loading the script..."));
 
-  if (!do_beginner_infoview())
+  if (!cl_args.expert_flag)
   {
-      do_exit(script);
-      return 0;
+      if (!do_beginner_infoview())
+      {
+          do_exit(script);
+          return 0;
+      }
   }
 
   check_script_file_with_current_encoding(script);
@@ -1953,6 +1958,15 @@ void put_best_speed( const char *script_filename,
   free( fixed_script_filename );
   fclose( blfile );
 }
+
+/* TODO: fix on windows! */
+char* get_config_file_path()
+{
+    char* config_file_path = malloc(1024);
+    sprintf(config_file_path, "%s/.gtypistrc", getenv("HOME"));
+    return config_file_path;
+}
+
 
 /*
   Local Variables:

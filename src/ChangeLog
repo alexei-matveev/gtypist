@@ -1,3 +1,8 @@
+2012-07-21 Felix Natter <fnatter@gmx.net>
+	* gtypist.[ch], infoview.c: don't show beginner screen when --expert is given,
+	when the user presses 'D'/'d' in beginner screen: write option "expert"
+	into config file.
+
 2012-07-08 Felix Natter <fnatter@gmx.net>
 
 	* gtypist.c, utf8.[ch]: Avoid collision between 0x107 unicode char

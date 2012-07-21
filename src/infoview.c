@@ -35,6 +35,7 @@
 #include "script.h"
 #include "banner.h"
 #include "gtypist.h"
+#include "cmdline.h"
 
 #include "gettext.h"
 #define _(String) gettext (String)
@@ -95,6 +96,48 @@ void draw_scrollbar(int x2, int y1, int y2,
     attron (COLOR_PAIR (C_NORMAL));
 }
 
+void remember_expert_option()
+{
+    // enable expert option in ggo config file!
+    char* cfg_file_path = get_config_file_path();
+    FILE* gtypistrc = fopen(cfg_file_path, "a+");
+    if (gtypistrc == NULL)
+    {
+        fatal_error( _("Error reading/writing config file!"), -1 );
+    }
+    int expert_option_found = FALSE;
+    size_t len = 0;
+    char* line = NULL;
+
+    while (getline(&line, &len, gtypistrc) != -1)
+    {
+        /* remove control chars (newline, CR) at end of line */
+        int idx = len;
+        while (idx >= 0 && line[idx] < 0x20)
+        {
+            line[idx] = '\0';
+            idx--;
+        }
+
+        if (strcmp(line, "expert") == 0)
+        {
+            expert_option_found = TRUE;
+        }
+    }
+    if (!expert_option_found) 
+    {
+        /* append "expert" option */
+        fprintf(gtypistrc, "expert\n");
+    }
+    fclose(gtypistrc);
+    if (line)
+    {
+        free(line);
+        line = NULL;
+    }
+    free(cfg_file_path);
+}
+
 int do_beginner_infoview()
 {
     const char* constMsg =
@@ -150,7 +193,7 @@ int do_beginner_infoview()
     wchar_t ch;
 
     msg = strdup(constMsg);
-	msgLen = strlen( msg );
+    msgLen = strlen( msg );
 
     /* count the number of lines in msg */
     numMsgLines = 0;
@@ -195,11 +238,12 @@ int do_beginner_infoview()
 
     ch = 0x00;
     while (ch != ASCII_SPACE && ch != ASCII_ESC && ch != ASCII_NL
-           && ch != 'q' && ch != 'Q')
+           && ch != 'q' && ch != 'Q' && ch != 'd' && ch != 'D')
     {
         switch (ch)
         {
         case KEY_UP:
+        case 'k':
             if (firstLine > 0)
             {
                 firstLine--;
@@ -207,6 +251,7 @@ int do_beginner_infoview()
             }
             break;
         case KEY_DOWN:
+        case 'j':
             if (lastLine + 1 < numMsgLines)
             {
                 firstLine++;
@@ -223,7 +268,8 @@ int do_beginner_infoview()
             lastLine += firstLine - old_firstLine;
             break;
         }
-        case KEY_NPAGE:  {
+        case KEY_NPAGE:
+        {
             int old_lastLine = lastLine;
             lastLine += 10;
             if (lastLine + 1 >= numMsgLines)
@@ -244,7 +290,7 @@ int do_beginner_infoview()
         draw_scrollbar(xOffset + width, yOffset, yOffset + height - 1,
                        firstLine, lastLine, numMsgLines);
         mvwideaddstr(LINES - 1, 0,
-                     _("Press SPACE or ENTER to start gtypist, or ESCAPE to disable this dialog"));
+                     _("Press SPACE, ENTER or ESCAPE to start gtypist, or 'D' to disable this dialog"));
         get_widech(&ch);
     }
 
@@ -252,6 +298,10 @@ int do_beginner_infoview()
     free(msgLines);
     free(msg);
 
+    if (ch == 'd' || ch == 'D')
+    {
+        remember_expert_option();
+    }
+
     return ch != 'q' && ch != 'Q';
 }
-
