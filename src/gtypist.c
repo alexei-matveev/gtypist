@@ -1478,6 +1478,16 @@ parse_file( FILE *script, char *label ) {
     }
 }
 
+static int
+file_exists(const char* filepath)
+{
+    FILE* f = fopen(filepath, "r");
+    int exists = (f != NULL);
+    if (f != NULL)
+        fclose(f);
+    return exists;
+}
+
 /*
   Parse command line arguments and config file
 */
@@ -1493,7 +1503,21 @@ parse_cmdline_and_config( int argc, char **argv )
     cmdline_parser_params_init( &params );
     params.initialize = 0;
     params.check_required = 0;
+
     char* config_file_path = get_config_file_path();
+    // make sure that config file exists
+    if (!file_exists(config_file_path))
+    {
+        FILE* f = fopen(config_file_path, "w");
+        if (f == NULL)
+        {
+            fatal_error( _("Error writing config file!"), NULL );
+        }
+        else
+        {
+            fclose(f);
+        }
+    }
     if( cmdline_parser_config_file( config_file_path, &cl_args, &params ) != 0 )
         exit( 1 );
     free(config_file_path);

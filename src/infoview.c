@@ -103,7 +103,7 @@ void remember_expert_option()
     FILE* gtypistrc = fopen(cfg_file_path, "a+");
     if (gtypistrc == NULL)
     {
-        fatal_error( _("Error reading/writing config file!"), -1 );
+        fatal_error( _("Error reading/writing config file!"), NULL );
     }
     int expert_option_found = FALSE;
     size_t len = 0;
