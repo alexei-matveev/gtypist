@@ -68,6 +68,7 @@ or create new ones.
                             copy and share gtypist
 * Introduction::            Important concepts you need to know as a user
 * Invoking::                How to invoke gtypist
+* Configuration file::      Use the config file for saving command line options
 * Resize GTypist window::   How to resize the terminal window
 * Supplied lessons::        Overview of the lessons in the gtypist distribution
 * Using typefortune::       Practising with text from `fortune' (requires perl)
@@ -180,7 +181,7 @@ If preferred, speeds can be displayed in Characters Per Minute
 (@acronym{CPM}).  This can be done by specifying ``--scoring=cpm'' at
 the command line.
 
-@node Invoking, Resize GTypist window, Introduction, Top
+@node Invoking, Configuration file, Introduction, Top
 @chapter Invoking
 
 The syntax to invoke GNU Typist is:
@@ -310,7 +311,23 @@ To run the lessons in the file @file{test.typ} of directory
 cursor, and running silently:@* @code{gtypist -t -q -l TEST1
 /tmp/test.typ}
 
-@node Resize GTypist window, Supplied lessons, Invoking, Top
+@node Configuration file, Resize GTypist window, Invoking, Top
+@chapter Configuration file
+
+The GTypist configuration file @code{.gtypistrc}, which can be found
+in your home directory ($HOME) on UNIX, is used to remember common
+command line options (@pxref{Invoking}). Its format is simply one line
+per option, referenced by the short or long option name, but without
+the @code{-} or @code{--}.  Comment syntax starts with a @code{#}.
+
+Here is an example:
+@example
+# for beginners:
+max-error=10
+word-processor
+@end example
+
+@node Resize GTypist window, Supplied lessons, Configuration file, Top
 @chapter Resize GTypist window
 
 Resizing the GTypist window is a matter of resizing the terminal

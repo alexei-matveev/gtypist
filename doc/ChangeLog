@@ -1,3 +1,6 @@
+2012-07-24 Felix Natter <fnatter@gmx.net>
+	* doc/gtypist.texi: Add node about config file
+
 2011-08-19 Felix Natter <fnatter@gmx.net>
 
 	* doc/gtypist.texi: Update node "Supplied lessons" for new lessons
