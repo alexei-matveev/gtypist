@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: GNU Typist 2.7\n"
 "Report-Msgid-Bugs-To: bug-gtypist@gnu.org\n"
-"POT-Creation-Date: 2012-02-09 16:05+0000\n"
+"POT-Creation-Date: 2012-07-29 14:55+0200\n"
 "PO-Revision-Date: 2012-02-06 17:21+0000\n"
 "Last-Translator: José Pelegrín <josepl@acm.org>\n"
 "Language-Team: Spanish/Spain <es@li.org>\n"
@@ -15,265 +15,92 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 
-#: src/gtypist.c:287 src/script.c:56
+#: src/gtypist.c:202 src/script.c:56
 msgid "internal error: strdup"
 msgstr "error interno: strdup"
 
-#: src/gtypist.c:464
+#: src/gtypist.c:380
 msgid "invalid key binding"
 msgstr "asociación incorrecta de teclas"
 
-#: src/gtypist.c:466
+#: src/gtypist.c:382
 msgid "invalid function key number"
 msgstr "número incorrecto de tecla de función"
 
-#: src/gtypist.c:504 src/gtypist.c:611 src/gtypist.c:897
+#: src/gtypist.c:420 src/gtypist.c:527 src/gtypist.c:814
 msgid "data exceeds screen length"
 msgstr "los datos sobrepasan la longitud de la pantalla"
 
-#: src/gtypist.c:547
+#: src/gtypist.c:463
 msgid "instructions are limited to two lines"
 msgstr "las instrucciones están limitadas a dos líneas"
 
-#: src/gtypist.c:805 src/gtypist.c:1076 src/script.c:313
+#: src/gtypist.c:722 src/gtypist.c:993 src/script.c:313
 msgid "internal error: fseek"
 msgstr "error interno: 'fseek'"
 
-#: src/gtypist.c:1398
+#: src/gtypist.c:1315
 #, no-c-format
 msgid "'*' must immediately follow '%'"
 msgstr "'*' debe seguir a '%'"
 
-#: src/gtypist.c:1401 src/gtypist.c:1404
+#: src/gtypist.c:1318 src/gtypist.c:1321
 #, no-c-format
 msgid "missing '%'"
 msgstr "falta '%'"
 
-#: src/gtypist.c:1408
+#: src/gtypist.c:1325
 #, no-c-format
 msgid "'%' must immediately follow value"
 msgstr "'%' debe seguir al valor"
 
-#: src/gtypist.c:1417
+#: src/gtypist.c:1334
 msgid "overflow in do_error_max_set"
 msgstr "desbordamiento en 'do_error_max_set'"
 
-#: src/gtypist.c:1437
+#: src/gtypist.c:1354
 msgid "Invalid value for \"E:\" (out of range)"
 msgstr "Valor incorrecto para \"E:\" (fuera de rango)"
 
-#: src/gtypist.c:1492 src/script.c:307
+#: src/gtypist.c:1409 src/script.c:307
 #, c-format
 msgid "label '%s' not found"
 msgstr "etiqueta '%s' no encontrada"
 
-#: src/gtypist.c:1558
+#: src/gtypist.c:1475
 msgid "unknown command"
 msgstr "comando desconocido"
 
-#: src/gtypist.c:1676
-msgid "track personal best typing speeds"
+#: src/gtypist.c:1514
+msgid "Error writing config file!"
 msgstr ""
 
-#: src/gtypist.c:1677
-msgid ""
-"default maximum error percentage (default 3.0); valid values are between 0.0 "
-"and 100.0"
-msgstr ""
-"porcentaje de error máximo (por defecto 3.0); los valores válidos están "
-"entre 0.0 y 100.0"
-
-#: src/gtypist.c:1679
-msgid "turn off WPM timer in drills"
-msgstr "desactivar el contador PPM para las prácticas"
-
-#: src/gtypist.c:1680
-msgid "use the terminal's hardware cursor"
-msgstr "usar el cursor de la terminal"
-
-#: src/gtypist.c:1681
-msgid ""
-"cursor flash period P*.1 sec (default 10); valid  values are between 0 and "
-"512; this is ignored if -t is specified"
-msgstr ""
-"pone el periodo de parpadeo del cursor en P*.1 segundos (por defecto 10), "
-"los valores válidos están entre 0 y 512; Se ignorará si se especifica con la "
-"opción '-t'"
-
-#: src/gtypist.c:1683
-msgid "set initial display colours where available"
-msgstr "establece los colores iniciales de la pantalla cuando esto es posible"
-
-#: src/gtypist.c:1684
-msgid "don't beep on errors"
-msgstr "no producir sonidos en caso de error"
-
-#: src/gtypist.c:1685
-msgid "same as -s, --silent"
-msgstr "el mismo efecto que '-s, --silent'"
-
-#: src/gtypist.c:1686
-msgid "start the lesson at label 'L'"
-msgstr "comenzar la lección en la etiqueta 'L'"
-
-#: src/gtypist.c:1687
-msgid "try to mimic word processors"
-msgstr "intenta imitar a los procesadores de texto"
-
-#: src/gtypist.c:1688
-msgid "forbid the user to skip exercises"
-msgstr "prohibir al usuario saltarse los ejercicios"
-
-#: src/gtypist.c:1689
-msgid "highlight errors with reverse video"
-msgstr "resaltar los errores con la inversión del color de la pantalla"
-
-#: src/gtypist.c:1690
-msgid "print this message"
-msgstr "muestra este mensaje"
-
-#: src/gtypist.c:1691
-msgid "output version information and exit"
-msgstr "muestra información sobre la versión y termina"
-
-#: src/gtypist.c:1692
-msgid "do not ask confirmation questions"
-msgstr "no pedir confirmación a las preguntas"
-
-#: src/gtypist.c:1693
-msgid ""
-"set top banner colours (background, foreground, package and version "
-"respectively)"
-msgstr ""
-"modifica el valor de los colores del panel de mensajes superior (fondo, "
-"primer plano, paquete y versión respectivamente)."
-
-#: src/gtypist.c:1695
-msgid "set scoring mode (words per minute or characters per minute)"
-msgstr ""
-
-#: src/gtypist.c:1699
-#, c-format
-msgid ""
-"`gtypist' is a typing tutor with several lessons for different keyboards and "
-"languages.  New lessons can be written by the user easily.\n"
-"\n"
-msgstr ""
-"'gtypist' es un tutor para aprender a teclear. Está compuesto de diversas "
-"lecciones para diferentes teclados e idiomas. Un usuario puede añadir nuevas "
-"lecciones con facilidad.\n"
-
-#: src/gtypist.c:1703
-msgid "Usage"
-msgstr "Uso"
-
-#: src/gtypist.c:1703
-msgid "options"
-msgstr "opciones"
-
-#: src/gtypist.c:1703
-msgid "script-file"
-msgstr "ficheros de 'script'"
-
-#: src/gtypist.c:1704
-msgid "Options"
-msgstr "Opciones"
-
-#: src/gtypist.c:1711
-#, c-format
-msgid ""
-"\n"
-"If not supplied, script-file defaults to '%s/%s'.\n"
-msgstr ""
-"\n"
-"Si no se da, el fichero 'script' por defecto es '%s/%s'.\n"
-
-#: src/gtypist.c:1713
-#, c-format
-msgid ""
-"The path $GTYPIST_PATH is searched for script files.\n"
-"\n"
-msgstr ""
-"Se buscarán los archivos 'script' en la ruta descrita por la variable "
-"'GTYPIST_PATH'.\n"
-
-#: src/gtypist.c:1715
-msgid "Examples"
-msgstr "Ejemplos"
-
-#: src/gtypist.c:1717
-msgid "To run the default lesson in english `gtypist.typ'"
-msgstr "Para ejecutar la lección en inglés que está por defecto 'gtypist.typ'"
-
-#: src/gtypist.c:1719
-msgid "To run the lesson in spanish"
-msgstr "Para ejecutar la lección en español"
-
-#: src/gtypist.c:1721
-msgid ""
-"To instruct gtypist to look for lesson `bar.typ' in a non standard directory"
-msgstr ""
-"Para indicarle a 'gtypist' que busque la lección 'bar.typ' en un directorio "
-"no estándar"
-
-#: src/gtypist.c:1724
-msgid ""
-"To run the lesson in the file `test.typ' of directory `temp', starting at "
-"label `TEST1', using the terminal's cursor, and run silently"
-msgstr ""
-"Para ejecutar la lección del archivo 'test.typ' del directorio 'temp', "
-"comenzando en la etiqueta 'TEST1', usando el cursor de la terminal y en modo "
-"silencioso"
-
-#: src/gtypist.c:1727
-msgid "Report bugs to bug-gtypist@gnu.org"
-msgstr "Informe de errores a la dirección 'bug-gtypist@gnu.org'"
-
-#: src/gtypist.c:1776
-#, c-format
-msgid "%s: invalid error-max value\n"
-msgstr "%s: valor incorrecto de 'error-max'\n"
-
-#: src/gtypist.c:1792
-#, c-format
-msgid "%s: invalid curs-flash value\n"
-msgstr "%s: valor incorrecto de 'curs-flash'\n"
-
-#: src/gtypist.c:1803
-#, c-format
-msgid "%s: invalid colours value\n"
-msgstr "%s: valor incorrecto de 'colours'\n"
-
-#: src/gtypist.c:1813
-#, c-format
-msgid "%s:  argument format is incorrect\n"
-msgstr "%s: el formato del argumento es incorrecto\n"
-
-#: src/gtypist.c:1823
-#, c-format
-msgid "%s:  incorrect colour values\n"
-msgstr "%s:  valor incorrecto de 'colour'\n"
-
-#: src/gtypist.c:1832 src/gtypist.c:1845
-#, c-format
-msgid "%s: invalid scoring mode"
-msgstr ""
-
-#: src/gtypist.c:1858
-#, c-format
-msgid "%s: internal error: malloc\n"
-msgstr "%s: error interno: 'malloc'\n"
-
-#: src/gtypist.c:1879
-msgid "Written by Simon Baldwin"
-msgstr "Escrito por Simon Baldwin"
-
-#: src/gtypist.c:1888 src/gtypist.c:1895
+#: src/gtypist.c:1527
 #, c-format
 msgid "Try '%s --help' for more information.\n"
 msgstr "Pruebe con '%s --help' para obtener más información.\n"
 
-#: src/gtypist.c:1970
+#: src/gtypist.c:1533
+#, c-format
+msgid "%s: invalid error-max value\n"
+msgstr "%s: valor incorrecto de 'error-max'\n"
+
+#: src/gtypist.c:1539
+#, c-format
+msgid "%s: invalid curs-flash value\n"
+msgstr "%s: valor incorrecto de 'curs-flash'\n"
+
+#: src/gtypist.c:1549
+#, c-format
+msgid "%s: invalid colours value\n"
+msgstr "%s: valor incorrecto de 'colours'\n"
+
+#: src/gtypist.c:1562
+#, fuzzy, c-format
+msgid "%s: invalid banner-colours value\n"
+msgstr "%s: valor incorrecto de 'colours'\n"
+
+#: src/gtypist.c:1641
 msgid ""
 "Copyright (C) 1998, 1999, 2000, 2001, 2002, 2003 Simon Baldwin.\n"
 "Copyright (C) 2003, 2004, 2008, 2011, 2012 GNU Typist Development Team.\n"
@@ -291,82 +118,82 @@ msgstr ""
 "bajo ciertas condiciones; nuevamente, vea los detalles en 'COPYING'.\n"
 "Este programa se ha liberado bajo la GNU General Public License."
 
-#: src/gtypist.c:1978
+#: src/gtypist.c:1649
 msgid " Tutorial "
 msgstr " Tutorial "
 
-#: src/gtypist.c:1980
+#: src/gtypist.c:1651
 msgid "  Query   "
 msgstr "  Consulta   "
 
-#: src/gtypist.c:1982
+#: src/gtypist.c:1653
 msgid "  Drill   "
 msgstr "  Rutina  "
 
-#: src/gtypist.c:1984
+#: src/gtypist.c:1655
 msgid "Speed test"
 msgstr "Test de velocidad"
 
-#: src/gtypist.c:1986
+#: src/gtypist.c:1657
 msgid " Press RETURN or SPACE to continue, ESC to return to the menu "
 msgstr " Pulse 'RETURN' o 'SPACE' para continuar, 'ESC' para volver al menu "
 
-#: src/gtypist.c:1989
+#: src/gtypist.c:1660
 #, c-format
 msgid " Your error-rate is too high. You have to achieve %.1f%%. "
 msgstr " Tu tasa de error es demasiado alta. Debes obtener %.1f%%. "
 
-#: src/gtypist.c:1993
+#: src/gtypist.c:1664
 #, c-format
 msgid " You failed this test, so you need to go back to %s. "
 msgstr " Has fallado esta prueba, por lo que debes ir de nuevo a '%s'. "
 
-#: src/gtypist.c:1997
+#: src/gtypist.c:1668
 msgid " Press R to repeat, N for next exercise or E to exit "
 msgstr ""
 " Pulsa 'R' para repetir, 'N' para el siguiente ejercicio o 'E' para salir "
 
-#: src/gtypist.c:2001
+#: src/gtypist.c:1672
 msgid " Press R to repeat or E to exit "
 msgstr " Pulsa 'R' para repetir o 'E' para finalizar "
 
-#: src/gtypist.c:2004
+#: src/gtypist.c:1675
 msgid " Are you sure you want to exit this lesson? [Y/N] "
 msgstr " ¿Estás seguro de querer concluir esta lección? [Y/N] "
 
-#: src/gtypist.c:2008
+#: src/gtypist.c:1679
 msgid " Sorry, gtypist is configured to forbid skipping exercises. "
 msgstr ""
 " Lo siento, 'gtypist' está configurado para no permitir saltarse las "
 "lecciones. "
 
-#: src/gtypist.c:2013
+#: src/gtypist.c:1684
 msgid "Y/N"
 msgstr "Y/N"
 
-#: src/gtypist.c:2023
+#: src/gtypist.c:1694
 msgid "R/N/E"
 msgstr "R/N/E"
 
-#: src/gtypist.c:2086
+#: src/gtypist.c:1751
 msgid "can't find or open file"
 msgstr "el archivo no se ha encontrado o no ha podido ser abierto"
 
-#: src/gtypist.c:2101
+#: src/gtypist.c:1766
 #, c-format
 msgid "%s: %s environment variable not set\n"
 msgstr ""
 
-#: src/gtypist.c:2153
+#: src/gtypist.c:1818
 msgid "Loading the script..."
 msgstr "Cargando el 'script'..."
 
-#: src/gtypist.c:2200 src/gtypist.c:2217 src/gtypist.c:2233 src/gtypist.c:2275
-#: src/gtypist.c:2292 src/script.c:142 src/script.c:166 src/script.c:256
+#: src/gtypist.c:1868 src/gtypist.c:1885 src/gtypist.c:1901 src/gtypist.c:1943
+#: src/gtypist.c:1960 src/script.c:142 src/script.c:166 src/script.c:256
 msgid "internal error: malloc"
 msgstr "error interno: 'malloc'"
 
-#: src/gtypist.c:2284
+#: src/gtypist.c:1952
 msgid "internal error: fopen"
 msgstr "error interno: 'fopen'"
 
@@ -423,10 +250,14 @@ msgstr ""
 msgid "error in setcchar()"
 msgstr ""
 
+#: src/infoview.c:106
+msgid "Error reading/writing config file!"
+msgstr ""
+
 #. TRANSLATORS: This message must not exceed 76 characters (UTF-8 code
 #. points, actually) wide or it will display incorrectly on an 80-character
 #. wide terminal.
-#: src/infoview.c:95
+#: src/infoview.c:147
 msgid ""
 "Welcome to GNU Typist!\n"
 "\n"
@@ -434,9 +265,10 @@ msgid ""
 "manual (at http://www.gnu.org/software/gtypist/doc/, or type \"info gtypist"
 "\")\n"
 "for more in-depth information!\n"
+"(in particular, the manual describes how to resize GTypist's window).\n"
 "\n"
 "Use the arrow keys or PGUP/PGDN to scroll this window, SPACE/ENTER to start\n"
-"using gtypist, or ESCAPE use gtypist and never show this dialog again.\n"
+"using gtypist, or ESCAPE to use gtypist and never show this dialog again.\n"
 "\n"
 "There are two types of typing exercises: \"drills\" and \"speed tests\". In "
 "a\n"
@@ -474,8 +306,9 @@ msgid ""
 "mailing list at <bug-gtypist@gnu.org>."
 msgstr ""
 
-#: src/infoview.c:228
-msgid "Press SPACE or ENTER to start gtypist, or ESCAPE to disable this dialog"
+#: src/infoview.c:293
+msgid ""
+"Press SPACE, ENTER or ESCAPE to start gtypist, or 'D' to disable this dialog"
 msgstr ""
 
 #. TRANSLATORS: a '|' character in this message divides it in to two
@@ -532,6 +365,140 @@ msgstr ""
 #: src/speedbox.c:91
 msgid "|new personal best"
 msgstr ""
+
+#~ msgid ""
+#~ "default maximum error percentage (default 3.0); valid values are between "
+#~ "0.0 and 100.0"
+#~ msgstr ""
+#~ "porcentaje de error máximo (por defecto 3.0); los valores válidos están "
+#~ "entre 0.0 y 100.0"
+
+#~ msgid "turn off WPM timer in drills"
+#~ msgstr "desactivar el contador PPM para las prácticas"
+
+#~ msgid "use the terminal's hardware cursor"
+#~ msgstr "usar el cursor de la terminal"
+
+#~ msgid ""
+#~ "cursor flash period P*.1 sec (default 10); valid  values are between 0 "
+#~ "and 512; this is ignored if -t is specified"
+#~ msgstr ""
+#~ "pone el periodo de parpadeo del cursor en P*.1 segundos (por defecto 10), "
+#~ "los valores válidos están entre 0 y 512; Se ignorará si se especifica con "
+#~ "la opción '-t'"
+
+#~ msgid "set initial display colours where available"
+#~ msgstr ""
+#~ "establece los colores iniciales de la pantalla cuando esto es posible"
+
+#~ msgid "don't beep on errors"
+#~ msgstr "no producir sonidos en caso de error"
+
+#~ msgid "same as -s, --silent"
+#~ msgstr "el mismo efecto que '-s, --silent'"
+
+#~ msgid "start the lesson at label 'L'"
+#~ msgstr "comenzar la lección en la etiqueta 'L'"
+
+#~ msgid "try to mimic word processors"
+#~ msgstr "intenta imitar a los procesadores de texto"
+
+#~ msgid "forbid the user to skip exercises"
+#~ msgstr "prohibir al usuario saltarse los ejercicios"
+
+#~ msgid "highlight errors with reverse video"
+#~ msgstr "resaltar los errores con la inversión del color de la pantalla"
+
+#~ msgid "print this message"
+#~ msgstr "muestra este mensaje"
+
+#~ msgid "output version information and exit"
+#~ msgstr "muestra información sobre la versión y termina"
+
+#~ msgid "do not ask confirmation questions"
+#~ msgstr "no pedir confirmación a las preguntas"
+
+#~ msgid ""
+#~ "set top banner colours (background, foreground, package and version "
+#~ "respectively)"
+#~ msgstr ""
+#~ "modifica el valor de los colores del panel de mensajes superior (fondo, "
+#~ "primer plano, paquete y versión respectivamente)."
+
+#~ msgid ""
+#~ "`gtypist' is a typing tutor with several lessons for different keyboards "
+#~ "and languages.  New lessons can be written by the user easily.\n"
+#~ "\n"
+#~ msgstr ""
+#~ "'gtypist' es un tutor para aprender a teclear. Está compuesto de diversas "
+#~ "lecciones para diferentes teclados e idiomas. Un usuario puede añadir "
+#~ "nuevas lecciones con facilidad.\n"
+
+#~ msgid "Usage"
+#~ msgstr "Uso"
+
+#~ msgid "options"
+#~ msgstr "opciones"
+
+#~ msgid "script-file"
+#~ msgstr "ficheros de 'script'"
+
+#~ msgid "Options"
+#~ msgstr "Opciones"
+
+#~ msgid ""
+#~ "\n"
+#~ "If not supplied, script-file defaults to '%s/%s'.\n"
+#~ msgstr ""
+#~ "\n"
+#~ "Si no se da, el fichero 'script' por defecto es '%s/%s'.\n"
+
+#~ msgid ""
+#~ "The path $GTYPIST_PATH is searched for script files.\n"
+#~ "\n"
+#~ msgstr ""
+#~ "Se buscarán los archivos 'script' en la ruta descrita por la variable "
+#~ "'GTYPIST_PATH'.\n"
+
+#~ msgid "Examples"
+#~ msgstr "Ejemplos"
+
+#~ msgid "To run the default lesson in english `gtypist.typ'"
+#~ msgstr ""
+#~ "Para ejecutar la lección en inglés que está por defecto 'gtypist.typ'"
+
+#~ msgid "To run the lesson in spanish"
+#~ msgstr "Para ejecutar la lección en español"
+
+#~ msgid ""
+#~ "To instruct gtypist to look for lesson `bar.typ' in a non standard "
+#~ "directory"
+#~ msgstr ""
+#~ "Para indicarle a 'gtypist' que busque la lección 'bar.typ' en un "
+#~ "directorio no estándar"
+
+#~ msgid ""
+#~ "To run the lesson in the file `test.typ' of directory `temp', starting at "
+#~ "label `TEST1', using the terminal's cursor, and run silently"
+#~ msgstr ""
+#~ "Para ejecutar la lección del archivo 'test.typ' del directorio 'temp', "
+#~ "comenzando en la etiqueta 'TEST1', usando el cursor de la terminal y en "
+#~ "modo silencioso"
+
+#~ msgid "Report bugs to bug-gtypist@gnu.org"
+#~ msgstr "Informe de errores a la dirección 'bug-gtypist@gnu.org'"
+
+#~ msgid "%s:  argument format is incorrect\n"
+#~ msgstr "%s: el formato del argumento es incorrecto\n"
+
+#~ msgid "%s:  incorrect colour values\n"
+#~ msgstr "%s:  valor incorrecto de 'colour'\n"
+
+#~ msgid "%s: internal error: malloc\n"
+#~ msgstr "%s: error interno: 'malloc'\n"
+
+#~ msgid "Written by Simon Baldwin"
+#~ msgstr "Escrito por Simon Baldwin"
 
 #~ msgid "internal error in strdup"
 #~ msgstr "error interno en strdup"

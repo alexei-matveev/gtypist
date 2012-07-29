@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: GNU Typist 2.6\n"
 "Report-Msgid-Bugs-To: bug-gtypist@gnu.org\n"
-"POT-Creation-Date: 2012-02-09 16:05+0000\n"
+"POT-Creation-Date: 2012-07-29 14:55+0200\n"
 "PO-Revision-Date: 2012-02-06 17:43+0000\n"
 "Last-Translator: OLS3 <ols3@www.tnc.edu.tw>\n"
 "Language-Team: OLS3 <ols3@www.tnc.edu.tw>\n"
@@ -16,256 +16,92 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 
-#: src/gtypist.c:287 src/script.c:56
+#: src/gtypist.c:202 src/script.c:56
 msgid "internal error: strdup"
 msgstr "內部錯誤: strdup"
 
-#: src/gtypist.c:464
+#: src/gtypist.c:380
 msgid "invalid key binding"
 msgstr "無效的按鍵組合"
 
-#: src/gtypist.c:466
+#: src/gtypist.c:382
 msgid "invalid function key number"
 msgstr "無效的功能鍵數字"
 
-#: src/gtypist.c:504 src/gtypist.c:611 src/gtypist.c:897
+#: src/gtypist.c:420 src/gtypist.c:527 src/gtypist.c:814
 msgid "data exceeds screen length"
 msgstr "資料超出螢幕長度"
 
-#: src/gtypist.c:547
+#: src/gtypist.c:463
 msgid "instructions are limited to two lines"
 msgstr "指令只限於二列長"
 
-#: src/gtypist.c:805 src/gtypist.c:1076 src/script.c:313
+#: src/gtypist.c:722 src/gtypist.c:993 src/script.c:313
 msgid "internal error: fseek"
 msgstr "內部錯誤: fseek"
 
-#: src/gtypist.c:1398
+#: src/gtypist.c:1315
 #, no-c-format
 msgid "'*' must immediately follow '%'"
 msgstr "'*' 必須立即接著 '%'"
 
-#: src/gtypist.c:1401 src/gtypist.c:1404
+#: src/gtypist.c:1318 src/gtypist.c:1321
 #, no-c-format
 msgid "missing '%'"
 msgstr "缺少了 '%'"
 
-#: src/gtypist.c:1408
+#: src/gtypist.c:1325
 #, no-c-format
 msgid "'%' must immediately follow value"
 msgstr "'%' 必須立即接著值"
 
-#: src/gtypist.c:1417
+#: src/gtypist.c:1334
 msgid "overflow in do_error_max_set"
 msgstr "溢位於 do_error_max_set"
 
-#: src/gtypist.c:1437
+#: src/gtypist.c:1354
 msgid "Invalid value for \"E:\" (out of range)"
 msgstr "無效的值 於  \"E:\" (超出範圍)"
 
-#: src/gtypist.c:1492 src/script.c:307
+#: src/gtypist.c:1409 src/script.c:307
 #, c-format
 msgid "label '%s' not found"
 msgstr "標示 '%s' 沒有找到"
 
-#: src/gtypist.c:1558
+#: src/gtypist.c:1475
 msgid "unknown command"
 msgstr "未知的命令"
 
-#: src/gtypist.c:1676
-msgid "track personal best typing speeds"
+#: src/gtypist.c:1514
+msgid "Error writing config file!"
 msgstr ""
 
-#: src/gtypist.c:1677
-msgid ""
-"default maximum error percentage (default 3.0); valid values are between 0.0 "
-"and 100.0"
-msgstr "預設最大的錯誤百分比 (預設 3.0); 有效值介於 9.0 和 100.0"
-
-#: src/gtypist.c:1679
-msgid "turn off WPM timer in drills"
-msgstr "關閉 WPM 計時於 drills"
-
-#: src/gtypist.c:1680
-msgid "use the terminal's hardware cursor"
-msgstr "使用終端硬體游標"
-
-#: src/gtypist.c:1681
-msgid ""
-"cursor flash period P*.1 sec (default 10); valid  values are between 0 and "
-"512; this is ignored if -t is specified"
-msgstr ""
-"游標閃爍周期 P*1 秒 (預設 10); 有效值介於 0 和 512; 若 -t 有設定, 這將被忽略"
-
-#: src/gtypist.c:1683
-msgid "set initial display colours where available"
-msgstr "設定可用的初始化顯示顏色"
-
-#: src/gtypist.c:1684
-msgid "don't beep on errors"
-msgstr "錯誤發生時不叫響"
-
-#: src/gtypist.c:1685
-msgid "same as -s, --silent"
-msgstr "和 -s, --silent 相同"
-
-#: src/gtypist.c:1686
-msgid "start the lesson at label 'L'"
-msgstr "由標示 'L' 的課程開始"
-
-#: src/gtypist.c:1687
-msgid "try to mimic word processors"
-msgstr "嘗試模擬字節處理"
-
-#: src/gtypist.c:1688
-msgid "forbid the user to skip exercises"
-msgstr "禁止使用者跳過練習"
-
-#: src/gtypist.c:1689
-msgid "highlight errors with reverse video"
-msgstr ""
-
-#: src/gtypist.c:1690
-msgid "print this message"
-msgstr "顯示這個訊息"
-
-#: src/gtypist.c:1691
-msgid "output version information and exit"
-msgstr "輸出版本資訊然後離開"
-
-#: src/gtypist.c:1692
-msgid "do not ask confirmation questions"
-msgstr ""
-
-#: src/gtypist.c:1693
-msgid ""
-"set top banner colours (background, foreground, package and version "
-"respectively)"
-msgstr ""
-
-#: src/gtypist.c:1695
-msgid "set scoring mode (words per minute or characters per minute)"
-msgstr ""
-
-#: src/gtypist.c:1699
-#, c-format
-msgid ""
-"`gtypist' is a typing tutor with several lessons for different keyboards and "
-"languages.  New lessons can be written by the user easily.\n"
-"\n"
-msgstr ""
-"'gtypist' 是一個打字教學軟體，支援不同的鍵盤和語言。新的課程可以由使用者很容"
-"易的設計出來。\n"
-
-#: src/gtypist.c:1703
-msgid "Usage"
-msgstr "使用法"
-
-#: src/gtypist.c:1703
-#, fuzzy
-msgid "options"
-msgstr "選項"
-
-#: src/gtypist.c:1703
-msgid "script-file"
-msgstr "指令-檔"
-
-#: src/gtypist.c:1704
-msgid "Options"
-msgstr "選項"
-
-#: src/gtypist.c:1711
-#, c-format
-msgid ""
-"\n"
-"If not supplied, script-file defaults to '%s/%s'.\n"
-msgstr ""
-"\n"
-"若沒有提供，指令檔預設為 '%s/%s'.\n"
-
-#: src/gtypist.c:1713
-#, c-format
-msgid ""
-"The path $GTYPIST_PATH is searched for script files.\n"
-"\n"
-msgstr ""
-"路徑 $GTYPIST_PATH 為此指令檔被搜尋.\n"
-"\n"
-
-#: src/gtypist.c:1715
-msgid "Examples"
-msgstr "範例"
-
-#: src/gtypist.c:1717
-msgid "To run the default lesson in english `gtypist.typ'"
-msgstr "打開預設課程為英語 'gtypist.typ'"
-
-#: src/gtypist.c:1719
-msgid "To run the lesson in spanish"
-msgstr "打開 spanish 課程"
-
-#: src/gtypist.c:1721
-msgid ""
-"To instruct gtypist to look for lesson `bar.typ' in a non standard directory"
-msgstr "在一個非標準目錄中,命令 gtypist 去尋找 `bar.typ' 課程"
-
-#: src/gtypist.c:1724
-msgid ""
-"To run the lesson in the file `test.typ' of directory `temp', starting at "
-"label `TEST1', using the terminal's cursor, and run silently"
-msgstr ""
-"執行 'temp' 目錄中的 'test.typ' 的課程, 由 標示 `TEST1' 開始, 使用終端游標, "
-"而且安靜地執行"
-
-#: src/gtypist.c:1727
-msgid "Report bugs to bug-gtypist@gnu.org"
-msgstr "臭虫報告給 bug-gtypist@gnu.org "
-
-#: src/gtypist.c:1776
-#, c-format
-msgid "%s: invalid error-max value\n"
-msgstr "%s: 無效的 error-max 值\n"
-
-#: src/gtypist.c:1792
-#, c-format
-msgid "%s: invalid curs-flash value\n"
-msgstr "%s: 無效的 curs-flash 值\n"
-
-#: src/gtypist.c:1803
-#, c-format
-msgid "%s: invalid colours value\n"
-msgstr "%s: 無法的 colours 值\n"
-
-#: src/gtypist.c:1813
-#, c-format
-msgid "%s:  argument format is incorrect\n"
-msgstr ""
-
-#: src/gtypist.c:1823
-#, c-format
-msgid "%s:  incorrect colour values\n"
-msgstr "%s: 無法的 colours 值\n"
-
-#: src/gtypist.c:1832 src/gtypist.c:1845
-#, c-format
-msgid "%s: invalid scoring mode"
-msgstr ""
-
-#: src/gtypist.c:1858
-#, c-format
-msgid "%s: internal error: malloc\n"
-msgstr "%s: 內部錯誤: malloc\n"
-
-#: src/gtypist.c:1879
-msgid "Written by Simon Baldwin"
-msgstr "作者 Simon Baldwin"
-
-#: src/gtypist.c:1888 src/gtypist.c:1895
+#: src/gtypist.c:1527
 #, c-format
 msgid "Try '%s --help' for more information.\n"
 msgstr "試 '%s --help' 可得到較多的資訊.\n"
 
-#: src/gtypist.c:1970
+#: src/gtypist.c:1533
+#, c-format
+msgid "%s: invalid error-max value\n"
+msgstr "%s: 無效的 error-max 值\n"
+
+#: src/gtypist.c:1539
+#, c-format
+msgid "%s: invalid curs-flash value\n"
+msgstr "%s: 無效的 curs-flash 值\n"
+
+#: src/gtypist.c:1549
+#, c-format
+msgid "%s: invalid colours value\n"
+msgstr "%s: 無法的 colours 值\n"
+
+#: src/gtypist.c:1562
+#, fuzzy, c-format
+msgid "%s: invalid banner-colours value\n"
+msgstr "%s: 無法的 colours 值\n"
+
+#: src/gtypist.c:1641
 msgid ""
 "Copyright (C) 1998, 1999, 2000, 2001, 2002, 2003 Simon Baldwin.\n"
 "Copyright (C) 2003, 2004, 2008, 2011, 2012 GNU Typist Development Team.\n"
@@ -283,83 +119,83 @@ msgstr ""
 "再次強調, 請您參考 'COPYING' 以得到詳細的資訊.\n"
 "這個程式採用 GNU 一般公共版權執照.(GPL)"
 
-#: src/gtypist.c:1978
+#: src/gtypist.c:1649
 msgid " Tutorial "
 msgstr "   教學   "
 
-#: src/gtypist.c:1980
+#: src/gtypist.c:1651
 msgid "  Query   "
 msgstr "   查詢   "
 
-#: src/gtypist.c:1982
+#: src/gtypist.c:1653
 msgid "  Drill   "
 msgstr "   練習   "
 
-#: src/gtypist.c:1984
+#: src/gtypist.c:1655
 msgid "Speed test"
 msgstr "速度測驗"
 
-#: src/gtypist.c:1986
+#: src/gtypist.c:1657
 msgid " Press RETURN or SPACE to continue, ESC to return to the menu "
 msgstr ""
 
-#: src/gtypist.c:1989
+#: src/gtypist.c:1660
 #, fuzzy, c-format
 msgid " Your error-rate is too high. You have to achieve %.1f%%. "
 msgstr "您的錯誤率太高了. 您已達 %.1f%%."
 
-#: src/gtypist.c:1993
+#: src/gtypist.c:1664
 #, fuzzy, c-format
 msgid " You failed this test, so you need to go back to %s. "
 msgstr "您在這個測驗中沒有過關, 所以您必須回到 %s"
 
-#: src/gtypist.c:1997
+#: src/gtypist.c:1668
 #, fuzzy
 msgid " Press R to repeat, N for next exercise or E to exit "
 msgstr "按 R 重來一次, 按 N 進入下一個練習 或按 E 可離開"
 
-#: src/gtypist.c:2001
+#: src/gtypist.c:1672
 #, fuzzy
 msgid " Press R to repeat or E to exit "
 msgstr "按 R 重來一次 或 按 E 可離開"
 
-#: src/gtypist.c:2004
+#: src/gtypist.c:1675
 #, fuzzy
 msgid " Are you sure you want to exit this lesson? [Y/N] "
 msgstr "您確定要離開這個課程嗎? [Y/N]"
 
-#: src/gtypist.c:2008
+#: src/gtypist.c:1679
 #, fuzzy
 msgid " Sorry, gtypist is configured to forbid skipping exercises. "
 msgstr "抱歉, gtypist 目前設定禁止跳過練習"
 
-#: src/gtypist.c:2013
+#: src/gtypist.c:1684
 msgid "Y/N"
 msgstr "Y/N"
 
-#: src/gtypist.c:2023
+#: src/gtypist.c:1694
 msgid "R/N/E"
 msgstr "R/N/E"
 
-#: src/gtypist.c:2086
+#: src/gtypist.c:1751
 msgid "can't find or open file"
 msgstr "找不到 或 無法開啟 檔案"
 
-#: src/gtypist.c:2101
+#: src/gtypist.c:1766
 #, c-format
 msgid "%s: %s environment variable not set\n"
 msgstr ""
 
-#: src/gtypist.c:2153
+#: src/gtypist.c:1818
 msgid "Loading the script..."
 msgstr ""
 
-#: src/gtypist.c:2200 src/gtypist.c:2217 src/gtypist.c:2233 src/gtypist.c:2275
-#: src/gtypist.c:2292 src/script.c:142 src/script.c:166 src/script.c:256
+#: src/gtypist.c:1868 src/gtypist.c:1885 src/gtypist.c:1901 src/gtypist.c:1943
+#: src/gtypist.c:1960 src/script.c:142 src/script.c:166 src/script.c:256
 msgid "internal error: malloc"
 msgstr "內部錯誤: malloc"
 
-#: src/gtypist.c:2284
+#: src/gtypist.c:1952
 msgid "internal error: fopen"
 msgstr "內部錯誤: fopen"
 
@@ -412,10 +248,14 @@ msgstr ""
 msgid "error in setcchar()"
 msgstr ""
 
+#: src/infoview.c:106
+msgid "Error reading/writing config file!"
+msgstr ""
+
 #. TRANSLATORS: This message must not exceed 76 characters (UTF-8 code
 #. points, actually) wide or it will display incorrectly on an 80-character
 #. wide terminal.
-#: src/infoview.c:95
+#: src/infoview.c:147
 msgid ""
 "Welcome to GNU Typist!\n"
 "\n"
@@ -423,9 +263,10 @@ msgid ""
 "manual (at http://www.gnu.org/software/gtypist/doc/, or type \"info gtypist"
 "\")\n"
 "for more in-depth information!\n"
+"(in particular, the manual describes how to resize GTypist's window).\n"
 "\n"
 "Use the arrow keys or PGUP/PGDN to scroll this window, SPACE/ENTER to start\n"
-"using gtypist, or ESCAPE use gtypist and never show this dialog again.\n"
+"using gtypist, or ESCAPE to use gtypist and never show this dialog again.\n"
 "\n"
 "There are two types of typing exercises: \"drills\" and \"speed tests\". In "
 "a\n"
@@ -463,8 +304,9 @@ msgid ""
 "mailing list at <bug-gtypist@gnu.org>."
 msgstr ""
 
-#: src/infoview.c:228
-msgid "Press SPACE or ENTER to start gtypist, or ESCAPE to disable this dialog"
+#: src/infoview.c:293
+msgid ""
+"Press SPACE, ENTER or ESCAPE to start gtypist, or 'D' to disable this dialog"
 msgstr ""
 
 #. TRANSLATORS: a '|' character in this message divides it in to two
@@ -521,6 +363,116 @@ msgstr ""
 #: src/speedbox.c:91
 msgid "|new personal best"
 msgstr ""
+
+#~ msgid ""
+#~ "default maximum error percentage (default 3.0); valid values are between "
+#~ "0.0 and 100.0"
+#~ msgstr "預設最大的錯誤百分比 (預設 3.0); 有效值介於 9.0 和 100.0"
+
+#~ msgid "turn off WPM timer in drills"
+#~ msgstr "關閉 WPM 計時於 drills"
+
+#~ msgid "use the terminal's hardware cursor"
+#~ msgstr "使用終端硬體游標"
+
+#~ msgid ""
+#~ "cursor flash period P*.1 sec (default 10); valid  values are between 0 "
+#~ "and 512; this is ignored if -t is specified"
+#~ msgstr ""
+#~ "游標閃爍周期 P*1 秒 (預設 10); 有效值介於 0 和 512; 若 -t 有設定, 這將被忽"
+#~ "略"
+
+#~ msgid "set initial display colours where available"
+#~ msgstr "設定可用的初始化顯示顏色"
+
+#~ msgid "don't beep on errors"
+#~ msgstr "錯誤發生時不叫響"
+
+#~ msgid "same as -s, --silent"
+#~ msgstr "和 -s, --silent 相同"
+
+#~ msgid "start the lesson at label 'L'"
+#~ msgstr "由標示 'L' 的課程開始"
+
+#~ msgid "try to mimic word processors"
+#~ msgstr "嘗試模擬字節處理"
+
+#~ msgid "forbid the user to skip exercises"
+#~ msgstr "禁止使用者跳過練習"
+
+#~ msgid "print this message"
+#~ msgstr "顯示這個訊息"
+
+#~ msgid "output version information and exit"
+#~ msgstr "輸出版本資訊然後離開"
+
+#~ msgid ""
+#~ "`gtypist' is a typing tutor with several lessons for different keyboards "
+#~ "and languages.  New lessons can be written by the user easily.\n"
+#~ "\n"
+#~ msgstr ""
+#~ "'gtypist' 是一個打字教學軟體，支援不同的鍵盤和語言。新的課程可以由使用者很"
+#~ "容易的設計出來。\n"
+
+#~ msgid "Usage"
+#~ msgstr "使用法"
+
+#, fuzzy
+#~ msgid "options"
+#~ msgstr "選項"
+
+#~ msgid "script-file"
+#~ msgstr "指令-檔"
+
+#~ msgid "Options"
+#~ msgstr "選項"
+
+#~ msgid ""
+#~ "\n"
+#~ "If not supplied, script-file defaults to '%s/%s'.\n"
+#~ msgstr ""
+#~ "\n"
+#~ "若沒有提供，指令檔預設為 '%s/%s'.\n"
+
+#~ msgid ""
+#~ "The path $GTYPIST_PATH is searched for script files.\n"
+#~ "\n"
+#~ msgstr ""
+#~ "路徑 $GTYPIST_PATH 為此指令檔被搜尋.\n"
+#~ "\n"
+
+#~ msgid "Examples"
+#~ msgstr "範例"
+
+#~ msgid "To run the default lesson in english `gtypist.typ'"
+#~ msgstr "打開預設課程為英語 'gtypist.typ'"
+
+#~ msgid "To run the lesson in spanish"
+#~ msgstr "打開 spanish 課程"
+
+#~ msgid ""
+#~ "To instruct gtypist to look for lesson `bar.typ' in a non standard "
+#~ "directory"
+#~ msgstr "在一個非標準目錄中,命令 gtypist 去尋找 `bar.typ' 課程"
+
+#~ msgid ""
+#~ "To run the lesson in the file `test.typ' of directory `temp', starting at "
+#~ "label `TEST1', using the terminal's cursor, and run silently"
+#~ msgstr ""
+#~ "執行 'temp' 目錄中的 'test.typ' 的課程, 由 標示 `TEST1' 開始, 使用終端游"
+#~ "標, 而且安靜地執行"
+
+#~ msgid "Report bugs to bug-gtypist@gnu.org"
+#~ msgstr "臭虫報告給 bug-gtypist@gnu.org "
+
+#~ msgid "%s:  incorrect colour values\n"
+#~ msgstr "%s: 無法的 colours 值\n"
+
+#~ msgid "%s: internal error: malloc\n"
+#~ msgstr "%s: 內部錯誤: malloc\n"
+
+#~ msgid "Written by Simon Baldwin"
+#~ msgstr "作者 Simon Baldwin"
 
 #, fuzzy
 #~ msgid "internal error in strdup"
