@@ -96,16 +96,16 @@ void draw_scrollbar(int x2, int y1, int y2,
     attron (COLOR_PAIR (C_NORMAL));
 }
 
-void remember_expert_option()
+void remember_no_welcome_screen_option()
 {
-    // enable expert option in ggo config file!
+    // enable no_welcome_screen option in command line options config file!
     char* cfg_file_path = get_config_file_path();
     FILE* gtypistrc = fopen(cfg_file_path, "a+");
     if (gtypistrc == NULL)
     {
         fatal_error( _("Error reading/writing config file!"), NULL );
     }
-    int expert_option_found = FALSE;
+    int no_welcome_screen_option_found = FALSE;
     size_t len = 0;
     char* line = NULL;
 
@@ -119,15 +119,15 @@ void remember_expert_option()
             idx--;
         }
 
-        if (strcmp(line, "expert") == 0)
+        if (strcmp(line, "no-welcome-screen") == 0)
         {
-            expert_option_found = TRUE;
+            no_welcome_screen_option_found = TRUE;
         }
     }
-    if (!expert_option_found) 
+    if (!no_welcome_screen_option_found) 
     {
-        /* append "expert" option */
-        fprintf(gtypistrc, "expert\n");
+        /* append "no-welcome-screen" option */
+        fprintf(gtypistrc, "no-welcome-screen\n");
     }
     fclose(gtypistrc);
     if (line)
@@ -300,7 +300,7 @@ int do_beginner_infoview()
 
     if (ch == 'd' || ch == 'D')
     {
-        remember_expert_option();
+        remember_no_welcome_screen_option();
     }
 
     return ch != 'q' && ch != 'Q';

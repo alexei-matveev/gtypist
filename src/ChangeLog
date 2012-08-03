@@ -1,3 +1,6 @@
+2012-08-03 Felix Natter <fnatter@gmx.net>
+	* rename --expert to --no-welcome-screen
+
 2012-07-21 Felix Natter <fnatter@gmx.net>
 	* gtypist.[ch], infoview.c: don't show beginner screen when --expert is given,
 	when the user presses 'D'/'d' in beginner screen: write option "expert"

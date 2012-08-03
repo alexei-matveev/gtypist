@@ -33,7 +33,7 @@ option "banner-colors"  - "set top banner colours: (F)oreground, (B)ackground, (
     string typestr="F,B,P,V" default="6,0,5,1"
 option "scoring"        - "set scoring mode; valid values are \"wpm\" (words per minute) and \"cpm\" (characters per minute)"
     enum values="wpm","cpm" typestr="MODE"
-option "expert"         - "don't show beginner tutorial message at start-up"
+option "no-welcome-screen"         - "don't show beginner tutorial message at start-up"
     flag off
 
 text "\nIf not supplied, script-file defaults to the 'gtypist.typ' that came with this software.  If you specify a script, the path $GTYPIST_PATH is searched for script files.\n"

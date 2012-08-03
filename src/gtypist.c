@@ -1817,7 +1817,7 @@ int main( int argc, char **argv )
   clear();
   banner (_("Loading the script..."));
 
-  if (!cl_args.expert_flag)
+  if (!cl_args.no_welcome_screen_flag)
   {
       if (!do_beginner_infoview())
       {
