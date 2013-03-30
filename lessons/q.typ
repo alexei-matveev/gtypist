@@ -129,7 +129,7 @@ D:Feel a dead faded leaf  Seeds fall as a faded leaf falls
 I:(6)
 *:_Q_R_L9
 D:Idle Sid seeks a salad  Sis aids Sid  A salad is laid aside
- :Sid seeks a lake Sis is all silks  Sid likes silks
+ :Sid seeks a lake  Sis is all silks  Sid likes silks
  :A lad asks if Dad likes lilies  Dad is ill  Dad feels life dies as lilies fade
  :Dad slides all lilies aside  Dad is jaded
 
@@ -467,7 +467,7 @@ G:_Q_MENU
 *:_Q_MENU
 B:                      Quick QWERTY course
 M: UP=_EXIT "The Q series contains the following 5 lessons"
- :_Q_S_Q1 "Lesson Q1     a s d f g h j k l ;"
+ :_Q_S_Q1 "Lesson Q1     a s d f j k l ; e i"
  :_Q_S_Q2 "Lesson Q2     h g o u n . t"
  :_Q_S_Q3 "Lesson Q3     y r c , ? : p"
  :_Q_S_Q4 "Lesson Q4     m w v z x b q"
