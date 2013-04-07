@@ -1,5 +1,7 @@
 # created by ktouch2typ.pl from /home/felix/doks/gtypist/tools/../lessons/german3.ktouch.xml
 # on Do 23. Jun 19:51:55 CEST 2011
+# Updated by ktouch2typ.scm from /usr/share/kde4/apps/ktouch/Lecture/German/de.3.ktouch.xml
+# on Sun Apr  7 12:35:34 CEST 2013
 # ktouch title: Deutsch (auto-generated)
 # ktouch comment: frisch@vr-web.de>
 # ktouch2typ.pl is part of gtypist (http://www.gnu.org/software/gtypist/)
@@ -1311,7 +1313,6 @@ I:(4)
 D:Der 5 : 3-Sieg unserer Fußballmannschaft war gewiss hochverdient.
 G:E_LESSON50
 
-
 # jump-table
 *:E_LESSON1
 Q: Do you want to continue to lesson 2 [Y/N] ?
@@ -1513,7 +1514,7 @@ G:S_LESSON50
 G:MENU
 
 *:MENU
-M: "ktouch lesson: Deutsch (auto-generated)"
+M: "German (auto-generated)"
  :S_LESSON1 "Grundstellung (1)"
  :S_LESSON2 "Grundstellung (2)"
  :S_LESSON3 "e und i"
