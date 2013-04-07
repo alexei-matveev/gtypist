@@ -55,6 +55,11 @@
             (Line ,line) ...)
      `(Lesson (Banner ,label)
               (Lines ,line ...))]
+    [(Level (NewCharsLabel ,label)
+            (NewCharacters ,characters)
+            (Line ,line) ...)
+     `(Lesson (Banner ,label)
+              (Lines ,line ...))]
     [(Level (LevelComment ,comment)
             (NewCharsLabel ,label)
             (Line ,line) ...)
